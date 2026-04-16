@@ -1,0 +1,111 @@
+[2026-04-15 22:55:47] Created backup directory: ./designer_backups
+[2026-04-15 22:55:47] ======================================================================
+[2026-04-15 22:55:47] Starting Designer.cs Comprehensive Fixer
+[2026-04-15 22:55:47] ======================================================================
+[2026-04-15 22:55:47] Found 44 Designer.cs files to process
+[2026-04-15 22:55:47] 
+[2026-04-15 22:55:47] Processing: ./Abertura.Designer.cs
+[2026-04-15 22:55:47]   No changes needed: ./Abertura.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Aguarde.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Aguarde.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Configuracao.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Configuracao.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Diretorios.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Diretorios.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Discover.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Discover.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_101_cal.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_101_cal.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_101_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_101_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_101_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_101_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_201_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_201_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_201_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_201_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_202_cal.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_202_cal.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_202_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_202_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_202_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_202_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_302_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_302_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_303_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_303_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_590_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_590_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_810_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_810_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_820_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_820_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_821_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_821_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_VA210_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_VA210_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_VA220_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_VA220_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_VA220_mon.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_VA220_mon.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_VA220_ope.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_VA220_ope.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Equip_VA230_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Equip_VA230_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./GC_82x_calib.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./GC_82x_calib.Designer.cs
+[2026-04-15 22:55:47] Processing: ./GC_82x_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./GC_82x_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./IEC_855_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./IEC_855_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./IER_856_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./IER_856_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./LogComunicacao.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./LogComunicacao.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Logo.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Logo.Designer.cs
+[2026-04-15 22:55:47] Processing: ./My/MySettings.Designer.cs
+[2026-04-15 22:55:47]   No changes needed: ./My/MySettings.Designer.cs
+[2026-04-15 22:55:47] Processing: ./Plataforma.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./Plataforma.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_810_200_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_810_200_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_810_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_810_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_820_200_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_820_200_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_820_360_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_820_360_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_820_400_SA_CALIB.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_820_400_SA_CALIB.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_820_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_820_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_821_200_conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_821_200_conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_821_Conf.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_821_Conf.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_830_200_configurador.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_830_200_configurador.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_831_200_configurador.Designer.cs
+[2026-04-15 22:55:47] ✓ Fixed: ./RT_831_200_configurador.Designer.cs
+[2026-04-15 22:55:47] Processing: ./RT_850_conf.Designer.cs
+[2026-04-15 22:55:48] ✓ Fixed: ./RT_850_conf.Designer.cs
+[2026-04-15 22:55:48] Processing: ./Sobre.Designer.cs
+[2026-04-15 22:55:48] ✓ Fixed: ./Sobre.Designer.cs
+[2026-04-15 22:55:48] 
+[2026-04-15 22:55:48] ======================================================================
+[2026-04-15 22:55:48] SUMMARY
+[2026-04-15 22:55:48] ======================================================================
+[2026-04-15 22:55:48] Files processed: 44
+[2026-04-15 22:55:48] Files fixed: 42
+[2026-04-15 22:55:48] Total replacements: 7309
+[2026-04-15 22:55:48]   - location → Point: 2934
+[2026-04-15 22:55:48]   - size → Size: 3292
+[2026-04-15 22:55:48]   - num → decimal: 294
+[2026-04-15 22:55:48]   - enum fixes: 789
+[2026-04-15 22:55:48] 
+✓ No errors encountered
+[2026-04-15 22:55:48] 
+[2026-04-15 22:55:48] Backups created in: ./designer_backups
+[2026-04-15 22:55:48] Log file: ./designer_fixes_20260415_225547.log
+[2026-04-15 22:55:48] ======================================================================

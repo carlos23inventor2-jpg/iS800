@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{C1BD7EDC-96DC-4697-9132-5A3CBCBECD80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iS800</RootNamespace>
+    <AssemblyName>iS800</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>iS800.ico</ApplicationIcon>
+    <StartupObject>iS800.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abertura.Designer.cs">
+      <DependentUpon>Abertura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aguarde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aguarde.Designer.cs">
+      <DependentUpon>Aguarde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cabecalho.cs" />
+    <Compile Include="Comunicacao.cs" />
+    <Compile Include="Configuracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao.Designer.cs">
+      <DependentUpon>Configuracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoresTabela.cs" />
+    <Compile Include="Diretorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diretorios.Designer.cs">
+      <DependentUpon>Diretorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Discover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discover.Designer.cs">
+      <DependentUpon>Discover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_101_cal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_101_cal.Designer.cs">
+      <DependentUpon>Equip_101_cal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_101_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_101_conf.Designer.cs">
+      <DependentUpon>Equip_101_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_101_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_101_mon.Designer.cs">
+      <DependentUpon>Equip_101_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_201_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_201_conf.Designer.cs">
+      <DependentUpon>Equip_201_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_201_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_201_mon.Designer.cs">
+      <DependentUpon>Equip_201_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_202_cal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_202_cal.Designer.cs">
+      <DependentUpon>Equip_202_cal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_202_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_202_conf.Designer.cs">
+      <DependentUpon>Equip_202_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_202_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_202_mon.Designer.cs">
+      <DependentUpon>Equip_202_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_302_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_302_conf.Designer.cs">
+      <DependentUpon>Equip_302_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_303_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_303_conf.Designer.cs">
+      <DependentUpon>Equip_303_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_590_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_590_conf.Designer.cs">
+      <DependentUpon>Equip_590_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_810_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_810_mon.Designer.cs">
+      <DependentUpon>Equip_810_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_820_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_820_mon.Designer.cs">
+      <DependentUpon>Equip_820_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_821_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_821_mon.Designer.cs">
+      <DependentUpon>Equip_821_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_VA210_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_VA210_conf.Designer.cs">
+      <DependentUpon>Equip_VA210_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_VA220_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_VA220_conf.Designer.cs">
+      <DependentUpon>Equip_VA220_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_VA220_mon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_VA220_mon.Designer.cs">
+      <DependentUpon>Equip_VA220_mon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_VA220_ope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_VA220_ope.Designer.cs">
+      <DependentUpon>Equip_VA220_ope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip_VA230_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip_VA230_conf.Designer.cs">
+      <DependentUpon>Equip_VA230_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontesTabela.cs" />
+    <Compile Include="GC_82x_calib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_82x_calib.Designer.cs">
+      <DependentUpon>GC_82x_calib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_82x_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_82x_conf.Designer.cs">
+      <DependentUpon>GC_82x_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geral.cs" />
+    <Compile Include="IEC_855_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IEC_855_conf.Designer.cs">
+      <DependentUpon>IEC_855_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IER_856_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IER_856_conf.Designer.cs">
+      <DependentUpon>IER_856_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniFile.cs" />
+    <Compile Include="IniFileWriteFast.cs" />
+    <Compile Include="Linha_RT.cs" />
+    <Compile Include="LogComunicacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogComunicacao.Designer.cs">
+      <DependentUpon>LogComunicacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logo.Designer.cs">
+      <DependentUpon>Logo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mod_MD.cs" />
+    <Compile Include="Mod_VA.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="My\MySettings.Designer.cs">
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MySettingsProperty.cs" />
+    <Compile Include="My\Resources\Resources.cs" />
+    <Compile Include="perifericos.cs" />
+    <Compile Include="Plataforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plataforma.Designer.cs">
+      <DependentUpon>Plataforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma.CustomMenus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RodapeICTEL.cs" />
+    <Compile Include="RT_810_200_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_810_200_conf.Designer.cs">
+      <DependentUpon>RT_810_200_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_810_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_810_conf.Designer.cs">
+      <DependentUpon>RT_810_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_820_200_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_820_200_conf.Designer.cs">
+      <DependentUpon>RT_820_200_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_820_360_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_820_360_conf.Designer.cs">
+      <DependentUpon>RT_820_360_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_820_400_SA_CALIB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_820_400_SA_CALIB.Designer.cs">
+      <DependentUpon>RT_820_400_SA_CALIB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_820_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_820_conf.Designer.cs">
+      <DependentUpon>RT_820_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_821_200_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_821_200_conf.Designer.cs">
+      <DependentUpon>RT_821_200_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_821_Conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_821_Conf.Designer.cs">
+      <DependentUpon>RT_821_Conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_821_380_conf.cs" />
+    <Compile Include="RT_830_200_configurador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_830_200_configurador.Designer.cs">
+      <DependentUpon>RT_830_200_configurador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_830_200_constantes_X.cs" />
+    <Compile Include="RT_830_200_impressao_X.cs" />
+    <Compile Include="RT_830_200_inicializa_variavies_X.cs" />
+    <Compile Include="RT_830_200_Load_X.cs" />
+    <Compile Include="RT_830_200_redimX.cs" />
+    <Compile Include="RT_830_200_Save_X.cs" />
+    <Compile Include="RT_830_200_valores_default_X.cs" />
+    <Compile Include="RT_830_200_variaveis_X.cs" />
+    <Compile Include="RT_831_200_configurador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_831_200_configurador.Designer.cs">
+      <DependentUpon>RT_831_200_configurador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_831_200_constantes_X.cs" />
+    <Compile Include="RT_831_200_impressao_X.cs" />
+    <Compile Include="RT_831_200_inicializa_variavies_X.cs" />
+    <Compile Include="RT_831_200_Load_X.cs" />
+    <Compile Include="RT_831_200_redimX.cs" />
+    <Compile Include="RT_831_200_Save_X.cs" />
+    <Compile Include="RT_831_200_valores_default_X.cs" />
+    <Compile Include="RT_831_200_variaveis_X.cs" />
+    <Compile Include="RT_850_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RT_850_conf.Designer.cs">
+      <DependentUpon>RT_850_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RT_850_DB.cs" />
+    <Compile Include="RT_geral.cs" />
+    <Compile Include="Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabelaLinhaInteria.cs" />
+    <Compile Include="TabelaMeiaLinhaDireita.cs" />
+    <Compile Include="TabelaMeiaLinhaEsquerda.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Abertura.resources" />
+    <EmbeddedResource Include="Aguarde.resources" />
+    <EmbeddedResource Include="Configuracao.resources" />
+    <EmbeddedResource Include="Diretorios.resources" />
+    <EmbeddedResource Include="Discover.resources" />
+    <EmbeddedResource Include="Equip_101_cal.resources" />
+    <EmbeddedResource Include="Equip_101_conf.resources" />
+    <EmbeddedResource Include="Equip_101_mon.resources" />
+    <EmbeddedResource Include="Equip_201_conf.resources" />
+    <EmbeddedResource Include="Equip_201_mon.resources" />
+    <EmbeddedResource Include="Equip_202_cal.resources" />
+    <EmbeddedResource Include="Equip_202_conf.resources" />
+    <EmbeddedResource Include="Equip_202_mon.resources" />
+    <EmbeddedResource Include="Equip_302_conf.resources" />
+    <EmbeddedResource Include="Equip_303_conf.resources" />
+    <EmbeddedResource Include="Equip_590_conf.resources" />
+    <EmbeddedResource Include="Equip_810_mon.resources" />
+    <EmbeddedResource Include="Equip_820_mon.resources" />
+    <EmbeddedResource Include="Equip_821_mon.resources" />
+    <EmbeddedResource Include="Equip_VA210_conf.resources" />
+    <EmbeddedResource Include="Equip_VA220_conf.resources" />
+    <EmbeddedResource Include="Equip_VA220_mon.resources" />
+    <EmbeddedResource Include="Equip_VA220_ope.resources" />
+    <EmbeddedResource Include="Equip_VA230_conf.resources" />
+    <EmbeddedResource Include="GC_82x_calib.resources" />
+    <EmbeddedResource Include="GC_82x_conf.resources" />
+    <EmbeddedResource Include="IEC_855_conf.resources" />
+    <EmbeddedResource Include="IER_856_conf.resources" />
+    <EmbeddedResource Include="LogComunicacao.resources" />
+    <EmbeddedResource Include="Logo.resources" />
+    <EmbeddedResource Include="Plataforma.resources" />
+    <EmbeddedResource Include="Resources.resources" />
+    <EmbeddedResource Include="RT_810_200_conf.resources" />
+    <EmbeddedResource Include="RT_810_conf.resources" />
+    <EmbeddedResource Include="RT_820_200_conf.resources" />
+    <EmbeddedResource Include="RT_820_360_conf.resources" />
+    <EmbeddedResource Include="RT_820_400_SA_CALIB.resources" />
+    <EmbeddedResource Include="RT_820_conf.resources" />
+    <EmbeddedResource Include="RT_821_200_conf.resources" />
+    <EmbeddedResource Include="RT_821_Conf.resources" />
+    <EmbeddedResource Include="RT_830_200_configurador.resources" />
+    <EmbeddedResource Include="RT_831_200_configurador.resources" />
+    <EmbeddedResource Include="RT_850_conf.resources" />
+    <EmbeddedResource Include="Sobre.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

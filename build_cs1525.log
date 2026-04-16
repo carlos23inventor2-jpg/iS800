@@ -1,0 +1,149 @@
+
+>>>> xbuild tool is deprecated and will be removed in future updates, use msbuild instead <<<<
+
+XBuild Engine Version 14.0
+Mono, Version 6.8.0.105
+Copyright (C) 2005-2013 Various Mono authors
+
+Build started 15/04/2026 21:56:38.
+__________________________________________________
+Project "/home/carlos/Desktop/tet/dec/iS800/iS800.csproj" (default target(s)):
+	Target PrepareForBuild:
+		Configuration: Debug Platform: x64
+	Target GenerateSatelliteAssemblies:
+	No input files were specified for target GenerateSatelliteAssemblies, skipping.
+	Target _GenerateTargetFrameworkMonikerAttribute:
+	Skipping target "_GenerateTargetFrameworkMonikerAttribute" because its outputs are up-to-date.
+	Target CoreCompile:
+		Tool /usr/lib/mono/4.5/mcs.exe execution started with arguments: /noconfig /debug:full /debug:portable /optimize- /out:obj/x64/Debug/iS800.exe /resource:obj/x64/Debug/iS800.Abertura.resources /resource:obj/x64/Debug/iS800.Aguarde.resources /resource:obj/x64/Debug/iS800.Configuracao.resources /resource:obj/x64/Debug/iS800.Diretorios.resources /resource:obj/x64/Debug/iS800.Discover.resources /resource:obj/x64/Debug/iS800.Equip_101_cal.resources /resource:obj/x64/Debug/iS800.Equip_101_conf.resources /resource:obj/x64/Debug/iS800.Equip_101_mon.resources /resource:obj/x64/Debug/iS800.Equip_201_conf.resources /resource:obj/x64/Debug/iS800.Equip_201_mon.resources /resource:obj/x64/Debug/iS800.Equip_202_cal.resources /resource:obj/x64/Debug/iS800.Equip_202_conf.resources /resource:obj/x64/Debug/iS800.Equip_202_mon.resources /resource:obj/x64/Debug/iS800.Equip_302_conf.resources /resource:obj/x64/Debug/iS800.Equip_303_conf.resources /resource:obj/x64/Debug/iS800.Equip_590_conf.resources /resource:obj/x64/Debug/iS800.Equip_810_mon.resources /resource:obj/x64/Debug/iS800.Equip_820_mon.resources /resource:obj/x64/Debug/iS800.Equip_821_mon.resources /resource:obj/x64/Debug/iS800.Equip_VA210_conf.resources /resource:obj/x64/Debug/iS800.Equip_VA220_conf.resources /resource:obj/x64/Debug/iS800.Equip_VA220_mon.resources /resource:obj/x64/Debug/iS800.Equip_VA220_ope.resources /resource:obj/x64/Debug/iS800.Equip_VA230_conf.resources /resource:obj/x64/Debug/iS800.GC_82x_calib.resources /resource:obj/x64/Debug/iS800.GC_82x_conf.resources /resource:obj/x64/Debug/iS800.IEC_855_conf.resources /resource:obj/x64/Debug/iS800.IER_856_conf.resources /resource:obj/x64/Debug/iS800.LogComunicacao.resources /resource:obj/x64/Debug/iS800.Logo.resources /resource:obj/x64/Debug/iS800.Plataforma.resources /resource:obj/x64/Debug/iS800.Resources.resources /resource:obj/x64/Debug/iS800.RT_810_200_conf.resources /resource:obj/x64/Debug/iS800.RT_810_conf.resources /resource:obj/x64/Debug/iS800.RT_820_200_conf.resources /resource:obj/x64/Debug/iS800.RT_820_360_conf.resources /resource:obj/x64/Debug/iS800.RT_820_400_SA_CALIB.resources /resource:obj/x64/Debug/iS800.RT_820_conf.resources /resource:obj/x64/Debug/iS800.RT_821_200_conf.resources /resource:obj/x64/Debug/iS800.RT_821_Conf.resources /resource:obj/x64/Debug/iS800.RT_830_200_configurador.resources /resource:obj/x64/Debug/iS800.RT_831_200_configurador.resources /resource:obj/x64/Debug/iS800.RT_850_conf.resources /resource:obj/x64/Debug/iS800.Sobre.resources Abertura.cs Abertura.Designer.cs Aguarde.cs Aguarde.Designer.cs Cabecalho.cs Comunicacao.cs Configuracao.cs Configuracao.Designer.cs CoresTabela.cs Diretorios.cs Diretorios.Designer.cs Discover.cs Discover.Designer.cs Equip_101_cal.cs Equip_101_cal.Designer.cs Equip_101_conf.cs Equip_101_conf.Designer.cs Equip_101_mon.cs Equip_101_mon.Designer.cs Equip_201_conf.cs Equip_201_conf.Designer.cs Equip_201_mon.cs Equip_201_mon.Designer.cs Equip_202_cal.cs Equip_202_cal.Designer.cs Equip_202_conf.cs Equip_202_conf.Designer.cs Equip_202_mon.cs Equip_202_mon.Designer.cs Equip_302_conf.cs Equip_302_conf.Designer.cs Equip_303_conf.cs Equip_303_conf.Designer.cs Equip_590_conf.cs Equip_590_conf.Designer.cs Equip_810_mon.cs Equip_810_mon.Designer.cs Equip_820_mon.cs Equip_820_mon.Designer.cs Equip_821_mon.cs Equip_821_mon.Designer.cs Equip_VA210_conf.cs Equip_VA210_conf.Designer.cs Equip_VA220_conf.cs Equip_VA220_conf.Designer.cs Equip_VA220_mon.cs Equip_VA220_mon.Designer.cs Equip_VA220_ope.cs Equip_VA220_ope.Designer.cs Equip_VA230_conf.cs Equip_VA230_conf.Designer.cs FontesTabela.cs GC_82x_calib.cs GC_82x_calib.Designer.cs GC_82x_conf.cs GC_82x_conf.Designer.cs Geral.cs IEC_855_conf.cs IEC_855_conf.Designer.cs IER_856_conf.cs IER_856_conf.Designer.cs IniFile.cs IniFileWriteFast.cs Linha_RT.cs LogComunicacao.cs LogComunicacao.Designer.cs Logo.cs Logo.Designer.cs Mod_MD.cs Mod_VA.cs My/MyApplication.cs My/MyComputer.cs My/MyProject.cs My/MySettings.Designer.cs My/MySettingsProperty.cs My/Resources/Resources.cs perifericos.cs Plataforma.cs Plataforma.Designer.cs Plataforma.CustomMenus.cs Properties/AssemblyInfo.cs RodapeICTEL.cs RT_810_200_conf.cs RT_810_200_conf.Designer.cs RT_810_conf.cs RT_810_conf.Designer.cs RT_820_200_conf.cs RT_820_200_conf.Designer.cs RT_820_360_conf.cs RT_820_360_conf.Designer.cs RT_820_400_SA_CALIB.cs RT_820_400_SA_CALIB.Designer.cs RT_820_conf.cs RT_820_conf.Designer.cs RT_821_200_conf.cs RT_821_200_conf.Designer.cs RT_821_Conf.cs RT_821_Conf.Designer.cs RT_821_380_conf.cs RT_830_200_configurador.cs RT_830_200_configurador.Designer.cs RT_830_200_constantes_X.cs RT_830_200_impressao_X.cs RT_830_200_inicializa_variavies_X.cs RT_830_200_Load_X.cs RT_830_200_redimX.cs RT_830_200_Save_X.cs RT_830_200_valores_default_X.cs RT_830_200_variaveis_X.cs RT_831_200_configurador.cs RT_831_200_configurador.Designer.cs RT_831_200_constantes_X.cs RT_831_200_impressao_X.cs RT_831_200_inicializa_variavies_X.cs RT_831_200_Load_X.cs RT_831_200_redimX.cs RT_831_200_Save_X.cs RT_831_200_valores_default_X.cs RT_831_200_variaveis_X.cs RT_850_conf.cs RT_850_conf.Designer.cs RT_850_DB.cs RT_geral.cs Sobre.cs Sobre.Designer.cs TabelaLinhaInteria.cs TabelaMeiaLinhaDireita.cs TabelaMeiaLinhaEsquerda.cs obj/x64/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs /target:winexe /win32icon:iS800.ico /define:"DEBUG;TRACE" /main:iS800.My.MyApplication /nostdlib /platform:x64 /reference:/usr/lib/mono/4.5-api/Microsoft.VisualBasic.dll /reference:/usr/lib/mono/4.5-api/System.dll /reference:/usr/lib/mono/4.5-api/System.Drawing.dll /reference:/usr/lib/mono/4.5-api/System.Windows.Forms.dll /reference:/usr/lib/mono/4.5-api/System.Core.dll /reference:/usr/lib/mono/4.5-api//mscorlib.dll /warn:4
+Comunicacao.cs(96,48): error CS1525: Unexpected symbol `['
+Comunicacao.cs(151,49): error CS1525: Unexpected symbol `['
+Equip_101_conf.cs(1572,49): error CS1525: Unexpected symbol `['
+Equip_101_conf.cs(1645,48): error CS1525: Unexpected symbol `['
+Equip_101_conf.cs(1650,48): error CS1525: Unexpected symbol `['
+Equip_101_conf.cs(2154,49): error CS1525: Unexpected symbol `['
+Equip_101_conf.cs(2232,48): error CS1525: Unexpected symbol `['
+Equip_101_conf.cs(2237,48): error CS1525: Unexpected symbol `['
+Equip_202_conf.cs(4266,49): error CS1525: Unexpected symbol `['
+Equip_302_conf.cs(2727,48): error CS1525: Unexpected symbol `['
+Equip_302_conf.cs(2905,49): error CS1525: Unexpected symbol `['
+Equip_302_conf.cs(3091,49): error CS1525: Unexpected symbol `['
+Equip_VA220_ope.cs(3406,48): error CS1525: Unexpected symbol `['
+GC_82x_conf.cs(1394,48): error CS1525: Unexpected symbol `['
+GC_82x_conf.cs(1880,48): error CS1525: Unexpected symbol `['
+GC_82x_conf.cs(1973,48): error CS1525: Unexpected symbol `['
+IEC_855_conf.cs(1526,49): error CS1525: Unexpected symbol `['
+IEC_855_conf.cs(2239,49): error CS1525: Unexpected symbol `['
+IEC_855_conf.cs(2327,48): error CS1525: Unexpected symbol `['
+IER_856_conf.cs(1392,48): error CS1525: Unexpected symbol `['
+IER_856_conf.cs(1987,49): error CS1525: Unexpected symbol `['
+IER_856_conf.cs(2075,48): error CS1525: Unexpected symbol `['
+Plataforma.cs(2807,49): error CS1525: Unexpected symbol `['
+RT_810_200_conf.cs(2934,49): error CS1525: Unexpected symbol `['
+RT_810_200_conf.cs(3763,49): error CS1525: Unexpected symbol `['
+RT_810_200_conf.cs(3905,49): error CS1525: Unexpected symbol `['
+RT_810_conf.cs(3523,49): error CS1525: Unexpected symbol `['
+RT_810_conf.cs(4511,49): error CS1525: Unexpected symbol `['
+RT_810_conf.cs(4779,49): error CS1525: Unexpected symbol `['
+RT_820_200_conf.cs(7079,49): error CS1525: Unexpected symbol `['
+RT_820_200_conf.cs(8021,49): error CS1525: Unexpected symbol `['
+RT_820_200_conf.cs(8260,49): error CS1525: Unexpected symbol `['
+RT_820_360_conf.cs(11195,49): error CS1525: Unexpected symbol `['
+RT_820_360_conf.cs(13193,49): error CS1525: Unexpected symbol `['
+RT_820_conf.cs(8945,49): error CS1525: Unexpected symbol `['
+RT_820_conf.cs(10822,49): error CS1525: Unexpected symbol `['
+RT_821_200_conf.cs(3947,49): error CS1525: Unexpected symbol `['
+RT_821_200_conf.cs(4776,49): error CS1525: Unexpected symbol `['
+RT_821_200_conf.cs(4934,49): error CS1525: Unexpected symbol `['
+RT_821_Conf.cs(3529,49): error CS1525: Unexpected symbol `['
+RT_821_Conf.cs(4530,49): error CS1525: Unexpected symbol `['
+RT_821_Conf.cs(4872,49): error CS1525: Unexpected symbol `['
+RT_830_200_configurador.cs(4733,48): error CS1525: Unexpected symbol `['
+RT_830_200_configurador.cs(4888,48): error CS1525: Unexpected symbol `['
+RT_830_200_configurador.cs(5600,48): error CS1525: Unexpected symbol `['
+RT_830_200_configurador.cs(5725,48): error CS1525: Unexpected symbol `['
+RT_830_200_configurador.cs(6117,48): error CS1525: Unexpected symbol `['
+RT_831_200_configurador.cs(3626,48): error CS1525: Unexpected symbol `['
+RT_831_200_configurador.cs(3781,48): error CS1525: Unexpected symbol `['
+RT_831_200_configurador.cs(4482,48): error CS1525: Unexpected symbol `['
+RT_831_200_configurador.cs(4595,48): error CS1525: Unexpected symbol `['
+RT_831_200_configurador.cs(4984,48): error CS1525: Unexpected symbol `['
+RT_850_conf.cs(5230,49): error CS1525: Unexpected symbol `['
+RT_850_conf.cs(7036,48): error CS1525: Unexpected symbol `['
+RT_850_conf.cs(7386,48): error CS1525: Unexpected symbol `['
+RT_850_conf.cs(9703,48): error CS1525: Unexpected symbol `['
+RT_850_conf.cs(10644,48): error CS1525: Unexpected symbol `['
+RT_850_conf.cs(11275,48): error CS1525: Unexpected symbol `['
+	Task "Csc" execution -- FAILED
+	Done building target "CoreCompile" in project "/home/carlos/Desktop/tet/dec/iS800/iS800.csproj".-- FAILED
+Done building project "/home/carlos/Desktop/tet/dec/iS800/iS800.csproj".-- FAILED
+
+Build FAILED.
+Errors:
+
+/home/carlos/Desktop/tet/dec/iS800/iS800.csproj (default targets) ->
+/usr/lib/mono/xbuild/14.0/bin/Microsoft.CSharp.targets (CoreCompile target) ->
+
+	Comunicacao.cs(96,48): error CS1525: Unexpected symbol `['
+	Comunicacao.cs(151,49): error CS1525: Unexpected symbol `['
+	Equip_101_conf.cs(1572,49): error CS1525: Unexpected symbol `['
+	Equip_101_conf.cs(1645,48): error CS1525: Unexpected symbol `['
+	Equip_101_conf.cs(1650,48): error CS1525: Unexpected symbol `['
+	Equip_101_conf.cs(2154,49): error CS1525: Unexpected symbol `['
+	Equip_101_conf.cs(2232,48): error CS1525: Unexpected symbol `['
+	Equip_101_conf.cs(2237,48): error CS1525: Unexpected symbol `['
+	Equip_202_conf.cs(4266,49): error CS1525: Unexpected symbol `['
+	Equip_302_conf.cs(2727,48): error CS1525: Unexpected symbol `['
+	Equip_302_conf.cs(2905,49): error CS1525: Unexpected symbol `['
+	Equip_302_conf.cs(3091,49): error CS1525: Unexpected symbol `['
+	Equip_VA220_ope.cs(3406,48): error CS1525: Unexpected symbol `['
+	GC_82x_conf.cs(1394,48): error CS1525: Unexpected symbol `['
+	GC_82x_conf.cs(1880,48): error CS1525: Unexpected symbol `['
+	GC_82x_conf.cs(1973,48): error CS1525: Unexpected symbol `['
+	IEC_855_conf.cs(1526,49): error CS1525: Unexpected symbol `['
+	IEC_855_conf.cs(2239,49): error CS1525: Unexpected symbol `['
+	IEC_855_conf.cs(2327,48): error CS1525: Unexpected symbol `['
+	IER_856_conf.cs(1392,48): error CS1525: Unexpected symbol `['
+	IER_856_conf.cs(1987,49): error CS1525: Unexpected symbol `['
+	IER_856_conf.cs(2075,48): error CS1525: Unexpected symbol `['
+	Plataforma.cs(2807,49): error CS1525: Unexpected symbol `['
+	RT_810_200_conf.cs(2934,49): error CS1525: Unexpected symbol `['
+	RT_810_200_conf.cs(3763,49): error CS1525: Unexpected symbol `['
+	RT_810_200_conf.cs(3905,49): error CS1525: Unexpected symbol `['
+	RT_810_conf.cs(3523,49): error CS1525: Unexpected symbol `['
+	RT_810_conf.cs(4511,49): error CS1525: Unexpected symbol `['
+	RT_810_conf.cs(4779,49): error CS1525: Unexpected symbol `['
+	RT_820_200_conf.cs(7079,49): error CS1525: Unexpected symbol `['
+	RT_820_200_conf.cs(8021,49): error CS1525: Unexpected symbol `['
+	RT_820_200_conf.cs(8260,49): error CS1525: Unexpected symbol `['
+	RT_820_360_conf.cs(11195,49): error CS1525: Unexpected symbol `['
+	RT_820_360_conf.cs(13193,49): error CS1525: Unexpected symbol `['
+	RT_820_conf.cs(8945,49): error CS1525: Unexpected symbol `['
+	RT_820_conf.cs(10822,49): error CS1525: Unexpected symbol `['
+	RT_821_200_conf.cs(3947,49): error CS1525: Unexpected symbol `['
+	RT_821_200_conf.cs(4776,49): error CS1525: Unexpected symbol `['
+	RT_821_200_conf.cs(4934,49): error CS1525: Unexpected symbol `['
+	RT_821_Conf.cs(3529,49): error CS1525: Unexpected symbol `['
+	RT_821_Conf.cs(4530,49): error CS1525: Unexpected symbol `['
+	RT_821_Conf.cs(4872,49): error CS1525: Unexpected symbol `['
+	RT_830_200_configurador.cs(4733,48): error CS1525: Unexpected symbol `['
+	RT_830_200_configurador.cs(4888,48): error CS1525: Unexpected symbol `['
+	RT_830_200_configurador.cs(5600,48): error CS1525: Unexpected symbol `['
+	RT_830_200_configurador.cs(5725,48): error CS1525: Unexpected symbol `['
+	RT_830_200_configurador.cs(6117,48): error CS1525: Unexpected symbol `['
+	RT_831_200_configurador.cs(3626,48): error CS1525: Unexpected symbol `['
+	RT_831_200_configurador.cs(3781,48): error CS1525: Unexpected symbol `['
+	RT_831_200_configurador.cs(4482,48): error CS1525: Unexpected symbol `['
+	RT_831_200_configurador.cs(4595,48): error CS1525: Unexpected symbol `['
+	RT_831_200_configurador.cs(4984,48): error CS1525: Unexpected symbol `['
+	RT_850_conf.cs(5230,49): error CS1525: Unexpected symbol `['
+	RT_850_conf.cs(7036,48): error CS1525: Unexpected symbol `['
+	RT_850_conf.cs(7386,48): error CS1525: Unexpected symbol `['
+	RT_850_conf.cs(9703,48): error CS1525: Unexpected symbol `['
+	RT_850_conf.cs(10644,48): error CS1525: Unexpected symbol `['
+	RT_850_conf.cs(11275,48): error CS1525: Unexpected symbol `['
+
+	 0 Warning(s)
+	 58 Error(s)
+
+Time Elapsed 00:00:01.3904310
