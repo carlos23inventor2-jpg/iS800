@@ -7432,7 +7432,7 @@ namespace iS800
 			else if (Operators.CompareString(dataPropertyName, "Col_Alarme_1", false) == 0)
 			{
 				RT_geral.Variaveis_RT_850[e.RowIndex].Nivel_alm_1.Valor = Conversions.ToInteger(this.DataGridView_variaveis_RT850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-				RT_geral.Integer_ictel integer_ictel;
+				RT_geral.Integer_ictel integer_ictel = new RT_geral.Integer_ictel();
 				integer_ictel.nome = "Alarme 1";
 				integer_ictel.Lmte_inf = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_ini.Valor;
 				integer_ictel.Lmte_sup = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_fim.Valor;
@@ -7444,7 +7444,7 @@ namespace iS800
 			else if (Operators.CompareString(dataPropertyName, "Col_Alarme_2", false) == 0)
 			{
 				RT_geral.Variaveis_RT_850[e.RowIndex].Nivel_alm_2.Valor = Conversions.ToInteger(this.DataGridView_variaveis_RT850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-				RT_geral.Integer_ictel integer_ictel;
+				RT_geral.Integer_ictel integer_ictel = new RT_geral.Integer_ictel();
 				integer_ictel.nome = "Alarme 2";
 				integer_ictel.Lmte_inf = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_ini.Valor;
 				integer_ictel.Lmte_sup = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_fim.Valor;
@@ -13486,7 +13486,7 @@ namespace iS800
 		// Token: 0x06000BDF RID: 3039 RVA: 0x002F17A4 File Offset: 0x002EFBA4
 		private bool DesenhaRelatorio(PrintPageEventArgs z)
 		{
-			bool result;
+			bool result = false;
 			switch (this.grupo_impressao)
 			{
 			case 1:

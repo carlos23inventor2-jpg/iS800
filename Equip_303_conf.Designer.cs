@@ -304,7 +304,7 @@ grupo_lapelas.Location = new global::System.Drawing.Point(332, 12);
 			this.Grupo_lapelas.TabIndex = 4;
 			this.Grupo_lapelas.TabStop = false;
 			this.Grupo_lapelas.Text = "Configuração de equipamentos de reservatórios";
-			this.TabControl_303.Appearance = 1;
+			this.TabControl_303.Appearance = (System.Windows.Forms.TabAppearance)1;
 			this.TabControl_303.Controls.Add(this.Conf_res);
 			this.TabControl_303.Controls.Add(this.Conf_rq);
 			global::System.Windows.Forms.Control tabControl_ = this.TabControl_303;
@@ -466,7 +466,7 @@ dataGridView_RQ_.Location = new global::System.Drawing.Point(4, 2);
 			this.Col_nome_rq.Width = 50;
 			dataGridViewCellStyle8.Format = "N0";
 			this.Col_mod_rq.DefaultCellStyle = dataGridViewCellStyle8;
-			this.Col_mod_rq.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)0;
+			this.Col_mod_rq.DisplayStyle = (System.Windows.Forms.DataGridViewComboBoxDisplayStyle)0;
 			this.Col_mod_rq.DisplayStyleForCurrentCellOnly = true;
 			this.Col_mod_rq.HeaderText = "Modelo";
 			this.Col_mod_rq.Items.AddRange(new object[]
@@ -478,7 +478,7 @@ dataGridView_RQ_.Location = new global::System.Drawing.Point(4, 2);
 			this.Col_mod_rq.Name = "Col_mod_rq";
 			this.Col_mod_rq.Resizable = (System.Windows.Forms.DataGridViewTriState)2;
 			this.Col_mod_rq.Width = 80;
-			this.Col_hab.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)0;
+			this.Col_hab.DisplayStyle = (System.Windows.Forms.DataGridViewComboBoxDisplayStyle)0;
 			this.Col_hab.DisplayStyleForCurrentCellOnly = true;
 			this.Col_hab.HeaderText = "Hab Cmd";
 			this.Col_hab.Items.AddRange(new object[]

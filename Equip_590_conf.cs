@@ -1761,7 +1761,7 @@ namespace iS800
 			this.Mensagem_MD590(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 			checked
 			{
-				bool result;
+				bool result = false;
 				if (!ctrl_RESP_.Status)
 				{
 					result = false;
@@ -2591,11 +2591,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.ParityMode = (System.IO.Ports.Parity)227;
+				Mod_MD.Parametros_590.ParityMode = 227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.ParityMode = (System.IO.Ports.Parity)255;
+				Mod_MD.Parametros_590.ParityMode = 255;
 			}
 		}
 
