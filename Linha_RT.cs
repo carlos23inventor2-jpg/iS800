@@ -1,7 +1,8 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.Net.Sockets;
 using System.Text;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -73,7 +74,7 @@ namespace iS800
 		public static object AtualizaContagens_GC_82x(int canal, int corrente)
 		{
 			int num = 0;
-			int num2;
+			int num2 = 0;
 			if (corrente == 4)
 			{
 				num2 = 8;
@@ -1129,9 +1130,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 12;
 				Comunicacao.Buffer_cmd[6] = 24;
 				int valor = RT_geral.RT_810_200_BD.End_estacao.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1256,9 +1257,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 52;
 				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1316,9 +1317,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[7] = (byte)RT_geral.RT_820_200_BD.setpoint_horario[0].Hora.Valor;
 				Comunicacao.Buffer_cmd[8] = (byte)RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor;
 				int valor = RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1484,9 +1485,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 52;
 				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_821_200_BD.repetidora.End_repetidora.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1542,9 +1543,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 58;
 				Comunicacao.Buffer_cmd[6] = 116;
 				int valor = RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -2007,9 +2008,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 30;
 				Comunicacao.Buffer_cmd[6] = 60;
 				int valor = RT_geral.RT_821_200_BD.cfg_geral.End_estacao.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -2271,9 +2272,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 52;
 				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_810_200_BD.End_repetidora.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -2659,7 +2660,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[num2 + 1] = (byte)(num3 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num2 + 2);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2696,7 +2697,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[20] = (byte)(num3 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 21);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2724,7 +2725,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[12] = (byte)(num2 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 13);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2794,7 +2795,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[52] = (byte)(num2 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 53);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2802,7 +2803,7 @@ namespace iS800
 		// Token: 0x06000EF9 RID: 3833 RVA: 0x00233140 File Offset: 0x00231540
 		public static int CMD_Esc_GC_825x_Calibracao_SA(int endereco_estacao, int canal, int funcao_sa)
 		{
-			int num;
+			int num = 0;
 			if (funcao_sa == 0)
 			{
 				num = 6175;
@@ -2830,7 +2831,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 11);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2866,8 +2867,8 @@ namespace iS800
 		// Token: 0x06000EFB RID: 3835 RVA: 0x00233320 File Offset: 0x00231720
 		public static void CMD_Esc_GC_825x_DADOS_DE_RX_CONTAGENS(int endereco)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (RT_geral.GC_82x_BD.calib_canal == 1)
 			{
 				num = RT_geral.GC_82x_BD.calib_contagens;
@@ -3126,7 +3127,7 @@ namespace iS800
 		// Token: 0x06000EFF RID: 3839 RVA: 0x00234EE4 File Offset: 0x002332E4
 		public static int Atualiza_GT2010(int pag)
 		{
-			int result;
+			int result = 0;
 			if (pag == 768)
 			{
 				int num = checked((int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4]);
@@ -5040,7 +5041,7 @@ namespace iS800
 				}
 				while (num2 <= 7);
 				num2 = 0;
-				int num3;
+				int num3 = 0;
 				do
 				{
 					num3 = RT_geral.RT_820_360_BD.config_perifericos1_end[num2].Valor * 256 + RT_geral.RT_820_360_BD.config_perifericos1_mod[num2].Valor;
@@ -5381,7 +5382,7 @@ namespace iS800
 				}
 				while (num2 <= 7);
 				num2 = 0;
-				int num3;
+				int num3 = 0;
 				do
 				{
 					num3 = RT_geral.RT_820_BD.config_perifericos_end[num2].Valor * 256 + RT_geral.RT_820_BD.config_perifericos_mod[num2].Valor;
@@ -7256,7 +7257,7 @@ namespace iS800
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[9] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
-				int num3;
+				int num3 = 0;
 				num3++;
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 11);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -7375,12 +7376,12 @@ namespace iS800
 					if (!perifericos.Lista_ValorPermitido(RT_geral.RT_821_BD.baudrate_com1.Valor, perifericos.ListaBaudRate))
 					{
 						RT_geral.RT_821_BD.baudrate_com1.Valor = Conversions.ToInteger(perifericos.Lista_GetValorPadrao(perifericos.ListaBaudRate));
-						Interaction.MsgBox("É possível qua a sua placa RT821_300 não dê suporte a configuração da porta COM1. Será utilizado um valor padrão.", 48, null);
+						Interaction.MsgBox("É possível qua a sua placa RT821_300 não dê suporte a configuração da porta COM1. Será utilizado um valor padrão.", MsgBoxStyle.Exclamation, null);
 					}
 					if (!perifericos.Lista_ValorPermitido(RT_geral.RT_821_BD.baudrate_com2.Valor, perifericos.ListaBaudRate))
 					{
 						RT_geral.RT_821_BD.baudrate_com2.Valor = Conversions.ToInteger(perifericos.Lista_GetValorPadrao(perifericos.ListaBaudRate));
-						Interaction.MsgBox("É possível qua a sua placa RT821_300 não dê suporte a configuração da porta COM2. Será utilizado um valor padrão.", 48, null);
+						Interaction.MsgBox("É possível qua a sua placa RT821_300 não dê suporte a configuração da porta COM2. Será utilizado um valor padrão.", MsgBoxStyle.Exclamation, null);
 					}
 					RT_geral.RT_821_BD.baudrate_com1.AtualizaIndicePeloValor();
 					RT_geral.RT_821_BD.baudrate_com2.AtualizaIndicePeloValor();
@@ -7896,7 +7897,7 @@ namespace iS800
 					num3++;
 					Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.Variaveis_RT_850[num2 + num4].Escala_ini.Valor % 256);
 					num3++;
-					int num7;
+					int num7 = 0;
 					switch (RT_geral.Variaveis_RT_850[num2 + num4].Escala_tratamento.Valor)
 					{
 					case 0:
@@ -8538,7 +8539,7 @@ namespace iS800
 				{
 					int num4 = pagina / 256 - 3;
 					int num5 = num4 * 7;
-					int num6;
+					int num6 = 0;
 					if (num_bloco == 0)
 					{
 						num6 = 240;
@@ -8587,8 +8588,8 @@ namespace iS800
 				}
 				else if (pagina == 1792)
 				{
-					int num5;
-					int num6;
+					int num5 = 0;
+					int num6 = 0;
 					switch (num_bloco)
 					{
 					case 0:
@@ -8660,7 +8661,7 @@ namespace iS800
 				{
 					int num = 0;
 					int num2 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor - 1;
-					for (int i = num; i <= num2; i++)
+					for (int i = Convert.ToInt32(num); i <= num2; i++)
 					{
 						int num3 = i * 2;
 						RT_831_200_variaveis_X.RT_831_200_BD.reservatorio[i].Nome.Valor = (int)Comunicacao.Buffer_resp[3 + num3] * 256 + (int)Comunicacao.Buffer_resp[4 + num3];
@@ -8670,7 +8671,7 @@ namespace iS800
 				{
 					int num4 = pagina / 256 - 3;
 					int num5 = num4 * 7;
-					int num6;
+					int num6 = 0;
 					if (num_bloco == 0)
 					{
 						int j = 0;
@@ -8732,9 +8733,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 14;
 				Comunicacao.Buffer_cmd[6] = 28;
 				int valor = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -8862,8 +8863,8 @@ namespace iS800
 			checked
 			{
 				int num2 = 4 * num;
-				int num3;
-				int num4;
+				int num3 = 0;
+				int num4 = 0;
 				if (pagina == 512)
 				{
 					num3 = 0;
@@ -8888,7 +8889,7 @@ namespace iS800
 				for (int i = num6; i <= num7; i++)
 				{
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.reservatorio[i].NumeroVariavel.Valor;
-					int num8;
+					int num8 = 0;
 					byte b = (byte)num8;
 					int num9;
 					byte b2 = (byte)num9;
@@ -8943,7 +8944,7 @@ namespace iS800
 		public static void CMD_Esc_RT_830_200_RECALQUE(int pagina, int endereco, int quantos)
 		{
 			Comunicacao.Init_buffer_serial();
-			int num;
+			int num = 0;
 			if (pagina == 768)
 			{
 				num = 0;
@@ -8987,14 +8988,14 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = (byte)(quantos * 30 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(quantos * 30 * 2);
 				int num3 = 7;
-				int num4 = num;
+				int num4 = Convert.ToInt32(num);
 				int num5 = num2 - 1;
 				for (int i = num4; i <= num5; i++)
 				{
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.recalque[i].origem.Valor;
-					int num6;
+					int num6 = 0;
 					byte b = (byte)num6;
-					int num7;
+					int num7 = 0;
 					byte b2 = (byte)num7;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num7 = (int)b2;
@@ -9307,9 +9308,9 @@ namespace iS800
 		public static void CMD_Esc_RT_830_200_VISTA(int pagina, int endereco, int quantos)
 		{
 			Comunicacao.Init_buffer_serial();
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			if (pagina == 1792)
 			{
 				num = 0;
@@ -9338,14 +9339,14 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = (byte)(num3 * 43 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(num3 * 43 * 2);
 				int num4 = 7;
-				int num5 = num;
+				int num5 = Convert.ToInt32(num);
 				int num6 = num2;
 				for (int i = num5; i <= num6; i++)
 				{
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor;
-					int num7;
+					int num7 = 0;
 					byte b = (byte)num7;
-					int num8;
+					int num8 = 0;
 					byte b2 = (byte)num8;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num8 = (int)b2;
@@ -9447,9 +9448,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 6;
 				Comunicacao.Buffer_cmd[6] = 12;
 				int valor = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_mestre.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -9525,9 +9526,9 @@ namespace iS800
 				for (int i = num2; i <= num3; i++)
 				{
 					int valor = RT_831_200_variaveis_X.RT_831_200_BD.reservatorio[i].Nome.Valor;
-					int num4;
+					int num4 = 0;
 					byte b = (byte)num4;
-					int num5;
+					int num5 = 0;
 					byte b2 = (byte)num5;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num5 = (int)b2;
@@ -9550,7 +9551,7 @@ namespace iS800
 		public static void CMD_Esc_RT_831_200_RECALQUE(int pagina, int endereco, int quantos)
 		{
 			Comunicacao.Init_buffer_serial();
-			int num;
+			int num = 0;
 			if (pagina == 768)
 			{
 				num = 0;
@@ -9594,14 +9595,14 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = (byte)(quantos * 19 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(quantos * 19 * 2);
 				int num3 = 7;
-				int num4 = num;
+				int num4 = Convert.ToInt32(num);
 				int num5 = num2 - 1;
 				for (int i = num4; i <= num5; i++)
 				{
 					int valor = RT_831_200_variaveis_X.RT_831_200_BD.recalque[i].Modelo.Valor;
-					int num6;
+					int num6 = 0;
 					byte b = (byte)num6;
-					int num7;
+					int num7 = 0;
 					byte b2 = (byte)num7;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num7 = (int)b2;
@@ -9815,9 +9816,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[6] = 2;
 				int num = 7;
 				int valor = RT_831_200_variaveis_X.RT_831_200_BD.senha.senha.Valor;
-				int num2;
+				int num2 = 0;
 				byte b = (byte)num2;
-				int num3;
+				int num3 = 0;
 				byte b2 = (byte)num3;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num3 = (int)b2;
@@ -9838,7 +9839,7 @@ namespace iS800
 		// Token: 0x06000F3F RID: 3903 RVA: 0x0024F2A4 File Offset: 0x0024D6A4
 		public static void Tratamento_Variaveis_Escala_Fim(int indice, int value)
 		{
-			int num = value;
+			int num = Convert.ToInt32(value);
 			checked
 			{
 				if (num >= 10000 & num <= 11000)
@@ -10334,7 +10335,7 @@ namespace iS800
 			checked
 			{
 				int num2 = combo.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					cell.Items.Add(combo.itens[i]);
 				}
@@ -10350,7 +10351,7 @@ namespace iS800
 			checked
 			{
 				int num2 = combo.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					dataGridViewComboBoxColumn.Items.Add(combo.itens[i]);
 				}
@@ -10369,7 +10370,7 @@ namespace iS800
 			dataGridViewComboBoxColumn2.Width = dados[num].LarguraColuna;
 			dataGridViewComboBoxColumn2.MaxDropDownItems = 6;
 			dataGridViewComboBoxColumn2.FlatStyle = FlatStyle.Flat;
-			dataGridViewComboBoxColumn2.DefaultCellStyle.Alignment = dados[num].AlingColuna;
+			dataGridViewComboBoxColumn2.DefaultCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)dados[num].AlingColuna;
 			dataGridViewComboBoxColumn2.ReadOnly = false;
 			dataGridViewComboBoxColumn2.Items.Clear();
 			int numeroLinhaMenu = dados[num].NumeroLinhaMenu;
@@ -10398,7 +10399,7 @@ namespace iS800
 			dataGridViewTextBoxColumn2.DataPropertyName = "Col_" + dados[num].NomeColuna;
 			dataGridViewTextBoxColumn2.HeaderText = dados[num].TagColuna;
 			dataGridViewTextBoxColumn2.Width = dados[num].LarguraColuna;
-			dataGridViewTextBoxColumn2.DefaultCellStyle.Alignment = dados[num].AlingColuna;
+			dataGridViewTextBoxColumn2.DefaultCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)dados[num].AlingColuna;
 			return dataGridViewTextBoxColumn;
 		}
 
@@ -10411,7 +10412,7 @@ namespace iS800
 			dataGridViewCheckBoxColumn2.HeaderText = dados[Conversions.ToInteger(Num)].TagColuna;
 			dataGridViewCheckBoxColumn2.Width = dados[Conversions.ToInteger(Num)].LarguraColuna;
 			dataGridViewCheckBoxColumn2.FlatStyle = FlatStyle.Flat;
-			dataGridViewCheckBoxColumn2.DefaultCellStyle.Alignment = dados[Conversions.ToInteger(Num)].AlingColuna;
+			dataGridViewCheckBoxColumn2.DefaultCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)dados[Conversions.ToInteger(Num)].AlingColuna;
 			return dataGridViewCheckBoxColumn;
 		}
 
@@ -10423,7 +10424,7 @@ namespace iS800
 			checked
 			{
 				int num2 = BD.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					dado.Items.Add(BD.itens[i]);
 				}
@@ -10438,7 +10439,7 @@ namespace iS800
 			checked
 			{
 				int num2 = dados.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					destino.Items.Add(dados.itens[i]);
 				}
@@ -10458,7 +10459,7 @@ namespace iS800
 				int num4 = tamanho - 1;
 				for (int i = num3; i <= num4; i++)
 				{
-					int num5;
+					int num5 = 0;
 					if (num2 < num)
 					{
 						num5 = (int)bytes[num2];
@@ -10496,7 +10497,7 @@ namespace iS800
 				int num4 = tamanho - 1;
 				for (int i = num3; i <= num4; i++)
 				{
-					int num5;
+					int num5 = 0;
 					if (num2 < num)
 					{
 						num5 = (int)bytes[num2];
@@ -10521,7 +10522,7 @@ namespace iS800
 				UTF8Encoding utf8Encoding = new UTF8Encoding();
 				int num = 0;
 				int num2 = tamanho - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					array[i * 2] = (byte)(dado[posicao + i] / 256);
 					array[i * 2 + 1] = (byte)(dado[posicao + i] % 256);
@@ -10550,7 +10551,7 @@ namespace iS800
 				UTF8Encoding utf8Encoding = new UTF8Encoding();
 				int num = 0;
 				int num2 = tamanho - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					array[i] = (byte)(dado[i] % 256);
 				}

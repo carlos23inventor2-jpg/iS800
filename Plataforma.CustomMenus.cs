@@ -1,6 +1,7 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
 ﻿
 using System;
-using System.Windows.Forms;
 
 namespace iS800
 {
@@ -58,7 +59,7 @@ namespace iS800
                 new RT_821_380_conf
                 {
                     MdiParent = this,
-                    StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+                    StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent
                 }.Show();
             }
             catch (Exception ex)

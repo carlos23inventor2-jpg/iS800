@@ -1,10 +1,10 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -12,7 +12,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x020000A6 RID: 166
-	[DesignerGenerated]
 	public partial class LogComunicacao : Form
 	{
 		// Token: 0x06002777 RID: 10103 RVA: 0x004233C8 File Offset: 0x004217C8
@@ -277,7 +276,7 @@ namespace iS800
 		// Token: 0x06002796 RID: 10134 RVA: 0x00423D18 File Offset: 0x00422118
 		private void bt_diretorio_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == 1)
+			if (this.FolderBrowserDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 			{
 				this.tb_diretorio.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Ctrl_Log.diretorio = this.FolderBrowserDialog1.SelectedPath;
@@ -306,7 +305,7 @@ namespace iS800
 					{
 						int num = 0;
 						int num2 = bytesToRead - 1;
-						for (int i = num; i <= num2; i++)
+						for (int i = Convert.ToInt32(num); i <= num2; i++)
 						{
 							byte b = (byte)MyProject.Forms.Plataforma.SerialPort1.ReadByte();
 							Comunicacao.Buffer_Log[Comunicacao.Ctrl_Log.bytes_recv] = b;
@@ -399,7 +398,7 @@ namespace iS800
 						break;
 					case 3:
 					{
-						int num4;
+						int num4 = 0;
 						if (num4 == 1)
 						{
 							byte b = Comunicacao.Buffer_Log[i];
@@ -536,7 +535,7 @@ namespace iS800
 			checked
 			{
 				int num2 = Comunicacao.Ctrl_Log.bytes_recv - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					text2 = text2 + Conversion.Hex(Comunicacao.Buffer_Log[i]) + " ";
 				}

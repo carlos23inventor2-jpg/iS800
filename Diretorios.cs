@@ -1,16 +1,15 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000012 RID: 18
-	[DesignerGenerated]
 	public partial class Diretorios : Form
 	{
 		// Token: 0x060000CB RID: 203 RVA: 0x002653DC File Offset: 0x002637DC
@@ -97,7 +96,7 @@ namespace iS800
 		// Token: 0x060000D6 RID: 214 RVA: 0x0026571C File Offset: 0x00263B1C
 		private void Button_diretorio_dados_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == 1)
+			if (this.FolderBrowserDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 			{
 				this.Nome_diretorio_dados.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Config_sistema.Dir_dados = this.Nome_diretorio_dados.Text;
@@ -117,7 +116,7 @@ namespace iS800
 			string text = FileSystem.CurDir();
 			try
 			{
-				FileSystem.FileOpen(1, text + "\\Sis_ictel_800.ini", 32, 3, -1, -1);
+				FileSystem.FileOpen(1, text + "\\Sis_ictel_800.ini", (OpenMode)32, (OpenAccess)3, (OpenShare)(-1), -1);
 				FileSystem.Lock(1);
 				FileSystem.FilePut(1, Comunicacao.Config_sistema, -1L);
 				FileSystem.Unlock(1);
@@ -128,7 +127,7 @@ namespace iS800
 			}
 			catch (Exception ex)
 			{
-				Interaction.MsgBox("Não foi possível salvar as configurações", 0, null);
+				Interaction.MsgBox("Não foi possível salvar as configurações", MsgBoxStyle.OkOnly, null);
 			}
 		}
 

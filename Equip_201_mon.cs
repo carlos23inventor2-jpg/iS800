@@ -1,9 +1,9 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,7 +11,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000082 RID: 130
-	[DesignerGenerated]
 	public partial class Equip_201_mon : Form
 	{
 		// Token: 0x06001CD4 RID: 7380 RVA: 0x003D346C File Offset: 0x003D186C
@@ -1464,7 +1463,7 @@ namespace iS800
 			this.Grupo_status.Enabled = false;
 			this.Grupo_estatistica.Enabled = false;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
 			this.Comando_le_setpoint.Enabled = false;
 			this.Comando_escreve_setpoint.Enabled = false;
 		}
@@ -1474,7 +1473,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null), "Iniciar", false))
@@ -2088,7 +2087,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Comando_le_setpoint.Enabled = false;
@@ -2102,16 +2101,16 @@ namespace iS800
 			object obj = true;
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
-			if ((checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B1.Text) > Conversion.Val(this.Set_valor_Liga_B1.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B1.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L && (checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B2.Text) > Conversion.Val(this.Set_valor_Liga_B2.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B2.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L && (checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B3.Text) > Conversion.Val(this.Set_valor_Liga_B3.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B3.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L)
+			if ((Conversions.ToDouble(this.Set_valor_Desiga_B1.Text) > Conversion.Val(this.Set_valor_Liga_B1.Text)) && (Conversions.ToDouble(this.Set_valor_Liga_B1.Text) != 0.0) && (Conversions.ToDouble(this.Set_valor_Desiga_B2.Text) > Conversion.Val(this.Set_valor_Liga_B2.Text)) && (Conversions.ToDouble(this.Set_valor_Liga_B2.Text) != 0.0) && (Conversions.ToDouble(this.Set_valor_Desiga_B3.Text) > Conversion.Val(this.Set_valor_Liga_B3.Text)) && (Conversions.ToDouble(this.Set_valor_Liga_B3.Text) != 0.0))
 			{
 				obj = false;
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, true, false))
 			{
-				Interaction.MsgBox("                Verifique o preenchimento dos campos de setpoints.\r\nTodos os campos devem ter valores não nulos e o limite para desligar maior que o para ligar.", 48, null);
+				Interaction.MsgBox("                Verifique o preenchimento dos campos de setpoints.\r\nTodos os campos devem ter valores não nulos e o limite para desligar maior que o para ligar.", MsgBoxStyle.Exclamation, null);
 			}
 			else
 			{

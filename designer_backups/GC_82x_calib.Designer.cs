@@ -115,7 +115,7 @@
 			nud_estacao.Location = location;
 			global::System.Windows.Forms.NumericUpDown nud_estacao2 = this.nud_estacao;
 			decimal maximum;
-			maximum = new maximum(new int[]
+			maximum = new decimal(new int[]
 			{
 				207,
 				0,
@@ -192,7 +192,7 @@
 			location = new location(77, 26);
 			nud_contagens.Location = location;
 			global::System.Windows.Forms.NumericUpDown nud_contagens2 = this.nud_contagens;
-			maximum = new maximum(new int[]
+			maximum = new decimal(new int[]
 			{
 				65535,
 				0,

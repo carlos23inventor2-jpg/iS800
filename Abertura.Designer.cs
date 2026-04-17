@@ -1,3 +1,5 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
 ﻿namespace iS800
 {
 	// Token: 0x02000008 RID: 8
@@ -31,8 +33,8 @@
 			this.ControlBox = false;
 			this.FormBorderStyle = FormBorderStyle.None;
 			this.Name = "Abertura";
-			this.SizeGripStyle = 2;
-			this.StartPosition = FormStartPosition.Manual;
+			this.SizeGripStyle = (SizeGripStyle)2;
+			this.StartPosition = global::System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Abertura";
 			this.ResumeLayout(false);
 		}

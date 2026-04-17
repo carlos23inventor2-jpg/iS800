@@ -1,14 +1,14 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Drawing.Printing;
 using System.Drawing.Text;
 using System.IO;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
@@ -17,7 +17,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000037 RID: 55
-	[DesignerGenerated]
 	public partial class RT_850_conf : Form
 	{
 		// Token: 0x060009BA RID: 2490 RVA: 0x002C7BD8 File Offset: 0x002C5FD8
@@ -3819,24 +3818,24 @@ namespace iS800
 				this.GeraDataGridView_Equipamentos_Vista_RT_850();
 				Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
 				this.dgv_Msg_Alarmes.RowCount = 20;
-				this.TabPage_geral.BackColor = Color.FromKnownColor(8);
-				this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
-				this.TabPage1.BackColor = Color.FromKnownColor(8);
-				this.TabPage1.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_controles.BackColor = Color.FromKnownColor(8);
-				this.TabPage_controles.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_variaveis_RT850.BackColor = Color.FromKnownColor(8);
-				this.TabPage_variaveis_RT850.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_Ctrl_1_controle.BackColor = Color.FromKnownColor(8);
-				this.TabPage_Ctrl_1_controle.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_Ctrl_4_controle.BackColor = Color.FromKnownColor(8);
-				this.TabPage_Ctrl_4_controle.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_Ctrl_8_controle.BackColor = Color.FromKnownColor(8);
-				this.TabPage_Ctrl_8_controle.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_cfg_msg_alarme.BackColor = Color.FromKnownColor(8);
-				this.TabPage_cfg_msg_alarme.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_Vista.BackColor = Color.FromKnownColor(8);
-				this.TabPage_Vista.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage1.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage1.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_controles.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_controles.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_variaveis_RT850.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_variaveis_RT850.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_Ctrl_1_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_Ctrl_1_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_Ctrl_4_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_Ctrl_4_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_Ctrl_8_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_Ctrl_8_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_cfg_msg_alarme.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_cfg_msg_alarme.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_Vista.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_Vista.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
 				string text = ".\\\\Fontes\\\\5x8_LCD_HD44780U_A02_Regular.ttf";
 				if (MyProject.Computer.FileSystem.FileExists(text))
 				{
@@ -3854,8 +3853,8 @@ namespace iS800
 				{
 					PrivateFontCollection privateFontCollection2 = new PrivateFontCollection();
 					privateFontCollection2.AddFontFile(text2);
-					Font font2 = new Font(privateFontCollection2.Families[0], 8f, GraphicsUnit.Pixel);
-					Font font3 = new Font(privateFontCollection2.Families[0], 18f, 2);
+					Font font2 = new Font(privateFontCollection2.Families[0], 8f, (System.Drawing.FontStyle)GraphicsUnit.Pixel);
+					Font font3 = new Font(privateFontCollection2.Families[0], 18f, (System.Drawing.FontStyle)2);
 					this.Label11.Font = font2;
 					this.TextBox_equipamento_RT850.Font = font2;
 					this.TextBox_versao_RT850.Font = font2;
@@ -3887,7 +3886,7 @@ namespace iS800
 		{
 			this.DataGridView_equip_1_RT850.Columns.Clear();
 			this.DataGridView_equip_1_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_equip_1_RT850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+			this.DataGridView_equip_1_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleRight;
 			int num = 0;
 			checked
 			{
@@ -3903,7 +3902,7 @@ namespace iS800
 						DataGridViewTextBoxColumn dataGridViewTextBoxColumn = Linha_RT.CreateTextColumn(Conversions.ToString(num), ref RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas);
 						this.DataGridView_equip_1_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_equip_1_RT850.Columns[num].SortMode = 0;
+					this.DataGridView_equip_1_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 1);
@@ -3938,7 +3937,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4055,7 +4054,7 @@ namespace iS800
 				this.DataGridView_variaveis_RT850.Columns.Clear();
 			}
 			this.DataGridView_variaveis_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_variaveis_RT850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_variaveis_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
 			int num = 0;
 			checked
 			{
@@ -4072,7 +4071,7 @@ namespace iS800
 						DataGridViewTextBoxColumn dataGridViewTextBoxColumn = Linha_RT.CreateTextColumn(num.ToString(), ref RT_geral.RT_850_DataGridView_variaveis);
 						this.DataGridView_variaveis_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_variaveis_RT850.Columns[num].SortMode = 0;
+					this.DataGridView_variaveis_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 12);
@@ -4093,7 +4092,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4245,7 +4244,7 @@ namespace iS800
 		// Token: 0x06000B4A RID: 2890 RVA: 0x002D433C File Offset: 0x002D273C
 		private void Atualiza_DatagridView_Mensagem_Alarme_RT850()
 		{
-			this.dgv_Msg_Alarmes.RowHeadersWidthSizeMode = 2;
+			this.dgv_Msg_Alarmes.RowHeadersWidthSizeMode = (System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode)2;
 			int num = 0;
 			checked
 			{
@@ -4267,7 +4266,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Variaveis_Numero.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string value = RT_geral.Variaveis_RT_850[i].Nome.Valor;
 					this.DataGridView_variaveis_RT850.Rows[i].Cells[0].Value = value;
@@ -4334,7 +4333,7 @@ namespace iS800
 				this.DataGridView_Ctrl_1_RT850.Columns.Clear();
 			}
 			this.DataGridView_Ctrl_1_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_Ctrl_1_RT850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_Ctrl_1_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
 			int num = 0;
 			checked
 			{
@@ -4354,7 +4353,7 @@ namespace iS800
 						}
 						this.DataGridView_Ctrl_1_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_Ctrl_1_RT850.Columns[num].SortMode = 0;
+					this.DataGridView_Ctrl_1_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 15);
@@ -4375,7 +4374,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4648,7 +4647,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_1.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					this.DataGridView_Ctrl_1_RT850.Rows[i].Cells[0].Value = RT_geral.RT_850_Ctrl_1[i].Nome.Valor;
 					string value = RT_geral.RT_850_DataGridView_ctrl_1[1].LinhasMenu[RT_geral.RT_850_Ctrl_1[i].Canal.Indice];
@@ -4704,7 +4703,7 @@ namespace iS800
 				this.DataGridView_Ctrl_4_RT850.Columns.Clear();
 			}
 			this.DataGridView_Ctrl_4_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_Ctrl_4_RT850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_Ctrl_4_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
 			int num = 0;
 			checked
 			{
@@ -4724,7 +4723,7 @@ namespace iS800
 						}
 						this.DataGridView_Ctrl_4_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_Ctrl_4_RT850.Columns[num].SortMode = 0;
+					this.DataGridView_Ctrl_4_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 31);
@@ -4745,7 +4744,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4939,7 +4938,7 @@ namespace iS800
 					}
 					finally
 					{
-						List<perifericos.Periferico>.Enumerator enumerator;
+						List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
 						enumerator.Dispose();
 					}
 					RT_geral.RT_850_DataGridView_ctrl_4[23 + i].LinhasMenu[0] = "----";
@@ -5147,7 +5146,7 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num5 = 0;
 				object obj;
 				try
@@ -5252,7 +5251,7 @@ namespace iS800
 				this.DataGridView_Ctrl_8_RT850.Columns.Clear();
 			}
 			this.DataGridView_Ctrl_8_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_Ctrl_8_RT850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_Ctrl_8_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
 			int num = 0;
 			checked
 			{
@@ -5276,7 +5275,7 @@ namespace iS800
 						}
 						this.DataGridView_Ctrl_8_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_Ctrl_8_RT850.Columns[num].SortMode = 0;
+					this.DataGridView_Ctrl_8_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 51);
@@ -5297,7 +5296,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -5547,7 +5546,7 @@ namespace iS800
 					}
 					finally
 					{
-						List<perifericos.Periferico>.Enumerator enumerator;
+						List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
 						enumerator.Dispose();
 					}
 					RT_geral.RT_850_DataGridView_ctrl_8[43 + i].LinhasMenu[0] = "----";
@@ -5883,7 +5882,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_3.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					this.DataGridView_Ctrl_8_RT850.Rows[i].Cells[0].Value = RT_geral.RT_850_Ctrl_8[i].Nome.Valor;
 					string value = RT_geral.RT_850_DataGridView_ctrl_8[1].LinhasMenu[RT_geral.RT_850_Ctrl_8[i].Canal.Indice];
@@ -5995,7 +5994,7 @@ namespace iS800
 				this.DataGridView_vista_variaveis_RT_850.Columns.Clear();
 			}
 			this.DataGridView_vista_variaveis_RT_850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_vista_variaveis_RT_850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_vista_variaveis_RT_850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
 			int num = 0;
 			checked
 			{
@@ -6015,7 +6014,7 @@ namespace iS800
 						}
 						this.DataGridView_vista_variaveis_RT_850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_vista_variaveis_RT_850.Columns[num].SortMode = 0;
+					this.DataGridView_vista_variaveis_RT_850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 0);
@@ -6043,7 +6042,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -6067,7 +6066,7 @@ namespace iS800
 				{
 					int num = 1;
 					int valor = RT_geral.RT_850_BD.Variaveis_Numero.Valor;
-					for (int i = num; i <= valor; i++)
+					for (int i = Convert.ToInt32(num); i <= valor; i++)
 					{
 						RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LinhasMenu[i] = RT_geral.Variaveis_RT_850[i - 1].Nome.Valor;
 						RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LinhasValor[i] = i;
@@ -6091,7 +6090,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_var.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string value = RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LinhasMenu[RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Variaveis[i].Indice];
 					this.DataGridView_vista_variaveis_RT_850.Rows[i].Cells[0].Value = value;
@@ -6109,7 +6108,7 @@ namespace iS800
 				this.DataGridView_vista_equipamentos_RT_850.Columns.Clear();
 			}
 			this.DataGridView_vista_equipamentos_RT_850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_vista_equipamentos_RT_850.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_vista_equipamentos_RT_850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
 			int num = 0;
 			checked
 			{
@@ -6129,7 +6128,7 @@ namespace iS800
 						}
 						this.DataGridView_vista_equipamentos_RT_850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_vista_equipamentos_RT_850.Columns[num].SortMode = 0;
+					this.DataGridView_vista_equipamentos_RT_850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					num++;
 				}
 				while (num <= 0);
@@ -6157,7 +6156,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -6233,7 +6232,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_equip.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					int indice = RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Equipamentos[i].Indice;
 					int num3 = RT_geral.Localiza_indice_combo(ref RT_geral.RT_850_DataGridView_Equipamentos_Vista[0], indice);
@@ -6954,7 +6953,7 @@ namespace iS800
 			}
 			else if (Operators.CompareString(Strings.Trim(RT_geral.Variaveis_RT_850[checked(linha - 1)].Nome.Valor), "", false) == 0)
 			{
-				Interaction.MsgBox("Variável: " + Conversion.Str(linha) + "\r\nParâmetro: Nome -> não válido", 32, "Atenção - Erro de Configuração");
+				Interaction.MsgBox("Variável: " + Conversion.Str(linha) + "\r\nParâmetro: Nome -> não válido", MsgBoxStyle.Question, "Atenção - Erro de Configuração");
 			}
 			else
 			{
@@ -6966,7 +6965,7 @@ namespace iS800
 		// Token: 0x06000B61 RID: 2913 RVA: 0x002E100C File Offset: 0x002DF40C
 		public void Atualiza_TelaRT850()
 		{
-			int num;
+			int num = 0;
 			int num2 = 0;
 			object obj;
 			try
@@ -7077,23 +7076,23 @@ namespace iS800
 					{
 						this.DataGridView_vista_variaveis_RT_850.Height = 22 + this.DataGridView_vista_variaveis_RT_850.RowTemplate.Height * RT_geral.RT_850_Vista[vista].Num_var.Valor;
 						this.DataGridView_vista_variaveis_RT_850.Width = 212;
-						this.DataGridView_vista_variaveis_RT_850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.None;
+						this.DataGridView_vista_variaveis_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 					}
 					else
 					{
 						this.DataGridView_vista_variaveis_RT_850.Width = 229;
-						this.DataGridView_vista_variaveis_RT_850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.Horizontal;
+						this.DataGridView_vista_variaveis_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
 					}
 					if (RT_geral.RT_850_Vista[vista].Num_equip.Valor < 14)
 					{
 						this.DataGridView_vista_equipamentos_RT_850.Height = 22 + this.DataGridView_vista_equipamentos_RT_850.RowTemplate.Height * RT_geral.RT_850_Vista[vista].Num_equip.Valor;
 						this.DataGridView_vista_equipamentos_RT_850.Width = 212;
-						this.DataGridView_vista_equipamentos_RT_850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.None;
+						this.DataGridView_vista_equipamentos_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 					}
 					else
 					{
 						this.DataGridView_vista_equipamentos_RT_850.Width = 229;
-						this.DataGridView_vista_equipamentos_RT_850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.Horizontal;
+						this.DataGridView_vista_equipamentos_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
 					}
 					this.GeraDataGridView_Variaveis_Vista_RT_850();
 					this.Atualiza_DataGridView_Variaveis_Vista_RT_850();
@@ -7163,7 +7162,7 @@ namespace iS800
 			}
 			finally
 			{
-				List<perifericos.Valores_ComboBox>.Enumerator enumerator;
+				List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
 				enumerator.Dispose();
 			}
 		}
@@ -7176,7 +7175,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Flag_Remota.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					this.cb_remota.Items.Add(RT_geral.RT_850_BD.Flag_Remota.itens[i]);
 				}
@@ -7191,7 +7190,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Flag_Supervisorio.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					this.cb_supervisorio.Items.Add(RT_geral.RT_850_BD.Flag_Supervisorio.itens[i]);
 				}
@@ -7278,7 +7277,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Modelo.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					dado.Items.Add(RT_geral.RT_850_Modelo.itens[i]);
 				}
@@ -7305,12 +7304,12 @@ namespace iS800
 					{
 						this.DataGridView_variaveis_RT850.Height = 36 + this.DataGridView_variaveis_RT850.RowTemplate.Height * RT_geral.RT_850_BD.Variaveis_Numero.Valor;
 						this.DataGridView_variaveis_RT850.Width = 1130;
-						this.DataGridView_variaveis_RT850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.None;
+						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 					}
 					else
 					{
 						this.DataGridView_variaveis_RT850.Width = 1147;
-						this.DataGridView_variaveis_RT850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.Horizontal;
+						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
 					}
 					this.DataGridView_variaveis_RT850.CurrentCell = this.DataGridView_variaveis_RT850[0, RT_geral.RT_850_BD.Variaveis_Numero.Valor - 1];
 					this.DataGridView_variaveis_RT850.BeginEdit(true);
@@ -7333,12 +7332,12 @@ namespace iS800
 					{
 						this.DataGridView_variaveis_RT850.Height = 36 + this.DataGridView_variaveis_RT850.RowTemplate.Height * RT_geral.RT_850_BD.Variaveis_Numero.Valor;
 						this.DataGridView_variaveis_RT850.Width = 1130;
-						this.DataGridView_variaveis_RT850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.None;
+						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 					}
 					else
 					{
 						this.DataGridView_variaveis_RT850.Width = 1147;
-						this.DataGridView_variaveis_RT850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.Horizontal;
+						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
 					}
 				}
 			}
@@ -7347,7 +7346,7 @@ namespace iS800
 		// Token: 0x06000B70 RID: 2928 RVA: 0x002E1FE4 File Offset: 0x002E03E4
 		private void RT_850_conf_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			int num;
+			int num = 0;
 			int num2 = 0;
 			object obj;
 			try
@@ -7542,7 +7541,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_variaveis[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = num;
+				int i = Convert.ToInt32(num);
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_variaveis[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -7616,7 +7615,7 @@ namespace iS800
 			}
 			if (this.DataGridView_variaveis_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_variaveis_RT850.CommitEdit(512);
+				this.DataGridView_variaveis_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -7781,7 +7780,7 @@ namespace iS800
 		{
 			if (this.DataGridView_equip_1_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_equip_1_RT850.CommitEdit(512);
+				this.DataGridView_equip_1_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -7882,7 +7881,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = num;
+				int i = Convert.ToInt32(num);
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -7913,7 +7912,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_1[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3;
+						int num3 = 0;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -7970,7 +7969,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Ctrl_1_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_Ctrl_1_RT850.CommitEdit(512);
+				this.DataGridView_Ctrl_1_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -8155,7 +8154,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = num;
+				int i = Convert.ToInt32(num);
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -8186,7 +8185,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_4[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3;
+						int num3 = 0;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -8296,7 +8295,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Ctrl_4_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_Ctrl_4_RT850.CommitEdit(512);
+				this.DataGridView_Ctrl_4_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -8589,7 +8588,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = num;
+				int i = Convert.ToInt32(num);
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -8620,7 +8619,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_8[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3;
+						int num3 = 0;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -8790,7 +8789,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Ctrl_8_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_Ctrl_8_RT850.CommitEdit(512);
+				this.DataGridView_Ctrl_8_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -8926,7 +8925,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_vista_variaveis_RT_850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_850_DataGridView_Variaveis_Vista[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = num;
+					int i = Convert.ToInt32(num);
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_850_DataGridView_Variaveis_Vista[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -8960,7 +8959,7 @@ namespace iS800
 			}
 			if (this.DataGridView_vista_variaveis_RT_850.IsCurrentCellDirty)
 			{
-				this.DataGridView_vista_variaveis_RT_850.CommitEdit(512);
+				this.DataGridView_vista_variaveis_RT_850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -8988,7 +8987,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_vista_equipamentos_RT_850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_850_DataGridView_Equipamentos_Vista[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = num;
+					int i = Convert.ToInt32(num);
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_850_DataGridView_Equipamentos_Vista[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -9022,7 +9021,7 @@ namespace iS800
 			}
 			if (this.DataGridView_vista_equipamentos_RT_850.IsCurrentCellDirty)
 			{
-				this.DataGridView_vista_equipamentos_RT_850.CommitEdit(512);
+				this.DataGridView_vista_equipamentos_RT_850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -9048,13 +9047,13 @@ namespace iS800
 						{
 							this.DataGridView_variaveis_RT850.Height = 36 + this.DataGridView_variaveis_RT850.RowTemplate.Height * RT_geral.RT_850_BD.Variaveis_Numero.Valor;
 							this.DataGridView_variaveis_RT850.Width = 1130;
-							this.DataGridView_variaveis_RT850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.None;
+							this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 						}
 						else
 						{
 							this.DataGridView_variaveis_RT850.Height = 36 + 15 * this.DataGridView_variaveis_RT850.RowTemplate.Height;
 							this.DataGridView_variaveis_RT850.Width = 1147;
-							this.DataGridView_variaveis_RT850.ScrollBars = System.Windows.Forms.System.Windows.Forms.DataGridViewScrollBars.Horizontal;
+							this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
 						}
 					}
 				}
@@ -9585,7 +9584,7 @@ namespace iS800
 		// Token: 0x06000B97 RID: 2967 RVA: 0x002E8690 File Offset: 0x002E6A90
 		private void ToolStripButton_RT850_Abrir_Click(object sender, EventArgs e)
 		{
-			int num;
+			int num = 0;
 			int num2 = 0;
 			object obj;
 			try
@@ -9597,7 +9596,7 @@ namespace iS800
 				this.ControleAtivacaoTeclas(1);
 				this.OpenFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg850";
 				this.OpenFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
-				if (this.OpenFileDialog_RT850.ShowDialog() == 1)
+				if (this.OpenFileDialog_RT850.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
 					if (Operators.CompareString(this.OpenFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -9691,7 +9690,7 @@ namespace iS800
 				}
 				goto IL_4B7;
 				IL_452:
-				Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 				this.Timer_limpa_MSG_RT850.Enabled = true;
 				goto IL_4B7;
 				IL_472:
@@ -9947,7 +9946,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Variaveis_Numero.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("VARIAVEIS_{0}", i + 1);
 					RT_geral.Variaveis_RT_850[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("? {0}", i + 1));
@@ -9981,7 +9980,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("VARIAVEIS_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10059,7 +10058,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_1.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO1_{0}", i + 1);
 					RT_geral.RT_850_Ctrl_1[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("? {0}", i + 1));
@@ -10104,7 +10103,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO1_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10147,7 +10146,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_2.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					object obj = string.Format("CONTROLE_TIPO2_{0}", i + 1);
 					RT_geral.RT_850_Ctrl_4[i].Nome.Valor = iniFile.ReadText(Conversions.ToString(obj), "NOME", string.Format("? {0}", i + 1));
@@ -10202,7 +10201,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO2_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10254,7 +10253,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_3.Valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO3_{0}", i + 1);
 					RT_geral.RT_850_Ctrl_8[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("? {0}", i + 1));
@@ -10317,7 +10316,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO3_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10375,7 +10374,7 @@ namespace iS800
 			int valor = RT_geral.RT_850_BD.Numero_equip_tipo_vista.Valor;
 			checked
 			{
-				for (int i = num; i <= valor; i++)
+				for (int i = Convert.ToInt32(num); i <= valor; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO_VISTA_{0}", i + 1);
 					RT_geral.RT_850_Vista[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("Vista???{0}", i + 1));
@@ -10417,7 +10416,7 @@ namespace iS800
 			int num2 = valor;
 			checked
 			{
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO_VISTA_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10507,7 +10506,7 @@ namespace iS800
 		// Token: 0x06000BBC RID: 3004 RVA: 0x002EB3BC File Offset: 0x002E97BC
 		private void ToolStripButton_RT850_Salvar_Click(object sender, EventArgs e)
 		{
-			int num;
+			int num = 0;
 			int num2 = 0;
 			object obj;
 			try
@@ -10520,7 +10519,7 @@ namespace iS800
 				this.InicializaBarraProgressoTela_RT850(15);
 				this.SaveFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg850";
 				this.SaveFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT850.ShowDialog() == 1)
+				if (this.SaveFileDialog_RT850.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
 					if (Operators.CompareString(this.SaveFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -10631,7 +10630,7 @@ namespace iS800
 				}
 				goto IL_4D3;
 				IL_46E:
-				Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 				this.Timer_limpa_MSG_RT850.Enabled = true;
 				goto IL_4D3;
 				IL_48E:
@@ -10665,7 +10664,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 				}
 			}
 			else if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -10676,7 +10675,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -10694,7 +10693,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 				}
 			}
 			else if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -10705,7 +10704,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -11239,7 +11238,7 @@ namespace iS800
 		// Token: 0x06000BC3 RID: 3011 RVA: 0x002EC7E4 File Offset: 0x002EABE4
 		private void TextBox_msg_inicial_RT850_TextChanged(object sender, EventArgs e)
 		{
-			int num;
+			int num = 0;
 			int num2 = 0;
 			object obj;
 			try
@@ -11575,12 +11574,12 @@ namespace iS800
 		[MethodImpl(72)]
 		private bool DesenhaRelatorioRT821Grupo1(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("Times New Roman", 14f, FontStyle.Regular, GraphicsUnit.Point);
-			Font font5 = new Font("Times New Roman", 14f, FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
+			Font font4 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font5 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -11756,12 +11755,12 @@ namespace iS800
 		// Token: 0x06000BDA RID: 3034 RVA: 0x002EE014 File Offset: 0x002EC414
 		private bool DesenhaRelatorioRT821Grupo2e3(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, FontStyle.Bold, GraphicsUnit.Point);
-			Font valor = new Font("Calibri", 8f, FontStyle.Regular, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
+			Font valor = new Font("Calibri", 8f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool flag = false;
 			int num = 5;
@@ -12246,12 +12245,12 @@ namespace iS800
 		// Token: 0x06000BDB RID: 3035 RVA: 0x002EEFE8 File Offset: 0x002ED3E8
 		private bool DesenhaRelatorioRT821Grupo4e5(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, FontStyle.Regular, GraphicsUnit.Point);
-			Font valor = new Font("Calibri", 8f, FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font valor = new Font("Calibri", 8f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool flag = false;
 			int num = 5;
@@ -12659,12 +12658,12 @@ namespace iS800
 		// Token: 0x06000BDC RID: 3036 RVA: 0x002EFC9C File Offset: 0x002EE09C
 		private bool DesenhaRelatorioRT821Grupo6e7e8e9(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, FontStyle.Regular, GraphicsUnit.Point);
-			Font valor = new Font("Calibri", 8f, FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font valor = new Font("Calibri", 8f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool flag = false;
 			int num = 5;
@@ -13240,11 +13239,11 @@ namespace iS800
 		// Token: 0x06000BDD RID: 3037 RVA: 0x002F0DF0 File Offset: 0x002EF1F0
 		private bool DesenhaRelatorioRT821Grupo10(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool result = true;
 			FontesTabela fonte2;
@@ -13298,11 +13297,11 @@ namespace iS800
 		// Token: 0x06000BDE RID: 3038 RVA: 0x002F1020 File Offset: 0x002EF420
 		private bool DesenhaRelatorioRT821Grupo11(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
 			Pen pen = new Pen(Color.Black, 2f);
 			int linhaInicial = 5;
 			FontesTabela fonte2;
@@ -13361,7 +13360,7 @@ namespace iS800
 				};
 				if (this.grupo_impressao == 11)
 				{
-					int num2;
+					int num2 = 0;
 					if (RT_geral.RT_850_BD.Numero_equip_tipo_vista.Valor == 0)
 					{
 						num2 = 0;
@@ -13423,7 +13422,7 @@ namespace iS800
 						tabelaLinhaInteria.EscreveValorLinha(0, RT_geral.RT_850_Vista[i].Num_equip.Valor.ToString(), array[6] + 70);
 						int num5 = 0;
 						int num6 = RT_geral.RT_850_Vista[i].Num_var.Valor - 1;
-						int num8;
+						int num8 = 0;
 						for (int j = num5; j <= num6; j++)
 						{
 							int num7 = j % 10;
@@ -13580,7 +13579,7 @@ namespace iS800
 		{
 			if (this.dgv_Msg_Alarmes.IsCurrentCellDirty)
 			{
-				this.dgv_Msg_Alarmes.CommitEdit(512);
+				this.dgv_Msg_Alarmes.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 

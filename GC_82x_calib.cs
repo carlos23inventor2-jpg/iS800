@@ -1,16 +1,15 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000039 RID: 57
-	[DesignerGenerated]
 	public partial class GC_82x_calib : Form
 	{
 		// Token: 0x06000BF0 RID: 3056 RVA: 0x002F1C08 File Offset: 0x002F0008
@@ -940,7 +939,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -975,7 +974,7 @@ namespace iS800
 		private int Leitura_EnderecoEstacao()
 		{
 			this.AtualizaMsgTela_GC_82x("Buscando Endereço", 2);
-			int result;
+			int result = 0;
 			if (!Mod_MD.Leitura_pagina(2048, 255, 1).Status)
 			{
 				this.AtualizaMsgTela_GC_82x("Equipamento não responde", 1);
@@ -1008,7 +1007,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 			this.nud_estacao.Value = new decimal(this.Leitura_EnderecoEstacao());
 		}
@@ -1032,7 +1031,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -1055,7 +1054,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 

@@ -1,11 +1,11 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
@@ -14,7 +14,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000011 RID: 17
-	[DesignerGenerated]
 	public partial class Configuracao : Form
 	{
 		// Token: 0x0600008D RID: 141 RVA: 0x0026374C File Offset: 0x00261B4C
@@ -494,7 +493,7 @@ namespace iS800
 			}
 			IniFileWriteFast iniFileWriteFast = new IniFileWriteFast(text2);
 			iniFileWriteFast.WriteSection("Interfaces");
-			iniFileWriteFast.WriteKey("quantas", OpenMode.Random);
+			iniFileWriteFast.WriteKey("quantas", (int)OpenMode.Random);
 			iniFileWriteFast.WriteKey("interface1", "Serial RS232");
 			iniFileWriteFast.WriteKey("interface2", "Ethernet TCP/IP RS232");
 			iniFileWriteFast.WriteKey("interface3", "ICTEL WIFI RS232");
@@ -543,7 +542,7 @@ namespace iS800
 		{
 			checked
 			{
-				Point point;
+				Point point = new Point();
 				point.X = MyProject.Forms.Plataforma.Location.X + 200;
 				point.Y = MyProject.Forms.Plataforma.Location.Y + 50;
 				this.cb_tipo_interface.Items.Clear();
@@ -560,7 +559,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator<string> enumerator;
+					IEnumerator<string> enumerator = null;
 					if (enumerator != null)
 					{
 						enumerator.Dispose();

@@ -1,3 +1,5 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿namespace iS800
 {
 	// Token: 0x02000012 RID: 18
@@ -32,41 +34,35 @@
 			this.Nome_diretorio_dados = new global::System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			global::System.Windows.Forms.Control button_diretorio_dados = this.Button_diretorio_dados;
-			global::System.Drawing.Point location;
-			location = new global::System.Drawing.Point(463, 39);
-			button_diretorio_dados.Location = location;
+			button_diretorio_dados.Location = new global::System.Drawing.Point(463, 39);
 			this.Button_diretorio_dados.Name = "Button_diretorio_dados";
 			global::System.Windows.Forms.Control button_diretorio_dados2 = this.Button_diretorio_dados;
-			global::System.Drawing.Size size;
-			size = new global::System.Drawing.Size(33, 23);
-			button_diretorio_dados2.Size = size;
+			button_diretorio_dados2.Size = new global::System.Drawing.Size(33, 23);
 			this.Button_diretorio_dados.TabIndex = 5;
 			this.Button_diretorio_dados.UseVisualStyleBackColor = true;
 			this.Label_nome_diretorio_dados.AutoSize = true;
 			global::System.Windows.Forms.Control label_nome_diretorio_dados = this.Label_nome_diretorio_dados;
-			location = new location(25, 23);
-			label_nome_diretorio_dados.Location = location;
+label_nome_diretorio_dados.Location = new global::System.Drawing.Point(25, 23);
 			this.Label_nome_diretorio_dados.Name = "Label_nome_diretorio_dados";
 			global::System.Windows.Forms.Control label_nome_diretorio_dados2 = this.Label_nome_diretorio_dados;
-			size = new size(93, 13);
-			label_nome_diretorio_dados2.Size = size;
+			Size = new System.Drawing.Size(93, 13);
+			label_nome_diretorio_dados2.Size = this.Size;
 			this.Label_nome_diretorio_dados.TabIndex = 4;
 			this.Label_nome_diretorio_dados.Text = "Diretório de dados";
 			global::System.Windows.Forms.Control nome_diretorio_dados = this.Nome_diretorio_dados;
-			location = new location(25, 41);
-			nome_diretorio_dados.Location = location;
+nome_diretorio_dados.Location = new global::System.Drawing.Point(25, 41);
 			this.Nome_diretorio_dados.Name = "Nome_diretorio_dados";
 			this.Nome_diretorio_dados.ReadOnly = true;
 			global::System.Windows.Forms.Control nome_diretorio_dados2 = this.Nome_diretorio_dados;
-			size = new size(432, 20);
-			nome_diretorio_dados2.Size = size;
+			Size = new System.Drawing.Size(432, 20);
+			nome_diretorio_dados2.Size = this.Size;
 			this.Nome_diretorio_dados.TabIndex = 3;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
 			this.AutoScaleMode = AutoScaleMode.Font;
-			size = new size(524, 97);
-			this.ClientSize = size;
+			Size = new System.Drawing.Size(524, 97);
+			this.ClientSize = Size;
 			this.Controls.Add(this.Button_diretorio_dados);
 			this.Controls.Add(this.Label_nome_diretorio_dados);
 			this.Controls.Add(this.Nome_diretorio_dados);

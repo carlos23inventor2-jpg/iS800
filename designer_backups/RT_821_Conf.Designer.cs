@@ -290,7 +290,7 @@
 			numericUpDown_IntervaloTX.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_IntervaloTX2 = this.NumericUpDown_IntervaloTX;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200000,
 				0,
@@ -348,7 +348,7 @@
 			this.TextBox_comentarios_RT821.MaxLength = 400;
 			this.TextBox_comentarios_RT821.Multiline = true;
 			this.TextBox_comentarios_RT821.Name = "TextBox_comentarios_RT821";
-			this.TextBox_comentarios_RT821.ScrollBars = 2;
+			this.TextBox_comentarios_RT821.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)2;
 			global::System.Windows.Forms.Control textBox_comentarios_RT2 = this.TextBox_comentarios_RT821;
 			size = new size(454, 101);
 			textBox_comentarios_RT2.Size = size;
@@ -613,7 +613,7 @@
 			this.Label18.TabIndex = 6;
 			this.Label18.Text = "Baud Rate COM1:";
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT = this.NumericUpDown_temp_ptt_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -625,7 +625,7 @@
 			location = new location(204, 83);
 			numericUpDown_temp_ptt_RT2.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT3 = this.NumericUpDown_temp_ptt_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -634,7 +634,7 @@
 			});
 			numericUpDown_temp_ptt_RT3.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT4 = this.NumericUpDown_temp_ptt_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				100,
 				0,
@@ -649,7 +649,7 @@
 			this.NumericUpDown_temp_ptt_RT821.TabIndex = 2;
 			this.NumericUpDown_temp_ptt_RT821.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT6 = this.NumericUpDown_temp_ptt_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				100,
 				0,
@@ -661,7 +661,7 @@
 			location = new location(204, 29);
 			numericUpDown_end_mestre_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_mestre_RT2 = this.NumericUpDown_end_mestre_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -679,7 +679,7 @@
 			location = new location(204, 57);
 			numericUpDown_end_est_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_est_RT2 = this.NumericUpDown_end_est_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -754,38 +754,38 @@
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_MotoresSimultaneos_RT_821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
 			this.DataGridView_MotoresSimultaneos_RT_821.CellBorderStyle = 4;
-			dataGridViewCellStyle2.Alignment = 16;
+			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle2.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = 1;
+			dataGridViewCellStyle2.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_MotoresSimultaneos_RT_821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.DataGridView_MotoresSimultaneos_RT_821.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle3.Alignment = 16;
+			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = 2;
+			dataGridViewCellStyle3.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_MotoresSimultaneos_RT_821.DefaultCellStyle = dataGridViewCellStyle3;
 			global::System.Windows.Forms.Control dataGridView_MotoresSimultaneos_RT_ = this.DataGridView_MotoresSimultaneos_RT_821;
 			location = new location(13, 18);
 			dataGridView_MotoresSimultaneos_RT_.Location = location;
 			this.DataGridView_MotoresSimultaneos_RT_821.Name = "DataGridView_MotoresSimultaneos_RT_821";
 			this.DataGridView_MotoresSimultaneos_RT_821.RowHeadersBorderStyle = 1;
-			dataGridViewCellStyle4.Alignment = 16;
+			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle4.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle4.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = 1;
+			dataGridViewCellStyle4.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_MotoresSimultaneos_RT_821.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.DataGridView_MotoresSimultaneos_RT_821.RowHeadersVisible = false;
-			this.DataGridView_MotoresSimultaneos_RT_821.ScrollBars = 1;
+			this.DataGridView_MotoresSimultaneos_RT_821.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)1;
 			global::System.Windows.Forms.Control dataGridView_MotoresSimultaneos_RT_2 = this.DataGridView_MotoresSimultaneos_RT_821;
 			size = new size(224, 58);
 			dataGridView_MotoresSimultaneos_RT_2.Size = size;
@@ -807,37 +807,37 @@
 			dataGridViewCellStyle5.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_processo_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
 			this.DataGridView_processo_RT821.CellBorderStyle = 4;
-			dataGridViewCellStyle6.Alignment = 16;
+			dataGridViewCellStyle6.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle6.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle6.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle6.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle6.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle6.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle6.WrapMode = 1;
+			dataGridViewCellStyle6.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_processo_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.DataGridView_processo_RT821.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle7.Alignment = 16;
+			dataGridViewCellStyle7.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle7.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle7.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle7.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle7.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle7.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle7.WrapMode = 2;
+			dataGridViewCellStyle7.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_processo_RT821.DefaultCellStyle = dataGridViewCellStyle7;
 			global::System.Windows.Forms.Control dataGridView_processo_RT = this.DataGridView_processo_RT821;
 			location = new location(13, 16);
 			dataGridView_processo_RT.Location = location;
 			this.DataGridView_processo_RT821.Name = "DataGridView_processo_RT821";
 			this.DataGridView_processo_RT821.RowHeadersBorderStyle = 1;
-			dataGridViewCellStyle8.Alignment = 16;
+			dataGridViewCellStyle8.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle8.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle8.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle8.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle8.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle8.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle8.WrapMode = 1;
+			dataGridViewCellStyle8.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_processo_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-			this.DataGridView_processo_RT821.ScrollBars = 1;
+			this.DataGridView_processo_RT821.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)1;
 			global::System.Windows.Forms.Control dataGridView_processo_RT2 = this.DataGridView_processo_RT821;
 			size = new size(752, 102);
 			dataGridView_processo_RT2.Size = size;
@@ -880,36 +880,36 @@
 			dataGridViewCellStyle9.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_parametros_EA_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
 			this.DataGridView_parametros_EA_RT821.CellBorderStyle = 4;
-			dataGridViewCellStyle10.Alignment = 16;
+			dataGridViewCellStyle10.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle10.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle10.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle10.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle10.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle10.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle10.WrapMode = 1;
+			dataGridViewCellStyle10.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_parametros_EA_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
 			this.DataGridView_parametros_EA_RT821.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle11.Alignment = 16;
+			dataGridViewCellStyle11.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle11.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle11.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle11.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle11.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle11.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle11.WrapMode = 2;
+			dataGridViewCellStyle11.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_parametros_EA_RT821.DefaultCellStyle = dataGridViewCellStyle11;
 			global::System.Windows.Forms.Control dataGridView_parametros_EA_RT = this.DataGridView_parametros_EA_RT821;
 			location = new location(18, 24);
 			dataGridView_parametros_EA_RT.Location = location;
 			this.DataGridView_parametros_EA_RT821.Name = "DataGridView_parametros_EA_RT821";
-			dataGridViewCellStyle12.Alignment = 16;
+			dataGridViewCellStyle12.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle12.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle12.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle12.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle12.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle12.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle12.WrapMode = 1;
+			dataGridViewCellStyle12.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_parametros_EA_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-			this.DataGridView_parametros_EA_RT821.ScrollBars = 0;
+			this.DataGridView_parametros_EA_RT821.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dataGridView_parametros_EA_RT2 = this.DataGridView_parametros_EA_RT821;
 			size = new size(342, 111);
 			dataGridView_parametros_EA_RT2.Size = size;
@@ -937,7 +937,7 @@
 			this.GroupBox_EA_RT821.TabStop = false;
 			this.GroupBox_EA_RT821.Text = "Filtro";
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_filtro_RT = this.NumericUpDown_intervalo_filtro_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -949,7 +949,7 @@
 			location = new location(115, 29);
 			numericUpDown_intervalo_filtro_RT2.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_filtro_RT3 = this.NumericUpDown_intervalo_filtro_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				100000,
 				0,
@@ -967,7 +967,7 @@
 			location = new location(115, 53);
 			numericUpDown_tamanho_filtro_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_tamanho_filtro_RT2 = this.NumericUpDown_tamanho_filtro_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -1032,34 +1032,34 @@
 			this.DataGridView_RT821_ED.AllowUserToResizeRows = false;
 			dataGridViewCellStyle13.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_RT821_ED.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-			dataGridViewCellStyle14.Alignment = 16;
+			dataGridViewCellStyle14.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle14.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle14.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle14.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle14.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle14.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle14.WrapMode = 1;
+			dataGridViewCellStyle14.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_RT821_ED.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
 			this.DataGridView_RT821_ED.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle15.Alignment = 16;
+			dataGridViewCellStyle15.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle15.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle15.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle15.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle15.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle15.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle15.WrapMode = 2;
+			dataGridViewCellStyle15.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_RT821_ED.DefaultCellStyle = dataGridViewCellStyle15;
 			global::System.Windows.Forms.Control dataGridView_RT821_ED = this.DataGridView_RT821_ED;
 			location = new location(19, 25);
 			dataGridView_RT821_ED.Location = location;
 			this.DataGridView_RT821_ED.Name = "DataGridView_RT821_ED";
-			dataGridViewCellStyle16.Alignment = 16;
+			dataGridViewCellStyle16.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle16.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle16.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle16.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle16.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle16.WrapMode = 1;
+			dataGridViewCellStyle16.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_RT821_ED.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
 			global::System.Windows.Forms.Control dataGridView_RT821_ED2 = this.DataGridView_RT821_ED;
 			size = new size(282, 200);
@@ -1103,34 +1103,34 @@
 			this.DataGridView_setpoints_RT821.AllowUserToResizeRows = false;
 			dataGridViewCellStyle17.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_setpoints_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-			dataGridViewCellStyle18.Alignment = 16;
+			dataGridViewCellStyle18.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle18.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle18.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle18.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle18.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle18.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle18.WrapMode = 1;
+			dataGridViewCellStyle18.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_setpoints_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
 			this.DataGridView_setpoints_RT821.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle19.Alignment = 16;
+			dataGridViewCellStyle19.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle19.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle19.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle19.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle19.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle19.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle19.WrapMode = 2;
+			dataGridViewCellStyle19.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_setpoints_RT821.DefaultCellStyle = dataGridViewCellStyle19;
 			global::System.Windows.Forms.Control dataGridView_setpoints_RT = this.DataGridView_setpoints_RT821;
 			location = new location(15, 19);
 			dataGridView_setpoints_RT.Location = location;
 			this.DataGridView_setpoints_RT821.Name = "DataGridView_setpoints_RT821";
-			dataGridViewCellStyle20.Alignment = 16;
+			dataGridViewCellStyle20.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle20.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle20.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle20.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle20.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle20.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle20.WrapMode = 1;
+			dataGridViewCellStyle20.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_setpoints_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
 			global::System.Windows.Forms.Control dataGridView_setpoints_RT2 = this.DataGridView_setpoints_RT821;
 			size = new size(362, 89);
@@ -1171,37 +1171,37 @@
 			this.DataGridView_end_rep_RT821.AllowUserToAddRows = false;
 			dataGridViewCellStyle21.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_end_rep_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
-			dataGridViewCellStyle22.Alignment = 16;
+			dataGridViewCellStyle22.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle22.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle22.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle22.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle22.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle22.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle22.WrapMode = 1;
+			dataGridViewCellStyle22.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_end_rep_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
 			this.DataGridView_end_rep_RT821.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle23.Alignment = 16;
+			dataGridViewCellStyle23.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle23.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle23.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle23.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle23.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle23.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle23.WrapMode = 2;
+			dataGridViewCellStyle23.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_end_rep_RT821.DefaultCellStyle = dataGridViewCellStyle23;
 			global::System.Windows.Forms.Control dataGridView_end_rep_RT = this.DataGridView_end_rep_RT821;
 			location = new location(17, 19);
 			dataGridView_end_rep_RT.Location = location;
 			this.DataGridView_end_rep_RT821.Name = "DataGridView_end_rep_RT821";
-			dataGridViewCellStyle24.Alignment = 16;
+			dataGridViewCellStyle24.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle24.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle24.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle24.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle24.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle24.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle24.WrapMode = 1;
+			dataGridViewCellStyle24.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_end_rep_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
 			this.DataGridView_end_rep_RT821.RowHeadersVisible = false;
-			this.DataGridView_end_rep_RT821.ScrollBars = 0;
+			this.DataGridView_end_rep_RT821.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dataGridView_end_rep_RT2 = this.DataGridView_end_rep_RT821;
 			size = new size(577, 243);
 			dataGridView_end_rep_RT2.Size = size;
@@ -1246,7 +1246,7 @@
 			location = new location(175, 75);
 			numericUpDown_num_est_rep_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_est_rep_RT2 = this.NumericUpDown_num_est_rep_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				50,
 				0,
@@ -1264,7 +1264,7 @@
 			location = new location(175, 50);
 			numericUpDown_end_rep_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_rep_RT2 = this.NumericUpDown_end_rep_RT821;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -1337,34 +1337,34 @@
 			this.DataGridView_visor_RT_821.AllowUserToResizeRows = false;
 			dataGridViewCellStyle25.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_visor_RT_821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
-			dataGridViewCellStyle26.Alignment = 16;
+			dataGridViewCellStyle26.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle26.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle26.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle26.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle26.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle26.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle26.WrapMode = 1;
+			dataGridViewCellStyle26.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_visor_RT_821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
 			this.DataGridView_visor_RT_821.ColumnHeadersHeightSizeMode = 2;
-			dataGridViewCellStyle27.Alignment = 16;
+			dataGridViewCellStyle27.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle27.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle27.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle27.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle27.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle27.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle27.WrapMode = 2;
+			dataGridViewCellStyle27.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_visor_RT_821.DefaultCellStyle = dataGridViewCellStyle27;
 			global::System.Windows.Forms.Control dataGridView_visor_RT_ = this.DataGridView_visor_RT_821;
 			location = new location(15, 19);
 			dataGridView_visor_RT_.Location = location;
 			this.DataGridView_visor_RT_821.Name = "DataGridView_visor_RT_821";
-			dataGridViewCellStyle28.Alignment = 16;
+			dataGridViewCellStyle28.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle28.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle28.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle28.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle28.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle28.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle28.WrapMode = 1;
+			dataGridViewCellStyle28.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_visor_RT_821.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
 			global::System.Windows.Forms.Control dataGridView_visor_RT_2 = this.DataGridView_visor_RT_821;
 			size = new size(392, 200);
@@ -1741,7 +1741,7 @@
 				this.ToolStripTextBox_RT821_Msg,
 				this.ToolStripProgressBar_RT821
 			});
-			this.ToolStri_RT821.LayoutStyle = 3;
+			this.ToolStri_RT821.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT2 = this.ToolStri_RT821;
 			location = new location(0, 0);
 			toolStri_RT2.Location = location;
@@ -1753,7 +1753,7 @@
 			this.ToolStri_RT821.TabIndex = 9;
 			this.ToolStri_RT821.Text = "ToolStrip1";
 			this.ToolStripButton_RT821_novo.AutoToolTip = false;
-			this.ToolStripButton_RT821_novo.DisplayStyle = 2;
+			this.ToolStripButton_RT821_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT821_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT821_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_novo = this.ToolStripButton_RT821_novo;
@@ -1766,7 +1766,7 @@
 			this.ToolStripButton_RT821_novo.Text = "Novo";
 			this.ToolStripButton_RT821_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT821_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT821_Abrir.DisplayStyle = 2;
+			this.ToolStripButton_RT821_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT821_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT821_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT821_Abrir.Name = "ToolStripButton_RT821_Abrir";
@@ -1776,7 +1776,7 @@
 			this.ToolStripButton_RT821_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT821_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT821_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT821_Salvar.DisplayStyle = 2;
+			this.ToolStripButton_RT821_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT821_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT821_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT821_Salvar.Name = "ToolStripButton_RT821_Salvar";
@@ -1793,7 +1793,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT821_Download.DisplayStyle = 2;
+			this.ToolStripButton_RT821_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT821_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT821_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Download = this.ToolStripButton_RT821_Download;
@@ -1804,7 +1804,7 @@
 			size = new size(52, 52);
 			toolStripButton_RT821_Download2.Size = size;
 			this.ToolStripButton_RT821_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT821_Upload.DisplayStyle = 2;
+			this.ToolStripButton_RT821_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT821_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT821_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT821_Upload.Name = "ToolStripButton_RT821_Upload";
@@ -1820,7 +1820,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT821_Imprimir.DisplayStyle = 2;
+			this.ToolStripButton_RT821_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT821_Imprimir.Image = (global::System.Drawing.Image)componentResourceManager.GetObject("ToolStripButton_RT821_Imprimir.Image");
 			this.ToolStripButton_RT821_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT821_Imprimir.Name = "ToolStripButton_RT821_Imprimir";

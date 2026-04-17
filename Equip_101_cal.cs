@@ -1,16 +1,15 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x0200007E RID: 126
-	[DesignerGenerated]
 	public partial class Equip_101_cal : Form
 	{
 		// Token: 0x06001A68 RID: 6760 RVA: 0x003C10D4 File Offset: 0x003BF4D4
@@ -1304,7 +1303,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Comando_hab_cal.Enabled = false;
@@ -1349,7 +1348,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Controle_tecla_101_cal(2);
@@ -1379,7 +1378,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Controle_tecla_101_cal(2);

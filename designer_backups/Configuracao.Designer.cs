@@ -193,7 +193,7 @@
 			numericUpDown_retry.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_retry2 = this.NumericUpDown_retry;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				5,
 				0,
@@ -202,7 +202,7 @@
 			});
 			numericUpDown_retry2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_retry3 = this.NumericUpDown_retry;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -217,7 +217,7 @@
 			this.NumericUpDown_retry.TabIndex = 1;
 			this.NumericUpDown_retry.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_retry5 = this.NumericUpDown_retry;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,

@@ -10,7 +10,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000087 RID: 135
-	[DesignerGenerated]
 	public partial class Equip_302_conf : Form
 	{
 		// Token: 0x0600219C RID: 8604 RVA: 0x003F6B80 File Offset: 0x003F4F80
@@ -2088,7 +2087,7 @@ namespace iS800
 			int num_MAX_RE = Mod_MD.NUM_MAX_RE;
 			checked
 			{
-				for (int i = num; i <= num_MAX_RE; i++)
+				for (int i = Convert.ToInt32(num); i <= num_MAX_RE; i++)
 				{
 					Mod_MD.Central_302_res[i].Altura = 0;
 					Mod_MD.Central_302_res[i].Msg = 0;
@@ -2249,7 +2248,7 @@ namespace iS800
 			};
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.DataGridView_central_geral.CurrentCell = null;
@@ -2707,8 +2706,8 @@ namespace iS800
 		// Token: 0x06002278 RID: 8824 RVA: 0x003FD988 File Offset: 0x003FBD88
 		private void DataGridView_central_res_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -2797,8 +2796,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num2;
-				int num8;
+				int num2 = 0;
+				int num8 = 0;
 				object obj;
 				try
 				{
@@ -2834,7 +2833,7 @@ namespace iS800
 							this.DataGridView_central_res.Columns.Add(text + Conversion.Str(i), text2 + Conversion.Str(i));
 							DataGridViewColumn dataGridViewColumn = this.DataGridView_central_res.Columns[text + Conversion.Str(i)];
 							dataGridViewColumn.Width = 55;
-							dataGridViewColumn.SortMode = 0;
+							dataGridViewColumn.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 						}
 					}
 					int end_ini_equip_vista = Mod_MD.Central_302_geral.End_ini_equip_vista;
@@ -2967,7 +2966,7 @@ namespace iS800
 						this.DataGridView_central_rq.Columns.Add(text + Conversion.Str(i), text2 + Conversion.Str(i));
 						DataGridViewColumn dataGridViewColumn = this.DataGridView_central_rq.Columns[text + Conversion.Str(i)];
 						dataGridViewColumn.Width = 55;
-						dataGridViewColumn.SortMode = 0;
+						dataGridViewColumn.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 					}
 				}
 				int end_ini_equip_vista = Mod_MD.Central_302_geral.End_ini_equip_vista;
@@ -3064,8 +3063,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
+				int num = 0;
+				int num2 = 0;
 				object obj;
 				try
 				{
@@ -3174,7 +3173,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.DataGridView_central_geral.CurrentCell = null;
@@ -3403,26 +3402,26 @@ namespace iS800
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.OpenFileDialog1.ShowDialog() == 1)
+				if (this.OpenFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", 1);
+					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", (CompareMethod)1);
 					string text = Strings.Left(this.OpenFileDialog1.FileName, num);
 					if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_302_geral);
-						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, num);
+						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num2 = 1;
 						ValueType valueType = Mod_MD.Central_302_geral;
 						FileSystem.FileGet(num2, ref valueType, -1L);
 						ValueType valueType2 = valueType;
-						Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL dados_EQUIP_MD_302_CONFIG_GERAL;
+						Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL dados_EQUIP_MD_302_CONFIG_GERAL = default(Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL);
 						Mod_MD.Central_302_geral = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL)valueType2) : dados_EQUIP_MD_302_CONFIG_GERAL);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V322", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V322", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num3 = 1;
 						Array array = Mod_MD.Central_302_res;
 						FileSystem.FileGet(num3, ref array, -1L, false, false);
@@ -3432,7 +3431,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V323", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V323", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num4 = 1;
 						array = Mod_MD.Central_302_rq;
 						FileSystem.FileGet(num4, ref array, -1L, false, false);
@@ -3442,7 +3441,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_centrais[1]) * Mod_MD.NUM_MAX_VISTA + 50;
-						FileSystem.FileOpen(1, text + "V324", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V324", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num5 = 1;
 						array = Mod_MD.Central_302_centrais;
 						FileSystem.FileGet(num5, ref array, -1L, false, false);
@@ -3452,7 +3451,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_indices[1, 1]) * 5 * 150 + 700;
-						FileSystem.FileOpen(1, text + "V325", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V325", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num6 = 1;
 						array = Mod_MD.Central_302_indices;
 						FileSystem.FileGet(num6, ref array, -1L, false, false);
@@ -3482,42 +3481,42 @@ namespace iS800
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.SaveFileDialog1.ShowDialog() == 1)
+				if (this.SaveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", 1);
+					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", (CompareMethod)1);
 					string text = Strings.Left(this.SaveFileDialog1.FileName, num);
 					if (Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_302_geral);
-						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, num);
+						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_geral, -1L);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V322", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V322", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_res, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V323", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V323", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_rq, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_centrais[1]) * Mod_MD.NUM_MAX_VISTA + 50;
-						FileSystem.FileOpen(1, text + "V324", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V324", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_centrais, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_indices[1, 1]) * 5 * 150 + 700;
-						FileSystem.FileOpen(1, text + "V325", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V325", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_indices, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{

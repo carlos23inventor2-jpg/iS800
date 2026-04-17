@@ -1,5 +1,6 @@
-﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
+﻿using System;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -289,7 +290,7 @@ namespace iS800
 			checked
 			{
 				int num2 = var.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					string text = var.itens[i].ToString();
 					combo.Items.Add(text);

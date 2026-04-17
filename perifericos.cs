@@ -1,3 +1,5 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -199,7 +201,7 @@ namespace iS800
 			checked
 			{
 				int num2 = lista.Count - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					if (lista[i].is_default)
 					{
@@ -224,7 +226,7 @@ namespace iS800
 			checked
 			{
 				int num2 = lista.Count - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					if (lista[i].valor == valor)
 					{
@@ -243,8 +245,8 @@ namespace iS800
 			checked
 			{
 				int num2 = lista.Count - 1;
-				int num3;
-				for (int i = num; i <= num2; i++)
+				int num3 = 0;
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					if (lista[i].valor == valor)
 					{
@@ -252,7 +254,7 @@ namespace iS800
 						num3 = i;
 					}
 				}
-				int result;
+				int result = 0;
 				if (flag)
 				{
 					result = num3;

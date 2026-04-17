@@ -1,3 +1,5 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
 ﻿namespace iS800
 {
 	// Token: 0x020000A7 RID: 167
@@ -34,16 +36,12 @@
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
-			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, 3, 0);
+			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			global::System.Windows.Forms.Control label = this.Label5;
-			global::System.Drawing.Point location;
-			location = new global::System.Drawing.Point(35, 95);
-			label.Location = location;
+			label.Location = new global::System.Drawing.Point(35, 95);
 			this.Label5.Name = "Label5";
 			global::System.Windows.Forms.Control label2 = this.Label5;
-			global::System.Drawing.Size size;
-			size = new global::System.Drawing.Size(58, 21);
-			label2.Size = size;
+			label2.Size = new global::System.Drawing.Size(58, 21);
 			this.Label5.TabIndex = 2;
 			this.Label5.Text = "Versão";
 			this.Label5.Visible = false;
@@ -53,12 +51,12 @@
 			this.AutoScaleMode = AutoScaleMode.Font;
 			this.BackColor = global::System.Drawing.Color.White;
 			this.BackgroundImage = global::iS800.My.Resources.Resources.Fundo_ICTEL;
-			size = new size(729, 350);
-			this.ClientSize = size;
+			Size = new System.Drawing.Size(729, 350);
+			this.ClientSize = Size;
 			this.Controls.Add(this.Label5);
 			this.FormBorderStyle = FormBorderStyle.None;
 			this.Name = "Logo";
-			this.StartPosition = FormStartPosition.CenterScreen;
+			this.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Logo";
 			this.ResumeLayout(false);
 			this.PerformLayout();

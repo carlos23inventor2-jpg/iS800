@@ -16,7 +16,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000055 RID: 85
-	[DesignerGenerated]
 	public partial class RT_821_Conf : Form
 	{
 		// Token: 0x060018F9 RID: 6393 RVA: 0x003AFBFC File Offset: 0x003ADFFC
@@ -2411,29 +2410,29 @@ namespace iS800
 				Linha_RT.CarregaCombo(ref comboBox, RT_geral.RT_821_BD.baudrate_com2);
 				this.cb_baudrate_com2 = comboBox;
 				Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-				this.TabPage_geral.BackColor = Color.FromKnownColor(8);
-				this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_controles.BackColor = Color.FromKnownColor(8);
-				this.TabPage_controles.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_EA.BackColor = Color.FromKnownColor(8);
-				this.TabPage_EA.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_ED.BackColor = Color.FromKnownColor(8);
-				this.TabPage_ED.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_setpoints.BackColor = Color.FromKnownColor(8);
-				this.TabPage_setpoints.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_repetidora.BackColor = Color.FromKnownColor(8);
-				this.TabPage_repetidora.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_Display.BackColor = Color.FromKnownColor(8);
-				this.TabPage_Display.ForeColor = Color.FromKnownColor(10);
-				this.TabPage_DadosInstalacao.BackColor = Color.FromKnownColor(8);
-				this.TabPage_DadosInstalacao.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_controles.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_controles.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_EA.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_EA.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_ED.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_ED.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_setpoints.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_setpoints.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_repetidora.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_repetidora.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_Display.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_Display.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_DadosInstalacao.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+				this.TabPage_DadosInstalacao.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
 				string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 				if (MyProject.Computer.FileSystem.FileExists(text))
 				{
 					PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 					privateFontCollection.AddFontFile(text);
-					Font font = new Font(privateFontCollection.Families[0], 8f, 2);
-					Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
+					Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
+					Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
 					this.Label26.Font = font;
 					this.TextBox_equipamento_RT821.Font = font;
 					this.TextBox_versao_RT821.Font = font;
@@ -2818,7 +2817,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -3011,7 +3010,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -3045,7 +3044,7 @@ namespace iS800
 		{
 			this.DataGridView_end_rep_RT821.Columns.Clear();
 			this.DataGridView_end_rep_RT821.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_end_rep_RT821.DefaultCellStyle.Alignment = 64;
+			this.DataGridView_end_rep_RT821.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
 			int num = 0;
 			checked
 			{
@@ -3134,7 +3133,7 @@ namespace iS800
 		{
 			this.DataGridView_setpoints_RT821.Columns.Clear();
 			this.DataGridView_setpoints_RT821.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_setpoints_RT821.DefaultCellStyle.Alignment = 64;
+			this.DataGridView_setpoints_RT821.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
 			int num = 0;
 			checked
 			{
@@ -3170,7 +3169,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -3227,7 +3226,7 @@ namespace iS800
 		{
 			this.DataGridView_RT821_ED.Columns.Clear();
 			this.DataGridView_RT821_ED.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_RT821_ED.DefaultCellStyle.Alignment = 64;
+			this.DataGridView_RT821_ED.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
 			int num = 0;
 			checked
 			{
@@ -3263,7 +3262,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -3312,7 +3311,7 @@ namespace iS800
 		{
 			this.DataGridView_visor_RT_821.Columns.Clear();
 			this.DataGridView_visor_RT_821.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_visor_RT_821.DefaultCellStyle.Alignment = 64;
+			this.DataGridView_visor_RT_821.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
 			int num = 0;
 			checked
 			{
@@ -3360,7 +3359,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -3407,8 +3406,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
+				int num = 0;
+				int num3 = 0;
 				object obj;
 				try
 				{
@@ -3684,7 +3683,7 @@ namespace iS800
 		{
 			if (this.DataGridView_processo_RT821.IsCurrentCellDirty)
 			{
-				this.DataGridView_processo_RT821.CommitEdit(512);
+				this.DataGridView_processo_RT821.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -3767,7 +3766,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_821_DataGrigViewProcessosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = num;
+				int i = Convert.ToInt32(num);
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_821_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -3836,7 +3835,7 @@ namespace iS800
 		{
 			if (this.DataGridView_MotoresSimultaneos_RT_821.IsCurrentCellDirty)
 			{
-				this.DataGridView_MotoresSimultaneos_RT_821.CommitEdit(512);
+				this.DataGridView_MotoresSimultaneos_RT_821.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -3868,7 +3867,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_MotoresSimultaneos_RT_821.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_821_DataGrigMotoresSimultaneosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = num;
+					int i = Convert.ToInt32(num);
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_821_DataGrigMotoresSimultaneosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -3901,7 +3900,7 @@ namespace iS800
 		{
 			if (this.DataGridView_parametros_EA_RT821.IsCurrentCellDirty)
 			{
-				this.DataGridView_parametros_EA_RT821.CommitEdit(512);
+				this.DataGridView_parametros_EA_RT821.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -3975,7 +3974,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_RT821_ED.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_821_DataGrigViewEDColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = num;
+					int i = Convert.ToInt32(num);
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_821_DataGrigViewEDColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -4010,7 +4009,7 @@ namespace iS800
 		{
 			if (this.DataGridView_RT821_ED.IsCurrentCellDirty)
 			{
-				this.DataGridView_RT821_ED.CommitEdit(512);
+				this.DataGridView_RT821_ED.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -4019,7 +4018,7 @@ namespace iS800
 		{
 			if (this.DataGridView_setpoints_RT821.IsCurrentCellDirty)
 			{
-				this.DataGridView_setpoints_RT821.CommitEdit(512);
+				this.DataGridView_setpoints_RT821.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -4061,7 +4060,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_setpoints_RT821.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_821_DataGrigViewSetpointsColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = num;
+					int i = Convert.ToInt32(num);
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_821_DataGrigViewSetpointsColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -4099,7 +4098,7 @@ namespace iS800
 		{
 			if (this.DataGridView_end_rep_RT821.IsCurrentCellDirty)
 			{
-				this.DataGridView_end_rep_RT821.CommitEdit(512);
+				this.DataGridView_end_rep_RT821.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -4191,7 +4190,7 @@ namespace iS800
 		{
 			if (this.DataGridView_visor_RT_821.IsCurrentCellDirty)
 			{
-				this.DataGridView_visor_RT_821.CommitEdit(512);
+				this.DataGridView_visor_RT_821.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -4346,8 +4345,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
+				int num = 0;
+				int num3 = 0;
 				object obj;
 				try
 				{
@@ -4361,7 +4360,7 @@ namespace iS800
 					this.ToolStripButton_RT821_Upload.Enabled = false;
 					this.OpenFileDialog_RT821.Filter = "Arquivo de configuração de equipamento|*.Cfg821";
 					this.OpenFileDialog_RT821.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT821.ShowDialog() == 1)
+					if (this.OpenFileDialog_RT821.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 					{
 						if (Operators.CompareString(this.OpenFileDialog_RT821.FileName, "", false) != 0)
 						{
@@ -4520,7 +4519,7 @@ namespace iS800
 					}
 					goto IL_BD7;
 					IL_B72:
-					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG_RT821.Enabled = true;
 					goto IL_BD7;
 					IL_B92:
@@ -4546,7 +4545,7 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num12;
 				object obj;
 				try
@@ -4694,7 +4693,7 @@ namespace iS800
 					}
 					this.SaveFileDialog_RT821.Filter = "Arquivo de configuração de equipamento|*.Cfg821";
 					this.SaveFileDialog_RT821.InitialDirectory = Linha_RT.diretorio;
-					if (this.SaveFileDialog_RT821.ShowDialog() == 1)
+					if (this.SaveFileDialog_RT821.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 					{
 						if (Operators.CompareString(this.SaveFileDialog_RT821.FileName, "", false) != 0)
 						{
@@ -4861,7 +4860,7 @@ namespace iS800
 					}
 					goto IL_F87;
 					IL_F22:
-					Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG_RT821.Enabled = true;
 					goto IL_F87;
 					IL_F42:
@@ -4895,7 +4894,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 				}
 			}
 			else if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -4906,7 +4905,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -5207,10 +5206,10 @@ namespace iS800
 		// Token: 0x06001A38 RID: 6712 RVA: 0x003BF7F8 File Offset: 0x003BDBF8
 		private void DesenhaRelatorioRT821Pagina2(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -5444,10 +5443,10 @@ namespace iS800
 		[MethodImpl(72)]
 		private void DesenhaRelatorioRT821Pagina1(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;

@@ -195,7 +195,7 @@
 			this.Grupo_parametros_radio.Text = "Parâmetros do Rádio";
 			global::System.Windows.Forms.NumericUpDown valor_Range_Refresh = this.Valor_Range_Refresh;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -207,7 +207,7 @@
 			location = new location(187, 198);
 			valor_Range_Refresh2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_Range_Refresh3 = this.Valor_Range_Refresh;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -222,7 +222,7 @@
 			this.Valor_Range_Refresh.TabIndex = 20;
 			this.Valor_Range_Refresh.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_Stop_Bit_Delay = this.Valor_Stop_Bit_Delay;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -234,7 +234,7 @@
 			location = new location(187, 174);
 			valor_Stop_Bit_Delay2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_Stop_Bit_Delay3 = this.Valor_Stop_Bit_Delay;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -249,7 +249,7 @@
 			this.Valor_Stop_Bit_Delay.TabIndex = 20;
 			this.Valor_Stop_Bit_Delay.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_Broadcast_Attempts = this.Valor_Broadcast_Attempts;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -261,7 +261,7 @@
 			location = new location(187, 150);
 			valor_Broadcast_Attempts2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_Broadcast_Attempts3 = this.Valor_Broadcast_Attempts;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -279,7 +279,7 @@
 			location = new location(187, 126);
 			valor_transmit_retries.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_transmit_retries2 = this.Valor_transmit_retries;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -297,7 +297,7 @@
 			location = new location(187, 102);
 			valor_cts_on_hysteresis.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_cts_on_hysteresis2 = this.Valor_cts_on_hysteresis;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -325,7 +325,7 @@
 			location = new location(187, 78);
 			valor_cts_on.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_cts_on2 = this.Valor_cts_on;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -360,7 +360,7 @@
 			this.Label_Broadcast_Attempts.TabIndex = 19;
 			this.Label_Broadcast_Attempts.Text = "Broadcast Attempts :";
 			global::System.Windows.Forms.NumericUpDown valor_packed_size = this.Valor_packed_size;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -372,7 +372,7 @@
 			location = new location(187, 54);
 			valor_packed_size2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_packed_size3 = this.Valor_packed_size;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -437,7 +437,7 @@
 			this.Label_interface_timeout.TabIndex = 18;
 			this.Label_interface_timeout.Text = "Interface Timeout :";
 			global::System.Windows.Forms.NumericUpDown valor_interface_timeout = this.Valor_interface_timeout;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -449,7 +449,7 @@
 			location = new location(187, 30);
 			valor_interface_timeout2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_interface_timeout3 = this.Valor_interface_timeout;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -485,7 +485,7 @@
 			this.Grupo_parametros_rf.TabStop = false;
 			this.Grupo_parametros_rf.Text = "Parâmetros de RF";
 			global::System.Windows.Forms.NumericUpDown valor_Sync_to_Channel = this.Valor_Sync_to_Channel;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -497,7 +497,7 @@
 			location = new location(187, 76);
 			valor_Sync_to_Channel2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_Sync_to_Channel3 = this.Valor_Sync_to_Channel;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				54,
 				0,
@@ -522,7 +522,7 @@
 			this.Label_Sync_to_Channel.TabIndex = 22;
 			this.Label_Sync_to_Channel.Text = "Sync to Channel :";
 			global::System.Windows.Forms.NumericUpDown valor_System_ID = this.Valor_System_ID;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -534,7 +534,7 @@
 			location = new location(187, 125);
 			valor_System_ID2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_System_ID3 = this.Valor_System_ID;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				255,
 				0,
@@ -559,7 +559,7 @@
 			this.Label_System_ID.TabIndex = 22;
 			this.Label_System_ID.Text = "System ID :";
 			global::System.Windows.Forms.NumericUpDown valor_RF_Channel_Number = this.Valor_RF_Channel_Number;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				0,
 				0,
@@ -571,7 +571,7 @@
 			location = new location(187, 52);
 			valor_RF_Channel_Number2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_RF_Channel_Number3 = this.Valor_RF_Channel_Number;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				47,
 				0,

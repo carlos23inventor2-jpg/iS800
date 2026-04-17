@@ -1,16 +1,15 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000088 RID: 136
-	[DesignerGenerated]
 	public partial class Equip_303_conf : Form
 	{
 		// Token: 0x06002284 RID: 8836 RVA: 0x003FF24C File Offset: 0x003FD64C
@@ -1089,7 +1088,7 @@ namespace iS800
 			int num_MAX_RE = Mod_MD.NUM_MAX_RE;
 			checked
 			{
-				for (int i = num; i <= num_MAX_RE; i++)
+				for (int i = Convert.ToInt32(num); i <= num_MAX_RE; i++)
 				{
 					Mod_MD.Central_303_res[i].Msg = 0;
 				}
@@ -1312,7 +1311,7 @@ namespace iS800
 			};
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.DataGridView_RE_303.CurrentCell = null;
@@ -1361,7 +1360,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.DataGridView_RE_303.CurrentCell = null;
@@ -1804,26 +1803,26 @@ namespace iS800
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.OpenFileDialog1.ShowDialog() == 1)
+				if (this.OpenFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", 1);
+					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", (CompareMethod)1);
 					string text = Strings.Left(this.OpenFileDialog1.FileName, num);
 					if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_303_geral);
-						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, num);
+						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num2 = 1;
 						ValueType valueType = Mod_MD.Central_303_geral;
 						FileSystem.FileGet(num2, ref valueType, -1L);
 						ValueType valueType2 = valueType;
-						Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL dados_EQUIP_MD_303_CONFIG_GERAL;
+						Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL dados_EQUIP_MD_303_CONFIG_GERAL = default(Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL);
 						Mod_MD.Central_303_geral = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL)valueType2) : dados_EQUIP_MD_303_CONFIG_GERAL);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V332", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V332", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num3 = 1;
 						Array array = Mod_MD.Central_303_res;
 						FileSystem.FileGet(num3, ref array, -1L, false, false);
@@ -1833,7 +1832,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V333", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V333", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num4 = 1;
 						array = Mod_MD.Central_303_rq;
 						FileSystem.FileGet(num4, ref array, -1L, false, false);
@@ -1859,28 +1858,28 @@ namespace iS800
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.SaveFileDialog1.ShowDialog() == 1)
+				if (this.SaveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", 1);
+					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", (CompareMethod)1);
 					string text = Strings.Left(this.SaveFileDialog1.FileName, num);
 					if (Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_303_geral);
-						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, num);
+						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_303_geral, -1L);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V332", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V332", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_303_res, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V333", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V333", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_303_rq, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{

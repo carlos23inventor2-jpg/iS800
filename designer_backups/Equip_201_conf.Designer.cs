@@ -156,7 +156,7 @@
 			this.grupo_comunicacao.Text = "Parâmetros de Comunicação";
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt = this.Valor_temp_ptt;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -168,7 +168,7 @@
 			location = new location(210, 87);
 			valor_temp_ptt2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt3 = this.Valor_temp_ptt;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -186,7 +186,7 @@
 			location = new location(210, 24);
 			valor_end_mestre.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_mestre2 = this.Valor_end_mestre;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -204,7 +204,7 @@
 			location = new location(210, 54);
 			valor_end_est.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_est2 = this.Valor_end_est;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -268,7 +268,7 @@
 			location = new location(211, 114);
 			valor_num_est_rep.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_num_est_rep2 = this.Valor_num_est_rep;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				50,
 				0,
@@ -286,7 +286,7 @@
 			location = new location(211, 88);
 			valor_end_rep.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_rep2 = this.Valor_end_rep;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -626,7 +626,7 @@
 			location = new location(203, 54);
 			tempo_entre_acionamentos.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_entre_acionamentos2 = this.Tempo_entre_acionamentos;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -644,7 +644,7 @@
 			location = new location(217, 24);
 			numero_motores.Location = location;
 			global::System.Windows.Forms.NumericUpDown numero_motores2 = this.Numero_motores;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				3,
 				0,
@@ -682,7 +682,7 @@
 			location = new location(140, 124);
 			tempo_parada_m.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_parada_m2 = this.Tempo_parada_m3;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -700,7 +700,7 @@
 			location = new location(140, 98);
 			tempo_partida_m.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_partida_m2 = this.Tempo_partida_m3;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -718,7 +718,7 @@
 			location = new location(140, 72);
 			nivel_partida_m.Location = location;
 			global::System.Windows.Forms.NumericUpDown nivel_partida_m2 = this.Nivel_partida_m3;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4000,
 				0,
@@ -736,7 +736,7 @@
 			location = new location(140, 46);
 			nivel_parada_m.Location = location;
 			global::System.Windows.Forms.NumericUpDown nivel_parada_m2 = this.Nivel_parada_m3;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4000,
 				0,
@@ -833,7 +833,7 @@
 			location = new location(140, 124);
 			tempo_parada_m4.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_parada_m5 = this.Tempo_parada_m2;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -851,7 +851,7 @@
 			location = new location(140, 98);
 			tempo_partida_m4.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_partida_m5 = this.Tempo_partida_m2;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -869,7 +869,7 @@
 			location = new location(140, 72);
 			nivel_partida_m4.Location = location;
 			global::System.Windows.Forms.NumericUpDown nivel_partida_m5 = this.Nivel_partida_m2;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4000,
 				0,
@@ -887,7 +887,7 @@
 			location = new location(140, 46);
 			nivel_parada_m4.Location = location;
 			global::System.Windows.Forms.NumericUpDown nivel_parada_m5 = this.Nivel_parada_m2;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4000,
 				0,
@@ -984,7 +984,7 @@
 			location = new location(140, 124);
 			tempo_parada_m7.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_parada_m8 = this.Tempo_parada_m1;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -1002,7 +1002,7 @@
 			location = new location(140, 98);
 			tempo_partida_m7.Location = location;
 			global::System.Windows.Forms.NumericUpDown tempo_partida_m8 = this.Tempo_partida_m1;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -1020,7 +1020,7 @@
 			location = new location(140, 72);
 			nivel_partida_m7.Location = location;
 			global::System.Windows.Forms.NumericUpDown nivel_partida_m8 = this.Nivel_partida_m1;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4000,
 				0,
@@ -1038,7 +1038,7 @@
 			location = new location(140, 46);
 			nivel_parada_m7.Location = location;
 			global::System.Windows.Forms.NumericUpDown nivel_parada_m8 = this.Nivel_parada_m1;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4000,
 				0,
@@ -1173,7 +1173,7 @@
 			this.Ler_conf_md_201.TabIndex = 0;
 			this.Ler_conf_md_201.Text = "Ler configuração";
 			this.Ler_conf_md_201.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock = 2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem

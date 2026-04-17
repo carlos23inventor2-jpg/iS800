@@ -1,3 +1,5 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -190,7 +192,7 @@ namespace iS800
 		{
 			checked
 			{
-				int result;
+				int result = 0;
 				if ((ctrl - 48 & posicao) != 0)
 				{
 					result = dado - 48;

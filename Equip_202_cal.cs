@@ -1,16 +1,15 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000083 RID: 131
-	[DesignerGenerated]
 	public partial class Equip_202_cal : Form
 	{
 		// Token: 0x06001D8F RID: 7567 RVA: 0x003D86EC File Offset: 0x003D6AEC
@@ -2600,7 +2599,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Comando_ler_cal.Enabled = false;
@@ -2832,7 +2831,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Controle_tecla_202_cal(2);
@@ -2855,7 +2854,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Controle_tecla_202_cal(2);
@@ -2878,7 +2877,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21845);
@@ -2895,7 +2894,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21930);

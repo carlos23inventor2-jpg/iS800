@@ -194,7 +194,7 @@
 			valor_intervalo_polling.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_polling2 = this.Valor_intervalo_polling;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -203,7 +203,7 @@
 			});
 			valor_intervalo_polling2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_polling3 = this.Valor_intervalo_polling;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -218,7 +218,7 @@
 			this.Valor_intervalo_polling.TabIndex = 25;
 			this.Valor_intervalo_polling.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_polling5 = this.Valor_intervalo_polling;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -240,7 +240,7 @@
 			location = new location(200, 185);
 			valor_erro_falha.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_erro_falha2 = this.Valor_erro_falha;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -249,7 +249,7 @@
 			});
 			valor_erro_falha2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_erro_falha3 = this.Valor_erro_falha;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -264,7 +264,7 @@
 			this.Valor_erro_falha.TabIndex = 23;
 			this.Valor_erro_falha.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_erro_falha5 = this.Valor_erro_falha;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -286,7 +286,7 @@
 			location = new location(200, 123);
 			valor_timeout.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_timeout2 = this.Valor_timeout;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -330,7 +330,7 @@
 			this.Label_baudrate.TabIndex = 19;
 			this.Label_baudrate.Text = "Baud rate COM 2 :";
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt = this.Valor_temp_ptt;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -342,7 +342,7 @@
 			location = new location(200, 61);
 			valor_temp_ptt2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt3 = this.Valor_temp_ptt;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				32000,
 				0,
@@ -360,7 +360,7 @@
 			location = new location(200, 30);
 			valor_endereco.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_endereco2 = this.Valor_endereco;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -378,7 +378,7 @@
 			location = new location(200, 154);
 			valor_num_tentativas.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_num_tentativas2 = this.Valor_num_tentativas;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -387,7 +387,7 @@
 			});
 			valor_num_tentativas2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_num_tentativas3 = this.Valor_num_tentativas;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -402,7 +402,7 @@
 			this.Valor_num_tentativas.TabIndex = 15;
 			this.Valor_num_tentativas.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_num_tentativas5 = this.Valor_num_tentativas;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -465,7 +465,7 @@
 			global::System.Windows.Forms.Control tabControl2 = this.TabControl2;
 			size = new size(738, 589);
 			tabControl2.Size = size;
-			this.TabControl2.SizeMode = 2;
+			this.TabControl2.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)2;
 			this.TabControl2.TabIndex = 4;
 			this.Conf_res.Controls.Add(this.DataGridView1);
 			global::System.Windows.Forms.TabPage conf_res = this.Conf_res;
@@ -495,25 +495,25 @@
 				this.Col_pri,
 				this.Col_posicao
 			});
-			dataGridViewCellStyle.Alignment = 64;
+			dataGridViewCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle.WrapMode = 2;
+			dataGridViewCellStyle.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle;
 			global::System.Windows.Forms.Control dataGridView = this.DataGridView1;
 			location = new location(3, 0);
 			dataGridView.Location = location;
 			this.DataGridView1.Name = "DataGridView1";
-			dataGridViewCellStyle2.Alignment = 32;
+			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle2.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = 1;
+			dataGridViewCellStyle2.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			global::System.Windows.Forms.Control dataGridView2 = this.DataGridView1;
 			size = new size(375, 560);
@@ -572,25 +572,25 @@
 				this.Col_Esc_15,
 				this.Col_Esc_16
 			});
-			dataGridViewCellStyle3.Alignment = 64;
+			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = 2;
+			dataGridViewCellStyle3.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.False;
 			this.DataGridView_RQ.DefaultCellStyle = dataGridViewCellStyle3;
 			global::System.Windows.Forms.Control dataGridView_RQ = this.DataGridView_RQ;
 			location = new location(3, 3);
 			dataGridView_RQ.Location = location;
 			this.DataGridView_RQ.Name = "DataGridView_RQ";
-			dataGridViewCellStyle4.Alignment = 32;
+			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle4.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle4.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = 1;
+			dataGridViewCellStyle4.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_RQ.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			global::System.Windows.Forms.Control dataGridView_RQ2 = this.DataGridView_RQ;
 			size = new size(721, 546);
@@ -752,7 +752,7 @@
 			location = new location(200, 125);
 			valor_vista_equipamentos.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_vista_equipamentos2 = this.Valor_vista_equipamentos;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				5,
 				0,
@@ -780,7 +780,7 @@
 			location = new location(200, 215);
 			valor_end_ini_vista.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_vista2 = this.Valor_end_ini_vista;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -789,7 +789,7 @@
 			});
 			valor_end_ini_vista2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_vista3 = this.Valor_end_ini_vista;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -804,7 +804,7 @@
 			this.Valor_end_ini_vista.TabIndex = 27;
 			this.Valor_end_ini_vista.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_vista5 = this.Valor_end_ini_vista;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -826,7 +826,7 @@
 			location = new location(200, 185);
 			valor_end_ini_rq.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_rq2 = this.Valor_end_ini_rq;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -835,7 +835,7 @@
 			});
 			valor_end_ini_rq2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_rq3 = this.Valor_end_ini_rq;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -850,7 +850,7 @@
 			this.Valor_end_ini_rq.TabIndex = 25;
 			this.Valor_end_ini_rq.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_rq5 = this.Valor_end_ini_rq;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -872,7 +872,7 @@
 			location = new location(200, 155);
 			valor_end_ini_res.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_res2 = this.Valor_end_ini_res;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -881,7 +881,7 @@
 			});
 			valor_end_ini_res2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_res3 = this.Valor_end_ini_res;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -896,7 +896,7 @@
 			this.Valor_end_ini_res.TabIndex = 23;
 			this.Valor_end_ini_res.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_res5 = this.Valor_end_ini_res;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -918,7 +918,7 @@
 			location = new location(200, 95);
 			valor_rq_equipamentos.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_rq_equipamentos2 = this.Valor_rq_equipamentos;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				28,
 				0,
@@ -946,7 +946,7 @@
 			location = new location(200, 65);
 			valor_res_equipamentos.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_res_equipamentos2 = this.Valor_res_equipamentos;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				40,
 				0,
@@ -974,7 +974,7 @@
 			location = new location(200, 35);
 			valor_res_sistema.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_res_sistema2 = this.Valor_res_sistema;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				60,
 				0,
@@ -1042,7 +1042,7 @@
 			this.Ler_conf_md_302.TabIndex = 3;
 			this.Ler_conf_md_302.Text = "Ler configuração";
 			this.Ler_conf_md_302.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock = 2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem
@@ -1083,7 +1083,7 @@
 			salvarToolStripMenuItem.Size = size;
 			this.SalvarToolStripMenuItem.Text = "Salvar";
 			this.OpenFileDialog1.FileName = "OpenFileDialog1";
-			this.Col_end.AutoSizeMode = 1;
+			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
 			this.Col_end.HeaderText = "Endereço";
 			this.Col_end.Name = "Col_end";
 			this.Col_end.ReadOnly = true;
@@ -1126,7 +1126,7 @@
 			this.Col_posicao.Resizable = 2;
 			this.Col_posicao.SortMode = 0;
 			this.Col_posicao.Width = 70;
-			this.Col_End_rq.AutoSizeMode = 1;
+			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
 			dataGridViewCellStyle11.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_End_rq.DefaultCellStyle = dataGridViewCellStyle11;
 			this.Col_End_rq.Frozen = true;
@@ -1165,7 +1165,7 @@
 			this.Col_RDest_rq.Width = 50;
 			dataGridViewCellStyle15.Format = "N0";
 			this.Col_mod_rq.DefaultCellStyle = dataGridViewCellStyle15;
-			this.Col_mod_rq.DisplayStyle = 0;
+			this.Col_mod_rq.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)0;
 			this.Col_mod_rq.DisplayStyleForCurrentCellOnly = true;
 			this.Col_mod_rq.HeaderText = "Modelo";
 			this.Col_mod_rq.Items.AddRange(new object[]
@@ -1237,7 +1237,7 @@
 			this.Col_MsgR4_rq.Resizable = 2;
 			this.Col_MsgR4_rq.SortMode = 0;
 			this.Col_MsgR4_rq.Width = 50;
-			this.Col_hab.DisplayStyle = 0;
+			this.Col_hab.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)0;
 			this.Col_hab.DisplayStyleForCurrentCellOnly = true;
 			this.Col_hab.HeaderText = "Hab Cmd";
 			this.Col_hab.Items.AddRange(new object[]

@@ -1,3 +1,5 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
 ﻿namespace iS800
 {
 	// Token: 0x020000B0 RID: 176
@@ -32,16 +34,10 @@
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
-			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, 3, 0);
-			global::System.Windows.Forms.Control label = this.Label5;
-			global::System.Drawing.Point location;
-			location = new global::System.Drawing.Point(34, 92);
-			label.Location = location;
+			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3, 0);
+			this.Label5.Location = new global::System.Drawing.Point(34, 92);
 			this.Label5.Name = "Label5";
-			global::System.Windows.Forms.Control label2 = this.Label5;
-			global::System.Drawing.Size size;
-			size = new global::System.Drawing.Size(58, 21);
-			label2.Size = size;
+			this.Label5.Size = new global::System.Drawing.Size(58, 21);
 			this.Label5.TabIndex = 3;
 			this.Label5.Text = "Versão";
 			this.Label5.Visible = false;
@@ -52,15 +48,15 @@
 			this.AutoValidate = AutoValidate.EnableAllowFocusChange;
 			this.BackColor = global::System.Drawing.Color.White;
 			this.BackgroundImage = (global::System.Drawing.Image)componentResourceManager.GetObject("$this.BackgroundImage");
-			size = new size(729, 350);
-			this.ClientSize = size;
+			Size = new System.Drawing.Size(729, 350);
+			this.ClientSize = Size;
 			this.Controls.Add(this.Label5);
-			this.FormBorderStyle = FormBorderStyle.None;
+			this.FormBorderStyle = global::System.Windows.Forms.FormBorderStyle.None;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Sobre";
 			this.ShowInTaskbar = false;
-			this.StartPosition = FormStartPosition.CenterParent;
+			this.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Ictel  - Instrumentação, Controles e Telemetria Ltda";
 			this.ResumeLayout(false);
 			this.PerformLayout();

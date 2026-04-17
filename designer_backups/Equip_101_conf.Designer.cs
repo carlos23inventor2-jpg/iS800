@@ -130,7 +130,7 @@
 			this.grupo_comunicacao.Text = "Parâmetros de Comunicação";
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt = this.Valor_temp_ptt;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -142,7 +142,7 @@
 			location = new location(193, 144);
 			valor_temp_ptt2.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt3 = this.Valor_temp_ptt;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1000,
 				0,
@@ -160,7 +160,7 @@
 			location = new location(193, 115);
 			valor_int_tx.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_int_tx2 = this.Valor_int_tx;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				20100,
 				0,
@@ -178,7 +178,7 @@
 			location = new location(193, 27);
 			valor_end_mestre.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_mestre2 = this.Valor_end_mestre;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -196,7 +196,7 @@
 			location = new location(193, 56);
 			valor_end_est.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_est2 = this.Valor_end_est;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -295,7 +295,7 @@
 			location = new location(191, 173);
 			filtro_tamanho.Location = location;
 			global::System.Windows.Forms.NumericUpDown filtro_tamanho2 = this.Filtro_tamanho;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				5,
 				0,
@@ -304,7 +304,7 @@
 			});
 			filtro_tamanho2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown filtro_tamanho3 = this.Filtro_tamanho;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -319,7 +319,7 @@
 			this.Filtro_tamanho.TabIndex = 16;
 			this.Filtro_tamanho.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown filtro_tamanho5 = this.Filtro_tamanho;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -328,7 +328,7 @@
 			});
 			filtro_tamanho5.Value = num;
 			global::System.Windows.Forms.NumericUpDown filtro_intervalo = this.Filtro_intervalo;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -340,7 +340,7 @@
 			location = new location(191, 144);
 			filtro_intervalo2.Location = location;
 			global::System.Windows.Forms.NumericUpDown filtro_intervalo3 = this.Filtro_intervalo;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10000,
 				0,
@@ -349,7 +349,7 @@
 			});
 			filtro_intervalo3.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown filtro_intervalo4 = this.Filtro_intervalo;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -364,7 +364,7 @@
 			this.Filtro_intervalo.TabIndex = 15;
 			this.Filtro_intervalo.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown filtro_intervalo6 = this.Filtro_intervalo;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -376,7 +376,7 @@
 			location = new location(191, 115);
 			sensor_offset.Location = location;
 			global::System.Windows.Forms.NumericUpDown sensor_offset2 = this.Sensor_offset;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1000,
 				0,
@@ -385,7 +385,7 @@
 			});
 			sensor_offset2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown sensor_offset3 = this.Sensor_offset;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1000,
 				0,
@@ -403,7 +403,7 @@
 			location = new location(191, 86);
 			reservatorio_altura.Location = location;
 			global::System.Windows.Forms.NumericUpDown reservatorio_altura2 = this.Reservatorio_altura;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				5000,
 				0,
@@ -421,7 +421,7 @@
 			location = new location(191, 57);
 			sensor_range.Location = location;
 			global::System.Windows.Forms.NumericUpDown sensor_range2 = this.Sensor_range;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				5000,
 				0,
@@ -524,7 +524,7 @@
 			location = new location(193, 114);
 			valor_num_est_rep.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_num_est_rep2 = this.Valor_num_est_rep;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				50,
 				0,
@@ -542,7 +542,7 @@
 			location = new location(193, 88);
 			valor_end_est_rep.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_end_est_rep2 = this.Valor_end_est_rep;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -874,12 +874,12 @@
 			this.Label_end_rep.TabIndex = 1;
 			this.Label_end_rep.Text = "Endereço da Repetidora :";
 			this.MenuStrip1.BackColor = global::System.Drawing.SystemColors.ButtonFace;
-			this.MenuStrip1.Dock = 2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem
 			});
-			this.MenuStrip1.LayoutStyle = 1;
+			this.MenuStrip1.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)1;
 			global::System.Windows.Forms.Control menuStrip = this.MenuStrip1;
 			location = new location(0, 477);
 			menuStrip.Location = location;

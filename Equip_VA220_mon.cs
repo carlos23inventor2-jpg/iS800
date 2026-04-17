@@ -1,9 +1,9 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,7 +11,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x0200009D RID: 157
-	[DesignerGenerated]
 	public partial class Equip_VA220_mon : Form
 	{
 		// Token: 0x06002538 RID: 9528 RVA: 0x00413CA4 File Offset: 0x004120A4
@@ -418,7 +417,7 @@ namespace iS800
 			int[] dados = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um endereço não válido ", 0, null);
+				Interaction.MsgBox(" Existe um endereço não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -477,7 +476,7 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -526,7 +525,7 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -575,7 +574,7 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -624,7 +623,7 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -673,7 +672,7 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);

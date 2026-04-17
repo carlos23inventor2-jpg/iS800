@@ -1,9 +1,9 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,7 +11,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000089 RID: 137
-	[DesignerGenerated]
 	public partial class Equip_590_conf : Form
 	{
 		// Token: 0x0600230A RID: 8970 RVA: 0x0040386C File Offset: 0x00401C6C
@@ -1837,7 +1836,7 @@ namespace iS800
 			checked
 			{
 				int num2 = tamanho - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					Mod_MD.Tabela_590[i + end_inicial] = (int)Comunicacao.Buffer_resp[i + 3];
 				}
@@ -2592,11 +2591,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.ParityMode = 227;
+				Mod_MD.Parametros_590.ParityMode = (System.IO.Ports.Parity)227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.ParityMode = 255;
+				Mod_MD.Parametros_590.ParityMode = (System.IO.Ports.Parity)255;
 			}
 		}
 

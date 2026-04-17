@@ -1,7 +1,8 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.Net.Sockets;
 using System.Threading;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -241,7 +242,7 @@ namespace iS800
 				if (pag == 100)
 				{
 					string versao = Geral.Config_geral.Versao;
-					int num;
+					int num = 0;
 					if (Operators.CompareString(versao, "820_10", false) == 0)
 					{
 						num = 1;
@@ -664,8 +665,8 @@ namespace iS800
 		public static bool CMD_Esc_MD202_pagina_1(int endereco, int indice)
 		{
 			string versao = Geral.Config_geral.Versao;
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (Operators.CompareString(versao, "820_10", false) == 0)
 			{
 				num = 1;
@@ -795,7 +796,7 @@ namespace iS800
 				{
 					Comunicacao.Buffer_cmd[111] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_1;
 					Comunicacao.Buffer_cmd[112] = (byte)Mod_MD.Recalque_202[indice].Periferico_Tipo_1;
-					int num3;
+					int num3 = 0;
 					if (Comunicacao.Buffer_cmd[112] != 0)
 					{
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
@@ -971,9 +972,9 @@ namespace iS800
 		// Token: 0x060023F8 RID: 9208 RVA: 0x002588D0 File Offset: 0x00256CD0
 		public static bool CMD_Esc_MD302_pagina_2X(int endereco, string indice)
 		{
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			if (Operators.CompareString(indice, "2A", false) == 0)
 			{
 				num = 512;
@@ -1027,10 +1028,10 @@ namespace iS800
 		public static bool CMD_Esc_MD302_pagina_3_4_5_6X(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
-			int num3;
-			int num4;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
+			int num4 = 0;
 			if (Operators.CompareString(indice, "3A", false) == 0)
 			{
 				num = 768;
@@ -1107,7 +1108,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
 				int num5 = 1;
 				int num6 = num4;
-				int num7;
+				int num7 = 0;
 				for (int i = num5; i <= num6; i++)
 				{
 					num7 = (i - 1) * 60;
@@ -1188,10 +1189,10 @@ namespace iS800
 		public static bool CMD_Esc_MD302_pagina_7X(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
-			int num3;
-			int num4;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
+			int num4 = 0;
 			if (Operators.CompareString(indice, "7A", false) == 0)
 			{
 				num = 1792;
@@ -1228,7 +1229,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
 				int num5 = 1;
 				int num6 = num4;
-				int num7;
+				int num7 = 0;
 				for (int i = num5; i <= num6; i++)
 				{
 					num7 = (i - 1) * 86;
@@ -1335,10 +1336,10 @@ namespace iS800
 		public static bool CMD_Esc_MD303_pagina_3_4_5_6X(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
-			int num3;
-			int num4;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
+			int num4 = 0;
 			if (Operators.CompareString(indice, "3A", false) == 0)
 			{
 				num = 768;
@@ -1415,7 +1416,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
 				int num5 = 1;
 				int num6 = num4;
-				int num7;
+				int num7 = 0;
 				for (int i = num5; i <= num6; i++)
 				{
 					num7 = (i - 1) * 38;
@@ -1474,8 +1475,8 @@ namespace iS800
 		public static bool CMD_Esc_MD303_pagina_9(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (Operators.CompareString(indice, "9", false) == 0)
 			{
 				num = 1424;
@@ -4795,7 +4796,7 @@ namespace iS800
 		public const int CONST_END_CONTROL_0 = 69;
 
 		// Token: 0x04001904 RID: 6404
-		public const int CONST_END_TRANSMIT_RETRIES = 76;
+		public const int CONST_END_TRANSMIT_RETRIES = (int)76;
 
 		// Token: 0x04001905 RID: 6405
 		public const int CONST_END_BROADCAST_ATTEMPTS = 77;
@@ -4825,7 +4826,7 @@ namespace iS800
 		public const int CONST_END_MODEM_MODE = 110;
 
 		// Token: 0x0400190E RID: 6414
-		public const int CONST_END_PARITY_MODE = 111;
+		public const int CONST_END_PARITY_MODE = (int)(System.IO.Ports.Parity)111;
 
 		// Token: 0x0400190F RID: 6415
 		public const int CONST_END_485_DE = 127;

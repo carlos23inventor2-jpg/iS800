@@ -253,7 +253,7 @@
 				this.ToolStripTextBox_RT850_Msg,
 				this.ToolStripProgressBar_RT850
 			});
-			this.ToolStri_RT850.LayoutStyle = 3;
+			this.ToolStri_RT850.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT2 = this.ToolStri_RT850;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(0, 0);
@@ -266,7 +266,7 @@
 			this.ToolStri_RT850.TabIndex = 10;
 			this.ToolStri_RT850.Text = "ToolStrip1";
 			this.ToolStripButton_RT850_novo.AutoToolTip = false;
-			this.ToolStripButton_RT850_novo.DisplayStyle = 2;
+			this.ToolStripButton_RT850_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT850_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_novo = this.ToolStripButton_RT850_novo;
@@ -280,7 +280,7 @@
 			this.ToolStripButton_RT850_novo.Text = "Novo";
 			this.ToolStripButton_RT850_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT850_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT850_Abrir.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT850_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Abrir.Name = "ToolStripButton_RT850_Abrir";
@@ -290,7 +290,7 @@
 			this.ToolStripButton_RT850_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT850_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT850_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT850_Salvar.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT850_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Salvar.Name = "ToolStripButton_RT850_Salvar";
@@ -307,7 +307,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT850_Download.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT850_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_Download = this.ToolStripButton_RT850_Download;
@@ -318,7 +318,7 @@
 			size = new size(52, 52);
 			toolStripButton_RT850_Download2.Size = size;
 			this.ToolStripButton_RT850_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT850_Upload.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT850_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Upload.Name = "ToolStripButton_RT850_Upload";
@@ -334,7 +334,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT850_Imprimir.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT850_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Imprimir.Name = "ToolStripButton_RT850_Imprimir";
@@ -438,7 +438,7 @@
 			this.TextBox_comentarios_RT850.MaxLength = 400;
 			this.TextBox_comentarios_RT850.Multiline = true;
 			this.TextBox_comentarios_RT850.Name = "TextBox_comentarios_RT850";
-			this.TextBox_comentarios_RT850.ScrollBars = 2;
+			this.TextBox_comentarios_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)2;
 			global::System.Windows.Forms.Control textBox_comentarios_RT2 = this.TextBox_comentarios_RT850;
 			size = new size(534, 99);
 			textBox_comentarios_RT2.Size = size;
@@ -667,7 +667,7 @@
 			numericUpDown_intervalo_leitura_1_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_leitura_1_RT2 = this.NumericUpDown_intervalo_leitura_1_RT850;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -676,7 +676,7 @@
 			});
 			numericUpDown_intervalo_leitura_1_RT2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_leitura_1_RT3 = this.NumericUpDown_intervalo_leitura_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				2,
 				0,
@@ -691,7 +691,7 @@
 			this.NumericUpDown_intervalo_leitura_1_RT850.TabIndex = 18;
 			this.NumericUpDown_intervalo_leitura_1_RT850.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_leitura_1_RT5 = this.NumericUpDown_intervalo_leitura_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				100,
 				0,
@@ -703,7 +703,7 @@
 			location = new location(189, 24);
 			numericUpDown_end_1_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_1_RT2 = this.NumericUpDown_end_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -712,7 +712,7 @@
 			});
 			numericUpDown_end_1_RT2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_1_RT3 = this.NumericUpDown_end_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				2,
 				0,
@@ -727,7 +727,7 @@
 			this.NumericUpDown_end_1_RT850.TabIndex = 17;
 			this.NumericUpDown_end_1_RT850.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_1_RT5 = this.NumericUpDown_end_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				3,
 				0,
@@ -739,7 +739,7 @@
 			location = new location(189, 193);
 			numericUpDown_num_erro_falha_1_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_erro_falha_1_RT2 = this.NumericUpDown_num_erro_falha_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -748,7 +748,7 @@
 			});
 			numericUpDown_num_erro_falha_1_RT2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_erro_falha_1_RT3 = this.NumericUpDown_num_erro_falha_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -763,7 +763,7 @@
 			this.NumericUpDown_num_erro_falha_1_RT850.TabIndex = 15;
 			this.NumericUpDown_num_erro_falha_1_RT850.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_erro_falha_1_RT5 = this.NumericUpDown_num_erro_falha_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -785,7 +785,7 @@
 			location = new location(189, 165);
 			numericUpDown_num_tentativas_1_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_tentativas_1_RT2 = this.NumericUpDown_num_tentativas_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -800,7 +800,7 @@
 			this.NumericUpDown_num_tentativas_1_RT850.TabIndex = 13;
 			this.NumericUpDown_num_tentativas_1_RT850.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_tentativas_1_RT4 = this.NumericUpDown_num_tentativas_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -819,7 +819,7 @@
 			this.Label_num_tentativas_1_RT850.TabIndex = 14;
 			this.Label_num_tentativas_1_RT850.Text = "Número de tentativas:";
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_1_RT = this.NumericUpDown_temp_ptt_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				10,
 				0,
@@ -831,7 +831,7 @@
 			location = new location(189, 137);
 			numericUpDown_temp_ptt_1_RT2.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_1_RT3 = this.NumericUpDown_temp_ptt_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -840,7 +840,7 @@
 			});
 			numericUpDown_temp_ptt_1_RT3.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_1_RT4 = this.NumericUpDown_temp_ptt_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				100,
 				0,
@@ -855,7 +855,7 @@
 			this.NumericUpDown_temp_ptt_1_RT850.TabIndex = 11;
 			this.NumericUpDown_temp_ptt_1_RT850.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_1_RT6 = this.NumericUpDown_temp_ptt_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				100,
 				0,
@@ -877,7 +877,7 @@
 			location = new location(189, 109);
 			numericUpDown_timeout_1_RT.Location = location;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_timeout_1_RT2 = this.NumericUpDown_timeout_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				70000,
 				0,
@@ -886,7 +886,7 @@
 			});
 			numericUpDown_timeout_1_RT2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_timeout_1_RT3 = this.NumericUpDown_timeout_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				2,
 				0,
@@ -901,7 +901,7 @@
 			this.NumericUpDown_timeout_1_RT850.TabIndex = 9;
 			this.NumericUpDown_timeout_1_RT850.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_timeout_1_RT5 = this.NumericUpDown_timeout_1_RT850;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				3,
 				0,
@@ -1260,13 +1260,13 @@
 			this.DataGridView_Recalques.AllowUserToResizeRows = false;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Recalques.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-			dataGridViewCellStyle3.Alignment = 16;
+			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = 1;
+			dataGridViewCellStyle3.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_Recalques.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.DataGridView_Recalques.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_Recalques.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]

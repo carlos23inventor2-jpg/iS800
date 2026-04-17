@@ -10,7 +10,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x0200009E RID: 158
-	[DesignerGenerated]
 	public partial class Equip_VA220_ope : Form
 	{
 		// Token: 0x06002569 RID: 9577 RVA: 0x00415358 File Offset: 0x00413758
@@ -3382,9 +3381,9 @@ namespace iS800
 		// Token: 0x060026AF RID: 9903 RVA: 0x0041D674 File Offset: 0x0041BA74
 		public string Verifica_horario(string hora, bool ativa_msg)
 		{
-			int num;
+			int num = 0;
 			string text;
-			int num2;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -3397,7 +3396,7 @@ namespace iS800
 				{
 					goto IL_26;
 				}
-				Interaction.MsgBox("Digite um hórario válido", 0, null);
+				Interaction.MsgBox("Digite um hórario válido", MsgBoxStyle.OkOnly, null);
 				IL_26:
 				text = "00:00";
 				goto IL_6F;
@@ -4065,12 +4064,12 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um endereço não válido ", 0, null);
+				Interaction.MsgBox(" Existe um endereço não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Ctrl_relogio.Enabled = false;
 			this.Limpa_tela_ope_VA220();
-			this.Mensagem_ope_VA220("Aguarde ...", OpenMode.Output);
+			this.Mensagem_ope_VA220("Aguarde ...", (int)OpenMode.Output);
 			checked
 			{
 				if (this.CheckBox_setpoints.Checked)
@@ -4090,26 +4089,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_setpoints_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura Setpoints - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Setpoints - Ok", (int)OpenMode.Binary);
 							goto IL_13E;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura setpoints - conferência", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura setpoints - conferência", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura setpoints - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura setpoints - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro leitura setpoints - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro leitura setpoints - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4132,26 +4131,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_alarmes_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura Alarmes - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Alarmes - Ok", (int)OpenMode.Binary);
 							goto IL_20F;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura alarmes - conferência", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura alarmes - conferência", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura alarmes - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura alarmes - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro leitura alarmes - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro leitura alarmes - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4174,26 +4173,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_ponta_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura Horário de Ponta - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Horário de Ponta - Ok", (int)OpenMode.Binary);
 							goto IL_2E0;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro horário de ponta - conferência", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro horário de ponta - conferência", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro horário de ponta - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro horário de ponta - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro horário de ponta - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro horário de ponta - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4216,26 +4215,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_temp_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura setpoints de temperatura - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura setpoints de temperatura - Ok", (int)OpenMode.Binary);
 							goto IL_3B1;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro setpoints de temperatura - conferência", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro setpoints de temperatura - conferência", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro setpoints de temperatura - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro setpoints de temperatura - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro setpoints de temperatura - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro setpoints de temperatura - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4262,7 +4261,7 @@ namespace iS800
 							case 0:
 								Mod_VA.Atualiza_timer_VA220(num);
 								this.Atualiza_tela_ope_VA220();
-								this.Mensagem_ope_VA220("Leitura Timer Bomba " + Conversion.Str(num) + " - Ok", OpenMode.Binary);
+								this.Mensagem_ope_VA220("Leitura Timer Bomba " + Conversion.Str(num) + " - Ok", (int)OpenMode.Binary);
 								goto IL_4DD;
 							case 2:
 								if (i == 0)
@@ -4290,13 +4289,13 @@ namespace iS800
 						}
 					}
 					Block_29:
-					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - timeout", OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - timeout", (int)OpenMode.Input);
 					return;
 					Block_30:
-					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - conferência", OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - conferência", (int)OpenMode.Input);
 					return;
 					Block_31:
-					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - não determinado", OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - não determinado", (int)OpenMode.Input);
 					return;
 				}
 				IL_4E8:
@@ -4317,32 +4316,32 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_relogio_VA220();
 							this.Ctrl_relogio.Enabled = true;
-							this.Mensagem_ope_VA220("Leitura Relogio - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Relogio - Ok", (int)OpenMode.Binary);
 							goto IL_5BF;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro Relogio - conferência", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro Relogio - conferência", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro Relogio - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro Relogio - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro Relogio - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro Relogio - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
 				}
 				IL_5BF:
-				this.Mensagem_ope_VA220("Comando executado com sucesso", OpenMode.Binary);
+				this.Mensagem_ope_VA220("Comando executado com sucesso", (int)OpenMode.Binary);
 			}
 		}
 
@@ -4400,7 +4399,7 @@ namespace iS800
 			int num = 1;
 			checked
 			{
-				int num2;
+				int num2 = 0;
 				do
 				{
 					num2 = 1;
@@ -4569,10 +4568,10 @@ namespace iS800
 			int[] dados = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um endereço não válido ", 0, null);
+				Interaction.MsgBox(" Existe um endereço não válido ", MsgBoxStyle.OkOnly, null);
 				return;
 			}
-			this.Mensagem_ope_VA220("Aguarde ...", OpenMode.Output);
+			this.Mensagem_ope_VA220("Aguarde ...", (int)OpenMode.Output);
 			checked
 			{
 				if (this.CheckBox_setpoints.Checked)
@@ -4591,19 +4590,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Setpoints - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Setpoints - Ok", (int)OpenMode.Binary);
 							goto IL_117;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita setpoints - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita setpoints - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita setpoints - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita setpoints - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4625,19 +4624,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Alarmes - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Alarmes - Ok", (int)OpenMode.Binary);
 							goto IL_1D3;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita alarmes - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita alarmes - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita alarmes - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita alarmes - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4659,19 +4658,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Horário de Ponta - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Horário de Ponta - Ok", (int)OpenMode.Binary);
 							goto IL_28E;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita de ponta - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita de ponta - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita de ponta - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita de ponta - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4693,19 +4692,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita setpoints de temperatura - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita setpoints de temperatura - Ok", (int)OpenMode.Binary);
 							goto IL_349;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
@@ -4730,7 +4729,7 @@ namespace iS800
 							switch (Comunicacao.Ctrl_Com.Frame)
 							{
 							case 0:
-								this.Mensagem_ope_VA220("Escrita Timer Bomba " + Conversion.Str(num) + " - Ok", OpenMode.Binary);
+								this.Mensagem_ope_VA220("Escrita Timer Bomba " + Conversion.Str(num) + " - Ok", (int)OpenMode.Binary);
 								goto IL_447;
 							case 3:
 								if (i == 0)
@@ -4752,10 +4751,10 @@ namespace iS800
 						}
 					}
 					Block_25:
-					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - timeout", OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - timeout", (int)OpenMode.Input);
 					return;
 					Block_26:
-					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - não determinado", OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - não determinado", (int)OpenMode.Input);
 					return;
 				}
 				IL_452:
@@ -4775,25 +4774,25 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Relogio - Ok", OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Relogio - Ok", (int)OpenMode.Binary);
 							goto IL_50D;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro Escrita Relogio - timeout", OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro Escrita Relogio - timeout", (int)OpenMode.Input);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro Escrita Relogio - não determinado", OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro Escrita Relogio - não determinado", (int)OpenMode.Input);
 							return;
 						}
 					}
 				}
 				IL_50D:
-				this.Mensagem_ope_VA220("Comando executado com sucesso", OpenMode.Binary);
+				this.Mensagem_ope_VA220("Comando executado com sucesso", (int)OpenMode.Binary);
 			}
 		}
 

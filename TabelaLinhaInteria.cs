@@ -1,5 +1,6 @@
-﻿using System;
 using System.Drawing;
+using System.Windows.Forms;
+﻿using System;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
@@ -28,15 +29,15 @@ namespace iS800
 			stringFormat.LineAlignment = StringAlignment.Center;
 			if (Operators.CompareString(TitlePos, "L", false) == 0)
 			{
-				stringFormat.Alignment = StringAlignment.Near;
+				stringFormat.Alignment = (System.Drawing.StringAlignment)StringAlignment.Near;
 			}
 			else if (Operators.CompareString(TitlePos, "R", false) == 0)
 			{
-				stringFormat.Alignment = StringAlignment.Far;
+				stringFormat.Alignment = (System.Drawing.StringAlignment)StringAlignment.Far;
 			}
 			else if (Operators.CompareString(TitlePos, "C", false) == 0)
 			{
-				stringFormat.Alignment = StringAlignment.Center;
+				stringFormat.Alignment = (System.Drawing.StringAlignment)StringAlignment.Center;
 			}
 			checked
 			{
@@ -97,7 +98,7 @@ namespace iS800
 			checked
 			{
 				int num2 = this.Pos.Length - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					this.EscreveTituloLinha(linha, titulos[i], this.Pos[i]);
 				}

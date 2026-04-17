@@ -1,12 +1,12 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Drawing.Text;
 using System.IO.Ports;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
@@ -15,7 +15,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x020000AE RID: 174
-	[DesignerGenerated]
 	public partial class Plataforma : Form
 	{
 		// Token: 0x060027F8 RID: 10232 RVA: 0x00424B48 File Offset: 0x00422F48
@@ -2501,8 +2500,8 @@ namespace iS800
 				Comunicacao.Config_sistema.tipo_interface = 1;
 				Comunicacao.Config_sistema.Serial.Baudrate = 3;
 				Comunicacao.Config_sistema.Serial.DataBits = 4;
-				Comunicacao.Config_sistema.Serial.StopBits = StopBits.One;
-				Comunicacao.Config_sistema.Serial.Parity = Parity.None;
+				Comunicacao.Config_sistema.Serial.StopBits =(System.IO.Ports.StopBits) (System.IO.Ports.StopBits)StopBits.One;
+				Comunicacao.Config_sistema.Serial.Parity =(System.IO.Ports.Parity) (System.IO.Ports.Parity)Parity.None;
 				Comunicacao.Config_sistema.Serial.Porta_serial = "COM1";
 				Comunicacao.Config_sistema.Serial.PortaSerialAtiva = false;
 				Comunicacao.Config_sistema.Tcpip.IP = "169.254.75.100";
@@ -2513,15 +2512,15 @@ namespace iS800
 				Comunicacao.Config_sistema.Wifi.PassWord = "12345678";
 				Comunicacao.Config_sistema.Retry = Conversions.ToString(5);
 				Comunicacao.Config_sistema.Dir_dados = ".\\";
-				Interaction.MsgBox("Não foi possível carregar as configurações! Foram utilizadas configurações Padrão!", 16, null);
+				Interaction.MsgBox("Não foi possível carregar as configurações! Foram utilizadas configurações Padrão!", MsgBoxStyle.Critical, null);
 			}
 			else
 			{
 				Comunicacao.Config_sistema.Serial.Porta_serial = iniFile.ReadText("Serial RS232", "porta", "");
 				Comunicacao.Config_sistema.Serial.Baudrate = iniFile.ReadInteger("Serial RS232", "baudrate", 9600);
 				Comunicacao.Config_sistema.Serial.DataBits = iniFile.ReadInteger("Serial RS232", "data_bits", 8);
-				Comunicacao.Config_sistema.Serial.StopBits = iniFile.ReadInteger("Serial RS232", "stop_bits", 0);
-				Comunicacao.Config_sistema.Serial.Parity = iniFile.ReadInteger("Serial RS232", "parity", 0);
+				Comunicacao.Config_sistema.Serial.StopBits =(System.IO.Ports.StopBits) (System.IO.Ports.StopBits)iniFile.ReadInteger("Serial RS232", "stop_bits", 0);
+				Comunicacao.Config_sistema.Serial.Parity =(System.IO.Ports.Parity) (System.IO.Ports.Parity)iniFile.ReadInteger("Serial RS232", "parity", 0);
 				Comunicacao.Config_sistema.Tcpip.IP = iniFile.ReadText("EThernet TCP/IP RS232", "ip", "0.0.0.0");
 				Comunicacao.Config_sistema.Tcpip.Porta = iniFile.ReadInteger("EThernet TCP/IP RS232", "porta", 0);
 				Comunicacao.Config_sistema.Retry = Conversions.ToString(iniFile.ReadInteger("Geral", "retry", 5));
@@ -2603,7 +2602,7 @@ namespace iS800
 				{
 					int num = 0;
 					int num2 = bytesToRead - 1;
-					for (int i = num; i <= num2; i++)
+					for (int i = Convert.ToInt32(num); i <= num2; i++)
 					{
 						Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] = (byte)this.SerialPort1.ReadChar();
 						if (Comunicacao.Ctrl_Com.Cont_rx == 0)
@@ -2695,7 +2694,7 @@ namespace iS800
 				{
 					int num = 0;
 					int num2 = bytesToRead - 1;
-					int i = num;
+					int i = Convert.ToInt32(num);
 					while (i <= num2)
 					{
 						Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] = (byte)this.SerialPort1.ReadChar();
@@ -2770,8 +2769,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
+				int num = 0;
+				int num2 = 0;
 				object obj;
 				try
 				{
@@ -2978,7 +2977,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 108030)
@@ -3002,7 +3001,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 101030)
@@ -3026,7 +3025,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 101020)
@@ -3050,7 +3049,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 102030)
@@ -3074,7 +3073,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 107030)
@@ -3099,7 +3098,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 207030)
@@ -3120,7 +3119,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 102036)
@@ -3144,7 +3143,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 102040)
@@ -3168,7 +3167,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 102020)
@@ -3192,7 +3191,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 103030)
@@ -3216,7 +3215,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 103020)
@@ -3240,7 +3239,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 105020)
@@ -3264,7 +3263,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 106020)
@@ -3288,7 +3287,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 104030)
@@ -3312,7 +3311,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 302030 || num == 302040)
@@ -3336,7 +3335,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 303030)
@@ -3360,7 +3359,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else if (num == 301030)
@@ -3384,7 +3383,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", MsgBoxStyle.OkOnly, null);
 				}
 			}
 			else
@@ -3425,7 +3424,7 @@ namespace iS800
 		// Token: 0x060028E5 RID: 10469 RVA: 0x0042AE2C File Offset: 0x0042922C
 		private void ToolStripButton_serial_Click(object sender, EventArgs e)
 		{
-			MyProject.Forms.Configuracao.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			MyProject.Forms.Configuracao.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterScreen;
 			MyProject.Forms.Configuracao.ShowDialog();
 		}
 
@@ -3501,7 +3500,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 1000;
@@ -3521,7 +3520,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 2000;
@@ -3538,7 +3537,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 3000;
@@ -3568,7 +3567,7 @@ namespace iS800
 				int num2 = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 				int build = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 				int release = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
-				int num3 = num;
+				int num3 = Convert.ToInt32(num);
 				if (num3 == 810 || num3 == 820 || num3 == 821 || num3 == 830 || num3 == 831 || num3 == 850 || num3 == 855 || num3 == 856)
 				{
 					new Discover
@@ -3607,7 +3606,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 5000;
@@ -3624,7 +3623,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 6000;
@@ -3644,7 +3643,7 @@ namespace iS800
 			checked
 			{
 				int num2 = qtd_SA - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					int num3 = (int)Comunicacao.Buffer_resp[buf4mA + i * 2] * 256 + (int)Comunicacao.Buffer_resp[buf4mA + 1 + i * 2];
 					if (num3 == 0)
@@ -3777,7 +3776,7 @@ namespace iS800
 			checked
 			{
 				int num2 = qtd_EA - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					int num3 = (int)Comunicacao.Buffer_resp[buf4mA + i * 2] * 256 + (int)Comunicacao.Buffer_resp[buf4mA + 1 + i * 2];
 					if (num3 == 0)
@@ -4188,7 +4187,7 @@ namespace iS800
 				}
 				endereco = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 				string text = "Equipamento: " + string.Format("RT{0}_{1}_{2}", num, num2 * 100 + num3, num4) + Environment.NewLine + Environment.NewLine;
-				int num6 = num;
+				int num6 = Convert.ToInt32(num);
 				if (num6 == 820)
 				{
 					int num7 = num2;
@@ -4309,7 +4308,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(810, 300);
@@ -4320,7 +4319,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(810, 200);
@@ -4331,7 +4330,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(820, 200);
@@ -4342,7 +4341,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(820, 300);
@@ -4353,7 +4352,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(821, 300);
@@ -4364,7 +4363,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(810, 300);
@@ -4375,7 +4374,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(810, 200);
@@ -4386,7 +4385,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(820, 200);
@@ -4397,7 +4396,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(820, 300);
@@ -4408,7 +4407,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(821, 300);
@@ -4419,7 +4418,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(821, 200);
@@ -4440,7 +4439,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 2000;
@@ -4460,7 +4459,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 3000;
@@ -4480,7 +4479,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 1000;
@@ -4540,7 +4539,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(820, 400);
@@ -4551,7 +4550,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(820, 300);
@@ -4567,7 +4566,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 7000;
@@ -4587,7 +4586,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 7000;
@@ -4607,7 +4606,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 7000;
@@ -4628,7 +4627,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 7000;
@@ -4658,7 +4657,7 @@ namespace iS800
 		private void ToolStripButton1_Click(object sender, EventArgs e)
 		{
 			PrintDialog printDialog = new PrintDialog();
-			if (printDialog.ShowDialog() == 1)
+			if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 			{
 				MessageBox.Show(printDialog.ToString());
 			}
@@ -4669,7 +4668,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.MostaCalibracao420PlacaSA(820, 400);
@@ -4680,7 +4679,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			new RT_820_400_SA_CALIB
@@ -4695,7 +4694,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			Geral.Ctrl_equipamento = 2000;

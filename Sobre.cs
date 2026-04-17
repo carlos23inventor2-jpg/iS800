@@ -1,9 +1,9 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic.CompilerServices;
@@ -57,16 +57,16 @@ namespace iS800
 		private void Sobre_MouseLeave(object sender, EventArgs e)
 		{
 			int num = 5;
-			Point location = this.Location;
+			Point Location = this.Location;
 			Point point = this.Location + this.Size;
 			Point mousePosition = Control.MousePosition;
 			checked
 			{
-				if (mousePosition.X > point.X - num | mousePosition.X < location.X + num)
+				if (mousePosition.X > point.X - num | mousePosition.X < Location.X + num)
 				{
 					this.Close();
 				}
-				if (mousePosition.Y < location.Y + num | mousePosition.Y > point.Y - num)
+				if (mousePosition.Y < Location.Y + num | mousePosition.Y > point.Y - num)
 				{
 					this.Close();
 				}

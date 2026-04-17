@@ -1,9 +1,9 @@
+using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,7 +11,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000085 RID: 133
-	[DesignerGenerated]
 	public partial class Equip_202_mon : Form
 	{
 		// Token: 0x06002072 RID: 8306 RVA: 0x003EDE44 File Offset: 0x003EC244
@@ -2368,7 +2367,7 @@ namespace iS800
 				text += "Utilize canal COM2.";
 				break;
 			}
-			Interaction.MsgBox(text, num, " Atenção - verifique a configuração");
+			Interaction.MsgBox(text, (MsgBoxStyle)num, " Atenção - verifique a configuração");
 			string versao = Geral.Config_geral.Versao;
 			if (Operators.CompareString(versao, "21", false) == 0)
 			{
@@ -2445,7 +2444,7 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_MD202_mon("Leitura Setpoints - Ok", OpenMode.Binary);
+							this.Mensagem_MD202_mon("Leitura Setpoints - Ok", (int)OpenMode.Binary);
 							this.Calcula_Estatistica_202(1);
 							this.Atualiza_setpoint_monitoracao_202();
 							goto IL_177;
@@ -2454,7 +2453,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Setpoints - ChkSum", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Setpoints - ChkSum", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 								this.Limpa_monitoracao_202(2);
 							}
@@ -2466,7 +2465,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Setpoints - Timeout", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Setpoints - Timeout", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 								this.Limpa_monitoracao_202(2);
 							}
@@ -2484,7 +2483,7 @@ namespace iS800
 						IL_13E:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", (int)OpenMode.Input);
 							this.Calcula_Estatistica_202(3);
 							this.Limpa_monitoracao_202(2);
 							goto IL_165;
@@ -2527,7 +2526,7 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_MD202_mon("Leitura Equipamento - Ok", OpenMode.Binary);
+							this.Mensagem_MD202_mon("Leitura Equipamento - Ok", (int)OpenMode.Binary);
 							this.Calcula_Estatistica_202(1);
 							this.Atualiza_status_monitoracao_202();
 							goto IL_379;
@@ -2536,7 +2535,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 								this.Limpa_monitoracao_202(1);
 							}
@@ -2548,7 +2547,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 								this.Limpa_monitoracao_202(1);
 							}
@@ -2566,7 +2565,7 @@ namespace iS800
 						IL_340:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", (int)OpenMode.Input);
 							this.Calcula_Estatistica_202(3);
 							this.Limpa_monitoracao_202(1);
 							goto IL_367;
@@ -2630,7 +2629,7 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_MD202_mon("Escrita Setpoints - Ok", OpenMode.Binary);
+							this.Mensagem_MD202_mon("Escrita Setpoints - Ok", (int)OpenMode.Binary);
 							this.Calcula_Estatistica_202(1);
 							goto IL_8E7;
 						case 1:
@@ -2638,7 +2637,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Escrita Setpoints - ChkSum", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Escrita Setpoints - ChkSum", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 							}
 							else
@@ -2649,7 +2648,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Escrita Setpoints - Timeout", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Escrita Setpoints - Timeout", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 							}
 							else
@@ -2666,7 +2665,7 @@ namespace iS800
 						IL_8B5:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", (int)OpenMode.Input);
 							this.Calcula_Estatistica_202(3);
 							goto IL_8D5;
 						}
@@ -2705,7 +2704,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro ao executar o camando - ChkSum", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro ao executar o camando - ChkSum", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 							}
 							else
@@ -2716,7 +2715,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro ao executar o camando - Timeout", OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro ao executar o camando - Timeout", (int)OpenMode.Input);
 								this.Calcula_Estatistica_202(3);
 							}
 							else
@@ -2733,7 +2732,7 @@ namespace iS800
 						IL_A12:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", (int)OpenMode.Input);
 							this.Calcula_Estatistica_202(3);
 							goto IL_A32;
 						}
@@ -2886,8 +2885,8 @@ namespace iS800
 		{
 			string versao = Geral.Config_geral.Versao;
 			int tipo;
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (Operators.CompareString(versao, "50", false) == 0)
 			{
 				tipo = 2;
@@ -3173,7 +3172,7 @@ namespace iS800
 			{
 				if (!Geral.Config_geral.Porta_serial_Ok)
 				{
-					Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+					Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 					return;
 				}
 				if (Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
@@ -3182,7 +3181,7 @@ namespace iS800
 					{
 						"Parar"
 					}, null, null);
-					this.Mensagem_MD202_mon("Monitoração Ativada", OpenMode.Output);
+					this.Mensagem_MD202_mon("Monitoração Ativada", (int)OpenMode.Output);
 					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
 					this.Timer_monitoracao.Interval = 1;
@@ -3198,7 +3197,7 @@ namespace iS800
 				}
 				else
 				{
-					this.Mensagem_MD202_mon("Selecione Estação", OpenMode.Input);
+					this.Mensagem_MD202_mon("Selecione Estação", (int)OpenMode.Input);
 				}
 			}
 			else
@@ -3207,7 +3206,7 @@ namespace iS800
 				{
 					"Iniciar"
 				}, null, null);
-				this.Mensagem_MD202_mon("Monitoração desativada", OpenMode.Output);
+				this.Mensagem_MD202_mon("Monitoração desativada", (int)OpenMode.Output);
 				Mod_MD.Monitoracao_MD_RQ.Partir_mon = false;
 				this.Timer_monitoracao.Enabled = false;
 				this.Grupo_setpoints.Enabled = false;
@@ -3231,7 +3230,7 @@ namespace iS800
 		{
 			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Iniciar", false) != 0)
 			{
-				this.Mensagem_MD202_mon(" Aguarde ... ", OpenMode.Output);
+				this.Mensagem_MD202_mon(" Aguarde ... ", (int)OpenMode.Output);
 				Mod_MD.Monitoracao_MD_RQ.Controle_mon = 1;
 			}
 		}

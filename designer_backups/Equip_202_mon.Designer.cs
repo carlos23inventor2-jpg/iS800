@@ -207,7 +207,7 @@
 			tela_endereco_estacao.Location = location;
 			global::System.Windows.Forms.NumericUpDown tela_endereco_estacao2 = this.Tela_endereco_estacao;
 			decimal maximum;
-			maximum = new maximum(new int[]
+			maximum = new decimal(new int[]
 			{
 				200,
 				0,
@@ -225,7 +225,7 @@
 			location = new location(157, 27);
 			tela_endereco_mestre.Location = location;
 			global::System.Windows.Forms.NumericUpDown tela_endereco_mestre2 = this.Tela_endereco_mestre;
-			maximum = new maximum(new int[]
+			maximum = new decimal(new int[]
 			{
 				200,
 				0,

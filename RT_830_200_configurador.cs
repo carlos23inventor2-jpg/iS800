@@ -1,12 +1,12 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Drawing.Printing;
 using System.Drawing.Text;
 using System.IO;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
@@ -15,7 +15,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000016 RID: 22
-	[DesignerGenerated]
 	public partial class RT_830_200_configurador : Form
 	{
 		// Token: 0x060000F8 RID: 248 RVA: 0x00266858 File Offset: 0x00264C58
@@ -2939,27 +2938,27 @@ namespace iS800
 			this.Carrega_Msg_Alarme_RT_850();
 			this.Inicializa_Estrutura_Lista_Equipamentos_Recalque();
 			Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-			this.TabPage_geral.BackColor = Color.FromKnownColor(8);
-			this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
-			this.TabPage1.BackColor = Color.FromKnownColor(8);
-			this.TabPage1.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Equipamentos.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Equipamentos.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Reservatorio.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Reservatorio.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Recalque.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Recalque.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Vista.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Vista.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_controles.BackColor = Color.FromKnownColor(8);
-			this.TabPage_controles.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage1.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage1.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_Equipamentos.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_Equipamentos.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_Reservatorio.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_Reservatorio.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_Recalque.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_Recalque.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_Vista.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_Vista.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_controles.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_controles.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
 			string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 			if (MyProject.Computer.FileSystem.FileExists(text))
 			{
 				PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 				privateFontCollection.AddFontFile(text);
-				Font font = new Font(privateFontCollection.Families[0], 8f, 2);
-				Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
+				Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
+				Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
 				this.Label11.Font = font;
 				this.TextBox_equipamento_RT850.Font = font;
 				this.TextBox_versao_RT850.Font = font;
@@ -3070,21 +3069,21 @@ namespace iS800
 				{
 					dataGridView_Reservatorios.Height = num2;
 					dataGridView_Reservatorios.Width = num3;
-					dataGridView_Reservatorios.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.None;
+					dataGridView_Reservatorios.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 				}
 				else if (j >= 1 & j <= num6)
 				{
 					int height = dataGridView_Reservatorios.Rows[0].Height;
 					dataGridView_Reservatorios.Height = num2 + j * height;
 					dataGridView_Reservatorios.Width = num3;
-					dataGridView_Reservatorios.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.None;
+					dataGridView_Reservatorios.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 				}
 				else
 				{
 					int height = dataGridView_Reservatorios.Rows[0].Height;
 					dataGridView_Reservatorios.Height = num2 + (num6 - 1) * height;
 					dataGridView_Reservatorios.Width = num3 + num;
-					dataGridView_Reservatorios.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.Horizontal;
+					dataGridView_Reservatorios.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
 				}
 				int num7 = 0;
 				int num8 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_equip_reservatorios.Valor - 1;
@@ -3127,21 +3126,21 @@ namespace iS800
 				{
 					dataGridView_Recalques.Height = num2 + num;
 					dataGridView_Recalques.Width = 1212;
-					dataGridView_Recalques.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.Vertical;
+					dataGridView_Recalques.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Vertical;
 				}
 				else if (j >= 1 & j <= num6)
 				{
 					int height = dataGridView_Recalques.Rows[0].Height;
 					dataGridView_Recalques.Height = num2 + j * height + num;
 					dataGridView_Recalques.Width = 1212;
-					dataGridView_Recalques.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.Vertical;
+					dataGridView_Recalques.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Vertical;
 				}
 				else
 				{
 					int height = dataGridView_Recalques.Rows[0].Height;
 					dataGridView_Recalques.Height = num2 + num6 * height + num;
 					dataGridView_Recalques.Width = 1212;
-					dataGridView_Recalques.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.Both;
+					dataGridView_Recalques.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Both;
 				}
 				int num7 = 0;
 				int num8 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_recalques.Valor - 1;
@@ -3223,7 +3222,7 @@ namespace iS800
 				{
 					dataGridView_Qtd_Vista.Height = num;
 					dataGridView_Qtd_Vista.Width = num2;
-					dataGridView_Qtd_Vista.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.None;
+					dataGridView_Qtd_Vista.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 				}
 				else if (valor >= 1 & valor <= num5)
 				{
@@ -3308,12 +3307,12 @@ namespace iS800
 					{
 						dataGridView_Vista_Variaveis.Width = 1212;
 						dataGridView_Vista_Variaveis.Height += 16;
-						dataGridView_Vista_Variaveis.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.Vertical;
+						dataGridView_Vista_Variaveis.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Vertical;
 					}
 					else
 					{
 						dataGridView_Vista_Variaveis.Width = num2;
-						dataGridView_Vista_Variaveis.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.None;
+						dataGridView_Vista_Variaveis.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 					}
 				}
 				else
@@ -3399,12 +3398,12 @@ namespace iS800
 					{
 						dataGridView_Vista_Remotas.Width = 1212;
 						dataGridView_Vista_Remotas.Height += 16;
-						dataGridView_Vista_Remotas.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.Vertical;
+						dataGridView_Vista_Remotas.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Vertical;
 					}
 					else
 					{
 						dataGridView_Vista_Remotas.Width = num2;
-						dataGridView_Vista_Remotas.ScrollBars = System.Windows.Forms.DataGridViewScrollBars.None;
+						dataGridView_Vista_Remotas.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
 					}
 				}
 				else
@@ -4688,7 +4687,7 @@ namespace iS800
 			}
 			else if (Operators.CompareString(Strings.Trim(RT_geral.Variaveis_RT_850[checked(linha - 1)].Nome.Valor), "", false) == 0)
 			{
-				Interaction.MsgBox("Variável: " + Conversion.Str(linha) + "\r\nParâmetro: Nome -> não válido", 32, "Atenção - Erro de Configuração");
+				Interaction.MsgBox("Variável: " + Conversion.Str(linha) + "\r\nParâmetro: Nome -> não válido", MsgBoxStyle.Question, "Atenção - Erro de Configuração");
 			}
 			else
 			{
@@ -4700,8 +4699,8 @@ namespace iS800
 		// Token: 0x06000253 RID: 595 RVA: 0x00275F88 File Offset: 0x00274388
 		public void Atualiza_TelaRT830_200()
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -4855,7 +4854,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Modelo.Numero_itens - 1;
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					dado.Items.Add(RT_geral.RT_850_Modelo.itens[i]);
 				}
@@ -4865,8 +4864,8 @@ namespace iS800
 		// Token: 0x0600025C RID: 604 RVA: 0x002763B0 File Offset: 0x002747B0
 		private void RT_850_conf_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -5502,8 +5501,8 @@ namespace iS800
 		// Token: 0x06000276 RID: 630 RVA: 0x00277F58 File Offset: 0x00276358
 		private void ToolStripButton_RT850_Abrir_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -5515,7 +5514,7 @@ namespace iS800
 				this.OpenFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg830";
 				this.OpenFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
 				string text;
-				if (this.OpenFileDialog_RT850.ShowDialog() == 1)
+				if (this.OpenFileDialog_RT850.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
 					if (Operators.CompareString(this.OpenFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -5589,7 +5588,7 @@ namespace iS800
 				}
 				goto IL_3E0;
 				IL_374:
-				Interaction.MsgBox("Não foi possível carregar os dados: " + text, 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível carregar os dados: " + text, MsgBoxStyle.Question, "Atenção - Erro I/0");
 				this.Timer_limpa_MSG_RT850.Enabled = true;
 				goto IL_3E0;
 				IL_39B:
@@ -5622,8 +5621,8 @@ namespace iS800
 		// Token: 0x06000278 RID: 632 RVA: 0x00278414 File Offset: 0x00276814
 		private void ToolStripButton_RT850_Salvar_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -5634,7 +5633,7 @@ namespace iS800
 				this.ControleAtivacaoTeclas(2);
 				this.SaveFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg830";
 				this.SaveFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT850.ShowDialog() == 1)
+				if (this.SaveFileDialog_RT850.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 				{
 					if (Operators.CompareString(this.SaveFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -5713,7 +5712,7 @@ namespace iS800
 				}
 				goto IL_3A5;
 				IL_340:
-				Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 				this.Timer_limpa_MSG_RT850.Enabled = true;
 				goto IL_3A5;
 				IL_360:
@@ -5745,7 +5744,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -5761,7 +5760,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -6082,8 +6081,8 @@ namespace iS800
 		// Token: 0x0600027F RID: 639 RVA: 0x002791FC File Offset: 0x002775FC
 		private void TextBox_msg_inicial_RT850_TextChanged(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			object obj;
 			try
 			{
@@ -6703,7 +6702,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Reservatorios.IsCurrentCellDirty)
 			{
-				this.DataGridView_Reservatorios.CommitEdit(512);
+				this.DataGridView_Reservatorios.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -6798,7 +6797,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Qtd_Vista.IsCurrentCellDirty)
 			{
-				this.DataGridView_Qtd_Vista.CommitEdit(512);
+				this.DataGridView_Qtd_Vista.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -6820,7 +6819,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Vista_Variaveis.IsCurrentCellDirty)
 			{
-				this.DataGridView_Vista_Variaveis.CommitEdit(512);
+				this.DataGridView_Vista_Variaveis.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -6833,7 +6832,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Vista_Remotas.IsCurrentCellDirty)
 			{
-				this.DataGridView_Vista_Remotas.CommitEdit(512);
+				this.DataGridView_Vista_Remotas.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 

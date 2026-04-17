@@ -10,7 +10,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000084 RID: 132
-	[DesignerGenerated]
 	public partial class Equip_202_conf : Form
 	{
 		// Token: 0x06001ED6 RID: 7894 RVA: 0x003E0D90 File Offset: 0x003DF190
@@ -4033,7 +4032,7 @@ namespace iS800
 			this.Atualiza_tela_MD202(Mod_MD.Controle.Estacao);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
 		}
 
 		// Token: 0x0600204D RID: 8269 RVA: 0x003EB9E8 File Offset: 0x003E9DE8
@@ -4113,8 +4112,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
+				int num = 0;
+				int num2 = 0;
 				object obj;
 				try
 				{
@@ -4259,7 +4258,7 @@ namespace iS800
 					IL_98B:
 					this.Init_equipamento_MD202();
 					this.Limpa_estrutura_MD202(Mod_MD.Controle.Estacao);
-					Interaction.MsgBox("Dados de configuração não compatíveis com a tela", 1, null);
+					Interaction.MsgBox("Dados de configuração não compatíveis com a tela", MsgBoxStyle.OkCancel, null);
 					goto IL_9F1;
 					IL_9B0:
 					num2 = -1;
@@ -4563,7 +4562,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Controle_tecla_conf_202(2);
@@ -4638,7 +4637,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
 				return;
 			}
 			this.Controle_tecla_conf_202(2);
@@ -4812,11 +4811,11 @@ namespace iS800
 		{
 			this.OpenFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V202";
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
-			if (this.OpenFileDialog1.ShowDialog() == 1)
+			if (this.OpenFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 			{
 				if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 				{
-					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, 600);
+					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), 600);
 					int num = 1;
 					Mod_MD.DADOS_EQUIP_MD_202_CONFIG[] recalque_ = Mod_MD.Recalque_202;
 					Mod_MD.DADOS_EQUIP_MD_202_CONFIG[] array = recalque_;
@@ -4826,7 +4825,7 @@ namespace iS800
 					Mod_MD.DADOS_EQUIP_MD_202_CONFIG[] array2 = recalque_;
 					int num3 = num2;
 					ValueType valueType2 = valueType;
-					Mod_MD.DADOS_EQUIP_MD_202_CONFIG dados_EQUIP_MD_202_CONFIG;
+					Mod_MD.DADOS_EQUIP_MD_202_CONFIG dados_EQUIP_MD_202_CONFIG = default(Mod_MD.DADOS_EQUIP_MD_202_CONFIG);
 					array2[num3] = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_202_CONFIG)valueType2) : dados_EQUIP_MD_202_CONFIG);
 					FileSystem.FileClose(new int[]
 					{
@@ -4841,7 +4840,7 @@ namespace iS800
 				{
 					this.Init_equipamento_MD202();
 					this.Limpa_estrutura_MD202(Mod_MD.Controle.Estacao);
-					Interaction.MsgBox("Versão do equipamento não é compatível\r\ncom os dados do arquivo", 1, null);
+					Interaction.MsgBox("Versão do equipamento não é compatível\r\ncom os dados do arquivo", MsgBoxStyle.OkCancel, null);
 				}
 			}
 		}
@@ -4853,9 +4852,9 @@ namespace iS800
 			Mod_MD.Recalque_202[1].Versao = Geral.Config_geral.Versao;
 			this.SaveFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V202";
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
-			if (this.SaveFileDialog1.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
+			if (this.SaveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 			{
-				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, 600);
+				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), 600);
 				FileSystem.FilePut(1, Mod_MD.Recalque_202[1], -1L);
 				FileSystem.FileClose(new int[]
 				{

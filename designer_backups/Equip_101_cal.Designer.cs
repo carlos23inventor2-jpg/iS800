@@ -664,7 +664,7 @@
 			tela_end_estacao.Location = location;
 			global::System.Windows.Forms.NumericUpDown tela_end_estacao2 = this.Tela_end_estacao;
 			decimal num;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -867,7 +867,7 @@
 			location = new location(240, 25);
 			valor_cal_end.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_cal_end2 = this.Valor_cal_end;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				200,
 				0,
@@ -885,7 +885,7 @@
 			location = new location(371, 25);
 			valor_canal_calibracao.Location = location;
 			global::System.Windows.Forms.NumericUpDown valor_canal_calibracao2 = this.Valor_canal_calibracao;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				4,
 				0,
@@ -894,7 +894,7 @@
 			});
 			valor_canal_calibracao2.Maximum = num;
 			global::System.Windows.Forms.NumericUpDown valor_canal_calibracao3 = this.Valor_canal_calibracao;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,
@@ -909,7 +909,7 @@
 			this.Valor_canal_calibracao.TabIndex = 14;
 			this.Valor_canal_calibracao.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_canal_calibracao5 = this.Valor_canal_calibracao;
-			num = new num(new int[]
+			num = new decimal(new int[]
 			{
 				1,
 				0,

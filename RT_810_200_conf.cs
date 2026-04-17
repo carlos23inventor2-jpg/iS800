@@ -15,7 +15,6 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000034 RID: 52
-	[DesignerGenerated]
 	public partial class RT_810_200_conf : Form
 	{
 		// Token: 0x0600041E RID: 1054 RVA: 0x0028D690 File Offset: 0x0028BA90
@@ -2387,23 +2386,23 @@ namespace iS800
 			this.cb_ModoLeituraNivel = comboBox;
 			this.Inicializa_DadosEStruturaRT810_Default();
 			Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-			this.TabPage_geral.BackColor = Color.FromKnownColor(8);
-			this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_EA.BackColor = Color.FromKnownColor(8);
-			this.TabPage_EA.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_ED.BackColor = Color.FromKnownColor(8);
-			this.TabPage_ED.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_repetidora.BackColor = Color.FromKnownColor(8);
-			this.TabPage_repetidora.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_dadosinstalacao.BackColor = Color.FromKnownColor(8);
-			this.TabPage_dadosinstalacao.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_EA.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_EA.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_ED.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_ED.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_repetidora.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_repetidora.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_dadosinstalacao.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
+			this.TabPage_dadosinstalacao.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
 			string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 			if (MyProject.Computer.FileSystem.FileExists(text))
 			{
 				PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 				privateFontCollection.AddFontFile(text);
-				Font font = new Font(privateFontCollection.Families[0], 8f, 2);
-				Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
+				Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
+				Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
 				this.Label26.Font = font;
 				this.TextBox_equipamento.Font = font;
 				this.TextBox_versao.Font = font;
@@ -2540,7 +2539,7 @@ namespace iS800
 		{
 			this.DataGridView_end_rep_RT_810.Columns.Clear();
 			this.DataGridView_end_rep_RT_810.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_end_rep_RT_810.DefaultCellStyle.Alignment = 64;
+			this.DataGridView_end_rep_RT_810.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
 			int num = 0;
 			checked
 			{
@@ -2886,8 +2885,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
+				int num = 0;
+				int num3 = 0;
 				object obj;
 				try
 				{
@@ -2926,7 +2925,7 @@ namespace iS800
 					this.Habilita_Funcoes_de_Tela_RT_810(0);
 					goto IL_3CE;
 					IL_377:
-					Interaction.MsgBox("Erro na atualização da tela!", 32, "Atenção - Erro de dados");
+					Interaction.MsgBox("Erro na atualização da tela!", MsgBoxStyle.Question, "Atenção - Erro de dados");
 					goto IL_3CE;
 					IL_38B:
 					num3 = -1;
@@ -3075,7 +3074,7 @@ namespace iS800
 		{
 			if (this.ComboBox_Modo_Operacao.FindStringExact(this.ComboBox_Modo_Operacao.Text) == -1)
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Método Operação");
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", MsgBoxStyle.Question, "Atenção - Método Operação");
 				this.ComboBox_Modo_Operacao.SelectedIndex = 0;
 			}
 		}
@@ -3141,7 +3140,7 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", MsgBoxStyle.Question, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
 				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
 				{
 					0
@@ -3231,7 +3230,7 @@ namespace iS800
 			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
 			checked
 			{
-				for (int i = num; i <= num2; i++)
+				for (int i = Convert.ToInt32(num); i <= num2; i++)
 				{
 					switch (i)
 					{
@@ -3618,7 +3617,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 		}
 
@@ -3652,13 +3651,13 @@ namespace iS800
 				else
 				{
 					string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-					Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
+					Interaction.MsgBox(text, MsgBoxStyle.Critical, "Atenção - Valor fora das especificações");
 					this.ToolStripButton_RT_810_Salvar.Enabled = true;
 				}
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
 			}
 			this.Timer_limpa_MSG.Enabled = true;
 		}
@@ -3668,8 +3667,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num4;
+				int num = 0;
+				int num4 = 0;
 				object obj;
 				try
 				{
@@ -3682,7 +3681,7 @@ namespace iS800
 					this.ToolStri_RT_810.Enabled = true;
 					this.OpenFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810_200";
 					this.OpenFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.OpenFileDialog_RT_810.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.OpenFileDialog_RT_810.FileName) + "\\";
 						RT_geral.arquivo_extensao = Path.GetExtension(this.OpenFileDialog_RT_810.FileName);
@@ -3753,7 +3752,7 @@ namespace iS800
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_6F7;
 					IL_692:
-					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_6F7;
 					IL_6B2:
@@ -3780,8 +3779,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num5;
+				int num = 0;
+				int num5 = 0;
 				object obj;
 				try
 				{
@@ -3791,7 +3790,7 @@ namespace iS800
 					this.Bloqueia_acoes();
 					this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810_200";
 					this.SaveFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.SaveFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.SaveFileDialog_RT_810.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.SaveFileDialog_RT_810.FileName) + "\\";
 						if (File.Exists(this.SaveFileDialog_RT_810.FileName))
@@ -3890,7 +3889,7 @@ namespace iS800
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_67A;
 					IL_601:
-					Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
 					FileSystem.FileClose(new int[]
 					{
 						1
@@ -4053,7 +4052,7 @@ namespace iS800
 		{
 			if (this.DataGridView_end_rep_RT_810.IsCurrentCellDirty)
 			{
-				this.DataGridView_end_rep_RT_810.CommitEdit(512);
+				this.DataGridView_end_rep_RT_810.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -4111,7 +4110,7 @@ namespace iS800
 				int num3 = Strings.Len(this.TextBox_comentarios_RT810.Text) - Strings.Len(Strings.Replace(this.TextBox_comentarios_RT810.Text, "\r\n", "\r", 1, -1, 0));
 				if (num3 > 7)
 				{
-					Interaction.MsgBox("Número máximo de linhas atingido", 0, null);
+					Interaction.MsgBox("Número máximo de linhas atingido", MsgBoxStyle.OkOnly, null);
 				}
 			}
 		}
@@ -4120,10 +4119,10 @@ namespace iS800
 		[MethodImpl(72)]
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -4221,7 +4220,7 @@ namespace iS800
 						num++;
 					}
 					int num2 = 1;
-					int num3 = num;
+					int num3 = Convert.ToInt32(num);
 					for (int i = num2; i <= num3; i++)
 					{
 						tabelaLinhaInteria3.AdicionaLinha();
@@ -4253,7 +4252,7 @@ namespace iS800
 		// Token: 0x06000568 RID: 1384 RVA: 0x002992E0 File Offset: 0x002976E0
 		private bool DesenhaRelatorio(PrintPageEventArgs z)
 		{
-			Font font = new Font("Arial", 12f, 3);
+			Font font = new Font("Arial", 12f, (System.Drawing.FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			checked
 			{
