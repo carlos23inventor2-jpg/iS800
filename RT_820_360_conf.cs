@@ -10349,7 +10349,7 @@ namespace iS800
 			checked
 			{
 				int num = 0;
-				int num59;
+				int num59 = 0;
 				object obj;
 				try
 				{

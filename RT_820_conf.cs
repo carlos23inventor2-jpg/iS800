@@ -8153,7 +8153,7 @@ namespace iS800
 			checked
 			{
 				int num = 0;
-				int num59;
+				int num59 = 0;
 				object obj;
 				try
 				{
@@ -14168,7 +14168,7 @@ namespace iS800
 		private void cb_ModoRepetidora_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			object obj = NewLateBinding.LateGet(sender, null, "selectedIndex", new object[0], null, null, null);
-			bool flag;
+			bool flag = false;
 			if (Operators.ConditionalCompareObjectEqual(obj, 0, false))
 			{
 				flag = false;

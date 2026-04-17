@@ -1,4 +1,4 @@
-/home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.Abertura.resources
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.Aguarde.resources
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.Configuracao.resources
