@@ -1796,6 +1796,7 @@ namespace iS800
 			}
 		}
 
+
 		// Token: 0x06001CA3 RID: 7331 RVA: 0x003D14A0 File Offset: 0x003CF8A0
 		private void Equip_201_conf_Load(object sender, EventArgs e)
 		{

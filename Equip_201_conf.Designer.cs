@@ -17,28 +17,7 @@ using System.Windows.Forms;
 			base.Dispose(disposing);
 		}
 
-			private global::System.Windows.Forms.TabControl TabControl1;
-			private global::System.Windows.Forms.TabPage TabPage_vazao_calhas;
-			private global::System.Windows.Forms.TabPage TabPage_perifericos;
-			private global::System.Windows.Forms.GroupBox GroupBox_vazoes_820;
-			private global::System.Windows.Forms.DataGridView DataGridView_vazoes_RT820;
-			private global::System.Windows.Forms.GroupBox GroupBox_calhas;
-			private global::System.Windows.Forms.DataGridView DataGridView_calhas_RT820;
-			private global::System.Windows.Forms.GroupBox Grupo_perifericos;
-			private global::System.Windows.Forms.Label Label_periferico_4;
-			private global::System.Windows.Forms.Label Label_periferico_3;
-			private global::System.Windows.Forms.Label Label_nota_2;
-			private global::System.Windows.Forms.Label Label_periferico_2;
-			private global::System.Windows.Forms.Label Label_nota_1;
-			private global::System.Windows.Forms.Label Label_periferico_1;
-			private global::System.Windows.Forms.NumericUpDown Endereco_p4;
-			private global::System.Windows.Forms.NumericUpDown Endereco_p2;
-			private global::System.Windows.Forms.NumericUpDown Endereco_p3;
-			private global::System.Windows.Forms.NumericUpDown Endereco_p1;
-			private global::System.Windows.Forms.ComboBox Combo_tipo_p4;
-			private global::System.Windows.Forms.ComboBox Combo_tipo_p2;
-			private global::System.Windows.Forms.ComboBox Combo_tipo_p3;
-			private global::System.Windows.Forms.ComboBox Combo_tipo_p1;
+		// Token: 0x06001BF2 RID: 7154 RVA: 0x003CCC6C File Offset: 0x003CB06C
 		[global::System.Diagnostics.DebuggerStepThrough]
 		private void InitializeComponent()
 		{
@@ -1309,6 +1288,29 @@ this.Location = new global::System.Drawing.Point(160, 2);
 		}
 
 		// Token: 0x0400152C RID: 5420
+		private global::System.Windows.Forms.TabControl TabControl1;
+		private global::System.Windows.Forms.TabPage TabPage_vazao_calhas;
+		private global::System.Windows.Forms.TabPage TabPage_perifericos;
+		private global::System.Windows.Forms.GroupBox GroupBox_vazoes_820;
+		private global::System.Windows.Forms.DataGridView DataGridView_vazoes_RT820;
+		private global::System.Windows.Forms.GroupBox GroupBox_calhas;
+		private global::System.Windows.Forms.DataGridView DataGridView_calhas_RT820;
+		private global::System.Windows.Forms.GroupBox Grupo_perifericos;
+		private global::System.Windows.Forms.Label Label_periferico_4;
+		private global::System.Windows.Forms.Label Label_periferico_3;
+		private global::System.Windows.Forms.Label Label_nota_2;
+		private global::System.Windows.Forms.Label Label_periferico_2;
+		private global::System.Windows.Forms.Label Label_nota_1;
+		private global::System.Windows.Forms.Label Label_periferico_1;
+		private global::System.Windows.Forms.NumericUpDown Endereco_p4;
+		private global::System.Windows.Forms.NumericUpDown Endereco_p2;
+		private global::System.Windows.Forms.NumericUpDown Endereco_p3;
+		private global::System.Windows.Forms.NumericUpDown Endereco_p1;
+		private global::System.Windows.Forms.ComboBox Combo_tipo_p4;
+		private global::System.Windows.Forms.ComboBox Combo_tipo_p2;
+		private global::System.Windows.Forms.ComboBox Combo_tipo_p3;
+		private global::System.Windows.Forms.ComboBox Combo_tipo_p1;
+
 		private global::System.ComponentModel.IContainer components;
 	}
 }
