@@ -1757,7 +1757,7 @@ namespace iS800
 			this.Mon_820_DGVReferenciaColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVReferenciaColunas[0].NomeColuna = "range";
 			this.Mon_820_DGVReferenciaColunas[0].LarguraColuna = 100;
-			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 			this.Mon_820_DGVReferenciaColunas[0].NumeroLinhaMenu = 0;
 		}
 
@@ -1767,7 +1767,7 @@ namespace iS800
 			this.Mon_820_DGVSAColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVSAColunas[0].NomeColuna = "range";
 			this.Mon_820_DGVSAColunas[0].LarguraColuna = 100;
-			this.Mon_820_DGVSAColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVSAColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 			this.Mon_820_DGVSAColunas[0].NumeroLinhaMenu = 0;
 		}
 
@@ -2724,7 +2724,7 @@ namespace iS800
 			{
 				do
 				{
-					byte b = dados[43 + num] - 48;
+					byte b = (byte)(dados[43 + num] - 48);
 					bool flag = (b & 64) > 0;
 					bool flag2 = (b & 32) > 0;
 					int num2 = (int)(b & 15);

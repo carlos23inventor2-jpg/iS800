@@ -2149,7 +2149,7 @@ namespace iS800
 		}
 
 		// Token: 0x060028C7 RID: 10439
-		[DllImport("gdi32", CharSet = 2, EntryPoint = "AddFontResourceA", ExactSpelling = true, SetLastError = true)]
+		[DllImport("gdi32", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "AddFontResourceA", ExactSpelling = true, SetLastError = true)]
 		private static extern long AddFontResource([MarshalAs(34)] ref string lpFileName);
 
 		// Token: 0x060028C8 RID: 10440 RVA: 0x00428B74 File Offset: 0x00426F74
@@ -2500,8 +2500,8 @@ namespace iS800
 				Comunicacao.Config_sistema.tipo_interface = 1;
 				Comunicacao.Config_sistema.Serial.Baudrate = 3;
 				Comunicacao.Config_sistema.Serial.DataBits = 4;
-				Comunicacao.Config_sistema.Serial.StopBits =(System.IO.Ports.StopBits) (System.IO.Ports.StopBits)StopBits.One;
-				Comunicacao.Config_sistema.Serial.Parity =(System.IO.Ports.Parity) (System.IO.Ports.Parity)Parity.None;
+				Comunicacao.Config_sistema.Serial.StopBits = (int)StopBits.One;
+				Comunicacao.Config_sistema.Serial.Parity = (int)Parity.None;
 				Comunicacao.Config_sistema.Serial.Porta_serial = "COM1";
 				Comunicacao.Config_sistema.Serial.PortaSerialAtiva = false;
 				Comunicacao.Config_sistema.Tcpip.IP = "169.254.75.100";
@@ -2519,8 +2519,8 @@ namespace iS800
 				Comunicacao.Config_sistema.Serial.Porta_serial = iniFile.ReadText("Serial RS232", "porta", "");
 				Comunicacao.Config_sistema.Serial.Baudrate = iniFile.ReadInteger("Serial RS232", "baudrate", 9600);
 				Comunicacao.Config_sistema.Serial.DataBits = iniFile.ReadInteger("Serial RS232", "data_bits", 8);
-				Comunicacao.Config_sistema.Serial.StopBits =(System.IO.Ports.StopBits) (System.IO.Ports.StopBits)iniFile.ReadInteger("Serial RS232", "stop_bits", 0);
-				Comunicacao.Config_sistema.Serial.Parity =(System.IO.Ports.Parity) (System.IO.Ports.Parity)iniFile.ReadInteger("Serial RS232", "parity", 0);
+				Comunicacao.Config_sistema.Serial.StopBits = iniFile.ReadInteger("Serial RS232", "stop_bits", 0);
+				Comunicacao.Config_sistema.Serial.Parity = iniFile.ReadInteger("Serial RS232", "parity", 0);
 				Comunicacao.Config_sistema.Tcpip.IP = iniFile.ReadText("EThernet TCP/IP RS232", "ip", "0.0.0.0");
 				Comunicacao.Config_sistema.Tcpip.Porta = iniFile.ReadInteger("EThernet TCP/IP RS232", "porta", 0);
 				Comunicacao.Config_sistema.Retry = Conversions.ToString(iniFile.ReadInteger("Geral", "retry", 5));
@@ -2879,7 +2879,7 @@ namespace iS800
 				Application.DoEvents();
 			}
 			while (Geral.Config_geral.Tarefa_em_andamento);
-			int tipo;
+			int tipo = 0;
 			switch (aviso)
 			{
 			case 0:
@@ -2964,7 +2964,7 @@ namespace iS800
 					new IER_856_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -2988,7 +2988,7 @@ namespace iS800
 					new IEC_855_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3012,7 +3012,7 @@ namespace iS800
 					new RT_810_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3036,7 +3036,7 @@ namespace iS800
 					new RT_810_200_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3060,7 +3060,7 @@ namespace iS800
 					new RT_820_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3085,7 +3085,7 @@ namespace iS800
 					{
 						MdiParent = this,
 						QualModelo = Geral.Equipamento_selecionado,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3110,7 +3110,7 @@ namespace iS800
 					{
 						MdiParent = this,
 						QualModelo = Geral.Ctrl_adicional,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3130,7 +3130,7 @@ namespace iS800
 					new RT_820_360_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3154,7 +3154,7 @@ namespace iS800
 					new RT_820_360_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3178,7 +3178,7 @@ namespace iS800
 					new RT_820_200_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3202,7 +3202,7 @@ namespace iS800
 					new RT_821_Conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3226,7 +3226,7 @@ namespace iS800
 					new RT_821_200_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
@@ -3250,7 +3250,7 @@ namespace iS800
 					new RT_830_200_configurador
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = false;
@@ -3274,7 +3274,7 @@ namespace iS800
 					new RT_831_200_configurador
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = false;
@@ -3298,7 +3298,7 @@ namespace iS800
 					new RT_850_conf
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = false;
@@ -3323,7 +3323,7 @@ namespace iS800
 					new Equip_820_mon
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = false;
 					this.ToolStripButton_Calibracao.Enabled = false;
@@ -3347,7 +3347,7 @@ namespace iS800
 					new Equip_821_mon
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = false;
 					this.ToolStripButton_Calibracao.Enabled = false;
@@ -3371,7 +3371,7 @@ namespace iS800
 					new Equip_810_mon
 					{
 						MdiParent = this,
-						StartPosition = 1
+						StartPosition = (System.Windows.Forms.FormStartPosition)1
 					}.Show();
 					this.ToolStripButton_Configuracao.Enabled = false;
 					this.ToolStripButton_Calibracao.Enabled = false;
@@ -3913,7 +3913,7 @@ namespace iS800
 			int num = 0;
 			int num2 = 0;
 			int num3 = 0;
-			int bloco;
+			int bloco = 0;
 			switch (equipamento)
 			{
 			case 810:
@@ -4135,7 +4135,7 @@ namespace iS800
 		private void MostaCalibracao420PlacaSA(int equipamento, int versao)
 		{
 			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
-			if (!Mod_MD.Leitura_pagina(0, 255, 4).Status)
+			if (!Mod_MD.Leitura_pagina(0, 255, (int)(System.Windows.Forms.MessageBoxIcon)4).Status)
 			{
 				MessageBox.Show("Não houve resposta do equipamento!");
 				return;
@@ -4500,7 +4500,7 @@ namespace iS800
 			new LogComunicacao
 			{
 				MdiParent = this,
-				StartPosition = 1
+				StartPosition = (System.Windows.Forms.FormStartPosition)1
 			}.Show();
 		}
 
@@ -4685,7 +4685,7 @@ namespace iS800
 			new RT_820_400_SA_CALIB
 			{
 				MdiParent = this,
-				StartPosition = 1
+				StartPosition = (System.Windows.Forms.FormStartPosition)1
 			}.Show();
 		}
 

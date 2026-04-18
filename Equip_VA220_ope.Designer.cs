@@ -197,7 +197,7 @@ using System.Windows.Forms;
 			this.SuspendLayout();
 			this.CheckBox_setpoints.AutoSize = true;
 			this.CheckBox_setpoints.Checked = true;
-			this.CheckBox_setpoints.CheckState = 1;
+			this.CheckBox_setpoints.CheckState = (System.Windows.Forms.CheckState)1;
 			global::System.Windows.Forms.Control checkBox_setpoints = this.CheckBox_setpoints;
 			checkBox_setpoints.Location = new global::System.Drawing.Point(9, 19);
 			this.CheckBox_setpoints.Name = "CheckBox_setpoints";

@@ -595,7 +595,7 @@
 			this.DataGridView_RT810_ED.AllowUserToResizeRows = false;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_RT810_ED.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
-			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -608,7 +608,7 @@
 			{
 				this.ip
 			});
-			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
@@ -620,7 +620,7 @@
 			location = new location(19, 19);
 			dataGridView_RT810_ED.Location = location;
 			this.DataGridView_RT810_ED.Name = "DataGridView_RT810_ED";
-			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -628,7 +628,7 @@
 			dataGridViewCellStyle4.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle4.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_RT810_ED.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-			this.DataGridView_RT810_ED.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)2;
+			this.DataGridView_RT810_ED.ScrollBars =(System.Windows.Forms.ScrollBars)2;
 			global::System.Windows.Forms.Control dataGridView_RT810_ED2 = this.DataGridView_RT810_ED;
 			size = new size(306, 438);
 			dataGridView_RT810_ED2.Size = size;
@@ -662,7 +662,7 @@
 				this.ToolStripTextBox_RT_810_Msg,
 				this.ToolStripProgressBar_RT_810
 			});
-			this.ToolStri_RT_810.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)3;
+			this.ToolStri_RT_810.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT_2 = this.ToolStri_RT_810;
 			location = new location(0, 0);
 			toolStri_RT_2.Location = location;
@@ -674,7 +674,7 @@
 			this.ToolStri_RT_810.TabIndex = 0;
 			this.ToolStri_RT_810.Text = "ToolStrip1";
 			this.ToolStripButton_RT_810_novo.AutoToolTip = false;
-			this.ToolStripButton_RT_810_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT_810_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT_810_novo = this.ToolStripButton_RT_810_novo;
@@ -687,7 +687,7 @@
 			this.ToolStripButton_RT_810_novo.Text = "Novo";
 			this.ToolStripButton_RT_810_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT_810_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT_810_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT_810_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Abrir.Name = "ToolStripButton_RT_810_Abrir";
@@ -697,7 +697,7 @@
 			this.ToolStripButton_RT_810_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT_810_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT_810_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT_810_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT_810_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Salvar.Name = "ToolStripButton_RT_810_Salvar";
@@ -714,7 +714,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT_810_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT_810_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT_810_Download = this.ToolStripButton_RT_810_Download;
@@ -725,7 +725,7 @@
 			size = new size(52, 52);
 			toolStripButton_RT_810_Download2.Size = size;
 			this.ToolStripButton_RT_810_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT_810_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT_810_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Upload.Name = "ToolStripButton_RT_810_Upload";
@@ -741,7 +741,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT_810_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT_810_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Imprimir.Name = "ToolStripButton_RT_810_Imprimir";
@@ -779,7 +779,7 @@
 			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT_810_Msg2 = this.ToolStripTextBox_RT_810_Msg;
 			size = new size(250, 23);
 			toolStripTextBox_RT_810_Msg2.Size = size;
-			this.ToolStripTextBox_RT_810_Msg.TextBoxTextAlign = 2;
+			this.ToolStripTextBox_RT_810_Msg.TextBoxTextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.ToolStripProgressBar_RT_810.BackColor = global::System.Drawing.SystemColors.Control;
 			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT_ = this.ToolStripProgressBar_RT_810;
 			padding = new padding(20, 15, 1, 1);

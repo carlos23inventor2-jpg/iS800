@@ -455,7 +455,7 @@ namespace iS800
 					{
 						int num6 = (int)Comunicacao.Buffer_Log[i];
 						text = text + "CRC F=" + Conversion.Hex(num6) + " ";
-						int ini;
+						int ini = 0;
 						byte b2 = this.Calcula_Chksum(ini, i);
 						text = string.Concat(new string[]
 						{

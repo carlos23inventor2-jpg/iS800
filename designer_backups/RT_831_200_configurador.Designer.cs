@@ -177,7 +177,7 @@
 			global::System.Windows.Forms.ToolStrip toolStri_RT = this.ToolStri_RT850;
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(48, 48);
-			toolStri_RT.ImageScalingSize = size;
+			toolStri_RT_.ImageScalingSize = size;
 			this.ToolStri_RT850.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ToolStripButton_RT850_novo,
@@ -194,7 +194,7 @@
 				this.ToolStripTextBox_RT850_Msg,
 				this.ToolStripProgressBar_RT850
 			});
-			this.ToolStri_RT850.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)3;
+			this.ToolStri_RT850.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT2 = this.ToolStri_RT850;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(0, 0);
@@ -207,7 +207,7 @@
 			this.ToolStri_RT850.TabIndex = 10;
 			this.ToolStri_RT850.Text = "ToolStrip1";
 			this.ToolStripButton_RT850_novo.AutoToolTip = false;
-			this.ToolStripButton_RT850_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT850_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT850_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_novo = this.ToolStripButton_RT850_novo;
@@ -221,7 +221,7 @@
 			this.ToolStripButton_RT850_novo.Text = "Novo";
 			this.ToolStripButton_RT850_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT850_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT850_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT850_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT850_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Abrir.Name = "ToolStripButton_RT850_Abrir";
@@ -231,7 +231,7 @@
 			this.ToolStripButton_RT850_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT850_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT850_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT850_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT850_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT850_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Salvar.Name = "ToolStripButton_RT850_Salvar";
@@ -248,7 +248,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT850_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT850_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT850_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_Download = this.ToolStripButton_RT850_Download;
@@ -259,7 +259,7 @@
 			size = new size(52, 52);
 			toolStripButton_RT850_Download2.Size = size;
 			this.ToolStripButton_RT850_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT850_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT850_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT850_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Upload.Name = "ToolStripButton_RT850_Upload";
@@ -275,7 +275,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT850_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT850_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT850_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Imprimir.Name = "ToolStripButton_RT850_Imprimir";
@@ -313,7 +313,7 @@
 			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT850_Msg2 = this.ToolStripTextBox_RT850_Msg;
 			size = new size(250, 23);
 			toolStripTextBox_RT850_Msg2.Size = size;
-			this.ToolStripTextBox_RT850_Msg.TextBoxTextAlign = 2;
+			this.ToolStripTextBox_RT850_Msg.TextBoxTextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.ToolStripProgressBar_RT850.BackColor = global::System.Drawing.SystemColors.Control;
 			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT = this.ToolStripProgressBar_RT850;
 			padding = new padding(20, 15, 1, 1);
@@ -379,7 +379,7 @@
 			this.TextBox_comentarios_RT850.MaxLength = 400;
 			this.TextBox_comentarios_RT850.Multiline = true;
 			this.TextBox_comentarios_RT850.Name = "TextBox_comentarios_RT850";
-			this.TextBox_comentarios_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)2;
+			this.TextBox_comentarios_RT850.ScrollBars =(System.Windows.Forms.ScrollBars)2;
 			global::System.Windows.Forms.Control textBox_comentarios_RT2 = this.TextBox_comentarios_RT850;
 			size = new size(534, 99);
 			textBox_comentarios_RT2.Size = size;

@@ -10,12 +10,12 @@ namespace iS800.My
 {
 	// Token: 0x02000002 RID: 2
 	[GeneratedCode("MyTemplate", "11.0.0.0")]
-	[EditorBrowsable(1)]
+	[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 	internal class MyApplication : WindowsFormsApplicationBase
 	{
 		// Token: 0x06000001 RID: 1 RVA: 0x002624C4 File Offset: 0x002608C4
 		[STAThread]
-		[EditorBrowsable(2)]
+		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
 		[DebuggerHidden]
 		[MethodImpl(72)]
 		internal static void Main(string[] Args)

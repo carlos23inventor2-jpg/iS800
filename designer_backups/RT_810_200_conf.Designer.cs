@@ -1014,7 +1014,7 @@
 			this.DataGridView_end_rep_RT_810.AllowUserToResizeRows = false;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_end_rep_RT_810.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
-			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -1036,7 +1036,7 @@
 				this.Posicao_41_50,
 				this.End_41_50
 			});
-			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
@@ -1048,7 +1048,7 @@
 			location = new location(18, 25);
 			dataGridView_end_rep_RT_.Location = location;
 			this.DataGridView_end_rep_RT_810.Name = "DataGridView_end_rep_RT_810";
-			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -1057,13 +1057,13 @@
 			dataGridViewCellStyle4.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_end_rep_RT_810.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.DataGridView_end_rep_RT_810.RowHeadersVisible = false;
-			this.DataGridView_end_rep_RT_810.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)0;
+			this.DataGridView_end_rep_RT_810.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dataGridView_end_rep_RT_2 = this.DataGridView_end_rep_RT_810;
 			size = new size(578, 243);
 			dataGridView_end_rep_RT_2.Size = size;
 			this.DataGridView_end_rep_RT_810.TabIndex = 0;
 			this.DataGridView_end_rep_RT_810.Visible = false;
-			dataGridViewCellStyle5.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle5.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			this.Posicao_1_10.DefaultCellStyle = dataGridViewCellStyle5;
 			this.Posicao_1_10.HeaderText = "Posição";
 			this.Posicao_1_10.Name = "Posicao_1_10";
@@ -1071,14 +1071,14 @@
 			this.Posicao_1_10.Resizable = 2;
 			this.Posicao_1_10.SortMode = 0;
 			this.Posicao_1_10.Width = 55;
-			dataGridViewCellStyle6.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle6.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			this.End_01_10.DefaultCellStyle = dataGridViewCellStyle6;
 			this.End_01_10.HeaderText = "  End.";
 			this.End_01_10.Name = "End_01_10";
 			this.End_01_10.Resizable = 2;
 			this.End_01_10.SortMode = 0;
 			this.End_01_10.Width = 60;
-			dataGridViewCellStyle7.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle7.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			this.Posicao_11_20.DefaultCellStyle = dataGridViewCellStyle7;
 			this.Posicao_11_20.HeaderText = "Posição";
 			this.Posicao_11_20.Name = "Posicao_11_20";
@@ -1086,14 +1086,14 @@
 			this.Posicao_11_20.Resizable = 2;
 			this.Posicao_11_20.SortMode = 0;
 			this.Posicao_11_20.Width = 55;
-			dataGridViewCellStyle8.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle8.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			this.End_11_20.DefaultCellStyle = dataGridViewCellStyle8;
 			this.End_11_20.HeaderText = "  End.";
 			this.End_11_20.Name = "End_11_20";
 			this.End_11_20.Resizable = 2;
 			this.End_11_20.SortMode = 0;
 			this.End_11_20.Width = 60;
-			dataGridViewCellStyle9.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle9.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			this.Posicao_21_30.DefaultCellStyle = dataGridViewCellStyle9;
 			this.Posicao_21_30.HeaderText = "Posição";
 			this.Posicao_21_30.Name = "Posicao_21_30";
@@ -1101,14 +1101,14 @@
 			this.Posicao_21_30.Resizable = 2;
 			this.Posicao_21_30.SortMode = 0;
 			this.Posicao_21_30.Width = 55;
-			dataGridViewCellStyle10.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle10.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			this.End_21_30.DefaultCellStyle = dataGridViewCellStyle10;
 			this.End_21_30.HeaderText = "  End.";
 			this.End_21_30.Name = "End_21_30";
 			this.End_21_30.Resizable = 2;
 			this.End_21_30.SortMode = 0;
 			this.End_21_30.Width = 60;
-			dataGridViewCellStyle11.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle11.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			this.Posicao_31_40.DefaultCellStyle = dataGridViewCellStyle11;
 			this.Posicao_31_40.HeaderText = "Posição";
 			this.Posicao_31_40.Name = "Posicao_31_40";
@@ -1116,14 +1116,14 @@
 			this.Posicao_31_40.Resizable = 2;
 			this.Posicao_31_40.SortMode = 0;
 			this.Posicao_31_40.Width = 55;
-			dataGridViewCellStyle12.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle12.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			this.End_31_40.DefaultCellStyle = dataGridViewCellStyle12;
 			this.End_31_40.HeaderText = "  End.";
 			this.End_31_40.Name = "End_31_40";
 			this.End_31_40.Resizable = 2;
 			this.End_31_40.SortMode = 0;
 			this.End_31_40.Width = 60;
-			dataGridViewCellStyle13.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle13.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			this.Posicao_41_50.DefaultCellStyle = dataGridViewCellStyle13;
 			this.Posicao_41_50.HeaderText = "Posição";
 			this.Posicao_41_50.Name = "Posicao_41_50";
@@ -1131,7 +1131,7 @@
 			this.Posicao_41_50.Resizable = 2;
 			this.Posicao_41_50.SortMode = 0;
 			this.Posicao_41_50.Width = 55;
-			dataGridViewCellStyle14.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle14.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			this.End_41_50.DefaultCellStyle = dataGridViewCellStyle14;
 			this.End_41_50.HeaderText = "  End.";
 			this.End_41_50.Name = "End_41_50";
@@ -1600,7 +1600,7 @@
 				this.ToolStripTextBox_RT_810_Msg,
 				this.ToolStripProgressBar_RT_810
 			});
-			this.ToolStri_RT_810.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)3;
+			this.ToolStri_RT_810.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT_2 = this.ToolStri_RT_810;
 			location = new location(0, 0);
 			toolStri_RT_2.Location = location;
@@ -1612,7 +1612,7 @@
 			this.ToolStri_RT_810.TabIndex = 0;
 			this.ToolStri_RT_810.Text = "ToolStrip1";
 			this.ToolStripButton_RT_810_novo.AutoToolTip = false;
-			this.ToolStripButton_RT_810_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT_810_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT_810_novo = this.ToolStripButton_RT_810_novo;
@@ -1625,7 +1625,7 @@
 			this.ToolStripButton_RT_810_novo.Text = "Novo";
 			this.ToolStripButton_RT_810_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT_810_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT_810_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Abrir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT_810_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Abrir.Name = "ToolStripButton_RT_810_Abrir";
@@ -1635,7 +1635,7 @@
 			this.ToolStripButton_RT_810_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT_810_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT_810_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT_810_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Salvar.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT_810_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Salvar.Name = "ToolStripButton_RT_810_Salvar";
@@ -1652,7 +1652,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT_810_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Download.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT_810_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT_810_Download = this.ToolStripButton_RT_810_Download;
@@ -1663,7 +1663,7 @@
 			size = new size(52, 52);
 			toolStripButton_RT_810_Download2.Size = size;
 			this.ToolStripButton_RT_810_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT_810_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Upload.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT_810_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Upload.Name = "ToolStripButton_RT_810_Upload";
@@ -1679,7 +1679,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT_810_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT_810_Imprimir.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_810_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT_810_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Imprimir.Name = "ToolStripButton_RT_810_Imprimir";
@@ -1717,7 +1717,7 @@
 			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT_810_Msg2 = this.ToolStripTextBox_RT_810_Msg;
 			size = new size(250, 23);
 			toolStripTextBox_RT_810_Msg2.Size = size;
-			this.ToolStripTextBox_RT_810_Msg.TextBoxTextAlign = 2;
+			this.ToolStripTextBox_RT_810_Msg.TextBoxTextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.ToolStripProgressBar_RT_810.BackColor = global::System.Drawing.SystemColors.Control;
 			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT_ = this.ToolStripProgressBar_RT_810;
 			padding = new padding(20, 15, 1, 1);

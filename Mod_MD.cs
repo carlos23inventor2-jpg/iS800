@@ -802,7 +802,7 @@ namespace iS800
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array = buffer_cmd;
 						num3 = 112;
-						array[num3] = buffer_cmd[num3] + 50;
+						array[num3] = (byte)(buffer_cmd[num3] + 50);
 					}
 					Comunicacao.Buffer_cmd[113] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_2;
 					Comunicacao.Buffer_cmd[114] = (byte)Mod_MD.Recalque_202[indice].Periferico_Tipo_2;
@@ -811,7 +811,7 @@ namespace iS800
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array2 = buffer_cmd;
 						num3 = 114;
-						array2[num3] = buffer_cmd[num3] + 51;
+						array2[num3] = (byte)(buffer_cmd[num3] + 51);
 					}
 					Comunicacao.Buffer_cmd[115] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_3;
 					Comunicacao.Buffer_cmd[116] = (byte)Mod_MD.Recalque_202[indice].Periferico_Tipo_3;
@@ -820,7 +820,7 @@ namespace iS800
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array3 = buffer_cmd;
 						num3 = 116;
-						array3[num3] = buffer_cmd[num3] + 51;
+						array3[num3] = (byte)(buffer_cmd[num3] + 51);
 					}
 					Comunicacao.Buffer_cmd[117] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_4;
 					Comunicacao.Buffer_cmd[118] = (byte)Mod_MD.Recalque_202[indice].Periferico_Tipo_4;
@@ -829,7 +829,7 @@ namespace iS800
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array4 = buffer_cmd;
 						num3 = 118;
-						array4[num3] = buffer_cmd[num3] + 51;
+						array4[num3] = (byte)(buffer_cmd[num3] + 51);
 					}
 					num3 = 119;
 					int num4 = Comunicacao.Crc16_TX(ref num3);
@@ -1520,7 +1520,7 @@ namespace iS800
 				text = "Gravação";
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -1595,7 +1595,7 @@ namespace iS800
 				text = "Gravação";
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -1605,7 +1605,7 @@ namespace iS800
 				{
 					i--;
 					TcpClient tcpClient = new TcpClient();
-					NetworkStream stream;
+					NetworkStream stream = null;
 					if (Comunicacao.Config_sistema.tipo_interface != 1)
 					{
 						if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -1750,7 +1750,7 @@ namespace iS800
 		{
 			string text = "";
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -2129,7 +2129,7 @@ namespace iS800
 		{
 			string text = "";
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -2139,7 +2139,7 @@ namespace iS800
 				{
 					i--;
 					TcpClient tcpClient = new TcpClient();
-					NetworkStream stream;
+					NetworkStream stream = null;
 					if (Comunicacao.Config_sistema.tipo_interface == 2)
 					{
 						try
@@ -2631,7 +2631,7 @@ namespace iS800
 		{
 			string text = "";
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -2995,7 +2995,7 @@ namespace iS800
 		{
 			string text = "";
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -3005,7 +3005,7 @@ namespace iS800
 				{
 					i--;
 					TcpClient tcpClient = new TcpClient();
-					NetworkStream stream;
+					NetworkStream stream = null;
 					if (Comunicacao.Config_sistema.tipo_interface == 2)
 					{
 						try
@@ -3589,7 +3589,7 @@ namespace iS800
 		{
 			TcpClient tcpClient = new TcpClient();
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -3602,7 +3602,7 @@ namespace iS800
 						Comunicacao.Init_buffer_serial();
 					}
 					i--;
-					NetworkStream stream;
+					NetworkStream stream = null;
 					if (Comunicacao.Config_sistema.tipo_interface == 2)
 					{
 						tcpClient.Connect(Comunicacao.Config_sistema.Tcpip.IP, Comunicacao.Config_sistema.Tcpip.Porta);
@@ -3696,7 +3696,7 @@ namespace iS800
 		public static Mod_MD.CTRL_RESP_1 Leitura_pagina_multi_interface(int numero_pagina, int endereco, int tamanho)
 		{
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -3707,7 +3707,7 @@ namespace iS800
 					Comunicacao.Init_buffer_serial();
 					i--;
 					TcpClient tcpClient = new TcpClient();
-					NetworkStream stream;
+					NetworkStream stream = null;
 					if (Comunicacao.Config_sistema.tipo_interface != 1)
 					{
 						if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -3857,7 +3857,7 @@ namespace iS800
 		public static Mod_MD.CTRL_RESP_1 Leitura_pagina(int numero_pagina, int endereco, int tamanho)
 		{
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -4005,7 +4005,7 @@ namespace iS800
 				"Erro - Existe bloqueio digital",
 				"Erro - Existe bloqueio analógico"
 			};
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Cor = 0;
 			if (Comunicacao.Buffer_resp[3] == 6)
@@ -4031,7 +4031,7 @@ namespace iS800
 		// Token: 0x0600240E RID: 9230 RVA: 0x0025E5B0 File Offset: 0x0025C9B0
 		public static Mod_MD.CTRL_RESP_1 Verifica_resposta()
 		{
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Cor = 0;
 			if (Comunicacao.Buffer_resp[3] == 6)
@@ -4105,7 +4105,7 @@ namespace iS800
 			string text = Strings.LTrim(string.Format(ee.FormattedValue.ToString(), new object[0]));
 			string text2 = Conversions.ToString(Conversion.Val(ee.FormattedValue.ToString()));
 			int num = checked((int)Math.Round(Conversion.Val(ee.FormattedValue.ToString())));
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			if (string.IsNullOrEmpty(ee.FormattedValue.ToString()))
 			{
 				result.Status = false;
@@ -4156,7 +4156,7 @@ namespace iS800
 					int num_rq = Mod_MD.Central_302_centrais[i].num_rq;
 					int num3 = 1;
 					int num4 = num_res;
-					int j;
+					int j = 0;
 					for (j = num3; j <= num4; j++)
 					{
 						Mod_MD.Tabela_302[i, j] = 1;
@@ -4287,7 +4287,7 @@ namespace iS800
 		public static Mod_MD.CTRL_RESP_1 Comandos_gerais_590(int tipo)
 		{
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;
@@ -4338,7 +4338,7 @@ namespace iS800
 		public static Mod_MD.CTRL_RESP_1 Leitura_eeprom_590(int endereco, int tamanho)
 		{
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-			Mod_MD.CTRL_RESP_1 result;
+			Mod_MD.CTRL_RESP_1 result = default(Mod_MD.CTRL_RESP_1);
 			result.Msg = "";
 			result.Status = false;
 			result.Cor = 1;

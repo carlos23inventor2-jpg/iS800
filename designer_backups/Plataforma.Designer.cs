@@ -703,9 +703,9 @@
 			this.Timer_timeout.Interval = 2000;
 			this.Timer_espera.Interval = 150;
 			this.Timer_ouvidor.Interval = 1000;
-			this.Menu_ouvidor.Anchor = 10;
+			this.Menu_ouvidor.Anchor = (System.Windows.Forms.AnchorStyles)10;
 			this.Menu_ouvidor.BackColor = global::System.Drawing.Color.LightCyan;
-			this.Menu_ouvidor.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)0;
+			this.Menu_ouvidor.Dock =(System.Windows.Forms.DockStyle)0;
 			global::System.Windows.Forms.ToolStrip menu_ouvidor = this.Menu_ouvidor;
 			size = new size(32, 32);
 			menu_ouvidor.ImageScalingSize = size;
@@ -716,7 +716,7 @@
 				this.Menu_ouvidor_limpa,
 				this.Menu_ouvidor_Off
 			});
-			this.Menu_ouvidor.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)1;
+			this.Menu_ouvidor.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle)1;
 			global::System.Windows.Forms.Control menu_ouvidor2 = this.Menu_ouvidor;
 			location = new location(638, 398);
 			menu_ouvidor2.Location = location;
@@ -727,8 +727,8 @@
 			this.Menu_ouvidor.TabIndex = 7;
 			this.Menu_ouvidor.Text = "ToolStrip1";
 			this.Menu_ouvidor.Visible = false;
-			this.Menu_ouvidor_On.BackgroundImageLayout = 2;
-			this.Menu_ouvidor_On.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.Menu_ouvidor_On.BackgroundImageLayout = (System.Windows.Forms.ImageLayout)2;
+			this.Menu_ouvidor_On.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.Menu_ouvidor_On.Enabled = false;
 			this.Menu_ouvidor_On.Image = global::iS800.My.Resources.Resources.stock_connect;
 			this.Menu_ouvidor_On.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -738,7 +738,7 @@
 			menu_ouvidor_On.Size = size;
 			this.Menu_ouvidor_On.Text = "ToolStripButton1";
 			this.Menu_ouvidor_On.ToolTipText = "Iniciar";
-			this.Menu_ouvidor_limpa.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.Menu_ouvidor_limpa.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.Menu_ouvidor_limpa.Image = global::iS800.My.Resources.Resources.gnome_fs_trash_empty;
 			this.Menu_ouvidor_limpa.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.Menu_ouvidor_limpa.Name = "Menu_ouvidor_limpa";
@@ -747,7 +747,7 @@
 			menu_ouvidor_limpa.Size = size;
 			this.Menu_ouvidor_limpa.Text = "ToolStripButton2";
 			this.Menu_ouvidor_limpa.ToolTipText = "Limpar";
-			this.Menu_ouvidor_Off.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.Menu_ouvidor_Off.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.Menu_ouvidor_Off.Image = global::iS800.My.Resources.Resources.stock_disconnect;
 			this.Menu_ouvidor_Off.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.Menu_ouvidor_Off.Name = "Menu_ouvidor_Off";
@@ -787,7 +787,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator6 = this.ToolStripSeparator1;
 			size = new size(6, 59);
 			toolStripSeparator6.Size = size;
-			this.ToolStripButton_FindEquip.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_FindEquip.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_FindEquip.Image = (global::System.Drawing.Image)componentResourceManager.GetObject("ToolStripButton_FindEquip.Image");
 			this.ToolStripButton_FindEquip.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.ToolStripButton_FindEquip.Name = "ToolStripButton_FindEquip";
@@ -795,7 +795,7 @@
 			size = new size(56, 56);
 			toolStripButton_FindEquip.Size = size;
 			this.ToolStripButton_FindEquip.Text = "Identificação do Equipamento";
-			this.ToolStripButton_serial.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_serial.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_serial.Image = global::iS800.My.Resources.Resources.DB9_128;
 			this.ToolStripButton_serial.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.ToolStripButton_serial.Name = "ToolStripButton_serial";
@@ -816,7 +816,7 @@
 			toolStripComboBox_versao.Size = size;
 			this.ToolStripComboBox_versao.ToolTipText = "Versão";
 			this.ToolStripComboBox_versao.Visible = false;
-			this.ToolStripButton_Configuracao.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_Configuracao.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_Configuracao.Enabled = false;
 			this.ToolStripButton_Configuracao.Image = global::iS800.My.Resources.Resources.configuracao_2_128;
 			this.ToolStripButton_Configuracao.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -827,7 +827,7 @@
 			this.ToolStripButton_Configuracao.Text = "ToolStripButton1";
 			this.ToolStripButton_Configuracao.ToolTipText = "Configuração";
 			this.ToolStripButton_Configuracao.Visible = false;
-			this.ToolStripButton_Calibracao.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_Calibracao.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_Calibracao.Enabled = false;
 			this.ToolStripButton_Calibracao.Image = global::iS800.My.Resources.Resources.calibracao_128;
 			this.ToolStripButton_Calibracao.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -838,7 +838,7 @@
 			this.ToolStripButton_Calibracao.Text = "ToolStripButton1";
 			this.ToolStripButton_Calibracao.ToolTipText = "Calibração";
 			this.ToolStripButton_Calibracao.Visible = false;
-			this.ToolStripButton_Monitoracao.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_Monitoracao.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_Monitoracao.Enabled = false;
 			this.ToolStripButton_Monitoracao.Image = global::iS800.My.Resources.Resources.monitor_128;
 			this.ToolStripButton_Monitoracao.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -862,7 +862,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator9 = this.ToolStripSeparator4;
 			size = new size(6, 59);
 			toolStripSeparator9.Size = size;
-			this.ToolStripButton_sobre.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_sobre.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_sobre.Image = global::iS800.My.Resources.Resources.ictel;
 			this.ToolStripButton_sobre.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_sobre.Name = "ToolStripButton_sobre";

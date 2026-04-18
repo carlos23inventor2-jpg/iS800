@@ -817,12 +817,12 @@ label_end_rep.Location = new global::System.Drawing.Point(25, 90);
 			this.Label_end_rep.TabIndex = 1;
 			this.Label_end_rep.Text = "Endereço da Repetidora :";
 			this.MenuStrip1.BackColor = global::System.Drawing.SystemColors.ButtonFace;
-			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem
 			});
-			this.MenuStrip1.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle) (System.Windows.Forms.ToolStripLayoutStyle)1;
+			this.MenuStrip1.LayoutStyle =(System.Windows.Forms.ToolStripLayoutStyle)1;
 			global::System.Windows.Forms.Control menuStrip = this.MenuStrip1;
 menuStrip.Location = new global::System.Drawing.Point(0, 477);
 			this.MenuStrip1.Name = "MenuStrip1";

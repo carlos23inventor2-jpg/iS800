@@ -12,11 +12,11 @@ namespace iS800
 	internal sealed class Geral
 	{
 		// Token: 0x060000F5 RID: 245
-		[DllImport("Kernel32", CharSet = 4, SetLastError = true)]
+		[DllImport("Kernel32", CharSet = (System.Runtime.InteropServices.CharSet)4, SetLastError = true)]
 		public static extern int GetPrivateProfileString([MarshalAs(34)] ref string lpAppName, [MarshalAs(34)] ref string lpKeyName, [MarshalAs(34)] ref string lpDefault, StringBuilder lpReturnedString, int nSize, [MarshalAs(34)] ref string lpFileName);
 
 		// Token: 0x060000F6 RID: 246
-		[DllImport("Kernel32", CharSet = 4, SetLastError = true)]
+		[DllImport("Kernel32", CharSet = (System.Runtime.InteropServices.CharSet)4, SetLastError = true)]
 		public static extern int WritePrivateProfileString([MarshalAs(34)] ref string lpAppName, [MarshalAs(34)] ref string lpKeyName, [MarshalAs(34)] ref string lpString, [MarshalAs(34)] ref string lpFileName);
 
 		// Token: 0x060000F7 RID: 247 RVA: 0x002221CC File Offset: 0x002205CC

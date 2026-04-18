@@ -14,11 +14,11 @@ namespace iS800
 	public class IniFile
 	{
 		// Token: 0x06000ECB RID: 3787
-		[DllImport("kernel32.dll", CharSet = 2, EntryPoint = "GetPrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
+		[DllImport("kernel32.dll", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "GetPrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
 		private static extern int GetPrivateProfileString([MarshalAs(34)] ref string AppName, [MarshalAs(34)] ref string KeyName, [MarshalAs(34)] ref string DefVal, StringBuilder RetVal, int Size, [MarshalAs(34)] ref string FileName);
 
 		// Token: 0x06000ECC RID: 3788
-		[DllImport("kernel32.dll", CharSet = 2, EntryPoint = "WritePrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
+		[DllImport("kernel32.dll", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "WritePrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
 		private static extern int WritePrivateProfileString([MarshalAs(34)] ref string AppName, [MarshalAs(34)] ref string KeyName, [MarshalAs(34)] ref string Value, [MarshalAs(34)] ref string FileName);
 
 		// Token: 0x06000ECD RID: 3789 RVA: 0x0022B444 File Offset: 0x00229844

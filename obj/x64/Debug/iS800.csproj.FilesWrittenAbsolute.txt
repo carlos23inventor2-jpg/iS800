@@ -43,3 +43,7 @@
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.RT_831_200_configurador.resources
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.RT_850_conf.resources
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.Sobre.resources
+/home/carlos/Desktop/tet/dec/iS800/bin/Debug/iS800.exe.mdb
+/home/carlos/Desktop/tet/dec/iS800/bin/Debug/iS800.exe
+/home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.exe
+/home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.exe.mdb

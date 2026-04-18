@@ -1592,7 +1592,7 @@
 			label_end_est2.Size = size;
 			this.Label_end_est.TabIndex = 0;
 			this.Label_end_est.Text = "Endereço da Estação :";
-			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem

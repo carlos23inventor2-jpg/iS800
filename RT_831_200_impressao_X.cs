@@ -26,7 +26,7 @@ namespace iS800
 		// Token: 0x06000407 RID: 1031 RVA: 0x00227EB0 File Offset: 0x002262B0
 		public static bool DesenhaRelatorio_RT831(PrintPageEventArgs z)
 		{
-			bool result;
+			bool result = false;
 			switch (RT_831_200_impressao_X.grupo_impressao)
 			{
 			case 1:
@@ -46,11 +46,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT831Grupo1(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
-			Font font4 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
-			Font font5 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font4 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font font5 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -119,11 +119,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT831Grupo2(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
-			Font font4 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
-			Font font5 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font4 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font font5 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -194,11 +194,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT831Grupo30(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
-			Font font4 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
-			Font font5 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font4 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font font5 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -290,11 +290,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT831Grupo3(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
-			Font font4 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
-			Font font5 = new Font("Times New Roman", 14f, 0, (System.Drawing.GraphicsUnit)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font4 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font font5 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;

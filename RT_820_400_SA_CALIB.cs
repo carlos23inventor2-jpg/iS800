@@ -525,7 +525,7 @@ namespace iS800
 		{
 			this.AtualizaMsgTela_SA_820("Buscando Endereço", (int)OpenMode.Output);
 			int result = 0;
-			if(!Mod_MD.Leitura_pagina(2048, 255, OpenMode.Input).Status)
+			if(!Mod_MD.Leitura_pagina(2048, 255, (int)OpenMode.Input).Status)
 			{
 				this.AtualizaMsgTela_SA_820("Equipamento não responde", (int)OpenMode.Input);
 				result = 0;
@@ -565,7 +565,7 @@ namespace iS800
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Finalizando Calibração", (int)OpenMode.Output);
-				int pagina;
+				int pagina = 0;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
@@ -588,7 +588,7 @@ namespace iS800
 						pagina = 6179;
 					}
 				}
-				int num = this.Leitura_ContanteCalibracao(pagina, Convert.ToInt32(this.nud_estacao.Value), OpenMode.Input);
+				int num = this.Leitura_ContanteCalibracao(pagina, Convert.ToInt32(this.nud_estacao.Value), (int)OpenMode.Input);
 				this.nud_contagens.Value = new decimal(num);
 			}
 		}
@@ -599,7 +599,7 @@ namespace iS800
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", (int)OpenMode.Output);
-				int numero_pagina;
+				int numero_pagina = 0;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					numero_pagina = 6180;
@@ -610,7 +610,7 @@ namespace iS800
 				}
 				RT_geral.RT_820_360_BD.calibracao_tipo = 0;
 				RT_geral.RT_820_360_BD.calibracao_const = Convert.ToInt32(this.nud_contagens.Value);
-				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, (int)4, OpenMode.Binary).Status)
+				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, (int)4, (int)OpenMode.Binary).Status)
 				{
 					this.AtualizaMsgTela_SA_820("Erro na escrita de contagens", (int)OpenMode.Input);
 					return;
@@ -624,7 +624,7 @@ namespace iS800
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Finalizando Calibração", (int)OpenMode.Output);
-				int num = this.Leitura_ContanteCalibracao(6177, Convert.ToInt32(this.nud_estacao.Value), OpenMode.Input);
+				int num = this.Leitura_ContanteCalibracao(6177, Convert.ToInt32(this.nud_estacao.Value), (int)OpenMode.Input);
 				this.nud_contagens.Value = new decimal(num);
 			}
 		}
@@ -679,7 +679,7 @@ namespace iS800
 			if(Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", (int)OpenMode.Output);
-				int numero_pagina;
+				int numero_pagina = 0;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					if (RT_geral.RT_820_360_BD.calibracao_range == 4)

@@ -45,8 +45,8 @@ namespace iS800
 						MyProject.Forms.Plataforma.SerialPort1.BaudRate = 38400;
 						break;
 					}
-					MyProject.Forms.Plataforma.SerialPort1.Parity =(System.IO.Ports.Parity) (System.IO.Ports.Parity)Comunicacao.Config_sistema.Serial.Parity;
-					MyProject.Forms.Plataforma.SerialPort1.StopBits =(System.IO.Ports.StopBits) (System.IO.Ports.StopBits)Comunicacao.Config_sistema.Serial.StopBits;
+					MyProject.Forms.Plataforma.SerialPort1.Parity = (System.IO.Ports.Parity)Comunicacao.Config_sistema.Serial.Parity;
+					MyProject.Forms.Plataforma.SerialPort1.StopBits = (System.IO.Ports.StopBits)Comunicacao.Config_sistema.Serial.StopBits;
 					switch (Comunicacao.Config_sistema.Serial.DataBits)
 					{
 					case 0:

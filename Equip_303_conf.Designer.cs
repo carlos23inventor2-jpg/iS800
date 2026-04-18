@@ -365,7 +365,7 @@ dataGridView_RE_.Location = new global::System.Drawing.Point(6, 5);
 			Size = new System.Drawing.Size(375, 408);
 			dataGridView_RE_2.Size = this.Size;
 			this.DataGridView_RE_303.TabIndex = 3;
-			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
+			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode)1;
 			this.Col_end.HeaderText = "Posição";
 			this.Col_end.Name = "Col_end";
 			this.Col_end.ReadOnly = true;
@@ -445,7 +445,7 @@ dataGridView_RQ_.Location = new global::System.Drawing.Point(4, 2);
 			Size = new System.Drawing.Size(672, 411);
 			dataGridView_RQ_2.Size = this.Size;
 			this.DataGridView_RQ_303.TabIndex = 4;
-			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
+			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode)1;
 			dataGridViewCellStyle6.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_End_rq.DefaultCellStyle = dataGridViewCellStyle6;
 			this.Col_End_rq.Frozen = true;
@@ -623,7 +623,7 @@ ler_conf_md_.Location = new global::System.Drawing.Point(17, 60);
 			this.Ler_conf_md_303.TabIndex = 3;
 			this.Ler_conf_md_303.Text = "Ler configuração";
 			this.Ler_conf_md_303.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem

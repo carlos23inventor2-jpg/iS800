@@ -1173,7 +1173,7 @@
 			this.Ler_conf_md_201.TabIndex = 0;
 			this.Ler_conf_md_201.Text = "Ler configuração";
 			this.Ler_conf_md_201.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem

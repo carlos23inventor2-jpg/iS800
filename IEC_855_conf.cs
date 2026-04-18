@@ -1368,7 +1368,7 @@ namespace iS800
 		// Token: 0x06000DAF RID: 3503 RVA: 0x002FD37C File Offset: 0x002FB77C
 		private void GeraDataGridView_IP()
 		{
-			this.DataGridView_RT810_ED.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)2;
+			this.DataGridView_RT810_ED.ScrollBars =(System.Windows.Forms.ScrollBars)2;
 			this.DataGridView_RT810_ED.RowCount = 200;
 			this.DataGridView_RT810_ED.RowHeadersWidth = 80;
 			int num = 1;
@@ -1796,7 +1796,7 @@ namespace iS800
 		// Token: 0x06000DCA RID: 3530 RVA: 0x002FE214 File Offset: 0x002FC614
 		private bool Entrada_Digital_Ja_Utilizada(int entrada, int num_ED)
 		{
-			bool result;
+			bool result = false;
 			return result;
 		}
 
@@ -1809,7 +1809,7 @@ namespace iS800
 		// Token: 0x06000DCC RID: 3532 RVA: 0x002FE234 File Offset: 0x002FC634
 		private bool Endereco_Repetidora_Ja_Existente(ref DataGridView obj, ref RT_geral.Integer_ictel dado, DataGridViewCellValidatingEventArgs e, int posicao)
 		{
-			bool result;
+			bool result = false;
 			return result;
 		}
 
@@ -2457,9 +2457,9 @@ namespace iS800
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -2812,7 +2812,7 @@ namespace iS800
 		// Token: 0x06000DF5 RID: 3573 RVA: 0x003003BC File Offset: 0x002FE7BC
 		public bool IPKeyPress(KeyPressEventArgs e)
 		{
-			bool result;
+			bool result = false;
 			if (char.IsDigit(e.KeyChar) | Operators.CompareString(Conversions.ToString(e.KeyChar), ".", false) == 0 | Strings.Asc(e.KeyChar) == 46 | Strings.Asc(e.KeyChar) == 8 | Strings.Asc(e.KeyChar) == 39 | Strings.Asc(e.KeyChar) == 37)
 			{
 				result = true;
@@ -2831,7 +2831,7 @@ namespace iS800
 			{
 				'.'
 			});
-			bool result;
+			bool result = false;
 			if (array.Length != 4)
 			{
 				result = false;

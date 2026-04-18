@@ -995,7 +995,7 @@ ler_conf_md_.Location = new global::System.Drawing.Point(17, 60);
 			this.Ler_conf_md_302.TabIndex = 3;
 			this.Ler_conf_md_302.Text = "Ler configuração";
 			this.Ler_conf_md_302.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem
@@ -1035,7 +1035,7 @@ menuStrip.Location = new global::System.Drawing.Point(0, 652);
 			salvarToolStripMenuItem.Size = this.Size;
 			this.SalvarToolStripMenuItem.Text = "Salvar";
 			this.OpenFileDialog1.FileName = "OpenFileDialog1";
-			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
+			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode)1;
 			this.Col_end.HeaderText = "Endereço";
 			this.Col_end.Name = "Col_end";
 			this.Col_end.ReadOnly = true;
@@ -1078,7 +1078,7 @@ menuStrip.Location = new global::System.Drawing.Point(0, 652);
 			this.Col_posicao.Resizable = (System.Windows.Forms.DataGridViewTriState)2;
 			this.Col_posicao.SortMode = 0;
 			this.Col_posicao.Width = 70;
-			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
+			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode)1;
 			dataGridViewCellStyle11.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_End_rq.DefaultCellStyle = dataGridViewCellStyle11;
 			this.Col_End_rq.Frozen = true;

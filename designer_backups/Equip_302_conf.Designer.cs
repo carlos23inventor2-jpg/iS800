@@ -465,7 +465,7 @@
 			global::System.Windows.Forms.Control tabControl2 = this.TabControl2;
 			size = new size(738, 589);
 			tabControl2.Size = size;
-			this.TabControl2.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)2;
+			this.TabControl2.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)2;
 			this.TabControl2.TabIndex = 4;
 			this.Conf_res.Controls.Add(this.DataGridView1);
 			global::System.Windows.Forms.TabPage conf_res = this.Conf_res;
@@ -495,7 +495,7 @@
 				this.Col_pri,
 				this.Col_posicao
 			});
-			dataGridViewCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle.ForeColor = global::System.Drawing.SystemColors.ControlText;
@@ -507,7 +507,7 @@
 			location = new location(3, 0);
 			dataGridView.Location = location;
 			this.DataGridView1.Name = "DataGridView1";
-			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -572,7 +572,7 @@
 				this.Col_Esc_15,
 				this.Col_Esc_16
 			});
-			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)64;
+			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment)64;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
@@ -584,7 +584,7 @@
 			location = new location(3, 3);
 			dataGridView_RQ.Location = location;
 			this.DataGridView_RQ.Name = "DataGridView_RQ";
-			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)32;
+			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, 3, 0);
 			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -1042,7 +1042,7 @@
 			this.Ler_conf_md_302.TabIndex = 3;
 			this.Ler_conf_md_302.Text = "Ler configuração";
 			this.Ler_conf_md_302.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle) (System.Windows.Forms.DockStyle)2;
+			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem
@@ -1083,7 +1083,7 @@
 			salvarToolStripMenuItem.Size = size;
 			this.SalvarToolStripMenuItem.Text = "Salvar";
 			this.OpenFileDialog1.FileName = "OpenFileDialog1";
-			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
+			this.Col_end.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode)1;
 			this.Col_end.HeaderText = "Endereço";
 			this.Col_end.Name = "Col_end";
 			this.Col_end.ReadOnly = true;
@@ -1126,7 +1126,7 @@
 			this.Col_posicao.Resizable = 2;
 			this.Col_posicao.SortMode = 0;
 			this.Col_posicao.Width = 70;
-			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode) (System.Windows.Forms.AutoSizeMode)1;
+			this.Col_End_rq.AutoSizeMode =(System.Windows.Forms.DataGridViewAutoSizeColumnMode)(System.Windows.Forms.AutoSizeMode)1;
 			dataGridViewCellStyle11.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_End_rq.DefaultCellStyle = dataGridViewCellStyle11;
 			this.Col_End_rq.Frozen = true;
@@ -1165,7 +1165,7 @@
 			this.Col_RDest_rq.Width = 50;
 			dataGridViewCellStyle15.Format = "N0";
 			this.Col_mod_rq.DefaultCellStyle = dataGridViewCellStyle15;
-			this.Col_mod_rq.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)0;
+			this.Col_mod_rq.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)0;
 			this.Col_mod_rq.DisplayStyleForCurrentCellOnly = true;
 			this.Col_mod_rq.HeaderText = "Modelo";
 			this.Col_mod_rq.Items.AddRange(new object[]
@@ -1237,7 +1237,7 @@
 			this.Col_MsgR4_rq.Resizable = 2;
 			this.Col_MsgR4_rq.SortMode = 0;
 			this.Col_MsgR4_rq.Width = 50;
-			this.Col_hab.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle) (System.Windows.Forms.ToolStripItemDisplayStyle)0;
+			this.Col_hab.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)0;
 			this.Col_hab.DisplayStyleForCurrentCellOnly = true;
 			this.Col_hab.HeaderText = "Hab Cmd";
 			this.Col_hab.Items.AddRange(new object[]

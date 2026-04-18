@@ -14,11 +14,11 @@ namespace iS800.My
 	// Token: 0x020000A9 RID: 169
 	[GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
 	[CompilerGenerated]
-	[EditorBrowsable(2)]
+	[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
 	internal sealed partial class MySettings : ApplicationSettingsBase
 	{
 		// Token: 0x060027DB RID: 10203 RVA: 0x00424AAC File Offset: 0x00422EAC
-		[EditorBrowsable(2)]
+		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
 		[DebuggerNonUserCode]
 		private static void AutoSaveSettings(object sender, EventArgs e)
 		{

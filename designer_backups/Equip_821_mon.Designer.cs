@@ -170,7 +170,7 @@
 			global::System.Windows.Forms.Control pb_hab_monitoracao2 = this.pb_hab_monitoracao;
 			size = new size(140, 118);
 			pb_hab_monitoracao2.Size = size;
-			this.pb_hab_monitoracao.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_hab_monitoracao.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_hab_monitoracao.TabIndex = 11;
 			this.pb_hab_monitoracao.TabStop = false;
 			this.Label1.AutoSize = true;
@@ -879,7 +879,7 @@
 			global::System.Windows.Forms.Control pb_bit3 = this.pb_bit5;
 			size = new size(63, 64);
 			pb_bit3.Size = size;
-			this.pb_bit5.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_bit5.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_bit5.TabIndex = 17;
 			this.pb_bit5.TabStop = false;
 			global::System.Windows.Forms.Control pb_bit4 = this.pb_bit4;
@@ -892,7 +892,7 @@
 			global::System.Windows.Forms.Control pb_bit6 = this.pb_bit4;
 			size = new size(64, 64);
 			pb_bit6.Size = size;
-			this.pb_bit4.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_bit4.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_bit4.TabIndex = 16;
 			this.pb_bit4.TabStop = false;
 			global::System.Windows.Forms.Control pb_bit7 = this.pb_bit2;
@@ -905,7 +905,7 @@
 			global::System.Windows.Forms.Control pb_bit9 = this.pb_bit2;
 			size = new size(64, 64);
 			pb_bit9.Size = size;
-			this.pb_bit2.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_bit2.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_bit2.TabIndex = 15;
 			this.pb_bit2.TabStop = false;
 			global::System.Windows.Forms.Control pb_bit10 = this.pb_bit1;
@@ -918,7 +918,7 @@
 			global::System.Windows.Forms.Control pb_bit12 = this.pb_bit1;
 			size = new size(64, 64);
 			pb_bit12.Size = size;
-			this.pb_bit1.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_bit1.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_bit1.TabIndex = 14;
 			this.pb_bit1.TabStop = false;
 			global::System.Windows.Forms.Control pb_bit13 = this.pb_bit3;
@@ -931,7 +931,7 @@
 			global::System.Windows.Forms.Control pb_bit15 = this.pb_bit3;
 			size = new size(64, 64);
 			pb_bit15.Size = size;
-			this.pb_bit3.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_bit3.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_bit3.TabIndex = 13;
 			this.pb_bit3.TabStop = false;
 			global::System.Windows.Forms.Control pb_bit16 = this.pb_bit0;
@@ -944,7 +944,7 @@
 			global::System.Windows.Forms.Control pb_bit18 = this.pb_bit0;
 			size = new size(64, 64);
 			pb_bit18.Size = size;
-			this.pb_bit0.SizeMode =(System.Windows.Forms.PictureBoxSizeMode) (System.Windows.Forms.PictureBoxSizeMode)1;
+			this.pb_bit0.SizeMode =(System.Windows.Forms.PictureBoxSizeMode)1;
 			this.pb_bit0.TabIndex = 12;
 			this.pb_bit0.TabStop = false;
 			this.GroupBox_Alarmes.Controls.Add(this.pb_bit0);

@@ -663,7 +663,7 @@ namespace iS800
 		{
 			checked
 			{
-				bool result;
+				bool result = false;
 				if (indice == dado[numero_ED].Indice_padrao)
 				{
 					result = false;

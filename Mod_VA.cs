@@ -516,7 +516,7 @@ namespace iS800
 			dados[0] = checked(DateAndTime.Year(Mod_VA.Operacao_VA220.relogio) - 2000);
 			dados[1] = DateAndTime.Month(Mod_VA.Operacao_VA220.relogio);
 			dados[2] = DateAndTime.Day(Mod_VA.Operacao_VA220.relogio);
-			dados[3] = DateAndTime.Weekday(Mod_VA.Operacao_VA220.relogio, 1);
+			dados[3] = DateAndTime.Weekday(Mod_VA.Operacao_VA220.relogio, (Microsoft.VisualBasic.FirstDayOfWeek)1);
 			dados[4] = DateAndTime.Hour(Mod_VA.Operacao_VA220.relogio);
 			dados[5] = DateAndTime.Minute(Mod_VA.Operacao_VA220.relogio);
 			dados[6] = 0;

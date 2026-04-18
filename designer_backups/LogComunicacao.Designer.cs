@@ -105,7 +105,7 @@
 			textBox.Location = location;
 			this.TextBox1.Multiline = true;
 			this.TextBox1.Name = "TextBox1";
-			this.TextBox1.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)2;
+			this.TextBox1.ScrollBars =(System.Windows.Forms.ScrollBars)2;
 			global::System.Windows.Forms.Control textBox2 = this.TextBox1;
 			size = new size(774, 318);
 			textBox2.Size = size;

@@ -816,7 +816,7 @@ namespace iS800
 					if (!flag)
 					{
 						string text = "Tipo do arquivo selecionado não é compatível com o Equipamento!";
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", 0, (System.Windows.Forms.MessageBoxIcon)16);
 						return result;
 					}
 					break;
@@ -839,7 +839,7 @@ namespace iS800
 							"\r\nRelease : ",
 							Conversion.Str(release)
 						});
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", 0, (System.Windows.Forms.MessageBoxIcon)16);
 						return result;
 					}
 					if (equip == 920 & versao == 300)
@@ -859,7 +859,7 @@ namespace iS800
 							"\r\nRelease : ",
 							Conversion.Str(release)
 						});
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", 0, (System.Windows.Forms.MessageBoxIcon)16);
 						return result;
 					}
 					break;
@@ -890,7 +890,7 @@ namespace iS800
 							Conversion.Str(release),
 							"\r\n\r\n   A utilização destes dados poderá implicar em interpretações erradas.\r\n   Todos os parâmetros deverão ser conferidos, caso sejam utilizados.\r\n\r\n   Deseja continuar?"
 						});
-						if (MessageBox.Show(text, " Atenção ", 4, 16) != 7)
+						if (MessageBox.Show(text, " Atenção ", (System.Windows.Forms.MessageBoxButtons)4, (System.Windows.Forms.MessageBoxIcon)16) != (System.Windows.Forms.DialogResult)7)
 						{
 						}
 						break;
@@ -908,7 +908,7 @@ namespace iS800
 							"\r\nRelease : ",
 							Conversion.Str(release)
 						});
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", 0, (System.Windows.Forms.MessageBoxIcon)16);
 						break;
 					}
 					}
@@ -8713,7 +8713,7 @@ namespace iS800
 				}
 				else if (pagina == 2304)
 				{
-					int j;
+					int j = 0;
 					RT_831_200_variaveis_X.RT_831_200_BD.senha.senha.Valor = (int)Comunicacao.Buffer_resp[j + 3] * 256 + (int)Comunicacao.Buffer_resp[j + 4];
 				}
 			}
@@ -8891,7 +8891,7 @@ namespace iS800
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.reservatorio[i].NumeroVariavel.Valor;
 					int num8 = 0;
 					byte b = (byte)num8;
-					int num9;
+					int num9 = 0;
 					byte b2 = (byte)num9;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num9 = (int)b2;
@@ -10370,7 +10370,7 @@ namespace iS800
 			dataGridViewComboBoxColumn2.Width = dados[num].LarguraColuna;
 			dataGridViewComboBoxColumn2.MaxDropDownItems = 6;
 			dataGridViewComboBoxColumn2.FlatStyle = FlatStyle.Flat;
-			dataGridViewComboBoxColumn2.DefaultCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)dados[num].AlingColuna;
+			dataGridViewComboBoxColumn2.DefaultCellStyle.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)dados[num].AlingColuna;
 			dataGridViewComboBoxColumn2.ReadOnly = false;
 			dataGridViewComboBoxColumn2.Items.Clear();
 			int numeroLinhaMenu = dados[num].NumeroLinhaMenu;
@@ -10399,7 +10399,7 @@ namespace iS800
 			dataGridViewTextBoxColumn2.DataPropertyName = "Col_" + dados[num].NomeColuna;
 			dataGridViewTextBoxColumn2.HeaderText = dados[num].TagColuna;
 			dataGridViewTextBoxColumn2.Width = dados[num].LarguraColuna;
-			dataGridViewTextBoxColumn2.DefaultCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)dados[num].AlingColuna;
+			dataGridViewTextBoxColumn2.DefaultCellStyle.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)dados[num].AlingColuna;
 			return dataGridViewTextBoxColumn;
 		}
 
@@ -10412,7 +10412,7 @@ namespace iS800
 			dataGridViewCheckBoxColumn2.HeaderText = dados[Conversions.ToInteger(Num)].TagColuna;
 			dataGridViewCheckBoxColumn2.Width = dados[Conversions.ToInteger(Num)].LarguraColuna;
 			dataGridViewCheckBoxColumn2.FlatStyle = FlatStyle.Flat;
-			dataGridViewCheckBoxColumn2.DefaultCellStyle.Alignment =(System.Windows.Forms.HorizontalAlignment) (System.Windows.Forms.HorizontalAlignment)dados[Conversions.ToInteger(Num)].AlingColuna;
+			dataGridViewCheckBoxColumn2.DefaultCellStyle.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)dados[Conversions.ToInteger(Num)].AlingColuna;
 			return dataGridViewCheckBoxColumn;
 		}
 

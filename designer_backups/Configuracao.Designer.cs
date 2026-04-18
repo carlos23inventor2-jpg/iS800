@@ -166,7 +166,7 @@
 			size = new size(112, 21);
 			comboPortaSerial2.Size = size;
 			this.ComboPortaSerial.TabIndex = 1;
-			this.OK_Button.Anchor = 0;
+			this.OK_Button.Anchor = (System.Windows.Forms.AnchorStyles)0;
 			global::System.Windows.Forms.Control ok_Button = this.OK_Button;
 			location = new location(417, 304);
 			ok_Button.Location = location;

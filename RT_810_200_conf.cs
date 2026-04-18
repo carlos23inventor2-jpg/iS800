@@ -2466,13 +2466,13 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LarguraColuna = 100;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[5].LarguraColuna = 60;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[6].LarguraColuna = 60;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[1].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[2].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[5].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[6].AlingColuna = 64;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 2;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasMenu[0] = "Desativa";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasMenu[1] = "SD - 01";
@@ -2526,9 +2526,9 @@ namespace iS800
 			RT_geral.RT_810_200_DataGrigViewEAColunas[0].LarguraColuna = 90;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[1].LarguraColuna = 90;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[2].LarguraColuna = 90;
-			RT_geral.RT_810_200_DataGrigViewEAColunas[0].AlingColuna = 64;
-			RT_geral.RT_810_200_DataGrigViewEAColunas[1].AlingColuna = 64;
-			RT_geral.RT_810_200_DataGrigViewEAColunas[2].AlingColuna = 64;
+			RT_geral.RT_810_200_DataGrigViewEAColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_200_DataGrigViewEAColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_200_DataGrigViewEAColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[0].NumeroLinhaMenu = 0;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[1].NumeroLinhaMenu = 0;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[2].NumeroLinhaMenu = 0;
@@ -2613,16 +2613,16 @@ namespace iS800
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].LarguraColuna = 65;
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].LarguraColuna = 50;
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].AlingColuna = 64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 		}
 
 		// Token: 0x0600052D RID: 1325 RVA: 0x00294994 File Offset: 0x00292D94
@@ -2652,9 +2652,9 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].LarguraColuna = 60;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].LarguraColuna = 60;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LarguraColuna = 160;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = 0;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = 0;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasMenu[0] = "Controle Desabilitado";
@@ -2700,7 +2700,7 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewEDColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].NomeColuna = "Entrada";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LarguraColuna = 200;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[1] = 21969;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[2] = 21970;
@@ -3416,7 +3416,7 @@ namespace iS800
 						}
 					}
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Red;
-					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), 32, "Erro na entrada de dados");
+					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), (Microsoft.VisualBasic.MsgBoxStyle)32, "Erro na entrada de dados");
 					dado.erro = true;
 					return true;
 				}
@@ -4120,9 +4120,9 @@ namespace iS800
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, 3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, 0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, 1, (System.Drawing.GraphicsUnit)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;

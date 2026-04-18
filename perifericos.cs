@@ -402,6 +402,8 @@ namespace iS800
 		// Token: 0x020000AC RID: 172
 		public class Periferico
 		{
+			private string _nome;
+			private string _nome_impressao;
 			// Token: 0x17000E86 RID: 3718
 			// (get) Token: 0x060027EA RID: 10218 RVA: 0x002623C4 File Offset: 0x002607C4
 			// (set) Token: 0x060027EB RID: 10219 RVA: 0x002623D8 File Offset: 0x002607D8
@@ -443,6 +445,10 @@ namespace iS800
 		// Token: 0x020000AD RID: 173
 		public class Valores_ComboBox
 		{
+			private string _nome;
+			private string _nome_impressao;
+			private int _valor;
+			private bool _is_default;
 			// Token: 0x17000E88 RID: 3720
 			// (get) Token: 0x060027EF RID: 10223 RVA: 0x0026241C File Offset: 0x0026081C
 			// (set) Token: 0x060027F0 RID: 10224 RVA: 0x00262430 File Offset: 0x00260830

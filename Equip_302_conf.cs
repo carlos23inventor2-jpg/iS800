@@ -3030,7 +3030,7 @@ namespace iS800
 			bool flag = false;
 			checked
 			{
-				bool result;
+				bool result = false;
 				if (coluna < 1 | linha < 0)
 				{
 					result = false;

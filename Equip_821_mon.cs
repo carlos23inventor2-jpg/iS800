@@ -1584,7 +1584,7 @@ namespace iS800
 			this.Mon_820_DGVReferenciaColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVReferenciaColunas[0].NomeColuna = "range";
 			this.Mon_820_DGVReferenciaColunas[0].LarguraColuna = 100;
-			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 			this.Mon_820_DGVReferenciaColunas[0].NumeroLinhaMenu = 0;
 		}
 
@@ -2302,7 +2302,7 @@ namespace iS800
 			{
 				do
 				{
-					byte b = dados[17 + num] - 48;
+					byte b = (byte)(dados[17 + num] - 48);
 					bool flag = Convert.ToBoolean((int)(b & 64));
 					bool flag2 = Convert.ToBoolean((int)(b & 32));
 					int num2 = (int)(b & 15);
