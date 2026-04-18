@@ -7444,12 +7444,10 @@ namespace iS800
 		// Token: 0x060007A2 RID: 1954 RVA: 0x002B035C File Offset: 0x002AE75C
 		private void NumericUpDown_temp_ptt_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null), 10), 10));
-			NewLateBinding.LateSet(sender, null, "Value", new object[]
-			{
-				RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor
-			}, null, null);
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
+			decimal valorTemp = decimal.Floor(numericUpDown.Value / 10m) * 10m;
+			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor = Conversions.ToInteger(valorTemp);
+			numericUpDown.Value = RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
