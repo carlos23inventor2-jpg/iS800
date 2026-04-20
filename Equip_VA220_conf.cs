@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x0200009C RID: 156
+	[DesignerGenerated]
 	public partial class Equip_VA220_conf : Form
 	{
 		// Token: 0x06002497 RID: 9367 RVA: 0x0040D450 File Offset: 0x0040B850
@@ -1794,7 +1795,7 @@ namespace iS800
 		{
 			int[] array = new int[41];
 			this.Limpa_tela_conf_VA220();
-			this.Mensagem_VA220("Aguarde ...", (int)OpenMode.Output);
+			this.Mensagem_VA220("Aguarde ...", 2);
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
 			checked
 			{
@@ -1813,26 +1814,26 @@ namespace iS800
 					case 0:
 						Mod_VA.Atualiza_dados_VA220_configuracao_geral();
 						this.Atualiza_tela_VA220_configuracao_geral();
-						this.Mensagem_VA220("Leitura configuração geral - Ok", (int)OpenMode.Binary);
+						this.Mensagem_VA220("Leitura configuração geral - Ok", 0);
 						goto IL_CD;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Erro leitura configuração geral - conferência", (int)OpenMode.Input);
+							this.Mensagem_VA220("Erro leitura configuração geral - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Erro leitura configuração geral - timeout", (int)OpenMode.Input);
+							this.Mensagem_VA220("Erro leitura configuração geral - timeout", 1);
 							return;
 						}
 						continue;
 					}
 					if (i == 0)
 					{
-						this.Mensagem_VA220("Erro leitura configuração geral - não determinado", (int)OpenMode.Input);
+						this.Mensagem_VA220("Erro leitura configuração geral - não determinado", 1);
 						return;
 					}
 				}
@@ -1853,31 +1854,31 @@ namespace iS800
 					case 0:
 						Mod_VA.Atualiza_dados_VA220_configuracao_IO();
 						this.Atualiza_tela_VA220_configuracao_IO();
-						this.Mensagem_VA220("Leitura configuração I/O - Ok", (int)OpenMode.Binary);
+						this.Mensagem_VA220("Leitura configuração I/O - Ok", 0);
 						goto IL_180;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Erro leitura configuração I/O - conferência", (int)OpenMode.Input);
+							this.Mensagem_VA220("Erro leitura configuração I/O - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Erro leitura configuração I/O - timeout", (int)OpenMode.Input);
+							this.Mensagem_VA220("Erro leitura configuração I/O - timeout", 1);
 							return;
 						}
 						continue;
 					}
 					if (i == 0)
 					{
-						this.Mensagem_VA220("Erro leitura configuração I/O - não determinado", (int)OpenMode.Input);
+						this.Mensagem_VA220("Erro leitura configuração I/O - não determinado", 1);
 						return;
 					}
 				}
 				IL_180:
-				this.Mensagem_VA220("Leitura executada com sucesso", (int)OpenMode.Binary);
+				this.Mensagem_VA220("Leitura executada com sucesso", 0);
 			}
 		}
 
@@ -1940,7 +1941,7 @@ namespace iS800
 		private void Esc_conf_VA220_Click(object sender, EventArgs e)
 		{
 			int[] dados = new int[41];
-			this.Mensagem_VA220("Aguarde ...", (int)OpenMode.Output);
+			this.Mensagem_VA220("Aguarde ...", 2);
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
 			checked
 			{
@@ -1956,26 +1957,26 @@ namespace iS800
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
-						this.Mensagem_VA220("Habilitação de configuração - Ok", (int)OpenMode.Binary);
+						this.Mensagem_VA220("Habilitação de configuração - Ok", 0);
 						goto IL_B8;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Habilitação de configuração - conferência", (int)OpenMode.Input);
+							this.Mensagem_VA220("Habilitação de configuração - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Habilitação de configuração - timeout", (int)OpenMode.Input);
+							this.Mensagem_VA220("Habilitação de configuração - timeout", 1);
 							return;
 						}
 						continue;
 					}
 					if (i == 0)
 					{
-						this.Mensagem_VA220("Habilitação de configuração - não determinado", (int)OpenMode.Input);
+						this.Mensagem_VA220("Habilitação de configuração - não determinado", 1);
 						return;
 					}
 				}
@@ -1994,26 +1995,26 @@ namespace iS800
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
-						this.Mensagem_VA220("Escrita configuração geral - Ok", (int)OpenMode.Binary);
+						this.Mensagem_VA220("Escrita configuração geral - Ok", 0);
 						goto IL_163;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Escrita configuração geral - conferência", (int)OpenMode.Input);
+							this.Mensagem_VA220("Escrita configuração geral - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Escrita configuração geral - timeout", (int)OpenMode.Input);
+							this.Mensagem_VA220("Escrita configuração geral - timeout", 1);
 							return;
 						}
 						continue;
 					}
 					if (i == 0)
 					{
-						this.Mensagem_VA220("Escrita configuração geral - não determinado", (int)OpenMode.Input);
+						this.Mensagem_VA220("Escrita configuração geral - não determinado", 1);
 						return;
 					}
 				}
@@ -2032,26 +2033,26 @@ namespace iS800
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
-						this.Mensagem_VA220("Escrita configuração I/O - Ok", (int)OpenMode.Binary);
+						this.Mensagem_VA220("Escrita configuração I/O - Ok", 0);
 						goto IL_20E;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Escrita configuração I/O - conferência", (int)OpenMode.Input);
+							this.Mensagem_VA220("Escrita configuração I/O - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Escrita configuração I/O - timeout", (int)OpenMode.Input);
+							this.Mensagem_VA220("Escrita configuração I/O - timeout", 1);
 							return;
 						}
 						continue;
 					}
 					if (i == 0)
 					{
-						this.Mensagem_VA220("Escrita configuração I/O - não determinado", (int)OpenMode.Input);
+						this.Mensagem_VA220("Escrita configuração I/O - não determinado", 1);
 						return;
 					}
 				}
@@ -2069,31 +2070,31 @@ namespace iS800
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
-						this.Mensagem_VA220("Término de configuração - Ok", (int)OpenMode.Binary);
+						this.Mensagem_VA220("Término de configuração - Ok", 0);
 						goto IL_2B2;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Término de configuração - conferência", (int)OpenMode.Input);
+							this.Mensagem_VA220("Término de configuração - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_VA220("Término de configuração - timeout", (int)OpenMode.Input);
+							this.Mensagem_VA220("Término de configuração - timeout", 1);
 							return;
 						}
 						continue;
 					}
 					if (i == 0)
 					{
-						this.Mensagem_VA220("Término de configuração - não determinado", (int)OpenMode.Input);
+						this.Mensagem_VA220("Término de configuração - não determinado", 1);
 						return;
 					}
 				}
 				IL_2B2:
-				this.Mensagem_VA220("Escrita executada com sucesso", (int)OpenMode.Binary);
+				this.Mensagem_VA220("Escrita executada com sucesso", 0);
 			}
 		}
 

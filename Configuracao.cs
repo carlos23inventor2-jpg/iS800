@@ -1,11 +1,11 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
@@ -14,6 +14,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000011 RID: 17
+	[DesignerGenerated]
 	public partial class Configuracao : Form
 	{
 		// Token: 0x0600008D RID: 141 RVA: 0x0026374C File Offset: 0x00261B4C
@@ -493,7 +494,7 @@ namespace iS800
 			}
 			IniFileWriteFast iniFileWriteFast = new IniFileWriteFast(text2);
 			iniFileWriteFast.WriteSection("Interfaces");
-			iniFileWriteFast.WriteKey("quantas", (int)OpenMode.Random);
+			iniFileWriteFast.WriteKey("quantas", 3);
 			iniFileWriteFast.WriteKey("interface1", "Serial RS232");
 			iniFileWriteFast.WriteKey("interface2", "Ethernet TCP/IP RS232");
 			iniFileWriteFast.WriteKey("interface3", "ICTEL WIFI RS232");
@@ -526,14 +527,14 @@ namespace iS800
 			{
 				MyProject.Forms.Plataforma.ToolStripButton_serial.Image = Resources.DB9_128;
 			}
-			this.DialogResult = DialogResult.OK;
+			this.DialogResult = 1;
 			this.Close();
 		}
 
 		// Token: 0x060000BF RID: 191 RVA: 0x00264CC4 File Offset: 0x002630C4
 		private void Cancel_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = DialogResult.Cancel;
+			this.DialogResult = 2;
 			this.Close();
 		}
 
@@ -542,7 +543,7 @@ namespace iS800
 		{
 			checked
 			{
-				Point point = new Point();
+				Point point;
 				point.X = MyProject.Forms.Plataforma.Location.X + 200;
 				point.Y = MyProject.Forms.Plataforma.Location.Y + 50;
 				this.cb_tipo_interface.Items.Clear();
@@ -559,7 +560,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator<string> enumerator = null;
+					IEnumerator<string> enumerator;
 					if (enumerator != null)
 					{
 						enumerator.Dispose();
@@ -704,7 +705,7 @@ namespace iS800
 		{
 			if (this.aguarda)
 			{
-				Comunicacao.Config_sistema.Retry = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)).ToString();
+				Comunicacao.Config_sistema.Retry = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)).ToString();
 			}
 		}
 
@@ -721,7 +722,7 @@ namespace iS800
 		// Token: 0x060000C9 RID: 201 RVA: 0x0026537C File Offset: 0x0026377C
 		private void cb_tipo_interface_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.tipo_interface = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), OpenMode.Input));
+			Comunicacao.Config_sistema.tipo_interface = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 1));
 		}
 
 		// Token: 0x060000CA RID: 202 RVA: 0x002653B0 File Offset: 0x002637B0

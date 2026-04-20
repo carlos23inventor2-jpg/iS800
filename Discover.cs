@@ -1,17 +1,17 @@
-using System.Drawing;
-using System.Windows.Forms;
-using Microsoft.VisualBasic;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Drawing.Text;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000013 RID: 19
+	[DesignerGenerated]
 	public partial class Discover : Form
 	{
 		// Token: 0x060000D9 RID: 217 RVA: 0x002657F4 File Offset: 0x00263BF4
@@ -238,8 +238,8 @@ namespace iS800
 			{
 				PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 				privateFontCollection.AddFontFile(text);
-				Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)(int)OpenMode.Output);
-				Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)OpenMode.Output);
+				Font font = new Font(privateFontCollection.Families[0], 8f, 2);
+				Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
 				this.Label26.Font = font;
 				this.TextBox_equipamento.Font = font;
 				this.TextBox_versao.Font = font;

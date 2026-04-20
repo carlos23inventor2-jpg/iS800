@@ -1,5 +1,3 @@
-﻿using System.Drawing;
-using System.Windows.Forms;
 ﻿namespace iS800
 {
 	// Token: 0x02000008 RID: 8
@@ -25,16 +23,16 @@ using System.Windows.Forms;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = AutoScaleMode.Font;
+			this.AutoScaleMode = 1;
 			this.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Drawing.Size clientSize;
 			clientSize = new global::System.Drawing.Size(50, 32);
 			this.ClientSize = clientSize;
 			this.ControlBox = false;
-			this.FormBorderStyle = FormBorderStyle.None;
+			this.FormBorderStyle = 0;
 			this.Name = "Abertura";
-			this.SizeGripStyle = (SizeGripStyle)2;
-			this.StartPosition = global::System.Windows.Forms.FormStartPosition.Manual;
+			this.SizeGripStyle = 2;
+			this.StartPosition = 0;
 			this.Text = "Abertura";
 			this.ResumeLayout(false);
 		}

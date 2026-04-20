@@ -1,5 +1,3 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using Microsoft.VisualBasic.CompilerServices;
 
@@ -65,7 +63,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_equip_reservatorios.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("VARIAVEIS_{0}", i + 1);
 					ini.WriteSection(section);
@@ -85,7 +83,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_recalques.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("REMOTAS_CONTROLE_{0}", i + 1);
 					ini.WriteSection(section);
@@ -131,7 +129,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_vistas.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO_VISTA_{0}", i + 1);
 					ini.WriteSection(section);

@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x0200009F RID: 159
+	[DesignerGenerated]
 	public partial class Equip_VA230_conf : Form
 	{
 		// Token: 0x060026E6 RID: 9958 RVA: 0x0041FE7C File Offset: 0x0041E27C

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -10,6 +10,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x0200009E RID: 158
+	[DesignerGenerated]
 	public partial class Equip_VA220_ope : Form
 	{
 		// Token: 0x06002569 RID: 9577 RVA: 0x00415358 File Offset: 0x00413758
@@ -3065,7 +3066,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[1, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002690 RID: 9872 RVA: 0x0041C868 File Offset: 0x0041AC68
@@ -3075,7 +3076,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[1, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002691 RID: 9873 RVA: 0x0041C8DC File Offset: 0x0041ACDC
@@ -3085,7 +3086,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[1, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002692 RID: 9874 RVA: 0x0041C950 File Offset: 0x0041AD50
@@ -3095,7 +3096,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[1, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002693 RID: 9875 RVA: 0x0041C9C4 File Offset: 0x0041ADC4
@@ -3105,7 +3106,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[2, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002694 RID: 9876 RVA: 0x0041CA38 File Offset: 0x0041AE38
@@ -3115,7 +3116,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[2, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002695 RID: 9877 RVA: 0x0041CAAC File Offset: 0x0041AEAC
@@ -3125,7 +3126,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[2, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002696 RID: 9878 RVA: 0x0041CB20 File Offset: 0x0041AF20
@@ -3135,7 +3136,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[2, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002697 RID: 9879 RVA: 0x0041CB94 File Offset: 0x0041AF94
@@ -3145,7 +3146,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[3, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002698 RID: 9880 RVA: 0x0041CC08 File Offset: 0x0041B008
@@ -3155,7 +3156,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[3, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002699 RID: 9881 RVA: 0x0041CC7C File Offset: 0x0041B07C
@@ -3165,7 +3166,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[3, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x0600269A RID: 9882 RVA: 0x0041CCF0 File Offset: 0x0041B0F0
@@ -3175,7 +3176,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[3, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x0600269B RID: 9883 RVA: 0x0041CD64 File Offset: 0x0041B164
@@ -3185,7 +3186,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[4, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x0600269C RID: 9884 RVA: 0x0041CDD8 File Offset: 0x0041B1D8
@@ -3195,7 +3196,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[4, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x0600269D RID: 9885 RVA: 0x0041CE4C File Offset: 0x0041B24C
@@ -3205,7 +3206,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[4, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x0600269E RID: 9886 RVA: 0x0041CEC0 File Offset: 0x0041B2C0
@@ -3215,7 +3216,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_liga[4, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x0600269F RID: 9887 RVA: 0x0041CF34 File Offset: 0x0041B334
@@ -3225,7 +3226,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[1, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A0 RID: 9888 RVA: 0x0041CFA8 File Offset: 0x0041B3A8
@@ -3235,7 +3236,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[1, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A1 RID: 9889 RVA: 0x0041D01C File Offset: 0x0041B41C
@@ -3245,7 +3246,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[1, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A2 RID: 9890 RVA: 0x0041D090 File Offset: 0x0041B490
@@ -3255,7 +3256,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[1, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A3 RID: 9891 RVA: 0x0041D104 File Offset: 0x0041B504
@@ -3265,7 +3266,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[2, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A4 RID: 9892 RVA: 0x0041D178 File Offset: 0x0041B578
@@ -3275,7 +3276,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[2, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A5 RID: 9893 RVA: 0x0041D1EC File Offset: 0x0041B5EC
@@ -3285,7 +3286,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[2, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A6 RID: 9894 RVA: 0x0041D260 File Offset: 0x0041B660
@@ -3295,7 +3296,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[2, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A7 RID: 9895 RVA: 0x0041D2D4 File Offset: 0x0041B6D4
@@ -3305,7 +3306,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[3, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A8 RID: 9896 RVA: 0x0041D348 File Offset: 0x0041B748
@@ -3315,7 +3316,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[3, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026A9 RID: 9897 RVA: 0x0041D3BC File Offset: 0x0041B7BC
@@ -3325,7 +3326,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[3, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026AA RID: 9898 RVA: 0x0041D430 File Offset: 0x0041B830
@@ -3335,7 +3336,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[3, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026AB RID: 9899 RVA: 0x0041D4A4 File Offset: 0x0041B8A4
@@ -3345,7 +3346,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[4, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026AC RID: 9900 RVA: 0x0041D518 File Offset: 0x0041B918
@@ -3355,7 +3356,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[4, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026AD RID: 9901 RVA: 0x0041D58C File Offset: 0x0041B98C
@@ -3365,7 +3366,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[4, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026AE RID: 9902 RVA: 0x0041D600 File Offset: 0x0041BA00
@@ -3375,39 +3376,39 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Timer_desliga[4, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026AF RID: 9903 RVA: 0x0041D674 File Offset: 0x0041BA74
 		public string Verifica_horario(string hora, bool ativa_msg)
 		{
-			int num = 0;
+			int num;
 			string text;
-			int num2 = 0;
+			int num2;
 			object obj;
 			try
 			{
 				ProjectData.ClearProjectError();
 				num = 2;
-				text = Strings.FormatDateTime(Conversions.ToDate(hora), Microsoft.VisualBasic.DateFormat.ShortTime);
+				text = Strings.FormatDateTime(Conversions.ToDate(hora), 4);
 				goto IL_6F;
 				IL_16:
 				if (!ativa_msg)
 				{
 					goto IL_26;
 				}
-				Interaction.MsgBox("Digite um hórario válido", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Digite um hórario válido", 0, null);
 				IL_26:
 				text = "00:00";
 				goto IL_6F;
 				IL_2E:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_42:;
+								IL_42:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_2E;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_6F:
@@ -3493,8 +3494,8 @@ namespace iS800
 		// Token: 0x060026B5 RID: 9909 RVA: 0x0041D8A0 File Offset: 0x0041BCA0
 		private void Valor_nivel_desejado_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3511,8 +3512,8 @@ namespace iS800
 		// Token: 0x060026B6 RID: 9910 RVA: 0x0041D914 File Offset: 0x0041BD14
 		private void Valor_nivel_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3529,8 +3530,8 @@ namespace iS800
 		// Token: 0x060026B7 RID: 9911 RVA: 0x0041D988 File Offset: 0x0041BD88
 		private void Valor_nivel_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3547,8 +3548,8 @@ namespace iS800
 		// Token: 0x060026B8 RID: 9912 RVA: 0x0041D9FC File Offset: 0x0041BDFC
 		private void Valor_nivel_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3565,8 +3566,8 @@ namespace iS800
 		// Token: 0x060026B9 RID: 9913 RVA: 0x0041DA70 File Offset: 0x0041BE70
 		private void Valor_nivel_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3583,8 +3584,8 @@ namespace iS800
 		// Token: 0x060026BA RID: 9914 RVA: 0x0041DAE4 File Offset: 0x0041BEE4
 		private void Valor_nivel_desligamento_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3601,8 +3602,8 @@ namespace iS800
 		// Token: 0x060026BB RID: 9915 RVA: 0x0041DB58 File Offset: 0x0041BF58
 		private void Valor_nivel_ligamento_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3619,8 +3620,8 @@ namespace iS800
 		// Token: 0x060026BC RID: 9916 RVA: 0x0041DBCC File Offset: 0x0041BFCC
 		private void Valor_pressao_succao_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3637,8 +3638,8 @@ namespace iS800
 		// Token: 0x060026BD RID: 9917 RVA: 0x0041DC40 File Offset: 0x0041C040
 		private void Valor_pressao_controle_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3655,8 +3656,8 @@ namespace iS800
 		// Token: 0x060026BE RID: 9918 RVA: 0x0041DCB4 File Offset: 0x0041C0B4
 		private void Valor_tempo_mais_bomba_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3693,7 +3694,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Ponta_Desliga = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Ponta_Desliga = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026C1 RID: 9921 RVA: 0x0041DE20 File Offset: 0x0041C220
@@ -3703,7 +3704,7 @@ namespace iS800
 			{
 				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
 			}, null, null);
-			Mod_VA.Operacao_VA220.Ponta_liga = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Mod_VA.Operacao_VA220.Ponta_liga = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 		}
 
 		// Token: 0x060026C2 RID: 9922 RVA: 0x0041DE8C File Offset: 0x0041C28C
@@ -3729,8 +3730,8 @@ namespace iS800
 		// Token: 0x060026C3 RID: 9923 RVA: 0x0041DF44 File Offset: 0x0041C344
 		private void Valor_Temp_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3747,8 +3748,8 @@ namespace iS800
 		// Token: 0x060026C4 RID: 9924 RVA: 0x0041DFB8 File Offset: 0x0041C3B8
 		private void Valor_Temp_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3765,8 +3766,8 @@ namespace iS800
 		// Token: 0x060026C5 RID: 9925 RVA: 0x0041E02C File Offset: 0x0041C42C
 		private void Valor_Temp_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3783,8 +3784,8 @@ namespace iS800
 		// Token: 0x060026C6 RID: 9926 RVA: 0x0041E0A0 File Offset: 0x0041C4A0
 		private void Valor_Temp_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3817,8 +3818,8 @@ namespace iS800
 		// Token: 0x060026C8 RID: 9928 RVA: 0x0041E19C File Offset: 0x0041C59C
 		private void Valor_NA_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3835,8 +3836,8 @@ namespace iS800
 		// Token: 0x060026C9 RID: 9929 RVA: 0x0041E218 File Offset: 0x0041C618
 		private void Valor_NA_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3853,8 +3854,8 @@ namespace iS800
 		// Token: 0x060026CA RID: 9930 RVA: 0x0041E294 File Offset: 0x0041C694
 		private void Valor_NA_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3871,8 +3872,8 @@ namespace iS800
 		// Token: 0x060026CB RID: 9931 RVA: 0x0041E310 File Offset: 0x0041C710
 		private void Valor_NA_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3889,8 +3890,8 @@ namespace iS800
 		// Token: 0x060026CC RID: 9932 RVA: 0x0041E38C File Offset: 0x0041C78C
 		private void Valor_NA_T_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3907,8 +3908,8 @@ namespace iS800
 		// Token: 0x060026CD RID: 9933 RVA: 0x0041E408 File Offset: 0x0041C808
 		private void Valor_NB_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3925,8 +3926,8 @@ namespace iS800
 		// Token: 0x060026CE RID: 9934 RVA: 0x0041E484 File Offset: 0x0041C884
 		private void Valor_NB_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3943,8 +3944,8 @@ namespace iS800
 		// Token: 0x060026CF RID: 9935 RVA: 0x0041E500 File Offset: 0x0041C900
 		private void Valor_NB_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3961,8 +3962,8 @@ namespace iS800
 		// Token: 0x060026D0 RID: 9936 RVA: 0x0041E57C File Offset: 0x0041C97C
 		private void Valor_NB_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -3979,8 +3980,8 @@ namespace iS800
 		// Token: 0x060026D1 RID: 9937 RVA: 0x0041E5F8 File Offset: 0x0041C9F8
 		private void Valor_NB_T_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				num
 			}, null, null);
@@ -4064,12 +4065,12 @@ namespace iS800
 			int[] array = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um endereço não válido ", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox(" Existe um endereço não válido ", 0, null);
 				return;
 			}
 			this.Ctrl_relogio.Enabled = false;
 			this.Limpa_tela_ope_VA220();
-			this.Mensagem_ope_VA220("Aguarde ...", (int)OpenMode.Output);
+			this.Mensagem_ope_VA220("Aguarde ...", 2);
 			checked
 			{
 				if (this.CheckBox_setpoints.Checked)
@@ -4089,26 +4090,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_setpoints_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura Setpoints - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Setpoints - Ok", 0);
 							goto IL_13E;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura setpoints - conferência", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura setpoints - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura setpoints - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura setpoints - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro leitura setpoints - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro leitura setpoints - não determinado", 1);
 							return;
 						}
 					}
@@ -4131,26 +4132,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_alarmes_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura Alarmes - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Alarmes - Ok", 0);
 							goto IL_20F;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura alarmes - conferência", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura alarmes - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro leitura alarmes - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro leitura alarmes - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro leitura alarmes - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro leitura alarmes - não determinado", 1);
 							return;
 						}
 					}
@@ -4173,26 +4174,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_ponta_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura Horário de Ponta - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Horário de Ponta - Ok", 0);
 							goto IL_2E0;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro horário de ponta - conferência", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro horário de ponta - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro horário de ponta - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro horário de ponta - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro horário de ponta - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro horário de ponta - não determinado", 1);
 							return;
 						}
 					}
@@ -4215,26 +4216,26 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_temp_VA220();
 							this.Atualiza_tela_ope_VA220();
-							this.Mensagem_ope_VA220("Leitura setpoints de temperatura - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura setpoints de temperatura - Ok", 0);
 							goto IL_3B1;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro setpoints de temperatura - conferência", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro setpoints de temperatura - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro setpoints de temperatura - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro setpoints de temperatura - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro setpoints de temperatura - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro setpoints de temperatura - não determinado", 1);
 							return;
 						}
 					}
@@ -4261,7 +4262,7 @@ namespace iS800
 							case 0:
 								Mod_VA.Atualiza_timer_VA220(num);
 								this.Atualiza_tela_ope_VA220();
-								this.Mensagem_ope_VA220("Leitura Timer Bomba " + Conversion.Str(num) + " - Ok", (int)OpenMode.Binary);
+								this.Mensagem_ope_VA220("Leitura Timer Bomba " + Conversion.Str(num) + " - Ok", 0);
 								goto IL_4DD;
 							case 2:
 								if (i == 0)
@@ -4289,13 +4290,13 @@ namespace iS800
 						}
 					}
 					Block_29:
-					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - timeout", (int)OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - timeout", 1);
 					return;
 					Block_30:
-					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - conferência", (int)OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - conferência", 1);
 					return;
 					Block_31:
-					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - não determinado", (int)OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - não determinado", 1);
 					return;
 				}
 				IL_4E8:
@@ -4316,32 +4317,32 @@ namespace iS800
 						case 0:
 							Mod_VA.Atualiza_relogio_VA220();
 							this.Ctrl_relogio.Enabled = true;
-							this.Mensagem_ope_VA220("Leitura Relogio - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Leitura Relogio - Ok", 0);
 							goto IL_5BF;
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro Relogio - conferência", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro Relogio - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro Relogio - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro Relogio - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro Relogio - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro Relogio - não determinado", 1);
 							return;
 						}
 					}
 				}
 				IL_5BF:
-				this.Mensagem_ope_VA220("Comando executado com sucesso", (int)OpenMode.Binary);
+				this.Mensagem_ope_VA220("Comando executado com sucesso", 0);
 			}
 		}
 
@@ -4399,7 +4400,7 @@ namespace iS800
 			int num = 1;
 			checked
 			{
-				int num2 = 0;
+				int num2;
 				do
 				{
 					num2 = 1;
@@ -4568,10 +4569,10 @@ namespace iS800
 			int[] dados = new int[41];
 			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
-				Interaction.MsgBox(" Existe um endereço não válido ", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox(" Existe um endereço não válido ", 0, null);
 				return;
 			}
-			this.Mensagem_ope_VA220("Aguarde ...", (int)OpenMode.Output);
+			this.Mensagem_ope_VA220("Aguarde ...", 2);
 			checked
 			{
 				if (this.CheckBox_setpoints.Checked)
@@ -4590,19 +4591,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Setpoints - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Setpoints - Ok", 0);
 							goto IL_117;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita setpoints - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita setpoints - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita setpoints - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita setpoints - não determinado", 1);
 							return;
 						}
 					}
@@ -4624,19 +4625,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Alarmes - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Alarmes - Ok", 0);
 							goto IL_1D3;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita alarmes - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita alarmes - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita alarmes - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita alarmes - não determinado", 1);
 							return;
 						}
 					}
@@ -4658,19 +4659,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Horário de Ponta - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Horário de Ponta - Ok", 0);
 							goto IL_28E;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita de ponta - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita de ponta - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita de ponta - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita de ponta - não determinado", 1);
 							return;
 						}
 					}
@@ -4692,19 +4693,19 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita setpoints de temperatura - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita setpoints de temperatura - Ok", 0);
 							goto IL_349;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - não determinado", 1);
 							return;
 						}
 					}
@@ -4729,7 +4730,7 @@ namespace iS800
 							switch (Comunicacao.Ctrl_Com.Frame)
 							{
 							case 0:
-								this.Mensagem_ope_VA220("Escrita Timer Bomba " + Conversion.Str(num) + " - Ok", (int)OpenMode.Binary);
+								this.Mensagem_ope_VA220("Escrita Timer Bomba " + Conversion.Str(num) + " - Ok", 0);
 								goto IL_447;
 							case 3:
 								if (i == 0)
@@ -4751,10 +4752,10 @@ namespace iS800
 						}
 					}
 					Block_25:
-					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - timeout", (int)OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - timeout", 1);
 					return;
 					Block_26:
-					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - não determinado", (int)OpenMode.Input);
+					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - não determinado", 1);
 					return;
 				}
 				IL_452:
@@ -4774,25 +4775,25 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_ope_VA220("Escrita Relogio - Ok", (int)OpenMode.Binary);
+							this.Mensagem_ope_VA220("Escrita Relogio - Ok", 0);
 							goto IL_50D;
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_ope_VA220("Erro Escrita Relogio - timeout", (int)OpenMode.Input);
+								this.Mensagem_ope_VA220("Erro Escrita Relogio - timeout", 1);
 								return;
 							}
 							continue;
 						}
 						if (i == 0)
 						{
-							this.Mensagem_ope_VA220("Erro Escrita Relogio - não determinado", (int)OpenMode.Input);
+							this.Mensagem_ope_VA220("Erro Escrita Relogio - não determinado", 1);
 							return;
 						}
 					}
 				}
 				IL_50D:
-				this.Mensagem_ope_VA220("Comando executado com sucesso", (int)OpenMode.Binary);
+				this.Mensagem_ope_VA220("Comando executado com sucesso", 0);
 			}
 		}
 

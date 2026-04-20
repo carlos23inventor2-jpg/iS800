@@ -1,9 +1,9 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,6 +11,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000080 RID: 128
+	[DesignerGenerated]
 	public partial class Equip_101_mon : Form
 	{
 		// Token: 0x06001BAC RID: 7084 RVA: 0x003CAEDC File Offset: 0x003C92DC
@@ -501,21 +502,21 @@ namespace iS800
 		// Token: 0x06001BE5 RID: 7141 RVA: 0x003CC4B8 File Offset: 0x003CA8B8
 		private void Equip_101_mon_Deactivate(object sender, EventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
+			NewLateBinding.LateSet(sender, null, "text", new object[]
 			{
 				"Iniciar"
 			}, null, null);
-			this.Mensagem_MD101_mon("Monitoração desativada", (int)OpenMode.Output);
+			this.Mensagem_MD101_mon("Monitoração desativada", 2);
 			this.Timer_monitoracao.Enabled = false;
 		}
 
 		// Token: 0x06001BE6 RID: 7142 RVA: 0x003CC4FC File Offset: 0x003CA8FC
 		private void Equip_101_mon_Load(object sender, EventArgs e)
 		{
-			this.Mensagem_MD101_mon("Monitoração desativada", (int)OpenMode.Output);
+			this.Mensagem_MD101_mon("Monitoração desativada", 2);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", num, " Atenção - verifique a configuração");
 		}
 
 		// Token: 0x06001BE7 RID: 7143 RVA: 0x003CC53C File Offset: 0x003CA93C
@@ -523,34 +524,34 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null), "Iniciar", false))
 			{
 				if (Mod_MD.Monitoracao_MD_RE.Estacao > 0 & Mod_MD.Monitoracao_MD_RE.Estacao <= 200)
 				{
-					NewLateBinding.LateSet(sender, null, "Text", new object[]
+					NewLateBinding.LateSet(sender, null, "text", new object[]
 					{
 						"Parar"
 					}, null, null);
-					this.Mensagem_MD101_mon("Monitoração Ativada", (int)OpenMode.Output);
+					this.Mensagem_MD101_mon("Monitoração Ativada", 2);
 					Mod_MD.Monitoracao_MD_RE.Controle_mon = 1;
 					this.Grupo_medidas_eng.Enabled = true;
 					this.Timer_monitoracao.Enabled = true;
 				}
 				else
 				{
-					this.Mensagem_MD101_mon("Selecione Estação", (int)OpenMode.Input);
+					this.Mensagem_MD101_mon("Selecione Estação", 1);
 				}
 			}
 			else
 			{
-				NewLateBinding.LateSet(sender, null, "Text", new object[]
+				NewLateBinding.LateSet(sender, null, "text", new object[]
 				{
 					"Iniciar"
 				}, null, null);
-				this.Mensagem_MD101_mon("Monitoração desativada", (int)OpenMode.Output);
+				this.Mensagem_MD101_mon("Monitoração desativada", 2);
 				this.Grupo_medidas_eng.Enabled = false;
 				this.Timer_monitoracao.Enabled = false;
 			}
@@ -576,14 +577,14 @@ namespace iS800
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
-						this.Mensagem_MD101_mon("Leitura RE - Ok", (int)OpenMode.Binary);
+						this.Mensagem_MD101_mon("Leitura RE - Ok", 0);
 						this.Calcula_Estatistica_101(1);
 						this.Atualiza_monitoracao_101();
 						goto IL_11A;
 					case 2:
 						if (i == 0)
 						{
-							this.Mensagem_MD101_mon("Erro Leitura RE - ChkSum", (int)OpenMode.Input);
+							this.Mensagem_MD101_mon("Erro Leitura RE - ChkSum", 1);
 							this.Calcula_Estatistica_101(3);
 							this.Limpa_monitoracao_101();
 							continue;
@@ -593,7 +594,7 @@ namespace iS800
 					case 3:
 						if (i == 0)
 						{
-							this.Mensagem_MD101_mon("Erro Leitura RE - Timeout", (int)OpenMode.Input);
+							this.Mensagem_MD101_mon("Erro Leitura RE - Timeout", 1);
 							this.Calcula_Estatistica_101(3);
 							this.Limpa_monitoracao_101();
 							continue;
@@ -603,7 +604,7 @@ namespace iS800
 					}
 					if (i == 0)
 					{
-						this.Mensagem_MD101_mon("Erro Leitura RE - não determinado", (int)OpenMode.Input);
+						this.Mensagem_MD101_mon("Erro Leitura RE - não determinado", 1);
 						this.Calcula_Estatistica_101(3);
 						this.Limpa_monitoracao_101();
 					}
@@ -642,7 +643,7 @@ namespace iS800
 			string versao = Geral.Config_geral.Versao;
 			checked
 			{
-				int num = 0;
+				int num;
 				if (Operators.CompareString(versao, "43", false) == 0)
 				{
 					this.Tela_nivel.Text = Strings.Format((double)(Comunicacao.Buffer_resp[4] - 48) / 2.0, "0.0");
@@ -744,13 +745,13 @@ namespace iS800
 		// Token: 0x06001BED RID: 7149 RVA: 0x003CCBA4 File Offset: 0x003CAFA4
 		private void Tela_end_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RE.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RE.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001BEE RID: 7150 RVA: 0x003CCBCC File Offset: 0x003CAFCC
 		private void Tela_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RE.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RE.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001BEF RID: 7151 RVA: 0x003CCBF4 File Offset: 0x003CAFF4

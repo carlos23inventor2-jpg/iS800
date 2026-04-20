@@ -1,5 +1,3 @@
-﻿using System.Drawing;
-using System.Windows.Forms;
 ﻿namespace iS800
 {
 	// Token: 0x020000A7 RID: 167
@@ -36,27 +34,31 @@ using System.Windows.Forms;
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
-			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, 3, 0);
 			global::System.Windows.Forms.Control label = this.Label5;
-			label.Location = new global::System.Drawing.Point(35, 95);
+			global::System.Drawing.Point location;
+			location = new global::System.Drawing.Point(35, 95);
+			label.Location = location;
 			this.Label5.Name = "Label5";
 			global::System.Windows.Forms.Control label2 = this.Label5;
-			label2.Size = new global::System.Drawing.Size(58, 21);
+			global::System.Drawing.Size size;
+			size = new global::System.Drawing.Size(58, 21);
+			label2.Size = size;
 			this.Label5.TabIndex = 2;
 			this.Label5.Text = "Versão";
 			this.Label5.Visible = false;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = AutoScaleMode.Font;
+			this.AutoScaleMode = 1;
 			this.BackColor = global::System.Drawing.Color.White;
 			this.BackgroundImage = global::iS800.My.Resources.Resources.Fundo_ICTEL;
-			Size = new System.Drawing.Size(729, 350);
-			this.ClientSize = Size;
+			size = new global::System.Drawing.Size(729, 350);
+			this.ClientSize = size;
 			this.Controls.Add(this.Label5);
-			this.FormBorderStyle = FormBorderStyle.None;
+			this.FormBorderStyle = 0;
 			this.Name = "Logo";
-			this.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.StartPosition = 1;
 			this.Text = "Logo";
 			this.ResumeLayout(false);
 			this.PerformLayout();

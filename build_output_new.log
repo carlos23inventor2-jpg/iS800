@@ -1,0 +1,613 @@
+
+>>>> xbuild tool is deprecated and will be removed in future updates, use msbuild instead <<<<
+
+XBuild Engine Version 14.0
+Mono, Version 6.8.0.105
+Copyright (C) 2005-2013 Various Mono authors
+
+Build started 18/04/2026 22:28:32.
+__________________________________________________
+Project "/home/carlos/Desktop/tet/dec/iS800/iS800.csproj" (default target(s)):
+	Target PrepareForBuild:
+		Configuration: Debug Platform: x64
+	Target GenerateSatelliteAssemblies:
+	No input files were specified for target GenerateSatelliteAssemblies, skipping.
+	Target _GenerateTargetFrameworkMonikerAttribute:
+	Skipping target "_GenerateTargetFrameworkMonikerAttribute" because its outputs are up-to-date.
+	Target CoreCompile:
+		Tool /usr/lib/mono/4.5/mcs.exe execution started with arguments: /noconfig /debug:full /debug:portable /optimize- /out:obj/x64/Debug/iS800.exe /resource:obj/x64/Debug/iS800.Abertura.resources /resource:obj/x64/Debug/iS800.Aguarde.resources /resource:obj/x64/Debug/iS800.Configuracao.resources /resource:obj/x64/Debug/iS800.Diretorios.resources /resource:obj/x64/Debug/iS800.Discover.resources /resource:obj/x64/Debug/iS800.Equip_101_cal.resources /resource:obj/x64/Debug/iS800.Equip_101_conf.resources /resource:obj/x64/Debug/iS800.Equip_101_mon.resources /resource:obj/x64/Debug/iS800.Equip_201_conf.resources /resource:obj/x64/Debug/iS800.Equip_201_mon.resources /resource:obj/x64/Debug/iS800.Equip_202_cal.resources /resource:obj/x64/Debug/iS800.Equip_202_conf.resources /resource:obj/x64/Debug/iS800.Equip_202_mon.resources /resource:obj/x64/Debug/iS800.Equip_302_conf.resources /resource:obj/x64/Debug/iS800.Equip_303_conf.resources /resource:obj/x64/Debug/iS800.Equip_590_conf.resources /resource:obj/x64/Debug/iS800.Equip_810_mon.resources /resource:obj/x64/Debug/iS800.Equip_820_mon.resources /resource:obj/x64/Debug/iS800.Equip_821_mon.resources /resource:obj/x64/Debug/iS800.Equip_VA210_conf.resources /resource:obj/x64/Debug/iS800.Equip_VA220_conf.resources /resource:obj/x64/Debug/iS800.Equip_VA220_mon.resources /resource:obj/x64/Debug/iS800.Equip_VA220_ope.resources /resource:obj/x64/Debug/iS800.Equip_VA230_conf.resources /resource:obj/x64/Debug/iS800.GC_82x_calib.resources /resource:obj/x64/Debug/iS800.GC_82x_conf.resources /resource:obj/x64/Debug/iS800.IEC_855_conf.resources /resource:obj/x64/Debug/iS800.IER_856_conf.resources /resource:obj/x64/Debug/iS800.LogComunicacao.resources /resource:obj/x64/Debug/iS800.Logo.resources /resource:obj/x64/Debug/iS800.Plataforma.resources /resource:obj/x64/Debug/iS800.Resources.resources /resource:obj/x64/Debug/iS800.RT_810_200_conf.resources /resource:obj/x64/Debug/iS800.RT_810_conf.resources /resource:obj/x64/Debug/iS800.RT_820_200_conf.resources /resource:obj/x64/Debug/iS800.RT_820_360_conf.resources /resource:obj/x64/Debug/iS800.RT_820_400_SA_CALIB.resources /resource:obj/x64/Debug/iS800.RT_820_conf.resources /resource:obj/x64/Debug/iS800.RT_821_200_conf.resources /resource:obj/x64/Debug/iS800.RT_821_Conf.resources /resource:obj/x64/Debug/iS800.RT_830_200_configurador.resources /resource:obj/x64/Debug/iS800.RT_831_200_configurador.resources /resource:obj/x64/Debug/iS800.RT_850_conf.resources /resource:obj/x64/Debug/iS800.Sobre.resources Abertura.cs Abertura.Designer.cs Aguarde.cs Aguarde.Designer.cs Cabecalho.cs Comunicacao.cs Configuracao.cs Configuracao.Designer.cs CoresTabela.cs Diretorios.cs Diretorios.Designer.cs Discover.cs Discover.Designer.cs Equip_101_cal.cs Equip_101_cal.Designer.cs Equip_101_conf.cs Equip_101_conf.Designer.cs Equip_101_mon.cs Equip_101_mon.Designer.cs Equip_201_conf.cs Equip_201_conf.Designer.cs Equip_201_mon.cs Equip_201_mon.Designer.cs Equip_202_cal.cs Equip_202_cal.Designer.cs Equip_202_conf.cs Equip_202_conf.Designer.cs Equip_202_mon.cs Equip_202_mon.Designer.cs Equip_302_conf.cs Equip_302_conf.Designer.cs Equip_303_conf.cs Equip_303_conf.Designer.cs Equip_590_conf.cs Equip_590_conf.Designer.cs Equip_810_mon.cs Equip_810_mon.Designer.cs Equip_820_mon.cs Equip_820_mon.Designer.cs Equip_821_mon.cs Equip_821_mon.Designer.cs Equip_VA210_conf.cs Equip_VA210_conf.Designer.cs Equip_VA220_conf.cs Equip_VA220_conf.Designer.cs Equip_VA220_mon.cs Equip_VA220_mon.Designer.cs Equip_VA220_ope.cs Equip_VA220_ope.Designer.cs Equip_VA230_conf.cs Equip_VA230_conf.Designer.cs FontesTabela.cs GC_82x_calib.cs GC_82x_calib.Designer.cs GC_82x_conf.cs GC_82x_conf.Designer.cs Geral.cs IEC_855_conf.cs IEC_855_conf.Designer.cs IER_856_conf.cs IER_856_conf.Designer.cs IniFile.cs IniFileWriteFast.cs EnhancedPrintPreviewDialog.cs Linha_RT.cs LogComunicacao.cs LogComunicacao.Designer.cs Logo.cs Logo.Designer.cs Mod_MD.cs Mod_VA.cs My/MyApplication.cs My/MyComputer.cs My/MyProject.cs My/MySettings.Designer.cs My/MySettingsProperty.cs My/Resources/Resources.cs perifericos.cs Plataforma.cs Plataforma.Designer.cs Plataforma.CustomMenus.cs Properties/AssemblyInfo.cs RodapeICTEL.cs RT_810_200_conf.cs RT_810_200_conf.Designer.cs RT_810_conf.cs RT_810_conf.Designer.cs RT_820_200_conf.cs RT_820_200_conf.Designer.cs RT_820_360_conf.cs RT_820_360_conf.Designer.cs RT_820_400_SA_CALIB.cs RT_820_400_SA_CALIB.Designer.cs RT_820_conf.cs RT_820_conf.Designer.cs RT_821_200_conf.cs RT_821_200_conf.Designer.cs RT_821_Conf.cs RT_821_Conf.Designer.cs RT_821_380_conf.cs RT_821_380_conf.Designer.cs RT_830_200_configurador.cs RT_830_200_configurador.Designer.cs RT_830_200_constantes_X.cs RT_830_200_impressao_X.cs RT_830_200_inicializa_variavies_X.cs RT_830_200_Load_X.cs RT_830_200_redimX.cs RT_830_200_Save_X.cs RT_830_200_valores_default_X.cs RT_830_200_variaveis_X.cs RT_831_200_configurador.cs RT_831_200_configurador.Designer.cs RT_831_200_constantes_X.cs RT_831_200_impressao_X.cs RT_831_200_inicializa_variavies_X.cs RT_831_200_Load_X.cs RT_831_200_redimX.cs RT_831_200_Save_X.cs RT_831_200_valores_default_X.cs RT_831_200_variaveis_X.cs RT_850_conf.cs RT_850_conf.Designer.cs RT_850_DB.cs RT_geral.cs Sobre.cs Sobre.Designer.cs TabelaLinhaInteria.cs TabelaMeiaLinhaDireita.cs TabelaMeiaLinhaEsquerda.cs obj/x64/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs /target:winexe /win32icon:iS800.ico /define:"DEBUG;TRACE" /main:iS800.My.MyApplication /nostdlib /platform:x64 /reference:/usr/lib/mono/4.0-api/Microsoft.VisualBasic.dll /reference:/usr/lib/mono/4.0-api/System.dll /reference:/usr/lib/mono/4.0-api/System.Drawing.dll /reference:/usr/lib/mono/4.0-api/System.Windows.Forms.dll /reference:/usr/lib/mono/4.0-api/System.Core.dll /reference:/usr/lib/mono/4.0-api//mscorlib.dll /warn:4
+Abertura.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Abertura.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Aguarde.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Aguarde.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Configuracao.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Configuracao.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_101_cal.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_101_cal.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_101_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_101_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_101_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_101_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_201_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_201_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_201_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_201_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_202_cal.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_202_cal.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_202_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_202_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_202_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_202_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_302_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_302_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_303_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_303_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_590_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_590_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_810_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_810_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_820_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_820_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_821_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_821_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_VA210_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_VA210_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_VA220_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_VA220_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_VA220_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_VA220_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_VA220_ope.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_VA220_ope.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Equip_VA230_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Equip_VA230_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+GC_82x_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+GC_82x_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+IEC_855_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+IEC_855_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+IER_856_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+IER_856_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Logo.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Logo.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Plataforma.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Plataforma.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Plataforma.CustomMenus.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Plataforma.CustomMenus.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_810_200_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_810_200_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_810_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_810_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_820_200_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_820_200_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_820_360_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_820_360_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_820_400_SA_CALIB.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_820_400_SA_CALIB.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_820_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_820_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_821_200_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_821_200_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_821_Conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_821_Conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_830_200_configurador.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_830_200_configurador.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_830_200_configurador.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_830_200_configurador.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+RT_831_200_configurador.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+RT_831_200_configurador.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+Sobre.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+Sobre.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+My/MyProject.cs(1205,18): warning CS0108: `iS800.My.MyProject.MyForms.GetType()' hides inherited member `object.GetType()'. Use the new keyword if hiding was intended
+		/usr/lib/mono/4.0-api//mscorlib.dll (Location of the symbol related to previous warning)
+My/MyProject.cs(1375,18): warning CS0108: `iS800.My.MyProject.MyWebServices.GetType()' hides inherited member `object.GetType()'. Use the new keyword if hiding was intended
+		/usr/lib/mono/4.0-api//mscorlib.dll (Location of the symbol related to previous warning)
+RT_821_380_conf.Designer.cs(23,48): warning CS0108: `iS800.RT_821_380_conf.tb_lixo6' hides inherited member `iS800.RT_821_Conf.tb_lixo6'. Use the new keyword if hiding was intended
+		RT_821_Conf.cs(2061,28): (Location of the symbol related to previous warning)
+RT_821_380_conf.Designer.cs(30,46): warning CS0108: `iS800.RT_821_380_conf.Label22' hides inherited member `iS800.RT_821_Conf.Label22'. Use the new keyword if hiding was intended
+		RT_821_Conf.cs(1965,26): (Location of the symbol related to previous warning)
+Abertura.Designer.cs(39,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Comunicacao.cs(48,88): error CS0266: Cannot implicitly convert type `int' to `System.IO.Ports.Parity'. An explicit conversion exists (are you missing a cast?)
+Comunicacao.cs(49,90): error CS0266: Cannot implicitly convert type `int' to `System.IO.Ports.StopBits'. An explicit conversion exists (are you missing a cast?)
+Configuracao.Designer.cs(313,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_101_cal.Designer.cs(892,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_101_conf.cs(1752,54): error CS0030: Cannot convert type `string' to `int'
+Equip_101_conf.Designer.cs(916,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_101_mon.Designer.cs(371,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_201_conf.Designer.cs(1434,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_201_mon.Designer.cs(939,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_202_cal.Designer.cs(2034,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_202_conf.cs(4258,6): warning CS0162: Unreachable code detected
+Equip_202_conf.cs(4272,5): warning CS0162: Unreachable code detected
+Equip_202_conf.cs(4857,54): error CS0030: Cannot convert type `string' to `int'
+Equip_202_conf.Designer.cs(2154,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_202_mon.Designer.cs(1546,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_302_conf.cs(2722,5): warning CS0164: This label has not been referenced
+Equip_302_conf.cs(2724,5): warning CS0162: Unreachable code detected
+Equip_302_conf.cs(2733,4): warning CS0162: Unreachable code detected
+Equip_302_conf.cs(2899,6): warning CS0164: This label has not been referenced
+Equip_302_conf.cs(2901,6): warning CS0162: Unreachable code detected
+Equip_302_conf.cs(2910,5): warning CS0162: Unreachable code detected
+Equip_302_conf.cs(3084,6): warning CS0164: This label has not been referenced
+Equip_302_conf.cs(3086,6): warning CS0162: Unreachable code detected
+Equip_302_conf.cs(3095,5): warning CS0162: Unreachable code detected
+Equip_302_conf.cs(3424,35): error CS0030: Cannot convert type `string' to `int'
+Equip_302_conf.cs(3454,18): error CS1502: The best overloaded method match for `Microsoft.VisualBasic.FileSystem.FileOpen(int, string, Microsoft.VisualBasic.OpenMode, Microsoft.VisualBasic.OpenAccess, Microsoft.VisualBasic.OpenShare, int)' has some invalid arguments
+		/usr/lib/mono/4.0-api/Microsoft.VisualBasic.dll (Location of the symbol related to previous error)
+Equip_302_conf.cs(3454,60): error CS1503: Argument `#3' cannot convert `int' expression to type `Microsoft.VisualBasic.OpenMode'
+Equip_302_conf.cs(3498,35): error CS0030: Cannot convert type `string' to `int'
+Equip_302_conf.cs(3519,18): error CS1502: The best overloaded method match for `Microsoft.VisualBasic.FileSystem.FileOpen(int, string, Microsoft.VisualBasic.OpenMode, Microsoft.VisualBasic.OpenAccess, Microsoft.VisualBasic.OpenShare, int)' has some invalid arguments
+		/usr/lib/mono/4.0-api/Microsoft.VisualBasic.dll (Location of the symbol related to previous error)
+Equip_302_conf.cs(3519,60): error CS1503: Argument `#3' cannot convert `int' expression to type `Microsoft.VisualBasic.OpenMode'
+Equip_302_conf.Designer.cs(1314,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_303_conf.cs(1825,35): error CS0030: Cannot convert type `string' to `int'
+Equip_303_conf.cs(1875,35): error CS0030: Cannot convert type `string' to `int'
+Equip_303_conf.Designer.cs(711,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_590_conf.cs(2594,64): error CS0266: Cannot implicitly convert type `System.IO.Ports.Parity' to `int'. An explicit conversion exists (are you missing a cast?)
+Equip_590_conf.cs(2598,64): error CS0266: Cannot implicitly convert type `System.IO.Ports.Parity' to `int'. An explicit conversion exists (are you missing a cast?)
+Equip_590_conf.Designer.cs(1076,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_810_mon.Designer.cs(1018,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_820_mon.Designer.cs(1116,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_821_mon.Designer.cs(1018,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_VA210_conf.Designer.cs(569,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_VA220_conf.Designer.cs(696,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_VA220_mon.Designer.cs(231,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_VA220_ope.cs(3394,5): warning CS0162: Unreachable code detected
+Equip_VA220_ope.cs(3412,4): warning CS0162: Unreachable code detected
+Equip_VA220_ope.Designer.cs(1602,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Equip_VA230_conf.Designer.cs(550,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+GC_82x_conf.cs(1387,5): warning CS0162: Unreachable code detected
+GC_82x_conf.cs(1399,4): warning CS0162: Unreachable code detected
+GC_82x_conf.cs(1867,5): warning CS0162: Unreachable code detected
+GC_82x_conf.cs(1884,4): warning CS0162: Unreachable code detected
+GC_82x_conf.cs(1959,5): warning CS0162: Unreachable code detected
+GC_82x_conf.cs(1976,4): warning CS0162: Unreachable code detected
+GC_82x_conf.Designer.cs(570,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+IEC_855_conf.cs(1519,6): warning CS0162: Unreachable code detected
+IEC_855_conf.cs(1531,5): warning CS0162: Unreachable code detected
+IEC_855_conf.cs(2224,6): warning CS0162: Unreachable code detected
+IEC_855_conf.cs(2241,5): warning CS0162: Unreachable code detected
+IEC_855_conf.cs(2311,5): warning CS0162: Unreachable code detected
+IEC_855_conf.cs(2328,4): warning CS0162: Unreachable code detected
+IEC_855_conf.Designer.cs(781,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+IER_856_conf.cs(1385,5): warning CS0162: Unreachable code detected
+IER_856_conf.cs(1397,4): warning CS0162: Unreachable code detected
+IER_856_conf.cs(1972,6): warning CS0162: Unreachable code detected
+IER_856_conf.cs(1989,5): warning CS0162: Unreachable code detected
+IER_856_conf.cs(2059,5): warning CS0162: Unreachable code detected
+IER_856_conf.cs(2076,4): warning CS0162: Unreachable code detected
+IER_856_conf.Designer.cs(691,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Logo.Designer.cs(61,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+My/MyProject.cs(1169,6): warning CS0162: Unreachable code detected
+Plataforma.cs(2804,6): warning CS0164: This label has not been referenced
+Plataforma.cs(2806,6): warning CS0162: Unreachable code detected
+Plataforma.cs(2815,5): warning CS0162: Unreachable code detected
+Plataforma.cs(3429,70): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Plataforma.cs(3471,43): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Plataforma.CustomMenus.cs(52,58): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_810_200_conf.cs(2927,6): warning CS0162: Unreachable code detected
+RT_810_200_conf.cs(2939,5): warning CS0162: Unreachable code detected
+RT_810_200_conf.cs(3750,6): warning CS0162: Unreachable code detected
+RT_810_200_conf.cs(3763,5): warning CS0162: Unreachable code detected
+RT_810_200_conf.cs(3887,6): warning CS0162: Unreachable code detected
+RT_810_200_conf.cs(3904,5): warning CS0162: Unreachable code detected
+RT_810_200_conf.Designer.cs(1660,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_810_conf.cs(3516,6): warning CS0162: Unreachable code detected
+RT_810_conf.cs(3528,5): warning CS0162: Unreachable code detected
+RT_810_conf.cs(4496,6): warning CS0162: Unreachable code detected
+RT_810_conf.cs(4513,5): warning CS0162: Unreachable code detected
+RT_810_conf.cs(4763,6): warning CS0162: Unreachable code detected
+RT_810_conf.cs(4780,5): warning CS0162: Unreachable code detected
+RT_810_conf.Designer.cs(1817,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_820_200_conf.cs(7072,6): warning CS0162: Unreachable code detected
+RT_820_200_conf.cs(7084,5): warning CS0162: Unreachable code detected
+RT_820_200_conf.cs(8010,6): warning CS0162: Unreachable code detected
+RT_820_200_conf.cs(8023,5): warning CS0162: Unreachable code detected
+RT_820_200_conf.cs(8248,6): warning CS0162: Unreachable code detected
+RT_820_200_conf.cs(8261,5): warning CS0162: Unreachable code detected
+RT_820_200_conf.Designer.cs(3256,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_820_360_conf.cs(11188,6): warning CS0162: Unreachable code detected
+RT_820_360_conf.cs(11200,5): warning CS0162: Unreachable code detected
+RT_820_360_conf.cs(13182,6): warning CS0162: Unreachable code detected
+RT_820_360_conf.cs(13195,5): warning CS0162: Unreachable code detected
+RT_820_360_conf.Designer.cs(3966,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_820_400_SA_CALIB.Designer.cs(301,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_820_conf.cs(8938,6): warning CS0162: Unreachable code detected
+RT_820_conf.cs(8950,5): warning CS0162: Unreachable code detected
+RT_820_conf.cs(10811,6): warning CS0162: Unreachable code detected
+RT_820_conf.cs(10824,5): warning CS0162: Unreachable code detected
+RT_820_conf.Designer.cs(2911,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_821_200_conf.cs(3940,6): warning CS0162: Unreachable code detected
+RT_821_200_conf.cs(3952,5): warning CS0162: Unreachable code detected
+RT_821_200_conf.cs(4767,6): warning CS0162: Unreachable code detected
+RT_821_200_conf.cs(4780,5): warning CS0162: Unreachable code detected
+RT_821_200_conf.cs(4924,6): warning CS0162: Unreachable code detected
+RT_821_200_conf.cs(4937,5): warning CS0162: Unreachable code detected
+RT_821_200_conf.Designer.cs(1916,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_821_Conf.cs(3523,6): warning CS0164: This label has not been referenced
+RT_821_Conf.cs(3525,6): warning CS0162: Unreachable code detected
+RT_821_Conf.cs(3534,5): warning CS0162: Unreachable code detected
+RT_821_Conf.cs(4519,6): warning CS0162: Unreachable code detected
+RT_821_Conf.cs(4532,5): warning CS0162: Unreachable code detected
+RT_821_Conf.cs(4860,6): warning CS0162: Unreachable code detected
+RT_821_Conf.cs(4873,5): warning CS0162: Unreachable code detected
+RT_821_Conf.Designer.cs(1792,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_830_200_configurador.cs(4728,5): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(4740,4): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(4883,5): warning CS0164: This label has not been referenced
+RT_830_200_configurador.cs(4885,5): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(4894,4): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(5592,5): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(5605,4): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(5716,5): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(5729,4): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(6109,5): warning CS0164: This label has not been referenced
+RT_830_200_configurador.cs(6111,5): warning CS0162: Unreachable code detected
+RT_830_200_configurador.cs(6120,4): warning CS0162: Unreachable code detected
+RT_830_200_configurador.Designer.cs(1821,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_831_200_configurador.cs(3619,5): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(3631,4): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(3774,5): warning CS0164: This label has not been referenced
+RT_831_200_configurador.cs(3776,5): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(3785,4): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(4472,5): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(4485,4): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(4584,5): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(4597,4): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(4974,5): warning CS0164: This label has not been referenced
+RT_831_200_configurador.cs(4976,5): warning CS0162: Unreachable code detected
+RT_831_200_configurador.cs(4985,4): warning CS0162: Unreachable code detected
+RT_831_200_configurador.Designer.cs(1333,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+RT_850_conf.cs(5224,6): warning CS0164: This label has not been referenced
+RT_850_conf.cs(5226,6): warning CS0162: Unreachable code detected
+RT_850_conf.cs(5235,5): warning CS0162: Unreachable code detected
+RT_850_conf.cs(7028,5): warning CS0162: Unreachable code detected
+RT_850_conf.cs(7040,4): warning CS0162: Unreachable code detected
+RT_850_conf.cs(7378,5): warning CS0164: This label has not been referenced
+RT_850_conf.cs(7380,5): warning CS0162: Unreachable code detected
+RT_850_conf.cs(7389,4): warning CS0162: Unreachable code detected
+RT_850_conf.cs(9692,5): warning CS0162: Unreachable code detected
+RT_850_conf.cs(9705,4): warning CS0162: Unreachable code detected
+RT_850_conf.cs(10632,5): warning CS0162: Unreachable code detected
+RT_850_conf.cs(10645,4): warning CS0162: Unreachable code detected
+RT_850_conf.cs(11264,5): warning CS0164: This label has not been referenced
+RT_850_conf.cs(11266,5): warning CS0162: Unreachable code detected
+RT_850_conf.cs(11275,4): warning CS0162: Unreachable code detected
+RT_850_conf.Designer.cs(432,113): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(593,105): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(612,101): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(637,99): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(656,100): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(907,99): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(949,119): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(983,105): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1017,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1050,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1101,110): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1143,109): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1241,99): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1283,119): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1317,105): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1351,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1384,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1435,110): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(1477,109): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(2025,109): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(2058,107): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+		/usr/lib/mono/4.0-api/System.Windows.Forms.dll (Location of the symbol related to previous error)
+RT_850_conf.Designer.cs(2664,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+Sobre.Designer.cs(56,50): error CS0234: The type or namespace name `Form' does not exist in the namespace `System.Windows'. Are you missing an assembly reference?
+Sobre.Designer.cs(61,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Task "Csc" execution -- FAILED
+	Done building target "CoreCompile" in project "/home/carlos/Desktop/tet/dec/iS800/iS800.csproj".-- FAILED
+Done building project "/home/carlos/Desktop/tet/dec/iS800/iS800.csproj".-- FAILED
+
+Build FAILED.
+
+Warnings:
+
+/home/carlos/Desktop/tet/dec/iS800/iS800.csproj (default targets) ->
+/usr/lib/mono/xbuild/14.0/bin/Microsoft.CSharp.targets (CoreCompile target) ->
+
+	Abertura.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Abertura.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Aguarde.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Aguarde.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Configuracao.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Configuracao.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_101_cal.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_101_cal.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_101_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_101_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_101_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_101_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_201_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_201_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_201_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_201_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_202_cal.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_202_cal.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_202_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_202_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_202_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_202_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_302_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_302_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_303_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_303_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_590_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_590_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_810_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_810_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_820_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_820_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_821_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_821_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_VA210_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_VA210_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_VA220_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_VA220_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_VA220_mon.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_VA220_mon.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_VA220_ope.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_VA220_ope.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Equip_VA230_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Equip_VA230_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	GC_82x_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	GC_82x_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	IEC_855_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	IEC_855_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	IER_856_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	IER_856_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Logo.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Logo.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Plataforma.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Plataforma.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Plataforma.CustomMenus.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Plataforma.CustomMenus.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_810_200_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_810_200_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_810_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_810_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_820_200_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_820_200_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_820_360_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_820_360_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_820_400_SA_CALIB.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_820_400_SA_CALIB.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_820_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_820_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_821_200_conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_821_200_conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_821_Conf.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_821_Conf.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_830_200_configurador.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_830_200_configurador.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_830_200_configurador.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_830_200_configurador.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	RT_831_200_configurador.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	RT_831_200_configurador.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	Sobre.Designer.cs(3,2): warning CS0105: The using directive for `System.Drawing' appeared previously in this namespace
+	Sobre.Designer.cs(4,1): warning CS0105: The using directive for `System.Windows.Forms' appeared previously in this namespace
+	My/MyProject.cs(1205,18): warning CS0108: `iS800.My.MyProject.MyForms.GetType()' hides inherited member `object.GetType()'. Use the new keyword if hiding was intended
+	My/MyProject.cs(1375,18): warning CS0108: `iS800.My.MyProject.MyWebServices.GetType()' hides inherited member `object.GetType()'. Use the new keyword if hiding was intended
+	RT_821_380_conf.Designer.cs(23,48): warning CS0108: `iS800.RT_821_380_conf.tb_lixo6' hides inherited member `iS800.RT_821_Conf.tb_lixo6'. Use the new keyword if hiding was intended
+	RT_821_380_conf.Designer.cs(30,46): warning CS0108: `iS800.RT_821_380_conf.Label22' hides inherited member `iS800.RT_821_Conf.Label22'. Use the new keyword if hiding was intended
+	Equip_202_conf.cs(4258,6): warning CS0162: Unreachable code detected
+	Equip_202_conf.cs(4272,5): warning CS0162: Unreachable code detected
+	Equip_302_conf.cs(2722,5): warning CS0164: This label has not been referenced
+	Equip_302_conf.cs(2724,5): warning CS0162: Unreachable code detected
+	Equip_302_conf.cs(2733,4): warning CS0162: Unreachable code detected
+	Equip_302_conf.cs(2899,6): warning CS0164: This label has not been referenced
+	Equip_302_conf.cs(2901,6): warning CS0162: Unreachable code detected
+	Equip_302_conf.cs(2910,5): warning CS0162: Unreachable code detected
+	Equip_302_conf.cs(3084,6): warning CS0164: This label has not been referenced
+	Equip_302_conf.cs(3086,6): warning CS0162: Unreachable code detected
+	Equip_302_conf.cs(3095,5): warning CS0162: Unreachable code detected
+	Equip_VA220_ope.cs(3394,5): warning CS0162: Unreachable code detected
+	Equip_VA220_ope.cs(3412,4): warning CS0162: Unreachable code detected
+	GC_82x_conf.cs(1387,5): warning CS0162: Unreachable code detected
+	GC_82x_conf.cs(1399,4): warning CS0162: Unreachable code detected
+	GC_82x_conf.cs(1867,5): warning CS0162: Unreachable code detected
+	GC_82x_conf.cs(1884,4): warning CS0162: Unreachable code detected
+	GC_82x_conf.cs(1959,5): warning CS0162: Unreachable code detected
+	GC_82x_conf.cs(1976,4): warning CS0162: Unreachable code detected
+	IEC_855_conf.cs(1519,6): warning CS0162: Unreachable code detected
+	IEC_855_conf.cs(1531,5): warning CS0162: Unreachable code detected
+	IEC_855_conf.cs(2224,6): warning CS0162: Unreachable code detected
+	IEC_855_conf.cs(2241,5): warning CS0162: Unreachable code detected
+	IEC_855_conf.cs(2311,5): warning CS0162: Unreachable code detected
+	IEC_855_conf.cs(2328,4): warning CS0162: Unreachable code detected
+	IER_856_conf.cs(1385,5): warning CS0162: Unreachable code detected
+	IER_856_conf.cs(1397,4): warning CS0162: Unreachable code detected
+	IER_856_conf.cs(1972,6): warning CS0162: Unreachable code detected
+	IER_856_conf.cs(1989,5): warning CS0162: Unreachable code detected
+	IER_856_conf.cs(2059,5): warning CS0162: Unreachable code detected
+	IER_856_conf.cs(2076,4): warning CS0162: Unreachable code detected
+	My/MyProject.cs(1169,6): warning CS0162: Unreachable code detected
+	Plataforma.cs(2804,6): warning CS0164: This label has not been referenced
+	Plataforma.cs(2806,6): warning CS0162: Unreachable code detected
+	Plataforma.cs(2815,5): warning CS0162: Unreachable code detected
+	RT_810_200_conf.cs(2927,6): warning CS0162: Unreachable code detected
+	RT_810_200_conf.cs(2939,5): warning CS0162: Unreachable code detected
+	RT_810_200_conf.cs(3750,6): warning CS0162: Unreachable code detected
+	RT_810_200_conf.cs(3763,5): warning CS0162: Unreachable code detected
+	RT_810_200_conf.cs(3887,6): warning CS0162: Unreachable code detected
+	RT_810_200_conf.cs(3904,5): warning CS0162: Unreachable code detected
+	RT_810_conf.cs(3516,6): warning CS0162: Unreachable code detected
+	RT_810_conf.cs(3528,5): warning CS0162: Unreachable code detected
+	RT_810_conf.cs(4496,6): warning CS0162: Unreachable code detected
+	RT_810_conf.cs(4513,5): warning CS0162: Unreachable code detected
+	RT_810_conf.cs(4763,6): warning CS0162: Unreachable code detected
+	RT_810_conf.cs(4780,5): warning CS0162: Unreachable code detected
+	RT_820_200_conf.cs(7072,6): warning CS0162: Unreachable code detected
+	RT_820_200_conf.cs(7084,5): warning CS0162: Unreachable code detected
+	RT_820_200_conf.cs(8010,6): warning CS0162: Unreachable code detected
+	RT_820_200_conf.cs(8023,5): warning CS0162: Unreachable code detected
+	RT_820_200_conf.cs(8248,6): warning CS0162: Unreachable code detected
+	RT_820_200_conf.cs(8261,5): warning CS0162: Unreachable code detected
+	RT_820_360_conf.cs(11188,6): warning CS0162: Unreachable code detected
+	RT_820_360_conf.cs(11200,5): warning CS0162: Unreachable code detected
+	RT_820_360_conf.cs(13182,6): warning CS0162: Unreachable code detected
+	RT_820_360_conf.cs(13195,5): warning CS0162: Unreachable code detected
+	RT_820_conf.cs(8938,6): warning CS0162: Unreachable code detected
+	RT_820_conf.cs(8950,5): warning CS0162: Unreachable code detected
+	RT_820_conf.cs(10811,6): warning CS0162: Unreachable code detected
+	RT_820_conf.cs(10824,5): warning CS0162: Unreachable code detected
+	RT_821_200_conf.cs(3940,6): warning CS0162: Unreachable code detected
+	RT_821_200_conf.cs(3952,5): warning CS0162: Unreachable code detected
+	RT_821_200_conf.cs(4767,6): warning CS0162: Unreachable code detected
+	RT_821_200_conf.cs(4780,5): warning CS0162: Unreachable code detected
+	RT_821_200_conf.cs(4924,6): warning CS0162: Unreachable code detected
+	RT_821_200_conf.cs(4937,5): warning CS0162: Unreachable code detected
+	RT_821_Conf.cs(3523,6): warning CS0164: This label has not been referenced
+	RT_821_Conf.cs(3525,6): warning CS0162: Unreachable code detected
+	RT_821_Conf.cs(3534,5): warning CS0162: Unreachable code detected
+	RT_821_Conf.cs(4519,6): warning CS0162: Unreachable code detected
+	RT_821_Conf.cs(4532,5): warning CS0162: Unreachable code detected
+	RT_821_Conf.cs(4860,6): warning CS0162: Unreachable code detected
+	RT_821_Conf.cs(4873,5): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(4728,5): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(4740,4): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(4883,5): warning CS0164: This label has not been referenced
+	RT_830_200_configurador.cs(4885,5): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(4894,4): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(5592,5): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(5605,4): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(5716,5): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(5729,4): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(6109,5): warning CS0164: This label has not been referenced
+	RT_830_200_configurador.cs(6111,5): warning CS0162: Unreachable code detected
+	RT_830_200_configurador.cs(6120,4): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(3619,5): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(3631,4): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(3774,5): warning CS0164: This label has not been referenced
+	RT_831_200_configurador.cs(3776,5): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(3785,4): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(4472,5): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(4485,4): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(4584,5): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(4597,4): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(4974,5): warning CS0164: This label has not been referenced
+	RT_831_200_configurador.cs(4976,5): warning CS0162: Unreachable code detected
+	RT_831_200_configurador.cs(4985,4): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(5224,6): warning CS0164: This label has not been referenced
+	RT_850_conf.cs(5226,6): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(5235,5): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(7028,5): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(7040,4): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(7378,5): warning CS0164: This label has not been referenced
+	RT_850_conf.cs(7380,5): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(7389,4): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(9692,5): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(9705,4): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(10632,5): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(10645,4): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(11264,5): warning CS0164: This label has not been referenced
+	RT_850_conf.cs(11266,5): warning CS0162: Unreachable code detected
+	RT_850_conf.cs(11275,4): warning CS0162: Unreachable code detected
+
+Errors:
+
+/home/carlos/Desktop/tet/dec/iS800/iS800.csproj (default targets) ->
+/usr/lib/mono/xbuild/14.0/bin/Microsoft.CSharp.targets (CoreCompile target) ->
+
+	Abertura.Designer.cs(39,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Comunicacao.cs(48,88): error CS0266: Cannot implicitly convert type `int' to `System.IO.Ports.Parity'. An explicit conversion exists (are you missing a cast?)
+	Comunicacao.cs(49,90): error CS0266: Cannot implicitly convert type `int' to `System.IO.Ports.StopBits'. An explicit conversion exists (are you missing a cast?)
+	Configuracao.Designer.cs(313,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_101_cal.Designer.cs(892,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_101_conf.cs(1752,54): error CS0030: Cannot convert type `string' to `int'
+	Equip_101_conf.Designer.cs(916,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_101_mon.Designer.cs(371,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_201_conf.Designer.cs(1434,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_201_mon.Designer.cs(939,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_202_cal.Designer.cs(2034,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_202_conf.cs(4857,54): error CS0030: Cannot convert type `string' to `int'
+	Equip_202_conf.Designer.cs(2154,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_202_mon.Designer.cs(1546,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_302_conf.cs(3424,35): error CS0030: Cannot convert type `string' to `int'
+	Equip_302_conf.cs(3454,18): error CS1502: The best overloaded method match for `Microsoft.VisualBasic.FileSystem.FileOpen(int, string, Microsoft.VisualBasic.OpenMode, Microsoft.VisualBasic.OpenAccess, Microsoft.VisualBasic.OpenShare, int)' has some invalid arguments
+	Equip_302_conf.cs(3454,60): error CS1503: Argument `#3' cannot convert `int' expression to type `Microsoft.VisualBasic.OpenMode'
+	Equip_302_conf.cs(3498,35): error CS0030: Cannot convert type `string' to `int'
+	Equip_302_conf.cs(3519,18): error CS1502: The best overloaded method match for `Microsoft.VisualBasic.FileSystem.FileOpen(int, string, Microsoft.VisualBasic.OpenMode, Microsoft.VisualBasic.OpenAccess, Microsoft.VisualBasic.OpenShare, int)' has some invalid arguments
+	Equip_302_conf.cs(3519,60): error CS1503: Argument `#3' cannot convert `int' expression to type `Microsoft.VisualBasic.OpenMode'
+	Equip_302_conf.Designer.cs(1314,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_303_conf.cs(1825,35): error CS0030: Cannot convert type `string' to `int'
+	Equip_303_conf.cs(1875,35): error CS0030: Cannot convert type `string' to `int'
+	Equip_303_conf.Designer.cs(711,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_590_conf.cs(2594,64): error CS0266: Cannot implicitly convert type `System.IO.Ports.Parity' to `int'. An explicit conversion exists (are you missing a cast?)
+	Equip_590_conf.cs(2598,64): error CS0266: Cannot implicitly convert type `System.IO.Ports.Parity' to `int'. An explicit conversion exists (are you missing a cast?)
+	Equip_590_conf.Designer.cs(1076,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_810_mon.Designer.cs(1018,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_820_mon.Designer.cs(1116,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_821_mon.Designer.cs(1018,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_VA210_conf.Designer.cs(569,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_VA220_conf.Designer.cs(696,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_VA220_mon.Designer.cs(231,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_VA220_ope.Designer.cs(1602,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Equip_VA230_conf.Designer.cs(550,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	GC_82x_conf.Designer.cs(570,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	IEC_855_conf.Designer.cs(781,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	IER_856_conf.Designer.cs(691,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Logo.Designer.cs(61,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Plataforma.cs(3429,70): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Plataforma.cs(3471,43): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Plataforma.CustomMenus.cs(52,58): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_810_200_conf.Designer.cs(1660,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_810_conf.Designer.cs(1817,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_820_200_conf.Designer.cs(3256,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_820_360_conf.Designer.cs(3966,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_820_400_SA_CALIB.Designer.cs(301,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_820_conf.Designer.cs(2911,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_821_200_conf.Designer.cs(1916,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_821_Conf.Designer.cs(1792,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_830_200_configurador.Designer.cs(1821,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_831_200_configurador.Designer.cs(1333,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	RT_850_conf.Designer.cs(432,113): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(593,105): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(612,101): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(637,99): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(656,100): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(907,99): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(949,119): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(983,105): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1017,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1050,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1101,110): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1143,109): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1241,99): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1283,119): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1317,105): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1351,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1384,116): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1435,110): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(1477,109): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(2025,109): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(2058,107): error CS0117: `System.Windows.Forms.DataGridViewContentAlignment' does not contain a definition for `Right'
+	RT_850_conf.Designer.cs(2664,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+	Sobre.Designer.cs(56,50): error CS0234: The type or namespace name `Form' does not exist in the namespace `System.Windows'. Are you missing an assembly reference?
+	Sobre.Designer.cs(61,46): error CS0234: The type or namespace name `System' does not exist in the namespace `System.Windows.Forms'. Are you missing an assembly reference?
+
+	 197 Warning(s)
+	 76 Error(s)
+
+Time Elapsed 00:00:02.8713410

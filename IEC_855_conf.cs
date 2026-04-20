@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +13,12 @@ using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
+using VR.PrintPreview;
 
 namespace iS800
 {
 	// Token: 0x0200003B RID: 59
+	[DesignerGenerated]
 	public partial class IEC_855_conf : Form
 	{
 		// Token: 0x06000D25 RID: 3365 RVA: 0x002F9C2C File Offset: 0x002F802C
@@ -1292,7 +1294,7 @@ namespace iS800
 			}
 			finally
 			{
-				List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
+				List<perifericos.Valores_ComboBox>.Enumerator enumerator;
 				enumerator.Dispose();
 			}
 		}
@@ -1321,17 +1323,17 @@ namespace iS800
 				this.ComboBox_baudrate = comboBox;
 				this.Inicializa_DadosEStrutura855_Default();
 				Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-				this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_IP.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_IP.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_geral.BackColor = Color.FromKnownColor(8);
+				this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_IP.BackColor = Color.FromKnownColor(8);
+				this.TabPage_IP.ForeColor = Color.FromKnownColor(10);
 				string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 				if (MyProject.Computer.FileSystem.FileExists(text))
 				{
 					PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 					privateFontCollection.AddFontFile(text);
-					Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
-					Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
+					Font font = new Font(privateFontCollection.Families[0], 8f, 2);
+					Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
 					this.Label26.Font = font;
 					this.Label17.Font = font;
 					this.TextBox_equipamento.Font = font;
@@ -1368,7 +1370,7 @@ namespace iS800
 		// Token: 0x06000DAF RID: 3503 RVA: 0x002FD37C File Offset: 0x002FB77C
 		private void GeraDataGridView_IP()
 		{
-			this.DataGridView_RT810_ED.ScrollBars =(System.Windows.Forms.ScrollBars)2;
+			this.DataGridView_RT810_ED.ScrollBars = 2;
 			this.DataGridView_RT810_ED.RowCount = 200;
 			this.DataGridView_RT810_ED.RowHeadersWidth = 80;
 			int num = 1;
@@ -1388,7 +1390,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -1482,8 +1484,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num3 = 0;
+				int num;
+				int num3;
 				object obj;
 				try
 				{
@@ -1517,17 +1519,17 @@ namespace iS800
 					while (num2 <= 199);
 					goto IL_275;
 					IL_220:
-					Interaction.MsgBox("Erro na atualização da tela!", MsgBoxStyle.Question, "Atenção - Erro de dados");
+					Interaction.MsgBox("Erro na atualização da tela!", 32, "Atenção - Erro de dados");
 					goto IL_275;
 					IL_234:
 					num3 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_248:;
+										IL_248:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_234;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_275:
 				if (num3 != 0)
@@ -1653,7 +1655,7 @@ namespace iS800
 		{
 			if (this.ComboBox_Modo_Operacao.FindStringExact(this.ComboBox_Modo_Operacao.Text) == -1)
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", MsgBoxStyle.Question, "Atenção - Método Operação");
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Método Operação");
 				this.ComboBox_Modo_Operacao.SelectedIndex = 0;
 			}
 		}
@@ -1713,7 +1715,7 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", MsgBoxStyle.Question, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
 				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
 				{
 					0
@@ -1724,7 +1726,7 @@ namespace iS800
 		// Token: 0x06000DC2 RID: 3522 RVA: 0x002FDF8C File Offset: 0x002FC38C
 		private void NumericUpDown_intervalo_tx_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.Intervalo_tx_pto_pto, true);
 			sender = numericUpDown;
@@ -1733,10 +1735,12 @@ namespace iS800
 		// Token: 0x06000DC3 RID: 3523 RVA: 0x002FDFE0 File Offset: 0x002FC3E0
 		private void NumericUpDown_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
+			RT_geral.IEC_855_BD.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
+			NewLateBinding.LateSet(sender, null, "value", new object[]
+			{
+				RT_geral.IEC_855_BD.Tempo_ptt.Valor
+			}, null, null);
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
-			decimal valorTemp = decimal.Floor(numericUpDown.Value / 10m) * 10m;
-			RT_geral.IEC_855_BD.Tempo_ptt.Valor = Conversions.ToInteger(valorTemp);
-			numericUpDown.Value = RT_geral.IEC_855_BD.Tempo_ptt.Valor;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
@@ -1744,7 +1748,7 @@ namespace iS800
 		// Token: 0x06000DC4 RID: 3524 RVA: 0x002FE078 File Offset: 0x002FC478
 		private void NumericUpDown_end_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.End_mestre, true);
 			sender = numericUpDown;
@@ -1753,7 +1757,7 @@ namespace iS800
 		// Token: 0x06000DC5 RID: 3525 RVA: 0x002FE0CC File Offset: 0x002FC4CC
 		private void NumericUpDown_end_est_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.End_estacao, true);
 			sender = numericUpDown;
@@ -1762,8 +1766,8 @@ namespace iS800
 		// Token: 0x06000DC6 RID: 3526 RVA: 0x002FE120 File Offset: 0x002FC520
 		private void NumericUpDown_intervalo_filtro_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.AD_Intervalo.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null), 10), 10));
-			NewLateBinding.LateSet(sender, null, "Value", new object[]
+			RT_geral.IEC_855_BD.AD_Intervalo.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
+			NewLateBinding.LateSet(sender, null, "value", new object[]
 			{
 				RT_geral.IEC_855_BD.AD_Intervalo.Valor
 			}, null, null);
@@ -1775,7 +1779,7 @@ namespace iS800
 		// Token: 0x06000DC7 RID: 3527 RVA: 0x002FE1B8 File Offset: 0x002FC5B8
 		private void NumericUpDown_tamanho_filtro_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.AD_Tamanho_filtro, true);
 			sender = numericUpDown;
@@ -1794,7 +1798,7 @@ namespace iS800
 		// Token: 0x06000DCA RID: 3530 RVA: 0x002FE214 File Offset: 0x002FC614
 		private bool Entrada_Digital_Ja_Utilizada(int entrada, int num_ED)
 		{
-			bool result = false;
+			bool result;
 			return result;
 		}
 
@@ -1807,7 +1811,7 @@ namespace iS800
 		// Token: 0x06000DCC RID: 3532 RVA: 0x002FE234 File Offset: 0x002FC634
 		private bool Endereco_Repetidora_Ja_Existente(ref DataGridView obj, ref RT_geral.Integer_ictel dado, DataGridViewCellValidatingEventArgs e, int posicao)
 		{
-			bool result = false;
+			bool result;
 			return result;
 		}
 
@@ -2055,7 +2059,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 				}
 			}
 			else if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -2066,7 +2070,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
 			}
 			Comunicacao.Config_sistema.endereco_encontrado = false;
 			Comunicacao.Config_sistema.endereco_modbus = 0;
@@ -2104,13 +2108,13 @@ namespace iS800
 					else
 					{
 						string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-						Interaction.MsgBox(text, MsgBoxStyle.Critical, "Atenção - Valor fora das especificações");
+						Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
 						this.ToolStripButton_RT_810_Salvar.Enabled = true;
 					}
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 				}
 				this.Timer_limpa_MSG.Enabled = true;
 			}
@@ -2125,14 +2129,14 @@ namespace iS800
 				else
 				{
 					string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-					Interaction.MsgBox(text, MsgBoxStyle.Critical, "Atenção - Valor fora das especificações");
+					Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
 					this.ToolStripButton_RT_810_Salvar.Enabled = true;
 				}
 				this.Timer_limpa_MSG.Enabled = true;
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
 			}
 			Comunicacao.Config_sistema.endereco_encontrado = false;
 			Comunicacao.Config_sistema.endereco_modbus = 0;
@@ -2144,8 +2148,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num3 = 0;
+				int num;
+				int num3;
 				object obj;
 				try
 				{
@@ -2154,7 +2158,7 @@ namespace iS800
 					this.AtivaEfeitoOnChangeValue();
 					this.OpenFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg855";
 					this.OpenFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_810.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.OpenFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.OpenFileDialog_RT_810.FileName) + "\\";
 						RT_geral.arquivo_extensao = Path.GetExtension(this.OpenFileDialog_RT_810.FileName);
@@ -2222,7 +2226,7 @@ namespace iS800
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_645;
 					IL_5CC:
-					Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
 					FileSystem.FileClose(new int[]
 					{
 						1
@@ -2231,13 +2235,13 @@ namespace iS800
 					goto IL_645;
 					IL_600:
 					num3 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_616:;
+										IL_616:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_600;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_645:
 				if (num3 != 0)
@@ -2251,8 +2255,8 @@ namespace iS800
 		[MethodImpl(72)]
 		private void ToolStripButton_RT_810_Salvar_Click(object sender, EventArgs e)
 		{
-			int num = 0;
-			int num2 = 0;
+			int num;
+			int num2;
 			object obj;
 			try
 			{
@@ -2262,7 +2266,7 @@ namespace iS800
 				this.Bloqueia_acoes();
 				this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810";
 				this.SaveFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT_810.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
+				if (this.SaveFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
 				{
 					Linha_RT.diretorio = Path.GetDirectoryName(this.SaveFileDialog_RT_810.FileName) + "\\";
 					if (File.Exists(this.SaveFileDialog_RT_810.FileName))
@@ -2309,7 +2313,7 @@ namespace iS800
 				this.Timer_limpa_MSG.Enabled = true;
 				goto IL_351;
 				IL_2DD:
-				Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
 				FileSystem.FileClose(new int[]
 				{
 					1
@@ -2318,12 +2322,12 @@ namespace iS800
 				goto IL_351;
 				IL_30E:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_323:;
+								IL_323:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_30E;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_351:
@@ -2430,7 +2434,7 @@ namespace iS800
 		{
 			if (this.DataGridView_RT810_ED.IsCurrentCellDirty)
 			{
-				this.DataGridView_RT810_ED.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_RT810_ED.CommitEdit(512);
 			}
 		}
 
@@ -2454,10 +2458,10 @@ namespace iS800
 		[MethodImpl(72)]
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -2692,7 +2696,7 @@ namespace iS800
 		// Token: 0x06000DE5 RID: 3557 RVA: 0x0030021C File Offset: 0x002FE61C
 		private bool DesenhaRelatorio(PrintPageEventArgs z)
 		{
-			Font font = new Font("Arial", 12f, (System.Drawing.FontStyle)3);
+			Font font = new Font("Arial", 12f, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			checked
 			{
@@ -2810,7 +2814,7 @@ namespace iS800
 		// Token: 0x06000DF5 RID: 3573 RVA: 0x003003BC File Offset: 0x002FE7BC
 		public bool IPKeyPress(KeyPressEventArgs e)
 		{
-			bool result = false;
+			bool result;
 			if (char.IsDigit(e.KeyChar) | Operators.CompareString(Conversions.ToString(e.KeyChar), ".", false) == 0 | Strings.Asc(e.KeyChar) == 46 | Strings.Asc(e.KeyChar) == 8 | Strings.Asc(e.KeyChar) == 39 | Strings.Asc(e.KeyChar) == 37)
 			{
 				result = true;
@@ -2829,7 +2833,7 @@ namespace iS800
 			{
 				'.'
 			});
-			bool result = false;
+			bool result;
 			if (array.Length != 4)
 			{
 				result = false;
@@ -2873,11 +2877,11 @@ namespace iS800
 		// Token: 0x06000DF7 RID: 3575 RVA: 0x00300578 File Offset: 0x002FE978
 		private void tb_static_ip_TextChanged(object sender, EventArgs e)
 		{
-			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)));
+			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
 			if (flag)
 			{
 				this.tb_static_ip.ForeColor = Color.Black;
-				RT_geral.IEC_855_BD.STATIC_IP = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+				RT_geral.IEC_855_BD.STATIC_IP = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 			}
 			else
 			{
@@ -2899,11 +2903,11 @@ namespace iS800
 		// Token: 0x06000DF9 RID: 3577 RVA: 0x00300610 File Offset: 0x002FEA10
 		private void tb_static_gw_TextChanged(object sender, EventArgs e)
 		{
-			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)));
+			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
 			if (flag)
 			{
 				this.tb_static_ip.ForeColor = Color.Black;
-				RT_geral.IEC_855_BD.STATIC_GW = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+				RT_geral.IEC_855_BD.STATIC_GW = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 			}
 			else
 			{
@@ -2914,11 +2918,11 @@ namespace iS800
 		// Token: 0x06000DFA RID: 3578 RVA: 0x00300688 File Offset: 0x002FEA88
 		private void tb_static_sm_TextChanged(object sender, EventArgs e)
 		{
-			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)));
+			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
 			if (flag)
 			{
 				this.tb_static_ip.ForeColor = Color.Black;
-				RT_geral.IEC_855_BD.STATIC_SM = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+				RT_geral.IEC_855_BD.STATIC_SM = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 			}
 			else
 			{

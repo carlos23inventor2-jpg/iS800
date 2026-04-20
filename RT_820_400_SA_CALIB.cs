@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000053 RID: 83
+	[DesignerGenerated]
 	public partial class RT_820_400_SA_CALIB : Form
 	{
 		// Token: 0x06001680 RID: 5760 RVA: 0x0037342C File Offset: 0x0037182C
@@ -450,13 +451,13 @@ namespace iS800
 		{
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Iniciando Calibração", (int)OpenMode.Output);
+				this.AtualizaMsgTela_SA_820("Iniciando Calibração", 2);
 				Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21845);
 				this.AtualizaMsgTela_SA_820(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -464,7 +465,7 @@ namespace iS800
 		public void AtualizaMsgTela_SA_820(string texto, int cor)
 		{
 			this.mensagens.Text = texto;
-			if(cor == 0)
+			if (cor == 0)
 			{
 				this.mensagens.ForeColor = Color.Blue;
 			}
@@ -484,9 +485,9 @@ namespace iS800
 			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				if (!Mod_MD.Leitura_pagina(0, 255, (int)OpenMode.Append).Status)
+				if (!Mod_MD.Leitura_pagina(0, 255, 4).Status)
 				{
-					this.AtualizaMsgTela_SA_820("Equipamento não responde", (int)OpenMode.Input);
+					this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
 					return;
 				}
 				if (!Linha_RT.VerificaSeEquipamento_SA_820_400_MAIOR_IGUAL_R19(2, 0, 0, ""))
@@ -496,7 +497,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 			this.nud_estacao.Value = new decimal(this.Leitura_EnderecoEstacao());
 		}
@@ -504,17 +505,17 @@ namespace iS800
 		// Token: 0x060016B0 RID: 5808 RVA: 0x0037481C File Offset: 0x00372C1C
 		private int Leitura_ContanteCalibracao(int pagina, int endereco, int tamanho)
 		{
-			this.AtualizaMsgTela_SA_820("Buscando Constante", (int)OpenMode.Output);
-			int result = 0;
+			this.AtualizaMsgTela_SA_820("Buscando Constante", 2);
+			int result;
 			if (!Mod_MD.Leitura_pagina(pagina, endereco, tamanho).Status)
 			{
-				this.AtualizaMsgTela_SA_820("Equipamento não responde", (int)OpenMode.Input);
+				this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
 				result = 0;
 			}
 			else
 			{
 				Comunicacao.Rotina_Delay(5L);
-				this.AtualizaMsgTela_SA_820("Busca Constante OK", (int)OpenMode.Binary);
+				this.AtualizaMsgTela_SA_820("Busca Constante OK", 0);
 				result = Linha_RT.Retorna_End_Est_GC_82x();
 			}
 			return result;
@@ -523,17 +524,17 @@ namespace iS800
 		// Token: 0x060016B1 RID: 5809 RVA: 0x00374874 File Offset: 0x00372C74
 		private int Leitura_EnderecoEstacao()
 		{
-			this.AtualizaMsgTela_SA_820("Buscando Endereço", (int)OpenMode.Output);
-			int result = 0;
-			if(!Mod_MD.Leitura_pagina(2048, 255, (int)OpenMode.Input).Status)
+			this.AtualizaMsgTela_SA_820("Buscando Endereço", 2);
+			int result;
+			if (!Mod_MD.Leitura_pagina(2048, 255, 1).Status)
 			{
-				this.AtualizaMsgTela_SA_820("Equipamento não responde", (int)OpenMode.Input);
+				this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
 				result = 0;
 			}
 			else
 			{
 				Comunicacao.Rotina_Delay(5L);
-				this.AtualizaMsgTela_SA_820("Busca Endereço OK", (int)OpenMode.Binary);
+				this.AtualizaMsgTela_SA_820("Busca Endereço OK", 0);
 				result = Linha_RT.Retorna_End_Est_GC_82x();
 			}
 			return result;
@@ -544,18 +545,18 @@ namespace iS800
 		{
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Finalizando Calibração", (int)OpenMode.Output);
+				this.AtualizaMsgTela_SA_820("Finalizando Calibração", 2);
 				Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21930);
 				if (!ctrl_RESP_.Status)
 				{
-					this.AtualizaMsgTela_SA_820("Equipamento não responde", (int)OpenMode.Input);
+					this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
 					return;
 				}
 				this.AtualizaMsgTela_SA_820(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -564,8 +565,8 @@ namespace iS800
 		{
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Finalizando Calibração", (int)OpenMode.Output);
-				int pagina = 0;
+				this.AtualizaMsgTela_SA_820("Finalizando Calibração", 2);
+				int pagina;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
@@ -588,7 +589,7 @@ namespace iS800
 						pagina = 6179;
 					}
 				}
-				int num = this.Leitura_ContanteCalibracao(pagina, Convert.ToInt32(this.nud_estacao.Value), (int)OpenMode.Input);
+				int num = this.Leitura_ContanteCalibracao(pagina, Convert.ToInt32(this.nud_estacao.Value), 1);
 				this.nud_contagens.Value = new decimal(num);
 			}
 		}
@@ -598,8 +599,8 @@ namespace iS800
 		{
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", (int)OpenMode.Output);
-				int numero_pagina = 0;
+				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", 2);
+				int numero_pagina;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					numero_pagina = 6180;
@@ -610,9 +611,9 @@ namespace iS800
 				}
 				RT_geral.RT_820_360_BD.calibracao_tipo = 0;
 				RT_geral.RT_820_360_BD.calibracao_const = Convert.ToInt32(this.nud_contagens.Value);
-				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, (int)4, (int)OpenMode.Binary).Status)
+				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, 4, 0).Status)
 				{
-					this.AtualizaMsgTela_SA_820("Erro na escrita de contagens", (int)OpenMode.Input);
+					this.AtualizaMsgTela_SA_820("Erro na escrita de contagens", 1);
 					return;
 				}
 			}
@@ -623,8 +624,8 @@ namespace iS800
 		{
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Finalizando Calibração", (int)OpenMode.Output);
-				int num = this.Leitura_ContanteCalibracao(6177, Convert.ToInt32(this.nud_estacao.Value), (int)OpenMode.Input);
+				this.AtualizaMsgTela_SA_820("Finalizando Calibração", 2);
+				int num = this.Leitura_ContanteCalibracao(6177, Convert.ToInt32(this.nud_estacao.Value), 1);
 				this.nud_contagens.Value = new decimal(num);
 			}
 		}
@@ -632,10 +633,10 @@ namespace iS800
 		// Token: 0x060016B6 RID: 5814 RVA: 0x00374AD8 File Offset: 0x00372ED8
 		private void Button4_Click(object sender, EventArgs e)
 		{
-			if(Comunicacao.VerificaPortaSerialExiste())
+			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Finalizando Calibração", (int)OpenMode.Output);
-				int num = this.Leitura_ContanteCalibracao(6179, Convert.ToInt32(this.nud_estacao.Value), (int)OpenMode.Input);
+				this.AtualizaMsgTela_SA_820("Finalizando Calibração", 2);
+				int num = this.Leitura_ContanteCalibracao(6179, Convert.ToInt32(this.nud_estacao.Value), 1);
 				this.nud_contagens.Value = new decimal(num);
 			}
 		}
@@ -676,10 +677,10 @@ namespace iS800
 		// Token: 0x060016BC RID: 5820 RVA: 0x00374B9C File Offset: 0x00372F9C
 		private void Button9_Click(object sender, EventArgs e)
 		{
-			if(Comunicacao.VerificaPortaSerialExiste())
+			if (Comunicacao.VerificaPortaSerialExiste())
 			{
-				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", (int)OpenMode.Output);
-				int numero_pagina = 0;
+				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", 2);
+				int numero_pagina;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
@@ -704,9 +705,9 @@ namespace iS800
 				}
 				RT_geral.RT_820_360_BD.calibracao_tipo = 0;
 				RT_geral.RT_820_360_BD.calibracao_const = Convert.ToInt32(this.nud_contagens.Value);
-				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, 4, (int)OpenMode.Binary).Status)
+				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, 4, 0).Status)
 				{
-					this.AtualizaMsgTela_SA_820("Erro na escrita de contagens", (int)OpenMode.Input);
+					this.AtualizaMsgTela_SA_820("Erro na escrita de contagens", 1);
 					return;
 				}
 			}

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +13,12 @@ using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
+using VR.PrintPreview;
 
 namespace iS800
 {
 	// Token: 0x02000035 RID: 53
+	[DesignerGenerated]
 	public partial class RT_820_200_conf : Form
 	{
 		// Token: 0x06000579 RID: 1401 RVA: 0x002996C4 File Offset: 0x00297AC4
@@ -5301,24 +5303,24 @@ namespace iS800
 			this.NumericUpDown_num_est_rep_820 = numericUpDown;
 			this.Inicializa_DadosEStruturaRT820_Default();
 			Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-			this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_EA.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_EA.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_ED.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_ED.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_setpoints.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_setpoints.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_vazao_perifericos.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_vazao_perifericos.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_repetidora.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_repetidora.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage1.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage1.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_MotoresValvulas.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_MotoresValvulas.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_geral.BackColor = Color.FromKnownColor(8);
+			this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_controle.BackColor = Color.FromKnownColor(8);
+			this.TabPage_controle.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_EA.BackColor = Color.FromKnownColor(8);
+			this.TabPage_EA.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_ED.BackColor = Color.FromKnownColor(8);
+			this.TabPage_ED.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_setpoints.BackColor = Color.FromKnownColor(8);
+			this.TabPage_setpoints.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_vazao_perifericos.BackColor = Color.FromKnownColor(8);
+			this.TabPage_vazao_perifericos.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_repetidora.BackColor = Color.FromKnownColor(8);
+			this.TabPage_repetidora.ForeColor = Color.FromKnownColor(10);
+			this.TabPage1.BackColor = Color.FromKnownColor(8);
+			this.TabPage1.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_MotoresValvulas.BackColor = Color.FromKnownColor(8);
+			this.TabPage_MotoresValvulas.ForeColor = Color.FromKnownColor(10);
 			this.GroupBox_comunicacao_820.Enabled = true;
 			this.GroupBox_informacoes_820.Enabled = true;
 			this.GroupBox_descricao_RT820.Enabled = true;
@@ -5330,8 +5332,8 @@ namespace iS800
 			{
 				PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 				privateFontCollection.AddFontFile(text);
-				Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
-				Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
+				Font font = new Font(privateFontCollection.Families[0], 8f, 2);
+				Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
 				this.Label48.Font = font;
 				this.TextBox_equipamento_820.Font = font;
 				this.TextBox_versao_820.Font = font;
@@ -5421,26 +5423,26 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewProcessosColunas[11].LarguraColuna = 50;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[12].LarguraColuna = 50;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[13].LarguraColuna = 55;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].AlingColuna = 64;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasMenu[0] = "Desativa";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasMenu[0] = "Desativa";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = 21856;
-				int num = 0;
-				int num2 = 0;
+				int num;
+				int num2;
 				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 18;
@@ -5456,7 +5458,7 @@ namespace iS800
 					num2 = 4;
 				}
 				int num3 = 1;
-				int num4 = Convert.ToInt32(num);
+				int num4 = num;
 				for (i = num3; i <= num4; i++)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasMenu[i] = "SD - " + Strings.Format(i, "0#");
@@ -5467,7 +5469,7 @@ namespace iS800
 				int num5 = num + 1;
 				num = num5 + 4;
 				int num6 = num5;
-				int num7 = Convert.ToInt32(num);
+				int num7 = num;
 				for (i = num6; i <= num7; i++)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasMenu[i] = "Periférico - " + Strings.Format(i + num2 - 12, "0#");
@@ -5502,7 +5504,7 @@ namespace iS800
 					num2 = 8;
 				}
 				int num8 = 1;
-				int num9 = Convert.ToInt32(num);
+				int num9 = num;
 				for (i = num8; i <= num9; i++)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasMenu[i] = "ED - " + Strings.Format(i, "0#");
@@ -5517,7 +5519,7 @@ namespace iS800
 				num5 = num + 1;
 				num = num5 + 4;
 				int num10 = num5;
-				int num11 = Convert.ToInt32(num);
+				int num11 = num;
 				for (i = num10; i <= num11; i++)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasMenu[i] = "Periférico - " + Strings.Format(i - 16 + num2, "0#");
@@ -5538,7 +5540,7 @@ namespace iS800
 					num = 8;
 				}
 				int num12 = 1;
-				int num13 = Convert.ToInt32(num);
+				int num13 = num;
 				for (i = num12; i <= num13; i++)
 				{
 					num2 = i * 2;
@@ -5601,8 +5603,8 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewGruposColunas[1].NomeColuna = "TpAcionamentos";
 				RT_geral.RT_820_DataGrigViewGruposColunas[0].LarguraColuna = 100;
 				RT_geral.RT_820_DataGrigViewGruposColunas[1].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewGruposColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewGruposColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_820_DataGrigViewGruposColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewGruposColunas[1].AlingColuna = 64;
 				RT_geral.RT_820_DataGrigViewGruposColunas[0].NumeroLinhaMenu = 9;
 				RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasMenu[0] = "Liberado";
 				RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasValor[0] = 21856;
@@ -5635,9 +5637,9 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewEAColunas[0].LarguraColuna = 90;
 			RT_geral.RT_820_DataGrigViewEAColunas[1].LarguraColuna = 90;
 			RT_geral.RT_820_DataGrigViewEAColunas[2].LarguraColuna = 90;
-			RT_geral.RT_820_DataGrigViewEAColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_820_DataGrigViewEAColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_820_DataGrigViewEAColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewEAColunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewEAColunas[2].AlingColuna = 64;
 			RT_geral.RT_820_DataGrigViewEAColunas[0].NumeroLinhaMenu = 0;
 			RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = 0;
 			RT_geral.RT_820_DataGrigViewGruposColunas[2].NumeroLinhaMenu = 0;
@@ -5647,8 +5649,8 @@ namespace iS800
 		private void GeraDataGridView_Perifericos()
 		{
 			this.DataGridView_periferico_RT820.Columns.Clear();
-			this.DataGridView_periferico_RT820.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_periferico_RT820.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
+			this.DataGridView_periferico_RT820.CellBorderStyle = 1;
+			this.DataGridView_periferico_RT820.DefaultCellStyle.Alignment = 64;
 			int num = 0;
 			checked
 			{
@@ -5684,7 +5686,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -5712,8 +5714,8 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].NomeColuna = "end";
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].LarguraColuna = 250;
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].LarguraColuna = 60;
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)16;
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].AlingColuna = 64;
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].NumeroLinhaMenu = perifericos.perif_RT820_200.Count;
 				int num2 = 48;
 				num = 0;
@@ -5728,7 +5730,7 @@ namespace iS800
 				}
 				finally
 				{
-					List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
+					List<perifericos.Periferico>.Enumerator enumerator;
 					enumerator.Dispose();
 				}
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].NumeroLinhaMenu = 0;
@@ -5756,10 +5758,10 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].NomeColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LarguraColuna = 200;
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = 32;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[0] = "Leitura desabilitada";
-				int num = 0;
+				int num;
 				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
 				{
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = 49;
@@ -5779,7 +5781,7 @@ namespace iS800
 				}
 				while (i <= 16);
 				int num2 = 1;
-				int num3 = Convert.ToInt32(num);
+				int num3 = num;
 				for (i = num2; i <= num3; i++)
 				{
 					int num4 = i * 2;
@@ -5795,8 +5797,8 @@ namespace iS800
 		private void GeraDataGridView_ED()
 		{
 			this.DataGridView_RT820_ED.Columns.Clear();
-			this.DataGridView_RT820_ED.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
+			this.DataGridView_RT820_ED.CellBorderStyle = 1;
+			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = 64;
 			int num = 0;
 			checked
 			{
@@ -5832,7 +5834,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -5857,7 +5859,7 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewEDColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].NomeColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LarguraColuna = 250;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].AlingColuna = 32;
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[1] = 21904;
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[2] = 21905;
@@ -5928,8 +5930,8 @@ namespace iS800
 		private void GeraDataGridView_Repedidora()
 		{
 			this.DataGridView_end_rep_RT820.Columns.Clear();
-			this.DataGridView_end_rep_RT820.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
+			this.DataGridView_end_rep_RT820.CellBorderStyle = 1;
+			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = 64;
 			int num = 0;
 			checked
 			{
@@ -6003,16 +6005,16 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].LarguraColuna = 65;
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].LarguraColuna = 50;
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].LarguraColuna = 65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].AlingColuna = 64;
 		}
 
 		// Token: 0x0600078C RID: 1932 RVA: 0x002AA0A0 File Offset: 0x002A84A0
@@ -6051,12 +6053,12 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].LarguraColuna = 60;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LarguraColuna = 160;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LarguraColuna = 160;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].AlingColuna = 32;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = 0;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = 0;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].NumeroLinhaMenu = 0;
@@ -6144,18 +6146,18 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewTimerColunas[9].LarguraColuna = 58;
 				RT_geral.RT_820_DataGrigViewTimerColunas[10].LarguraColuna = 58;
 				RT_geral.RT_820_DataGrigViewTimerColunas[11].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].AlingColuna = 32;
 				RT_geral.RT_820_DataGrigViewTimerColunas[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_820_DataGrigViewTimerColunas[1].NumeroLinhaMenu = 0;
 				RT_geral.RT_820_DataGrigViewTimerColunas[2].NumeroLinhaMenu = 0;
@@ -6765,8 +6767,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num7 = 0;
+				int num;
+				int num7;
 				object obj;
 				try
 				{
@@ -7074,13 +7076,13 @@ namespace iS800
 					goto IL_1382;
 					IL_133D:
 					num7 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_1353:;
+										IL_1353:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num7 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_133D;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_1382:
 				if (num7 != 0)
@@ -7185,7 +7187,7 @@ namespace iS800
 		// Token: 0x06000798 RID: 1944 RVA: 0x002AFB30 File Offset: 0x002ADF30
 		private void NumericUpDown_end_rep_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.repetidora.End_repetidora, true);
 			sender = numericUpDown;
@@ -7194,15 +7196,15 @@ namespace iS800
 		// Token: 0x06000799 RID: 1945 RVA: 0x002AFB90 File Offset: 0x002ADF90
 		private void NumericUpDown_num_est_rep_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.repetidora.Num_repetidoras, true);
 			sender = numericUpDown;
 			int num = 0;
-			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					switch (i)
 					{
@@ -7268,7 +7270,7 @@ namespace iS800
 						break;
 					}
 				}
-				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)); i <= 49; i++)
+				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= 49; i++)
 				{
 					switch (i)
 					{
@@ -7345,7 +7347,7 @@ namespace iS800
 		// Token: 0x0600079A RID: 1946 RVA: 0x002B0048 File Offset: 0x002AE448
 		private void NumericUpDown_intervalo_filtro_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo, true);
 			sender = numericUpDown;
@@ -7354,7 +7356,7 @@ namespace iS800
 		// Token: 0x0600079B RID: 1947 RVA: 0x002B00A8 File Offset: 0x002AE4A8
 		private void NumericUpDown_tamanho_filtro_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro, true);
 			sender = numericUpDown;
@@ -7375,7 +7377,7 @@ namespace iS800
 			checked
 			{
 				int num2 = dado.Numero_itens - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					cb.Items.Add(dado.itens[i]);
 				}
@@ -7426,7 +7428,7 @@ namespace iS800
 		// Token: 0x060007A0 RID: 1952 RVA: 0x002B029C File Offset: 0x002AE69C
 		private void NumericUpDown_end_mestre_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.End_mestre, true);
 			sender = numericUpDown;
@@ -7435,7 +7437,7 @@ namespace iS800
 		// Token: 0x060007A1 RID: 1953 RVA: 0x002B02FC File Offset: 0x002AE6FC
 		private void NumericUpDown_end_est_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.End_estacao, true);
 			sender = numericUpDown;
@@ -7444,10 +7446,12 @@ namespace iS800
 		// Token: 0x060007A2 RID: 1954 RVA: 0x002B035C File Offset: 0x002AE75C
 		private void NumericUpDown_temp_ptt_820_ValueChanged(object sender, EventArgs e)
 		{
+			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
+			NewLateBinding.LateSet(sender, null, "value", new object[]
+			{
+				RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor
+			}, null, null);
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
-			decimal valorTemp = decimal.Floor(numericUpDown.Value / 10m) * 10m;
-			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor = Conversions.ToInteger(valorTemp);
-			numericUpDown.Value = RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
@@ -7464,7 +7468,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+				if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 				{
 					RT_geral.RT_820_BD.HabExpIO.Valor = 21857;
 					this.DataGridView_RT820_ED.Height = 376;
@@ -7586,7 +7590,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_periferico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
-					for (int i = Convert.ToInt32(num); i <= num2; i++)
+					for (int i = num; i <= num2; i++)
 					{
 						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
@@ -7622,7 +7626,7 @@ namespace iS800
 		{
 			if (this.DataGridView_periferico_RT820.IsCurrentCellDirty)
 			{
-				this.DataGridView_periferico_RT820.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_periferico_RT820.CommitEdit(512);
 			}
 		}
 
@@ -7656,7 +7660,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_RT820_ED.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].Numero_itens - 1;
 					int num2 = 0;
-					int num3 = Convert.ToInt32(num);
+					int num3 = num;
 					int i;
 					for (i = num2; i <= num3; i++)
 					{
@@ -7687,7 +7691,7 @@ namespace iS800
 		{
 			if (this.DataGridView_RT820_ED.IsCurrentCellDirty)
 			{
-				this.DataGridView_RT820_ED.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_RT820_ED.CommitEdit(512);
 			}
 		}
 
@@ -7779,7 +7783,7 @@ namespace iS800
 		{
 			if (this.DataGridView_end_rep_RT820.IsCurrentCellDirty)
 			{
-				this.DataGridView_end_rep_RT820.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_end_rep_RT820.CommitEdit(512);
 			}
 		}
 
@@ -7805,7 +7809,7 @@ namespace iS800
 					else
 					{
 						int num2 = (int)Math.Round(Conversion.Val(text.Substring(0, num)));
-						int num3 = 0;
+						int num3;
 						if (num2 < 24)
 						{
 							if (length - num > 1)
@@ -7843,8 +7847,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num3 = 0;
+				int num;
+				int num3;
 				object obj;
 				try
 				{
@@ -7859,7 +7863,7 @@ namespace iS800
 					this.ToolStripButton_RT_820_Upload.Enabled = false;
 					this.OpenFileDialog_RT_820.Filter = "Arquivo de configuração de equipamento|*.Cfg820_200";
 					this.OpenFileDialog_RT_820.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_820.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+					if (this.OpenFileDialog_RT_820.ShowDialog() == 1)
 					{
 						if (Operators.CompareString(this.OpenFileDialog_RT_820.FileName, "", false) != 0)
 						{
@@ -8008,18 +8012,18 @@ namespace iS800
 					}
 					goto IL_F2F;
 					IL_ECA:
-					Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG_820.Enabled = true;
 					goto IL_F2F;
 					IL_EEA:
 					num3 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_F00:;
+										IL_F00:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_EEA;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_F2F:
 				if (num3 != 0)
@@ -8034,8 +8038,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num4 = 0;
+				int num;
+				int num4;
 				object obj;
 				try
 				{
@@ -8050,7 +8054,7 @@ namespace iS800
 					this.ToolStripButton_RT_820_Upload.Enabled = false;
 					this.SaveFileDialog_RT_820.Filter = "Arquivo de configuração de equipamento|*.Cfg820_200";
 					this.SaveFileDialog_RT_820.InitialDirectory = Linha_RT.diretorio;
-					if (this.SaveFileDialog_RT_820.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+					if (this.SaveFileDialog_RT_820.ShowDialog() == 1)
 					{
 						if (Operators.CompareString(this.SaveFileDialog_RT_820.FileName, "", false) != 0)
 						{
@@ -8246,18 +8250,18 @@ namespace iS800
 					}
 					goto IL_E5C;
 					IL_DF7:
-					Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG_820.Enabled = true;
 					goto IL_E5C;
 					IL_E17:
 					num4 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_E2D:;
+										IL_E2D:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_E17;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_E5C:
 				if (num4 != 0)
@@ -8293,7 +8297,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 			this.Libera_acoes_RT820();
 		}
@@ -8323,7 +8327,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -8633,10 +8637,10 @@ namespace iS800
 		[MethodImpl(72)]
 		private void DesenhaRelatorioRT820Pagina1(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -8744,10 +8748,10 @@ namespace iS800
 		// Token: 0x060007CE RID: 1998 RVA: 0x002B4650 File Offset: 0x002B2A50
 		private void DesenhaRelatorioRT820Pagina2(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -9007,7 +9011,7 @@ namespace iS800
 		// Token: 0x060007D5 RID: 2005 RVA: 0x002B5404 File Offset: 0x002B3804
 		private void NumericUpDown22_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007D6 RID: 2006 RVA: 0x002B543C File Offset: 0x002B383C
@@ -9034,67 +9038,67 @@ namespace iS800
 		// Token: 0x060007D9 RID: 2009 RVA: 0x002B552C File Offset: 0x002B392C
 		private void nud_motor1_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007DA RID: 2010 RVA: 0x002B5564 File Offset: 0x002B3964
 		private void nud_motor1_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007DB RID: 2011 RVA: 0x002B559C File Offset: 0x002B399C
 		private void nud_motor2_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007DC RID: 2012 RVA: 0x002B55D4 File Offset: 0x002B39D4
 		private void nud_motor2_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007DD RID: 2013 RVA: 0x002B560C File Offset: 0x002B3A0C
 		private void nud_motor3_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007DE RID: 2014 RVA: 0x002B5644 File Offset: 0x002B3A44
 		private void nud_motor3_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007DF RID: 2015 RVA: 0x002B567C File Offset: 0x002B3A7C
 		private void nud_motor4_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007E0 RID: 2016 RVA: 0x002B56B4 File Offset: 0x002B3AB4
 		private void nud_motor4_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007E1 RID: 2017 RVA: 0x002B56EC File Offset: 0x002B3AEC
 		private void nud_protecao_desliga_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007E2 RID: 2018 RVA: 0x002B5724 File Offset: 0x002B3B24
 		private void nud_protecao_liga_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007E3 RID: 2019 RVA: 0x002B575C File Offset: 0x002B3B5C
 		private void nud_numero_motores_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.cb_modo_partida1.Enabled = false;
 			this.nud_partida1.Enabled = false;
 			this.nud_parada1.Enabled = false;
@@ -9107,7 +9111,7 @@ namespace iS800
 			this.cb_modo_partida4.Enabled = false;
 			this.nud_partida4.Enabled = false;
 			this.nud_parada4.Enabled = false;
-			object obj = NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null);
+			object obj = NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null);
 			if (Operators.ConditionalCompareObjectEqual(obj, 1, false))
 			{
 				this.cb_modo_partida1.Enabled = true;
@@ -9155,7 +9159,7 @@ namespace iS800
 		// Token: 0x060007E4 RID: 2020 RVA: 0x002B59F4 File Offset: 0x002B3DF4
 		private void nud_numero_valvulas_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.nud_valvula1_abertura.Enabled = false;
 			this.nud_valvula1_fechamento.Enabled = false;
 			this.nud_valvula2_abertura.Enabled = false;
@@ -9164,7 +9168,7 @@ namespace iS800
 			this.nud_valvula3_fechamento.Enabled = false;
 			this.nud_valvula4_abertura.Enabled = false;
 			this.nud_valvula4_fechamento.Enabled = false;
-			object obj = NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null);
+			object obj = NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null);
 			if (Operators.ConditionalCompareObjectEqual(obj, 1, false))
 			{
 				this.nud_valvula1_abertura.Enabled = true;
@@ -9202,13 +9206,13 @@ namespace iS800
 		// Token: 0x060007E5 RID: 2021 RVA: 0x002B5BE0 File Offset: 0x002B3FE0
 		private void nud_bombas_simultaneas_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007E6 RID: 2022 RVA: 0x002B5C10 File Offset: 0x002B4010
 		private void nud_tempo_operacoes_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007E7 RID: 2023 RVA: 0x002B5C40 File Offset: 0x002B4040
@@ -9242,97 +9246,97 @@ namespace iS800
 		// Token: 0x060007EB RID: 2027 RVA: 0x002B5DB0 File Offset: 0x002B41B0
 		private void nud_partida1_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007EC RID: 2028 RVA: 0x002B5DE8 File Offset: 0x002B41E8
 		private void nud_partida2_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007ED RID: 2029 RVA: 0x002B5E20 File Offset: 0x002B4220
 		private void nud_partida3_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007EE RID: 2030 RVA: 0x002B5E58 File Offset: 0x002B4258
 		private void nud_partida4_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007EF RID: 2031 RVA: 0x002B5E90 File Offset: 0x002B4290
 		private void nud_parada1_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F0 RID: 2032 RVA: 0x002B5EC8 File Offset: 0x002B42C8
 		private void nud_parada3_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F1 RID: 2033 RVA: 0x002B5F00 File Offset: 0x002B4300
 		private void nud_parada4_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F2 RID: 2034 RVA: 0x002B5F38 File Offset: 0x002B4338
 		private void nud_valvula1_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F3 RID: 2035 RVA: 0x002B5F70 File Offset: 0x002B4370
 		private void nud_valvula2_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F4 RID: 2036 RVA: 0x002B5FA8 File Offset: 0x002B43A8
 		private void nud_valvula3_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F5 RID: 2037 RVA: 0x002B5FE0 File Offset: 0x002B43E0
 		private void nud_valvula4_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F6 RID: 2038 RVA: 0x002B6018 File Offset: 0x002B4418
 		private void nud_valvula1_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F7 RID: 2039 RVA: 0x002B6050 File Offset: 0x002B4450
 		private void nud_valvula2_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F8 RID: 2040 RVA: 0x002B6088 File Offset: 0x002B4488
 		private void nud_valvula3_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007F9 RID: 2041 RVA: 0x002B60C0 File Offset: 0x002B44C0
 		private void nud_valvula4_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060007FA RID: 2042 RVA: 0x002B60F8 File Offset: 0x002B44F8
 		private void sph_baixo10_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo, true);
 			sender = numericUpDown;
@@ -9341,7 +9345,7 @@ namespace iS800
 		// Token: 0x060007FB RID: 2043 RVA: 0x002B6164 File Offset: 0x002B4564
 		private void sph_baixo11_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo, true);
 			sender = numericUpDown;
@@ -9350,7 +9354,7 @@ namespace iS800
 		// Token: 0x060007FC RID: 2044 RVA: 0x002B61D0 File Offset: 0x002B45D0
 		private void sph_baixo20_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo, true);
 			sender = numericUpDown;
@@ -9359,7 +9363,7 @@ namespace iS800
 		// Token: 0x060007FD RID: 2045 RVA: 0x002B623C File Offset: 0x002B463C
 		private void sph_baixo21_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo, true);
 			sender = numericUpDown;
@@ -9368,7 +9372,7 @@ namespace iS800
 		// Token: 0x060007FE RID: 2046 RVA: 0x002B62A8 File Offset: 0x002B46A8
 		private void sph_baixo30_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo, true);
 			sender = numericUpDown;
@@ -9377,7 +9381,7 @@ namespace iS800
 		// Token: 0x060007FF RID: 2047 RVA: 0x002B6314 File Offset: 0x002B4714
 		private void sph_baixo31_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo, true);
 			sender = numericUpDown;
@@ -9386,7 +9390,7 @@ namespace iS800
 		// Token: 0x06000800 RID: 2048 RVA: 0x002B6380 File Offset: 0x002B4780
 		private void sph_baixo40_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo, true);
 			sender = numericUpDown;
@@ -9395,7 +9399,7 @@ namespace iS800
 		// Token: 0x06000801 RID: 2049 RVA: 0x002B63EC File Offset: 0x002B47EC
 		private void sph_baixo41_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo, true);
 			sender = numericUpDown;
@@ -9404,7 +9408,7 @@ namespace iS800
 		// Token: 0x06000802 RID: 2050 RVA: 0x002B6458 File Offset: 0x002B4858
 		private void sph_alto10_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[0].Alto, true);
 			sender = numericUpDown;
@@ -9413,7 +9417,7 @@ namespace iS800
 		// Token: 0x06000803 RID: 2051 RVA: 0x002B64C4 File Offset: 0x002B48C4
 		private void sph_alto11_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[1].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[1].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[1].Alto, true);
 			sender = numericUpDown;
@@ -9422,7 +9426,7 @@ namespace iS800
 		// Token: 0x06000804 RID: 2052 RVA: 0x002B6530 File Offset: 0x002B4930
 		private void sph_alto20_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[2].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[2].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[2].Alto, true);
 			sender = numericUpDown;
@@ -9431,7 +9435,7 @@ namespace iS800
 		// Token: 0x06000805 RID: 2053 RVA: 0x002B659C File Offset: 0x002B499C
 		private void sph_alto21_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[3].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[3].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[3].Alto, true);
 			sender = numericUpDown;
@@ -9440,7 +9444,7 @@ namespace iS800
 		// Token: 0x06000806 RID: 2054 RVA: 0x002B6608 File Offset: 0x002B4A08
 		private void sph_alto30_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[4].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[4].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[4].Alto, true);
 			sender = numericUpDown;
@@ -9449,7 +9453,7 @@ namespace iS800
 		// Token: 0x06000807 RID: 2055 RVA: 0x002B6674 File Offset: 0x002B4A74
 		private void sph_alto31_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[5].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[5].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[5].Alto, true);
 			sender = numericUpDown;
@@ -9458,7 +9462,7 @@ namespace iS800
 		// Token: 0x06000808 RID: 2056 RVA: 0x002B66E0 File Offset: 0x002B4AE0
 		private void sph_alto40_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[6].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[6].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[6].Alto, true);
 			sender = numericUpDown;
@@ -9467,7 +9471,7 @@ namespace iS800
 		// Token: 0x06000809 RID: 2057 RVA: 0x002B674C File Offset: 0x002B4B4C
 		private void sph_alto41_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[7].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[7].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[7].Alto, true);
 			sender = numericUpDown;
@@ -9476,7 +9480,7 @@ namespace iS800
 		// Token: 0x0600080A RID: 2058 RVA: 0x002B67B8 File Offset: 0x002B4BB8
 		private void sph_minuto10_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto, true);
 			sender = numericUpDown;
@@ -9485,7 +9489,7 @@ namespace iS800
 		// Token: 0x0600080B RID: 2059 RVA: 0x002B6824 File Offset: 0x002B4C24
 		private void sph_minuto11_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[1].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[1].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[1].Minuto, true);
 			sender = numericUpDown;
@@ -9494,7 +9498,7 @@ namespace iS800
 		// Token: 0x0600080C RID: 2060 RVA: 0x002B6890 File Offset: 0x002B4C90
 		private void sph_minuto20_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[2].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[2].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[2].Minuto, true);
 			sender = numericUpDown;
@@ -9503,7 +9507,7 @@ namespace iS800
 		// Token: 0x0600080D RID: 2061 RVA: 0x002B68FC File Offset: 0x002B4CFC
 		private void sph_minuto21_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[3].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[3].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[3].Minuto, true);
 			sender = numericUpDown;
@@ -9512,7 +9516,7 @@ namespace iS800
 		// Token: 0x0600080E RID: 2062 RVA: 0x002B6968 File Offset: 0x002B4D68
 		private void sph_minuto30_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[4].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[4].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[4].Minuto, true);
 			sender = numericUpDown;
@@ -9521,7 +9525,7 @@ namespace iS800
 		// Token: 0x0600080F RID: 2063 RVA: 0x002B69D4 File Offset: 0x002B4DD4
 		private void sph_minuto31_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[5].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[5].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[5].Minuto, true);
 			sender = numericUpDown;
@@ -9530,7 +9534,7 @@ namespace iS800
 		// Token: 0x06000810 RID: 2064 RVA: 0x002B6A40 File Offset: 0x002B4E40
 		private void sph_minuto40_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[6].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[6].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[6].Minuto, true);
 			sender = numericUpDown;
@@ -9539,7 +9543,7 @@ namespace iS800
 		// Token: 0x06000811 RID: 2065 RVA: 0x002B6AAC File Offset: 0x002B4EAC
 		private void sph_minuto41_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[7].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[7].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[7].Minuto, true);
 			sender = numericUpDown;
@@ -9550,7 +9554,7 @@ namespace iS800
 		{
 			object obj = 0;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9566,7 +9570,7 @@ namespace iS800
 		{
 			object obj = 1;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9582,7 +9586,7 @@ namespace iS800
 		{
 			object obj = 2;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9598,7 +9602,7 @@ namespace iS800
 		{
 			object obj = 3;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9614,7 +9618,7 @@ namespace iS800
 		{
 			object obj = 4;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9630,7 +9634,7 @@ namespace iS800
 		{
 			object obj = 5;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9646,7 +9650,7 @@ namespace iS800
 		{
 			object obj = 6;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9662,7 +9666,7 @@ namespace iS800
 		{
 			object obj = 7;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
 				num |= 128;
 			}
@@ -9678,7 +9682,7 @@ namespace iS800
 		{
 			object obj = 0;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x0600081B RID: 2075 RVA: 0x002B6F98 File Offset: 0x002B5398
@@ -9686,7 +9690,7 @@ namespace iS800
 		{
 			object obj = 1;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x0600081C RID: 2076 RVA: 0x002B7018 File Offset: 0x002B5418
@@ -9694,7 +9698,7 @@ namespace iS800
 		{
 			object obj = 2;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x0600081D RID: 2077 RVA: 0x002B7098 File Offset: 0x002B5498
@@ -9702,7 +9706,7 @@ namespace iS800
 		{
 			object obj = 3;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x0600081E RID: 2078 RVA: 0x002B7118 File Offset: 0x002B5518
@@ -9710,7 +9714,7 @@ namespace iS800
 		{
 			object obj = 4;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x0600081F RID: 2079 RVA: 0x002B7198 File Offset: 0x002B5598
@@ -9718,7 +9722,7 @@ namespace iS800
 		{
 			object obj = 5;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x06000820 RID: 2080 RVA: 0x002B7218 File Offset: 0x002B5618
@@ -9726,7 +9730,7 @@ namespace iS800
 		{
 			object obj = 6;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x06000821 RID: 2081 RVA: 0x002B7298 File Offset: 0x002B5698
@@ -9734,7 +9738,7 @@ namespace iS800
 		{
 			object obj = 7;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
 
 		// Token: 0x0400050E RID: 1294

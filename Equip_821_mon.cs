@@ -1,10 +1,10 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
@@ -13,6 +13,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000047 RID: 71
+	[DesignerGenerated]
 	public partial class Equip_821_mon : Form
 	{
 		// Token: 0x0600112B RID: 4395 RVA: 0x00315554 File Offset: 0x00313954
@@ -1571,7 +1572,7 @@ namespace iS800
 		{
 			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == 0)
 			{
-				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", 0, null);
 				return;
 			}
 			this.Timer_monitoracao.Enabled = false;
@@ -1584,7 +1585,7 @@ namespace iS800
 			this.Mon_820_DGVReferenciaColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVReferenciaColunas[0].NomeColuna = "range";
 			this.Mon_820_DGVReferenciaColunas[0].LarguraColuna = 100;
-			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = 64;
 			this.Mon_820_DGVReferenciaColunas[0].NumeroLinhaMenu = 0;
 		}
 
@@ -1592,7 +1593,7 @@ namespace iS800
 		private void GeraDataGridView_Referencia()
 		{
 			this.dgv_Referencias.Columns.Clear();
-			this.dgv_Referencias.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+			this.dgv_Referencias.CellBorderStyle = 1;
 			int num = 0;
 			checked
 			{
@@ -1628,7 +1629,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -1653,7 +1654,7 @@ namespace iS800
 				text += " Utilize canal COM2.\r\n";
 				break;
 			}
-			Interaction.MsgBox(text, (MsgBoxStyle)num, " Atenção");
+			Interaction.MsgBox(text, num, " Atenção");
 			int num2 = 0;
 			checked
 			{
@@ -1732,7 +1733,7 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_MD202_mon("Leitura Setpoints - Ok", (int)OpenMode.Binary);
+							this.Mensagem_MD202_mon("Leitura Setpoints - Ok", 0);
 							this.Calcula_Estatistica_820_300(1);
 							this.Atualiza_setpoint_monitoracao_202();
 							goto IL_177;
@@ -1741,7 +1742,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Setpoints - ChkSum", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Setpoints - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
 								this.Limpa_monitoracao_820_300(2);
 							}
@@ -1753,7 +1754,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Setpoints - Timeout", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Setpoints - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
 								this.Limpa_monitoracao_820_300(2);
 							}
@@ -1771,7 +1772,7 @@ namespace iS800
 						IL_13E:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", (int)OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							this.Limpa_monitoracao_820_300(2);
 							goto IL_165;
@@ -1809,7 +1810,7 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_MD202_mon("Leitura Equipamento - Ok", (int)OpenMode.Binary);
+							this.Mensagem_MD202_mon("Leitura Equipamento - Ok", 0);
 							this.Calcula_Estatistica_820_300(1);
 							this.Atualiza_status_monitoracao_820_300();
 							goto IL_A88;
@@ -1818,7 +1819,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
 								this.Limpa_monitoracao_820_300(1);
 							}
@@ -1830,7 +1831,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
 								this.Limpa_monitoracao_820_300(1);
 							}
@@ -1848,7 +1849,7 @@ namespace iS800
 						IL_370:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", (int)OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							this.Limpa_monitoracao_820_300(1);
 							goto IL_397;
@@ -1913,7 +1914,7 @@ namespace iS800
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
-							this.Mensagem_MD202_mon("Escrita Setpoints - Ok", (int)OpenMode.Binary);
+							this.Mensagem_MD202_mon("Escrita Setpoints - Ok", 0);
 							this.Calcula_Estatistica_820_300(1);
 							goto IL_912;
 						case 1:
@@ -1921,7 +1922,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Escrita Setpoints - ChkSum", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Escrita Setpoints - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
 							}
 							else
@@ -1932,7 +1933,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro Escrita Setpoints - Timeout", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro Escrita Setpoints - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
 							}
 							else
@@ -1949,7 +1950,7 @@ namespace iS800
 						IL_8E0:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", (int)OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							goto IL_900;
 						}
@@ -1988,7 +1989,7 @@ namespace iS800
 						case 2:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro ao executar o camando - ChkSum", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro ao executar o camando - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
 							}
 							else
@@ -1999,7 +2000,7 @@ namespace iS800
 						case 3:
 							if (i == 0)
 							{
-								this.Mensagem_MD202_mon("Erro ao executar o camando - Timeout", (int)OpenMode.Input);
+								this.Mensagem_MD202_mon("Erro ao executar o camando - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
 							}
 							else
@@ -2016,7 +2017,7 @@ namespace iS800
 						IL_A3D:
 						if (i == 0)
 						{
-							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", (int)OpenMode.Input);
+							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							goto IL_A5D;
 						}
@@ -2302,7 +2303,7 @@ namespace iS800
 			{
 				do
 				{
-					byte b = (byte)(dados[17 + num] - 48);
+					byte b = dados[17 + num] - 48;
 					bool flag = Convert.ToBoolean((int)(b & 64));
 					bool flag2 = Convert.ToBoolean((int)(b & 32));
 					int num2 = (int)(b & 15);
@@ -2445,7 +2446,7 @@ namespace iS800
 		// Token: 0x060011E4 RID: 4580 RVA: 0x0031B84C File Offset: 0x00319C4C
 		private void Tela_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.Inicializa_tela_equipamento_MD202_mon();
 		}
 
@@ -2454,7 +2455,7 @@ namespace iS800
 		{
 			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Iniciar", false) != 0)
 			{
-				this.Mensagem_MD202_mon(" Aguarde ... ", (int)OpenMode.Output);
+				this.Mensagem_MD202_mon(" Aguarde ... ", 2);
 				Mod_MD.Monitoracao_MD_RQ.Controle_mon = 1;
 			}
 		}
@@ -2462,7 +2463,7 @@ namespace iS800
 		// Token: 0x060011E6 RID: 4582 RVA: 0x0031B8AC File Offset: 0x00319CAC
 		private void Tela_endereco_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.Inicializa_tela_equipamento_MD202_mon();
 		}
 
@@ -2650,13 +2651,13 @@ namespace iS800
 		// Token: 0x060011FE RID: 4606 RVA: 0x0031BBFC File Offset: 0x00319FFC
 		private void Tela_nivel_origem_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Nivel_origem = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Nivel_origem = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060011FF RID: 4607 RVA: 0x0031BC24 File Offset: 0x0031A024
 		private void Tela_nivel_destino_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001200 RID: 4608 RVA: 0x0031BC4C File Offset: 0x0031A04C
@@ -2664,7 +2665,7 @@ namespace iS800
 		{
 			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == 0)
 			{
-				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", 0, null);
 				return;
 			}
 		}
@@ -2682,21 +2683,21 @@ namespace iS800
 				switch (e.ColumnIndex)
 				{
 				case 1:
-					Interaction.MsgBox("Nesta configuração é permitido apenas a visualização do estado do controle!", MsgBoxStyle.OkOnly, null);
+					Interaction.MsgBox("Nesta configuração é permitido apenas a visualização do estado do controle!", 0, null);
 					break;
 				case 2:
 					if (!this.dgv_Controle.Rows[e.RowIndex].Cells[e.ColumnIndex].ReadOnly)
 					{
 						if (!this.ctlr[e.RowIndex].modo)
 						{
-							Interaction.MsgBox("AUTOMÁTICO -> MANUAL CONTROLE" + (e.RowIndex + 1).ToString(), MsgBoxStyle.OkOnly, null);
+							Interaction.MsgBox("AUTOMÁTICO -> MANUAL CONTROLE" + (e.RowIndex + 1).ToString(), 0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
 							Mod_MD.Monitoracao_MD_RQ.Comando = 69;
 							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 						else
 						{
-							Interaction.MsgBox("MANUAL -> AUTOMÁTICO CONTROLE" + (e.RowIndex + 1).ToString(), MsgBoxStyle.OkOnly, null);
+							Interaction.MsgBox("MANUAL -> AUTOMÁTICO CONTROLE" + (e.RowIndex + 1).ToString(), 0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
 							Mod_MD.Monitoracao_MD_RQ.Comando = 70;
 							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
@@ -2704,7 +2705,7 @@ namespace iS800
 					}
 					else
 					{
-						Interaction.MsgBox("Nesta configuração é permitido apenas a visualização do estado do controle!", MsgBoxStyle.OkOnly, null);
+						Interaction.MsgBox("Nesta configuração é permitido apenas a visualização do estado do controle!", 0, null);
 					}
 					break;
 				case 3:
@@ -2712,14 +2713,14 @@ namespace iS800
 					{
 						if (!this.ctlr[e.RowIndex].ld)
 						{
-							Interaction.MsgBox("Comando de Ligar CONTROLE" + (e.RowIndex + 1).ToString(), MsgBoxStyle.OkOnly, null);
+							Interaction.MsgBox("Comando de Ligar CONTROLE" + (e.RowIndex + 1).ToString(), 0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
 							Mod_MD.Monitoracao_MD_RQ.Comando = 67;
 							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 						else
 						{
-							Interaction.MsgBox("Comando de Desligar CONTROLE" + (e.RowIndex + 1).ToString(), MsgBoxStyle.OkOnly, null);
+							Interaction.MsgBox("Comando de Desligar CONTROLE" + (e.RowIndex + 1).ToString(), 0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
 							Mod_MD.Monitoracao_MD_RQ.Comando = 68;
 							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
@@ -2727,7 +2728,7 @@ namespace iS800
 					}
 					else
 					{
-						Interaction.MsgBox("Nesta configuração é permitido apenas a visualização do estado do controle!", MsgBoxStyle.OkOnly, null);
+						Interaction.MsgBox("Nesta configuração é permitido apenas a visualização do estado do controle!", 0, null);
 					}
 					break;
 				}
@@ -2739,7 +2740,7 @@ namespace iS800
 		{
 			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Iniciar", false) != 0)
 			{
-				Interaction.MsgBox("Monitoração em execução. Não é possivel trocar os endereços", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Monitoração em execução. Não é possivel trocar os endereços", 0, null);
 			}
 			else
 			{
@@ -2758,14 +2759,14 @@ namespace iS800
 				Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
 				if (!Geral.Config_geral.Porta_serial_Ok)
 				{
-					Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+					Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 					return;
 				}
-				if(Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
+				if (Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
 				{
 					this.Comando_hab_monitoracao.Text = "Parar";
 					this.pb_hab_monitoracao.Image = stop_button;
-					this.Mensagem_MD202_mon("Monitoração Ativada", (int)OpenMode.Output);
+					this.Mensagem_MD202_mon("Monitoração Ativada", 2);
 					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
 					this.Timer_monitoracao.Interval = 1;
@@ -2782,14 +2783,14 @@ namespace iS800
 				}
 				else
 				{
-					this.Mensagem_MD202_mon("Selecione Estação", (int)OpenMode.Input);
+					this.Mensagem_MD202_mon("Selecione Estação", 1);
 				}
 			}
 			else
 			{
 				this.Comando_hab_monitoracao.Text = "Iniciar";
 				this.pb_hab_monitoracao.Image = start_button;
-				this.Mensagem_MD202_mon("Monitoração desativada", (int)OpenMode.Output);
+				this.Mensagem_MD202_mon("Monitoração desativada", 2);
 				Mod_MD.Monitoracao_MD_RQ.Partir_mon = false;
 				this.Timer_monitoracao.Enabled = false;
 				this.Grupo_setpoints.Enabled = false;
@@ -2808,16 +2809,16 @@ namespace iS800
 			{
 				if (!Geral.Config_geral.Porta_serial_Ok)
 				{
-					Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+					Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 					return;
 				}
 				if (Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
 				{
-					NewLateBinding.LateSet(sender, null, "Text", new object[]
+					NewLateBinding.LateSet(sender, null, "text", new object[]
 					{
 						"Parar"
 					}, null, null);
-					this.Mensagem_MD202_mon("Monitoração Ativada", (int)OpenMode.Output);
+					this.Mensagem_MD202_mon("Monitoração Ativada", 2);
 					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
 					this.Timer_monitoracao.Interval = 1;
@@ -2833,16 +2834,16 @@ namespace iS800
 				}
 				else
 				{
-					this.Mensagem_MD202_mon("Selecione Estação", (int)OpenMode.Input);
+					this.Mensagem_MD202_mon("Selecione Estação", 1);
 				}
 			}
 			else
 			{
-				NewLateBinding.LateSet(sender, null, "Text", new object[]
+				NewLateBinding.LateSet(sender, null, "text", new object[]
 				{
 					"Iniciar"
 				}, null, null);
-				this.Mensagem_MD202_mon("Monitoração desativada", (int)OpenMode.Output);
+				this.Mensagem_MD202_mon("Monitoração desativada", 2);
 				Mod_MD.Monitoracao_MD_RQ.Partir_mon = false;
 				this.Timer_monitoracao.Enabled = false;
 				this.Grupo_setpoints.Enabled = false;

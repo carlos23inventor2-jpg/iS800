@@ -1,14 +1,15 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000009 RID: 9
+	[DesignerGenerated]
 	public partial class Aguarde : Form
 	{
 		// Token: 0x06000074 RID: 116 RVA: 0x00263514 File Offset: 0x00261914

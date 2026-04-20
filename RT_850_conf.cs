@@ -1,22 +1,24 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Drawing.Printing;
 using System.Drawing.Text;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
+using VR.PrintPreview;
 
 namespace iS800
 {
 	// Token: 0x02000037 RID: 55
+	[DesignerGenerated]
 	public partial class RT_850_conf : Form
 	{
 		// Token: 0x060009BA RID: 2490 RVA: 0x002C7BD8 File Offset: 0x002C5FD8
@@ -3818,24 +3820,24 @@ namespace iS800
 				this.GeraDataGridView_Equipamentos_Vista_RT_850();
 				Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
 				this.dgv_Msg_Alarmes.RowCount = 20;
-				this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage1.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage1.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_controles.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_controles.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_variaveis_RT850.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_variaveis_RT850.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_Ctrl_1_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_Ctrl_1_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_Ctrl_4_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_Ctrl_4_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_Ctrl_8_controle.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_Ctrl_8_controle.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_cfg_msg_alarme.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_cfg_msg_alarme.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-				this.TabPage_Vista.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-				this.TabPage_Vista.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+				this.TabPage_geral.BackColor = Color.FromKnownColor(8);
+				this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
+				this.TabPage1.BackColor = Color.FromKnownColor(8);
+				this.TabPage1.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_controles.BackColor = Color.FromKnownColor(8);
+				this.TabPage_controles.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_variaveis_RT850.BackColor = Color.FromKnownColor(8);
+				this.TabPage_variaveis_RT850.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_Ctrl_1_controle.BackColor = Color.FromKnownColor(8);
+				this.TabPage_Ctrl_1_controle.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_Ctrl_4_controle.BackColor = Color.FromKnownColor(8);
+				this.TabPage_Ctrl_4_controle.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_Ctrl_8_controle.BackColor = Color.FromKnownColor(8);
+				this.TabPage_Ctrl_8_controle.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_cfg_msg_alarme.BackColor = Color.FromKnownColor(8);
+				this.TabPage_cfg_msg_alarme.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_Vista.BackColor = Color.FromKnownColor(8);
+				this.TabPage_Vista.ForeColor = Color.FromKnownColor(10);
 				string text = ".\\\\Fontes\\\\5x8_LCD_HD44780U_A02_Regular.ttf";
 				if (MyProject.Computer.FileSystem.FileExists(text))
 				{
@@ -3853,8 +3855,8 @@ namespace iS800
 				{
 					PrivateFontCollection privateFontCollection2 = new PrivateFontCollection();
 					privateFontCollection2.AddFontFile(text2);
-					Font font2 = new Font(privateFontCollection2.Families[0], 8f, (System.Drawing.FontStyle)GraphicsUnit.Pixel);
-					Font font3 = new Font(privateFontCollection2.Families[0], 18f, (System.Drawing.FontStyle)2);
+					Font font2 = new Font(privateFontCollection2.Families[0], 8f, 2);
+					Font font3 = new Font(privateFontCollection2.Families[0], 18f, 2);
 					this.Label11.Font = font2;
 					this.TextBox_equipamento_RT850.Font = font2;
 					this.TextBox_versao_RT850.Font = font2;
@@ -3885,8 +3887,8 @@ namespace iS800
 		private void GeraDataGridView_Equip_Canal_1()
 		{
 			this.DataGridView_equip_1_RT850.Columns.Clear();
-			this.DataGridView_equip_1_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_equip_1_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleRight;
+			this.DataGridView_equip_1_RT850.CellBorderStyle = 1;
+			this.DataGridView_equip_1_RT850.DefaultCellStyle.Alignment = 64;
 			int num = 0;
 			checked
 			{
@@ -3902,7 +3904,7 @@ namespace iS800
 						DataGridViewTextBoxColumn dataGridViewTextBoxColumn = Linha_RT.CreateTextColumn(Conversions.ToString(num), ref RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas);
 						this.DataGridView_equip_1_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_equip_1_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_equip_1_RT850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 1);
@@ -3937,7 +3939,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -3955,8 +3957,8 @@ namespace iS800
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].NomeColuna = "Endereco";
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].LarguraColuna = Conversions.ToInteger("80");
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].LarguraColuna = Conversions.ToInteger("90");
-			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].AlingColuna = DataGridViewContentAlignment.MiddleCenter;
-			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].AlingColuna = DataGridViewContentAlignment.MiddleCenter;
+			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].AlingColuna = 32;
+			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].AlingColuna = 32;
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].NumeroLinhaMenu = 0;
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].NumeroLinhaMenu = 0;
 		}
@@ -4053,8 +4055,8 @@ namespace iS800
 				this.DataGridView_variaveis_RT850.RowCount = 1;
 				this.DataGridView_variaveis_RT850.Columns.Clear();
 			}
-			this.DataGridView_variaveis_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_variaveis_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_variaveis_RT850.CellBorderStyle = 1;
+			this.DataGridView_variaveis_RT850.DefaultCellStyle.Alignment = 32;
 			int num = 0;
 			checked
 			{
@@ -4071,7 +4073,7 @@ namespace iS800
 						DataGridViewTextBoxColumn dataGridViewTextBoxColumn = Linha_RT.CreateTextColumn(num.ToString(), ref RT_geral.RT_850_DataGridView_variaveis);
 						this.DataGridView_variaveis_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_variaveis_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_variaveis_RT850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 12);
@@ -4092,7 +4094,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4212,19 +4214,19 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_variaveis[10].LarguraColuna = Conversions.ToInteger("120");
 				RT_geral.RT_850_DataGridView_variaveis[11].LarguraColuna = Conversions.ToInteger("60");
 				RT_geral.RT_850_DataGridView_variaveis[12].LarguraColuna = Conversions.ToInteger("98");
-				RT_geral.RT_850_DataGridView_variaveis[0].AlingColuna = DataGridViewContentAlignment.BottomLeft;
-				RT_geral.RT_850_DataGridView_variaveis[1].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[2].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[3].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[4].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[5].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[6].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[7].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[8].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[9].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[10].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[11].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_variaveis[12].AlingColuna = DataGridViewContentAlignment.MiddleRight;
+				RT_geral.RT_850_DataGridView_variaveis[0].AlingColuna = 256;
+				RT_geral.RT_850_DataGridView_variaveis[1].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[2].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[3].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[4].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[5].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[6].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[7].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[8].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[9].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[10].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[11].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[12].AlingColuna = 64;
 				RT_geral.RT_850_DataGridView_variaveis[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_variaveis[1].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_variaveis[2].NumeroLinhaMenu = 0;
@@ -4244,7 +4246,7 @@ namespace iS800
 		// Token: 0x06000B4A RID: 2890 RVA: 0x002D433C File Offset: 0x002D273C
 		private void Atualiza_DatagridView_Mensagem_Alarme_RT850()
 		{
-			this.dgv_Msg_Alarmes.RowHeadersWidthSizeMode = (System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode)2;
+			this.dgv_Msg_Alarmes.RowHeadersWidthSizeMode = 2;
 			int num = 0;
 			checked
 			{
@@ -4266,7 +4268,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Variaveis_Numero.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string value = RT_geral.Variaveis_RT_850[i].Nome.Valor;
 					this.DataGridView_variaveis_RT850.Rows[i].Cells[0].Value = value;
@@ -4332,8 +4334,8 @@ namespace iS800
 				this.DataGridView_Ctrl_1_RT850.RowCount = 1;
 				this.DataGridView_Ctrl_1_RT850.Columns.Clear();
 			}
-			this.DataGridView_Ctrl_1_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_Ctrl_1_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_Ctrl_1_RT850.CellBorderStyle = 1;
+			this.DataGridView_Ctrl_1_RT850.DefaultCellStyle.Alignment = 32;
 			int num = 0;
 			checked
 			{
@@ -4353,7 +4355,7 @@ namespace iS800
 						}
 						this.DataGridView_Ctrl_1_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_Ctrl_1_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_Ctrl_1_RT850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 15);
@@ -4374,7 +4376,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4605,22 +4607,22 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_ctrl_1[13].LarguraColuna = Conversions.ToInteger("85");
 				RT_geral.RT_850_DataGridView_ctrl_1[14].LarguraColuna = Conversions.ToInteger("85");
 				RT_geral.RT_850_DataGridView_ctrl_1[15].LarguraColuna = Conversions.ToInteger("85");
-				RT_geral.RT_850_DataGridView_ctrl_1[0].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
-				RT_geral.RT_850_DataGridView_ctrl_1[1].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
-				RT_geral.RT_850_DataGridView_ctrl_1[2].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[3].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[4].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[5].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[6].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[7].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[8].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[9].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[10].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[11].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[12].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[13].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[14].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_1[15].AlingColuna = DataGridViewContentAlignment.MiddleRight;
+				RT_geral.RT_850_DataGridView_ctrl_1[0].AlingColuna = 16;
+				RT_geral.RT_850_DataGridView_ctrl_1[1].AlingColuna = 16;
+				RT_geral.RT_850_DataGridView_ctrl_1[2].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[3].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[4].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[5].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[6].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[7].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[8].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[9].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[10].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[11].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[12].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[13].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[14].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_1[15].AlingColuna = 64;
 				RT_geral.RT_850_DataGridView_ctrl_1[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_ctrl_1[1].NumeroLinhaMenu = 2;
 				RT_geral.RT_850_DataGridView_ctrl_1[2].NumeroLinhaMenu = 8;
@@ -4647,7 +4649,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_1.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					this.DataGridView_Ctrl_1_RT850.Rows[i].Cells[0].Value = RT_geral.RT_850_Ctrl_1[i].Nome.Valor;
 					string value = RT_geral.RT_850_DataGridView_ctrl_1[1].LinhasMenu[RT_geral.RT_850_Ctrl_1[i].Canal.Indice];
@@ -4702,8 +4704,8 @@ namespace iS800
 				this.DataGridView_Ctrl_4_RT850.RowCount = 1;
 				this.DataGridView_Ctrl_4_RT850.Columns.Clear();
 			}
-			this.DataGridView_Ctrl_4_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_Ctrl_4_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_Ctrl_4_RT850.CellBorderStyle = 1;
+			this.DataGridView_Ctrl_4_RT850.DefaultCellStyle.Alignment = 32;
 			int num = 0;
 			checked
 			{
@@ -4723,7 +4725,7 @@ namespace iS800
 						}
 						this.DataGridView_Ctrl_4_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_Ctrl_4_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_Ctrl_4_RT850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 31);
@@ -4744,7 +4746,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -4938,7 +4940,7 @@ namespace iS800
 					}
 					finally
 					{
-						List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
+						List<perifericos.Periferico>.Enumerator enumerator;
 						enumerator.Dispose();
 					}
 					RT_geral.RT_850_DataGridView_ctrl_4[23 + i].LinhasMenu[0] = "----";
@@ -5074,38 +5076,38 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_ctrl_4[29].LarguraColuna = Conversions.ToInteger("75");
 				RT_geral.RT_850_DataGridView_ctrl_4[30].LarguraColuna = Conversions.ToInteger("180");
 				RT_geral.RT_850_DataGridView_ctrl_4[31].LarguraColuna = Conversions.ToInteger("75");
-				RT_geral.RT_850_DataGridView_ctrl_4[0].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
-				RT_geral.RT_850_DataGridView_ctrl_4[1].AlingColuna = DataGridViewContentAlignment.BottomLeft;
-				RT_geral.RT_850_DataGridView_ctrl_4[2].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[3].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[4].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[5].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[6].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[7].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[8].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[9].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[10].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[11].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[12].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[13].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[14].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[15].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[16].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[17].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[18].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[19].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[20].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[21].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[22].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[23].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[24].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[25].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[26].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[27].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[28].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[29].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[30].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_4[31].AlingColuna = DataGridViewContentAlignment.MiddleRight;
+				RT_geral.RT_850_DataGridView_ctrl_4[0].AlingColuna = 16;
+				RT_geral.RT_850_DataGridView_ctrl_4[1].AlingColuna = 256;
+				RT_geral.RT_850_DataGridView_ctrl_4[2].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[3].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[4].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[5].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[6].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[7].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[8].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[9].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[10].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[11].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[12].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[13].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[14].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[15].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[16].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[17].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[18].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[19].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[20].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[21].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[22].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[23].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[24].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[25].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[26].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[27].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[28].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[29].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[30].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[31].AlingColuna = 64;
 				RT_geral.RT_850_DataGridView_ctrl_4[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_ctrl_4[1].NumeroLinhaMenu = 2;
 				RT_geral.RT_850_DataGridView_ctrl_4[2].NumeroLinhaMenu = 8;
@@ -5146,8 +5148,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num5 = 0;
+				int num;
+				int num5;
 				object obj;
 				try
 				{
@@ -5225,13 +5227,13 @@ namespace iS800
 					goto IL_A3C;
 					IL_9F7:
 					num5 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_A0D:;
+										IL_A0D:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num5 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_9F7;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_A3C:
 				if (num5 != 0)
@@ -5250,8 +5252,8 @@ namespace iS800
 				this.DataGridView_Ctrl_8_RT850.RowCount = 1;
 				this.DataGridView_Ctrl_8_RT850.Columns.Clear();
 			}
-			this.DataGridView_Ctrl_8_RT850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_Ctrl_8_RT850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_Ctrl_8_RT850.CellBorderStyle = 1;
+			this.DataGridView_Ctrl_8_RT850.DefaultCellStyle.Alignment = 32;
 			int num = 0;
 			checked
 			{
@@ -5275,7 +5277,7 @@ namespace iS800
 						}
 						this.DataGridView_Ctrl_8_RT850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_Ctrl_8_RT850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_Ctrl_8_RT850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 51);
@@ -5296,7 +5298,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -5546,7 +5548,7 @@ namespace iS800
 					}
 					finally
 					{
-						List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
+						List<perifericos.Periferico>.Enumerator enumerator;
 						enumerator.Dispose();
 					}
 					RT_geral.RT_850_DataGridView_ctrl_8[43 + i].LinhasMenu[0] = "----";
@@ -5768,58 +5770,58 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_ctrl_8[49].LarguraColuna = Conversions.ToInteger("75");
 				RT_geral.RT_850_DataGridView_ctrl_8[50].LarguraColuna = Conversions.ToInteger("180");
 				RT_geral.RT_850_DataGridView_ctrl_8[51].LarguraColuna = Conversions.ToInteger("75");
-				RT_geral.RT_850_DataGridView_ctrl_8[0].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
-				RT_geral.RT_850_DataGridView_ctrl_8[1].AlingColuna = DataGridViewContentAlignment.BottomLeft;
-				RT_geral.RT_850_DataGridView_ctrl_8[2].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[3].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[4].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[5].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[6].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[7].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[8].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[9].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[10].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[11].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[12].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[13].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[14].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[15].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[16].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[17].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[18].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[19].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[20].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[21].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[22].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[23].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[24].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[25].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[26].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[27].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[28].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[29].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[30].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[31].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[32].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[33].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[34].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[35].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[36].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[37].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[38].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[39].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[40].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[41].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[42].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[43].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[44].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[45].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[46].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[47].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[48].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[49].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[50].AlingColuna = DataGridViewContentAlignment.MiddleRight;
-				RT_geral.RT_850_DataGridView_ctrl_8[51].AlingColuna = DataGridViewContentAlignment.MiddleRight;
+				RT_geral.RT_850_DataGridView_ctrl_8[0].AlingColuna = 16;
+				RT_geral.RT_850_DataGridView_ctrl_8[1].AlingColuna = 256;
+				RT_geral.RT_850_DataGridView_ctrl_8[2].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[3].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[4].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[5].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[6].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[7].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[8].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[9].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[10].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[11].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[12].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[13].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[14].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[15].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[16].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[17].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[18].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[19].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[20].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[21].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[22].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[23].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[24].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[25].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[26].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[27].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[28].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[29].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[30].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[31].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[32].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[33].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[34].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[35].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[36].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[37].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[38].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[39].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[40].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[41].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[42].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[43].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[44].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[45].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[46].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[47].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[48].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[49].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[50].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[51].AlingColuna = 64;
 				RT_geral.RT_850_DataGridView_ctrl_8[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_ctrl_8[1].NumeroLinhaMenu = 2;
 				RT_geral.RT_850_DataGridView_ctrl_8[2].NumeroLinhaMenu = 8;
@@ -5882,7 +5884,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_3.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					this.DataGridView_Ctrl_8_RT850.Rows[i].Cells[0].Value = RT_geral.RT_850_Ctrl_8[i].Nome.Valor;
 					string value = RT_geral.RT_850_DataGridView_ctrl_8[1].LinhasMenu[RT_geral.RT_850_Ctrl_8[i].Canal.Indice];
@@ -5993,8 +5995,8 @@ namespace iS800
 				this.DataGridView_vista_variaveis_RT_850.RowCount = 1;
 				this.DataGridView_vista_variaveis_RT_850.Columns.Clear();
 			}
-			this.DataGridView_vista_variaveis_RT_850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_vista_variaveis_RT_850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_vista_variaveis_RT_850.CellBorderStyle = 1;
+			this.DataGridView_vista_variaveis_RT_850.DefaultCellStyle.Alignment = 32;
 			int num = 0;
 			checked
 			{
@@ -6014,7 +6016,7 @@ namespace iS800
 						}
 						this.DataGridView_vista_variaveis_RT_850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_vista_variaveis_RT_850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_vista_variaveis_RT_850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 0);
@@ -6042,7 +6044,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -6066,7 +6068,7 @@ namespace iS800
 				{
 					int num = 1;
 					int valor = RT_geral.RT_850_BD.Variaveis_Numero.Valor;
-					for (int i = Convert.ToInt32(num); i <= valor; i++)
+					for (int i = num; i <= valor; i++)
 					{
 						RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LinhasMenu[i] = RT_geral.Variaveis_RT_850[i - 1].Nome.Valor;
 						RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LinhasValor[i] = i;
@@ -6075,7 +6077,7 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_Variaveis_Vista[0].TagColuna = "    Variável";
 				RT_geral.RT_850_DataGridView_Variaveis_Vista[0].NomeColuna = "Var";
 				RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LarguraColuna = Conversions.ToInteger("120");
-				RT_geral.RT_850_DataGridView_Variaveis_Vista[0].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
+				RT_geral.RT_850_DataGridView_Variaveis_Vista[0].AlingColuna = 16;
 			}
 		}
 
@@ -6090,7 +6092,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_var.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string value = RT_geral.RT_850_DataGridView_Variaveis_Vista[0].LinhasMenu[RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Variaveis[i].Indice];
 					this.DataGridView_vista_variaveis_RT_850.Rows[i].Cells[0].Value = value;
@@ -6107,8 +6109,8 @@ namespace iS800
 				this.DataGridView_vista_equipamentos_RT_850.RowCount = 1;
 				this.DataGridView_vista_equipamentos_RT_850.Columns.Clear();
 			}
-			this.DataGridView_vista_equipamentos_RT_850.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_vista_equipamentos_RT_850.DefaultCellStyle.Alignment =DataGridViewContentAlignment.MiddleCenter;
+			this.DataGridView_vista_equipamentos_RT_850.CellBorderStyle = 1;
+			this.DataGridView_vista_equipamentos_RT_850.DefaultCellStyle.Alignment = 32;
 			int num = 0;
 			checked
 			{
@@ -6128,7 +6130,7 @@ namespace iS800
 						}
 						this.DataGridView_vista_equipamentos_RT_850.Columns.Insert(num, dataGridViewTextBoxColumn);
 					}
-					this.DataGridView_vista_equipamentos_RT_850.Columns[num].SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
+					this.DataGridView_vista_equipamentos_RT_850.Columns[num].SortMode = 0;
 					num++;
 				}
 				while (num <= 0);
@@ -6156,7 +6158,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator = null;
+					IEnumerator enumerator;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -6217,7 +6219,7 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].TagColuna = "    Equipamento";
 				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].NomeColuna = "Equip";
 				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].LarguraColuna = Conversions.ToInteger("120");
-				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
+				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].AlingColuna = 16;
 			}
 		}
 
@@ -6232,7 +6234,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_equip.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					int indice = RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Equipamentos[i].Indice;
 					int num3 = RT_geral.Localiza_indice_combo(ref RT_geral.RT_850_DataGridView_Equipamentos_Vista[0], indice);
@@ -6953,7 +6955,7 @@ namespace iS800
 			}
 			else if (Operators.CompareString(Strings.Trim(RT_geral.Variaveis_RT_850[checked(linha - 1)].Nome.Valor), "", false) == 0)
 			{
-				Interaction.MsgBox("Variável: " + Conversion.Str(linha) + "\r\nParâmetro: Nome -> não válido", MsgBoxStyle.Question, "Atenção - Erro de Configuração");
+				Interaction.MsgBox("Variável: " + Conversion.Str(linha) + "\r\nParâmetro: Nome -> não válido", 32, "Atenção - Erro de Configuração");
 			}
 			else
 			{
@@ -6965,8 +6967,8 @@ namespace iS800
 		// Token: 0x06000B61 RID: 2913 RVA: 0x002E100C File Offset: 0x002DF40C
 		public void Atualiza_TelaRT850()
 		{
-			int num = 0;
-			int num2 = 0;
+			int num;
+			int num2;
 			object obj;
 			try
 			{
@@ -7030,12 +7032,12 @@ namespace iS800
 				goto IL_294;
 				IL_24F:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_265:;
+								IL_265:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_24F;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_294:
@@ -7076,23 +7078,23 @@ namespace iS800
 					{
 						this.DataGridView_vista_variaveis_RT_850.Height = 22 + this.DataGridView_vista_variaveis_RT_850.RowTemplate.Height * RT_geral.RT_850_Vista[vista].Num_var.Valor;
 						this.DataGridView_vista_variaveis_RT_850.Width = 212;
-						this.DataGridView_vista_variaveis_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
+						this.DataGridView_vista_variaveis_RT_850.ScrollBars = 0;
 					}
 					else
 					{
 						this.DataGridView_vista_variaveis_RT_850.Width = 229;
-						this.DataGridView_vista_variaveis_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
+						this.DataGridView_vista_variaveis_RT_850.ScrollBars = 2;
 					}
 					if (RT_geral.RT_850_Vista[vista].Num_equip.Valor < 14)
 					{
 						this.DataGridView_vista_equipamentos_RT_850.Height = 22 + this.DataGridView_vista_equipamentos_RT_850.RowTemplate.Height * RT_geral.RT_850_Vista[vista].Num_equip.Valor;
 						this.DataGridView_vista_equipamentos_RT_850.Width = 212;
-						this.DataGridView_vista_equipamentos_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
+						this.DataGridView_vista_equipamentos_RT_850.ScrollBars = 0;
 					}
 					else
 					{
 						this.DataGridView_vista_equipamentos_RT_850.Width = 229;
-						this.DataGridView_vista_equipamentos_RT_850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
+						this.DataGridView_vista_equipamentos_RT_850.ScrollBars = 2;
 					}
 					this.GeraDataGridView_Variaveis_Vista_RT_850();
 					this.Atualiza_DataGridView_Variaveis_Vista_RT_850();
@@ -7162,7 +7164,7 @@ namespace iS800
 			}
 			finally
 			{
-				List<perifericos.Periferico>.Enumerator enumerator = new List<perifericos.Periferico>.Enumerator();
+				List<perifericos.Valores_ComboBox>.Enumerator enumerator;
 				enumerator.Dispose();
 			}
 		}
@@ -7175,7 +7177,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Flag_Remota.Numero_itens - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					this.cb_remota.Items.Add(RT_geral.RT_850_BD.Flag_Remota.itens[i]);
 				}
@@ -7190,7 +7192,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Flag_Supervisorio.Numero_itens - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					this.cb_supervisorio.Items.Add(RT_geral.RT_850_BD.Flag_Supervisorio.itens[i]);
 				}
@@ -7277,7 +7279,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_Modelo.Numero_itens - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					dado.Items.Add(RT_geral.RT_850_Modelo.itens[i]);
 				}
@@ -7304,12 +7306,12 @@ namespace iS800
 					{
 						this.DataGridView_variaveis_RT850.Height = 36 + this.DataGridView_variaveis_RT850.RowTemplate.Height * RT_geral.RT_850_BD.Variaveis_Numero.Valor;
 						this.DataGridView_variaveis_RT850.Width = 1130;
-						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
+						this.DataGridView_variaveis_RT850.ScrollBars = 0;
 					}
 					else
 					{
 						this.DataGridView_variaveis_RT850.Width = 1147;
-						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
+						this.DataGridView_variaveis_RT850.ScrollBars = 2;
 					}
 					this.DataGridView_variaveis_RT850.CurrentCell = this.DataGridView_variaveis_RT850[0, RT_geral.RT_850_BD.Variaveis_Numero.Valor - 1];
 					this.DataGridView_variaveis_RT850.BeginEdit(true);
@@ -7332,12 +7334,12 @@ namespace iS800
 					{
 						this.DataGridView_variaveis_RT850.Height = 36 + this.DataGridView_variaveis_RT850.RowTemplate.Height * RT_geral.RT_850_BD.Variaveis_Numero.Valor;
 						this.DataGridView_variaveis_RT850.Width = 1130;
-						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
+						this.DataGridView_variaveis_RT850.ScrollBars = 0;
 					}
 					else
 					{
 						this.DataGridView_variaveis_RT850.Width = 1147;
-						this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
+						this.DataGridView_variaveis_RT850.ScrollBars = 2;
 					}
 				}
 			}
@@ -7346,8 +7348,8 @@ namespace iS800
 		// Token: 0x06000B70 RID: 2928 RVA: 0x002E1FE4 File Offset: 0x002E03E4
 		private void RT_850_conf_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			int num = 0;
-			int num2 = 0;
+			int num;
+			int num2;
 			object obj;
 			try
 			{
@@ -7379,12 +7381,12 @@ namespace iS800
 				goto IL_F6;
 				IL_B5:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_C9:;
+								IL_C9:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_B5;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_F6:
@@ -7432,7 +7434,7 @@ namespace iS800
 			else if (Operators.CompareString(dataPropertyName, "Col_Alarme_1", false) == 0)
 			{
 				RT_geral.Variaveis_RT_850[e.RowIndex].Nivel_alm_1.Valor = Conversions.ToInteger(this.DataGridView_variaveis_RT850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-				RT_geral.Integer_ictel integer_ictel = new RT_geral.Integer_ictel();
+				RT_geral.Integer_ictel integer_ictel;
 				integer_ictel.nome = "Alarme 1";
 				integer_ictel.Lmte_inf = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_ini.Valor;
 				integer_ictel.Lmte_sup = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_fim.Valor;
@@ -7444,7 +7446,7 @@ namespace iS800
 			else if (Operators.CompareString(dataPropertyName, "Col_Alarme_2", false) == 0)
 			{
 				RT_geral.Variaveis_RT_850[e.RowIndex].Nivel_alm_2.Valor = Conversions.ToInteger(this.DataGridView_variaveis_RT850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-				RT_geral.Integer_ictel integer_ictel = new RT_geral.Integer_ictel();
+				RT_geral.Integer_ictel integer_ictel;
 				integer_ictel.nome = "Alarme 2";
 				integer_ictel.Lmte_inf = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_ini.Valor;
 				integer_ictel.Lmte_sup = RT_geral.Variaveis_RT_850[e.RowIndex].Escala_fim.Valor;
@@ -7541,7 +7543,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_variaveis[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = Convert.ToInt32(num);
+				int i = num;
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_variaveis[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -7615,7 +7617,7 @@ namespace iS800
 			}
 			if (this.DataGridView_variaveis_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_variaveis_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_variaveis_RT850.CommitEdit(512);
 			}
 		}
 
@@ -7780,7 +7782,7 @@ namespace iS800
 		{
 			if (this.DataGridView_equip_1_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_equip_1_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_equip_1_RT850.CommitEdit(512);
 			}
 		}
 
@@ -7881,7 +7883,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = Convert.ToInt32(num);
+				int i = num;
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -7912,7 +7914,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_1[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3 = 0;
+						int num3;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -7969,7 +7971,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Ctrl_1_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_Ctrl_1_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_Ctrl_1_RT850.CommitEdit(512);
 			}
 		}
 
@@ -8154,7 +8156,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = Convert.ToInt32(num);
+				int i = num;
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -8185,7 +8187,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_4[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3 = 0;
+						int num3;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -8295,7 +8297,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Ctrl_4_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_Ctrl_4_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_Ctrl_4_RT850.CommitEdit(512);
 			}
 		}
 
@@ -8588,7 +8590,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].NumeroLinhaMenu - 1;
-				int i = Convert.ToInt32(num);
+				int i = num;
 				while (i <= num2)
 				{
 					if (Operators.CompareString(RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -8619,7 +8621,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_8[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3 = 0;
+						int num3;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -8789,7 +8791,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Ctrl_8_RT850.IsCurrentCellDirty)
 			{
-				this.DataGridView_Ctrl_8_RT850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_Ctrl_8_RT850.CommitEdit(512);
 			}
 		}
 
@@ -8798,7 +8800,7 @@ namespace iS800
 		{
 			if (RT_geral.RT_850_BD.Vista_selecionado.Indice != 0)
 			{
-				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Nome.Valor = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Nome.Valor = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 				ComboBox comboBox_Seleciona_Vista_RT_ = this.ComboBox_Seleciona_Vista_RT_850;
 				this.CarregaComboBoxVista_Selecao_Habilitados(ref comboBox_Seleciona_Vista_RT_, RT_geral.RT_850_BD.Numero_equip_tipo_vista.Valor, RT_geral.RT_850_BD.Vista_selecionado.Indice);
 				this.ComboBox_Seleciona_Vista_RT_850 = comboBox_Seleciona_Vista_RT_;
@@ -8810,7 +8812,7 @@ namespace iS800
 		{
 			if (RT_geral.RT_850_BD.Vista_selecionado.Indice != 0)
 			{
-				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Nome.Valor = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Nome.Valor = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
 			}
 		}
 
@@ -8846,7 +8848,7 @@ namespace iS800
 		{
 			if (RT_geral.RT_850_BD.Vista_selecionado.Indice != 0)
 			{
-				int num = RT_geral.LocalizaIndiceVetor_str_indice(ref RT_geral.RT_850_Modelo, Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)));
+				int num = RT_geral.LocalizaIndiceVetor_str_indice(ref RT_geral.RT_850_Modelo, Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
 				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Modelo.Indice = RT_geral.RT_850_Modelo.valores[num];
 			}
 		}
@@ -8856,7 +8858,7 @@ namespace iS800
 		{
 			if (RT_geral.RT_850_BD.Vista_selecionado.Indice != 0)
 			{
-				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_var.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_var.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 				this.InicializaEstrutura_DataGridView_Variaveis_Vista_RT_850();
 				this.GeraDataGridView_Variaveis_Vista_RT_850();
 				this.Atualiza_TelaRT850_DadosVista(RT_geral.RT_850_BD.Vista_selecionado.Indice);
@@ -8868,7 +8870,7 @@ namespace iS800
 		{
 			if (RT_geral.RT_850_BD.Vista_selecionado.Indice != 0)
 			{
-				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_equip.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+				RT_geral.RT_850_Vista[RT_geral.RT_850_BD.Vista_selecionado.Indice].Num_equip.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 				this.InicializaEstrutura_DataGridView_Equipamentos_Vista_RT_850();
 				this.GeraDataGridView_Equipamentos_Vista_RT_850();
 				this.Atualiza_TelaRT850_DadosVista(RT_geral.RT_850_BD.Vista_selecionado.Indice);
@@ -8925,7 +8927,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_vista_variaveis_RT_850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_850_DataGridView_Variaveis_Vista[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = Convert.ToInt32(num);
+					int i = num;
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_850_DataGridView_Variaveis_Vista[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -8959,7 +8961,7 @@ namespace iS800
 			}
 			if (this.DataGridView_vista_variaveis_RT_850.IsCurrentCellDirty)
 			{
-				this.DataGridView_vista_variaveis_RT_850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_vista_variaveis_RT_850.CommitEdit(512);
 			}
 		}
 
@@ -8987,7 +8989,7 @@ namespace iS800
 					string text = Conversions.ToString(this.DataGridView_vista_equipamentos_RT_850.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = 0;
 					int num2 = RT_geral.RT_850_DataGridView_Equipamentos_Vista[e.ColumnIndex].NumeroLinhaMenu - 1;
-					int i = Convert.ToInt32(num);
+					int i = num;
 					while (i <= num2)
 					{
 						if (Operators.CompareString(RT_geral.RT_850_DataGridView_Equipamentos_Vista[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
@@ -9021,7 +9023,7 @@ namespace iS800
 			}
 			if (this.DataGridView_vista_equipamentos_RT_850.IsCurrentCellDirty)
 			{
-				this.DataGridView_vista_equipamentos_RT_850.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_vista_equipamentos_RT_850.CommitEdit(512);
 			}
 		}
 
@@ -9047,13 +9049,13 @@ namespace iS800
 						{
 							this.DataGridView_variaveis_RT850.Height = 36 + this.DataGridView_variaveis_RT850.RowTemplate.Height * RT_geral.RT_850_BD.Variaveis_Numero.Valor;
 							this.DataGridView_variaveis_RT850.Width = 1130;
-							this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.None;
+							this.DataGridView_variaveis_RT850.ScrollBars = 0;
 						}
 						else
 						{
 							this.DataGridView_variaveis_RT850.Height = 36 + 15 * this.DataGridView_variaveis_RT850.RowTemplate.Height;
 							this.DataGridView_variaveis_RT850.Width = 1147;
-							this.DataGridView_variaveis_RT850.ScrollBars =(System.Windows.Forms.ScrollBars) (System.Windows.Forms.ScrollBars)global::System.Windows.Forms.ScrollBars.Horizontal;
+							this.DataGridView_variaveis_RT850.ScrollBars = 2;
 						}
 					}
 				}
@@ -9584,8 +9586,8 @@ namespace iS800
 		// Token: 0x06000B97 RID: 2967 RVA: 0x002E8690 File Offset: 0x002E6A90
 		private void ToolStripButton_RT850_Abrir_Click(object sender, EventArgs e)
 		{
-			int num = 0;
-			int num2 = 0;
+			int num;
+			int num2;
 			object obj;
 			try
 			{
@@ -9596,7 +9598,7 @@ namespace iS800
 				this.ControleAtivacaoTeclas(1);
 				this.OpenFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg850";
 				this.OpenFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
-				if (this.OpenFileDialog_RT850.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				if (this.OpenFileDialog_RT850.ShowDialog() == 1)
 				{
 					if (Operators.CompareString(this.OpenFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -9690,17 +9692,17 @@ namespace iS800
 				}
 				goto IL_4B7;
 				IL_452:
-				Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
 				this.Timer_limpa_MSG_RT850.Enabled = true;
 				goto IL_4B7;
 				IL_472:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_488:;
+								IL_488:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_472;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_4B7:
@@ -9946,7 +9948,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Variaveis_Numero.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("VARIAVEIS_{0}", i + 1);
 					RT_geral.Variaveis_RT_850[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("? {0}", i + 1));
@@ -9980,7 +9982,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("VARIAVEIS_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10058,7 +10060,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_1.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO1_{0}", i + 1);
 					RT_geral.RT_850_Ctrl_1[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("? {0}", i + 1));
@@ -10103,7 +10105,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO1_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10146,7 +10148,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_2.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					object obj = string.Format("CONTROLE_TIPO2_{0}", i + 1);
 					RT_geral.RT_850_Ctrl_4[i].Nome.Valor = iniFile.ReadText(Conversions.ToString(obj), "NOME", string.Format("? {0}", i + 1));
@@ -10201,7 +10203,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO2_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10253,7 +10255,7 @@ namespace iS800
 			checked
 			{
 				int num2 = RT_geral.RT_850_BD.Numero_equip_tipo_3.Valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO3_{0}", i + 1);
 					RT_geral.RT_850_Ctrl_8[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("? {0}", i + 1));
@@ -10316,7 +10318,7 @@ namespace iS800
 			checked
 			{
 				int num2 = valor - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO3_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10374,7 +10376,7 @@ namespace iS800
 			int valor = RT_geral.RT_850_BD.Numero_equip_tipo_vista.Valor;
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= valor; i++)
+				for (int i = num; i <= valor; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO_VISTA_{0}", i + 1);
 					RT_geral.RT_850_Vista[i].Nome.Valor = iniFile.ReadText(section, "NOME", string.Format("Vista???{0}", i + 1));
@@ -10416,7 +10418,7 @@ namespace iS800
 			int num2 = valor;
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					string section = string.Format("CONTROLE_TIPO_VISTA_{0}", i + 1);
 					ini.WriteSection(section);
@@ -10506,8 +10508,8 @@ namespace iS800
 		// Token: 0x06000BBC RID: 3004 RVA: 0x002EB3BC File Offset: 0x002E97BC
 		private void ToolStripButton_RT850_Salvar_Click(object sender, EventArgs e)
 		{
-			int num = 0;
-			int num2 = 0;
+			int num;
+			int num2;
 			object obj;
 			try
 			{
@@ -10519,7 +10521,7 @@ namespace iS800
 				this.InicializaBarraProgressoTela_RT850(15);
 				this.SaveFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg850";
 				this.SaveFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT850.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				if (this.SaveFileDialog_RT850.ShowDialog() == 1)
 				{
 					if (Operators.CompareString(this.SaveFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -10630,17 +10632,17 @@ namespace iS800
 				}
 				goto IL_4D3;
 				IL_46E:
-				Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
 				this.Timer_limpa_MSG_RT850.Enabled = true;
 				goto IL_4D3;
 				IL_48E:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_4A4:;
+								IL_4A4:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_48E;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_4D3:
@@ -10664,7 +10666,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 				}
 			}
 			else if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -10675,7 +10677,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -10693,7 +10695,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 				}
 			}
 			else if (Comunicacao.Config_sistema.tipo_interface == 2)
@@ -10704,7 +10706,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -11238,8 +11240,8 @@ namespace iS800
 		// Token: 0x06000BC3 RID: 3011 RVA: 0x002EC7E4 File Offset: 0x002EABE4
 		private void TextBox_msg_inicial_RT850_TextChanged(object sender, EventArgs e)
 		{
-			int num = 0;
-			int num2 = 0;
+			int num;
+			int num2;
 			object obj;
 			try
 			{
@@ -11265,12 +11267,12 @@ namespace iS800
 				goto IL_12E;
 				IL_ED:
 				num2 = -1;
-				throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-				IL_101:;
+								IL_101:;
 			}
-			catch (Exception)
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
-				throw;
+				Exception ex = (Exception)obj2;
+				goto IL_ED;
 			}
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_12E:
@@ -11399,7 +11401,7 @@ namespace iS800
 		// Token: 0x06000BC5 RID: 3013 RVA: 0x002ECE10 File Offset: 0x002EB210
 		private void NumericUpDown_end_1_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.End_mestre_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.End_mestre_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.End_mestre_canal_1, true);
 			sender = numericUpDown;
@@ -11408,7 +11410,7 @@ namespace iS800
 		// Token: 0x06000BC6 RID: 3014 RVA: 0x002ECE64 File Offset: 0x002EB264
 		private void NumericUpDown_end_2_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.End_mestre_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.End_mestre_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.End_mestre_canal_2, true);
 			sender = numericUpDown;
@@ -11417,7 +11419,7 @@ namespace iS800
 		// Token: 0x06000BC7 RID: 3015 RVA: 0x002ECEB8 File Offset: 0x002EB2B8
 		private void NumericUpDown_intervalo_leitura_1_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Intervalo_leitura_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Intervalo_leitura_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Intervalo_leitura_canal_1, true);
 			sender = numericUpDown;
@@ -11426,7 +11428,7 @@ namespace iS800
 		// Token: 0x06000BC8 RID: 3016 RVA: 0x002ECF0C File Offset: 0x002EB30C
 		private void NumericUpDown_intervalo_leitura_2_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Intervalo_leitura_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Intervalo_leitura_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Intervalo_leitura_canal_2, true);
 			sender = numericUpDown;
@@ -11435,7 +11437,7 @@ namespace iS800
 		// Token: 0x06000BC9 RID: 3017 RVA: 0x002ECF60 File Offset: 0x002EB360
 		private void NumericUpDown_timeout_1_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Timeout_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Timeout_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Timeout_canal_1, true);
 			sender = numericUpDown;
@@ -11444,7 +11446,7 @@ namespace iS800
 		// Token: 0x06000BCA RID: 3018 RVA: 0x002ECFB4 File Offset: 0x002EB3B4
 		private void NumericUpDown_timeout_2_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Timeout_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Timeout_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Timeout_canal_2, true);
 			sender = numericUpDown;
@@ -11453,7 +11455,7 @@ namespace iS800
 		// Token: 0x06000BCB RID: 3019 RVA: 0x002ED008 File Offset: 0x002EB408
 		private void NumericUpDown_temp_ptt_1_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Tempo_ptt_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Tempo_ptt_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Tempo_ptt_canal_1, true);
 			sender = numericUpDown;
@@ -11462,7 +11464,7 @@ namespace iS800
 		// Token: 0x06000BCC RID: 3020 RVA: 0x002ED05C File Offset: 0x002EB45C
 		private void NumericUpDown_temp_ptt_2_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Tempo_ptt_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Tempo_ptt_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Tempo_ptt_canal_2, true);
 			sender = numericUpDown;
@@ -11471,7 +11473,7 @@ namespace iS800
 		// Token: 0x06000BCD RID: 3021 RVA: 0x002ED0B0 File Offset: 0x002EB4B0
 		private void NumericUpDown_num_tentativas_1_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Numero_tentativas_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Numero_tentativas_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Numero_tentativas_canal_1, true);
 			sender = numericUpDown;
@@ -11480,7 +11482,7 @@ namespace iS800
 		// Token: 0x06000BCE RID: 3022 RVA: 0x002ED104 File Offset: 0x002EB504
 		private void NumericUpDown_num_tentativas_2_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Numero_tentativas_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Numero_tentativas_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Numero_tentativas_canal_2, true);
 			sender = numericUpDown;
@@ -11489,7 +11491,7 @@ namespace iS800
 		// Token: 0x06000BCF RID: 3023 RVA: 0x002ED158 File Offset: 0x002EB558
 		private void NumericUpDown_num_erro_falha_1_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Numero_erros_falha_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Numero_erros_falha_canal_1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Numero_erros_falha_canal_1, true);
 			sender = numericUpDown;
@@ -11498,7 +11500,7 @@ namespace iS800
 		// Token: 0x06000BD0 RID: 3024 RVA: 0x002ED1AC File Offset: 0x002EB5AC
 		private void NumericUpDown_num_erro_falha_2_RT850_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Numero_erros_falha_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Numero_erros_falha_canal_2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Numero_erros_falha_canal_2, true);
 			sender = numericUpDown;
@@ -11521,7 +11523,7 @@ namespace iS800
 		// Token: 0x06000BD3 RID: 3027 RVA: 0x002ED2C8 File Offset: 0x002EB6C8
 		private void CheckBox_sincronismo_RT850_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 			{
 				RT_geral.RT_850_BD.Sincronismo.Valor = 21857;
 			}
@@ -11574,12 +11576,12 @@ namespace iS800
 		[MethodImpl(72)]
 		private bool DesenhaRelatorioRT821Grupo1(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font font5 = new Font("Times New Roman", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font4 = new Font("Times New Roman", 14f, 0, 3);
+			Font font5 = new Font("Times New Roman", 14f, 0, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -11755,12 +11757,12 @@ namespace iS800
 		// Token: 0x06000BDA RID: 3034 RVA: 0x002EE014 File Offset: 0x002EC414
 		private bool DesenhaRelatorioRT821Grupo2e3(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
-			Font valor = new Font("Calibri", 8f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font valor = new Font("Calibri", 8f, 0, 3);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, 0, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool flag = false;
 			int num = 5;
@@ -12245,12 +12247,12 @@ namespace iS800
 		// Token: 0x06000BDB RID: 3035 RVA: 0x002EEFE8 File Offset: 0x002ED3E8
 		private bool DesenhaRelatorioRT821Grupo4e5(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font valor = new Font("Calibri", 8f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font valor = new Font("Calibri", 8f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, 0, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool flag = false;
 			int num = 5;
@@ -12658,12 +12660,12 @@ namespace iS800
 		// Token: 0x06000BDC RID: 3036 RVA: 0x002EFC9C File Offset: 0x002EE09C
 		private bool DesenhaRelatorioRT821Grupo6e7e8e9(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font valor = new Font("Calibri", 8f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font valor = new Font("Calibri", 8f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, 0, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool flag = false;
 			int num = 5;
@@ -13239,11 +13241,11 @@ namespace iS800
 		// Token: 0x06000BDD RID: 3037 RVA: 0x002F0DF0 File Offset: 0x002EF1F0
 		private bool DesenhaRelatorioRT821Grupo10(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, 0, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			bool result = true;
 			FontesTabela fonte2;
@@ -13297,11 +13299,11 @@ namespace iS800
 		// Token: 0x06000BDE RID: 3038 RVA: 0x002F1020 File Offset: 0x002EF420
 		private bool DesenhaRelatorioRT821Grupo11(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Underline, GraphicsUnit.Point);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)FontStyle.Bold, GraphicsUnit.Point);
-			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, (System.Drawing.FontStyle)FontStyle.Regular, GraphicsUnit.Point);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font4 = new Font("5x8 LCD HD44780U A02", 14f, 0, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			int linhaInicial = 5;
 			FontesTabela fonte2;
@@ -13360,7 +13362,7 @@ namespace iS800
 				};
 				if (this.grupo_impressao == 11)
 				{
-					int num2 = 0;
+					int num2;
 					if (RT_geral.RT_850_BD.Numero_equip_tipo_vista.Valor == 0)
 					{
 						num2 = 0;
@@ -13422,7 +13424,7 @@ namespace iS800
 						tabelaLinhaInteria.EscreveValorLinha(0, RT_geral.RT_850_Vista[i].Num_equip.Valor.ToString(), array[6] + 70);
 						int num5 = 0;
 						int num6 = RT_geral.RT_850_Vista[i].Num_var.Valor - 1;
-						int num8 = 0;
+						int num8;
 						for (int j = num5; j <= num6; j++)
 						{
 							int num7 = j % 10;
@@ -13486,7 +13488,7 @@ namespace iS800
 		// Token: 0x06000BDF RID: 3039 RVA: 0x002F17A4 File Offset: 0x002EFBA4
 		private bool DesenhaRelatorio(PrintPageEventArgs z)
 		{
-			bool result = false;
+			bool result;
 			switch (this.grupo_impressao)
 			{
 			case 1:
@@ -13579,7 +13581,7 @@ namespace iS800
 		{
 			if (this.dgv_Msg_Alarmes.IsCurrentCellDirty)
 			{
-				this.dgv_Msg_Alarmes.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.dgv_Msg_Alarmes.CommitEdit(512);
 			}
 		}
 
@@ -13591,7 +13593,7 @@ namespace iS800
 		// Token: 0x06000BE6 RID: 3046 RVA: 0x002F1994 File Offset: 0x002EFD94
 		private void CheckBox_conf_resp_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 			{
 				RT_geral.RT_850_BD.ConfereResposta.Valor = 1;
 			}
@@ -13604,7 +13606,7 @@ namespace iS800
 		// Token: 0x06000BE7 RID: 3047 RVA: 0x002F19E8 File Offset: 0x002EFDE8
 		private void nud_estatistica_ch1_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Numero_cmd_estatistica_canal1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Numero_cmd_estatistica_canal1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Numero_cmd_estatistica_canal1, true);
 			sender = numericUpDown;
@@ -13613,7 +13615,7 @@ namespace iS800
 		// Token: 0x06000BE8 RID: 3048 RVA: 0x002F1A3C File Offset: 0x002EFE3C
 		private void nud_estatistica_ch2_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_850_BD.Numero_cmd_estatistica_canal2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_850_BD.Numero_cmd_estatistica_canal2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_850_BD.Numero_cmd_estatistica_canal2, true);
 			sender = numericUpDown;
@@ -13622,7 +13624,7 @@ namespace iS800
 		// Token: 0x06000BE9 RID: 3049 RVA: 0x002F1A90 File Offset: 0x002EFE90
 		private void ckb_modo_estatistica_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 			{
 				RT_geral.RT_850_BD.Modo_Estatistica.Valor = 1;
 			}
@@ -13659,7 +13661,7 @@ namespace iS800
 		// Token: 0x06000BEE RID: 3054 RVA: 0x002F1BB4 File Offset: 0x002EFFB4
 		private void cb_teclado_RT850_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 			{
 				RT_geral.RT_850_BD.LiberaTeclado.Valor = 1;
 			}

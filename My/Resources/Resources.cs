@@ -21,7 +21,7 @@ namespace iS800.My.Resources
 	{
 		// Token: 0x17000E52 RID: 3666
 		// (get) Token: 0x060027A6 RID: 10150 RVA: 0x00260B98 File Offset: 0x0025EF98
-		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
+		[EditorBrowsable(2)]
 		internal static ResourceManager ResourceManager
 		{
 			get
@@ -38,7 +38,7 @@ namespace iS800.My.Resources
 		// Token: 0x17000E53 RID: 3667
 		// (get) Token: 0x060027A7 RID: 10151 RVA: 0x00260BD8 File Offset: 0x0025EFD8
 		// (set) Token: 0x060027A8 RID: 10152 RVA: 0x00260BEC File Offset: 0x0025EFEC
-		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
+		[EditorBrowsable(2)]
 		internal static CultureInfo Culture
 		{
 			get

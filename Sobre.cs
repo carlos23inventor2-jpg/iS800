@@ -1,9 +1,9 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,6 +11,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x020000B0 RID: 176
+	[DesignerGenerated]
 	public partial class Sobre : Form
 	{
 		// Token: 0x06002922 RID: 10530 RVA: 0x0042CF58 File Offset: 0x0042B358
@@ -42,14 +43,14 @@ namespace iS800
 		// Token: 0x06002927 RID: 10535 RVA: 0x0042D1C0 File Offset: 0x0042B5C0
 		private void OK_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = global::System.Windows.Forms.DialogResult.OK;
+			this.DialogResult = 1;
 			this.Close();
 		}
 
 		// Token: 0x06002928 RID: 10536 RVA: 0x0042D1D0 File Offset: 0x0042B5D0
 		private void Cancel_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
+			this.DialogResult = 2;
 			this.Close();
 		}
 
@@ -57,16 +58,16 @@ namespace iS800
 		private void Sobre_MouseLeave(object sender, EventArgs e)
 		{
 			int num = 5;
-			Point Location = this.Location;
+			Point location = this.Location;
 			Point point = this.Location + this.Size;
 			Point mousePosition = Control.MousePosition;
 			checked
 			{
-				if (mousePosition.X > point.X - num | mousePosition.X < Location.X + num)
+				if (mousePosition.X > point.X - num | mousePosition.X < location.X + num)
 				{
 					this.Close();
 				}
-				if (mousePosition.Y < Location.Y + num | mousePosition.Y > point.Y - num)
+				if (mousePosition.Y < location.Y + num | mousePosition.Y > point.Y - num)
 				{
 					this.Close();
 				}

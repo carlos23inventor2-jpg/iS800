@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000039 RID: 57
+	[DesignerGenerated]
 	public partial class GC_82x_calib : Form
 	{
 		// Token: 0x06000BF0 RID: 3056 RVA: 0x002F1C08 File Offset: 0x002F0008
@@ -939,14 +940,14 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
 		// Token: 0x06000C54 RID: 3156 RVA: 0x002F4194 File Offset: 0x002F2594
 		private void nud_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			this.end_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			this.end_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			RT_geral.GC_82x_BD.End_estacao.Valor = this.end_estacao;
 			this.Bt_inic_4.Enabled = true;
 			this.Bt_inic_20.Enabled = true;
@@ -974,7 +975,7 @@ namespace iS800
 		private int Leitura_EnderecoEstacao()
 		{
 			this.AtualizaMsgTela_GC_82x("Buscando Endereço", 2);
-			int result = 0;
+			int result;
 			if (!Mod_MD.Leitura_pagina(2048, 255, 1).Status)
 			{
 				this.AtualizaMsgTela_GC_82x("Equipamento não responde", 1);
@@ -1007,7 +1008,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 			this.nud_estacao.Value = new decimal(this.Leitura_EnderecoEstacao());
 		}
@@ -1031,7 +1032,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -1054,14 +1055,14 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
 		// Token: 0x06000C5A RID: 3162 RVA: 0x002F446C File Offset: 0x002F286C
 		private void nud_contagens_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.calib_contagens = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.calib_contagens = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06000C5B RID: 3163 RVA: 0x002F4494 File Offset: 0x002F2894

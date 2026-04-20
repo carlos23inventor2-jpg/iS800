@@ -1,5 +1,3 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;

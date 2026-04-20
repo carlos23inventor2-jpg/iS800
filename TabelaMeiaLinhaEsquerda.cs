@@ -1,6 +1,5 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
+using System.Drawing;
 
 namespace iS800
 {
@@ -13,8 +12,8 @@ namespace iS800
 			Pen pen = new Pen(Cores.Tabela, 1f);
 			SolidBrush solidBrush = new SolidBrush(Cores.TituloBG);
 			StringFormat stringFormat = new StringFormat();
-			stringFormat.LineAlignment = StringAlignment.Center;
-			stringFormat.Alignment = (System.Drawing.StringAlignment)StringAlignment.Center;
+			stringFormat.LineAlignment = 1;
+			stringFormat.Alignment = 1;
 			checked
 			{
 				this.AlturaFonte = (int)Math.Round((double)(unchecked(Fonte.Titulo.GetHeight() + 2f)));
@@ -96,7 +95,7 @@ namespace iS800
 			checked
 			{
 				int num2 = posicoes.Length - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					this.EscreveTituloLinha(linha, titulos[i], posicoes[i]);
 				}

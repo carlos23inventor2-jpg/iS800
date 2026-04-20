@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000083 RID: 131
+	[DesignerGenerated]
 	public partial class Equip_202_cal : Form
 	{
 		// Token: 0x06001D8F RID: 7567 RVA: 0x003D86EC File Offset: 0x003D6AEC
@@ -2599,7 +2600,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Comando_ler_cal.Enabled = false;
@@ -2789,7 +2790,7 @@ namespace iS800
 		// Token: 0x06001ECE RID: 7886 RVA: 0x003E0AA0 File Offset: 0x003DEEA0
 		private void Tela_end_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001ECF RID: 7887 RVA: 0x003E0AC8 File Offset: 0x003DEEC8
@@ -2817,13 +2818,13 @@ namespace iS800
 		// Token: 0x06001ED0 RID: 7888 RVA: 0x003E0B40 File Offset: 0x003DEF40
 		private void Valor_canal_calibracao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Ctrl_cal.Canal = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Ctrl_cal.Canal = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001ED1 RID: 7889 RVA: 0x003E0B68 File Offset: 0x003DEF68
 		private void Valor_cal_end_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Ctrl_cal.End_equip = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Ctrl_cal.End_equip = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001ED2 RID: 7890 RVA: 0x003E0B90 File Offset: 0x003DEF90
@@ -2831,7 +2832,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Controle_tecla_202_cal(2);
@@ -2854,7 +2855,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Controle_tecla_202_cal(2);
@@ -2877,7 +2878,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21845);
@@ -2894,7 +2895,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21930);

@@ -10,12 +10,12 @@ namespace iS800.My
 {
 	// Token: 0x02000002 RID: 2
 	[GeneratedCode("MyTemplate", "11.0.0.0")]
-	[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
+	[EditorBrowsable(1)]
 	internal class MyApplication : WindowsFormsApplicationBase
 	{
 		// Token: 0x06000001 RID: 1 RVA: 0x002624C4 File Offset: 0x002608C4
 		[STAThread]
-		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
+		[EditorBrowsable(2)]
 		[DebuggerHidden]
 		[MethodImpl(72)]
 		internal static void Main(string[] Args)
@@ -37,7 +37,7 @@ namespace iS800.My
 			this.IsSingleInstance = true;
 			this.EnableVisualStyles = true;
 			this.SaveMySettingsOnExit = true;
-			this.ShutdownStyle = ShutdownMode.AfterMainFormCloses;
+			this.ShutdownStyle = 0;
 		}
 
 		// Token: 0x06000003 RID: 3 RVA: 0x00262524 File Offset: 0x00260924

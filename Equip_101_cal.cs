@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x0200007E RID: 126
+	[DesignerGenerated]
 	public partial class Equip_101_cal : Form
 	{
 		// Token: 0x06001A68 RID: 6760 RVA: 0x003C10D4 File Offset: 0x003BF4D4
@@ -1155,7 +1156,7 @@ namespace iS800
 		// Token: 0x06001AEF RID: 6895 RVA: 0x003C4540 File Offset: 0x003C2940
 		private void Tela_end_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RE.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RE.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001AF0 RID: 6896 RVA: 0x003C4568 File Offset: 0x003C2968
@@ -1303,7 +1304,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Comando_hab_cal.Enabled = false;
@@ -1348,7 +1349,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Controle_tecla_101_cal(2);
@@ -1378,7 +1379,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Controle_tecla_101_cal(2);
@@ -1428,13 +1429,13 @@ namespace iS800
 		// Token: 0x06001AF6 RID: 6902 RVA: 0x003C4DDC File Offset: 0x003C31DC
 		private void Valor_canal_calibracao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Ctrl_cal.Canal = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Ctrl_cal.Canal = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001AF7 RID: 6903 RVA: 0x003C4E04 File Offset: 0x003C3204
 		private void Valor_cal_end_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Ctrl_cal.End_equip = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Ctrl_cal.End_equip = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x04001489 RID: 5257

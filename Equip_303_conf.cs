@@ -1,15 +1,16 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
 	// Token: 0x02000088 RID: 136
+	[DesignerGenerated]
 	public partial class Equip_303_conf : Form
 	{
 		// Token: 0x06002284 RID: 8836 RVA: 0x003FF24C File Offset: 0x003FD64C
@@ -1028,19 +1029,19 @@ namespace iS800
 		// Token: 0x060022F5 RID: 8949 RVA: 0x00401CF8 File Offset: 0x004000F8
 		private void Valor_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Endereco_mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Endereco_mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060022F6 RID: 8950 RVA: 0x00401D20 File Offset: 0x00400120
 		private void Valor_endereco_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Endereco_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Endereco_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060022F7 RID: 8951 RVA: 0x00401D48 File Offset: 0x00400148
 		private void Valor_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null), 10));
+			Mod_MD.Central_303_geral.Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10));
 		}
 
 		// Token: 0x060022F8 RID: 8952 RVA: 0x00401D7C File Offset: 0x0040017C
@@ -1052,14 +1053,14 @@ namespace iS800
 		// Token: 0x060022F9 RID: 8953 RVA: 0x00401DB4 File Offset: 0x004001B4
 		private void Valor_num_res_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Qtd_equip_res = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Qtd_equip_res = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.Atualiza_dados_re_303(Mod_MD.Central_303_geral.Qtd_equip_res);
 		}
 
 		// Token: 0x060022FA RID: 8954 RVA: 0x00401DEC File Offset: 0x004001EC
 		private void Valor_num_rq_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Qdt_equip_rq = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Qdt_equip_rq = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.Atualiza_dados_rq_303(Mod_MD.Central_303_geral.Qdt_equip_rq);
 		}
 
@@ -1088,7 +1089,7 @@ namespace iS800
 			int num_MAX_RE = Mod_MD.NUM_MAX_RE;
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= num_MAX_RE; i++)
+				for (int i = num; i <= num_MAX_RE; i++)
 				{
 					Mod_MD.Central_303_res[i].Msg = 0;
 				}
@@ -1311,7 +1312,7 @@ namespace iS800
 			};
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.DataGridView_RE_303.CurrentCell = null;
@@ -1360,7 +1361,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.DataGridView_RE_303.CurrentCell = null;
@@ -1791,7 +1792,7 @@ namespace iS800
 		// Token: 0x06002307 RID: 8967 RVA: 0x004034BC File Offset: 0x004018BC
 		private void Valor_NumericUpDown_senha_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Senha = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Senha = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002308 RID: 8968 RVA: 0x004034E4 File Offset: 0x004018E4
@@ -1803,26 +1804,26 @@ namespace iS800
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.OpenFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				if (this.OpenFileDialog1.ShowDialog() == 1)
 				{
-					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", (CompareMethod)1);
+					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", 1);
 					string text = Strings.Left(this.OpenFileDialog1.FileName, num);
 					if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_303_geral);
-						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
+						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, num);
 						int num2 = 1;
 						ValueType valueType = Mod_MD.Central_303_geral;
 						FileSystem.FileGet(num2, ref valueType, -1L);
 						ValueType valueType2 = valueType;
-						Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL dados_EQUIP_MD_303_CONFIG_GERAL = default(Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL);
+						Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL dados_EQUIP_MD_303_CONFIG_GERAL;
 						Mod_MD.Central_303_geral = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_303_CONFIG_GERAL)valueType2) : dados_EQUIP_MD_303_CONFIG_GERAL);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V332", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
+						FileSystem.FileOpen(1, text + "V332", 4, -1, -1, num);
 						int num3 = 1;
 						Array array = Mod_MD.Central_303_res;
 						FileSystem.FileGet(num3, ref array, -1L, false, false);
@@ -1832,7 +1833,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V333", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
+						FileSystem.FileOpen(1, text + "V333", 4, -1, -1, num);
 						int num4 = 1;
 						array = Mod_MD.Central_303_rq;
 						FileSystem.FileGet(num4, ref array, -1L, false, false);
@@ -1858,28 +1859,28 @@ namespace iS800
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.SaveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				if (this.SaveFileDialog1.ShowDialog() == 1)
 				{
-					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", (CompareMethod)1);
+					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", 1);
 					string text = Strings.Left(this.SaveFileDialog1.FileName, num);
 					if (Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_303_geral);
-						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
+						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, num);
 						FileSystem.FilePut(1, Mod_MD.Central_303_geral, -1L);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V332", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
+						FileSystem.FileOpen(1, text + "V332", 4, -1, -1, num);
 						FileSystem.FilePut(1, Mod_MD.Central_303_res, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_303_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V333", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
+						FileSystem.FileOpen(1, text + "V333", 4, -1, -1, num);
 						FileSystem.FilePut(1, Mod_MD.Central_303_rq, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{

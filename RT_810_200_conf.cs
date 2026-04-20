@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -11,10 +11,12 @@ using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
+using VR.PrintPreview;
 
 namespace iS800
 {
 	// Token: 0x02000034 RID: 52
+	[DesignerGenerated]
 	public partial class RT_810_200_conf : Form
 	{
 		// Token: 0x0600041E RID: 1054 RVA: 0x0028D690 File Offset: 0x0028BA90
@@ -2386,23 +2388,23 @@ namespace iS800
 			this.cb_ModoLeituraNivel = comboBox;
 			this.Inicializa_DadosEStruturaRT810_Default();
 			Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-			this.TabPage_geral.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_geral.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_EA.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_EA.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_ED.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_ED.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_repetidora.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_repetidora.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
-			this.TabPage_dadosinstalacao.BackColor = Color.FromKnownColor((System.Drawing.KnownColor)8);
-			this.TabPage_dadosinstalacao.ForeColor = Color.FromKnownColor((System.Drawing.KnownColor)10);
+			this.TabPage_geral.BackColor = Color.FromKnownColor(8);
+			this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_EA.BackColor = Color.FromKnownColor(8);
+			this.TabPage_EA.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_ED.BackColor = Color.FromKnownColor(8);
+			this.TabPage_ED.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_repetidora.BackColor = Color.FromKnownColor(8);
+			this.TabPage_repetidora.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_dadosinstalacao.BackColor = Color.FromKnownColor(8);
+			this.TabPage_dadosinstalacao.ForeColor = Color.FromKnownColor(10);
 			string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 			if (MyProject.Computer.FileSystem.FileExists(text))
 			{
 				PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 				privateFontCollection.AddFontFile(text);
-				Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
-				Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
+				Font font = new Font(privateFontCollection.Families[0], 8f, 2);
+				Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
 				this.Label26.Font = font;
 				this.TextBox_equipamento.Font = font;
 				this.TextBox_versao.Font = font;
@@ -2466,13 +2468,13 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LarguraColuna = 100;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[5].LarguraColuna = 60;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[6].LarguraColuna = 60;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[1].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[2].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].AlingColuna = 32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[5].AlingColuna = 64;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[6].AlingColuna = 64;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 2;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasMenu[0] = "Desativa";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasMenu[1] = "SD - 01";
@@ -2526,9 +2528,9 @@ namespace iS800
 			RT_geral.RT_810_200_DataGrigViewEAColunas[0].LarguraColuna = 90;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[1].LarguraColuna = 90;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[2].LarguraColuna = 90;
-			RT_geral.RT_810_200_DataGrigViewEAColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_810_200_DataGrigViewEAColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_810_200_DataGrigViewEAColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_200_DataGrigViewEAColunas[0].AlingColuna = 64;
+			RT_geral.RT_810_200_DataGrigViewEAColunas[1].AlingColuna = 64;
+			RT_geral.RT_810_200_DataGrigViewEAColunas[2].AlingColuna = 64;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[0].NumeroLinhaMenu = 0;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[1].NumeroLinhaMenu = 0;
 			RT_geral.RT_810_200_DataGrigViewEAColunas[2].NumeroLinhaMenu = 0;
@@ -2538,8 +2540,8 @@ namespace iS800
 		private void GeraDataGridView_Repedidora_RT_810()
 		{
 			this.DataGridView_end_rep_RT_810.Columns.Clear();
-			this.DataGridView_end_rep_RT_810.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			this.DataGridView_end_rep_RT_810.DefaultCellStyle.Alignment =(System.Windows.Forms.DataGridViewContentAlignment)64;
+			this.DataGridView_end_rep_RT_810.CellBorderStyle = 1;
+			this.DataGridView_end_rep_RT_810.DefaultCellStyle.Alignment = 64;
 			int num = 0;
 			checked
 			{
@@ -2613,16 +2615,16 @@ namespace iS800
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].LarguraColuna = 65;
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].LarguraColuna = 50;
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].AlingColuna = 32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].AlingColuna = 64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].AlingColuna = 32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].AlingColuna = 64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].AlingColuna = 32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].AlingColuna = 64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].AlingColuna = 32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].AlingColuna = 64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].AlingColuna = 32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].AlingColuna = 64;
 		}
 
 		// Token: 0x0600052D RID: 1325 RVA: 0x00294994 File Offset: 0x00292D94
@@ -2652,9 +2654,9 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].LarguraColuna = 60;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].LarguraColuna = 60;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LarguraColuna = 160;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].AlingColuna = 64;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].AlingColuna = 64;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].AlingColuna = 32;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = 0;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = 0;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasMenu[0] = "Controle Desabilitado";
@@ -2700,7 +2702,7 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewEDColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].NomeColuna = "Entrada";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LarguraColuna = 200;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].AlingColuna = 32;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[1] = 21969;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[2] = 21970;
@@ -2885,8 +2887,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num3 = 0;
+				int num;
+				int num3;
 				object obj;
 				try
 				{
@@ -2925,17 +2927,17 @@ namespace iS800
 					this.Habilita_Funcoes_de_Tela_RT_810(0);
 					goto IL_3CE;
 					IL_377:
-					Interaction.MsgBox("Erro na atualização da tela!", MsgBoxStyle.Question, "Atenção - Erro de dados");
+					Interaction.MsgBox("Erro na atualização da tela!", 32, "Atenção - Erro de dados");
 					goto IL_3CE;
 					IL_38B:
 					num3 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_3A0:;
+										IL_3A0:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_38B;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_3CE:
 				if (num3 != 0)
@@ -3074,7 +3076,7 @@ namespace iS800
 		{
 			if (this.ComboBox_Modo_Operacao.FindStringExact(this.ComboBox_Modo_Operacao.Text) == -1)
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", MsgBoxStyle.Question, "Atenção - Método Operação");
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Método Operação");
 				this.ComboBox_Modo_Operacao.SelectedIndex = 0;
 			}
 		}
@@ -3140,7 +3142,7 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", MsgBoxStyle.Question, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
 				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
 				{
 					0
@@ -3151,7 +3153,7 @@ namespace iS800
 		// Token: 0x06000543 RID: 1347 RVA: 0x002962A8 File Offset: 0x002946A8
 		private void NumericUpDown_intervalo_tx_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.Intervalo_tx_pto_pto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.Intervalo_tx_pto_pto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.Intervalo_tx_pto_pto, true);
 			sender = numericUpDown;
@@ -3160,10 +3162,12 @@ namespace iS800
 		// Token: 0x06000544 RID: 1348 RVA: 0x002962FC File Offset: 0x002946FC
 		private void NumericUpDown_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
+			RT_geral.RT_810_200_BD.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
+			NewLateBinding.LateSet(sender, null, "value", new object[]
+			{
+				RT_geral.RT_810_200_BD.Tempo_ptt.Valor
+			}, null, null);
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
-			decimal valorTemp = decimal.Floor(numericUpDown.Value / 10m) * 10m;
-			RT_geral.RT_810_200_BD.Tempo_ptt.Valor = Conversions.ToInteger(valorTemp);
-			numericUpDown.Value = RT_geral.RT_810_200_BD.Tempo_ptt.Valor;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
@@ -3171,7 +3175,7 @@ namespace iS800
 		// Token: 0x06000545 RID: 1349 RVA: 0x00296394 File Offset: 0x00294794
 		private void NumericUpDown_end_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.End_mestre, true);
 			sender = numericUpDown;
@@ -3180,7 +3184,7 @@ namespace iS800
 		// Token: 0x06000546 RID: 1350 RVA: 0x002963E8 File Offset: 0x002947E8
 		private void NumericUpDown_end_est_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.End_estacao, true);
 			sender = numericUpDown;
@@ -3189,10 +3193,12 @@ namespace iS800
 		// Token: 0x06000547 RID: 1351 RVA: 0x0029643C File Offset: 0x0029483C
 		private void NumericUpDown_intervalo_filtro_ValueChanged(object sender, EventArgs e)
 		{
+			RT_geral.RT_810_200_BD.AD_Intervalo.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
+			NewLateBinding.LateSet(sender, null, "value", new object[]
+			{
+				RT_geral.RT_810_200_BD.AD_Intervalo.Valor
+			}, null, null);
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
-			decimal valorTemp = decimal.Floor(numericUpDown.Value / 10m) * 10m;
-			RT_geral.RT_810_200_BD.AD_Intervalo.Valor = Conversions.ToInteger(valorTemp);
-			numericUpDown.Value = RT_geral.RT_810_200_BD.AD_Intervalo.Valor;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.AD_Intervalo, true);
 			sender = numericUpDown;
 		}
@@ -3200,7 +3206,7 @@ namespace iS800
 		// Token: 0x06000548 RID: 1352 RVA: 0x002964D4 File Offset: 0x002948D4
 		private void NumericUpDown_tamanho_filtro_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.AD_Tamanho_filtro, true);
 			sender = numericUpDown;
@@ -3209,7 +3215,7 @@ namespace iS800
 		// Token: 0x06000549 RID: 1353 RVA: 0x00296528 File Offset: 0x00294928
 		private void NumericUpDown_end_rep_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.End_repetidora.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.End_repetidora.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.End_repetidora, true);
 			sender = numericUpDown;
@@ -3218,15 +3224,15 @@ namespace iS800
 		// Token: 0x0600054A RID: 1354 RVA: 0x0029657C File Offset: 0x0029497C
 		private void NumericUpDown_num_est_rep_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.Num_repetidoras.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.Num_repetidoras.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.Num_repetidoras, true);
 			sender = numericUpDown;
 			int num = 0;
-			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					switch (i)
 					{
@@ -3292,7 +3298,7 @@ namespace iS800
 						break;
 					}
 				}
-				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)); i <= 49; i++)
+				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= 49; i++)
 				{
 					switch (i)
 					{
@@ -3412,7 +3418,7 @@ namespace iS800
 						}
 					}
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Red;
-					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), (Microsoft.VisualBasic.MsgBoxStyle)32, "Erro na entrada de dados");
+					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), 32, "Erro na entrada de dados");
 					dado.erro = true;
 					return true;
 				}
@@ -3613,7 +3619,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 		}
 
@@ -3647,13 +3653,13 @@ namespace iS800
 				else
 				{
 					string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-					Interaction.MsgBox(text, MsgBoxStyle.Critical, "Atenção - Valor fora das especificações");
+					Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
 					this.ToolStripButton_RT_810_Salvar.Enabled = true;
 				}
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", MsgBoxStyle.Critical, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
 			}
 			this.Timer_limpa_MSG.Enabled = true;
 		}
@@ -3663,8 +3669,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num4 = 0;
+				int num;
+				int num4;
 				object obj;
 				try
 				{
@@ -3677,7 +3683,7 @@ namespace iS800
 					this.ToolStri_RT_810.Enabled = true;
 					this.OpenFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810_200";
 					this.OpenFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_810.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.OpenFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.OpenFileDialog_RT_810.FileName) + "\\";
 						RT_geral.arquivo_extensao = Path.GetExtension(this.OpenFileDialog_RT_810.FileName);
@@ -3748,18 +3754,18 @@ namespace iS800
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_6F7;
 					IL_692:
-					Interaction.MsgBox("Não foi possível carregar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_6F7;
 					IL_6B2:
 					num4 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_6C8:;
+										IL_6C8:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_6B2;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_6F7:
 				if (num4 != 0)
@@ -3775,8 +3781,8 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num5 = 0;
+				int num;
+				int num5;
 				object obj;
 				try
 				{
@@ -3786,7 +3792,7 @@ namespace iS800
 					this.Bloqueia_acoes();
 					this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810_200";
 					this.SaveFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.SaveFileDialog_RT_810.ShowDialog() == System.Windows.Forms.DialogResult.OK && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.SaveFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.SaveFileDialog_RT_810.FileName) + "\\";
 						if (File.Exists(this.SaveFileDialog_RT_810.FileName))
@@ -3885,7 +3891,7 @@ namespace iS800
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_67A;
 					IL_601:
-					Interaction.MsgBox("Não foi possível gravar os dados", MsgBoxStyle.Question, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
 					FileSystem.FileClose(new int[]
 					{
 						1
@@ -3894,13 +3900,13 @@ namespace iS800
 					goto IL_67A;
 					IL_635:
 					num5 = -1;
-					throw new InvalidOperationException("Decompiler switch pattern not reconstructed.");
-					IL_64B:;
+										IL_64B:;
 				}
-				catch (Exception)
-			{
-				throw;
-			}
+				catch when (endfilter(obj is Exception & num != 0 & num5 == 0))
+				{
+					Exception ex = (Exception)obj2;
+					goto IL_635;
+				}
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_67A:
 				if (num5 != 0)
@@ -4048,7 +4054,7 @@ namespace iS800
 		{
 			if (this.DataGridView_end_rep_RT_810.IsCurrentCellDirty)
 			{
-				this.DataGridView_end_rep_RT_810.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
+				this.DataGridView_end_rep_RT_810.CommitEdit(512);
 			}
 		}
 
@@ -4106,7 +4112,7 @@ namespace iS800
 				int num3 = Strings.Len(this.TextBox_comentarios_RT810.Text) - Strings.Len(Strings.Replace(this.TextBox_comentarios_RT810.Text, "\r\n", "\r", 1, -1, 0));
 				if (num3 > 7)
 				{
-					Interaction.MsgBox("Número máximo de linhas atingido", MsgBoxStyle.OkOnly, null);
+					Interaction.MsgBox("Número máximo de linhas atingido", 0, null);
 				}
 			}
 		}
@@ -4115,10 +4121,10 @@ namespace iS800
 		[MethodImpl(72)]
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
-			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
-			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
-			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
+			Font font = new Font("Calibri", 10f, 3);
+			Font font2 = new Font("Calibri", 10f, 3, 3);
+			Font font3 = new Font("Calibri", 10f, 0, 3);
+			Font fonte = new Font("Calibri", 20f, 1, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -4216,7 +4222,7 @@ namespace iS800
 						num++;
 					}
 					int num2 = 1;
-					int num3 = Convert.ToInt32(num);
+					int num3 = num;
 					for (int i = num2; i <= num3; i++)
 					{
 						tabelaLinhaInteria3.AdicionaLinha();
@@ -4248,7 +4254,7 @@ namespace iS800
 		// Token: 0x06000568 RID: 1384 RVA: 0x002992E0 File Offset: 0x002976E0
 		private bool DesenhaRelatorio(PrintPageEventArgs z)
 		{
-			Font font = new Font("Arial", 12f, (System.Drawing.FontStyle)3);
+			Font font = new Font("Arial", 12f, 3);
 			Pen pen = new Pen(Color.Black, 2f);
 			checked
 			{
@@ -4329,12 +4335,12 @@ namespace iS800
 		// Token: 0x06000571 RID: 1393 RVA: 0x0029942C File Offset: 0x0029782C
 		private void NumericUpDown_rangesensor_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.RangeSensor.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.RangeSensor.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.RangeSensor, true);
 			sender = numericUpDown;
-			this.NumericUpDown_errooffsetsensor.Minimum = Conversions.ToDecimal(Operators.MultiplyObject(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null), -1));
-			this.NumericUpDown_errooffsetsensor.Maximum = Conversions.ToDecimal(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			this.NumericUpDown_errooffsetsensor.Minimum = Conversions.ToDecimal(Operators.MultiplyObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), -1));
+			this.NumericUpDown_errooffsetsensor.Maximum = Conversions.ToDecimal(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			RT_geral.RT_810_200_BD.ErroOffSet.Lmte_sup = Convert.ToInt32(this.NumericUpDown_errooffsetsensor.Maximum);
 			RT_geral.RT_810_200_BD.ErroOffSet.Lmte_inf = Convert.ToInt32(this.NumericUpDown_errooffsetsensor.Minimum);
 			decimal num = new decimal((double)RT_geral.RT_810_200_BD.ErroOffSet.Valor / (double)RT_geral.RT_810_200_BD.RangeSensor.Valor);
@@ -4344,7 +4350,7 @@ namespace iS800
 		// Token: 0x06000572 RID: 1394 RVA: 0x0029954C File Offset: 0x0029794C
 		private void NumericUpDown_alturareservatorio_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.AlturaReservatorio.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.AlturaReservatorio.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.AlturaReservatorio, true);
 			sender = numericUpDown;
@@ -4353,7 +4359,7 @@ namespace iS800
 		// Token: 0x06000573 RID: 1395 RVA: 0x002995A0 File Offset: 0x002979A0
 		private void NumericUpDown_errooffsetsensor_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_200_BD.ErroOffSet.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			RT_geral.RT_810_200_BD.ErroOffSet.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_810_200_BD.ErroOffSet, true);
 			sender = numericUpDown;
@@ -4386,7 +4392,7 @@ namespace iS800
 		// Token: 0x06000578 RID: 1400 RVA: 0x0029969C File Offset: 0x00297A9C
 		private void NumericUpDown_end_mestre_Leave(object sender, EventArgs e)
 		{
-			string text = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			string text = Conversions.ToString(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x0400048A RID: 1162

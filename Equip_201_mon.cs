@@ -1,9 +1,9 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,6 +11,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000082 RID: 130
+	[DesignerGenerated]
 	public partial class Equip_201_mon : Form
 	{
 		// Token: 0x06001CD4 RID: 7380 RVA: 0x003D346C File Offset: 0x003D186C
@@ -1463,7 +1464,7 @@ namespace iS800
 			this.Grupo_status.Enabled = false;
 			this.Grupo_estatistica.Enabled = false;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", num, " Atenção - verifique a configuração");
 			this.Comando_le_setpoint.Enabled = false;
 			this.Comando_escreve_setpoint.Enabled = false;
 		}
@@ -1473,14 +1474,14 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null), "Iniciar", false))
 			{
 				if (Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
 				{
-					NewLateBinding.LateSet(sender, null, "Text", new object[]
+					NewLateBinding.LateSet(sender, null, "text", new object[]
 					{
 						"Parar"
 					}, null, null);
@@ -1500,7 +1501,7 @@ namespace iS800
 			}
 			else
 			{
-				NewLateBinding.LateSet(sender, null, "Text", new object[]
+				NewLateBinding.LateSet(sender, null, "text", new object[]
 				{
 					"Iniciar"
 				}, null, null);
@@ -1906,14 +1907,14 @@ namespace iS800
 		// Token: 0x06001D78 RID: 7544 RVA: 0x003D7C24 File Offset: 0x003D6024
 		private void Tela_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.Inicializa_tela_equipamento_MD201_mon();
 		}
 
 		// Token: 0x06001D79 RID: 7545 RVA: 0x003D7C50 File Offset: 0x003D6050
 		private void Tela_endereco_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			this.Inicializa_tela_equipamento_MD201_mon();
 		}
 
@@ -2087,7 +2088,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
 			this.Comando_le_setpoint.Enabled = false;
@@ -2101,16 +2102,16 @@ namespace iS800
 			object obj = true;
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", MsgBoxStyle.OkOnly, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
 				return;
 			}
-			if ((Conversions.ToDouble(this.Set_valor_Desiga_B1.Text) > Conversion.Val(this.Set_valor_Liga_B1.Text)) && (Conversions.ToDouble(this.Set_valor_Liga_B1.Text) != 0.0) && (Conversions.ToDouble(this.Set_valor_Desiga_B2.Text) > Conversion.Val(this.Set_valor_Liga_B2.Text)) && (Conversions.ToDouble(this.Set_valor_Liga_B2.Text) != 0.0) && (Conversions.ToDouble(this.Set_valor_Desiga_B3.Text) > Conversion.Val(this.Set_valor_Liga_B3.Text)) && (Conversions.ToDouble(this.Set_valor_Liga_B3.Text) != 0.0))
+			if ((checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B1.Text) > Conversion.Val(this.Set_valor_Liga_B1.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B1.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L && (checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B2.Text) > Conversion.Val(this.Set_valor_Liga_B2.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B2.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L && (checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B3.Text) > Conversion.Val(this.Set_valor_Liga_B3.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B3.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L)
 			{
 				obj = false;
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, true, false))
 			{
-				Interaction.MsgBox("                Verifique o preenchimento dos campos de setpoints.\r\nTodos os campos devem ter valores não nulos e o limite para desligar maior que o para ligar.", MsgBoxStyle.Exclamation, null);
+				Interaction.MsgBox("                Verifique o preenchimento dos campos de setpoints.\r\nTodos os campos devem ter valores não nulos e o limite para desligar maior que o para ligar.", 48, null);
 			}
 			else
 			{
@@ -2123,7 +2124,7 @@ namespace iS800
 		// Token: 0x06001D81 RID: 7553 RVA: 0x003D84F8 File Offset: 0x003D68F8
 		private void Tela_nivel_destino_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x06001D82 RID: 7554 RVA: 0x003D8520 File Offset: 0x003D6920

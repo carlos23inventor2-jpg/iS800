@@ -1,6 +1,6 @@
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-﻿using System;
 using iS800.My.Resources;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -14,7 +14,7 @@ namespace iS800
 		// Token: 0x06001A42 RID: 6722 RVA: 0x00252914 File Offset: 0x00250D14
 		public static RT_geral.Ctrl_erro Limite_ok_text_box(ref TextBox obj, ref RT_geral.Integer_ictel dado, bool mostra)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -49,7 +49,7 @@ namespace iS800
 				}
 				if (mostra)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração: ");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração: ");
 				}
 			}
 			return result;
@@ -58,7 +58,7 @@ namespace iS800
 		// Token: 0x06001A43 RID: 6723 RVA: 0x00252A38 File Offset: 0x00250E38
 		public static RT_geral.Ctrl_erro Limite_ok_NumericUpDown(ref NumericUpDown obj, ref RT_geral.Integer_ictel dado, bool mostra)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -93,7 +93,7 @@ namespace iS800
 				}
 				if (mostra & !result.resultado)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração");
 				}
 			}
 			return result;
@@ -102,13 +102,13 @@ namespace iS800
 		// Token: 0x06001A44 RID: 6724 RVA: 0x00252B68 File Offset: 0x00250F68
 		public static RT_geral.Ctrl_erro Limite_ok_Combo_valor(ref ComboBox obj, ref RT_geral.Combo_ictel dado, bool mostra, int novo)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			result.msg = "";
 			int num = 0;
 			checked
 			{
 				int num2 = dado.Numero_itens - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					if (novo == dado.valores[i])
 					{
@@ -131,7 +131,7 @@ namespace iS800
 				}
 				if (mostra & !result.resultado)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração");
 				}
 				return result;
 			}
@@ -140,7 +140,7 @@ namespace iS800
 		// Token: 0x06001A45 RID: 6725 RVA: 0x00252C64 File Offset: 0x00251064
 		public static RT_geral.Ctrl_erro Limite_ok_celula(ref DataGridView obj, ref RT_geral.Integer_ictel dado, DataGridViewCellValidatingEventArgs e, bool mostra)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -175,7 +175,7 @@ namespace iS800
 				}
 				if (mostra & !result.resultado)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração");
 				}
 			}
 			return result;
@@ -184,13 +184,13 @@ namespace iS800
 		// Token: 0x06001A46 RID: 6726 RVA: 0x00252DE0 File Offset: 0x002511E0
 		public static RT_geral.Ctrl_erro Limite_ok_Combo_text(ref ComboBox obj, ref RT_geral.Combo_ictel dado, bool mostra, int novo)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			result.msg = "";
 			int num = 0;
 			checked
 			{
 				int num2 = dado.Numero_itens - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					if (novo == dado.valores[i])
 					{
@@ -213,7 +213,7 @@ namespace iS800
 				}
 				if (mostra & !result.resultado)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração");
 				}
 				return result;
 			}
@@ -222,7 +222,7 @@ namespace iS800
 		// Token: 0x06001A47 RID: 6727 RVA: 0x00252EDC File Offset: 0x002512DC
 		public static RT_geral.Ctrl_erro Testa_nome_dsp_3DIG(ref DataGridView obj, ref RT_geral.String_ictel dado, DataGridViewCellValidatingEventArgs e, bool mostra)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -249,7 +249,7 @@ namespace iS800
 				}
 				if (mostra & !result.resultado)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração");
 				}
 			}
 			return result;
@@ -258,7 +258,7 @@ namespace iS800
 		// Token: 0x06001A48 RID: 6728 RVA: 0x00253008 File Offset: 0x00251408
 		public static RT_geral.Ctrl_erro Limite_comprimento_string(ref DataGridView obj, ref RT_geral.String_ictel dado, DataGridViewCellValidatingEventArgs e, bool mostra)
 		{
-			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
+			RT_geral.Ctrl_erro result;
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -285,7 +285,7 @@ namespace iS800
 				}
 				if (mostra & !result.resultado)
 				{
-					Interaction.MsgBox(result.msg, MsgBoxStyle.Critical, "Atenção - Erro de configuração");
+					Interaction.MsgBox(result.msg, 16, "Atenção - Erro de configuração");
 				}
 			}
 			return result;
@@ -294,7 +294,7 @@ namespace iS800
 		// Token: 0x06001A49 RID: 6729 RVA: 0x00253138 File Offset: 0x00251538
 		public static MsgBoxResult VerificaDadoInt(ref RT_geral.Integer_ictel dado)
 		{
-			MsgBoxResult result = MsgBoxResult.Ok;
+			MsgBoxResult result = 1;
 			if (dado.Valor < dado.Lmte_inf | dado.Valor > dado.Lmte_sup)
 			{
 				dado.erro = true;
@@ -303,15 +303,15 @@ namespace iS800
 				text = text + "   Limite Superior = " + Conversion.Str(dado.Lmte_sup) + "\r\n";
 				text = text + "   Limite Inferior = " + Conversion.Str(dado.Lmte_inf) + "\r\n\r\n";
 				text += "   Deseja continuar verificação dos parâmetros?";
-				result = Interaction.MsgBox(text, MsgBoxStyle.Question, "Atenção - Valor fora das especificações");
+				result = Interaction.MsgBox(text, 20, "Atenção - Valor fora das especificações");
 			}
 			return result;
 		}
 
 		// Token: 0x06001A4A RID: 6730 RVA: 0x00253204 File Offset: 0x00251604
-		public static int ContadorErro(ref RT_geral.Integer_ictel dado, ref int cont)
+		public static MsgBoxResult ContadorErro(ref RT_geral.Integer_ictel dado, ref int cont)
 		{
-			int result = (int)RT_geral.VerificaDadoInt(ref dado);
+			MsgBoxResult result = RT_geral.VerificaDadoInt(ref dado);
 			checked
 			{
 				switch (result)
@@ -424,7 +424,7 @@ namespace iS800
 			int numero_itens = dados.Numero_itens;
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= numero_itens; i++)
+				for (int i = num; i <= numero_itens; i++)
 				{
 					if (Operators.CompareString(texto, dados.itens[i], false) == 0)
 					{
@@ -442,7 +442,7 @@ namespace iS800
 			int numero_itens = dados.Numero_itens;
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= numero_itens; i++)
+				for (int i = num; i <= numero_itens; i++)
 				{
 					if (valor == dados.valores[i])
 					{
@@ -458,9 +458,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num2 = 0;
-				int num3 = 0;
+				int num;
+				int num2;
+				int num3;
 				if (Operators.CompareString(opcao, "ED", false) == 0)
 				{
 					num = 21864;
@@ -506,9 +506,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num = 0;
-				int num2 = 0;
-				int num3 = 0;
+				int num;
+				int num2;
+				int num3;
 				if (Operators.CompareString(opcao, "ED", false) == 0)
 				{
 					num = 21864;
@@ -559,7 +559,7 @@ namespace iS800
 				{
 					int num = 0;
 					int num2 = num_linhas_ctrl - 1;
-					for (int i = Convert.ToInt32(num); i <= num2; i++)
+					for (int i = num; i <= num2; i++)
 					{
 						if (i != num_ctrl && (indice_pesquisa == BD_dado[i].Indice_padrao | BD_dado[i].Indice == indice_pesquisa) && BD_dado[i].Indice == indice_pesquisa)
 						{
@@ -572,8 +572,8 @@ namespace iS800
 							{
 								text = txt + " já utilizado em " + BD_ConfigColuna.TagColuna + "! ";
 							}
-							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, MessageBoxButtons.YesNo);
-							result = (dialogResult != DialogResult.Yes);
+							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, 4);
+							result = (dialogResult != 6);
 							break;
 						}
 					}
@@ -613,8 +613,8 @@ namespace iS800
 									col2
 								});
 							}
-							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, MessageBoxButtons.YesNo);
-							result = (dialogResult != DialogResult.Yes);
+							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, 4);
+							result = (dialogResult != 6);
 							break;
 						}
 					}
@@ -649,7 +649,7 @@ namespace iS800
 							{
 								text = txt + " já utilizada! \r\nLocal: Configuração Entrada Digital - ED " + Strings.Format(entrada_digital, "#0");
 							}
-							Interaction.MsgBox(text, MsgBoxStyle.Information, "Atenção - Erro de configuração: ");
+							Interaction.MsgBox(text, 16, "Atenção - Erro de configuração: ");
 							result = true;
 						}
 					}
@@ -663,14 +663,14 @@ namespace iS800
 		{
 			checked
 			{
-				bool result = false;
+				bool result;
 				if (indice == dado[numero_ED].Indice_padrao)
 				{
 					result = false;
 				}
 				else
 				{
-					int num = 0;
+					int num;
 					switch (habexpansao)
 					{
 					case 21856:
@@ -690,7 +690,7 @@ namespace iS800
 						if (i != numero_ED && indice == dado[i].Indice)
 						{
 							string text = "Função já utilizada! \r\nEntrada digital ED " + Strings.Format(i + 1, "");
-							Interaction.MsgBox(text, MsgBoxStyle.Information, "Atenção - Erro de configuração: ");
+							Interaction.MsgBox(text, 16, "Atenção - Erro de configuração: ");
 							return true;
 						}
 					}
@@ -716,7 +716,7 @@ namespace iS800
 						if (num == dado[i].Valor)
 						{
 							string text = "ED já utilizada! \r\nEm " + dado[i].nome;
-							Interaction.MsgBox(text, MsgBoxStyle.Information, "Atenção - Erro de configuração: ");
+							Interaction.MsgBox(text, 16, "Atenção - Erro de configuração: ");
 							return true;
 						}
 					}
@@ -923,7 +923,7 @@ namespace iS800
 			int numeroLinhaMenu = dado.NumeroLinhaMenu;
 			checked
 			{
-				for (int i = Convert.ToInt32(num); i <= numeroLinhaMenu; i++)
+				for (int i = num; i <= numeroLinhaMenu; i++)
 				{
 					if (dado.LinhasValor[i] == dado_a_localizar)
 					{
@@ -4114,7 +4114,7 @@ namespace iS800
 				checked
 				{
 					int num2 = this.Numero_itens - 1;
-					for (int i = Convert.ToInt32(num); i <= num2; i++)
+					for (int i = num; i <= num2; i++)
 					{
 						if (this.Valor == this.valores[i])
 						{
@@ -4138,7 +4138,7 @@ namespace iS800
 				checked
 				{
 					int num2 = this.Numero_itens - 1;
-					for (int i = Convert.ToInt32(num); i <= num2; i++)
+					for (int i = num; i <= num2; i++)
 					{
 						if (Operators.CompareString(item, this.itens[i], false) == 0)
 						{

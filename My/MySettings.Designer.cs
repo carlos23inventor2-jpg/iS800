@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Configuration;
@@ -12,11 +12,11 @@ namespace iS800.My
 	// Token: 0x020000A9 RID: 169
 	[GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
 	[CompilerGenerated]
-	[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
+	[EditorBrowsable(2)]
 	internal sealed partial class MySettings : ApplicationSettingsBase
 	{
 		// Token: 0x060027DB RID: 10203 RVA: 0x00424AAC File Offset: 0x00422EAC
-		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)2)]
+		[EditorBrowsable(2)]
 		[DebuggerNonUserCode]
 		private static void AutoSaveSettings(object sender, EventArgs e)
 		{

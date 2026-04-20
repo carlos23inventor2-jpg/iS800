@@ -1,10 +1,10 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -12,6 +12,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x020000A6 RID: 166
+	[DesignerGenerated]
 	public partial class LogComunicacao : Form
 	{
 		// Token: 0x06002777 RID: 10103 RVA: 0x004233C8 File Offset: 0x004217C8
@@ -258,9 +259,9 @@ namespace iS800
 		// Token: 0x06002793 RID: 10131 RVA: 0x00423C94 File Offset: 0x00422094
 		private void cb_disco_CheckStateChanged(object sender, EventArgs e)
 		{
-			this.Label2.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null));
-			this.tb_diretorio.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null));
-			this.bt_diretorio.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null));
+			this.Label2.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null));
+			this.tb_diretorio.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null));
+			this.bt_diretorio.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null));
 		}
 
 		// Token: 0x06002794 RID: 10132 RVA: 0x00423D10 File Offset: 0x00422110
@@ -276,7 +277,7 @@ namespace iS800
 		// Token: 0x06002796 RID: 10134 RVA: 0x00423D18 File Offset: 0x00422118
 		private void bt_diretorio_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+			if (this.FolderBrowserDialog1.ShowDialog() == 1)
 			{
 				this.tb_diretorio.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Ctrl_Log.diretorio = this.FolderBrowserDialog1.SelectedPath;
@@ -305,7 +306,7 @@ namespace iS800
 					{
 						int num = 0;
 						int num2 = bytesToRead - 1;
-						for (int i = Convert.ToInt32(num); i <= num2; i++)
+						for (int i = num; i <= num2; i++)
 						{
 							byte b = (byte)MyProject.Forms.Plataforma.SerialPort1.ReadByte();
 							Comunicacao.Buffer_Log[Comunicacao.Ctrl_Log.bytes_recv] = b;
@@ -398,7 +399,7 @@ namespace iS800
 						break;
 					case 3:
 					{
-						int num4 = 0;
+						int num4;
 						if (num4 == 1)
 						{
 							byte b = Comunicacao.Buffer_Log[i];
@@ -455,7 +456,7 @@ namespace iS800
 					{
 						int num6 = (int)Comunicacao.Buffer_Log[i];
 						text = text + "CRC F=" + Conversion.Hex(num6) + " ";
-						int ini = 0;
+						int ini;
 						byte b2 = this.Calcula_Chksum(ini, i);
 						text = string.Concat(new string[]
 						{
@@ -535,7 +536,7 @@ namespace iS800
 			checked
 			{
 				int num2 = Comunicacao.Ctrl_Log.bytes_recv - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					text2 = text2 + Conversion.Hex(Comunicacao.Buffer_Log[i]) + " ";
 				}

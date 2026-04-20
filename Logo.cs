@@ -1,9 +1,9 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using iS800.My.Resources;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,6 +11,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x020000A7 RID: 167
+	[DesignerGenerated]
 	public partial class Logo : Form
 	{
 		// Token: 0x0600279C RID: 10140 RVA: 0x00424780 File Offset: 0x00422B80

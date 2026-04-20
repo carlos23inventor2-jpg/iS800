@@ -1,9 +1,9 @@
-using System.Drawing;
-using System.Windows.Forms;
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using iS800.My;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -11,6 +11,7 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace iS800
 {
 	// Token: 0x02000089 RID: 137
+	[DesignerGenerated]
 	public partial class Equip_590_conf : Form
 	{
 		// Token: 0x0600230A RID: 8970 RVA: 0x0040386C File Offset: 0x00401C6C
@@ -1761,7 +1762,7 @@ namespace iS800
 			this.Mensagem_MD590(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 			checked
 			{
-				bool result = false;
+				bool result;
 				if (!ctrl_RESP_.Status)
 				{
 					result = false;
@@ -1836,7 +1837,7 @@ namespace iS800
 			checked
 			{
 				int num2 = tamanho - 1;
-				for (int i = Convert.ToInt32(num); i <= num2; i++)
+				for (int i = num; i <= num2; i++)
 				{
 					Mod_MD.Tabela_590[i + end_inicial] = (int)Comunicacao.Buffer_resp[i + 3];
 				}
@@ -2243,49 +2244,49 @@ namespace iS800
 		// Token: 0x060023B2 RID: 9138 RVA: 0x004093C4 File Offset: 0x004077C4
 		private void Valor_interface_timeout_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.InterfaceTimeout = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.InterfaceTimeout = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B3 RID: 9139 RVA: 0x004093EC File Offset: 0x004077EC
 		private void Valor_packed_size_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.RFPacketSize = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.RFPacketSize = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B4 RID: 9140 RVA: 0x00409414 File Offset: 0x00407814
 		private void Valor_cts_on_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.CTSOn = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.CTSOn = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B5 RID: 9141 RVA: 0x0040943C File Offset: 0x0040783C
 		private void Valor_cts_on_hysteresis_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.CTSOnHysteresis = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.CTSOnHysteresis = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B6 RID: 9142 RVA: 0x00409464 File Offset: 0x00407864
 		private void Valor_transmit_retries_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.TransmitRetries = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.TransmitRetries = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B7 RID: 9143 RVA: 0x0040948C File Offset: 0x0040788C
 		private void Valor_Broadcast_Attempts_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.BroadcastAttempts = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.BroadcastAttempts = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B8 RID: 9144 RVA: 0x004094B4 File Offset: 0x004078B4
 		private void Valor_Stop_Bit_Delay_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.StopBitDelay = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.StopBitDelay = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023B9 RID: 9145 RVA: 0x004094DC File Offset: 0x004078DC
 		private void Valor_Range_Refresh_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.RangeRefresh = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.RangeRefresh = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023BA RID: 9146 RVA: 0x00409504 File Offset: 0x00407904
@@ -2297,13 +2298,13 @@ namespace iS800
 		// Token: 0x060023BB RID: 9147 RVA: 0x00409538 File Offset: 0x00407938
 		private void Valor_RF_Channel_Number_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.RFChannelNumber = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.RFChannelNumber = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023BC RID: 9148 RVA: 0x00409560 File Offset: 0x00407960
 		private void Valor_Sync_to_Channel_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.SyncToChannel = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.SyncToChannel = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023BD RID: 9149 RVA: 0x00409588 File Offset: 0x00407988
@@ -2335,7 +2336,7 @@ namespace iS800
 		// Token: 0x060023BE RID: 9150 RVA: 0x0040962C File Offset: 0x00407A2C
 		private void Valor_System_ID_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.SystemID = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.SystemID = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 		}
 
 		// Token: 0x060023BF RID: 9151 RVA: 0x00409654 File Offset: 0x00407A54
