@@ -31,7 +31,7 @@ namespace iS800
 			this.ControlBox = false;
 			this.FormBorderStyle = FormBorderStyle.None;
 			this.Name = "Abertura";
-			this.SizeGripStyle = (HorizontalAlignment)2;
+			this.SizeGripStyle = 2;
 			this.StartPosition = FormStartPosition.Manual;
 			this.Text = "Abertura";
 			this.ResumeLayout(false);

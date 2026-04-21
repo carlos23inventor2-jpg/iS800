@@ -515,7 +515,7 @@ namespace iS800
 		{
 			this.Mensagem_MD101_mon("Monitoração desativada", 2);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
-			int num = (HorizontalAlignment)48;
+			int num = 48;
 			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", num, " Atenção - verifique a configuração");
 		}
 
@@ -536,7 +536,7 @@ namespace iS800
 						"Parar"
 					}, null, null);
 					this.Mensagem_MD101_mon("Monitoração Ativada", 2);
-					Mod_MD.Monitoracao_MD_RE.Controle_mon = (HorizontalAlignment)1;
+					Mod_MD.Monitoracao_MD_RE.Controle_mon = 1;
 					this.Grupo_medidas_eng.Enabled = true;
 					this.Timer_monitoracao.Enabled = true;
 				}
@@ -573,7 +573,7 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -582,7 +582,7 @@ namespace iS800
 						this.Atualiza_monitoracao_101();
 						goto IL_11A;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD101_mon("Erro Leitura RE - ChkSum", 1);
 							this.Calcula_Estatistica_101(3);
@@ -592,7 +592,7 @@ namespace iS800
 						this.Calcula_Estatistica_101(2);
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD101_mon("Erro Leitura RE - Timeout", 1);
 							this.Calcula_Estatistica_101(3);
@@ -602,7 +602,7 @@ namespace iS800
 						this.Calcula_Estatistica_101(2);
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_MD101_mon("Erro Leitura RE - não determinado", 1);
 						this.Calcula_Estatistica_101(3);
@@ -644,17 +644,17 @@ namespace iS800
 			checked
 			{
 				int num;
-				if (Operators.CompareString(versao, "43", false) == (DialogResult)0)
+				if (Operators.CompareString(versao, "43", false) == 0)
 				{
 					this.Tela_nivel.Text = Strings.Format((double)(Comunicacao.Buffer_resp[4] - 48) / 2.0, "0.0");
 					num = (int)(Comunicacao.Buffer_resp[5] - 48);
 				}
-				else if (Operators.CompareString(versao, "70", false) == (DialogResult)0)
+				else if (Operators.CompareString(versao, "70", false) == 0)
 				{
 					this.Tela_nivel.Text = Strings.Format((double)((Comunicacao.Buffer_resp[4] - 48) * 200 + (Comunicacao.Buffer_resp[5] - 48)) / 40.0, "0.0");
 					num = (int)(Comunicacao.Buffer_resp[6] - 48);
 				}
-				else if (Operators.CompareString(versao, "810_10", false) == (DialogResult)0)
+				else if (Operators.CompareString(versao, "810_10", false) == 0)
 				{
 					this.Tela_nivel.Text = Strings.Format((double)((Comunicacao.Buffer_resp[4] - 48) * 200 + (Comunicacao.Buffer_resp[5] - 48)) / 40.0, "0.0");
 					num = (int)(Comunicacao.Buffer_resp[6] - 48);
@@ -759,7 +759,7 @@ namespace iS800
 		{
 			Mod_MD.Monitoracao_MD_RE.Num_Rx = 0L;
 			Mod_MD.Monitoracao_MD_RE.Num_Tx = 0L;
-			Mod_MD.Monitoracao_MD_RE.Eficiencia_com = (HorizontalAlignment)0;
+			Mod_MD.Monitoracao_MD_RE.Eficiencia_com = 0;
 			Mod_MD.Monitoracao_MD_RE.Num_Retry = 0L;
 		}
 

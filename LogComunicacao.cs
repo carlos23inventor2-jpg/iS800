@@ -277,7 +277,7 @@ namespace iS800
 		// Token: 0x06002796 RID: 10134 RVA: 0x00423D18 File Offset: 0x00422118
 		private void bt_diretorio_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == (DialogResult)1)
+			if (this.FolderBrowserDialog1.ShowDialog() == 1)
 			{
 				this.tb_diretorio.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Ctrl_Log.diretorio = this.FolderBrowserDialog1.SelectedPath;
@@ -287,10 +287,10 @@ namespace iS800
 		// Token: 0x06002797 RID: 10135 RVA: 0x00423D54 File Offset: 0x00422154
 		private void bt_inicia_Click(object sender, EventArgs e)
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)4;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 4;
 			Comunicacao.Ctrl_Log.flag = false;
-			Comunicacao.Ctrl_Log.bytes_recv = (HorizontalAlignment)0;
-			Comunicacao.Ctrl_Log.timeouts = (HorizontalAlignment)0;
+			Comunicacao.Ctrl_Log.bytes_recv = 0;
+			Comunicacao.Ctrl_Log.timeouts = 0;
 			this.Timer1.Enabled = true;
 		}
 
@@ -304,7 +304,7 @@ namespace iS800
 					int bytesToRead = MyProject.Forms.Plataforma.SerialPort1.BytesToRead;
 					if (bytesToRead > 0)
 					{
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						int num2 = bytesToRead - 1;
 						for (int i = num; i <= num2; i++)
 						{
@@ -312,7 +312,7 @@ namespace iS800
 							Comunicacao.Buffer_Log[Comunicacao.Ctrl_Log.bytes_recv] = b;
 							Comunicacao.Ctrl_Log.bytes_recv = Comunicacao.Ctrl_Log.bytes_recv + 1;
 						}
-						Comunicacao.Ctrl_Log.timeouts = (HorizontalAlignment)0;
+						Comunicacao.Ctrl_Log.timeouts = 0;
 					}
 					else
 					{
@@ -326,8 +326,8 @@ namespace iS800
 								this.TextBox1.AppendText(text);
 							}
 							Comunicacao.Ctrl_Log.flag = false;
-							Comunicacao.Ctrl_Log.bytes_recv = (HorizontalAlignment)0;
-							Comunicacao.Ctrl_Log.timeouts = (HorizontalAlignment)0;
+							Comunicacao.Ctrl_Log.bytes_recv = 0;
+							Comunicacao.Ctrl_Log.timeouts = 0;
 						}
 					}
 					Application.DoEvents();
@@ -338,9 +338,9 @@ namespace iS800
 		// Token: 0x06002799 RID: 10137 RVA: 0x00423E90 File Offset: 0x00422290
 		private string MostraFrameCorsan()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			string text = "";
-			int num2 = (HorizontalAlignment)0;
+			int num2 = 0;
 			checked
 			{
 				int num3 = Comunicacao.Ctrl_Log.bytes_recv - 1;
@@ -355,7 +355,7 @@ namespace iS800
 						{
 							text += "SOH ";
 							int num4 = (int)Comunicacao.Buffer_Log[i];
-							num = (HorizontalAlignment)1;
+							num = 1;
 							int ini = i;
 							break;
 						}
@@ -363,13 +363,13 @@ namespace iS800
 						{
 							text += "STX ";
 							int num4 = (int)Comunicacao.Buffer_Log[i];
-							num = (HorizontalAlignment)1;
+							num = 1;
 							int ini = i;
 							break;
 						}
 						default:
 							text = text + Conversion.Hex(Comunicacao.Buffer_Log[i]) + " ";
-							num = (HorizontalAlignment)0;
+							num = 0;
 							break;
 						}
 						break;
@@ -377,80 +377,80 @@ namespace iS800
 						if (Comunicacao.Buffer_Log[i] >= 49 & Comunicacao.Buffer_Log[i] <= 248)
 						{
 							text = text + "Dest=" + (Comunicacao.Buffer_Log[i] - 48).ToString() + " ";
-							num = (HorizontalAlignment)2;
+							num = 2;
 						}
 						else
 						{
 							text = text + Conversion.Hex(Comunicacao.Buffer_Log[i]) + " ";
-							num = (HorizontalAlignment)0;
+							num = 0;
 						}
 						break;
 					case 2:
 						if (Comunicacao.Buffer_Log[i] >= 49 & Comunicacao.Buffer_Log[i] <= 248)
 						{
 							text = text + "Orig=" + (Comunicacao.Buffer_Log[i] - 48).ToString() + " ";
-							num = (HorizontalAlignment)3;
+							num = 3;
 						}
 						else
 						{
 							text = text + Conversion.Hex(Comunicacao.Buffer_Log[i]) + " ";
-							num = (HorizontalAlignment)0;
+							num = 0;
 						}
 						break;
 					case 3:
 					{
 						int num4;
-						if (num4 == (DialogResult)1)
+						if (num4 == 1)
 						{
 							byte b = Comunicacao.Buffer_Log[i];
-							if (b == (DialogResult)6)
+							if (b == 6)
 							{
 								text += "ACK [";
-								num = (HorizontalAlignment)4;
+								num = 4;
 							}
-							else if (b == (DialogResult)15)
+							else if (b == 15)
 							{
 								text += "NAC [";
-								num = (HorizontalAlignment)4;
+								num = 4;
 							}
 							else
 							{
 								text = text + Conversion.Hex(Comunicacao.Buffer_Log[i]) + " ";
-								num = (HorizontalAlignment)0;
+								num = 0;
 							}
 						}
-						else if (num4 == (DialogResult)2)
+						else if (num4 == 2)
 						{
 							int num5 = (int)Comunicacao.Buffer_Log[i];
 							text = text + "CMD=" + Conversion.Hex(num5) + " [";
-							num = (HorizontalAlignment)4;
+							num = 4;
 						}
 						break;
 					}
 					case 4:
-						if (Comunicacao.Buffer_Log[i] == (DialogResult)3)
+						if (Comunicacao.Buffer_Log[i] == 3)
 						{
 							text += "[Sem Dados] ETX ";
-							num = (HorizontalAlignment)6;
+							num = 6;
 						}
 						else
 						{
 							text += Conversion.Hex(Comunicacao.Buffer_Log[i]);
-							if (Comunicacao.Buffer_Log[i + 1] == (DialogResult)3)
+							if (Comunicacao.Buffer_Log[i + 1] == 3)
 							{
 								text += "] ";
-								num = (HorizontalAlignment)5;
+								num = 5;
 							}
 							else
 							{
-								num = (HorizontalAlignment)4;
+								num = 4;
 								text += " ";
 							}
 						}
 						break;
 					case 5:
 						text += "ETX ";
-						num = (HorizontalAlignment)6;
+						num = 6;
 						break;
 					case 6:
 					{
@@ -467,7 +467,7 @@ namespace iS800
 							Environment.NewLine,
 							Environment.NewLine
 						});
-						num = (HorizontalAlignment)0;
+						num = 0;
 						break;
 					}
 					}
@@ -480,7 +480,7 @@ namespace iS800
 						text2 = DateAndTime.Now.Year.ToString() + DateAndTime.Now.Month.ToString("D2") + DateAndTime.Now.Day.ToString("D2");
 					}
 					Comunicacao.Ctrl_Log.arquivo = text2 + ".log";
-					if (Operators.CompareString(Comunicacao.Ctrl_Log.diretorio, "", false) == (DialogResult)0)
+					if (Operators.CompareString(Comunicacao.Ctrl_Log.diretorio, "", false) == 0)
 					{
 						Comunicacao.Ctrl_Log.diretorio = AppDomain.CurrentDomain.BaseDirectory;
 						this.tb_diretorio.Text = Comunicacao.Ctrl_Log.diretorio;
@@ -512,7 +512,7 @@ namespace iS800
 		// Token: 0x0600279A RID: 10138 RVA: 0x00424450 File Offset: 0x00422850
 		public byte Calcula_Chksum(int ini, int fim)
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = fim - 1;
@@ -520,7 +520,7 @@ namespace iS800
 				{
 					num += (int)Comunicacao.Buffer_Log[i];
 				}
-				num %= (HorizontalAlignment)256;
+				num %= 256;
 				return (byte)num;
 			}
 		}
@@ -532,7 +532,7 @@ namespace iS800
 			string text2 = "*" + Comunicacao.Ctrl_Log.inicio.ToString() + Environment.NewLine;
 			text2 = text2 + "&" + Comunicacao.Ctrl_Log.bytes_recv.ToString() + Environment.NewLine;
 			text2 += "@";
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = Comunicacao.Ctrl_Log.bytes_recv - 1;
@@ -549,7 +549,7 @@ namespace iS800
 						text = DateAndTime.Now.Year.ToString() + DateAndTime.Now.Month.ToString("D2") + DateAndTime.Now.Day.ToString("D2");
 					}
 					Comunicacao.Ctrl_Log.arquivo = text + ".log";
-					if (Operators.CompareString(Comunicacao.Ctrl_Log.diretorio, "", false) == (DialogResult)0)
+					if (Operators.CompareString(Comunicacao.Ctrl_Log.diretorio, "", false) == 0)
 					{
 						Comunicacao.Ctrl_Log.diretorio = AppDomain.CurrentDomain.BaseDirectory;
 						this.tb_diretorio.Text = Comunicacao.Ctrl_Log.diretorio;
@@ -621,15 +621,15 @@ namespace iS800
 		private CheckBox _cb_corsan;
 
 		// Token: 0x04001BEE RID: 7150
-		private const int BLACK = (HorizontalAlignment)0;
+		private const int BLACK = 0;
 
 		// Token: 0x04001BEF RID: 7151
-		private const int RED = (HorizontalAlignment)1;
+		private const int RED = 1;
 
 		// Token: 0x04001BF0 RID: 7152
-		private const int BLUE = (HorizontalAlignment)2;
+		private const int BLUE = 2;
 
 		// Token: 0x04001BF1 RID: 7153
-		private const int GREEN = (HorizontalAlignment)3;
+		private const int GREEN = 3;
 	}
 }

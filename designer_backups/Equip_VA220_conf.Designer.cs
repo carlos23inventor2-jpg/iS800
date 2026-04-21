@@ -96,7 +96,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(109, 28);
 			control2.Size = size;
-			button.TabIndex = (HorizontalAlignment)34;
+			button.TabIndex = 34;
 			button.Text = "Salvar config.";
 			button.UseVisualStyleBackColor = true;
 			button.Click += new global::System.EventHandler(this.Esc_conf_VA220_Click);
@@ -129,7 +129,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_parametros_gerais2 = this.grupo_parametros_gerais;
 			size = new size(335, 327);
 			grupo_parametros_gerais2.Size = size;
-			this.grupo_parametros_gerais.TabIndex = (HorizontalAlignment)1;
+			this.grupo_parametros_gerais.TabIndex = 1;
 			this.grupo_parametros_gerais.TabStop = false;
 			this.grupo_parametros_gerais.Text = "Parâmetros gerais";
 			global::System.Windows.Forms.Control valor_tempo_entre_acionamentos = this.Valor_tempo_entre_acionamentos;
@@ -139,7 +139,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_tempo_entre_acionamentos2 = this.Valor_tempo_entre_acionamentos;
 			size = new size(74, 20);
 			valor_tempo_entre_acionamentos2.Size = size;
-			this.Valor_tempo_entre_acionamentos.TabIndex = (HorizontalAlignment)10;
+			this.Valor_tempo_entre_acionamentos.TabIndex = 10;
 			this.Valor_tempo_entre_acionamentos.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_tempo_motor_parado = this.Valor_tempo_motor_parado;
 			location = new location(243, 208);
@@ -148,7 +148,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_tempo_motor_parado2 = this.Valor_tempo_motor_parado;
 			size = new size(74, 20);
 			valor_tempo_motor_parado2.Size = size;
-			this.Valor_tempo_motor_parado.TabIndex = (HorizontalAlignment)9;
+			this.Valor_tempo_motor_parado.TabIndex = 9;
 			this.Valor_tempo_motor_parado.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_tempo_motor_operando = this.Valor_tempo_motor_operando;
 			location = new location(243, 182);
@@ -157,7 +157,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_tempo_motor_operando2 = this.Valor_tempo_motor_operando;
 			size = new size(74, 20);
 			valor_tempo_motor_operando2.Size = size;
-			this.Valor_tempo_motor_operando.TabIndex = (HorizontalAlignment)8;
+			this.Valor_tempo_motor_operando.TabIndex = 8;
 			this.Valor_tempo_motor_operando.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_tempo_falha_desligar_motor = this.Valor_tempo_falha_desligar_motor;
 			location = new location(243, 156);
@@ -166,7 +166,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_tempo_falha_desligar_motor2 = this.Valor_tempo_falha_desligar_motor;
 			size = new size(74, 20);
 			valor_tempo_falha_desligar_motor2.Size = size;
-			this.Valor_tempo_falha_desligar_motor.TabIndex = (HorizontalAlignment)7;
+			this.Valor_tempo_falha_desligar_motor.TabIndex = 7;
 			this.Valor_tempo_falha_desligar_motor.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_tempo_falha_ligar_motor = this.Valor_tempo_falha_ligar_motor;
 			location = new location(243, 130);
@@ -175,7 +175,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_tempo_falha_ligar_motor2 = this.Valor_tempo_falha_ligar_motor;
 			size = new size(74, 20);
 			valor_tempo_falha_ligar_motor2.Size = size;
-			this.Valor_tempo_falha_ligar_motor.TabIndex = (HorizontalAlignment)6;
+			this.Valor_tempo_falha_ligar_motor.TabIndex = 6;
 			this.Valor_tempo_falha_ligar_motor.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_max_bombas = this.Valor_max_bombas;
 			location = new location(243, 104);
@@ -184,7 +184,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_max_bombas2 = this.Valor_max_bombas;
 			size = new size(74, 20);
 			valor_max_bombas2.Size = size;
-			this.Valor_max_bombas.TabIndex = (HorizontalAlignment)5;
+			this.Valor_max_bombas.TabIndex = 5;
 			this.Valor_max_bombas.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_temp_ptt = this.Valor_temp_ptt;
 			location = new location(243, 78);
@@ -193,7 +193,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_temp_ptt2 = this.Valor_temp_ptt;
 			size = new size(74, 20);
 			valor_temp_ptt2.Size = size;
-			this.Valor_temp_ptt.TabIndex = (HorizontalAlignment)4;
+			this.Valor_temp_ptt.TabIndex = 4;
 			this.Valor_temp_ptt.TextAlign = HorizontalAlignment.Center;
 			this.Label_tempo_entre_acionamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_entre_acionamentos = this.Label_tempo_entre_acionamentos;
@@ -203,7 +203,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_entre_acionamentos2 = this.Label_tempo_entre_acionamentos;
 			size = new size(164, 13);
 			label_tempo_entre_acionamentos2.Size = size;
-			this.Label_tempo_entre_acionamentos.TabIndex = (HorizontalAlignment)4;
+			this.Label_tempo_entre_acionamentos.TabIndex = 4;
 			this.Label_tempo_entre_acionamentos.Text = "Tempo entre acionamentos (min):";
 			this.ComboBox_controle_nivel.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_controle_nivel = this.ComboBox_controle_nivel;
@@ -213,7 +213,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_controle_nivel2 = this.ComboBox_controle_nivel;
 			size = new size(89, 21);
 			comboBox_controle_nivel2.Size = size;
-			this.ComboBox_controle_nivel.TabIndex = (HorizontalAlignment)12;
+			this.ComboBox_controle_nivel.TabIndex = 12;
 			this.ComboBox_modo_operacao.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_modo_operacao = this.ComboBox_modo_operacao;
 			location = new location(228, 260);
@@ -222,7 +222,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_modo_operacao2 = this.ComboBox_modo_operacao;
 			size = new size(89, 21);
 			comboBox_modo_operacao2.Size = size;
-			this.ComboBox_modo_operacao.TabIndex = (HorizontalAlignment)11;
+			this.ComboBox_modo_operacao.TabIndex = 11;
 			this.Label_tempo_minimo_motor_parado.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_minimo_motor_parado = this.Label_tempo_minimo_motor_parado;
 			location = new location(24, 212);
@@ -231,7 +231,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_minimo_motor_parado2 = this.Label_tempo_minimo_motor_parado;
 			size = new size(170, 13);
 			label_tempo_minimo_motor_parado2.Size = size;
-			this.Label_tempo_minimo_motor_parado.TabIndex = (HorizontalAlignment)4;
+			this.Label_tempo_minimo_motor_parado.TabIndex = 4;
 			this.Label_tempo_minimo_motor_parado.Text = "Tempo mínimo motor parado (min):";
 			this.Label_controle_nivel.AutoSize = true;
 			global::System.Windows.Forms.Control label_controle_nivel = this.Label_controle_nivel;
@@ -241,7 +241,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_controle_nivel2 = this.Label_controle_nivel;
 			size = new size(190, 13);
 			label_controle_nivel2.Size = size;
-			this.Label_controle_nivel.TabIndex = (HorizontalAlignment)8;
+			this.Label_controle_nivel.TabIndex = 8;
 			this.Label_controle_nivel.Text = "Controle por nível - Reservatório fonte:";
 			this.Label_modo_operacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_modo_operacao = this.Label_modo_operacao;
@@ -251,7 +251,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_modo_operacao2 = this.Label_modo_operacao;
 			size = new size(103, 13);
 			label_modo_operacao2.Size = size;
-			this.Label_modo_operacao.TabIndex = (HorizontalAlignment)8;
+			this.Label_modo_operacao.TabIndex = 8;
 			this.Label_modo_operacao.Text = "Modo de operação :";
 			this.Label_tempo_minimo_motor_ligado.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_minimo_motor_ligado = this.Label_tempo_minimo_motor_ligado;
@@ -261,7 +261,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_minimo_motor_ligado2 = this.Label_tempo_minimo_motor_ligado;
 			size = new size(182, 13);
 			label_tempo_minimo_motor_ligado2.Size = size;
-			this.Label_tempo_minimo_motor_ligado.TabIndex = (HorizontalAlignment)4;
+			this.Label_tempo_minimo_motor_ligado.TabIndex = 4;
 			this.Label_tempo_minimo_motor_ligado.Text = "Tempo mínimo motor operando (min):";
 			this.Label_tempo_falha_desligar_motor.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_falha_desligar_motor = this.Label_tempo_falha_desligar_motor;
@@ -271,7 +271,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_falha_desligar_motor2 = this.Label_tempo_falha_desligar_motor;
 			size = new size(208, 13);
 			label_tempo_falha_desligar_motor2.Size = size;
-			this.Label_tempo_falha_desligar_motor.TabIndex = (HorizontalAlignment)4;
+			this.Label_tempo_falha_desligar_motor.TabIndex = 4;
 			this.Label_tempo_falha_desligar_motor.Text = "Tempo p/ falha - após desligar motor (min):";
 			this.Label_tempo_falha_ligar_motor.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_falha_ligar_motor = this.Label_tempo_falha_ligar_motor;
@@ -281,7 +281,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_falha_ligar_motor2 = this.Label_tempo_falha_ligar_motor;
 			size = new size(191, 13);
 			label_tempo_falha_ligar_motor2.Size = size;
-			this.Label_tempo_falha_ligar_motor.TabIndex = (HorizontalAlignment)4;
+			this.Label_tempo_falha_ligar_motor.TabIndex = 4;
 			this.Label_tempo_falha_ligar_motor.Text = "Tempo p/ falha - após ligar motor (min):";
 			this.Label_Max_bombas.AutoSize = true;
 			global::System.Windows.Forms.Control label_Max_bombas = this.Label_Max_bombas;
@@ -291,7 +291,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_Max_bombas2 = this.Label_Max_bombas;
 			size = new size(170, 13);
 			label_Max_bombas2.Size = size;
-			this.Label_Max_bombas.TabIndex = (HorizontalAlignment)4;
+			this.Label_Max_bombas.TabIndex = 4;
 			this.Label_Max_bombas.Text = "Número max. bombas simultâneas:";
 			this.Label_tempo_ptt.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt = this.Label_tempo_ptt;
@@ -301,7 +301,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_ptt2 = this.Label_tempo_ptt;
 			size = new size(140, 13);
 			label_tempo_ptt2.Size = size;
-			this.Label_tempo_ptt.TabIndex = (HorizontalAlignment)4;
+			this.Label_tempo_ptt.TabIndex = 4;
 			this.Label_tempo_ptt.Text = "Tempo Espera de PTT (ms):";
 			global::System.Windows.Forms.Control valor_end_mestre = this.Valor_end_mestre;
 			location = new location(244, 26);
@@ -310,7 +310,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_mestre2 = this.Valor_end_mestre;
 			size = new size(73, 20);
 			valor_end_mestre2.Size = size;
-			this.Valor_end_mestre.TabIndex = (HorizontalAlignment)2;
+			this.Valor_end_mestre.TabIndex = 2;
 			this.Valor_end_mestre.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_end_est = this.Valor_end_est;
 			location = new location(243, 52);
@@ -319,7 +319,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_est2 = this.Valor_end_est;
 			size = new size(74, 20);
 			valor_end_est2.Size = size;
-			this.Valor_end_est.TabIndex = (HorizontalAlignment)3;
+			this.Valor_end_est.TabIndex = 3;
 			this.Valor_end_est.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_mestre.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre = this.Label_end_mestre;
@@ -329,7 +329,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_mestre2 = this.Label_end_mestre;
 			size = new size(109, 13);
 			label_end_mestre2.Size = size;
-			this.Label_end_mestre.TabIndex = (HorizontalAlignment)1;
+			this.Label_end_mestre.TabIndex = 1;
 			this.Label_end_mestre.Text = "Endereço do Mestre :";
 			this.Label_end_est.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_est = this.Label_end_est;
@@ -339,7 +339,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_est2 = this.Label_end_est;
 			size = new size(116, 13);
 			label_end_est2.Size = size;
-			this.Label_end_est.TabIndex = (HorizontalAlignment)0;
+			this.Label_end_est.TabIndex = 0;
 			this.Label_end_est.Text = "Endereço da Estação :";
 			this.Grupo_ctrl.Controls.Add(button);
 			this.Grupo_ctrl.Controls.Add(this.Box_Msg);
@@ -351,7 +351,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_ctrl2 = this.Grupo_ctrl;
 			size = new size(335, 105);
 			grupo_ctrl2.Size = size;
-			this.Grupo_ctrl.TabIndex = (HorizontalAlignment)32;
+			this.Grupo_ctrl.TabIndex = 32;
 			this.Grupo_ctrl.TabStop = false;
 			this.Grupo_ctrl.Text = "Comandos e Status";
 			global::System.Windows.Forms.Control box_Msg = this.Box_Msg;
@@ -361,7 +361,7 @@ namespace iS800
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new size(293, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = (HorizontalAlignment)5;
+			this.Box_Msg.TabIndex = 5;
 			this.Box_Msg.TabStop = false;
 			this.Box_Msg.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control ler_conf_VA = this.Ler_conf_VA220;
@@ -371,7 +371,7 @@ namespace iS800
 			global::System.Windows.Forms.Control ler_conf_VA2 = this.Ler_conf_VA220;
 			size = new size(109, 28);
 			ler_conf_VA2.Size = size;
-			this.Ler_conf_VA220.TabIndex = (HorizontalAlignment)33;
+			this.Ler_conf_VA220.TabIndex = 33;
 			this.Ler_conf_VA220.Text = "Ler configuração";
 			this.Ler_conf_VA220.UseVisualStyleBackColor = true;
 			this.grupo_programacao_io.Controls.Add(this.GroupBox2);
@@ -383,7 +383,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_programacao_io2 = this.grupo_programacao_io;
 			size = new size(567, 327);
 			grupo_programacao_io2.Size = size;
-			this.grupo_programacao_io.TabIndex = (HorizontalAlignment)13;
+			this.grupo_programacao_io.TabIndex = 13;
 			this.grupo_programacao_io.TabStop = false;
 			this.grupo_programacao_io.Text = "Programação de I/O";
 			this.GroupBox2.Controls.Add(this.ComboBox_S08);
@@ -409,7 +409,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox2;
 			size = new size(249, 277);
 			groupBox2.Size = size;
-			this.GroupBox2.TabIndex = (HorizontalAlignment)23;
+			this.GroupBox2.TabIndex = 23;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Saídas Digitais";
 			this.ComboBox_S08.FormattingEnabled = true;
@@ -420,7 +420,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S2 = this.ComboBox_S08;
 			size = new size(187, 21);
 			comboBox_S2.Size = size;
-			this.ComboBox_S08.TabIndex = (HorizontalAlignment)31;
+			this.ComboBox_S08.TabIndex = 31;
 			this.ComboBox_S07.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S3 = this.ComboBox_S07;
 			location = new location(45, 204);
@@ -429,7 +429,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S4 = this.ComboBox_S07;
 			size = new size(187, 21);
 			comboBox_S4.Size = size;
-			this.ComboBox_S07.TabIndex = (HorizontalAlignment)30;
+			this.ComboBox_S07.TabIndex = 30;
 			this.ComboBox_S06.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S5 = this.ComboBox_S06;
 			location = new location(45, 175);
@@ -438,7 +438,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S6 = this.ComboBox_S06;
 			size = new size(187, 21);
 			comboBox_S6.Size = size;
-			this.ComboBox_S06.TabIndex = (HorizontalAlignment)29;
+			this.ComboBox_S06.TabIndex = 29;
 			this.ComboBox_S05.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S7 = this.ComboBox_S05;
 			location = new location(45, 146);
@@ -447,7 +447,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S8 = this.ComboBox_S05;
 			size = new size(187, 21);
 			comboBox_S8.Size = size;
-			this.ComboBox_S05.TabIndex = (HorizontalAlignment)28;
+			this.ComboBox_S05.TabIndex = 28;
 			this.ComboBox_S04.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S9 = this.ComboBox_S04;
 			location = new location(45, 117);
@@ -456,7 +456,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S10 = this.ComboBox_S04;
 			size = new size(187, 21);
 			comboBox_S10.Size = size;
-			this.ComboBox_S04.TabIndex = (HorizontalAlignment)27;
+			this.ComboBox_S04.TabIndex = 27;
 			this.ComboBox_S03.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S11 = this.ComboBox_S03;
 			location = new location(45, 88);
@@ -465,7 +465,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S12 = this.ComboBox_S03;
 			size = new size(187, 21);
 			comboBox_S12.Size = size;
-			this.ComboBox_S03.TabIndex = (HorizontalAlignment)26;
+			this.ComboBox_S03.TabIndex = 26;
 			this.ComboBox_S02.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S13 = this.ComboBox_S02;
 			location = new location(45, 59);
@@ -474,7 +474,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S14 = this.ComboBox_S02;
 			size = new size(187, 21);
 			comboBox_S14.Size = size;
-			this.ComboBox_S02.TabIndex = (HorizontalAlignment)25;
+			this.ComboBox_S02.TabIndex = 25;
 			this.ComboBox_S01.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_S15 = this.ComboBox_S01;
 			location = new location(45, 30);
@@ -483,7 +483,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_S16 = this.ComboBox_S01;
 			size = new size(187, 21);
 			comboBox_S16.Size = size;
-			this.ComboBox_S01.TabIndex = (HorizontalAlignment)24;
+			this.ComboBox_S01.TabIndex = 24;
 			this.Label_S08.AutoSize = true;
 			global::System.Windows.Forms.Control label_S = this.Label_S08;
 			location = new location(10, 237);
@@ -492,7 +492,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S2 = this.Label_S08;
 			size = new size(29, 13);
 			label_S2.Size = size;
-			this.Label_S08.TabIndex = (HorizontalAlignment)9;
+			this.Label_S08.TabIndex = 9;
 			this.Label_S08.Text = "S 08";
 			this.Label_S07.AutoSize = true;
 			global::System.Windows.Forms.Control label_S3 = this.Label_S07;
@@ -502,7 +502,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S4 = this.Label_S07;
 			size = new size(29, 13);
 			label_S4.Size = size;
-			this.Label_S07.TabIndex = (HorizontalAlignment)9;
+			this.Label_S07.TabIndex = 9;
 			this.Label_S07.Text = "S 07";
 			this.Label_S06.AutoSize = true;
 			global::System.Windows.Forms.Control label_S5 = this.Label_S06;
@@ -512,7 +512,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S6 = this.Label_S06;
 			size = new size(29, 13);
 			label_S6.Size = size;
-			this.Label_S06.TabIndex = (HorizontalAlignment)9;
+			this.Label_S06.TabIndex = 9;
 			this.Label_S06.Text = "S 06";
 			this.Label_S05.AutoSize = true;
 			global::System.Windows.Forms.Control label_S7 = this.Label_S05;
@@ -522,7 +522,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S8 = this.Label_S05;
 			size = new size(29, 13);
 			label_S8.Size = size;
-			this.Label_S05.TabIndex = (HorizontalAlignment)9;
+			this.Label_S05.TabIndex = 9;
 			this.Label_S05.Text = "S 05";
 			this.Label_S04.AutoSize = true;
 			global::System.Windows.Forms.Control label_S9 = this.Label_S04;
@@ -532,7 +532,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S10 = this.Label_S04;
 			size = new size(29, 13);
 			label_S10.Size = size;
-			this.Label_S04.TabIndex = (HorizontalAlignment)9;
+			this.Label_S04.TabIndex = 9;
 			this.Label_S04.Text = "S 04";
 			this.Label_S03.AutoSize = true;
 			global::System.Windows.Forms.Control label_S11 = this.Label_S03;
@@ -542,7 +542,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S12 = this.Label_S03;
 			size = new size(29, 13);
 			label_S12.Size = size;
-			this.Label_S03.TabIndex = (HorizontalAlignment)9;
+			this.Label_S03.TabIndex = 9;
 			this.Label_S03.Text = "S 03";
 			this.Label_S02.AutoSize = true;
 			global::System.Windows.Forms.Control label_S13 = this.Label_S02;
@@ -552,7 +552,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S14 = this.Label_S02;
 			size = new size(29, 13);
 			label_S14.Size = size;
-			this.Label_S02.TabIndex = (HorizontalAlignment)9;
+			this.Label_S02.TabIndex = 9;
 			this.Label_S02.Text = "S 02";
 			this.Label_S01.AutoSize = true;
 			global::System.Windows.Forms.Control label_S15 = this.Label_S01;
@@ -562,7 +562,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_S16 = this.Label_S01;
 			size = new size(29, 13);
 			label_S16.Size = size;
-			this.Label_S01.TabIndex = (HorizontalAlignment)9;
+			this.Label_S01.TabIndex = 9;
 			this.Label_S01.Text = "S 01";
 			this.GroupBox1.Controls.Add(this.ComboBox_E08);
 			this.GroupBox1.Controls.Add(this.ComboBox_E07);
@@ -587,7 +587,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox1;
 			size = new size(249, 277);
 			groupBox4.Size = size;
-			this.GroupBox1.TabIndex = (HorizontalAlignment)14;
+			this.GroupBox1.TabIndex = 14;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "Entradas Digitais";
 			this.ComboBox_E08.FormattingEnabled = true;
@@ -598,7 +598,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E2 = this.ComboBox_E08;
 			size = new size(187, 21);
 			comboBox_E2.Size = size;
-			this.ComboBox_E08.TabIndex = (HorizontalAlignment)22;
+			this.ComboBox_E08.TabIndex = 22;
 			this.ComboBox_E07.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E3 = this.ComboBox_E07;
 			location = new location(45, 204);
@@ -607,7 +607,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E4 = this.ComboBox_E07;
 			size = new size(187, 21);
 			comboBox_E4.Size = size;
-			this.ComboBox_E07.TabIndex = (HorizontalAlignment)21;
+			this.ComboBox_E07.TabIndex = 21;
 			this.ComboBox_E06.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E5 = this.ComboBox_E06;
 			location = new location(45, 175);
@@ -616,7 +616,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E6 = this.ComboBox_E06;
 			size = new size(187, 21);
 			comboBox_E6.Size = size;
-			this.ComboBox_E06.TabIndex = (HorizontalAlignment)20;
+			this.ComboBox_E06.TabIndex = 20;
 			this.ComboBox_E05.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E7 = this.ComboBox_E05;
 			location = new location(45, 146);
@@ -625,7 +625,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E8 = this.ComboBox_E05;
 			size = new size(187, 21);
 			comboBox_E8.Size = size;
-			this.ComboBox_E05.TabIndex = (HorizontalAlignment)19;
+			this.ComboBox_E05.TabIndex = 19;
 			this.ComboBox_E04.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E9 = this.ComboBox_E04;
 			location = new location(45, 117);
@@ -634,7 +634,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E10 = this.ComboBox_E04;
 			size = new size(187, 21);
 			comboBox_E10.Size = size;
-			this.ComboBox_E04.TabIndex = (HorizontalAlignment)18;
+			this.ComboBox_E04.TabIndex = 18;
 			this.ComboBox_E03.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E11 = this.ComboBox_E03;
 			location = new location(45, 88);
@@ -643,7 +643,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E12 = this.ComboBox_E03;
 			size = new size(187, 21);
 			comboBox_E12.Size = size;
-			this.ComboBox_E03.TabIndex = (HorizontalAlignment)17;
+			this.ComboBox_E03.TabIndex = 17;
 			this.ComboBox_E02.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E13 = this.ComboBox_E02;
 			location = new location(45, 59);
@@ -652,7 +652,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E14 = this.ComboBox_E02;
 			size = new size(187, 21);
 			comboBox_E14.Size = size;
-			this.ComboBox_E02.TabIndex = (HorizontalAlignment)16;
+			this.ComboBox_E02.TabIndex = 16;
 			this.ComboBox_E01.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E15 = this.ComboBox_E01;
 			location = new location(45, 30);
@@ -661,7 +661,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_E16 = this.ComboBox_E01;
 			size = new size(187, 21);
 			comboBox_E16.Size = size;
-			this.ComboBox_E01.TabIndex = (HorizontalAlignment)15;
+			this.ComboBox_E01.TabIndex = 15;
 			this.Label_E08.AutoSize = true;
 			global::System.Windows.Forms.Control label_E = this.Label_E08;
 			location = new location(10, 237);
@@ -670,7 +670,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E2 = this.Label_E08;
 			size = new size(29, 13);
 			label_E2.Size = size;
-			this.Label_E08.TabIndex = (HorizontalAlignment)9;
+			this.Label_E08.TabIndex = 9;
 			this.Label_E08.Text = "E 08";
 			this.Label_E07.AutoSize = true;
 			global::System.Windows.Forms.Control label_E3 = this.Label_E07;
@@ -680,7 +680,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E4 = this.Label_E07;
 			size = new size(29, 13);
 			label_E4.Size = size;
-			this.Label_E07.TabIndex = (HorizontalAlignment)9;
+			this.Label_E07.TabIndex = 9;
 			this.Label_E07.Text = "E 07";
 			this.Label_E06.AutoSize = true;
 			global::System.Windows.Forms.Control label_E5 = this.Label_E06;
@@ -690,7 +690,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E6 = this.Label_E06;
 			size = new size(29, 13);
 			label_E6.Size = size;
-			this.Label_E06.TabIndex = (HorizontalAlignment)9;
+			this.Label_E06.TabIndex = 9;
 			this.Label_E06.Text = "E 06";
 			this.Label_E05.AutoSize = true;
 			global::System.Windows.Forms.Control label_E7 = this.Label_E05;
@@ -700,7 +700,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E8 = this.Label_E05;
 			size = new size(29, 13);
 			label_E8.Size = size;
-			this.Label_E05.TabIndex = (HorizontalAlignment)9;
+			this.Label_E05.TabIndex = 9;
 			this.Label_E05.Text = "E 05";
 			this.Label_E04.AutoSize = true;
 			global::System.Windows.Forms.Control label_E9 = this.Label_E04;
@@ -710,7 +710,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E10 = this.Label_E04;
 			size = new size(29, 13);
 			label_E10.Size = size;
-			this.Label_E04.TabIndex = (HorizontalAlignment)9;
+			this.Label_E04.TabIndex = 9;
 			this.Label_E04.Text = "E 04";
 			this.Label_E03.AutoSize = true;
 			global::System.Windows.Forms.Control label_E11 = this.Label_E03;
@@ -720,7 +720,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E12 = this.Label_E03;
 			size = new size(29, 13);
 			label_E12.Size = size;
-			this.Label_E03.TabIndex = (HorizontalAlignment)9;
+			this.Label_E03.TabIndex = 9;
 			this.Label_E03.Text = "E 03";
 			this.Label_E02.AutoSize = true;
 			global::System.Windows.Forms.Control label_E13 = this.Label_E02;
@@ -730,7 +730,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E14 = this.Label_E02;
 			size = new size(29, 13);
 			label_E14.Size = size;
-			this.Label_E02.TabIndex = (HorizontalAlignment)9;
+			this.Label_E02.TabIndex = 9;
 			this.Label_E02.Text = "E 02";
 			this.Label_E01.AutoSize = true;
 			global::System.Windows.Forms.Control label_E15 = this.Label_E01;
@@ -740,7 +740,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_E16 = this.Label_E01;
 			size = new size(29, 13);
 			label_E16.Size = size;
-			this.Label_E01.TabIndex = (HorizontalAlignment)9;
+			this.Label_E01.TabIndex = 9;
 			this.Label_E01.Text = "E 01";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);

@@ -49,7 +49,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(305, 13);
 			label2.Size = size;
-			this.Label1.TabIndex = (HorizontalAlignment)0;
+			this.Label1.TabIndex = 0;
 			this.Label1.Text = "Visualização e captura de dados que trafegam pela canal serial";
 			this.cb_disco.AutoSize = true;
 			global::System.Windows.Forms.Control cb_disco = this.cb_disco;
@@ -59,7 +59,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_disco2 = this.cb_disco;
 			size = new size(192, 17);
 			cb_disco2.Size = size;
-			this.cb_disco.TabIndex = (HorizontalAlignment)1;
+			this.cb_disco.TabIndex = 1;
 			this.cb_disco.Text = "Armazena em disco. Formato ASCII";
 			this.cb_disco.UseVisualStyleBackColor = true;
 			this.Label2.AutoSize = true;
@@ -70,7 +70,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label4 = this.Label2;
 			size = new size(49, 13);
 			label4.Size = size;
-			this.Label2.TabIndex = (HorizontalAlignment)5;
+			this.Label2.TabIndex = 5;
 			this.Label2.Text = "Diretório:";
 			global::System.Windows.Forms.Control tb_diretorio = this.tb_diretorio;
 			location = new location(294, 50);
@@ -79,7 +79,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_diretorio2 = this.tb_diretorio;
 			size = new size(455, 20);
 			tb_diretorio2.Size = size;
-			this.tb_diretorio.TabIndex = (HorizontalAlignment)6;
+			this.tb_diretorio.TabIndex = 6;
 			global::System.Windows.Forms.Control bt_diretorio = this.bt_diretorio;
 			location = new location(755, 47);
 			bt_diretorio.Location = location;
@@ -87,7 +87,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_diretorio2 = this.bt_diretorio;
 			size = new size(34, 23);
 			bt_diretorio2.Size = size;
-			this.bt_diretorio.TabIndex = (HorizontalAlignment)7;
+			this.bt_diretorio.TabIndex = 7;
 			this.bt_diretorio.Text = "...";
 			this.bt_diretorio.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control bt_inicia = this.bt_inicia;
@@ -97,7 +97,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_inicia2 = this.bt_inicia;
 			size = new size(175, 23);
 			bt_inicia2.Size = size;
-			this.bt_inicia.TabIndex = (HorizontalAlignment)15;
+			this.bt_inicia.TabIndex = 15;
 			this.bt_inicia.Text = "Inicia Captura";
 			this.bt_inicia.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control textBox = this.TextBox1;
@@ -109,7 +109,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox2 = this.TextBox1;
 			size = new size(774, 318);
 			textBox2.Size = size;
-			this.TextBox1.TabIndex = (HorizontalAlignment)16;
+			this.TextBox1.TabIndex = 16;
 			this.Label7.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label7;
 			location = new location(219, 149);
@@ -118,7 +118,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label6 = this.Label7;
 			size = new size(39, 13);
 			label6.Size = size;
-			this.Label7.TabIndex = (HorizontalAlignment)17;
+			this.Label7.TabIndex = 17;
 			this.Label7.Text = "Label7";
 			this.cb_corsan.AutoSize = true;
 			global::System.Windows.Forms.Control cb_corsan = this.cb_corsan;
@@ -128,7 +128,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_corsan2 = this.cb_corsan;
 			size = new size(149, 17);
 			cb_corsan2.Size = size;
-			this.cb_corsan.TabIndex = (HorizontalAlignment)18;
+			this.cb_corsan.TabIndex = 18;
 			this.cb_corsan.Text = "Parse Protocolo CORSAN";
 			this.cb_corsan.UseVisualStyleBackColor = true;
 			global::System.Drawing.SizeF autoScaleDimensions;

@@ -1743,7 +1743,7 @@ namespace iS800
 		// Token: 0x060010EC RID: 4332 RVA: 0x00311D60 File Offset: 0x00310160
 		private void Equip_202_mon_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == (DialogResult)0)
+			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == 0)
 			{
 				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", (MsgBoxStyle)0, null);
 				return;
@@ -1757,9 +1757,9 @@ namespace iS800
 		{
 			this.Mon_820_DGVReferenciaColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVReferenciaColunas[0].NomeColuna = "range";
-			this.Mon_820_DGVReferenciaColunas[0].LarguraColuna = (HorizontalAlignment)100;
-			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = (HorizontalAlignment)64;
-			this.Mon_820_DGVReferenciaColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
+			this.Mon_820_DGVReferenciaColunas[0].LarguraColuna = 100;
+			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVReferenciaColunas[0].NumeroLinhaMenu = 0;
 		}
 
 		// Token: 0x060010EE RID: 4334 RVA: 0x00311E14 File Offset: 0x00310214
@@ -1767,17 +1767,17 @@ namespace iS800
 		{
 			this.Mon_820_DGVSAColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVSAColunas[0].NomeColuna = "range";
-			this.Mon_820_DGVSAColunas[0].LarguraColuna = (HorizontalAlignment)100;
-			this.Mon_820_DGVSAColunas[0].AlingColuna = (HorizontalAlignment)64;
-			this.Mon_820_DGVSAColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
+			this.Mon_820_DGVSAColunas[0].LarguraColuna = 100;
+			this.Mon_820_DGVSAColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVSAColunas[0].NumeroLinhaMenu = 0;
 		}
 
 		// Token: 0x060010EF RID: 4335 RVA: 0x00311E88 File Offset: 0x00310288
 		private void GeraDataGridView_Referencia()
 		{
 			this.dgv_Referencias.Columns.Clear();
-			this.dgv_Referencias.CellBorderStyle = (HorizontalAlignment)1;
-			int num = (HorizontalAlignment)0;
+			this.dgv_Referencias.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			int num = 0;
 			checked
 			{
 				do
@@ -1795,9 +1795,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 0);
-				this.dgv_Referencias.RowCount = (HorizontalAlignment)4;
-				this.dgv_Referencias.RowHeadersWidth = (HorizontalAlignment)80;
-				int num2 = (HorizontalAlignment)1;
+				this.dgv_Referencias.RowCount = 4;
+				this.dgv_Referencias.RowHeadersWidth = 80;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.dgv_Referencias.Rows)
@@ -1825,8 +1825,8 @@ namespace iS800
 		private void GeraDataGridView_SA()
 		{
 			this.dgv_SA.Columns.Clear();
-			this.dgv_SA.CellBorderStyle = (HorizontalAlignment)1;
-			int num = (HorizontalAlignment)0;
+			this.dgv_SA.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			int num = 0;
 			checked
 			{
 				do
@@ -1844,9 +1844,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 0);
-				this.dgv_SA.RowCount = (HorizontalAlignment)2;
-				this.dgv_SA.RowHeadersWidth = (HorizontalAlignment)80;
-				int num2 = (HorizontalAlignment)1;
+				this.dgv_SA.RowCount = 2;
+				this.dgv_SA.RowHeadersWidth = 80;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.dgv_SA.Rows)
@@ -1873,9 +1873,9 @@ namespace iS800
 		// Token: 0x060010F1 RID: 4337 RVA: 0x003120F0 File Offset: 0x003104F0
 		private void Equip_202_mon_Load(object sender, EventArgs e)
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
-			int num = (HorizontalAlignment)48;
+			int num = 48;
 			string text = "O equipamento deve estar em modo de operação!\r\nDeve ser removido o jumper de configuração.\r\n";
 			switch (Geral.Config_geral.Protocolo)
 			{
@@ -1887,25 +1887,25 @@ namespace iS800
 				break;
 			}
 			Interaction.MsgBox(text, num, " Atenção");
-			int num2 = (HorizontalAlignment)0;
+			int num2 = 0;
 			checked
 			{
 				do
 				{
-					this.ValorSA[num2].Lmte_inf = (HorizontalAlignment)0;
-					this.ValorSA[num2].Lmte_sup = (HorizontalAlignment)4000;
-					this.ValorSA[num2].Padrao = (HorizontalAlignment)0;
+					this.ValorSA[num2].Lmte_inf = 0;
+					this.ValorSA[num2].Lmte_sup = 4000;
+					this.ValorSA[num2].Padrao = 0;
 					this.ValorSA[num2].ValorPadrao();
 					num2++;
 				}
 				while (num2 <= 1);
 				RT_geral.Lmte_Init_ok = true;
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
-					this.ValorReferencia[num2].Lmte_inf = (HorizontalAlignment)0;
-					this.ValorReferencia[num2].Lmte_sup = (HorizontalAlignment)4000;
-					this.ValorReferencia[num2].Padrao = (HorizontalAlignment)0;
+					this.ValorReferencia[num2].Lmte_inf = 0;
+					this.ValorReferencia[num2].Lmte_sup = 4000;
+					this.ValorReferencia[num2].Padrao = 0;
 					this.ValorReferencia[num2].ValorPadrao();
 					num2++;
 				}
@@ -1914,9 +1914,9 @@ namespace iS800
 				this.GeraDataGridView_Referencia();
 				this.InicializaEstrutura_DataGridView_SA();
 				this.GeraDataGridView_SA();
-				this.dgv_EA.RowCount = (HorizontalAlignment)16;
-				this.dgv_EA.RowHeadersWidth = (HorizontalAlignment)75;
-				num2 = (HorizontalAlignment)0;
+				this.dgv_EA.RowCount = 16;
+				this.dgv_EA.RowHeadersWidth = 75;
+				num2 = 0;
 				do
 				{
 					this.dgv_EA.Rows[num2].HeaderCell.Value = "EA" + (num2 + 1).ToString();
@@ -1925,29 +1925,29 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				this.dgv_Controle.RowCount = (HorizontalAlignment)8;
-				this.dgv_Controle.RowHeadersWidth = (HorizontalAlignment)50;
-				num2 = (HorizontalAlignment)0;
+				this.dgv_Controle.RowCount = 8;
+				this.dgv_Controle.RowHeadersWidth = 50;
+				num2 = 0;
 				do
 				{
 					this.dgv_Controle.Rows[num2].HeaderCell.Value = "C" + (num2 + 1).ToString();
 					this.dgv_Controle.Rows[num2].Cells[0].Value = "";
-					this.dgv_Controle.Rows[num2].Height = (HorizontalAlignment)64;
+					this.dgv_Controle.Rows[num2].Height = 64;
 					Bitmap chave_vazia = Resources.chave_vazia;
 					this.dgv_Controle.Rows[num2].Cells[2].Value = chave_vazia;
-					this.dgv_Controle.Columns[2].Width = (HorizontalAlignment)64;
+					this.dgv_Controle.Columns[2].Width = 64;
 					this.dgv_Controle.Rows[num2].Cells[1].Value = chave_vazia;
-					this.dgv_Controle.Columns[1].Width = (HorizontalAlignment)64;
+					this.dgv_Controle.Columns[1].Width = 64;
 					this.dgv_Controle.Rows[num2].Cells[3].Value = chave_vazia;
-					this.dgv_Controle.Columns[3].Width = (HorizontalAlignment)64;
+					this.dgv_Controle.Columns[3].Width = 64;
 					num2++;
 				}
 				while (num2 <= 7);
-				if (Geral.Ctrl_versao == (DialogResult)30)
+				if (Geral.Ctrl_versao == 30)
 				{
 					this.gb_SA.Enabled = false;
 				}
-				else if (Geral.Ctrl_versao == (DialogResult)30)
+				else if (Geral.Ctrl_versao == 30)
 				{
 					this.gb_SA.Enabled = true;
 				}
@@ -1960,15 +1960,15 @@ namespace iS800
 		{
 			int[] array = new int[41];
 			this.Timer_monitoracao.Enabled = false;
-			this.Timer_monitoracao.Interval = (HorizontalAlignment)1000;
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
+			this.Timer_monitoracao.Interval = 1000;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
 			checked
 			{
 				switch (Mod_MD.Monitoracao_MD_RQ.Controle_mon)
 				{
 				case 1:
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					while (i > 0)
 					{
 						i--;
@@ -1977,7 +1977,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -1988,7 +1988,7 @@ namespace iS800
 						case 1:
 							goto IL_146;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Setpoints - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2000,7 +2000,7 @@ namespace iS800
 							}
 							break;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Setpoints - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2018,7 +2018,7 @@ namespace iS800
 						Comunicacao.Rotina_Delay(400L);
 						continue;
 						IL_146:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -2035,7 +2035,7 @@ namespace iS800
 					break;
 				case 2:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					while (i > 0)
 					{
 						i--;
@@ -2047,8 +2047,8 @@ namespace iS800
 						array[5] = this.ValorReferencia[3].Valor % 200;
 						array[6] = this.ValorReferencia[4].Valor / 200;
 						array[7] = this.ValorReferencia[4].Valor % 200;
-						array[8] = (HorizontalAlignment)0;
-						array[9] = (HorizontalAlignment)0;
+						array[8] = 0;
+						array[9] = 0;
 						if (this.ck_ativa_ref.Checked)
 						{
 							Comunicacao.CMD_Tx_condax(Mod_MD.Monitoracao_MD_RQ.Estacao, Mod_MD.Monitoracao_MD_RQ.Mestre, 57, 10, array);
@@ -2059,17 +2059,17 @@ namespace iS800
 						}
 						if (this.ck_ativa_sa.Checked)
 						{
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)5;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 5;
 						}
 						else
 						{
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 						}
 						do
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -2080,7 +2080,7 @@ namespace iS800
 						case 1:
 							goto IL_3CA;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2092,7 +2092,7 @@ namespace iS800
 							}
 							break;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2110,7 +2110,7 @@ namespace iS800
 						Comunicacao.Rotina_Delay(400L);
 						continue;
 						IL_3CA:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -2123,12 +2123,12 @@ namespace iS800
 					break;
 				case 3:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					while (i > 0)
 					{
 						i--;
 						string versao = Geral.Config_geral.Versao;
-						if (Operators.CompareString(versao, "820_10", false) == (DialogResult)0)
+						if (Operators.CompareString(versao, "820_10", false) == 0)
 						{
 							array[0] = (int)((long)Math.Round(Conversion.Val(this.Valor_NivelDesejado.Text)) / 200L);
 							array[1] = (int)Math.Round(Conversion.Val(this.Valor_NivelDesejado.Text) % 200.0);
@@ -2170,7 +2170,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -2180,7 +2180,7 @@ namespace iS800
 						case 1:
 							goto IL_926;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Escrita Setpoints - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2191,7 +2191,7 @@ namespace iS800
 							}
 							break;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Escrita Setpoints - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2208,7 +2208,7 @@ namespace iS800
 						Comunicacao.Rotina_Delay(400L);
 						continue;
 						IL_926:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -2224,7 +2224,7 @@ namespace iS800
 					break;
 				case 4:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					while (i > 0)
 					{
 						i--;
@@ -2234,7 +2234,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -2247,7 +2247,7 @@ namespace iS800
 						case 1:
 							goto IL_A83;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro ao executar o camando - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2258,7 +2258,7 @@ namespace iS800
 							}
 							break;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro ao executar o camando - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2275,7 +2275,7 @@ namespace iS800
 						Comunicacao.Rotina_Delay(400L);
 						continue;
 						IL_A83:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -2289,27 +2289,27 @@ namespace iS800
 					break;
 				case 5:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					while (i > 0)
 					{
 						i--;
-						array[0] = (HorizontalAlignment)1;
+						array[0] = 1;
 						array[1] = this.ValorSA[0].Valor / 200;
 						array[2] = this.ValorSA[0].Valor % 200;
 						Comunicacao.CMD_Tx_condax(Mod_MD.Monitoracao_MD_RQ.Estacao, Mod_MD.Monitoracao_MD_RQ.Mestre, 86, 3, array);
 						if (this.ck_ativa_sa.Checked)
 						{
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)6;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 6;
 						}
 						else
 						{
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 						}
 						do
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -2319,7 +2319,7 @@ namespace iS800
 						case 1:
 							goto IL_C13;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2331,7 +2331,7 @@ namespace iS800
 							}
 							break;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2349,7 +2349,7 @@ namespace iS800
 						Comunicacao.Rotina_Delay(400L);
 						continue;
 						IL_C13:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -2362,11 +2362,11 @@ namespace iS800
 					break;
 				case 6:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					while (i > 0)
 					{
 						i--;
-						array[0] = (HorizontalAlignment)2;
+						array[0] = 2;
 						array[1] = this.ValorSA[1].Valor / 200;
 						array[2] = this.ValorSA[1].Valor % 200;
 						Comunicacao.CMD_Tx_condax(Mod_MD.Monitoracao_MD_RQ.Estacao, Mod_MD.Monitoracao_MD_RQ.Mestre, 86, 3, array);
@@ -2374,7 +2374,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -2384,7 +2384,7 @@ namespace iS800
 						case 1:
 							goto IL_D6C;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Equipamento - ChkSum", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2396,7 +2396,7 @@ namespace iS800
 							}
 							break;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_MD202_mon("Erro Leitura Equipamento - Timeout", 1);
 								this.Calcula_Estatistica_820_300(3);
@@ -2414,7 +2414,7 @@ namespace iS800
 						Comunicacao.Rotina_Delay(400L);
 						continue;
 						IL_D6C:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -2512,7 +2512,7 @@ namespace iS800
 			string versao = Geral.Config_geral.Versao;
 			checked
 			{
-				if (Operators.CompareString(versao, "820_10", false) == (DialogResult)0)
+				if (Operators.CompareString(versao, "820_10", false) == 0)
 				{
 					this.Valor_NivelDesejado.Text = Conversions.ToString((int)((Comunicacao.Buffer_resp[4] - 48) * 200 + (Comunicacao.Buffer_resp[5] - 48)));
 					this.Valor_NivelB1.Text = Conversions.ToString((int)((Comunicacao.Buffer_resp[6] - 48) * 200 + (Comunicacao.Buffer_resp[7] - 48)));
@@ -2564,7 +2564,7 @@ namespace iS800
 		// Token: 0x060010F8 RID: 4344 RVA: 0x003138A8 File Offset: 0x00311CA8
 		public void Atualiza_status_monitoracao_820_300()
 		{
-			int tipo = (HorizontalAlignment)3;
+			int tipo = 3;
 			this.Atualiza_tela_medidas_analogicas(ref Comunicacao.Buffer_resp, tipo);
 			this.Atualiza_tela_alarmes(ref Comunicacao.Buffer_resp);
 			this.Atualiza_tela_controles(ref Comunicacao.Buffer_resp);
@@ -2580,7 +2580,7 @@ namespace iS800
 				{
 				case 3:
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						array[num] = (int)((dados[9 + num * 2] - 48) * 200);
@@ -2646,7 +2646,7 @@ namespace iS800
 				this.cb_ED8.Checked = ((num & 128) != 0);
 				int num2 = (int)((dados[42] - 48) * 200);
 				num2 += (int)(dados[43] - 48);
-				bool flag = (num2 & 1) != (HorizontalAlignment)0;
+				bool flag = (num2 & 1) != 0;
 				if (flag)
 				{
 					this.pb_bit0.Image = com_bateria;
@@ -2720,7 +2720,7 @@ namespace iS800
 			Bitmap chave_on = Resources.chave_on;
 			Bitmap chave_off = Resources.chave_off;
 			Bitmap chave_falha = Resources.chave_falha;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -2828,7 +2828,7 @@ namespace iS800
 			case 5:
 				result.Tecla_auto = false;
 				result.Tecla_man = false;
-				if (num == (DialogResult)1)
+				if (num == 1)
 				{
 					result.Tecla_liga = true;
 					result.Tecla_desliga = false;
@@ -2854,7 +2854,7 @@ namespace iS800
 				result.Tecla_falha = false;
 				return result;
 			}
-			if (num2 == (DialogResult)0)
+			if (num2 == 0)
 			{
 				result.Tecla_auto = false;
 				result.Tecla_man = true;
@@ -2886,7 +2886,7 @@ namespace iS800
 			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Iniciar", false) != 0)
 			{
 				this.Mensagem_MD202_mon(" Aguarde ... ", 2);
-				Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)1;
+				Mod_MD.Monitoracao_MD_RQ.Controle_mon = 1;
 			}
 		}
 
@@ -2902,180 +2902,180 @@ namespace iS800
 		{
 			Mod_MD.Monitoracao_MD_RQ.Num_Rx = 0L;
 			Mod_MD.Monitoracao_MD_RQ.Num_Tx = 0L;
-			Mod_MD.Monitoracao_MD_RQ.Eficiencia_com = (HorizontalAlignment)0;
+			Mod_MD.Monitoracao_MD_RQ.Eficiencia_com = 0;
 			Mod_MD.Monitoracao_MD_RQ.Num_Retry = 0L;
 		}
 
 		// Token: 0x06001101 RID: 4353 RVA: 0x003144F0 File Offset: 0x003128F0
 		private void Comando_le_setpoint_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)1;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 1;
 		}
 
 		// Token: 0x06001102 RID: 4354 RVA: 0x00314500 File Offset: 0x00312900
 		private void Comando_escreve_setpoint_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)3;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 3;
 		}
 
 		// Token: 0x06001103 RID: 4355 RVA: 0x00314510 File Offset: 0x00312910
 		private void Cmd_liga_b1_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)1;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)67;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 1;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 67;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001104 RID: 4356 RVA: 0x00314534 File Offset: 0x00312934
 		private void Cmd_desliga_b1_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)1;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)68;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 1;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 68;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001105 RID: 4357 RVA: 0x00314558 File Offset: 0x00312958
 		private void Cmd_manual_b1_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)1;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)69;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 1;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 69;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001106 RID: 4358 RVA: 0x0031457C File Offset: 0x0031297C
 		private void Cmd_automatico_b1_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)1;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)70;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 1;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 70;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001107 RID: 4359 RVA: 0x003145A0 File Offset: 0x003129A0
 		private void Cmd_falha_b1_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)1;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)71;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 1;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 71;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001108 RID: 4360 RVA: 0x003145C4 File Offset: 0x003129C4
 		private void Cmd_liga_b2_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)2;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)67;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 2;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 67;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001109 RID: 4361 RVA: 0x003145E8 File Offset: 0x003129E8
 		private void Cmd_desliga_b2_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)2;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)68;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 2;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 68;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x0600110A RID: 4362 RVA: 0x0031460C File Offset: 0x00312A0C
 		private void Cmd_manual_b2_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)2;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)69;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 2;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 69;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x0600110B RID: 4363 RVA: 0x00314630 File Offset: 0x00312A30
 		private void Cmd_automatico_b2_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)2;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)70;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 2;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 70;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x0600110C RID: 4364 RVA: 0x00314654 File Offset: 0x00312A54
 		private void Cmd_falha_b2_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)2;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)71;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 2;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 71;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x0600110D RID: 4365 RVA: 0x00314678 File Offset: 0x00312A78
 		private void Cmd_liga_b3_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)3;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)67;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 3;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 67;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x0600110E RID: 4366 RVA: 0x0031469C File Offset: 0x00312A9C
 		private void Cmd_desliga_b3_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)3;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)68;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 3;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 68;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x0600110F RID: 4367 RVA: 0x003146C0 File Offset: 0x00312AC0
 		private void Cmd_manual_b3_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)3;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)69;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 3;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 69;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001110 RID: 4368 RVA: 0x003146E4 File Offset: 0x00312AE4
 		private void Cmd_automatico_b3_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)3;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)70;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 3;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 70;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001111 RID: 4369 RVA: 0x00314708 File Offset: 0x00312B08
 		private void Cmd_falha_b3_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)3;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)71;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 3;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 71;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001112 RID: 4370 RVA: 0x0031472C File Offset: 0x00312B2C
 		private void Cmd_liga_b4_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)4;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)67;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 4;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 67;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001113 RID: 4371 RVA: 0x00314750 File Offset: 0x00312B50
 		private void Cmd_desliga_b4_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)4;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)68;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 4;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 68;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001114 RID: 4372 RVA: 0x00314774 File Offset: 0x00312B74
 		private void Cmd_manual_b4_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)4;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)69;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 4;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 69;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001115 RID: 4373 RVA: 0x00314798 File Offset: 0x00312B98
 		private void Cmd_automatico_b4_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)4;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)70;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 4;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 70;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001116 RID: 4374 RVA: 0x003147BC File Offset: 0x00312BBC
 		private void Cmd_falha_b4_Click(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Numero_motor = (HorizontalAlignment)4;
-			Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)71;
-			Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+			Mod_MD.Monitoracao_MD_RQ.Numero_motor = 4;
+			Mod_MD.Monitoracao_MD_RQ.Comando = 71;
+			Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 		}
 
 		// Token: 0x06001117 RID: 4375 RVA: 0x003147E0 File Offset: 0x00312BE0
@@ -3093,7 +3093,7 @@ namespace iS800
 		// Token: 0x06001119 RID: 4377 RVA: 0x00314830 File Offset: 0x00312C30
 		private void Equip_820_mon_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == (DialogResult)0)
+			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == 0)
 			{
 				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", (MsgBoxStyle)0, null);
 			}
@@ -3127,15 +3127,15 @@ namespace iS800
 						{
 							Interaction.MsgBox("AUTOMÁTICO -> MANUAL CONTROLE" + (e.RowIndex + 1).ToString(), (MsgBoxStyle)0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
-							Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)69;
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+							Mod_MD.Monitoracao_MD_RQ.Comando = 69;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 						else
 						{
 							Interaction.MsgBox("MANUAL -> AUTOMÁTICO CONTROLE" + (e.RowIndex + 1).ToString(), (MsgBoxStyle)0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
-							Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)70;
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+							Mod_MD.Monitoracao_MD_RQ.Comando = 70;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 					}
 					else
@@ -3150,22 +3150,22 @@ namespace iS800
 						{
 							Interaction.MsgBox("Comando Tirar de FALHA" + (e.RowIndex + 1).ToString(), (MsgBoxStyle)0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
-							Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)71;
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+							Mod_MD.Monitoracao_MD_RQ.Comando = 71;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 						else if (!this.ctlr[e.RowIndex].ld)
 						{
 							Interaction.MsgBox("Comando de Ligar CONTROLE" + (e.RowIndex + 1).ToString(), (MsgBoxStyle)0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
-							Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)67;
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+							Mod_MD.Monitoracao_MD_RQ.Comando = 67;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 						else
 						{
 							Interaction.MsgBox("Comando de Desligar CONTROLE" + (e.RowIndex + 1).ToString(), (MsgBoxStyle)0, null);
 							Mod_MD.Monitoracao_MD_RQ.Numero_motor = e.RowIndex + 1;
-							Mod_MD.Monitoracao_MD_RQ.Comando = (HorizontalAlignment)68;
-							Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)4;
+							Mod_MD.Monitoracao_MD_RQ.Comando = 68;
+							Mod_MD.Monitoracao_MD_RQ.Controle_mon = 4;
 						}
 					}
 					else
@@ -3196,9 +3196,9 @@ namespace iS800
 		{
 			Bitmap start_button = Resources.start_button;
 			Bitmap stop_button = Resources.stop_button;
-			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Iniciar", false) == (DialogResult)0)
+			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Iniciar", false) == 0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
 				this.ReallyExit = false;
 				this.gb_ajuste.Enabled = false;
 				if (!Geral.Config_geral.Porta_serial_Ok)
@@ -3211,9 +3211,9 @@ namespace iS800
 					this.Comando_hab_monitoracao.Text = "Parar";
 					this.pb_hab_monitoracao.Image = stop_button;
 					this.Mensagem_MD202_mon("Monitoração Ativada", 2);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
-					this.Timer_monitoracao.Interval = (HorizontalAlignment)1;
+					this.Timer_monitoracao.Interval = 1;
 					this.Timer_monitoracao.Enabled = true;
 					this.Grupo_setpoints.Enabled = true;
 					this.Grupo_escrita_de_dados.Enabled = true;
@@ -3221,7 +3221,7 @@ namespace iS800
 					this.Grupo_estatistica.Enabled = true;
 					Mod_MD.Monitoracao_MD_RQ.Num_Rx = 0L;
 					Mod_MD.Monitoracao_MD_RQ.Num_Tx = 0L;
-					Mod_MD.Monitoracao_MD_RQ.Eficiencia_com = (HorizontalAlignment)0;
+					Mod_MD.Monitoracao_MD_RQ.Eficiencia_com = 0;
 					Mod_MD.Monitoracao_MD_RQ.Num_Retry = 0L;
 					this.Grupo_medidas.Enabled = false;
 				}
@@ -3265,9 +3265,9 @@ namespace iS800
 						"Parar"
 					}, null, null);
 					this.Mensagem_MD202_mon("Monitoração Ativada", 2);
-					Mod_MD.Monitoracao_MD_RQ.Controle_mon = (HorizontalAlignment)2;
+					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
-					this.Timer_monitoracao.Interval = (HorizontalAlignment)1;
+					this.Timer_monitoracao.Interval = 1;
 					this.Timer_monitoracao.Enabled = true;
 					this.Grupo_setpoints.Enabled = true;
 					this.Grupo_escrita_de_dados.Enabled = true;
@@ -3275,7 +3275,7 @@ namespace iS800
 					this.Grupo_estatistica.Enabled = true;
 					Mod_MD.Monitoracao_MD_RQ.Num_Rx = 0L;
 					Mod_MD.Monitoracao_MD_RQ.Num_Tx = 0L;
-					Mod_MD.Monitoracao_MD_RQ.Eficiencia_com = (HorizontalAlignment)0;
+					Mod_MD.Monitoracao_MD_RQ.Eficiencia_com = 0;
 					Mod_MD.Monitoracao_MD_RQ.Num_Retry = 0L;
 				}
 				else
@@ -3319,7 +3319,7 @@ namespace iS800
 		private void dgv_Referencias_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
 		{
 			string dataPropertyName = this.dgv_Referencias.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_range", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_range", false) == 0)
 			{
 				this.ValorReferencia[e.RowIndex].Valor = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue))));
 				DataGridView dataGridView = (DataGridView)sender;
@@ -3328,7 +3328,7 @@ namespace iS800
 				RT_geral.Ctrl_erro ctrl_erro2 = ctrl_erro;
 				if (!ctrl_erro2.resultado)
 				{
-					this.ValorReferencia[e.RowIndex].Valor = (HorizontalAlignment)0;
+					this.ValorReferencia[e.RowIndex].Valor = 0;
 				}
 			}
 		}
@@ -3341,7 +3341,7 @@ namespace iS800
 				return;
 			}
 			string dataPropertyName = this.dgv_Referencias.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_range", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_range", false) == 0)
 			{
 				this.dgv_Referencias.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_Referencias.Rows[e.RowIndex].Cells[0].Value));
 				this.ValorReferencia[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_Referencias.Rows[e.RowIndex].Cells[0].Value);
@@ -3357,7 +3357,7 @@ namespace iS800
 		private void bt_rel_leitura_Click(object sender, EventArgs e)
 		{
 			int[] dados = new int[41];
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
 			checked
 			{
@@ -3369,7 +3369,7 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -3380,7 +3380,7 @@ namespace iS800
 					case 1:
 						goto IL_E0;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Leitura Relógio - ChkSum", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -3391,7 +3391,7 @@ namespace iS800
 						}
 						break;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Leitura Relógio - Timeout", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -3408,7 +3408,7 @@ namespace iS800
 					Comunicacao.Rotina_Delay(400L);
 					continue;
 					IL_E0:
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_MD202_mon("Erro Leitura Relógio - não determinado", 1);
 						this.Calcula_Estatistica_820_300(3);
@@ -3424,7 +3424,7 @@ namespace iS800
 		private void bt_rel_escrita_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
 			checked
 			{
@@ -3434,7 +3434,7 @@ namespace iS800
 					array[0] = DateAndTime.Now.Year - 2000;
 					array[1] = DateAndTime.Now.Month;
 					array[2] = DateAndTime.Now.Day;
-					array[3] = (HorizontalAlignment)0;
+					array[3] = 0;
 					array[4] = DateAndTime.Now.Hour;
 					array[5] = DateAndTime.Now.Minute;
 					array[6] = DateAndTime.Now.Second;
@@ -3443,7 +3443,7 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -3453,7 +3453,7 @@ namespace iS800
 					case 1:
 						goto IL_144;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Escrita Relógio - ChkSum", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -3464,7 +3464,7 @@ namespace iS800
 						}
 						break;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_MD202_mon("Erro Escrita Relógio - Timeout", 1);
 							this.Calcula_Estatistica_820_300(3);
@@ -3481,7 +3481,7 @@ namespace iS800
 					Comunicacao.Rotina_Delay(400L);
 					continue;
 					IL_144:
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_MD202_mon("Erro Escrita Relógio - não determinado", 1);
 						this.Calcula_Estatistica_820_300(3);
@@ -3497,7 +3497,7 @@ namespace iS800
 		private void dgv_SA_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
 		{
 			string dataPropertyName = this.dgv_SA.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_range", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_range", false) == 0)
 			{
 				this.ValorSA[e.RowIndex].Valor = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue))));
 				DataGridView dataGridView = (DataGridView)sender;
@@ -3506,7 +3506,7 @@ namespace iS800
 				RT_geral.Ctrl_erro ctrl_erro2 = ctrl_erro;
 				if (!ctrl_erro2.resultado)
 				{
-					this.ValorSA[e.RowIndex].Valor = (HorizontalAlignment)0;
+					this.ValorSA[e.RowIndex].Valor = 0;
 				}
 			}
 		}
@@ -3519,7 +3519,7 @@ namespace iS800
 				return;
 			}
 			string dataPropertyName = this.dgv_SA.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_range", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_range", false) == 0)
 			{
 				this.dgv_SA.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_SA.Rows[e.RowIndex].Cells[0].Value));
 				this.ValorSA[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_SA.Rows[e.RowIndex].Cells[0].Value);
@@ -3534,7 +3534,7 @@ namespace iS800
 		// Token: 0x0600112A RID: 4394 RVA: 0x00315514 File Offset: 0x00313914
 		private void Equip_820_mon_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == (DialogResult)0)
+			if (Operators.CompareString(this.Comando_hab_monitoracao.Text, "Parar", false) == 0)
 			{
 				Interaction.MsgBox("Anter de fechar a tela é necessário parar a monitoração!", (MsgBoxStyle)0, null);
 				return;
@@ -3912,55 +3912,55 @@ namespace iS800
 		private DataGridViewTextBoxColumn _DataGridViewTextBoxColumn1;
 
 		// Token: 0x0400094E RID: 2382
-		public const int DADOS_FORMATO_200 = (HorizontalAlignment)1;
+		public const int DADOS_FORMATO_200 = 1;
 
 		// Token: 0x0400094F RID: 2383
-		public const int DADOS_FORMATO_200_4000 = (HorizontalAlignment)2;
+		public const int DADOS_FORMATO_200_4000 = 2;
 
 		// Token: 0x04000950 RID: 2384
-		public const int DADOS_FORMATO_4000 = (HorizontalAlignment)3;
+		public const int DADOS_FORMATO_4000 = 3;
 
 		// Token: 0x04000951 RID: 2385
-		public const int OFFSET_END = (HorizontalAlignment)3;
+		public const int OFFSET_END = 3;
 
 		// Token: 0x04000952 RID: 2386
-		public const int OFFSET_ED = (HorizontalAlignment)4;
+		public const int OFFSET_ED = 4;
 
 		// Token: 0x04000953 RID: 2387
-		public const int OFFSET_EA = (HorizontalAlignment)9;
+		public const int OFFSET_EA = 9;
 
 		// Token: 0x04000954 RID: 2388
-		public const int OFFSET_ALARMES = (HorizontalAlignment)41;
+		public const int OFFSET_ALARMES = 41;
 
 		// Token: 0x04000955 RID: 2389
-		public const int OFFSET_CONTROLE = (HorizontalAlignment)43;
+		public const int OFFSET_CONTROLE = 43;
 
 		// Token: 0x04000956 RID: 2390
-		public const int MASCARA_ALM_OPERANDO_BAT_820_300 = (HorizontalAlignment)1;
+		public const int MASCARA_ALM_OPERANDO_BAT_820_300 = 1;
 
 		// Token: 0x04000957 RID: 2391
-		public const int MASCARA_ALM_TRANSBORDE_820_300 = (HorizontalAlignment)2;
+		public const int MASCARA_ALM_TRANSBORDE_820_300 = 2;
 
 		// Token: 0x04000958 RID: 2392
-		public const int MASCARA_ALM_FALTAFASE_820_300 = (HorizontalAlignment)4;
+		public const int MASCARA_ALM_FALTAFASE_820_300 = 4;
 
 		// Token: 0x04000959 RID: 2393
-		public const int MASCARA_ALM_ARROMBAMENTO_820_300 = (HorizontalAlignment)8;
+		public const int MASCARA_ALM_ARROMBAMENTO_820_300 = 8;
 
 		// Token: 0x0400095A RID: 2394
-		public const int MASCARA_ALM_ALAGAMENTO_820_300 = (HorizontalAlignment)16;
+		public const int MASCARA_ALM_ALAGAMENTO_820_300 = 16;
 
 		// Token: 0x0400095B RID: 2395
-		public const int MASCARA_ALM_HORARIOPONTA_820_300 = (HorizontalAlignment)32;
+		public const int MASCARA_ALM_HORARIOPONTA_820_300 = 32;
 
 		// Token: 0x0400095C RID: 2396
-		public const int MASCARA_CONTROLE_REMOTO_LOCAL = (HorizontalAlignment)64;
+		public const int MASCARA_CONTROLE_REMOTO_LOCAL = 64;
 
 		// Token: 0x0400095D RID: 2397
-		public const int MASCARA_CONTROLE_AUTO_MANUAL = (HorizontalAlignment)32;
+		public const int MASCARA_CONTROLE_AUTO_MANUAL = 32;
 
 		// Token: 0x0400095E RID: 2398
-		public const int MASCARA_CONTROLE_ESTADO = (HorizontalAlignment)15;
+		public const int MASCARA_CONTROLE_ESTADO = 15;
 
 		// Token: 0x0400095F RID: 2399
 		public string[] Msg_status_202;
@@ -3996,43 +3996,43 @@ namespace iS800
 		public bool ReallyExit;
 
 		// Token: 0x0400096A RID: 2410
-		public const int COLUNA_REFERENCIA = (HorizontalAlignment)0;
+		public const int COLUNA_REFERENCIA = 0;
 
 		// Token: 0x0400096B RID: 2411
-		public const int COLUNA_CONTAGENS = (HorizontalAlignment)0;
+		public const int COLUNA_CONTAGENS = 0;
 
 		// Token: 0x0400096C RID: 2412
-		public const int COLUNA_CONVERTE = (HorizontalAlignment)1;
+		public const int COLUNA_CONVERTE = 1;
 
 		// Token: 0x0400096D RID: 2413
-		public const int COLUNA_INICIO = (HorizontalAlignment)2;
+		public const int COLUNA_INICIO = 2;
 
 		// Token: 0x0400096E RID: 2414
-		public const int COLUNA_FIM = (HorizontalAlignment)3;
+		public const int COLUNA_FIM = 3;
 
 		// Token: 0x0400096F RID: 2415
-		public const int COLUNA_MEDIDA = (HorizontalAlignment)4;
+		public const int COLUNA_MEDIDA = 4;
 
 		// Token: 0x04000970 RID: 2416
-		public const int COLUNA_ESTADO = (HorizontalAlignment)0;
+		public const int COLUNA_ESTADO = 0;
 
 		// Token: 0x04000971 RID: 2417
-		public const int COLUNA_CONTROLE = (HorizontalAlignment)2;
+		public const int COLUNA_CONTROLE = 2;
 
 		// Token: 0x04000972 RID: 2418
-		public const int COLUNA_QUADRO = (HorizontalAlignment)1;
+		public const int COLUNA_QUADRO = 1;
 
 		// Token: 0x04000973 RID: 2419
-		public const int COLUNA_LD = (HorizontalAlignment)3;
+		public const int COLUNA_LD = 3;
 
 		// Token: 0x04000974 RID: 2420
-		public const int NUMERO_REFERENCIAS = (HorizontalAlignment)4;
+		public const int NUMERO_REFERENCIAS = 4;
 
 		// Token: 0x04000975 RID: 2421
-		public const int NUMERO_ENTRADAS_ANALOGICAS = (HorizontalAlignment)16;
+		public const int NUMERO_ENTRADAS_ANALOGICAS = 16;
 
 		// Token: 0x04000976 RID: 2422
-		public const int NUMERO_CONTROLES = (HorizontalAlignment)8;
+		public const int NUMERO_CONTROLES = 8;
 
 		// Token: 0x04000977 RID: 2423
 		private Equip_820_mon.ST_CONTROLE[] ctlr;

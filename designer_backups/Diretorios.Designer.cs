@@ -40,7 +40,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(33, 23);
 			button_diretorio_dados2.Size = size;
-			this.Button_diretorio_dados.TabIndex = (HorizontalAlignment)5;
+			this.Button_diretorio_dados.TabIndex = 5;
 			this.Button_diretorio_dados.UseVisualStyleBackColor = true;
 			this.Label_nome_diretorio_dados.AutoSize = true;
 			global::System.Windows.Forms.Control label_nome_diretorio_dados = this.Label_nome_diretorio_dados;
@@ -50,7 +50,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nome_diretorio_dados2 = this.Label_nome_diretorio_dados;
 			size = new size(93, 13);
 			label_nome_diretorio_dados2.Size = size;
-			this.Label_nome_diretorio_dados.TabIndex = (HorizontalAlignment)4;
+			this.Label_nome_diretorio_dados.TabIndex = 4;
 			this.Label_nome_diretorio_dados.Text = "Diretório de dados";
 			global::System.Windows.Forms.Control nome_diretorio_dados = this.Nome_diretorio_dados;
 			location = new location(25, 41);
@@ -60,7 +60,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nome_diretorio_dados2 = this.Nome_diretorio_dados;
 			size = new size(432, 20);
 			nome_diretorio_dados2.Size = size;
-			this.Nome_diretorio_dados.TabIndex = (HorizontalAlignment)3;
+			this.Nome_diretorio_dados.TabIndex = 3;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;

@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 using System;
 using System.Drawing;
 using iS800.My.Resources;
@@ -16,33 +17,33 @@ namespace iS800
 			Image logo_vortice_pp = Resources.logo_vortice_pp;
 			string text = "MD";
 			int num = Equipamento;
-			if (num == (DialogResult)810)
+			if (num == 810)
 			{
-				Equipamento = (HorizontalAlignment)101;
+				Equipamento = 101;
 			}
-			else if (num == (DialogResult)820)
+			else if (num == 820)
 			{
-				Equipamento = (HorizontalAlignment)202;
+				Equipamento = 202;
 			}
-			else if (num == (DialogResult)821)
+			else if (num == 821)
 			{
-				Equipamento = (HorizontalAlignment)201;
+				Equipamento = 201;
 			}
-			else if (num == (DialogResult)830)
+			else if (num == 830)
 			{
-				Equipamento = (HorizontalAlignment)302;
+				Equipamento = 302;
 			}
-			else if (num == (DialogResult)831)
+			else if (num == 831)
 			{
-				Equipamento = (HorizontalAlignment)301;
+				Equipamento = 301;
 			}
-			else if (num == (DialogResult)850)
+			else if (num == 850)
 			{
-				Equipamento = (HorizontalAlignment)305;
+				Equipamento = 305;
 			}
-			else if (num == (DialogResult)824 || num == (DialogResult)828 || num == (DialogResult)920)
+			else if (num == 824 || num == 828 || num == 920)
 			{
-				Equipamento = (HorizontalAlignment)800;
+				Equipamento = 800;
 			}
 			string text2 = string.Concat(new string[]
 			{

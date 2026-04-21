@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x02000012 RID: 18
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Diretorios : global::System.Windows.Forms.Form
 	{
 		// Token: 0x060000CC RID: 204 RVA: 0x00265410 File Offset: 0x00263810
@@ -40,7 +39,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(33, 23);
 			button_diretorio_dados2.Size = size;
-			this.Button_diretorio_dados.TabIndex = (HorizontalAlignment)5;
+			this.Button_diretorio_dados.TabIndex = 5;
 			this.Button_diretorio_dados.UseVisualStyleBackColor = true;
 			this.Label_nome_diretorio_dados.AutoSize = true;
 			global::System.Windows.Forms.Control label_nome_diretorio_dados = this.Label_nome_diretorio_dados;
@@ -50,7 +49,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nome_diretorio_dados2 = this.Label_nome_diretorio_dados;
 			size = new global::System.Drawing.Size(93, 13);
 			label_nome_diretorio_dados2.Size = size;
-			this.Label_nome_diretorio_dados.TabIndex = (HorizontalAlignment)4;
+			this.Label_nome_diretorio_dados.TabIndex = 4;
 			this.Label_nome_diretorio_dados.Text = "Diretório de dados";
 			global::System.Windows.Forms.Control nome_diretorio_dados = this.Nome_diretorio_dados;
 			location = new global::System.Drawing.Point(25, 41);
@@ -60,11 +59,11 @@ namespace iS800
 			global::System.Windows.Forms.Control nome_diretorio_dados2 = this.Nome_diretorio_dados;
 			size = new global::System.Drawing.Size(432, 20);
 			nome_diretorio_dados2.Size = size;
-			this.Nome_diretorio_dados.TabIndex = (HorizontalAlignment)3;
+			this.Nome_diretorio_dados.TabIndex = 3;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
 			size = new global::System.Drawing.Size(524, 97);
 			this.ClientSize = size;
 			this.Controls.Add(this.Button_diretorio_dados);

@@ -13,13 +13,13 @@ namespace iS800
 		// Token: 0x06000406 RID: 1030 RVA: 0x00227E84 File Offset: 0x00226284
 		public static void Impressao_BeginPrint_RT831()
 		{
-			RT_831_200_impressao_X.pagina_impressao = (HorizontalAlignment)1;
-			RT_831_200_impressao_X.grupo_impressao = (HorizontalAlignment)1;
-			RT_831_200_impressao_X.quantos_imprimiu = (HorizontalAlignment)0;
-			RT_831_200_impressao_X.quantos_imprimiu2 = (HorizontalAlignment)0;
-			RT_831_200_impressao_X.quantos_imprimiu3 = (HorizontalAlignment)0;
-			RT_831_200_impressao_X.quantos_imprimiu4 = (HorizontalAlignment)0;
-			RT_831_200_impressao_X.inicio = (HorizontalAlignment)5;
+			RT_831_200_impressao_X.pagina_impressao = 1;
+			RT_831_200_impressao_X.grupo_impressao = 1;
+			RT_831_200_impressao_X.quantos_imprimiu = 0;
+			RT_831_200_impressao_X.quantos_imprimiu2 = 0;
+			RT_831_200_impressao_X.quantos_imprimiu3 = 0;
+			RT_831_200_impressao_X.quantos_imprimiu4 = 0;
+			RT_831_200_impressao_X.inicio = 5;
 		}
 
 		// Token: 0x06000407 RID: 1031 RVA: 0x00227EB0 File Offset: 0x002262B0
@@ -150,15 +150,15 @@ namespace iS800
 			int num = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor;
 			if (num > 30)
 			{
-				num = (HorizontalAlignment)30;
+				num = 30;
 			}
 			checked
 			{
 				TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda = new TabelaMeiaLinhaEsquerda(z.MarginBounds, z.Graphics, fonte2, cores, 5, num + 1, "Variáveis", true);
 				TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda2 = tabelaMeiaLinhaEsquerda;
-				int num2 = (HorizontalAlignment)1;
+				int num2 = 1;
 				tabelaMeiaLinhaEsquerda2.EscreveTodosTitulos(ref num2, titulos, array);
-				int num3 = (HorizontalAlignment)0;
+				int num3 = 0;
 				int num4 = num - 1;
 				for (int i = num3; i <= num4; i++)
 				{
@@ -171,9 +171,9 @@ namespace iS800
 				{
 					TabelaMeiaLinhaDireita tabelaMeiaLinhaDireita = new TabelaMeiaLinhaDireita(z.MarginBounds, z.Graphics, fonte2, cores, 5, num + 1, "Variáveis Continuação", true);
 					TabelaMeiaLinhaDireita tabelaMeiaLinhaDireita2 = tabelaMeiaLinhaDireita;
-					num2 = (HorizontalAlignment)1;
+					num2 = 1;
 					tabelaMeiaLinhaDireita2.EscreveTodosTitulos(ref num2, titulos, array);
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					int num6 = num - 1;
 					for (int i = num5; i <= num6; i++)
 					{
@@ -266,9 +266,9 @@ namespace iS800
 			{
 				TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, 5, valor + 1, "Remotas de Controle", true);
 				TabelaLinhaInteria tabelaLinhaInteria2 = tabelaLinhaInteria;
-				int num = (HorizontalAlignment)1;
+				int num = 1;
 				tabelaLinhaInteria2.EscreveTodosTitulos(ref num, titulos, array);
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				int num3 = valor - 1;
 				for (int i = num2; i <= num3; i++)
 				{
@@ -375,9 +375,9 @@ namespace iS800
 			int valor = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_recalques.Valor;
 			TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, 5, 2, "Remotas de Controle", false);
 			TabelaLinhaInteria tabelaLinhaInteria2 = tabelaLinhaInteria;
-			int num = (HorizontalAlignment)1;
+			int num = 1;
 			tabelaLinhaInteria2.EscreveTodosTitulos(ref num, titulos, array);
-			int num2 = (HorizontalAlignment)0;
+			int num2 = 0;
 			checked
 			{
 				int num3 = valor - 1;

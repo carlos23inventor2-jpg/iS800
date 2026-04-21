@@ -97,7 +97,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(337, 60);
 			groupBox2.Size = size;
-			this.GroupBox1.TabIndex = (HorizontalAlignment)0;
+			this.GroupBox1.TabIndex = 0;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "Endereço do Equipamento";
 			global::System.Windows.Forms.Control bt_busca = this.bt_busca;
@@ -107,7 +107,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_busca2 = this.bt_busca;
 			size = new size(75, 23);
 			bt_busca2.Size = size;
-			this.bt_busca.TabIndex = (HorizontalAlignment)2;
+			this.bt_busca.TabIndex = 2;
 			this.bt_busca.Text = "Busca";
 			this.bt_busca.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control nud_estacao = this.nud_estacao;
@@ -127,7 +127,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_estacao3 = this.nud_estacao;
 			size = new size(83, 20);
 			nud_estacao3.Size = size;
-			this.nud_estacao.TabIndex = (HorizontalAlignment)1;
+			this.nud_estacao.TabIndex = 1;
 			this.Label1.AutoSize = true;
 			global::System.Windows.Forms.Control label = this.Label1;
 			location = new location(15, 28);
@@ -136,7 +136,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label2 = this.Label1;
 			size = new size(56, 13);
 			label2.Size = size;
-			this.Label1.TabIndex = (HorizontalAlignment)0;
+			this.Label1.TabIndex = 0;
 			this.Label1.Text = "Endereço:";
 			this.GroupBox4.Controls.Add(this.rb_channel2);
 			this.GroupBox4.Controls.Add(this.rb_channel1);
@@ -147,7 +147,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox4;
 			size = new size(337, 60);
 			groupBox4.Size = size;
-			this.GroupBox4.TabIndex = (HorizontalAlignment)5;
+			this.GroupBox4.TabIndex = 5;
 			this.GroupBox4.TabStop = false;
 			this.GroupBox4.Text = "Seleção de Saída Analógica";
 			this.rb_channel2.AutoSize = true;
@@ -158,7 +158,7 @@ namespace iS800
 			global::System.Windows.Forms.Control rb_channel2 = this.rb_channel2;
 			size = new size(61, 17);
 			rb_channel2.Size = size;
-			this.rb_channel2.TabIndex = (HorizontalAlignment)1;
+			this.rb_channel2.TabIndex = 1;
 			this.rb_channel2.Text = "Canal 2";
 			this.rb_channel2.UseVisualStyleBackColor = true;
 			this.rb_channel1.AutoSize = true;
@@ -170,7 +170,7 @@ namespace iS800
 			global::System.Windows.Forms.Control rb_channel4 = this.rb_channel1;
 			size = new size(61, 17);
 			rb_channel4.Size = size;
-			this.rb_channel1.TabIndex = (HorizontalAlignment)0;
+			this.rb_channel1.TabIndex = 0;
 			this.rb_channel1.TabStop = true;
 			this.rb_channel1.Text = "Canal 1";
 			this.rb_channel1.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox6 = this.GroupBox5;
 			size = new size(337, 60);
 			groupBox6.Size = size;
-			this.GroupBox5.TabIndex = (HorizontalAlignment)5;
+			this.GroupBox5.TabIndex = 5;
 			this.GroupBox5.TabStop = false;
 			this.GroupBox5.Text = "Escrita de contagens de calibração";
 			global::System.Windows.Forms.Control nud_contagens = this.nud_contagens;
@@ -204,7 +204,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_contagens3 = this.nud_contagens;
 			size = new size(83, 20);
 			nud_contagens3.Size = size;
-			this.nud_contagens.TabIndex = (HorizontalAlignment)6;
+			this.nud_contagens.TabIndex = 6;
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label2;
 			location = new location(15, 28);
@@ -213,7 +213,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label4 = this.Label2;
 			size = new size(61, 13);
 			label4.Size = size;
-			this.Label2.TabIndex = (HorizontalAlignment)5;
+			this.Label2.TabIndex = 5;
 			this.Label2.Text = "Contagens:";
 			this.GroupBox6.Controls.Add(this.Button3);
 			this.GroupBox6.Controls.Add(this.Button4);
@@ -224,7 +224,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox8 = this.GroupBox6;
 			size = new size(392, 60);
 			groupBox8.Size = size;
-			this.GroupBox6.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox6.TabIndex = 4;
 			this.GroupBox6.TabStop = false;
 			this.GroupBox6.Text = "Inicia calibração";
 			global::System.Windows.Forms.Control button = this.Button3;
@@ -234,7 +234,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button2 = this.Button3;
 			size = new size(75, 23);
 			button2.Size = size;
-			this.Button3.TabIndex = (HorizontalAlignment)3;
+			this.Button3.TabIndex = 3;
 			this.Button3.Text = "4 mA";
 			this.Button3.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button3 = this.Button4;
@@ -244,7 +244,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button4 = this.Button4;
 			size = new size(75, 23);
 			button4.Size = size;
-			this.Button4.TabIndex = (HorizontalAlignment)2;
+			this.Button4.TabIndex = 2;
 			this.Button4.Text = "Busca";
 			this.Button4.UseVisualStyleBackColor = true;
 			this.bt_envia.Enabled = false;
@@ -255,7 +255,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_envia2 = this.bt_envia;
 			size = new size(150, 23);
 			bt_envia2.Size = size;
-			this.bt_envia.TabIndex = (HorizontalAlignment)2;
+			this.bt_envia.TabIndex = 2;
 			this.bt_envia.Text = "Escreve";
 			this.bt_envia.UseVisualStyleBackColor = true;
 			this.GroupBox7.Controls.Add(this.GroupBox8);
@@ -268,7 +268,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox10 = this.GroupBox7;
 			size = new size(335, 60);
 			groupBox10.Size = size;
-			this.GroupBox7.TabIndex = (HorizontalAlignment)5;
+			this.GroupBox7.TabIndex = 5;
 			this.GroupBox7.TabStop = false;
 			this.GroupBox7.Text = "Confirma calibração";
 			this.GroupBox8.Controls.Add(this.Button5);
@@ -280,7 +280,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox12 = this.GroupBox8;
 			size = new size(392, 60);
 			groupBox12.Size = size;
-			this.GroupBox8.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox8.TabIndex = 4;
 			this.GroupBox8.TabStop = false;
 			this.GroupBox8.Text = "Inicia calibração";
 			global::System.Windows.Forms.Control button5 = this.Button5;
@@ -290,7 +290,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button6 = this.Button5;
 			size = new size(75, 23);
 			button6.Size = size;
-			this.Button5.TabIndex = (HorizontalAlignment)3;
+			this.Button5.TabIndex = 3;
 			this.Button5.Text = "4 mA";
 			this.Button5.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button7 = this.Button6;
@@ -300,7 +300,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button8 = this.Button6;
 			size = new size(75, 23);
 			button8.Size = size;
-			this.Button6.TabIndex = (HorizontalAlignment)2;
+			this.Button6.TabIndex = 2;
 			this.Button6.Text = "Busca";
 			this.Button6.UseVisualStyleBackColor = true;
 			this.bt_confirma_4.Enabled = false;
@@ -311,7 +311,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_confirma_2 = this.bt_confirma_4;
 			size = new size(75, 23);
 			bt_confirma_2.Size = size;
-			this.bt_confirma_4.TabIndex = (HorizontalAlignment)3;
+			this.bt_confirma_4.TabIndex = 3;
 			this.bt_confirma_4.Text = "4 mA";
 			this.bt_confirma_4.UseVisualStyleBackColor = true;
 			this.bt_confirma_20.Enabled = false;
@@ -322,7 +322,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_confirma_4 = this.bt_confirma_20;
 			size = new size(75, 23);
 			bt_confirma_4.Size = size;
-			this.bt_confirma_20.TabIndex = (HorizontalAlignment)2;
+			this.bt_confirma_20.TabIndex = 2;
 			this.bt_confirma_20.Text = "20 mA";
 			this.bt_confirma_20.UseVisualStyleBackColor = true;
 			this.GroupBox9.Controls.Add(this.GroupBox10);
@@ -334,7 +334,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox14 = this.GroupBox9;
 			size = new size(335, 60);
 			groupBox14.Size = size;
-			this.GroupBox9.TabIndex = (HorizontalAlignment)6;
+			this.GroupBox9.TabIndex = 6;
 			this.GroupBox9.TabStop = false;
 			this.GroupBox9.Text = "Finaliza calibração";
 			this.GroupBox10.Controls.Add(this.Button9);
@@ -346,7 +346,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox16 = this.GroupBox10;
 			size = new size(392, 60);
 			groupBox16.Size = size;
-			this.GroupBox10.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox10.TabIndex = 4;
 			this.GroupBox10.TabStop = false;
 			this.GroupBox10.Text = "Inicia calibração";
 			global::System.Windows.Forms.Control button9 = this.Button9;
@@ -356,7 +356,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button10 = this.Button9;
 			size = new size(75, 23);
 			button10.Size = size;
-			this.Button9.TabIndex = (HorizontalAlignment)3;
+			this.Button9.TabIndex = 3;
 			this.Button9.Text = "4 mA";
 			this.Button9.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button11 = this.Button10;
@@ -366,7 +366,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button12 = this.Button10;
 			size = new size(75, 23);
 			button12.Size = size;
-			this.Button10.TabIndex = (HorizontalAlignment)2;
+			this.Button10.TabIndex = 2;
 			this.Button10.Text = "Busca";
 			this.Button10.UseVisualStyleBackColor = true;
 			this.bt_finaliza.Enabled = false;
@@ -377,7 +377,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_finaliza2 = this.bt_finaliza;
 			size = new size(75, 23);
 			bt_finaliza2.Size = size;
-			this.bt_finaliza.TabIndex = (HorizontalAlignment)2;
+			this.bt_finaliza.TabIndex = 2;
 			this.bt_finaliza.Text = "Finalização";
 			this.bt_finaliza.UseVisualStyleBackColor = true;
 			this.GroupBox11.Controls.Add(this.Bt_inic_20);
@@ -389,7 +389,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox18 = this.GroupBox11;
 			size = new size(337, 60);
 			groupBox18.Size = size;
-			this.GroupBox11.TabIndex = (HorizontalAlignment)6;
+			this.GroupBox11.TabIndex = 6;
 			this.GroupBox11.TabStop = false;
 			this.GroupBox11.Text = "Início Calibração";
 			this.Bt_inic_20.Enabled = false;
@@ -400,7 +400,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_inic_2 = this.Bt_inic_20;
 			size = new size(75, 23);
 			bt_inic_2.Size = size;
-			this.Bt_inic_20.TabIndex = (HorizontalAlignment)5;
+			this.Bt_inic_20.TabIndex = 5;
 			this.Bt_inic_20.Text = "20 mA";
 			this.Bt_inic_20.UseVisualStyleBackColor = true;
 			this.Bt_inic_4.Enabled = false;
@@ -411,7 +411,7 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_inic_4 = this.Bt_inic_4;
 			size = new size(75, 23);
 			bt_inic_4.Size = size;
-			this.Bt_inic_4.TabIndex = (HorizontalAlignment)4;
+			this.Bt_inic_4.TabIndex = 4;
 			this.Bt_inic_4.Text = "4 mA";
 			this.Bt_inic_4.UseVisualStyleBackColor = true;
 			this.GroupBox2.Controls.Add(this.mensagens);
@@ -422,7 +422,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox20 = this.GroupBox2;
 			size = new size(337, 74);
 			groupBox20.Size = size;
-			this.GroupBox2.TabIndex = (HorizontalAlignment)7;
+			this.GroupBox2.TabIndex = 7;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Mensagens";
 			this.mensagens.BackColor = global::System.Drawing.Color.Cornsilk;
@@ -434,7 +434,7 @@ namespace iS800
 			global::System.Windows.Forms.Control mensagens2 = this.mensagens;
 			size = new size(323, 49);
 			mensagens2.Size = size;
-			this.mensagens.TabIndex = (HorizontalAlignment)0;
+			this.mensagens.TabIndex = 0;
 			this.GroupBox3.Controls.Add(this.tb_escreve_corrente);
 			this.GroupBox3.Controls.Add(this.Label9);
 			this.GroupBox3.Controls.Add(this.Label8);
@@ -454,31 +454,31 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox22 = this.GroupBox3;
 			size = new size(333, 130);
 			groupBox22.Size = size;
-			this.GroupBox3.TabIndex = (HorizontalAlignment)8;
+			this.GroupBox3.TabIndex = 8;
 			this.GroupBox3.TabStop = false;
 			this.GroupBox3.Text = "Envio de Corrente (4-20mA) após calibração";
 			global::System.Windows.Forms.Control tb_corrente = this.tb_corrente1;
 			location = new location(55, 20);
 			tb_corrente.Location = location;
-			this.tb_corrente1.Maximum = (HorizontalAlignment)16;
+			this.tb_corrente1.Maximum = 16;
 			this.tb_corrente1.Name = "tb_corrente1";
 			global::System.Windows.Forms.Control tb_corrente2 = this.tb_corrente1;
 			size = new size(140, 45);
 			tb_corrente2.Size = size;
-			this.tb_corrente1.TabIndex = (HorizontalAlignment)0;
-			this.tb_corrente1.TickFrequency = (HorizontalAlignment)4;
-			this.tb_corrente1.Value = (HorizontalAlignment)4;
+			this.tb_corrente1.TabIndex = 0;
+			this.tb_corrente1.TickFrequency = 4;
+			this.tb_corrente1.Value = 4;
 			global::System.Windows.Forms.Control tb_corrente3 = this.tb_corrente2;
 			location = new location(55, 82);
 			tb_corrente3.Location = location;
-			this.tb_corrente2.Maximum = (HorizontalAlignment)16;
+			this.tb_corrente2.Maximum = 16;
 			this.tb_corrente2.Name = "tb_corrente2";
 			global::System.Windows.Forms.Control tb_corrente4 = this.tb_corrente2;
 			size = new size(140, 45);
 			tb_corrente4.Size = size;
-			this.tb_corrente2.TabIndex = (HorizontalAlignment)1;
-			this.tb_corrente2.TickFrequency = (HorizontalAlignment)4;
-			this.tb_corrente2.Value = (HorizontalAlignment)4;
+			this.tb_corrente2.TabIndex = 1;
+			this.tb_corrente2.TickFrequency = 4;
+			this.tb_corrente2.Value = 4;
 			this.Label3.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label3;
 			location = new location(6, 28);
@@ -487,7 +487,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label6 = this.Label3;
 			size = new size(43, 13);
 			label6.Size = size;
-			this.Label3.TabIndex = (HorizontalAlignment)2;
+			this.Label3.TabIndex = 2;
 			this.Label3.Text = "Canal 1";
 			this.Label4.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label4;
@@ -497,7 +497,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label8 = this.Label4;
 			size = new size(43, 13);
 			label8.Size = size;
-			this.Label4.TabIndex = (HorizontalAlignment)3;
+			this.Label4.TabIndex = 3;
 			this.Label4.Text = "Canal 2";
 			this.lb_corrente1.AutoSize = true;
 			global::System.Windows.Forms.Control lb_corrente = this.lb_corrente1;
@@ -507,7 +507,7 @@ namespace iS800
 			global::System.Windows.Forms.Control lb_corrente2 = this.lb_corrente1;
 			size = new size(43, 13);
 			lb_corrente2.Size = size;
-			this.lb_corrente1.TabIndex = (HorizontalAlignment)4;
+			this.lb_corrente1.TabIndex = 4;
 			this.lb_corrente1.Text = "Canal 1";
 			this.lb_corrente2.AutoSize = true;
 			global::System.Windows.Forms.Control lb_corrente3 = this.lb_corrente2;
@@ -517,7 +517,7 @@ namespace iS800
 			global::System.Windows.Forms.Control lb_corrente4 = this.lb_corrente2;
 			size = new size(43, 13);
 			lb_corrente4.Size = size;
-			this.lb_corrente2.TabIndex = (HorizontalAlignment)5;
+			this.lb_corrente2.TabIndex = 5;
 			this.lb_corrente2.Text = "Canal 2";
 			this.Label5.AutoSize = true;
 			global::System.Windows.Forms.Control label9 = this.Label5;
@@ -527,7 +527,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label10 = this.Label5;
 			size = new size(13, 13);
 			label10.Size = size;
-			this.Label5.TabIndex = (HorizontalAlignment)6;
+			this.Label5.TabIndex = 6;
 			this.Label5.Text = "4";
 			this.Label6.AutoSize = true;
 			global::System.Windows.Forms.Control label11 = this.Label6;
@@ -537,7 +537,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label12 = this.Label6;
 			size = new size(13, 13);
 			label12.Size = size;
-			this.Label6.TabIndex = (HorizontalAlignment)7;
+			this.Label6.TabIndex = 7;
 			this.Label6.Text = "8";
 			this.Label7.AutoSize = true;
 			global::System.Windows.Forms.Control label13 = this.Label7;
@@ -547,7 +547,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label14 = this.Label7;
 			size = new size(19, 13);
 			label14.Size = size;
-			this.Label7.TabIndex = (HorizontalAlignment)8;
+			this.Label7.TabIndex = 8;
 			this.Label7.Text = "12";
 			this.Label8.AutoSize = true;
 			global::System.Windows.Forms.Control label15 = this.Label8;
@@ -557,7 +557,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label16 = this.Label8;
 			size = new size(19, 13);
 			label16.Size = size;
-			this.Label8.TabIndex = (HorizontalAlignment)9;
+			this.Label8.TabIndex = 9;
 			this.Label8.Text = "16";
 			this.Label9.AutoSize = true;
 			global::System.Windows.Forms.Control label17 = this.Label9;
@@ -567,7 +567,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label18 = this.Label9;
 			size = new size(19, 13);
 			label18.Size = size;
-			this.Label9.TabIndex = (HorizontalAlignment)10;
+			this.Label9.TabIndex = 10;
 			this.Label9.Text = "20";
 			global::System.Windows.Forms.Control tb_escreve_corrente = this.tb_escreve_corrente;
 			location = new location(249, 53);
@@ -576,7 +576,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_escreve_corrente2 = this.tb_escreve_corrente;
 			size = new size(75, 23);
 			tb_escreve_corrente2.Size = size;
-			this.tb_escreve_corrente.TabIndex = (HorizontalAlignment)11;
+			this.tb_escreve_corrente.TabIndex = 11;
 			this.tb_escreve_corrente.Text = "Escreve";
 			this.tb_escreve_corrente.UseVisualStyleBackColor = true;
 			global::System.Drawing.SizeF autoScaleDimensions;

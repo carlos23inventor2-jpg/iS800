@@ -5263,16 +5263,16 @@ namespace iS800
 		// Token: 0x060015C0 RID: 5568 RVA: 0x0033C3BC File Offset: 0x0033A7BC
 		private void Desenha_DataGirView_SetPoint_Horario()
 		{
-			this.dgv_sph.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			this.dgv_sph.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			this.dgv_sph.AlternatingRowsDefaultCellStyle = this.DataGridView_setpoints_820.AlternatingRowsDefaultCellStyle;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
 				{
-					if (num % 10 == (DialogResult)0)
+					if (num % 10 == 0)
 					{
-						int num2 = (HorizontalAlignment)1;
+						int num2 = 1;
 						this.dgv_sph.Rows[num].HeaderCell.Value = string.Format("Ctrl {0}", unchecked((double)num / 10.0 + 1.0));
 						this.dgv_sph.Rows[num].Cells[0].Value = num2.ToString();
 						num2++;
@@ -5286,7 +5286,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 79);
-				this.dgv_sph.Height = (HorizontalAlignment)550;
+				this.dgv_sph.Height = 550;
 			}
 		}
 
@@ -5526,7 +5526,7 @@ namespace iS800
 				RT_geral.RT_820_360_BD.modo_repetidora.itens = new string[3];
 				RT_geral.RT_820_360_BD.Repetidoras = new RT_geral.Integer_ictel[52];
 				RT_geral.RT_820_360_BD.Timer_Horario = new RT_geral.Integer_ictel[8][];
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				do
 				{
 					RT_geral.Integer_ictel[] array = new RT_geral.Integer_ictel[13];
@@ -5535,9 +5535,9 @@ namespace iS800
 				}
 				while (num <= 7);
 				RT_geral.RT_820_360_BD.setpoint_horario = new RT_geral.SETPOINT_HORARIO_RT_820_300[81];
-				this.dgv_sph.RowCount = (HorizontalAlignment)80;
+				this.dgv_sph.RowCount = 80;
 				this.Desenha_DataGirView_SetPoint_Horario();
-				RT_geral.RT_820_360_BD.HabExpIO.Valor = (HorizontalAlignment)21856;
+				RT_geral.RT_820_360_BD.HabExpIO.Valor = 21856;
 				this.Inicializa_DadosEStruturaRT820_Padrao();
 				RT_geral.Lmte_Init_ok = true;
 				this.InicializaEstrutura_DataGridView_Processos();
@@ -5678,9 +5678,9 @@ namespace iS800
 		// Token: 0x060015C2 RID: 5570 RVA: 0x0033DBAC File Offset: 0x0033BFAC
 		private void RT_820_conf_Activated(object sender, EventArgs e)
 		{
-			Geral.Equipamento_selecionado = (HorizontalAlignment)820;
-			Geral.Equipamento_versao = (HorizontalAlignment)4;
-			Geral.Equipamento_build = (HorizontalAlignment)0;
+			Geral.Equipamento_selecionado = 820;
+			Geral.Equipamento_versao = 4;
+			Geral.Equipamento_build = 0;
 		}
 
 		// Token: 0x060015C3 RID: 5571 RVA: 0x0033DBC4 File Offset: 0x0033BFC4
@@ -5693,8 +5693,8 @@ namespace iS800
 		private void GeraDataGridView_Processos()
 		{
 			this.DataGridView_processo_820.Columns.Clear();
-			this.DataGridView_processo_820.CellBorderStyle = (HorizontalAlignment)1;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_processo_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			int num = 0;
 			checked
 			{
 				do
@@ -5712,9 +5712,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 14);
-				this.DataGridView_processo_820.RowCount = (HorizontalAlignment)8;
-				this.DataGridView_processo_820.RowHeadersWidth = (HorizontalAlignment)70;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_processo_820.RowCount = 8;
+				this.DataGridView_processo_820.RowHeadersWidth = 70;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_processo_820.Rows)
@@ -5741,7 +5741,7 @@ namespace iS800
 		// Token: 0x060015C5 RID: 5573 RVA: 0x0033DD08 File Offset: 0x0033C108
 		private void InicializaEstrutura_DataGridView_Processos()
 		{
-			int i = (HorizontalAlignment)0;
+			int i = 0;
 			checked
 			{
 				do
@@ -5781,57 +5781,57 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewProcessosColunas[12].NomeColuna = "TpMaxParada";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[13].NomeColuna = "TpMinParado";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[14].NomeColuna = "TpMinOperan";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LarguraColuna = (HorizontalAlignment)90;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LarguraColuna = (HorizontalAlignment)90;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LarguraColuna = (HorizontalAlignment)90;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LarguraColuna = (HorizontalAlignment)90;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LarguraColuna = (HorizontalAlignment)110;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LarguraColuna = (HorizontalAlignment)100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LarguraColuna = (HorizontalAlignment)100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LarguraColuna = (HorizontalAlignment)90;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LarguraColuna = (HorizontalAlignment)130;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LarguraColuna = (HorizontalAlignment)100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LarguraColuna = (HorizontalAlignment)90;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].LarguraColuna = (HorizontalAlignment)55;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].LarguraColuna = (HorizontalAlignment)55;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].LarguraColuna = (HorizontalAlignment)55;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[14].LarguraColuna = (HorizontalAlignment)55;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[14].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LarguraColuna = 90;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LarguraColuna = 90;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LarguraColuna = 90;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LarguraColuna = 90;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LarguraColuna = 110;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LarguraColuna = 100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LarguraColuna = 100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LarguraColuna = 90;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LarguraColuna = 130;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LarguraColuna = 100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LarguraColuna = 90;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].LarguraColuna = 55;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].LarguraColuna = 55;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].LarguraColuna = 55;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[14].LarguraColuna = 55;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[14].AlingColuna = 64;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasMenu[0] = "Desativo";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasMenu[0] = "Desativo";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = 21856;
 				int num;
 				int num2;
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = (HorizontalAlignment)18;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = (HorizontalAlignment)18;
-					num = (HorizontalAlignment)12;
-					num2 = (HorizontalAlignment)0;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 18;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = 18;
+					num = 12;
+					num2 = 0;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = (HorizontalAlignment)14;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = (HorizontalAlignment)14;
-					num = (HorizontalAlignment)8;
-					num2 = (HorizontalAlignment)4;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 14;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = 14;
+					num = 8;
+					num2 = 4;
 				}
-				int num3 = (HorizontalAlignment)1;
+				int num3 = 1;
 				int num4 = num;
 				for (i = num3; i <= num4; i++)
 				{
@@ -5852,32 +5852,32 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[i] = 21860 + i + num2;
 				}
 				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasMenu[0] = "Não usado";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasMenu[0] = "Não usado";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LinhasMenu[0] = "Sempre Remoto";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasMenu[0] = "Sem Liberação";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasValor[0] = (HorizontalAlignment)21856;
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasValor[0] = 21856;
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)22;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = (HorizontalAlignment)22;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = (HorizontalAlignment)17;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = (HorizontalAlignment)17;
-					num = (HorizontalAlignment)16;
-					num2 = (HorizontalAlignment)0;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = 22;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = 22;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = 17;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = 17;
+					num = 16;
+					num2 = 0;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)14;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = (HorizontalAlignment)14;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = (HorizontalAlignment)9;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = (HorizontalAlignment)9;
-					num = (HorizontalAlignment)8;
-					num2 = (HorizontalAlignment)8;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = 14;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = 14;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = 9;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = 9;
+					num = 8;
+					num2 = 8;
 				}
-				int num8 = (HorizontalAlignment)1;
+				int num8 = 1;
 				int num9 = num;
 				for (i = num8; i <= num9; i++)
 				{
@@ -5891,13 +5891,13 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasValor[i] = 21856 + i;
 				}
 				int num10;
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
-					num10 = (HorizontalAlignment)16;
+					num10 = 16;
 				}
 				else
 				{
-					num10 = (HorizontalAlignment)8;
+					num10 = 8;
 				}
 				RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu + num10;
 				int num11 = num + 1;
@@ -5919,18 +5919,18 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasValor[i] = 21856 + i + num2;
 				}
 				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasMenu[0] = "Sem Bloqueio";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[0] = (HorizontalAlignment)21856;
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[0] = 21856;
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = (HorizontalAlignment)33;
-					num = (HorizontalAlignment)16;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = 33;
+					num = 16;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = (HorizontalAlignment)17;
-					num = (HorizontalAlignment)8;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = 17;
+					num = 8;
 				}
-				int num15 = (HorizontalAlignment)1;
+				int num15 = 1;
 				int num16 = num;
 				for (i = num15; i <= num16; i++)
 				{
@@ -5940,24 +5940,24 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[num2 - 1] = 21856 + num2 - 1;
 					RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[num2] = 21856 + num2;
 				}
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].NumeroLinhaMenu = (HorizontalAlignment)2;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].NumeroLinhaMenu = 2;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasMenu[1] = "Habilitado";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[1] = (HorizontalAlignment)21857;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].NumeroLinhaMenu = (HorizontalAlignment)4;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[1] = 21857;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].NumeroLinhaMenu = 4;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[0] = "Telecomando";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[1] = "Automático";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[2] = "Timer";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[3] = "Telecomando com Falha";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[1] = (HorizontalAlignment)21857;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[2] = (HorizontalAlignment)21858;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[3] = (HorizontalAlignment)21859;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].NumeroLinhaMenu = (HorizontalAlignment)5;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[1] = 21857;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[2] = 21858;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[3] = 21859;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].NumeroLinhaMenu = 5;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasMenu[0] = "Nenhum Grupo";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasValor[0] = (HorizontalAlignment)21856;
-				i = (HorizontalAlignment)1;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasValor[0] = 21856;
+				i = 1;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasMenu[i] = "Grupo " + Strings.Format(i, "#");
@@ -5965,7 +5965,7 @@ namespace iS800
 					i++;
 				}
 				while (i <= 4);
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].NumeroLinhaMenu = (HorizontalAlignment)21;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].NumeroLinhaMenu = 21;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasMenu[1] = "1";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasMenu[2] = "2";
@@ -5987,31 +5987,31 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasMenu[18] = "18";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasMenu[19] = "19";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasMenu[20] = "20";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[1] = (HorizontalAlignment)21857;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[2] = (HorizontalAlignment)21858;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[3] = (HorizontalAlignment)21859;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[4] = (HorizontalAlignment)21860;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[5] = (HorizontalAlignment)21861;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[6] = (HorizontalAlignment)21862;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[7] = (HorizontalAlignment)21863;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[8] = (HorizontalAlignment)21864;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[9] = (HorizontalAlignment)21865;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[10] = (HorizontalAlignment)21866;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[11] = (HorizontalAlignment)21867;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[12] = (HorizontalAlignment)21868;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[13] = (HorizontalAlignment)21869;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[14] = (HorizontalAlignment)21870;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[15] = (HorizontalAlignment)21871;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[16] = (HorizontalAlignment)21872;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[17] = (HorizontalAlignment)21873;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[18] = (HorizontalAlignment)21874;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[19] = (HorizontalAlignment)21875;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[20] = (HorizontalAlignment)21876;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[14].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[1] = 21857;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[2] = 21858;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[3] = 21859;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[4] = 21860;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[5] = 21861;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[6] = 21862;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[7] = 21863;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[8] = 21864;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[9] = 21865;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[10] = 21866;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[11] = 21867;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[12] = 21868;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[13] = 21869;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[14] = 21870;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[15] = 21871;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[16] = 21872;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[17] = 21873;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[18] = 21874;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[19] = 21875;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LinhasValor[20] = 21876;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[14].NumeroLinhaMenu = 0;
 			}
 		}
 
@@ -6019,8 +6019,8 @@ namespace iS800
 		private void GeraDataGridView_Grupos()
 		{
 			this.DataGridView_grupos_820.Columns.Clear();
-			this.DataGridView_grupos_820.CellBorderStyle = (HorizontalAlignment)1;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_grupos_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			int num = 0;
 			checked
 			{
 				do
@@ -6038,9 +6038,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 2);
-				this.DataGridView_grupos_820.RowCount = (HorizontalAlignment)4;
-				this.DataGridView_grupos_820.RowHeadersWidth = (HorizontalAlignment)90;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_grupos_820.RowCount = 4;
+				this.DataGridView_grupos_820.RowHeadersWidth = 90;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_grupos_820.Rows)
@@ -6077,16 +6077,16 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewGruposColunas[0].NomeColuna = "ASimultaneos";
 			RT_geral.RT_820_DataGrigViewGruposColunas[1].NomeColuna = "TpAcionamentos";
 			RT_geral.RT_820_DataGrigViewGruposColunas[2].NomeColuna = "RotMot";
-			RT_geral.RT_820_DataGrigViewGruposColunas[0].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_DataGrigViewGruposColunas[1].LarguraColuna = (HorizontalAlignment)120;
-			RT_geral.RT_820_DataGrigViewGruposColunas[2].LarguraColuna = (HorizontalAlignment)120;
-			RT_geral.RT_820_DataGrigViewGruposColunas[0].AlingColuna = (HorizontalAlignment)32;
-			RT_geral.RT_820_DataGrigViewGruposColunas[1].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewGruposColunas[2].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewGruposColunas[0].NumeroLinhaMenu = (HorizontalAlignment)9;
+			RT_geral.RT_820_DataGrigViewGruposColunas[0].LarguraColuna = 100;
+			RT_geral.RT_820_DataGrigViewGruposColunas[1].LarguraColuna = 120;
+			RT_geral.RT_820_DataGrigViewGruposColunas[2].LarguraColuna = 120;
+			RT_geral.RT_820_DataGrigViewGruposColunas[0].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewGruposColunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewGruposColunas[2].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewGruposColunas[0].NumeroLinhaMenu = 9;
 			RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasMenu[0] = "Liberado";
-			RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
-			int num = (HorizontalAlignment)1;
+			RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasValor[0] = 21856;
+			int num = 1;
 			checked
 			{
 				do
@@ -6096,14 +6096,14 @@ namespace iS800
 					num++;
 				}
 				while (num <= 8);
-				RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewGruposColunas[2].NumeroLinhaMenu = (HorizontalAlignment)3;
+				RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewGruposColunas[2].NumeroLinhaMenu = 3;
 				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasMenu[0] = "Desabilitado";
-				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasMenu[1] = "Por tempo";
-				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasValor[1] = 21857;
 				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasMenu[2] = "Por partidas";
-				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasValor[2] = (HorizontalAlignment)21858;
+				RT_geral.RT_820_DataGrigViewGruposColunas[2].LinhasValor[2] = 21858;
 			}
 		}
 
@@ -6111,8 +6111,8 @@ namespace iS800
 		private void GeraDataGridView_EA()
 		{
 			this.DataGridView_parametros_EA_820.Columns.Clear();
-			this.DataGridView_parametros_EA_820.CellBorderStyle = (HorizontalAlignment)1;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_parametros_EA_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			int num = 0;
 			checked
 			{
 				do
@@ -6130,9 +6130,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 2);
-				this.DataGridView_parametros_EA_820.RowCount = (HorizontalAlignment)16;
-				this.DataGridView_parametros_EA_820.RowHeadersWidth = (HorizontalAlignment)70;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_parametros_EA_820.RowCount = 16;
+				this.DataGridView_parametros_EA_820.RowHeadersWidth = 70;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_parametros_EA_820.Rows)
@@ -6165,24 +6165,24 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewEAColunas[0].NomeColuna = "range";
 			RT_geral.RT_820_DataGrigViewEAColunas[1].NomeColuna = "ini";
 			RT_geral.RT_820_DataGrigViewEAColunas[2].NomeColuna = "fim";
-			RT_geral.RT_820_DataGrigViewEAColunas[0].LarguraColuna = (HorizontalAlignment)90;
-			RT_geral.RT_820_DataGrigViewEAColunas[1].LarguraColuna = (HorizontalAlignment)90;
-			RT_geral.RT_820_DataGrigViewEAColunas[2].LarguraColuna = (HorizontalAlignment)90;
-			RT_geral.RT_820_DataGrigViewEAColunas[0].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewEAColunas[1].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewEAColunas[2].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewEAColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_DataGrigViewEAColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_DataGrigViewEAColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].LarguraColuna = 90;
+			RT_geral.RT_820_DataGrigViewEAColunas[1].LarguraColuna = 90;
+			RT_geral.RT_820_DataGrigViewEAColunas[2].LarguraColuna = 90;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewEAColunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewEAColunas[2].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_DataGrigViewEAColunas[1].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_DataGrigViewEAColunas[2].NumeroLinhaMenu = 0;
 		}
 
 		// Token: 0x060015CA RID: 5578 RVA: 0x0033F578 File Offset: 0x0033D978
 		private void GeraDataGridView_Perifericos1()
 		{
 			this.DataGridView_periferico1_RT820.Columns.Clear();
-			this.DataGridView_periferico1_RT820.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_periferico1_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_periferico1_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_periferico1_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -6200,9 +6200,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 1);
-				this.DataGridView_periferico1_RT820.RowCount = (HorizontalAlignment)5;
-				this.DataGridView_periferico1_RT820.RowHeadersWidth = (HorizontalAlignment)100;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_periferico1_RT820.RowCount = 5;
+				this.DataGridView_periferico1_RT820.RowHeadersWidth = 100;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_periferico1_RT820.Rows)
@@ -6230,9 +6230,9 @@ namespace iS800
 		private void GeraDataGridView_Perifericos2()
 		{
 			this.DataGridView_periferico2_RT820.Columns.Clear();
-			this.DataGridView_periferico2_RT820.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_periferico2_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_periferico2_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_periferico2_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -6250,9 +6250,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 1);
-				this.DataGridView_periferico2_RT820.RowCount = (HorizontalAlignment)5;
-				this.DataGridView_periferico2_RT820.RowHeadersWidth = (HorizontalAlignment)100;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_periferico2_RT820.RowCount = 5;
+				this.DataGridView_periferico2_RT820.RowHeadersWidth = 100;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_periferico2_RT820.Rows)
@@ -6283,15 +6283,15 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_360_DatagridViewPerifericoModbusGenericoColunas = RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas;
 			bool flag = true;
 			dataGridView_perifericomodbusgenerico_RT.Columns.Clear();
-			dataGridView_perifericomodbusgenerico_RT.CellBorderStyle = (HorizontalAlignment)1;
-			dataGridView_perifericomodbusgenerico_RT.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			dataGridView_perifericomodbusgenerico_RT.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			dataGridView_perifericomodbusgenerico_RT.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToAddRows = false;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToDeleteRows = false;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToOrderColumns = false;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToResizeColumns = false;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToResizeRows = false;
-			int num = (HorizontalAlignment)0;
-			int i = (HorizontalAlignment)0;
+			int num = 0;
+			int i = 0;
 			checked
 			{
 				do
@@ -6310,22 +6310,22 @@ namespace iS800
 					i++;
 				}
 				while (i <= 9);
-				dataGridView_perifericomodbusgenerico_RT.RowCount = (HorizontalAlignment)5;
+				dataGridView_perifericomodbusgenerico_RT.RowCount = 5;
 				if (flag)
 				{
-					dataGridView_perifericomodbusgenerico_RT.RowHeadersWidth = (HorizontalAlignment)150;
+					dataGridView_perifericomodbusgenerico_RT.RowHeadersWidth = 150;
 					dataGridView_perifericomodbusgenerico_RT.RowHeadersVisible = true;
-					num += (HorizontalAlignment)2;
+					num += 2;
 				}
 				else
 				{
-					dataGridView_perifericomodbusgenerico_RT.RowHeadersWidth = (HorizontalAlignment)4;
+					dataGridView_perifericomodbusgenerico_RT.RowHeadersWidth = 4;
 					dataGridView_perifericomodbusgenerico_RT.RowHeadersVisible = false;
 				}
 				dataGridView_perifericomodbusgenerico_RT.Width = num + dataGridView_perifericomodbusgenerico_RT.RowHeadersWidth;
 				if (flag)
 				{
-					int num2 = (HorizontalAlignment)1;
+					int num2 = 1;
 					try
 					{
 						foreach (object obj in dataGridView_perifericomodbusgenerico_RT.Rows)
@@ -6347,8 +6347,8 @@ namespace iS800
 						}
 					}
 				}
-				int num3 = (HorizontalAlignment)0;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 0;
+				int num4 = 0;
 				int num5 = dataGridView_perifericomodbusgenerico_RT.RowCount - 1;
 				for (i = num4; i <= num5; i++)
 				{
@@ -6365,15 +6365,15 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_DataGrigViewReferenciaPerifericosColunas = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas;
 			bool flag = true;
 			datagridview_referenciaperifico.Columns.Clear();
-			datagridview_referenciaperifico.CellBorderStyle = (HorizontalAlignment)1;
-			datagridview_referenciaperifico.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			datagridview_referenciaperifico.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			datagridview_referenciaperifico.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			datagridview_referenciaperifico.AllowUserToAddRows = false;
 			datagridview_referenciaperifico.AllowUserToDeleteRows = false;
 			datagridview_referenciaperifico.AllowUserToOrderColumns = false;
 			datagridview_referenciaperifico.AllowUserToResizeColumns = false;
 			datagridview_referenciaperifico.AllowUserToResizeRows = false;
-			int num = (HorizontalAlignment)0;
-			int i = (HorizontalAlignment)0;
+			int num = 0;
+			int i = 0;
 			checked
 			{
 				do
@@ -6392,22 +6392,22 @@ namespace iS800
 					i++;
 				}
 				while (i <= 6);
-				datagridview_referenciaperifico.RowCount = (HorizontalAlignment)10;
+				datagridview_referenciaperifico.RowCount = 10;
 				if (flag)
 				{
-					datagridview_referenciaperifico.RowHeadersWidth = (HorizontalAlignment)50;
+					datagridview_referenciaperifico.RowHeadersWidth = 50;
 					datagridview_referenciaperifico.RowHeadersVisible = true;
-					num += (HorizontalAlignment)2;
+					num += 2;
 				}
 				else
 				{
-					datagridview_referenciaperifico.RowHeadersWidth = (HorizontalAlignment)4;
+					datagridview_referenciaperifico.RowHeadersWidth = 4;
 					datagridview_referenciaperifico.RowHeadersVisible = false;
 				}
 				datagridview_referenciaperifico.Width = num + datagridview_referenciaperifico.RowHeadersWidth;
 				if (flag)
 				{
-					int num2 = (HorizontalAlignment)1;
+					int num2 = 1;
 					try
 					{
 						foreach (object obj in datagridview_referenciaperifico.Rows)
@@ -6429,8 +6429,8 @@ namespace iS800
 						}
 					}
 				}
-				int num3 = (HorizontalAlignment)0;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 0;
+				int num4 = 0;
 				int num5 = datagridview_referenciaperifico.RowCount - 1;
 				for (i = num4; i <= num5; i++)
 				{
@@ -6443,7 +6443,7 @@ namespace iS800
 		// Token: 0x060015CE RID: 5582 RVA: 0x0033FB80 File Offset: 0x0033DF80
 		private void InicializaEstrutura_DataGridView_Periferico1()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -6457,13 +6457,13 @@ namespace iS800
 				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].TagColuna = "Endereço";
 				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].NomeColuna = "modelo";
 				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].NomeColuna = "end";
-				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].LarguraColuna = (HorizontalAlignment)250;
-				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].LarguraColuna = (HorizontalAlignment)60;
-				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].LarguraColuna = 250;
+				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].LarguraColuna = 60;
+				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].AlingColuna = 16;
+				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].AlingColuna = 64;
 				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].NumeroLinhaMenu = perifericos.perif_RT820_360.Count;
-				int num2 = (HorizontalAlignment)48;
-				num = (HorizontalAlignment)0;
+				int num2 = 48;
+				num = 0;
 				try
 				{
 					foreach (perifericos.Periferico periferico in perifericos.perif_RT820_360)
@@ -6478,7 +6478,7 @@ namespace iS800
 					List<perifericos.Periferico>.Enumerator enumerator;
 					enumerator.Dispose();
 				}
-				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[1].NumeroLinhaMenu = 0;
 			}
 		}
 
@@ -6507,48 +6507,48 @@ namespace iS800
 			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].NomeColuna = "var3";
 			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].NomeColuna = "mem4";
 			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].NomeColuna = "var4";
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[0].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[2].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[3].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[4].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[5].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[6].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].LarguraColuna = (HorizontalAlignment)60;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[0].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[2].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[3].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[4].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[5].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[6].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].NumeroLinhaMenu = (HorizontalAlignment)3;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[3].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[4].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[5].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[6].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].NumeroLinhaMenu = (HorizontalAlignment)0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[0].LarguraColuna = 100;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LarguraColuna = 100;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[2].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[3].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[4].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[5].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[6].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].LarguraColuna = 60;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[0].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[2].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[3].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[4].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[5].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[6].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].AlingColuna = 16;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[0].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].NumeroLinhaMenu = 3;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[2].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[3].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[4].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[5].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[6].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[7].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[8].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[9].NumeroLinhaMenu = 0;
 			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasMenu[0] = "FUNÇÃO 1";
 			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasMenu[1] = "FUNÇÃO 3";
 			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasMenu[2] = "FUNÇÃO 4";
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasValor[0] = (HorizontalAlignment)1;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasValor[1] = (HorizontalAlignment)3;
-			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasValor[2] = (HorizontalAlignment)4;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasValor[0] = 1;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasValor[1] = 3;
+			RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].LinhasValor[2] = 4;
 		}
 
 		// Token: 0x060015D0 RID: 5584 RVA: 0x0034018C File Offset: 0x0033E58C
 		private void InicializaEstrutura_DataGridView_Periferico2()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -6562,13 +6562,13 @@ namespace iS800
 				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].TagColuna = "Endereço";
 				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].NomeColuna = "modelo";
 				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].NomeColuna = "end";
-				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].LarguraColuna = (HorizontalAlignment)250;
-				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].LarguraColuna = (HorizontalAlignment)60;
-				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].LarguraColuna = 250;
+				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].LarguraColuna = 60;
+				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].AlingColuna = 16;
+				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].AlingColuna = 64;
 				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].NumeroLinhaMenu = perifericos.perif_RT820_360.Count;
-				int num2 = (HorizontalAlignment)48;
-				num = (HorizontalAlignment)0;
+				int num2 = 48;
+				num = 0;
 				try
 				{
 					foreach (perifericos.Periferico periferico in perifericos.perif_RT820_360)
@@ -6583,7 +6583,7 @@ namespace iS800
 					List<perifericos.Periferico>.Enumerator enumerator;
 					enumerator.Dispose();
 				}
-				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[1].NumeroLinhaMenu = 0;
 			}
 		}
 
@@ -6614,40 +6614,40 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].NomeColuna = "escala";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].NomeColuna = "formato";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].NomeColuna = "base10";
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].NumeroLinhaMenu = (HorizontalAlignment)6;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].NumeroLinhaMenu = (HorizontalAlignment)20;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].NumeroLinhaMenu = (HorizontalAlignment)16;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].NumeroLinhaMenu = (HorizontalAlignment)0;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].NumeroLinhaMenu = (HorizontalAlignment)5;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].NumeroLinhaMenu = (HorizontalAlignment)4;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LarguraColuna = (HorizontalAlignment)100;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].AlingColuna = (HorizontalAlignment)16;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[0] = (HorizontalAlignment)0;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[1] = (HorizontalAlignment)1;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[2] = (HorizontalAlignment)2;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[3] = (HorizontalAlignment)3;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[4] = (HorizontalAlignment)4;
-			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[5] = (HorizontalAlignment)5;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].NumeroLinhaMenu = 6;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].NumeroLinhaMenu = 20;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].NumeroLinhaMenu = 16;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].NumeroLinhaMenu = 5;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].NumeroLinhaMenu = 4;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LarguraColuna = 100;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].LarguraColuna = 100;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].LarguraColuna = 100;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LarguraColuna = 100;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LarguraColuna = 100;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].AlingColuna = 16;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].AlingColuna = 16;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].AlingColuna = 16;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].AlingColuna = 16;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].AlingColuna = 16;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[0] = 0;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[1] = 1;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[2] = 2;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[3] = 3;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[4] = 4;
+			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasValor[5] = 5;
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[0] = "Desabilitado";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[1] = "Periférico 1";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[2] = "Periférico 2";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[3] = "Periférico 3";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[4] = "Periférico 4";
 			RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[5] = "Periférico 5";
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -6657,7 +6657,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 15);
-				num = (HorizontalAlignment)16;
+				num = 16;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].LinhasValor[num] = 21868 + num;
@@ -6665,7 +6665,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 19);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].LinhasValor[num] = 21857 + num;
@@ -6673,20 +6673,20 @@ namespace iS800
 					num++;
 				}
 				while (num <= 15);
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[2] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[2] = (HorizontalAlignment)4;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[2] = 3;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasValor[2] = 4;
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasMenu[0] = "Integer";
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasMenu[1] = "Integer SWAP";
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasMenu[2] = "Long";
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasMenu[3] = "Long Inverso";
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasMenu[4] = "Long SWAP";
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[3] = (HorizontalAlignment)3;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasValor[3] = 3;
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasMenu[0] = "0";
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasMenu[1] = ".0";
 				RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LinhasMenu[2] = ".00";
@@ -6755,7 +6755,7 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor = new int[6];
 			RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasMenu = new string[5];
 			RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor = new int[5];
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -6765,32 +6765,32 @@ namespace iS800
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].NumeroLinhaMenu = (HorizontalAlignment)6;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].NumeroLinhaMenu = (HorizontalAlignment)20;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[4].NumeroLinhaMenu = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].NumeroLinhaMenu = (HorizontalAlignment)5;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].NumeroLinhaMenu = (HorizontalAlignment)4;
-				num = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].NumeroLinhaMenu = 6;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].NumeroLinhaMenu = 20;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[4].NumeroLinhaMenu = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].NumeroLinhaMenu = 5;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].NumeroLinhaMenu = 4;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador1Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador1Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador1Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[4] = (HorizontalAlignment)4;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[5] = (HorizontalAlignment)5;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[4] = 4;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasValor[5] = 5;
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[1] = "Periférico 1";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[2] = "Periférico 2";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[3] = "Periférico 3";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[4] = "Periférico 4";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[5] = "Periférico 5";
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].LinhasValor[num2] = num2 + 21857;
@@ -6798,7 +6798,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)16;
+				num2 = 16;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].LinhasValor[num2] = num2 - 16 + 21873;
@@ -6806,7 +6806,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 19);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador1Colunas[4].LinhasValor[num2] = num2 + 21857;
@@ -6814,37 +6814,37 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[4] = (HorizontalAlignment)4;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasValor[4] = 4;
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasMenu[0] = "Integer";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasMenu[1] = "Integer SWAP";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasMenu[2] = "Long";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasMenu[3] = "Long Inverso";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasMenu[4] = "Long SWAP";
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[3] = (HorizontalAlignment)3;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasValor[3] = 3;
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasMenu[0] = "0";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasMenu[1] = ".0";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasMenu[2] = ".00";
 				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].LinhasMenu[3] = ".000";
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[1].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[3].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[4].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[5].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[6].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[9].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[10].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[11].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador1Colunas[12].AlingColuna = (HorizontalAlignment)16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[1].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[3].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[4].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[5].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[6].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[9].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[10].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[11].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador1Colunas[12].AlingColuna = 16;
 			}
 		}
 
@@ -6909,7 +6909,7 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor = new int[6];
 			RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasMenu = new string[5];
 			RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor = new int[5];
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -6919,32 +6919,32 @@ namespace iS800
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].NumeroLinhaMenu = (HorizontalAlignment)6;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].NumeroLinhaMenu = (HorizontalAlignment)20;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[4].NumeroLinhaMenu = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].NumeroLinhaMenu = (HorizontalAlignment)5;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].NumeroLinhaMenu = (HorizontalAlignment)4;
-				num = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].NumeroLinhaMenu = 6;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].NumeroLinhaMenu = 20;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[4].NumeroLinhaMenu = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].NumeroLinhaMenu = 5;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].NumeroLinhaMenu = 4;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador2Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador2Colunas[num].AlingColuna = (HorizontalAlignment)16;
+					RT_geral.RT_820_DataGrigViewAtuador2Colunas[num].AlingColuna = 16;
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[4] = (HorizontalAlignment)4;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[5] = (HorizontalAlignment)5;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[4] = 4;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasValor[5] = 5;
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[1] = "Periférico 1";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[2] = "Periférico 2";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[3] = "Periférico 3";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[4] = "Periférico 4";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[5] = "Periférico 5";
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].LinhasValor[num2] = num2 + 21857;
@@ -6952,7 +6952,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)16;
+				num2 = 16;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].LinhasValor[num2] = num2 - 16 + 21873;
@@ -6960,7 +6960,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 19);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador2Colunas[4].LinhasValor[num2] = num2 + 21857;
@@ -6968,37 +6968,37 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[4] = (HorizontalAlignment)4;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasValor[4] = 4;
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasMenu[0] = "Integer";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasMenu[1] = "Integer SWAP";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasMenu[2] = "Long";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasMenu[3] = "Long Inverso";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasMenu[4] = "Long SWAP";
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[3] = (HorizontalAlignment)3;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasValor[3] = 3;
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasMenu[0] = "0";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasMenu[1] = ".0";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasMenu[2] = ".00";
 				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].LinhasMenu[3] = ".000";
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[1].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[3].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[4].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[5].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[6].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[9].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[10].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[11].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador2Colunas[12].AlingColuna = (HorizontalAlignment)16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[1].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[3].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[4].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[5].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[6].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[9].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[10].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[11].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador2Colunas[12].AlingColuna = 16;
 			}
 		}
 
@@ -7063,7 +7063,7 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor = new int[6];
 			RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasMenu = new string[5];
 			RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor = new int[5];
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7073,32 +7073,32 @@ namespace iS800
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].NumeroLinhaMenu = (HorizontalAlignment)6;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].NumeroLinhaMenu = (HorizontalAlignment)20;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[4].NumeroLinhaMenu = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].NumeroLinhaMenu = (HorizontalAlignment)5;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].NumeroLinhaMenu = (HorizontalAlignment)4;
-				num = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].NumeroLinhaMenu = 6;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].NumeroLinhaMenu = 20;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[4].NumeroLinhaMenu = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].NumeroLinhaMenu = 5;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].NumeroLinhaMenu = 4;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador3Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador3Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador3Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[4] = (HorizontalAlignment)4;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[5] = (HorizontalAlignment)5;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[4] = 4;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasValor[5] = 5;
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[1] = "Periférico 1";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[2] = "Periférico 2";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[3] = "Periférico 3";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[4] = "Periférico 4";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[5] = "Periférico 5";
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].LinhasValor[num2] = num2 + 21857;
@@ -7106,7 +7106,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)16;
+				num2 = 16;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].LinhasValor[num2] = num2 - 16 + 21873;
@@ -7114,7 +7114,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 19);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador3Colunas[4].LinhasValor[num2] = num2 + 21857;
@@ -7122,37 +7122,37 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[4] = (HorizontalAlignment)4;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasValor[4] = 4;
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasMenu[0] = "Integer";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasMenu[1] = "Integer SWAP";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasMenu[2] = "Long";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasMenu[3] = "Long Inverso";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasMenu[4] = "Long SWAP";
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[3] = (HorizontalAlignment)3;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasValor[3] = 3;
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasMenu[0] = "0";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasMenu[1] = ".0";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasMenu[2] = ".00";
 				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].LinhasMenu[3] = ".000";
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[1].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[3].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[4].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[5].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[6].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[9].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[10].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[11].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador3Colunas[12].AlingColuna = (HorizontalAlignment)16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[1].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[3].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[4].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[5].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[6].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[9].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[10].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[11].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador3Colunas[12].AlingColuna = 16;
 			}
 		}
 
@@ -7217,7 +7217,7 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor = new int[6];
 			RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasMenu = new string[5];
 			RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor = new int[5];
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7227,32 +7227,32 @@ namespace iS800
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].NumeroLinhaMenu = (HorizontalAlignment)6;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].NumeroLinhaMenu = (HorizontalAlignment)20;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[4].NumeroLinhaMenu = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].NumeroLinhaMenu = (HorizontalAlignment)5;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].NumeroLinhaMenu = (HorizontalAlignment)4;
-				num = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].NumeroLinhaMenu = 6;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].NumeroLinhaMenu = 20;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[4].NumeroLinhaMenu = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].NumeroLinhaMenu = 5;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].NumeroLinhaMenu = 4;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador4Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador4Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador4Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 12);
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[4] = (HorizontalAlignment)4;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[5] = (HorizontalAlignment)5;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[4] = 4;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasValor[5] = 5;
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[1] = "Periférico 1";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[2] = "Periférico 2";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[3] = "Periférico 3";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[4] = "Periférico 4";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[5] = "Periférico 5";
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].LinhasValor[num2] = num2 + 21857;
@@ -7260,7 +7260,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)16;
+				num2 = 16;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].LinhasValor[num2] = num2 - 16 + 21873;
@@ -7268,7 +7268,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 19);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewAtuador4Colunas[4].LinhasValor[num2] = num2 + 21857;
@@ -7276,37 +7276,37 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[3] = (HorizontalAlignment)3;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[4] = (HorizontalAlignment)4;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[3] = 3;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasValor[4] = 4;
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasMenu[0] = "Integer";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasMenu[1] = "Integer SWAP";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasMenu[2] = "Long";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasMenu[3] = "Long Inverso";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasMenu[4] = "Long SWAP";
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[3] = (HorizontalAlignment)3;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[0] = 0;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[1] = 1;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[2] = 2;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasValor[3] = 3;
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasMenu[0] = "0";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasMenu[1] = ".0";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasMenu[2] = ".00";
 				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].LinhasMenu[3] = ".000";
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[1].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[3].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[4].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[5].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[6].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[9].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[10].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[11].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DataGrigViewAtuador4Colunas[12].AlingColuna = (HorizontalAlignment)16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[1].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[3].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[4].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[5].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[6].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[9].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[10].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[11].AlingColuna = 16;
+				RT_geral.RT_820_DataGrigViewAtuador4Colunas[12].AlingColuna = 16;
 			}
 		}
 
@@ -7341,34 +7341,34 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[11].NomeColuna = "Sp5";
 			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[12].NomeColuna = "Ref6";
 			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[13].NomeColuna = "Sp6";
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[0].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[1].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[2].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[3].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[4].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[5].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[6].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[7].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[8].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[9].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[10].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[11].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[12].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[13].LarguraColuna = (HorizontalAlignment)80;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[0].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[1].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[2].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[3].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[4].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[5].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[6].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[7].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[8].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[9].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[10].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[11].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[12].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[13].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[0].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[1].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[2].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[3].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[4].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[5].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[6].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[7].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[8].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[9].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[10].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[11].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[12].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[13].LarguraColuna = 80;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[0].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[2].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[3].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[4].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[5].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[6].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[7].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[8].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[9].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[10].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[11].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[12].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas[13].AlingColuna = 64;
 		}
 
 		// Token: 0x060015D7 RID: 5591 RVA: 0x00342C44 File Offset: 0x00341044
@@ -7419,7 +7419,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7427,7 +7427,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 11);
@@ -7488,7 +7488,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7496,7 +7496,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador2SetPoint1Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador2SetPoint1Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador2SetPoint1Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador2SetPoint1Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador2SetPoint1Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 13);
@@ -7557,7 +7557,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7565,7 +7565,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador3SetPoint1Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador3SetPoint1Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador3SetPoint1Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador3SetPoint1Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador3SetPoint1Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 13);
@@ -7626,7 +7626,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7634,7 +7634,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador4SetPoint1Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador4SetPoint1Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador4SetPoint1Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador4SetPoint1Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador4SetPoint1Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 13);
@@ -7689,7 +7689,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7697,7 +7697,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador2SetPoint2Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador2SetPoint2Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador2SetPoint2Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador2SetPoint2Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador2SetPoint2Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 11);
@@ -7752,7 +7752,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7760,7 +7760,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador3SetPoint2Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador3SetPoint2Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador3SetPoint2Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador3SetPoint2Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador3SetPoint2Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 11);
@@ -7815,7 +7815,7 @@ namespace iS800
 				80,
 				80
 			};
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -7823,7 +7823,7 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewAtuador4SetPoint2Colunas[num].TagColuna = array[num];
 					RT_geral.RT_820_DataGrigViewAtuador4SetPoint2Colunas[num].NomeColuna = array2[num];
 					RT_geral.RT_820_DataGrigViewAtuador4SetPoint2Colunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DataGrigViewAtuador4SetPoint2Colunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DataGrigViewAtuador4SetPoint2Colunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 11);
@@ -7836,15 +7836,15 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] array = colunas;
 			bool flag = false;
 			datagridview.Columns.Clear();
-			datagridview.CellBorderStyle = (HorizontalAlignment)1;
-			datagridview.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			datagridview.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			datagridview.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			datagridview.AllowUserToAddRows = false;
 			datagridview.AllowUserToDeleteRows = false;
 			datagridview.AllowUserToOrderColumns = false;
 			datagridview.AllowUserToResizeColumns = false;
 			datagridview.AllowUserToResizeRows = false;
-			int num = (HorizontalAlignment)0;
-			int num2 = (HorizontalAlignment)0;
+			int num = 0;
+			int num2 = 0;
 			checked
 			{
 				int num3 = NUM_COLUNAS - 1;
@@ -7865,20 +7865,20 @@ namespace iS800
 				datagridview.RowCount = NUM_LINHAS;
 				if (flag)
 				{
-					datagridview.RowHeadersWidth = (HorizontalAlignment)50;
+					datagridview.RowHeadersWidth = 50;
 					datagridview.RowHeadersVisible = true;
-					num += (HorizontalAlignment)2;
+					num += 2;
 				}
 				else
 				{
-					datagridview.RowHeadersWidth = (HorizontalAlignment)4;
+					datagridview.RowHeadersWidth = 4;
 					datagridview.RowHeadersVisible = false;
 				}
 				datagridview.Width = num + datagridview.RowHeadersWidth;
 				datagridview.Width = datagridview.Columns.GetColumnsWidth(0) + datagridview.RowHeadersWidth + 0;
 				if (flag)
 				{
-					int num4 = (HorizontalAlignment)1;
+					int num4 = 1;
 					try
 					{
 						foreach (object obj in datagridview.Rows)
@@ -7900,8 +7900,8 @@ namespace iS800
 						}
 					}
 				}
-				int num5 = (HorizontalAlignment)0;
-				int num6 = (HorizontalAlignment)0;
+				int num5 = 0;
+				int num6 = 0;
 				int num7 = datagridview.RowCount - 1;
 				for (int i = num6; i <= num7; i++)
 				{
@@ -7918,15 +7918,15 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] array = colunas;
 			bool flag = true;
 			datagridview.Columns.Clear();
-			datagridview.CellBorderStyle = (HorizontalAlignment)1;
-			datagridview.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			datagridview.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			datagridview.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			datagridview.AllowUserToAddRows = false;
 			datagridview.AllowUserToDeleteRows = false;
 			datagridview.AllowUserToOrderColumns = false;
 			datagridview.AllowUserToResizeColumns = false;
 			datagridview.AllowUserToResizeRows = false;
-			int num = (HorizontalAlignment)0;
-			int num2 = (HorizontalAlignment)0;
+			int num = 0;
+			int num2 = 0;
 			checked
 			{
 				int num3 = NUM_COLUNAS - 1;
@@ -7947,20 +7947,20 @@ namespace iS800
 				datagridview.RowCount = NUM_LINHAS;
 				if (flag)
 				{
-					datagridview.RowHeadersWidth = (HorizontalAlignment)90;
+					datagridview.RowHeadersWidth = 90;
 					datagridview.RowHeadersVisible = true;
-					num += (HorizontalAlignment)2;
+					num += 2;
 				}
 				else
 				{
-					datagridview.RowHeadersWidth = (HorizontalAlignment)4;
+					datagridview.RowHeadersWidth = 4;
 					datagridview.RowHeadersVisible = false;
 				}
 				datagridview.Width = num + datagridview.RowHeadersWidth;
 				datagridview.Width = datagridview.Columns.GetColumnsWidth(0) + datagridview.RowHeadersWidth + 0;
 				if (flag)
 				{
-					int num4 = (HorizontalAlignment)1;
+					int num4 = 1;
 					try
 					{
 						foreach (object obj in datagridview.Rows)
@@ -7982,8 +7982,8 @@ namespace iS800
 						}
 					}
 				}
-				int num5 = (HorizontalAlignment)0;
-				int num6 = (HorizontalAlignment)0;
+				int num5 = 0;
+				int num6 = 0;
 				int num7 = datagridview.RowCount - 1;
 				for (int i = num6; i <= num7; i++)
 				{
@@ -8001,15 +8001,15 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_DataGrigViewAtuador1SetPoint1Colunas = RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas;
 			bool flag = true;
 			dgv_atuador_setpoint.Columns.Clear();
-			dgv_atuador_setpoint.CellBorderStyle = (HorizontalAlignment)1;
-			dgv_atuador_setpoint.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			dgv_atuador_setpoint.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			dgv_atuador_setpoint.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dgv_atuador_setpoint.AllowUserToAddRows = false;
 			dgv_atuador_setpoint.AllowUserToDeleteRows = false;
 			dgv_atuador_setpoint.AllowUserToOrderColumns = false;
 			dgv_atuador_setpoint.AllowUserToResizeColumns = false;
 			dgv_atuador_setpoint.AllowUserToResizeRows = false;
-			int num = (HorizontalAlignment)0;
-			int i = (HorizontalAlignment)0;
+			int num = 0;
+			int i = 0;
 			checked
 			{
 				do
@@ -8028,23 +8028,23 @@ namespace iS800
 					i++;
 				}
 				while (i <= 13);
-				dgv_atuador_setpoint.RowCount = (HorizontalAlignment)3;
+				dgv_atuador_setpoint.RowCount = 3;
 				if (flag)
 				{
-					dgv_atuador_setpoint.RowHeadersWidth = (HorizontalAlignment)50;
+					dgv_atuador_setpoint.RowHeadersWidth = 50;
 					dgv_atuador_setpoint.RowHeadersVisible = true;
-					num += (HorizontalAlignment)2;
+					num += 2;
 				}
 				else
 				{
-					dgv_atuador_setpoint.RowHeadersWidth = (HorizontalAlignment)4;
+					dgv_atuador_setpoint.RowHeadersWidth = 4;
 					dgv_atuador_setpoint.RowHeadersVisible = false;
 				}
 				dgv_atuador_setpoint.Width = num + dgv_atuador_setpoint.RowHeadersWidth;
 				dgv_atuador_setpoint.Width = dgv_atuador_setpoint.Columns.GetColumnsWidth(0) + dgv_atuador_setpoint.RowHeadersWidth + 1;
 				if (flag)
 				{
-					int num2 = (HorizontalAlignment)1;
+					int num2 = 1;
 					try
 					{
 						foreach (object obj in dgv_atuador_setpoint.Rows)
@@ -8066,8 +8066,8 @@ namespace iS800
 						}
 					}
 				}
-				int num3 = (HorizontalAlignment)0;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 0;
+				int num4 = 0;
 				int num5 = dgv_atuador_setpoint.RowCount - 1;
 				for (i = num4; i <= num5; i++)
 				{
@@ -8085,15 +8085,15 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_DataGrigViewAtuador1SetPoint2Colunas = RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas;
 			bool flag = true;
 			dgv_atuador_setpoint.Columns.Clear();
-			dgv_atuador_setpoint.CellBorderStyle = (HorizontalAlignment)1;
-			dgv_atuador_setpoint.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			dgv_atuador_setpoint.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			dgv_atuador_setpoint.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dgv_atuador_setpoint.AllowUserToAddRows = false;
 			dgv_atuador_setpoint.AllowUserToDeleteRows = false;
 			dgv_atuador_setpoint.AllowUserToOrderColumns = false;
 			dgv_atuador_setpoint.AllowUserToResizeColumns = false;
 			dgv_atuador_setpoint.AllowUserToResizeRows = false;
-			int num = (HorizontalAlignment)0;
-			int i = (HorizontalAlignment)0;
+			int num = 0;
+			int i = 0;
 			checked
 			{
 				do
@@ -8112,23 +8112,23 @@ namespace iS800
 					i++;
 				}
 				while (i <= 11);
-				dgv_atuador_setpoint.RowCount = (HorizontalAlignment)3;
+				dgv_atuador_setpoint.RowCount = 3;
 				if (flag)
 				{
-					dgv_atuador_setpoint.RowHeadersWidth = (HorizontalAlignment)50;
+					dgv_atuador_setpoint.RowHeadersWidth = 50;
 					dgv_atuador_setpoint.RowHeadersVisible = true;
-					num += (HorizontalAlignment)2;
+					num += 2;
 				}
 				else
 				{
-					dgv_atuador_setpoint.RowHeadersWidth = (HorizontalAlignment)4;
+					dgv_atuador_setpoint.RowHeadersWidth = 4;
 					dgv_atuador_setpoint.RowHeadersVisible = false;
 				}
 				dgv_atuador_setpoint.Width = num + dgv_atuador_setpoint.RowHeadersWidth;
 				dgv_atuador_setpoint.Width = dgv_atuador_setpoint.Columns.GetColumnsWidth(0) + dgv_atuador_setpoint.RowHeadersWidth + 2;
 				if (flag)
 				{
-					int num2 = (HorizontalAlignment)1;
+					int num2 = 1;
 					try
 					{
 						foreach (object obj in dgv_atuador_setpoint.Rows)
@@ -8150,8 +8150,8 @@ namespace iS800
 						}
 					}
 				}
-				int num3 = (HorizontalAlignment)0;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 0;
+				int num4 = 0;
 				int num5 = dgv_atuador_setpoint.RowCount - 1;
 				for (i = num4; i <= num5; i++)
 				{
@@ -8166,9 +8166,9 @@ namespace iS800
 		private void GeraDataGridView_Vazoes()
 		{
 			this.DataGridView_vazoes_RT820.Columns.Clear();
-			this.DataGridView_vazoes_RT820.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_vazoes_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_vazoes_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_vazoes_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -8186,9 +8186,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 0);
-				this.DataGridView_vazoes_RT820.RowCount = (HorizontalAlignment)8;
-				this.DataGridView_vazoes_RT820.RowHeadersWidth = (HorizontalAlignment)80;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_vazoes_RT820.RowCount = 8;
+				this.DataGridView_vazoes_RT820.RowHeadersWidth = 80;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_vazoes_RT820.Rows)
@@ -8215,128 +8215,128 @@ namespace iS800
 		// Token: 0x060015E3 RID: 5603 RVA: 0x003441DC File Offset: 0x003425DC
 		private void InicializaEstrutura_DataGridView_Vazoes()
 		{
-			int num = (HorizontalAlignment)51;
+			int num = 51;
 			checked
 			{
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu = new string[num + 1];
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor = new int[num + 1];
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].NomeColuna = "Entrada";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LarguraColuna = (HorizontalAlignment)200;
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LarguraColuna = 200;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[0] = "Leitura desabilitada";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[1] = 21857;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[1] = "Leitura vazão - EA1";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[2] = (HorizontalAlignment)21858;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[2] = 21858;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[2] = "Leitura vazão - EA2";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[3] = (HorizontalAlignment)21859;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[3] = 21859;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[3] = "Leitura vazão - EA3";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[4] = (HorizontalAlignment)21860;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[4] = 21860;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[4] = "Leitura vazão - EA4";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[5] = (HorizontalAlignment)21861;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[5] = 21861;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[5] = "Leitura vazão - EA5";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[6] = (HorizontalAlignment)21862;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[6] = 21862;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[6] = "Leitura vazão - EA6";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[7] = (HorizontalAlignment)21863;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[7] = 21863;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[7] = "Leitura vazão - EA7";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[8] = (HorizontalAlignment)21864;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[8] = 21864;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[8] = "Leitura vazão - EA8";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[9] = (HorizontalAlignment)21865;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[9] = 21865;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[9] = "Leitura vazão - EA9";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[10] = (HorizontalAlignment)21866;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[10] = 21866;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[10] = "Leitura vazão - EA10";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[11] = (HorizontalAlignment)21867;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[11] = 21867;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[11] = "Leitura vazão - EA11";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[12] = (HorizontalAlignment)21868;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[12] = 21868;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[12] = "Leitura vazão - EA12";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[13] = (HorizontalAlignment)21869;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[13] = 21869;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[13] = "Leitura vazão - EA13";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[14] = (HorizontalAlignment)21870;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[14] = 21870;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[14] = "Leitura vazão - EA14";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[15] = (HorizontalAlignment)21871;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[15] = 21871;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[15] = "Leitura vazão - EA15";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[16] = (HorizontalAlignment)21872;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[16] = 21872;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[16] = "Leitura vazão - EA16";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[17] = (HorizontalAlignment)21873;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[17] = 21873;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[17] = "Leitura vazão - ED1";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[18] = (HorizontalAlignment)21874;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[18] = 21874;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[18] = "Leitura vazão - ED1 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[19] = (HorizontalAlignment)21875;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[19] = 21875;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[19] = "Leitura vazão - ED2";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[20] = (HorizontalAlignment)21876;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[20] = 21876;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[20] = "Leitura vazão - ED2 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[21] = (HorizontalAlignment)21877;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[21] = 21877;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[21] = "Leitura vazão - ED3";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[22] = (HorizontalAlignment)21878;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[22] = 21878;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[22] = "Leitura vazão - ED3 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[23] = (HorizontalAlignment)21879;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[23] = 21879;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[23] = "Leitura vazão - ED4";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[24] = (HorizontalAlignment)21880;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[24] = 21880;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[24] = "Leitura vazão - ED4 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[25] = (HorizontalAlignment)21881;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[25] = 21881;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[25] = "Leitura vazão - ED5";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[26] = (HorizontalAlignment)21882;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[26] = 21882;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[26] = "Leitura vazão - ED5 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[27] = (HorizontalAlignment)21883;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[27] = 21883;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[27] = "Leitura vazão - ED6";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[28] = (HorizontalAlignment)21884;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[28] = 21884;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[28] = "Leitura vazão - ED6 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[29] = (HorizontalAlignment)21885;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[29] = 21885;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[29] = "Leitura vazão - ED7";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[30] = (HorizontalAlignment)21886;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[30] = 21886;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[30] = "Leitura vazão - ED7 reverso";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[31] = (HorizontalAlignment)21887;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[31] = 21887;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[31] = "Leitura vazão - ED8";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[32] = (HorizontalAlignment)21888;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[32] = 21888;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[32] = "Leitura vazão - ED8 reverso";
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[33] = (HorizontalAlignment)21889;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[33] = 21889;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[33] = "Leitura vazão - ED9";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[34] = (HorizontalAlignment)21890;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[34] = 21890;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[34] = "Leitura vazão - ED9 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[35] = (HorizontalAlignment)21891;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[35] = 21891;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[35] = "Leitura vazão - ED10";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[36] = (HorizontalAlignment)21892;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[36] = 21892;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[36] = "Leitura vazão - ED10 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[37] = (HorizontalAlignment)21893;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[37] = 21893;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[37] = "Leitura vazão - ED11";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[38] = (HorizontalAlignment)21894;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[38] = 21894;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[38] = "Leitura vazão - ED11 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[39] = (HorizontalAlignment)21895;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[39] = 21895;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[39] = "Leitura vazão - ED12";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[40] = (HorizontalAlignment)21896;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[40] = 21896;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[40] = "Leitura vazão - ED12 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[41] = (HorizontalAlignment)21897;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[41] = 21897;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[41] = "Leitura vazão - ED13";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[42] = (HorizontalAlignment)21898;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[42] = 21898;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[42] = "Leitura vazão - ED13 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[43] = (HorizontalAlignment)21899;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[43] = 21899;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[43] = "Leitura vazão - ED14";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[44] = (HorizontalAlignment)21900;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[44] = 21900;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[44] = "Leitura vazão - ED14 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[45] = (HorizontalAlignment)21901;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[45] = 21901;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[45] = "Leitura vazão - ED15";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[46] = (HorizontalAlignment)21902;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[46] = 21902;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[46] = "Leitura vazão - ED15 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[47] = (HorizontalAlignment)21903;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[47] = 21903;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[47] = "Leitura vazão - ED16";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[48] = (HorizontalAlignment)21904;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[48] = 21904;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[48] = "Leitura vazão - ED16 reverso";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[49] = (HorizontalAlignment)21905;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[49] = 21905;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[49] = "Leitura - Calha 1";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[50] = (HorizontalAlignment)21906;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[50] = 21906;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[50] = "Leitura - Calha 2";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = (HorizontalAlignment)51;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = 51;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[33] = (HorizontalAlignment)21905;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[33] = 21905;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[33] = "Leitura - Calha 1";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[34] = (HorizontalAlignment)21906;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[34] = 21906;
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[34] = "Leitura - Calha 2";
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = (HorizontalAlignment)35;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = 35;
 				}
 			}
 		}
@@ -8375,7 +8375,7 @@ namespace iS800
 			RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor = new int[17];
 			RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasMenu = new string[5];
 			RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor = new int[5];
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -8385,33 +8385,33 @@ namespace iS800
 					num++;
 				}
 				while (num <= 5);
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].NumeroLinhaMenu = (HorizontalAlignment)16;
-				RT_geral.RT_820_DatagridViewCalhasColunas[1].NumeroLinhaMenu = (HorizontalAlignment)4;
-				num = (HorizontalAlignment)0;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].NumeroLinhaMenu = 16;
+				RT_geral.RT_820_DatagridViewCalhasColunas[1].NumeroLinhaMenu = 4;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_DatagridViewCalhasColunas[num].LarguraColuna = array3[num];
-					RT_geral.RT_820_DatagridViewCalhasColunas[num].AlingColuna = (HorizontalAlignment)64;
+					RT_geral.RT_820_DatagridViewCalhasColunas[num].AlingColuna = 64;
 					num++;
 				}
 				while (num <= 5);
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[0] = (HorizontalAlignment)21857;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[1] = (HorizontalAlignment)21858;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[2] = (HorizontalAlignment)21859;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[3] = (HorizontalAlignment)21860;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[4] = (HorizontalAlignment)21861;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[5] = (HorizontalAlignment)21862;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[6] = (HorizontalAlignment)21863;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[7] = (HorizontalAlignment)21864;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[8] = (HorizontalAlignment)21865;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[9] = (HorizontalAlignment)21866;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[10] = (HorizontalAlignment)21867;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[11] = (HorizontalAlignment)21868;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[12] = (HorizontalAlignment)21869;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[13] = (HorizontalAlignment)21870;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[14] = (HorizontalAlignment)21871;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[15] = (HorizontalAlignment)21872;
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[16] = (HorizontalAlignment)21873;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[0] = 21857;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[1] = 21858;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[2] = 21859;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[3] = 21860;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[4] = 21861;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[5] = 21862;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[6] = 21863;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[7] = 21864;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[8] = 21865;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[9] = 21866;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[10] = 21867;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[11] = 21868;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[12] = 21869;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[13] = 21870;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[14] = 21871;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[15] = 21872;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasValor[16] = 21873;
 				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[0] = "EA1";
 				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[1] = "EA2";
 				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[2] = "EA3";
@@ -8428,16 +8428,16 @@ namespace iS800
 				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[13] = "EA14";
 				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[14] = "EA15";
 				RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[15] = "EA16";
-				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[0] = (HorizontalAlignment)0;
-				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[1] = (HorizontalAlignment)1;
-				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[2] = (HorizontalAlignment)2;
-				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[3] = (HorizontalAlignment)3;
+				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[0] = 0;
+				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[1] = 1;
+				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[2] = 2;
+				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasValor[3] = 3;
 				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasMenu[0] = "Sem Calha";
 				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasMenu[1] = "General Parshal Flume";
 				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasMenu[2] = "Botton Step Weir";
 				RT_geral.RT_820_DatagridViewCalhasColunas[1].LinhasMenu[3] = "Supressed Retangular";
-				RT_geral.RT_820_DatagridViewCalhasColunas[0].AlingColuna = (HorizontalAlignment)16;
-				RT_geral.RT_820_DatagridViewCalhasColunas[1].AlingColuna = (HorizontalAlignment)16;
+				RT_geral.RT_820_DatagridViewCalhasColunas[0].AlingColuna = 16;
+				RT_geral.RT_820_DatagridViewCalhasColunas[1].AlingColuna = 16;
 			}
 		}
 
@@ -8445,9 +8445,9 @@ namespace iS800
 		private void GeraDataGridView_ED()
 		{
 			this.DataGridView_RT820_ED.Columns.Clear();
-			this.DataGridView_RT820_ED.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_RT820_ED.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -8465,16 +8465,16 @@ namespace iS800
 					num++;
 				}
 				while (num <= 0);
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
-					this.DataGridView_RT820_ED.RowCount = (HorizontalAlignment)16;
+					this.DataGridView_RT820_ED.RowCount = 16;
 				}
 				else
 				{
-					this.DataGridView_RT820_ED.RowCount = (HorizontalAlignment)8;
+					this.DataGridView_RT820_ED.RowCount = 8;
 				}
-				this.DataGridView_RT820_ED.RowHeadersWidth = (HorizontalAlignment)80;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_RT820_ED.RowHeadersWidth = 80;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_RT820_ED.Rows)
@@ -8501,7 +8501,7 @@ namespace iS800
 		// Token: 0x060015E6 RID: 5606 RVA: 0x00345360 File Offset: 0x00343760
 		private void InicializaEstrutura_DataGridView_ED()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -8513,19 +8513,19 @@ namespace iS800
 				while (num <= 0);
 				RT_geral.RT_820_DataGrigViewEDColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].NomeColuna = "Entrada";
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LarguraColuna = (HorizontalAlignment)200;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[1] = (HorizontalAlignment)21969;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[2] = (HorizontalAlignment)21970;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[3] = (HorizontalAlignment)21971;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[4] = (HorizontalAlignment)21972;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LarguraColuna = 200;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[1] = 21969;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[2] = 21970;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[3] = 21971;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[4] = 21972;
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[0] = "Entrada desabilitada";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[1] = "Verificação de arrombamento";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[2] = "Verificação de falta de fase";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[3] = "Verificação de alagamento";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[4] = "Verificação de horário de ponta";
-				RT_geral.RT_820_DataGrigViewEDColunas[0].NumeroLinhaMenu = (HorizontalAlignment)5;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].NumeroLinhaMenu = 5;
 			}
 		}
 
@@ -8533,9 +8533,9 @@ namespace iS800
 		private void GeraDataGridView_Repedidora()
 		{
 			this.DataGridView_end_rep_RT820.Columns.Clear();
-			this.DataGridView_end_rep_RT820.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_end_rep_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -8553,15 +8553,15 @@ namespace iS800
 					num++;
 				}
 				while (num <= 9);
-				this.DataGridView_end_rep_RT820.RowCount = (HorizontalAlignment)10;
-				num = (HorizontalAlignment)0;
+				this.DataGridView_end_rep_RT820.RowCount = 10;
+				num = 0;
 				do
 				{
 					this.DataGridView_end_rep_RT820.Columns[num].ReadOnly = true;
 					num++;
 				}
 				while (num <= 9);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					this.DataGridView_end_rep_RT820[0, num].Value = num + 1;
@@ -8598,35 +8598,35 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].NomeColuna = "end_4";
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].NomeColuna = "pos_5";
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].NomeColuna = "end_5";
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].LarguraColuna = (HorizontalAlignment)65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].LarguraColuna = (HorizontalAlignment)65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].LarguraColuna = (HorizontalAlignment)65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].LarguraColuna = (HorizontalAlignment)65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].LarguraColuna = (HorizontalAlignment)50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].LarguraColuna = (HorizontalAlignment)65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].AlingColuna = (HorizontalAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].AlingColuna = (HorizontalAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].AlingColuna = (HorizontalAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].AlingColuna = (HorizontalAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].AlingColuna = (HorizontalAlignment)64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].AlingColuna = (HorizontalAlignment)32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].LarguraColuna = 65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].LarguraColuna = 65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].LarguraColuna = 65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].LarguraColuna = 65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].LarguraColuna = 50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].LarguraColuna = 65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].AlingColuna = 32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].AlingColuna = 64;
 		}
 
 		// Token: 0x060015E9 RID: 5609 RVA: 0x00345970 File Offset: 0x00343D70
 		private void GeraDataGridView_Setpoints()
 		{
 			this.DataGridView_setpoints_820.Columns.Clear();
-			this.DataGridView_setpoints_820.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_setpoints_820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_setpoints_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_setpoints_820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -8644,9 +8644,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 5);
-				this.DataGridView_setpoints_820.RowCount = (HorizontalAlignment)8;
-				this.DataGridView_setpoints_820.RowHeadersWidth = (HorizontalAlignment)80;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_setpoints_820.RowCount = 8;
+				this.DataGridView_setpoints_820.RowHeadersWidth = 80;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_setpoints_820.Rows)
@@ -8673,7 +8673,7 @@ namespace iS800
 		// Token: 0x060015EA RID: 5610 RVA: 0x00345AAC File Offset: 0x00343EAC
 		private void InicializaEstrutura_DataGridView_Setpoints()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -8697,29 +8697,29 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].NomeColuna = "Set_NLib";
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].NomeColuna = "Set_Controle";
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].NomeColuna = "Set_Bloqueio";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].LarguraColuna = (HorizontalAlignment)60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].LarguraColuna = (HorizontalAlignment)60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].LarguraColuna = (HorizontalAlignment)60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].LarguraColuna = (HorizontalAlignment)60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LarguraColuna = (HorizontalAlignment)160;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LarguraColuna = (HorizontalAlignment)160;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].AlingColuna = (HorizontalAlignment)64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].LarguraColuna = 60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].LarguraColuna = 60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].LarguraColuna = 60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].LarguraColuna = 60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LarguraColuna = 160;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LarguraColuna = 160;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].NumeroLinhaMenu = 0;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[0] = "Controle Desabilitado";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].NumeroLinhaMenu = (HorizontalAlignment)23;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].NumeroLinhaMenu = 23;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LinhasMenu[0] = "Bloqueio Desabilitado";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LinhasValor[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].NumeroLinhaMenu = (HorizontalAlignment)21;
-				num = (HorizontalAlignment)1;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].NumeroLinhaMenu = 21;
+				num = 1;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[num] = "EA - " + Strings.Format(num, "0#");
@@ -8729,7 +8729,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 16);
-				num = (HorizontalAlignment)17;
+				num = 17;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[num] = "Referência " + Strings.Format(num - 16, "#");
@@ -8740,9 +8740,9 @@ namespace iS800
 				}
 				while (num <= 20);
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[21] = "Atuador 1";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[21] = (HorizontalAlignment)21889;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[21] = 21889;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[22] = "Atuador 2";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[22] = (HorizontalAlignment)21890;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[22] = 21890;
 			}
 		}
 
@@ -8750,9 +8750,9 @@ namespace iS800
 		private void GeraDataGridView_Timer()
 		{
 			this.DataGridView_timer_RT820.Columns.Clear();
-			this.DataGridView_timer_RT820.CellBorderStyle = (HorizontalAlignment)1;
-			this.DataGridView_timer_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
-			int num = (HorizontalAlignment)0;
+			this.DataGridView_timer_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_timer_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
+			int num = 0;
 			checked
 			{
 				do
@@ -8770,9 +8770,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 11);
-				this.DataGridView_timer_RT820.RowCount = (HorizontalAlignment)8;
-				this.DataGridView_timer_RT820.RowHeadersWidth = (HorizontalAlignment)80;
-				int num2 = (HorizontalAlignment)1;
+				this.DataGridView_timer_RT820.RowCount = 8;
+				this.DataGridView_timer_RT820.RowHeadersWidth = 80;
+				int num2 = 1;
 				try
 				{
 					foreach (object obj in this.DataGridView_timer_RT820.Rows)
@@ -8799,7 +8799,7 @@ namespace iS800
 		// Token: 0x060015EC RID: 5612 RVA: 0x00346090 File Offset: 0x00344490
 		private void InicializaEstrutura_DataGridView_Timer()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -8833,42 +8833,42 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewTimerColunas[9].NomeColuna = "Desliga_F5";
 				RT_geral.RT_820_DataGrigViewTimerColunas[10].NomeColuna = "Liga_F6";
 				RT_geral.RT_820_DataGrigViewTimerColunas[11].NomeColuna = "Desliga_F6";
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].LarguraColuna = (HorizontalAlignment)58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].AlingColuna = (HorizontalAlignment)32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].NumeroLinhaMenu = (HorizontalAlignment)0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].LarguraColuna = 58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].AlingColuna = 32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].NumeroLinhaMenu = 0;
 			}
 		}
 
@@ -8876,37 +8876,37 @@ namespace iS800
 		public void Inicializa_DadosEStruturaRT820_Padrao()
 		{
 			RT_geral.RT_820_360_BD.Versao.nome = "Versão";
-			RT_geral.RT_820_360_BD.Versao.Padrao = (HorizontalAlignment)0;
+			RT_geral.RT_820_360_BD.Versao.Padrao = 0;
 			RT_geral.RT_820_360_BD.Build.nome = "Build";
-			RT_geral.RT_820_360_BD.Build.Padrao = (HorizontalAlignment)0;
+			RT_geral.RT_820_360_BD.Build.Padrao = 0;
 			RT_geral.RT_820_360_BD.Release.nome = "Release";
-			RT_geral.RT_820_360_BD.Release.Padrao = (HorizontalAlignment)0;
+			RT_geral.RT_820_360_BD.Release.Padrao = 0;
 			RT_geral.RT_820_360_BD.Equip.nome = "Tipo equipamento";
-			RT_geral.RT_820_360_BD.Equip.Padrao = (HorizontalAlignment)0;
+			RT_geral.RT_820_360_BD.Equip.Padrao = 0;
 			RT_geral.RT_820_360_BD.End_mestre.nome = "Endereço Mestre";
-			RT_geral.RT_820_360_BD.End_mestre.Padrao = (HorizontalAlignment)100;
-			RT_geral.RT_820_360_BD.End_mestre.Lmte_inf = (HorizontalAlignment)1;
-			RT_geral.RT_820_360_BD.End_mestre.Lmte_sup = (HorizontalAlignment)200;
+			RT_geral.RT_820_360_BD.End_mestre.Padrao = 100;
+			RT_geral.RT_820_360_BD.End_mestre.Lmte_inf = 1;
+			RT_geral.RT_820_360_BD.End_mestre.Lmte_sup = 200;
 			RT_geral.RT_820_360_BD.End_estacao1.nome = "Endereço Estação1";
-			RT_geral.RT_820_360_BD.End_estacao1.Padrao = (HorizontalAlignment)1;
-			RT_geral.RT_820_360_BD.End_estacao1.Lmte_inf = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_BD.End_estacao1.Lmte_sup = (HorizontalAlignment)200;
+			RT_geral.RT_820_360_BD.End_estacao1.Padrao = 1;
+			RT_geral.RT_820_360_BD.End_estacao1.Lmte_inf = 0;
+			RT_geral.RT_820_360_BD.End_estacao1.Lmte_sup = 200;
 			RT_geral.RT_820_360_BD.End_estacao2.nome = "Endereço Estação2";
-			RT_geral.RT_820_360_BD.End_estacao2.Padrao = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_BD.End_estacao2.Lmte_inf = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_BD.End_estacao2.Lmte_sup = (HorizontalAlignment)200;
+			RT_geral.RT_820_360_BD.End_estacao2.Padrao = 0;
+			RT_geral.RT_820_360_BD.End_estacao2.Lmte_inf = 0;
+			RT_geral.RT_820_360_BD.End_estacao2.Lmte_sup = 200;
 			RT_geral.RT_820_360_BD.Tempo_ptt.nome = "Tempo PTT";
-			RT_geral.RT_820_360_BD.Tempo_ptt.Padrao = (HorizontalAlignment)200;
-			RT_geral.RT_820_360_BD.Tempo_ptt.Lmte_inf = (HorizontalAlignment)100;
-			RT_geral.RT_820_360_BD.Tempo_ptt.Lmte_sup = (HorizontalAlignment)2000;
+			RT_geral.RT_820_360_BD.Tempo_ptt.Padrao = 200;
+			RT_geral.RT_820_360_BD.Tempo_ptt.Lmte_inf = 100;
+			RT_geral.RT_820_360_BD.Tempo_ptt.Lmte_sup = 2000;
 			RT_geral.RT_820_360_BD.TempoForaAr.nome = "Tempo Fora Ar";
-			RT_geral.RT_820_360_BD.TempoForaAr.Padrao = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_BD.TempoForaAr.Lmte_inf = (HorizontalAlignment)0;
-			RT_geral.RT_820_360_BD.TempoForaAr.Lmte_sup = (HorizontalAlignment)1800;
+			RT_geral.RT_820_360_BD.TempoForaAr.Padrao = 0;
+			RT_geral.RT_820_360_BD.TempoForaAr.Lmte_inf = 0;
+			RT_geral.RT_820_360_BD.TempoForaAr.Lmte_sup = 1800;
 			RT_geral.RT_820_360_BD.BaudRateCOM1.nome = "Baudrate COM1";
 			RT_geral.RT_820_360_BD.BaudRateCOM1.Numero_itens = perifericos.ListaBaudRate.Count;
-			RT_geral.RT_820_360_BD.BaudRateCOM1.Indice_padrao = (HorizontalAlignment)0;
-			int num = (HorizontalAlignment)0;
+			RT_geral.RT_820_360_BD.BaudRateCOM1.Indice_padrao = 0;
+			int num = 0;
 			checked
 			{
 				int num2 = perifericos.ListaBaudRate.Count - 1;
@@ -8922,8 +8922,8 @@ namespace iS800
 				}
 				RT_geral.RT_820_360_BD.BaudRateCOM2.nome = "Baudrate COM2";
 				RT_geral.RT_820_360_BD.BaudRateCOM2.Numero_itens = perifericos.ListaBaudRate.Count;
-				RT_geral.RT_820_360_BD.BaudRateCOM2.Indice_padrao = (HorizontalAlignment)0;
-				int num3 = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.BaudRateCOM2.Indice_padrao = 0;
+				int num3 = 0;
 				int num4 = perifericos.ListaBaudRate.Count - 1;
 				for (i = num3; i <= num4; i++)
 				{
@@ -8935,106 +8935,106 @@ namespace iS800
 					}
 				}
 				RT_geral.RT_820_360_BD.HabExpIO.nome = "Habilita Expansão I/O";
-				RT_geral.RT_820_360_BD.HabExpIO.Padrao = (HorizontalAlignment)21856;
-				RT_geral.RT_820_360_BD.HabExpIO.Lmte_inf = (HorizontalAlignment)21856;
-				RT_geral.RT_820_360_BD.HabExpIO.Lmte_sup = (HorizontalAlignment)21857;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.HabExpIO.Padrao = 21856;
+				RT_geral.RT_820_360_BD.HabExpIO.Lmte_inf = 21856;
+				RT_geral.RT_820_360_BD.HabExpIO.Lmte_sup = 21857;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.ctrl_acionamento[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - SD acinamento";
-					RT_geral.RT_820_360_BD.ctrl_acionamento[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_acionamento[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_desligamento[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - SD desacionamento";
-					RT_geral.RT_820_360_BD.ctrl_desligamento[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_desligamento[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_ret_acionamento[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - ED acionamento";
-					RT_geral.RT_820_360_BD.ctrl_ret_acionamento[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_ret_acionamento[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_ret_desligamento[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - ED desacionamento";
-					RT_geral.RT_820_360_BD.ctrl_ret_desligamento[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_ret_desligamento[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_ED_selecao[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - ED Remoto";
-					RT_geral.RT_820_360_BD.ctrl_ED_selecao[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_ED_selecao[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_ED_bloqueio[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - ED bloqueio";
-					RT_geral.RT_820_360_BD.ctrl_ED_bloqueio[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_ED_bloqueio[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_ED_liberacao[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - ED liberação";
-					RT_geral.RT_820_360_BD.ctrl_ED_liberacao[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_ED_liberacao[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_reverso[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Reverso ";
-					RT_geral.RT_820_360_BD.ctrl_reverso[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_reverso[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_modo[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Modo ";
-					RT_geral.RT_820_360_BD.ctrl_modo[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_modo[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_agrupamento[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Agrupamentos ";
-					RT_geral.RT_820_360_BD.ctrl_agrupamento[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_agrupamento[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.ctrl_partidas[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Partidas ";
-					RT_geral.RT_820_360_BD.ctrl_partidas[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.ctrl_partidas[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 7);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Tempo máx partida";
-					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].Padrao = (HorizontalAlignment)180;
-					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].Lmte_sup = (HorizontalAlignment)1200;
+					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].Padrao = 180;
+					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[i].Lmte_sup = 1200;
 					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Tempo máx parada";
-					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].Padrao = (HorizontalAlignment)180;
-					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].Lmte_sup = (HorizontalAlignment)1200;
+					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].Padrao = 180;
+					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[i].Lmte_sup = 1200;
 					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Tempo min operando";
-					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].Padrao = (HorizontalAlignment)180;
-					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].Lmte_sup = (HorizontalAlignment)1200;
+					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].Padrao = 180;
+					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[i].Lmte_sup = 1200;
 					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].nome = "Ctrl " + Conversion.Str(i + 1) + " - Tempo min parado";
-					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].Padrao = (HorizontalAlignment)180;
-					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].Lmte_sup = (HorizontalAlignment)1200;
+					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].Padrao = 180;
+					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[i].Lmte_sup = 1200;
 					i++;
 				}
 				while (i <= 7);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.grupo_simultaneos[i].nome = "Grupo " + Conversion.Str(i + 1) + " - Simultâneos ";
-					RT_geral.RT_820_360_BD.grupo_simultaneos[i].Indice_padrao = (HorizontalAlignment)1;
+					RT_geral.RT_820_360_BD.grupo_simultaneos[i].Indice_padrao = 1;
 					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].nome = "Grupo " + Conversion.Str(i + 1) + " - Tempo entre acionamentos";
-					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].Padrao = (HorizontalAlignment)120;
-					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].Lmte_sup = (HorizontalAlignment)1200;
+					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].Padrao = 120;
+					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[i].Lmte_sup = 1200;
 					RT_geral.RT_820_360_BD.grupo_rotativo_motores[i].nome = "Rot_Mot " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.grupo_rotativo_motores[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.grupo_rotativo_motores[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 4);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.EA_Range[i].nome = "Range sensor " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.EA_Range[i].Padrao = (HorizontalAlignment)4000;
-					RT_geral.RT_820_360_BD.EA_Range[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.EA_Range[i].Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.EA_Range[i].Padrao = 4000;
+					RT_geral.RT_820_360_BD.EA_Range[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.EA_Range[i].Lmte_sup = 4000;
 					RT_geral.RT_820_360_BD.EA_Inicio[i].nome = "Início sensor " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.EA_Inicio[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.EA_Inicio[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.EA_Inicio[i].Lmte_sup = (HorizontalAlignment)20000;
+					RT_geral.RT_820_360_BD.EA_Inicio[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.EA_Inicio[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.EA_Inicio[i].Lmte_sup = 20000;
 					RT_geral.RT_820_360_BD.EA_Fim[i].nome = "Fim sensor " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.EA_Fim[i].Padrao = (HorizontalAlignment)4000;
-					RT_geral.RT_820_360_BD.EA_Fim[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.EA_Fim[i].Lmte_sup = (HorizontalAlignment)50000;
+					RT_geral.RT_820_360_BD.EA_Fim[i].Padrao = 4000;
+					RT_geral.RT_820_360_BD.EA_Fim[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.EA_Fim[i].Lmte_sup = 50000;
 					i++;
 				}
 				while (i <= 16);
 				RT_geral.RT_820_360_BD.AD_Intervalo.nome = "Intervalo AD";
-				RT_geral.RT_820_360_BD.AD_Intervalo.Padrao = (HorizontalAlignment)2000;
-				RT_geral.RT_820_360_BD.AD_Intervalo.Lmte_inf = (HorizontalAlignment)500;
-				RT_geral.RT_820_360_BD.AD_Intervalo.Lmte_sup = (HorizontalAlignment)20000;
+				RT_geral.RT_820_360_BD.AD_Intervalo.Padrao = 2000;
+				RT_geral.RT_820_360_BD.AD_Intervalo.Lmte_inf = 500;
+				RT_geral.RT_820_360_BD.AD_Intervalo.Lmte_sup = 20000;
 				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.nome = "Tamanho Filtro AD";
-				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Padrao = (HorizontalAlignment)3;
-				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Lmte_inf = (HorizontalAlignment)1;
-				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Lmte_sup = (HorizontalAlignment)10;
+				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Padrao = 3;
+				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Lmte_inf = 1;
+				RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Lmte_sup = 10;
 				RT_geral.RT_820_360_BD.saida_SA_origem[0].nome = "SA Origem 1";
 				RT_geral.RT_820_360_BD.saida_SA_origem[0].Numero_itens = perifericos.Lista_SA_Origem_RT820_400.Count;
-				RT_geral.RT_820_360_BD.saida_SA_origem[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.saida_SA_origem[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.saida_SA_origem[1].nome = "SA Origem 2";
 				RT_geral.RT_820_360_BD.saida_SA_origem[1].Numero_itens = perifericos.Lista_SA_Origem_RT820_400.Count;
-				RT_geral.RT_820_360_BD.saida_SA_origem[1].Indice_padrao = (HorizontalAlignment)0;
-				int num5 = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.saida_SA_origem[1].Indice_padrao = 0;
+				int num5 = 0;
 				int num6 = perifericos.Lista_SA_Origem_RT820_400.Count - 1;
 				for (i = num5; i <= num6; i++)
 				{
@@ -9049,886 +9049,886 @@ namespace iS800
 					}
 				}
 				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].nome = "SA 1 4mA";
-				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_sup = 4000;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Padrao = RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_inf;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].nome = "SA 2 4mA";
-				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].Lmte_sup = 4000;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].Padrao = RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_inf;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].nome = "SA 1 4mA";
-				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].Lmte_sup = 4000;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].Padrao = RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_sup;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].nome = "SA 2 4mA";
-				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Lmte_sup = 4000;
 				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Padrao = RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[0].Lmte_sup;
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_ED[i].nome = "ED " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_ED[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_ED[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 15);
 				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.nome = "Tratamenro do Setpoint Percentual";
-				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Lmte_sup = (HorizontalAlignment)1;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = 0;
+				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Lmte_sup = 1;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].nome = "Setpoint Alto " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].Padrao = (HorizontalAlignment)4000;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].Padrao = 4000;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[i].Lmte_sup = 4000;
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].nome = "Setpoint Baixo " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[i].Lmte_sup = 4000;
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].nome = "Setpoint Bloqueio " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].Padrao = (HorizontalAlignment)400;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].Padrao = 400;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[i].Lmte_sup = 4000;
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].nome = "Setpoint Liberação " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].Padrao = (HorizontalAlignment)800;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].Padrao = 800;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[i].Lmte_sup = 4000;
 					i++;
 				}
 				while (i <= 8);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_variavel[i].nome = "Setpoint " + Conversion.Str(i + 1) + "Variável de Controle";
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_variavel[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_variavel[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 8);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_bloqueio[i].nome = "Setpoint " + Conversion.Str(i + 1) + "Variável de Bloqueio";
-					RT_geral.RT_820_360_BD.Setpoints_ctrl_bloqueio[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.Setpoints_ctrl_bloqueio[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 8);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.nome = "Hora";
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.Lmte_sup = (HorizontalAlignment)23;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.Padrao = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Hora.Lmte_sup = 23;
 					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.nome = "Minuto";
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.Lmte_sup = (HorizontalAlignment)59;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.Padrao = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Minuto.Lmte_sup = 59;
 					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.nome = "Alto";
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.Padrao = (HorizontalAlignment)4000;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.Padrao = 4000;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Alto.Lmte_sup = 4000;
 					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.nome = "Alto";
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.Padrao = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.setpoint_horario[i].Baixo.Lmte_sup = 4000;
 					i++;
 				}
 				while (i <= 79);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_vazao[i].nome = "Vazão " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_vazao[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_vazao[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 7);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.calha_EA[i].nome = "EA " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.calha_EA[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.calha_EA[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.calha_modelo[i].nome = "Calha Modelo " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.calha_modelo[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.calha_modelo[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.calha_fundo[i].nome = "Calha Fundo " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.calha_fundo[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.calha_fundo[i].Lmte_sup = (HorizontalAlignment)1000;
-					RT_geral.RT_820_360_BD.calha_fundo[i].Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.calha_fundo[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.calha_fundo[i].Lmte_sup = 1000;
+					RT_geral.RT_820_360_BD.calha_fundo[i].Padrao = 0;
 					RT_geral.RT_820_360_BD.calha_p1[i].nome = "P1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.calha_p1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.calha_p1[i].Lmte_sup = (HorizontalAlignment)1000;
-					RT_geral.RT_820_360_BD.calha_p1[i].Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.calha_p1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.calha_p1[i].Lmte_sup = 1000;
+					RT_geral.RT_820_360_BD.calha_p1[i].Padrao = 0;
 					RT_geral.RT_820_360_BD.calha_p2[i].nome = "P2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.calha_p2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.calha_p2[i].Lmte_sup = (HorizontalAlignment)1000;
-					RT_geral.RT_820_360_BD.calha_p2[i].Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.calha_p2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.calha_p2[i].Lmte_sup = 1000;
+					RT_geral.RT_820_360_BD.calha_p2[i].Padrao = 0;
 					RT_geral.RT_820_360_BD.calha_p3[i].nome = "P3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.calha_p3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.calha_p3[i].Lmte_sup = (HorizontalAlignment)1000;
-					RT_geral.RT_820_360_BD.calha_p3[i].Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.calha_p3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.calha_p3[i].Lmte_sup = 1000;
+					RT_geral.RT_820_360_BD.calha_p3[i].Padrao = 0;
 					i++;
 				}
 				while (i <= 1);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_perifericos1_mod[i].nome = "Periférico1 " + Conversion.Str(i + 1) + " - Modelo ";
-					RT_geral.RT_820_360_BD.config_perifericos1_mod[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_perifericos1_mod[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.config_perifericos1_end[i].nome = "Periférico1 " + Conversion.Str(i + 1) + " - Endereço ";
-					RT_geral.RT_820_360_BD.config_perifericos1_end[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_perifericos1_end[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_perifericos1_end[i].Lmte_sup = (HorizontalAlignment)255;
+					RT_geral.RT_820_360_BD.config_perifericos1_end[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_perifericos1_end[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_perifericos1_end[i].Lmte_sup = 255;
 					i++;
 				}
 				while (i <= 5);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_perifericos2_mod[i].nome = "Periférico2 " + Conversion.Str(i + 1) + " - Modelo ";
-					RT_geral.RT_820_360_BD.config_perifericos2_mod[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_perifericos2_mod[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.config_perifericos2_end[i].nome = "Periférico2 " + Conversion.Str(i + 1) + " - Endereço ";
-					RT_geral.RT_820_360_BD.config_perifericos2_end[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_perifericos2_end[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_perifericos2_end[i].Lmte_sup = (HorizontalAlignment)255;
+					RT_geral.RT_820_360_BD.config_perifericos2_end[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_perifericos2_end[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_perifericos2_end[i].Lmte_sup = 255;
 					i++;
 				}
 				while (i <= 5);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Endereço Comunicação";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].Lmte_sup = (HorizontalAlignment)255;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[i].Lmte_sup = 255;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Função ModBus";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[i].Indice_padrao = (HorizontalAlignment)1;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[i].Indice_padrao = 1;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Memória 1";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].Lmte_sup = (HorizontalAlignment)65535;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[i].Lmte_sup = 65535;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Qtd Variável 1";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].Lmte_sup = (HorizontalAlignment)10;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[i].Lmte_sup = 10;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Memória 2";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].Lmte_sup = (HorizontalAlignment)65535;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[i].Lmte_sup = 65535;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Qtd Variável 2";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].Lmte_sup = (HorizontalAlignment)10;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[i].Lmte_sup = 10;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Memória 3";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].Lmte_sup = (HorizontalAlignment)65535;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[i].Lmte_sup = 65535;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Qtd Variável 3";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].Lmte_sup = (HorizontalAlignment)10;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[i].Lmte_sup = 10;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Memória 4";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].Lmte_sup = (HorizontalAlignment)65535;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[i].Lmte_sup = 65535;
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].nome = "Periferico Modbus Genérico " + Conversion.Str(i + 1) + " - Qtd Variável 4";
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].Lmte_sup = (HorizontalAlignment)10;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].Valor = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[i].Lmte_sup = 10;
 					i++;
 				}
 				while (i <= 5);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_periferico[i].nome = "Ref Perif Perif" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_periferico[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_periferico[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].nome = "Ref Perif Memória" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].Lmte_sup = (HorizontalAlignment)65535;
+					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[i].Lmte_sup = 65535;
 					RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[i].nome = "Ref Perif Variavel1" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[i].nome = "Ref Perif Variavel2" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].nome = "Ref Perif Escala" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].Padrao = (HorizontalAlignment)4000;
-					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].Lmte_sup = (HorizontalAlignment)4000;
+					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].Padrao = 4000;
+					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_escala[i].Lmte_sup = 4000;
 					RT_geral.RT_820_360_BD.config_referencia_perif_formato[i].nome = "Ref Perif Formato" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_formato[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_formato[i].Indice_padrao = 0;
 					RT_geral.RT_820_360_BD.config_referencia_perif_base10[i].nome = "Ref Perif Base10" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_referencia_perif_base10[i].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_360_BD.config_referencia_perif_base10[i].Indice_padrao = 0;
 					i++;
 				}
 				while (i <= 9);
 				RT_geral.RT_820_360_BD.config_atuador1_perif[0].nome = "Atuador1 Perif";
-				RT_geral.RT_820_360_BD.config_atuador1_perif[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador1_perif[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador1_mem[0].nome = "Atuador1 Memoria";
-				RT_geral.RT_820_360_BD.config_atuador1_mem[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_mem[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_mem[0].Lmte_sup = (HorizontalAlignment)65535;
+				RT_geral.RT_820_360_BD.config_atuador1_mem[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_mem[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_mem[0].Lmte_sup = 65535;
 				RT_geral.RT_820_360_BD.config_atuador1_var1[0].nome = "Atuador1 Var1";
-				RT_geral.RT_820_360_BD.config_atuador1_var1[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador1_var1[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].nome = "Atuador1 Escala1";
-				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_escala1[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador1_var2[0].nome = "Atuador1 Var2";
-				RT_geral.RT_820_360_BD.config_atuador1_var2[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador1_var2[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].nome = "Atuador1 Escala2";
-				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_escala2[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].nome = "Atuador1 Histerese";
-				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].Lmte_sup = (HorizontalAlignment)30000;
+				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_histerese[0].Lmte_sup = 30000;
 				RT_geral.RT_820_360_BD.config_atuador1_formato[0].nome = "Atuador1 Formato";
-				RT_geral.RT_820_360_BD.config_atuador1_formato[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador1_formato[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador1_base10[0].nome = "Atuador1 Base10";
-				RT_geral.RT_820_360_BD.config_atuador1_base10[0].Indice_padrao = (HorizontalAlignment)0;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador1_base10[0].Indice_padrao = 0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].nome = "Atuador1 Variável1 Hora" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].Lmte_sup = (HorizontalAlignment)23;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[i].Lmte_sup = 23;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].nome = "Atuador1 Variável1 Minuto" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].Lmte_sup = (HorizontalAlignment)59;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[i].Lmte_sup = 59;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].nome = "Atuador1 Variável1 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].nome = "Atuador1 Variável1 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].nome = "Atuador1 Variável1 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].nome = "Atuador1 Variável1 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].nome = "Atuador1 Variável1 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].nome = "Atuador1 Variável1 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].nome = "Atuador1 Variável1 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].nome = "Atuador1 Variável1 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].nome = "Atuador1 Variável1 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].nome = "Atuador1 Variável1 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].nome = "Atuador1 Variável1 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].nome = "Atuador1 Variável1 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].nome = "Atuador1 Variável2 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].nome = "Atuador1 Variável2 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].nome = "Atuador1 Variável2 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].nome = "Atuador1 Variável2 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].nome = "Atuador1 Variável2 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].nome = "Atuador1 Variável2 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].nome = "Atuador1 Variável2 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].nome = "Atuador1 Variável2 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].nome = "Atuador1 Variável2 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].nome = "Atuador1 Variável2 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].nome = "Atuador1 Variável2 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].nome = "Atuador1 Variável2 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
 				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].nome = "Atuador1 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v1baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].nome = "Atuador1 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].nome = "Atuador1 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].nome = "Atuador1 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador2_perif[0].nome = "Atuador2 Perif";
-				RT_geral.RT_820_360_BD.config_atuador2_perif[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador2_perif[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador2_mem[0].nome = "Atuador2 Memoria";
-				RT_geral.RT_820_360_BD.config_atuador2_mem[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_mem[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_mem[0].Lmte_sup = (HorizontalAlignment)65535;
+				RT_geral.RT_820_360_BD.config_atuador2_mem[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_mem[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_mem[0].Lmte_sup = 65535;
 				RT_geral.RT_820_360_BD.config_atuador2_var2[0].nome = "Atuador2 Var1";
-				RT_geral.RT_820_360_BD.config_atuador2_var2[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador2_var2[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].nome = "Atuador2 Escala1";
-				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_escala1[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador2_var2[0].nome = "Atuador2 Var2";
-				RT_geral.RT_820_360_BD.config_atuador2_var2[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador2_var2[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].nome = "Atuador2 Escala2";
-				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_escala2[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].nome = "Atuador2 Histerese";
-				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].Lmte_sup = (HorizontalAlignment)30000;
+				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_histerese[0].Lmte_sup = 30000;
 				RT_geral.RT_820_360_BD.config_atuador2_formato[0].nome = "Atuador2 Formato";
-				RT_geral.RT_820_360_BD.config_atuador2_formato[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador2_formato[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador2_base10[0].nome = "Atuador2 Base10";
-				RT_geral.RT_820_360_BD.config_atuador2_base10[0].Indice_padrao = (HorizontalAlignment)0;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador2_base10[0].Indice_padrao = 0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].nome = "Atuador2 Variável1 Hora" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].Lmte_sup = (HorizontalAlignment)23;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[i].Lmte_sup = 23;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].nome = "Atuador2 Variável1 Minuto" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].Lmte_sup = (HorizontalAlignment)59;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[i].Lmte_sup = 59;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].nome = "Atuador2 Variável1 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].nome = "Atuador2 Variável1 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].nome = "Atuador2 Variável1 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].nome = "Atuador2 Variável1 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].nome = "Atuador2 Variável1 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].nome = "Atuador2 Variável1 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].nome = "Atuador2 Variável1 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].nome = "Atuador2 Variável1 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].nome = "Atuador2 Variável1 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].nome = "Atuador2 Variável1 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].nome = "Atuador2 Variável1 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].nome = "Atuador2 Variável1 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].nome = "Atuador2 Variável2 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].nome = "Atuador2 Variável2 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].nome = "Atuador2 Variável2 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].nome = "Atuador2 Variável2 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].nome = "Atuador2 Variável2 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].nome = "Atuador2 Variável2 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].nome = "Atuador2 Variável2 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].nome = "Atuador2 Variável2 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].nome = "Atuador2 Variável2 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].nome = "Atuador2 Variável2 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].nome = "Atuador2 Variável2 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].nome = "Atuador2 Variável2 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
 				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].nome = "Atuador1 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v1baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].nome = "Atuador1 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].nome = "Atuador1 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].nome = "Atuador1 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador3_perif[0].nome = "Atuador3 Perif";
-				RT_geral.RT_820_360_BD.config_atuador3_perif[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador3_perif[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador3_mem[0].nome = "Atuador3 Memoria";
-				RT_geral.RT_820_360_BD.config_atuador3_mem[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_mem[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_mem[0].Lmte_sup = (HorizontalAlignment)65535;
+				RT_geral.RT_820_360_BD.config_atuador3_mem[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_mem[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_mem[0].Lmte_sup = 65535;
 				RT_geral.RT_820_360_BD.config_atuador3_var1[0].nome = "Atuador3 Var1";
-				RT_geral.RT_820_360_BD.config_atuador3_var1[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador3_var1[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].nome = "Atuador3 Escala1";
-				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_escala1[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador3_var2[0].nome = "Atuador3 Var2";
-				RT_geral.RT_820_360_BD.config_atuador3_var2[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador3_var2[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].nome = "Atuador3 Escala2";
-				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_escala2[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].nome = "Atuador3 Histerese";
-				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].Lmte_sup = (HorizontalAlignment)30000;
+				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_histerese[0].Lmte_sup = 30000;
 				RT_geral.RT_820_360_BD.config_atuador3_formato[0].nome = "Atuador3 Formato";
-				RT_geral.RT_820_360_BD.config_atuador3_formato[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador3_formato[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador3_base10[0].nome = "Atuador3 Base10";
-				RT_geral.RT_820_360_BD.config_atuador3_base10[0].Indice_padrao = (HorizontalAlignment)0;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador3_base10[0].Indice_padrao = 0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].nome = "Atuador3 Variável1 Hora" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].Lmte_sup = (HorizontalAlignment)23;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[i].Lmte_sup = 23;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].nome = "Atuador3 Variável1 Minuto" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].Lmte_sup = (HorizontalAlignment)59;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[i].Lmte_sup = 59;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].nome = "Atuador3 Variável1 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].nome = "Atuador3 Variável1 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].nome = "Atuador3 Variável1 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].nome = "Atuador3 Variável1 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].nome = "Atuador3 Variável1 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].nome = "Atuador3 Variável1 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].nome = "Atuador3 Variável1 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].nome = "Atuador3 Variável1 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].nome = "Atuador3 Variável1 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].nome = "Atuador3 Variável1 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].nome = "Atuador3 Variável1 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].nome = "Atuador3 Variável1 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].nome = "Atuador3 Variável2 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].nome = "Atuador3 Variável2 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].nome = "Atuador3 Variável2 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].nome = "Atuador3 Variável2 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].nome = "Atuador3 Variável2 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].nome = "Atuador3 Variável2 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].nome = "Atuador3 Variável2 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].nome = "Atuador3 Variável2 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].nome = "Atuador3 Variável2 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].nome = "Atuador3 Variável2 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].nome = "Atuador3 Variável2 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].nome = "Atuador3 Variável2 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
 				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].nome = "Atuador3 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v1baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].nome = "Atuador3 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].nome = "Atuador3 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].nome = "Atuador3 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador4_perif[0].nome = "Atuador4 Perif";
-				RT_geral.RT_820_360_BD.config_atuador4_perif[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador4_perif[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador4_mem[0].nome = "Atuador4 Memoria";
-				RT_geral.RT_820_360_BD.config_atuador4_mem[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_mem[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_mem[0].Lmte_sup = (HorizontalAlignment)65535;
+				RT_geral.RT_820_360_BD.config_atuador4_mem[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_mem[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_mem[0].Lmte_sup = 65535;
 				RT_geral.RT_820_360_BD.config_atuador4_var1[0].nome = "Atuador4 Var1";
-				RT_geral.RT_820_360_BD.config_atuador4_var1[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador4_var1[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].nome = "Atuador4 Escala1";
-				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_escala1[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador4_var2[0].nome = "Atuador4 Var2";
-				RT_geral.RT_820_360_BD.config_atuador4_var2[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador4_var2[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].nome = "Atuador4 Escala2";
-				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_escala2[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].nome = "Atuador4 Histerese";
-				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].Lmte_sup = (HorizontalAlignment)30000;
+				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_histerese[0].Lmte_sup = 30000;
 				RT_geral.RT_820_360_BD.config_atuador4_formato[0].nome = "Atuador4 Formato";
-				RT_geral.RT_820_360_BD.config_atuador4_formato[0].Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador4_formato[0].Indice_padrao = 0;
 				RT_geral.RT_820_360_BD.config_atuador4_base10[0].nome = "Atuador4 Base10";
-				RT_geral.RT_820_360_BD.config_atuador4_base10[0].Indice_padrao = (HorizontalAlignment)0;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.config_atuador4_base10[0].Indice_padrao = 0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].nome = "Atuador4 Variável1 Hora" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].Lmte_sup = (HorizontalAlignment)23;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[i].Lmte_sup = 23;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].nome = "Atuador4 Variável1 Minuto" + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].Lmte_sup = (HorizontalAlignment)59;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[i].Lmte_sup = 59;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].nome = "Atuador4 Variável1 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].nome = "Atuador4 Variável1 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].nome = "Atuador4 Variável1 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].nome = "Atuador4 Variável1 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].nome = "Atuador4 Variável1 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].nome = "Atuador4 Variável1 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].nome = "Atuador4 Variável1 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].nome = "Atuador4 Variável1 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].nome = "Atuador4 Variável1 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].nome = "Atuador4 Variável1 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].nome = "Atuador4 Variável1 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].nome = "Atuador4 Variável1 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].nome = "Atuador4 Variável2 Referência1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].nome = "Atuador4 Variável2 Referência2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].nome = "Atuador4 Variável2 Referência3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].nome = "Atuador4 Variável2 Referência4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].nome = "Atuador4 Variável2 Referência5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].nome = "Atuador4 Variável2 Referência6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].Lmte_sup = (HorizontalAlignment)10000;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[i].Lmte_sup = 10000;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].nome = "Atuador4 Variável2 Setpoint1 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].nome = "Atuador4 Variável2 Setpoint2 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].nome = "Atuador4 Variável2 Setpoint3 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].nome = "Atuador4 Variável2 Setpoint4 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].nome = "Atuador4 Variável2 Setpoint5 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[i].Lmte_sup = 32767;
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].nome = "Atuador4 Variável2 Setpoint6 " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].Lmte_sup = (HorizontalAlignment)32767;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[i].Lmte_sup = 32767;
 					i++;
 				}
 				while (i <= 2);
 				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].nome = "Atuador4 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v1baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].nome = "Atuador4 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].nome = "Atuador4 V1 Baixo";
-				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].nome = "Atuador4 V1 Alto";
-				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Lmte_sup = (HorizontalAlignment)10000;
+				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Padrao = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Lmte_sup = 10000;
 				RT_geral.RT_820_360_BD.modo_repetidora.nome = "Modo de Repetidora";
-				RT_geral.RT_820_360_BD.modo_repetidora.Indice_padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.modo_repetidora.Numero_itens = (HorizontalAlignment)2;
-				RT_geral.RT_820_360_BD.modo_repetidora.valores[0] = (HorizontalAlignment)21856;
-				RT_geral.RT_820_360_BD.modo_repetidora.valores[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_820_360_BD.modo_repetidora.Indice_padrao = 0;
+				RT_geral.RT_820_360_BD.modo_repetidora.Numero_itens = 2;
+				RT_geral.RT_820_360_BD.modo_repetidora.valores[0] = 21856;
+				RT_geral.RT_820_360_BD.modo_repetidora.valores[1] = 21857;
 				RT_geral.RT_820_360_BD.modo_repetidora.itens[0] = "Desabilitado";
 				RT_geral.RT_820_360_BD.modo_repetidora.itens[1] = "Direto";
 				RT_geral.RT_820_360_BD.End_repetidora.nome = "Endereço Repetidora";
-				RT_geral.RT_820_360_BD.End_repetidora.Padrao = (HorizontalAlignment)1;
-				RT_geral.RT_820_360_BD.End_repetidora.Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.End_repetidora.Lmte_sup = (HorizontalAlignment)200;
+				RT_geral.RT_820_360_BD.End_repetidora.Padrao = 1;
+				RT_geral.RT_820_360_BD.End_repetidora.Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.End_repetidora.Lmte_sup = 200;
 				RT_geral.RT_820_360_BD.Num_repetidoras.nome = "Número de Repetidoras";
-				RT_geral.RT_820_360_BD.Num_repetidoras.Padrao = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.Num_repetidoras.Lmte_inf = (HorizontalAlignment)0;
-				RT_geral.RT_820_360_BD.Num_repetidoras.Lmte_sup = (HorizontalAlignment)50;
-				i = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.Num_repetidoras.Padrao = 0;
+				RT_geral.RT_820_360_BD.Num_repetidoras.Lmte_inf = 0;
+				RT_geral.RT_820_360_BD.Num_repetidoras.Lmte_sup = 50;
+				i = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[i].nome = "Endereço da Repetidora " + Conversion.Str(i + 1);
-					RT_geral.RT_820_360_BD.Repetidoras[i].Padrao = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Repetidoras[i].Lmte_inf = (HorizontalAlignment)0;
-					RT_geral.RT_820_360_BD.Repetidoras[i].Lmte_sup = (HorizontalAlignment)200;
+					RT_geral.RT_820_360_BD.Repetidoras[i].Padrao = 0;
+					RT_geral.RT_820_360_BD.Repetidoras[i].Lmte_inf = 0;
+					RT_geral.RT_820_360_BD.Repetidoras[i].Lmte_sup = 200;
 					i++;
 				}
 				while (i <= 50);
-				int num7 = (HorizontalAlignment)0;
+				int num7 = 0;
 				do
 				{
-					int num8 = (HorizontalAlignment)0;
+					int num8 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].nome = "Timer - Ctrl " + Conversion.Str(num7 + 1);
-						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].Padrao = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].Lmte_inf = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].Lmte_sup = (HorizontalAlignment)1439;
+						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].Padrao = 0;
+						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].Lmte_inf = 0;
+						RT_geral.RT_820_360_BD.Timer_Horario[num7][num8].Lmte_sup = 1439;
 						num8++;
 					}
 					while (num8 <= 11);
@@ -9954,7 +9954,7 @@ namespace iS800
 			this.TextBox_comentarios_RT820.Text = "";
 			this.TextBox_endereco_RT820.Text = "";
 			this.TextBox_nome_RT820.Text = "";
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -9988,7 +9988,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.grupo_simultaneos[num].Indice = RT_geral.RT_820_360_BD.grupo_simultaneos[num].Indice_padrao;
@@ -9999,7 +9999,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 4);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.EA_Range[num].Valor = RT_geral.RT_820_360_BD.EA_Range[num].Padrao;
@@ -10016,7 +10016,7 @@ namespace iS800
 				RT_geral.RT_820_360_BD.saida_SA_contagem_4mA[1].ValorPadrao();
 				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].ValorPadrao();
 				RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].ValorPadrao();
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_ED[num].Indice = RT_geral.RT_820_360_BD.config_ED[num].Indice_padrao;
@@ -10024,7 +10024,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 15);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[num].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[num].Padrao;
@@ -10038,7 +10038,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 8);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[num].Hora.ValorPadrao();
@@ -10048,7 +10048,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 79);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_vazao[num].Indice = RT_geral.RT_820_360_BD.config_vazao[num].Indice_padrao;
@@ -10056,7 +10056,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.calha_EA[num].Indice = RT_geral.RT_820_360_BD.calha_EA[num].Indice_padrao;
@@ -10070,7 +10070,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 1);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_perifericos1_mod[num].Indice = RT_geral.RT_820_360_BD.config_perifericos1_mod[num].Indice_padrao;
@@ -10079,7 +10079,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 5);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_perifericos2_mod[num].Indice = RT_geral.RT_820_360_BD.config_perifericos2_mod[num].Indice_padrao;
@@ -10088,7 +10088,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 5);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[num].ValorPadrao();
@@ -10105,7 +10105,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 4);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_periferico[num].Indice = RT_geral.RT_820_360_BD.config_referencia_perif_periferico[num].Indice_padrao;
@@ -10123,7 +10123,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 9);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_perif[num].Indice = RT_geral.RT_820_360_BD.config_atuador1_perif[num].Indice_padrao;
@@ -10203,7 +10203,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 0);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[num].ValorPadrao();
@@ -10265,7 +10265,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 2);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[num].ValorPadrao();
@@ -10322,17 +10322,17 @@ namespace iS800
 				RT_geral.RT_820_360_BD.modo_repetidora.IndicePadrao();
 				RT_geral.RT_820_360_BD.End_repetidora.Valor = RT_geral.RT_820_360_BD.End_repetidora.Padrao;
 				RT_geral.RT_820_360_BD.Num_repetidoras.Valor = RT_geral.RT_820_360_BD.Num_repetidoras.Padrao;
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[num].Valor = RT_geral.RT_820_360_BD.Repetidoras[num].Padrao;
 					num++;
 				}
 				while (num <= 50);
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				do
 				{
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.Timer_Horario[num2][num3].Valor = RT_geral.RT_820_360_BD.Timer_Horario[num2][num3].Padrao;
@@ -10356,7 +10356,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = (HorizontalAlignment)2;
+					num = 2;
 					string text = "CFG Geral";
 					this.TextBox_versao_820.Text = Conversions.ToString(RT_geral.RT_820_360_BD.Versao.Valor);
 					this.TextBox_build_820.Text = Conversions.ToString(RT_geral.RT_820_360_BD.Build.Valor);
@@ -10369,7 +10369,7 @@ namespace iS800
 					this.nud_tempoforaar.Value = new decimal(RT_geral.RT_820_360_BD.TempoForaAr.Valor);
 					this.ComboBox_baudrate_COM2_820.SelectedIndex = RT_geral.RT_820_360_BD.BaudRateCOM2.Indice;
 					this.ComboBox_baudrate_COM1_820.SelectedIndex = RT_geral.RT_820_360_BD.BaudRateCOM1.Indice;
-					if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21856)
+					if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21856)
 					{
 						this.CheckBox_hab_expansao_IO_820.Checked = false;
 					}
@@ -10378,7 +10378,7 @@ namespace iS800
 						this.CheckBox_hab_expansao_IO_820.Checked = true;
 					}
 					text = "CFG Controle";
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						string value = RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.ctrl_acionamento[num2].Indice];
@@ -10410,7 +10410,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						string value = RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.grupo_simultaneos[num2].Indice];
@@ -10422,7 +10422,7 @@ namespace iS800
 					}
 					while (num2 <= 3);
 					text = "CFG EA";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.DataGridView_parametros_EA_820.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.EA_Range[num2].Valor;
@@ -10441,9 +10441,9 @@ namespace iS800
 					this.nud_ganho1.Value = new decimal(RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[0].Valor);
 					this.nud_ganho2.Value = new decimal(RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Valor);
 					text = "CFG ED";
-					if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+					if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 					{
-						num2 = (HorizontalAlignment)0;
+						num2 = 0;
 						do
 						{
 							string value = RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_ED[num2].Indice];
@@ -10454,7 +10454,7 @@ namespace iS800
 					}
 					else
 					{
-						num2 = (HorizontalAlignment)0;
+						num2 = 0;
 						do
 						{
 							string value = RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_ED[num2].Indice];
@@ -10464,7 +10464,7 @@ namespace iS800
 						while (num2 <= 7);
 					}
 					text = "CFG SETPOINT";
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						this.ckb_tratamento_setpoint.Checked = true;
 					}
@@ -10472,10 +10472,10 @@ namespace iS800
 					{
 						this.ckb_tratamento_setpoint.Checked = false;
 					}
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
-						if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+						if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 						{
 							this.DataGridView_setpoints_820.Rows[num2].Cells[2].Value = (double)RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[num2].Valor / 40.0;
 							this.DataGridView_setpoints_820.Rows[num2].Cells[1].Value = (double)RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[num2].Valor / 40.0;
@@ -10497,7 +10497,7 @@ namespace iS800
 					}
 					while (num2 <= 7);
 					text = "CFG SETPOINT HORARIO";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						bool flag = (RT_geral.RT_820_360_BD.setpoint_horario[num2].Hora.Valor & 128) > 0;
@@ -10508,23 +10508,23 @@ namespace iS800
 						int num6 = RT_geral.RT_820_360_BD.setpoint_horario[num2].Baixo.Valor;
 						if (num3 > 23)
 						{
-							num3 = (HorizontalAlignment)23;
+							num3 = 23;
 						}
 						if (num4 > 59)
 						{
-							num4 = (HorizontalAlignment)59;
+							num4 = 59;
 						}
 						if (num5 > 4000)
 						{
-							num5 = (HorizontalAlignment)4000;
+							num5 = 4000;
 						}
 						if (num6 > 4000)
 						{
-							num6 = (HorizontalAlignment)4000;
+							num6 = 4000;
 						}
 						this.dgv_sph.Rows[num2].Cells[2].Value = num3;
 						this.dgv_sph.Rows[num2].Cells[3].Value = num4;
-						if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+						if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 						{
 							this.dgv_sph.Rows[num2].Cells[4].Value = (double)num5 / 40.0;
 							this.dgv_sph.Rows[num2].Cells[5].Value = (double)num6 / 40.0;
@@ -10538,7 +10538,7 @@ namespace iS800
 					}
 					while (num2 <= 79);
 					text = "CFG VAZOES";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						string value = RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_vazao[num2].Indice];
@@ -10547,7 +10547,7 @@ namespace iS800
 					}
 					while (num2 <= 7);
 					text = "CFG CALHAS";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						string value = RT_geral.RT_820_DatagridViewCalhasColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.calha_EA[num2].Indice];
@@ -10562,7 +10562,7 @@ namespace iS800
 					}
 					while (num2 <= 1);
 					text = "CFG PERIFERICO1";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						string value = RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_perifericos1_mod[num2].Indice];
@@ -10572,7 +10572,7 @@ namespace iS800
 					}
 					while (num2 <= 4);
 					text = "CFG PERIFERICO2";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						string value = RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_perifericos2_mod[num2].Indice];
@@ -10582,7 +10582,7 @@ namespace iS800
 					}
 					while (num2 <= 4);
 					text = "CFG PERIFERICO MODBUS GENERICO";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int valor = RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[num2].Valor;
@@ -10602,10 +10602,10 @@ namespace iS800
 					}
 					while (num2 <= 4);
 					text = "CFG REF PERIFERICOS";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
-						int num7 = (HorizontalAlignment)0;
+						int num7 = 0;
 						int num8 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].NumeroLinhaMenu - 1;
 						for (int i = num7; i <= num8; i++)
 						{
@@ -10618,7 +10618,7 @@ namespace iS800
 						string value = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_referencia_perif_periferico[num2].Indice];
 						this.datagridview_referenciaperifico.Rows[num2].Cells[0].Value = value;
 						this.datagridview_referenciaperifico.Rows[num2].Cells[1].Value = RT_geral.RT_820_360_BD.config_referencia_perif_memoria[num2].Valor;
-						int num9 = (HorizontalAlignment)0;
+						int num9 = 0;
 						int num10 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].NumeroLinhaMenu - 1;
 						for (int i = num9; i <= num10; i++)
 						{
@@ -10630,7 +10630,7 @@ namespace iS800
 						}
 						value = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].LinhasMenu[RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[num2].Indice];
 						this.datagridview_referenciaperifico.Rows[num2].Cells[2].Value = value;
-						int num11 = (HorizontalAlignment)0;
+						int num11 = 0;
 						int num12 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].NumeroLinhaMenu - 1;
 						for (int i = num11; i <= num12; i++)
 						{
@@ -10643,7 +10643,7 @@ namespace iS800
 						value = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].LinhasMenu[RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[num2].Indice];
 						this.datagridview_referenciaperifico.Rows[num2].Cells[3].Value = value;
 						this.datagridview_referenciaperifico.Rows[num2].Cells[4].Value = RT_geral.RT_820_360_BD.config_referencia_perif_escala[num2].Valor;
-						int num13 = (HorizontalAlignment)0;
+						int num13 = 0;
 						int num14 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].NumeroLinhaMenu - 1;
 						for (int i = num13; i <= num14; i++)
 						{
@@ -10655,7 +10655,7 @@ namespace iS800
 						}
 						value = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LinhasMenu[RT_geral.RT_820_360_BD.config_referencia_perif_formato[num2].Indice];
 						this.datagridview_referenciaperifico.Rows[num2].Cells[5].Value = value;
-						int num15 = (HorizontalAlignment)0;
+						int num15 = 0;
 						int num16 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].NumeroLinhaMenu - 1;
 						for (int i = num15; i <= num16; i++)
 						{
@@ -10671,11 +10671,11 @@ namespace iS800
 					}
 					while (num2 <= 9);
 					text = "CFG ATUADOR1";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.config_atuador1_perif[0].Indice = -1;
-						int num17 = (HorizontalAlignment)0;
+						int num17 = 0;
 						int num18 = RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].NumeroLinhaMenu - 1;
 						for (int j = num17; j <= num18; j++)
 						{
@@ -10693,7 +10693,7 @@ namespace iS800
 						string value = RT_geral.RT_820_DataGrigViewAtuador1Colunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador1_perif[0].Indice];
 						this.dgv_atuador1.Rows[num2].Cells[0].Value = value;
 						this.dgv_atuador1.Rows[num2].Cells[1].Value = RT_geral.RT_820_360_BD.config_atuador1_mem[num2].Valor;
-						int num19 = (HorizontalAlignment)0;
+						int num19 = 0;
 						int num20 = RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].NumeroLinhaMenu - 1;
 						for (int j = num19; j <= num20; j++)
 						{
@@ -10706,7 +10706,7 @@ namespace iS800
 						value = RT_geral.RT_820_DataGrigViewAtuador1Colunas[2].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador1_var1[num2].Indice];
 						this.dgv_atuador1.Rows[num2].Cells[2].Value = value;
 						this.dgv_atuador1.Rows[num2].Cells[3].Value = RT_geral.RT_820_360_BD.config_atuador1_escala1[num2].Valor;
-						int num21 = (HorizontalAlignment)0;
+						int num21 = 0;
 						int num22 = RT_geral.RT_820_DataGrigViewAtuador1Colunas[4].NumeroLinhaMenu - 1;
 						for (int j = num21; j <= num22; j++)
 						{
@@ -10720,7 +10720,7 @@ namespace iS800
 						this.dgv_atuador1.Rows[num2].Cells[4].Value = value;
 						this.dgv_atuador1.Rows[num2].Cells[5].Value = RT_geral.RT_820_360_BD.config_atuador1_escala2[num2].Valor;
 						this.dgv_atuador1.Rows[num2].Cells[6].Value = RT_geral.RT_820_360_BD.config_atuador1_histerese[num2].Valor;
-						int num23 = (HorizontalAlignment)0;
+						int num23 = 0;
 						int num24 = RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].NumeroLinhaMenu - 1;
 						for (int j = num23; j <= num24; j++)
 						{
@@ -10732,7 +10732,7 @@ namespace iS800
 						}
 						value = RT_geral.RT_820_DataGrigViewAtuador1Colunas[7].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador1_formato[num2].Indice];
 						this.dgv_atuador1.Rows[num2].Cells[7].Value = value;
-						int num25 = (HorizontalAlignment)0;
+						int num25 = 0;
 						int num26 = RT_geral.RT_820_DataGrigViewAtuador1Colunas[8].NumeroLinhaMenu - 1;
 						for (int j = num25; j <= num26; j++)
 						{
@@ -10752,7 +10752,7 @@ namespace iS800
 					}
 					while (num2 <= 0);
 					text = "CFG ATUADOR1 VARIAVEL1";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint1.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[num2].Valor;
@@ -10773,7 +10773,7 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR1 VARIAVEL2";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint11.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[num2].Valor;
@@ -10792,11 +10792,11 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR2";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.config_atuador2_perif[num2].Indice = -1;
-						int num27 = (HorizontalAlignment)0;
+						int num27 = 0;
 						int num28 = RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].NumeroLinhaMenu - 1;
 						for (int k = num27; k <= num28; k++)
 						{
@@ -10814,7 +10814,7 @@ namespace iS800
 						string value = RT_geral.RT_820_DataGrigViewAtuador2Colunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador2_perif[num2].Indice];
 						this.dgv_atuador2.Rows[num2].Cells[0].Value = value;
 						this.dgv_atuador2.Rows[num2].Cells[1].Value = RT_geral.RT_820_360_BD.config_atuador2_mem[num2].Valor;
-						int num29 = (HorizontalAlignment)0;
+						int num29 = 0;
 						int num30 = RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].NumeroLinhaMenu - 1;
 						for (int k = num29; k <= num30; k++)
 						{
@@ -10827,7 +10827,7 @@ namespace iS800
 						value = RT_geral.RT_820_DataGrigViewAtuador2Colunas[2].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador2_var1[num2].Indice];
 						this.dgv_atuador2.Rows[num2].Cells[2].Value = value;
 						this.dgv_atuador2.Rows[num2].Cells[3].Value = RT_geral.RT_820_360_BD.config_atuador2_escala1[num2].Valor;
-						int num31 = (HorizontalAlignment)0;
+						int num31 = 0;
 						int num32 = RT_geral.RT_820_DataGrigViewAtuador2Colunas[4].NumeroLinhaMenu - 1;
 						for (int k = num31; k <= num32; k++)
 						{
@@ -10841,7 +10841,7 @@ namespace iS800
 						this.dgv_atuador2.Rows[num2].Cells[4].Value = value;
 						this.dgv_atuador2.Rows[num2].Cells[5].Value = RT_geral.RT_820_360_BD.config_atuador2_escala2[num2].Valor;
 						this.dgv_atuador2.Rows[num2].Cells[6].Value = RT_geral.RT_820_360_BD.config_atuador2_histerese[num2].Valor;
-						int num33 = (HorizontalAlignment)0;
+						int num33 = 0;
 						int num34 = RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].NumeroLinhaMenu - 1;
 						for (int k = num33; k <= num34; k++)
 						{
@@ -10853,7 +10853,7 @@ namespace iS800
 						}
 						value = RT_geral.RT_820_DataGrigViewAtuador2Colunas[7].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador2_formato[num2].Indice];
 						this.dgv_atuador2.Rows[num2].Cells[7].Value = value;
-						int num35 = (HorizontalAlignment)0;
+						int num35 = 0;
 						int num36 = RT_geral.RT_820_DataGrigViewAtuador2Colunas[8].NumeroLinhaMenu - 1;
 						for (int k = num35; k <= num36; k++)
 						{
@@ -10873,7 +10873,7 @@ namespace iS800
 					}
 					while (num2 <= 0);
 					text = "CFG ATUADOR2 VARIAVEL1";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint2.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[num2].Valor;
@@ -10894,7 +10894,7 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR2 VARIAVEL2";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint21.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[num2].Valor;
@@ -10913,11 +10913,11 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR3";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.config_atuador3_perif[0].Indice = -1;
-						int num37 = (HorizontalAlignment)0;
+						int num37 = 0;
 						int num38 = RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].NumeroLinhaMenu - 1;
 						for (int l = num37; l <= num38; l++)
 						{
@@ -10935,7 +10935,7 @@ namespace iS800
 						string value = RT_geral.RT_820_DataGrigViewAtuador3Colunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador3_perif[0].Indice];
 						this.dgv_atuador3.Rows[num2].Cells[0].Value = value;
 						this.dgv_atuador3.Rows[num2].Cells[1].Value = RT_geral.RT_820_360_BD.config_atuador3_mem[num2].Valor;
-						int num39 = (HorizontalAlignment)0;
+						int num39 = 0;
 						int num40 = RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].NumeroLinhaMenu - 1;
 						for (int l = num39; l <= num40; l++)
 						{
@@ -10948,7 +10948,7 @@ namespace iS800
 						value = RT_geral.RT_820_DataGrigViewAtuador3Colunas[2].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador3_var1[num2].Indice];
 						this.dgv_atuador3.Rows[num2].Cells[2].Value = value;
 						this.dgv_atuador3.Rows[num2].Cells[3].Value = RT_geral.RT_820_360_BD.config_atuador3_escala1[num2].Valor;
-						int num41 = (HorizontalAlignment)0;
+						int num41 = 0;
 						int num42 = RT_geral.RT_820_DataGrigViewAtuador3Colunas[4].NumeroLinhaMenu - 1;
 						for (int l = num41; l <= num42; l++)
 						{
@@ -10962,7 +10962,7 @@ namespace iS800
 						this.dgv_atuador3.Rows[num2].Cells[4].Value = value;
 						this.dgv_atuador3.Rows[num2].Cells[5].Value = RT_geral.RT_820_360_BD.config_atuador3_escala2[num2].Valor;
 						this.dgv_atuador3.Rows[num2].Cells[6].Value = RT_geral.RT_820_360_BD.config_atuador3_histerese[num2].Valor;
-						int num43 = (HorizontalAlignment)0;
+						int num43 = 0;
 						int num44 = RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].NumeroLinhaMenu - 1;
 						for (int l = num43; l <= num44; l++)
 						{
@@ -10974,7 +10974,7 @@ namespace iS800
 						}
 						value = RT_geral.RT_820_DataGrigViewAtuador3Colunas[7].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador3_formato[num2].Indice];
 						this.dgv_atuador3.Rows[num2].Cells[7].Value = value;
-						int num45 = (HorizontalAlignment)0;
+						int num45 = 0;
 						int num46 = RT_geral.RT_820_DataGrigViewAtuador3Colunas[8].NumeroLinhaMenu - 1;
 						for (int l = num45; l <= num46; l++)
 						{
@@ -10994,7 +10994,7 @@ namespace iS800
 					}
 					while (num2 <= 0);
 					text = "CFG ATUADOR3 VARIAVEL1";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint3.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[num2].Valor;
@@ -11015,7 +11015,7 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR3 VARIAVEL2";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint31.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[num2].Valor;
@@ -11034,11 +11034,11 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR4";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.config_atuador4_perif[num2].Indice = -1;
-						int num47 = (HorizontalAlignment)0;
+						int num47 = 0;
 						int num48 = RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].NumeroLinhaMenu - 1;
 						for (int m = num47; m <= num48; m++)
 						{
@@ -11056,7 +11056,7 @@ namespace iS800
 						string value = RT_geral.RT_820_DataGrigViewAtuador4Colunas[0].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador4_perif[num2].Indice];
 						this.dgv_atuador4.Rows[num2].Cells[0].Value = value;
 						this.dgv_atuador4.Rows[num2].Cells[1].Value = RT_geral.RT_820_360_BD.config_atuador4_mem[num2].Valor;
-						int num49 = (HorizontalAlignment)0;
+						int num49 = 0;
 						int num50 = RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].NumeroLinhaMenu - 1;
 						for (int m = num49; m <= num50; m++)
 						{
@@ -11069,7 +11069,7 @@ namespace iS800
 						value = RT_geral.RT_820_DataGrigViewAtuador4Colunas[2].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador4_var1[num2].Indice];
 						this.dgv_atuador4.Rows[num2].Cells[2].Value = value;
 						this.dgv_atuador4.Rows[num2].Cells[3].Value = RT_geral.RT_820_360_BD.config_atuador4_escala1[num2].Valor;
-						int num51 = (HorizontalAlignment)0;
+						int num51 = 0;
 						int num52 = RT_geral.RT_820_DataGrigViewAtuador4Colunas[4].NumeroLinhaMenu - 1;
 						for (int m = num51; m <= num52; m++)
 						{
@@ -11083,7 +11083,7 @@ namespace iS800
 						this.dgv_atuador4.Rows[num2].Cells[4].Value = value;
 						this.dgv_atuador4.Rows[num2].Cells[5].Value = RT_geral.RT_820_360_BD.config_atuador4_escala2[num2].Valor;
 						this.dgv_atuador4.Rows[num2].Cells[6].Value = RT_geral.RT_820_360_BD.config_atuador4_histerese[num2].Valor;
-						int num53 = (HorizontalAlignment)0;
+						int num53 = 0;
 						int num54 = RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].NumeroLinhaMenu - 1;
 						for (int m = num53; m <= num54; m++)
 						{
@@ -11095,7 +11095,7 @@ namespace iS800
 						}
 						value = RT_geral.RT_820_DataGrigViewAtuador4Colunas[7].LinhasMenu[RT_geral.RT_820_360_BD.config_atuador4_formato[num2].Indice];
 						this.dgv_atuador4.Rows[num2].Cells[7].Value = value;
-						int num55 = (HorizontalAlignment)0;
+						int num55 = 0;
 						int num56 = RT_geral.RT_820_DataGrigViewAtuador4Colunas[8].NumeroLinhaMenu - 1;
 						for (int m = num55; m <= num56; m++)
 						{
@@ -11115,7 +11115,7 @@ namespace iS800
 					}
 					while (num2 <= 0);
 					text = "CFG ATUADOR4 VARIAVEL1";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint4.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[num2].Valor;
@@ -11136,7 +11136,7 @@ namespace iS800
 					}
 					while (num2 <= 2);
 					text = "CFG ATUADOR4 VARIAVEL2";
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.dgv_atuador_setpoint41.Rows[num2].Cells[0].Value = RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[num2].Valor;
@@ -11159,7 +11159,7 @@ namespace iS800
 					this.cb_ModoRepetidora.SelectedIndex = RT_geral.RT_820_360_BD.modo_repetidora.Indice;
 					this.NumericUpDown_end_rep_820.Value = new decimal(RT_geral.RT_820_360_BD.End_repetidora.Valor);
 					this.NumericUpDown_num_est_rep_820.Value = new decimal(RT_geral.RT_820_360_BD.Num_repetidoras.Valor);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						this.DataGridView_end_rep_RT820.Rows[num2].Cells[1].Value = RT_geral.RT_820_360_BD.Repetidoras[num2].Valor;
@@ -11171,10 +11171,10 @@ namespace iS800
 					}
 					while (num2 <= 9);
 					text = "CFG TIMER";
-					int num57 = (HorizontalAlignment)0;
+					int num57 = 0;
 					do
 					{
-						int num58 = (HorizontalAlignment)0;
+						int num58 = 0;
 						do
 						{
 							int num3 = RT_geral.RT_820_360_BD.Timer_Horario[num57][num58].Valor / 60;
@@ -11194,7 +11194,7 @@ namespace iS800
 					num59 = -1;
 										IL_4DB2:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num59 == (DialogResult)0))
+				catch when (endfilter(obj is Exception & num != 0 & num59 == 0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_4D9C;
@@ -11284,13 +11284,13 @@ namespace iS800
 		public void AtualizaMsgTela_RT_820(string texto, int cor)
 		{
 			this.ToolStripTextBox_RT_820_Msg.Text = texto;
-			if (cor == (DialogResult)0)
+			if (cor == 0)
 			{
 				this.ToolStripTextBox_RT_820_Msg.ForeColor = Color.Blue;
 			}
-			else if (cor == (DialogResult)1)
+			else if (cor == 1)
 			{
-				this.ToolStripProgressBar_RT_820.Value = (HorizontalAlignment)0;
+				this.ToolStripProgressBar_RT_820.Value = 0;
 				this.ToolStripTextBox_RT_820_Msg.ForeColor = Color.Red;
 			}
 			else
@@ -11302,10 +11302,10 @@ namespace iS800
 		// Token: 0x060015F3 RID: 5619 RVA: 0x00353B74 File Offset: 0x00351F74
 		public void InicializaBarraProgressoTela_RT_820(int num_passos)
 		{
-			this.ToolStripProgressBar_RT_820.Minimum = (HorizontalAlignment)0;
-			this.ToolStripProgressBar_RT_820.Maximum = (HorizontalAlignment)100;
+			this.ToolStripProgressBar_RT_820.Minimum = 0;
+			this.ToolStripProgressBar_RT_820.Maximum = 100;
 			this.ToolStripProgressBar_RT_820.Step = checked((int)Math.Round(unchecked(100.0 / (double)num_passos + 1.0)));
-			this.ToolStripProgressBar_RT_820.Value = (HorizontalAlignment)0;
+			this.ToolStripProgressBar_RT_820.Value = 0;
 			this.ToolStripProgressBar_RT_820.BackColor = Color.LightGray;
 		}
 
@@ -11314,7 +11314,7 @@ namespace iS800
 		{
 			this.Timer_limpa_MSG_820.Enabled = false;
 			this.AtualizaMsgTela_RT_820("", 0);
-			this.ToolStripProgressBar_RT_820.Value = (HorizontalAlignment)0;
+			this.ToolStripProgressBar_RT_820.Value = 0;
 			this.ToolStripButton_RT_820_Upload.Enabled = true;
 			this.ToolStripButton_RT_820_Download.Enabled = true;
 			this.ToolStripButton_RT_820_Abrir.Enabled = true;
@@ -11338,7 +11338,7 @@ namespace iS800
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_360_BD.Num_repetidoras, true);
 			sender = numericUpDown;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			checked
 			{
@@ -11408,7 +11408,7 @@ namespace iS800
 						break;
 					}
 				}
-				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= (HorizontalAlignment)49; i++)
+				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= 49; i++)
 				{
 					switch (i)
 					{
@@ -11423,7 +11423,7 @@ namespace iS800
 					case 8:
 					case 9:
 						this.DataGridView_end_rep_RT820.Rows[i].Cells[1].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i].Cells[1].Value = (HorizontalAlignment)0;
+						this.DataGridView_end_rep_RT820.Rows[i].Cells[1].Value = 0;
 						break;
 					case 10:
 					case 11:
@@ -11436,7 +11436,7 @@ namespace iS800
 					case 18:
 					case 19:
 						this.DataGridView_end_rep_RT820.Rows[i - 10].Cells[3].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 10].Cells[3].Value = (HorizontalAlignment)0;
+						this.DataGridView_end_rep_RT820.Rows[i - 10].Cells[3].Value = 0;
 						break;
 					case 20:
 					case 21:
@@ -11449,7 +11449,7 @@ namespace iS800
 					case 28:
 					case 29:
 						this.DataGridView_end_rep_RT820.Rows[i - 20].Cells[5].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 20].Cells[5].Value = (HorizontalAlignment)0;
+						this.DataGridView_end_rep_RT820.Rows[i - 20].Cells[5].Value = 0;
 						break;
 					case 30:
 					case 31:
@@ -11462,7 +11462,7 @@ namespace iS800
 					case 38:
 					case 39:
 						this.DataGridView_end_rep_RT820.Rows[i - 30].Cells[7].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 30].Cells[7].Value = (HorizontalAlignment)0;
+						this.DataGridView_end_rep_RT820.Rows[i - 30].Cells[7].Value = 0;
 						break;
 					case 40:
 					case 41:
@@ -11475,7 +11475,7 @@ namespace iS800
 					case 48:
 					case 49:
 						this.DataGridView_end_rep_RT820.Rows[i - 40].Cells[9].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 40].Cells[9].Value = (HorizontalAlignment)0;
+						this.DataGridView_end_rep_RT820.Rows[i - 40].Cells[9].Value = 0;
 						break;
 					}
 				}
@@ -11504,7 +11504,7 @@ namespace iS800
 		public void CarregaComboBoxModoRepetidora(ref ComboBox dado)
 		{
 			dado.Items.Clear();
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = RT_geral.RT_820_360_BD.modo_repetidora.Numero_itens - 1;
@@ -11519,7 +11519,7 @@ namespace iS800
 		public void CarregaComboBoxSaidaAnalogica(ref ComboBox dado)
 		{
 			dado.Items.Clear();
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = perifericos.Lista_SA_Origem_RT820_400.Count - 1;
@@ -11553,7 +11553,7 @@ namespace iS800
 		{
 			dado.Items.Clear();
 			dado.Items.Add("Leitura Desabilitada");
-			int num = (HorizontalAlignment)1;
+			int num = 1;
 			checked
 			{
 				do
@@ -11562,7 +11562,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 16);
-				num = (HorizontalAlignment)1;
+				num = 1;
 				do
 				{
 					dado.Items.Add("Leitura Vazão ED " + Strings.Format(num, "0#"));
@@ -11570,9 +11570,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 8);
-				if (expIO == (DialogResult)21857)
+				if (expIO == 21857)
 				{
-					num = (HorizontalAlignment)9;
+					num = 9;
 					do
 					{
 						dado.Items.Add("Leitura Vazão ED " + Strings.Format(num, "0#"));
@@ -11640,27 +11640,27 @@ namespace iS800
 			{
 				if (@checked)
 				{
-					RT_geral.RT_820_360_BD.HabExpIO.Valor = (HorizontalAlignment)21857;
-					this.DataGridView_RT820_ED.Height = (HorizontalAlignment)376;
-					this.GroupBox_ED_820.Height = (HorizontalAlignment)417;
+					RT_geral.RT_820_360_BD.HabExpIO.Valor = 21857;
+					this.DataGridView_RT820_ED.Height = 376;
+					this.GroupBox_ED_820.Height = 417;
 				}
 				else
 				{
-					RT_geral.RT_820_360_BD.HabExpIO.Valor = (HorizontalAlignment)21856;
-					this.DataGridView_RT820_ED.Height = (HorizontalAlignment)200;
-					this.GroupBox_ED_820.Height = (HorizontalAlignment)241;
-					int num = (HorizontalAlignment)8;
+					RT_geral.RT_820_360_BD.HabExpIO.Valor = 21856;
+					this.DataGridView_RT820_ED.Height = 200;
+					this.GroupBox_ED_820.Height = 241;
+					int num = 8;
 					do
 					{
 						RT_geral.RT_820_360_BD.config_ED[num].Valor = RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0];
-						RT_geral.RT_820_360_BD.config_ED[num].Indice = (HorizontalAlignment)0;
+						RT_geral.RT_820_360_BD.config_ED[num].Indice = 0;
 						num++;
 					}
 					while (num <= 15);
 				}
 				if (!this.bloqueio_IO)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.AcertaIndexCombo_Ctrl(ref RT_geral.RT_820_360_BD.ctrl_acionamento[num], RT_geral.RT_820_DataGrigViewProcessosColunas[0], "SD", RT_geral.RT_820_360_BD.HabExpIO.Valor);
@@ -11715,25 +11715,25 @@ namespace iS800
 												{
 													if (Operators.CompareString(dataPropertyName, "Col_GrupoPartida", false) != 0)
 													{
-														if (Operators.CompareString(dataPropertyName, "Col_TpMaxPart", false) == (DialogResult)0)
+														if (Operators.CompareString(dataPropertyName, "Col_TpMaxPart", false) == 0)
 														{
 															this.DataGridView_processo_820.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[11].Value));
 															RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[11].Value);
 															return;
 														}
-														if (Operators.CompareString(dataPropertyName, "Col_TpMaxParada", false) == (DialogResult)0)
+														if (Operators.CompareString(dataPropertyName, "Col_TpMaxParada", false) == 0)
 														{
 															this.DataGridView_processo_820.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[12].Value));
 															RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[11].Value);
 															return;
 														}
-														if (Operators.CompareString(dataPropertyName, "Col_TpMinParado", false) == (DialogResult)0)
+														if (Operators.CompareString(dataPropertyName, "Col_TpMinParado", false) == 0)
 														{
 															this.DataGridView_processo_820.Rows[e.RowIndex].Cells[13].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[13].Value));
 															RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[13].Value);
 															return;
 														}
-														if (Operators.CompareString(dataPropertyName, "Col_TpMinOperan", false) == (DialogResult)0)
+														if (Operators.CompareString(dataPropertyName, "Col_TpMinOperan", false) == 0)
 														{
 															this.DataGridView_processo_820.Rows[e.RowIndex].Cells[14].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[14].Value));
 															RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[14].Value);
@@ -11752,23 +11752,23 @@ namespace iS800
 				}
 			}
 			string text = Conversions.ToString(this.DataGridView_processo_820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 				int i = num;
 				while (i <= num2)
 				{
-					if (Operators.CompareString(RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+					if (Operators.CompareString(RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 					{
 						string dataPropertyName2 = this.DataGridView_processo_820.Columns[e.ColumnIndex].DataPropertyName;
-						if (Operators.CompareString(dataPropertyName2, "Col_GrupoPartida", false) == (DialogResult)0)
+						if (Operators.CompareString(dataPropertyName2, "Col_GrupoPartida", false) == 0)
 						{
 							RT_geral.RT_820_360_BD.ctrl_partidas[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.ctrl_partidas[e.RowIndex].Indice = i;
 							break;
 						}
-						if (Operators.CompareString(dataPropertyName2, "Col_SDAciona", false) == (DialogResult)0)
+						if (Operators.CompareString(dataPropertyName2, "Col_SDAciona", false) == 0)
 						{
 							bool flag = RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_acionamento[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_desligamento, text, "Acionamento", "Desacionamento");
 							bool flag2 = RT_geral.VerificaEDJaUtilizada_MesmaColuna(8, i, e.RowIndex, ref RT_geral.RT_820_360_BD.ctrl_acionamento, ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], text);
@@ -11781,7 +11781,7 @@ namespace iS800
 							RT_geral.RT_820_360_BD.ctrl_acionamento[e.RowIndex].Indice = i;
 							break;
 						}
-						else if (Operators.CompareString(dataPropertyName2, "Col_EDRetAci", false) == (DialogResult)0)
+						else if (Operators.CompareString(dataPropertyName2, "Col_EDRetAci", false) == 0)
 						{
 							if (RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento, text, "Ret Acionamento", "Ret Desligamento") | RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_ED_selecao, text, "Ret Acionamento", "ED Seleção") | RT_geral.VerificaEDJaUtilizada_FuncoesEspeciais(i, RT_geral.RT_820_360_BD.config_ED, text) | RT_geral.VerificaEDJaUtilizada_MesmaColuna(8, i, e.RowIndex, ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento, ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], text))
 							{
@@ -11792,7 +11792,7 @@ namespace iS800
 							RT_geral.RT_820_360_BD.ctrl_ret_acionamento[e.RowIndex].Indice = i;
 							break;
 						}
-						else if (Operators.CompareString(dataPropertyName2, "Col_SDDesaci", false) == (DialogResult)0)
+						else if (Operators.CompareString(dataPropertyName2, "Col_SDDesaci", false) == 0)
 						{
 							if (RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_desligamento[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_acionamento, text, "Desacionamento", "Acionamento") | RT_geral.VerificaEDJaUtilizada_MesmaColuna(8, i, e.RowIndex, ref RT_geral.RT_820_360_BD.ctrl_desligamento, ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], text))
 							{
@@ -11803,7 +11803,7 @@ namespace iS800
 							RT_geral.RT_820_360_BD.ctrl_desligamento[e.RowIndex].Indice = i;
 							break;
 						}
-						else if (Operators.CompareString(dataPropertyName2, "Col_EDRetDes", false) == (DialogResult)0)
+						else if (Operators.CompareString(dataPropertyName2, "Col_EDRetDes", false) == 0)
 						{
 							if (RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento, text, "Ret Desligamento", "Ret Acionamento") | RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_ED_selecao, text, "Ret Desligamento", "ED Seleção") | RT_geral.VerificaEDJaUtilizada_FuncoesEspeciais(i, RT_geral.RT_820_360_BD.config_ED, text) | RT_geral.VerificaEDJaUtilizada_MesmaColuna(8, i, e.RowIndex, ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento, ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], text))
 							{
@@ -11814,7 +11814,7 @@ namespace iS800
 							RT_geral.RT_820_360_BD.ctrl_ret_desligamento[e.RowIndex].Indice = i;
 							break;
 						}
-						else if (Operators.CompareString(dataPropertyName2, "Col_EDRemoto", false) == (DialogResult)0)
+						else if (Operators.CompareString(dataPropertyName2, "Col_EDRemoto", false) == 0)
 						{
 							if (RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_ED_selecao[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento, text, "ED Seleção", "Ret Desligamento") | RT_geral.VerificaEDJaUtilizada_DiferenteColuna(i, ref RT_geral.RT_820_360_BD.ctrl_ED_selecao[e.RowIndex], ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], 8, ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento, text, "ED Seleção", "Ret Acionamento") | RT_geral.VerificaEDJaUtilizada_FuncoesEspeciais(i, RT_geral.RT_820_360_BD.config_ED, text) | RT_geral.VerificaEDJaUtilizada_MesmaColuna(8, i, e.RowIndex, ref RT_geral.RT_820_360_BD.ctrl_ED_selecao, ref RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex], text))
 							{
@@ -11827,31 +11827,31 @@ namespace iS800
 						}
 						else
 						{
-							if (Operators.CompareString(dataPropertyName2, "Col_EDBloqueio", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_EDBloqueio", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.ctrl_ED_bloqueio[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.ctrl_ED_bloqueio[e.RowIndex].Indice = i;
 								break;
 							}
-							if (Operators.CompareString(dataPropertyName2, "Col_EDLiberar", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_EDLiberar", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.ctrl_ED_liberacao[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.ctrl_ED_liberacao[e.RowIndex].Indice = i;
 								break;
 							}
-							if (Operators.CompareString(dataPropertyName2, "Col_Reverso", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_Reverso", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.ctrl_reverso[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.ctrl_reverso[e.RowIndex].Indice = i;
 								break;
 							}
-							if (Operators.CompareString(dataPropertyName2, "Col_ModoCtrl", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_ModoCtrl", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.ctrl_modo[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.ctrl_modo[e.RowIndex].Indice = i;
 								break;
 							}
-							if (Operators.CompareString(dataPropertyName2, "Col_GrupoCtrl", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_GrupoCtrl", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.ctrl_agrupamento[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewProcessosColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.ctrl_agrupamento[e.RowIndex].Indice = i;
@@ -11874,28 +11874,28 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_processo_820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_TpMaxPart", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_TpMaxPart", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_TpMaxParada", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_TpMaxParada", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.ctrl_tempo_max_parada[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_TpMinParado", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_TpMinParado", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.ctrl_tempo_min_parado[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_TpMinOperan", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_TpMinOperan", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.ctrl_tempo_min_operando[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -11928,18 +11928,18 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_grupos_820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_ASimultaneos", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_ASimultaneos", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_grupos_820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					int i = num;
 					while (i <= num2)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							string dataPropertyName2 = this.DataGridView_grupos_820.Columns[e.ColumnIndex].DataPropertyName;
-							if (Operators.CompareString(dataPropertyName2, "Col_ASimultaneos", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_ASimultaneos", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.grupo_simultaneos[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.grupo_simultaneos[e.RowIndex].Indice = i;
@@ -11953,23 +11953,23 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_TpAcionamentos", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_TpAcionamentos", false) == 0)
 				{
 					this.DataGridView_grupos_820.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_grupos_820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_grupos_820.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_RotMot", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_RotMot", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_grupos_820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					int num4 = RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					int i = num3;
 					while (i <= num4)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							string dataPropertyName3 = this.DataGridView_grupos_820.Columns[e.ColumnIndex].DataPropertyName;
-							if (Operators.CompareString(dataPropertyName3, "Col_RotMot", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName3, "Col_RotMot", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.grupo_rotativo_motores[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewGruposColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.grupo_rotativo_motores[e.RowIndex].Indice = i;
@@ -11990,7 +11990,7 @@ namespace iS800
 		private void DataGridView_grupos_820_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
 		{
 			string dataPropertyName = this.DataGridView_grupos_820.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_TpAcionamentos", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_TpAcionamentos", false) == 0)
 			{
 				RT_geral.RT_820_360_BD.grupo_tempo_entre_acionamentos[e.RowIndex].Valor = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue))));
 				DataGridView dataGridView = (DataGridView)sender;
@@ -12016,17 +12016,17 @@ namespace iS800
 				return;
 			}
 			string dataPropertyName = this.DataGridView_parametros_EA_820.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_range", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_range", false) == 0)
 			{
 				this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.EA_Range[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(dataPropertyName, "Col_ini", false) == (DialogResult)0)
+			else if (Operators.CompareString(dataPropertyName, "Col_ini", false) == 0)
 			{
 				this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.EA_Inicio[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(dataPropertyName, "Col_fim", false) == (DialogResult)0)
+			else if (Operators.CompareString(dataPropertyName, "Col_fim", false) == 0)
 			{
 				this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.EA_Fim[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_parametros_EA_820.Rows[e.RowIndex].Cells[2].Value);
@@ -12039,21 +12039,21 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_parametros_EA_820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_range", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_range", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.EA_Range[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.EA_Range[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_ini", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_ini", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.EA_Inicio[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.EA_Inicio[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_fim", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_fim", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.EA_Fim[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -12082,24 +12082,24 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_setpoints_820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_Set_Controle", false) == (DialogResult)0 || Operators.CompareString(dataPropertyName, "Col_Set_Bloqueio", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_Set_Controle", false) == 0 || Operators.CompareString(dataPropertyName, "Col_Set_Bloqueio", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewSetpointsColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					int i = num;
 					while (i <= num2)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewSetpointsColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewSetpointsColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							string dataPropertyName2 = this.DataGridView_setpoints_820.Columns[e.ColumnIndex].DataPropertyName;
-							if (Operators.CompareString(dataPropertyName2, "Col_Set_Controle", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_Set_Controle", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.Setpoints_ctrl_variavel[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewSetpointsColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.Setpoints_ctrl_variavel[e.RowIndex].Indice = i;
 								break;
 							}
-							if (Operators.CompareString(dataPropertyName2, "Col_Set_Bloqueio", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_Set_Bloqueio", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.Setpoints_ctrl_bloqueio[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewSetpointsColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.Setpoints_ctrl_bloqueio[e.RowIndex].Indice = i;
@@ -12113,38 +12113,38 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NAlto", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NAlto", false) == 0)
 				{
 					this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[2].Value));
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[2].Value);
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex].Valor * 40;
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBaixo", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBaixo", false) == 0)
 				{
 					this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[1].Value);
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex].Valor * 40;
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBloq", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBloq", false) == 0)
 				{
 					this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[4].Value));
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[4].Value);
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex].Valor * 40;
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NLib", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NLib", false) == 0)
 				{
 					this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_setpoints_820.Rows[e.RowIndex].Cells[5].Value);
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[e.RowIndex].Valor * 40;
 					}
@@ -12158,10 +12158,10 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_setpoints_820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_Set_NAlto", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_Set_NAlto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex].Valor * 40;
 					}
@@ -12169,10 +12169,10 @@ namespace iS800
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_alto[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBaixo", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBaixo", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex].Valor * 40;
 					}
@@ -12180,10 +12180,10 @@ namespace iS800
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_baixo[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBloq", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NBloq", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex].Valor * 40;
 					}
@@ -12191,10 +12191,10 @@ namespace iS800
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_bloqueio[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_Set_NLib", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_Set_NLib", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[e.RowIndex].Valor = RT_geral.RT_820_360_BD.Setpoints_ctrl_nivel_liberacao[e.RowIndex].Valor * 40;
 					}
@@ -12224,14 +12224,14 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_periferico1_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_modelo", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_modelo", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_periferico1_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_perifericos1_mod[e.RowIndex].Valor = RT_geral.RT_820_360_DataGrigViewPerifericos1Colunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_perifericos1_mod[e.RowIndex].Indice = i;
@@ -12239,7 +12239,7 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end", false) == 0)
 				{
 					this.DataGridView_periferico1_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_periferico1_RT820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_perifericos1_end[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_periferico1_RT820.Rows[e.RowIndex].Cells[1].Value);
@@ -12251,7 +12251,7 @@ namespace iS800
 		private void DataGridView_periferico_RT820_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
 		{
 			string dataPropertyName = this.DataGridView_periferico1_RT820.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_end", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_end", false) == 0)
 			{
 				RT_geral.RT_820_360_BD.config_perifericos1_end[e.RowIndex].Valor = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue))));
 				DataGridView dataGridView = (DataGridView)sender;
@@ -12279,18 +12279,18 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_vazoes_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_vazoes_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					int i = num;
 					while (i <= num2)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							string dataPropertyName2 = this.DataGridView_vazoes_RT820.Columns[e.ColumnIndex].DataPropertyName;
-							if (Operators.CompareString(dataPropertyName2, "Col_Entrada", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_Entrada", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.config_vazao[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.config_vazao[e.RowIndex].Indice = i;
@@ -12331,18 +12331,18 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_RT820_ED.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_RT820_ED.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewEDColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					int i = num;
 					while (i <= num2)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewEDColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewEDColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							string dataPropertyName2 = this.DataGridView_RT820_ED.Columns[e.ColumnIndex].DataPropertyName;
-							if (Operators.CompareString(dataPropertyName2, "Col_Entrada", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_Entrada", false) == 0)
 							{
 								if (!RT_geral.VerificaFuncaoJaUtilizada(i, e.RowIndex, RT_geral.RT_820_360_BD.config_ED, RT_geral.RT_820_360_BD.HabExpIO.Valor) & !RT_geral.VerificaEDdaFuncaoJaUtilizada(e.RowIndex + 1, i, 8, ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento) & !RT_geral.VerificaEDdaFuncaoJaUtilizada(e.RowIndex + 1, i, 8, ref RT_geral.RT_820_360_BD.ctrl_ED_selecao) & !RT_geral.VerificaEDdaFuncaoJaUtilizada(e.RowIndex + 1, i, 8, ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento))
 								{
@@ -12381,35 +12381,35 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_end_rep_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[0 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Repetidoras[0 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[10 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Repetidoras[10 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[20 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Repetidoras[20 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[30 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.Repetidoras[30 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.Repetidoras[40 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -12425,33 +12425,33 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_end_rep_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == 0)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == 0)
 				{
-					int num = (HorizontalAlignment)10;
+					int num = 10;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == 0)
 				{
-					int num = (HorizontalAlignment)20;
+					int num = 20;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[5].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == 0)
 				{
-					int num = (HorizontalAlignment)30;
+					int num = 30;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[7].Value));
 					RT_geral.RT_820_360_BD.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[7].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == 0)
 				{
-					int num = (HorizontalAlignment)40;
+					int num = 40;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[9].Value));
 					RT_geral.RT_820_360_BD.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[9].Value);
 				}
@@ -12501,19 +12501,19 @@ namespace iS800
 								num3 = (int)Math.Round(Conversion.Val(text.Substring(num + 1)));
 								if (num3 > 59)
 								{
-									num3 = (HorizontalAlignment)0;
+									num3 = 0;
 								}
 							}
 							else
 							{
-								num3 = (HorizontalAlignment)0;
+								num3 = 0;
 							}
 							e.Value = Strings.Format(num2, "0#") + ":" + Strings.Format(num3, "0#");
 						}
 						else
 						{
 							e.Value = "00:00";
-							num3 = (HorizontalAlignment)0;
+							num3 = 0;
 						}
 						num3 = num2 * 60 + num3;
 					}
@@ -12569,8 +12569,8 @@ namespace iS800
 			string text = Conversions.ToString(this.DataGridView_timer_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 			int length = text.Length;
 			int num = text.IndexOf(":");
-			int num2 = (HorizontalAlignment)0;
-			int num3 = (HorizontalAlignment)0;
+			int num2 = 0;
+			int num3 = 0;
 			checked
 			{
 				if (num > 0)
@@ -12583,11 +12583,11 @@ namespace iS800
 				}
 				if (num2 > 23 | num2 < 0)
 				{
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 				}
 				if (num3 > 59 | num3 < 0)
 				{
-					num3 = (HorizontalAlignment)0;
+					num3 = 0;
 				}
 				num3 += num2 * 60;
 				RT_geral.RT_820_360_BD.Timer_Horario[e.RowIndex][e.ColumnIndex].Valor = num3;
@@ -12605,7 +12605,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = (HorizontalAlignment)2;
+					num = 2;
 					this.AtivaEfeitoOnChangeValue();
 					this.ToolStripButton_RT_820_Abrir.Enabled = false;
 					this.ToolStripButton_RT_820_novo.Enabled = false;
@@ -12614,7 +12614,7 @@ namespace iS800
 					this.ToolStripButton_RT_820_Upload.Enabled = false;
 					this.OpenFileDialog_RT_820.Filter = "Arquivo de configuração de equipamento|*.Cfg820_400";
 					this.OpenFileDialog_RT_820.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_820.ShowDialog() == (DialogResult)1)
+					if (this.OpenFileDialog_RT_820.ShowDialog() == 1)
 					{
 						if (Operators.CompareString(this.OpenFileDialog_RT_820.FileName, "", false) != 0)
 						{
@@ -12658,7 +12658,7 @@ namespace iS800
 								Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_360_BD.BaudRateCOM2, RT_geral.RT_820_360_BD.BaudRateCOM2.Valor);
 								RT_geral.RT_820_360_BD.TempoForaAr.Valor = iniFile.ReadInteger("GERAL_DIVERSOS", "TEMPO_FORA_AR", 0);
 								RT_geral.RT_820_360_BD.HabExpIO.Valor = iniFile.ReadInteger("GERAL_DIVERSOS", "HAB_EXPANSAO_IO", 0);
-								if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+								if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 								{
 									this.Atualiza_Expansao_IO_820_360(true);
 								}
@@ -12670,7 +12670,7 @@ namespace iS800
 								RT_geral.RT_820_360_BD.AD_Intervalo.Valor = iniFile.ReadInteger("ENTRADA_ANALOGICA", "INTERVALO", 0);
 								RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Valor = iniFile.ReadInteger("ENTRADA_ANALOGICA", "TAMANHO_FILTRO", 0);
 								this.InicializaEStruturasVariaveis_RT820();
-								int num2 = (HorizontalAlignment)0;
+								int num2 = 0;
 								string text;
 								do
 								{
@@ -12681,7 +12681,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 15);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("SAIDA_ANALOGICA_{0}", num2 + 1);
@@ -12692,7 +12692,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 1);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("CFG_CONTROLE_{0}", num2 + 1);
@@ -12710,7 +12710,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 7);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("GRUPO_CONTROLE_{0}", num2 + 1);
@@ -12720,7 +12720,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 3);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("CFG_CONTROLE_{0}", num2 + 1);
@@ -12731,7 +12731,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 7);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("CFG{0}_ED", num2 + 1);
@@ -12739,7 +12739,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 15);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("V{0}", num2 + 1);
@@ -12747,7 +12747,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 7);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									string section = string.Format("CALHA_{0}", num2 + 1);
@@ -12762,7 +12762,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 1);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("PERIFERICO{0}", num2 + 1);
@@ -12771,7 +12771,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 4);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("PERIFERICO{0}", num2 + 6);
@@ -12780,14 +12780,14 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 4);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("PERIFERICO_MODBUS_GENRICO{0}", num2 + 1);
 									RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[num2].Valor = iniFile.ReadInteger(text, "END_COM", 0);
 									RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[num2].Valor = iniFile.ReadInteger(text, "FUNCAO", 3);
 									RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[num2].Indice = RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[num2].Indice_padrao;
-									int num4 = (HorizontalAlignment)0;
+									int num4 = 0;
 									int num5 = RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].NumeroLinhaMenu - 1;
 									for (int i = num4; i <= num5; i++)
 									{
@@ -12810,7 +12810,7 @@ namespace iS800
 								while (num2 <= 4);
 								RT_geral.RT_820_360_BD.End_repetidora.Valor = iniFile.ReadInteger("REPETIDORA", "ENDERECO", 0);
 								RT_geral.RT_820_360_BD.Num_repetidoras.Valor = iniFile.ReadInteger("REPETIDORA", "NUMERO_REPETIDORAS", 0);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("RPT{0}", num2 + 1);
@@ -12833,11 +12833,11 @@ namespace iS800
 									"L6",
 									"D6"
 								};
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("TIMER{0}", num2 + 1);
-									int num6 = (HorizontalAlignment)0;
+									int num6 = 0;
 									int num7 = array.Length - 1;
 									for (int j = num6; j <= num7; j++)
 									{
@@ -12847,7 +12847,7 @@ namespace iS800
 								}
 								while (num2 <= 7);
 								RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = iniFile.ReadInteger("SETPOINT", "TRATAMENTO_PERCENTUAL", 0);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("SETPOINT{0}", num2 + 1);
@@ -12860,45 +12860,45 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 7);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("SETPOINT_HORARIO_{0}", num2 + 1);
 									int num3 = iniFile.ReadInteger(text, "HORA", 0);
 									if (num3 >= 65535)
 									{
-										num3 = (HorizontalAlignment)23;
+										num3 = 23;
 									}
 									RT_geral.RT_820_360_BD.setpoint_horario[num2].Hora.Valor = num3;
 									num3 = iniFile.ReadInteger(text, "MINUTO", 0);
 									if (num3 >= 65535)
 									{
-										num3 = (HorizontalAlignment)59;
+										num3 = 59;
 									}
 									RT_geral.RT_820_360_BD.setpoint_horario[num2].Minuto.Valor = num3;
 									num3 = iniFile.ReadInteger(text, "ALTO", 0);
 									if (num3 >= 65535)
 									{
-										num3 = (HorizontalAlignment)4000;
+										num3 = 4000;
 									}
 									RT_geral.RT_820_360_BD.setpoint_horario[num2].Alto.Valor = num3;
 									num3 = iniFile.ReadInteger(text, "BAIXO", 0);
 									if (num3 >= 65535)
 									{
-										num3 = (HorizontalAlignment)4000;
+										num3 = 4000;
 									}
 									RT_geral.RT_820_360_BD.setpoint_horario[num2].Baixo.Valor = num3;
 									num2++;
 								}
 								while (num2 <= 79);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("REFERENCIA_PERIFERICO_{0}", num2 + 1);
 									int num3 = iniFile.ReadInteger(text, "PERIFERICO", 0);
 									if (num3 >= 6)
 									{
-										num3 = (HorizontalAlignment)0;
+										num3 = 0;
 									}
 									RT_geral.RT_820_360_BD.config_referencia_perif_periferico[num2].Valor = num3;
 									num3 = iniFile.ReadInteger(text, "END_MEM", 0);
@@ -12910,13 +12910,13 @@ namespace iS800
 									num3 = iniFile.ReadInteger(text, "VARIAVEL1", 0);
 									if (num3 >= 21)
 									{
-										num3 = (HorizontalAlignment)0;
+										num3 = 0;
 									}
 									RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[num2].Valor = num3;
 									num3 = iniFile.ReadInteger(text, "VARIAVEL2", 0);
 									if (num3 >= 17)
 									{
-										num3 = (HorizontalAlignment)0;
+										num3 = 0;
 									}
 									RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[num2].Valor = num3;
 									num3 = iniFile.ReadInteger(text, "ESCALA", 0);
@@ -12928,13 +12928,13 @@ namespace iS800
 									num3 = iniFile.ReadInteger(text, "FORMATO", 0);
 									if (num3 >= 3)
 									{
-										num3 = (HorizontalAlignment)0;
+										num3 = 0;
 									}
 									RT_geral.RT_820_360_BD.config_referencia_perif_formato[num2].Valor = num3;
 									num3 = iniFile.ReadInteger(text, "BASE10", 0);
 									if (num3 >= 3)
 									{
-										num3 = (HorizontalAlignment)0;
+										num3 = 0;
 									}
 									RT_geral.RT_820_360_BD.config_referencia_perif_base10[num2].Valor = num3;
 									num2++;
@@ -12954,7 +12954,7 @@ namespace iS800
 								RT_geral.RT_820_360_BD.config_atuador1_v1alto[0].Valor = iniFile.ReadInteger(text, "V1ALTO", 0);
 								RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Valor = iniFile.ReadInteger(text, "V2BAIXO", 0);
 								RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Valor = iniFile.ReadInteger(text, "V2ALTO", 0);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR1_VARIAVEL1_PERIFERICO_{0}", num2 + 1);
@@ -12975,7 +12975,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 2);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR1_VARIAVEL2_PERIFERICO_{0}", num2 + 1);
@@ -13008,7 +13008,7 @@ namespace iS800
 								RT_geral.RT_820_360_BD.config_atuador2_v1alto[0].Valor = iniFile.ReadInteger(text, "V1ALTO", 0);
 								RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Valor = iniFile.ReadInteger(text, "V2BAIXO", 0);
 								RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Valor = iniFile.ReadInteger(text, "V2ALTO", 0);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR2_VARIAVEL1_PERIFERICO_{0}", num2 + 1);
@@ -13029,7 +13029,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 2);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR2_VARIAVEL2_PERIFERICO_{0}", num2 + 1);
@@ -13062,7 +13062,7 @@ namespace iS800
 								RT_geral.RT_820_360_BD.config_atuador3_v1alto[0].Valor = iniFile.ReadInteger(text, "V1ALTO", 0);
 								RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Valor = iniFile.ReadInteger(text, "V2BAIXO", 0);
 								RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Valor = iniFile.ReadInteger(text, "V2ALTO", 0);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR3_VARIAVEL1_PERIFERICO_{0}", num2 + 1);
@@ -13083,7 +13083,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 2);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR3_VARIAVEL2_PERIFERICO_{0}", num2 + 1);
@@ -13116,7 +13116,7 @@ namespace iS800
 								RT_geral.RT_820_360_BD.config_atuador4_v1alto[0].Valor = iniFile.ReadInteger(text, "V1ALTO", 0);
 								RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Valor = iniFile.ReadInteger(text, "V2BAIXO", 0);
 								RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Valor = iniFile.ReadInteger(text, "V2ALTO", 0);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR4_VARIAVEL1_PERIFERICO_{0}", num2 + 1);
@@ -13137,7 +13137,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 2);
-								num2 = (HorizontalAlignment)0;
+								num2 = 0;
 								do
 								{
 									text = string.Format("ATUADOR4_VARIAVEL2_PERIFERICO_{0}", num2 + 1);
@@ -13191,7 +13191,7 @@ namespace iS800
 					num8 = -1;
 										IL_2D80:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num8 == (DialogResult)0))
+				catch when (endfilter(obj is Exception & num != 0 & num8 == 0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_2D6A;
@@ -13218,7 +13218,7 @@ namespace iS800
 			this.SaveFileDialog_RT_820.InitialDirectory = Linha_RT.diretorio;
 			checked
 			{
-				if (this.SaveFileDialog_RT_820.ShowDialog() == (DialogResult)1)
+				if (this.SaveFileDialog_RT_820.ShowDialog() == 1)
 				{
 					if (Operators.CompareString(this.SaveFileDialog_RT_820.FileName, "", false) != 0)
 					{
@@ -13265,7 +13265,7 @@ namespace iS800
 						iniFileWriteFast.LineSpace();
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						string text;
 						do
 						{
@@ -13290,7 +13290,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 7);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("GRUPO_CONTROLE_{0}", num + 1);
@@ -13310,7 +13310,7 @@ namespace iS800
 						iniFileWriteFast.LineSpace();
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ENTRADA_ANALOGICA_{0}", num + 1);
@@ -13324,7 +13324,7 @@ namespace iS800
 						while (num <= 15);
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("SAIDA_ANALOGICA_{0}", num + 1);
@@ -13339,7 +13339,7 @@ namespace iS800
 						}
 						while (num <= 1);
 						iniFileWriteFast.WriteSection("ENTRADA_DIGITAL");
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("CFG{0}_ED", num + 1);
@@ -13351,7 +13351,7 @@ namespace iS800
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
 						iniFileWriteFast.WriteSection("VAZAO");
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("V{0}", num + 1);
@@ -13362,7 +13362,7 @@ namespace iS800
 						iniFileWriteFast.LineSpace();
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("CALHA_{0}", num + 1);
@@ -13379,7 +13379,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 1);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("PERIFERICO{0}", num + 1);
@@ -13392,7 +13392,7 @@ namespace iS800
 						while (num <= 4);
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("PERIFERICO{0}", num + 6);
@@ -13405,7 +13405,7 @@ namespace iS800
 						while (num <= 4);
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("PERIFERICO_MODBUS_GENRICO{0}", num + 1);
@@ -13429,7 +13429,7 @@ namespace iS800
 						iniFileWriteFast.WriteSection("SETPOINT");
 						iniFileWriteFast.WriteKey("TRATAMENTO_PERCENTUAL", RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor);
 						iniFileWriteFast.LineSpace();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("SETPOINT{0}", num + 1);
@@ -13446,7 +13446,7 @@ namespace iS800
 						while (num <= 7);
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("SETPOINT_HORARIO_{0}", num + 1);
@@ -13461,7 +13461,7 @@ namespace iS800
 						while (num <= 79);
 						this.ToolStripProgressBar_RT_820.PerformStep();
 						Application.DoEvents();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("REFERENCIA_PERIFERICO_{0}", num + 1);
@@ -13494,7 +13494,7 @@ namespace iS800
 						iniFileWriteFast.WriteKey("V2BAIXO", RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Valor);
 						iniFileWriteFast.WriteKey("V2ALTO", RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Valor);
 						iniFileWriteFast.LineSpace();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR1_VARIAVEL1_PERIFERICO_{0}", num + 1);
@@ -13517,7 +13517,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 2);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR1_VARIAVEL2_PERIFERICO_{0}", num + 1);
@@ -13554,7 +13554,7 @@ namespace iS800
 						iniFileWriteFast.WriteKey("V2BAIXO", RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Valor);
 						iniFileWriteFast.WriteKey("V2ALTO", RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Valor);
 						iniFileWriteFast.LineSpace();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR2_VARIAVEL1_PERIFERICO_{0}", num + 1);
@@ -13577,7 +13577,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 2);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR2_VARIAVEL2_PERIFERICO_{0}", num + 1);
@@ -13614,7 +13614,7 @@ namespace iS800
 						iniFileWriteFast.WriteKey("V2BAIXO", RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Valor);
 						iniFileWriteFast.WriteKey("V2ALTO", RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Valor);
 						iniFileWriteFast.LineSpace();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR3_VARIAVEL1_PERIFERICO_{0}", num + 1);
@@ -13637,7 +13637,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 2);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR3_VARIAVEL2_PERIFERICO_{0}", num + 1);
@@ -13674,7 +13674,7 @@ namespace iS800
 						iniFileWriteFast.WriteKey("V2BAIXO", RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Valor);
 						iniFileWriteFast.WriteKey("V2ALTO", RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Valor);
 						iniFileWriteFast.LineSpace();
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR4_VARIAVEL1_PERIFERICO_{0}", num + 1);
@@ -13697,7 +13697,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 2);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("ATUADOR4_VARIAVEL2_PERIFERICO_{0}", num + 1);
@@ -13722,7 +13722,7 @@ namespace iS800
 						iniFileWriteFast.WriteKey("MODO_REPETIDORA", RT_geral.RT_820_360_BD.modo_repetidora.Valor);
 						iniFileWriteFast.WriteKey("ENDERECO", RT_geral.RT_820_360_BD.End_repetidora.Valor);
 						iniFileWriteFast.WriteKey("NUMERO_REPETIDORAS", RT_geral.RT_820_360_BD.Num_repetidoras.Valor);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("RPT{0}", num + 1);
@@ -13748,12 +13748,12 @@ namespace iS800
 							"L6",
 							"D6"
 						};
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							text = string.Format("TIMER{0}", num + 1);
 							iniFileWriteFast.WriteSection(text);
-							int num2 = (HorizontalAlignment)0;
+							int num2 = 0;
 							int num3 = array.Length - 1;
 							for (int i = num2; i <= num3; i++)
 							{
@@ -13795,7 +13795,7 @@ namespace iS800
 		private void ToolStripButton_RT_820_Upload_Click(object sender, EventArgs e)
 		{
 			this.AtivaEfeitoOnChangeValue();
-			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+			if (Comunicacao.Config_sistema.tipo_interface == 1)
 			{
 				if (Comunicacao.VerificaPortaSerialExiste())
 				{
@@ -13808,7 +13808,7 @@ namespace iS800
 					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 				}
 			}
-			else if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
+			else if (Comunicacao.Config_sistema.tipo_interface == 2)
 			{
 				this.Bloqueia_acoes_RT820();
 				this.EncerraEdicaoDeCampos_RT820();
@@ -13837,7 +13837,7 @@ namespace iS800
 		private void ToolStripButton_RT_820_Download_Click(object sender, EventArgs e)
 		{
 			this.AtivaEfeitoOnChangeValue();
-			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+			if (Comunicacao.Config_sistema.tipo_interface == 1)
 			{
 				if (Comunicacao.VerificaPortaSerialExiste())
 				{
@@ -13850,7 +13850,7 @@ namespace iS800
 					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 				}
 			}
-			else if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
+			else if (Comunicacao.Config_sistema.tipo_interface == 2)
 			{
 				this.Bloqueia_acoes_RT820();
 				this.EncerraEdicaoDeCampos_RT820();
@@ -13865,7 +13865,7 @@ namespace iS800
 		// Token: 0x06001623 RID: 5667 RVA: 0x0035CEAC File Offset: 0x0035B2AC
 		public void Leitura_RT820_360_conf()
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
 			this.InicializaBarraProgressoTela_RT_820(8);
 			this.AtualizaMsgTela_RT_820("Identificação de equipamento - Etapa 1", 2);
 			this.ToolStripProgressBar_RT_820.PerformStep();
@@ -13888,7 +13888,7 @@ namespace iS800
 			RT_geral.RT_820_360_flag_atuadoresperiferico = true;
 			checked
 			{
-				if (RT_geral.RT_820_360_BD.Equip.Valor == (DialogResult)820 & RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 12)
+				if (RT_geral.RT_820_360_BD.Equip.Valor == 820 & RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 12)
 				{
 					RT_geral.RT_820_360_flag_calha_vazao = true;
 				}
@@ -13896,7 +13896,7 @@ namespace iS800
 				{
 					RT_geral.RT_820_360_flag_calha_vazao = false;
 				}
-				if (RT_geral.RT_820_360_BD.Equip.Valor == (DialogResult)820 & RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 19)
+				if (RT_geral.RT_820_360_BD.Equip.Valor == 820 & RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 19)
 				{
 					RT_geral.RT_820_360_flag_saida_analogicoAs = true;
 				}
@@ -13904,7 +13904,7 @@ namespace iS800
 				{
 					RT_geral.RT_820_360_flag_saida_analogicoAs = false;
 				}
-				if (RT_geral.RT_820_360_BD.Equip.Valor == (DialogResult)820 & RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 22)
+				if (RT_geral.RT_820_360_BD.Equip.Valor == 820 & RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 22)
 				{
 					RT_geral.RT_820_360_flag_rotativo_motor = true;
 				}
@@ -13919,7 +13919,7 @@ namespace iS800
 					return;
 				}
 				Linha_RT.Atualiza_dados_RT_820_360_HabilitaExpansao();
-				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == (DialogResult)21857)
+				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
 					this.Atualiza_Expansao_IO_820_360(true);
 				}
@@ -14076,7 +14076,7 @@ namespace iS800
 		// Token: 0x06001624 RID: 5668 RVA: 0x0035D65C File Offset: 0x0035BA5C
 		public void Escrita_RT820_360_conf()
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
 			this.InicializaBarraProgressoTela_RT_820(14);
 			this.AtualizaMsgTela_RT_820("Identificação de equipamento - Etapa 1", 0);
 			this.ToolStripProgressBar_RT_820.PerformStep();
@@ -14097,7 +14097,7 @@ namespace iS800
 			RT_geral.RT_820_300_flag_setpoint_horario = true;
 			RT_geral.RT_820_350_flag_referenciaperiferico = true;
 			RT_geral.RT_820_350_flag_atuadoresperiferico = true;
-			if (RT_geral.RT_820_360_BD.Equip.Valor == (DialogResult)820 & checked(RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor) >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 22)
+			if (RT_geral.RT_820_360_BD.Equip.Valor == 820 & checked(RT_geral.RT_820_360_BD.Versao.Valor * 100 + RT_geral.RT_820_360_BD.Build.Valor) >= 400 & RT_geral.RT_820_360_BD.Release.Valor >= 22)
 			{
 				RT_geral.RT_820_360_flag_rotativo_motor = true;
 			}
@@ -14522,7 +14522,7 @@ namespace iS800
 			tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Permitidos", 45);
 			tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Tempo", 120);
 			tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Rotação", 180);
-			int num = (HorizontalAlignment)1;
+			int num = 1;
 			checked
 			{
 				string valor3;
@@ -14631,7 +14631,7 @@ namespace iS800
 				tabelaLinhaInteria3.AdicionaLinha();
 				tabelaLinhaInteria3.AdicionaLinha();
 				tabelaLinhaInteria3.AdicionaLinha();
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = string.Format("0{0}", num + 1);
@@ -14639,7 +14639,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -14704,7 +14704,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -14757,7 +14757,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -14810,7 +14810,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -14863,7 +14863,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -14973,7 +14973,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -15035,7 +15035,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -15073,7 +15073,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -15090,7 +15090,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -15113,7 +15113,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
@@ -15139,11 +15139,11 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					valor3 = "????";
-					if (RT_geral.RT_820_360_BD.ctrl_partidas[num].Valor == (DialogResult)21856)
+					if (RT_geral.RT_820_360_BD.ctrl_partidas[num].Valor == 21856)
 					{
 						valor3 = "Desab.";
 					}
@@ -15155,7 +15155,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					tabelaLinhaInteria3.EscreveValorLinha(num + 3, RT_geral.RT_820_360_BD.ctrl_tempo_max_partida[num].Valor.ToString(), array[12] + 5);
@@ -15193,7 +15193,7 @@ namespace iS800
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Range", 70);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Início", 200);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Fim", 340);
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -15209,35 +15209,35 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "ED", 0);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Função", 200);
 				string valor = "";
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					int valor2 = RT_geral.RT_820_360_BD.config_ED[num].Valor;
-					if (valor2 == (DialogResult)21856)
+					if (valor2 == 21856)
 					{
 						valor = "Sem Função";
 					}
-					else if (valor2 == (DialogResult)21969)
+					else if (valor2 == 21969)
 					{
 						valor = "Arrombamento";
 					}
-					else if (valor2 == (DialogResult)21970)
+					else if (valor2 == 21970)
 					{
 						valor = "Falta de Fase";
 					}
-					else if (valor2 == (DialogResult)21971)
+					else if (valor2 == 21971)
 					{
 						valor = "Alagamento";
 					}
-					else if (valor2 == (DialogResult)21972)
+					else if (valor2 == 21972)
 					{
 						valor = "Horário de Ponta";
 					}
-					else if (valor2 == (DialogResult)21973)
+					else if (valor2 == 21973)
 					{
 						valor = "Transbordo";
 					}
-					else if (valor2 == (DialogResult)21974)
+					else if (valor2 == 21974)
 					{
 						valor = "Operação em Bateria";
 					}
@@ -15287,7 +15287,7 @@ namespace iS800
 			tabelaLinhaInteria.EscreveTituloLinha(1, "Variável de Bloqueio", 410);
 			tabelaLinhaInteria.EscreveTituloLinha(1, "Nível de Bloqueio", 650);
 			tabelaLinhaInteria.EscreveTituloLinha(1, "Nível de Liberação", 800);
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -15297,7 +15297,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					string text = "???";
@@ -15375,7 +15375,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 7);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					string text = "???";
@@ -15456,8 +15456,8 @@ namespace iS800
 				tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Minuto", 200);
 				tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Alto", 290);
 				tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Baixo", 370);
-				int num2 = (HorizontalAlignment)0;
-				num = (HorizontalAlignment)0;
+				int num2 = 0;
+				num = 0;
 				do
 				{
 					tabelaMeiaLinhaEsquerda.EscreveTituloLinha(2 + num, string.Format("{0}", num + 1), 10);
@@ -15487,8 +15487,8 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Minuto", 200);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Alto", 290);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Baixo", 370);
-				num2 = (HorizontalAlignment)10;
-				num = (HorizontalAlignment)0;
+				num2 = 10;
+				num = 0;
 				do
 				{
 					tabelaMeiaLinhaDireita.EscreveTituloLinha(2 + num, string.Format("{0}", num + 1), 10);
@@ -15541,8 +15541,8 @@ namespace iS800
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Minuto", 200);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Alto", 290);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Baixo", 370);
-			int num = (HorizontalAlignment)20;
-			int num2 = (HorizontalAlignment)0;
+			int num = 20;
+			int num2 = 0;
 			checked
 			{
 				do
@@ -15574,8 +15574,8 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Minuto", 200);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Alto", 290);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Baixo", 370);
-				num = (HorizontalAlignment)30;
-				num2 = (HorizontalAlignment)0;
+				num = 30;
+				num2 = 0;
 				do
 				{
 					tabelaMeiaLinhaDireita.EscreveTituloLinha(2 + num2, string.Format("{0}", num2 + 1), 10);
@@ -15605,8 +15605,8 @@ namespace iS800
 				tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(1, "Minuto", 200);
 				tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(1, "Alto", 290);
 				tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(1, "Baixo", 370);
-				num = (HorizontalAlignment)40;
-				num2 = (HorizontalAlignment)0;
+				num = 40;
+				num2 = 0;
 				do
 				{
 					tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(2 + num2, string.Format("{0}", num2 + 1), 10);
@@ -15636,8 +15636,8 @@ namespace iS800
 				tabelaMeiaLinhaDireita2.EscreveTituloLinha(1, "Minuto", 200);
 				tabelaMeiaLinhaDireita2.EscreveTituloLinha(1, "Alto", 290);
 				tabelaMeiaLinhaDireita2.EscreveTituloLinha(1, "Baixo", 370);
-				num = (HorizontalAlignment)50;
-				num2 = (HorizontalAlignment)0;
+				num = 50;
+				num2 = 0;
 				do
 				{
 					tabelaMeiaLinhaDireita2.EscreveTituloLinha(2 + num2, string.Format("{0}", num2 + 1), 10);
@@ -15690,8 +15690,8 @@ namespace iS800
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Minuto", 200);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Alto", 290);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Baixo", 370);
-			int num = (HorizontalAlignment)60;
-			int num2 = (HorizontalAlignment)0;
+			int num = 60;
+			int num2 = 0;
 			checked
 			{
 				do
@@ -15723,8 +15723,8 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Minuto", 200);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Alto", 290);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Baixo", 370);
-				num = (HorizontalAlignment)70;
-				num2 = (HorizontalAlignment)0;
+				num = 70;
+				num2 = 0;
 				do
 				{
 					tabelaMeiaLinhaDireita.EscreveTituloLinha(2 + num2, string.Format("{0}", num2 + 1), 10);
@@ -15773,7 +15773,7 @@ namespace iS800
 			TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda = new TabelaMeiaLinhaEsquerda(z.MarginBounds, z.Graphics, fonte2, cores, 5, 9, "Vazão - Entrada Digital", true);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Vazão", 0);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Entrada", 200);
-			int i = (HorizontalAlignment)0;
+			int i = 0;
 			checked
 			{
 				do
@@ -15949,7 +15949,7 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "P1 (cm)", 310);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "P2 (cm)", 360);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "P3 (cm)", 410);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					string text = string.Format("{0:D2}", i + 1);
@@ -15981,7 +15981,7 @@ namespace iS800
 					{
 						num++;
 					}
-					int num2 = (HorizontalAlignment)1;
+					int num2 = 1;
 					int num3 = num;
 					for (i = num2; i <= num3; i++)
 					{
@@ -16012,7 +16012,7 @@ namespace iS800
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "4", 550);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "5", 700);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "6", 850);
-				i = (HorizontalAlignment)0;
+				i = 0;
 				do
 				{
 					string text = string.Format("{0:D2}", i + 1);
@@ -16029,7 +16029,7 @@ namespace iS800
 					650,
 					800
 				};
-				int num6 = (HorizontalAlignment)0;
+				int num6 = 0;
 				int num7 = array.Length - 1;
 				for (i = num6; i <= num7; i++)
 				{
@@ -16051,7 +16051,7 @@ namespace iS800
 					800,
 					860
 				};
-				object obj = (HorizontalAlignment)12;
+				object obj = 12;
 				object obj2;
 				object obj3;
 				if (ObjectFlowControl.ForLoopControl.ForLoopInitObj(obj2, 0, 7, 1, ref obj3, ref obj2))
@@ -16099,7 +16099,7 @@ namespace iS800
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Periférico", 0);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Modelo", 100);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Endereço", 300);
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -16121,7 +16121,7 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Periférico", 0);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Modelo", 100);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Endereço", 300);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					string text = string.Format("{0:D2}", num + 1);
@@ -16148,7 +16148,7 @@ namespace iS800
 				tabelaLinhaInteria.EscreveTituloLinha(1, "Vars 3", 650);
 				tabelaLinhaInteria.EscreveTituloLinha(1, "Memória 4", 740);
 				tabelaLinhaInteria.EscreveTituloLinha(1, "Vars 4", 820);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					string text = string.Format("{0:D2}", num + 1);
@@ -16185,7 +16185,7 @@ namespace iS800
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "Escala", 550);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "Formato", 650);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "Base10", 800);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					string text = string.Format("{0:D2}", num + 1);
@@ -16304,7 +16304,7 @@ namespace iS800
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "SP6", 840);
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16354,7 +16354,7 @@ namespace iS800
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "SP6", 840);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16483,7 +16483,7 @@ namespace iS800
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "SP6", 840);
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16533,7 +16533,7 @@ namespace iS800
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "SP6", 840);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16621,7 +16621,7 @@ namespace iS800
 				tabelaLinhaInteria5.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria5.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria5.EscreveTituloLinha(1, "SP6", 840);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16671,7 +16671,7 @@ namespace iS800
 				tabelaLinhaInteria6.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria6.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria6.EscreveTituloLinha(1, "SP6", 840);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16800,7 +16800,7 @@ namespace iS800
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria2.EscreveTituloLinha(1, "SP6", 840);
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16850,7 +16850,7 @@ namespace iS800
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "SP5", 720);
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "Ref6", 780);
 				tabelaLinhaInteria3.EscreveTituloLinha(1, "SP6", 840);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					text = string.Format("{0:D2}", num + 1);
@@ -16988,7 +16988,7 @@ namespace iS800
 		// Token: 0x06001635 RID: 5685 RVA: 0x00365A3C File Offset: 0x00363E3C
 		private void PrintDocument1_BeginPrint(object sender, PrintEventArgs e)
 		{
-			this.pagina_impressao = (HorizontalAlignment)1;
+			this.pagina_impressao = 1;
 		}
 
 		// Token: 0x06001636 RID: 5686 RVA: 0x00365A48 File Offset: 0x00363E48
@@ -17002,21 +17002,21 @@ namespace iS800
 			string text = name;
 			checked
 			{
-				if (Operators.CompareString(text, "col_sph_ativa", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "col_sph_ativa", false) == 0)
 				{
 					bool flag = Conversions.ToBoolean(this.dgv_sph.Rows[e.RowIndex].Cells[1].Value);
 					int num = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor;
 					if (flag)
 					{
-						num |= (HorizontalAlignment)128;
+						num |= 128;
 					}
 					else
 					{
-						num &= (HorizontalAlignment)127;
+						num &= 127;
 					}
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor = num;
 				}
-				else if (Operators.CompareString(text, "col_sph_hora", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "col_sph_hora", false) == 0)
 				{
 					int num = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor & 128;
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[2].Value);
@@ -17025,17 +17025,17 @@ namespace iS800
 					sender = dataGridView;
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor + num;
 				}
-				else if (Operators.CompareString(text, "col_sph_minuto", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "col_sph_minuto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Minuto.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[3].Value);
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Minuto, e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "col_sph_alto", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "col_sph_alto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Alto.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[4].Value);
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Alto.Valor = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Alto.Valor * 40;
 					}
@@ -17043,10 +17043,10 @@ namespace iS800
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Alto, e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "col_sph_baixo", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "col_sph_baixo", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Baixo.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[5].Value);
-					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+					if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 					{
 						RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Baixo.Valor = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Baixo.Valor * 40;
 					}
@@ -17066,41 +17066,41 @@ namespace iS800
 			}
 			string name = this.dgv_sph.Columns[e.ColumnIndex].Name;
 			string text = name;
-			if (Operators.CompareString(text, "col_sph_ativa", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "col_sph_ativa", false) == 0)
 			{
 				bool flag = Conversions.ToBoolean(this.dgv_sph.Rows[e.RowIndex].Cells[1].Value);
 				int num = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor;
 				if (flag)
 				{
-					num |= (HorizontalAlignment)128;
+					num |= 128;
 				}
 				else
 				{
-					num &= (HorizontalAlignment)127;
+					num &= 127;
 				}
 				RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor = num;
 			}
-			else if (Operators.CompareString(text, "col_sph_hora", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "col_sph_hora", false) == 0)
 			{
 				int num = RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor & 128;
 				RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Hora.Valor = Conversions.ToInteger(Operators.AddObject(this.dgv_sph.Rows[e.RowIndex].Cells[2].Value, num));
 			}
-			else if (Operators.CompareString(text, "col_sph_minuto", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "col_sph_minuto", false) == 0)
 			{
 				RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Minuto.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "col_sph_alto", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "col_sph_alto", false) == 0)
 			{
 				RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Alto.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[4].Value);
-				if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+				if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Alto.Valor = Conversions.ToInteger(Operators.MultiplyObject(this.dgv_sph.Rows[e.RowIndex].Cells[4].Value, 40));
 				}
 			}
-			else if (Operators.CompareString(text, "col_sph_baixo", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "col_sph_baixo", false) == 0)
 			{
 				RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Baixo.Valor = Conversions.ToInteger(this.dgv_sph.Rows[e.RowIndex].Cells[5].Value);
-				if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == (DialogResult)1)
+				if (RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor == 1)
 				{
 					RT_geral.RT_820_360_BD.setpoint_horario[e.RowIndex].Baixo.Valor = Conversions.ToInteger(Operators.MultiplyObject(this.dgv_sph.Rows[e.RowIndex].Cells[5].Value, 40));
 				}
@@ -17151,14 +17151,14 @@ namespace iS800
 			string dataPropertyName2 = this.datagridview_referenciaperifico.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName2, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName2, "Col_endmem", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_referencia_perif_memoria[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName2, "Col_escala", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName2, "Col_escala", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_escala[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -17169,7 +17169,7 @@ namespace iS800
 				{
 					if (Operators.CompareString(dataPropertyName2, "Col_var", false) != 0)
 					{
-						if (Operators.CompareString(dataPropertyName2, "Col_formato", false) == (DialogResult)0)
+						if (Operators.CompareString(dataPropertyName2, "Col_formato", false) == 0)
 						{
 						}
 					}
@@ -17191,24 +17191,24 @@ namespace iS800
 			string dataPropertyName = this.datagridview_referenciaperifico.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_endmem", false) == 0)
 				{
 					this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[e.RowIndex].Valor = Conversions.ToInteger(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_escala", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_escala", false) == 0)
 				{
 					this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[4].Value));
 					RT_geral.RT_820_360_BD.config_referencia_perif_escala[e.RowIndex].Valor = Conversions.ToInteger(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[4].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_perif", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_perif", false) == 0)
 				{
 					string text = Conversions.ToString(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_referencia_perif_periferico[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_referencia_perif_periferico[e.RowIndex].Indice = i;
@@ -17216,14 +17216,14 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_var1", false) == 0)
 				{
 					string text = Conversions.ToString(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					int num4 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num3; i <= num4; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[e.RowIndex].Indice = i;
@@ -17231,14 +17231,14 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_var2", false) == 0)
 				{
 					string text = Conversions.ToString(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					int num6 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num5; i <= num6; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[e.RowIndex].Indice = i;
@@ -17246,14 +17246,14 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_formato", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_formato", false) == 0)
 				{
 					string text = Conversions.ToString(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num7 = (HorizontalAlignment)0;
+					int num7 = 0;
 					int num8 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num7; i <= num8; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_referencia_perif_formato[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_referencia_perif_formato[e.RowIndex].Indice = i;
@@ -17261,14 +17261,14 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_base10", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_base10", false) == 0)
 				{
 					string text = Conversions.ToString(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num9 = (HorizontalAlignment)0;
+					int num9 = 0;
 					int num10 = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num9; i <= num10; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_referencia_perif_base10[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_referencia_perif_base10[e.RowIndex].Indice = i;
@@ -17299,14 +17299,14 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_referencia_perif_memoria[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_escala[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -17331,7 +17331,7 @@ namespace iS800
 				{
 					num = -1;
 					DataGridViewComboBoxCell dataGridViewComboBoxCell = (DataGridViewComboBoxCell)this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[e.ColumnIndex];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = dataGridViewComboBoxCell.Items.Count - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -17345,37 +17345,37 @@ namespace iS800
 				}
 				string dataPropertyName = this.datagridview_referenciaperifico.Columns[e.ColumnIndex].DataPropertyName;
 				string text = dataPropertyName;
-				if (Operators.CompareString(text, "Col_perif", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_perif", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_periferico[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_referencia_perif_periferico[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_referencia_perif_variavel1[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_referencia_perif_variavel2[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_formato", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_formato", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_formato[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_referencia_perif_formato[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_base10", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_base10", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_referencia_perif_base10[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_referencia_perif_base10[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_referencia_perif_memoria[e.RowIndex].Valor = Conversions.ToInteger(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala", false) == 0)
 				{
 					this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[4].Value));
 					RT_geral.RT_820_360_BD.config_referencia_perif_escala[e.RowIndex].Valor = Conversions.ToInteger(this.datagridview_referenciaperifico.Rows[e.RowIndex].Cells[4].Value);
@@ -17407,7 +17407,7 @@ namespace iS800
 				{
 					num = -1;
 					DataGridViewComboBoxCell dataGridViewComboBoxCell = (DataGridViewComboBoxCell)this.dgv_atuador1.Rows[e.RowIndex].Cells[e.ColumnIndex];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = dataGridViewComboBoxCell.Items.Count - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -17421,69 +17421,69 @@ namespace iS800
 				}
 				string dataPropertyName = this.dgv_atuador1.Columns[e.ColumnIndex].DataPropertyName;
 				string text = dataPropertyName;
-				if (Operators.CompareString(text, "Col_perif", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_perif", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_perif[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador1_perif[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_var1[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador1_var1[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_var2[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador1_var2[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_format", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_format", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_formato[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador1_formato[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_base10", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_base10", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_base10[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador1_base10[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					this.dgv_atuador1.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_atuador1_mem[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					this.dgv_atuador1.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.config_atuador1_escala1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					this.dgv_atuador1.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.config_atuador1_escala2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[5].Value);
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						this.dgv_atuador1.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[6].Value));
 						RT_geral.RT_820_360_BD.config_atuador1_histerese[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[6].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Baixo", false) == 0)
 					{
 						this.dgv_atuador1.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[9].Value));
 						RT_geral.RT_820_360_BD.config_atuador1_v1baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[9].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Alto", false) == 0)
 					{
 						this.dgv_atuador1.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[10].Value));
 						RT_geral.RT_820_360_BD.config_atuador1_v1alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[10].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Baixo", false) == 0)
 					{
 						this.dgv_atuador1.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[11].Value));
 						RT_geral.RT_820_360_BD.config_atuador1_v2baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[11].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Alto", false) == 0)
 					{
 						this.dgv_atuador1.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador1.Rows[e.RowIndex].Cells[12].Value));
 						RT_geral.RT_820_360_BD.config_atuador1_v2alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador1.Rows[e.RowIndex].Cells[12].Value);
@@ -17503,21 +17503,21 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_mem[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_mem[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_escala1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_escala1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_escala2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -17526,35 +17526,35 @@ namespace iS800
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador1_histerese[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_histerese[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Va11Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Va11Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador1_v1baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_v1baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var1Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador1_v1alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_v1alto[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var2Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador1_v2baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_v2baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var2Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador1_v2alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
@@ -17585,98 +17585,98 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Hora", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -17697,98 +17697,98 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Hora", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -17807,72 +17807,72 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint1.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Hora", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_hora[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_minuto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[12].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[12].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[11].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[13].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[13].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint1_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint1.Rows[e.RowIndex].Cells[13].Value);
@@ -17888,72 +17888,72 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint2.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Hora", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_hora[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_minuto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[12].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[12].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[11].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[13].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[13].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint1_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint2.Rows[e.RowIndex].Cells[13].Value);
@@ -17980,21 +17980,21 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_mem[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_mem[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_escala1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_escala1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_escala2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18003,35 +18003,35 @@ namespace iS800
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador2_histerese[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_histerese[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_V1Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador2_v1baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_v1baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_V1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador2_v1alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_v1alto[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_V2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador2_v2baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_v2baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_V2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador2_v2alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
@@ -18057,7 +18057,7 @@ namespace iS800
 				{
 					num = -1;
 					DataGridViewComboBoxCell dataGridViewComboBoxCell = (DataGridViewComboBoxCell)this.dgv_atuador2.Rows[e.RowIndex].Cells[e.ColumnIndex];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = dataGridViewComboBoxCell.Items.Count - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -18071,69 +18071,69 @@ namespace iS800
 				}
 				string dataPropertyName = this.dgv_atuador2.Columns[e.ColumnIndex].DataPropertyName;
 				string text = dataPropertyName;
-				if (Operators.CompareString(text, "Col_perif", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_perif", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_perif[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador2_perif[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_var1[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador2_var1[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_var2[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador2_var2[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_format", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_format", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_formato[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador2_formato[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_base10", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_base10", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_base10[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador2_base10[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					this.dgv_atuador2.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_atuador2_mem[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					this.dgv_atuador2.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.config_atuador2_escala1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					this.dgv_atuador2.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.config_atuador2_escala2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[5].Value);
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						this.dgv_atuador2.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[6].Value));
 						RT_geral.RT_820_360_BD.config_atuador2_histerese[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[6].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Baixo", false) == 0)
 					{
 						this.dgv_atuador2.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[9].Value));
 						RT_geral.RT_820_360_BD.config_atuador2_v1baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[9].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Alto", false) == 0)
 					{
 						this.dgv_atuador2.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[10].Value));
 						RT_geral.RT_820_360_BD.config_atuador2_v1alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[10].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Baixo", false) == 0)
 					{
 						this.dgv_atuador2.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[11].Value));
 						RT_geral.RT_820_360_BD.config_atuador2_v2baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[11].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Alto", false) == 0)
 					{
 						this.dgv_atuador2.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador2.Rows[e.RowIndex].Cells[12].Value));
 						RT_geral.RT_820_360_BD.config_atuador2_v2alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador2.Rows[e.RowIndex].Cells[12].Value);
@@ -18153,84 +18153,84 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18263,62 +18263,62 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint11.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador1_setpoint2_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint11.Rows[e.RowIndex].Cells[11].Value);
@@ -18345,84 +18345,84 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18441,62 +18441,62 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint21.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador2_setpoint2_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[11].Value);
@@ -18537,21 +18537,21 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_mem[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_mem[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_escala1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_escala1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_escala2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18560,35 +18560,35 @@ namespace iS800
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador3_histerese[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_histerese[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Va11Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Va11Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador3_v1baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_v1baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var1Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador3_v1alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_v1alto[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var2Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador3_v2baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_v2baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var2Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador3_v2alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
@@ -18610,21 +18610,21 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_mem[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_mem[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_escala1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_escala1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_escala2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18633,35 +18633,35 @@ namespace iS800
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador4_histerese[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_histerese[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Va11Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Va11Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador4_v1baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_v1baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var1Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador4_v1alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_v1alto[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var2Baixo", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador4_v2baixo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
 						RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_v2baixo[e.RowIndex], e, true);
 						sender = dataGridView;
 					}
-					else if (Operators.CompareString(text, "Col_Var2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_Var2Alto", false) == 0)
 					{
 						RT_geral.RT_820_360_BD.config_atuador4_v2alto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 						DataGridView dataGridView = (DataGridView)sender;
@@ -18683,98 +18683,98 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Hora", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18795,84 +18795,84 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -18893,98 +18893,98 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Hora", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -19005,84 +19005,84 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -19161,7 +19161,7 @@ namespace iS800
 				{
 					num = -1;
 					DataGridViewComboBoxCell dataGridViewComboBoxCell = (DataGridViewComboBoxCell)this.dgv_atuador3.Rows[e.RowIndex].Cells[e.ColumnIndex];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = dataGridViewComboBoxCell.Items.Count - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -19175,69 +19175,69 @@ namespace iS800
 				}
 				string dataPropertyName = this.dgv_atuador3.Columns[e.ColumnIndex].DataPropertyName;
 				string text = dataPropertyName;
-				if (Operators.CompareString(text, "Col_perif", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_perif", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_perif[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador3_perif[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_var1[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador3_var1[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_var2[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador3_var2[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_format", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_format", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_formato[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador3_formato[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_base10", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_base10", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador3_base10[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador3_base10[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					this.dgv_atuador3.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_atuador3_mem[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					this.dgv_atuador3.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.config_atuador3_escala1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					this.dgv_atuador3.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.config_atuador3_escala2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[5].Value);
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						this.dgv_atuador3.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[6].Value));
 						RT_geral.RT_820_360_BD.config_atuador3_histerese[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[6].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Baixo", false) == 0)
 					{
 						this.dgv_atuador3.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[9].Value));
 						RT_geral.RT_820_360_BD.config_atuador3_v1baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[9].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Alto", false) == 0)
 					{
 						this.dgv_atuador3.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[10].Value));
 						RT_geral.RT_820_360_BD.config_atuador3_v1alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[10].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Baixo", false) == 0)
 					{
 						this.dgv_atuador3.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[11].Value));
 						RT_geral.RT_820_360_BD.config_atuador3_v2baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[11].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Alto", false) == 0)
 					{
 						this.dgv_atuador3.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador3.Rows[e.RowIndex].Cells[12].Value));
 						RT_geral.RT_820_360_BD.config_atuador3_v2alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador3.Rows[e.RowIndex].Cells[12].Value);
@@ -19261,7 +19261,7 @@ namespace iS800
 				{
 					num = -1;
 					DataGridViewComboBoxCell dataGridViewComboBoxCell = (DataGridViewComboBoxCell)this.dgv_atuador4.Rows[e.RowIndex].Cells[e.ColumnIndex];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = dataGridViewComboBoxCell.Items.Count - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -19275,69 +19275,69 @@ namespace iS800
 				}
 				string dataPropertyName = this.dgv_atuador2.Columns[e.ColumnIndex].DataPropertyName;
 				string text = dataPropertyName;
-				if (Operators.CompareString(text, "Col_perif", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_perif", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_perif[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador4_perif[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_var1[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador4_var1[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_var2[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador4_var2[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_format", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_format", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_formato[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador4_formato[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_base10", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_base10", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_atuador4_base10[e.RowIndex].Valor = valor;
 					RT_geral.RT_820_360_BD.config_atuador4_base10[e.RowIndex].Indice = num;
 				}
-				else if (Operators.CompareString(text, "Col_endmem", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_endmem", false) == 0)
 				{
 					this.dgv_atuador4.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_atuador4_mem[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala1", false) == 0)
 				{
 					this.dgv_atuador4.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.config_atuador4_escala1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(text, "Col_escala2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_escala2", false) == 0)
 				{
 					this.dgv_atuador4.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.config_atuador4_escala2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[5].Value);
 				}
 				else if (Operators.CompareString(text, "Col_redut", false) != 0)
 				{
-					if (Operators.CompareString(text, "Col_hist", false) == (DialogResult)0)
+					if (Operators.CompareString(text, "Col_hist", false) == 0)
 					{
 						this.dgv_atuador4.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[6].Value));
 						RT_geral.RT_820_360_BD.config_atuador4_histerese[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[6].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Baixo", false) == 0)
 					{
 						this.dgv_atuador4.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[9].Value));
 						RT_geral.RT_820_360_BD.config_atuador4_v1baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[9].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V1Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V1Alto", false) == 0)
 					{
 						this.dgv_atuador4.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[10].Value));
 						RT_geral.RT_820_360_BD.config_atuador4_v1alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[10].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Baixo", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Baixo", false) == 0)
 					{
 						this.dgv_atuador4.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[11].Value));
 						RT_geral.RT_820_360_BD.config_atuador4_v2baixo[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[11].Value);
 					}
-					else if (Operators.CompareString(text, "Col_V2Alto", false) == (DialogResult)0)
+					else if (Operators.CompareString(text, "Col_V2Alto", false) == 0)
 					{
 						this.dgv_atuador4.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador4.Rows[e.RowIndex].Cells[12].Value));
 						RT_geral.RT_820_360_BD.config_atuador4_v2alto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador4.Rows[e.RowIndex].Cells[12].Value);
@@ -19355,72 +19355,72 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint3.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Hora", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_hora[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_minuto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[12].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[12].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[11].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[13].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[13].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint1_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint3.Rows[e.RowIndex].Cells[13].Value);
@@ -19436,62 +19436,62 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint31.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador3_setpoint2_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint31.Rows[e.RowIndex].Cells[11].Value);
@@ -19507,72 +19507,72 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint4.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Hora", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Hora", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_hora[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Minuto", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Minuto", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_minuto[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[12].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[12].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[12].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[11].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[13].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[13].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint1_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint4.Rows[e.RowIndex].Cells[13].Value);
@@ -19588,62 +19588,62 @@ namespace iS800
 			}
 			string dataPropertyName = this.dgv_atuador_setpoint41.Columns[e.ColumnIndex].DataPropertyName;
 			string text = dataPropertyName;
-			if (Operators.CompareString(text, "Col_Ref1", false) == (DialogResult)0)
+			if (Operators.CompareString(text, "Col_Ref1", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[0].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[0].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[0].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref2", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[2].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[2].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[2].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref3", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[4].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[4].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[4].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref4", false) == 0)
 			{
 				this.dgv_atuador_setpoint21.Rows[e.RowIndex].Cells[6].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[6].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[6].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref5", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[8].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[8].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[8].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Ref6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Ref6", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[10].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[10].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_ref6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[10].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp1", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp1", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[1].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp1[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[1].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp2", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp2", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[3].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp2[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[3].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp3", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp3", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[5].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp3[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[5].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp4", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp4", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[7].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp4[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[7].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp5", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp5", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[9].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp5[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[9].Value);
 			}
-			else if (Operators.CompareString(text, "Col_Sp6", false) == (DialogResult)0)
+			else if (Operators.CompareString(text, "Col_Sp6", false) == 0)
 			{
 				this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[11].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[11].Value));
 				RT_geral.RT_820_360_BD.config_atuador4_setpoint2_setp6[e.RowIndex].Valor = Conversions.ToInteger(this.dgv_atuador_setpoint41.Rows[e.RowIndex].Cells[11].Value);
@@ -19662,11 +19662,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 			{
-				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = (HorizontalAlignment)1;
+				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = 1;
 			}
 			else
 			{
-				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = (HorizontalAlignment)0;
+				RT_geral.RT_820_360_BD.Setpoint_ctrl_tratamento_percentual.Valor = 0;
 			}
 			this.Atualiza_TelaRT820();
 		}
@@ -19693,7 +19693,7 @@ namespace iS800
 		private void DataGridView_periferico2_RT820_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
 		{
 			string dataPropertyName = this.DataGridView_periferico1_RT820.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_end", false) == (DialogResult)0)
+			if (Operators.CompareString(dataPropertyName, "Col_end", false) == 0)
 			{
 				RT_geral.RT_820_360_BD.config_perifericos2_end[e.RowIndex].Valor = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue))));
 				DataGridView dataGridView = (DataGridView)sender;
@@ -19712,14 +19712,14 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_periferico2_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_modelo", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_modelo", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_periferico2_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_perifericos2_mod[e.RowIndex].Valor = RT_geral.RT_820_360_DataGrigViewPerifericos2Colunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_perifericos2_mod[e.RowIndex].Indice = i;
@@ -19727,7 +19727,7 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end", false) == (DialogResult)0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end", false) == 0)
 				{
 					this.DataGridView_periferico2_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_periferico2_RT820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_360_BD.config_perifericos2_end[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_periferico2_RT820.Rows[e.RowIndex].Cells[1].Value);
@@ -19751,63 +19751,63 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_end", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_end", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_mem1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_mem2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_mem3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_mem4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_var3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_var4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var4", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -19828,59 +19828,59 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_end", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_end", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[0].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[0].Value);
 				}
-				else if (Operators.CompareString(text, "Col_mem1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem1", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[2].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem1[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[2].Value);
 				}
-				else if (Operators.CompareString(text, "Col_mem2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem2", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[4].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem2[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[4].Value);
 				}
-				else if (Operators.CompareString(text, "Col_mem3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem3", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[6].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem3[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[6].Value);
 				}
-				else if (Operators.CompareString(text, "Col_mem4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_mem4", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[8].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_mem4[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[8].Value);
 				}
-				else if (Operators.CompareString(text, "Col_var1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var1", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var1[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(text, "Col_var2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var2", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var2[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[5].Value);
 				}
-				else if (Operators.CompareString(text, "Col_var3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var3", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[7].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var3[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[7].Value);
 				}
-				else if (Operators.CompareString(text, "Col_var4", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_var4", false) == 0)
 				{
 					this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[9].Value));
 					RT_geral.RT_820_360_BD.config_periferico_modbus_generico_var4[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[9].Value);
 				}
-				else if (Operators.CompareString(text, "Col_func", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_func", false) == 0)
 				{
 					string text2 = Conversions.ToString(this.DataGridView_perifericomodbusgenerico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[e.ColumnIndex].LinhasMenu[i], text2, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[e.ColumnIndex].LinhasMenu[i], text2, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[e.RowIndex].Valor = RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[e.RowIndex].Indice = i;
@@ -19916,18 +19916,18 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_vazoes_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == (DialogResult)0)
+				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == 0)
 				{
 					string text = Conversions.ToString(this.DataGridView_vazoes_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					int i = num;
 					while (i <= num2)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
 						{
 							string dataPropertyName2 = this.DataGridView_vazoes_RT820.Columns[e.ColumnIndex].DataPropertyName;
-							if (Operators.CompareString(dataPropertyName2, "Col_Entrada", false) == (DialogResult)0)
+							if (Operators.CompareString(dataPropertyName2, "Col_Entrada", false) == 0)
 							{
 								RT_geral.RT_820_360_BD.config_vazao[e.RowIndex].Valor = RT_geral.RT_820_DataGrigViewVazoesColunas[e.ColumnIndex].LinhasValor[i];
 								RT_geral.RT_820_360_BD.config_vazao[e.RowIndex].Indice = i;
@@ -19974,28 +19974,28 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_fundo_cm", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_fundo_cm", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.calha_fundo[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.calha_fundo[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_p1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_p1", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.calha_p1[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.calha_p1[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_p2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_p2", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.calha_p2[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_360_BD.calha_p2[e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(text, "Col_p3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_p3", false) == 0)
 				{
 					RT_geral.RT_820_360_BD.calha_p3[e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -20016,14 +20016,14 @@ namespace iS800
 			string text = dataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(text, "Col_ea", false) == (DialogResult)0)
+				if (Operators.CompareString(text, "Col_ea", false) == 0)
 				{
 					string text2 = Conversions.ToString(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].LinhasMenu[i], text2, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].LinhasMenu[i], text2, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.calha_EA[e.RowIndex].Valor = RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.calha_EA[e.RowIndex].Indice = i;
@@ -20031,14 +20031,14 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(text, "Col_calha", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_calha", false) == 0)
 				{
 					string text2 = Conversions.ToString(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					int num4 = RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num3; i <= num4; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].LinhasMenu[i], text2, false) == (DialogResult)0)
+						if (Operators.CompareString(RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].LinhasMenu[i], text2, false) == 0)
 						{
 							RT_geral.RT_820_360_BD.calha_modelo[e.RowIndex].Valor = RT_geral.RT_820_DatagridViewCalhasColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_360_BD.calha_modelo[e.RowIndex].Indice = i;
@@ -20046,22 +20046,22 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(text, "Col_fundo_cm", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_fundo_cm", false) == 0)
 				{
 					this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[2].Value));
 					RT_geral.RT_820_360_BD.calha_fundo[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 				}
-				else if (Operators.CompareString(text, "Col_p1", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_p1", false) == 0)
 				{
 					this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_360_BD.calha_p1[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 				}
-				else if (Operators.CompareString(text, "Col_p2", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_p2", false) == 0)
 				{
 					this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[4].Value));
 					RT_geral.RT_820_360_BD.calha_p2[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 				}
-				else if (Operators.CompareString(text, "Col_p3", false) == (DialogResult)0)
+				else if (Operators.CompareString(text, "Col_p3", false) == 0)
 				{
 					this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_360_BD.calha_p3[e.RowIndex].Valor = Conversions.ToInteger(this.DataGridView_calhas_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);

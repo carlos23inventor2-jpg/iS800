@@ -1016,27 +1016,27 @@ namespace iS800
 		public void Limpa_estrutura_VA210()
 		{
 			Mod_VA.Config_VA210.grupos = new int[17];
-			Mod_VA.Config_VA210.End_mestre = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.Altura_pressiostato = (HorizontalAlignment)1000;
-			Mod_VA.Config_VA210.Altura_nivel_baixo = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.Altura_nivel_alto = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.Num_grupos = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[1] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[2] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[3] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[4] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[5] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[6] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[7] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[8] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[9] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[10] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[11] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[12] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[13] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[14] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[15] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA210.grupos[16] = (HorizontalAlignment)0;
+			Mod_VA.Config_VA210.End_mestre = 0;
+			Mod_VA.Config_VA210.Altura_pressiostato = 1000;
+			Mod_VA.Config_VA210.Altura_nivel_baixo = 0;
+			Mod_VA.Config_VA210.Altura_nivel_alto = 0;
+			Mod_VA.Config_VA210.Num_grupos = 0;
+			Mod_VA.Config_VA210.grupos[1] = 0;
+			Mod_VA.Config_VA210.grupos[2] = 0;
+			Mod_VA.Config_VA210.grupos[3] = 0;
+			Mod_VA.Config_VA210.grupos[4] = 0;
+			Mod_VA.Config_VA210.grupos[5] = 0;
+			Mod_VA.Config_VA210.grupos[6] = 0;
+			Mod_VA.Config_VA210.grupos[7] = 0;
+			Mod_VA.Config_VA210.grupos[8] = 0;
+			Mod_VA.Config_VA210.grupos[9] = 0;
+			Mod_VA.Config_VA210.grupos[10] = 0;
+			Mod_VA.Config_VA210.grupos[11] = 0;
+			Mod_VA.Config_VA210.grupos[12] = 0;
+			Mod_VA.Config_VA210.grupos[13] = 0;
+			Mod_VA.Config_VA210.grupos[14] = 0;
+			Mod_VA.Config_VA210.grupos[15] = 0;
+			Mod_VA.Config_VA210.grupos[16] = 0;
 		}
 
 		// Token: 0x0600247F RID: 9343 RVA: 0x0040C77C File Offset: 0x0040AB7C
@@ -1050,8 +1050,8 @@ namespace iS800
 			this.ComboBox_tipo_leitura.SelectedIndex = Mod_VA.Config_VA210.Tipo_leitura;
 			this.Valor_num_grupo.Text = Conversions.ToString(Mod_VA.Config_VA210.Num_grupos);
 			this.VScroll_num_grupo.Value = Mod_VA.Config_VA210.Num_grupos;
-			this.VScroll_num_grupo.Maximum = (HorizontalAlignment)16;
-			this.VScroll_num_grupo.Minimum = (HorizontalAlignment)0;
+			this.VScroll_num_grupo.Maximum = 16;
+			this.VScroll_num_grupo.Minimum = 0;
 			this.Habilita_grupos(Mod_VA.Config_VA210.Num_grupos);
 			this.Valor_grupo_1.Text = Conversions.ToString(Mod_VA.Config_VA210.grupos[1]);
 			this.Valor_grupo_2.Text = Conversions.ToString(Mod_VA.Config_VA210.grupos[2]);

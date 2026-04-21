@@ -120,7 +120,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(118, 137);
 			grupo_ent_digitais2.Size = size;
-			this.Grupo_ent_digitais.TabIndex = (HorizontalAlignment)8;
+			this.Grupo_ent_digitais.TabIndex = 8;
 			this.Grupo_ent_digitais.TabStop = false;
 			this.Grupo_ent_digitais.Text = "Entradas Digitais";
 			this.CheckBox_ED8.AutoCheck = false;
@@ -132,7 +132,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED2 = this.CheckBox_ED8;
 			size = new size(50, 17);
 			checkBox_ED2.Size = size;
-			this.CheckBox_ED8.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED8.TabIndex = 0;
 			this.CheckBox_ED8.TabStop = false;
 			this.CheckBox_ED8.Text = "ED 8";
 			this.CheckBox_ED8.UseVisualStyleBackColor = true;
@@ -145,7 +145,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED4 = this.CheckBox_ED4;
 			size = new size(50, 17);
 			checkBox_ED4.Size = size;
-			this.CheckBox_ED4.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED4.TabIndex = 0;
 			this.CheckBox_ED4.TabStop = false;
 			this.CheckBox_ED4.Text = "ED 4";
 			this.CheckBox_ED4.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED6 = this.CheckBox_ED7;
 			size = new size(50, 17);
 			checkBox_ED6.Size = size;
-			this.CheckBox_ED7.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED7.TabIndex = 0;
 			this.CheckBox_ED7.TabStop = false;
 			this.CheckBox_ED7.Text = "ED 7";
 			this.CheckBox_ED7.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED8 = this.CheckBox_ED3;
 			size = new size(50, 17);
 			checkBox_ED8.Size = size;
-			this.CheckBox_ED3.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED3.TabIndex = 0;
 			this.CheckBox_ED3.TabStop = false;
 			this.CheckBox_ED3.Text = "ED 3";
 			this.CheckBox_ED3.UseVisualStyleBackColor = true;
@@ -184,7 +184,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED10 = this.CheckBox_ED6;
 			size = new size(50, 17);
 			checkBox_ED10.Size = size;
-			this.CheckBox_ED6.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED6.TabIndex = 0;
 			this.CheckBox_ED6.TabStop = false;
 			this.CheckBox_ED6.Text = "ED 6";
 			this.CheckBox_ED6.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED12 = this.CheckBox_ED2;
 			size = new size(50, 17);
 			checkBox_ED12.Size = size;
-			this.CheckBox_ED2.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED2.TabIndex = 0;
 			this.CheckBox_ED2.TabStop = false;
 			this.CheckBox_ED2.Text = "ED 2";
 			this.CheckBox_ED2.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED14 = this.CheckBox_ED5;
 			size = new size(50, 17);
 			checkBox_ED14.Size = size;
-			this.CheckBox_ED5.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED5.TabIndex = 0;
 			this.CheckBox_ED5.TabStop = false;
 			this.CheckBox_ED5.Text = "ED 5";
 			this.CheckBox_ED5.UseVisualStyleBackColor = true;
@@ -223,7 +223,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ED16 = this.CheckBox_ED1;
 			size = new size(50, 17);
 			checkBox_ED16.Size = size;
-			this.CheckBox_ED1.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_ED1.TabIndex = 0;
 			this.CheckBox_ED1.TabStop = false;
 			this.CheckBox_ED1.Text = "ED 1";
 			this.CheckBox_ED1.UseVisualStyleBackColor = true;
@@ -250,7 +250,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_calibracao2 = this.Grupo_calibracao;
 			size = new size(576, 126);
 			grupo_calibracao2.Size = size;
-			this.Grupo_calibracao.TabIndex = (HorizontalAlignment)7;
+			this.Grupo_calibracao.TabIndex = 7;
 			this.Grupo_calibracao.TabStop = false;
 			this.Grupo_calibracao.Text = "Fatores de calibração";
 			this.Valor_ganho_4.AcceptsReturn = true;
@@ -263,7 +263,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_ganho_2 = this.Valor_ganho_4;
 			size = new size(90, 20);
 			valor_ganho_2.Size = size;
-			this.Valor_ganho_4.TabIndex = (HorizontalAlignment)10;
+			this.Valor_ganho_4.TabIndex = 10;
 			this.Valor_ganho_4.TabStop = false;
 			this.Valor_ganho_4.TextAlign = HorizontalAlignment.Center;
 			this.Valor_ganho_3.AcceptsReturn = true;
@@ -276,7 +276,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_ganho_4 = this.Valor_ganho_3;
 			size = new size(90, 20);
 			valor_ganho_4.Size = size;
-			this.Valor_ganho_3.TabIndex = (HorizontalAlignment)9;
+			this.Valor_ganho_3.TabIndex = 9;
 			this.Valor_ganho_3.TabStop = false;
 			this.Valor_ganho_3.TextAlign = HorizontalAlignment.Center;
 			this.Valor_ganho_2.AcceptsReturn = true;
@@ -289,7 +289,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_ganho_6 = this.Valor_ganho_2;
 			size = new size(90, 20);
 			valor_ganho_6.Size = size;
-			this.Valor_ganho_2.TabIndex = (HorizontalAlignment)8;
+			this.Valor_ganho_2.TabIndex = 8;
 			this.Valor_ganho_2.TabStop = false;
 			this.Valor_ganho_2.TextAlign = HorizontalAlignment.Center;
 			this.Valor_ganho_1.AcceptsReturn = true;
@@ -302,7 +302,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_ganho_8 = this.Valor_ganho_1;
 			size = new size(90, 20);
 			valor_ganho_8.Size = size;
-			this.Valor_ganho_1.TabIndex = (HorizontalAlignment)7;
+			this.Valor_ganho_1.TabIndex = 7;
 			this.Valor_ganho_1.TabStop = false;
 			this.Valor_ganho_1.TextAlign = HorizontalAlignment.Center;
 			this.Valor_zero_4.AcceptsReturn = true;
@@ -315,7 +315,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_zero_2 = this.Valor_zero_4;
 			size = new size(90, 20);
 			valor_zero_2.Size = size;
-			this.Valor_zero_4.TabIndex = (HorizontalAlignment)6;
+			this.Valor_zero_4.TabIndex = 6;
 			this.Valor_zero_4.TabStop = false;
 			this.Valor_zero_4.TextAlign = HorizontalAlignment.Center;
 			this.Valor_zero_3.AcceptsReturn = true;
@@ -328,7 +328,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_zero_4 = this.Valor_zero_3;
 			size = new size(90, 20);
 			valor_zero_4.Size = size;
-			this.Valor_zero_3.TabIndex = (HorizontalAlignment)5;
+			this.Valor_zero_3.TabIndex = 5;
 			this.Valor_zero_3.TabStop = false;
 			this.Valor_zero_3.TextAlign = HorizontalAlignment.Center;
 			this.Valor_zero_2.AcceptsReturn = true;
@@ -341,7 +341,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_zero_6 = this.Valor_zero_2;
 			size = new size(90, 20);
 			valor_zero_6.Size = size;
-			this.Valor_zero_2.TabIndex = (HorizontalAlignment)4;
+			this.Valor_zero_2.TabIndex = 4;
 			this.Valor_zero_2.TabStop = false;
 			this.Valor_zero_2.TextAlign = HorizontalAlignment.Center;
 			this.Valor_zero_1.AcceptsReturn = true;
@@ -354,7 +354,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_zero_8 = this.Valor_zero_1;
 			size = new size(90, 20);
 			valor_zero_8.Size = size;
-			this.Valor_zero_1.TabIndex = (HorizontalAlignment)3;
+			this.Valor_zero_1.TabIndex = 3;
 			this.Valor_zero_1.TabStop = false;
 			this.Valor_zero_1.TextAlign = HorizontalAlignment.Center;
 			this.Label_ganho_4.AutoSize = true;
@@ -365,7 +365,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_ganho_2 = this.Label_ganho_4;
 			size = new size(128, 13);
 			label_ganho_2.Size = size;
-			this.Label_ganho_4.TabIndex = (HorizontalAlignment)0;
+			this.Label_ganho_4.TabIndex = 0;
 			this.Label_ganho_4.Text = "Ent. Analog. 4 - GANHO :";
 			this.Label_ganho_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_ganho_3 = this.Label_ganho_3;
@@ -375,7 +375,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_ganho_4 = this.Label_ganho_3;
 			size = new size(128, 13);
 			label_ganho_4.Size = size;
-			this.Label_ganho_3.TabIndex = (HorizontalAlignment)0;
+			this.Label_ganho_3.TabIndex = 0;
 			this.Label_ganho_3.Text = "Ent. Analog. 3 - GANHO :";
 			this.Label_zero_4.AutoSize = true;
 			global::System.Windows.Forms.Control label_zero_ = this.Label_zero_4;
@@ -385,7 +385,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_zero_2 = this.Label_zero_4;
 			size = new size(119, 13);
 			label_zero_2.Size = size;
-			this.Label_zero_4.TabIndex = (HorizontalAlignment)0;
+			this.Label_zero_4.TabIndex = 0;
 			this.Label_zero_4.Text = "Ent. Analog. 4 - ZERO :";
 			this.Label_ganho_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_ganho_5 = this.Label_ganho_2;
@@ -395,7 +395,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_ganho_6 = this.Label_ganho_2;
 			size = new size(128, 13);
 			label_ganho_6.Size = size;
-			this.Label_ganho_2.TabIndex = (HorizontalAlignment)0;
+			this.Label_ganho_2.TabIndex = 0;
 			this.Label_ganho_2.Text = "Ent. Analog. 2 - GANHO :";
 			this.Label_zero_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_zero_3 = this.Label_zero_3;
@@ -405,7 +405,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_zero_4 = this.Label_zero_3;
 			size = new size(119, 13);
 			label_zero_4.Size = size;
-			this.Label_zero_3.TabIndex = (HorizontalAlignment)0;
+			this.Label_zero_3.TabIndex = 0;
 			this.Label_zero_3.Text = "Ent. Analog. 3 - ZERO :";
 			this.Label_ganho_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_ganho_7 = this.Label_ganho_1;
@@ -415,7 +415,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_ganho_8 = this.Label_ganho_1;
 			size = new size(128, 13);
 			label_ganho_8.Size = size;
-			this.Label_ganho_1.TabIndex = (HorizontalAlignment)0;
+			this.Label_ganho_1.TabIndex = 0;
 			this.Label_ganho_1.Text = "Ent. Analog. 1 - GANHO :";
 			this.Label_zero_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_zero_5 = this.Label_zero_2;
@@ -425,7 +425,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_zero_6 = this.Label_zero_2;
 			size = new size(119, 13);
 			label_zero_6.Size = size;
-			this.Label_zero_2.TabIndex = (HorizontalAlignment)0;
+			this.Label_zero_2.TabIndex = 0;
 			this.Label_zero_2.Text = "Ent. Analog. 2 - ZERO :";
 			this.Label_zero_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_zero_7 = this.Label_zero_1;
@@ -435,7 +435,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_zero_8 = this.Label_zero_1;
 			size = new size(119, 13);
 			label_zero_8.Size = size;
-			this.Label_zero_1.TabIndex = (HorizontalAlignment)0;
+			this.Label_zero_1.TabIndex = 0;
 			this.Label_zero_1.Text = "Ent. Analog. 1 - ZERO :";
 			this.Grupo_cont_sem_nor.Controls.Add(this.Valor_sem_nor_EA4);
 			this.Grupo_cont_sem_nor.Controls.Add(this.Valor_sem_nor_EA3);
@@ -452,7 +452,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_cont_sem_nor2 = this.Grupo_cont_sem_nor;
 			size = new size(214, 138);
 			grupo_cont_sem_nor2.Size = size;
-			this.Grupo_cont_sem_nor.TabIndex = (HorizontalAlignment)5;
+			this.Grupo_cont_sem_nor.TabIndex = 5;
 			this.Grupo_cont_sem_nor.TabStop = false;
 			this.Grupo_cont_sem_nor.Text = "Contagens sem normalização";
 			this.Valor_sem_nor_EA4.AcceptsReturn = true;
@@ -465,7 +465,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_sem_nor_EA2 = this.Valor_sem_nor_EA4;
 			size = new size(90, 20);
 			valor_sem_nor_EA2.Size = size;
-			this.Valor_sem_nor_EA4.TabIndex = (HorizontalAlignment)2;
+			this.Valor_sem_nor_EA4.TabIndex = 2;
 			this.Valor_sem_nor_EA4.TabStop = false;
 			this.Valor_sem_nor_EA4.TextAlign = HorizontalAlignment.Center;
 			this.Valor_sem_nor_EA3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -477,7 +477,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_sem_nor_EA4 = this.Valor_sem_nor_EA3;
 			size = new size(90, 20);
 			valor_sem_nor_EA4.Size = size;
-			this.Valor_sem_nor_EA3.TabIndex = (HorizontalAlignment)2;
+			this.Valor_sem_nor_EA3.TabIndex = 2;
 			this.Valor_sem_nor_EA3.TabStop = false;
 			this.Valor_sem_nor_EA3.TextAlign = HorizontalAlignment.Center;
 			this.Valor_sem_nor_EA2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -489,7 +489,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_sem_nor_EA6 = this.Valor_sem_nor_EA2;
 			size = new size(90, 20);
 			valor_sem_nor_EA6.Size = size;
-			this.Valor_sem_nor_EA2.TabIndex = (HorizontalAlignment)2;
+			this.Valor_sem_nor_EA2.TabIndex = 2;
 			this.Valor_sem_nor_EA2.TabStop = false;
 			this.Valor_sem_nor_EA2.TextAlign = HorizontalAlignment.Center;
 			this.Valor_sem_nor_EA1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -501,7 +501,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_sem_nor_EA8 = this.Valor_sem_nor_EA1;
 			size = new size(90, 20);
 			valor_sem_nor_EA8.Size = size;
-			this.Valor_sem_nor_EA1.TabIndex = (HorizontalAlignment)1;
+			this.Valor_sem_nor_EA1.TabIndex = 1;
 			this.Valor_sem_nor_EA1.TabStop = false;
 			this.Valor_sem_nor_EA1.TextAlign = HorizontalAlignment.Center;
 			this.Label_sem_nor_EA4.AutoSize = true;
@@ -512,7 +512,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_sem_nor_EA2 = this.Label_sem_nor_EA4;
 			size = new size(80, 13);
 			label_sem_nor_EA2.Size = size;
-			this.Label_sem_nor_EA4.TabIndex = (HorizontalAlignment)0;
+			this.Label_sem_nor_EA4.TabIndex = 0;
 			this.Label_sem_nor_EA4.Text = "Ent. Analog. 4 :";
 			this.Label_sem_nor_EA3.AutoSize = true;
 			global::System.Windows.Forms.Control label_sem_nor_EA3 = this.Label_sem_nor_EA3;
@@ -522,7 +522,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_sem_nor_EA4 = this.Label_sem_nor_EA3;
 			size = new size(80, 13);
 			label_sem_nor_EA4.Size = size;
-			this.Label_sem_nor_EA3.TabIndex = (HorizontalAlignment)0;
+			this.Label_sem_nor_EA3.TabIndex = 0;
 			this.Label_sem_nor_EA3.Text = "Ent. Analog. 3 :";
 			this.Label_sem_nor_EA2.AutoSize = true;
 			global::System.Windows.Forms.Control label_sem_nor_EA5 = this.Label_sem_nor_EA2;
@@ -532,7 +532,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_sem_nor_EA6 = this.Label_sem_nor_EA2;
 			size = new size(80, 13);
 			label_sem_nor_EA6.Size = size;
-			this.Label_sem_nor_EA2.TabIndex = (HorizontalAlignment)0;
+			this.Label_sem_nor_EA2.TabIndex = 0;
 			this.Label_sem_nor_EA2.Text = "Ent. Analog. 2 :";
 			this.Label_sem_nor_EA1.AutoSize = true;
 			global::System.Windows.Forms.Control label_sem_nor_EA7 = this.Label_sem_nor_EA1;
@@ -542,7 +542,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_sem_nor_EA8 = this.Label_sem_nor_EA1;
 			size = new size(80, 13);
 			label_sem_nor_EA8.Size = size;
-			this.Label_sem_nor_EA1.TabIndex = (HorizontalAlignment)0;
+			this.Label_sem_nor_EA1.TabIndex = 0;
 			this.Label_sem_nor_EA1.Text = "Ent. Analog. 1 :";
 			this.Grupo_cont_normal.Controls.Add(this.Valor_nor_EA4);
 			this.Grupo_cont_normal.Controls.Add(this.Valor_nor_EA3);
@@ -559,7 +559,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_cont_normal2 = this.Grupo_cont_normal;
 			size = new size(214, 138);
 			grupo_cont_normal2.Size = size;
-			this.Grupo_cont_normal.TabIndex = (HorizontalAlignment)6;
+			this.Grupo_cont_normal.TabIndex = 6;
 			this.Grupo_cont_normal.TabStop = false;
 			this.Grupo_cont_normal.Text = "Contagens normalizadas";
 			this.Valor_nor_EA4.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -571,7 +571,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nor_EA2 = this.Valor_nor_EA4;
 			size = new size(90, 20);
 			valor_nor_EA2.Size = size;
-			this.Valor_nor_EA4.TabIndex = (HorizontalAlignment)2;
+			this.Valor_nor_EA4.TabIndex = 2;
 			this.Valor_nor_EA4.TabStop = false;
 			this.Valor_nor_EA4.TextAlign = HorizontalAlignment.Center;
 			this.Valor_nor_EA3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -583,7 +583,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nor_EA4 = this.Valor_nor_EA3;
 			size = new size(90, 20);
 			valor_nor_EA4.Size = size;
-			this.Valor_nor_EA3.TabIndex = (HorizontalAlignment)2;
+			this.Valor_nor_EA3.TabIndex = 2;
 			this.Valor_nor_EA3.TabStop = false;
 			this.Valor_nor_EA3.TextAlign = HorizontalAlignment.Center;
 			this.Valor_nor_EA2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -595,7 +595,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nor_EA6 = this.Valor_nor_EA2;
 			size = new size(90, 20);
 			valor_nor_EA6.Size = size;
-			this.Valor_nor_EA2.TabIndex = (HorizontalAlignment)2;
+			this.Valor_nor_EA2.TabIndex = 2;
 			this.Valor_nor_EA2.TabStop = false;
 			this.Valor_nor_EA2.TextAlign = HorizontalAlignment.Center;
 			this.Valor_nor_EA1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -607,7 +607,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nor_EA8 = this.Valor_nor_EA1;
 			size = new size(90, 20);
 			valor_nor_EA8.Size = size;
-			this.Valor_nor_EA1.TabIndex = (HorizontalAlignment)1;
+			this.Valor_nor_EA1.TabIndex = 1;
 			this.Valor_nor_EA1.TabStop = false;
 			this.Valor_nor_EA1.TextAlign = HorizontalAlignment.Center;
 			this.Label_nor_EA4.AutoSize = true;
@@ -618,7 +618,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nor_EA2 = this.Label_nor_EA4;
 			size = new size(80, 13);
 			label_nor_EA2.Size = size;
-			this.Label_nor_EA4.TabIndex = (HorizontalAlignment)0;
+			this.Label_nor_EA4.TabIndex = 0;
 			this.Label_nor_EA4.Text = "Ent. Analog. 4 :";
 			this.Label_nor_EA3.AutoSize = true;
 			global::System.Windows.Forms.Control label_nor_EA3 = this.Label_nor_EA3;
@@ -628,7 +628,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nor_EA4 = this.Label_nor_EA3;
 			size = new size(80, 13);
 			label_nor_EA4.Size = size;
-			this.Label_nor_EA3.TabIndex = (HorizontalAlignment)0;
+			this.Label_nor_EA3.TabIndex = 0;
 			this.Label_nor_EA3.Text = "Ent. Analog. 3 :";
 			this.Label_nor_EA2.AutoSize = true;
 			global::System.Windows.Forms.Control label_nor_EA5 = this.Label_nor_EA2;
@@ -638,7 +638,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nor_EA6 = this.Label_nor_EA2;
 			size = new size(80, 13);
 			label_nor_EA6.Size = size;
-			this.Label_nor_EA2.TabIndex = (HorizontalAlignment)0;
+			this.Label_nor_EA2.TabIndex = 0;
 			this.Label_nor_EA2.Text = "Ent. Analog. 2 :";
 			this.Label_nor_EA1.AutoSize = true;
 			global::System.Windows.Forms.Control label_nor_EA7 = this.Label_nor_EA1;
@@ -648,7 +648,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nor_EA8 = this.Label_nor_EA1;
 			size = new size(80, 13);
 			label_nor_EA8.Size = size;
-			this.Label_nor_EA1.TabIndex = (HorizontalAlignment)0;
+			this.Label_nor_EA1.TabIndex = 0;
 			this.Label_nor_EA1.Text = "Ent. Analog. 1 :";
 			global::System.Windows.Forms.Control box_Msg = this.Box_Msg;
 			location = new location(16, 80);
@@ -657,7 +657,7 @@ namespace iS800
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new size(181, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = (HorizontalAlignment)10;
+			this.Box_Msg.TabIndex = 10;
 			this.Box_Msg.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control tela_end_estacao = this.Tela_end_estacao;
 			location = new location(129, 33);
@@ -676,7 +676,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tela_end_estacao3 = this.Tela_end_estacao;
 			size = new size(78, 20);
 			tela_end_estacao3.Size = size;
-			this.Tela_end_estacao.TabIndex = (HorizontalAlignment)12;
+			this.Tela_end_estacao.TabIndex = 12;
 			this.Tela_end_estacao.TextAlign = HorizontalAlignment.Right;
 			this.Label_end_estacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_estacao = this.Label_end_estacao;
@@ -686,7 +686,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_estacao2 = this.Label_end_estacao;
 			size = new size(101, 13);
 			label_end_estacao2.Size = size;
-			this.Label_end_estacao.TabIndex = (HorizontalAlignment)11;
+			this.Label_end_estacao.TabIndex = 11;
 			this.Label_end_estacao.Text = "Endereço Estação :";
 			this.Grupo_medidas_eng.Controls.Add(this.GroupBox1);
 			this.Grupo_medidas_eng.Controls.Add(this.Label_nivel_eng);
@@ -698,7 +698,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_medidas_eng2 = this.Grupo_medidas_eng;
 			size = new size(347, 158);
 			grupo_medidas_eng2.Size = size;
-			this.Grupo_medidas_eng.TabIndex = (HorizontalAlignment)14;
+			this.Grupo_medidas_eng.TabIndex = 14;
 			this.Grupo_medidas_eng.TabStop = false;
 			this.Grupo_medidas_eng.Text = "Medidas em Unidade de Engenharia e Alarmes";
 			this.GroupBox1.Controls.Add(this.Label_defeito_sensor);
@@ -713,12 +713,12 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox1;
 			size = new size(307, 82);
 			groupBox2.Size = size;
-			this.GroupBox1.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox1.TabIndex = 4;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "Alarmes";
 			this.Label_defeito_sensor.AutoSize = true;
 			this.Label_defeito_sensor.BackColor = global::System.Drawing.SystemColors.Control;
-			this.Label_defeito_sensor.BorderStyle = (HorizontalAlignment)2;
+			this.Label_defeito_sensor.BorderStyle = 2;
 			global::System.Windows.Forms.Control label_defeito_sensor = this.Label_defeito_sensor;
 			location = new location(210, 26);
 			label_defeito_sensor.Location = location;
@@ -726,12 +726,12 @@ namespace iS800
 			global::System.Windows.Forms.Control label_defeito_sensor2 = this.Label_defeito_sensor;
 			size = new size(75, 15);
 			label_defeito_sensor2.Size = size;
-			this.Label_defeito_sensor.TabIndex = (HorizontalAlignment)8;
+			this.Label_defeito_sensor.TabIndex = 8;
 			this.Label_defeito_sensor.Text = " Falha sensor ";
 			this.Label_defeito_sensor.TextAlign = ContentAlignment.MiddleRight;
 			this.Label_arrombamento.AutoSize = true;
 			this.Label_arrombamento.BackColor = global::System.Drawing.SystemColors.Control;
-			this.Label_arrombamento.BorderStyle = (HorizontalAlignment)2;
+			this.Label_arrombamento.BorderStyle = 2;
 			global::System.Windows.Forms.Control label_arrombamento = this.Label_arrombamento;
 			location = new location(26, 51);
 			label_arrombamento.Location = location;
@@ -739,11 +739,11 @@ namespace iS800
 			global::System.Windows.Forms.Control label_arrombamento2 = this.Label_arrombamento;
 			size = new size(77, 15);
 			label_arrombamento2.Size = size;
-			this.Label_arrombamento.TabIndex = (HorizontalAlignment)7;
+			this.Label_arrombamento.TabIndex = 7;
 			this.Label_arrombamento.Text = "Arrombamento";
 			this.Label_vazio.AutoSize = true;
 			this.Label_vazio.BackColor = global::System.Drawing.SystemColors.Control;
-			this.Label_vazio.BorderStyle = (HorizontalAlignment)2;
+			this.Label_vazio.BorderStyle = 2;
 			global::System.Windows.Forms.Control label_vazio = this.Label_vazio;
 			location = new location(119, 51);
 			label_vazio.Location = location;
@@ -751,12 +751,12 @@ namespace iS800
 			global::System.Windows.Forms.Control label_vazio2 = this.Label_vazio;
 			size = new size(77, 15);
 			label_vazio2.Size = size;
-			this.Label_vazio.TabIndex = (HorizontalAlignment)6;
+			this.Label_vazio.TabIndex = 6;
 			this.Label_vazio.Text = "       Vazio       ";
 			this.Label_vazio.TextAlign = ContentAlignment.MiddleRight;
 			this.Label_transbordo.AutoSize = true;
 			this.Label_transbordo.BackColor = global::System.Drawing.SystemColors.Control;
-			this.Label_transbordo.BorderStyle = (HorizontalAlignment)2;
+			this.Label_transbordo.BorderStyle = 2;
 			global::System.Windows.Forms.Control label_transbordo = this.Label_transbordo;
 			location = new location(118, 26);
 			label_transbordo.Location = location;
@@ -764,11 +764,11 @@ namespace iS800
 			global::System.Windows.Forms.Control label_transbordo2 = this.Label_transbordo;
 			size = new size(78, 15);
 			label_transbordo2.Size = size;
-			this.Label_transbordo.TabIndex = (HorizontalAlignment)5;
+			this.Label_transbordo.TabIndex = 5;
 			this.Label_transbordo.Text = "   Transbordo  ";
 			this.Label_em_bat.AutoSize = true;
 			this.Label_em_bat.BackColor = global::System.Drawing.Color.Gainsboro;
-			this.Label_em_bat.BorderStyle = (HorizontalAlignment)2;
+			this.Label_em_bat.BorderStyle = 2;
 			global::System.Windows.Forms.Control label_em_bat = this.Label_em_bat;
 			location = new location(26, 26);
 			label_em_bat.Location = location;
@@ -776,7 +776,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_em_bat2 = this.Label_em_bat;
 			size = new size(78, 15);
 			label_em_bat2.Size = size;
-			this.Label_em_bat.TabIndex = (HorizontalAlignment)4;
+			this.Label_em_bat.TabIndex = 4;
 			this.Label_em_bat.Text = "   Em Bateria   ";
 			this.Label_nivel_eng.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_eng = this.Label_nivel_eng;
@@ -786,7 +786,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_eng2 = this.Label_nivel_eng;
 			size = new size(56, 13);
 			label_nivel_eng2.Size = size;
-			this.Label_nivel_eng.TabIndex = (HorizontalAlignment)3;
+			this.Label_nivel_eng.TabIndex = 3;
 			this.Label_nivel_eng.Text = "Nível (%) :";
 			this.Tela_nivel.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control tela_nivel = this.Tela_nivel;
@@ -797,7 +797,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tela_nivel2 = this.Tela_nivel;
 			size = new size(66, 20);
 			tela_nivel2.Size = size;
-			this.Tela_nivel.TabIndex = (HorizontalAlignment)1;
+			this.Tela_nivel.TabIndex = 1;
 			this.Tela_nivel.TabStop = false;
 			this.Tela_nivel.TextAlign = HorizontalAlignment.Center;
 			this.Grupo_ctrl_com.Controls.Add(this.Box_Msg);
@@ -811,7 +811,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_ctrl_com2 = this.Grupo_ctrl_com;
 			size = new size(214, 158);
 			grupo_ctrl_com2.Size = size;
-			this.Grupo_ctrl_com.TabIndex = (HorizontalAlignment)13;
+			this.Grupo_ctrl_com.TabIndex = 13;
 			this.Grupo_ctrl_com.TabStop = false;
 			this.Grupo_ctrl_com.Text = "Controle de comunicação";
 			global::System.Windows.Forms.Control comando_hab_cal = this.Comando_hab_cal;
@@ -821,7 +821,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comando_hab_cal2 = this.Comando_hab_cal;
 			size = new size(167, 26);
 			comando_hab_cal2.Size = size;
-			this.Comando_hab_cal.TabIndex = (HorizontalAlignment)2;
+			this.Comando_hab_cal.TabIndex = 2;
 			this.Comando_hab_cal.Text = "Ler";
 			this.Comando_hab_cal.UseVisualStyleBackColor = true;
 			this.Grupo_controle_calibracao.Controls.Add(this.Button_20_5ma);
@@ -837,7 +837,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_controle_calibracao2 = this.Grupo_controle_calibracao;
 			size = new size(576, 113);
 			grupo_controle_calibracao2.Size = size;
-			this.Grupo_controle_calibracao.TabIndex = (HorizontalAlignment)22;
+			this.Grupo_controle_calibracao.TabIndex = 22;
 			this.Grupo_controle_calibracao.TabStop = false;
 			this.Grupo_controle_calibracao.Text = "Controle de calibração";
 			this.Button_20_5ma.Enabled = false;
@@ -848,7 +848,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_20_5ma2 = this.Button_20_5ma;
 			size = new size(133, 27);
 			button_20_5ma2.Size = size;
-			this.Button_20_5ma.TabIndex = (HorizontalAlignment)15;
+			this.Button_20_5ma.TabIndex = 15;
 			this.Button_20_5ma.Tag = " ";
 			this.Button_20_5ma.Text = "Calibra 20,5 mA";
 			this.Button_20_5ma.UseVisualStyleBackColor = true;
@@ -859,7 +859,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_3_5ma2 = this.Button_3_5ma;
 			size = new size(133, 27);
 			button_3_5ma2.Size = size;
-			this.Button_3_5ma.TabIndex = (HorizontalAlignment)15;
+			this.Button_3_5ma.TabIndex = 15;
 			this.Button_3_5ma.Tag = " ";
 			this.Button_3_5ma.Text = "Calibra 3,5 mA";
 			this.Button_3_5ma.UseVisualStyleBackColor = true;
@@ -879,7 +879,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_cal_end3 = this.Valor_cal_end;
 			size = new size(61, 20);
 			valor_cal_end3.Size = size;
-			this.Valor_cal_end.TabIndex = (HorizontalAlignment)12;
+			this.Valor_cal_end.TabIndex = 12;
 			this.Valor_cal_end.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control valor_canal_calibracao = this.Valor_canal_calibracao;
 			location = new location(371, 25);
@@ -906,7 +906,7 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_canal_calibracao4 = this.Valor_canal_calibracao;
 			size = new size(63, 20);
 			valor_canal_calibracao4.Size = size;
-			this.Valor_canal_calibracao.TabIndex = (HorizontalAlignment)14;
+			this.Valor_canal_calibracao.TabIndex = 14;
 			this.Valor_canal_calibracao.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_canal_calibracao5 = this.Valor_canal_calibracao;
 			num = new decimal(new int[]
@@ -925,7 +925,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_cal2 = this.Label_end_cal;
 			size = new size(101, 13);
 			label_end_cal2.Size = size;
-			this.Label_end_cal.TabIndex = (HorizontalAlignment)11;
+			this.Label_end_cal.TabIndex = 11;
 			this.Label_end_cal.Text = "Endereço Estação :";
 			this.Label_canal.AutoSize = true;
 			global::System.Windows.Forms.Control label_canal = this.Label_canal;
@@ -935,7 +935,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_canal2 = this.Label_canal;
 			size = new size(40, 13);
 			label_canal2.Size = size;
-			this.Label_canal.TabIndex = (HorizontalAlignment)13;
+			this.Label_canal.TabIndex = 13;
 			this.Label_canal.Text = "Canal :";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);

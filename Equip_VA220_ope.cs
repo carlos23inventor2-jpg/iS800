@@ -3051,10 +3051,10 @@ namespace iS800
 		// Token: 0x0600268E RID: 9870 RVA: 0x0041C7A0 File Offset: 0x0041ABA0
 		private void Equip_VA220_ope_Load(object sender, EventArgs e)
 		{
-			this.VScroll_end_estacao.Maximum = (HorizontalAlignment)200;
-			this.VScroll_end_estacao.Minimum = (HorizontalAlignment)0;
-			this.VScroll_end_mestre.Maximum = (HorizontalAlignment)200;
-			this.VScroll_end_mestre.Minimum = (HorizontalAlignment)0;
+			this.VScroll_end_estacao.Maximum = 200;
+			this.VScroll_end_estacao.Minimum = 0;
+			this.VScroll_end_mestre.Maximum = 200;
+			this.VScroll_end_mestre.Minimum = 0;
 			this.Limpa_estrutura_ope_VA220();
 			this.Atualiza_tela_ope_VA220();
 		}
@@ -3389,7 +3389,7 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = (HorizontalAlignment)2;
+				num = 2;
 				text = Strings.FormatDateTime(Conversions.ToDate(hora), 4);
 				goto IL_6F;
 				IL_16:
@@ -3405,7 +3405,7 @@ namespace iS800
 				num2 = -1;
 								IL_42:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_2E;
@@ -4063,7 +4063,7 @@ namespace iS800
 		private void Button_ler_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
 				Interaction.MsgBox(" Existe um endereço não válido ", (MsgBoxStyle)0, null);
 				return;
@@ -4084,7 +4084,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -4093,21 +4093,21 @@ namespace iS800
 							this.Mensagem_ope_VA220("Leitura Setpoints - Ok", 0);
 							goto IL_13E;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro leitura setpoints - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro leitura setpoints - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro leitura setpoints - não determinado", 1);
 							return;
@@ -4126,7 +4126,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -4135,21 +4135,21 @@ namespace iS800
 							this.Mensagem_ope_VA220("Leitura Alarmes - Ok", 0);
 							goto IL_20F;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro leitura alarmes - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro leitura alarmes - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro leitura alarmes - não determinado", 1);
 							return;
@@ -4168,7 +4168,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -4177,21 +4177,21 @@ namespace iS800
 							this.Mensagem_ope_VA220("Leitura Horário de Ponta - Ok", 0);
 							goto IL_2E0;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro horário de ponta - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro horário de ponta - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro horário de ponta - não determinado", 1);
 							return;
@@ -4210,7 +4210,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -4219,21 +4219,21 @@ namespace iS800
 							this.Mensagem_ope_VA220("Leitura setpoints de temperatura - Ok", 0);
 							goto IL_3B1;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro setpoints de temperatura - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro setpoints de temperatura - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro setpoints de temperatura - não determinado", 1);
 							return;
@@ -4243,7 +4243,7 @@ namespace iS800
 				IL_3B1:
 				if (this.CheckBox_timer.Checked)
 				{
-					int num = (HorizontalAlignment)1;
+					int num = 1;
 					for (;;)
 					{
 						int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -4256,7 +4256,7 @@ namespace iS800
 							{
 								Application.DoEvents();
 							}
-							while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+							while (Comunicacao.Ctrl_Com.Frame == 255);
 							switch (Comunicacao.Ctrl_Com.Frame)
 							{
 							case 0:
@@ -4265,19 +4265,19 @@ namespace iS800
 								this.Mensagem_ope_VA220("Leitura Timer Bomba " + Conversion.Str(num) + " - Ok", 0);
 								goto IL_4DD;
 							case 2:
-								if (i == (DialogResult)0)
+								if (i == 0)
 								{
 									goto Block_30;
 								}
 								continue;
 							case 3:
-								if (i == (DialogResult)0)
+								if (i == 0)
 								{
 									goto Block_29;
 								}
 								continue;
 							}
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								goto Block_31;
 							}
@@ -4311,7 +4311,7 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
@@ -4320,21 +4320,21 @@ namespace iS800
 							this.Mensagem_ope_VA220("Leitura Relogio - Ok", 0);
 							goto IL_5BF;
 						case 2:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro Relogio - conferência", 1);
 								return;
 							}
 							continue;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro Relogio - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro Relogio - não determinado", 1);
 							return;
@@ -4385,39 +4385,39 @@ namespace iS800
 			Mod_VA.Operacao_VA220.Timer_liga = new string[5, 5];
 			Mod_VA.Operacao_VA220.Timer_desliga = new string[5, 5];
 			Mod_VA.Operacao_VA220.Temperaturas = new int[6];
-			Mod_VA.Operacao_VA220.Nivel_desejado = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Nivel_ligar_B1 = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Nivel_ligar_B2 = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Nivel_ligar_B3 = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Nivel_ligar_B4 = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Nivel_desligamento = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Nivel_ligamento = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Tempo_para_mais_bomba = (HorizontalAlignment)0;
-			Mod_VA.Operacao_VA220.Pressao_recalque = (HorizontalAlignment)5;
-			Mod_VA.Operacao_VA220.Pressao_succao = (HorizontalAlignment)5;
+			Mod_VA.Operacao_VA220.Nivel_desejado = 0;
+			Mod_VA.Operacao_VA220.Nivel_ligar_B1 = 0;
+			Mod_VA.Operacao_VA220.Nivel_ligar_B2 = 0;
+			Mod_VA.Operacao_VA220.Nivel_ligar_B3 = 0;
+			Mod_VA.Operacao_VA220.Nivel_ligar_B4 = 0;
+			Mod_VA.Operacao_VA220.Nivel_desligamento = 0;
+			Mod_VA.Operacao_VA220.Nivel_ligamento = 0;
+			Mod_VA.Operacao_VA220.Tempo_para_mais_bomba = 0;
+			Mod_VA.Operacao_VA220.Pressao_recalque = 5;
+			Mod_VA.Operacao_VA220.Pressao_succao = 5;
 			Mod_VA.Operacao_VA220.Ponta_Desliga = "00:00";
 			Mod_VA.Operacao_VA220.Ponta_liga = "00:00";
-			int num = (HorizontalAlignment)1;
+			int num = 1;
 			checked
 			{
 				int num2;
 				do
 				{
-					num2 = (HorizontalAlignment)1;
+					num2 = 1;
 					do
 					{
-						Mod_VA.Operacao_VA220.Alarmes[num, num2] = (HorizontalAlignment)0;
+						Mod_VA.Operacao_VA220.Alarmes[num, num2] = 0;
 						num2++;
 					}
 					while (num2 <= 2);
 					num++;
 				}
 				while (num <= 4);
-				num = (HorizontalAlignment)1;
+				num = 1;
 				do
 				{
-					Mod_VA.Operacao_VA220.Temperaturas[num2] = (HorizontalAlignment)0;
-					num2 = (HorizontalAlignment)1;
+					Mod_VA.Operacao_VA220.Temperaturas[num2] = 0;
+					num2 = 1;
 					do
 					{
 						Mod_VA.Operacao_VA220.Timer_liga[num, num2] = "00:00";
@@ -4567,7 +4567,7 @@ namespace iS800
 		private void Button_escrever_Click(object sender, EventArgs e)
 		{
 			int[] dados = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
 			{
 				Interaction.MsgBox(" Existe um endereço não válido ", (MsgBoxStyle)0, null);
 				return;
@@ -4587,21 +4587,21 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
 							this.Mensagem_ope_VA220("Escrita Setpoints - Ok", 0);
 							goto IL_117;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro escrita setpoints - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro escrita setpoints - não determinado", 1);
 							return;
@@ -4621,21 +4621,21 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
 							this.Mensagem_ope_VA220("Escrita Alarmes - Ok", 0);
 							goto IL_1D3;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro escrita alarmes - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro escrita alarmes - não determinado", 1);
 							return;
@@ -4655,21 +4655,21 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
 							this.Mensagem_ope_VA220("Escrita Horário de Ponta - Ok", 0);
 							goto IL_28E;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro escrita de ponta - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro escrita de ponta - não determinado", 1);
 							return;
@@ -4689,21 +4689,21 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
 							this.Mensagem_ope_VA220("Escrita setpoints de temperatura - Ok", 0);
 							goto IL_349;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro escrita setpoints de temperatura - não determinado", 1);
 							return;
@@ -4713,7 +4713,7 @@ namespace iS800
 				IL_349:
 				if (this.CheckBox_timer.Checked)
 				{
-					int num = (HorizontalAlignment)1;
+					int num = 1;
 					for (;;)
 					{
 						int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -4726,20 +4726,20 @@ namespace iS800
 							{
 								Application.DoEvents();
 							}
-							while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+							while (Comunicacao.Ctrl_Com.Frame == 255);
 							switch (Comunicacao.Ctrl_Com.Frame)
 							{
 							case 0:
 								this.Mensagem_ope_VA220("Escrita Timer Bomba " + Conversion.Str(num) + " - Ok", 0);
 								goto IL_447;
 							case 3:
-								if (i == (DialogResult)0)
+								if (i == 0)
 								{
 									goto Block_25;
 								}
 								continue;
 							}
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								goto Block_26;
 							}
@@ -4771,21 +4771,21 @@ namespace iS800
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+						while (Comunicacao.Ctrl_Com.Frame == 255);
 						switch (Comunicacao.Ctrl_Com.Frame)
 						{
 						case 0:
 							this.Mensagem_ope_VA220("Escrita Relogio - Ok", 0);
 							goto IL_50D;
 						case 3:
-							if (i == (DialogResult)0)
+							if (i == 0)
 							{
 								this.Mensagem_ope_VA220("Erro Escrita Relogio - timeout", 1);
 								return;
 							}
 							continue;
 						}
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_ope_VA220("Erro Escrita Relogio - não determinado", 1);
 							return;

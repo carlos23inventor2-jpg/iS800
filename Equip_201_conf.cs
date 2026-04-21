@@ -1809,12 +1809,12 @@ namespace iS800
 			this.Combo_modo_partida_m3.Items.Clear();
 			this.Combo_modo_partida_m3.Items.Add("Manual");
 			this.Combo_modo_partida_m3.Items.Add("Automático");
-			this.passo_201 = (HorizontalAlignment)0;
+			this.passo_201 = 0;
 			Mod_MD.Init_equipamento_MD201();
 			this.Limpa_estrutura_MD201(Mod_MD.Controle.Estacao);
 			this.Atualiza_tela_MD201(Mod_MD.Controle.Estacao);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
-			int num = (HorizontalAlignment)48;
+			int num = 48;
 			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", num, " Atenção - verifique a configuração");
 		}
 
@@ -1827,39 +1827,39 @@ namespace iS800
 			Mod_MD.Recalque_201[indice].Nivel_parada = new int[4];
 			Mod_MD.Recalque_201[indice].Tempo_partida = new int[4];
 			Mod_MD.Recalque_201[indice].Tempo_parada = new int[4];
-			Mod_MD.Recalque_201[indice].End_estacao = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].End_mestre = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Hab_repetidora = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_ptt = (HorizontalAlignment)1;
-			Mod_MD.Recalque_201[indice].Quantidade_motores = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_entre_acionamento = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Modo_partida[1] = (HorizontalAlignment)21877;
-			Mod_MD.Recalque_201[indice].Modo_partida[2] = (HorizontalAlignment)21877;
-			Mod_MD.Recalque_201[indice].Modo_partida[3] = (HorizontalAlignment)21877;
-			Mod_MD.Recalque_201[indice].Nivel_acionamento[1] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Nivel_acionamento[2] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Nivel_acionamento[3] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Nivel_parada[1] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Nivel_parada[2] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Nivel_parada[3] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_partida[1] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_partida[2] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_partida[3] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_parada[1] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_parada[2] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Tempo_parada[3] = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].End_repetidora = (HorizontalAlignment)0;
-			Mod_MD.Recalque_201[indice].Num_repetidoras = (HorizontalAlignment)0;
-			int num = (HorizontalAlignment)0;
+			Mod_MD.Recalque_201[indice].End_estacao = 0;
+			Mod_MD.Recalque_201[indice].End_mestre = 0;
+			Mod_MD.Recalque_201[indice].Hab_repetidora = 0;
+			Mod_MD.Recalque_201[indice].Tempo_ptt = 1;
+			Mod_MD.Recalque_201[indice].Quantidade_motores = 0;
+			Mod_MD.Recalque_201[indice].Tempo_entre_acionamento = 0;
+			Mod_MD.Recalque_201[indice].Modo_partida[1] = 21877;
+			Mod_MD.Recalque_201[indice].Modo_partida[2] = 21877;
+			Mod_MD.Recalque_201[indice].Modo_partida[3] = 21877;
+			Mod_MD.Recalque_201[indice].Nivel_acionamento[1] = 0;
+			Mod_MD.Recalque_201[indice].Nivel_acionamento[2] = 0;
+			Mod_MD.Recalque_201[indice].Nivel_acionamento[3] = 0;
+			Mod_MD.Recalque_201[indice].Nivel_parada[1] = 0;
+			Mod_MD.Recalque_201[indice].Nivel_parada[2] = 0;
+			Mod_MD.Recalque_201[indice].Nivel_parada[3] = 0;
+			Mod_MD.Recalque_201[indice].Tempo_partida[1] = 0;
+			Mod_MD.Recalque_201[indice].Tempo_partida[2] = 0;
+			Mod_MD.Recalque_201[indice].Tempo_partida[3] = 0;
+			Mod_MD.Recalque_201[indice].Tempo_parada[1] = 0;
+			Mod_MD.Recalque_201[indice].Tempo_parada[2] = 0;
+			Mod_MD.Recalque_201[indice].Tempo_parada[3] = 0;
+			Mod_MD.Recalque_201[indice].End_repetidora = 0;
+			Mod_MD.Recalque_201[indice].Num_repetidoras = 0;
+			int num = 0;
 			checked
 			{
 				do
 				{
-					Mod_MD.Recalque_201[indice].Repetidoras[num] = (HorizontalAlignment)0;
+					Mod_MD.Recalque_201[indice].Repetidoras[num] = 0;
 					num++;
 				}
 				while (num <= 50);
-				this.VScrollBar1.Value = (HorizontalAlignment)0;
+				this.VScrollBar1.Value = 0;
 				this.Numero_motores.Value = 0m;
 			}
 		}
@@ -1902,16 +1902,16 @@ namespace iS800
 			this.Grupo_M1.Enabled = false;
 			this.Grupo_M2.Enabled = false;
 			this.Grupo_M3.Enabled = false;
-			if (Mod_MD.Recalque_201[indice].Quantidade_motores == (DialogResult)1)
+			if (Mod_MD.Recalque_201[indice].Quantidade_motores == 1)
 			{
 				this.Grupo_M1.Enabled = true;
 			}
-			else if (Mod_MD.Recalque_201[indice].Quantidade_motores == (DialogResult)2)
+			else if (Mod_MD.Recalque_201[indice].Quantidade_motores == 2)
 			{
 				this.Grupo_M1.Enabled = true;
 				this.Grupo_M2.Enabled = true;
 			}
-			else if (Mod_MD.Recalque_201[indice].Quantidade_motores == (DialogResult)3)
+			else if (Mod_MD.Recalque_201[indice].Quantidade_motores == 3)
 			{
 				this.Grupo_M1.Enabled = true;
 				this.Grupo_M2.Enabled = true;
@@ -1922,7 +1922,7 @@ namespace iS800
 		// Token: 0x06001CA7 RID: 7335 RVA: 0x003D1BF8 File Offset: 0x003CFFF8
 		public void Atualiza_tela_MD201_repetidora(int indice)
 		{
-			if (Mod_MD.Recalque_201[indice].Hab_repetidora == (DialogResult)21856)
+			if (Mod_MD.Recalque_201[indice].Hab_repetidora == 21856)
 			{
 				this.CheckBox_hab_rep.Checked = true;
 				this.Grupo_end_rep.Enabled = true;
@@ -2104,9 +2104,9 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = Conversions.ToInteger(Operators.AddObject(end_inicial, 1)); i <= (HorizontalAlignment)50; i++)
+				for (int i = Conversions.ToInteger(Operators.AddObject(end_inicial, 1)); i <= 50; i++)
 				{
-					Mod_MD.Recalque_201[Conversions.ToInteger(indice)].Repetidoras[i] = (HorizontalAlignment)0;
+					Mod_MD.Recalque_201[Conversions.ToInteger(indice)].Repetidoras[i] = 0;
 				}
 			}
 		}
@@ -2165,11 +2165,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Hab_repetidora = (HorizontalAlignment)21856;
+				Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Hab_repetidora = 21856;
 			}
 			else
 			{
-				Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Hab_repetidora = (HorizontalAlignment)0;
+				Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Hab_repetidora = 0;
 			}
 			this.Atualiza_tela_MD201_repetidora(Mod_MD.Controle.Estacao);
 		}
@@ -2582,15 +2582,15 @@ namespace iS800
 		{
 			this.OpenFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V201";
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
-			if (this.OpenFileDialog1.ShowDialog() == (DialogResult)1)
+			if (this.OpenFileDialog1.ShowDialog() == 1)
 			{
 				if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 				{
 					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, 500);
-					int num = (HorizontalAlignment)1;
+					int num = 1;
 					Mod_MD.DADOS_EQUIP_MD_201_CONFIG[] recalque_ = Mod_MD.Recalque_201;
 					Mod_MD.DADOS_EQUIP_MD_201_CONFIG[] array = recalque_;
-					int num2 = (HorizontalAlignment)1;
+					int num2 = 1;
 					ValueType valueType = array[num2];
 					FileSystem.FileGet(num, ref valueType, -1L);
 					Mod_MD.DADOS_EQUIP_MD_201_CONFIG[] array2 = recalque_;
@@ -2621,7 +2621,7 @@ namespace iS800
 			Mod_MD.Recalque_201[1].Versao = Geral.Config_geral.Versao;
 			this.SaveFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V201";
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
-			if (this.SaveFileDialog1.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
+			if (this.SaveFileDialog1.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 			{
 				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, 500);
 				FileSystem.FilePut(1, Mod_MD.Recalque_201[1], -1L);

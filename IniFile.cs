@@ -12,11 +12,11 @@ namespace iS800
 	public class IniFile
 	{
 		// Token: 0x06000ECB RID: 3787
-		[DllImport("kernel32.dll", CharSet = 2, EntryPoint = "GetPrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
+		[DllImport("kernel32.dll", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "GetPrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
 		private static extern int GetPrivateProfileString([MarshalAs(34)] ref string AppName, [MarshalAs(34)] ref string KeyName, [MarshalAs(34)] ref string DefVal, StringBuilder RetVal, int Size, [MarshalAs(34)] ref string FileName);
 
 		// Token: 0x06000ECC RID: 3788
-		[DllImport("kernel32.dll", CharSet = 2, EntryPoint = "WritePrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
+		[DllImport("kernel32.dll", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "WritePrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
 		private static extern int WritePrivateProfileString([MarshalAs(34)] ref string AppName, [MarshalAs(34)] ref string KeyName, [MarshalAs(34)] ref string Value, [MarshalAs(34)] ref string FileName);
 
 		// Token: 0x06000ECD RID: 3789 RVA: 0x0022B444 File Offset: 0x00229844
@@ -58,14 +58,14 @@ namespace iS800
 		public object DecodeUTF8(object s)
 		{
 			s = Operators.ConcatenateObject(s, " ");
-			object obj = (HorizontalAlignment)1;
+			object obj = 1;
 			while (Operators.ConditionalCompareObjectLessEqual(obj, Strings.Len(RuntimeHelpers.GetObjectValue(s)), false))
 			{
 				object obj2 = Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(obj), 1));
 				if (Conversions.ToBoolean(Operators.AndObject(obj2, 128)))
 				{
-					object obj3 = (HorizontalAlignment)1;
-					while (Operators.ConditionalCompareObjectLess(Operators.AddObject(obj, obj3), Strings.Len(RuntimeHelpers.GetObjectValue(s)), false) && (Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)), 1)) & 192) == (DialogResult)128)
+					object obj3 = 1;
+					while (Operators.ConditionalCompareObjectLess(Operators.AddObject(obj, obj3), Strings.Len(RuntimeHelpers.GetObjectValue(s)), false) && (Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)), 1)) & 192) == 128)
 					{
 						obj3 = Operators.AddObject(obj3, 1);
 					}
@@ -75,7 +75,7 @@ namespace iS800
 					}
 					else
 					{
-						obj2 = (HorizontalAlignment)191;
+						obj2 = 191;
 					}
 					s = Strings.Left(Conversions.ToString(s), Conversions.ToInteger(Operators.SubtractObject(obj, 1))) + Conversions.ToString(Strings.Chr(Conversions.ToInteger(obj2))) + Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)));
 				}

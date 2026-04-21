@@ -493,7 +493,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(291, 71);
 			groupBox_sistema_leitura2.Size = size;
-			this.GroupBox_sistema_leitura.TabIndex = (HorizontalAlignment)7;
+			this.GroupBox_sistema_leitura.TabIndex = 7;
 			this.GroupBox_sistema_leitura.TabStop = false;
 			this.GroupBox_sistema_leitura.Text = "Sistema de Leitura de Eletrodos";
 			this.CheckBox_hab_eletrodos.AutoSize = true;
@@ -504,7 +504,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_hab_eletrodos2 = this.CheckBox_hab_eletrodos;
 			size = new size(153, 17);
 			checkBox_hab_eletrodos2.Size = size;
-			this.CheckBox_hab_eletrodos.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_hab_eletrodos.TabIndex = 0;
 			this.CheckBox_hab_eletrodos.Text = "Habilita leitura de eletrodos";
 			this.CheckBox_hab_eletrodos.UseVisualStyleBackColor = true;
 			this.GroupBox_operacao.Controls.Add(this.ComboBox_metodo_operacao);
@@ -519,7 +519,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_operacao2 = this.GroupBox_operacao;
 			size = new size(291, 94);
 			groupBox_operacao2.Size = size;
-			this.GroupBox_operacao.TabIndex = (HorizontalAlignment)6;
+			this.GroupBox_operacao.TabIndex = 6;
 			this.GroupBox_operacao.TabStop = false;
 			this.GroupBox_operacao.Text = "Modo de Operação";
 			this.ComboBox_metodo_operacao.FormattingEnabled = true;
@@ -530,7 +530,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_metodo_operacao2 = this.ComboBox_metodo_operacao;
 			size = new size(144, 21);
 			comboBox_metodo_operacao2.Size = size;
-			this.ComboBox_metodo_operacao.TabIndex = (HorizontalAlignment)6;
+			this.ComboBox_metodo_operacao.TabIndex = 6;
 			this.NumericUpDown_intervalo_tx.Enabled = false;
 			global::System.Windows.Forms.Control numericUpDown_intervalo_tx = this.NumericUpDown_intervalo_tx;
 			location = new location(204, 57);
@@ -549,7 +549,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_intervalo_tx3 = this.NumericUpDown_intervalo_tx;
 			size = new size(72, 20);
 			numericUpDown_intervalo_tx3.Size = size;
-			this.NumericUpDown_intervalo_tx.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_intervalo_tx.TabIndex = 1;
 			this.NumericUpDown_intervalo_tx.TextAlign = HorizontalAlignment.Right;
 			this.Label_metodo_operacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_metodo_operacao = this.Label_metodo_operacao;
@@ -559,7 +559,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_metodo_operacao2 = this.Label_metodo_operacao;
 			size = new size(114, 13);
 			label_metodo_operacao2.Size = size;
-			this.Label_metodo_operacao.TabIndex = (HorizontalAlignment)3;
+			this.Label_metodo_operacao.TabIndex = 3;
 			this.Label_metodo_operacao.Text = "Método de Operação :";
 			this.Label_intevalo_tx_pto_pto.AutoSize = true;
 			this.Label_intevalo_tx_pto_pto.Enabled = false;
@@ -570,7 +570,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_intevalo_tx_pto_pto2 = this.Label_intevalo_tx_pto_pto;
 			size = new size(151, 13);
 			label_intevalo_tx_pto_pto2.Size = size;
-			this.Label_intevalo_tx_pto_pto.TabIndex = (HorizontalAlignment)4;
+			this.Label_intevalo_tx_pto_pto.TabIndex = 4;
 			this.Label_intevalo_tx_pto_pto.Text = "Intervalo Tx Ponto à Ponto (s):";
 			this.GroupBox_informacoes.Controls.Add(this.TextBox_equipamento);
 			this.GroupBox_informacoes.Controls.Add(this.Label_equipamento);
@@ -588,7 +588,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_informacoes2 = this.GroupBox_informacoes;
 			size = new size(238, 149);
 			groupBox_informacoes2.Size = size;
-			this.GroupBox_informacoes.TabIndex = (HorizontalAlignment)2;
+			this.GroupBox_informacoes.TabIndex = 2;
 			this.GroupBox_informacoes.TabStop = false;
 			this.GroupBox_informacoes.Text = "Informações";
 			this.TextBox_equipamento.BackColor = global::System.Drawing.Color.Beige;
@@ -600,7 +600,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_equipamento2 = this.TextBox_equipamento;
 			size = new size(103, 20);
 			textBox_equipamento2.Size = size;
-			this.TextBox_equipamento.TabIndex = (HorizontalAlignment)7;
+			this.TextBox_equipamento.TabIndex = 7;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new location(28, 34);
@@ -609,7 +609,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_equipamento2 = this.Label_equipamento;
 			size = new size(75, 13);
 			label_equipamento2.Size = size;
-			this.Label_equipamento.TabIndex = (HorizontalAlignment)6;
+			this.Label_equipamento.TabIndex = 6;
 			this.Label_equipamento.Text = "Equipamento :";
 			this.TextBox_release.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control textBox_release = this.TextBox_release;
@@ -620,7 +620,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_release2 = this.TextBox_release;
 			size = new size(103, 20);
 			textBox_release2.Size = size;
-			this.TextBox_release.TabIndex = (HorizontalAlignment)5;
+			this.TextBox_release.TabIndex = 5;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new location(28, 115);
@@ -629,7 +629,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_release2 = this.Label_release;
 			size = new size(52, 13);
 			label_release2.Size = size;
-			this.Label_release.TabIndex = (HorizontalAlignment)4;
+			this.Label_release.TabIndex = 4;
 			this.Label_release.Text = "Release :";
 			this.TextBox_build.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control textBox_build = this.TextBox_build;
@@ -640,7 +640,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_build2 = this.TextBox_build;
 			size = new size(103, 20);
 			textBox_build2.Size = size;
-			this.TextBox_build.TabIndex = (HorizontalAlignment)3;
+			this.TextBox_build.TabIndex = 3;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new location(28, 88);
@@ -649,7 +649,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_build2 = this.Label_build;
 			size = new size(36, 13);
 			label_build2.Size = size;
-			this.Label_build.TabIndex = (HorizontalAlignment)2;
+			this.Label_build.TabIndex = 2;
 			this.Label_build.Text = "Build :";
 			this.TextBox_versao.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control textBox_versao = this.TextBox_versao;
@@ -660,7 +660,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_versao2 = this.TextBox_versao;
 			size = new size(103, 20);
 			textBox_versao2.Size = size;
-			this.TextBox_versao.TabIndex = (HorizontalAlignment)1;
+			this.TextBox_versao.TabIndex = 1;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new location(28, 61);
@@ -669,7 +669,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_versao2 = this.Label_versao;
 			size = new size(46, 13);
 			label_versao2.Size = size;
-			this.Label_versao.TabIndex = (HorizontalAlignment)0;
+			this.Label_versao.TabIndex = 0;
 			this.Label_versao.Text = "Versão :";
 			this.GroupBox_modelo_simulado.Controls.Add(this.ComboBox_modo_simulado);
 			global::System.Windows.Forms.Control groupBox_modelo_simulado = this.GroupBox_modelo_simulado;
@@ -679,7 +679,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_modelo_simulado2 = this.GroupBox_modelo_simulado;
 			size = new size(291, 84);
 			groupBox_modelo_simulado2.Size = size;
-			this.GroupBox_modelo_simulado.TabIndex = (HorizontalAlignment)0;
+			this.GroupBox_modelo_simulado.TabIndex = 0;
 			this.GroupBox_modelo_simulado.TabStop = false;
 			this.GroupBox_modelo_simulado.Text = "Modelo Simulado";
 			this.ComboBox_modo_simulado.Anchor = (System.Windows.Forms.AnchorStyles)0;
@@ -691,7 +691,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_modo_simulado2 = this.ComboBox_modo_simulado;
 			size = new size(252, 21);
 			comboBox_modo_simulado2.Size = size;
-			this.ComboBox_modo_simulado.TabIndex = (HorizontalAlignment)0;
+			this.ComboBox_modo_simulado.TabIndex = 0;
 			this.GroupBox_comunicacao.Controls.Add(this.NumericUpDown_temp_ptt);
 			this.GroupBox_comunicacao.Controls.Add(this.NumericUpDown_end_mestre);
 			this.GroupBox_comunicacao.Controls.Add(this.NumericUpDown_end_est);
@@ -706,7 +706,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_comunicacao2 = this.GroupBox_comunicacao;
 			size = new size(291, 125);
 			groupBox_comunicacao2.Size = size;
-			this.GroupBox_comunicacao.TabIndex = (HorizontalAlignment)1;
+			this.GroupBox_comunicacao.TabIndex = 1;
 			this.GroupBox_comunicacao.TabStop = false;
 			this.GroupBox_comunicacao.Text = "Parâmetros de Comunicação";
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt = this.NumericUpDown_temp_ptt;
@@ -734,7 +734,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_temp_ptt4 = this.NumericUpDown_temp_ptt;
 			size = new size(72, 20);
 			numericUpDown_temp_ptt4.Size = size;
-			this.NumericUpDown_temp_ptt.TabIndex = (HorizontalAlignment)2;
+			this.NumericUpDown_temp_ptt.TabIndex = 2;
 			this.NumericUpDown_temp_ptt.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt5 = this.NumericUpDown_temp_ptt;
 			num = new decimal(new int[]
@@ -761,7 +761,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_end_mestre3 = this.NumericUpDown_end_mestre;
 			size = new size(72, 20);
 			numericUpDown_end_mestre3.Size = size;
-			this.NumericUpDown_end_mestre.TabIndex = (HorizontalAlignment)0;
+			this.NumericUpDown_end_mestre.TabIndex = 0;
 			this.NumericUpDown_end_mestre.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control numericUpDown_end_est = this.NumericUpDown_end_est;
 			location = new location(204, 57);
@@ -779,7 +779,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_end_est3 = this.NumericUpDown_end_est;
 			size = new size(72, 20);
 			numericUpDown_end_est3.Size = size;
-			this.NumericUpDown_end_est.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_end_est.TabIndex = 1;
 			this.NumericUpDown_end_est.TextAlign = HorizontalAlignment.Right;
 			this.Label_tempo_ptt.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt = this.Label_tempo_ptt;
@@ -789,7 +789,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_ptt2 = this.Label_tempo_ptt;
 			size = new size(140, 13);
 			label_tempo_ptt2.Size = size;
-			this.Label_tempo_ptt.TabIndex = (HorizontalAlignment)5;
+			this.Label_tempo_ptt.TabIndex = 5;
 			this.Label_tempo_ptt.Text = "Tempo Espera de PTT (ms):";
 			this.Label_end_mestre.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre = this.Label_end_mestre;
@@ -799,7 +799,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_mestre2 = this.Label_end_mestre;
 			size = new size(109, 13);
 			label_end_mestre2.Size = size;
-			this.Label_end_mestre.TabIndex = (HorizontalAlignment)3;
+			this.Label_end_mestre.TabIndex = 3;
 			this.Label_end_mestre.Text = "Endereço do Mestre :";
 			this.Label_end_est.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_est = this.Label_end_est;
@@ -809,7 +809,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_est2 = this.Label_end_est;
 			size = new size(116, 13);
 			label_end_est2.Size = size;
-			this.Label_end_est.TabIndex = (HorizontalAlignment)4;
+			this.Label_end_est.TabIndex = 4;
 			this.Label_end_est.Text = "Endereço da Estação :";
 			this.OpenFileDialog_RT_820.FileName = "OpenFileDialog1";
 			this.TabControl_820.Controls.Add(this.TabPage_geral);
@@ -830,11 +830,11 @@ namespace iS800
 			location = new location(10, 66);
 			tabControl_.Location = location;
 			this.TabControl_820.Name = "TabControl_820";
-			this.TabControl_820.SelectedIndex = (HorizontalAlignment)0;
+			this.TabControl_820.SelectedIndex = 0;
 			global::System.Windows.Forms.Control tabControl_2 = this.TabControl_820;
 			size = new size(1404, 678);
 			tabControl_2.Size = size;
-			this.TabControl_820.TabIndex = (HorizontalAlignment)10;
+			this.TabControl_820.TabIndex = 10;
 			this.TabPage_geral.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_geral.Controls.Add(this.GroupBox_descricao_RT820);
 			this.TabPage_geral.Controls.Add(this.GroupBox_parametros_interface_820);
@@ -851,7 +851,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_geral3 = this.TabPage_geral;
 			size = new size(1396, 652);
 			tabPage_geral3.Size = size;
-			this.TabPage_geral.TabIndex = (HorizontalAlignment)0;
+			this.TabPage_geral.TabIndex = 0;
 			this.TabPage_geral.Text = "   Geral   ";
 			this.TabPage_geral.UseVisualStyleBackColor = true;
 			this.GroupBox_descricao_RT820.Controls.Add(this.TextBox_comentarios_RT820);
@@ -868,38 +868,38 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_descricao_RT2 = this.GroupBox_descricao_RT820;
 			size = new size(507, 217);
 			groupBox_descricao_RT2.Size = size;
-			this.GroupBox_descricao_RT820.TabIndex = (HorizontalAlignment)11;
+			this.GroupBox_descricao_RT820.TabIndex = 11;
 			this.GroupBox_descricao_RT820.TabStop = false;
 			this.GroupBox_descricao_RT820.Text = "Descrição";
 			global::System.Windows.Forms.Control textBox_comentarios_RT = this.TextBox_comentarios_RT820;
 			location = new location(26, 98);
 			textBox_comentarios_RT.Location = location;
-			this.TextBox_comentarios_RT820.MaxLength = (HorizontalAlignment)400;
+			this.TextBox_comentarios_RT820.MaxLength = 400;
 			this.TextBox_comentarios_RT820.Multiline = true;
 			this.TextBox_comentarios_RT820.Name = "TextBox_comentarios_RT820";
 			this.TextBox_comentarios_RT820.ScrollBars =(System.Windows.Forms.ScrollBars)2;
 			global::System.Windows.Forms.Control textBox_comentarios_RT2 = this.TextBox_comentarios_RT820;
 			size = new size(454, 101);
 			textBox_comentarios_RT2.Size = size;
-			this.TextBox_comentarios_RT820.TabIndex = (HorizontalAlignment)3;
+			this.TextBox_comentarios_RT820.TabIndex = 3;
 			global::System.Windows.Forms.Control textBox_endereco_RT = this.TextBox_endereco_RT820;
 			location = new location(88, 53);
 			textBox_endereco_RT.Location = location;
-			this.TextBox_endereco_RT820.MaxLength = (HorizontalAlignment)60;
+			this.TextBox_endereco_RT820.MaxLength = 60;
 			this.TextBox_endereco_RT820.Name = "TextBox_endereco_RT820";
 			global::System.Windows.Forms.Control textBox_endereco_RT2 = this.TextBox_endereco_RT820;
 			size = new size(392, 20);
 			textBox_endereco_RT2.Size = size;
-			this.TextBox_endereco_RT820.TabIndex = (HorizontalAlignment)2;
+			this.TextBox_endereco_RT820.TabIndex = 2;
 			global::System.Windows.Forms.Control textBox_nome_RT = this.TextBox_nome_RT820;
 			location = new location(88, 27);
 			textBox_nome_RT.Location = location;
-			this.TextBox_nome_RT820.MaxLength = (HorizontalAlignment)60;
+			this.TextBox_nome_RT820.MaxLength = 60;
 			this.TextBox_nome_RT820.Name = "TextBox_nome_RT820";
 			global::System.Windows.Forms.Control textBox_nome_RT2 = this.TextBox_nome_RT820;
 			size = new size(392, 20);
 			textBox_nome_RT2.Size = size;
-			this.TextBox_nome_RT820.TabIndex = (HorizontalAlignment)1;
+			this.TextBox_nome_RT820.TabIndex = 1;
 			this.Label_comentarios.AutoSize = true;
 			global::System.Windows.Forms.Control label_comentarios = this.Label_comentarios;
 			location = new location(23, 82);
@@ -908,7 +908,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_comentarios2 = this.Label_comentarios;
 			size = new size(71, 13);
 			label_comentarios2.Size = size;
-			this.Label_comentarios.TabIndex = (HorizontalAlignment)0;
+			this.Label_comentarios.TabIndex = 0;
 			this.Label_comentarios.Text = "Comentários :";
 			this.Label_endereco.AutoSize = true;
 			global::System.Windows.Forms.Control label_endereco = this.Label_endereco;
@@ -918,7 +918,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_endereco2 = this.Label_endereco;
 			size = new size(56, 13);
 			label_endereco2.Size = size;
-			this.Label_endereco.TabIndex = (HorizontalAlignment)0;
+			this.Label_endereco.TabIndex = 0;
 			this.Label_endereco.Text = "Endereço:";
 			this.Label_nome.AutoSize = true;
 			global::System.Windows.Forms.Control label_nome = this.Label_nome;
@@ -928,7 +928,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nome2 = this.Label_nome;
 			size = new size(41, 13);
 			label_nome2.Size = size;
-			this.Label_nome.TabIndex = (HorizontalAlignment)0;
+			this.Label_nome.TabIndex = 0;
 			this.Label_nome.Text = "Nome :";
 			global::System.Windows.Forms.Control tb_lixo = this.tb_lixo1;
 			location = new location(197, 151);
@@ -937,7 +937,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo2 = this.tb_lixo1;
 			size = new size(100, 20);
 			tb_lixo2.Size = size;
-			this.tb_lixo1.TabIndex = (HorizontalAlignment)4;
+			this.tb_lixo1.TabIndex = 4;
 			this.GroupBox_parametros_interface_820.Controls.Add(this.Label40);
 			this.GroupBox_parametros_interface_820.Controls.Add(this.Label39);
 			this.GroupBox_parametros_interface_820.Controls.Add(this.ComboBox_baudrate_COM1_820);
@@ -952,7 +952,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_parametros_interface_2 = this.GroupBox_parametros_interface_820;
 			size = new size(300, 162);
 			groupBox_parametros_interface_2.Size = size;
-			this.GroupBox_parametros_interface_820.TabIndex = (HorizontalAlignment)7;
+			this.GroupBox_parametros_interface_820.TabIndex = 7;
 			this.GroupBox_parametros_interface_820.TabStop = false;
 			this.GroupBox_parametros_interface_820.Text = "Parâmetros das Interfaces";
 			this.Label40.AutoSize = true;
@@ -963,7 +963,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label2 = this.Label40;
 			size = new size(76, 13);
 			label2.Size = size;
-			this.Label40.TabIndex = (HorizontalAlignment)10;
+			this.Label40.TabIndex = 10;
 			this.Label40.Text = "Expansão I/O:";
 			this.Label39.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label39;
@@ -973,7 +973,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label4 = this.Label39;
 			size = new size(75, 13);
 			label4.Size = size;
-			this.Label39.TabIndex = (HorizontalAlignment)9;
+			this.Label39.TabIndex = 9;
 			this.Label39.Text = "Comunicação:";
 			this.ComboBox_baudrate_COM1_820.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_baudrate_COM1_ = this.ComboBox_baudrate_COM1_820;
@@ -983,7 +983,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_baudrate_COM1_2 = this.ComboBox_baudrate_COM1_820;
 			size = new size(121, 21);
 			comboBox_baudrate_COM1_2.Size = size;
-			this.ComboBox_baudrate_COM1_820.TabIndex = (HorizontalAlignment)8;
+			this.ComboBox_baudrate_COM1_820.TabIndex = 8;
 			this.Label36.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label36;
 			location = new location(25, 51);
@@ -992,7 +992,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label6 = this.Label36;
 			size = new size(89, 13);
 			label6.Size = size;
-			this.Label36.TabIndex = (HorizontalAlignment)7;
+			this.Label36.TabIndex = 7;
 			this.Label36.Text = "Baudrate COM1 :";
 			this.CheckBox_hab_expansao_IO_820.AutoSize = true;
 			global::System.Windows.Forms.Control checkBox_hab_expansao_IO_ = this.CheckBox_hab_expansao_IO_820;
@@ -1002,7 +1002,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_hab_expansao_IO_2 = this.CheckBox_hab_expansao_IO_820;
 			size = new size(144, 17);
 			checkBox_hab_expansao_IO_2.Size = size;
-			this.CheckBox_hab_expansao_IO_820.TabIndex = (HorizontalAlignment)0;
+			this.CheckBox_hab_expansao_IO_820.TabIndex = 0;
 			this.CheckBox_hab_expansao_IO_820.Text = "Habilita expansão de I/O";
 			this.CheckBox_hab_expansao_IO_820.UseVisualStyleBackColor = true;
 			this.ComboBox_baudrate_COM2_820.FormattingEnabled = true;
@@ -1013,7 +1013,7 @@ namespace iS800
 			global::System.Windows.Forms.Control comboBox_baudrate_COM2_2 = this.ComboBox_baudrate_COM2_820;
 			size = new size(121, 21);
 			comboBox_baudrate_COM2_2.Size = size;
-			this.ComboBox_baudrate_COM2_820.TabIndex = (HorizontalAlignment)6;
+			this.ComboBox_baudrate_COM2_820.TabIndex = 6;
 			this.Label_baudrate_COM2_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_baudrate_COM2_ = this.Label_baudrate_COM2_820;
 			location = new location(25, 72);
@@ -1022,7 +1022,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_baudrate_COM2_2 = this.Label_baudrate_COM2_820;
 			size = new size(89, 13);
 			label_baudrate_COM2_2.Size = size;
-			this.Label_baudrate_COM2_820.TabIndex = (HorizontalAlignment)3;
+			this.Label_baudrate_COM2_820.TabIndex = 3;
 			this.Label_baudrate_COM2_820.Text = "Baudrate COM2 :";
 			this.GroupBox_informacoes_820.Controls.Add(this.Label26);
 			this.GroupBox_informacoes_820.Controls.Add(this.TextBox_equipamento_820);
@@ -1040,7 +1040,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_informacoes_2 = this.GroupBox_informacoes_820;
 			size = new size(507, 113);
 			groupBox_informacoes_2.Size = size;
-			this.GroupBox_informacoes_820.TabIndex = (HorizontalAlignment)2;
+			this.GroupBox_informacoes_820.TabIndex = 2;
 			this.GroupBox_informacoes_820.TabStop = false;
 			this.GroupBox_informacoes_820.Text = "Versão de Software";
 			this.Label26.AutoSize = true;
@@ -1052,7 +1052,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label8 = this.Label26;
 			size = new size(20, 15);
 			label8.Size = size;
-			this.Label26.TabIndex = (HorizontalAlignment)26;
+			this.Label26.TabIndex = 26;
 			this.Label26.Text = "RT";
 			this.TextBox_equipamento_820.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_equipamento_820.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -1064,7 +1064,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_equipamento_2 = this.TextBox_equipamento_820;
 			size = new size(47, 20);
 			textBox_equipamento_2.Size = size;
-			this.TextBox_equipamento_820.TabIndex = (HorizontalAlignment)25;
+			this.TextBox_equipamento_820.TabIndex = 25;
 			this.TextBox_equipamento_820.TabStop = false;
 			this.TextBox_equipamento_820.TextAlign = HorizontalAlignment.Right;
 			this.Label18.AutoSize = true;
@@ -1075,7 +1075,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label10 = this.Label18;
 			size = new size(69, 13);
 			label10.Size = size;
-			this.Label18.TabIndex = (HorizontalAlignment)24;
+			this.Label18.TabIndex = 24;
 			this.Label18.Text = "Equipamento";
 			this.TextBox_release_820.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_release_820.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -1087,7 +1087,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_release_2 = this.TextBox_release_820;
 			size = new size(47, 20);
 			textBox_release_2.Size = size;
-			this.TextBox_release_820.TabIndex = (HorizontalAlignment)23;
+			this.TextBox_release_820.TabIndex = 23;
 			this.TextBox_release_820.TabStop = false;
 			this.TextBox_release_820.TextAlign = HorizontalAlignment.Right;
 			this.Label19.AutoSize = true;
@@ -1098,7 +1098,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label12 = this.Label19;
 			size = new size(46, 13);
 			label12.Size = size;
-			this.Label19.TabIndex = (HorizontalAlignment)22;
+			this.Label19.TabIndex = 22;
 			this.Label19.Text = "Release";
 			this.TextBox_build_820.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_build_820.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -1110,7 +1110,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_build_2 = this.TextBox_build_820;
 			size = new size(47, 20);
 			textBox_build_2.Size = size;
-			this.TextBox_build_820.TabIndex = (HorizontalAlignment)21;
+			this.TextBox_build_820.TabIndex = 21;
 			this.TextBox_build_820.TabStop = false;
 			this.TextBox_build_820.TextAlign = HorizontalAlignment.Right;
 			this.Label20.AutoSize = true;
@@ -1121,7 +1121,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label14 = this.Label20;
 			size = new size(30, 13);
 			label14.Size = size;
-			this.Label20.TabIndex = (HorizontalAlignment)20;
+			this.Label20.TabIndex = 20;
 			this.Label20.Text = "Build";
 			this.TextBox_versao_820.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_versao_820.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -1133,7 +1133,7 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_versao_2 = this.TextBox_versao_820;
 			size = new size(47, 20);
 			textBox_versao_2.Size = size;
-			this.TextBox_versao_820.TabIndex = (HorizontalAlignment)19;
+			this.TextBox_versao_820.TabIndex = 19;
 			this.TextBox_versao_820.TabStop = false;
 			this.TextBox_versao_820.TextAlign = HorizontalAlignment.Right;
 			this.Label21.AutoSize = true;
@@ -1144,7 +1144,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label16 = this.Label21;
 			size = new size(40, 13);
 			label16.Size = size;
-			this.Label21.TabIndex = (HorizontalAlignment)18;
+			this.Label21.TabIndex = 18;
 			this.Label21.Text = "Versão";
 			this.GroupBox_comunicacao_820.Controls.Add(this.NumericUpDown_end2_est_820);
 			this.GroupBox_comunicacao_820.Controls.Add(this.Label38);
@@ -1163,7 +1163,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_comunicacao_2 = this.GroupBox_comunicacao_820;
 			size = new size(291, 160);
 			groupBox_comunicacao_2.Size = size;
-			this.GroupBox_comunicacao_820.TabIndex = (HorizontalAlignment)1;
+			this.GroupBox_comunicacao_820.TabIndex = 1;
 			this.GroupBox_comunicacao_820.TabStop = false;
 			this.GroupBox_comunicacao_820.Text = "Parâmetros de Comunicação";
 			global::System.Windows.Forms.Control numericUpDown_end2_est_ = this.NumericUpDown_end2_est_820;
@@ -1182,7 +1182,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_end2_est_3 = this.NumericUpDown_end2_est_820;
 			size = new size(55, 20);
 			numericUpDown_end2_est_3.Size = size;
-			this.NumericUpDown_end2_est_820.TabIndex = (HorizontalAlignment)9;
+			this.NumericUpDown_end2_est_820.TabIndex = 9;
 			this.NumericUpDown_end2_est_820.TextAlign = HorizontalAlignment.Right;
 			this.Label38.AutoSize = true;
 			global::System.Windows.Forms.Control label17 = this.Label38;
@@ -1192,7 +1192,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label18 = this.Label38;
 			size = new size(129, 13);
 			label18.Size = size;
-			this.Label38.TabIndex = (HorizontalAlignment)8;
+			this.Label38.TabIndex = 8;
 			this.Label38.Text = "2° Endereço da Estação :";
 			global::System.Windows.Forms.Control nud_tempoforaar = this.nud_tempoforaar;
 			location = new location(221, 131);
@@ -1201,7 +1201,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_tempoforaar2 = this.nud_tempoforaar;
 			size = new size(55, 20);
 			nud_tempoforaar2.Size = size;
-			this.nud_tempoforaar.TabIndex = (HorizontalAlignment)7;
+			this.nud_tempoforaar.TabIndex = 7;
 			this.nud_tempoforaar.TextAlign = HorizontalAlignment.Right;
 			this.Label30.AutoSize = true;
 			global::System.Windows.Forms.Control label19 = this.Label30;
@@ -1211,7 +1211,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label20 = this.Label30;
 			size = new size(196, 13);
 			label20.Size = size;
-			this.Label30.TabIndex = (HorizontalAlignment)6;
+			this.Label30.TabIndex = 6;
 			this.Label30.Text = "Tempo para assumir como fora do ar (s):";
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_ = this.NumericUpDown_temp_ptt_820;
 			num = new decimal(new int[]
@@ -1247,7 +1247,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_temp_ptt_5 = this.NumericUpDown_temp_ptt_820;
 			size = new size(55, 20);
 			numericUpDown_temp_ptt_5.Size = size;
-			this.NumericUpDown_temp_ptt_820.TabIndex = (HorizontalAlignment)2;
+			this.NumericUpDown_temp_ptt_820.TabIndex = 2;
 			this.NumericUpDown_temp_ptt_820.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_6 = this.NumericUpDown_temp_ptt_820;
 			num = new decimal(new int[]
@@ -1274,7 +1274,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_end_mestre_3 = this.NumericUpDown_end_mestre_820;
 			size = new size(55, 20);
 			numericUpDown_end_mestre_3.Size = size;
-			this.NumericUpDown_end_mestre_820.TabIndex = (HorizontalAlignment)0;
+			this.NumericUpDown_end_mestre_820.TabIndex = 0;
 			this.NumericUpDown_end_mestre_820.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control numericUpDown_end1_est_ = this.NumericUpDown_end1_est_820;
 			location = new location(221, 47);
@@ -1292,7 +1292,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_end1_est_3 = this.NumericUpDown_end1_est_820;
 			size = new size(55, 20);
 			numericUpDown_end1_est_3.Size = size;
-			this.NumericUpDown_end1_est_820.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_end1_est_820.TabIndex = 1;
 			this.NumericUpDown_end1_est_820.TextAlign = HorizontalAlignment.Right;
 			this.Label_tempo_ptt_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt_ = this.Label_tempo_ptt_820;
@@ -1302,7 +1302,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_ptt_2 = this.Label_tempo_ptt_820;
 			size = new size(154, 13);
 			label_tempo_ptt_2.Size = size;
-			this.Label_tempo_ptt_820.TabIndex = (HorizontalAlignment)5;
+			this.Label_tempo_ptt_820.TabIndex = 5;
 			this.Label_tempo_ptt_820.Text = "Tempo de espera de PTT (ms):";
 			this.Label_end_mestre_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre_ = this.Label_end_mestre_820;
@@ -1312,7 +1312,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_mestre_2 = this.Label_end_mestre_820;
 			size = new size(109, 13);
 			label_end_mestre_2.Size = size;
-			this.Label_end_mestre_820.TabIndex = (HorizontalAlignment)3;
+			this.Label_end_mestre_820.TabIndex = 3;
 			this.Label_end_mestre_820.Text = "Endereço do Mestre :";
 			this.Label_end_est_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_est_ = this.Label_end_est_820;
@@ -1322,7 +1322,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_est_2 = this.Label_end_est_820;
 			size = new size(129, 13);
 			label_end_est_2.Size = size;
-			this.Label_end_est_820.TabIndex = (HorizontalAlignment)4;
+			this.Label_end_est_820.TabIndex = 4;
 			this.Label_end_est_820.Text = "1° Endereço da Estação :";
 			this.TabPage_controle.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_controle.Controls.Add(this.GroupBox_Agrupamento_820);
@@ -1337,7 +1337,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_controle3 = this.TabPage_controle;
 			size = new size(1396, 652);
 			tabPage_controle3.Size = size;
-			this.TabPage_controle.TabIndex = (HorizontalAlignment)7;
+			this.TabPage_controle.TabIndex = 7;
 			this.TabPage_controle.Text = "   Controles   ";
 			this.TabPage_controle.UseVisualStyleBackColor = true;
 			this.GroupBox_Agrupamento_820.Controls.Add(this.DataGridView_grupos_820);
@@ -1348,14 +1348,14 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_Agrupamento_2 = this.GroupBox_Agrupamento_820;
 			size = new size(455, 157);
 			groupBox_Agrupamento_2.Size = size;
-			this.GroupBox_Agrupamento_820.TabIndex = (HorizontalAlignment)1;
+			this.GroupBox_Agrupamento_820.TabIndex = 1;
 			this.GroupBox_Agrupamento_820.TabStop = false;
 			this.GroupBox_Agrupamento_820.Text = "Grupos";
 			this.DataGridView_grupos_820.AllowUserToAddRows = false;
 			this.DataGridView_grupos_820.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_grupos_820.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
-			this.DataGridView_grupos_820.CellBorderStyle = (HorizontalAlignment)4;
+			this.DataGridView_grupos_820.CellBorderStyle = 4;
 			dataGridViewCellStyle2.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1364,7 +1364,7 @@ namespace iS800
 			dataGridViewCellStyle2.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle2.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_grupos_820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.DataGridView_grupos_820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_grupos_820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle3.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1377,7 +1377,7 @@ namespace iS800
 			location = new location(11, 19);
 			dataGridView_grupos_.Location = location;
 			this.DataGridView_grupos_820.Name = "DataGridView_grupos_820";
-			this.DataGridView_grupos_820.RowHeadersBorderStyle = (HorizontalAlignment)1;
+			this.DataGridView_grupos_820.RowHeadersBorderStyle = 1;
 			dataGridViewCellStyle4.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1390,7 +1390,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_grupos_2 = this.DataGridView_grupos_820;
 			size = new size(429, 124);
 			dataGridView_grupos_2.Size = size;
-			this.DataGridView_grupos_820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_grupos_820.TabIndex = 0;
 			this.GroupBox_controle_820.Controls.Add(this.DataGridView_processo_820);
 			this.GroupBox_controle_820.Controls.Add(this.tb_lixo2);
 			global::System.Windows.Forms.Control groupBox_controle_ = this.GroupBox_controle_820;
@@ -1400,14 +1400,14 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_controle_2 = this.GroupBox_controle_820;
 			size = new size(1384, 282);
 			groupBox_controle_2.Size = size;
-			this.GroupBox_controle_820.TabIndex = (HorizontalAlignment)8;
+			this.GroupBox_controle_820.TabIndex = 8;
 			this.GroupBox_controle_820.TabStop = false;
 			this.GroupBox_controle_820.Text = "Configuração de Controle";
 			this.DataGridView_processo_820.AllowUserToAddRows = false;
 			this.DataGridView_processo_820.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle5.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_processo_820.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-			this.DataGridView_processo_820.CellBorderStyle = (HorizontalAlignment)4;
+			this.DataGridView_processo_820.CellBorderStyle = 4;
 			dataGridViewCellStyle6.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle6.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle6.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1416,7 +1416,7 @@ namespace iS800
 			dataGridViewCellStyle6.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle6.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_processo_820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-			this.DataGridView_processo_820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_processo_820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle7.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle7.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle7.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1429,7 +1429,7 @@ namespace iS800
 			location = new location(6, 19);
 			dataGridView_processo_.Location = location;
 			this.DataGridView_processo_820.Name = "DataGridView_processo_820";
-			this.DataGridView_processo_820.RowHeadersBorderStyle = (HorizontalAlignment)1;
+			this.DataGridView_processo_820.RowHeadersBorderStyle = 1;
 			dataGridViewCellStyle8.Alignment =(System.Windows.Forms.HorizontalAlignment)1;
 			dataGridViewCellStyle8.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle8.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1442,7 +1442,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_processo_2 = this.DataGridView_processo_820;
 			size = new size(1372, 239);
 			dataGridView_processo_2.Size = size;
-			this.DataGridView_processo_820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_processo_820.TabIndex = 0;
 			global::System.Windows.Forms.Control tb_lixo3 = this.tb_lixo2;
 			location = new location(444, 118);
 			tb_lixo3.Location = location;
@@ -1450,7 +1450,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo4 = this.tb_lixo2;
 			size = new size(100, 20);
 			tb_lixo4.Size = size;
-			this.tb_lixo2.TabIndex = (HorizontalAlignment)1;
+			this.tb_lixo2.TabIndex = 1;
 			this.TabPage_EA.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_EA.Controls.Add(this.GroupBox_parametros_EA_820);
 			this.TabPage_EA.Controls.Add(this.GroupBox_EA_820);
@@ -1461,7 +1461,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_EA2 = this.TabPage_EA;
 			size = new size(1396, 652);
 			tabPage_EA2.Size = size;
-			this.TabPage_EA.TabIndex = (HorizontalAlignment)6;
+			this.TabPage_EA.TabIndex = 6;
 			this.TabPage_EA.Text = "   Entradas Analógicas   ";
 			this.TabPage_EA.UseVisualStyleBackColor = true;
 			this.GroupBox_parametros_EA_820.Controls.Add(this.DataGridView_parametros_EA_820);
@@ -1473,14 +1473,14 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_parametros_EA_2 = this.GroupBox_parametros_EA_820;
 			size = new size(373, 407);
 			groupBox_parametros_EA_2.Size = size;
-			this.GroupBox_parametros_EA_820.TabIndex = (HorizontalAlignment)7;
+			this.GroupBox_parametros_EA_820.TabIndex = 7;
 			this.GroupBox_parametros_EA_820.TabStop = false;
 			this.GroupBox_parametros_EA_820.Text = "Escalas";
 			this.DataGridView_parametros_EA_820.AllowUserToAddRows = false;
 			this.DataGridView_parametros_EA_820.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle9.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_parametros_EA_820.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-			this.DataGridView_parametros_EA_820.CellBorderStyle = (HorizontalAlignment)4;
+			this.DataGridView_parametros_EA_820.CellBorderStyle = 4;
 			dataGridViewCellStyle10.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle10.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle10.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1489,7 +1489,7 @@ namespace iS800
 			dataGridViewCellStyle10.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle10.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_parametros_EA_820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-			this.DataGridView_parametros_EA_820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_parametros_EA_820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle11.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle11.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle11.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1514,7 +1514,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_parametros_EA_2 = this.DataGridView_parametros_EA_820;
 			size = new size(342, 375);
 			dataGridView_parametros_EA_2.Size = size;
-			this.DataGridView_parametros_EA_820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_parametros_EA_820.TabIndex = 0;
 			global::System.Windows.Forms.Control tb_lixo5 = this.tb_lixo3;
 			location = new location(127, 125);
 			tb_lixo5.Location = location;
@@ -1522,7 +1522,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo6 = this.tb_lixo3;
 			size = new size(100, 20);
 			tb_lixo6.Size = size;
-			this.tb_lixo3.TabIndex = (HorizontalAlignment)1;
+			this.tb_lixo3.TabIndex = 1;
 			this.GroupBox_EA_820.Controls.Add(this.NumericUpDown_intervalo_filtro_820);
 			this.GroupBox_EA_820.Controls.Add(this.NumericUpDown_tamanho_filtro_820);
 			this.GroupBox_EA_820.Controls.Add(this.Label_intervalo_filtro_820);
@@ -1534,7 +1534,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_EA_2 = this.GroupBox_EA_820;
 			size = new size(216, 93);
 			groupBox_EA_2.Size = size;
-			this.GroupBox_EA_820.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox_EA_820.TabIndex = 4;
 			this.GroupBox_EA_820.TabStop = false;
 			this.GroupBox_EA_820.Text = "Filtro";
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_filtro_ = this.NumericUpDown_intervalo_filtro_820;
@@ -1562,7 +1562,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_intervalo_filtro_4 = this.NumericUpDown_intervalo_filtro_820;
 			size = new size(74, 20);
 			numericUpDown_intervalo_filtro_4.Size = size;
-			this.NumericUpDown_intervalo_filtro_820.TabIndex = (HorizontalAlignment)18;
+			this.NumericUpDown_intervalo_filtro_820.TabIndex = 18;
 			this.NumericUpDown_intervalo_filtro_820.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control numericUpDown_tamanho_filtro_ = this.NumericUpDown_tamanho_filtro_820;
 			location = new location(115, 53);
@@ -1580,7 +1580,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_tamanho_filtro_3 = this.NumericUpDown_tamanho_filtro_820;
 			size = new size(74, 20);
 			numericUpDown_tamanho_filtro_3.Size = size;
-			this.NumericUpDown_tamanho_filtro_820.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_tamanho_filtro_820.TabIndex = 1;
 			this.NumericUpDown_tamanho_filtro_820.TextAlign = HorizontalAlignment.Center;
 			this.Label_intervalo_filtro_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_intervalo_filtro_ = this.Label_intervalo_filtro_820;
@@ -1590,7 +1590,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_intervalo_filtro_2 = this.Label_intervalo_filtro_820;
 			size = new size(76, 13);
 			label_intervalo_filtro_2.Size = size;
-			this.Label_intervalo_filtro_820.TabIndex = (HorizontalAlignment)14;
+			this.Label_intervalo_filtro_820.TabIndex = 14;
 			this.Label_intervalo_filtro_820.Text = "Intervalo (ms) :";
 			this.Label_tamanho_filtro_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_tamanho_filtro_ = this.Label_tamanho_filtro_820;
@@ -1600,7 +1600,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tamanho_filtro_2 = this.Label_tamanho_filtro_820;
 			size = new size(56, 13);
 			label_tamanho_filtro_2.Size = size;
-			this.Label_tamanho_filtro_820.TabIndex = (HorizontalAlignment)16;
+			this.Label_tamanho_filtro_820.TabIndex = 16;
 			this.Label_tamanho_filtro_820.Text = "Amostras :";
 			this.TabPage_SA.Controls.Add(this.GroupBox13);
 			this.TabPage_SA.Controls.Add(this.GroupBox15);
@@ -1614,7 +1614,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_SA3 = this.TabPage_SA;
 			size = new size(1396, 652);
 			tabPage_SA3.Size = size;
-			this.TabPage_SA.TabIndex = (HorizontalAlignment)14;
+			this.TabPage_SA.TabIndex = 14;
 			this.TabPage_SA.Text = "   Saídas Analógicas  ";
 			this.TabPage_SA.UseVisualStyleBackColor = true;
 			this.GroupBox13.Controls.Add(this.GroupBox18);
@@ -1626,7 +1626,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox13;
 			size = new size(338, 158);
 			groupBox2.Size = size;
-			this.GroupBox13.TabIndex = (HorizontalAlignment)6;
+			this.GroupBox13.TabIndex = 6;
 			this.GroupBox13.TabStop = false;
 			this.GroupBox13.Text = "Saída Analógica 2:";
 			this.GroupBox18.Controls.Add(this.cb_SA_2);
@@ -1637,7 +1637,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox18;
 			size = new size(318, 51);
 			groupBox4.Size = size;
-			this.GroupBox18.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox18.TabIndex = 4;
 			this.GroupBox18.TabStop = false;
 			this.GroupBox18.Text = "Origem:";
 			this.cb_SA_2.FormattingEnabled = true;
@@ -1648,7 +1648,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_SA_2 = this.cb_SA_2;
 			size = new size(176, 21);
 			cb_SA_2.Size = size;
-			this.cb_SA_2.TabIndex = (HorizontalAlignment)9;
+			this.cb_SA_2.TabIndex = 9;
 			this.GroupBox14.Controls.Add(this.nud_ganho2);
 			this.GroupBox14.Controls.Add(this.Label84);
 			this.GroupBox14.Controls.Add(this.nud_zero2);
@@ -1660,7 +1660,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox6 = this.GroupBox14;
 			size = new size(319, 64);
 			groupBox6.Size = size;
-			this.GroupBox14.TabIndex = (HorizontalAlignment)2;
+			this.GroupBox14.TabIndex = 2;
 			this.GroupBox14.TabStop = false;
 			this.GroupBox14.Text = "Limites em contagens (0-4000)";
 			global::System.Windows.Forms.Control nud_ganho = this.nud_ganho2;
@@ -1670,7 +1670,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_ganho2 = this.nud_ganho2;
 			size = new size(57, 20);
 			nud_ganho2.Size = size;
-			this.nud_ganho2.TabIndex = (HorizontalAlignment)3;
+			this.nud_ganho2.TabIndex = 3;
 			this.Label84.AutoSize = true;
 			global::System.Windows.Forms.Control label21 = this.Label84;
 			location = new location(169, 32);
@@ -1679,7 +1679,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label22 = this.Label84;
 			size = new size(88, 13);
 			label22.Size = size;
-			this.Label84.TabIndex = (HorizontalAlignment)2;
+			this.Label84.TabIndex = 2;
 			this.Label84.Text = "Valor para 20mA:";
 			global::System.Windows.Forms.Control nud_zero = this.nud_zero2;
 			location = new location(94, 30);
@@ -1688,7 +1688,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_zero2 = this.nud_zero2;
 			size = new size(57, 20);
 			nud_zero2.Size = size;
-			this.nud_zero2.TabIndex = (HorizontalAlignment)1;
+			this.nud_zero2.TabIndex = 1;
 			this.Label85.AutoSize = true;
 			global::System.Windows.Forms.Control label23 = this.Label85;
 			location = new location(6, 32);
@@ -1697,7 +1697,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label24 = this.Label85;
 			size = new size(82, 13);
 			label24.Size = size;
-			this.Label85.TabIndex = (HorizontalAlignment)0;
+			this.Label85.TabIndex = 0;
 			this.Label85.Text = "Valor para 4mA:";
 			this.GroupBox15.Controls.Add(this.GroupBox17);
 			this.GroupBox15.Controls.Add(this.GroupBox16);
@@ -1708,7 +1708,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox8 = this.GroupBox15;
 			size = new size(338, 158);
 			groupBox8.Size = size;
-			this.GroupBox15.TabIndex = (HorizontalAlignment)5;
+			this.GroupBox15.TabIndex = 5;
 			this.GroupBox15.TabStop = false;
 			this.GroupBox15.Text = "Saída Analógica 1:";
 			this.GroupBox17.Controls.Add(this.cb_SA_1);
@@ -1719,7 +1719,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox10 = this.GroupBox17;
 			size = new size(318, 51);
 			groupBox10.Size = size;
-			this.GroupBox17.TabIndex = (HorizontalAlignment)3;
+			this.GroupBox17.TabIndex = 3;
 			this.GroupBox17.TabStop = false;
 			this.GroupBox17.Text = "Origem:";
 			this.cb_SA_1.FormattingEnabled = true;
@@ -1730,7 +1730,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_SA_4 = this.cb_SA_1;
 			size = new size(178, 21);
 			cb_SA_4.Size = size;
-			this.cb_SA_1.TabIndex = (HorizontalAlignment)9;
+			this.cb_SA_1.TabIndex = 9;
 			this.GroupBox16.Controls.Add(this.nud_ganho1);
 			this.GroupBox16.Controls.Add(this.Label86);
 			this.GroupBox16.Controls.Add(this.nud_zero1);
@@ -1742,7 +1742,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox12 = this.GroupBox16;
 			size = new size(319, 64);
 			groupBox12.Size = size;
-			this.GroupBox16.TabIndex = (HorizontalAlignment)2;
+			this.GroupBox16.TabIndex = 2;
 			this.GroupBox16.TabStop = false;
 			this.GroupBox16.Text = "Limites em contagens (0-4000)";
 			global::System.Windows.Forms.Control nud_ganho3 = this.nud_ganho1;
@@ -1752,7 +1752,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_ganho4 = this.nud_ganho1;
 			size = new size(57, 20);
 			nud_ganho4.Size = size;
-			this.nud_ganho1.TabIndex = (HorizontalAlignment)3;
+			this.nud_ganho1.TabIndex = 3;
 			this.Label86.AutoSize = true;
 			global::System.Windows.Forms.Control label25 = this.Label86;
 			location = new location(169, 32);
@@ -1761,7 +1761,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label26 = this.Label86;
 			size = new size(88, 13);
 			label26.Size = size;
-			this.Label86.TabIndex = (HorizontalAlignment)2;
+			this.Label86.TabIndex = 2;
 			this.Label86.Text = "Valor para 20mA:";
 			global::System.Windows.Forms.Control nud_zero3 = this.nud_zero1;
 			location = new location(94, 30);
@@ -1770,7 +1770,7 @@ namespace iS800
 			global::System.Windows.Forms.Control nud_zero4 = this.nud_zero1;
 			size = new size(57, 20);
 			nud_zero4.Size = size;
-			this.nud_zero1.TabIndex = (HorizontalAlignment)1;
+			this.nud_zero1.TabIndex = 1;
 			this.Label87.AutoSize = true;
 			global::System.Windows.Forms.Control label27 = this.Label87;
 			location = new location(6, 32);
@@ -1779,7 +1779,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label28 = this.Label87;
 			size = new size(82, 13);
 			label28.Size = size;
-			this.Label87.TabIndex = (HorizontalAlignment)0;
+			this.Label87.TabIndex = 0;
 			this.Label87.Text = "Valor para 4mA:";
 			this.TabPage_ED.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_ED.Controls.Add(this.GroupBox_ED_820);
@@ -1790,7 +1790,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_ED2 = this.TabPage_ED;
 			size = new size(1396, 652);
 			tabPage_ED2.Size = size;
-			this.TabPage_ED.TabIndex = (HorizontalAlignment)4;
+			this.TabPage_ED.TabIndex = 4;
 			this.TabPage_ED.Text = "   Entradas Digitais   ";
 			this.TabPage_ED.UseVisualStyleBackColor = true;
 			this.GroupBox_ED_820.Controls.Add(this.DataGridView_RT820_ED);
@@ -1802,7 +1802,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_ED_2 = this.GroupBox_ED_820;
 			size = new size(314, 237);
 			groupBox_ED_2.Size = size;
-			this.GroupBox_ED_820.TabIndex = (HorizontalAlignment)0;
+			this.GroupBox_ED_820.TabIndex = 0;
 			this.GroupBox_ED_820.TabStop = false;
 			this.GroupBox_ED_820.Text = "Entradas Digitais";
 			this.DataGridView_RT820_ED.AllowUserToAddRows = false;
@@ -1820,7 +1820,7 @@ namespace iS800
 			dataGridViewCellStyle14.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle14.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_RT820_ED.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-			this.DataGridView_RT820_ED.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_RT820_ED.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle15.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle15.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle15.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1845,7 +1845,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_RT820_ED2 = this.DataGridView_RT820_ED;
 			size = new size(281, 198);
 			dataGridView_RT820_ED2.Size = size;
-			this.DataGridView_RT820_ED.TabIndex = (HorizontalAlignment)16;
+			this.DataGridView_RT820_ED.TabIndex = 16;
 			global::System.Windows.Forms.Control tb_lixo7 = this.tb_lixo4;
 			location = new location(121, 140);
 			tb_lixo7.Location = location;
@@ -1853,7 +1853,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo8 = this.tb_lixo4;
 			size = new size(100, 20);
 			tb_lixo8.Size = size;
-			this.tb_lixo4.TabIndex = (HorizontalAlignment)17;
+			this.tb_lixo4.TabIndex = 17;
 			this.TabPage_setpoints.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_setpoints.Controls.Add(this.GroupBox8);
 			this.TabPage_setpoints.Controls.Add(this.GroupBox2);
@@ -1865,7 +1865,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_setpoints2 = this.TabPage_setpoints;
 			size = new size(1396, 652);
 			tabPage_setpoints2.Size = size;
-			this.TabPage_setpoints.TabIndex = (HorizontalAlignment)2;
+			this.TabPage_setpoints.TabIndex = 2;
 			this.TabPage_setpoints.Text = "   Setpoints   ";
 			this.TabPage_setpoints.UseVisualStyleBackColor = true;
 			this.GroupBox8.Controls.Add(this.ckb_tratamento_setpoint);
@@ -1876,7 +1876,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox14 = this.GroupBox8;
 			size = new size(673, 55);
 			groupBox14.Size = size;
-			this.GroupBox8.TabIndex = (HorizontalAlignment)3;
+			this.GroupBox8.TabIndex = 3;
 			this.GroupBox8.TabStop = false;
 			this.GroupBox8.Text = "Tratamento de Valores";
 			this.ckb_tratamento_setpoint.AutoSize = true;
@@ -1887,7 +1887,7 @@ namespace iS800
 			global::System.Windows.Forms.Control ckb_tratamento_setpoint2 = this.ckb_tratamento_setpoint;
 			size = new size(449, 17);
 			ckb_tratamento_setpoint2.Size = size;
-			this.ckb_tratamento_setpoint.TabIndex = (HorizontalAlignment)0;
+			this.ckb_tratamento_setpoint.TabIndex = 0;
 			this.ckb_tratamento_setpoint.Text = "Trata valores de Alto, Baixo, Bloqueio e Liberação como percentual em vez de contagens";
 			this.ckb_tratamento_setpoint.UseVisualStyleBackColor = true;
 			this.GroupBox2.Controls.Add(this.Label37);
@@ -1900,7 +1900,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox16 = this.GroupBox2;
 			size = new size(476, 625);
 			groupBox16.Size = size;
-			this.GroupBox2.TabIndex = (HorizontalAlignment)2;
+			this.GroupBox2.TabIndex = 2;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Setpoints por Horário 8 Controles com 10 Faixas";
 			this.Label37.AutoSize = true;
@@ -1912,7 +1912,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label30 = this.Label37;
 			size = new size(388, 13);
 			label30.Size = size;
-			this.Label37.TabIndex = (HorizontalAlignment)64;
+			this.Label37.TabIndex = 64;
 			this.Label37.Text = "Observação II: O relógio interno da placa precisa estar corretamente configurado";
 			this.Label73.AutoSize = true;
 			this.Label73.ForeColor = global::System.Drawing.Color.Red;
@@ -1923,14 +1923,14 @@ namespace iS800
 			global::System.Windows.Forms.Control label32 = this.Label73;
 			size = new size(400, 13);
 			label32.Size = size;
-			this.Label73.TabIndex = (HorizontalAlignment)63;
+			this.Label73.TabIndex = 63;
 			this.Label73.Text = "Observação I: Funcionalidade disponível somente a partir da versão RT 820 / 3.60";
 			this.dgv_sph.AllowUserToAddRows = false;
 			this.dgv_sph.AllowUserToDeleteRows = false;
 			this.dgv_sph.AllowUserToOrderColumns = true;
 			this.dgv_sph.AllowUserToResizeColumns = false;
 			this.dgv_sph.AllowUserToResizeRows = false;
-			this.dgv_sph.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_sph.ColumnHeadersHeightSizeMode = 2;
 			this.dgv_sph.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.col_sph_horario,
@@ -1944,39 +1944,39 @@ namespace iS800
 			location = new location(15, 17);
 			dgv_sph.Location = location;
 			this.dgv_sph.Name = "dgv_sph";
-			this.dgv_sph.RowHeadersWidth = (HorizontalAlignment)75;
+			this.dgv_sph.RowHeadersWidth = 75;
 			global::System.Windows.Forms.Control dgv_sph2 = this.dgv_sph;
 			size = new size(446, 375);
 			dgv_sph2.Size = size;
-			this.dgv_sph.TabIndex = (HorizontalAlignment)0;
+			this.dgv_sph.TabIndex = 0;
 			this.col_sph_horario.HeaderText = "Horário";
-			this.col_sph_horario.MaxInputLength = (HorizontalAlignment)2;
+			this.col_sph_horario.MaxInputLength = 2;
 			this.col_sph_horario.Name = "col_sph_horario";
 			this.col_sph_horario.ReadOnly = true;
-			this.col_sph_horario.Width = (HorizontalAlignment)50;
+			this.col_sph_horario.Width = 50;
 			this.col_sph_ativa.HeaderText = "Ativar";
 			this.col_sph_ativa.Name = "col_sph_ativa";
-			this.col_sph_ativa.Width = (HorizontalAlignment)50;
+			this.col_sph_ativa.Width = 50;
 			this.col_sph_hora.HeaderText = "Hora";
-			this.col_sph_hora.MaxInputLength = (HorizontalAlignment)2;
+			this.col_sph_hora.MaxInputLength = 2;
 			this.col_sph_hora.Name = "col_sph_hora";
-			this.col_sph_hora.Resizable = (HorizontalAlignment)1;
-			this.col_sph_hora.SortMode = (HorizontalAlignment)0;
-			this.col_sph_hora.Width = (HorizontalAlignment)50;
+			this.col_sph_hora.Resizable = 1;
+			this.col_sph_hora.SortMode = 0;
+			this.col_sph_hora.Width = 50;
 			this.col_sph_minuto.HeaderText = "Minuto";
-			this.col_sph_minuto.MaxInputLength = (HorizontalAlignment)2;
+			this.col_sph_minuto.MaxInputLength = 2;
 			this.col_sph_minuto.Name = "col_sph_minuto";
-			this.col_sph_minuto.Resizable = (HorizontalAlignment)1;
-			this.col_sph_minuto.SortMode = (HorizontalAlignment)0;
-			this.col_sph_minuto.Width = (HorizontalAlignment)50;
+			this.col_sph_minuto.Resizable = 1;
+			this.col_sph_minuto.SortMode = 0;
+			this.col_sph_minuto.Width = 50;
 			this.col_sph_alto.HeaderText = "Alto";
-			this.col_sph_alto.MaxInputLength = (HorizontalAlignment)4;
+			this.col_sph_alto.MaxInputLength = 4;
 			this.col_sph_alto.Name = "col_sph_alto";
-			this.col_sph_alto.Width = (HorizontalAlignment)75;
+			this.col_sph_alto.Width = 75;
 			this.col_sph_baixo.HeaderText = "Baixo";
-			this.col_sph_baixo.MaxInputLength = (HorizontalAlignment)4;
+			this.col_sph_baixo.MaxInputLength = 4;
 			this.col_sph_baixo.Name = "col_sph_baixo";
-			this.col_sph_baixo.Width = (HorizontalAlignment)75;
+			this.col_sph_baixo.Width = 75;
 			this.GroupBox_setpoints_820.Controls.Add(this.DataGridView_setpoints_820);
 			this.GroupBox_setpoints_820.Controls.Add(this.tb_lixo5);
 			global::System.Windows.Forms.Control groupBox_setpoints_ = this.GroupBox_setpoints_820;
@@ -1986,7 +1986,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_setpoints_2 = this.GroupBox_setpoints_820;
 			size = new size(673, 233);
 			groupBox_setpoints_2.Size = size;
-			this.GroupBox_setpoints_820.TabIndex = (HorizontalAlignment)1;
+			this.GroupBox_setpoints_820.TabIndex = 1;
 			this.GroupBox_setpoints_820.TabStop = false;
 			this.GroupBox_setpoints_820.Text = "Setpoints";
 			this.DataGridView_setpoints_820.AllowUserToAddRows = false;
@@ -2003,7 +2003,7 @@ namespace iS800
 			dataGridViewCellStyle18.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle18.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_setpoints_820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
-			this.DataGridView_setpoints_820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_setpoints_820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle19.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle19.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle19.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2028,7 +2028,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_setpoints_2 = this.DataGridView_setpoints_820;
 			size = new size(642, 199);
 			dataGridView_setpoints_2.Size = size;
-			this.DataGridView_setpoints_820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_setpoints_820.TabIndex = 0;
 			global::System.Windows.Forms.Control tb_lixo9 = this.tb_lixo5;
 			location = new location(253, 126);
 			tb_lixo9.Location = location;
@@ -2036,7 +2036,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo10 = this.tb_lixo5;
 			size = new size(100, 20);
 			tb_lixo10.Size = size;
-			this.tb_lixo5.TabIndex = (HorizontalAlignment)1;
+			this.tb_lixo5.TabIndex = 1;
 			this.TabPage_vazao.Controls.Add(this.GroupBox12);
 			this.TabPage_vazao.Controls.Add(this.GroupBox_vazoes_820);
 			global::System.Windows.Forms.TabPage tabPage_vazao = this.TabPage_vazao;
@@ -2049,7 +2049,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_vazao3 = this.TabPage_vazao;
 			size = new size(1396, 652);
 			tabPage_vazao3.Size = size;
-			this.TabPage_vazao.TabIndex = (HorizontalAlignment)13;
+			this.TabPage_vazao.TabIndex = 13;
 			this.TabPage_vazao.Text = "   Vazão & Calhas    ";
 			this.TabPage_vazao.UseVisualStyleBackColor = true;
 			this.GroupBox12.Controls.Add(this.TabControl_Calhas);
@@ -2062,7 +2062,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox18 = this.GroupBox12;
 			size = new size(850, 630);
 			groupBox18.Size = size;
-			this.GroupBox12.TabIndex = (HorizontalAlignment)3;
+			this.GroupBox12.TabIndex = 3;
 			this.GroupBox12.TabStop = false;
 			this.GroupBox12.Text = "Calhas";
 			this.TabControl_Calhas.Controls.Add(this.TabPage2);
@@ -2072,11 +2072,11 @@ namespace iS800
 			location = new location(19, 160);
 			tabControl_Calhas.Location = location;
 			this.TabControl_Calhas.Name = "TabControl_Calhas";
-			this.TabControl_Calhas.SelectedIndex = (HorizontalAlignment)0;
+			this.TabControl_Calhas.SelectedIndex = 0;
 			global::System.Windows.Forms.Control tabControl_Calhas2 = this.TabControl_Calhas;
 			size = new size(780, 457);
 			tabControl_Calhas2.Size = size;
-			this.TabControl_Calhas.TabIndex = (HorizontalAlignment)20;
+			this.TabControl_Calhas.TabIndex = 20;
 			this.TabPage2.Controls.Add(this.Label64);
 			this.TabPage2.Controls.Add(this.Label57);
 			this.TabPage2.Controls.Add(this.Label74);
@@ -2101,7 +2101,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage3 = this.TabPage2;
 			size = new size(772, 431);
 			tabPage3.Size = size;
-			this.TabPage2.TabIndex = (HorizontalAlignment)0;
+			this.TabPage2.TabIndex = 0;
 			this.TabPage2.Text = "General Parshall Flume";
 			this.TabPage2.UseVisualStyleBackColor = true;
 			this.Label64.AutoSize = true;
@@ -2112,7 +2112,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label34 = this.Label64;
 			size = new size(145, 13);
 			label34.Size = size;
-			this.Label64.TabIndex = (HorizontalAlignment)15;
+			this.Label64.TabIndex = 15;
 			this.Label64.Text = "P2 > 244 Vazão em 0,1 m3/s";
 			this.Label57.AutoSize = true;
 			global::System.Windows.Forms.Control label35 = this.Label57;
@@ -2122,7 +2122,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label36 = this.Label57;
 			size = new size(121, 13);
 			label36.Size = size;
-			this.Label57.TabIndex = (HorizontalAlignment)14;
+			this.Label57.TabIndex = 14;
 			this.Label57.Text = "P2 <= 244 Vazão em l/s";
 			this.Label74.AutoSize = true;
 			this.Label74.ForeColor = global::System.Drawing.Color.Blue;
@@ -2133,7 +2133,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label38 = this.Label74;
 			size = new size(66, 13);
 			label38.Size = size;
-			this.Label74.TabIndex = (HorizontalAlignment)13;
+			this.Label74.TabIndex = 13;
 			this.Label74.Text = "P = (2/3) * A";
 			this.Label72.AutoSize = true;
 			this.Label72.ForeColor = global::System.Drawing.Color.Blue;
@@ -2144,7 +2144,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label40 = this.Label72;
 			size = new size(14, 13);
 			label40.Size = size;
-			this.Label72.TabIndex = (HorizontalAlignment)12;
+			this.Label72.TabIndex = 12;
 			this.Label72.Text = "P";
 			this.Label71.AutoSize = true;
 			this.Label71.ForeColor = global::System.Drawing.Color.Blue;
@@ -2155,7 +2155,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label42 = this.Label71;
 			size = new size(14, 13);
 			label42.Size = size;
-			this.Label71.TabIndex = (HorizontalAlignment)11;
+			this.Label71.TabIndex = 11;
 			this.Label71.Text = "A";
 			this.Label70.AutoSize = true;
 			this.Label70.ForeColor = global::System.Drawing.Color.Red;
@@ -2166,7 +2166,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label44 = this.Label70;
 			size = new size(13, 13);
 			label44.Size = size;
-			this.Label70.TabIndex = (HorizontalAlignment)10;
+			this.Label70.TabIndex = 10;
 			this.Label70.Text = "h";
 			this.Label56.AutoSize = true;
 			global::System.Windows.Forms.Control label45 = this.Label56;
@@ -2176,7 +2176,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label46 = this.Label56;
 			size = new size(66, 13);
 			label46.Size = size;
-			this.Label56.TabIndex = (HorizontalAlignment)9;
+			this.Label56.TabIndex = 9;
 			this.Label56.Text = "Largura (cm)";
 			this.Label55.AutoSize = true;
 			global::System.Windows.Forms.Control label47 = this.Label55;
@@ -2186,7 +2186,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label48 = this.Label55;
 			size = new size(43, 13);
 			label48.Size = size;
-			this.Label55.TabIndex = (HorizontalAlignment)8;
+			this.Label55.TabIndex = 8;
 			this.Label55.Text = "P1 (cm)";
 			this.Label47.AutoSize = true;
 			global::System.Windows.Forms.Control label49 = this.Label47;
@@ -2196,7 +2196,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label50 = this.Label47;
 			size = new size(68, 13);
 			label50.Size = size;
-			this.Label47.TabIndex = (HorizontalAlignment)6;
+			this.Label47.TabIndex = 6;
 			this.Label47.Text = "Visão Lateral";
 			this.Label46.AutoSize = true;
 			global::System.Windows.Forms.Control label51 = this.Label46;
@@ -2206,7 +2206,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label52 = this.Label46;
 			size = new size(75, 13);
 			label52.Size = size;
-			this.Label46.TabIndex = (HorizontalAlignment)5;
+			this.Label46.TabIndex = 5;
 			this.Label46.Text = "Visão Superior";
 			this.Label44.AutoSize = true;
 			global::System.Windows.Forms.Control label53 = this.Label44;
@@ -2216,7 +2216,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label54 = this.Label44;
 			size = new size(43, 13);
 			label54.Size = size;
-			this.Label44.TabIndex = (HorizontalAlignment)3;
+			this.Label44.TabIndex = 3;
 			this.Label44.Text = "P2 (cm)";
 			this.Label43.AutoSize = true;
 			global::System.Windows.Forms.Control label55 = this.Label43;
@@ -2226,7 +2226,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label56 = this.Label43;
 			size = new size(101, 13);
 			label56.Size = size;
-			this.Label43.TabIndex = (HorizontalAlignment)2;
+			this.Label43.TabIndex = 2;
 			this.Label43.Text = "Medidor Ultrasônico";
 			this.Label42.AutoSize = true;
 			global::System.Windows.Forms.Control label57 = this.Label42;
@@ -2236,7 +2236,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label58 = this.Label42;
 			size = new size(71, 13);
 			label58.Size = size;
-			this.Label42.TabIndex = (HorizontalAlignment)1;
+			this.Label42.TabIndex = 1;
 			this.Label42.Text = "Sentido Fluxo";
 			this.PictureBox1.ErrorImage = null;
 			this.PictureBox1.Image = global::iS800.My.Resources.Resources.calha_01;
@@ -2248,7 +2248,7 @@ namespace iS800
 			global::System.Windows.Forms.Control pictureBox2 = this.PictureBox1;
 			size = new size(769, 430);
 			pictureBox2.Size = size;
-			this.PictureBox1.TabIndex = (HorizontalAlignment)7;
+			this.PictureBox1.TabIndex = 7;
 			this.PictureBox1.TabStop = false;
 			this.TabPage3.Controls.Add(this.Label77);
 			this.TabPage3.Controls.Add(this.Label76);
@@ -2273,7 +2273,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage6 = this.TabPage3;
 			size = new size(772, 431);
 			tabPage6.Size = size;
-			this.TabPage3.TabIndex = (HorizontalAlignment)1;
+			this.TabPage3.TabIndex = 1;
 			this.TabPage3.Text = "Botton Step Weir";
 			this.TabPage3.UseVisualStyleBackColor = true;
 			this.Label77.AutoSize = true;
@@ -2285,7 +2285,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label60 = this.Label77;
 			size = new size(13, 13);
 			label60.Size = size;
-			this.Label77.TabIndex = (HorizontalAlignment)18;
+			this.Label77.TabIndex = 18;
 			this.Label77.Text = "h";
 			this.Label76.AutoSize = true;
 			global::System.Windows.Forms.Control label61 = this.Label76;
@@ -2295,7 +2295,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label62 = this.Label76;
 			size = new size(107, 13);
 			label62.Size = size;
-			this.Label76.TabIndex = (HorizontalAlignment)17;
+			this.Label76.TabIndex = 17;
 			this.Label76.Text = "10 < h [m3/h] < 1000";
 			this.Label75.AutoSize = true;
 			global::System.Windows.Forms.Control label63 = this.Label75;
@@ -2305,7 +2305,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label64 = this.Label75;
 			size = new size(114, 13);
 			label64.Size = size;
-			this.Label75.TabIndex = (HorizontalAlignment)16;
+			this.Label75.TabIndex = 16;
 			this.Label75.Text = "30 < P2 [m3/h] < 1500";
 			this.Label65.AutoSize = true;
 			global::System.Windows.Forms.Control label65 = this.Label65;
@@ -2315,7 +2315,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label66 = this.Label65;
 			size = new size(112, 13);
 			label66.Size = size;
-			this.Label65.TabIndex = (HorizontalAlignment)15;
+			this.Label65.TabIndex = 15;
 			this.Label65.Text = "0,0005 < G [m3/h] < 1";
 			this.Label45.AutoSize = true;
 			global::System.Windows.Forms.Control label67 = this.Label45;
@@ -2325,7 +2325,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label68 = this.Label45;
 			size = new size(43, 13);
 			label68.Size = size;
-			this.Label45.TabIndex = (HorizontalAlignment)12;
+			this.Label45.TabIndex = 12;
 			this.Label45.Text = "P1 (cm)";
 			this.Label58.AutoSize = true;
 			global::System.Windows.Forms.Control label69 = this.Label58;
@@ -2335,7 +2335,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label70 = this.Label58;
 			size = new size(66, 13);
 			label70.Size = size;
-			this.Label58.TabIndex = (HorizontalAlignment)11;
+			this.Label58.TabIndex = 11;
 			this.Label58.Text = "Largura (cm)";
 			this.Label54.AutoSize = true;
 			global::System.Windows.Forms.Control label71 = this.Label54;
@@ -2345,7 +2345,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label72 = this.Label54;
 			size = new size(43, 13);
 			label72.Size = size;
-			this.Label54.TabIndex = (HorizontalAlignment)9;
+			this.Label54.TabIndex = 9;
 			this.Label54.Text = "P2 (cm)";
 			this.Label52.AutoSize = true;
 			global::System.Windows.Forms.Control label73 = this.Label52;
@@ -2355,7 +2355,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label74 = this.Label52;
 			size = new size(68, 13);
 			label74.Size = size;
-			this.Label52.TabIndex = (HorizontalAlignment)7;
+			this.Label52.TabIndex = 7;
 			this.Label52.Text = "Visão Frontal";
 			this.Label51.AutoSize = true;
 			global::System.Windows.Forms.Control label75 = this.Label51;
@@ -2365,7 +2365,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label76 = this.Label51;
 			size = new size(68, 13);
 			label76.Size = size;
-			this.Label51.TabIndex = (HorizontalAlignment)6;
+			this.Label51.TabIndex = 6;
 			this.Label51.Text = "Visão Lateral";
 			this.Label50.AutoSize = true;
 			global::System.Windows.Forms.Control label77 = this.Label50;
@@ -2375,7 +2375,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label78 = this.Label50;
 			size = new size(101, 13);
 			label78.Size = size;
-			this.Label50.TabIndex = (HorizontalAlignment)4;
+			this.Label50.TabIndex = 4;
 			this.Label50.Text = "Medidor Ultrasônico";
 			this.Label49.AutoSize = true;
 			global::System.Windows.Forms.Control label79 = this.Label49;
@@ -2385,7 +2385,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label80 = this.Label49;
 			size = new size(101, 13);
 			label80.Size = size;
-			this.Label49.TabIndex = (HorizontalAlignment)3;
+			this.Label49.TabIndex = 3;
 			this.Label49.Text = "Medidor Ultrasônico";
 			this.Label48.AutoSize = true;
 			global::System.Windows.Forms.Control label81 = this.Label48;
@@ -2395,7 +2395,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label82 = this.Label48;
 			size = new size(71, 13);
 			label82.Size = size;
-			this.Label48.TabIndex = (HorizontalAlignment)2;
+			this.Label48.TabIndex = 2;
 			this.Label48.Text = "Sentido Fluxo";
 			this.PictureBox2.ErrorImage = null;
 			this.PictureBox2.Image = global::iS800.My.Resources.Resources.calha_02;
@@ -2407,7 +2407,7 @@ namespace iS800
 			global::System.Windows.Forms.Control pictureBox4 = this.PictureBox2;
 			size = new size(769, 428);
 			pictureBox4.Size = size;
-			this.PictureBox2.TabIndex = (HorizontalAlignment)0;
+			this.PictureBox2.TabIndex = 0;
 			this.PictureBox2.TabStop = false;
 			this.TabPage4.Controls.Add(this.Label83);
 			this.TabPage4.Controls.Add(this.Label82);
@@ -2433,7 +2433,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage8 = this.TabPage4;
 			size = new size(772, 431);
 			tabPage8.Size = size;
-			this.TabPage4.TabIndex = (HorizontalAlignment)2;
+			this.TabPage4.TabIndex = 2;
 			this.TabPage4.Text = "Supressed Rectangular";
 			this.TabPage4.UseVisualStyleBackColor = true;
 			this.Label83.AutoSize = true;
@@ -2444,7 +2444,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label84 = this.Label83;
 			size = new size(84, 13);
 			label84.Size = size;
-			this.Label83.TabIndex = (HorizontalAlignment)27;
+			this.Label83.TabIndex = 27;
 			this.Label83.Text = "1,5< h [cm] < 80";
 			this.Label82.AutoSize = true;
 			global::System.Windows.Forms.Control label85 = this.Label82;
@@ -2454,7 +2454,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label86 = this.Label82;
 			size = new size(94, 13);
 			label86.Size = size;
-			this.Label82.TabIndex = (HorizontalAlignment)26;
+			this.Label82.TabIndex = 26;
 			this.Label82.Text = "15< P2 [cm] < 300";
 			this.Label81.AutoSize = true;
 			global::System.Windows.Forms.Control label87 = this.Label81;
@@ -2464,7 +2464,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label88 = this.Label81;
 			size = new size(100, 13);
 			label88.Size = size;
-			this.Label81.TabIndex = (HorizontalAlignment)25;
+			this.Label81.TabIndex = 25;
 			this.Label81.Text = "0,15 < P3 [cm] < 80";
 			this.Label80.AutoSize = true;
 			global::System.Windows.Forms.Control label89 = this.Label80;
@@ -2474,7 +2474,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label90 = this.Label80;
 			size = new size(100, 13);
 			label90.Size = size;
-			this.Label80.TabIndex = (HorizontalAlignment)24;
+			this.Label80.TabIndex = 24;
 			this.Label80.Text = "0,01 < Q [m3/h] < 5";
 			this.Label53.AutoSize = true;
 			global::System.Windows.Forms.Control label91 = this.Label53;
@@ -2484,7 +2484,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label92 = this.Label53;
 			size = new size(57, 13);
 			label92.Size = size;
-			this.Label53.TabIndex = (HorizontalAlignment)23;
+			this.Label53.TabIndex = 23;
 			this.Label53.Text = "Altura (cm)";
 			this.Label79.AutoSize = true;
 			global::System.Windows.Forms.Control label93 = this.Label79;
@@ -2494,7 +2494,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label94 = this.Label79;
 			size = new size(43, 13);
 			label94.Size = size;
-			this.Label79.TabIndex = (HorizontalAlignment)22;
+			this.Label79.TabIndex = 22;
 			this.Label79.Text = "P3 (cm)";
 			this.Label78.AutoSize = true;
 			this.Label78.ForeColor = global::System.Drawing.Color.Red;
@@ -2505,7 +2505,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label96 = this.Label78;
 			size = new size(13, 13);
 			label96.Size = size;
-			this.Label78.TabIndex = (HorizontalAlignment)21;
+			this.Label78.TabIndex = 21;
 			this.Label78.Text = "h";
 			this.Label68.AutoSize = true;
 			global::System.Windows.Forms.Control label97 = this.Label68;
@@ -2515,7 +2515,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label98 = this.Label68;
 			size = new size(68, 13);
 			label98.Size = size;
-			this.Label68.TabIndex = (HorizontalAlignment)19;
+			this.Label68.TabIndex = 19;
 			this.Label68.Text = "Visão Frontal";
 			this.Label69.AutoSize = true;
 			global::System.Windows.Forms.Control label99 = this.Label69;
@@ -2525,7 +2525,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label100 = this.Label69;
 			size = new size(68, 13);
 			label100.Size = size;
-			this.Label69.TabIndex = (HorizontalAlignment)18;
+			this.Label69.TabIndex = 18;
 			this.Label69.Text = "Visão Lateral";
 			this.Label66.AutoSize = true;
 			global::System.Windows.Forms.Control label101 = this.Label66;
@@ -2535,7 +2535,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label102 = this.Label66;
 			size = new size(57, 13);
 			label102.Size = size;
-			this.Label66.TabIndex = (HorizontalAlignment)17;
+			this.Label66.TabIndex = 17;
 			this.Label66.Text = "Altura (cm)";
 			this.Label67.AutoSize = true;
 			global::System.Windows.Forms.Control label103 = this.Label67;
@@ -2545,7 +2545,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label104 = this.Label67;
 			size = new size(43, 13);
 			label104.Size = size;
-			this.Label67.TabIndex = (HorizontalAlignment)16;
+			this.Label67.TabIndex = 16;
 			this.Label67.Text = "P1 (cm)";
 			this.Label62.AutoSize = true;
 			global::System.Windows.Forms.Control label105 = this.Label62;
@@ -2555,7 +2555,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label106 = this.Label62;
 			size = new size(66, 13);
 			label106.Size = size;
-			this.Label62.TabIndex = (HorizontalAlignment)13;
+			this.Label62.TabIndex = 13;
 			this.Label62.Text = "Largura (cm)";
 			this.Label63.AutoSize = true;
 			global::System.Windows.Forms.Control label107 = this.Label63;
@@ -2565,7 +2565,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label108 = this.Label63;
 			size = new size(43, 13);
 			label108.Size = size;
-			this.Label63.TabIndex = (HorizontalAlignment)12;
+			this.Label63.TabIndex = 12;
 			this.Label63.Text = "P2 (cm)";
 			this.Label61.AutoSize = true;
 			global::System.Windows.Forms.Control label109 = this.Label61;
@@ -2575,7 +2575,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label110 = this.Label61;
 			size = new size(101, 13);
 			label110.Size = size;
-			this.Label61.TabIndex = (HorizontalAlignment)5;
+			this.Label61.TabIndex = 5;
 			this.Label61.Text = "Medidor Ultrasônico";
 			this.Label60.AutoSize = true;
 			global::System.Windows.Forms.Control label111 = this.Label60;
@@ -2585,7 +2585,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label112 = this.Label60;
 			size = new size(101, 13);
 			label112.Size = size;
-			this.Label60.TabIndex = (HorizontalAlignment)4;
+			this.Label60.TabIndex = 4;
 			this.Label60.Text = "Medidor Ultrasônico";
 			this.Label59.AutoSize = true;
 			global::System.Windows.Forms.Control label113 = this.Label59;
@@ -2595,7 +2595,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label114 = this.Label59;
 			size = new size(71, 13);
 			label114.Size = size;
-			this.Label59.TabIndex = (HorizontalAlignment)2;
+			this.Label59.TabIndex = 2;
 			this.Label59.Text = "Sentido Fluxo";
 			this.PictureBox3.ErrorImage = null;
 			this.PictureBox3.Image = global::iS800.My.Resources.Resources.calha_03;
@@ -2606,7 +2606,7 @@ namespace iS800
 			global::System.Windows.Forms.Control pictureBox6 = this.PictureBox3;
 			size = new size(769, 428);
 			pictureBox6.Size = size;
-			this.PictureBox3.TabIndex = (HorizontalAlignment)0;
+			this.PictureBox3.TabIndex = 0;
 			this.PictureBox3.TabStop = false;
 			this.Label41.AutoSize = true;
 			global::System.Windows.Forms.Control label115 = this.Label41;
@@ -2616,7 +2616,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label116 = this.Label41;
 			size = new size(181, 13);
 			label116.Size = size;
-			this.Label41.TabIndex = (HorizontalAlignment)18;
+			this.Label41.TabIndex = 18;
 			this.Label41.Text = "Descritivo de parâmetros das calhas:";
 			this.DataGridView_calhas_RT820.AllowUserToAddRows = false;
 			this.DataGridView_calhas_RT820.AllowUserToDeleteRows = false;
@@ -2632,7 +2632,7 @@ namespace iS800
 			dataGridViewCellStyle22.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle22.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_calhas_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
-			this.DataGridView_calhas_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_calhas_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle23.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle23.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle23.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2653,12 +2653,12 @@ namespace iS800
 			dataGridViewCellStyle24.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle24.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_calhas_RT820.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
-			this.DataGridView_calhas_RT820.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.DataGridView_calhas_RT820.RowHeadersWidthSizeMode = 1;
 			this.DataGridView_calhas_RT820.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dataGridView_calhas_RT2 = this.DataGridView_calhas_RT820;
 			size = new size(780, 86);
 			dataGridView_calhas_RT2.Size = size;
-			this.DataGridView_calhas_RT820.TabIndex = (HorizontalAlignment)17;
+			this.DataGridView_calhas_RT820.TabIndex = 17;
 			this.GroupBox_vazoes_820.Controls.Add(this.DataGridView_vazoes_RT820);
 			this.GroupBox_vazoes_820.Controls.Add(this.tb_lixo6);
 			global::System.Windows.Forms.Control groupBox_vazoes_ = this.GroupBox_vazoes_820;
@@ -2668,7 +2668,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_vazoes_2 = this.GroupBox_vazoes_820;
 			size = new size(320, 239);
 			groupBox_vazoes_2.Size = size;
-			this.GroupBox_vazoes_820.TabIndex = (HorizontalAlignment)2;
+			this.GroupBox_vazoes_820.TabIndex = 2;
 			this.GroupBox_vazoes_820.TabStop = false;
 			this.GroupBox_vazoes_820.Text = "Vazões";
 			this.DataGridView_vazoes_RT820.AllowUserToAddRows = false;
@@ -2685,7 +2685,7 @@ namespace iS800
 			dataGridViewCellStyle26.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle26.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_vazoes_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
-			this.DataGridView_vazoes_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_vazoes_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle27.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle27.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle27.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2706,12 +2706,12 @@ namespace iS800
 			dataGridViewCellStyle28.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle28.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_vazoes_RT820.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
-			this.DataGridView_vazoes_RT820.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.DataGridView_vazoes_RT820.RowHeadersWidthSizeMode = 1;
 			this.DataGridView_vazoes_RT820.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dataGridView_vazoes_RT2 = this.DataGridView_vazoes_RT820;
 			size = new size(281, 198);
 			dataGridView_vazoes_RT2.Size = size;
-			this.DataGridView_vazoes_RT820.TabIndex = (HorizontalAlignment)16;
+			this.DataGridView_vazoes_RT820.TabIndex = 16;
 			global::System.Windows.Forms.Control tb_lixo11 = this.tb_lixo6;
 			location = new location(116, 144);
 			tb_lixo11.Location = location;
@@ -2719,7 +2719,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo12 = this.tb_lixo6;
 			size = new size(100, 20);
 			tb_lixo12.Size = size;
-			this.tb_lixo6.TabIndex = (HorizontalAlignment)17;
+			this.tb_lixo6.TabIndex = 17;
 			this.TabPage_vazao_perifericos.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_vazao_perifericos.Controls.Add(this.GroupBox11);
 			this.TabPage_vazao_perifericos.Controls.Add(this.GroupBox10);
@@ -2735,7 +2735,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_vazao_perifericos3 = this.TabPage_vazao_perifericos;
 			size = new size(1396, 652);
 			tabPage_vazao_perifericos3.Size = size;
-			this.TabPage_vazao_perifericos.TabIndex = (HorizontalAlignment)1;
+			this.TabPage_vazao_perifericos.TabIndex = 1;
 			this.TabPage_vazao_perifericos.Text = "   Periféricos   ";
 			this.TabPage_vazao_perifericos.UseVisualStyleBackColor = true;
 			this.GroupBox11.Controls.Add(this.DataGridView_perifericomodbusgenerico_RT820);
@@ -2746,7 +2746,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox20 = this.GroupBox11;
 			size = new size(847, 159);
 			groupBox20.Size = size;
-			this.GroupBox11.TabIndex = (HorizontalAlignment)21;
+			this.GroupBox11.TabIndex = 21;
 			this.GroupBox11.TabStop = false;
 			this.GroupBox11.Text = "Configuração Periférico Modbus Genérico";
 			this.DataGridView_perifericomodbusgenerico_RT820.AllowUserToAddRows = false;
@@ -2763,7 +2763,7 @@ namespace iS800
 			dataGridViewCellStyle30.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle30.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_perifericomodbusgenerico_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
-			this.DataGridView_perifericomodbusgenerico_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_perifericomodbusgenerico_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle31.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle31.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle31.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2788,7 +2788,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_perifericomodbusgenerico_RT2 = this.DataGridView_perifericomodbusgenerico_RT820;
 			size = new size(818, 125);
 			dataGridView_perifericomodbusgenerico_RT2.Size = size;
-			this.DataGridView_perifericomodbusgenerico_RT820.TabIndex = (HorizontalAlignment)2;
+			this.DataGridView_perifericomodbusgenerico_RT820.TabIndex = 2;
 			this.GroupBox10.Controls.Add(this.DataGridView_periferico2_RT820);
 			global::System.Windows.Forms.Control groupBox21 = this.GroupBox10;
 			location = new location(463, 16);
@@ -2797,7 +2797,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox22 = this.GroupBox10;
 			size = new size(430, 157);
 			groupBox22.Size = size;
-			this.GroupBox10.TabIndex = (HorizontalAlignment)20;
+			this.GroupBox10.TabIndex = 20;
 			this.GroupBox10.TabStop = false;
 			this.GroupBox10.Text = "Periféricos do  2° Endereço da  Estação";
 			this.DataGridView_periferico2_RT820.AllowUserToAddRows = false;
@@ -2814,7 +2814,7 @@ namespace iS800
 			dataGridViewCellStyle34.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle34.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_periferico2_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
-			this.DataGridView_periferico2_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_periferico2_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle35.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle35.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle35.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2839,7 +2839,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_periferico2_RT2 = this.DataGridView_periferico2_RT820;
 			size = new size(412, 133);
 			dataGridView_periferico2_RT2.Size = size;
-			this.DataGridView_periferico2_RT820.TabIndex = (HorizontalAlignment)1;
+			this.DataGridView_periferico2_RT820.TabIndex = 1;
 			this.GroupBox3.Controls.Add(this.Label22);
 			this.GroupBox3.Controls.Add(this.datagridview_referenciaperifico);
 			global::System.Windows.Forms.Control groupBox23 = this.GroupBox3;
@@ -2849,7 +2849,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox24 = this.GroupBox3;
 			size = new size(736, 278);
 			groupBox24.Size = size;
-			this.GroupBox3.TabIndex = (HorizontalAlignment)19;
+			this.GroupBox3.TabIndex = 19;
 			this.GroupBox3.TabStop = false;
 			this.GroupBox3.Text = "Referências para Periférico:";
 			this.Label22.AutoSize = true;
@@ -2860,7 +2860,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label118 = this.Label22;
 			size = new size(264, 13);
 			label118.Size = size;
-			this.Label22.TabIndex = (HorizontalAlignment)20;
+			this.Label22.TabIndex = 20;
 			this.Label22.Text = "Observação: Opção disponível a partir da versão 3.50";
 			this.datagridview_referenciaperifico.AllowUserToAddRows = false;
 			this.datagridview_referenciaperifico.AllowUserToDeleteRows = false;
@@ -2868,17 +2868,17 @@ namespace iS800
 			this.datagridview_referenciaperifico.AllowUserToResizeRows = false;
 			dataGridViewCellStyle37.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.datagridview_referenciaperifico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
-			this.datagridview_referenciaperifico.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.datagridview_referenciaperifico.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control datagridview_referenciaperifico = this.datagridview_referenciaperifico;
 			location = new location(19, 16);
 			datagridview_referenciaperifico.Location = location;
 			this.datagridview_referenciaperifico.Name = "datagridview_referenciaperifico";
-			this.datagridview_referenciaperifico.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.datagridview_referenciaperifico.RowHeadersWidthSizeMode = 1;
 			this.datagridview_referenciaperifico.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control datagridview_referenciaperifico2 = this.datagridview_referenciaperifico;
 			size = new size(693, 241);
 			datagridview_referenciaperifico2.Size = size;
-			this.datagridview_referenciaperifico.TabIndex = (HorizontalAlignment)0;
+			this.datagridview_referenciaperifico.TabIndex = 0;
 			this.GroupBox_perifericos_820.Controls.Add(this.GroupBox9);
 			this.GroupBox_perifericos_820.Controls.Add(this.DataGridView_periferico1_RT820);
 			global::System.Windows.Forms.Control groupBox_perifericos_ = this.GroupBox_perifericos_820;
@@ -2888,7 +2888,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_perifericos_2 = this.GroupBox_perifericos_820;
 			size = new size(433, 157);
 			groupBox_perifericos_2.Size = size;
-			this.GroupBox_perifericos_820.TabIndex = (HorizontalAlignment)16;
+			this.GroupBox_perifericos_820.TabIndex = 16;
 			this.GroupBox_perifericos_820.TabStop = false;
 			this.GroupBox_perifericos_820.Text = "Periféricos do  1° Endereço da  Estação";
 			this.GroupBox9.Controls.Add(this.DataGridView2);
@@ -2899,7 +2899,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox26 = this.GroupBox9;
 			size = new size(450, 157);
 			groupBox26.Size = size;
-			this.GroupBox9.TabIndex = (HorizontalAlignment)17;
+			this.GroupBox9.TabIndex = 17;
 			this.GroupBox9.TabStop = false;
 			this.GroupBox9.Text = "Periféricos da Primeira Estação";
 			this.DataGridView2.AllowUserToAddRows = false;
@@ -2916,7 +2916,7 @@ namespace iS800
 			dataGridViewCellStyle39.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle39.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle39;
-			this.DataGridView2.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView2.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle40.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle40.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle40.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2941,7 +2941,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView2 = this.DataGridView2;
 			size = new size(412, 133);
 			dataGridView2.Size = size;
-			this.DataGridView2.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView2.TabIndex = 0;
 			this.DataGridView_periferico1_RT820.AllowUserToAddRows = false;
 			this.DataGridView_periferico1_RT820.AllowUserToDeleteRows = false;
 			this.DataGridView_periferico1_RT820.AllowUserToResizeColumns = false;
@@ -2956,7 +2956,7 @@ namespace iS800
 			dataGridViewCellStyle43.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle43.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_periferico1_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
-			this.DataGridView_periferico1_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_periferico1_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle44.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle44.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle44.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -2981,7 +2981,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_periferico1_RT2 = this.DataGridView_periferico1_RT820;
 			size = new size(412, 133);
 			dataGridView_periferico1_RT2.Size = size;
-			this.DataGridView_periferico1_RT820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_periferico1_RT820.TabIndex = 0;
 			this.TabPage_Atuadores.Controls.Add(this.Label23);
 			this.TabPage_Atuadores.Controls.Add(this.GroupBox5);
 			this.TabPage_Atuadores.Controls.Add(this.GroupBox4);
@@ -2995,7 +2995,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_Atuadores3 = this.TabPage_Atuadores;
 			size = new size(1396, 652);
 			tabPage_Atuadores3.Size = size;
-			this.TabPage_Atuadores.TabIndex = (HorizontalAlignment)11;
+			this.TabPage_Atuadores.TabIndex = 11;
 			this.TabPage_Atuadores.Text = "   Atuadores I e II   ";
 			this.TabPage_Atuadores.UseVisualStyleBackColor = true;
 			this.Label23.AutoSize = true;
@@ -3006,7 +3006,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label120 = this.Label23;
 			size = new size(269, 13);
 			label120.Size = size;
-			this.Label23.TabIndex = (HorizontalAlignment)21;
+			this.Label23.TabIndex = 21;
 			this.Label23.Text = "Observação: Atuador disponível a partir da versão 3.50";
 			this.GroupBox5.Controls.Add(this.dgv_atuador_setpoint21);
 			this.GroupBox5.Controls.Add(this.Label28);
@@ -3020,10 +3020,10 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox28 = this.GroupBox5;
 			size = new size(1268, 286);
 			groupBox28.Size = size;
-			this.GroupBox5.TabIndex = (HorizontalAlignment)20;
+			this.GroupBox5.TabIndex = 20;
 			this.GroupBox5.TabStop = false;
 			this.GroupBox5.Text = "Atuador II";
-			this.dgv_atuador_setpoint21.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint21.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint = this.dgv_atuador_setpoint21;
 			location = new location(173, 181);
 			dgv_atuador_setpoint.Location = location;
@@ -3031,7 +3031,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dgv_atuador_setpoint2 = this.dgv_atuador_setpoint21;
 			size = new size(240, 86);
 			dgv_atuador_setpoint2.Size = size;
-			this.dgv_atuador_setpoint21.TabIndex = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint21.TabIndex = 2;
 			this.Label28.AutoSize = true;
 			global::System.Windows.Forms.Control label121 = this.Label28;
 			location = new location(9, 217);
@@ -3040,19 +3040,19 @@ namespace iS800
 			global::System.Windows.Forms.Control label122 = this.Label28;
 			size = new size(57, 13);
 			label122.Size = size;
-			this.Label28.TabIndex = (HorizontalAlignment)19;
+			this.Label28.TabIndex = 19;
 			this.Label28.Text = "Variável 2:";
-			this.dgv_atuador_setpoint2.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint2.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint3 = this.dgv_atuador_setpoint2;
 			location = new location(72, 75);
 			dgv_atuador_setpoint3.Location = location;
 			this.dgv_atuador_setpoint2.Name = "dgv_atuador_setpoint2";
-			this.dgv_atuador_setpoint2.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador_setpoint2.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador_setpoint2.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint4 = this.dgv_atuador_setpoint2;
 			size = new size(279, 93);
 			dgv_atuador_setpoint4.Size = size;
-			this.dgv_atuador_setpoint2.TabIndex = (HorizontalAlignment)1;
+			this.dgv_atuador_setpoint2.TabIndex = 1;
 			this.Label27.AutoSize = true;
 			global::System.Windows.Forms.Control label123 = this.Label27;
 			location = new location(9, 113);
@@ -3061,23 +3061,23 @@ namespace iS800
 			global::System.Windows.Forms.Control label124 = this.Label27;
 			size = new size(57, 13);
 			label124.Size = size;
-			this.Label27.TabIndex = (HorizontalAlignment)19;
+			this.Label27.TabIndex = 19;
 			this.Label27.Text = "Variável 1:";
 			this.dgv_atuador2.AllowUserToAddRows = false;
 			this.dgv_atuador2.AllowUserToDeleteRows = false;
 			this.dgv_atuador2.AllowUserToResizeColumns = false;
 			this.dgv_atuador2.AllowUserToResizeRows = false;
-			this.dgv_atuador2.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador2.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador = this.dgv_atuador2;
 			location = new location(6, 19);
 			dgv_atuador.Location = location;
 			this.dgv_atuador2.Name = "dgv_atuador2";
-			this.dgv_atuador2.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador2.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador2.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador2 = this.dgv_atuador2;
 			size = new size(782, 31);
 			dgv_atuador2.Size = size;
-			this.dgv_atuador2.TabIndex = (HorizontalAlignment)0;
+			this.dgv_atuador2.TabIndex = 0;
 			this.GroupBox4.Controls.Add(this.Label25);
 			this.GroupBox4.Controls.Add(this.Label24);
 			this.GroupBox4.Controls.Add(this.dgv_atuador_setpoint11);
@@ -3090,7 +3090,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox30 = this.GroupBox4;
 			size = new size(1268, 274);
 			groupBox30.Size = size;
-			this.GroupBox4.TabIndex = (HorizontalAlignment)19;
+			this.GroupBox4.TabIndex = 19;
 			this.GroupBox4.TabStop = false;
 			this.GroupBox4.Text = "Atuador I";
 			this.Label25.AutoSize = true;
@@ -3101,7 +3101,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label126 = this.Label25;
 			size = new size(57, 13);
 			label126.Size = size;
-			this.Label25.TabIndex = (HorizontalAlignment)19;
+			this.Label25.TabIndex = 19;
 			this.Label25.Text = "Variável 2:";
 			this.Label24.AutoSize = true;
 			global::System.Windows.Forms.Control label127 = this.Label24;
@@ -3111,9 +3111,9 @@ namespace iS800
 			global::System.Windows.Forms.Control label128 = this.Label24;
 			size = new size(57, 13);
 			label128.Size = size;
-			this.Label24.TabIndex = (HorizontalAlignment)19;
+			this.Label24.TabIndex = 19;
 			this.Label24.Text = "Variável 1:";
-			this.dgv_atuador_setpoint11.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint11.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint5 = this.dgv_atuador_setpoint11;
 			location = new location(173, 175);
 			dgv_atuador_setpoint5.Location = location;
@@ -3121,7 +3121,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dgv_atuador_setpoint6 = this.dgv_atuador_setpoint11;
 			size = new size(281, 80);
 			dgv_atuador_setpoint6.Size = size;
-			this.dgv_atuador_setpoint11.TabIndex = (HorizontalAlignment)18;
+			this.dgv_atuador_setpoint11.TabIndex = 18;
 			this.dgv_atuador_setpoint1.AllowUserToAddRows = false;
 			this.dgv_atuador_setpoint1.AllowUserToDeleteRows = false;
 			this.dgv_atuador_setpoint1.AllowUserToResizeColumns = false;
@@ -3136,7 +3136,7 @@ namespace iS800
 			dataGridViewCellStyle47.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle47.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.dgv_atuador_setpoint1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
-			this.dgv_atuador_setpoint1.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint1.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle48.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle48.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle48.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -3157,27 +3157,27 @@ namespace iS800
 			dataGridViewCellStyle49.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle49.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.dgv_atuador_setpoint1.RowHeadersDefaultCellStyle = dataGridViewCellStyle49;
-			this.dgv_atuador_setpoint1.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador_setpoint1.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador_setpoint1.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint8 = this.dgv_atuador_setpoint1;
 			size = new size(281, 81);
 			dgv_atuador_setpoint8.Size = size;
-			this.dgv_atuador_setpoint1.TabIndex = (HorizontalAlignment)17;
+			this.dgv_atuador_setpoint1.TabIndex = 17;
 			this.dgv_atuador1.AllowUserToAddRows = false;
 			this.dgv_atuador1.AllowUserToDeleteRows = false;
 			this.dgv_atuador1.AllowUserToResizeColumns = false;
 			this.dgv_atuador1.AllowUserToResizeRows = false;
-			this.dgv_atuador1.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador1.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador3 = this.dgv_atuador1;
 			location = new location(6, 18);
 			dgv_atuador3.Location = location;
 			this.dgv_atuador1.Name = "dgv_atuador1";
-			this.dgv_atuador1.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador1.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador1.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador4 = this.dgv_atuador1;
 			size = new size(782, 31);
 			dgv_atuador4.Size = size;
-			this.dgv_atuador1.TabIndex = (HorizontalAlignment)0;
+			this.dgv_atuador1.TabIndex = 0;
 			this.TabPage_Atuadores2.Controls.Add(this.Label35);
 			this.TabPage_Atuadores2.Controls.Add(this.GroupBox7);
 			this.TabPage_Atuadores2.Controls.Add(this.GroupBox6);
@@ -3191,7 +3191,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_Atuadores6 = this.TabPage_Atuadores2;
 			size = new size(1396, 652);
 			tabPage_Atuadores6.Size = size;
-			this.TabPage_Atuadores2.TabIndex = (HorizontalAlignment)12;
+			this.TabPage_Atuadores2.TabIndex = 12;
 			this.TabPage_Atuadores2.Text = "   Atuadore III e IV   ";
 			this.TabPage_Atuadores2.UseVisualStyleBackColor = true;
 			this.Label35.AutoSize = true;
@@ -3202,7 +3202,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label130 = this.Label35;
 			size = new size(269, 13);
 			label130.Size = size;
-			this.Label35.TabIndex = (HorizontalAlignment)22;
+			this.Label35.TabIndex = 22;
 			this.Label35.Text = "Observação: Atuador disponível a partir da versão 3.50";
 			this.GroupBox7.Controls.Add(this.dgv_atuador_setpoint41);
 			this.GroupBox7.Controls.Add(this.Label33);
@@ -3216,10 +3216,10 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox32 = this.GroupBox7;
 			size = new size(1268, 286);
 			groupBox32.Size = size;
-			this.GroupBox7.TabIndex = (HorizontalAlignment)21;
+			this.GroupBox7.TabIndex = 21;
 			this.GroupBox7.TabStop = false;
 			this.GroupBox7.Text = "Atuador IV";
-			this.dgv_atuador_setpoint41.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint41.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint9 = this.dgv_atuador_setpoint41;
 			location = new location(173, 181);
 			dgv_atuador_setpoint9.Location = location;
@@ -3227,7 +3227,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dgv_atuador_setpoint10 = this.dgv_atuador_setpoint41;
 			size = new size(240, 86);
 			dgv_atuador_setpoint10.Size = size;
-			this.dgv_atuador_setpoint41.TabIndex = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint41.TabIndex = 2;
 			this.Label33.AutoSize = true;
 			global::System.Windows.Forms.Control label131 = this.Label33;
 			location = new location(9, 217);
@@ -3236,19 +3236,19 @@ namespace iS800
 			global::System.Windows.Forms.Control label132 = this.Label33;
 			size = new size(57, 13);
 			label132.Size = size;
-			this.Label33.TabIndex = (HorizontalAlignment)19;
+			this.Label33.TabIndex = 19;
 			this.Label33.Text = "Variável 2:";
-			this.dgv_atuador_setpoint4.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint4.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint11 = this.dgv_atuador_setpoint4;
 			location = new location(72, 75);
 			dgv_atuador_setpoint11.Location = location;
 			this.dgv_atuador_setpoint4.Name = "dgv_atuador_setpoint4";
-			this.dgv_atuador_setpoint4.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador_setpoint4.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador_setpoint4.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint12 = this.dgv_atuador_setpoint4;
 			size = new size(279, 93);
 			dgv_atuador_setpoint12.Size = size;
-			this.dgv_atuador_setpoint4.TabIndex = (HorizontalAlignment)1;
+			this.dgv_atuador_setpoint4.TabIndex = 1;
 			this.Label34.AutoSize = true;
 			global::System.Windows.Forms.Control label133 = this.Label34;
 			location = new location(9, 113);
@@ -3257,23 +3257,23 @@ namespace iS800
 			global::System.Windows.Forms.Control label134 = this.Label34;
 			size = new size(57, 13);
 			label134.Size = size;
-			this.Label34.TabIndex = (HorizontalAlignment)19;
+			this.Label34.TabIndex = 19;
 			this.Label34.Text = "Variável 1:";
 			this.dgv_atuador4.AllowUserToAddRows = false;
 			this.dgv_atuador4.AllowUserToDeleteRows = false;
 			this.dgv_atuador4.AllowUserToResizeColumns = false;
 			this.dgv_atuador4.AllowUserToResizeRows = false;
-			this.dgv_atuador4.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador4.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador5 = this.dgv_atuador4;
 			location = new location(6, 19);
 			dgv_atuador5.Location = location;
 			this.dgv_atuador4.Name = "dgv_atuador4";
-			this.dgv_atuador4.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador4.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador4.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador6 = this.dgv_atuador4;
 			size = new size(782, 31);
 			dgv_atuador6.Size = size;
-			this.dgv_atuador4.TabIndex = (HorizontalAlignment)0;
+			this.dgv_atuador4.TabIndex = 0;
 			this.GroupBox6.Controls.Add(this.Label31);
 			this.GroupBox6.Controls.Add(this.Label32);
 			this.GroupBox6.Controls.Add(this.dgv_atuador_setpoint31);
@@ -3286,7 +3286,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox34 = this.GroupBox6;
 			size = new size(1268, 274);
 			groupBox34.Size = size;
-			this.GroupBox6.TabIndex = (HorizontalAlignment)20;
+			this.GroupBox6.TabIndex = 20;
 			this.GroupBox6.TabStop = false;
 			this.GroupBox6.Text = "Atuador III";
 			this.Label31.AutoSize = true;
@@ -3297,7 +3297,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label136 = this.Label31;
 			size = new size(57, 13);
 			label136.Size = size;
-			this.Label31.TabIndex = (HorizontalAlignment)19;
+			this.Label31.TabIndex = 19;
 			this.Label31.Text = "Variável 2:";
 			this.Label32.AutoSize = true;
 			global::System.Windows.Forms.Control label137 = this.Label32;
@@ -3307,9 +3307,9 @@ namespace iS800
 			global::System.Windows.Forms.Control label138 = this.Label32;
 			size = new size(57, 13);
 			label138.Size = size;
-			this.Label32.TabIndex = (HorizontalAlignment)19;
+			this.Label32.TabIndex = 19;
 			this.Label32.Text = "Variável 1:";
-			this.dgv_atuador_setpoint31.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint31.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint13 = this.dgv_atuador_setpoint31;
 			location = new location(173, 175);
 			dgv_atuador_setpoint13.Location = location;
@@ -3317,7 +3317,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dgv_atuador_setpoint14 = this.dgv_atuador_setpoint31;
 			size = new size(281, 80);
 			dgv_atuador_setpoint14.Size = size;
-			this.dgv_atuador_setpoint31.TabIndex = (HorizontalAlignment)18;
+			this.dgv_atuador_setpoint31.TabIndex = 18;
 			this.dgv_atuador_setpoint3.AllowUserToAddRows = false;
 			this.dgv_atuador_setpoint3.AllowUserToDeleteRows = false;
 			this.dgv_atuador_setpoint3.AllowUserToResizeColumns = false;
@@ -3332,7 +3332,7 @@ namespace iS800
 			dataGridViewCellStyle51.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle51.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.dgv_atuador_setpoint3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle51;
-			this.dgv_atuador_setpoint3.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador_setpoint3.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle52.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle52.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle52.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -3353,27 +3353,27 @@ namespace iS800
 			dataGridViewCellStyle53.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle53.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.dgv_atuador_setpoint3.RowHeadersDefaultCellStyle = dataGridViewCellStyle53;
-			this.dgv_atuador_setpoint3.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador_setpoint3.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador_setpoint3.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador_setpoint16 = this.dgv_atuador_setpoint3;
 			size = new size(281, 81);
 			dgv_atuador_setpoint16.Size = size;
-			this.dgv_atuador_setpoint3.TabIndex = (HorizontalAlignment)17;
+			this.dgv_atuador_setpoint3.TabIndex = 17;
 			this.dgv_atuador3.AllowUserToAddRows = false;
 			this.dgv_atuador3.AllowUserToDeleteRows = false;
 			this.dgv_atuador3.AllowUserToResizeColumns = false;
 			this.dgv_atuador3.AllowUserToResizeRows = false;
-			this.dgv_atuador3.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.dgv_atuador3.ColumnHeadersHeightSizeMode = 2;
 			global::System.Windows.Forms.Control dgv_atuador7 = this.dgv_atuador3;
 			location = new location(6, 18);
 			dgv_atuador7.Location = location;
 			this.dgv_atuador3.Name = "dgv_atuador3";
-			this.dgv_atuador3.RowHeadersWidthSizeMode = (HorizontalAlignment)1;
+			this.dgv_atuador3.RowHeadersWidthSizeMode = 1;
 			this.dgv_atuador3.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dgv_atuador8 = this.dgv_atuador3;
 			size = new size(782, 31);
 			dgv_atuador8.Size = size;
-			this.dgv_atuador3.TabIndex = (HorizontalAlignment)0;
+			this.dgv_atuador3.TabIndex = 0;
 			this.TabPage_repetidora.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_repetidora.Controls.Add(this.GroupBox_end_rep_820);
 			this.TabPage_repetidora.Controls.Add(this.GroupBox_parametros_repetidora_820);
@@ -3384,7 +3384,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_repetidora2 = this.TabPage_repetidora;
 			size = new size(1396, 652);
 			tabPage_repetidora2.Size = size;
-			this.TabPage_repetidora.TabIndex = (HorizontalAlignment)3;
+			this.TabPage_repetidora.TabIndex = 3;
 			this.TabPage_repetidora.Text = "   Repetidora   ";
 			this.TabPage_repetidora.UseVisualStyleBackColor = true;
 			this.GroupBox_end_rep_820.Controls.Add(this.DataGridView_end_rep_RT820);
@@ -3395,7 +3395,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_end_rep_2 = this.GroupBox_end_rep_820;
 			size = new size(613, 282);
 			groupBox_end_rep_2.Size = size;
-			this.GroupBox_end_rep_820.TabIndex = (HorizontalAlignment)4;
+			this.GroupBox_end_rep_820.TabIndex = 4;
 			this.GroupBox_end_rep_820.TabStop = false;
 			this.GroupBox_end_rep_820.Text = "Endereço das estações a serem retransmitidas";
 			this.DataGridView_end_rep_RT820.AllowUserToAddRows = false;
@@ -3412,7 +3412,7 @@ namespace iS800
 			dataGridViewCellStyle55.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle55.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_end_rep_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
-			this.DataGridView_end_rep_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_end_rep_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle56.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle56.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle56.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -3438,7 +3438,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_end_rep_RT2 = this.DataGridView_end_rep_RT820;
 			size = new size(578, 243);
 			dataGridView_end_rep_RT2.Size = size;
-			this.DataGridView_end_rep_RT820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_end_rep_RT820.TabIndex = 0;
 			this.GroupBox_parametros_repetidora_820.Controls.Add(this.Label29);
 			this.GroupBox_parametros_repetidora_820.Controls.Add(this.cb_ModoRepetidora);
 			this.GroupBox_parametros_repetidora_820.Controls.Add(this.NumericUpDown_num_est_rep_820);
@@ -3453,7 +3453,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_parametros_repetidora_2 = this.GroupBox_parametros_repetidora_820;
 			size = new size(286, 102);
 			groupBox_parametros_repetidora_2.Size = size;
-			this.GroupBox_parametros_repetidora_820.TabIndex = (HorizontalAlignment)3;
+			this.GroupBox_parametros_repetidora_820.TabIndex = 3;
 			this.GroupBox_parametros_repetidora_820.TabStop = false;
 			this.GroupBox_parametros_repetidora_820.Text = "Parâmetros da Repetidora";
 			this.Label29.AutoSize = true;
@@ -3464,7 +3464,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label140 = this.Label29;
 			size = new size(92, 13);
 			label140.Size = size;
-			this.Label29.TabIndex = (HorizontalAlignment)5;
+			this.Label29.TabIndex = 5;
 			this.Label29.Text = "Modo Repetidora:";
 			this.cb_ModoRepetidora.FormattingEnabled = true;
 			global::System.Windows.Forms.Control cb_ModoRepetidora = this.cb_ModoRepetidora;
@@ -3474,7 +3474,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_ModoRepetidora2 = this.cb_ModoRepetidora;
 			size = new size(121, 21);
 			cb_ModoRepetidora2.Size = size;
-			this.cb_ModoRepetidora.TabIndex = (HorizontalAlignment)3;
+			this.cb_ModoRepetidora.TabIndex = 3;
 			global::System.Windows.Forms.Control numericUpDown_num_est_rep_ = this.NumericUpDown_num_est_rep_820;
 			location = new location(174, 67);
 			numericUpDown_num_est_rep_.Location = location;
@@ -3491,7 +3491,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_num_est_rep_3 = this.NumericUpDown_num_est_rep_820;
 			size = new size(72, 20);
 			numericUpDown_num_est_rep_3.Size = size;
-			this.NumericUpDown_num_est_rep_820.TabIndex = (HorizontalAlignment)2;
+			this.NumericUpDown_num_est_rep_820.TabIndex = 2;
 			this.NumericUpDown_num_est_rep_820.TextAlign = HorizontalAlignment.Right;
 			this.Label_num_est_rep_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_est_rep_ = this.Label_num_est_rep_820;
@@ -3501,7 +3501,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_num_est_rep_2 = this.Label_num_est_rep_820;
 			size = new size(112, 13);
 			label_num_est_rep_2.Size = size;
-			this.Label_num_est_rep_820.TabIndex = (HorizontalAlignment)2;
+			this.Label_num_est_rep_820.TabIndex = 2;
 			this.Label_num_est_rep_820.Text = "Número de Estações :";
 			this.Label_end_rep_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_ = this.Label_end_rep_820;
@@ -3511,7 +3511,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_rep_2 = this.Label_end_rep_820;
 			size = new size(129, 13);
 			label_end_rep_2.Size = size;
-			this.Label_end_rep_820.TabIndex = (HorizontalAlignment)1;
+			this.Label_end_rep_820.TabIndex = 1;
 			this.Label_end_rep_820.Text = "Endereço da Repetidora :";
 			global::System.Windows.Forms.Control numericUpDown_end_rep_ = this.NumericUpDown_end_rep_820;
 			location = new location(174, 42);
@@ -3529,7 +3529,7 @@ namespace iS800
 			global::System.Windows.Forms.Control numericUpDown_end_rep_3 = this.NumericUpDown_end_rep_820;
 			size = new size(72, 20);
 			numericUpDown_end_rep_3.Size = size;
-			this.NumericUpDown_end_rep_820.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_end_rep_820.TabIndex = 1;
 			this.NumericUpDown_end_rep_820.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control tb_lixo13 = this.tb_lixo7;
 			location = new location(174, 42);
@@ -3538,7 +3538,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo14 = this.tb_lixo7;
 			size = new size(45, 20);
 			tb_lixo14.Size = size;
-			this.tb_lixo7.TabIndex = (HorizontalAlignment)1;
+			this.tb_lixo7.TabIndex = 1;
 			this.TabPage_timer.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_timer.Controls.Add(this.GroupBox_timer);
 			global::System.Windows.Forms.TabPage tabPage_timer = this.TabPage_timer;
@@ -3548,7 +3548,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage_timer2 = this.TabPage_timer;
 			size = new size(1396, 652);
 			tabPage_timer2.Size = size;
-			this.TabPage_timer.TabIndex = (HorizontalAlignment)9;
+			this.TabPage_timer.TabIndex = 9;
 			this.TabPage_timer.Text = "   Timer   ";
 			this.TabPage_timer.UseVisualStyleBackColor = true;
 			this.GroupBox_timer.Controls.Add(this.Label1);
@@ -3562,7 +3562,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_timer2 = this.GroupBox_timer;
 			size = new size(822, 270);
 			groupBox_timer2.Size = size;
-			this.GroupBox_timer.TabIndex = (HorizontalAlignment)0;
+			this.GroupBox_timer.TabIndex = 0;
 			this.GroupBox_timer.TabStop = false;
 			this.GroupBox_timer.Tag = " ";
 			this.GroupBox_timer.Text = "Faixas de tempo";
@@ -3575,7 +3575,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label142 = this.Label1;
 			size = new size(37, 13);
 			label142.Size = size;
-			this.Label1.TabIndex = (HorizontalAlignment)2;
+			this.Label1.TabIndex = 2;
 			this.Label1.Text = "Faixas";
 			this.DataGridView1.AllowUserToAddRows = false;
 			this.DataGridView1.AllowUserToDeleteRows = false;
@@ -3589,7 +3589,7 @@ namespace iS800
 			dataGridViewCellStyle58.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle58.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
-			this.DataGridView1.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView1.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView1.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Column2,
@@ -3619,39 +3619,39 @@ namespace iS800
 			dataGridViewCellStyle60.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle60.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle60;
-			this.DataGridView1.RowHeadersWidth = (HorizontalAlignment)80;
+			this.DataGridView1.RowHeadersWidth = 80;
 			this.DataGridView1.ScrollBars =(System.Windows.Forms.ScrollBars)0;
 			global::System.Windows.Forms.Control dataGridView4 = this.DataGridView1;
 			size = new size(778, 21);
 			dataGridView4.Size = size;
-			this.DataGridView1.TabIndex = (HorizontalAlignment)1;
+			this.DataGridView1.TabIndex = 1;
 			this.DataGridView1.TabStop = false;
 			dataGridViewCellStyle61.Alignment =(System.Windows.Forms.HorizontalAlignment)32;
 			this.Column2.DefaultCellStyle = dataGridViewCellStyle61;
 			this.Column2.FillWeight = 116f;
 			this.Column2.HeaderText = "                1";
 			this.Column2.Name = "Column2";
-			this.Column2.Width = (HorizontalAlignment)116;
+			this.Column2.Width = 116;
 			this.Column3.FillWeight = 116f;
 			this.Column3.HeaderText = "                2";
 			this.Column3.Name = "Column3";
-			this.Column3.Width = (HorizontalAlignment)116;
+			this.Column3.Width = 116;
 			this.Column4.FillWeight = 116f;
 			this.Column4.HeaderText = "                3";
 			this.Column4.Name = "Column4";
-			this.Column4.Width = (HorizontalAlignment)116;
+			this.Column4.Width = 116;
 			this.Column5.FillWeight = 116f;
 			this.Column5.HeaderText = "                4";
 			this.Column5.Name = "Column5";
-			this.Column5.Width = (HorizontalAlignment)116;
+			this.Column5.Width = 116;
 			this.Column6.FillWeight = 116f;
 			this.Column6.HeaderText = "                5";
 			this.Column6.Name = "Column6";
-			this.Column6.Width = (HorizontalAlignment)116;
+			this.Column6.Width = 116;
 			this.Column7.FillWeight = 116f;
 			this.Column7.HeaderText = "                6";
 			this.Column7.Name = "Column7";
-			this.Column7.Width = (HorizontalAlignment)116;
+			this.Column7.Width = 116;
 			this.DataGridView_timer_RT820.AllowUserToAddRows = false;
 			this.DataGridView_timer_RT820.AllowUserToDeleteRows = false;
 			this.DataGridView_timer_RT820.AllowUserToResizeColumns = false;
@@ -3666,7 +3666,7 @@ namespace iS800
 			dataGridViewCellStyle63.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle63.WrapMode =(System.Windows.Forms.DataGridViewTriState) (System.Windows.Forms.DataGridViewTriState)System.Windows.Forms.DataGridViewTriState.True;
 			this.DataGridView_timer_RT820.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle63;
-			this.DataGridView_timer_RT820.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_timer_RT820.ColumnHeadersHeightSizeMode = 2;
 			dataGridViewCellStyle64.Alignment =(System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle64.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle64.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -3693,7 +3693,7 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_timer_RT2 = this.DataGridView_timer_RT820;
 			size = new size(778, 199);
 			dataGridView_timer_RT2.Size = size;
-			this.DataGridView_timer_RT820.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_timer_RT820.TabIndex = 0;
 			global::System.Windows.Forms.Control tb_lixo15 = this.tb_lixo8;
 			location = new location(376, 145);
 			tb_lixo15.Location = location;
@@ -3701,7 +3701,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo16 = this.tb_lixo8;
 			size = new size(100, 20);
 			tb_lixo16.Size = size;
-			this.tb_lixo8.TabIndex = (HorizontalAlignment)3;
+			this.tb_lixo8.TabIndex = 3;
 			this.TabPage1.Controls.Add(this.GroupBox1);
 			global::System.Windows.Forms.TabPage tabPage9 = this.TabPage1;
 			location = new location(4, 22);
@@ -3713,7 +3713,7 @@ namespace iS800
 			global::System.Windows.Forms.Control tabPage11 = this.TabPage1;
 			size = new size(1396, 652);
 			tabPage11.Size = size;
-			this.TabPage1.TabIndex = (HorizontalAlignment)10;
+			this.TabPage1.TabIndex = 10;
 			this.TabPage1.Text = "   Dados de Instalação   ";
 			this.TabPage1.UseVisualStyleBackColor = true;
 			this.GroupBox1.BackColor = global::System.Drawing.SystemColors.ControlLight;
@@ -3752,7 +3752,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox36 = this.GroupBox1;
 			size = new size(629, 246);
 			groupBox36.Size = size;
-			this.GroupBox1.TabIndex = (HorizontalAlignment)1;
+			this.GroupBox1.TabIndex = 1;
 			this.GroupBox1.TabStop = false;
 			this.Label16.AutoSize = true;
 			this.Label16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 9.75f, 0, (FontStyle)3, 0);
@@ -3763,7 +3763,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label144 = this.Label16;
 			size = new size(12, 16);
 			label144.Size = size;
-			this.Label16.TabIndex = (HorizontalAlignment)26;
+			this.Label16.TabIndex = 26;
 			this.Label16.Text = "°";
 			this.Label15.AutoSize = true;
 			global::System.Windows.Forms.Control label145 = this.Label15;
@@ -3773,7 +3773,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label146 = this.Label15;
 			size = new size(15, 13);
 			label146.Size = size;
-			this.Label15.TabIndex = (HorizontalAlignment)25;
+			this.Label15.TabIndex = 25;
 			this.Label15.Text = "m";
 			global::System.Windows.Forms.Control t_ModeloFonte = this.T_ModeloFonte;
 			location = new location(465, 157);
@@ -3782,7 +3782,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_ModeloFonte2 = this.T_ModeloFonte;
 			size = new size(121, 20);
 			t_ModeloFonte2.Size = size;
-			this.T_ModeloFonte.TabIndex = (HorizontalAlignment)24;
+			this.T_ModeloFonte.TabIndex = 24;
 			global::System.Windows.Forms.Control t_AlturaAntena = this.T_AlturaAntena;
 			location = new location(465, 124);
 			t_AlturaAntena.Location = location;
@@ -3790,7 +3790,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_AlturaAntena2 = this.T_AlturaAntena;
 			size = new size(121, 20);
 			t_AlturaAntena2.Size = size;
-			this.T_AlturaAntena.TabIndex = (HorizontalAlignment)23;
+			this.T_AlturaAntena.TabIndex = 23;
 			global::System.Windows.Forms.Control t_Latitude = this.T_Latitude;
 			location = new location(465, 89);
 			t_Latitude.Location = location;
@@ -3798,7 +3798,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_Latitude2 = this.T_Latitude;
 			size = new size(121, 20);
 			t_Latitude2.Size = size;
-			this.T_Latitude.TabIndex = (HorizontalAlignment)22;
+			this.T_Latitude.TabIndex = 22;
 			global::System.Windows.Forms.Control t_Longitude = this.T_Longitude;
 			location = new location(465, 54);
 			t_Longitude.Location = location;
@@ -3806,7 +3806,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_Longitude2 = this.T_Longitude;
 			size = new size(121, 20);
 			t_Longitude2.Size = size;
-			this.T_Longitude.TabIndex = (HorizontalAlignment)21;
+			this.T_Longitude.TabIndex = 21;
 			global::System.Windows.Forms.Control t_Azimute = this.T_Azimute;
 			location = new location(465, 23);
 			t_Azimute.Location = location;
@@ -3814,7 +3814,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_Azimute2 = this.T_Azimute;
 			size = new size(121, 20);
 			t_Azimute2.Size = size;
-			this.T_Azimute.TabIndex = (HorizontalAlignment)20;
+			this.T_Azimute.TabIndex = 20;
 			this.Label14.AutoSize = true;
 			global::System.Windows.Forms.Control label147 = this.Label14;
 			location = new location(279, 96);
@@ -3823,7 +3823,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label148 = this.Label14;
 			size = new size(18, 13);
 			label148.Size = size;
-			this.Label14.TabIndex = (HorizontalAlignment)19;
+			this.Label14.TabIndex = 19;
 			this.Label14.Text = "W";
 			this.Label13.AutoSize = true;
 			global::System.Windows.Forms.Control label149 = this.Label13;
@@ -3833,7 +3833,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label150 = this.Label13;
 			size = new size(29, 13);
 			label150.Size = size;
-			this.Label13.TabIndex = (HorizontalAlignment)18;
+			this.Label13.TabIndex = 18;
 			this.Label13.Text = "MHz";
 			this.Label12.AutoSize = true;
 			global::System.Windows.Forms.Control label151 = this.Label12;
@@ -3843,7 +3843,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label152 = this.Label12;
 			size = new size(21, 13);
 			label152.Size = size;
-			this.Label12.TabIndex = (HorizontalAlignment)17;
+			this.Label12.TabIndex = 17;
 			this.Label12.Text = "km";
 			global::System.Windows.Forms.Control t_FreqRadio = this.T_FreqRadio;
 			location = new location(152, 192);
@@ -3852,7 +3852,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_FreqRadio2 = this.T_FreqRadio;
 			size = new size(121, 20);
 			t_FreqRadio2.Size = size;
-			this.T_FreqRadio.TabIndex = (HorizontalAlignment)16;
+			this.T_FreqRadio.TabIndex = 16;
 			global::System.Windows.Forms.Control t_DistCentral = this.T_DistCentral;
 			location = new location(152, 160);
 			t_DistCentral.Location = location;
@@ -3860,7 +3860,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_DistCentral2 = this.T_DistCentral;
 			size = new size(121, 20);
 			t_DistCentral2.Size = size;
-			this.T_DistCentral.TabIndex = (HorizontalAlignment)15;
+			this.T_DistCentral.TabIndex = 15;
 			global::System.Windows.Forms.Control t_PotRadio = this.T_PotRadio;
 			location = new location(152, 89);
 			t_PotRadio.Location = location;
@@ -3868,7 +3868,7 @@ namespace iS800
 			global::System.Windows.Forms.Control t_PotRadio2 = this.T_PotRadio;
 			size = new size(121, 20);
 			t_PotRadio2.Size = size;
-			this.T_PotRadio.TabIndex = (HorizontalAlignment)14;
+			this.T_PotRadio.TabIndex = 14;
 			this.CB_ModeloRadio.FormattingEnabled = true;
 			this.CB_ModeloRadio.Items.AddRange(new object[]
 			{
@@ -3893,7 +3893,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_ModeloRadio2 = this.CB_ModeloRadio;
 			size = new size(121, 21);
 			cb_ModeloRadio2.Size = size;
-			this.CB_ModeloRadio.TabIndex = (HorizontalAlignment)13;
+			this.CB_ModeloRadio.TabIndex = 13;
 			this.CB_PolarizacaoAntena.FormattingEnabled = true;
 			this.CB_PolarizacaoAntena.Items.AddRange(new object[]
 			{
@@ -3907,7 +3907,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_PolarizacaoAntena2 = this.CB_PolarizacaoAntena;
 			size = new size(121, 21);
 			cb_PolarizacaoAntena2.Size = size;
-			this.CB_PolarizacaoAntena.TabIndex = (HorizontalAlignment)12;
+			this.CB_PolarizacaoAntena.TabIndex = 12;
 			this.CB_TipoAntena.FormattingEnabled = true;
 			this.CB_TipoAntena.Items.AddRange(new object[]
 			{
@@ -3923,7 +3923,7 @@ namespace iS800
 			global::System.Windows.Forms.Control cb_TipoAntena2 = this.CB_TipoAntena;
 			size = new size(121, 21);
 			cb_TipoAntena2.Size = size;
-			this.CB_TipoAntena.TabIndex = (HorizontalAlignment)11;
+			this.CB_TipoAntena.TabIndex = 11;
 			this.Label11.AutoSize = true;
 			global::System.Windows.Forms.Control label153 = this.Label11;
 			location = new location(369, 160);
@@ -3932,7 +3932,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label154 = this.Label11;
 			size = new size(87, 13);
 			label154.Size = size;
-			this.Label11.TabIndex = (HorizontalAlignment)10;
+			this.Label11.TabIndex = 10;
 			this.Label11.Text = "Modelo da fonte:";
 			this.Label10.AutoSize = true;
 			global::System.Windows.Forms.Control label155 = this.Label10;
@@ -3942,7 +3942,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label156 = this.Label10;
 			size = new size(37, 13);
 			label156.Size = size;
-			this.Label10.TabIndex = (HorizontalAlignment)9;
+			this.Label10.TabIndex = 9;
 			this.Label10.Text = "Altura:";
 			this.Label9.AutoSize = true;
 			global::System.Windows.Forms.Control label157 = this.Label9;
@@ -3952,7 +3952,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label158 = this.Label9;
 			size = new size(48, 13);
 			label158.Size = size;
-			this.Label9.TabIndex = (HorizontalAlignment)8;
+			this.Label9.TabIndex = 8;
 			this.Label9.Text = "Latitude:";
 			this.Label8.AutoSize = true;
 			global::System.Windows.Forms.Control label159 = this.Label8;
@@ -3962,7 +3962,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label160 = this.Label8;
 			size = new size(57, 13);
 			label160.Size = size;
-			this.Label8.TabIndex = (HorizontalAlignment)7;
+			this.Label8.TabIndex = 7;
 			this.Label8.Text = "Longitude:";
 			this.Label7.AutoSize = true;
 			global::System.Windows.Forms.Control label161 = this.Label7;
@@ -3972,7 +3972,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label162 = this.Label7;
 			size = new size(47, 13);
 			label162.Size = size;
-			this.Label7.TabIndex = (HorizontalAlignment)6;
+			this.Label7.TabIndex = 6;
 			this.Label7.Text = "Azimute:";
 			this.Label6.AutoSize = true;
 			global::System.Windows.Forms.Control label163 = this.Label6;
@@ -3982,7 +3982,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label164 = this.Label6;
 			size = new size(104, 13);
 			label164.Size = size;
-			this.Label6.TabIndex = (HorizontalAlignment)5;
+			this.Label6.TabIndex = 5;
 			this.Label6.Text = "Frequência do rádio:";
 			this.Label5.AutoSize = true;
 			global::System.Windows.Forms.Control label165 = this.Label5;
@@ -3992,7 +3992,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label166 = this.Label5;
 			size = new size(122, 13);
 			label166.Size = size;
-			this.Label5.TabIndex = (HorizontalAlignment)4;
+			this.Label5.TabIndex = 4;
 			this.Label5.Text = "Distância para a central:";
 			this.Label4.AutoSize = true;
 			global::System.Windows.Forms.Control label167 = this.Label4;
@@ -4002,7 +4002,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label168 = this.Label4;
 			size = new size(86, 13);
 			label168.Size = size;
-			this.Label4.TabIndex = (HorizontalAlignment)3;
+			this.Label4.TabIndex = 3;
 			this.Label4.Text = "Modelo do rádio:";
 			this.Label3.AutoSize = true;
 			global::System.Windows.Forms.Control label169 = this.Label3;
@@ -4012,7 +4012,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label170 = this.Label3;
 			size = new size(93, 13);
 			label170.Size = size;
-			this.Label3.TabIndex = (HorizontalAlignment)2;
+			this.Label3.TabIndex = 2;
 			this.Label3.Text = "Potência do rádio:";
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label171 = this.Label2;
@@ -4022,7 +4022,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label172 = this.Label2;
 			size = new size(65, 13);
 			label172.Size = size;
-			this.Label2.TabIndex = (HorizontalAlignment)1;
+			this.Label2.TabIndex = 1;
 			this.Label2.Text = "Polarização:";
 			this.Label17.AutoSize = true;
 			global::System.Windows.Forms.Control label173 = this.Label17;
@@ -4032,7 +4032,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label174 = this.Label17;
 			size = new size(83, 13);
 			label174.Size = size;
-			this.Label17.TabIndex = (HorizontalAlignment)0;
+			this.Label17.TabIndex = 0;
 			this.Label17.Text = "Tipo de Antena:";
 			global::System.Windows.Forms.Control tb_lixo17 = this.tb_lixo9;
 			location = new location(185, 125);
@@ -4041,10 +4041,10 @@ namespace iS800
 			global::System.Windows.Forms.Control tb_lixo18 = this.tb_lixo9;
 			size = new size(56, 20);
 			tb_lixo18.Size = size;
-			this.tb_lixo9.TabIndex = (HorizontalAlignment)27;
+			this.tb_lixo9.TabIndex = 27;
 			this.ToolStri_RT_820.AutoSize = false;
 			this.ToolStri_RT_820.BackColor = global::System.Drawing.Color.Transparent;
-			this.ToolStri_RT_820.GripStyle = (HorizontalAlignment)0;
+			this.ToolStri_RT_820.GripStyle = 0;
 			global::System.Windows.Forms.ToolStrip toolStri_RT_ = this.ToolStri_RT_820;
 			size = new size(48, 48);
 			toolStri_RT_.ImageScalingSize = size;
@@ -4073,7 +4073,7 @@ namespace iS800
 			size = new size(1426, 55);
 			toolStri_RT_3.Size = size;
 			this.ToolStri_RT_820.Stretch = true;
-			this.ToolStri_RT_820.TabIndex = (HorizontalAlignment)13;
+			this.ToolStri_RT_820.TabIndex = 13;
 			this.ToolStri_RT_820.Text = "ToolStrip1";
 			this.ToolStripButton_RT_820_novo.DisplayStyle =(System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT_820_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
@@ -4168,7 +4168,7 @@ namespace iS800
 			size = new size(6, 52);
 			toolStripSeparator6.Size = size;
 			this.ToolStripTextBox_RT_820_Msg.BackColor = global::System.Drawing.Color.LightCyan;
-			this.ToolStripTextBox_RT_820_Msg.BorderStyle = (HorizontalAlignment)1;
+			this.ToolStripTextBox_RT_820_Msg.BorderStyle = 1;
 			this.ToolStripTextBox_RT_820_Msg.Font = new global::System.Drawing.Font("Cambria", 9.75f, 0, (FontStyle)3, 0);
 			global::System.Windows.Forms.ToolStripItem toolStripTextBox_RT_820_Msg = this.ToolStripTextBox_RT_820_Msg;
 			padding = new padding(10, 15, 1, 0);
@@ -4184,12 +4184,12 @@ namespace iS800
 			padding = new padding(20, 15, 1, 1);
 			toolStripProgressBar_RT_.Margin = padding;
 			this.ToolStripProgressBar_RT_820.Name = "ToolStripProgressBar_RT_820";
-			this.ToolStripProgressBar_RT_820.Overflow = (HorizontalAlignment)0;
+			this.ToolStripProgressBar_RT_820.Overflow = 0;
 			global::System.Windows.Forms.ToolStripControlHost toolStripProgressBar_RT_2 = this.ToolStripProgressBar_RT_820;
 			size = new size(180, 20);
 			toolStripProgressBar_RT_2.Size = size;
 			this.ToolStripProgressBar_RT_820.ToolTipText = "Progresso da operação";
-			this.Timer_limpa_MSG_820.Interval = (HorizontalAlignment)2000;
+			this.Timer_limpa_MSG_820.Interval = 2000;
 			global::System.Windows.Forms.PrintPreviewDialog printPreviewDialog = this.PrintPreviewDialog1;
 			size = new size(0, 0);
 			printPreviewDialog.AutoScrollMargin = size;

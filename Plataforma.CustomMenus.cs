@@ -36,14 +36,14 @@ namespace iS800
         {
             try
             {
-                Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
-                Geral.Ctrl_versao = (HorizontalAlignment)30;
-                Geral.Ctrl_operacao = (HorizontalAlignment)100000;
-                this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
-                this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)3;
-                Geral.Equipamento_selecionado = (HorizontalAlignment)821;
-                Geral.Equipamento_versao = (HorizontalAlignment)3;
-                Geral.Equipamento_build = (HorizontalAlignment)0;
+                Geral.Ctrl_equipamento = 3000;
+                Geral.Ctrl_versao = 30;
+                Geral.Ctrl_operacao = 100000;
+                this.ToolStripComboBox_versao.SelectedIndex = 1;
+                this.ToolStripComboBox_equipamento.SelectedIndex = 3;
+                Geral.Equipamento_selecionado = 821;
+                Geral.Equipamento_versao = 3;
+                Geral.Equipamento_build = 0;
                 RT_geral.Lmte_Init_ok = false;
                 RT_geral.Telas_RT_821.Configuracao = true;
                 new RT_821_380_conf

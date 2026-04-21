@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x020000B0 RID: 176
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Sobre : global::System.Windows.Forms.Form
 	{
 		// Token: 0x06002923 RID: 10531 RVA: 0x0042CFC0 File Offset: 0x0042B3C0
@@ -28,7 +27,7 @@ namespace iS800
 			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::iS800.Sobre));
 			this.Label5 = new global::System.Windows.Forms.Label();
 			this.SuspendLayout();
-			this.Label5.AccessibleRole = (HorizontalAlignment)0;
+			this.Label5.AccessibleRole = 0;
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
@@ -42,25 +41,25 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(58, 21);
 			label2.Size = size;
-			this.Label5.TabIndex = (HorizontalAlignment)3;
+			this.Label5.TabIndex = 3;
 			this.Label5.Text = "Versão";
 			this.Label5.Visible = false;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
-			this.AutoValidate = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
+			this.AutoValidate = 1;
 			this.BackColor = global::System.Drawing.Color.White;
 			this.BackgroundImage = (global::System.Drawing.Image)componentResourceManager.GetObject("$this.BackgroundImage");
 			size = new global::System.Drawing.Size(729, 350);
 			this.ClientSize = size;
 			this.Controls.Add(this.Label5);
-			this.FormBorderStyle = (HorizontalAlignment)0;
+			this.FormBorderStyle = (System.Windows.Forms.FormBorderStyle)0;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Sobre";
 			this.ShowInTaskbar = false;
-			this.StartPosition = (HorizontalAlignment)4;
+			this.StartPosition = (System.Windows.Forms.FormStartPosition)4;
 			this.Text = "Ictel  - Instrumentação, Controles e Telemetria Ltda";
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x02000013 RID: 19
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Discover : global::System.Windows.Forms.Form
 	{
 		// Token: 0x060000DA RID: 218 RVA: 0x00265818 File Offset: 0x00263C18
@@ -58,7 +57,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(290, 84);
 			groupBox_informacoes2.Size = size;
-			this.GroupBox_informacoes.TabIndex = (HorizontalAlignment)3;
+			this.GroupBox_informacoes.TabIndex = 3;
 			this.GroupBox_informacoes.TabStop = false;
 			this.GroupBox_informacoes.Text = "Informações";
 			this.Label26.AutoSize = true;
@@ -70,7 +69,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label2 = this.Label26;
 			size = new global::System.Drawing.Size(20, 15);
 			label2.Size = size;
-			this.Label26.TabIndex = (HorizontalAlignment)8;
+			this.Label26.TabIndex = 8;
 			this.Label26.Text = "RT";
 			this.TextBox_equipamento.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_equipamento.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -82,9 +81,9 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_equipamento2 = this.TextBox_equipamento;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_equipamento2.Size = size;
-			this.TextBox_equipamento.TabIndex = (HorizontalAlignment)7;
+			this.TextBox_equipamento.TabIndex = 7;
 			this.TextBox_equipamento.TabStop = false;
-			this.TextBox_equipamento.TextAlign = (HorizontalAlignment)2;
+			this.TextBox_equipamento.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new global::System.Drawing.Point(12, 28);
@@ -93,7 +92,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_equipamento2 = this.Label_equipamento;
 			size = new global::System.Drawing.Size(69, 13);
 			label_equipamento2.Size = size;
-			this.Label_equipamento.TabIndex = (HorizontalAlignment)6;
+			this.Label_equipamento.TabIndex = 6;
 			this.Label_equipamento.Text = "Equipamento";
 			this.TextBox_release.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_release.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -105,9 +104,9 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_release2 = this.TextBox_release;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_release2.Size = size;
-			this.TextBox_release.TabIndex = (HorizontalAlignment)5;
+			this.TextBox_release.TabIndex = 5;
 			this.TextBox_release.TabStop = false;
-			this.TextBox_release.TextAlign = (HorizontalAlignment)2;
+			this.TextBox_release.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new global::System.Drawing.Point(206, 28);
@@ -116,7 +115,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_release2 = this.Label_release;
 			size = new global::System.Drawing.Size(46, 13);
 			label_release2.Size = size;
-			this.Label_release.TabIndex = (HorizontalAlignment)4;
+			this.Label_release.TabIndex = 4;
 			this.Label_release.Text = "Release";
 			this.TextBox_build.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_build.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -128,9 +127,9 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_build2 = this.TextBox_build;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_build2.Size = size;
-			this.TextBox_build.TabIndex = (HorizontalAlignment)3;
+			this.TextBox_build.TabIndex = 3;
 			this.TextBox_build.TabStop = false;
-			this.TextBox_build.TextAlign = (HorizontalAlignment)2;
+			this.TextBox_build.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new global::System.Drawing.Point(160, 28);
@@ -139,7 +138,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_build2 = this.Label_build;
 			size = new global::System.Drawing.Size(30, 13);
 			label_build2.Size = size;
-			this.Label_build.TabIndex = (HorizontalAlignment)2;
+			this.Label_build.TabIndex = 2;
 			this.Label_build.Text = "Build";
 			this.TextBox_versao.BackColor = global::System.Drawing.Color.LightCyan;
 			this.TextBox_versao.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
@@ -151,9 +150,9 @@ namespace iS800
 			global::System.Windows.Forms.Control textBox_versao2 = this.TextBox_versao;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_versao2.Size = size;
-			this.TextBox_versao.TabIndex = (HorizontalAlignment)1;
+			this.TextBox_versao.TabIndex = 1;
 			this.TextBox_versao.TabStop = false;
-			this.TextBox_versao.TextAlign = (HorizontalAlignment)2;
+			this.TextBox_versao.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new global::System.Drawing.Point(102, 28);
@@ -162,7 +161,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_versao2 = this.Label_versao;
 			size = new global::System.Drawing.Size(40, 13);
 			label_versao2.Size = size;
-			this.Label_versao.TabIndex = (HorizontalAlignment)0;
+			this.Label_versao.TabIndex = 0;
 			this.Label_versao.Text = "Versão";
 			global::System.Windows.Forms.Control bt_Configuracao = this.bt_Configuracao;
 			location = new global::System.Drawing.Point(12, 150);
@@ -171,13 +170,13 @@ namespace iS800
 			global::System.Windows.Forms.Control bt_Configuracao2 = this.bt_Configuracao;
 			size = new global::System.Drawing.Size(102, 23);
 			bt_Configuracao2.Size = size;
-			this.bt_Configuracao.TabIndex = (HorizontalAlignment)4;
+			this.bt_Configuracao.TabIndex = 4;
 			this.bt_Configuracao.Text = "Configuração";
 			this.bt_Configuracao.UseVisualStyleBackColor = true;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
 			size = new global::System.Drawing.Size(312, 261);
 			this.ClientSize = size;
 			this.Controls.Add(this.bt_Configuracao);

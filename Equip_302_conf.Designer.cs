@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x02000087 RID: 135
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Equip_302_conf : global::System.Windows.Forms.Form
 	{
 		// Token: 0x0600219D RID: 8605 RVA: 0x003F6BA4 File Offset: 0x003F4FA4
@@ -136,30 +135,25 @@ namespace iS800
 			this.Col_Esc_15 = new global::System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Col_Esc_16 = new global::System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Grupo_conf_comunicacao.SuspendLayout();
-			this.Valor_intervalo_polling.BeginInit();
-			this.Valor_erro_falha.BeginInit();
-			this.Valor_timeout.BeginInit();
-			this.Valor_temp_ptt.BeginInit();
-			this.Valor_endereco.BeginInit();
-			this.Valor_num_tentativas.BeginInit();
+
+
+
+
+
 			this.Grupo_lapelas.SuspendLayout();
 			this.TabControl2.SuspendLayout();
 			this.Conf_res.SuspendLayout();
-			this.DataGridView1.BeginInit();
 			this.Conf_rq.SuspendLayout();
-			this.DataGridView_RQ.BeginInit();
 			this.Conf_centrais.SuspendLayout();
-			this.DataGridView_central_rq.BeginInit();
-			this.DataGridView_central_res.BeginInit();
-			this.DataGridView_central_geral.BeginInit();
+
+
 			this.Grupo_conf_equipamentos.SuspendLayout();
-			this.Valor_vista_equipamentos.BeginInit();
-			this.Valor_end_ini_vista.BeginInit();
-			this.Valor_end_ini_rq.BeginInit();
-			this.Valor_end_ini_res.BeginInit();
-			this.Valor_rq_equipamentos.BeginInit();
-			this.Valor_res_equipamentos.BeginInit();
-			this.Valor_res_sistema.BeginInit();
+
+
+
+
+
+
 			this.Grupo_comandos.SuspendLayout();
 			this.MenuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -186,7 +180,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(305, 250);
 			grupo_conf_comunicacao2.Size = size;
-			this.Grupo_conf_comunicacao.TabIndex = (HorizontalAlignment)1;
+			this.Grupo_conf_comunicacao.TabIndex = 1;
 			this.Grupo_conf_comunicacao.TabStop = false;
 			this.Grupo_conf_comunicacao.Text = "Configuração comunicação";
 			global::System.Windows.Forms.Control valor_intervalo_polling = this.Valor_intervalo_polling;
@@ -215,8 +209,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_intervalo_polling4 = this.Valor_intervalo_polling;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_intervalo_polling4.Size = size;
-			this.Valor_intervalo_polling.TabIndex = (HorizontalAlignment)25;
-			this.Valor_intervalo_polling.TextAlign = (HorizontalAlignment)2;
+			this.Valor_intervalo_polling.TabIndex = 25;
+			this.Valor_intervalo_polling.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_polling5 = this.Valor_intervalo_polling;
 			num = new decimal(new int[]
 			{
@@ -234,7 +228,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_intervalo_polling2 = this.Label_intervalo_polling;
 			size = new global::System.Drawing.Size(182, 13);
 			label_intervalo_polling2.Size = size;
-			this.Label_intervalo_polling.TabIndex = (HorizontalAlignment)24;
+			this.Label_intervalo_polling.TabIndex = 24;
 			this.Label_intervalo_polling.Text = "Intervalo entre comunicações (seg.) :";
 			global::System.Windows.Forms.Control valor_erro_falha = this.Valor_erro_falha;
 			location = new global::System.Drawing.Point(200, 185);
@@ -261,8 +255,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_erro_falha4 = this.Valor_erro_falha;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_erro_falha4.Size = size;
-			this.Valor_erro_falha.TabIndex = (HorizontalAlignment)23;
-			this.Valor_erro_falha.TextAlign = (HorizontalAlignment)2;
+			this.Valor_erro_falha.TabIndex = 23;
+			this.Valor_erro_falha.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_erro_falha5 = this.Valor_erro_falha;
 			num = new decimal(new int[]
 			{
@@ -280,7 +274,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_erros_falha2 = this.Label_erros_falha;
 			size = new global::System.Drawing.Size(153, 13);
 			label_erros_falha2.Size = size;
-			this.Label_erros_falha.TabIndex = (HorizontalAlignment)22;
+			this.Label_erros_falha.TabIndex = 22;
 			this.Label_erros_falha.Text = "Número erros para gerar falha :";
 			global::System.Windows.Forms.Control valor_timeout = this.Valor_timeout;
 			location = new global::System.Drawing.Point(200, 123);
@@ -298,8 +292,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_timeout3 = this.Valor_timeout;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_timeout3.Size = size;
-			this.Valor_timeout.TabIndex = (HorizontalAlignment)21;
-			this.Valor_timeout.TextAlign = (HorizontalAlignment)2;
+			this.Valor_timeout.TabIndex = 21;
+			this.Valor_timeout.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_timeout.AutoSize = true;
 			global::System.Windows.Forms.Control label_timeout = this.Label_timeout;
 			location = new global::System.Drawing.Point(15, 125);
@@ -308,7 +302,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_timeout2 = this.Label_timeout;
 			size = new global::System.Drawing.Size(165, 13);
 			label_timeout2.Size = size;
-			this.Label_timeout.TabIndex = (HorizontalAlignment)20;
+			this.Label_timeout.TabIndex = 20;
 			this.Label_timeout.Text = "Tempo espera de resposta (seg.):";
 			this.Combo_baudrate.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_baudrate = this.Combo_baudrate;
@@ -318,7 +312,7 @@ namespace iS800
 			global::System.Windows.Forms.Control combo_baudrate2 = this.Combo_baudrate;
 			size = new global::System.Drawing.Size(93, 21);
 			combo_baudrate2.Size = size;
-			this.Combo_baudrate.TabIndex = (HorizontalAlignment)18;
+			this.Combo_baudrate.TabIndex = 18;
 			this.Label_baudrate.AutoSize = true;
 			global::System.Windows.Forms.Control label_baudrate = this.Label_baudrate;
 			location = new global::System.Drawing.Point(15, 218);
@@ -327,7 +321,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_baudrate2 = this.Label_baudrate;
 			size = new global::System.Drawing.Size(95, 13);
 			label_baudrate2.Size = size;
-			this.Label_baudrate.TabIndex = (HorizontalAlignment)19;
+			this.Label_baudrate.TabIndex = 19;
 			this.Label_baudrate.Text = "Baud rate COM 2 :";
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt = this.Valor_temp_ptt;
 			num = new decimal(new int[]
@@ -354,8 +348,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_temp_ptt4 = this.Valor_temp_ptt;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_temp_ptt4.Size = size;
-			this.Valor_temp_ptt.TabIndex = (HorizontalAlignment)17;
-			this.Valor_temp_ptt.TextAlign = (HorizontalAlignment)2;
+			this.Valor_temp_ptt.TabIndex = 17;
+			this.Valor_temp_ptt.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_endereco = this.Valor_endereco;
 			location = new global::System.Drawing.Point(200, 30);
 			valor_endereco.Location = location;
@@ -372,8 +366,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_endereco3 = this.Valor_endereco;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_endereco3.Size = size;
-			this.Valor_endereco.TabIndex = (HorizontalAlignment)16;
-			this.Valor_endereco.TextAlign = (HorizontalAlignment)2;
+			this.Valor_endereco.TabIndex = 16;
+			this.Valor_endereco.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_num_tentativas = this.Valor_num_tentativas;
 			location = new global::System.Drawing.Point(200, 154);
 			valor_num_tentativas.Location = location;
@@ -399,8 +393,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_num_tentativas4 = this.Valor_num_tentativas;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_num_tentativas4.Size = size;
-			this.Valor_num_tentativas.TabIndex = (HorizontalAlignment)15;
-			this.Valor_num_tentativas.TextAlign = (HorizontalAlignment)2;
+			this.Valor_num_tentativas.TabIndex = 15;
+			this.Valor_num_tentativas.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_num_tentativas5 = this.Valor_num_tentativas;
 			num = new decimal(new int[]
 			{
@@ -418,7 +412,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_ptt2 = this.Label_tempo_ptt;
 			size = new global::System.Drawing.Size(123, 13);
 			label_tempo_ptt2.Size = size;
-			this.Label_tempo_ptt.TabIndex = (HorizontalAlignment)14;
+			this.Label_tempo_ptt.TabIndex = 14;
 			this.Label_tempo_ptt.Text = "Tempo PTT ligado (ms) :";
 			this.Label_endereco.AutoSize = true;
 			global::System.Windows.Forms.Control label_endereco = this.Label_endereco;
@@ -428,7 +422,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_endereco2 = this.Label_endereco;
 			size = new global::System.Drawing.Size(109, 13);
 			label_endereco2.Size = size;
-			this.Label_endereco.TabIndex = (HorizontalAlignment)13;
+			this.Label_endereco.TabIndex = 13;
 			this.Label_endereco.Text = "Endereço da central :";
 			this.Label_retry.AutoSize = true;
 			global::System.Windows.Forms.Control label_retry = this.Label_retry;
@@ -438,7 +432,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_retry2 = this.Label_retry;
 			size = new global::System.Drawing.Size(99, 13);
 			label_retry2.Size = size;
-			this.Label_retry.TabIndex = (HorizontalAlignment)12;
+			this.Label_retry.TabIndex = 12;
 			this.Label_retry.Text = "Número tentativas :";
 			this.Grupo_lapelas.Controls.Add(this.TabControl2);
 			global::System.Windows.Forms.Control grupo_lapelas = this.Grupo_lapelas;
@@ -448,10 +442,10 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_lapelas2 = this.Grupo_lapelas;
 			size = new global::System.Drawing.Size(801, 636);
 			grupo_lapelas2.Size = size;
-			this.Grupo_lapelas.TabIndex = (HorizontalAlignment)3;
+			this.Grupo_lapelas.TabIndex = 3;
 			this.Grupo_lapelas.TabStop = false;
 			this.Grupo_lapelas.Text = "Configuração de equipamentos de reservatórios";
-			this.TabControl2.Appearance = (HorizontalAlignment)1;
+			this.TabControl2.Appearance = 1;
 			this.TabControl2.Controls.Add(this.Conf_res);
 			this.TabControl2.Controls.Add(this.Conf_rq);
 			this.TabControl2.Controls.Add(this.Conf_centrais);
@@ -461,12 +455,12 @@ namespace iS800
 			this.TabControl2.Multiline = true;
 			this.TabControl2.Name = "TabControl2";
 			this.TabControl2.RightToLeftLayout = true;
-			this.TabControl2.SelectedIndex = (HorizontalAlignment)0;
+			this.TabControl2.SelectedIndex = 0;
 			global::System.Windows.Forms.Control tabControl2 = this.TabControl2;
 			size = new global::System.Drawing.Size(738, 589);
 			tabControl2.Size = size;
-			this.TabControl2.SizeMode = (HorizontalAlignment)2;
-			this.TabControl2.TabIndex = (HorizontalAlignment)4;
+			this.TabControl2.SizeMode = 2;
+			this.TabControl2.TabIndex = 4;
 			this.Conf_res.Controls.Add(this.DataGridView1);
 			global::System.Windows.Forms.TabPage conf_res = this.Conf_res;
 			location = new global::System.Drawing.Point(4, 25);
@@ -479,14 +473,14 @@ namespace iS800
 			global::System.Windows.Forms.Control conf_res3 = this.Conf_res;
 			size = new global::System.Drawing.Size(730, 560);
 			conf_res3.Size = size;
-			this.Conf_res.TabIndex = (HorizontalAlignment)0;
+			this.Conf_res.TabIndex = 0;
 			this.Conf_res.Text = "Reservatórios";
 			this.Conf_res.UseVisualStyleBackColor = true;
 			this.DataGridView1.AllowUserToAddRows = false;
 			this.DataGridView1.BackgroundColor = global::System.Drawing.SystemColors.Control;
-			this.DataGridView1.BorderStyle = (HorizontalAlignment)0;
-			this.DataGridView1.CellBorderStyle = (HorizontalAlignment)3;
-			this.DataGridView1.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView1.BorderStyle = (System.Windows.Forms.BorderStyle)0;
+			this.DataGridView1.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView1.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView1.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Col_end,
@@ -495,30 +489,30 @@ namespace iS800
 				this.Col_pri,
 				this.Col_posicao
 			});
-			dataGridViewCellStyle.Alignment = (HorizontalAlignment)64;
+			dataGridViewCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
 			dataGridViewCellStyle.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle.WrapMode = (HorizontalAlignment)2;
+			dataGridViewCellStyle.WrapMode = 2;
 			this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle;
 			global::System.Windows.Forms.Control dataGridView = this.DataGridView1;
 			location = new global::System.Drawing.Point(3, 0);
 			dataGridView.Location = location;
 			this.DataGridView1.Name = "DataGridView1";
-			dataGridViewCellStyle2.Alignment = (HorizontalAlignment)32;
+			dataGridViewCellStyle2.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
 			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle2.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = (HorizontalAlignment)1;
+			dataGridViewCellStyle2.WrapMode = 1;
 			this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			global::System.Windows.Forms.Control dataGridView2 = this.DataGridView1;
 			size = new global::System.Drawing.Size(375, 560);
 			dataGridView2.Size = size;
-			this.DataGridView1.TabIndex = (HorizontalAlignment)3;
+			this.DataGridView1.TabIndex = 3;
 			this.Conf_rq.Controls.Add(this.DataGridView_RQ);
 			global::System.Windows.Forms.TabPage conf_rq = this.Conf_rq;
 			location = new global::System.Drawing.Point(4, 25);
@@ -530,14 +524,14 @@ namespace iS800
 			global::System.Windows.Forms.Control conf_rq3 = this.Conf_rq;
 			size = new global::System.Drawing.Size(730, 560);
 			conf_rq3.Size = size;
-			this.Conf_rq.TabIndex = (HorizontalAlignment)1;
+			this.Conf_rq.TabIndex = 1;
 			this.Conf_rq.Text = "Recalques";
 			this.Conf_rq.UseVisualStyleBackColor = true;
 			this.DataGridView_RQ.AllowUserToAddRows = false;
 			this.DataGridView_RQ.BackgroundColor = global::System.Drawing.SystemColors.Control;
-			this.DataGridView_RQ.BorderStyle = (HorizontalAlignment)0;
-			this.DataGridView_RQ.CellBorderStyle = (HorizontalAlignment)3;
-			this.DataGridView_RQ.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_RQ.BorderStyle = (System.Windows.Forms.BorderStyle)0;
+			this.DataGridView_RQ.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_RQ.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_RQ.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Col_End_rq,
@@ -572,30 +566,30 @@ namespace iS800
 				this.Col_Esc_15,
 				this.Col_Esc_16
 			});
-			dataGridViewCellStyle3.Alignment = (HorizontalAlignment)64;
+			dataGridViewCellStyle3.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = (HorizontalAlignment)2;
+			dataGridViewCellStyle3.WrapMode = 2;
 			this.DataGridView_RQ.DefaultCellStyle = dataGridViewCellStyle3;
 			global::System.Windows.Forms.Control dataGridView_RQ = this.DataGridView_RQ;
 			location = new global::System.Drawing.Point(3, 3);
 			dataGridView_RQ.Location = location;
 			this.DataGridView_RQ.Name = "DataGridView_RQ";
-			dataGridViewCellStyle4.Alignment = (HorizontalAlignment)32;
+			dataGridViewCellStyle4.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
 			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle4.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle4.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = (HorizontalAlignment)1;
+			dataGridViewCellStyle4.WrapMode = 1;
 			this.DataGridView_RQ.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			global::System.Windows.Forms.Control dataGridView_RQ2 = this.DataGridView_RQ;
 			size = new global::System.Drawing.Size(721, 546);
 			dataGridView_RQ2.Size = size;
-			this.DataGridView_RQ.TabIndex = (HorizontalAlignment)4;
+			this.DataGridView_RQ.TabIndex = 4;
 			this.Conf_centrais.Controls.Add(this.DataGridView_central_rq);
 			this.Conf_centrais.Controls.Add(this.DataGridView_central_res);
 			this.Conf_centrais.Controls.Add(this.Label_rq);
@@ -608,14 +602,14 @@ namespace iS800
 			global::System.Windows.Forms.Control conf_centrais2 = this.Conf_centrais;
 			size = new global::System.Drawing.Size(730, 560);
 			conf_centrais2.Size = size;
-			this.Conf_centrais.TabIndex = (HorizontalAlignment)2;
+			this.Conf_centrais.TabIndex = 2;
 			this.Conf_centrais.Text = "Centrais";
 			this.Conf_centrais.UseVisualStyleBackColor = true;
 			this.DataGridView_central_rq.AllowUserToAddRows = false;
 			this.DataGridView_central_rq.BackgroundColor = global::System.Drawing.SystemColors.Control;
-			this.DataGridView_central_rq.BorderStyle = (HorizontalAlignment)0;
-			this.DataGridView_central_rq.CellBorderStyle = (HorizontalAlignment)3;
-			this.DataGridView_central_rq.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_central_rq.BorderStyle = (System.Windows.Forms.BorderStyle)0;
+			this.DataGridView_central_rq.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_central_rq.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_central_rq.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Col_ct_rq_end
@@ -627,21 +621,21 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_central_rq2 = this.DataGridView_central_rq;
 			size = new global::System.Drawing.Size(728, 183);
 			dataGridView_central_rq2.Size = size;
-			this.DataGridView_central_rq.TabIndex = (HorizontalAlignment)20;
+			this.DataGridView_central_rq.TabIndex = 20;
 			dataGridViewCellStyle5.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_ct_rq_end.DefaultCellStyle = dataGridViewCellStyle5;
 			this.Col_ct_rq_end.Frozen = true;
 			this.Col_ct_rq_end.HeaderText = "End";
-			this.Col_ct_rq_end.MaxInputLength = (HorizontalAlignment)200;
+			this.Col_ct_rq_end.MaxInputLength = 200;
 			this.Col_ct_rq_end.Name = "Col_ct_rq_end";
 			this.Col_ct_rq_end.ReadOnly = true;
-			this.Col_ct_rq_end.SortMode = (HorizontalAlignment)0;
-			this.Col_ct_rq_end.Width = (HorizontalAlignment)60;
+			this.Col_ct_rq_end.SortMode = 0;
+			this.Col_ct_rq_end.Width = 60;
 			this.DataGridView_central_res.AllowUserToAddRows = false;
 			this.DataGridView_central_res.BackgroundColor = global::System.Drawing.SystemColors.Control;
-			this.DataGridView_central_res.BorderStyle = (HorizontalAlignment)0;
-			this.DataGridView_central_res.CellBorderStyle = (HorizontalAlignment)3;
-			this.DataGridView_central_res.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_central_res.BorderStyle = (System.Windows.Forms.BorderStyle)0;
+			this.DataGridView_central_res.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_central_res.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_central_res.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Col_ct_res_end
@@ -653,16 +647,16 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_central_res2 = this.DataGridView_central_res;
 			size = new global::System.Drawing.Size(732, 154);
 			dataGridView_central_res2.Size = size;
-			this.DataGridView_central_res.TabIndex = (HorizontalAlignment)19;
+			this.DataGridView_central_res.TabIndex = 19;
 			dataGridViewCellStyle6.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_ct_res_end.DefaultCellStyle = dataGridViewCellStyle6;
 			this.Col_ct_res_end.Frozen = true;
 			this.Col_ct_res_end.HeaderText = "End";
-			this.Col_ct_res_end.MaxInputLength = (HorizontalAlignment)200;
+			this.Col_ct_res_end.MaxInputLength = 200;
 			this.Col_ct_res_end.Name = "Col_ct_res_end";
 			this.Col_ct_res_end.ReadOnly = true;
-			this.Col_ct_res_end.SortMode = (HorizontalAlignment)0;
-			this.Col_ct_res_end.Width = (HorizontalAlignment)60;
+			this.Col_ct_res_end.SortMode = 0;
+			this.Col_ct_res_end.Width = 60;
 			this.Label_rq.AutoSize = true;
 			global::System.Windows.Forms.Control label_rq = this.Label_rq;
 			location = new global::System.Drawing.Point(0, 358);
@@ -671,7 +665,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_rq2 = this.Label_rq;
 			size = new global::System.Drawing.Size(64, 13);
 			label_rq2.Size = size;
-			this.Label_rq.TabIndex = (HorizontalAlignment)17;
+			this.Label_rq.TabIndex = 17;
 			this.Label_rq.Text = "Recalques :";
 			this.Label_res.AutoSize = true;
 			global::System.Windows.Forms.Control label_res = this.Label_res;
@@ -681,13 +675,13 @@ namespace iS800
 			global::System.Windows.Forms.Control label_res2 = this.Label_res;
 			size = new global::System.Drawing.Size(78, 13);
 			label_res2.Size = size;
-			this.Label_res.TabIndex = (HorizontalAlignment)17;
+			this.Label_res.TabIndex = 17;
 			this.Label_res.Text = "Reservatórios :";
 			this.DataGridView_central_geral.AllowUserToAddRows = false;
 			this.DataGridView_central_geral.BackgroundColor = global::System.Drawing.SystemColors.Control;
-			this.DataGridView_central_geral.BorderStyle = (HorizontalAlignment)0;
-			this.DataGridView_central_geral.CellBorderStyle = (HorizontalAlignment)3;
-			this.DataGridView_central_geral.ColumnHeadersHeightSizeMode = (HorizontalAlignment)2;
+			this.DataGridView_central_geral.BorderStyle = (System.Windows.Forms.BorderStyle)0;
+			this.DataGridView_central_geral.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_central_geral.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_central_geral.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Col_vista_end,
@@ -702,28 +696,28 @@ namespace iS800
 			global::System.Windows.Forms.Control dataGridView_central_geral2 = this.DataGridView_central_geral;
 			size = new global::System.Drawing.Size(367, 177);
 			dataGridView_central_geral2.Size = size;
-			this.DataGridView_central_geral.TabIndex = (HorizontalAlignment)0;
+			this.DataGridView_central_geral.TabIndex = 0;
 			this.Col_vista_end.HeaderText = "Endereço";
-			this.Col_vista_end.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_vista_end.MaxInputLength = 2;
 			this.Col_vista_end.Name = "Col_vista_end";
 			this.Col_vista_end.ReadOnly = true;
-			this.Col_vista_end.SortMode = (HorizontalAlignment)0;
-			this.Col_vista_end.Width = (HorizontalAlignment)60;
+			this.Col_vista_end.SortMode = 0;
+			this.Col_vista_end.Width = 60;
 			this.Col_vista_res.HeaderText = "N° Reserv.";
-			this.Col_vista_res.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_vista_res.MaxInputLength = 2;
 			this.Col_vista_res.Name = "Col_vista_res";
-			this.Col_vista_res.SortMode = (HorizontalAlignment)0;
-			this.Col_vista_res.Width = (HorizontalAlignment)95;
+			this.Col_vista_res.SortMode = 0;
+			this.Col_vista_res.Width = 95;
 			this.Col_vista_rq.HeaderText = "N° Recalques";
-			this.Col_vista_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_vista_rq.MaxInputLength = 2;
 			this.Col_vista_rq.Name = "Col_vista_rq";
-			this.Col_vista_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_vista_rq.Width = (HorizontalAlignment)95;
+			this.Col_vista_rq.SortMode = 0;
+			this.Col_vista_rq.Width = 95;
 			this.Col_vista_pri.HeaderText = "Prioridade";
-			this.Col_vista_pri.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_vista_pri.MaxInputLength = 2;
 			this.Col_vista_pri.Name = "Col_vista_pri";
-			this.Col_vista_pri.SortMode = (HorizontalAlignment)0;
-			this.Col_vista_pri.Width = (HorizontalAlignment)70;
+			this.Col_vista_pri.SortMode = 0;
+			this.Col_vista_pri.Width = 70;
 			this.Grupo_conf_equipamentos.Controls.Add(this.Valor_vista_equipamentos);
 			this.Grupo_conf_equipamentos.Controls.Add(this.Label_vista_equipamentos);
 			this.Grupo_conf_equipamentos.Controls.Add(this.Valor_end_ini_vista);
@@ -745,7 +739,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_conf_equipamentos2 = this.Grupo_conf_equipamentos;
 			size = new global::System.Drawing.Size(305, 252);
 			grupo_conf_equipamentos2.Size = size;
-			this.Grupo_conf_equipamentos.TabIndex = (HorizontalAlignment)4;
+			this.Grupo_conf_equipamentos.TabIndex = 4;
 			this.Grupo_conf_equipamentos.TabStop = false;
 			this.Grupo_conf_equipamentos.Text = "Configuracao de equipamentos";
 			global::System.Windows.Forms.Control valor_vista_equipamentos = this.Valor_vista_equipamentos;
@@ -764,8 +758,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_vista_equipamentos3 = this.Valor_vista_equipamentos;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_vista_equipamentos3.Size = size;
-			this.Valor_vista_equipamentos.TabIndex = (HorizontalAlignment)29;
-			this.Valor_vista_equipamentos.TextAlign = (HorizontalAlignment)2;
+			this.Valor_vista_equipamentos.TabIndex = 29;
+			this.Valor_vista_equipamentos.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_vista_equipamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_vista_equipamentos = this.Label_vista_equipamentos;
 			location = new global::System.Drawing.Point(11, 127);
@@ -774,7 +768,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_vista_equipamentos2 = this.Label_vista_equipamentos;
 			size = new global::System.Drawing.Size(137, 13);
 			label_vista_equipamentos2.Size = size;
-			this.Label_vista_equipamentos.TabIndex = (HorizontalAlignment)28;
+			this.Label_vista_equipamentos.TabIndex = 28;
 			this.Label_vista_equipamentos.Text = "Número de equip. de vista :";
 			global::System.Windows.Forms.Control valor_end_ini_vista = this.Valor_end_ini_vista;
 			location = new global::System.Drawing.Point(200, 215);
@@ -801,8 +795,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_ini_vista4 = this.Valor_end_ini_vista;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_end_ini_vista4.Size = size;
-			this.Valor_end_ini_vista.TabIndex = (HorizontalAlignment)27;
-			this.Valor_end_ini_vista.TextAlign = (HorizontalAlignment)2;
+			this.Valor_end_ini_vista.TabIndex = 27;
+			this.Valor_end_ini_vista.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_vista5 = this.Valor_end_ini_vista;
 			num = new decimal(new int[]
 			{
@@ -820,7 +814,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_ini_vista2 = this.Label_end_ini_vista;
 			size = new global::System.Drawing.Size(130, 13);
 			label_end_ini_vista2.Size = size;
-			this.Label_end_ini_vista.TabIndex = (HorizontalAlignment)26;
+			this.Label_end_ini_vista.TabIndex = 26;
 			this.Label_end_ini_vista.Text = "End. com. inicial de vista :";
 			global::System.Windows.Forms.Control valor_end_ini_rq = this.Valor_end_ini_rq;
 			location = new global::System.Drawing.Point(200, 185);
@@ -847,8 +841,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_ini_rq4 = this.Valor_end_ini_rq;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_end_ini_rq4.Size = size;
-			this.Valor_end_ini_rq.TabIndex = (HorizontalAlignment)25;
-			this.Valor_end_ini_rq.TextAlign = (HorizontalAlignment)2;
+			this.Valor_end_ini_rq.TabIndex = 25;
+			this.Valor_end_ini_rq.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_rq5 = this.Valor_end_ini_rq;
 			num = new decimal(new int[]
 			{
@@ -866,7 +860,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_ini_rq2 = this.Label_end_ini_rq;
 			size = new global::System.Drawing.Size(149, 13);
 			label_end_ini_rq2.Size = size;
-			this.Label_end_ini_rq.TabIndex = (HorizontalAlignment)24;
+			this.Label_end_ini_rq.TabIndex = 24;
 			this.Label_end_ini_rq.Text = "End. com. inicial de recalque :";
 			global::System.Windows.Forms.Control valor_end_ini_res = this.Valor_end_ini_res;
 			location = new global::System.Drawing.Point(200, 155);
@@ -893,8 +887,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_ini_res4 = this.Valor_end_ini_res;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_end_ini_res4.Size = size;
-			this.Valor_end_ini_res.TabIndex = (HorizontalAlignment)23;
-			this.Valor_end_ini_res.TextAlign = (HorizontalAlignment)2;
+			this.Valor_end_ini_res.TabIndex = 23;
+			this.Valor_end_ini_res.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_res5 = this.Valor_end_ini_res;
 			num = new decimal(new int[]
 			{
@@ -912,7 +906,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_ini_res2 = this.Label_end_ini_res;
 			size = new global::System.Drawing.Size(163, 13);
 			label_end_ini_res2.Size = size;
-			this.Label_end_ini_res.TabIndex = (HorizontalAlignment)22;
+			this.Label_end_ini_res.TabIndex = 22;
 			this.Label_end_ini_res.Text = "End. com. inicial de reservatório :";
 			global::System.Windows.Forms.Control valor_rq_equipamentos = this.Valor_rq_equipamentos;
 			location = new global::System.Drawing.Point(200, 95);
@@ -930,8 +924,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_rq_equipamentos3 = this.Valor_rq_equipamentos;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_rq_equipamentos3.Size = size;
-			this.Valor_rq_equipamentos.TabIndex = (HorizontalAlignment)21;
-			this.Valor_rq_equipamentos.TextAlign = (HorizontalAlignment)2;
+			this.Valor_rq_equipamentos.TabIndex = 21;
+			this.Valor_rq_equipamentos.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_rq_equipamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_rq_equipamentos = this.Label_rq_equipamentos;
 			location = new global::System.Drawing.Point(11, 97);
@@ -940,7 +934,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_rq_equipamentos2 = this.Label_rq_equipamentos;
 			size = new global::System.Drawing.Size(156, 13);
 			label_rq_equipamentos2.Size = size;
-			this.Label_rq_equipamentos.TabIndex = (HorizontalAlignment)20;
+			this.Label_rq_equipamentos.TabIndex = 20;
 			this.Label_rq_equipamentos.Text = "Número de equip. de recalque :";
 			global::System.Windows.Forms.Control valor_res_equipamentos = this.Valor_res_equipamentos;
 			location = new global::System.Drawing.Point(200, 65);
@@ -958,8 +952,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_res_equipamentos3 = this.Valor_res_equipamentos;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_res_equipamentos3.Size = size;
-			this.Valor_res_equipamentos.TabIndex = (HorizontalAlignment)19;
-			this.Valor_res_equipamentos.TextAlign = (HorizontalAlignment)2;
+			this.Valor_res_equipamentos.TabIndex = 19;
+			this.Valor_res_equipamentos.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_res_equipamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_res_equipamentos = this.Label_res_equipamentos;
 			location = new global::System.Drawing.Point(11, 67);
@@ -968,7 +962,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_res_equipamentos2 = this.Label_res_equipamentos;
 			size = new global::System.Drawing.Size(170, 13);
 			label_res_equipamentos2.Size = size;
-			this.Label_res_equipamentos.TabIndex = (HorizontalAlignment)18;
+			this.Label_res_equipamentos.TabIndex = 18;
 			this.Label_res_equipamentos.Text = "Número de equip. de reservatório :";
 			global::System.Windows.Forms.Control valor_res_sistema = this.Valor_res_sistema;
 			location = new global::System.Drawing.Point(200, 35);
@@ -986,8 +980,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_res_sistema3 = this.Valor_res_sistema;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_res_sistema3.Size = size;
-			this.Valor_res_sistema.TabIndex = (HorizontalAlignment)17;
-			this.Valor_res_sistema.TextAlign = (HorizontalAlignment)2;
+			this.Valor_res_sistema.TabIndex = 17;
+			this.Valor_res_sistema.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_res_sistema.AutoSize = true;
 			global::System.Windows.Forms.Control label_res_sistema = this.Label_res_sistema;
 			location = new global::System.Drawing.Point(11, 37);
@@ -996,7 +990,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_res_sistema2 = this.Label_res_sistema;
 			size = new global::System.Drawing.Size(166, 13);
 			label_res_sistema2.Size = size;
-			this.Label_res_sistema.TabIndex = (HorizontalAlignment)16;
+			this.Label_res_sistema.TabIndex = 16;
 			this.Label_res_sistema.Text = "Número reservatórios do sistema :";
 			this.Grupo_comandos.Controls.Add(this.Esc_conf_md_302);
 			this.Grupo_comandos.Controls.Add(this.Box_Msg);
@@ -1008,7 +1002,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_comandos2 = this.Grupo_comandos;
 			size = new global::System.Drawing.Size(305, 105);
 			grupo_comandos2.Size = size;
-			this.Grupo_comandos.TabIndex = (HorizontalAlignment)5;
+			this.Grupo_comandos.TabIndex = 5;
 			this.Grupo_comandos.TabStop = false;
 			this.Grupo_comandos.Text = "Comandos  e status";
 			global::System.Windows.Forms.Control esc_conf_md_ = this.Esc_conf_md_302;
@@ -1018,7 +1012,7 @@ namespace iS800
 			global::System.Windows.Forms.Control esc_conf_md_2 = this.Esc_conf_md_302;
 			size = new global::System.Drawing.Size(109, 28);
 			esc_conf_md_2.Size = size;
-			this.Esc_conf_md_302.TabIndex = (HorizontalAlignment)4;
+			this.Esc_conf_md_302.TabIndex = 4;
 			this.Esc_conf_md_302.Text = "Salvar config.";
 			this.Esc_conf_md_302.UseVisualStyleBackColor = true;
 			this.Box_Msg.BackColor = global::System.Drawing.Color.Beige;
@@ -1030,8 +1024,8 @@ namespace iS800
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new global::System.Drawing.Size(262, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = (HorizontalAlignment)5;
-			this.Box_Msg.TextAlign = (HorizontalAlignment)2;
+			this.Box_Msg.TabIndex = 5;
+			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_302;
 			location = new global::System.Drawing.Point(17, 60);
 			ler_conf_md_.Location = location;
@@ -1039,10 +1033,10 @@ namespace iS800
 			global::System.Windows.Forms.Control ler_conf_md_2 = this.Ler_conf_md_302;
 			size = new global::System.Drawing.Size(109, 28);
 			ler_conf_md_2.Size = size;
-			this.Ler_conf_md_302.TabIndex = (HorizontalAlignment)3;
+			this.Ler_conf_md_302.TabIndex = 3;
 			this.Ler_conf_md_302.Text = "Ler configuração";
 			this.Ler_conf_md_302.UseVisualStyleBackColor = true;
-			this.MenuStrip1.Dock = (HorizontalAlignment)2;
+			this.MenuStrip1.Dock = (System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.ArquivoToolStripMenuItem
@@ -1054,7 +1048,7 @@ namespace iS800
 			global::System.Windows.Forms.Control menuStrip2 = this.MenuStrip1;
 			size = new global::System.Drawing.Size(1131, 24);
 			menuStrip2.Size = size;
-			this.MenuStrip1.TabIndex = (HorizontalAlignment)6;
+			this.MenuStrip1.TabIndex = 6;
 			this.MenuStrip1.Text = "MenuStrip1";
 			this.ArquivoToolStripMenuItem.DropDownItems.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
@@ -1083,89 +1077,89 @@ namespace iS800
 			salvarToolStripMenuItem.Size = size;
 			this.SalvarToolStripMenuItem.Text = "Salvar";
 			this.OpenFileDialog1.FileName = "OpenFileDialog1";
-			this.Col_end.AutoSizeMode = (HorizontalAlignment)1;
+			this.Col_end.AutoSizeMode = 1;
 			this.Col_end.HeaderText = "Endereço";
 			this.Col_end.Name = "Col_end";
 			this.Col_end.ReadOnly = true;
-			this.Col_end.Resizable = (HorizontalAlignment)2;
-			this.Col_end.SortMode = (HorizontalAlignment)0;
-			this.Col_end.Width = (HorizontalAlignment)55;
+			this.Col_end.Resizable = 2;
+			this.Col_end.SortMode = 0;
+			this.Col_end.Width = 55;
 			dataGridViewCellStyle7.Format = "N0";
 			dataGridViewCellStyle7.NullValue = null;
 			this.Col_nome.DefaultCellStyle = dataGridViewCellStyle7;
 			this.Col_nome.HeaderText = "Nome ";
-			this.Col_nome.MaxInputLength = (HorizontalAlignment)3;
+			this.Col_nome.MaxInputLength = 3;
 			this.Col_nome.Name = "Col_nome";
-			this.Col_nome.Resizable = (HorizontalAlignment)2;
-			this.Col_nome.SortMode = (HorizontalAlignment)0;
-			this.Col_nome.Width = (HorizontalAlignment)64;
+			this.Col_nome.Resizable = 2;
+			this.Col_nome.SortMode = 0;
+			this.Col_nome.Width = 64;
 			dataGridViewCellStyle8.Format = "N0";
 			dataGridViewCellStyle8.NullValue = null;
 			this.Col_altura.DefaultCellStyle = dataGridViewCellStyle8;
 			this.Col_altura.HeaderText = "Altura (cm)";
-			this.Col_altura.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_altura.MaxInputLength = 5;
 			this.Col_altura.Name = "Col_altura";
-			this.Col_altura.Resizable = (HorizontalAlignment)2;
-			this.Col_altura.SortMode = (HorizontalAlignment)0;
-			this.Col_altura.Width = (HorizontalAlignment)64;
+			this.Col_altura.Resizable = 2;
+			this.Col_altura.SortMode = 0;
+			this.Col_altura.Width = 64;
 			dataGridViewCellStyle9.Format = "N0";
 			dataGridViewCellStyle9.NullValue = null;
 			this.Col_pri.DefaultCellStyle = dataGridViewCellStyle9;
 			this.Col_pri.HeaderText = "Prioridade (0-13)";
-			this.Col_pri.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_pri.MaxInputLength = 2;
 			this.Col_pri.Name = "Col_pri";
-			this.Col_pri.Resizable = (HorizontalAlignment)2;
-			this.Col_pri.SortMode = (HorizontalAlignment)0;
-			this.Col_pri.Width = (HorizontalAlignment)64;
+			this.Col_pri.Resizable = 2;
+			this.Col_pri.SortMode = 0;
+			this.Col_pri.Width = 64;
 			dataGridViewCellStyle10.Format = "N0";
 			dataGridViewCellStyle10.NullValue = null;
 			this.Col_posicao.DefaultCellStyle = dataGridViewCellStyle10;
 			this.Col_posicao.HeaderText = "Posição relativa(1-40)";
-			this.Col_posicao.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_posicao.MaxInputLength = 2;
 			this.Col_posicao.Name = "Col_posicao";
-			this.Col_posicao.Resizable = (HorizontalAlignment)2;
-			this.Col_posicao.SortMode = (HorizontalAlignment)0;
-			this.Col_posicao.Width = (HorizontalAlignment)70;
-			this.Col_End_rq.AutoSizeMode = (HorizontalAlignment)1;
+			this.Col_posicao.Resizable = 2;
+			this.Col_posicao.SortMode = 0;
+			this.Col_posicao.Width = 70;
+			this.Col_End_rq.AutoSizeMode = 1;
 			dataGridViewCellStyle11.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 192);
 			this.Col_End_rq.DefaultCellStyle = dataGridViewCellStyle11;
 			this.Col_End_rq.Frozen = true;
 			this.Col_End_rq.HeaderText = "End";
 			this.Col_End_rq.Name = "Col_End_rq";
 			this.Col_End_rq.ReadOnly = true;
-			this.Col_End_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_End_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_End_rq.Width = (HorizontalAlignment)40;
+			this.Col_End_rq.Resizable = 2;
+			this.Col_End_rq.SortMode = 0;
+			this.Col_End_rq.Width = 40;
 			dataGridViewCellStyle12.Format = "N0";
 			dataGridViewCellStyle12.NullValue = null;
 			this.Col_nome_rq.DefaultCellStyle = dataGridViewCellStyle12;
 			this.Col_nome_rq.HeaderText = "Nome ";
-			this.Col_nome_rq.MaxInputLength = (HorizontalAlignment)3;
+			this.Col_nome_rq.MaxInputLength = 3;
 			this.Col_nome_rq.Name = "Col_nome_rq";
-			this.Col_nome_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_nome_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_nome_rq.Width = (HorizontalAlignment)50;
+			this.Col_nome_rq.Resizable = 2;
+			this.Col_nome_rq.SortMode = 0;
+			this.Col_nome_rq.Width = 50;
 			dataGridViewCellStyle13.Format = "N0";
 			dataGridViewCellStyle13.NullValue = null;
 			this.Col_ROrg_rq.DefaultCellStyle = dataGridViewCellStyle13;
 			this.Col_ROrg_rq.HeaderText = "Res Origem";
-			this.Col_ROrg_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_ROrg_rq.MaxInputLength = 2;
 			this.Col_ROrg_rq.Name = "Col_ROrg_rq";
-			this.Col_ROrg_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_ROrg_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_ROrg_rq.Width = (HorizontalAlignment)50;
+			this.Col_ROrg_rq.Resizable = 2;
+			this.Col_ROrg_rq.SortMode = 0;
+			this.Col_ROrg_rq.Width = 50;
 			dataGridViewCellStyle14.Format = "N0";
 			dataGridViewCellStyle14.NullValue = null;
 			this.Col_RDest_rq.DefaultCellStyle = dataGridViewCellStyle14;
 			this.Col_RDest_rq.HeaderText = "Res Destino";
-			this.Col_RDest_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_RDest_rq.MaxInputLength = 2;
 			this.Col_RDest_rq.Name = "Col_RDest_rq";
-			this.Col_RDest_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_RDest_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_RDest_rq.Width = (HorizontalAlignment)50;
+			this.Col_RDest_rq.Resizable = 2;
+			this.Col_RDest_rq.SortMode = 0;
+			this.Col_RDest_rq.Width = 50;
 			dataGridViewCellStyle15.Format = "N0";
 			this.Col_mod_rq.DefaultCellStyle = dataGridViewCellStyle15;
-			this.Col_mod_rq.DisplayStyle = (HorizontalAlignment)0;
+			this.Col_mod_rq.DisplayStyle = 0;
 			this.Col_mod_rq.DisplayStyleForCurrentCellOnly = true;
 			this.Col_mod_rq.HeaderText = "Modelo";
 			this.Col_mod_rq.Items.AddRange(new object[]
@@ -1181,63 +1175,63 @@ namespace iS800
 				"--------"
 			});
 			this.Col_mod_rq.Name = "Col_mod_rq";
-			this.Col_mod_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_mod_rq.Width = (HorizontalAlignment)160;
+			this.Col_mod_rq.Resizable = 2;
+			this.Col_mod_rq.Width = 160;
 			this.Col_pri_rq.HeaderText = "Prioridade";
-			this.Col_pri_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_pri_rq.MaxInputLength = 2;
 			this.Col_pri_rq.Name = "Col_pri_rq";
-			this.Col_pri_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_pri_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_pri_rq.Width = (HorizontalAlignment)60;
+			this.Col_pri_rq.Resizable = 2;
+			this.Col_pri_rq.SortMode = 0;
+			this.Col_pri_rq.Width = 60;
 			this.Col_Res1_rq.HeaderText = "Res 1";
-			this.Col_Res1_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_Res1_rq.MaxInputLength = 2;
 			this.Col_Res1_rq.Name = "Col_Res1_rq";
-			this.Col_Res1_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_Res1_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_Res1_rq.Width = (HorizontalAlignment)50;
+			this.Col_Res1_rq.Resizable = 2;
+			this.Col_Res1_rq.SortMode = 0;
+			this.Col_Res1_rq.Width = 50;
 			this.Col_Res2_rq.HeaderText = "Res 2";
-			this.Col_Res2_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_Res2_rq.MaxInputLength = 2;
 			this.Col_Res2_rq.Name = "Col_Res2_rq";
-			this.Col_Res2_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_Res2_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_Res2_rq.Width = (HorizontalAlignment)50;
+			this.Col_Res2_rq.Resizable = 2;
+			this.Col_Res2_rq.SortMode = 0;
+			this.Col_Res2_rq.Width = 50;
 			this.Col_Res3_rq.HeaderText = "Res 3";
-			this.Col_Res3_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_Res3_rq.MaxInputLength = 2;
 			this.Col_Res3_rq.Name = "Col_Res3_rq";
-			this.Col_Res3_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_Res3_rq.SortMode = (HorizontalAlignment)2;
-			this.Col_Res3_rq.Width = (HorizontalAlignment)50;
+			this.Col_Res3_rq.Resizable = 2;
+			this.Col_Res3_rq.SortMode = 2;
+			this.Col_Res3_rq.Width = 50;
 			this.Col_Res4_rq.HeaderText = "Res 4";
-			this.Col_Res4_rq.MaxInputLength = (HorizontalAlignment)2;
+			this.Col_Res4_rq.MaxInputLength = 2;
 			this.Col_Res4_rq.Name = "Col_Res4_rq";
-			this.Col_Res4_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_Res4_rq.SortMode = (HorizontalAlignment)2;
-			this.Col_Res4_rq.Width = (HorizontalAlignment)50;
+			this.Col_Res4_rq.Resizable = 2;
+			this.Col_Res4_rq.SortMode = 2;
+			this.Col_Res4_rq.Width = 50;
 			this.Col_MsgR1_rq.HeaderText = "Nome Res 1";
-			this.Col_MsgR1_rq.MaxInputLength = (HorizontalAlignment)3;
+			this.Col_MsgR1_rq.MaxInputLength = 3;
 			this.Col_MsgR1_rq.Name = "Col_MsgR1_rq";
-			this.Col_MsgR1_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_MsgR1_rq.SortMode = (HorizontalAlignment)2;
-			this.Col_MsgR1_rq.Width = (HorizontalAlignment)50;
+			this.Col_MsgR1_rq.Resizable = 2;
+			this.Col_MsgR1_rq.SortMode = 2;
+			this.Col_MsgR1_rq.Width = 50;
 			this.Col_MsgR2_rq.HeaderText = "Nome Res 2";
-			this.Col_MsgR2_rq.MaxInputLength = (HorizontalAlignment)3;
+			this.Col_MsgR2_rq.MaxInputLength = 3;
 			this.Col_MsgR2_rq.Name = "Col_MsgR2_rq";
-			this.Col_MsgR2_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_MsgR2_rq.SortMode = (HorizontalAlignment)2;
-			this.Col_MsgR2_rq.Width = (HorizontalAlignment)50;
+			this.Col_MsgR2_rq.Resizable = 2;
+			this.Col_MsgR2_rq.SortMode = 2;
+			this.Col_MsgR2_rq.Width = 50;
 			this.Col_MsgR3_rq.HeaderText = "Nome Res 3";
-			this.Col_MsgR3_rq.MaxInputLength = (HorizontalAlignment)3;
+			this.Col_MsgR3_rq.MaxInputLength = 3;
 			this.Col_MsgR3_rq.Name = "Col_MsgR3_rq";
-			this.Col_MsgR3_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_MsgR3_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_MsgR3_rq.Width = (HorizontalAlignment)50;
+			this.Col_MsgR3_rq.Resizable = 2;
+			this.Col_MsgR3_rq.SortMode = 0;
+			this.Col_MsgR3_rq.Width = 50;
 			this.Col_MsgR4_rq.HeaderText = "Nome Res 4";
-			this.Col_MsgR4_rq.MaxInputLength = (HorizontalAlignment)3;
+			this.Col_MsgR4_rq.MaxInputLength = 3;
 			this.Col_MsgR4_rq.Name = "Col_MsgR4_rq";
-			this.Col_MsgR4_rq.Resizable = (HorizontalAlignment)2;
-			this.Col_MsgR4_rq.SortMode = (HorizontalAlignment)0;
-			this.Col_MsgR4_rq.Width = (HorizontalAlignment)50;
-			this.Col_hab.DisplayStyle = (HorizontalAlignment)0;
+			this.Col_MsgR4_rq.Resizable = 2;
+			this.Col_MsgR4_rq.SortMode = 0;
+			this.Col_MsgR4_rq.Width = 50;
+			this.Col_hab.DisplayStyle = 0;
 			this.Col_hab.DisplayStyleForCurrentCellOnly = true;
 			this.Col_hab.HeaderText = "Hab Cmd";
 			this.Col_hab.Items.AddRange(new object[]
@@ -1246,106 +1240,106 @@ namespace iS800
 				"Bloqueado"
 			});
 			this.Col_hab.Name = "Col_hab";
-			this.Col_hab.Resizable = (HorizontalAlignment)2;
-			this.Col_hab.Width = (HorizontalAlignment)80;
+			this.Col_hab.Resizable = 2;
+			this.Col_hab.Width = 80;
 			this.Col_Esc_1.HeaderText = "Escala 1";
-			this.Col_Esc_1.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_1.MaxInputLength = 5;
 			this.Col_Esc_1.Name = "Col_Esc_1";
-			this.Col_Esc_1.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_1.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_1.Width = (HorizontalAlignment)60;
+			this.Col_Esc_1.Resizable = 2;
+			this.Col_Esc_1.SortMode = 0;
+			this.Col_Esc_1.Width = 60;
 			this.Col_Esc_2.HeaderText = "Escala 2";
-			this.Col_Esc_2.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_2.MaxInputLength = 5;
 			this.Col_Esc_2.Name = "Col_Esc_2";
-			this.Col_Esc_2.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_2.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_2.Width = (HorizontalAlignment)60;
+			this.Col_Esc_2.Resizable = 2;
+			this.Col_Esc_2.SortMode = 0;
+			this.Col_Esc_2.Width = 60;
 			this.Col_Esc_3.HeaderText = "Escala 3";
-			this.Col_Esc_3.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_3.MaxInputLength = 5;
 			this.Col_Esc_3.Name = "Col_Esc_3";
-			this.Col_Esc_3.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_3.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_3.Width = (HorizontalAlignment)60;
+			this.Col_Esc_3.Resizable = 2;
+			this.Col_Esc_3.SortMode = 0;
+			this.Col_Esc_3.Width = 60;
 			this.Col_Esc_4.HeaderText = "Escala 4";
-			this.Col_Esc_4.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_4.MaxInputLength = 5;
 			this.Col_Esc_4.Name = "Col_Esc_4";
-			this.Col_Esc_4.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_4.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_4.Width = (HorizontalAlignment)60;
+			this.Col_Esc_4.Resizable = 2;
+			this.Col_Esc_4.SortMode = 0;
+			this.Col_Esc_4.Width = 60;
 			this.Col_Esc_5.HeaderText = "Escala 5";
-			this.Col_Esc_5.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_5.MaxInputLength = 5;
 			this.Col_Esc_5.Name = "Col_Esc_5";
-			this.Col_Esc_5.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_5.Width = (HorizontalAlignment)60;
+			this.Col_Esc_5.SortMode = 0;
+			this.Col_Esc_5.Width = 60;
 			this.Col_Esc_6.HeaderText = "Escala 6";
-			this.Col_Esc_6.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_6.MaxInputLength = 5;
 			this.Col_Esc_6.Name = "Col_Esc_6";
-			this.Col_Esc_6.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_6.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_6.Width = (HorizontalAlignment)60;
+			this.Col_Esc_6.Resizable = 2;
+			this.Col_Esc_6.SortMode = 0;
+			this.Col_Esc_6.Width = 60;
 			this.Col_Esc_7.HeaderText = "Escala 7";
-			this.Col_Esc_7.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_7.MaxInputLength = 5;
 			this.Col_Esc_7.Name = "Col_Esc_7";
-			this.Col_Esc_7.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_7.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_7.Width = (HorizontalAlignment)60;
+			this.Col_Esc_7.Resizable = 2;
+			this.Col_Esc_7.SortMode = 0;
+			this.Col_Esc_7.Width = 60;
 			this.Col_Esc_8.HeaderText = "Escala 8";
-			this.Col_Esc_8.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_8.MaxInputLength = 5;
 			this.Col_Esc_8.Name = "Col_Esc_8";
-			this.Col_Esc_8.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_8.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_8.Width = (HorizontalAlignment)60;
+			this.Col_Esc_8.Resizable = 2;
+			this.Col_Esc_8.SortMode = 0;
+			this.Col_Esc_8.Width = 60;
 			this.Col_Esc_9.HeaderText = "Escala 9";
-			this.Col_Esc_9.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_9.MaxInputLength = 5;
 			this.Col_Esc_9.Name = "Col_Esc_9";
-			this.Col_Esc_9.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_9.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_9.Width = (HorizontalAlignment)60;
+			this.Col_Esc_9.Resizable = 2;
+			this.Col_Esc_9.SortMode = 0;
+			this.Col_Esc_9.Width = 60;
 			this.Col_Esc_10.HeaderText = "Escala 10";
-			this.Col_Esc_10.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_10.MaxInputLength = 5;
 			this.Col_Esc_10.Name = "Col_Esc_10";
-			this.Col_Esc_10.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_10.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_10.Width = (HorizontalAlignment)60;
+			this.Col_Esc_10.Resizable = 2;
+			this.Col_Esc_10.SortMode = 0;
+			this.Col_Esc_10.Width = 60;
 			this.Col_Esc_11.HeaderText = "Escala 11";
-			this.Col_Esc_11.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_11.MaxInputLength = 5;
 			this.Col_Esc_11.Name = "Col_Esc_11";
-			this.Col_Esc_11.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_11.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_11.Width = (HorizontalAlignment)60;
+			this.Col_Esc_11.Resizable = 2;
+			this.Col_Esc_11.SortMode = 0;
+			this.Col_Esc_11.Width = 60;
 			this.Col_Esc_12.HeaderText = "Escala 12";
-			this.Col_Esc_12.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_12.MaxInputLength = 5;
 			this.Col_Esc_12.Name = "Col_Esc_12";
-			this.Col_Esc_12.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_12.Width = (HorizontalAlignment)60;
+			this.Col_Esc_12.SortMode = 0;
+			this.Col_Esc_12.Width = 60;
 			this.Col_Esc_13.HeaderText = "Escala 13";
-			this.Col_Esc_13.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_13.MaxInputLength = 5;
 			this.Col_Esc_13.Name = "Col_Esc_13";
-			this.Col_Esc_13.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_13.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_13.Width = (HorizontalAlignment)60;
+			this.Col_Esc_13.Resizable = 2;
+			this.Col_Esc_13.SortMode = 0;
+			this.Col_Esc_13.Width = 60;
 			this.Col_Esc_14.HeaderText = "Escala 14";
-			this.Col_Esc_14.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_14.MaxInputLength = 5;
 			this.Col_Esc_14.Name = "Col_Esc_14";
-			this.Col_Esc_14.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_14.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_14.Width = (HorizontalAlignment)60;
+			this.Col_Esc_14.Resizable = 2;
+			this.Col_Esc_14.SortMode = 0;
+			this.Col_Esc_14.Width = 60;
 			this.Col_Esc_15.HeaderText = "Escala 15";
-			this.Col_Esc_15.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_15.MaxInputLength = 5;
 			this.Col_Esc_15.Name = "Col_Esc_15";
-			this.Col_Esc_15.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_15.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_15.Width = (HorizontalAlignment)60;
+			this.Col_Esc_15.Resizable = 2;
+			this.Col_Esc_15.SortMode = 0;
+			this.Col_Esc_15.Width = 60;
 			this.Col_Esc_16.HeaderText = "Escala 16";
-			this.Col_Esc_16.MaxInputLength = (HorizontalAlignment)5;
+			this.Col_Esc_16.MaxInputLength = 5;
 			this.Col_Esc_16.Name = "Col_Esc_16";
-			this.Col_Esc_16.Resizable = (HorizontalAlignment)2;
-			this.Col_Esc_16.SortMode = (HorizontalAlignment)0;
-			this.Col_Esc_16.Width = (HorizontalAlignment)60;
+			this.Col_Esc_16.Resizable = 2;
+			this.Col_Esc_16.SortMode = 0;
+			this.Col_Esc_16.Width = 60;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
 			size = new global::System.Drawing.Size(1131, 676);
 			this.ClientSize = size;
 			this.Controls.Add(this.Grupo_comandos);
@@ -1353,41 +1347,36 @@ namespace iS800
 			this.Controls.Add(this.Grupo_lapelas);
 			this.Controls.Add(this.Grupo_conf_comunicacao);
 			this.Controls.Add(this.MenuStrip1);
-			this.FormBorderStyle = (HorizontalAlignment)0;
+			this.FormBorderStyle = (System.Windows.Forms.FormBorderStyle)0;
 			location = new global::System.Drawing.Point(160, 2);
 			this.Location = location;
 			this.MainMenuStrip = this.MenuStrip1;
 			this.Name = "Equip_302_conf";
-			this.StartPosition = (HorizontalAlignment)0;
+			this.StartPosition = (System.Windows.Forms.FormStartPosition)0;
 			this.Text = "Equip_302_conf";
 			this.Grupo_conf_comunicacao.ResumeLayout(false);
 			this.Grupo_conf_comunicacao.PerformLayout();
-			this.Valor_intervalo_polling.EndInit();
-			this.Valor_erro_falha.EndInit();
-			this.Valor_timeout.EndInit();
-			this.Valor_temp_ptt.EndInit();
-			this.Valor_endereco.EndInit();
-			this.Valor_num_tentativas.EndInit();
+
+
+
+
+
 			this.Grupo_lapelas.ResumeLayout(false);
 			this.TabControl2.ResumeLayout(false);
 			this.Conf_res.ResumeLayout(false);
-			this.DataGridView1.EndInit();
 			this.Conf_rq.ResumeLayout(false);
-			this.DataGridView_RQ.EndInit();
 			this.Conf_centrais.ResumeLayout(false);
 			this.Conf_centrais.PerformLayout();
-			this.DataGridView_central_rq.EndInit();
-			this.DataGridView_central_res.EndInit();
-			this.DataGridView_central_geral.EndInit();
+
+
 			this.Grupo_conf_equipamentos.ResumeLayout(false);
 			this.Grupo_conf_equipamentos.PerformLayout();
-			this.Valor_vista_equipamentos.EndInit();
-			this.Valor_end_ini_vista.EndInit();
-			this.Valor_end_ini_rq.EndInit();
-			this.Valor_end_ini_res.EndInit();
-			this.Valor_rq_equipamentos.EndInit();
-			this.Valor_res_equipamentos.EndInit();
-			this.Valor_res_sistema.EndInit();
+
+
+
+
+
+
 			this.Grupo_comandos.ResumeLayout(false);
 			this.Grupo_comandos.PerformLayout();
 			this.MenuStrip1.ResumeLayout(false);

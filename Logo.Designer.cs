@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x020000A7 RID: 167
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Logo : global::System.Windows.Forms.Form
 	{
 		// Token: 0x0600279D RID: 10141 RVA: 0x004247B4 File Offset: 0x00422BB4
@@ -29,8 +28,8 @@ namespace iS800
 			this.Timer1 = new global::System.Windows.Forms.Timer(this.components);
 			this.Label5 = new global::System.Windows.Forms.Label();
 			this.SuspendLayout();
-			this.Timer1.Interval = (HorizontalAlignment)3000;
-			this.Label5.AccessibleRole = (HorizontalAlignment)0;
+			this.Timer1.Interval = 3000;
+			this.Label5.AccessibleRole = 0;
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
@@ -44,21 +43,21 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(58, 21);
 			label2.Size = size;
-			this.Label5.TabIndex = (HorizontalAlignment)2;
+			this.Label5.TabIndex = 2;
 			this.Label5.Text = "Versão";
 			this.Label5.Visible = false;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
 			this.BackColor = global::System.Drawing.Color.White;
 			this.BackgroundImage = global::iS800.My.Resources.Resources.Fundo_ICTEL;
 			size = new global::System.Drawing.Size(729, 350);
 			this.ClientSize = size;
 			this.Controls.Add(this.Label5);
-			this.FormBorderStyle = (HorizontalAlignment)0;
+			this.FormBorderStyle = (System.Windows.Forms.FormBorderStyle)0;
 			this.Name = "Logo";
-			this.StartPosition = (HorizontalAlignment)1;
+			this.StartPosition = (System.Windows.Forms.FormStartPosition)1;
 			this.Text = "Logo";
 			this.ResumeLayout(false);
 			this.PerformLayout();

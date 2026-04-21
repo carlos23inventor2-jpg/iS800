@@ -104,7 +104,7 @@ namespace iS800
 		{
 			RT_geral.Ctrl_erro result;
 			result.msg = "";
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = dado.Numero_itens - 1;
@@ -186,7 +186,7 @@ namespace iS800
 		{
 			RT_geral.Ctrl_erro result;
 			result.msg = "";
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = dado.Numero_itens - 1;
@@ -231,7 +231,7 @@ namespace iS800
 			}
 			else
 			{
-				if (Strings.Len(dado.Valor) == (DialogResult)3)
+				if (Strings.Len(dado.Valor) == 3)
 				{
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Black;
 					result.resultado = true;
@@ -294,7 +294,7 @@ namespace iS800
 		// Token: 0x06001A49 RID: 6729 RVA: 0x00253138 File Offset: 0x00251538
 		public static MsgBoxResult VerificaDadoInt(ref RT_geral.Integer_ictel dado)
 		{
-			MsgBoxResult result = (HorizontalAlignment)1;
+			MsgBoxResult result = 1;
 			if (dado.Valor < dado.Lmte_inf | dado.Valor > dado.Lmte_sup)
 			{
 				dado.erro = true;
@@ -330,13 +330,13 @@ namespace iS800
 		// Token: 0x06001A4B RID: 6731 RVA: 0x0025323C File Offset: 0x0025163C
 		public static bool VerificaExistenciaErroDados_RT810_200()
 		{
-			Linha_RT.Contador_Erros = (HorizontalAlignment)0;
+			Linha_RT.Contador_Erros = 0;
 			bool result = true;
 			checked
 			{
 				if (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_estacao, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_mestre, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Tempo_ptt, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Intervalo_tx_pto_pto, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AD_Tamanho_filtro, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AD_Intervalo, ref Linha_RT.Contador_Erros) != 7)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					while (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Range[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Inicio[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Fim[num], ref Linha_RT.Contador_Erros) != 7)
 					{
 						num++;
@@ -344,7 +344,7 @@ namespace iS800
 						{
 							if (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_repetidora, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Num_repetidoras, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AlturaReservatorio, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.ErroOffSet, ref Linha_RT.Contador_Erros) != 7)
 							{
-								num = (HorizontalAlignment)0;
+								num = 0;
 								while (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Repetidoras[num], ref Linha_RT.Contador_Erros) != 7)
 								{
 									num++;
@@ -379,13 +379,13 @@ namespace iS800
 		// Token: 0x06001A4E RID: 6734 RVA: 0x0025340C File Offset: 0x0025180C
 		public static bool VerificaExistenciaErroDados_RT810()
 		{
-			Linha_RT.Contador_Erros = (HorizontalAlignment)0;
+			Linha_RT.Contador_Erros = 0;
 			bool result = true;
 			checked
 			{
 				if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_estacao, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_mestre, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Tempo_ptt, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Intervalo_tx_pto_pto, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.AD_Tamanho_filtro, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.AD_Intervalo, ref Linha_RT.Contador_Erros) != 7)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					while (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Range[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Inicio[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Fim[num], ref Linha_RT.Contador_Erros) != 7)
 					{
 						num++;
@@ -393,7 +393,7 @@ namespace iS800
 						{
 							if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.ctrl_tempo_max_parada[0], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.ctrl_tempo_max_partida[0], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Hab_eletrodos, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_repetidora, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Num_repetidoras, ref Linha_RT.Contador_Erros) != 7)
 							{
-								num = (HorizontalAlignment)0;
+								num = 0;
 								while (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Repetidoras[num], ref Linha_RT.Contador_Erros) != 7)
 								{
 									num++;
@@ -420,13 +420,13 @@ namespace iS800
 		// Token: 0x06001A4F RID: 6735 RVA: 0x00253624 File Offset: 0x00251A24
 		public static int LocalizaIndiceVetor_str_indice(ref RT_geral.Combo_ictel dados, string texto)
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			int numero_itens = dados.Numero_itens;
 			checked
 			{
 				for (int i = num; i <= numero_itens; i++)
 				{
-					if (Operators.CompareString(texto, dados.itens[i], false) == (DialogResult)0)
+					if (Operators.CompareString(texto, dados.itens[i], false) == 0)
 					{
 						return i;
 					}
@@ -438,7 +438,7 @@ namespace iS800
 		// Token: 0x06001A50 RID: 6736 RVA: 0x00253660 File Offset: 0x00251A60
 		public static int LocalizaIndiceVetor_valor_indice(ref RT_geral.Combo_ictel dados, int valor)
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			int numero_itens = dados.Numero_itens;
 			checked
 			{
@@ -461,23 +461,23 @@ namespace iS800
 				int num;
 				int num2;
 				int num3;
-				if (Operators.CompareString(opcao, "ED", false) == (DialogResult)0)
+				if (Operators.CompareString(opcao, "ED", false) == 0)
 				{
-					num = (HorizontalAlignment)21864;
-					num2 = (HorizontalAlignment)21873;
-					num3 = (HorizontalAlignment)8;
+					num = 21864;
+					num2 = 21873;
+					num3 = 8;
 				}
-				else if (Operators.CompareString(opcao, "SD", false) == (DialogResult)0)
+				else if (Operators.CompareString(opcao, "SD", false) == 0)
 				{
-					num = (HorizontalAlignment)21864;
-					num2 = (HorizontalAlignment)21873;
-					num3 = (HorizontalAlignment)4;
+					num = 21864;
+					num2 = 21873;
+					num3 = 4;
 				}
-				else if (Operators.CompareString(opcao, "VZ", false) == (DialogResult)0)
+				else if (Operators.CompareString(opcao, "VZ", false) == 0)
 				{
-					num = (HorizontalAlignment)21880;
+					num = 21880;
 					num2 = num + 8 + 1;
-					num3 = (HorizontalAlignment)0;
+					num3 = 0;
 				}
 				if (dado.Valor > num & dado.Valor < num2)
 				{
@@ -486,7 +486,7 @@ namespace iS800
 				}
 				else if (num3 > 0)
 				{
-					if (mudou_para == (DialogResult)21856)
+					if (mudou_para == 21856)
 					{
 						if (dado.Indice > 8)
 						{
@@ -509,23 +509,23 @@ namespace iS800
 				int num;
 				int num2;
 				int num3;
-				if (Operators.CompareString(opcao, "ED", false) == (DialogResult)0)
+				if (Operators.CompareString(opcao, "ED", false) == 0)
 				{
-					num = (HorizontalAlignment)21864;
-					num2 = (HorizontalAlignment)21873;
-					num3 = (HorizontalAlignment)8;
+					num = 21864;
+					num2 = 21873;
+					num3 = 8;
 				}
-				else if (Operators.CompareString(opcao, "SD", false) == (DialogResult)0)
+				else if (Operators.CompareString(opcao, "SD", false) == 0)
 				{
-					num = (HorizontalAlignment)21864;
-					num2 = (HorizontalAlignment)21873;
-					num3 = (HorizontalAlignment)4;
+					num = 21864;
+					num2 = 21873;
+					num3 = 4;
 				}
-				else if (Operators.CompareString(opcao, "VZ", false) == (DialogResult)0)
+				else if (Operators.CompareString(opcao, "VZ", false) == 0)
 				{
-					num = (HorizontalAlignment)21888;
+					num = 21888;
 					num2 = num + 8 + 8 + 1;
-					num3 = (HorizontalAlignment)0;
+					num3 = 0;
 				}
 				if (dado.Valor > num & dado.Valor < num2)
 				{
@@ -534,7 +534,7 @@ namespace iS800
 				}
 				else if (num3 > 0)
 				{
-					if (mudou_para == (DialogResult)21856)
+					if (mudou_para == 21856)
 					{
 						if (dado.Indice > 8)
 						{
@@ -557,7 +557,7 @@ namespace iS800
 			{
 				if (indice_pesquisa != BD_dado[0].Indice_padrao)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = num_linhas_ctrl - 1;
 					for (int i = num; i <= num2; i++)
 					{
@@ -591,7 +591,7 @@ namespace iS800
 				if (indice_pesquisa != BD_dados_coluna.Indice_padrao)
 				{
 					int num = BD_ConfigColuna.LinhasValor[indice_pesquisa];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = num_linhas_ctrl_pesquisa - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -674,16 +674,16 @@ namespace iS800
 					switch (habexpansao)
 					{
 					case 21856:
-						num = (HorizontalAlignment)8;
+						num = 8;
 						break;
 					case 21857:
-						num = (HorizontalAlignment)16;
+						num = 16;
 						break;
 					default:
-						num = (HorizontalAlignment)1;
+						num = 1;
 						break;
 					}
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = num - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -709,7 +709,7 @@ namespace iS800
 				if (indice != 0)
 				{
 					int num = 21856 + entrada_digital;
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = num_ctrl - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -739,21 +739,21 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = numero; i <= (HorizontalAlignment)79; i++)
+				for (int i = numero; i <= 79; i++)
 				{
 					RT_geral.RT_850_Ctrl_1[i].Nome.Valor = RT_geral.RT_850_Ctrl_1[i].Nome.Padrao;
 					RT_geral.RT_850_Ctrl_1[i].Canal.Indice = RT_geral.RT_850_Ctrl_1[i].Canal.Indice_padrao;
 					RT_geral.RT_850_Ctrl_1[i].Comando.Indice = RT_geral.RT_850_Ctrl_1[i].Comando.Indice_padrao;
 					RT_geral.RT_850_Ctrl_1[i].Prioridade.Indice = RT_geral.RT_850_Ctrl_1[i].Prioridade.Indice_padrao;
 					RT_geral.RT_850_Ctrl_1[i].Modelo.Indice = RT_geral.RT_850_Ctrl_1[i].Modelo.Indice_padrao;
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_850_Ctrl_1[i].Var[num].Indice = RT_geral.RT_850_Ctrl_1[i].Var[num].Indice_padrao;
 						num++;
 					}
 					while (num <= 3);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						RT_geral.RT_850_Ctrl_1[i].Ref[num].Indice = RT_geral.RT_850_Ctrl_1[i].Ref[num].Indice_padrao;
@@ -769,21 +769,21 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = numero; i <= (HorizontalAlignment)49; i++)
+				for (int i = numero; i <= 49; i++)
 				{
 					RT_geral.RT_850_Ctrl_4[i].Nome.Valor = RT_geral.RT_850_Ctrl_4[i].Nome.Padrao;
 					RT_geral.RT_850_Ctrl_4[i].Canal.Indice = RT_geral.RT_850_Ctrl_4[i].Canal.Indice_padrao;
 					RT_geral.RT_850_Ctrl_4[i].Comando.Indice = RT_geral.RT_850_Ctrl_4[i].Comando.Indice_padrao;
 					RT_geral.RT_850_Ctrl_4[i].Prioridade.Indice = RT_geral.RT_850_Ctrl_4[i].Prioridade.Indice_padrao;
 					RT_geral.RT_850_Ctrl_4[i].Modelo.Indice = RT_geral.RT_850_Ctrl_4[i].Modelo.Indice_padrao;
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_850_Ctrl_4[i].Var[num].Indice = RT_geral.RT_850_Ctrl_4[i].Var[num].Indice_padrao;
 						num++;
 					}
 					while (num <= 3);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						RT_geral.RT_850_Ctrl_4[i].Ref[num].Indice = RT_geral.RT_850_Ctrl_4[i].Ref[num].Indice_padrao;
@@ -799,21 +799,21 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = numero; i <= (HorizontalAlignment)19; i++)
+				for (int i = numero; i <= 19; i++)
 				{
 					RT_geral.RT_850_Ctrl_8[i].Nome.Valor = RT_geral.RT_850_Ctrl_8[i].Nome.Padrao;
 					RT_geral.RT_850_Ctrl_8[i].Canal.Indice = RT_geral.RT_850_Ctrl_8[i].Canal.Indice_padrao;
 					RT_geral.RT_850_Ctrl_8[i].Comando.Indice = RT_geral.RT_850_Ctrl_8[i].Comando.Indice_padrao;
 					RT_geral.RT_850_Ctrl_8[i].Prioridade.Indice = RT_geral.RT_850_Ctrl_8[i].Prioridade.Indice_padrao;
 					RT_geral.RT_850_Ctrl_8[i].Modelo.Indice = RT_geral.RT_850_Ctrl_8[i].Modelo.Indice_padrao;
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_850_Ctrl_8[i].Var[num].Indice = RT_geral.RT_850_Ctrl_8[i].Var[num].Indice_padrao;
 						num++;
 					}
 					while (num <= 15);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						RT_geral.RT_850_Ctrl_8[i].Ref[num].Indice = RT_geral.RT_850_Ctrl_8[i].Ref[num].Indice_padrao;
@@ -829,7 +829,7 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = numero; i <= (HorizontalAlignment)4; i++)
+				for (int i = numero; i <= 4; i++)
 				{
 					RT_geral.RT_850_Vista[i].Nome.Valor = RT_geral.RT_850_Vista[i].Nome.Padrao;
 					RT_geral.RT_850_Vista[i].Canal.Indice = RT_geral.RT_850_Vista[i].Canal.Indice_padrao;
@@ -838,14 +838,14 @@ namespace iS800
 					RT_geral.RT_850_Vista[i].Modelo.Indice = RT_geral.RT_850_Vista[i].Modelo.Indice_padrao;
 					RT_geral.RT_850_Vista[i].Num_var.Valor = RT_geral.RT_850_Vista[i].Num_var.Padrao;
 					RT_geral.RT_850_Vista[i].Num_equip.Valor = RT_geral.RT_850_Vista[i].Num_equip.Padrao;
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_850_Vista[i].Variaveis[num].Indice = RT_geral.RT_850_Vista[i].Variaveis[num].Indice_padrao;
 						num++;
 					}
 					while (num <= 39);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						RT_geral.RT_850_Vista[i].Equipamentos[num].Indice = RT_geral.RT_850_Vista[i].Equipamentos[num].Indice_padrao;
@@ -859,12 +859,12 @@ namespace iS800
 		// Token: 0x06001A5D RID: 6749 RVA: 0x002541F4 File Offset: 0x002525F4
 		public static void Limpa_Variavel_BD_RT850(int indice)
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						if (RT_geral.RT_850_Ctrl_1[num].Var[num2].Indice == indice)
@@ -874,7 +874,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 3);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						if (RT_geral.RT_850_Ctrl_1[num].Ref[num2].Indice == indice)
@@ -887,10 +887,10 @@ namespace iS800
 					num++;
 				}
 				while (num <= 79);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						if (RT_geral.RT_850_Ctrl_4[num].Var[num2].Indice == indice)
@@ -900,7 +900,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 3);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						if (RT_geral.RT_850_Ctrl_4[num].Ref[num2].Indice == indice)
@@ -919,7 +919,7 @@ namespace iS800
 		// Token: 0x06001A5E RID: 6750 RVA: 0x00254398 File Offset: 0x00252798
 		public static int Localiza_indice_combo(ref RT_geral.DADOS_DATAGRIDVIEW_RT_820 dado, int dado_a_localizar)
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			int numeroLinhaMenu = dado.NumeroLinhaMenu;
 			checked
 			{
@@ -940,29 +940,29 @@ namespace iS800
 			Image logo_vortice_pp = Resources.logo_vortice_pp;
 			string text = "MD";
 			int num = Equipamento;
-			if (num == (DialogResult)810)
+			if (num == 810)
 			{
-				Equipamento = (HorizontalAlignment)101;
+				Equipamento = 101;
 			}
-			else if (num == (DialogResult)820)
+			else if (num == 820)
 			{
-				Equipamento = (HorizontalAlignment)202;
+				Equipamento = 202;
 			}
-			else if (num == (DialogResult)821)
+			else if (num == 821)
 			{
-				Equipamento = (HorizontalAlignment)201;
+				Equipamento = 201;
 			}
-			else if (num == (DialogResult)830)
+			else if (num == 830)
 			{
-				Equipamento = (HorizontalAlignment)302;
+				Equipamento = 302;
 			}
-			else if (num == (DialogResult)831)
+			else if (num == 831)
 			{
-				Equipamento = (HorizontalAlignment)301;
+				Equipamento = 301;
 			}
-			else if (num == (DialogResult)850)
+			else if (num == 850)
 			{
-				Equipamento = (HorizontalAlignment)305;
+				Equipamento = 305;
 			}
 			return text + Equipamento.ToString() + "/" + (checked(100 * Versao)).ToString();
 		}
@@ -973,29 +973,29 @@ namespace iS800
 			Image logo_vortice_pp = Resources.logo_vortice_pp;
 			string text = "MD";
 			int num = Equipamento;
-			if (num == (DialogResult)810)
+			if (num == 810)
 			{
-				Equipamento = (HorizontalAlignment)101;
+				Equipamento = 101;
 			}
-			else if (num == (DialogResult)820)
+			else if (num == 820)
 			{
-				Equipamento = (HorizontalAlignment)202;
+				Equipamento = 202;
 			}
-			else if (num == (DialogResult)821)
+			else if (num == 821)
 			{
-				Equipamento = (HorizontalAlignment)201;
+				Equipamento = 201;
 			}
-			else if (num == (DialogResult)830)
+			else if (num == 830)
 			{
-				Equipamento = (HorizontalAlignment)302;
+				Equipamento = 302;
 			}
-			else if (num == (DialogResult)831)
+			else if (num == 831)
 			{
-				Equipamento = (HorizontalAlignment)301;
+				Equipamento = 301;
 			}
-			else if (num == (DialogResult)850)
+			else if (num == 850)
 			{
-				Equipamento = (HorizontalAlignment)305;
+				Equipamento = 305;
 			}
 			return string.Concat(new string[]
 			{
@@ -1020,2674 +1020,2674 @@ namespace iS800
 		public const bool CONST_NAO_TROCA_TELA = false;
 
 		// Token: 0x04000D50 RID: 3408
-		public const int CONST_RT_810_SD = (HorizontalAlignment)1;
+		public const int CONST_RT_810_SD = 1;
 
 		// Token: 0x04000D51 RID: 3409
-		public const int CONST_RT_810_MOTORES = (HorizontalAlignment)1;
+		public const int CONST_RT_810_MOTORES = 1;
 
 		// Token: 0x04000D52 RID: 3410
-		public const int CONST_RT_810_ED = (HorizontalAlignment)8;
+		public const int CONST_RT_810_ED = 8;
 
 		// Token: 0x04000D53 RID: 3411
-		public const int CONST_RT_810_EA = (HorizontalAlignment)4;
+		public const int CONST_RT_810_EA = 4;
 
 		// Token: 0x04000D54 RID: 3412
-		public const int CONST_RT_810_200_EA = (HorizontalAlignment)1;
+		public const int CONST_RT_810_200_EA = 1;
 
 		// Token: 0x04000D55 RID: 3413
-		public const int CONST_RT_810_NUM_MAX_REPETIDORAS = (HorizontalAlignment)50;
+		public const int CONST_RT_810_NUM_MAX_REPETIDORAS = 50;
 
 		// Token: 0x04000D56 RID: 3414
-		public const int CONST_RT_810_SETPOINTS = (HorizontalAlignment)1;
+		public const int CONST_RT_810_SETPOINTS = 1;
 
 		// Token: 0x04000D57 RID: 3415
-		public const int CONST_RT_810 = (HorizontalAlignment)0;
+		public const int CONST_RT_810 = 0;
 
 		// Token: 0x04000D58 RID: 3416
-		public const int CONST_RT_810_CTRL = (HorizontalAlignment)1;
+		public const int CONST_RT_810_CTRL = 1;
 
 		// Token: 0x04000D59 RID: 3417
-		public const int CONST_RT_810_MOD_RT810 = (HorizontalAlignment)0;
+		public const int CONST_RT_810_MOD_RT810 = 0;
 
 		// Token: 0x04000D5A RID: 3418
-		public const int CONST_RT_810_MOD_VA310 = (HorizontalAlignment)1;
+		public const int CONST_RT_810_MOD_VA310 = 1;
 
 		// Token: 0x04000D5B RID: 3419
-		public const int CONST_RT_810_MOD_MD101 = (HorizontalAlignment)2;
+		public const int CONST_RT_810_MOD_MD101 = 2;
 
 		// Token: 0x04000D5C RID: 3420
-		public const int CONST_RT_810_MODELO_EMULADO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_MODELO_EMULADO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000D5D RID: 3421
-		public const int CONST_RT_810_DEFAULT_EQUIP = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_EQUIP = 0;
 
 		// Token: 0x04000D5E RID: 3422
-		public const int CONST_RT_810_DEFAULT_VERSAO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_VERSAO = 0;
 
 		// Token: 0x04000D5F RID: 3423
-		public const int CONST_RT_810_DEFAULT_BUILD = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_BUILD = 0;
 
 		// Token: 0x04000D60 RID: 3424
-		public const int CONST_RT_810_DEFAULT_RELEASE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_RELEASE = 0;
 
 		// Token: 0x04000D61 RID: 3425
-		public const int CONST_RT_810_DEFAULT_EMULACAO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_EMULACAO = 0;
 
 		// Token: 0x04000D62 RID: 3426
-		public const int CONST_RT_810_DEFAULT_MODO_OPERACAO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_MODO_OPERACAO = 0;
 
 		// Token: 0x04000D63 RID: 3427
-		public const int CONST_RT_810_DEFAULT_HAB_ELETRODOS = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_HAB_ELETRODOS = 0;
 
 		// Token: 0x04000D64 RID: 3428
-		public const int CONST_RT_810_DEFAULT_HAB_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_HAB_REPETIDORAS = 0;
 
 		// Token: 0x04000D65 RID: 3429
-		public const int CONST_RT_810_DEFAULT_TEMPO_PARADA = (HorizontalAlignment)180;
+		public const int CONST_RT_810_DEFAULT_TEMPO_PARADA = 180;
 
 		// Token: 0x04000D66 RID: 3430
-		public const int CONST_RT_810_LMTE_SUP_TEMPO_PARADA = (HorizontalAlignment)1200;
+		public const int CONST_RT_810_LMTE_SUP_TEMPO_PARADA = 1200;
 
 		// Token: 0x04000D67 RID: 3431
-		public const int CONST_RT_810_LMTE_INF_TEMPO_PARADA = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_TEMPO_PARADA = 0;
 
 		// Token: 0x04000D68 RID: 3432
-		public const int CONST_RT_810_DEFAULT_TEMPO_PARTIDA = (HorizontalAlignment)180;
+		public const int CONST_RT_810_DEFAULT_TEMPO_PARTIDA = 180;
 
 		// Token: 0x04000D69 RID: 3433
-		public const int CONST_RT_810_LMTE_SUP_TEMPO_PARTIDA = (HorizontalAlignment)1200;
+		public const int CONST_RT_810_LMTE_SUP_TEMPO_PARTIDA = 1200;
 
 		// Token: 0x04000D6A RID: 3434
-		public const int CONST_RT_810_LMTE_INF_TEMPO_PARTIDA = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_TEMPO_PARTIDA = 0;
 
 		// Token: 0x04000D6B RID: 3435
-		public const int CONST_RT_810_DEFAULT_SD_CONTROLE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_SD_CONTROLE = 0;
 
 		// Token: 0x04000D6C RID: 3436
-		public const int CONST_RT_810_DEFAULT_SD_FUNCAO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_SD_FUNCAO = 0;
 
 		// Token: 0x04000D6D RID: 3437
-		public const int CONST_RT_810_DEFAULT_END_ESTACAO = (HorizontalAlignment)1;
+		public const int CONST_RT_810_DEFAULT_END_ESTACAO = 1;
 
 		// Token: 0x04000D6E RID: 3438
-		public const int CONST_RT_810_LMTE_SUP_END_ESTACAO = (HorizontalAlignment)200;
+		public const int CONST_RT_810_LMTE_SUP_END_ESTACAO = 200;
 
 		// Token: 0x04000D6F RID: 3439
-		public const int CONST_RT_810_LMTE_INF_END_ESTACAO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_END_ESTACAO = 0;
 
 		// Token: 0x04000D70 RID: 3440
-		public const int CONST_RT_810_DEFAULT_END_MESTRE = (HorizontalAlignment)100;
+		public const int CONST_RT_810_DEFAULT_END_MESTRE = 100;
 
 		// Token: 0x04000D71 RID: 3441
-		public const int CONST_RT_810_LMTE_SUP_END_MESTRE = (HorizontalAlignment)200;
+		public const int CONST_RT_810_LMTE_SUP_END_MESTRE = 200;
 
 		// Token: 0x04000D72 RID: 3442
-		public const int CONST_RT_810_LMTE_INF_END_MESTRE = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_END_MESTRE = 1;
 
 		// Token: 0x04000D73 RID: 3443
-		public const int CONST_RT_810_DEFAULT_HAB_REP = (HorizontalAlignment)21856;
+		public const int CONST_RT_810_DEFAULT_HAB_REP = 21856;
 
 		// Token: 0x04000D74 RID: 3444
-		public const int CONST_RT_810_HAB_REP_DESABILITADOS = (HorizontalAlignment)21856;
+		public const int CONST_RT_810_HAB_REP_DESABILITADOS = 21856;
 
 		// Token: 0x04000D75 RID: 3445
-		public const int CONST_RT_810_HAB_REP_HABILITADOS = (HorizontalAlignment)21857;
+		public const int CONST_RT_810_HAB_REP_HABILITADOS = 21857;
 
 		// Token: 0x04000D76 RID: 3446
-		public const int CONST_RT_810_HAB_REP_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_HAB_REP_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000D77 RID: 3447
-		public const int CONST_RT_810_DEFAULT_TEMPO_PTT = (HorizontalAlignment)200;
+		public const int CONST_RT_810_DEFAULT_TEMPO_PTT = 200;
 
 		// Token: 0x04000D78 RID: 3448
-		public const int CONST_RT_810_LMTE_SUP_TEMPO_PTT = (HorizontalAlignment)2000;
+		public const int CONST_RT_810_LMTE_SUP_TEMPO_PTT = 2000;
 
 		// Token: 0x04000D79 RID: 3449
-		public const int CONST_RT_810_LMTE_INF_TEMPO_PTT = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_TEMPO_PTT = 1;
 
 		// Token: 0x04000D7A RID: 3450
-		public const int CONST_RT_810_300_DEFAULT_RANGE_SENSOR = (HorizontalAlignment)1000;
+		public const int CONST_RT_810_300_DEFAULT_RANGE_SENSOR = 1000;
 
 		// Token: 0x04000D7B RID: 3451
-		public const int CONST_RT_810_300_LMTE_SUP_RANGE_SENSOR = (HorizontalAlignment)5000;
+		public const int CONST_RT_810_300_LMTE_SUP_RANGE_SENSOR = 5000;
 
 		// Token: 0x04000D7C RID: 3452
-		public const int CONST_RT_810_300_LMTE_INF_RANGE_SENSOR = (HorizontalAlignment)0;
+		public const int CONST_RT_810_300_LMTE_INF_RANGE_SENSOR = 0;
 
 		// Token: 0x04000D7D RID: 3453
-		public const int CONST_RT_810_300_DEFAULT_ALTURA_RESERVATIORIO = (HorizontalAlignment)1000;
+		public const int CONST_RT_810_300_DEFAULT_ALTURA_RESERVATIORIO = 1000;
 
 		// Token: 0x04000D7E RID: 3454
-		public const int CONST_RT_810_300_LMTE_SUP_ALTURA_RESERVATIORIO = (HorizontalAlignment)5000;
+		public const int CONST_RT_810_300_LMTE_SUP_ALTURA_RESERVATIORIO = 5000;
 
 		// Token: 0x04000D7F RID: 3455
-		public const int CONST_RT_810_300_LMTE_INF_ALTURA_RESERVATIORIO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_300_LMTE_INF_ALTURA_RESERVATIORIO = 0;
 
 		// Token: 0x04000D80 RID: 3456
-		public const int CONST_RT_810_300_DEFAULT_ERRO_OFFSET_SENSOR = (HorizontalAlignment)0;
+		public const int CONST_RT_810_300_DEFAULT_ERRO_OFFSET_SENSOR = 0;
 
 		// Token: 0x04000D81 RID: 3457
-		public const int CONST_RT_810_300_LMTE_SUP_DEFAULT_ERRO_OFFSET_SENSOR = (HorizontalAlignment)1000;
+		public const int CONST_RT_810_300_LMTE_SUP_DEFAULT_ERRO_OFFSET_SENSOR = 1000;
 
 		// Token: 0x04000D82 RID: 3458
-		public const int CONST_RT_810_300_LMTE_INF_DEFAULT_ERRO_OFFSET_SENSOR = (HorizontalAlignment)0;
+		public const int CONST_RT_810_300_LMTE_INF_DEFAULT_ERRO_OFFSET_SENSOR = 0;
 
 		// Token: 0x04000D83 RID: 3459
-		public const int CONST_RT_810_200_DEFAULT_ERRO_OFFSET_SENSOR = (HorizontalAlignment)0;
+		public const int CONST_RT_810_200_DEFAULT_ERRO_OFFSET_SENSOR = 0;
 
 		// Token: 0x04000D84 RID: 3460
-		public const int CONST_RT_810_200_LMTE_SUP_DEFAULT_ERRO_OFFSET_SENSOR = (HorizontalAlignment)4000;
+		public const int CONST_RT_810_200_LMTE_SUP_DEFAULT_ERRO_OFFSET_SENSOR = 4000;
 
 		// Token: 0x04000D85 RID: 3461
 		public const int CONST_RT_810_200_LMTE_INF_DEFAULT_ERRO_OFFSET_SENSOR = -4000;
 
 		// Token: 0x04000D86 RID: 3462
-		public const int CONST_RT_810_MODO_OPERACAO_INDICE_REDE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_MODO_OPERACAO_INDICE_REDE = 0;
 
 		// Token: 0x04000D87 RID: 3463
-		public const int CONST_RT_810_MODO_OPERACAO_INDICE_PTO_A_PTO = (HorizontalAlignment)1;
+		public const int CONST_RT_810_MODO_OPERACAO_INDICE_PTO_A_PTO = 1;
 
 		// Token: 0x04000D88 RID: 3464
-		public const int CONST_RT_810_MODO_OPERACAO_REDE = (HorizontalAlignment)21856;
+		public const int CONST_RT_810_MODO_OPERACAO_REDE = 21856;
 
 		// Token: 0x04000D89 RID: 3465
-		public const int CONST_RT_810_MODO_OPERACAO_PTO_A_PTO = (HorizontalAlignment)21857;
+		public const int CONST_RT_810_MODO_OPERACAO_PTO_A_PTO = 21857;
 
 		// Token: 0x04000D8A RID: 3466
-		public const int CONST_RT_810_DEFAULT_INTERVALO_TX_PTO = (HorizontalAlignment)3;
+		public const int CONST_RT_810_DEFAULT_INTERVALO_TX_PTO = 3;
 
 		// Token: 0x04000D8B RID: 3467
-		public const int CONST_RT_810_LMTE_SUP_INTERVALO_TX_PTO = (HorizontalAlignment)43200;
+		public const int CONST_RT_810_LMTE_SUP_INTERVALO_TX_PTO = 43200;
 
 		// Token: 0x04000D8C RID: 3468
-		public const int CONST_RT_810_LMTE_INF_INTERVALO_TX_PTO = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_INTERVALO_TX_PTO = 1;
 
 		// Token: 0x04000D8D RID: 3469
-		public const int CONST_RT_810_DEFAULT_AD_INTERVALO = (HorizontalAlignment)500;
+		public const int CONST_RT_810_DEFAULT_AD_INTERVALO = 500;
 
 		// Token: 0x04000D8E RID: 3470
-		public const int CONST_RT_810_LMTE_SUP_AD_INTERVALO = (HorizontalAlignment)20000;
+		public const int CONST_RT_810_LMTE_SUP_AD_INTERVALO = 20000;
 
 		// Token: 0x04000D8F RID: 3471
-		public const int CONST_RT_810_LMTE_INF_AD_INTERVALO = (HorizontalAlignment)100;
+		public const int CONST_RT_810_LMTE_INF_AD_INTERVALO = 100;
 
 		// Token: 0x04000D90 RID: 3472
-		public const int CONST_RT_810_DEFAULT_AD_TAMANHO_FILTRO = (HorizontalAlignment)3;
+		public const int CONST_RT_810_DEFAULT_AD_TAMANHO_FILTRO = 3;
 
 		// Token: 0x04000D91 RID: 3473
-		public const int CONST_RT_810_LMTE_SUP_AD_TAMANHO_FILTRO = (HorizontalAlignment)10;
+		public const int CONST_RT_810_LMTE_SUP_AD_TAMANHO_FILTRO = 10;
 
 		// Token: 0x04000D92 RID: 3474
-		public const int CONST_RT_810_LMTE_INF_AD_TAMANHO_FILTRO = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_AD_TAMANHO_FILTRO = 1;
 
 		// Token: 0x04000D93 RID: 3475
-		public const int CONST_RT_810_DEFAULT_EA_RANGE = (HorizontalAlignment)4000;
+		public const int CONST_RT_810_DEFAULT_EA_RANGE = 4000;
 
 		// Token: 0x04000D94 RID: 3476
-		public const int CONST_RT_810_LMTE_INF_EA_Range = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_EA_Range = 1;
 
 		// Token: 0x04000D95 RID: 3477
-		public const int CONST_RT_810_LMTE_SUP_EA_Range = (HorizontalAlignment)65535;
+		public const int CONST_RT_810_LMTE_SUP_EA_Range = 65535;
 
 		// Token: 0x04000D96 RID: 3478
-		public const int CONST_RT_810_DEFAULT_EA_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_EA_INICIO = 0;
 
 		// Token: 0x04000D97 RID: 3479
-		public const int CONST_RT_810_LMTE_INF_EA_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_EA_INICIO = 0;
 
 		// Token: 0x04000D98 RID: 3480
-		public const int CONST_RT_810_LMTE_SUP_EA_INICIO = (HorizontalAlignment)65536;
+		public const int CONST_RT_810_LMTE_SUP_EA_INICIO = 65536;
 
 		// Token: 0x04000D99 RID: 3481
-		public const int CONST_RT_810_DEFAULT_EA_FIM = (HorizontalAlignment)4000;
+		public const int CONST_RT_810_DEFAULT_EA_FIM = 4000;
 
 		// Token: 0x04000D9A RID: 3482
-		public const int CONST_RT_810_LMTE_INF_EA_FIM = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_EA_FIM = 1;
 
 		// Token: 0x04000D9B RID: 3483
-		public const int CONST_RT_810_LMTE_SUP_EA_FIM = (HorizontalAlignment)65535;
+		public const int CONST_RT_810_LMTE_SUP_EA_FIM = 65535;
 
 		// Token: 0x04000D9C RID: 3484
-		public const int CONST_RT_810_CTRL_ACIONAMENTO_SAIDA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_CTRL_ACIONAMENTO_SAIDA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000D9D RID: 3485
-		public const int CONST_RT_810_CTRL_ACIONAMENTO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_CTRL_ACIONAMENTO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000D9E RID: 3486
-		public const int CONST_RT_810_SELECAO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_SELECAO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000D9F RID: 3487
-		public const int CONST_RT_810_REVERSO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_REVERSO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DA0 RID: 3488
-		public const int CONST_RT_810_MODO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_MODO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DA1 RID: 3489
-		public const int CONST_RT_810_CTRL_DEFAULT_TEMPO_MAX_PARTIDA = (HorizontalAlignment)180;
+		public const int CONST_RT_810_CTRL_DEFAULT_TEMPO_MAX_PARTIDA = 180;
 
 		// Token: 0x04000DA2 RID: 3490
-		public const int CONST_RT_810_CTRL_LMTE_SUP_TEMPO_MAX_PARTIDA = (HorizontalAlignment)1200;
+		public const int CONST_RT_810_CTRL_LMTE_SUP_TEMPO_MAX_PARTIDA = 1200;
 
 		// Token: 0x04000DA3 RID: 3491
-		public const int CONST_RT_810_CTRL_LMTE_INF_TEMPO_MAX_PARTIDA = (HorizontalAlignment)0;
+		public const int CONST_RT_810_CTRL_LMTE_INF_TEMPO_MAX_PARTIDA = 0;
 
 		// Token: 0x04000DA4 RID: 3492
-		public const int CONST_RT_810_CTRL_DEFAULT_TEMPO_MAX_PARADA = (HorizontalAlignment)180;
+		public const int CONST_RT_810_CTRL_DEFAULT_TEMPO_MAX_PARADA = 180;
 
 		// Token: 0x04000DA5 RID: 3493
-		public const int CONST_RT_810_CTRL_LMTE_SUP_TEMPO_MAX_PARADA = (HorizontalAlignment)1200;
+		public const int CONST_RT_810_CTRL_LMTE_SUP_TEMPO_MAX_PARADA = 1200;
 
 		// Token: 0x04000DA6 RID: 3494
-		public const int CONST_RT_810_CTRL_LMTE_INF_TEMPO_MAX_PARADA = (HorizontalAlignment)0;
+		public const int CONST_RT_810_CTRL_LMTE_INF_TEMPO_MAX_PARADA = 0;
 
 		// Token: 0x04000DA7 RID: 3495
-		public const int CONST_RT_810_CONFIG_ED_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_CONFIG_ED_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DA8 RID: 3496
-		public const int CONST_RT_810_ELETRODOS_DESABILITADOS = (HorizontalAlignment)21856;
+		public const int CONST_RT_810_ELETRODOS_DESABILITADOS = 21856;
 
 		// Token: 0x04000DA9 RID: 3497
-		public const int CONST_RT_810_ELETRODOS_HABILITADOS = (HorizontalAlignment)21857;
+		public const int CONST_RT_810_ELETRODOS_HABILITADOS = 21857;
 
 		// Token: 0x04000DAA RID: 3498
-		public const int CONST_RT_810_DEFAULT_END_REPETIDORAS = (HorizontalAlignment)1;
+		public const int CONST_RT_810_DEFAULT_END_REPETIDORAS = 1;
 
 		// Token: 0x04000DAB RID: 3499
-		public const int CONST_RT_810_LMTE_SUP_END_REPETIDORAS = (HorizontalAlignment)200;
+		public const int CONST_RT_810_LMTE_SUP_END_REPETIDORAS = 200;
 
 		// Token: 0x04000DAC RID: 3500
-		public const int CONST_RT_810_LMTE_INF_END_REPETIDORAS = (HorizontalAlignment)1;
+		public const int CONST_RT_810_LMTE_INF_END_REPETIDORAS = 1;
 
 		// Token: 0x04000DAD RID: 3501
-		public const int CONST_RT_810_DEFAULT_NUM_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_NUM_REPETIDORAS = 0;
 
 		// Token: 0x04000DAE RID: 3502
-		public const int CONST_RT_810_LMTE_SUP_NUM_REPETIDORAS = (HorizontalAlignment)50;
+		public const int CONST_RT_810_LMTE_SUP_NUM_REPETIDORAS = 50;
 
 		// Token: 0x04000DAF RID: 3503
-		public const int CONST_RT_810_LMTE_INF_NUM_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_NUM_REPETIDORAS = 0;
 
 		// Token: 0x04000DB0 RID: 3504
-		public const int CONST_RT_810_DEFAULT_REP_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_REP_ENDERECOS = 0;
 
 		// Token: 0x04000DB1 RID: 3505
-		public const int CONST_RT_810_LMTE_SUP_REP_ENDERECOS = (HorizontalAlignment)200;
+		public const int CONST_RT_810_LMTE_SUP_REP_ENDERECOS = 200;
 
 		// Token: 0x04000DB2 RID: 3506
-		public const int CONST_RT_810_LMTE_INF_REP_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_REP_ENDERECOS = 0;
 
 		// Token: 0x04000DB3 RID: 3507
-		public const int CONST_RT_810_DEFAULT_SETPOINT_ALTO = (HorizontalAlignment)4000;
+		public const int CONST_RT_810_DEFAULT_SETPOINT_ALTO = 4000;
 
 		// Token: 0x04000DB4 RID: 3508
-		public const int CONST_RT_810_DEFAULT_SETPOINT_BAIXO = (HorizontalAlignment)0;
+		public const int CONST_RT_810_DEFAULT_SETPOINT_BAIXO = 0;
 
 		// Token: 0x04000DB5 RID: 3509
-		public const int CONST_RT_810_LMTE_INF_SETPOINT = (HorizontalAlignment)0;
+		public const int CONST_RT_810_LMTE_INF_SETPOINT = 0;
 
 		// Token: 0x04000DB6 RID: 3510
-		public const int CONST_RT_810_LMTE_SUP_SETPOINT = (HorizontalAlignment)4000;
+		public const int CONST_RT_810_LMTE_SUP_SETPOINT = 4000;
 
 		// Token: 0x04000DB7 RID: 3511
-		public const int CONST_RT_810_DEFAULT_SETPOINT_NIVEL_BLOQUEIO = (HorizontalAlignment)400;
+		public const int CONST_RT_810_DEFAULT_SETPOINT_NIVEL_BLOQUEIO = 400;
 
 		// Token: 0x04000DB8 RID: 3512
-		public const int CONST_RT_810_DEFAULT_SETPOINT_NIVEL_LIBERACAO = (HorizontalAlignment)800;
+		public const int CONST_RT_810_DEFAULT_SETPOINT_NIVEL_LIBERACAO = 800;
 
 		// Token: 0x04000DB9 RID: 3513
-		public const int CONST_RT_810_ED_FUNCAO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_ED_FUNCAO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DBA RID: 3514
-		public const int CONST_RT_810_CTRL_VARIAVEL_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_810_CTRL_VARIAVEL_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DBB RID: 3515
-		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO_RT_810 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO_RT_810 = 0;
 
 		// Token: 0x04000DBC RID: 3516
-		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO_RT_810 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO_RT_810 = 1;
 
 		// Token: 0x04000DBD RID: 3517
-		public const int CONST_COLUNA_PROCESSO_ED_REMOTO_RT_810 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_PROCESSO_ED_REMOTO_RT_810 = 2;
 
 		// Token: 0x04000DBE RID: 3518
-		public const int CONST_COLUNA_PROCESSO_REVERSO_RT_810 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_PROCESSO_REVERSO_RT_810 = 3;
 
 		// Token: 0x04000DBF RID: 3519
-		public const int CONST_COLUNA_PROCESSO_MODO_RT_810 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_PROCESSO_MODO_RT_810 = 4;
 
 		// Token: 0x04000DC0 RID: 3520
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA_RT_810 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA_RT_810 = 5;
 
 		// Token: 0x04000DC1 RID: 3521
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA_RT_810 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA_RT_810 = 6;
 
 		// Token: 0x04000DC2 RID: 3522
-		public const int CONST_COLUNA_EA_RANGE_RT_810 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_EA_RANGE_RT_810 = 0;
 
 		// Token: 0x04000DC3 RID: 3523
-		public const int CONST_COLUNA_EA_INICIO_RT_810 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_EA_INICIO_RT_810 = 1;
 
 		// Token: 0x04000DC4 RID: 3524
-		public const int CONST_COLUNA_EA_FIM_RT_810 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_EA_FIM_RT_810 = 2;
 
 		// Token: 0x04000DC5 RID: 3525
-		public const int CONST_COLUNA_SETPOINT_CONTROLE_RT_810 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_SETPOINT_CONTROLE_RT_810 = 0;
 
 		// Token: 0x04000DC6 RID: 3526
-		public const int CONST_COLUNA_SETPOINT_NIVEL_BAIXO_RT_810 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_BAIXO_RT_810 = 1;
 
 		// Token: 0x04000DC7 RID: 3527
-		public const int CONST_COLUNA_SETPOINT_NIVEL_ALTO_RT_810 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_ALTO_RT_810 = 2;
 
 		// Token: 0x04000DC8 RID: 3528
-		public const int CONST_COLUNA_ENTRADA_DIGITAL_RT_810 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_ENTRADA_DIGITAL_RT_810 = 0;
 
 		// Token: 0x04000DC9 RID: 3529
-		public const int CONST_TESTE_ED_FUNCAO_RT_810 = (HorizontalAlignment)0;
+		public const int CONST_TESTE_ED_FUNCAO_RT_810 = 0;
 
 		// Token: 0x04000DCA RID: 3530
-		public const int CONST_TESTE_ED_CTRL_RETORNO_RT_810 = (HorizontalAlignment)1;
+		public const int CONST_TESTE_ED_CTRL_RETORNO_RT_810 = 1;
 
 		// Token: 0x04000DCB RID: 3531
-		public const int CONST_TESTE_ED_CTRL_REMOTO_RT_810 = (HorizontalAlignment)2;
+		public const int CONST_TESTE_ED_CTRL_REMOTO_RT_810 = 2;
 
 		// Token: 0x04000DCC RID: 3532
-		public const int CONST_TESTE_ED_FUNCAO_RT_820 = (HorizontalAlignment)0;
+		public const int CONST_TESTE_ED_FUNCAO_RT_820 = 0;
 
 		// Token: 0x04000DCD RID: 3533
-		public const int CONST_TESTE_ED_CTRL_RETORNO_RT_820 = (HorizontalAlignment)1;
+		public const int CONST_TESTE_ED_CTRL_RETORNO_RT_820 = 1;
 
 		// Token: 0x04000DCE RID: 3534
-		public const int CONST_TESTE_ED_CTRL_REMOTO_RT_820 = (HorizontalAlignment)2;
+		public const int CONST_TESTE_ED_CTRL_REMOTO_RT_820 = 2;
 
 		// Token: 0x04000DCF RID: 3535
-		public const int CONST_RT_820 = (HorizontalAlignment)1;
+		public const int CONST_RT_820 = 1;
 
 		// Token: 0x04000DD0 RID: 3536
-		public const int CONST_RT_820_360 = (HorizontalAlignment)4;
+		public const int CONST_RT_820_360 = 4;
 
 		// Token: 0x04000DD1 RID: 3537
-		public const int CONST_RT_820_SD = (HorizontalAlignment)12;
+		public const int CONST_RT_820_SD = 12;
 
 		// Token: 0x04000DD2 RID: 3538
-		public const int CONST_RT_820_MOTORES = (HorizontalAlignment)4;
+		public const int CONST_RT_820_MOTORES = 4;
 
 		// Token: 0x04000DD3 RID: 3539
-		public const int CONST_RT_820_ED = (HorizontalAlignment)16;
+		public const int CONST_RT_820_ED = 16;
 
 		// Token: 0x04000DD4 RID: 3540
-		public const int CONST_RT_820_200_ED = (HorizontalAlignment)8;
+		public const int CONST_RT_820_200_ED = 8;
 
 		// Token: 0x04000DD5 RID: 3541
-		public const int CONST_RT_820_EA = (HorizontalAlignment)16;
+		public const int CONST_RT_820_EA = 16;
 
 		// Token: 0x04000DD6 RID: 3542
-		public const int CONST_RT_820_VAZAO = (HorizontalAlignment)8;
+		public const int CONST_RT_820_VAZAO = 8;
 
 		// Token: 0x04000DD7 RID: 3543
-		public const int CONST_RT_820_PERIFERICOS = (HorizontalAlignment)5;
+		public const int CONST_RT_820_PERIFERICOS = 5;
 
 		// Token: 0x04000DD8 RID: 3544
-		public const int CONST_RT_820_360_MODBUS_GENERICO = (HorizontalAlignment)5;
+		public const int CONST_RT_820_360_MODBUS_GENERICO = 5;
 
 		// Token: 0x04000DD9 RID: 3545
-		public const int CONST_RT_820_400_CALHAS = (HorizontalAlignment)2;
+		public const int CONST_RT_820_400_CALHAS = 2;
 
 		// Token: 0x04000DDA RID: 3546
-		public const int CONST_RT_820_200_PERIFERICOS = (HorizontalAlignment)4;
+		public const int CONST_RT_820_200_PERIFERICOS = 4;
 
 		// Token: 0x04000DDB RID: 3547
-		public const int CONST_RT_820_REFERENCIA_PERIFERICOS = (HorizontalAlignment)10;
+		public const int CONST_RT_820_REFERENCIA_PERIFERICOS = 10;
 
 		// Token: 0x04000DDC RID: 3548
-		public const int CONST_RT_820_ATUADOR1 = (HorizontalAlignment)1;
+		public const int CONST_RT_820_ATUADOR1 = 1;
 
 		// Token: 0x04000DDD RID: 3549
-		public const int CONST_RT_820_ATUADOR2 = (HorizontalAlignment)1;
+		public const int CONST_RT_820_ATUADOR2 = 1;
 
 		// Token: 0x04000DDE RID: 3550
-		public const int CONST_RT_820_ATUADOR_SETPOINT1 = (HorizontalAlignment)3;
+		public const int CONST_RT_820_ATUADOR_SETPOINT1 = 3;
 
 		// Token: 0x04000DDF RID: 3551
-		public const int CONST_RT_820_ATUADOR_SETPOINT2 = (HorizontalAlignment)3;
+		public const int CONST_RT_820_ATUADOR_SETPOINT2 = 3;
 
 		// Token: 0x04000DE0 RID: 3552
-		public const int CONST_RT_820_CALHA = (HorizontalAlignment)2;
+		public const int CONST_RT_820_CALHA = 2;
 
 		// Token: 0x04000DE1 RID: 3553
-		public const int CONST_RT_820_CTRL = (HorizontalAlignment)7;
+		public const int CONST_RT_820_CTRL = 7;
 
 		// Token: 0x04000DE2 RID: 3554
-		public const int CONST_RT_820_GRUPOS_SIMULTANEOS = (HorizontalAlignment)4;
+		public const int CONST_RT_820_GRUPOS_SIMULTANEOS = 4;
 
 		// Token: 0x04000DE3 RID: 3555
-		public const int CONST_RT_820_ENTRADA_VAZOES = (HorizontalAlignment)8;
+		public const int CONST_RT_820_ENTRADA_VAZOES = 8;
 
 		// Token: 0x04000DE4 RID: 3556
-		public const int CONST_RT_820_CALHAS = (HorizontalAlignment)2;
+		public const int CONST_RT_820_CALHAS = 2;
 
 		// Token: 0x04000DE5 RID: 3557
-		public const int CONST_RT_820_NUM_MAX_REPETIDORAS = (HorizontalAlignment)50;
+		public const int CONST_RT_820_NUM_MAX_REPETIDORAS = 50;
 
 		// Token: 0x04000DE6 RID: 3558
-		public const int CONST_RT_820_SETPOINTS = (HorizontalAlignment)8;
+		public const int CONST_RT_820_SETPOINTS = 8;
 
 		// Token: 0x04000DE7 RID: 3559
-		public const int CONST_RT_820_END_INICIAL_GERAL = (HorizontalAlignment)0;
+		public const int CONST_RT_820_END_INICIAL_GERAL = 0;
 
 		// Token: 0x04000DE8 RID: 3560
-		public const int CONST_RT_820_MODELO_EMULADO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_MODELO_EMULADO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DE9 RID: 3561
-		public const int CONST_RT_820_MOD_RT820 = (HorizontalAlignment)0;
+		public const int CONST_RT_820_MOD_RT820 = 0;
 
 		// Token: 0x04000DEA RID: 3562
-		public const int CONST_RT_820_MOD_VA220 = (HorizontalAlignment)1;
+		public const int CONST_RT_820_MOD_VA220 = 1;
 
 		// Token: 0x04000DEB RID: 3563
-		public const int CONST_RT_820_MOD_MD202 = (HorizontalAlignment)2;
+		public const int CONST_RT_820_MOD_MD202 = 2;
 
 		// Token: 0x04000DEC RID: 3564
-		public const int CONST_RT_820_DEFAULT_EQUIP = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_EQUIP = 0;
 
 		// Token: 0x04000DED RID: 3565
-		public const int CONST_RT_820_DEFAULT_VERSAO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_VERSAO = 0;
 
 		// Token: 0x04000DEE RID: 3566
-		public const int CONST_RT_820_DEFAULT_BUILD = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_BUILD = 0;
 
 		// Token: 0x04000DEF RID: 3567
-		public const int CONST_RT_820_DEFAULT_RELEASE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_RELEASE = 0;
 
 		// Token: 0x04000DF0 RID: 3568
-		public const int CONST_RT_820_DEFAULT_END_ESTACAO = (HorizontalAlignment)1;
+		public const int CONST_RT_820_DEFAULT_END_ESTACAO = 1;
 
 		// Token: 0x04000DF1 RID: 3569
-		public const int CONST_RT_820_DEFAULT_END_ESTACAO2 = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_END_ESTACAO2 = 0;
 
 		// Token: 0x04000DF2 RID: 3570
-		public const int CONST_RT_820_LMTE_SUP_END_ESTACAO = (HorizontalAlignment)200;
+		public const int CONST_RT_820_LMTE_SUP_END_ESTACAO = 200;
 
 		// Token: 0x04000DF3 RID: 3571
-		public const int CONST_RT_820_LMTE_INF_END_ESTACAO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_END_ESTACAO = 0;
 
 		// Token: 0x04000DF4 RID: 3572
-		public const int CONST_RT_820_DEFAULT_END_MESTRE = (HorizontalAlignment)100;
+		public const int CONST_RT_820_DEFAULT_END_MESTRE = 100;
 
 		// Token: 0x04000DF5 RID: 3573
-		public const int CONST_RT_820_LMTE_SUP_END_MESTRE = (HorizontalAlignment)200;
+		public const int CONST_RT_820_LMTE_SUP_END_MESTRE = 200;
 
 		// Token: 0x04000DF6 RID: 3574
-		public const int CONST_RT_820_LMTE_INF_END_MESTRE = (HorizontalAlignment)1;
+		public const int CONST_RT_820_LMTE_INF_END_MESTRE = 1;
 
 		// Token: 0x04000DF7 RID: 3575
-		public const int CONST_RT_820_DEFAULT_EMULACAO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_EMULACAO = 0;
 
 		// Token: 0x04000DF8 RID: 3576
-		public const int CONST_RT_820_EMULACAO_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_EMULACAO_INDICE = 0;
 
 		// Token: 0x04000DF9 RID: 3577
-		public const int CONST_RT_820_MODO_REPETIDORA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_MODO_REPETIDORA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000DFA RID: 3578
-		public const int CONST_RT_820_DEFAULT_END_REPETIDORAS = (HorizontalAlignment)1;
+		public const int CONST_RT_820_DEFAULT_END_REPETIDORAS = 1;
 
 		// Token: 0x04000DFB RID: 3579
-		public const int CONST_RT_820_LMTE_SUP_END_REPETIDORAS = (HorizontalAlignment)200;
+		public const int CONST_RT_820_LMTE_SUP_END_REPETIDORAS = 200;
 
 		// Token: 0x04000DFC RID: 3580
-		public const int CONST_RT_820_LMTE_INF_END_REPETIDORAS = (HorizontalAlignment)1;
+		public const int CONST_RT_820_LMTE_INF_END_REPETIDORAS = 1;
 
 		// Token: 0x04000DFD RID: 3581
-		public const int CONST_RT_820_DEFAULT_NUM_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_NUM_REPETIDORAS = 0;
 
 		// Token: 0x04000DFE RID: 3582
-		public const int CONST_RT_820_LMTE_SUP_NUM_REPETIDORAS = (HorizontalAlignment)50;
+		public const int CONST_RT_820_LMTE_SUP_NUM_REPETIDORAS = 50;
 
 		// Token: 0x04000DFF RID: 3583
-		public const int CONST_RT_820_LMTE_INF_NUM_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_NUM_REPETIDORAS = 0;
 
 		// Token: 0x04000E00 RID: 3584
-		public const int CONST_RT_820_DEFAULT_REP_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REP_ENDERECOS = 0;
 
 		// Token: 0x04000E01 RID: 3585
-		public const int CONST_RT_820_LMTE_SUP_REP_ENDERECOS = (HorizontalAlignment)200;
+		public const int CONST_RT_820_LMTE_SUP_REP_ENDERECOS = 200;
 
 		// Token: 0x04000E02 RID: 3586
-		public const int CONST_RT_820_LMTE_INF_REP_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_REP_ENDERECOS = 0;
 
 		// Token: 0x04000E03 RID: 3587
-		public const int CONST_RT_820_DEFAULT_TEMPO_PTT = (HorizontalAlignment)200;
+		public const int CONST_RT_820_DEFAULT_TEMPO_PTT = 200;
 
 		// Token: 0x04000E04 RID: 3588
-		public const int CONST_RT_820_LMTE_SUP_TEMPO_PTT = (HorizontalAlignment)2000;
+		public const int CONST_RT_820_LMTE_SUP_TEMPO_PTT = 2000;
 
 		// Token: 0x04000E05 RID: 3589
-		public const int CONST_RT_820_LMTE_INF_TEMPO_PTT = (HorizontalAlignment)100;
+		public const int CONST_RT_820_LMTE_INF_TEMPO_PTT = 100;
 
 		// Token: 0x04000E06 RID: 3590
-		public const int CONST_RT_820_DEFAULT_COM2 = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_DEFAULT_COM2 = 21856;
 
 		// Token: 0x04000E07 RID: 3591
-		public const int CONST_RT_820_DEFAULT_INDICE_COM2 = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_INDICE_COM2 = 0;
 
 		// Token: 0x04000E08 RID: 3592
-		public const int CONST_RT_820_BAUDRATE_COM2_1200 = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_BAUDRATE_COM2_1200 = 21856;
 
 		// Token: 0x04000E09 RID: 3593
-		public const int CONST_RT_820_BAUDRATE_COM2_9600 = (HorizontalAlignment)21857;
+		public const int CONST_RT_820_BAUDRATE_COM2_9600 = 21857;
 
 		// Token: 0x04000E0A RID: 3594
-		public const int CONST_RT_820_HAB_IO_DESABILITADO = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_HAB_IO_DESABILITADO = 21856;
 
 		// Token: 0x04000E0B RID: 3595
-		public const int CONST_RT_820_HAB_IO_HABILITADO = (HorizontalAlignment)21857;
+		public const int CONST_RT_820_HAB_IO_HABILITADO = 21857;
 
 		// Token: 0x04000E0C RID: 3596
-		public const int CONST_RT_820_HAB_IO_DEFAULT = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_HAB_IO_DEFAULT = 21856;
 
 		// Token: 0x04000E0D RID: 3597
-		public const int CONST_RT_820_DEFAULT_AD_INTERVALO = (HorizontalAlignment)2000;
+		public const int CONST_RT_820_DEFAULT_AD_INTERVALO = 2000;
 
 		// Token: 0x04000E0E RID: 3598
-		public const int CONST_RT_820_LMTE_SUP_AD_INTERVALO = (HorizontalAlignment)20000;
+		public const int CONST_RT_820_LMTE_SUP_AD_INTERVALO = 20000;
 
 		// Token: 0x04000E0F RID: 3599
-		public const int CONST_RT_820_LMTE_INF_AD_INTERVALO = (HorizontalAlignment)500;
+		public const int CONST_RT_820_LMTE_INF_AD_INTERVALO = 500;
 
 		// Token: 0x04000E10 RID: 3600
-		public const int CONST_RT_820_200_LMTE_INF_AD_INTERVALO = (HorizontalAlignment)10;
+		public const int CONST_RT_820_200_LMTE_INF_AD_INTERVALO = 10;
 
 		// Token: 0x04000E11 RID: 3601
-		public const int CONST_RT_820_DEFAULT_AD_TAMANHO_FILTRO = (HorizontalAlignment)3;
+		public const int CONST_RT_820_DEFAULT_AD_TAMANHO_FILTRO = 3;
 
 		// Token: 0x04000E12 RID: 3602
-		public const int CONST_RT_820_LMTE_SUP_AD_TAMANHO_FILTRO = (HorizontalAlignment)10;
+		public const int CONST_RT_820_LMTE_SUP_AD_TAMANHO_FILTRO = 10;
 
 		// Token: 0x04000E13 RID: 3603
-		public const int CONST_RT_820_LMTE_INF_AD_TAMANHO_FILTRO = (HorizontalAlignment)1;
+		public const int CONST_RT_820_LMTE_INF_AD_TAMANHO_FILTRO = 1;
 
 		// Token: 0x04000E14 RID: 3604
-		public const int CONST_RT_820_DEFAULT_HAB_IO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_HAB_IO = 0;
 
 		// Token: 0x04000E15 RID: 3605
-		public const int CONST_RT_820_DEFAULT_EA_RANGE = (HorizontalAlignment)4000;
+		public const int CONST_RT_820_DEFAULT_EA_RANGE = 4000;
 
 		// Token: 0x04000E16 RID: 3606
-		public const int CONST_RT_820_LMTE_INF_EA_Range = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_EA_Range = 0;
 
 		// Token: 0x04000E17 RID: 3607
-		public const int CONST_RT_820_LMTE_SUP_EA_Range = (HorizontalAlignment)4000;
+		public const int CONST_RT_820_LMTE_SUP_EA_Range = 4000;
 
 		// Token: 0x04000E18 RID: 3608
-		public const int CONST_RT_820_DEFAULT_EA_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_EA_INICIO = 0;
 
 		// Token: 0x04000E19 RID: 3609
-		public const int CONST_RT_820_LMTE_INF_EA_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_EA_INICIO = 0;
 
 		// Token: 0x04000E1A RID: 3610
-		public const int CONST_RT_820_LMTE_SUP_EA_INICIO = (HorizontalAlignment)20000;
+		public const int CONST_RT_820_LMTE_SUP_EA_INICIO = 20000;
 
 		// Token: 0x04000E1B RID: 3611
-		public const int CONST_RT_820_DEFAULT_EA_FIM = (HorizontalAlignment)4000;
+		public const int CONST_RT_820_DEFAULT_EA_FIM = 4000;
 
 		// Token: 0x04000E1C RID: 3612
-		public const int CONST_RT_820_LMTE_INF_EA_FIM = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_EA_FIM = 0;
 
 		// Token: 0x04000E1D RID: 3613
-		public const int CONST_RT_820_LMTE_SUP_EA_FIM = (HorizontalAlignment)50000;
+		public const int CONST_RT_820_LMTE_SUP_EA_FIM = 50000;
 
 		// Token: 0x04000E1E RID: 3614
-		public const int CONST_RT_820_CTRL_ACIONAMENTO_SAIDA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_ACIONAMENTO_SAIDA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E1F RID: 3615
-		public const int CONST_RT_820_CTRL_DESACIONAMENTO_SAIDA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_DESACIONAMENTO_SAIDA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E20 RID: 3616
-		public const int CONST_RT_820_CTRL_ACIONAMENTO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_ACIONAMENTO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E21 RID: 3617
-		public const int CONST_RT_820_CTRL_DESACIONAMENTO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_DESACIONAMENTO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E22 RID: 3618
-		public const int CONST_RT_820_CTRL_REMOTO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_REMOTO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E23 RID: 3619
-		public const int CONST_RT_820_BLOQUEIO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_BLOQUEIO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E24 RID: 3620
-		public const int CONST_RT_820_LIBERACAO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LIBERACAO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E25 RID: 3621
-		public const int CONST_RT_820_MODO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_MODO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E26 RID: 3622
-		public const int CONST_RT_820_AGRUPAMENTO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_AGRUPAMENTO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E27 RID: 3623
-		public const int CONST_RT_820_PARTIDAS_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_PARTIDAS_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E28 RID: 3624
-		public const int CONST_RT_820_REVERSO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REVERSO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E29 RID: 3625
-		public const int CONST_RT_820_SIMULTANEOS_DEFAULT_INDICE = (HorizontalAlignment)1;
+		public const int CONST_RT_820_SIMULTANEOS_DEFAULT_INDICE = 1;
 
 		// Token: 0x04000E2A RID: 3626
-		public const int CONST_RT_820_ROTATIVO_MOTORES_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_ROTATIVO_MOTORES_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E2B RID: 3627
-		public const int CONST_RT_820_CTRL_DESLIGAMENTO_SAIDA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_DESLIGAMENTO_SAIDA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E2C RID: 3628
-		public const int CONST_RT_820_CTRL_ACIONAMENTO_RETORNO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_ACIONAMENTO_RETORNO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E2D RID: 3629
-		public const int CONST_RT_820_CTRL_DESLIGAMENTO_RETORNO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_DESLIGAMENTO_RETORNO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E2E RID: 3630
-		public const int CONST_RT_820_CTRL_SELECAO_REMOTO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_SELECAO_REMOTO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E2F RID: 3631
-		public const int CONST_RT_820_CTRL_EA_VARIAVEL_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_EA_VARIAVEL_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E30 RID: 3632
-		public const int CONST_RT_820_CTRL_EA_BLOQUEIO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_EA_BLOQUEIO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E31 RID: 3633
-		public const int CONST_RT_820_CTRL_ED_BLOQUEIO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_ED_BLOQUEIO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E32 RID: 3634
-		public const int CONST_RT_820_CTRL_ED_LIBERACAO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_ED_LIBERACAO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E33 RID: 3635
-		public const int CONST_RT_820_CTRL_RESERSO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_RESERSO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E34 RID: 3636
-		public const int CONST_RT_820_CTRL_MODO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_MODO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E35 RID: 3637
-		public const int CONST_RT_820_CTRL_GRUPO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_GRUPO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E36 RID: 3638
-		public const int CONST_RT_820_DEFAULT_SIMULTANEOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_SIMULTANEOS = 0;
 
 		// Token: 0x04000E37 RID: 3639
-		public const int CONST_RT_820_LMTE_INF_SIMULTANEOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_SIMULTANEOS = 0;
 
 		// Token: 0x04000E38 RID: 3640
-		public const int CONST_RT_820_LMTE_SUP_SIMULTANEOS = (HorizontalAlignment)4;
+		public const int CONST_RT_820_LMTE_SUP_SIMULTANEOS = 4;
 
 		// Token: 0x04000E39 RID: 3641
-		public const int CONST_RT_820_NUMERO_SETPOINTS_HORARIO = (HorizontalAlignment)16;
+		public const int CONST_RT_820_NUMERO_SETPOINTS_HORARIO = 16;
 
 		// Token: 0x04000E3A RID: 3642
-		public const int CONST_RT_820_360_NUMERO_SETPOINTS_HORARIO = (HorizontalAlignment)80;
+		public const int CONST_RT_820_360_NUMERO_SETPOINTS_HORARIO = 80;
 
 		// Token: 0x04000E3B RID: 3643
-		public const int CONST_RT_820_360_NUMERO_FAIXAS_SETPOINTS_HORARIO = (HorizontalAlignment)10;
+		public const int CONST_RT_820_360_NUMERO_FAIXAS_SETPOINTS_HORARIO = 10;
 
 		// Token: 0x04000E3C RID: 3644
-		public const int CONST_RT_820_NUMERO_REFERENCIA_PERIFERICO = (HorizontalAlignment)10;
+		public const int CONST_RT_820_NUMERO_REFERENCIA_PERIFERICO = 10;
 
 		// Token: 0x04000E3D RID: 3645
-		public const int CONST_RT_820_NUMERO_ATUADORES_PERIFERICO = (HorizontalAlignment)2;
+		public const int CONST_RT_820_NUMERO_ATUADORES_PERIFERICO = 2;
 
 		// Token: 0x04000E3E RID: 3646
-		public const int CONST_RT_820_NUMERO_ATUADORES_SETPOINT_PERIFERICO = (HorizontalAlignment)3;
+		public const int CONST_RT_820_NUMERO_ATUADORES_SETPOINT_PERIFERICO = 3;
 
 		// Token: 0x04000E3F RID: 3647
-		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MAX_PARTIDA = (HorizontalAlignment)180;
+		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MAX_PARTIDA = 180;
 
 		// Token: 0x04000E40 RID: 3648
-		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MAX_PARTIDA = (HorizontalAlignment)1200;
+		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MAX_PARTIDA = 1200;
 
 		// Token: 0x04000E41 RID: 3649
-		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MAX_PARTIDA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MAX_PARTIDA = 0;
 
 		// Token: 0x04000E42 RID: 3650
-		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MAX_PARADA = (HorizontalAlignment)180;
+		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MAX_PARADA = 180;
 
 		// Token: 0x04000E43 RID: 3651
-		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MAX_PARADA = (HorizontalAlignment)1200;
+		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MAX_PARADA = 1200;
 
 		// Token: 0x04000E44 RID: 3652
-		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MAX_PARADA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MAX_PARADA = 0;
 
 		// Token: 0x04000E45 RID: 3653
-		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MIN_OPERANDO = (HorizontalAlignment)180;
+		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MIN_OPERANDO = 180;
 
 		// Token: 0x04000E46 RID: 3654
-		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MIN_OPERANDO = (HorizontalAlignment)1200;
+		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MIN_OPERANDO = 1200;
 
 		// Token: 0x04000E47 RID: 3655
-		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MIN_OPERANDO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MIN_OPERANDO = 0;
 
 		// Token: 0x04000E48 RID: 3656
-		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MIN_PARADO = (HorizontalAlignment)180;
+		public const int CONST_RT_820_CTRL_DEFAULT_TEMPO_MIN_PARADO = 180;
 
 		// Token: 0x04000E49 RID: 3657
-		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MIN_PARADO = (HorizontalAlignment)1200;
+		public const int CONST_RT_820_CTRL_LMTE_SUP_TEMPO_MIN_PARADO = 1200;
 
 		// Token: 0x04000E4A RID: 3658
-		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MIN_PARADO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_LMTE_INF_TEMPO_MIN_PARADO = 0;
 
 		// Token: 0x04000E4B RID: 3659
-		public const int CONST_RT_820_GRUPO_DEFAULT_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)120;
+		public const int CONST_RT_820_GRUPO_DEFAULT_TEMPO_ENTRE_ACIONAMENTOS = 120;
 
 		// Token: 0x04000E4C RID: 3660
-		public const int CONST_RT_820_GRUPO_LMTE_SUP_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)1200;
+		public const int CONST_RT_820_GRUPO_LMTE_SUP_TEMPO_ENTRE_ACIONAMENTOS = 1200;
 
 		// Token: 0x04000E4D RID: 3661
-		public const int CONST_RT_820_GRUPO_LMTE_INF_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_GRUPO_LMTE_INF_TEMPO_ENTRE_ACIONAMENTOS = 0;
 
 		// Token: 0x04000E4E RID: 3662
-		public const int CONST_RT_820_DEFAULT_TIMER = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_TIMER = 0;
 
 		// Token: 0x04000E4F RID: 3663
-		public const int CONST_RT_820_LMTE_INF_TIMER = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_TIMER = 0;
 
 		// Token: 0x04000E50 RID: 3664
-		public const int CONST_RT_820_LMTE_SUP_TIMER = (HorizontalAlignment)1439;
+		public const int CONST_RT_820_LMTE_SUP_TIMER = 1439;
 
 		// Token: 0x04000E51 RID: 3665
-		public const int CONST_RT_820_ED_FUNCAO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_ED_FUNCAO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E52 RID: 3666
-		public const int CONST_RT_820_DEFAULT_ED = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_ED = 0;
 
 		// Token: 0x04000E53 RID: 3667
-		public const int CONST_RT_820_LEITURA_VAZAO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LEITURA_VAZAO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E54 RID: 3668
-		public const int CONST_RT_820_EQUIPAMENTO_PERIFERICO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_EQUIPAMENTO_PERIFERICO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E55 RID: 3669
-		public const int CONST_RT_820_REP_HAB_DESABILITADOS = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_REP_HAB_DESABILITADOS = 21856;
 
 		// Token: 0x04000E56 RID: 3670
-		public const int CONST_RT_820_REP_HAB_HABILITADOS = (HorizontalAlignment)21857;
+		public const int CONST_RT_820_REP_HAB_HABILITADOS = 21857;
 
 		// Token: 0x04000E57 RID: 3671
-		public const int CONST_RT_820_REP_HAB_DEFAULT = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_REP_HAB_DEFAULT = 21856;
 
 		// Token: 0x04000E58 RID: 3672
-		public const int CONST_RT_820_REP_DEFAULT_END_REPETIDORA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REP_DEFAULT_END_REPETIDORA = 0;
 
 		// Token: 0x04000E59 RID: 3673
-		public const int CONST_RT_820_REP_LMTE_SUP_END_REPETIDORA = (HorizontalAlignment)200;
+		public const int CONST_RT_820_REP_LMTE_SUP_END_REPETIDORA = 200;
 
 		// Token: 0x04000E5A RID: 3674
-		public const int CONST_RT_820_REP_LMTE_INF_END_REPETIDORA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REP_LMTE_INF_END_REPETIDORA = 0;
 
 		// Token: 0x04000E5B RID: 3675
-		public const int CONST_RT_820_REP_DEFAULT_NUM_ESTACOES = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REP_DEFAULT_NUM_ESTACOES = 0;
 
 		// Token: 0x04000E5C RID: 3676
-		public const int CONST_RT_820_REP_LMTE_SUP_NUM_ESTACOES = (HorizontalAlignment)200;
+		public const int CONST_RT_820_REP_LMTE_SUP_NUM_ESTACOES = 200;
 
 		// Token: 0x04000E5D RID: 3677
-		public const int CONST_RT_820_REP_LMTE_INF_NUM_ESTACOES = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REP_LMTE_INF_NUM_ESTACOES = 0;
 
 		// Token: 0x04000E5E RID: 3678
-		public const int CONST_RT_820_REP_DEFAULT_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REP_DEFAULT_ENDERECOS = 0;
 
 		// Token: 0x04000E5F RID: 3679
-		public const int CONST_RT_820_REP_LMTE_SUP_ENDERECOS = (HorizontalAlignment)200;
+		public const int CONST_RT_820_REP_LMTE_SUP_ENDERECOS = 200;
 
 		// Token: 0x04000E60 RID: 3680
-		public const int CONST_RT_820_REP_LMTE_INF_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_REP_LMTE_INF_ENDERECOS = 0;
 
 		// Token: 0x04000E61 RID: 3681
-		public const int CONST_RT_820_DEFAULT_SETPOINT_ALTO = (HorizontalAlignment)4000;
+		public const int CONST_RT_820_DEFAULT_SETPOINT_ALTO = 4000;
 
 		// Token: 0x04000E62 RID: 3682
-		public const int CONST_RT_820_DEFAULT_SETPOINT_BAIXO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_SETPOINT_BAIXO = 0;
 
 		// Token: 0x04000E63 RID: 3683
-		public const int CONST_RT_820_LMTE_INF_SETPOINT = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_SETPOINT = 0;
 
 		// Token: 0x04000E64 RID: 3684
-		public const int CONST_RT_820_LMTE_SUP_SETPOINT = (HorizontalAlignment)4000;
+		public const int CONST_RT_820_LMTE_SUP_SETPOINT = 4000;
 
 		// Token: 0x04000E65 RID: 3685
-		public const int CONST_RT_820_DEFAULT_SETPOINT_NIVEL_BLOQUEIO = (HorizontalAlignment)400;
+		public const int CONST_RT_820_DEFAULT_SETPOINT_NIVEL_BLOQUEIO = 400;
 
 		// Token: 0x04000E66 RID: 3686
-		public const int CONST_RT_820_DEFAULT_SETPOINT_NIVEL_LIBERACAO = (HorizontalAlignment)800;
+		public const int CONST_RT_820_DEFAULT_SETPOINT_NIVEL_LIBERACAO = 800;
 
 		// Token: 0x04000E67 RID: 3687
-		public const int CONST_RT_820_CTRL_VARIAVEL_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_VARIAVEL_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E68 RID: 3688
-		public const int CONST_RT_820_CTRL_BLOQUEIO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_820_CTRL_BLOQUEIO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000E69 RID: 3689
-		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO_820_400 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO_820_400 = 0;
 
 		// Token: 0x04000E6A RID: 3690
-		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO_820_400 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO_820_400 = 1;
 
 		// Token: 0x04000E6B RID: 3691
-		public const int CONST_COLUNA_PROCESSO_SD_DESACIONAMENTO_820_400 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_PROCESSO_SD_DESACIONAMENTO_820_400 = 2;
 
 		// Token: 0x04000E6C RID: 3692
-		public const int CONST_COLUNA_PROCESSO_ED_DESACIONAMENTO_820_400 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_PROCESSO_ED_DESACIONAMENTO_820_400 = 3;
 
 		// Token: 0x04000E6D RID: 3693
-		public const int CONST_COLUNA_PROCESSO_ED_REMOTO_820_400 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_PROCESSO_ED_REMOTO_820_400 = 4;
 
 		// Token: 0x04000E6E RID: 3694
-		public const int CONST_COLUNA_PROCESSO_ED_BLOQUEIO_820_400 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_PROCESSO_ED_BLOQUEIO_820_400 = 5;
 
 		// Token: 0x04000E6F RID: 3695
-		public const int CONST_COLUNA_PROCESSO_ED_LIBERACAO_820_400 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_PROCESSO_ED_LIBERACAO_820_400 = 6;
 
 		// Token: 0x04000E70 RID: 3696
-		public const int CONST_COLUNA_PROCESSO_REVERSO_820_400 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_PROCESSO_REVERSO_820_400 = 7;
 
 		// Token: 0x04000E71 RID: 3697
-		public const int CONST_COLUNA_PROCESSO_MODO_820_400 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_PROCESSO_MODO_820_400 = 8;
 
 		// Token: 0x04000E72 RID: 3698
-		public const int CONST_COLUNA_PROCESSO_GRUPO_820_400 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_PROCESSO_GRUPO_820_400 = 9;
 
 		// Token: 0x04000E73 RID: 3699
-		public const int CONST_COLUNA_PROCESSO_GRUPO_PARTIDA_820_400 = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_PROCESSO_GRUPO_PARTIDA_820_400 = 10;
 
 		// Token: 0x04000E74 RID: 3700
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA_820_400 = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA_820_400 = 11;
 
 		// Token: 0x04000E75 RID: 3701
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA_820_400 = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA_820_400 = 12;
 
 		// Token: 0x04000E76 RID: 3702
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADO_820_400 = (HorizontalAlignment)13;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADO_820_400 = 13;
 
 		// Token: 0x04000E77 RID: 3703
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_OPERANDO_820_400 = (HorizontalAlignment)14;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_OPERANDO_820_400 = 14;
 
 		// Token: 0x04000E78 RID: 3704
-		public const int CONST_COLUNA_GRUPO_ACIONAMENTO_SIMULTANEOS = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_GRUPO_ACIONAMENTO_SIMULTANEOS = 0;
 
 		// Token: 0x04000E79 RID: 3705
-		public const int CONST_COLUNA_GRUPO_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_GRUPO_TEMPO_ENTRE_ACIONAMENTOS = 1;
 
 		// Token: 0x04000E7A RID: 3706
-		public const int CONST_COLUNA_GRUPO_ROTACAO_MOTORES = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_GRUPO_ROTACAO_MOTORES = 2;
 
 		// Token: 0x04000E7B RID: 3707
-		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO = 0;
 
 		// Token: 0x04000E7C RID: 3708
-		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO = 1;
 
 		// Token: 0x04000E7D RID: 3709
-		public const int CONST_COLUNA_PROCESSO_SD_DESACIONAMENTO = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_PROCESSO_SD_DESACIONAMENTO = 2;
 
 		// Token: 0x04000E7E RID: 3710
-		public const int CONST_COLUNA_PROCESSO_ED_DESACIONAMENTO = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_PROCESSO_ED_DESACIONAMENTO = 3;
 
 		// Token: 0x04000E7F RID: 3711
-		public const int CONST_COLUNA_PROCESSO_ED_REMOTO = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_PROCESSO_ED_REMOTO = 4;
 
 		// Token: 0x04000E80 RID: 3712
-		public const int CONST_COLUNA_PROCESSO_ED_BLOQUEIO = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_PROCESSO_ED_BLOQUEIO = 5;
 
 		// Token: 0x04000E81 RID: 3713
-		public const int CONST_COLUNA_PROCESSO_ED_LIBERACAO = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_PROCESSO_ED_LIBERACAO = 6;
 
 		// Token: 0x04000E82 RID: 3714
-		public const int CONST_COLUNA_PROCESSO_REVERSO = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_PROCESSO_REVERSO = 7;
 
 		// Token: 0x04000E83 RID: 3715
-		public const int CONST_COLUNA_PROCESSO_MODO = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_PROCESSO_MODO = 8;
 
 		// Token: 0x04000E84 RID: 3716
-		public const int CONST_COLUNA_PROCESSO_GRUPO = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_PROCESSO_GRUPO = 9;
 
 		// Token: 0x04000E85 RID: 3717
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA = 10;
 
 		// Token: 0x04000E86 RID: 3718
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA = 11;
 
 		// Token: 0x04000E87 RID: 3719
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADO = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADO = 12;
 
 		// Token: 0x04000E88 RID: 3720
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_OPERANDO = (HorizontalAlignment)13;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_OPERANDO = 13;
 
 		// Token: 0x04000E89 RID: 3721
-		public const int CONST_COLUNA_EA_RANGE = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_EA_RANGE = 0;
 
 		// Token: 0x04000E8A RID: 3722
-		public const int CONST_COLUNA_EA_INICIO = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_EA_INICIO = 1;
 
 		// Token: 0x04000E8B RID: 3723
-		public const int CONST_COLUNA_EA_FIM = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_EA_FIM = 2;
 
 		// Token: 0x04000E8C RID: 3724
-		public const int CONST_COLUNA_SETPOINT_CONTROLE_RT_820 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_SETPOINT_CONTROLE_RT_820 = 0;
 
 		// Token: 0x04000E8D RID: 3725
-		public const int CONST_COLUNA_SETPOINT_NIVEL_BAIXO_RT_820 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_BAIXO_RT_820 = 1;
 
 		// Token: 0x04000E8E RID: 3726
-		public const int CONST_COLUNA_SETPOINT_NIVEL_ALTO_RT_820 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_ALTO_RT_820 = 2;
 
 		// Token: 0x04000E8F RID: 3727
-		public const int CONST_COLUNA_SETPOINT_BLOQUEIO_RT_820 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_SETPOINT_BLOQUEIO_RT_820 = 3;
 
 		// Token: 0x04000E90 RID: 3728
-		public const int CONST_COLUNA_SETPOINT_NIVEL_BLOQUEIO_RT_820 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_BLOQUEIO_RT_820 = 4;
 
 		// Token: 0x04000E91 RID: 3729
-		public const int CONST_COLUNA_SETPOINT_NIVEL_LIBERACAO_RT_820 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_LIBERACAO_RT_820 = 5;
 
 		// Token: 0x04000E92 RID: 3730
-		public const int CONST_COLUNA_PERIFERICOS_MODELO = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_PERIFERICOS_MODELO = 0;
 
 		// Token: 0x04000E93 RID: 3731
-		public const int CONST_COLUNA_PERIFERICOS_ENDERECO = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_PERIFERICOS_ENDERECO = 1;
 
 		// Token: 0x04000E94 RID: 3732
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_ENDMEM = (HorizontalAlignment)0;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_ENDMEM = 0;
 
 		// Token: 0x04000E95 RID: 3733
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_FUNC = (HorizontalAlignment)1;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_FUNC = 1;
 
 		// Token: 0x04000E96 RID: 3734
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM1 = (HorizontalAlignment)2;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM1 = 2;
 
 		// Token: 0x04000E97 RID: 3735
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR1 = (HorizontalAlignment)3;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR1 = 3;
 
 		// Token: 0x04000E98 RID: 3736
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM2 = (HorizontalAlignment)4;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM2 = 4;
 
 		// Token: 0x04000E99 RID: 3737
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR2 = (HorizontalAlignment)5;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR2 = 5;
 
 		// Token: 0x04000E9A RID: 3738
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM3 = (HorizontalAlignment)6;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM3 = 6;
 
 		// Token: 0x04000E9B RID: 3739
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR3 = (HorizontalAlignment)7;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR3 = 7;
 
 		// Token: 0x04000E9C RID: 3740
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM4 = (HorizontalAlignment)8;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_MEM4 = 8;
 
 		// Token: 0x04000E9D RID: 3741
-		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR4 = (HorizontalAlignment)9;
+		public const int CONST_COLUNNA_PERFIFERICOS_MODBUSGENERICO_VAR4 = 9;
 
 		// Token: 0x04000E9E RID: 3742
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_PERIFERICO = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_PERIFERICO = 0;
 
 		// Token: 0x04000E9F RID: 3743
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_MEMORIA = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_MEMORIA = 1;
 
 		// Token: 0x04000EA0 RID: 3744
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_VARIAVEL1 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_VARIAVEL1 = 2;
 
 		// Token: 0x04000EA1 RID: 3745
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_VARIAVEL2 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_VARIAVEL2 = 3;
 
 		// Token: 0x04000EA2 RID: 3746
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_ESCALA = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_ESCALA = 4;
 
 		// Token: 0x04000EA3 RID: 3747
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_FORMATO = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_FORMATO = 5;
 
 		// Token: 0x04000EA4 RID: 3748
-		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_BASE10 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_REFERENCIAPERIFERICOS_BASE10 = 6;
 
 		// Token: 0x04000EA5 RID: 3749
-		public const int CONST_NUMERO_COLUNAS_ATUADOR = (HorizontalAlignment)13;
+		public const int CONST_NUMERO_COLUNAS_ATUADOR = 13;
 
 		// Token: 0x04000EA6 RID: 3750
-		public const int CONST_COLUNA_ATUADOR_PERIFERICO = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_ATUADOR_PERIFERICO = 0;
 
 		// Token: 0x04000EA7 RID: 3751
-		public const int CONST_COLUNA_ATUADOR_MEMORIA = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_ATUADOR_MEMORIA = 1;
 
 		// Token: 0x04000EA8 RID: 3752
-		public const int CONST_COLUNA_ATUADOR_VARIAVEL1 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_ATUADOR_VARIAVEL1 = 2;
 
 		// Token: 0x04000EA9 RID: 3753
-		public const int CONST_COLUNA_ATUADOR_ESCALA1 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_ATUADOR_ESCALA1 = 3;
 
 		// Token: 0x04000EAA RID: 3754
-		public const int CONST_COLUNA_ATUADOR_VARIAVEL2 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_ATUADOR_VARIAVEL2 = 4;
 
 		// Token: 0x04000EAB RID: 3755
-		public const int CONST_COLUNA_ATUADOR_ESCALA2 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_ATUADOR_ESCALA2 = 5;
 
 		// Token: 0x04000EAC RID: 3756
-		public const int CONST_COLUNA_ATUADOR_HISTERESE = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_ATUADOR_HISTERESE = 6;
 
 		// Token: 0x04000EAD RID: 3757
-		public const int CONST_COLUNA_ATUADOR_FORMATO = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_ATUADOR_FORMATO = 7;
 
 		// Token: 0x04000EAE RID: 3758
-		public const int CONST_COLUNA_ATUADOR_BASE10 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_ATUADOR_BASE10 = 8;
 
 		// Token: 0x04000EAF RID: 3759
-		public const int CONST_COLUNA_ATUADOR_V1BAIXO = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_ATUADOR_V1BAIXO = 9;
 
 		// Token: 0x04000EB0 RID: 3760
-		public const int CONST_COLUNA_ATUADOR_V1ALTO = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_ATUADOR_V1ALTO = 10;
 
 		// Token: 0x04000EB1 RID: 3761
-		public const int CONST_COLUNA_ATUADOR_V2BAIXO = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_ATUADOR_V2BAIXO = 11;
 
 		// Token: 0x04000EB2 RID: 3762
-		public const int CONST_COLUNA_ATUADOR_V2ALTO = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_ATUADOR_V2ALTO = 12;
 
 		// Token: 0x04000EB3 RID: 3763
-		public const int CONST_NUMERO_COLUNAS_ATUADOR_SP = (HorizontalAlignment)14;
+		public const int CONST_NUMERO_COLUNAS_ATUADOR_SP = 14;
 
 		// Token: 0x04000EB4 RID: 3764
-		public const int COSNT_COLUNA_ATUADOR_SP_HORA = (HorizontalAlignment)0;
+		public const int COSNT_COLUNA_ATUADOR_SP_HORA = 0;
 
 		// Token: 0x04000EB5 RID: 3765
-		public const int COSNT_COLUNA_ATUADOR_SP_MINUTO = (HorizontalAlignment)1;
+		public const int COSNT_COLUNA_ATUADOR_SP_MINUTO = 1;
 
 		// Token: 0x04000EB6 RID: 3766
-		public const int COSNT_COLUNA_ATUADOR_SP_REF1 = (HorizontalAlignment)2;
+		public const int COSNT_COLUNA_ATUADOR_SP_REF1 = 2;
 
 		// Token: 0x04000EB7 RID: 3767
-		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT1 = (HorizontalAlignment)3;
+		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT1 = 3;
 
 		// Token: 0x04000EB8 RID: 3768
-		public const int COSNT_COLUNA_ATUADOR_SP_REF2 = (HorizontalAlignment)4;
+		public const int COSNT_COLUNA_ATUADOR_SP_REF2 = 4;
 
 		// Token: 0x04000EB9 RID: 3769
-		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT2 = (HorizontalAlignment)5;
+		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT2 = 5;
 
 		// Token: 0x04000EBA RID: 3770
-		public const int COSNT_COLUNA_ATUADOR_SP_REF3 = (HorizontalAlignment)6;
+		public const int COSNT_COLUNA_ATUADOR_SP_REF3 = 6;
 
 		// Token: 0x04000EBB RID: 3771
-		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT3 = (HorizontalAlignment)7;
+		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT3 = 7;
 
 		// Token: 0x04000EBC RID: 3772
-		public const int COSNT_COLUNA_ATUADOR_SP_REF4 = (HorizontalAlignment)8;
+		public const int COSNT_COLUNA_ATUADOR_SP_REF4 = 8;
 
 		// Token: 0x04000EBD RID: 3773
-		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT4 = (HorizontalAlignment)9;
+		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT4 = 9;
 
 		// Token: 0x04000EBE RID: 3774
-		public const int COSNT_COLUNA_ATUADOR_SP_REF5 = (HorizontalAlignment)10;
+		public const int COSNT_COLUNA_ATUADOR_SP_REF5 = 10;
 
 		// Token: 0x04000EBF RID: 3775
-		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT5 = (HorizontalAlignment)11;
+		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT5 = 11;
 
 		// Token: 0x04000EC0 RID: 3776
-		public const int COSNT_COLUNA_ATUADOR_SP_REF6 = (HorizontalAlignment)12;
+		public const int COSNT_COLUNA_ATUADOR_SP_REF6 = 12;
 
 		// Token: 0x04000EC1 RID: 3777
-		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT6 = (HorizontalAlignment)13;
+		public const int COSNT_COLUNA_ATUADOR_SP_SETPONT6 = 13;
 
 		// Token: 0x04000EC2 RID: 3778
-		public const int CONST_NUMERO_COLUNAS_ATUADOR_SP2 = (HorizontalAlignment)12;
+		public const int CONST_NUMERO_COLUNAS_ATUADOR_SP2 = 12;
 
 		// Token: 0x04000EC3 RID: 3779
-		public const int COSNT_COLUNA_ATUADOR_SP2_REF1 = (HorizontalAlignment)0;
+		public const int COSNT_COLUNA_ATUADOR_SP2_REF1 = 0;
 
 		// Token: 0x04000EC4 RID: 3780
-		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT1 = (HorizontalAlignment)1;
+		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT1 = 1;
 
 		// Token: 0x04000EC5 RID: 3781
-		public const int COSNT_COLUNA_ATUADOR_SP2_REF2 = (HorizontalAlignment)2;
+		public const int COSNT_COLUNA_ATUADOR_SP2_REF2 = 2;
 
 		// Token: 0x04000EC6 RID: 3782
-		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT2 = (HorizontalAlignment)3;
+		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT2 = 3;
 
 		// Token: 0x04000EC7 RID: 3783
-		public const int COSNT_COLUNA_ATUADOR_SP2_REF3 = (HorizontalAlignment)4;
+		public const int COSNT_COLUNA_ATUADOR_SP2_REF3 = 4;
 
 		// Token: 0x04000EC8 RID: 3784
-		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT3 = (HorizontalAlignment)5;
+		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT3 = 5;
 
 		// Token: 0x04000EC9 RID: 3785
-		public const int COSNT_COLUNA_ATUADOR_SP2_REF4 = (HorizontalAlignment)6;
+		public const int COSNT_COLUNA_ATUADOR_SP2_REF4 = 6;
 
 		// Token: 0x04000ECA RID: 3786
-		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT4 = (HorizontalAlignment)7;
+		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT4 = 7;
 
 		// Token: 0x04000ECB RID: 3787
-		public const int COSNT_COLUNA_ATUADOR_SP2_REF5 = (HorizontalAlignment)8;
+		public const int COSNT_COLUNA_ATUADOR_SP2_REF5 = 8;
 
 		// Token: 0x04000ECC RID: 3788
-		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT5 = (HorizontalAlignment)9;
+		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT5 = 9;
 
 		// Token: 0x04000ECD RID: 3789
-		public const int COSNT_COLUNA_ATUADOR_SP2_REF6 = (HorizontalAlignment)10;
+		public const int COSNT_COLUNA_ATUADOR_SP2_REF6 = 10;
 
 		// Token: 0x04000ECE RID: 3790
-		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT6 = (HorizontalAlignment)11;
+		public const int COSNT_COLUNA_ATUADOR_SP2_SETPONT6 = 11;
 
 		// Token: 0x04000ECF RID: 3791
-		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_PERIFERICO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_PERIFERICO = 0;
 
 		// Token: 0x04000ED0 RID: 3792
-		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_ENDERECO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_ENDERECO = 0;
 
 		// Token: 0x04000ED1 RID: 3793
-		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_VARIAVEL = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_VARIAVEL = 0;
 
 		// Token: 0x04000ED2 RID: 3794
-		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_INICIO = 0;
 
 		// Token: 0x04000ED3 RID: 3795
-		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_FIM = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_FIM = 0;
 
 		// Token: 0x04000ED4 RID: 3796
-		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_FORMATO = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_REFERENCIAPERIFERICOS_FORMATO = 0;
 
 		// Token: 0x04000ED5 RID: 3797
-		public const int CONST_COLUNA_VAZOES_ENTRADA = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_VAZOES_ENTRADA = 0;
 
 		// Token: 0x04000ED6 RID: 3798
-		public const int CONST_COLUNA_ENTRADA_DIGITAL = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_ENTRADA_DIGITAL = 0;
 
 		// Token: 0x04000ED7 RID: 3799
-		public const int CONST_RT_820_DEFAULT_END_PERIFERICOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_DEFAULT_END_PERIFERICOS = 0;
 
 		// Token: 0x04000ED8 RID: 3800
-		public const int CONST_RT_820_LMTE_SUP_END_PERIFERICOS = (HorizontalAlignment)255;
+		public const int CONST_RT_820_LMTE_SUP_END_PERIFERICOS = 255;
 
 		// Token: 0x04000ED9 RID: 3801
-		public const int CONST_RT_820_LMTE_INF_END_PERIFERICOS = (HorizontalAlignment)0;
+		public const int CONST_RT_820_LMTE_INF_END_PERIFERICOS = 0;
 
 		// Token: 0x04000EDA RID: 3802
-		public const int CONST_RT_820_360_DEFAULT_END_MEMORIA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_360_DEFAULT_END_MEMORIA = 0;
 
 		// Token: 0x04000EDB RID: 3803
-		public const int CONST_RT_820_360_LMTE_SUP_END_MEMORIA = (HorizontalAlignment)65535;
+		public const int CONST_RT_820_360_LMTE_SUP_END_MEMORIA = 65535;
 
 		// Token: 0x04000EDC RID: 3804
-		public const int CONST_RT_820_360_LMTE_INF_END_MEMORIA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_360_LMTE_INF_END_MEMORIA = 0;
 
 		// Token: 0x04000EDD RID: 3805
-		public const int CONST_RT_820_360_DEFAULT_VARS_MEMORIA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_360_DEFAULT_VARS_MEMORIA = 0;
 
 		// Token: 0x04000EDE RID: 3806
-		public const int CONST_RT_820_360_LMTE_SUP_VARS_MEMORIA = (HorizontalAlignment)10;
+		public const int CONST_RT_820_360_LMTE_SUP_VARS_MEMORIA = 10;
 
 		// Token: 0x04000EDF RID: 3807
-		public const int CONST_RT_820_360_LMTE_INF_VARS_MEMORIA = (HorizontalAlignment)0;
+		public const int CONST_RT_820_360_LMTE_INF_VARS_MEMORIA = 0;
 
 		// Token: 0x04000EE0 RID: 3808
-		public const int CONST_COLUNA_CALHA_EA = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_CALHA_EA = 0;
 
 		// Token: 0x04000EE1 RID: 3809
-		public const int CONST_COLUNA_CALHA_TIPO_CALHA = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_CALHA_TIPO_CALHA = 1;
 
 		// Token: 0x04000EE2 RID: 3810
-		public const int CONST_COLUNA_CALHA_FUNDO_CM = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_CALHA_FUNDO_CM = 2;
 
 		// Token: 0x04000EE3 RID: 3811
-		public const int CONST_COLUNA_CALHA_P1 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_CALHA_P1 = 3;
 
 		// Token: 0x04000EE4 RID: 3812
-		public const int CONST_COLUNA_CALHA_P2 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_CALHA_P2 = 4;
 
 		// Token: 0x04000EE5 RID: 3813
-		public const int CONST_COLUNA_CALHA_P3 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_CALHA_P3 = 5;
 
 		// Token: 0x04000EE6 RID: 3814
-		public const int NUMERO_COLUNAS_CALHA = (HorizontalAlignment)6;
+		public const int NUMERO_COLUNAS_CALHA = 6;
 
 		// Token: 0x04000EE7 RID: 3815
-		public const int CONST_COLUNA_REPETIDORA_ENDERECO_1 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_REPETIDORA_ENDERECO_1 = 1;
 
 		// Token: 0x04000EE8 RID: 3816
-		public const int CONST_COLUNA_REPETIDORA_ENDERECO_2 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_REPETIDORA_ENDERECO_2 = 3;
 
 		// Token: 0x04000EE9 RID: 3817
-		public const int CONST_COLUNA_REPETIDORA_ENDERECO_3 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_REPETIDORA_ENDERECO_3 = 5;
 
 		// Token: 0x04000EEA RID: 3818
-		public const int CONST_COLUNA_REPETIDORA_ENDERECO_4 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_REPETIDORA_ENDERECO_4 = 7;
 
 		// Token: 0x04000EEB RID: 3819
-		public const int CONST_COLUNA_REPETIDORA_ENDERECO_5 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_REPETIDORA_ENDERECO_5 = 9;
 
 		// Token: 0x04000EEC RID: 3820
-		public const int CONST_COLUNA_TIMER_F1_ON_RT_820 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_TIMER_F1_ON_RT_820 = 0;
 
 		// Token: 0x04000EED RID: 3821
-		public const int CONST_COLUNA_TIMER_F1_OFF_RT_820 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_TIMER_F1_OFF_RT_820 = 1;
 
 		// Token: 0x04000EEE RID: 3822
-		public const int CONST_COLUNA_TIMER_F2_ON_RT_820 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_TIMER_F2_ON_RT_820 = 2;
 
 		// Token: 0x04000EEF RID: 3823
-		public const int CONST_COLUNA_TIMER_F2_OFF_RT_820 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_TIMER_F2_OFF_RT_820 = 3;
 
 		// Token: 0x04000EF0 RID: 3824
-		public const int CONST_COLUNA_TIMER_F3_ON_RT_820 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_TIMER_F3_ON_RT_820 = 4;
 
 		// Token: 0x04000EF1 RID: 3825
-		public const int CONST_COLUNA_TIMER_F3_OFF_RT_820 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_TIMER_F3_OFF_RT_820 = 5;
 
 		// Token: 0x04000EF2 RID: 3826
-		public const int CONST_COLUNA_TIMER_F4_ON_RT_820 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_TIMER_F4_ON_RT_820 = 6;
 
 		// Token: 0x04000EF3 RID: 3827
-		public const int CONST_COLUNA_TIMER_F4_OFF_RT_820 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_TIMER_F4_OFF_RT_820 = 7;
 
 		// Token: 0x04000EF4 RID: 3828
-		public const int CONST_COLUNA_TIMER_F5_ON_RT_820 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_TIMER_F5_ON_RT_820 = 8;
 
 		// Token: 0x04000EF5 RID: 3829
-		public const int CONST_COLUNA_TIMER_F5_OFF_RT_820 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_TIMER_F5_OFF_RT_820 = 9;
 
 		// Token: 0x04000EF6 RID: 3830
-		public const int CONST_COLUNA_TIMER_F6_ON_RT_820 = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_TIMER_F6_ON_RT_820 = 10;
 
 		// Token: 0x04000EF7 RID: 3831
-		public const int CONST_COLUNA_TIMER_F6_OFF_RT_820 = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_TIMER_F6_OFF_RT_820 = 11;
 
 		// Token: 0x04000EF8 RID: 3832
-		public const int CONST_RT_820_EXPANCAO_IO_DESABILITADA = (HorizontalAlignment)21856;
+		public const int CONST_RT_820_EXPANCAO_IO_DESABILITADA = 21856;
 
 		// Token: 0x04000EF9 RID: 3833
-		public const int CONST_RT_820_EXPANCAO_IO_HABILITADA = (HorizontalAlignment)21857;
+		public const int CONST_RT_820_EXPANCAO_IO_HABILITADA = 21857;
 
 		// Token: 0x04000EFA RID: 3834
-		public const int CONST_RT_821 = (HorizontalAlignment)2;
+		public const int CONST_RT_821 = 2;
 
 		// Token: 0x04000EFB RID: 3835
-		public const int CONST_RT_821_SD = (HorizontalAlignment)3;
+		public const int CONST_RT_821_SD = 3;
 
 		// Token: 0x04000EFC RID: 3836
-		public const int CONST_RT_821_MOTORES = (HorizontalAlignment)3;
+		public const int CONST_RT_821_MOTORES = 3;
 
 		// Token: 0x04000EFD RID: 3837
-		public const int CONST_RT_821_ED = (HorizontalAlignment)8;
+		public const int CONST_RT_821_ED = 8;
 
 		// Token: 0x04000EFE RID: 3838
-		public const int CONST_RT_821_EA = (HorizontalAlignment)4;
+		public const int CONST_RT_821_EA = 4;
 
 		// Token: 0x04000EFF RID: 3839
-		public const int CONST_RT_821_CTRL = (HorizontalAlignment)3;
+		public const int CONST_RT_821_CTRL = 3;
 
 		// Token: 0x04000F00 RID: 3840
-		public const int CONST_RT_821_NUM_MAX_REPETIDORAS = (HorizontalAlignment)50;
+		public const int CONST_RT_821_NUM_MAX_REPETIDORAS = 50;
 
 		// Token: 0x04000F01 RID: 3841
-		public const int CONST_RT_821_SETPOINTS = (HorizontalAlignment)3;
+		public const int CONST_RT_821_SETPOINTS = 3;
 
 		// Token: 0x04000F02 RID: 3842
-		public const int CONST_RT_821_MODELO_EMULADO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_MODELO_EMULADO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F03 RID: 3843
-		public const int CONST_RT_821_DEFAULT_EQUIP = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_EQUIP = 0;
 
 		// Token: 0x04000F04 RID: 3844
-		public const int CONST_RT_821_DEFAULT_VERSAO = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_VERSAO = 0;
 
 		// Token: 0x04000F05 RID: 3845
-		public const int CONST_RT_821_DEFAULT_BUILD = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_BUILD = 0;
 
 		// Token: 0x04000F06 RID: 3846
-		public const int CONST_RT_821_DEFAULT_RELEASE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_RELEASE = 0;
 
 		// Token: 0x04000F07 RID: 3847
-		public const int CONST_RT_821_DEFAULT_END_ESTACAO = (HorizontalAlignment)1;
+		public const int CONST_RT_821_DEFAULT_END_ESTACAO = 1;
 
 		// Token: 0x04000F08 RID: 3848
-		public const int CONST_RT_821_LMTE_SUP_END_ESTACAO = (HorizontalAlignment)200;
+		public const int CONST_RT_821_LMTE_SUP_END_ESTACAO = 200;
 
 		// Token: 0x04000F09 RID: 3849
-		public const int CONST_RT_821_LMTE_INF_END_ESTACAO = (HorizontalAlignment)1;
+		public const int CONST_RT_821_LMTE_INF_END_ESTACAO = 1;
 
 		// Token: 0x04000F0A RID: 3850
-		public const int CONST_RT_821_DEFAULT_END_MESTRE = (HorizontalAlignment)100;
+		public const int CONST_RT_821_DEFAULT_END_MESTRE = 100;
 
 		// Token: 0x04000F0B RID: 3851
-		public const int CONST_RT_821_LMTE_SUP_END_MESTRE = (HorizontalAlignment)200;
+		public const int CONST_RT_821_LMTE_SUP_END_MESTRE = 200;
 
 		// Token: 0x04000F0C RID: 3852
-		public const int CONST_RT_821_LMTE_INF_END_MESTRE = (HorizontalAlignment)1;
+		public const int CONST_RT_821_LMTE_INF_END_MESTRE = 1;
 
 		// Token: 0x04000F0D RID: 3853
-		public const int CONST_RT_821_DEFAULT_EMULACAO = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_EMULACAO = 0;
 
 		// Token: 0x04000F0E RID: 3854
-		public const int CONST_RT_821_EMULACAO_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_EMULACAO_INDICE = 0;
 
 		// Token: 0x04000F0F RID: 3855
-		public const int CONST_RT_821_HAB_REP_DESABILITADOS = (HorizontalAlignment)21856;
+		public const int CONST_RT_821_HAB_REP_DESABILITADOS = 21856;
 
 		// Token: 0x04000F10 RID: 3856
-		public const int CONST_RT_821_HAB_REP_HABILITADOS = (HorizontalAlignment)21857;
+		public const int CONST_RT_821_HAB_REP_HABILITADOS = 21857;
 
 		// Token: 0x04000F11 RID: 3857
-		public const int CONST_RT_821_MODO_REPETIDORA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_MODO_REPETIDORA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F12 RID: 3858
-		public const int CONST_RT_821_DEFAULT_END_REPETIDORAS = (HorizontalAlignment)1;
+		public const int CONST_RT_821_DEFAULT_END_REPETIDORAS = 1;
 
 		// Token: 0x04000F13 RID: 3859
-		public const int CONST_RT_821_LMTE_SUP_END_REPETIDORAS = (HorizontalAlignment)200;
+		public const int CONST_RT_821_LMTE_SUP_END_REPETIDORAS = 200;
 
 		// Token: 0x04000F14 RID: 3860
-		public const int CONST_RT_821_LMTE_INF_END_REPETIDORAS = (HorizontalAlignment)1;
+		public const int CONST_RT_821_LMTE_INF_END_REPETIDORAS = 1;
 
 		// Token: 0x04000F15 RID: 3861
-		public const int CONST_RT_821_DEFAULT_NUM_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_NUM_REPETIDORAS = 0;
 
 		// Token: 0x04000F16 RID: 3862
-		public const int CONST_RT_821_LMTE_SUP_NUM_REPETIDORAS = (HorizontalAlignment)50;
+		public const int CONST_RT_821_LMTE_SUP_NUM_REPETIDORAS = 50;
 
 		// Token: 0x04000F17 RID: 3863
-		public const int CONST_RT_821_LMTE_INF_NUM_REPETIDORAS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_NUM_REPETIDORAS = 0;
 
 		// Token: 0x04000F18 RID: 3864
-		public const int CONST_RT_821_DEFAULT_REP_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_REP_ENDERECOS = 0;
 
 		// Token: 0x04000F19 RID: 3865
-		public const int CONST_RT_821_LMTE_SUP_REP_ENDERECOS = (HorizontalAlignment)200;
+		public const int CONST_RT_821_LMTE_SUP_REP_ENDERECOS = 200;
 
 		// Token: 0x04000F1A RID: 3866
-		public const int CONST_RT_821_LMTE_INF_REP_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_REP_ENDERECOS = 0;
 
 		// Token: 0x04000F1B RID: 3867
-		public const int CONST_RT_821_DEFAULT_TEMPO_PTT = (HorizontalAlignment)200;
+		public const int CONST_RT_821_DEFAULT_TEMPO_PTT = 200;
 
 		// Token: 0x04000F1C RID: 3868
-		public const int CONST_RT_821_LMTE_SUP_TEMPO_PTT = (HorizontalAlignment)2000;
+		public const int CONST_RT_821_LMTE_SUP_TEMPO_PTT = 2000;
 
 		// Token: 0x04000F1D RID: 3869
-		public const int CONST_RT_821_LMTE_INF_TEMPO_PTT = (HorizontalAlignment)100;
+		public const int CONST_RT_821_LMTE_INF_TEMPO_PTT = 100;
 
 		// Token: 0x04000F1E RID: 3870
-		public const int CONST_RT_821_DEFAULT_AD_INTERVALO = (HorizontalAlignment)1000;
+		public const int CONST_RT_821_DEFAULT_AD_INTERVALO = 1000;
 
 		// Token: 0x04000F1F RID: 3871
-		public const int CONST_RT_821_LMTE_SUP_AD_INTERVALO = (HorizontalAlignment)20000;
+		public const int CONST_RT_821_LMTE_SUP_AD_INTERVALO = 20000;
 
 		// Token: 0x04000F20 RID: 3872
-		public const int CONST_RT_821_LMTE_INF_AD_INTERVALO = (HorizontalAlignment)500;
+		public const int CONST_RT_821_LMTE_INF_AD_INTERVALO = 500;
 
 		// Token: 0x04000F21 RID: 3873
-		public const int CONST_RT_821_DEFAULT_AD_TAMANHO_FILTRO = (HorizontalAlignment)3;
+		public const int CONST_RT_821_DEFAULT_AD_TAMANHO_FILTRO = 3;
 
 		// Token: 0x04000F22 RID: 3874
-		public const int CONST_RT_821_LMTE_SUP_AD_TAMANHO_FILTRO = (HorizontalAlignment)10;
+		public const int CONST_RT_821_LMTE_SUP_AD_TAMANHO_FILTRO = 10;
 
 		// Token: 0x04000F23 RID: 3875
-		public const int CONST_RT_821_LMTE_INF_AD_TAMANHO_FILTRO = (HorizontalAlignment)1;
+		public const int CONST_RT_821_LMTE_INF_AD_TAMANHO_FILTRO = 1;
 
 		// Token: 0x04000F24 RID: 3876
-		public const int CONST_RT_821_DEFAULT_EA_RANGE = (HorizontalAlignment)4000;
+		public const int CONST_RT_821_DEFAULT_EA_RANGE = 4000;
 
 		// Token: 0x04000F25 RID: 3877
-		public const int CONST_RT_821_LMTE_INF_EA_Range = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_EA_Range = 0;
 
 		// Token: 0x04000F26 RID: 3878
-		public const int CONST_RT_821_LMTE_SUP_EA_Range = (HorizontalAlignment)50000;
+		public const int CONST_RT_821_LMTE_SUP_EA_Range = 50000;
 
 		// Token: 0x04000F27 RID: 3879
-		public const int CONST_RT_821_DEFAULT_EA_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_EA_INICIO = 0;
 
 		// Token: 0x04000F28 RID: 3880
-		public const int CONST_RT_821_LMTE_INF_EA_INICIO = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_EA_INICIO = 0;
 
 		// Token: 0x04000F29 RID: 3881
-		public const int CONST_RT_821_LMTE_SUP_EA_INICIO = (HorizontalAlignment)20000;
+		public const int CONST_RT_821_LMTE_SUP_EA_INICIO = 20000;
 
 		// Token: 0x04000F2A RID: 3882
-		public const int CONST_RT_821_DEFAULT_EA_FIM = (HorizontalAlignment)4000;
+		public const int CONST_RT_821_DEFAULT_EA_FIM = 4000;
 
 		// Token: 0x04000F2B RID: 3883
-		public const int CONST_RT_821_LMTE_INF_EA_FIM = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_EA_FIM = 0;
 
 		// Token: 0x04000F2C RID: 3884
-		public const int CONST_RT_821_LMTE_SUP_EA_FIM = (HorizontalAlignment)50000;
+		public const int CONST_RT_821_LMTE_SUP_EA_FIM = 50000;
 
 		// Token: 0x04000F2D RID: 3885
-		public const int CONST_RT_821_CTRL_ACIONAMENTO_SAIDA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_ACIONAMENTO_SAIDA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F2E RID: 3886
-		public const int CONST_RT_821_CTRL_ACIONAMENTO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_ACIONAMENTO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F2F RID: 3887
-		public const int CONST_RT_821_CTRL_REMOTO_ENTRADA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_REMOTO_ENTRADA_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F30 RID: 3888
-		public const int CONST_RT_821_CTRL_MODO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_MODO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F31 RID: 3889
-		public const int CONST_RT_821_REVERSO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REVERSO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F32 RID: 3890
-		public const int CONST_RT_821_MODO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_MODO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F33 RID: 3891
-		public const int CONST_RT_821_CTRL_EA_VARIAVEL_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_EA_VARIAVEL_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F34 RID: 3892
-		public const int CONST_RT_821_VISOR_PTO_DECIMAL_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_VISOR_PTO_DECIMAL_INDICE = 0;
 
 		// Token: 0x04000F35 RID: 3893
-		public const int CONST_RT_821_DEFAULT_SIMULTANEOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_SIMULTANEOS = 0;
 
 		// Token: 0x04000F36 RID: 3894
-		public const int CONST_RT_821_LMTE_INF_SIMULTANEOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_SIMULTANEOS = 0;
 
 		// Token: 0x04000F37 RID: 3895
-		public const int CONST_RT_821_LMTE_SUP_SIMULTANEOS = (HorizontalAlignment)3;
+		public const int CONST_RT_821_LMTE_SUP_SIMULTANEOS = 3;
 
 		// Token: 0x04000F38 RID: 3896
-		public const int CONST_RT_821_CTRL_DEFAULT_TEMPO_MAX_PARTIDA = (HorizontalAlignment)180;
+		public const int CONST_RT_821_CTRL_DEFAULT_TEMPO_MAX_PARTIDA = 180;
 
 		// Token: 0x04000F39 RID: 3897
-		public const int CONST_RT_821_CTRL_LMTE_SUP_TEMPO_MAX_PARTIDA = (HorizontalAlignment)1200;
+		public const int CONST_RT_821_CTRL_LMTE_SUP_TEMPO_MAX_PARTIDA = 1200;
 
 		// Token: 0x04000F3A RID: 3898
-		public const int CONST_RT_821_CTRL_LMTE_INF_TEMPO_MAX_PARTIDA = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_LMTE_INF_TEMPO_MAX_PARTIDA = 0;
 
 		// Token: 0x04000F3B RID: 3899
-		public const int CONST_RT_821_CTRL_DEFAULT_TEMPO_MAX_PARADA = (HorizontalAlignment)180;
+		public const int CONST_RT_821_CTRL_DEFAULT_TEMPO_MAX_PARADA = 180;
 
 		// Token: 0x04000F3C RID: 3900
-		public const int CONST_RT_821_CTRL_LMTE_SUP_TEMPO_MAX_PARADA = (HorizontalAlignment)1200;
+		public const int CONST_RT_821_CTRL_LMTE_SUP_TEMPO_MAX_PARADA = 1200;
 
 		// Token: 0x04000F3D RID: 3901
-		public const int CONST_RT_821_CTRL_LMTE_INF_TEMPO_MAX_PARADA = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_LMTE_INF_TEMPO_MAX_PARADA = 0;
 
 		// Token: 0x04000F3E RID: 3902
-		public const int CONST_RT_821_SIMULTANEOS = (HorizontalAlignment)1;
+		public const int CONST_RT_821_SIMULTANEOS = 1;
 
 		// Token: 0x04000F3F RID: 3903
-		public const int CONST_RT_821_SIMULTANEOS_DEFAULT_INDICE = (HorizontalAlignment)2;
+		public const int CONST_RT_821_SIMULTANEOS_DEFAULT_INDICE = 2;
 
 		// Token: 0x04000F40 RID: 3904
-		public const int CONST_RT_821_DEFAULT_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_TEMPO_ENTRE_ACIONAMENTOS = 0;
 
 		// Token: 0x04000F41 RID: 3905
-		public const int CONST_RT_821_LMTE_INF_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_TEMPO_ENTRE_ACIONAMENTOS = 0;
 
 		// Token: 0x04000F42 RID: 3906
-		public const int CONST_RT_821_LMTE_SUP_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)1200;
+		public const int CONST_RT_821_LMTE_SUP_TEMPO_ENTRE_ACIONAMENTOS = 1200;
 
 		// Token: 0x04000F43 RID: 3907
-		public const int CONST_RT_821_ED_FUNCAO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_ED_FUNCAO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F44 RID: 3908
-		public const int CONST_RT_821_DEFAULT_ED = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_ED = 0;
 
 		// Token: 0x04000F45 RID: 3909
-		public const int CONST_RT_821_REP_HAB_DESABILITADOS = (HorizontalAlignment)21856;
+		public const int CONST_RT_821_REP_HAB_DESABILITADOS = 21856;
 
 		// Token: 0x04000F46 RID: 3910
-		public const int CONST_RT_821_REP_HAB_HABILITADOS = (HorizontalAlignment)21857;
+		public const int CONST_RT_821_REP_HAB_HABILITADOS = 21857;
 
 		// Token: 0x04000F47 RID: 3911
-		public const int CONST_RT_821_REP_HAB_DEFAULT = (HorizontalAlignment)21856;
+		public const int CONST_RT_821_REP_HAB_DEFAULT = 21856;
 
 		// Token: 0x04000F48 RID: 3912
-		public const int CONST_RT_821_REP_DEFAULT_END_REPETIDORA = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REP_DEFAULT_END_REPETIDORA = 0;
 
 		// Token: 0x04000F49 RID: 3913
-		public const int CONST_RT_821_REP_LMTE_SUP_END_REPETIDORA = (HorizontalAlignment)200;
+		public const int CONST_RT_821_REP_LMTE_SUP_END_REPETIDORA = 200;
 
 		// Token: 0x04000F4A RID: 3914
-		public const int CONST_RT_821_REP_LMTE_INF_END_REPETIDORA = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REP_LMTE_INF_END_REPETIDORA = 0;
 
 		// Token: 0x04000F4B RID: 3915
-		public const int CONST_RT_821_REP_DEFAULT_NUM_ESTACOES = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REP_DEFAULT_NUM_ESTACOES = 0;
 
 		// Token: 0x04000F4C RID: 3916
-		public const int CONST_RT_821_REP_LMTE_SUP_NUM_ESTACOES = (HorizontalAlignment)200;
+		public const int CONST_RT_821_REP_LMTE_SUP_NUM_ESTACOES = 200;
 
 		// Token: 0x04000F4D RID: 3917
-		public const int CONST_RT_821_REP_LMTE_INF_NUM_ESTACOES = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REP_LMTE_INF_NUM_ESTACOES = 0;
 
 		// Token: 0x04000F4E RID: 3918
-		public const int CONST_RT_821_REP_DEFAULT_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REP_DEFAULT_ENDERECOS = 0;
 
 		// Token: 0x04000F4F RID: 3919
-		public const int CONST_RT_821_REP_LMTE_SUP_ENDERECOS = (HorizontalAlignment)200;
+		public const int CONST_RT_821_REP_LMTE_SUP_ENDERECOS = 200;
 
 		// Token: 0x04000F50 RID: 3920
-		public const int CONST_RT_821_REP_LMTE_INF_ENDERECOS = (HorizontalAlignment)0;
+		public const int CONST_RT_821_REP_LMTE_INF_ENDERECOS = 0;
 
 		// Token: 0x04000F51 RID: 3921
-		public const int CONST_RT_821_DEFAULT_SETPOINT_ALTO = (HorizontalAlignment)4000;
+		public const int CONST_RT_821_DEFAULT_SETPOINT_ALTO = 4000;
 
 		// Token: 0x04000F52 RID: 3922
-		public const int CONST_RT_821_DEFAULT_SETPOINT_BAIXO = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_SETPOINT_BAIXO = 0;
 
 		// Token: 0x04000F53 RID: 3923
-		public const int CONST_RT_821_LMTE_INF_SETPOINT = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_SETPOINT = 0;
 
 		// Token: 0x04000F54 RID: 3924
-		public const int CONST_RT_821_LMTE_SUP_SETPOINT = (HorizontalAlignment)4000;
+		public const int CONST_RT_821_LMTE_SUP_SETPOINT = 4000;
 
 		// Token: 0x04000F55 RID: 3925
-		public const int CONST_RT_821_CTRL_VARIAVEL_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_VARIAVEL_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F56 RID: 3926
-		public const int CONST_RT_821_CTRL_BLOQUEIO_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_821_CTRL_BLOQUEIO_DEFAULT_INDICE = 0;
 
 		// Token: 0x04000F57 RID: 3927
-		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO_RT_821 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_PROCESSO_SD_ACIONAMENTO_RT_821 = 0;
 
 		// Token: 0x04000F58 RID: 3928
-		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO_RT_821 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_PROCESSO_ED_ACIONAMENTO_RT_821 = 1;
 
 		// Token: 0x04000F59 RID: 3929
-		public const int CONST_COLUNA_PROCESSO_ED_REMOTO_RT_821 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_PROCESSO_ED_REMOTO_RT_821 = 2;
 
 		// Token: 0x04000F5A RID: 3930
-		public const int CONST_COLUNA_PROCESSO_REVERSO_RT_821 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_PROCESSO_REVERSO_RT_821 = 3;
 
 		// Token: 0x04000F5B RID: 3931
-		public const int CONST_COLUNA_PROCESSO_MODO_RT_821 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_PROCESSO_MODO_RT_821 = 4;
 
 		// Token: 0x04000F5C RID: 3932
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA_RT_821 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARTIDA_RT_821 = 5;
 
 		// Token: 0x04000F5D RID: 3933
-		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA_RT_821 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_PROCESSO_TEMPO_MAX_PARADA_RT_821 = 6;
 
 		// Token: 0x04000F5E RID: 3934
-		public const int CONST_COLUNA_PROCESSO_NUMERO_RT_821 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_PROCESSO_NUMERO_RT_821 = 7;
 
 		// Token: 0x04000F5F RID: 3935
-		public const int CONST_COLUNA_MOTORES_SIMULTANEOS_RT_821 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_MOTORES_SIMULTANEOS_RT_821 = 0;
 
 		// Token: 0x04000F60 RID: 3936
-		public const int CONST_COLUNA_MOTORES_TEMPO_ENTRE_ACIONAMENTOS_RT_821 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_MOTORES_TEMPO_ENTRE_ACIONAMENTOS_RT_821 = 1;
 
 		// Token: 0x04000F61 RID: 3937
-		public const int CONST_COLUNA_MOTORES_SIMULTANEOS_NUMERO_RT_821 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_MOTORES_SIMULTANEOS_NUMERO_RT_821 = 2;
 
 		// Token: 0x04000F62 RID: 3938
-		public const int CONST_COLUNA_EA_RANGE_RT_821 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_EA_RANGE_RT_821 = 0;
 
 		// Token: 0x04000F63 RID: 3939
-		public const int CONST_COLUNA_EA_INICIO_RT_821 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_EA_INICIO_RT_821 = 1;
 
 		// Token: 0x04000F64 RID: 3940
-		public const int CONST_COLUNA_EA_FIM_RT_821 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_EA_FIM_RT_821 = 2;
 
 		// Token: 0x04000F65 RID: 3941
-		public const int CONST_COLUNA_EA_NUMERO_RT_821 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_EA_NUMERO_RT_821 = 3;
 
 		// Token: 0x04000F66 RID: 3942
-		public const int CONST_COLUNA_SETPOINT_CONTROLE_RT_821 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_SETPOINT_CONTROLE_RT_821 = 0;
 
 		// Token: 0x04000F67 RID: 3943
-		public const int CONST_COLUNA_SETPOINT_NIVEL_BAIXO_RT_821 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_BAIXO_RT_821 = 1;
 
 		// Token: 0x04000F68 RID: 3944
-		public const int CONST_COLUNA_SETPOINT_NIVEL_ALTO_RT_821 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_SETPOINT_NIVEL_ALTO_RT_821 = 2;
 
 		// Token: 0x04000F69 RID: 3945
-		public const int CONST_COLUNA_SETPOINT_NUMERO_RT_821 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_SETPOINT_NUMERO_RT_821 = 3;
 
 		// Token: 0x04000F6A RID: 3946
-		public const int CONST_COLUNA_ENTRADA_DIGITAL_RT_821 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_ENTRADA_DIGITAL_RT_821 = 0;
 
 		// Token: 0x04000F6B RID: 3947
-		public const int CONST_COLUNA_ENTRADA_DIGITAL_NUMERO_RT_821 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_ENTRADA_DIGITAL_NUMERO_RT_821 = 1;
 
 		// Token: 0x04000F6C RID: 3948
-		public const int CONST_COLUNA_VISOR_CONTROLE_RT_821 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_VISOR_CONTROLE_RT_821 = 0;
 
 		// Token: 0x04000F6D RID: 3949
-		public const int CONST_COLUNA_VISOR_NOME_RT_821 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_VISOR_NOME_RT_821 = 1;
 
 		// Token: 0x04000F6E RID: 3950
-		public const int CONST_COLUNA_VISOR_ESCALA_RT_821 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_VISOR_ESCALA_RT_821 = 2;
 
 		// Token: 0x04000F6F RID: 3951
-		public const int CONST_COLUNA_VISOR_PTO_DEC_RT_821 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_VISOR_PTO_DEC_RT_821 = 3;
 
 		// Token: 0x04000F70 RID: 3952
-		public const int CONST_COLUNA_VISOR_NUMERO_RT_821 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_VISOR_NUMERO_RT_821 = 4;
 
 		// Token: 0x04000F71 RID: 3953
-		public const int CONST_RT_821_NUM_MSG_DISPLAY = (HorizontalAlignment)8;
+		public const int CONST_RT_821_NUM_MSG_DISPLAY = 8;
 
 		// Token: 0x04000F72 RID: 3954
-		public const int CONST_RT_821_DEFAULT_ESCALA_DSP = (HorizontalAlignment)100;
+		public const int CONST_RT_821_DEFAULT_ESCALA_DSP = 100;
 
 		// Token: 0x04000F73 RID: 3955
-		public const int CONST_RT_821_LMTE_INF_ESCALA_DSP = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_ESCALA_DSP = 0;
 
 		// Token: 0x04000F74 RID: 3956
-		public const int CONST_RT_821_LMTE_SUP_ESCALA_DSP = (HorizontalAlignment)999;
+		public const int CONST_RT_821_LMTE_SUP_ESCALA_DSP = 999;
 
 		// Token: 0x04000F75 RID: 3957
-		public const int CONST_RT_821_DEFAULT_PTO_DSP = (HorizontalAlignment)0;
+		public const int CONST_RT_821_DEFAULT_PTO_DSP = 0;
 
 		// Token: 0x04000F76 RID: 3958
-		public const int CONST_RT_821_LMTE_INF_PTO_DSP = (HorizontalAlignment)0;
+		public const int CONST_RT_821_LMTE_INF_PTO_DSP = 0;
 
 		// Token: 0x04000F77 RID: 3959
-		public const int CONST_RT_821_LMTE_SUP_PTO_DSP = (HorizontalAlignment)2;
+		public const int CONST_RT_821_LMTE_SUP_PTO_DSP = 2;
 
 		// Token: 0x04000F78 RID: 3960
 		public const string CONST_RT_821_DEFAULT_MSG_DSP = "   ";
 
 		// Token: 0x04000F79 RID: 3961
-		public const int CONST_RT_821_MOD_RT821 = (HorizontalAlignment)0;
+		public const int CONST_RT_821_MOD_RT821 = 0;
 
 		// Token: 0x04000F7A RID: 3962
-		public const int CONST_RT_821_MOD_VA320 = (HorizontalAlignment)1;
+		public const int CONST_RT_821_MOD_VA320 = 1;
 
 		// Token: 0x04000F7B RID: 3963
-		public const int CONST_RT_821_MOD_MD201 = (HorizontalAlignment)2;
+		public const int CONST_RT_821_MOD_MD201 = 2;
 
 		// Token: 0x04000F7C RID: 3964
-		public const int CONST_RT_850 = (HorizontalAlignment)3;
+		public const int CONST_RT_850 = 3;
 
 		// Token: 0x04000F7D RID: 3965
-		public const int CONST_RT_850_MODO_NOVO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_MODO_NOVO = 0;
 
 		// Token: 0x04000F7E RID: 3966
-		public const int CONST_RT_850_MODO_ABRIR = (HorizontalAlignment)1;
+		public const int CONST_RT_850_MODO_ABRIR = 1;
 
 		// Token: 0x04000F7F RID: 3967
-		public const int CONST_RT_850_MODO_SALVAR = (HorizontalAlignment)2;
+		public const int CONST_RT_850_MODO_SALVAR = 2;
 
 		// Token: 0x04000F80 RID: 3968
-		public const int CONST_RT_850_LIBERAR = (HorizontalAlignment)3;
+		public const int CONST_RT_850_LIBERAR = 3;
 
 		// Token: 0x04000F81 RID: 3969
-		public const int CONST_RT_850_MODO_BLOQUEIO = (HorizontalAlignment)4;
+		public const int CONST_RT_850_MODO_BLOQUEIO = 4;
 
 		// Token: 0x04000F82 RID: 3970
-		public const int CONST_RT_850_DEFAULT_VERSAO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_VERSAO = 0;
 
 		// Token: 0x04000F83 RID: 3971
-		public const int CONST_RT_850_DEFAULT_BUILD = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_BUILD = 0;
 
 		// Token: 0x04000F84 RID: 3972
-		public const int CONST_RT_850_DEFAULT_RELEASE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_RELEASE = 0;
 
 		// Token: 0x04000F85 RID: 3973
-		public const int CONST_RT_850_DEFAULT_EQUIP = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_EQUIP = 0;
 
 		// Token: 0x04000F86 RID: 3974
-		public const int CONST_RT_850_DEFAULT_END_MESTRE_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_DEFAULT_END_MESTRE_CANAL_1 = 200;
 
 		// Token: 0x04000F87 RID: 3975
-		public const int CONST_RT_850_LMTE_INF_END_MESTRE_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_MESTRE_CANAL_1 = 1;
 
 		// Token: 0x04000F88 RID: 3976
-		public const int CONST_RT_850_LMTE_SUP_END_MESTRE_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_MESTRE_CANAL_1 = 200;
 
 		// Token: 0x04000F89 RID: 3977
-		public const int CONST_RT_850_DEFAULT_END_MESTRE_CANAL_2 = (HorizontalAlignment)180;
+		public const int CONST_RT_850_DEFAULT_END_MESTRE_CANAL_2 = 180;
 
 		// Token: 0x04000F8A RID: 3978
-		public const int CONST_RT_850_LMTE_INF_END_MESTRE_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_MESTRE_CANAL_2 = 1;
 
 		// Token: 0x04000F8B RID: 3979
-		public const int CONST_RT_850_LMTE_SUP_END_MESTRE_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_MESTRE_CANAL_2 = 200;
 
 		// Token: 0x04000F8C RID: 3980
-		public const int CONST_RT_850_DEFAULT_INTERVALO_LEITURA_CANAL_1 = (HorizontalAlignment)3;
+		public const int CONST_RT_850_DEFAULT_INTERVALO_LEITURA_CANAL_1 = 3;
 
 		// Token: 0x04000F8D RID: 3981
-		public const int CONST_RT_850_LMTE_INF_INTERVALO_LEITURA_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_INTERVALO_LEITURA_CANAL_1 = 1;
 
 		// Token: 0x04000F8E RID: 3982
-		public const int CONST_RT_850_LMTE_SUP_INTERVALO_LEITURA_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_INTERVALO_LEITURA_CANAL_1 = 200;
 
 		// Token: 0x04000F8F RID: 3983
-		public const int CONST_RT_850_DEFAULT_INTERVALO_LEITURA_CANAL_2 = (HorizontalAlignment)3;
+		public const int CONST_RT_850_DEFAULT_INTERVALO_LEITURA_CANAL_2 = 3;
 
 		// Token: 0x04000F90 RID: 3984
-		public const int CONST_RT_850_LMTE_INF_INTERVALO_LEITURA_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_INTERVALO_LEITURA_CANAL_2 = 1;
 
 		// Token: 0x04000F91 RID: 3985
-		public const int CONST_RT_850_LMTE_SUP_INTERVALO_LEITURA_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_INTERVALO_LEITURA_CANAL_2 = 200;
 
 		// Token: 0x04000F92 RID: 3986
-		public const int CONST_RT_850_DEFAULT_BAUDRATE_INDICE_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_BAUDRATE_INDICE_CANAL_1 = 0;
 
 		// Token: 0x04000F93 RID: 3987
-		public const int CONST_RT_850_DEFAULT_BAUDRATE_INDICE_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_BAUDRATE_INDICE_CANAL_2 = 0;
 
 		// Token: 0x04000F94 RID: 3988
-		public const int CONST_RT_850_DEFAULT_TIMEOUT_CANAL_1 = (HorizontalAlignment)5;
+		public const int CONST_RT_850_DEFAULT_TIMEOUT_CANAL_1 = 5;
 
 		// Token: 0x04000F95 RID: 3989
-		public const int CONST_RT_850_LMTE_INF_TIMEOUT_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_TIMEOUT_CANAL_1 = 1;
 
 		// Token: 0x04000F96 RID: 3990
-		public const int CONST_RT_850_LMTE_SUP_TIMEOUT_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_TIMEOUT_CANAL_1 = 200;
 
 		// Token: 0x04000F97 RID: 3991
-		public const int CONST_RT_850_DEFAULT_TIMEOUT_CANAL_2 = (HorizontalAlignment)5;
+		public const int CONST_RT_850_DEFAULT_TIMEOUT_CANAL_2 = 5;
 
 		// Token: 0x04000F98 RID: 3992
-		public const int CONST_RT_850_LMTE_INF_TIMEOUT_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_TIMEOUT_CANAL_2 = 1;
 
 		// Token: 0x04000F99 RID: 3993
-		public const int CONST_RT_850_LMTE_SUP_TIMEOUT_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_TIMEOUT_CANAL_2 = 200;
 
 		// Token: 0x04000F9A RID: 3994
-		public const int CONST_RT_850_DEFAULT_TEMPO_PTT_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_DEFAULT_TEMPO_PTT_CANAL_1 = 200;
 
 		// Token: 0x04000F9B RID: 3995
-		public const int CONST_RT_850_LMTE_INF_TEMPO_PTT_CANAL_1 = (HorizontalAlignment)10;
+		public const int CONST_RT_850_LMTE_INF_TEMPO_PTT_CANAL_1 = 10;
 
 		// Token: 0x04000F9C RID: 3996
-		public const int CONST_RT_850_LMTE_SUP_TEMPO_PTT_CANAL_1 = (HorizontalAlignment)2000;
+		public const int CONST_RT_850_LMTE_SUP_TEMPO_PTT_CANAL_1 = 2000;
 
 		// Token: 0x04000F9D RID: 3997
-		public const int CONST_RT_850_DEFAULT_TEMPO_PTT_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_DEFAULT_TEMPO_PTT_CANAL_2 = 200;
 
 		// Token: 0x04000F9E RID: 3998
-		public const int CONST_RT_850_LMTE_INF_TEMPO_PTT_CANAL_2 = (HorizontalAlignment)10;
+		public const int CONST_RT_850_LMTE_INF_TEMPO_PTT_CANAL_2 = 10;
 
 		// Token: 0x04000F9F RID: 3999
-		public const int CONST_RT_850_LMTE_SUP_TEMPO_PTT_CANAL_2 = (HorizontalAlignment)2000;
+		public const int CONST_RT_850_LMTE_SUP_TEMPO_PTT_CANAL_2 = 2000;
 
 		// Token: 0x04000FA0 RID: 4000
-		public const int CONST_RT_850_DEFAULT_NUMERO_TENTATIVAS_CANAL_1 = (HorizontalAlignment)3;
+		public const int CONST_RT_850_DEFAULT_NUMERO_TENTATIVAS_CANAL_1 = 3;
 
 		// Token: 0x04000FA1 RID: 4001
-		public const int CONST_RT_850_LMTE_INF_NUMERO_TENTATIVAS_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_TENTATIVAS_CANAL_1 = 0;
 
 		// Token: 0x04000FA2 RID: 4002
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_TENTATIVAS_CANAL_1 = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_TENTATIVAS_CANAL_1 = 20;
 
 		// Token: 0x04000FA3 RID: 4003
-		public const int CONST_RT_850_DEFAULT_NUMERO_TENTATIVAS_CANAL_2 = (HorizontalAlignment)3;
+		public const int CONST_RT_850_DEFAULT_NUMERO_TENTATIVAS_CANAL_2 = 3;
 
 		// Token: 0x04000FA4 RID: 4004
-		public const int CONST_RT_850_LMTE_INF_NUMERO_TENTATIVAS_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_TENTATIVAS_CANAL_2 = 0;
 
 		// Token: 0x04000FA5 RID: 4005
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_TENTATIVAS_CANAL_2 = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_TENTATIVAS_CANAL_2 = 20;
 
 		// Token: 0x04000FA6 RID: 4006
-		public const int CONST_RT_850_DEFAULT_NUMERO_ERROS_FALHA_CANAL_1 = (HorizontalAlignment)3;
+		public const int CONST_RT_850_DEFAULT_NUMERO_ERROS_FALHA_CANAL_1 = 3;
 
 		// Token: 0x04000FA7 RID: 4007
-		public const int CONST_RT_850_LMTE_INF_NUMERO_ERROS_FALHA_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_ERROS_FALHA_CANAL_1 = 1;
 
 		// Token: 0x04000FA8 RID: 4008
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_ERROS_FALHA_CANAL_1 = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_ERROS_FALHA_CANAL_1 = 20;
 
 		// Token: 0x04000FA9 RID: 4009
-		public const int CONST_RT_850_DEFAULT_NUMERO_ERROS_FALHA_CANAL_2 = (HorizontalAlignment)3;
+		public const int CONST_RT_850_DEFAULT_NUMERO_ERROS_FALHA_CANAL_2 = 3;
 
 		// Token: 0x04000FAA RID: 4010
-		public const int CONST_RT_850_LMTE_INF_NUMERO_ERROS_FALHA_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_ERROS_FALHA_CANAL_2 = 1;
 
 		// Token: 0x04000FAB RID: 4011
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_ERROS_FALHA_CANAL_2 = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_ERROS_FALHA_CANAL_2 = 20;
 
 		// Token: 0x04000FAC RID: 4012
-		public const int CONST_RT_850_DEFAULT_CMD_ESTATISTICA = (HorizontalAlignment)100;
+		public const int CONST_RT_850_DEFAULT_CMD_ESTATISTICA = 100;
 
 		// Token: 0x04000FAD RID: 4013
-		public const int CONST_RT_850_LMTE_INF_CMD_ESTATISTICA = (HorizontalAlignment)10;
+		public const int CONST_RT_850_LMTE_INF_CMD_ESTATISTICA = 10;
 
 		// Token: 0x04000FAE RID: 4014
-		public const int CONST_RT_850_LMTE_SUP_CMD_ESTATISTICA = (HorizontalAlignment)1000;
+		public const int CONST_RT_850_LMTE_SUP_CMD_ESTATISTICA = 1000;
 
 		// Token: 0x04000FAF RID: 4015
-		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO1_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO1_CANAL_1 = 0;
 
 		// Token: 0x04000FB0 RID: 4016
-		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO1_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO1_CANAL_1 = 0;
 
 		// Token: 0x04000FB1 RID: 4017
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO1_CANAL_1 = (HorizontalAlignment)80;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO1_CANAL_1 = 80;
 
 		// Token: 0x04000FB2 RID: 4018
-		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO1_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO1_CANAL_2 = 0;
 
 		// Token: 0x04000FB3 RID: 4019
-		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO1_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO1_CANAL_2 = 0;
 
 		// Token: 0x04000FB4 RID: 4020
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO1_CANAL_2 = (HorizontalAlignment)80;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO1_CANAL_2 = 80;
 
 		// Token: 0x04000FB5 RID: 4021
-		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO2_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO2_CANAL_1 = 0;
 
 		// Token: 0x04000FB6 RID: 4022
-		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO2_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO2_CANAL_1 = 0;
 
 		// Token: 0x04000FB7 RID: 4023
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO2_CANAL_1 = (HorizontalAlignment)50;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO2_CANAL_1 = 50;
 
 		// Token: 0x04000FB8 RID: 4024
-		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO2_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO2_CANAL_2 = 0;
 
 		// Token: 0x04000FB9 RID: 4025
-		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO2_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO2_CANAL_2 = 0;
 
 		// Token: 0x04000FBA RID: 4026
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO2_CANAL_2 = (HorizontalAlignment)50;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO2_CANAL_2 = 50;
 
 		// Token: 0x04000FBB RID: 4027
-		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO3_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO3_CANAL_1 = 0;
 
 		// Token: 0x04000FBC RID: 4028
-		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO3_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO3_CANAL_1 = 0;
 
 		// Token: 0x04000FBD RID: 4029
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO3_CANAL_1 = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO3_CANAL_1 = 20;
 
 		// Token: 0x04000FBE RID: 4030
-		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO3_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_EQUIP_TIPO3_CANAL_2 = 0;
 
 		// Token: 0x04000FBF RID: 4031
-		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO3_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_EQUIP_TIPO3_CANAL_2 = 0;
 
 		// Token: 0x04000FC0 RID: 4032
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO3_CANAL_2 = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_EQUIP_TIPO3_CANAL_2 = 20;
 
 		// Token: 0x04000FC1 RID: 4033
-		public const int CONST_RT_850_DEFAULT_NUMERO_VISTA_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_VISTA_CANAL_1 = 0;
 
 		// Token: 0x04000FC2 RID: 4034
-		public const int CONST_RT_850_LMTE_INF_NUMERO_VISTA_CANAL_1 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_VISTA_CANAL_1 = 0;
 
 		// Token: 0x04000FC3 RID: 4035
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_VISTA_CANAL_1 = (HorizontalAlignment)5;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_VISTA_CANAL_1 = 5;
 
 		// Token: 0x04000FC4 RID: 4036
-		public const int CONST_RT_850_DEFAULT_NUMERO_VISTA_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUMERO_VISTA_CANAL_2 = 0;
 
 		// Token: 0x04000FC5 RID: 4037
-		public const int CONST_RT_850_LMTE_INF_NUMERO_VISTA_CANAL_2 = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUMERO_VISTA_CANAL_2 = 0;
 
 		// Token: 0x04000FC6 RID: 4038
-		public const int CONST_RT_850_LMTE_SUP_NUMERO_VISTA_CANAL_2 = (HorizontalAlignment)5;
+		public const int CONST_RT_850_LMTE_SUP_NUMERO_VISTA_CANAL_2 = 5;
 
 		// Token: 0x04000FC7 RID: 4039
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO1_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO1_CANAL_1 = 1;
 
 		// Token: 0x04000FC8 RID: 4040
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO1_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO1_CANAL_1 = 1;
 
 		// Token: 0x04000FC9 RID: 4041
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO1_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO1_CANAL_1 = 200;
 
 		// Token: 0x04000FCA RID: 4042
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO1_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO1_CANAL_2 = 1;
 
 		// Token: 0x04000FCB RID: 4043
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO1_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO1_CANAL_2 = 1;
 
 		// Token: 0x04000FCC RID: 4044
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO1_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO1_CANAL_2 = 200;
 
 		// Token: 0x04000FCD RID: 4045
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO2_CANAL_1 = (HorizontalAlignment)50;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO2_CANAL_1 = 50;
 
 		// Token: 0x04000FCE RID: 4046
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO2_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO2_CANAL_1 = 1;
 
 		// Token: 0x04000FCF RID: 4047
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO2_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO2_CANAL_1 = 200;
 
 		// Token: 0x04000FD0 RID: 4048
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO2_CANAL_2 = (HorizontalAlignment)50;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO2_CANAL_2 = 50;
 
 		// Token: 0x04000FD1 RID: 4049
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO2_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO2_CANAL_2 = 1;
 
 		// Token: 0x04000FD2 RID: 4050
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO2_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO2_CANAL_2 = 200;
 
 		// Token: 0x04000FD3 RID: 4051
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO3_CANAL_1 = (HorizontalAlignment)80;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO3_CANAL_1 = 80;
 
 		// Token: 0x04000FD4 RID: 4052
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO3_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO3_CANAL_1 = 1;
 
 		// Token: 0x04000FD5 RID: 4053
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO3_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO3_CANAL_1 = 200;
 
 		// Token: 0x04000FD6 RID: 4054
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO3_CANAL_2 = (HorizontalAlignment)80;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_TIPO3_CANAL_2 = 80;
 
 		// Token: 0x04000FD7 RID: 4055
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO3_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_TIPO3_CANAL_2 = 1;
 
 		// Token: 0x04000FD8 RID: 4056
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO3_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_TIPO3_CANAL_2 = 200;
 
 		// Token: 0x04000FD9 RID: 4057
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_VISTA_CANAL_1 = (HorizontalAlignment)100;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_VISTA_CANAL_1 = 100;
 
 		// Token: 0x04000FDA RID: 4058
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_VISTA_CANAL_1 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_VISTA_CANAL_1 = 1;
 
 		// Token: 0x04000FDB RID: 4059
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_VISTA_CANAL_1 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_VISTA_CANAL_1 = 200;
 
 		// Token: 0x04000FDC RID: 4060
-		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_VISTA_CANAL_2 = (HorizontalAlignment)100;
+		public const int CONST_RT_850_DEFAULT_END_INI_EQUIP_VISTA_CANAL_2 = 100;
 
 		// Token: 0x04000FDD RID: 4061
-		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_VISTA_CANAL_2 = (HorizontalAlignment)1;
+		public const int CONST_RT_850_LMTE_INF_END_INI_EQUIP_VISTA_CANAL_2 = 1;
 
 		// Token: 0x04000FDE RID: 4062
-		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_VISTA_CANAL_2 = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_END_INI_EQUIP_VISTA_CANAL_2 = 200;
 
 		// Token: 0x04000FDF RID: 4063
-		public const int CONST_COLUNA_EQUIP_CANAL_QUANT_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_EQUIP_CANAL_QUANT_RT_850 = 0;
 
 		// Token: 0x04000FE0 RID: 4064
-		public const int CONST_COLUNA_EQUIP_CANAL_END_RT_850 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_EQUIP_CANAL_END_RT_850 = 1;
 
 		// Token: 0x04000FE1 RID: 4065
-		public const int CONST_RT_850_HAB_SINCRONISMO_DEFAULT = (HorizontalAlignment)21856;
+		public const int CONST_RT_850_HAB_SINCRONISMO_DEFAULT = 21856;
 
 		// Token: 0x04000FE2 RID: 4066
-		public const int CONST_RT_850_HAB_SINCRONISMO = (HorizontalAlignment)21857;
+		public const int CONST_RT_850_HAB_SINCRONISMO = 21857;
 
 		// Token: 0x04000FE3 RID: 4067
-		public const int CONST_RT_850_DESABILITA_SINCRONISMO = (HorizontalAlignment)21856;
+		public const int CONST_RT_850_DESABILITA_SINCRONISMO = 21856;
 
 		// Token: 0x04000FE4 RID: 4068
-		public const int CONST_RT_850_DEFAULT_TECLADO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_TECLADO = 0;
 
 		// Token: 0x04000FE5 RID: 4069
-		public const int CONST_RT_850_HAB_TECLADO = (HorizontalAlignment)1;
+		public const int CONST_RT_850_HAB_TECLADO = 1;
 
 		// Token: 0x04000FE6 RID: 4070
-		public const int CONST_RT_850_DESABILITA_TECLADO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DESABILITA_TECLADO = 0;
 
 		// Token: 0x04000FE7 RID: 4071
-		public const int CONST_RT_850_CONFERE_RESPOSTA_DEFAULT = (HorizontalAlignment)0;
+		public const int CONST_RT_850_CONFERE_RESPOSTA_DEFAULT = 0;
 
 		// Token: 0x04000FE8 RID: 4072
-		public const int CONST_RT_850_HAB_CONFERE_RESPOSTA = (HorizontalAlignment)1;
+		public const int CONST_RT_850_HAB_CONFERE_RESPOSTA = 1;
 
 		// Token: 0x04000FE9 RID: 4073
-		public const int CONST_RT_850_DESABILITA_CONFERE_RESPOSTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DESABILITA_CONFERE_RESPOSTA = 0;
 
 		// Token: 0x04000FEA RID: 4074
-		public const int CONST_RT_850_MODO_ESTATISTICA_DEFAULT = (HorizontalAlignment)0;
+		public const int CONST_RT_850_MODO_ESTATISTICA_DEFAULT = 0;
 
 		// Token: 0x04000FEB RID: 4075
-		public const int CONST_RT_850_HAB_MODO_ESTATISTICA = (HorizontalAlignment)1;
+		public const int CONST_RT_850_HAB_MODO_ESTATISTICA = 1;
 
 		// Token: 0x04000FEC RID: 4076
-		public const int CONST_RT_850_DESABILITA_MODO_ESTATISTICA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DESABILITA_MODO_ESTATISTICA = 0;
 
 		// Token: 0x04000FED RID: 4077
-		public const int CONST_RT_850_DEFAULT_FLAG_REMOTA_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_FLAG_REMOTA_INDICE = 0;
 
 		// Token: 0x04000FEE RID: 4078
-		public const int CONST_RT_850_DEFAULT_FLAG_SUPERVISORIO_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_FLAG_SUPERVISORIO_INDICE = 0;
 
 		// Token: 0x04000FEF RID: 4079
-		public const int CONST_RT_810_200 = (HorizontalAlignment)20;
+		public const int CONST_RT_810_200 = 20;
 
 		// Token: 0x04000FF0 RID: 4080
-		public const int CONST_RT_820_200 = (HorizontalAlignment)30;
+		public const int CONST_RT_820_200 = 30;
 
 		// Token: 0x04000FF1 RID: 4081
-		public const int CONST_RT_821_200 = (HorizontalAlignment)40;
+		public const int CONST_RT_821_200 = 40;
 
 		// Token: 0x04000FF2 RID: 4082
-		public const int CONST_RT_830_200 = (HorizontalAlignment)50;
+		public const int CONST_RT_830_200 = 50;
 
 		// Token: 0x04000FF3 RID: 4083
-		public const int CONST_RT_831_200 = (HorizontalAlignment)60;
+		public const int CONST_RT_831_200 = 60;
 
 		// Token: 0x04000FF4 RID: 4084
-		public const int CONST_GC_82x_300 = (HorizontalAlignment)70;
+		public const int CONST_GC_82x_300 = 70;
 
 		// Token: 0x04000FF5 RID: 4085
-		public const int CONST_IEC_855_300 = (HorizontalAlignment)80;
+		public const int CONST_IEC_855_300 = 80;
 
 		// Token: 0x04000FF6 RID: 4086
-		public const int CONST_IER_856_300 = (HorizontalAlignment)90;
+		public const int CONST_IER_856_300 = 90;
 
 		// Token: 0x04000FF7 RID: 4087
-		public const int CONST_RT_850_DEFAULT_VARIAVEL_NUMERO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_VARIAVEL_NUMERO = 0;
 
 		// Token: 0x04000FF8 RID: 4088
-		public const int CONST_RT_850_LMTE_INF_VARIAVEL_NUMERO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_VARIAVEL_NUMERO = 0;
 
 		// Token: 0x04000FF9 RID: 4089
-		public const int CONST_RT_850_LMTE_SUP_VARIAVEL_NUMERO = (HorizontalAlignment)300;
+		public const int CONST_RT_850_LMTE_SUP_VARIAVEL_NUMERO = 300;
 
 		// Token: 0x04000FFA RID: 4090
-		public const int CONST_ALM_NIVEL_BAIXO = (HorizontalAlignment)0;
+		public const int CONST_ALM_NIVEL_BAIXO = 0;
 
 		// Token: 0x04000FFB RID: 4091
-		public const int CONST_ALM_BAIXO_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_ALM_BAIXO_RT_850 = 0;
 
 		// Token: 0x04000FFC RID: 4092
-		public const int CONST_ALM_MSG_SEM = (HorizontalAlignment)0;
+		public const int CONST_ALM_MSG_SEM = 0;
 
 		// Token: 0x04000FFD RID: 4093
-		public const int CONST_ALM_NIVEL_ALTO = (HorizontalAlignment)100;
+		public const int CONST_ALM_NIVEL_ALTO = 100;
 
 		// Token: 0x04000FFE RID: 4094
-		public const int CONST_ALM_ALTO_RT_850 = (HorizontalAlignment)1;
+		public const int CONST_ALM_ALTO_RT_850 = 1;
 
 		// Token: 0x04000FFF RID: 4095
-		public const int CONST_COLUNA_VARIAVEL_NOME_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_VARIAVEL_NOME_RT_850 = 0;
 
 		// Token: 0x04001000 RID: 4096
-		public const int CONST_COLUNA_VARIAVEL_ESC_INI_RT_850 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_VARIAVEL_ESC_INI_RT_850 = 1;
 
 		// Token: 0x04001001 RID: 4097
-		public const int CONST_COLUNA_VARIAVEL_ESC_FIM_RT_850 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_VARIAVEL_ESC_FIM_RT_850 = 2;
 
 		// Token: 0x04001002 RID: 4098
-		public const int CONST_COLUNA_VARIACEL_ESC_TRAT_RT_850 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_VARIACEL_ESC_TRAT_RT_850 = 3;
 
 		// Token: 0x04001003 RID: 4099
-		public const int CONST_COLUNA_VARIAVEL_ESC_FIM_PTO_RT_850 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_VARIAVEL_ESC_FIM_PTO_RT_850 = 4;
 
 		// Token: 0x04001004 RID: 4100
-		public const int CONST_COLUNA_VARIAVEL_ALARME1_VALOR_RT_850 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_VARIAVEL_ALARME1_VALOR_RT_850 = 5;
 
 		// Token: 0x04001005 RID: 4101
-		public const int CONST_COLUNA_VARIAVEL_ALARME1_TIPO_RT_850 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_VARIAVEL_ALARME1_TIPO_RT_850 = 6;
 
 		// Token: 0x04001006 RID: 4102
-		public const int CONST_COLUNA_VARIAVEL_ALARME1_MSG_RT_850 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_VARIAVEL_ALARME1_MSG_RT_850 = 7;
 
 		// Token: 0x04001007 RID: 4103
-		public const int CONST_COLUNA_VARIAVEL_ALARME2_VALOR_RT_850 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_VARIAVEL_ALARME2_VALOR_RT_850 = 8;
 
 		// Token: 0x04001008 RID: 4104
-		public const int CONST_COLUNA_VARIAVEL_ALARME2_TIPO_RT_850 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_VARIAVEL_ALARME2_TIPO_RT_850 = 9;
 
 		// Token: 0x04001009 RID: 4105
-		public const int CONST_COLUNA_VARIAVEL_ALARME2_MSG_RT_850 = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_VARIAVEL_ALARME2_MSG_RT_850 = 10;
 
 		// Token: 0x0400100A RID: 4106
-		public const int CONST_COLUNA_VARIAVEL_TELA_RT_850 = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_VARIAVEL_TELA_RT_850 = 11;
 
 		// Token: 0x0400100B RID: 4107
-		public const int CONST_COLUNA_VARIAVEL_POSICAO_DSP_RT_850 = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_VARIAVEL_POSICAO_DSP_RT_850 = 12;
 
 		// Token: 0x0400100C RID: 4108
 		public const int CONST_VARIAVEL_NIVEL_LMTE_INFERIOR = -999;
 
 		// Token: 0x0400100D RID: 4109
-		public const int CONST_VARIAVEL_NIVEL_LMTE_SUPERIOR = (HorizontalAlignment)20000;
+		public const int CONST_VARIAVEL_NIVEL_LMTE_SUPERIOR = 20000;
 
 		// Token: 0x0400100E RID: 4110
-		public const int CONST_RT_850_LMTE_INF_VARIAVEL_TELA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_VARIAVEL_TELA = 0;
 
 		// Token: 0x0400100F RID: 4111
-		public const int CONST_RT_850_LMTE_SUP_VARIAVEL_TELA = (HorizontalAlignment)75;
+		public const int CONST_RT_850_LMTE_SUP_VARIAVEL_TELA = 75;
 
 		// Token: 0x04001010 RID: 4112
-		public const int CONST_RT_850_LMTE_INF_INDICE_CTRL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_INDICE_CTRL = 0;
 
 		// Token: 0x04001011 RID: 4113
-		public const int CONST_RT_850_LMTE_SUP_INDICE_CTRL = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_INDICE_CTRL = 200;
 
 		// Token: 0x04001012 RID: 4114
-		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_HEIGHT_INICIAL = (HorizontalAlignment)22;
+		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_HEIGHT_INICIAL = 22;
 
 		// Token: 0x04001013 RID: 4115
-		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_WIDTH_SEM_BARRA = (HorizontalAlignment)1130;
+		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_WIDTH_SEM_BARRA = 1130;
 
 		// Token: 0x04001014 RID: 4116
-		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_WIDTH_COM_BARRA = (HorizontalAlignment)1147;
+		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_WIDTH_COM_BARRA = 1147;
 
 		// Token: 0x04001015 RID: 4117
-		public const int CONST_COLUNA_CTRL_1_NOME_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_CTRL_1_NOME_RT_850 = 0;
 
 		// Token: 0x04001016 RID: 4118
-		public const int CONST_COLUNA_CTRL_1_PORTA_RT_850 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_CTRL_1_PORTA_RT_850 = 1;
 
 		// Token: 0x04001017 RID: 4119
-		public const int CONST_COLUNA_CTRL_1_TIMEOUT_RT_850 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_CTRL_1_TIMEOUT_RT_850 = 2;
 
 		// Token: 0x04001018 RID: 4120
-		public const int CONST_COLUNA_CTRL_1_HAB_COMANDO_RT_850 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_CTRL_1_HAB_COMANDO_RT_850 = 3;
 
 		// Token: 0x04001019 RID: 4121
-		public const int CONST_COLUNA_CTRL_1_PRIORIDADE_RT_850 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_CTRL_1_PRIORIDADE_RT_850 = 4;
 
 		// Token: 0x0400101A RID: 4122
-		public const int CONST_COLUNA_CTRL_1_MODELO_RT_850 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_CTRL_1_MODELO_RT_850 = 5;
 
 		// Token: 0x0400101B RID: 4123
-		public const int CONST_COLUNA_CTRL_1_NOME_CTRL_01_RT_850 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_CTRL_1_NOME_CTRL_01_RT_850 = 6;
 
 		// Token: 0x0400101C RID: 4124
-		public const int CONST_COLUNA_CTRL_1_INDICE_CTRL_01_RT_850 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_CTRL_1_INDICE_CTRL_01_RT_850 = 7;
 
 		// Token: 0x0400101D RID: 4125
-		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_1_RT_850 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_1_RT_850 = 8;
 
 		// Token: 0x0400101E RID: 4126
-		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_2_RT_850 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_2_RT_850 = 9;
 
 		// Token: 0x0400101F RID: 4127
-		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_3_RT_850 = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_3_RT_850 = 10;
 
 		// Token: 0x04001020 RID: 4128
-		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_4_RT_850 = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_CTRL_1_VAR_INDICE_4_RT_850 = 11;
 
 		// Token: 0x04001021 RID: 4129
-		public const int CONST_COLUNA_CTRL_1_VAR_REF_1_RT_850 = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_CTRL_1_VAR_REF_1_RT_850 = 12;
 
 		// Token: 0x04001022 RID: 4130
-		public const int CONST_COLUNA_CTRL_1_VAR_REF_2_RT_850 = (HorizontalAlignment)13;
+		public const int CONST_COLUNA_CTRL_1_VAR_REF_2_RT_850 = 13;
 
 		// Token: 0x04001023 RID: 4131
-		public const int CONST_COLUNA_CTRL_1_VAR_REF_3_RT_850 = (HorizontalAlignment)14;
+		public const int CONST_COLUNA_CTRL_1_VAR_REF_3_RT_850 = 14;
 
 		// Token: 0x04001024 RID: 4132
-		public const int CONST_COLUNA_CTRL_1_VAR_REF_4_RT_850 = (HorizontalAlignment)15;
+		public const int CONST_COLUNA_CTRL_1_VAR_REF_4_RT_850 = 15;
 
 		// Token: 0x04001025 RID: 4133
-		public const int CONST_RT_850_CTRL_1_NUMERO_CTRL = (HorizontalAlignment)1;
+		public const int CONST_RT_850_CTRL_1_NUMERO_CTRL = 1;
 
 		// Token: 0x04001026 RID: 4134
-		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_CTRL_1 = (HorizontalAlignment)15;
+		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_CTRL_1 = 15;
 
 		// Token: 0x04001027 RID: 4135
-		public const int CONST_RT_850_NUMERO_VAR_CTRL_1 = (HorizontalAlignment)4;
+		public const int CONST_RT_850_NUMERO_VAR_CTRL_1 = 4;
 
 		// Token: 0x04001028 RID: 4136
-		public const int CONST_RT_850_NUMERO_REF_CTRL_1 = (HorizontalAlignment)4;
+		public const int CONST_RT_850_NUMERO_REF_CTRL_1 = 4;
 
 		// Token: 0x04001029 RID: 4137
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_CANAL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_CANAL = 0;
 
 		// Token: 0x0400102A RID: 4138
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_TIMEOUT = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_TIMEOUT = 0;
 
 		// Token: 0x0400102B RID: 4139
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_COMANDO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_COMANDO = 0;
 
 		// Token: 0x0400102C RID: 4140
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_PRIORIDADE = (HorizontalAlignment)1;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_PRIORIDADE = 1;
 
 		// Token: 0x0400102D RID: 4141
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_MODELO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_MODELO = 0;
 
 		// Token: 0x0400102E RID: 4142
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_VARIAVEL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_VARIAVEL = 0;
 
 		// Token: 0x0400102F RID: 4143
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_REFERENCIA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_1_REFERENCIA = 0;
 
 		// Token: 0x04001030 RID: 4144
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_NOME = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_NOME = 0;
 
 		// Token: 0x04001031 RID: 4145
-		public const int CONST_RT_850_DEFAULT_CTRL_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_CTRL_INDICE = 0;
 
 		// Token: 0x04001032 RID: 4146
-		public const int CONST_RT_850_LMTE_INF_CTRL_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_CTRL_INDICE = 0;
 
 		// Token: 0x04001033 RID: 4147
-		public const int CONST_RT_850_LMTE_SUP_CTRL_INDICE = (HorizontalAlignment)200;
+		public const int CONST_RT_850_LMTE_SUP_CTRL_INDICE = 200;
 
 		// Token: 0x04001034 RID: 4148
-		public const int CONST_COLUNA_CTRL_4_NOME_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_CTRL_4_NOME_RT_850 = 0;
 
 		// Token: 0x04001035 RID: 4149
-		public const int CONST_COLUNA_CTRL_4_PORTA_RT_850 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_CTRL_4_PORTA_RT_850 = 1;
 
 		// Token: 0x04001036 RID: 4150
-		public const int CONST_COLUNA_CTRL_4_TIMEOUT_RT_850 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_CTRL_4_TIMEOUT_RT_850 = 2;
 
 		// Token: 0x04001037 RID: 4151
-		public const int CONST_COLUNA_CTRL_4_HAB_COMANDO_RT_850 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_CTRL_4_HAB_COMANDO_RT_850 = 3;
 
 		// Token: 0x04001038 RID: 4152
-		public const int CONST_COLUNA_CTRL_4_PRIORIDADE_RT_850 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_CTRL_4_PRIORIDADE_RT_850 = 4;
 
 		// Token: 0x04001039 RID: 4153
-		public const int CONST_COLUNA_CTRL_4_MODELO_RT_850 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_CTRL_4_MODELO_RT_850 = 5;
 
 		// Token: 0x0400103A RID: 4154
-		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_01_RT_850 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_01_RT_850 = 6;
 
 		// Token: 0x0400103B RID: 4155
-		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_01_RT_850 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_01_RT_850 = 7;
 
 		// Token: 0x0400103C RID: 4156
-		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_02_RT_850 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_02_RT_850 = 8;
 
 		// Token: 0x0400103D RID: 4157
-		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_02_RT_850 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_02_RT_850 = 9;
 
 		// Token: 0x0400103E RID: 4158
-		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_03_RT_850 = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_03_RT_850 = 10;
 
 		// Token: 0x0400103F RID: 4159
-		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_03_RT_850 = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_03_RT_850 = 11;
 
 		// Token: 0x04001040 RID: 4160
-		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_04_RT_850 = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_CTRL_4_NOME_CTRL_04_RT_850 = 12;
 
 		// Token: 0x04001041 RID: 4161
-		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_04_RT_850 = (HorizontalAlignment)13;
+		public const int CONST_COLUNA_CTRL_4_INDICE_CTRL_04_RT_850 = 13;
 
 		// Token: 0x04001042 RID: 4162
-		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_1_RT_850 = (HorizontalAlignment)14;
+		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_1_RT_850 = 14;
 
 		// Token: 0x04001043 RID: 4163
-		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_2_RT_850 = (HorizontalAlignment)15;
+		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_2_RT_850 = 15;
 
 		// Token: 0x04001044 RID: 4164
-		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_3_RT_850 = (HorizontalAlignment)16;
+		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_3_RT_850 = 16;
 
 		// Token: 0x04001045 RID: 4165
-		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_4_RT_850 = (HorizontalAlignment)17;
+		public const int CONST_COLUNA_CTRL_4_VAR_INDICE_4_RT_850 = 17;
 
 		// Token: 0x04001046 RID: 4166
-		public const int CONST_COLUNA_CTRL_4_VAR_REF_1_RT_850 = (HorizontalAlignment)18;
+		public const int CONST_COLUNA_CTRL_4_VAR_REF_1_RT_850 = 18;
 
 		// Token: 0x04001047 RID: 4167
-		public const int CONST_COLUNA_CTRL_4_VAR_REF_2_RT_850 = (HorizontalAlignment)19;
+		public const int CONST_COLUNA_CTRL_4_VAR_REF_2_RT_850 = 19;
 
 		// Token: 0x04001048 RID: 4168
-		public const int CONST_COLUNA_CTRL_4_VAR_REF_3_RT_850 = (HorizontalAlignment)20;
+		public const int CONST_COLUNA_CTRL_4_VAR_REF_3_RT_850 = 20;
 
 		// Token: 0x04001049 RID: 4169
-		public const int CONST_COLUNA_CTRL_4_VAR_REF_4_RT_850 = (HorizontalAlignment)21;
+		public const int CONST_COLUNA_CTRL_4_VAR_REF_4_RT_850 = 21;
 
 		// Token: 0x0400104A RID: 4170
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_1_RT_850 = (HorizontalAlignment)22;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_1_RT_850 = 22;
 
 		// Token: 0x0400104B RID: 4171
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_1_RT_850 = (HorizontalAlignment)23;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_1_RT_850 = 23;
 
 		// Token: 0x0400104C RID: 4172
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_2_RT_850 = (HorizontalAlignment)24;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_2_RT_850 = 24;
 
 		// Token: 0x0400104D RID: 4173
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_2_RT_850 = (HorizontalAlignment)25;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_2_RT_850 = 25;
 
 		// Token: 0x0400104E RID: 4174
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_3_RT_850 = (HorizontalAlignment)26;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_3_RT_850 = 26;
 
 		// Token: 0x0400104F RID: 4175
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_3_RT_850 = (HorizontalAlignment)27;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_3_RT_850 = 27;
 
 		// Token: 0x04001050 RID: 4176
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_4_RT_850 = (HorizontalAlignment)28;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_4_RT_850 = 28;
 
 		// Token: 0x04001051 RID: 4177
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_4_RT_850 = (HorizontalAlignment)29;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_4_RT_850 = 29;
 
 		// Token: 0x04001052 RID: 4178
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_5_RT_850 = (HorizontalAlignment)30;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_MODELO_5_RT_850 = 30;
 
 		// Token: 0x04001053 RID: 4179
-		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_5_RT_850 = (HorizontalAlignment)31;
+		public const int CONST_COLUNA_CTRL_4_PERIFERICO_INDICE_5_RT_850 = 31;
 
 		// Token: 0x04001054 RID: 4180
-		public const int CONST_RT_850_CTRL_4_NUMERO_CTRL = (HorizontalAlignment)4;
+		public const int CONST_RT_850_CTRL_4_NUMERO_CTRL = 4;
 
 		// Token: 0x04001055 RID: 4181
-		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_CTRL_4 = (HorizontalAlignment)15;
+		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_CTRL_4 = 15;
 
 		// Token: 0x04001056 RID: 4182
-		public const int CONST_RT_850_NUMERO_VAR_CTRL_4 = (HorizontalAlignment)4;
+		public const int CONST_RT_850_NUMERO_VAR_CTRL_4 = 4;
 
 		// Token: 0x04001057 RID: 4183
-		public const int CONST_RT_850_NUMERO_REF_CTRL_4 = (HorizontalAlignment)4;
+		public const int CONST_RT_850_NUMERO_REF_CTRL_4 = 4;
 
 		// Token: 0x04001058 RID: 4184
-		public const int CONST_RT_850_NUMERO_PERFERICO_CTRL_4 = (HorizontalAlignment)5;
+		public const int CONST_RT_850_NUMERO_PERFERICO_CTRL_4 = 5;
 
 		// Token: 0x04001059 RID: 4185
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_CANAL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_CANAL = 0;
 
 		// Token: 0x0400105A RID: 4186
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_TIMEOUT = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_TIMEOUT = 0;
 
 		// Token: 0x0400105B RID: 4187
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_COMANDO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_COMANDO = 0;
 
 		// Token: 0x0400105C RID: 4188
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_PRIORIDADE = (HorizontalAlignment)1;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_PRIORIDADE = 1;
 
 		// Token: 0x0400105D RID: 4189
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_MODELO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_MODELO = 0;
 
 		// Token: 0x0400105E RID: 4190
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_VARIAVEL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_VARIAVEL = 0;
 
 		// Token: 0x0400105F RID: 4191
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_REFERENCIA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_REFERENCIA = 0;
 
 		// Token: 0x04001060 RID: 4192
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_PERIFERICO_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_PERIFERICO_INDICE = 0;
 
 		// Token: 0x04001061 RID: 4193
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_PERIFERICO_MODELO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_4_PERIFERICO_MODELO = 0;
 
 		// Token: 0x04001062 RID: 4194
-		public const int CONST_COLUNA_CTRL_8_NOME_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_CTRL_8_NOME_RT_850 = 0;
 
 		// Token: 0x04001063 RID: 4195
-		public const int CONST_COLUNA_CTRL_8_PORTA_RT_850 = (HorizontalAlignment)1;
+		public const int CONST_COLUNA_CTRL_8_PORTA_RT_850 = 1;
 
 		// Token: 0x04001064 RID: 4196
-		public const int CONST_COLUNA_CTRL_8_TIMEOUT_RT_850 = (HorizontalAlignment)2;
+		public const int CONST_COLUNA_CTRL_8_TIMEOUT_RT_850 = 2;
 
 		// Token: 0x04001065 RID: 4197
-		public const int CONST_COLUNA_CTRL_8_HAB_COMANDO_RT_850 = (HorizontalAlignment)3;
+		public const int CONST_COLUNA_CTRL_8_HAB_COMANDO_RT_850 = 3;
 
 		// Token: 0x04001066 RID: 4198
-		public const int CONST_COLUNA_CTRL_8_PRIORIDADE_RT_850 = (HorizontalAlignment)4;
+		public const int CONST_COLUNA_CTRL_8_PRIORIDADE_RT_850 = 4;
 
 		// Token: 0x04001067 RID: 4199
-		public const int CONST_COLUNA_CTRL_8_MODELO_RT_850 = (HorizontalAlignment)5;
+		public const int CONST_COLUNA_CTRL_8_MODELO_RT_850 = 5;
 
 		// Token: 0x04001068 RID: 4200
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_01_RT_850 = (HorizontalAlignment)6;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_01_RT_850 = 6;
 
 		// Token: 0x04001069 RID: 4201
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_01_RT_850 = (HorizontalAlignment)7;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_01_RT_850 = 7;
 
 		// Token: 0x0400106A RID: 4202
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_02_RT_850 = (HorizontalAlignment)8;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_02_RT_850 = 8;
 
 		// Token: 0x0400106B RID: 4203
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_02_RT_850 = (HorizontalAlignment)9;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_02_RT_850 = 9;
 
 		// Token: 0x0400106C RID: 4204
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_03_RT_850 = (HorizontalAlignment)10;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_03_RT_850 = 10;
 
 		// Token: 0x0400106D RID: 4205
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_03_RT_850 = (HorizontalAlignment)11;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_03_RT_850 = 11;
 
 		// Token: 0x0400106E RID: 4206
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_04_RT_850 = (HorizontalAlignment)12;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_04_RT_850 = 12;
 
 		// Token: 0x0400106F RID: 4207
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_04_RT_850 = (HorizontalAlignment)13;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_04_RT_850 = 13;
 
 		// Token: 0x04001070 RID: 4208
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_05_RT_850 = (HorizontalAlignment)14;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_05_RT_850 = 14;
 
 		// Token: 0x04001071 RID: 4209
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_05_RT_850 = (HorizontalAlignment)15;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_05_RT_850 = 15;
 
 		// Token: 0x04001072 RID: 4210
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_06_RT_850 = (HorizontalAlignment)16;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_06_RT_850 = 16;
 
 		// Token: 0x04001073 RID: 4211
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_06_RT_850 = (HorizontalAlignment)17;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_06_RT_850 = 17;
 
 		// Token: 0x04001074 RID: 4212
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_07_RT_850 = (HorizontalAlignment)18;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_07_RT_850 = 18;
 
 		// Token: 0x04001075 RID: 4213
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_07_RT_850 = (HorizontalAlignment)19;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_07_RT_850 = 19;
 
 		// Token: 0x04001076 RID: 4214
-		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_08_RT_850 = (HorizontalAlignment)20;
+		public const int CONST_COLUNA_CTRL_8_NOME_CTRL_08_RT_850 = 20;
 
 		// Token: 0x04001077 RID: 4215
-		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_08_RT_850 = (HorizontalAlignment)21;
+		public const int CONST_COLUNA_CTRL_8_INDICE_CTRL_08_RT_850 = 21;
 
 		// Token: 0x04001078 RID: 4216
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_1_RT_850 = (HorizontalAlignment)22;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_1_RT_850 = 22;
 
 		// Token: 0x04001079 RID: 4217
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_2_RT_850 = (HorizontalAlignment)23;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_2_RT_850 = 23;
 
 		// Token: 0x0400107A RID: 4218
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_3_RT_850 = (HorizontalAlignment)24;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_3_RT_850 = 24;
 
 		// Token: 0x0400107B RID: 4219
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_4_RT_850 = (HorizontalAlignment)25;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_4_RT_850 = 25;
 
 		// Token: 0x0400107C RID: 4220
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_5_RT_850 = (HorizontalAlignment)26;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_5_RT_850 = 26;
 
 		// Token: 0x0400107D RID: 4221
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_6_RT_850 = (HorizontalAlignment)27;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_6_RT_850 = 27;
 
 		// Token: 0x0400107E RID: 4222
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_7_RT_850 = (HorizontalAlignment)28;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_7_RT_850 = 28;
 
 		// Token: 0x0400107F RID: 4223
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_8_RT_850 = (HorizontalAlignment)29;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_8_RT_850 = 29;
 
 		// Token: 0x04001080 RID: 4224
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_9_RT_850 = (HorizontalAlignment)30;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_9_RT_850 = 30;
 
 		// Token: 0x04001081 RID: 4225
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_10_RT_850 = (HorizontalAlignment)31;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_10_RT_850 = 31;
 
 		// Token: 0x04001082 RID: 4226
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_11_RT_850 = (HorizontalAlignment)32;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_11_RT_850 = 32;
 
 		// Token: 0x04001083 RID: 4227
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_12_RT_850 = (HorizontalAlignment)33;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_12_RT_850 = 33;
 
 		// Token: 0x04001084 RID: 4228
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_13_RT_850 = (HorizontalAlignment)34;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_13_RT_850 = 34;
 
 		// Token: 0x04001085 RID: 4229
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_14_RT_850 = (HorizontalAlignment)35;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_14_RT_850 = 35;
 
 		// Token: 0x04001086 RID: 4230
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_15_RT_850 = (HorizontalAlignment)36;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_15_RT_850 = 36;
 
 		// Token: 0x04001087 RID: 4231
-		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_16_RT_850 = (HorizontalAlignment)37;
+		public const int CONST_COLUNA_CTRL_8_VAR_INDICE_16_RT_850 = 37;
 
 		// Token: 0x04001088 RID: 4232
-		public const int CONST_COLUNA_CTRL_8_VAR_REF_1_RT_850 = (HorizontalAlignment)38;
+		public const int CONST_COLUNA_CTRL_8_VAR_REF_1_RT_850 = 38;
 
 		// Token: 0x04001089 RID: 4233
-		public const int CONST_COLUNA_CTRL_8_VAR_REF_2_RT_850 = (HorizontalAlignment)39;
+		public const int CONST_COLUNA_CTRL_8_VAR_REF_2_RT_850 = 39;
 
 		// Token: 0x0400108A RID: 4234
-		public const int CONST_COLUNA_CTRL_8_VAR_REF_3_RT_850 = (HorizontalAlignment)40;
+		public const int CONST_COLUNA_CTRL_8_VAR_REF_3_RT_850 = 40;
 
 		// Token: 0x0400108B RID: 4235
-		public const int CONST_COLUNA_CTRL_8_VAR_REF_4_RT_850 = (HorizontalAlignment)41;
+		public const int CONST_COLUNA_CTRL_8_VAR_REF_4_RT_850 = 41;
 
 		// Token: 0x0400108C RID: 4236
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_1_RT_850 = (HorizontalAlignment)42;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_1_RT_850 = 42;
 
 		// Token: 0x0400108D RID: 4237
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_1_RT_850 = (HorizontalAlignment)43;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_1_RT_850 = 43;
 
 		// Token: 0x0400108E RID: 4238
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_2_RT_850 = (HorizontalAlignment)44;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_2_RT_850 = 44;
 
 		// Token: 0x0400108F RID: 4239
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_2_RT_850 = (HorizontalAlignment)45;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_2_RT_850 = 45;
 
 		// Token: 0x04001090 RID: 4240
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_3_RT_850 = (HorizontalAlignment)46;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_3_RT_850 = 46;
 
 		// Token: 0x04001091 RID: 4241
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_3_RT_850 = (HorizontalAlignment)47;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_3_RT_850 = 47;
 
 		// Token: 0x04001092 RID: 4242
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_4_RT_850 = (HorizontalAlignment)48;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_4_RT_850 = 48;
 
 		// Token: 0x04001093 RID: 4243
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_4_RT_850 = (HorizontalAlignment)49;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_4_RT_850 = 49;
 
 		// Token: 0x04001094 RID: 4244
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_5_RT_850 = (HorizontalAlignment)50;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_MODELO_5_RT_850 = 50;
 
 		// Token: 0x04001095 RID: 4245
-		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_5_RT_850 = (HorizontalAlignment)51;
+		public const int CONST_COLUNA_CTRL_8_PERIFERICO_INDICE_5_RT_850 = 51;
 
 		// Token: 0x04001096 RID: 4246
-		public const int CONST_RT_850_CTRL_8_NUMERO_CTRL = (HorizontalAlignment)8;
+		public const int CONST_RT_850_CTRL_8_NUMERO_CTRL = 8;
 
 		// Token: 0x04001097 RID: 4247
-		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_CTRL_8 = (HorizontalAlignment)15;
+		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_CTRL_8 = 15;
 
 		// Token: 0x04001098 RID: 4248
-		public const int CONST_RT_850_NUMERO_VAR_CTRL_8 = (HorizontalAlignment)16;
+		public const int CONST_RT_850_NUMERO_VAR_CTRL_8 = 16;
 
 		// Token: 0x04001099 RID: 4249
-		public const int CONST_RT_850_NUMERO_REF_CTRL_8 = (HorizontalAlignment)4;
+		public const int CONST_RT_850_NUMERO_REF_CTRL_8 = 4;
 
 		// Token: 0x0400109A RID: 4250
-		public const int CONST_RT_850_NUMERO_PERFERICO_CTRL_8 = (HorizontalAlignment)5;
+		public const int CONST_RT_850_NUMERO_PERFERICO_CTRL_8 = 5;
 
 		// Token: 0x0400109B RID: 4251
-		public const int CONST_RT_850_DEFAULT_PRIORIDADE = (HorizontalAlignment)1;
+		public const int CONST_RT_850_DEFAULT_PRIORIDADE = 1;
 
 		// Token: 0x0400109C RID: 4252
-		public const int CONST_RT_850_LMTE_INF_PRIORIDADE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_PRIORIDADE = 0;
 
 		// Token: 0x0400109D RID: 4253
-		public const int CONST_RT_850_LMTE_SUP_PRIORIDADE = (HorizontalAlignment)7;
+		public const int CONST_RT_850_LMTE_SUP_PRIORIDADE = 7;
 
 		// Token: 0x0400109E RID: 4254
-		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_VARIAVEIS = (HorizontalAlignment)15;
+		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_VARIAVEIS = 15;
 
 		// Token: 0x0400109F RID: 4255
-		public const int CONST_RT_850_NUMERO_MAXIMO_VARIAVEIS = (HorizontalAlignment)300;
+		public const int CONST_RT_850_NUMERO_MAXIMO_VARIAVEIS = 300;
 
 		// Token: 0x040010A0 RID: 4256
-		public const int CONST_RT_850_NUMERO_MAXIMO_PERIFERICO = (HorizontalAlignment)65;
+		public const int CONST_RT_850_NUMERO_MAXIMO_PERIFERICO = 65;
 
 		// Token: 0x040010A1 RID: 4257
-		public const int CONST_RT_850_NUMERO_MODELO_PERIFERICO = (HorizontalAlignment)29;
+		public const int CONST_RT_850_NUMERO_MODELO_PERIFERICO = 29;
 
 		// Token: 0x040010A2 RID: 4258
-		public const int CONST_RT_850_NUMERO_MAXIMO_CTRL_NOMES = (HorizontalAlignment)3;
+		public const int CONST_RT_850_NUMERO_MAXIMO_CTRL_NOMES = 3;
 
 		// Token: 0x040010A3 RID: 4259
-		public const int CONST_RT_850_NUMERO_MAXIMO_MODELOS = (HorizontalAlignment)60;
+		public const int CONST_RT_850_NUMERO_MAXIMO_MODELOS = 60;
 
 		// Token: 0x040010A4 RID: 4260
-		public const int CONST_RT_850_NUMERO_MSG_ALARMES = (HorizontalAlignment)6;
+		public const int CONST_RT_850_NUMERO_MSG_ALARMES = 6;
 
 		// Token: 0x040010A5 RID: 4261
-		public const int CONST_RT_850_NUMERO_MSG_ALARMES_CONFIGURAVEIS = (HorizontalAlignment)20;
+		public const int CONST_RT_850_NUMERO_MSG_ALARMES_CONFIGURAVEIS = 20;
 
 		// Token: 0x040010A6 RID: 4262
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_CANAL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_CANAL = 0;
 
 		// Token: 0x040010A7 RID: 4263
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_TIMEOUT = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_TIMEOUT = 0;
 
 		// Token: 0x040010A8 RID: 4264
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_COMANDO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_COMANDO = 0;
 
 		// Token: 0x040010A9 RID: 4265
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_PRIORIDADE = (HorizontalAlignment)1;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_PRIORIDADE = 1;
 
 		// Token: 0x040010AA RID: 4266
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_MODELO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_MODELO = 0;
 
 		// Token: 0x040010AB RID: 4267
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_VARIAVEL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_VARIAVEL = 0;
 
 		// Token: 0x040010AC RID: 4268
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_REFERENCIA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_REFERENCIA = 0;
 
 		// Token: 0x040010AD RID: 4269
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_PERIFERICO_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_PERIFERICO_INDICE = 0;
 
 		// Token: 0x040010AE RID: 4270
-		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_PERIFERICO_MODELO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_CTRL_8_PERIFERICO_MODELO = 0;
 
 		// Token: 0x040010AF RID: 4271
-		public const int CONST_RT_850_LMTE_INF_NUM_VARIAVEIS_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUM_VARIAVEIS_VISTA = 0;
 
 		// Token: 0x040010B0 RID: 4272
-		public const int CONST_RT_850_LMTE_SUP_NUM_VARIAVEIS_VISTA = (HorizontalAlignment)40;
+		public const int CONST_RT_850_LMTE_SUP_NUM_VARIAVEIS_VISTA = 40;
 
 		// Token: 0x040010B1 RID: 4273
-		public const int CONST_RT_850_DEFAULT_NUM_VARIAVEIS_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUM_VARIAVEIS_VISTA = 0;
 
 		// Token: 0x040010B2 RID: 4274
-		public const int CONST_RT_850_LMTE_INF_NUM_EQUIPAMENTOS_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_LMTE_INF_NUM_EQUIPAMENTOS_VISTA = 0;
 
 		// Token: 0x040010B3 RID: 4275
-		public const int CONST_RT_850_LMTE_SUP_NUM_EQUIPAMENTOS_VISTA = (HorizontalAlignment)20;
+		public const int CONST_RT_850_LMTE_SUP_NUM_EQUIPAMENTOS_VISTA = 20;
 
 		// Token: 0x040010B4 RID: 4276
-		public const int CONST_RT_850_DEFAULT_NUM_EQUIPAMENTOS_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_NUM_EQUIPAMENTOS_VISTA = 0;
 
 		// Token: 0x040010B5 RID: 4277
-		public const int CONST_RT_850_DEFAULT_INDICE_VISTA_CANAL = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_VISTA_CANAL = 0;
 
 		// Token: 0x040010B6 RID: 4278
-		public const int CONST_RT_850_DEFAULT_INDICE_VISTA_TIMEOUT = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_VISTA_TIMEOUT = 0;
 
 		// Token: 0x040010B7 RID: 4279
-		public const int CONST_RT_850_DEFAULT_INDICE_VISTA_COMANDO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_VISTA_COMANDO = 0;
 
 		// Token: 0x040010B8 RID: 4280
-		public const int CONST_RT_850_DEFAULT_PRIORIDADE_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_PRIORIDADE_VISTA = 0;
 
 		// Token: 0x040010B9 RID: 4281
-		public const int CONST_RT_850_DEFAULT_INDICE_VARIAVEIS_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_VARIAVEIS_VISTA = 0;
 
 		// Token: 0x040010BA RID: 4282
-		public const int CONST_RT_850_DEFAULT_INDICE_EQUIPAMENTOS_VISTA = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_INDICE_EQUIPAMENTOS_VISTA = 0;
 
 		// Token: 0x040010BB RID: 4283
-		public const int CONST_RT_850_DEFAULT_VISTA_SELECIONADO = (HorizontalAlignment)0;
+		public const int CONST_RT_850_DEFAULT_VISTA_SELECIONADO = 0;
 
 		// Token: 0x040010BC RID: 4284
-		public const int CONST_COLUNA_VARIAVEIS_VISTA_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_VARIAVEIS_VISTA_RT_850 = 0;
 
 		// Token: 0x040010BD RID: 4285
-		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_VARIAVEIS_VISTA = (HorizontalAlignment)14;
+		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_VARIAVEIS_VISTA = 14;
 
 		// Token: 0x040010BE RID: 4286
-		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_VISTA_HEIGHT_INICIAL = (HorizontalAlignment)22;
+		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_VISTA_HEIGHT_INICIAL = 22;
 
 		// Token: 0x040010BF RID: 4287
-		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_VISTA_WIDTH_SEM_BARRA = (HorizontalAlignment)212;
+		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_VISTA_WIDTH_SEM_BARRA = 212;
 
 		// Token: 0x040010C0 RID: 4288
-		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_VISTA_WIDTH_COM_BARRA = (HorizontalAlignment)229;
+		public const int CONST_RT_850_DATAGRIDVIEW_VARIAVEIS_VISTA_WIDTH_COM_BARRA = 229;
 
 		// Token: 0x040010C1 RID: 4289
-		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_EQUIPAMENTOS_VISTA = (HorizontalAlignment)14;
+		public const int CONST_RT_850_NUMERO_LINHAS_DATAGRIDVIEW_EQUIPAMENTOS_VISTA = 14;
 
 		// Token: 0x040010C2 RID: 4290
-		public const int CONST_RT_850_DATAGRIDVIEW_EQUIPAMENTOS_VISTA_HEIGHT_INICIAL = (HorizontalAlignment)22;
+		public const int CONST_RT_850_DATAGRIDVIEW_EQUIPAMENTOS_VISTA_HEIGHT_INICIAL = 22;
 
 		// Token: 0x040010C3 RID: 4291
-		public const int CONST_RT_850_DATAGRIDVIEW_EQUIPAMENTOS_VISTA_WIDTH_SEM_BARRA = (HorizontalAlignment)212;
+		public const int CONST_RT_850_DATAGRIDVIEW_EQUIPAMENTOS_VISTA_WIDTH_SEM_BARRA = 212;
 
 		// Token: 0x040010C4 RID: 4292
-		public const int CONST_RT_850_DATAGRIDVIEW_EQUIPAMENTOS_VISTA_WIDTH_COM_BARRA = (HorizontalAlignment)229;
+		public const int CONST_RT_850_DATAGRIDVIEW_EQUIPAMENTOS_VISTA_WIDTH_COM_BARRA = 229;
 
 		// Token: 0x040010C5 RID: 4293
-		public const int CONST_COLUNA_EQUIPAMENTOS_VISTA_RT_850 = (HorizontalAlignment)0;
+		public const int CONST_COLUNA_EQUIPAMENTOS_VISTA_RT_850 = 0;
 
 		// Token: 0x040010C6 RID: 4294
-		public const int OFFSET_TIPO_EQUIPAMENTO_TIPO_1 = (HorizontalAlignment)0;
+		public const int OFFSET_TIPO_EQUIPAMENTO_TIPO_1 = 0;
 
 		// Token: 0x040010C7 RID: 4295
-		public const int OFFSET_TIPO_EQUIPAMENTO_TIPO_4 = (HorizontalAlignment)80;
+		public const int OFFSET_TIPO_EQUIPAMENTO_TIPO_4 = 80;
 
 		// Token: 0x040010C8 RID: 4296
-		public const int OFFSET_TIPO_EQUIPAMENTO_TIPO_8 = (HorizontalAlignment)130;
+		public const int OFFSET_TIPO_EQUIPAMENTO_TIPO_8 = 130;
 
 		// Token: 0x040010C9 RID: 4297
-		public const int CONST_RT_850_MODELO_VISTA_DEFAULT_INDICE = (HorizontalAlignment)0;
+		public const int CONST_RT_850_MODELO_VISTA_DEFAULT_INDICE = 0;
 
 		// Token: 0x040010CA RID: 4298
 		public static string[] Nome_ctrl = new string[]
@@ -3704,16 +3704,16 @@ namespace iS800
 		public const bool CONST_NAO_MOSTRA_ERRO = false;
 
 		// Token: 0x040010CD RID: 4301
-		public const int CONST_RT_810_RELATORIO = (HorizontalAlignment)1;
+		public const int CONST_RT_810_RELATORIO = 1;
 
 		// Token: 0x040010CE RID: 4302
-		public const int CONST_RT_820_RELATORIO = (HorizontalAlignment)2;
+		public const int CONST_RT_820_RELATORIO = 2;
 
 		// Token: 0x040010CF RID: 4303
-		public const int CONST_RT_821_RELATORIO = (HorizontalAlignment)3;
+		public const int CONST_RT_821_RELATORIO = 3;
 
 		// Token: 0x040010D0 RID: 4304
-		public const int CONST_RT_850_RELATORIO = (HorizontalAlignment)4;
+		public const int CONST_RT_850_RELATORIO = 4;
 
 		// Token: 0x040010D1 RID: 4305
 		public static RT_geral.CTRL_TELA Telas_RT_810;
@@ -4010,22 +4010,22 @@ namespace iS800
 		public static RT_geral.Combo_ictel RT_850_Modelo;
 
 		// Token: 0x04001133 RID: 4403
-		public const int DNA_NAO_RECONHECIDO = (HorizontalAlignment)0;
+		public const int DNA_NAO_RECONHECIDO = 0;
 
 		// Token: 0x04001134 RID: 4404
-		public const int DNA_RT810_3_0 = (HorizontalAlignment)1;
+		public const int DNA_RT810_3_0 = 1;
 
 		// Token: 0x04001135 RID: 4405
-		public const int DNA_RT820_3_0 = (HorizontalAlignment)100;
+		public const int DNA_RT820_3_0 = 100;
 
 		// Token: 0x04001136 RID: 4406
-		public const int DNA_RT821_3_0 = (HorizontalAlignment)200;
+		public const int DNA_RT821_3_0 = 200;
 
 		// Token: 0x04001137 RID: 4407
-		public const int DNA_RT850_3_0 = (HorizontalAlignment)300;
+		public const int DNA_RT850_3_0 = 300;
 
 		// Token: 0x04001138 RID: 4408
-		public static int Equip_DNA = (HorizontalAlignment)0;
+		public static int Equip_DNA = 0;
 
 		// Token: 0x02000057 RID: 87
 		public struct Ctrl_erro
@@ -4110,7 +4110,7 @@ namespace iS800
 			public void AtualizaIndicePeloValor()
 			{
 				bool flag = false;
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				checked
 				{
 					int num2 = this.Numero_itens - 1;
@@ -4134,13 +4134,13 @@ namespace iS800
 			public void AtualizaIndiceValorPeloItem(string item)
 			{
 				bool flag = false;
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				checked
 				{
 					int num2 = this.Numero_itens - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(item, this.itens[i], false) == (DialogResult)0)
+						if (Operators.CompareString(item, this.itens[i], false) == 0)
 						{
 							flag = true;
 							this.Indice = i;

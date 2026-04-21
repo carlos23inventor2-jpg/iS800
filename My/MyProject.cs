@@ -96,7 +96,7 @@ namespace iS800.My
 		private static readonly MyProject.ThreadSafeObjectProvider<MyProject.MyWebServices> m_MyWebServicesObjectProvider = new MyProject.ThreadSafeObjectProvider<MyProject.MyWebServices>();
 
 		// Token: 0x02000005 RID: 5
-		[EditorBrowsable(1)]
+		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 		[MyGroupCollection("System.Windows.Forms.Form", "Create__Instance__", "Dispose__Instance__", "My.MyProject.Forms")]
 		internal sealed class MyForms
 		{
@@ -1180,35 +1180,35 @@ namespace iS800.My
 			}
 
 			// Token: 0x06000063 RID: 99 RVA: 0x002633E4 File Offset: 0x002617E4
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			[DebuggerHidden]
 			public MyForms()
 			{
 			}
 
 			// Token: 0x06000064 RID: 100 RVA: 0x002633EC File Offset: 0x002617EC
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			public override bool Equals(object o)
 			{
 				return base.Equals(RuntimeHelpers.GetObjectValue(o));
 			}
 
 			// Token: 0x06000065 RID: 101 RVA: 0x00263408 File Offset: 0x00261808
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			public override int GetHashCode()
 			{
 				return base.GetHashCode();
 			}
 
 			// Token: 0x06000066 RID: 102 RVA: 0x0026341C File Offset: 0x0026181C
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			internal Type GetType()
 			{
 				return typeof(MyProject.MyForms);
 			}
 
 			// Token: 0x06000067 RID: 103 RVA: 0x00263434 File Offset: 0x00261834
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			public override string ToString()
 			{
 				return base.ToString();
@@ -1350,11 +1350,11 @@ namespace iS800.My
 
 		// Token: 0x02000006 RID: 6
 		[MyGroupCollection("System.Web.Services.Protocols.SoapHttpClientProtocol", "Create__Instance__", "Dispose__Instance__", "")]
-		[EditorBrowsable(1)]
+		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 		internal sealed class MyWebServices
 		{
 			// Token: 0x06000068 RID: 104 RVA: 0x00263448 File Offset: 0x00261848
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			[DebuggerHidden]
 			public override bool Equals(object o)
 			{
@@ -1363,7 +1363,7 @@ namespace iS800.My
 
 			// Token: 0x06000069 RID: 105 RVA: 0x00263464 File Offset: 0x00261864
 			[DebuggerHidden]
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			public override int GetHashCode()
 			{
 				return base.GetHashCode();
@@ -1371,7 +1371,7 @@ namespace iS800.My
 
 			// Token: 0x0600006A RID: 106 RVA: 0x00263478 File Offset: 0x00261878
 			[DebuggerHidden]
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			internal Type GetType()
 			{
 				return typeof(MyProject.MyWebServices);
@@ -1379,7 +1379,7 @@ namespace iS800.My
 
 			// Token: 0x0600006B RID: 107 RVA: 0x00263490 File Offset: 0x00261890
 			[DebuggerHidden]
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			public override string ToString()
 			{
 				return base.ToString();
@@ -1405,14 +1405,14 @@ namespace iS800.My
 
 			// Token: 0x0600006E RID: 110 RVA: 0x002634DC File Offset: 0x002618DC
 			[DebuggerHidden]
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			public MyWebServices()
 			{
 			}
 		}
 
 		// Token: 0x02000007 RID: 7
-		[EditorBrowsable(1)]
+		[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 		[ComVisible(false)]
 		internal sealed class ThreadSafeObjectProvider<T> where T : new()
 		{
@@ -1432,7 +1432,7 @@ namespace iS800.My
 			}
 
 			// Token: 0x06000070 RID: 112 RVA: 0x0026350C File Offset: 0x0026190C
-			[EditorBrowsable(1)]
+			[EditorBrowsable((System.ComponentModel.EditorBrowsableState)1)]
 			[DebuggerHidden]
 			public ThreadSafeObjectProvider()
 			{

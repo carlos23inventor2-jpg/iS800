@@ -1729,33 +1729,33 @@ namespace iS800
 		{
 			Mod_VA.Config_VA220.Entradas_digitais = new int[9];
 			Mod_VA.Config_VA220.Saidas_digitais = new int[9];
-			Mod_VA.Config_VA220.End_estacao = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.End_mestre = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Ctrl_nivel_fonte = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Modo_operacao = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Numero_max_bombas = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Tempo_entre_acionamentos = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Tempo_falha_parada = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Tempo_falha_partida = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Tempo_minimo_operando = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Tempo_minimo_parado = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Tempo_ptt = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[1] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[2] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[3] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[4] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[5] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[6] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[7] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Saidas_digitais[8] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[1] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[2] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[3] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[4] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[5] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[6] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[7] = (HorizontalAlignment)0;
-			Mod_VA.Config_VA220.Entradas_digitais[8] = (HorizontalAlignment)0;
+			Mod_VA.Config_VA220.End_estacao = 0;
+			Mod_VA.Config_VA220.End_mestre = 0;
+			Mod_VA.Config_VA220.Ctrl_nivel_fonte = 0;
+			Mod_VA.Config_VA220.Modo_operacao = 0;
+			Mod_VA.Config_VA220.Numero_max_bombas = 0;
+			Mod_VA.Config_VA220.Tempo_entre_acionamentos = 0;
+			Mod_VA.Config_VA220.Tempo_falha_parada = 0;
+			Mod_VA.Config_VA220.Tempo_falha_partida = 0;
+			Mod_VA.Config_VA220.Tempo_minimo_operando = 0;
+			Mod_VA.Config_VA220.Tempo_minimo_parado = 0;
+			Mod_VA.Config_VA220.Tempo_ptt = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[1] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[2] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[3] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[4] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[5] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[6] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[7] = 0;
+			Mod_VA.Config_VA220.Saidas_digitais[8] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[1] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[2] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[3] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[4] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[5] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[6] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[7] = 0;
+			Mod_VA.Config_VA220.Entradas_digitais[8] = 0;
 		}
 
 		// Token: 0x06002517 RID: 9495 RVA: 0x00412D8C File Offset: 0x0041118C
@@ -1802,13 +1802,13 @@ namespace iS800
 				while (i > 0)
 				{
 					i--;
-					array[0] = (HorizontalAlignment)1;
+					array[0] = 1;
 					Comunicacao.CMD_Tx_condax(0, 0, 100, 1, array);
 					do
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -1817,21 +1817,21 @@ namespace iS800
 						this.Mensagem_VA220("Leitura configuração geral - Ok", 0);
 						goto IL_CD;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Erro leitura configuração geral - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Erro leitura configuração geral - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_VA220("Erro leitura configuração geral - não determinado", 1);
 						return;
@@ -1842,13 +1842,13 @@ namespace iS800
 				while (i > 0)
 				{
 					i--;
-					array[0] = (HorizontalAlignment)4;
+					array[0] = 4;
 					Comunicacao.CMD_Tx_condax(0, 0, 100, 1, array);
 					do
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -1857,21 +1857,21 @@ namespace iS800
 						this.Mensagem_VA220("Leitura configuração I/O - Ok", 0);
 						goto IL_180;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Erro leitura configuração I/O - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Erro leitura configuração I/O - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_VA220("Erro leitura configuração I/O - não determinado", 1);
 						return;
@@ -1953,28 +1953,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_VA220("Habilitação de configuração - Ok", 0);
 						goto IL_B8;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Habilitação de configuração - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Habilitação de configuração - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_VA220("Habilitação de configuração - não determinado", 1);
 						return;
@@ -1991,28 +1991,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_VA220("Escrita configuração geral - Ok", 0);
 						goto IL_163;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Escrita configuração geral - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Escrita configuração geral - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_VA220("Escrita configuração geral - não determinado", 1);
 						return;
@@ -2029,28 +2029,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_VA220("Escrita configuração I/O - Ok", 0);
 						goto IL_20E;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Escrita configuração I/O - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Escrita configuração I/O - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_VA220("Escrita configuração I/O - não determinado", 1);
 						return;
@@ -2066,28 +2066,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					while (Comunicacao.Ctrl_Com.Frame == 255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_VA220("Término de configuração - Ok", 0);
 						goto IL_2B2;
 					case 2:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Término de configuração - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == (DialogResult)0)
+						if (i == 0)
 						{
 							this.Mensagem_VA220("Término de configuração - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == (DialogResult)0)
+					if (i == 0)
 					{
 						this.Mensagem_VA220("Término de configuração - não determinado", 1);
 						return;

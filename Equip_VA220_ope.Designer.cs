@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x0200009E RID: 158
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Equip_VA220_ope : global::System.Windows.Forms.Form
 	{
 		// Token: 0x0600256A RID: 9578 RVA: 0x0041537C File Offset: 0x0041377C
@@ -195,7 +194,7 @@ namespace iS800
 			this.SuspendLayout();
 			this.CheckBox_setpoints.AutoSize = true;
 			this.CheckBox_setpoints.Checked = true;
-			this.CheckBox_setpoints.CheckState = (HorizontalAlignment)1;
+			this.CheckBox_setpoints.CheckState = 1;
 			global::System.Windows.Forms.Control checkBox_setpoints = this.CheckBox_setpoints;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(9, 19);
@@ -205,7 +204,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(94, 17);
 			checkBox_setpoints2.Size = size;
-			this.CheckBox_setpoints.TabIndex = (HorizontalAlignment)4;
+			this.CheckBox_setpoints.TabIndex = 4;
 			this.CheckBox_setpoints.Text = "Hab. setpoints";
 			this.CheckBox_setpoints.UseVisualStyleBackColor = true;
 			this.Grupo_endereco.Controls.Add(this.Box_Msg);
@@ -225,7 +224,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_endereco2 = this.Grupo_endereco;
 			size = new global::System.Drawing.Size(310, 194);
 			grupo_endereco2.Size = size;
-			this.Grupo_endereco.TabIndex = (HorizontalAlignment)1;
+			this.Grupo_endereco.TabIndex = 1;
 			this.Grupo_endereco.TabStop = false;
 			this.Grupo_endereco.Text = "Endereço da estação";
 			global::System.Windows.Forms.Control box_Msg = this.Box_Msg;
@@ -235,9 +234,9 @@ namespace iS800
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new global::System.Drawing.Size(286, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = (HorizontalAlignment)11;
+			this.Box_Msg.TabIndex = 11;
 			this.Box_Msg.TabStop = false;
-			this.Box_Msg.TextAlign = (HorizontalAlignment)2;
+			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control button_escrever = this.Button_escrever;
 			location = new global::System.Drawing.Point(34, 126);
 			button_escrever.Location = location;
@@ -245,7 +244,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_escrever2 = this.Button_escrever;
 			size = new global::System.Drawing.Size(127, 28);
 			button_escrever2.Size = size;
-			this.Button_escrever.TabIndex = (HorizontalAlignment)10;
+			this.Button_escrever.TabIndex = 10;
 			this.Button_escrever.Text = "Escrever";
 			this.Button_escrever.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button_ler = this.Button_ler;
@@ -255,7 +254,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_ler2 = this.Button_ler;
 			size = new global::System.Drawing.Size(127, 28);
 			button_ler2.Size = size;
-			this.Button_ler.TabIndex = (HorizontalAlignment)9;
+			this.Button_ler.TabIndex = 9;
 			this.Button_ler.Text = "Ler";
 			this.Button_ler.UseVisualStyleBackColor = true;
 			this.GroupBox_opcoes.Controls.Add(this.CheckBox_relogio);
@@ -271,7 +270,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_opcoes2 = this.GroupBox_opcoes;
 			size = new global::System.Drawing.Size(109, 142);
 			groupBox_opcoes2.Size = size;
-			this.GroupBox_opcoes.TabIndex = (HorizontalAlignment)3;
+			this.GroupBox_opcoes.TabIndex = 3;
 			this.GroupBox_opcoes.TabStop = false;
 			this.GroupBox_opcoes.Text = "Opções";
 			this.CheckBox_relogio.AutoSize = true;
@@ -282,7 +281,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_relogio2 = this.CheckBox_relogio;
 			size = new global::System.Drawing.Size(83, 17);
 			checkBox_relogio2.Size = size;
-			this.CheckBox_relogio.TabIndex = (HorizontalAlignment)9;
+			this.CheckBox_relogio.TabIndex = 9;
 			this.CheckBox_relogio.Text = "Hab. relógio";
 			this.CheckBox_relogio.UseVisualStyleBackColor = true;
 			this.CheckBox_temperatura.AutoSize = true;
@@ -293,7 +292,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_temperatura2 = this.CheckBox_temperatura;
 			size = new global::System.Drawing.Size(78, 17);
 			checkBox_temperatura2.Size = size;
-			this.CheckBox_temperatura.TabIndex = (HorizontalAlignment)8;
+			this.CheckBox_temperatura.TabIndex = 8;
 			this.CheckBox_temperatura.Text = "Hab. temp.";
 			this.CheckBox_temperatura.UseVisualStyleBackColor = true;
 			this.CheckBox_alarmes.AutoSize = true;
@@ -304,7 +303,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_alarmes2 = this.CheckBox_alarmes;
 			size = new global::System.Drawing.Size(88, 17);
 			checkBox_alarmes2.Size = size;
-			this.CheckBox_alarmes.TabIndex = (HorizontalAlignment)7;
+			this.CheckBox_alarmes.TabIndex = 7;
 			this.CheckBox_alarmes.Text = "Hab. alarmes";
 			this.CheckBox_alarmes.UseVisualStyleBackColor = true;
 			this.CheckBox_ponta.AutoSize = true;
@@ -315,7 +314,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_ponta2 = this.CheckBox_ponta;
 			size = new global::System.Drawing.Size(79, 17);
 			checkBox_ponta2.Size = size;
-			this.CheckBox_ponta.TabIndex = (HorizontalAlignment)6;
+			this.CheckBox_ponta.TabIndex = 6;
 			this.CheckBox_ponta.Text = "Hab. ponta";
 			this.CheckBox_ponta.UseVisualStyleBackColor = true;
 			this.CheckBox_timer.AutoSize = true;
@@ -326,7 +325,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_timer2 = this.CheckBox_timer;
 			size = new global::System.Drawing.Size(74, 17);
 			checkBox_timer2.Size = size;
-			this.CheckBox_timer.TabIndex = (HorizontalAlignment)5;
+			this.CheckBox_timer.TabIndex = 5;
 			this.CheckBox_timer.Text = "Hab. timer";
 			this.CheckBox_timer.UseVisualStyleBackColor = true;
 			this.Label_end_mestre.AutoSize = true;
@@ -337,7 +336,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_mestre2 = this.Label_end_mestre;
 			size = new global::System.Drawing.Size(70, 13);
 			label_end_mestre2.Size = size;
-			this.Label_end_mestre.TabIndex = (HorizontalAlignment)2;
+			this.Label_end_mestre.TabIndex = 2;
 			this.Label_end_mestre.Text = "End. Mestre :";
 			this.Label_end_estacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_estacao = this.Label_end_estacao;
@@ -347,7 +346,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_estacao2 = this.Label_end_estacao;
 			size = new global::System.Drawing.Size(77, 13);
 			label_end_estacao2.Size = size;
-			this.Label_end_estacao.TabIndex = (HorizontalAlignment)2;
+			this.Label_end_estacao.TabIndex = 2;
 			this.Label_end_estacao.Text = "End. Estação :";
 			global::System.Windows.Forms.Control vscroll_end_mestre = this.VScroll_end_mestre;
 			location = new global::System.Drawing.Point(144, 53);
@@ -356,7 +355,7 @@ namespace iS800
 			global::System.Windows.Forms.Control vscroll_end_mestre2 = this.VScroll_end_mestre;
 			size = new global::System.Drawing.Size(26, 21);
 			vscroll_end_mestre2.Size = size;
-			this.VScroll_end_mestre.TabIndex = (HorizontalAlignment)1;
+			this.VScroll_end_mestre.TabIndex = 1;
 			global::System.Windows.Forms.Control vscroll_end_estacao = this.VScroll_end_estacao;
 			location = new global::System.Drawing.Point(144, 25);
 			vscroll_end_estacao.Location = location;
@@ -364,7 +363,7 @@ namespace iS800
 			global::System.Windows.Forms.Control vscroll_end_estacao2 = this.VScroll_end_estacao;
 			size = new global::System.Drawing.Size(26, 21);
 			vscroll_end_estacao2.Size = size;
-			this.VScroll_end_estacao.TabIndex = (HorizontalAlignment)1;
+			this.VScroll_end_estacao.TabIndex = 1;
 			global::System.Windows.Forms.Control valor_end_mestre = this.Valor_end_mestre;
 			location = new global::System.Drawing.Point(94, 53);
 			valor_end_mestre.Location = location;
@@ -372,8 +371,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_mestre2 = this.Valor_end_mestre;
 			size = new global::System.Drawing.Size(41, 20);
 			valor_end_mestre2.Size = size;
-			this.Valor_end_mestre.TabIndex = (HorizontalAlignment)2;
-			this.Valor_end_mestre.TextAlign = (HorizontalAlignment)1;
+			this.Valor_end_mestre.TabIndex = 2;
+			this.Valor_end_mestre.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_end_estacao = this.Valor_end_estacao;
 			location = new global::System.Drawing.Point(94, 25);
 			valor_end_estacao.Location = location;
@@ -381,8 +380,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_estacao2 = this.Valor_end_estacao;
 			size = new global::System.Drawing.Size(41, 20);
 			valor_end_estacao2.Size = size;
-			this.Valor_end_estacao.TabIndex = (HorizontalAlignment)2;
-			this.Valor_end_estacao.TextAlign = (HorizontalAlignment)1;
+			this.Valor_end_estacao.TabIndex = 2;
+			this.Valor_end_estacao.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.Grupo_setpoint.Controls.Add(this.Grupo_gerais);
 			this.Grupo_setpoint.Controls.Add(this.Grupo_niveis);
 			this.Grupo_setpoint.Controls.Add(this.Grupo_origem);
@@ -393,7 +392,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_setpoint2 = this.Grupo_setpoint;
 			size = new global::System.Drawing.Size(400, 409);
 			grupo_setpoint2.Size = size;
-			this.Grupo_setpoint.TabIndex = (HorizontalAlignment)11;
+			this.Grupo_setpoint.TabIndex = 11;
 			this.Grupo_setpoint.TabStop = false;
 			this.Grupo_setpoint.Text = "Setpoints";
 			this.Grupo_gerais.Controls.Add(this.Label_pressao_controle);
@@ -409,7 +408,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_gerais2 = this.Grupo_gerais;
 			size = new global::System.Drawing.Size(359, 102);
 			grupo_gerais2.Size = size;
-			this.Grupo_gerais.TabIndex = (HorizontalAlignment)21;
+			this.Grupo_gerais.TabIndex = 21;
 			this.Grupo_gerais.TabStop = false;
 			this.Grupo_gerais.Text = "Controles gerais";
 			this.Label_pressao_controle.AutoSize = true;
@@ -420,7 +419,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_pressao_controle2 = this.Label_pressao_controle;
 			size = new global::System.Drawing.Size(188, 13);
 			label_pressao_controle2.Size = size;
-			this.Label_pressao_controle.TabIndex = (HorizontalAlignment)6;
+			this.Label_pressao_controle.TabIndex = 6;
 			this.Label_pressao_controle.Text = "Pressão mínima de controle (5 - 30%) :";
 			this.Label_pressao_succao.AutoSize = true;
 			global::System.Windows.Forms.Control label_pressao_succao = this.Label_pressao_succao;
@@ -430,7 +429,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_pressao_succao2 = this.Label_pressao_succao;
 			size = new global::System.Drawing.Size(185, 13);
 			label_pressao_succao2.Size = size;
-			this.Label_pressao_succao.TabIndex = (HorizontalAlignment)7;
+			this.Label_pressao_succao.TabIndex = 7;
 			this.Label_pressao_succao.Text = "Pressão mínima de sucção (5 - 30%) :";
 			this.Label_tempo_mais_motor.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_mais_motor = this.Label_tempo_mais_motor;
@@ -440,7 +439,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_tempo_mais_motor2 = this.Label_tempo_mais_motor;
 			size = new global::System.Drawing.Size(210, 13);
 			label_tempo_mais_motor2.Size = size;
-			this.Label_tempo_mais_motor.TabIndex = (HorizontalAlignment)8;
+			this.Label_tempo_mais_motor.TabIndex = 8;
 			this.Label_tempo_mais_motor.Text = "Tempo p/ ligar + uma bomba (0 - 180 min) :";
 			global::System.Windows.Forms.Control valor_pressao_controle = this.Valor_pressao_controle;
 			location = new global::System.Drawing.Point(268, 67);
@@ -449,8 +448,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_pressao_controle2 = this.Valor_pressao_controle;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_pressao_controle2.Size = size;
-			this.Valor_pressao_controle.TabIndex = (HorizontalAlignment)24;
-			this.Valor_pressao_controle.TextAlign = (HorizontalAlignment)1;
+			this.Valor_pressao_controle.TabIndex = 24;
+			this.Valor_pressao_controle.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_pressao_succao = this.Valor_pressao_succao;
 			location = new global::System.Drawing.Point(268, 44);
 			valor_pressao_succao.Location = location;
@@ -458,8 +457,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_pressao_succao2 = this.Valor_pressao_succao;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_pressao_succao2.Size = size;
-			this.Valor_pressao_succao.TabIndex = (HorizontalAlignment)23;
-			this.Valor_pressao_succao.TextAlign = (HorizontalAlignment)1;
+			this.Valor_pressao_succao.TabIndex = 23;
+			this.Valor_pressao_succao.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_mais_bomba = this.Valor_tempo_mais_bomba;
 			location = new global::System.Drawing.Point(268, 21);
 			valor_tempo_mais_bomba.Location = location;
@@ -467,8 +466,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_tempo_mais_bomba2 = this.Valor_tempo_mais_bomba;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_tempo_mais_bomba2.Size = size;
-			this.Valor_tempo_mais_bomba.TabIndex = (HorizontalAlignment)22;
-			this.Valor_tempo_mais_bomba.TextAlign = (HorizontalAlignment)1;
+			this.Valor_tempo_mais_bomba.TabIndex = 22;
+			this.Valor_tempo_mais_bomba.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.Grupo_niveis.Controls.Add(this.Label_nivel_bomba_4);
 			this.Grupo_niveis.Controls.Add(this.Label_nivel_bomba_3);
 			this.Grupo_niveis.Controls.Add(this.Label_nivel_bomba_2);
@@ -486,7 +485,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_niveis2 = this.Grupo_niveis;
 			size = new global::System.Drawing.Size(359, 158);
 			grupo_niveis2.Size = size;
-			this.Grupo_niveis.TabIndex = (HorizontalAlignment)12;
+			this.Grupo_niveis.TabIndex = 12;
 			this.Grupo_niveis.TabStop = false;
 			this.Grupo_niveis.Text = "Controles das bombas";
 			this.Label_nivel_bomba_4.AutoSize = true;
@@ -497,7 +496,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_bomba_2 = this.Label_nivel_bomba_4;
 			size = new global::System.Drawing.Size(169, 13);
 			label_nivel_bomba_2.Size = size;
-			this.Label_nivel_bomba_4.TabIndex = (HorizontalAlignment)9;
+			this.Label_nivel_bomba_4.TabIndex = 9;
 			this.Label_nivel_bomba_4.Text = "Nível p/ ligar bomba 4 (0 - 100%) :";
 			this.Label_nivel_bomba_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_bomba_3 = this.Label_nivel_bomba_3;
@@ -507,7 +506,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_bomba_4 = this.Label_nivel_bomba_3;
 			size = new global::System.Drawing.Size(169, 13);
 			label_nivel_bomba_4.Size = size;
-			this.Label_nivel_bomba_3.TabIndex = (HorizontalAlignment)8;
+			this.Label_nivel_bomba_3.TabIndex = 8;
 			this.Label_nivel_bomba_3.Text = "Nível p/ ligar bomba 3 (0 - 100%) :";
 			this.Label_nivel_bomba_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_bomba_5 = this.Label_nivel_bomba_2;
@@ -517,7 +516,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_bomba_6 = this.Label_nivel_bomba_2;
 			size = new global::System.Drawing.Size(169, 13);
 			label_nivel_bomba_6.Size = size;
-			this.Label_nivel_bomba_2.TabIndex = (HorizontalAlignment)10;
+			this.Label_nivel_bomba_2.TabIndex = 10;
 			this.Label_nivel_bomba_2.Text = "Nível p/ ligar bomba 2 (0 - 100%) :";
 			this.Label_nivel_bomba_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_bomba_7 = this.Label_nivel_bomba_1;
@@ -527,7 +526,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_bomba_8 = this.Label_nivel_bomba_1;
 			size = new global::System.Drawing.Size(169, 13);
 			label_nivel_bomba_8.Size = size;
-			this.Label_nivel_bomba_1.TabIndex = (HorizontalAlignment)12;
+			this.Label_nivel_bomba_1.TabIndex = 12;
 			this.Label_nivel_bomba_1.Text = "Nível p/ ligar bomba 1 (0 - 100%) :";
 			this.Label_nivel_desejado.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_desejado = this.Label_nivel_desejado;
@@ -537,7 +536,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_desejado2 = this.Label_nivel_desejado;
 			size = new global::System.Drawing.Size(198, 13);
 			label_nivel_desejado2.Size = size;
-			this.Label_nivel_desejado.TabIndex = (HorizontalAlignment)11;
+			this.Label_nivel_desejado.TabIndex = 11;
 			this.Label_nivel_desejado.Text = "Nível desejado para desligar (0 - 100%) :";
 			global::System.Windows.Forms.Control valor_nivel_B = this.Valor_nivel_B4;
 			location = new global::System.Drawing.Point(268, 124);
@@ -546,8 +545,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_B2 = this.Valor_nivel_B4;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_B2.Size = size;
-			this.Valor_nivel_B4.TabIndex = (HorizontalAlignment)17;
-			this.Valor_nivel_B4.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_B4.TabIndex = 17;
+			this.Valor_nivel_B4.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_B3 = this.Valor_nivel_B3;
 			location = new global::System.Drawing.Point(268, 99);
 			valor_nivel_B3.Location = location;
@@ -555,8 +554,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_B4 = this.Valor_nivel_B3;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_B4.Size = size;
-			this.Valor_nivel_B3.TabIndex = (HorizontalAlignment)16;
-			this.Valor_nivel_B3.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_B3.TabIndex = 16;
+			this.Valor_nivel_B3.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_B5 = this.Valor_nivel_B2;
 			location = new global::System.Drawing.Point(268, 74);
 			valor_nivel_B5.Location = location;
@@ -564,8 +563,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_B6 = this.Valor_nivel_B2;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_B6.Size = size;
-			this.Valor_nivel_B2.TabIndex = (HorizontalAlignment)15;
-			this.Valor_nivel_B2.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_B2.TabIndex = 15;
+			this.Valor_nivel_B2.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_B7 = this.Valor_nivel_B1;
 			location = new global::System.Drawing.Point(268, 49);
 			valor_nivel_B7.Location = location;
@@ -573,8 +572,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_B8 = this.Valor_nivel_B1;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_B8.Size = size;
-			this.Valor_nivel_B1.TabIndex = (HorizontalAlignment)14;
-			this.Valor_nivel_B1.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_B1.TabIndex = 14;
+			this.Valor_nivel_B1.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_desejado = this.Valor_nivel_desejado;
 			location = new global::System.Drawing.Point(268, 24);
 			valor_nivel_desejado.Location = location;
@@ -582,8 +581,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_desejado2 = this.Valor_nivel_desejado;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_desejado2.Size = size;
-			this.Valor_nivel_desejado.TabIndex = (HorizontalAlignment)13;
-			this.Valor_nivel_desejado.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_desejado.TabIndex = 13;
+			this.Valor_nivel_desejado.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.Grupo_origem.Controls.Add(this.Label_nivel_ligamento);
 			this.Grupo_origem.Controls.Add(this.Label_nivel_desligamento);
 			this.Grupo_origem.Controls.Add(this.Valor_nivel_ligamento);
@@ -595,7 +594,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_origem2 = this.Grupo_origem;
 			size = new global::System.Drawing.Size(359, 83);
 			grupo_origem2.Size = size;
-			this.Grupo_origem.TabIndex = (HorizontalAlignment)18;
+			this.Grupo_origem.TabIndex = 18;
 			this.Grupo_origem.TabStop = false;
 			this.Grupo_origem.Text = "Controles relacionados com nível fonte";
 			this.Label_nivel_ligamento.AutoSize = true;
@@ -606,7 +605,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_ligamento2 = this.Label_nivel_ligamento;
 			size = new global::System.Drawing.Size(137, 13);
 			label_nivel_ligamento2.Size = size;
-			this.Label_nivel_ligamento.TabIndex = (HorizontalAlignment)5;
+			this.Label_nivel_ligamento.TabIndex = 5;
 			this.Label_nivel_ligamento.Text = "Nível ligamento (0 - 100%) :";
 			this.Label_nivel_desligamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_desligamento = this.Label_nivel_desligamento;
@@ -616,7 +615,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_nivel_desligamento2 = this.Label_nivel_desligamento;
 			size = new global::System.Drawing.Size(154, 13);
 			label_nivel_desligamento2.Size = size;
-			this.Label_nivel_desligamento.TabIndex = (HorizontalAlignment)6;
+			this.Label_nivel_desligamento.TabIndex = 6;
 			this.Label_nivel_desligamento.Text = "Nível desligamento (0 - 100%) :";
 			global::System.Windows.Forms.Control valor_nivel_ligamento = this.Valor_nivel_ligamento;
 			location = new global::System.Drawing.Point(268, 49);
@@ -625,8 +624,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_ligamento2 = this.Valor_nivel_ligamento;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_ligamento2.Size = size;
-			this.Valor_nivel_ligamento.TabIndex = (HorizontalAlignment)20;
-			this.Valor_nivel_ligamento.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_ligamento.TabIndex = 20;
+			this.Valor_nivel_ligamento.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_desligamento = this.Valor_nivel_desligamento;
 			location = new global::System.Drawing.Point(268, 25);
 			valor_nivel_desligamento.Location = location;
@@ -634,8 +633,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_nivel_desligamento2 = this.Valor_nivel_desligamento;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_nivel_desligamento2.Size = size;
-			this.Valor_nivel_desligamento.TabIndex = (HorizontalAlignment)19;
-			this.Valor_nivel_desligamento.TextAlign = (HorizontalAlignment)1;
+			this.Valor_nivel_desligamento.TabIndex = 19;
+			this.Valor_nivel_desligamento.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.Grupo_alarmes.Controls.Add(this.GroupBox_nivel_alto);
 			this.Grupo_alarmes.Controls.Add(this.GroupBox_nivel_baixo);
 			this.Grupo_alarmes.Controls.Add(this.CheckBox_alm_rq);
@@ -652,7 +651,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_alarmes2 = this.Grupo_alarmes;
 			size = new global::System.Drawing.Size(310, 210);
 			grupo_alarmes2.Size = size;
-			this.Grupo_alarmes.TabIndex = (HorizontalAlignment)82;
+			this.Grupo_alarmes.TabIndex = 82;
 			this.Grupo_alarmes.TabStop = false;
 			this.Grupo_alarmes.Text = "Alarmes";
 			this.GroupBox_nivel_alto.Controls.Add(this.Valor_NA_T);
@@ -667,7 +666,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_nivel_alto2 = this.GroupBox_nivel_alto;
 			size = new global::System.Drawing.Size(99, 151);
 			groupBox_nivel_alto2.Size = size;
-			this.GroupBox_nivel_alto.TabIndex = (HorizontalAlignment)90;
+			this.GroupBox_nivel_alto.TabIndex = 90;
 			this.GroupBox_nivel_alto.TabStop = false;
 			this.GroupBox_nivel_alto.Text = "Nível Alto";
 			global::System.Windows.Forms.Control valor_NA_T = this.Valor_NA_T;
@@ -677,8 +676,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NA_T2 = this.Valor_NA_T;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NA_T2.Size = size;
-			this.Valor_NA_T.TabIndex = (HorizontalAlignment)95;
-			this.Valor_NA_T.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NA_T.TabIndex = 95;
+			this.Valor_NA_T.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NA_B = this.Valor_NA_B4;
 			location = new global::System.Drawing.Point(16, 96);
 			valor_NA_B.Location = location;
@@ -686,8 +685,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NA_B2 = this.Valor_NA_B4;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NA_B2.Size = size;
-			this.Valor_NA_B4.TabIndex = (HorizontalAlignment)94;
-			this.Valor_NA_B4.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NA_B4.TabIndex = 94;
+			this.Valor_NA_B4.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NA_B3 = this.Valor_NA_B3;
 			location = new global::System.Drawing.Point(16, 71);
 			valor_NA_B3.Location = location;
@@ -695,8 +694,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NA_B4 = this.Valor_NA_B3;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NA_B4.Size = size;
-			this.Valor_NA_B3.TabIndex = (HorizontalAlignment)93;
-			this.Valor_NA_B3.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NA_B3.TabIndex = 93;
+			this.Valor_NA_B3.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NA_B5 = this.Valor_NA_B2;
 			location = new global::System.Drawing.Point(16, 46);
 			valor_NA_B5.Location = location;
@@ -704,8 +703,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NA_B6 = this.Valor_NA_B2;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NA_B6.Size = size;
-			this.Valor_NA_B2.TabIndex = (HorizontalAlignment)92;
-			this.Valor_NA_B2.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NA_B2.TabIndex = 92;
+			this.Valor_NA_B2.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NA_B7 = this.Valor_NA_B1;
 			location = new global::System.Drawing.Point(16, 21);
 			valor_NA_B7.Location = location;
@@ -713,8 +712,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NA_B8 = this.Valor_NA_B1;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NA_B8.Size = size;
-			this.Valor_NA_B1.TabIndex = (HorizontalAlignment)91;
-			this.Valor_NA_B1.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NA_B1.TabIndex = 91;
+			this.Valor_NA_B1.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.GroupBox_nivel_baixo.Controls.Add(this.Valor_NB_T);
 			this.GroupBox_nivel_baixo.Controls.Add(this.Valor_NB_B4);
 			this.GroupBox_nivel_baixo.Controls.Add(this.Valor_NB_B3);
@@ -727,7 +726,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_nivel_baixo2 = this.GroupBox_nivel_baixo;
 			size = new global::System.Drawing.Size(99, 151);
 			groupBox_nivel_baixo2.Size = size;
-			this.GroupBox_nivel_baixo.TabIndex = (HorizontalAlignment)84;
+			this.GroupBox_nivel_baixo.TabIndex = 84;
 			this.GroupBox_nivel_baixo.TabStop = false;
 			this.GroupBox_nivel_baixo.Text = "Nível Baixo";
 			global::System.Windows.Forms.Control valor_NB_T = this.Valor_NB_T;
@@ -737,8 +736,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NB_T2 = this.Valor_NB_T;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NB_T2.Size = size;
-			this.Valor_NB_T.TabIndex = (HorizontalAlignment)89;
-			this.Valor_NB_T.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NB_T.TabIndex = 89;
+			this.Valor_NB_T.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NB_B = this.Valor_NB_B4;
 			location = new global::System.Drawing.Point(16, 96);
 			valor_NB_B.Location = location;
@@ -746,8 +745,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NB_B2 = this.Valor_NB_B4;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NB_B2.Size = size;
-			this.Valor_NB_B4.TabIndex = (HorizontalAlignment)88;
-			this.Valor_NB_B4.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NB_B4.TabIndex = 88;
+			this.Valor_NB_B4.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NB_B3 = this.Valor_NB_B3;
 			location = new global::System.Drawing.Point(16, 71);
 			valor_NB_B3.Location = location;
@@ -755,8 +754,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NB_B4 = this.Valor_NB_B3;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NB_B4.Size = size;
-			this.Valor_NB_B3.TabIndex = (HorizontalAlignment)87;
-			this.Valor_NB_B3.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NB_B3.TabIndex = 87;
+			this.Valor_NB_B3.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NB_B5 = this.Valor_NB_B2;
 			location = new global::System.Drawing.Point(16, 46);
 			valor_NB_B5.Location = location;
@@ -764,8 +763,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NB_B6 = this.Valor_NB_B2;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NB_B6.Size = size;
-			this.Valor_NB_B2.TabIndex = (HorizontalAlignment)86;
-			this.Valor_NB_B2.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NB_B2.TabIndex = 86;
+			this.Valor_NB_B2.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_NB_B7 = this.Valor_NB_B1;
 			location = new global::System.Drawing.Point(16, 21);
 			valor_NB_B7.Location = location;
@@ -773,8 +772,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_NB_B8 = this.Valor_NB_B1;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_NB_B8.Size = size;
-			this.Valor_NB_B1.TabIndex = (HorizontalAlignment)85;
-			this.Valor_NB_B1.TextAlign = (HorizontalAlignment)1;
+			this.Valor_NB_B1.TabIndex = 85;
+			this.Valor_NB_B1.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.CheckBox_alm_rq.AutoSize = true;
 			global::System.Windows.Forms.Control checkBox_alm_rq = this.CheckBox_alm_rq;
 			location = new global::System.Drawing.Point(26, 20);
@@ -783,7 +782,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_alm_rq2 = this.CheckBox_alm_rq;
 			size = new global::System.Drawing.Size(158, 17);
 			checkBox_alm_rq2.Size = size;
-			this.CheckBox_alm_rq.TabIndex = (HorizontalAlignment)83;
+			this.CheckBox_alm_rq.TabIndex = 83;
 			this.CheckBox_alm_rq.Text = "Habilita bloqueio de alarmes";
 			this.CheckBox_alm_rq.UseVisualStyleBackColor = true;
 			this.Label_alm_tensao.AutoSize = true;
@@ -794,7 +793,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_alm_tensao2 = this.Label_alm_tensao;
 			size = new global::System.Drawing.Size(49, 13);
 			label_alm_tensao2.Size = size;
-			this.Label_alm_tensao.TabIndex = (HorizontalAlignment)2;
+			this.Label_alm_tensao.TabIndex = 2;
 			this.Label_alm_tensao.Text = "Tensão :";
 			this.Label_alm_bomba_4.AutoSize = true;
 			global::System.Windows.Forms.Control label_alm_bomba_ = this.Label_alm_bomba_4;
@@ -804,7 +803,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_alm_bomba_2 = this.Label_alm_bomba_4;
 			size = new global::System.Drawing.Size(62, 13);
 			label_alm_bomba_2.Size = size;
-			this.Label_alm_bomba_4.TabIndex = (HorizontalAlignment)2;
+			this.Label_alm_bomba_4.TabIndex = 2;
 			this.Label_alm_bomba_4.Text = "Corrente 4 :";
 			this.Label_alm_bomba_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_alm_bomba_3 = this.Label_alm_bomba_3;
@@ -814,7 +813,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_alm_bomba_4 = this.Label_alm_bomba_3;
 			size = new global::System.Drawing.Size(62, 13);
 			label_alm_bomba_4.Size = size;
-			this.Label_alm_bomba_3.TabIndex = (HorizontalAlignment)2;
+			this.Label_alm_bomba_3.TabIndex = 2;
 			this.Label_alm_bomba_3.Text = "Corrente 3 :";
 			this.Label_alm_bomba_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_alm_bomba_5 = this.Label_alm_bomba_2;
@@ -824,7 +823,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_alm_bomba_6 = this.Label_alm_bomba_2;
 			size = new global::System.Drawing.Size(59, 13);
 			label_alm_bomba_6.Size = size;
-			this.Label_alm_bomba_2.TabIndex = (HorizontalAlignment)2;
+			this.Label_alm_bomba_2.TabIndex = 2;
 			this.Label_alm_bomba_2.Text = "Corrente 2:";
 			this.Label_alm_bomba_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_alm_bomba_7 = this.Label_alm_bomba_1;
@@ -834,7 +833,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_alm_bomba_8 = this.Label_alm_bomba_1;
 			size = new global::System.Drawing.Size(62, 13);
 			label_alm_bomba_8.Size = size;
-			this.Label_alm_bomba_1.TabIndex = (HorizontalAlignment)2;
+			this.Label_alm_bomba_1.TabIndex = 2;
 			this.Label_alm_bomba_1.Text = "Corrente 1 :";
 			this.GroupBox_timer_1.Controls.Add(this.GroupBox_Desliga_B1);
 			this.GroupBox_timer_1.Controls.Add(this.GroupBox_Liga_B1);
@@ -850,7 +849,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_timer_2 = this.GroupBox_timer_1;
 			size = new global::System.Drawing.Size(225, 159);
 			groupBox_timer_2.Size = size;
-			this.GroupBox_timer_1.TabIndex = (HorizontalAlignment)25;
+			this.GroupBox_timer_1.TabIndex = 25;
 			this.GroupBox_timer_1.TabStop = false;
 			this.GroupBox_timer_1.Text = "Controle timer - Bomba 1";
 			this.GroupBox_Desliga_B1.Controls.Add(this.Valor_desliga_faixa4_b1);
@@ -864,7 +863,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_Desliga_B2 = this.GroupBox_Desliga_B1;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox_Desliga_B2.Size = size;
-			this.GroupBox_Desliga_B1.TabIndex = (HorizontalAlignment)31;
+			this.GroupBox_Desliga_B1.TabIndex = 31;
 			this.GroupBox_Desliga_B1.TabStop = false;
 			this.GroupBox_Desliga_B1.Text = "Desliga";
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b = this.Valor_desliga_faixa4_b1;
@@ -874,8 +873,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b2 = this.Valor_desliga_faixa4_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa4_b2.Size = size;
-			this.Valor_desliga_faixa4_b1.TabIndex = (HorizontalAlignment)35;
-			this.Valor_desliga_faixa4_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa4_b1.TabIndex = 35;
+			this.Valor_desliga_faixa4_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b = this.Valor_desliga_faixa3_b1;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_desliga_faixa3_b.Location = location;
@@ -883,8 +882,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b2 = this.Valor_desliga_faixa3_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa3_b2.Size = size;
-			this.Valor_desliga_faixa3_b1.TabIndex = (HorizontalAlignment)34;
-			this.Valor_desliga_faixa3_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa3_b1.TabIndex = 34;
+			this.Valor_desliga_faixa3_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b = this.Valor_desliga_faixa2_b1;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_desliga_faixa2_b.Location = location;
@@ -892,8 +891,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b2 = this.Valor_desliga_faixa2_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa2_b2.Size = size;
-			this.Valor_desliga_faixa2_b1.TabIndex = (HorizontalAlignment)33;
-			this.Valor_desliga_faixa2_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa2_b1.TabIndex = 33;
+			this.Valor_desliga_faixa2_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b = this.Valor_desliga_faixa1_b1;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_desliga_faixa1_b.Location = location;
@@ -901,8 +900,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b2 = this.Valor_desliga_faixa1_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa1_b2.Size = size;
-			this.Valor_desliga_faixa1_b1.TabIndex = (HorizontalAlignment)32;
-			this.Valor_desliga_faixa1_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa1_b1.TabIndex = 32;
+			this.Valor_desliga_faixa1_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.GroupBox_Liga_B1.Controls.Add(this.Valor_liga_faixa4_b1);
 			this.GroupBox_Liga_B1.Controls.Add(this.Valor_liga_faixa3_b1);
 			this.GroupBox_Liga_B1.Controls.Add(this.Valor_liga_faixa2_b1);
@@ -914,7 +913,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_Liga_B2 = this.GroupBox_Liga_B1;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox_Liga_B2.Size = size;
-			this.GroupBox_Liga_B1.TabIndex = (HorizontalAlignment)26;
+			this.GroupBox_Liga_B1.TabIndex = 26;
 			this.GroupBox_Liga_B1.TabStop = false;
 			this.GroupBox_Liga_B1.Text = "Liga";
 			global::System.Windows.Forms.Control valor_liga_faixa4_b = this.Valor_liga_faixa4_b1;
@@ -924,8 +923,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa4_b2 = this.Valor_liga_faixa4_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa4_b2.Size = size;
-			this.Valor_liga_faixa4_b1.TabIndex = (HorizontalAlignment)30;
-			this.Valor_liga_faixa4_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa4_b1.TabIndex = 30;
+			this.Valor_liga_faixa4_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa3_b = this.Valor_liga_faixa3_b1;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_liga_faixa3_b.Location = location;
@@ -933,8 +932,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa3_b2 = this.Valor_liga_faixa3_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa3_b2.Size = size;
-			this.Valor_liga_faixa3_b1.TabIndex = (HorizontalAlignment)29;
-			this.Valor_liga_faixa3_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa3_b1.TabIndex = 29;
+			this.Valor_liga_faixa3_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa2_b = this.Valor_liga_faixa2_b1;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_liga_faixa2_b.Location = location;
@@ -942,8 +941,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa2_b2 = this.Valor_liga_faixa2_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa2_b2.Size = size;
-			this.Valor_liga_faixa2_b1.TabIndex = (HorizontalAlignment)28;
-			this.Valor_liga_faixa2_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa2_b1.TabIndex = 28;
+			this.Valor_liga_faixa2_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa1_b = this.Valor_liga_faixa1_b1;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_liga_faixa1_b.Location = location;
@@ -951,8 +950,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa1_b2 = this.Valor_liga_faixa1_b1;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa1_b2.Size = size;
-			this.Valor_liga_faixa1_b1.TabIndex = (HorizontalAlignment)27;
-			this.Valor_liga_faixa1_b1.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa1_b1.TabIndex = 27;
+			this.Valor_liga_faixa1_b1.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_faixa4_B1.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa4_B = this.Label_faixa4_B1;
 			location = new global::System.Drawing.Point(6, 119);
@@ -961,7 +960,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa4_B2 = this.Label_faixa4_B1;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa4_B2.Size = size;
-			this.Label_faixa4_B1.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa4_B1.TabIndex = 2;
 			this.Label_faixa4_B1.Text = "Faixa 4 :";
 			this.Label_faixa3_B1.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa3_B = this.Label_faixa3_B1;
@@ -971,7 +970,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa3_B2 = this.Label_faixa3_B1;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa3_B2.Size = size;
-			this.Label_faixa3_B1.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa3_B1.TabIndex = 2;
 			this.Label_faixa3_B1.Text = "Faixa 3 :";
 			this.Label_faixa2_B1.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa2_B = this.Label_faixa2_B1;
@@ -981,7 +980,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa2_B2 = this.Label_faixa2_B1;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa2_B2.Size = size;
-			this.Label_faixa2_B1.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa2_B1.TabIndex = 2;
 			this.Label_faixa2_B1.Text = "Faixa 2 :";
 			this.Label_faixa1_B1.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa1_B = this.Label_faixa1_B1;
@@ -991,7 +990,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa1_B2 = this.Label_faixa1_B1;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa1_B2.Size = size;
-			this.Label_faixa1_B1.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa1_B1.TabIndex = 2;
 			this.Label_faixa1_B1.Text = "Faixa 1 :";
 			this.GroupBox_timer_2.Controls.Add(this.GroupBox2);
 			this.GroupBox_timer_2.Controls.Add(this.GroupBox3);
@@ -1007,7 +1006,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_timer_4 = this.GroupBox_timer_2;
 			size = new global::System.Drawing.Size(225, 159);
 			groupBox_timer_4.Size = size;
-			this.GroupBox_timer_2.TabIndex = (HorizontalAlignment)36;
+			this.GroupBox_timer_2.TabIndex = 36;
 			this.GroupBox_timer_2.TabStop = false;
 			this.GroupBox_timer_2.Text = "Controle timer - Bomba 2";
 			this.GroupBox2.Controls.Add(this.Valor_desliga_faixa4_b2);
@@ -1021,7 +1020,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox2;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox2.Size = size;
-			this.GroupBox2.TabIndex = (HorizontalAlignment)42;
+			this.GroupBox2.TabIndex = 42;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Desliga";
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b3 = this.Valor_desliga_faixa4_b2;
@@ -1031,8 +1030,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b4 = this.Valor_desliga_faixa4_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa4_b4.Size = size;
-			this.Valor_desliga_faixa4_b2.TabIndex = (HorizontalAlignment)46;
-			this.Valor_desliga_faixa4_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa4_b2.TabIndex = 46;
+			this.Valor_desliga_faixa4_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b3 = this.Valor_desliga_faixa3_b2;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_desliga_faixa3_b3.Location = location;
@@ -1040,8 +1039,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b4 = this.Valor_desliga_faixa3_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa3_b4.Size = size;
-			this.Valor_desliga_faixa3_b2.TabIndex = (HorizontalAlignment)45;
-			this.Valor_desliga_faixa3_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa3_b2.TabIndex = 45;
+			this.Valor_desliga_faixa3_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b3 = this.Valor_desliga_faixa2_b2;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_desliga_faixa2_b3.Location = location;
@@ -1049,8 +1048,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b4 = this.Valor_desliga_faixa2_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa2_b4.Size = size;
-			this.Valor_desliga_faixa2_b2.TabIndex = (HorizontalAlignment)44;
-			this.Valor_desliga_faixa2_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa2_b2.TabIndex = 44;
+			this.Valor_desliga_faixa2_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b3 = this.Valor_desliga_faixa1_b2;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_desliga_faixa1_b3.Location = location;
@@ -1058,8 +1057,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b4 = this.Valor_desliga_faixa1_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa1_b4.Size = size;
-			this.Valor_desliga_faixa1_b2.TabIndex = (HorizontalAlignment)43;
-			this.Valor_desliga_faixa1_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa1_b2.TabIndex = 43;
+			this.Valor_desliga_faixa1_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.GroupBox3.Controls.Add(this.Valor_liga_faixa4_b2);
 			this.GroupBox3.Controls.Add(this.Valor_liga_faixa3_b2);
 			this.GroupBox3.Controls.Add(this.Valor_liga_faixa2_b2);
@@ -1071,7 +1070,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox3;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox4.Size = size;
-			this.GroupBox3.TabIndex = (HorizontalAlignment)37;
+			this.GroupBox3.TabIndex = 37;
 			this.GroupBox3.TabStop = false;
 			this.GroupBox3.Text = "Liga";
 			global::System.Windows.Forms.Control valor_liga_faixa4_b3 = this.Valor_liga_faixa4_b2;
@@ -1081,8 +1080,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa4_b4 = this.Valor_liga_faixa4_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa4_b4.Size = size;
-			this.Valor_liga_faixa4_b2.TabIndex = (HorizontalAlignment)41;
-			this.Valor_liga_faixa4_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa4_b2.TabIndex = 41;
+			this.Valor_liga_faixa4_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa3_b3 = this.Valor_liga_faixa3_b2;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_liga_faixa3_b3.Location = location;
@@ -1090,8 +1089,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa3_b4 = this.Valor_liga_faixa3_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa3_b4.Size = size;
-			this.Valor_liga_faixa3_b2.TabIndex = (HorizontalAlignment)40;
-			this.Valor_liga_faixa3_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa3_b2.TabIndex = 40;
+			this.Valor_liga_faixa3_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa2_b3 = this.Valor_liga_faixa2_b2;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_liga_faixa2_b3.Location = location;
@@ -1099,8 +1098,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa2_b4 = this.Valor_liga_faixa2_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa2_b4.Size = size;
-			this.Valor_liga_faixa2_b2.TabIndex = (HorizontalAlignment)39;
-			this.Valor_liga_faixa2_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa2_b2.TabIndex = 39;
+			this.Valor_liga_faixa2_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa1_b3 = this.Valor_liga_faixa1_b2;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_liga_faixa1_b3.Location = location;
@@ -1108,8 +1107,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa1_b4 = this.Valor_liga_faixa1_b2;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa1_b4.Size = size;
-			this.Valor_liga_faixa1_b2.TabIndex = (HorizontalAlignment)38;
-			this.Valor_liga_faixa1_b2.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa1_b2.TabIndex = 38;
+			this.Valor_liga_faixa1_b2.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_faixa4_B2.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa4_B3 = this.Label_faixa4_B2;
 			location = new global::System.Drawing.Point(6, 119);
@@ -1118,7 +1117,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa4_B4 = this.Label_faixa4_B2;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa4_B4.Size = size;
-			this.Label_faixa4_B2.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa4_B2.TabIndex = 2;
 			this.Label_faixa4_B2.Text = "Faixa 4 :";
 			this.Label_faixa3_B2.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa3_B3 = this.Label_faixa3_B2;
@@ -1128,7 +1127,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa3_B4 = this.Label_faixa3_B2;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa3_B4.Size = size;
-			this.Label_faixa3_B2.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa3_B2.TabIndex = 2;
 			this.Label_faixa3_B2.Text = "Faixa 3 :";
 			this.Label_faixa2_B2.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa2_B3 = this.Label_faixa2_B2;
@@ -1138,7 +1137,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa2_B4 = this.Label_faixa2_B2;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa2_B4.Size = size;
-			this.Label_faixa2_B2.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa2_B2.TabIndex = 2;
 			this.Label_faixa2_B2.Text = "Faixa 2 :";
 			this.Label_faixa1_B2.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa1_B3 = this.Label_faixa1_B2;
@@ -1148,7 +1147,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa1_B4 = this.Label_faixa1_B2;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa1_B4.Size = size;
-			this.Label_faixa1_B2.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa1_B2.TabIndex = 2;
 			this.Label_faixa1_B2.Text = "Faixa 1 :";
 			this.GroupBox_timer_4.Controls.Add(this.GroupBox5);
 			this.GroupBox_timer_4.Controls.Add(this.GroupBox6);
@@ -1164,7 +1163,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_timer_6 = this.GroupBox_timer_4;
 			size = new global::System.Drawing.Size(225, 159);
 			groupBox_timer_6.Size = size;
-			this.GroupBox_timer_4.TabIndex = (HorizontalAlignment)58;
+			this.GroupBox_timer_4.TabIndex = 58;
 			this.GroupBox_timer_4.TabStop = false;
 			this.GroupBox_timer_4.Text = "Controle timer - Bomba 4";
 			this.GroupBox5.Controls.Add(this.Valor_desliga_faixa4_b4);
@@ -1178,7 +1177,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox6 = this.GroupBox5;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox6.Size = size;
-			this.GroupBox5.TabIndex = (HorizontalAlignment)64;
+			this.GroupBox5.TabIndex = 64;
 			this.GroupBox5.TabStop = false;
 			this.GroupBox5.Text = "Desliga";
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b5 = this.Valor_desliga_faixa4_b4;
@@ -1188,8 +1187,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b6 = this.Valor_desliga_faixa4_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa4_b6.Size = size;
-			this.Valor_desliga_faixa4_b4.TabIndex = (HorizontalAlignment)68;
-			this.Valor_desliga_faixa4_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa4_b4.TabIndex = 68;
+			this.Valor_desliga_faixa4_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b5 = this.Valor_desliga_faixa3_b4;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_desliga_faixa3_b5.Location = location;
@@ -1197,8 +1196,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b6 = this.Valor_desliga_faixa3_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa3_b6.Size = size;
-			this.Valor_desliga_faixa3_b4.TabIndex = (HorizontalAlignment)67;
-			this.Valor_desliga_faixa3_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa3_b4.TabIndex = 67;
+			this.Valor_desliga_faixa3_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b5 = this.Valor_desliga_faixa2_b4;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_desliga_faixa2_b5.Location = location;
@@ -1206,8 +1205,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b6 = this.Valor_desliga_faixa2_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa2_b6.Size = size;
-			this.Valor_desliga_faixa2_b4.TabIndex = (HorizontalAlignment)66;
-			this.Valor_desliga_faixa2_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa2_b4.TabIndex = 66;
+			this.Valor_desliga_faixa2_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b5 = this.Valor_desliga_faixa1_b4;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_desliga_faixa1_b5.Location = location;
@@ -1215,8 +1214,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b6 = this.Valor_desliga_faixa1_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa1_b6.Size = size;
-			this.Valor_desliga_faixa1_b4.TabIndex = (HorizontalAlignment)65;
-			this.Valor_desliga_faixa1_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa1_b4.TabIndex = 65;
+			this.Valor_desliga_faixa1_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.GroupBox6.Controls.Add(this.Valor_liga_faixa4_b4);
 			this.GroupBox6.Controls.Add(this.Valor_liga_faixa3_b4);
 			this.GroupBox6.Controls.Add(this.Valor_liga_faixa2_b4);
@@ -1228,7 +1227,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox8 = this.GroupBox6;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox8.Size = size;
-			this.GroupBox6.TabIndex = (HorizontalAlignment)59;
+			this.GroupBox6.TabIndex = 59;
 			this.GroupBox6.TabStop = false;
 			this.GroupBox6.Text = "Liga";
 			global::System.Windows.Forms.Control valor_liga_faixa4_b5 = this.Valor_liga_faixa4_b4;
@@ -1238,8 +1237,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa4_b6 = this.Valor_liga_faixa4_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa4_b6.Size = size;
-			this.Valor_liga_faixa4_b4.TabIndex = (HorizontalAlignment)63;
-			this.Valor_liga_faixa4_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa4_b4.TabIndex = 63;
+			this.Valor_liga_faixa4_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa3_b5 = this.Valor_liga_faixa3_b4;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_liga_faixa3_b5.Location = location;
@@ -1247,8 +1246,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa3_b6 = this.Valor_liga_faixa3_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa3_b6.Size = size;
-			this.Valor_liga_faixa3_b4.TabIndex = (HorizontalAlignment)62;
-			this.Valor_liga_faixa3_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa3_b4.TabIndex = 62;
+			this.Valor_liga_faixa3_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa2_b5 = this.Valor_liga_faixa2_b4;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_liga_faixa2_b5.Location = location;
@@ -1256,8 +1255,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa2_b6 = this.Valor_liga_faixa2_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa2_b6.Size = size;
-			this.Valor_liga_faixa2_b4.TabIndex = (HorizontalAlignment)61;
-			this.Valor_liga_faixa2_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa2_b4.TabIndex = 61;
+			this.Valor_liga_faixa2_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa1_b5 = this.Valor_liga_faixa1_b4;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_liga_faixa1_b5.Location = location;
@@ -1265,8 +1264,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa1_b6 = this.Valor_liga_faixa1_b4;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa1_b6.Size = size;
-			this.Valor_liga_faixa1_b4.TabIndex = (HorizontalAlignment)60;
-			this.Valor_liga_faixa1_b4.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa1_b4.TabIndex = 60;
+			this.Valor_liga_faixa1_b4.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_faixa4_B4.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa4_B5 = this.Label_faixa4_B4;
 			location = new global::System.Drawing.Point(6, 119);
@@ -1275,7 +1274,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa4_B6 = this.Label_faixa4_B4;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa4_B6.Size = size;
-			this.Label_faixa4_B4.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa4_B4.TabIndex = 2;
 			this.Label_faixa4_B4.Text = "Faixa 4 :";
 			this.Label_faixa3_B4.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa3_B5 = this.Label_faixa3_B4;
@@ -1285,7 +1284,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa3_B6 = this.Label_faixa3_B4;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa3_B6.Size = size;
-			this.Label_faixa3_B4.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa3_B4.TabIndex = 2;
 			this.Label_faixa3_B4.Text = "Faixa 3 :";
 			this.Label_faixa2_B4.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa2_B5 = this.Label_faixa2_B4;
@@ -1295,7 +1294,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa2_B6 = this.Label_faixa2_B4;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa2_B6.Size = size;
-			this.Label_faixa2_B4.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa2_B4.TabIndex = 2;
 			this.Label_faixa2_B4.Text = "Faixa 2 :";
 			this.Label_faixa1_B4.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa1_B5 = this.Label_faixa1_B4;
@@ -1305,7 +1304,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa1_B6 = this.Label_faixa1_B4;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa1_B6.Size = size;
-			this.Label_faixa1_B4.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa1_B4.TabIndex = 2;
 			this.Label_faixa1_B4.Text = "Faixa 1 :";
 			this.GroupBox_timer_3.Controls.Add(this.GroupBox8);
 			this.GroupBox_timer_3.Controls.Add(this.GroupBox9);
@@ -1321,7 +1320,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_timer_8 = this.GroupBox_timer_3;
 			size = new global::System.Drawing.Size(225, 159);
 			groupBox_timer_8.Size = size;
-			this.GroupBox_timer_3.TabIndex = (HorizontalAlignment)47;
+			this.GroupBox_timer_3.TabIndex = 47;
 			this.GroupBox_timer_3.TabStop = false;
 			this.GroupBox_timer_3.Text = "Controle timer - Bomba 3";
 			this.GroupBox8.Controls.Add(this.Valor_desliga_faixa4_b3);
@@ -1335,7 +1334,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox10 = this.GroupBox8;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox10.Size = size;
-			this.GroupBox8.TabIndex = (HorizontalAlignment)53;
+			this.GroupBox8.TabIndex = 53;
 			this.GroupBox8.TabStop = false;
 			this.GroupBox8.Text = "Desliga";
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b7 = this.Valor_desliga_faixa4_b3;
@@ -1345,8 +1344,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa4_b8 = this.Valor_desliga_faixa4_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa4_b8.Size = size;
-			this.Valor_desliga_faixa4_b3.TabIndex = (HorizontalAlignment)57;
-			this.Valor_desliga_faixa4_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa4_b3.TabIndex = 57;
+			this.Valor_desliga_faixa4_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b7 = this.Valor_desliga_faixa3_b3;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_desliga_faixa3_b7.Location = location;
@@ -1354,8 +1353,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa3_b8 = this.Valor_desliga_faixa3_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa3_b8.Size = size;
-			this.Valor_desliga_faixa3_b3.TabIndex = (HorizontalAlignment)56;
-			this.Valor_desliga_faixa3_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa3_b3.TabIndex = 56;
+			this.Valor_desliga_faixa3_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b7 = this.Valor_desliga_faixa2_b3;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_desliga_faixa2_b7.Location = location;
@@ -1363,8 +1362,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa2_b8 = this.Valor_desliga_faixa2_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa2_b8.Size = size;
-			this.Valor_desliga_faixa2_b3.TabIndex = (HorizontalAlignment)55;
-			this.Valor_desliga_faixa2_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa2_b3.TabIndex = 55;
+			this.Valor_desliga_faixa2_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b7 = this.Valor_desliga_faixa1_b3;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_desliga_faixa1_b7.Location = location;
@@ -1372,8 +1371,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_faixa1_b8 = this.Valor_desliga_faixa1_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_faixa1_b8.Size = size;
-			this.Valor_desliga_faixa1_b3.TabIndex = (HorizontalAlignment)54;
-			this.Valor_desliga_faixa1_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_faixa1_b3.TabIndex = 54;
+			this.Valor_desliga_faixa1_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.GroupBox9.Controls.Add(this.Valor_liga_faixa4_b3);
 			this.GroupBox9.Controls.Add(this.Valor_liga_faixa3_b3);
 			this.GroupBox9.Controls.Add(this.Valor_liga_faixa2_b3);
@@ -1385,7 +1384,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox12 = this.GroupBox9;
 			size = new global::System.Drawing.Size(73, 128);
 			groupBox12.Size = size;
-			this.GroupBox9.TabIndex = (HorizontalAlignment)48;
+			this.GroupBox9.TabIndex = 48;
 			this.GroupBox9.TabStop = false;
 			this.GroupBox9.Text = "Liga";
 			global::System.Windows.Forms.Control valor_liga_faixa4_b7 = this.Valor_liga_faixa4_b3;
@@ -1395,8 +1394,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa4_b8 = this.Valor_liga_faixa4_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa4_b8.Size = size;
-			this.Valor_liga_faixa4_b3.TabIndex = (HorizontalAlignment)52;
-			this.Valor_liga_faixa4_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa4_b3.TabIndex = 52;
+			this.Valor_liga_faixa4_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa3_b7 = this.Valor_liga_faixa3_b3;
 			location = new global::System.Drawing.Point(17, 71);
 			valor_liga_faixa3_b7.Location = location;
@@ -1404,8 +1403,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa3_b8 = this.Valor_liga_faixa3_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa3_b8.Size = size;
-			this.Valor_liga_faixa3_b3.TabIndex = (HorizontalAlignment)51;
-			this.Valor_liga_faixa3_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa3_b3.TabIndex = 51;
+			this.Valor_liga_faixa3_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa2_b7 = this.Valor_liga_faixa2_b3;
 			location = new global::System.Drawing.Point(17, 45);
 			valor_liga_faixa2_b7.Location = location;
@@ -1413,8 +1412,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa2_b8 = this.Valor_liga_faixa2_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa2_b8.Size = size;
-			this.Valor_liga_faixa2_b3.TabIndex = (HorizontalAlignment)50;
-			this.Valor_liga_faixa2_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa2_b3.TabIndex = 50;
+			this.Valor_liga_faixa2_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_liga_faixa1_b7 = this.Valor_liga_faixa1_b3;
 			location = new global::System.Drawing.Point(17, 19);
 			valor_liga_faixa1_b7.Location = location;
@@ -1422,8 +1421,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_faixa1_b8 = this.Valor_liga_faixa1_b3;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_faixa1_b8.Size = size;
-			this.Valor_liga_faixa1_b3.TabIndex = (HorizontalAlignment)49;
-			this.Valor_liga_faixa1_b3.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_faixa1_b3.TabIndex = 49;
+			this.Valor_liga_faixa1_b3.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Label_faixa4_B3.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa4_B7 = this.Label_faixa4_B3;
 			location = new global::System.Drawing.Point(6, 119);
@@ -1432,7 +1431,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa4_B8 = this.Label_faixa4_B3;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa4_B8.Size = size;
-			this.Label_faixa4_B3.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa4_B3.TabIndex = 2;
 			this.Label_faixa4_B3.Text = "Faixa 4 :";
 			this.Label_faixa3_B3.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa3_B7 = this.Label_faixa3_B3;
@@ -1442,7 +1441,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa3_B8 = this.Label_faixa3_B3;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa3_B8.Size = size;
-			this.Label_faixa3_B3.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa3_B3.TabIndex = 2;
 			this.Label_faixa3_B3.Text = "Faixa 3 :";
 			this.Label_faixa2_B3.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa2_B7 = this.Label_faixa2_B3;
@@ -1452,7 +1451,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa2_B8 = this.Label_faixa2_B3;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa2_B8.Size = size;
-			this.Label_faixa2_B3.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa2_B3.TabIndex = 2;
 			this.Label_faixa2_B3.Text = "Faixa 2 :";
 			this.Label_faixa1_B3.AutoSize = true;
 			global::System.Windows.Forms.Control label_faixa1_B7 = this.Label_faixa1_B3;
@@ -1462,7 +1461,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_faixa1_B8 = this.Label_faixa1_B3;
 			size = new global::System.Drawing.Size(47, 13);
 			label_faixa1_B8.Size = size;
-			this.Label_faixa1_B3.TabIndex = (HorizontalAlignment)2;
+			this.Label_faixa1_B3.TabIndex = 2;
 			this.Label_faixa1_B3.Text = "Faixa 1 :";
 			this.GroupBox_ponta.Controls.Add(this.CheckBox_horario_ponta);
 			this.GroupBox_ponta.Controls.Add(this.Desliga_ponta);
@@ -1475,7 +1474,7 @@ namespace iS800
 			global::System.Windows.Forms.Control groupBox_ponta2 = this.GroupBox_ponta;
 			size = new global::System.Drawing.Size(183, 97);
 			groupBox_ponta2.Size = size;
-			this.GroupBox_ponta.TabIndex = (HorizontalAlignment)69;
+			this.GroupBox_ponta.TabIndex = 69;
 			this.GroupBox_ponta.TabStop = false;
 			this.GroupBox_ponta.Text = "Controle horário de ponta";
 			this.CheckBox_horario_ponta.AutoSize = true;
@@ -1486,7 +1485,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_horario_ponta2 = this.CheckBox_horario_ponta;
 			size = new global::System.Drawing.Size(116, 17);
 			checkBox_horario_ponta2.Size = size;
-			this.CheckBox_horario_ponta.TabIndex = (HorizontalAlignment)70;
+			this.CheckBox_horario_ponta.TabIndex = 70;
 			this.CheckBox_horario_ponta.Text = "Habilita verificação";
 			this.CheckBox_horario_ponta.UseVisualStyleBackColor = true;
 			this.Desliga_ponta.Controls.Add(this.Valor_desliga_ponta);
@@ -1497,7 +1496,7 @@ namespace iS800
 			global::System.Windows.Forms.Control desliga_ponta2 = this.Desliga_ponta;
 			size = new global::System.Drawing.Size(73, 42);
 			desliga_ponta2.Size = size;
-			this.Desliga_ponta.TabIndex = (HorizontalAlignment)73;
+			this.Desliga_ponta.TabIndex = 73;
 			this.Desliga_ponta.TabStop = false;
 			this.Desliga_ponta.Text = "Desliga";
 			global::System.Windows.Forms.Control valor_desliga_ponta = this.Valor_desliga_ponta;
@@ -1507,8 +1506,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_desliga_ponta2 = this.Valor_desliga_ponta;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_desliga_ponta2.Size = size;
-			this.Valor_desliga_ponta.TabIndex = (HorizontalAlignment)74;
-			this.Valor_desliga_ponta.TextAlign = (HorizontalAlignment)2;
+			this.Valor_desliga_ponta.TabIndex = 74;
+			this.Valor_desliga_ponta.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Liga_ponta.Controls.Add(this.Valor_liga_ponta);
 			global::System.Windows.Forms.Control liga_ponta = this.Liga_ponta;
 			location = new global::System.Drawing.Point(14, 42);
@@ -1517,7 +1516,7 @@ namespace iS800
 			global::System.Windows.Forms.Control liga_ponta2 = this.Liga_ponta;
 			size = new global::System.Drawing.Size(73, 42);
 			liga_ponta2.Size = size;
-			this.Liga_ponta.TabIndex = (HorizontalAlignment)71;
+			this.Liga_ponta.TabIndex = 71;
 			this.Liga_ponta.TabStop = false;
 			this.Liga_ponta.Text = "Liga";
 			global::System.Windows.Forms.Control valor_liga_ponta = this.Valor_liga_ponta;
@@ -1527,8 +1526,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_liga_ponta2 = this.Valor_liga_ponta;
 			size = new global::System.Drawing.Size(39, 20);
 			valor_liga_ponta2.Size = size;
-			this.Valor_liga_ponta.TabIndex = (HorizontalAlignment)75;
-			this.Valor_liga_ponta.TextAlign = (HorizontalAlignment)2;
+			this.Valor_liga_ponta.TabIndex = 75;
+			this.Valor_liga_ponta.TextAlign = (System.Drawing.ContentAlignment)2;
 			this.Grupo_temperaturas.Controls.Add(this.Grupo_temp);
 			this.Grupo_temperaturas.Controls.Add(this.CheckBox_habilita_temperatura);
 			this.Grupo_temperaturas.Controls.Add(this.Label_temp_bomba_4);
@@ -1543,7 +1542,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_temperaturas2 = this.Grupo_temperaturas;
 			size = new global::System.Drawing.Size(183, 182);
 			grupo_temperaturas2.Size = size;
-			this.Grupo_temperaturas.TabIndex = (HorizontalAlignment)75;
+			this.Grupo_temperaturas.TabIndex = 75;
 			this.Grupo_temperaturas.TabStop = false;
 			this.Grupo_temperaturas.Text = "Controle de temperaturas";
 			this.Grupo_temp.Controls.Add(this.Valor_Temp_B4);
@@ -1557,7 +1556,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_temp2 = this.Grupo_temp;
 			size = new global::System.Drawing.Size(99, 128);
 			grupo_temp2.Size = size;
-			this.Grupo_temp.TabIndex = (HorizontalAlignment)77;
+			this.Grupo_temp.TabIndex = 77;
 			this.Grupo_temp.TabStop = false;
 			this.Grupo_temp.Text = "Temperatura";
 			global::System.Windows.Forms.Control valor_Temp_B = this.Valor_Temp_B4;
@@ -1567,8 +1566,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_Temp_B2 = this.Valor_Temp_B4;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_Temp_B2.Size = size;
-			this.Valor_Temp_B4.TabIndex = (HorizontalAlignment)81;
-			this.Valor_Temp_B4.TextAlign = (HorizontalAlignment)1;
+			this.Valor_Temp_B4.TabIndex = 81;
+			this.Valor_Temp_B4.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_Temp_B3 = this.Valor_Temp_B3;
 			location = new global::System.Drawing.Point(16, 71);
 			valor_Temp_B3.Location = location;
@@ -1576,8 +1575,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_Temp_B4 = this.Valor_Temp_B3;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_Temp_B4.Size = size;
-			this.Valor_Temp_B3.TabIndex = (HorizontalAlignment)80;
-			this.Valor_Temp_B3.TextAlign = (HorizontalAlignment)1;
+			this.Valor_Temp_B3.TabIndex = 80;
+			this.Valor_Temp_B3.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_Temp_B5 = this.Valor_Temp_B2;
 			location = new global::System.Drawing.Point(16, 46);
 			valor_Temp_B5.Location = location;
@@ -1585,8 +1584,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_Temp_B6 = this.Valor_Temp_B2;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_Temp_B6.Size = size;
-			this.Valor_Temp_B2.TabIndex = (HorizontalAlignment)79;
-			this.Valor_Temp_B2.TextAlign = (HorizontalAlignment)1;
+			this.Valor_Temp_B2.TabIndex = 79;
+			this.Valor_Temp_B2.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_Temp_B7 = this.Valor_Temp_B1;
 			location = new global::System.Drawing.Point(16, 21);
 			valor_Temp_B7.Location = location;
@@ -1594,8 +1593,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_Temp_B8 = this.Valor_Temp_B1;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_Temp_B8.Size = size;
-			this.Valor_Temp_B1.TabIndex = (HorizontalAlignment)78;
-			this.Valor_Temp_B1.TextAlign = (HorizontalAlignment)1;
+			this.Valor_Temp_B1.TabIndex = 78;
+			this.Valor_Temp_B1.TextAlign = (System.Drawing.ContentAlignment)1;
 			this.CheckBox_habilita_temperatura.AutoSize = true;
 			global::System.Windows.Forms.Control checkBox_habilita_temperatura = this.CheckBox_habilita_temperatura;
 			location = new global::System.Drawing.Point(17, 23);
@@ -1604,7 +1603,7 @@ namespace iS800
 			global::System.Windows.Forms.Control checkBox_habilita_temperatura2 = this.CheckBox_habilita_temperatura;
 			size = new global::System.Drawing.Size(116, 17);
 			checkBox_habilita_temperatura2.Size = size;
-			this.CheckBox_habilita_temperatura.TabIndex = (HorizontalAlignment)76;
+			this.CheckBox_habilita_temperatura.TabIndex = 76;
 			this.CheckBox_habilita_temperatura.Text = "Habilita verificação";
 			this.CheckBox_habilita_temperatura.UseVisualStyleBackColor = true;
 			this.Label_temp_bomba_4.AutoSize = true;
@@ -1615,7 +1614,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_temp_bomba_2 = this.Label_temp_bomba_4;
 			size = new global::System.Drawing.Size(55, 13);
 			label_temp_bomba_2.Size = size;
-			this.Label_temp_bomba_4.TabIndex = (HorizontalAlignment)2;
+			this.Label_temp_bomba_4.TabIndex = 2;
 			this.Label_temp_bomba_4.Text = "Bomba 4 :";
 			this.Label_temp_bomba_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_temp_bomba_3 = this.Label_temp_bomba_3;
@@ -1625,7 +1624,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_temp_bomba_4 = this.Label_temp_bomba_3;
 			size = new global::System.Drawing.Size(55, 13);
 			label_temp_bomba_4.Size = size;
-			this.Label_temp_bomba_3.TabIndex = (HorizontalAlignment)2;
+			this.Label_temp_bomba_3.TabIndex = 2;
 			this.Label_temp_bomba_3.Text = "Bomba 3 :";
 			this.Label_temp_bomba_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_temp_bomba_5 = this.Label_temp_bomba_2;
@@ -1635,7 +1634,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_temp_bomba_6 = this.Label_temp_bomba_2;
 			size = new global::System.Drawing.Size(55, 13);
 			label_temp_bomba_6.Size = size;
-			this.Label_temp_bomba_2.TabIndex = (HorizontalAlignment)2;
+			this.Label_temp_bomba_2.TabIndex = 2;
 			this.Label_temp_bomba_2.Text = "Bomba 2 :";
 			this.Label_temp_bomba_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_temp_bomba_7 = this.Label_temp_bomba_1;
@@ -1645,7 +1644,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_temp_bomba_8 = this.Label_temp_bomba_1;
 			size = new global::System.Drawing.Size(55, 13);
 			label_temp_bomba_8.Size = size;
-			this.Label_temp_bomba_1.TabIndex = (HorizontalAlignment)2;
+			this.Label_temp_bomba_1.TabIndex = 2;
 			this.Label_temp_bomba_1.Text = "Bomba 1 :";
 			this.Grupo_relogio.Controls.Add(this.Button_atualiza_relogio_micro);
 			this.Grupo_relogio.Controls.Add(this.Button_bloqueio_relogio);
@@ -1661,7 +1660,7 @@ namespace iS800
 			global::System.Windows.Forms.Control grupo_relogio2 = this.Grupo_relogio;
 			size = new global::System.Drawing.Size(183, 119);
 			grupo_relogio2.Size = size;
-			this.Grupo_relogio.TabIndex = (HorizontalAlignment)83;
+			this.Grupo_relogio.TabIndex = 83;
 			this.Grupo_relogio.TabStop = false;
 			this.Grupo_relogio.Text = "Relógio";
 			global::System.Windows.Forms.Control button_atualiza_relogio_micro = this.Button_atualiza_relogio_micro;
@@ -1671,7 +1670,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_atualiza_relogio_micro2 = this.Button_atualiza_relogio_micro;
 			size = new global::System.Drawing.Size(70, 21);
 			button_atualiza_relogio_micro2.Size = size;
-			this.Button_atualiza_relogio_micro.TabIndex = (HorizontalAlignment)20;
+			this.Button_atualiza_relogio_micro.TabIndex = 20;
 			this.Button_atualiza_relogio_micro.Text = "Atualiza";
 			this.Button_atualiza_relogio_micro.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button_bloqueio_relogio = this.Button_bloqueio_relogio;
@@ -1681,7 +1680,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_bloqueio_relogio2 = this.Button_bloqueio_relogio;
 			size = new global::System.Drawing.Size(70, 21);
 			button_bloqueio_relogio2.Size = size;
-			this.Button_bloqueio_relogio.TabIndex = (HorizontalAlignment)20;
+			this.Button_bloqueio_relogio.TabIndex = 20;
 			this.Button_bloqueio_relogio.Text = "Libera";
 			this.Button_bloqueio_relogio.UseVisualStyleBackColor = true;
 			this.Label_hora.AutoSize = true;
@@ -1692,7 +1691,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_hora2 = this.Label_hora;
 			size = new global::System.Drawing.Size(36, 13);
 			label_hora2.Size = size;
-			this.Label_hora.TabIndex = (HorizontalAlignment)19;
+			this.Label_hora.TabIndex = 19;
 			this.Label_hora.Text = "Hora :";
 			this.Label_data.AutoSize = true;
 			global::System.Windows.Forms.Control label_data = this.Label_data;
@@ -1702,7 +1701,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_data2 = this.Label_data;
 			size = new global::System.Drawing.Size(36, 13);
 			label_data2.Size = size;
-			this.Label_data.TabIndex = (HorizontalAlignment)19;
+			this.Label_data.TabIndex = 19;
 			this.Label_data.Text = "Data :";
 			global::System.Windows.Forms.Control valor_hora = this.Valor_hora;
 			location = new global::System.Drawing.Point(76, 52);
@@ -1711,8 +1710,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_hora2 = this.Valor_hora;
 			size = new global::System.Drawing.Size(86, 20);
 			valor_hora2.Size = size;
-			this.Valor_hora.TabIndex = (HorizontalAlignment)18;
-			this.Valor_hora.TextAlign = (HorizontalAlignment)2;
+			this.Valor_hora.TabIndex = 18;
+			this.Valor_hora.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control valor_data = this.Valor_data;
 			location = new global::System.Drawing.Point(76, 25);
 			valor_data.Location = location;
@@ -1720,13 +1719,13 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_data2 = this.Valor_data;
 			size = new global::System.Drawing.Size(86, 20);
 			valor_data2.Size = size;
-			this.Valor_data.TabIndex = (HorizontalAlignment)18;
-			this.Valor_data.TextAlign = (HorizontalAlignment)2;
-			this.Ctrl_relogio.Interval = (HorizontalAlignment)2000;
+			this.Valor_data.TabIndex = 18;
+			this.Valor_data.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Ctrl_relogio.Interval = 2000;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
 			size = new global::System.Drawing.Size(943, 610);
 			this.ClientSize = size;
 			this.Controls.Add(this.Grupo_relogio);
@@ -1739,11 +1738,11 @@ namespace iS800
 			this.Controls.Add(this.GroupBox_timer_2);
 			this.Controls.Add(this.GroupBox_timer_1);
 			this.Controls.Add(this.Grupo_endereco);
-			this.FormBorderStyle = (HorizontalAlignment)0;
+			this.FormBorderStyle = (System.Windows.Forms.FormBorderStyle)0;
 			location = new global::System.Drawing.Point(160, 2);
 			this.Location = location;
 			this.Name = "Equip_VA220_ope";
-			this.StartPosition = (HorizontalAlignment)0;
+			this.StartPosition = (System.Windows.Forms.FormStartPosition)0;
 			this.Text = "Equip_220_ope";
 			this.Grupo_endereco.ResumeLayout(false);
 			this.Grupo_endereco.PerformLayout();

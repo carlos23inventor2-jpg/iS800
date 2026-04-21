@@ -519,7 +519,7 @@ namespace iS800
 			iniFileWriteFast.LineSpace();
 			Application.DoEvents();
 			iniFileWriteFast.CloseIniFileWriteFast();
-			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
+			if (Comunicacao.Config_sistema.tipo_interface == 2)
 			{
 				MyProject.Forms.Plataforma.ToolStripButton_serial.Image = Resources.rj45_128x128;
 			}
@@ -527,14 +527,14 @@ namespace iS800
 			{
 				MyProject.Forms.Plataforma.ToolStripButton_serial.Image = Resources.DB9_128;
 			}
-			this.DialogResult = (HorizontalAlignment)1;
+			this.DialogResult = 1;
 			this.Close();
 		}
 
 		// Token: 0x060000BF RID: 191 RVA: 0x00264CC4 File Offset: 0x002630C4
 		private void Cancel_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = (HorizontalAlignment)2;
+			this.DialogResult = 2;
 			this.Close();
 		}
 

@@ -14,7 +14,7 @@ namespace iS800
 			RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.tipo_COM2.itens = new string[3];
 			RT_830_200_variaveis_X.RT_830_200_BD.reservatorio = new RT_830_200_variaveis_X.Equipamento_Reservatorio[101];
 			RT_830_200_variaveis_X.RT_830_200_BD.recalque = new RT_830_200_variaveis_X.Equipamento_Recalque[101];
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				do
@@ -41,7 +41,7 @@ namespace iS800
 				RT_geral.RT_850_BD.Vista_selecionado.itens = new string[2];
 				RT_geral.RT_850_Modelo.valores = new int[6];
 				RT_geral.RT_850_Modelo.itens = new string[6];
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_850_Ctrl_1[num].Var = new RT_geral.Combo_ictel_ctrl[5];
@@ -51,7 +51,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 80);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_850_Ctrl_4[num].Var = new RT_geral.Combo_ictel_ctrl[5];
@@ -63,7 +63,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 50);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_850_Ctrl_8[num].Var = new RT_geral.Combo_ictel_ctrl[17];
@@ -75,7 +75,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 20);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					RT_geral.RT_850_Vista[num].Variaveis = new RT_geral.Combo_ictel_ctrl[41];

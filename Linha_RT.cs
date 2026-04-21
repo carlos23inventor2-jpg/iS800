@@ -17,14 +17,14 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_810_200_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_200_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_810_200_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_810_200_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)256)
+				else if (pag == 256)
 				{
 					RT_geral.RT_810_200_BD.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_200_BD.End_mestre.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -48,11 +48,11 @@ namespace iS800
 					RT_geral.RT_810_200_BD.AD_Intervalo.Valor = RT_geral.RT_810_200_BD.AD_Intervalo.Valor * 10;
 					RT_geral.RT_810_200_BD.AD_Tamanho_filtro.Valor = (int)Comunicacao.Buffer_resp[25] * 256 + (int)Comunicacao.Buffer_resp[26];
 				}
-				else if (pag == (DialogResult)512)
+				else if (pag == 512)
 				{
 					RT_geral.RT_810_200_BD.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_200_BD.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						RT_geral.RT_810_200_BD.Repetidoras[num2].Valor = (int)Comunicacao.Buffer_resp[2 * num2 + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num2 + 8];
@@ -72,15 +72,15 @@ namespace iS800
 		// Token: 0x06000EDD RID: 3805 RVA: 0x0022BDB4 File Offset: 0x0022A1B4
 		public static object AtualizaContagens_GC_82x(int canal, int corrente)
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			int num2;
-			if (corrente == (DialogResult)4)
+			if (corrente == 4)
 			{
-				num2 = (HorizontalAlignment)8;
+				num2 = 8;
 			}
-			else if (corrente == (DialogResult)20)
+			else if (corrente == 20)
 			{
-				num2 = (HorizontalAlignment)12;
+				num2 = 12;
 			}
 			checked
 			{
@@ -102,37 +102,37 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.GC_82x_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.GC_82x_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.GC_82x_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.GC_82x_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
 					RT_geral.GC_82x_BD.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
-					RT_geral.GC_82x_BD.End_mestre.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.modo_SD1.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.modo_SD2.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.modo_SD3.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.liga_SD1.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.liga_SD2.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.liga_SD3.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.desliga_SD1.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.desliga_SD2.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.desliga_SD3.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.sentido_SD1.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.sentido_SD2.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.sentido_SD3.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.modo_SA1.Valor = (HorizontalAlignment)21937;
-					RT_geral.GC_82x_BD.modo_SA2.Valor = (HorizontalAlignment)21938;
+					RT_geral.GC_82x_BD.End_mestre.Valor = 0;
+					RT_geral.GC_82x_BD.modo_SD1.Valor = 0;
+					RT_geral.GC_82x_BD.modo_SD2.Valor = 0;
+					RT_geral.GC_82x_BD.modo_SD3.Valor = 0;
+					RT_geral.GC_82x_BD.liga_SD1.Valor = 0;
+					RT_geral.GC_82x_BD.liga_SD2.Valor = 0;
+					RT_geral.GC_82x_BD.liga_SD3.Valor = 0;
+					RT_geral.GC_82x_BD.desliga_SD1.Valor = 0;
+					RT_geral.GC_82x_BD.desliga_SD2.Valor = 0;
+					RT_geral.GC_82x_BD.desliga_SD3.Valor = 0;
+					RT_geral.GC_82x_BD.sentido_SD1.Valor = 0;
+					RT_geral.GC_82x_BD.sentido_SD2.Valor = 0;
+					RT_geral.GC_82x_BD.sentido_SD3.Valor = 0;
+					RT_geral.GC_82x_BD.modo_SA1.Valor = 21937;
+					RT_geral.GC_82x_BD.modo_SA2.Valor = 21938;
 					RT_geral.GC_82x_BD.limt_inferior1.Valor = (int)Comunicacao.Buffer_resp[35] * 256 + (int)Comunicacao.Buffer_resp[36];
 					RT_geral.GC_82x_BD.limt_inferior2.Valor = (int)Comunicacao.Buffer_resp[37] * 256 + (int)Comunicacao.Buffer_resp[38];
 					RT_geral.GC_82x_BD.limt_superior1.Valor = (int)Comunicacao.Buffer_resp[39] * 256 + (int)Comunicacao.Buffer_resp[40];
 					RT_geral.GC_82x_BD.limt_superior2.Valor = (int)Comunicacao.Buffer_resp[41] * 256 + (int)Comunicacao.Buffer_resp[42];
-					RT_geral.GC_82x_BD.AD_Intervalo.Valor = (HorizontalAlignment)100;
-					RT_geral.GC_82x_BD.AD_Tamanho_filtro.Valor = (HorizontalAlignment)1;
+					RT_geral.GC_82x_BD.AD_Intervalo.Valor = 100;
+					RT_geral.GC_82x_BD.AD_Tamanho_filtro.Valor = 1;
 				}
 			}
 		}
@@ -142,7 +142,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.IEC_855_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.IEC_855_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -155,14 +155,14 @@ namespace iS800
 					RT_geral.IEC_855_BD.MAC[4] = Comunicacao.Buffer_resp[16];
 					RT_geral.IEC_855_BD.MAC[5] = Comunicacao.Buffer_resp[15];
 				}
-				else if (pag == (DialogResult)512)
+				else if (pag == 512)
 				{
 					RT_geral.IEC_855_BD.BaudRateCOM1.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.IEC_855_BD.BaudRateCOM1.AtualizaIndicePeloValor();
 					RT_geral.IEC_855_BD.AtribuicaoIP.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.IEC_855_BD.AtribuicaoIP.AtualizaIndicePeloValor();
 				}
-				else if (pag == (DialogResult)1024)
+				else if (pag == 1024)
 				{
 					byte b = Comunicacao.Buffer_resp[4];
 					byte b2 = Comunicacao.Buffer_resp[3];
@@ -257,7 +257,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.IEC_855_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.IEC_855_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -270,14 +270,14 @@ namespace iS800
 					RT_geral.IEC_855_BD.MAC[4] = Comunicacao.Buffer_resp[16];
 					RT_geral.IEC_855_BD.MAC[5] = Comunicacao.Buffer_resp[15];
 				}
-				else if (pag == (DialogResult)512)
+				else if (pag == 512)
 				{
 					RT_geral.IEC_855_BD.BaudRateCOM1.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.IEC_855_BD.BaudRateCOM1.AtualizaIndicePeloValor();
 					RT_geral.IEC_855_BD.AtribuicaoIP.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.IEC_855_BD.AtribuicaoIP.AtualizaIndicePeloValor();
 				}
-				else if (pag == (DialogResult)1024)
+				else if (pag == 1024)
 				{
 					byte b = Comunicacao.Buffer_resp[4];
 					byte b2 = Comunicacao.Buffer_resp[3];
@@ -364,11 +364,11 @@ namespace iS800
 						b4.ToString()
 					});
 				}
-				else if (pag == (DialogResult)1536)
+				else if (pag == 1536)
 				{
-					int num = (HorizontalAlignment)0;
-					int num2 = (HorizontalAlignment)0;
-					int num3 = (HorizontalAlignment)0;
+					int num = 0;
+					int num2 = 0;
+					int num3 = 0;
 					do
 					{
 						byte b = Comunicacao.Buffer_resp[4 + num];
@@ -387,16 +387,16 @@ namespace iS800
 						});
 						RT_geral.IEC_855_BD.tab_ips[num2] = text;
 						num2++;
-						num += (HorizontalAlignment)4;
+						num += 4;
 						num3++;
 					}
 					while (num3 <= 49);
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
-					int num = (HorizontalAlignment)0;
-					int num2 = (HorizontalAlignment)50;
-					int num3 = (HorizontalAlignment)0;
+					int num = 0;
+					int num2 = 50;
+					int num3 = 0;
 					do
 					{
 						byte b = Comunicacao.Buffer_resp[4 + num];
@@ -415,16 +415,16 @@ namespace iS800
 						});
 						RT_geral.IEC_855_BD.tab_ips[num2] = text;
 						num2++;
-						num += (HorizontalAlignment)4;
+						num += 4;
 						num3++;
 					}
 					while (num3 <= 49);
 				}
-				else if (pag == (DialogResult)2560)
+				else if (pag == 2560)
 				{
-					int num = (HorizontalAlignment)0;
-					int num2 = (HorizontalAlignment)100;
-					int num3 = (HorizontalAlignment)0;
+					int num = 0;
+					int num2 = 100;
+					int num3 = 0;
 					do
 					{
 						byte b = Comunicacao.Buffer_resp[4 + num];
@@ -443,16 +443,16 @@ namespace iS800
 						});
 						RT_geral.IEC_855_BD.tab_ips[num2] = text;
 						num2++;
-						num += (HorizontalAlignment)4;
+						num += 4;
 						num3++;
 					}
 					while (num3 <= 49);
 				}
-				else if (pag == (DialogResult)3072)
+				else if (pag == 3072)
 				{
-					int num = (HorizontalAlignment)0;
-					int num2 = (HorizontalAlignment)150;
-					int num3 = (HorizontalAlignment)0;
+					int num = 0;
+					int num2 = 150;
+					int num3 = 0;
 					do
 					{
 						byte b = Comunicacao.Buffer_resp[4 + num];
@@ -471,7 +471,7 @@ namespace iS800
 						});
 						RT_geral.IEC_855_BD.tab_ips[num2] = text;
 						num2++;
-						num += (HorizontalAlignment)4;
+						num += 4;
 						num3++;
 					}
 					while (num3 <= 49);
@@ -484,14 +484,14 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_810_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_810_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_810_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
 					RT_geral.RT_810_BD.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_BD.End_mestre.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -521,7 +521,7 @@ namespace iS800
 					Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_810_BD.ctrl_modo[0], RT_geral.RT_810_DataGrigViewProcessosColunas[4], (int)Comunicacao.Buffer_resp[53] * 256 + (int)Comunicacao.Buffer_resp[54]);
 					RT_geral.RT_810_BD.ctrl_tempo_max_partida[0].Valor = (int)Comunicacao.Buffer_resp[55] * 256 + (int)Comunicacao.Buffer_resp[56];
 					RT_geral.RT_810_BD.ctrl_tempo_max_parada[0].Valor = (int)Comunicacao.Buffer_resp[57] * 256 + (int)Comunicacao.Buffer_resp[58];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -534,20 +534,20 @@ namespace iS800
 					RT_geral.RT_810_BD.BaudRateCOM2.Valor = (int)Comunicacao.Buffer_resp[79] * 256 + (int)Comunicacao.Buffer_resp[80];
 					if (!perifericos.Lista_ValorPermitido(RT_geral.RT_810_BD.BaudRateCOM1.Valor, perifericos.ListaBaudRate))
 					{
-						RT_geral.RT_810_BD.BaudRateCOM1.Valor = (HorizontalAlignment)21857;
+						RT_geral.RT_810_BD.BaudRateCOM1.Valor = 21857;
 					}
 					RT_geral.RT_810_BD.BaudRateCOM1.Indice = perifericos.Get_Indice_Pelo_Valor(RT_geral.RT_810_BD.BaudRateCOM1.Valor, perifericos.ListaBaudRate);
 					if (!perifericos.Lista_ValorPermitido(RT_geral.RT_810_BD.BaudRateCOM2.Valor, perifericos.ListaBaudRate))
 					{
-						RT_geral.RT_810_BD.BaudRateCOM2.Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_810_BD.BaudRateCOM2.Valor = 21856;
 					}
 					RT_geral.RT_810_BD.BaudRateCOM2.Indice = perifericos.Get_Indice_Pelo_Valor(RT_geral.RT_810_BD.BaudRateCOM2.Valor, perifericos.ListaBaudRate);
 				}
-				else if (pag == (DialogResult)4096)
+				else if (pag == 4096)
 				{
 					RT_geral.RT_810_BD.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_BD.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					do
 					{
 						RT_geral.RT_810_BD.Repetidoras[num3].Valor = (int)Comunicacao.Buffer_resp[2 * num3 + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num3 + 8];
@@ -555,11 +555,11 @@ namespace iS800
 					}
 					while (num3 <= 49);
 				}
-				else if (pag == (DialogResult)8192)
+				else if (pag == 8192)
 				{
 					Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_810_BD.Setpoints_ctrl_variavel[0], RT_geral.RT_810_DataGrigViewSetpointsColunas[0], (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4]);
 				}
-				else if (pag == (DialogResult)10240)
+				else if (pag == 10240)
 				{
 					RT_geral.RT_810_BD.Setpoints_ctrl_nivel_alto[0].Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_810_BD.Setpoints_ctrl_nivel_baixo[0].Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -571,7 +571,7 @@ namespace iS800
 		public static void Atualiza_estrutura_combo_dataview(ref RT_geral.Combo_ictel_ctrl combo, RT_geral.DADOS_DATAGRIDVIEW_RT_820 dataview, int dado)
 		{
 			bool flag = false;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = dataview.NumeroLinhaMenu - 1;
@@ -601,7 +601,7 @@ namespace iS800
 		public static void Atualiza_estrutura_combo(ref RT_geral.Combo_ictel combo, int dado)
 		{
 			bool flag = false;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = combo.Numero_itens - 1;
@@ -640,7 +640,7 @@ namespace iS800
 					versao = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					int num = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					int num2 = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
-					if (equip == (DialogResult)820 & versao == (DialogResult)4 & num2 >= 19)
+					if (equip == 820 & versao == 4 & num2 >= 19)
 					{
 						return true;
 					}
@@ -673,10 +673,10 @@ namespace iS800
 				case 1:
 				{
 					int num = equip;
-					if (num == (DialogResult)824 || num == (DialogResult)828 || num == (DialogResult)920)
+					if (num == 824 || num == 828 || num == 920)
 					{
 						int num2 = versao;
-						if ((num2 == (DialogResult)3 || num2 == (DialogResult)300) && string.Compare(extensao, ".CfgGC82x", true) == (DialogResult)0)
+						if ((num2 == 3 || num2 == 300) && string.Compare(extensao, ".CfgGC82x", true) == 0)
 						{
 							return true;
 						}
@@ -686,9 +686,9 @@ namespace iS800
 				case 2:
 					equip = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					versao = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					if (equip == (DialogResult)920 | equip == (DialogResult)824 | equip == (DialogResult)828)
+					if (equip == 920 | equip == 824 | equip == 828)
 					{
-						if (versao == (DialogResult)300 | versao == (DialogResult)3)
+						if (versao == 300 | versao == 3)
 						{
 							return true;
 						}
@@ -716,7 +716,7 @@ namespace iS800
 		{
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "Equipamento não compatível";
-			result.Cor = (HorizontalAlignment)1;
+			result.Cor = 1;
 			result.Status = false;
 			checked
 			{
@@ -726,89 +726,89 @@ namespace iS800
 				{
 					bool flag = false;
 					int equipamento_selecionado = Geral.Equipamento_selecionado;
-					if (equipamento_selecionado == (DialogResult)810)
+					if (equipamento_selecionado == 810)
 					{
 						switch (versao)
 						{
 						case 2:
-							if (string.Compare(extensao, ".Cfg810_200", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg810_200", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						case 3:
-							if (string.Compare(extensao, ".Cfg810", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg810", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						}
 					}
-					else if (equipamento_selecionado == (DialogResult)820)
+					else if (equipamento_selecionado == 820)
 					{
 						switch (versao)
 						{
 						case 2:
-							if (string.Compare(extensao, ".Cfg820_200", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg820_200", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						case 3:
-							if (string.Compare(extensao, ".Cfg820", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg820", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						case 4:
-							if (string.Compare(extensao, ".Cfg820_400", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg820_400", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						}
 					}
-					else if (equipamento_selecionado == (DialogResult)821)
+					else if (equipamento_selecionado == 821)
 					{
 						switch (versao)
 						{
 						case 2:
-							if (string.Compare(extensao, ".Cfg821_200", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg821_200", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						case 3:
-							if (string.Compare(extensao, ".Cfg821", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg821", true) == 0)
 							{
 								flag = true;
 							}
 							break;
 						}
 					}
-					else if (equipamento_selecionado == (DialogResult)830)
+					else if (equipamento_selecionado == 830)
 					{
 						int num = versao;
-						if (num == (DialogResult)2)
+						if (num == 2)
 						{
-							if (string.Compare(extensao, ".Cfg830", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg830", true) == 0)
 							{
 								flag = true;
 							}
 						}
 					}
-					else if (equipamento_selecionado == (DialogResult)831)
+					else if (equipamento_selecionado == 831)
 					{
 						int num2 = versao;
-						if (num2 == (DialogResult)2)
+						if (num2 == 2)
 						{
-							if (string.Compare(extensao, ".Cfg831", true) == (DialogResult)0)
+							if (string.Compare(extensao, ".Cfg831", true) == 0)
 							{
 								flag = true;
 							}
 						}
 					}
-					else if (equipamento_selecionado == (DialogResult)850 && string.Compare(extensao, ".Cfg850", true) == (DialogResult)0)
+					else if (equipamento_selecionado == 850 && string.Compare(extensao, ".Cfg850", true) == 0)
 					{
 						flag = true;
 					}
@@ -841,9 +841,9 @@ namespace iS800
 						MessageBox.Show(text, " Atenção ", 0, 16);
 						return result;
 					}
-					if (equip == (DialogResult)920 & versao == (DialogResult)300)
+					if (equip == 920 & versao == 300)
 					{
-						versao = (HorizontalAlignment)3;
+						versao = 3;
 					}
 					if (Geral.Equipamento_selecionado == equip & Geral.Equipamento_versao != versao)
 					{
@@ -868,7 +868,7 @@ namespace iS800
 				if (num4 == num3 | num4 == Geral.Equipamento_versao * 1000 + 10 | num4 == Geral.Equipamento_versao * 1000 + 20)
 				{
 					result.Msg = "Equipamento compatível";
-					result.Cor = (HorizontalAlignment)0;
+					result.Cor = 0;
 					result.Status = true;
 				}
 				else
@@ -922,22 +922,22 @@ namespace iS800
 			byte[] array = new byte[4097];
 			checked
 			{
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
+				if (Comunicacao.Config_sistema.tipo_interface == 2)
 				{
 					int num = quantos_tx - 2;
-					array[0] = (HorizontalAlignment)0;
-					array[1] = (HorizontalAlignment)0;
-					array[2] = (HorizontalAlignment)0;
-					array[3] = (HorizontalAlignment)0;
+					array[0] = 0;
+					array[1] = 0;
+					array[2] = 0;
+					array[3] = 0;
 					array[4] = (byte)(num / 256);
 					array[5] = (byte)(num % 256);
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = num - 1;
 					for (int i = num2; i <= num3; i++)
 					{
 						array[6 + i] = Comunicacao.Buffer_cmd[i];
 					}
-					num += (HorizontalAlignment)6;
+					num += 6;
 					ns.Write(array, 0, num);
 				}
 				return 0;
@@ -951,12 +951,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)39;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)78;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 39;
+				Comunicacao.Buffer_cmd[6] = 78;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_810_BD.End_estacao.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_810_BD.End_estacao.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_810_BD.End_mestre.Valor / 256);
@@ -975,7 +975,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[22] = (byte)(RT_geral.RT_810_BD.AD_Intervalo.Valor % 256);
 				Comunicacao.Buffer_cmd[23] = (byte)(RT_geral.RT_810_BD.AD_Tamanho_filtro.Valor / 256);
 				Comunicacao.Buffer_cmd[24] = (byte)(RT_geral.RT_810_BD.AD_Tamanho_filtro.Valor % 256);
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				do
 				{
 					int num2 = num * 2;
@@ -1002,7 +1002,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[60] = (byte)(RT_geral.RT_810_BD.ctrl_tempo_max_partida[0].Valor % 256);
 				Comunicacao.Buffer_cmd[61] = (byte)(RT_geral.RT_810_BD.ctrl_tempo_max_parada[0].Valor / 256);
 				Comunicacao.Buffer_cmd[62] = (byte)(RT_geral.RT_810_BD.ctrl_tempo_max_parada[0].Valor % 256);
-				num = (HorizontalAlignment)0;
+				num = 0;
 				do
 				{
 					int num2 = num * 2;
@@ -1017,11 +1017,11 @@ namespace iS800
 				Comunicacao.Buffer_cmd[82] = (byte)(RT_geral.RT_810_BD.BaudRateCOM1.Valor % 256);
 				Comunicacao.Buffer_cmd[83] = (byte)(RT_geral.RT_810_BD.BaudRateCOM2.Valor / 256);
 				Comunicacao.Buffer_cmd[84] = (byte)(RT_geral.RT_810_BD.BaudRateCOM2.Valor % 256);
-				int num3 = (HorizontalAlignment)85;
+				int num3 = 85;
 				int num4 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[85] = (byte)(num4 % 256);
 				Comunicacao.Buffer_cmd[86] = (byte)(num4 / 256);
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 87);
 				}
@@ -1037,17 +1037,17 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 16;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_810_BD.End_repetidora.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_810_BD.End_repetidora.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_810_BD.Num_repetidoras.Valor / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(RT_geral.RT_810_BD.Num_repetidoras.Valor % 256);
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num * 2 + 11] = (byte)(RT_geral.RT_810_BD.Repetidoras[num].Valor / 256);
@@ -1055,11 +1055,11 @@ namespace iS800
 					num++;
 				}
 				while (num <= 49);
-				int num2 = (HorizontalAlignment)111;
+				int num2 = 111;
 				int num3 = Comunicacao.Crc16_TX(ref num2);
 				Comunicacao.Buffer_cmd[111] = (byte)(num3 % 256);
 				Comunicacao.Buffer_cmd[112] = (byte)(num3 / 256);
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 113);
 				}
@@ -1075,19 +1075,19 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)32;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)2;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 32;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 1;
+				Comunicacao.Buffer_cmd[6] = 2;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_810_BD.Setpoints_ctrl_variavel[0].Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_810_BD.Setpoints_ctrl_variavel[0].Valor % 256);
-				int num = (HorizontalAlignment)9;
+				int num = 9;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[9] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 11);
 				}
@@ -1122,12 +1122,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)12;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)24;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 1;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 12;
+				Comunicacao.Buffer_cmd[6] = 24;
 				int valor = RT_geral.RT_810_200_BD.End_estacao.Valor;
 				int num;
 				byte b = (byte)num;
@@ -1233,7 +1233,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[29] = (byte)num;
 				Comunicacao.Buffer_cmd[30] = (byte)num2;
-				int num4 = (HorizontalAlignment)31;
+				int num4 = 31;
 				num3 = new decimal(Comunicacao.Crc16_TX(ref num4));
 				Comunicacao.Buffer_cmd[31] = Convert.ToByte(decimal.Remainder(num3, 256m));
 				Comunicacao.Buffer_cmd[32] = (byte)(Convert.ToInt64(num3) / 256L);
@@ -1249,12 +1249,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 2;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor;
 				int num;
 				byte b = (byte)num;
@@ -1273,8 +1273,8 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[9] = (byte)num;
 				Comunicacao.Buffer_cmd[10] = (byte)num2;
-				int num3 = (HorizontalAlignment)11;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 11;
+				int num4 = 0;
 				do
 				{
 					int valor3 = RT_geral.RT_820_200_BD.repetidora.Repetidoras[num4].Valor;
@@ -1307,12 +1307,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)11;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)24;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)48;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 11;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 24;
+				Comunicacao.Buffer_cmd[6] = 48;
 				Comunicacao.Buffer_cmd[7] = (byte)RT_geral.RT_820_200_BD.setpoint_horario[0].Hora.Valor;
 				Comunicacao.Buffer_cmd[8] = (byte)RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor;
 				int valor = RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor;
@@ -1459,7 +1459,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[53] = (byte)num;
 				Comunicacao.Buffer_cmd[54] = (byte)num2;
-				int num3 = (HorizontalAlignment)55;
+				int num3 = 55;
 				int num4 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[num3] = (byte)(num4 % 256);
 				Linha_RT.INC(ref num3);
@@ -1477,12 +1477,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 2;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_821_200_BD.repetidora.End_repetidora.Valor;
 				int num;
 				byte b = (byte)num;
@@ -1501,8 +1501,8 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[9] = (byte)num;
 				Comunicacao.Buffer_cmd[10] = (byte)num2;
-				int num3 = (HorizontalAlignment)11;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 11;
+				int num4 = 0;
 				do
 				{
 					int valor3 = RT_geral.RT_821_200_BD.repetidora.Repetidoras[num4].Valor;
@@ -1535,12 +1535,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)58;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)116;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 1;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 58;
+				Comunicacao.Buffer_cmd[6] = 116;
 				int valor = RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor;
 				int num;
 				byte b = (byte)num;
@@ -1951,7 +1951,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[107] = (byte)num;
 				Comunicacao.Buffer_cmd[108] = (byte)num2;
-				RT_geral.RT_820_200_BD.cfg_geral.numero_vazoes.Valor = (HorizontalAlignment)1;
+				RT_geral.RT_820_200_BD.cfg_geral.numero_vazoes.Valor = 1;
 				int valor52 = RT_geral.RT_820_200_BD.cfg_geral.numero_vazoes.Valor;
 				b2 = (byte)num;
 				b = (byte)num2;
@@ -1984,7 +1984,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[121] = (byte)num;
 				Comunicacao.Buffer_cmd[122] = (byte)num2;
-				int num3 = (HorizontalAlignment)123;
+				int num3 = 123;
 				int num4 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[123] = (byte)(num4 % 256);
 				Comunicacao.Buffer_cmd[124] = (byte)(num4 / 256);
@@ -2000,12 +2000,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)30;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)60;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 1;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 30;
+				Comunicacao.Buffer_cmd[6] = 60;
 				int valor = RT_geral.RT_821_200_BD.cfg_geral.End_estacao.Valor;
 				int num;
 				byte b = (byte)num;
@@ -2248,7 +2248,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[65] = (byte)num;
 				Comunicacao.Buffer_cmd[66] = (byte)num2;
-				int num3 = (HorizontalAlignment)67;
+				int num3 = 67;
 				int num4 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[67] = (byte)(num4 % 256);
 				Comunicacao.Buffer_cmd[68] = (byte)(num4 / 256);
@@ -2264,12 +2264,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 2;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_810_200_BD.End_repetidora.Valor;
 				int num;
 				byte b = (byte)num;
@@ -2288,8 +2288,8 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[9] = (byte)num;
 				Comunicacao.Buffer_cmd[10] = (byte)num2;
-				int num3 = (HorizontalAlignment)11;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 11;
+				int num4 = 0;
 				do
 				{
 					int valor3 = RT_geral.RT_810_200_BD.Repetidoras[num4].Valor;
@@ -2324,17 +2324,17 @@ namespace iS800
 			});
 			if (index > 4)
 			{
-				index = (HorizontalAlignment)0;
+				index = 0;
 			}
 			byte result;
-			if (array.Length == (DialogResult)4)
+			if (array.Length == 4)
 			{
 				string text = array[index];
 				result = checked((byte)Convert.ToInt16(text));
 			}
 			else
 			{
-				result = (HorizontalAlignment)0;
+				result = 0;
 			}
 			return result;
 		}
@@ -2342,318 +2342,318 @@ namespace iS800
 		// Token: 0x06000EF5 RID: 3829 RVA: 0x00230FD0 File Offset: 0x0022F3D0
 		public static int CMD_Esc_IEC_855_TABELA_IP(int endereco_estacao, int memoria, int part)
 		{
-			int num = (HorizontalAlignment)100;
+			int num = 100;
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco_estacao;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(memoria / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(memoria % 256);
 				Comunicacao.Buffer_cmd[4] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(num % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(num * 2);
-				int num2 = (HorizontalAlignment)7;
+				int num2 = 7;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				Comunicacao.Buffer_cmd[num2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 1);
 				Comunicacao.Buffer_cmd[num2 + 1] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 0);
 				Comunicacao.Buffer_cmd[num2 + 2] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 3);
 				Comunicacao.Buffer_cmd[num2 + 3] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.tab_ips[part], 2);
 				part++;
-				num2 += (HorizontalAlignment)4;
+				num2 += 4;
 				int num3 = Comunicacao.Crc16_TX(ref num2);
 				Comunicacao.Buffer_cmd[num2] = (byte)(num3 % 256);
 				Comunicacao.Buffer_cmd[num2 + 1] = (byte)(num3 / 256);
@@ -2667,14 +2667,14 @@ namespace iS800
 		// Token: 0x06000EF6 RID: 3830 RVA: 0x00232848 File Offset: 0x00230C48
 		public static int CMD_Esc_IEC_855_CFG_ETHERNET(int endereco_estacao)
 		{
-			int num = (HorizontalAlignment)6;
+			int num = 6;
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco_estacao;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)4;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 4;
+				Comunicacao.Buffer_cmd[3] = 0;
 				Comunicacao.Buffer_cmd[4] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(num % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(num * 2);
@@ -2690,7 +2690,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[16] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.STATIC_SM, 1);
 				Comunicacao.Buffer_cmd[17] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.STATIC_SM, 2);
 				Comunicacao.Buffer_cmd[18] = Linha_RT.IP_String_Parts(RT_geral.IEC_855_BD.STATIC_SM, 3);
-				int num2 = (HorizontalAlignment)19;
+				int num2 = 19;
 				int num3 = Comunicacao.Crc16_TX(ref num2);
 				Comunicacao.Buffer_cmd[19] = (byte)(num3 % 256);
 				Comunicacao.Buffer_cmd[20] = (byte)(num3 / 256);
@@ -2708,17 +2708,17 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco_estacao;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)4;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 2;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 2;
+				Comunicacao.Buffer_cmd[6] = 4;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.IEC_855_BD.BaudRateCOM1.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.IEC_855_BD.BaudRateCOM1.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.IEC_855_BD.AtribuicaoIP.Valor / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(RT_geral.IEC_855_BD.AtribuicaoIP.Valor % 256);
-				int num = (HorizontalAlignment)11;
+				int num = 11;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[11] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(num2 / 256);
@@ -2736,12 +2736,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco_estacao;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)22;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)44;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 22;
+				Comunicacao.Buffer_cmd[6] = 44;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.GC_82x_BD.End_estacao.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.GC_82x_BD.End_estacao.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.GC_82x_BD.End_mestre.Valor / 256);
@@ -2770,8 +2770,8 @@ namespace iS800
 				Comunicacao.Buffer_cmd[32] = (byte)(RT_geral.GC_82x_BD.sentido_SD2.Valor % 256);
 				Comunicacao.Buffer_cmd[33] = (byte)(RT_geral.GC_82x_BD.sentido_SD3.Valor / 256);
 				Comunicacao.Buffer_cmd[34] = (byte)(RT_geral.GC_82x_BD.sentido_SD3.Valor % 256);
-				RT_geral.GC_82x_BD.modo_SA1.Valor = (HorizontalAlignment)21937;
-				RT_geral.GC_82x_BD.modo_SA2.Valor = (HorizontalAlignment)21938;
+				RT_geral.GC_82x_BD.modo_SA1.Valor = 21937;
+				RT_geral.GC_82x_BD.modo_SA2.Valor = 21938;
 				Comunicacao.Buffer_cmd[35] = (byte)(RT_geral.GC_82x_BD.modo_SA1.Valor / 256);
 				Comunicacao.Buffer_cmd[36] = (byte)(RT_geral.GC_82x_BD.modo_SA1.Valor % 256);
 				Comunicacao.Buffer_cmd[37] = (byte)(RT_geral.GC_82x_BD.modo_SA2.Valor / 256);
@@ -2788,7 +2788,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[48] = (byte)(RT_geral.GC_82x_BD.AD_Intervalo.Valor % 256);
 				Comunicacao.Buffer_cmd[49] = (byte)(RT_geral.GC_82x_BD.AD_Tamanho_filtro.Valor / 256);
 				Comunicacao.Buffer_cmd[50] = (byte)(RT_geral.GC_82x_BD.AD_Tamanho_filtro.Valor % 256);
-				int num = (HorizontalAlignment)51;
+				int num = 51;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[51] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[52] = (byte)(num2 / 256);
@@ -2803,28 +2803,28 @@ namespace iS800
 		public static int CMD_Esc_GC_825x_Calibracao_SA(int endereco_estacao, int canal, int funcao_sa)
 		{
 			int num;
-			if (funcao_sa == (DialogResult)0)
+			if (funcao_sa == 0)
 			{
-				num = (HorizontalAlignment)6175;
+				num = 6175;
 			}
 			else
 			{
-				num = (HorizontalAlignment)6191;
+				num = 6191;
 			}
 			checked
 			{
 				int num2 = num + canal;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco_estacao;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num2 / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num2 % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)85;
-				Comunicacao.Buffer_cmd[8] = (HorizontalAlignment)85;
-				int num3 = (HorizontalAlignment)9;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 1;
+				Comunicacao.Buffer_cmd[6] = 2;
+				Comunicacao.Buffer_cmd[7] = 85;
+				Comunicacao.Buffer_cmd[8] = 85;
+				int num3 = 9;
 				num2 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[9] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
@@ -2842,19 +2842,19 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)80;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)3;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)6;
-				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[8] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 80;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 3;
+				Comunicacao.Buffer_cmd[6] = 6;
+				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[8] = 0;
 				Comunicacao.Buffer_cmd[9] = (byte)(corrente1 / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(corrente1 % 256);
 				Comunicacao.Buffer_cmd[11] = (byte)(corrente2 / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(corrente2 % 256);
-				int num = (HorizontalAlignment)13;
+				int num = 13;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[13] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[14] = (byte)(num2 / 256);
@@ -2868,33 +2868,33 @@ namespace iS800
 		{
 			int num;
 			int num2;
-			if (RT_geral.GC_82x_BD.calib_canal == (DialogResult)1)
+			if (RT_geral.GC_82x_BD.calib_canal == 1)
 			{
 				num = RT_geral.GC_82x_BD.calib_contagens;
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 			}
 			else
 			{
-				num = (HorizontalAlignment)0;
+				num = 0;
 				num2 = RT_geral.GC_82x_BD.calib_contagens;
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)80;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)3;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)6;
-				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[8] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 80;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 3;
+				Comunicacao.Buffer_cmd[6] = 6;
+				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[8] = 0;
 				Comunicacao.Buffer_cmd[9] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num % 256);
 				Comunicacao.Buffer_cmd[11] = (byte)(num2 / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(num2 % 256);
-				int num3 = (HorizontalAlignment)13;
+				int num3 = 13;
 				int num4 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[13] = (byte)(num4 % 256);
 				Comunicacao.Buffer_cmd[14] = (byte)(num4 / 256);
@@ -2910,21 +2910,21 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)40;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)4;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 40;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 2;
+				Comunicacao.Buffer_cmd[6] = 4;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_810_BD.Setpoints_ctrl_nivel_alto[0].Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_810_BD.Setpoints_ctrl_nivel_alto[0].Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_810_BD.Setpoints_ctrl_nivel_baixo[0].Valor / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(RT_geral.RT_810_BD.Setpoints_ctrl_nivel_baixo[0].Valor % 256);
-				int num = (HorizontalAlignment)11;
+				int num = 11;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[11] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(num2 / 256);
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 13);
 				}
@@ -2938,14 +2938,14 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_820_200_BD.firmware.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_200_BD.firmware.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_820_200_BD.firmware.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_820_200_BD.firmware.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)256)
+				else if (pag == 256)
 				{
 					RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -3010,11 +3010,11 @@ namespace iS800
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_200_BD.cfg_geral.origem_controle, (int)Comunicacao.Buffer_resp[115] * 256 + (int)Comunicacao.Buffer_resp[116]);
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_200_BD.cfg_geral.origem_protecao, (int)Comunicacao.Buffer_resp[117] * 256 + (int)Comunicacao.Buffer_resp[118]);
 				}
-				else if (pag == (DialogResult)512)
+				else if (pag == 512)
 				{
 					RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Valor = (int)Comunicacao.Buffer_resp[2 * num + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num + 8];
@@ -3022,7 +3022,7 @@ namespace iS800
 					}
 					while (num <= 49);
 				}
-				else if (pag == (DialogResult)2816)
+				else if (pag == 2816)
 				{
 					RT_geral.RT_820_200_BD.setpoint_horario[0].Hora.Valor = (int)Comunicacao.Buffer_resp[3];
 					RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor = (int)Comunicacao.Buffer_resp[4];
@@ -3065,14 +3065,14 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_821_200_BD.firmware.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_821_200_BD.firmware.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_821_200_BD.firmware.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_821_200_BD.firmware.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)256)
+				else if (pag == 256)
 				{
 					RT_geral.RT_821_200_BD.cfg_geral.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_821_200_BD.cfg_geral.End_mestre.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -3108,11 +3108,11 @@ namespace iS800
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_821_200_BD.cfg_geral.entradas[6], (int)Comunicacao.Buffer_resp[59] * 256 + (int)Comunicacao.Buffer_resp[60]);
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_821_200_BD.cfg_geral.entradas[7], (int)Comunicacao.Buffer_resp[61] * 256 + (int)Comunicacao.Buffer_resp[62]);
 				}
-				else if (pag == (DialogResult)512)
+				else if (pag == 512)
 				{
 					RT_geral.RT_821_200_BD.repetidora.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_821_200_BD.repetidora.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_821_200_BD.repetidora.Repetidoras[num].Valor = (int)Comunicacao.Buffer_resp[2 * num + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num + 8];
@@ -3127,12 +3127,12 @@ namespace iS800
 		public static int Atualiza_GT2010(int pag)
 		{
 			int result;
-			if (pag == (DialogResult)768)
+			if (pag == 768)
 			{
 				int num = checked((int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4]);
 				result = num;
 			}
-			else if (pag == (DialogResult)512)
+			else if (pag == 512)
 			{
 			}
 			return result;
@@ -3201,21 +3201,21 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_820_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_820_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_820_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
 					RT_geral.RT_820_BD.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_BD.End_mestre.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_820_BD.TempoForaAr.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					if (RT_geral.RT_820_BD.TempoForaAr.Valor > RT_geral.RT_820_BD.TempoForaAr.Lmte_sup)
 					{
-						RT_geral.RT_820_BD.TempoForaAr.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_820_BD.TempoForaAr.Valor = 0;
 					}
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_BD.modo_repetidora, (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10]);
 					RT_geral.RT_820_BD.Tempo_ptt.Valor = (int)Comunicacao.Buffer_resp[11] * 256 + (int)Comunicacao.Buffer_resp[12];
@@ -3223,7 +3223,7 @@ namespace iS800
 					RT_geral.RT_820_BD.AD_Intervalo.Valor = (int)Comunicacao.Buffer_resp[15] * 256 + (int)Comunicacao.Buffer_resp[16];
 					RT_geral.RT_820_BD.AD_Tamanho_filtro.Valor = (int)Comunicacao.Buffer_resp[17] * 256 + (int)Comunicacao.Buffer_resp[18];
 					RT_geral.RT_820_BD.HabExpIO.Valor = (int)Comunicacao.Buffer_resp[19] * 256 + (int)Comunicacao.Buffer_resp[20];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3233,7 +3233,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 15);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3249,9 +3249,9 @@ namespace iS800
 					}
 					while (num <= 7);
 				}
-				else if (pag == (DialogResult)2161)
+				else if (pag == 2161)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3261,7 +3261,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 7);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3270,7 +3270,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 3);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3281,7 +3281,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 7);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3289,7 +3289,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 15);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3297,7 +3297,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 7);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -3313,11 +3313,11 @@ namespace iS800
 					}
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_BD.BaudRateCOM1, RT_geral.RT_820_BD.BaudRateCOM1.Valor);
 				}
-				else if (pag == (DialogResult)4096)
+				else if (pag == 4096)
 				{
 					RT_geral.RT_820_BD.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_BD.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_820_BD.Repetidoras[num].Valor = (int)Comunicacao.Buffer_resp[2 * num + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num + 8];
@@ -3325,9 +3325,9 @@ namespace iS800
 					}
 					while (num <= 49);
 				}
-				else if (pag == (DialogResult)8192)
+				else if (pag == 8192)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 4;
@@ -3337,9 +3337,9 @@ namespace iS800
 					}
 					while (num <= 7);
 				}
-				else if (pag == (DialogResult)10240)
+				else if (pag == 10240)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 4;
@@ -3349,9 +3349,9 @@ namespace iS800
 					}
 					while (num <= 7);
 				}
-				else if (pag == (DialogResult)12288)
+				else if (pag == 12288)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 4;
@@ -3361,9 +3361,9 @@ namespace iS800
 					}
 					while (num <= 7);
 				}
-				else if (pag == (DialogResult)22528)
+				else if (pag == 22528)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 6;
@@ -3375,9 +3375,9 @@ namespace iS800
 					}
 					while (num <= 15);
 				}
-				else if (pag == (DialogResult)24576)
+				else if (pag == 24576)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 12;
@@ -3392,9 +3392,9 @@ namespace iS800
 					}
 					while (num <= 9);
 				}
-				else if (pag == (DialogResult)26624)
+				else if (pag == 26624)
 				{
-					int num3 = (HorizontalAlignment)3;
+					int num3 = 3;
 					RT_geral.RT_820_BD.config_atuador1_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num3);
 					RT_geral.RT_820_BD.config_atuador1_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num3);
 					RT_geral.RT_820_BD.config_atuador1_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num3);
@@ -3487,9 +3487,9 @@ namespace iS800
 					RT_geral.RT_820_BD.config_atuador1_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num3);
 					RT_geral.RT_820_BD.config_atuador1_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num3);
 				}
-				else if (pag == (DialogResult)26711)
+				else if (pag == 26711)
 				{
-					int num4 = (HorizontalAlignment)3;
+					int num4 = 3;
 					RT_geral.RT_820_BD.config_atuador2_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num4);
 					RT_geral.RT_820_BD.config_atuador2_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num4);
 					RT_geral.RT_820_BD.config_atuador2_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num4);
@@ -3582,9 +3582,9 @@ namespace iS800
 					RT_geral.RT_820_BD.config_atuador2_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num4);
 					RT_geral.RT_820_BD.config_atuador2_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num4);
 				}
-				else if (pag == (DialogResult)26798)
+				else if (pag == 26798)
 				{
-					int num5 = (HorizontalAlignment)3;
+					int num5 = 3;
 					RT_geral.RT_820_BD.config_atuador3_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num5);
 					RT_geral.RT_820_BD.config_atuador3_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num5);
 					RT_geral.RT_820_BD.config_atuador3_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num5);
@@ -3677,9 +3677,9 @@ namespace iS800
 					RT_geral.RT_820_BD.config_atuador3_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num5);
 					RT_geral.RT_820_BD.config_atuador3_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num5);
 				}
-				else if (pag == (DialogResult)26885)
+				else if (pag == 26885)
 				{
-					int num6 = (HorizontalAlignment)3;
+					int num6 = 3;
 					RT_geral.RT_820_BD.config_atuador4_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num6);
 					RT_geral.RT_820_BD.config_atuador4_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num6);
 					RT_geral.RT_820_BD.config_atuador4_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num6);
@@ -3772,9 +3772,9 @@ namespace iS800
 					RT_geral.RT_820_BD.config_atuador4_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num6);
 					RT_geral.RT_820_BD.config_atuador4_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num6);
 				}
-				else if (pag == (DialogResult)30720)
+				else if (pag == 30720)
 				{
-					int num7 = (HorizontalAlignment)0;
+					int num7 = 0;
 					do
 					{
 						int num2 = num7 * 24;
@@ -3802,23 +3802,23 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_820_360_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_360_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_820_360_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_820_360_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
-					int num = (HorizontalAlignment)3;
+					int num = 3;
 					RT_geral.RT_820_360_BD.End_estacao1.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 					RT_geral.RT_820_360_BD.End_estacao2.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 					RT_geral.RT_820_360_BD.End_mestre.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 					RT_geral.RT_820_360_BD.TempoForaAr.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 					if (RT_geral.RT_820_360_BD.TempoForaAr.Valor > RT_geral.RT_820_360_BD.TempoForaAr.Lmte_sup)
 					{
-						RT_geral.RT_820_360_BD.TempoForaAr.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_820_360_BD.TempoForaAr.Valor = 0;
 					}
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_360_BD.modo_repetidora, Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 					RT_geral.RT_820_360_BD.Tempo_ptt.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
@@ -3837,72 +3837,72 @@ namespace iS800
 					RT_geral.RT_820_360_BD.AD_Intervalo.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 					RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 					RT_geral.RT_820_360_BD.HabExpIO.Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
-					num = (HorizontalAlignment)25;
-					int num2 = (HorizontalAlignment)0;
+					num = 25;
+					int num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.EA_Range[num2].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 						num2++;
 					}
 					while (num2 <= 15);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.EA_Inicio[num2].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 						num2++;
 					}
 					while (num2 <= 15);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.EA_Fim[num2].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 						num2++;
 					}
 					while (num2 <= 15);
-					num = (HorizontalAlignment)121;
-					num2 = (HorizontalAlignment)0;
+					num = 121;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_acionamento[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[0], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_desligamento[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[2], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_ret_acionamento[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[1], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_ret_desligamento[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[3], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_ED_selecao[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[4], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_ED_bloqueio[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[5], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.ctrl_ED_liberacao[num2], RT_geral.RT_820_DataGrigViewProcessosColunas[6], Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num));
@@ -3910,9 +3910,9 @@ namespace iS800
 					}
 					while (num2 <= 7);
 				}
-				else if (pag == (DialogResult)2163)
+				else if (pag == 2163)
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -3922,7 +3922,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -3931,7 +3931,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 3);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -3942,7 +3942,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -3950,7 +3950,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 15);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -3958,7 +3958,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 7);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -3967,7 +3967,7 @@ namespace iS800
 						num2++;
 					}
 					while (num2 <= 4);
-					num2 = (HorizontalAlignment)0;
+					num2 = 0;
 					do
 					{
 						int num3 = num2 * 2;
@@ -4002,14 +4002,14 @@ namespace iS800
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.calha_EA[1], RT_geral.RT_820_DatagridViewCalhasColunas[0], 21856);
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.calha_modelo[0], RT_geral.RT_820_DatagridViewCalhasColunas[1], 0);
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_820_360_BD.calha_modelo[1], RT_geral.RT_820_DatagridViewCalhasColunas[1], 0);
-						RT_geral.RT_820_360_BD.calha_fundo[0].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_fundo[1].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_p1[0].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_p1[1].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_p2[0].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_p2[1].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_p3[0].Valor = (HorizontalAlignment)0;
-						RT_geral.RT_820_360_BD.calha_p3[1].Valor = (HorizontalAlignment)0;
+						RT_geral.RT_820_360_BD.calha_fundo[0].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_fundo[1].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_p1[0].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_p1[1].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_p2[0].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_p2[1].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_p3[0].Valor = 0;
+						RT_geral.RT_820_360_BD.calha_p3[1].Valor = 0;
 					}
 					if (RT_geral.RT_820_360_flag_saida_analogicoAs)
 					{
@@ -4023,9 +4023,9 @@ namespace iS800
 						RT_geral.RT_820_360_BD.saida_SA_contagem_20mA[1].Valor = (int)Comunicacao.Buffer_resp[233] * 256 + (int)Comunicacao.Buffer_resp[234];
 					}
 				}
-				else if (pag == (DialogResult)2279)
+				else if (pag == 2279)
 				{
-					int num = (HorizontalAlignment)3;
+					int num = 3;
 					if (RT_geral.RT_820_360_flag_rotativo_motor)
 					{
 						RT_geral.RT_820_360_BD.grupo_rotativo_motores[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
@@ -4039,16 +4039,16 @@ namespace iS800
 					}
 					else
 					{
-						RT_geral.RT_820_360_BD.grupo_rotativo_motores[0].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.grupo_rotativo_motores[0].Valor = 21856;
 						RT_geral.RT_820_360_BD.grupo_rotativo_motores[0].Indice = RT_geral.RT_820_360_BD.grupo_rotativo_motores[0].Indice_padrao;
-						RT_geral.RT_820_360_BD.grupo_rotativo_motores[1].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.grupo_rotativo_motores[1].Valor = 21856;
 						RT_geral.RT_820_360_BD.grupo_rotativo_motores[1].Indice = RT_geral.RT_820_360_BD.grupo_rotativo_motores[1].Indice_padrao;
-						RT_geral.RT_820_360_BD.grupo_rotativo_motores[2].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.grupo_rotativo_motores[2].Valor = 21856;
 						RT_geral.RT_820_360_BD.grupo_rotativo_motores[2].Indice = RT_geral.RT_820_360_BD.grupo_rotativo_motores[2].Indice_padrao;
-						RT_geral.RT_820_360_BD.grupo_rotativo_motores[3].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.grupo_rotativo_motores[3].Valor = 21856;
 						RT_geral.RT_820_360_BD.grupo_rotativo_motores[3].Indice = RT_geral.RT_820_360_BD.grupo_rotativo_motores[3].Indice_padrao;
 					}
-					num = (HorizontalAlignment)11;
+					num = 11;
 					if (RT_geral.RT_820_360_flag_rotativo_motor)
 					{
 						RT_geral.RT_820_360_BD.ctrl_partidas[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
@@ -4070,29 +4070,29 @@ namespace iS800
 					}
 					else
 					{
-						RT_geral.RT_820_360_BD.ctrl_partidas[0].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[0].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[0].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[0].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[1].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[1].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[1].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[1].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[2].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[2].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[2].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[2].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[3].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[3].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[3].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[3].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[4].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[4].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[4].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[4].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[5].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[5].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[5].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[5].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[6].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[6].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[6].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[6].Indice_padrao;
-						RT_geral.RT_820_360_BD.ctrl_partidas[7].Valor = (HorizontalAlignment)21856;
+						RT_geral.RT_820_360_BD.ctrl_partidas[7].Valor = 21856;
 						RT_geral.RT_820_360_BD.ctrl_partidas[7].Indice = RT_geral.RT_820_360_BD.ctrl_partidas[7].Indice_padrao;
 					}
 				}
-				else if (pag == (DialogResult)4096)
+				else if (pag == 4096)
 				{
 					RT_geral.RT_820_360_BD.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_820_360_BD.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.Repetidoras[num2].Valor = (int)Comunicacao.Buffer_resp[2 * num2 + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num2 + 8];
@@ -4100,9 +4100,9 @@ namespace iS800
 					}
 					while (num2 <= 49);
 				}
-				else if (pag == (DialogResult)8192)
+				else if (pag == 8192)
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						int num3 = num2 * 4;
@@ -4112,9 +4112,9 @@ namespace iS800
 					}
 					while (num2 <= 7);
 				}
-				else if (pag == (DialogResult)10240)
+				else if (pag == 10240)
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						int num3 = num2 * 4;
@@ -4124,9 +4124,9 @@ namespace iS800
 					}
 					while (num2 <= 7);
 				}
-				else if (pag == (DialogResult)12288)
+				else if (pag == 12288)
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						int num3 = num2 * 4;
@@ -4136,10 +4136,10 @@ namespace iS800
 					}
 					while (num2 <= 7);
 				}
-				else if (pag == (DialogResult)22528)
+				else if (pag == 22528)
 				{
-					int num = (HorizontalAlignment)3;
-					int num2 = (HorizontalAlignment)0;
+					int num = 3;
+					int num2 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.setpoint_horario[num2].Hora.Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num);
@@ -4150,10 +4150,10 @@ namespace iS800
 					}
 					while (num2 <= 39);
 				}
-				else if (pag == (DialogResult)22648)
+				else if (pag == 22648)
 				{
-					int num = (HorizontalAlignment)3;
-					int num2 = (HorizontalAlignment)40;
+					int num = 3;
+					int num2 = 40;
 					do
 					{
 						RT_geral.RT_820_360_BD.setpoint_horario[num2].Hora.Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num);
@@ -4164,9 +4164,9 @@ namespace iS800
 					}
 					while (num2 <= 79);
 				}
-				else if (pag == (DialogResult)24576)
+				else if (pag == 24576)
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					do
 					{
 						int num3 = num2 * 12;
@@ -4181,9 +4181,9 @@ namespace iS800
 					}
 					while (num2 <= 9);
 				}
-				else if (pag == (DialogResult)26624)
+				else if (pag == 26624)
 				{
-					int num4 = (HorizontalAlignment)3;
+					int num4 = 3;
 					RT_geral.RT_820_360_BD.config_atuador1_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num4);
 					RT_geral.RT_820_360_BD.config_atuador1_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num4);
 					RT_geral.RT_820_360_BD.config_atuador1_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num4);
@@ -4276,9 +4276,9 @@ namespace iS800
 					RT_geral.RT_820_360_BD.config_atuador1_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num4);
 					RT_geral.RT_820_360_BD.config_atuador1_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num4);
 				}
-				else if (pag == (DialogResult)26711)
+				else if (pag == 26711)
 				{
-					int num5 = (HorizontalAlignment)3;
+					int num5 = 3;
 					RT_geral.RT_820_360_BD.config_atuador2_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num5);
 					RT_geral.RT_820_360_BD.config_atuador2_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num5);
 					RT_geral.RT_820_360_BD.config_atuador2_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num5);
@@ -4371,9 +4371,9 @@ namespace iS800
 					RT_geral.RT_820_360_BD.config_atuador2_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num5);
 					RT_geral.RT_820_360_BD.config_atuador2_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num5);
 				}
-				else if (pag == (DialogResult)26798)
+				else if (pag == 26798)
 				{
-					int num6 = (HorizontalAlignment)3;
+					int num6 = 3;
 					RT_geral.RT_820_360_BD.config_atuador3_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num6);
 					RT_geral.RT_820_360_BD.config_atuador3_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num6);
 					RT_geral.RT_820_360_BD.config_atuador3_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num6);
@@ -4466,9 +4466,9 @@ namespace iS800
 					RT_geral.RT_820_360_BD.config_atuador3_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num6);
 					RT_geral.RT_820_360_BD.config_atuador3_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num6);
 				}
-				else if (pag == (DialogResult)26885)
+				else if (pag == 26885)
 				{
-					int num7 = (HorizontalAlignment)3;
+					int num7 = 3;
 					RT_geral.RT_820_360_BD.config_atuador4_perif[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num7);
 					RT_geral.RT_820_360_BD.config_atuador4_formato[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num7);
 					RT_geral.RT_820_360_BD.config_atuador4_base10[0].Valor = (int)Linha_RT.GetByte(Comunicacao.Buffer_resp, ref num7);
@@ -4561,9 +4561,9 @@ namespace iS800
 					RT_geral.RT_820_360_BD.config_atuador4_v2baixo[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num7);
 					RT_geral.RT_820_360_BD.config_atuador4_v2alto[0].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num7);
 				}
-				else if (pag == (DialogResult)30720)
+				else if (pag == 30720)
 				{
-					int num8 = (HorizontalAlignment)0;
+					int num8 = 0;
 					do
 					{
 						int num3 = num8 * 24;
@@ -4583,16 +4583,16 @@ namespace iS800
 					}
 					while (num8 <= 7);
 				}
-				else if (pag == (DialogResult)28672)
+				else if (pag == 28672)
 				{
-					int num = (HorizontalAlignment)3;
-					int num8 = (HorizontalAlignment)0;
+					int num = 3;
+					int num8 = 0;
 					do
 					{
 						RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[num8].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 						RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[num8].Valor = Linha_RT.GetInteger(Comunicacao.Buffer_resp, ref num);
 						RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[num8].Indice = RT_geral.RT_820_360_BD.config_periferico_modbus_generico_funcao[num8].Indice_padrao;
-						int num9 = (HorizontalAlignment)0;
+						int num9 = 0;
 						int num10 = RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas[1].NumeroLinhaMenu - 1;
 						for (int i = num9; i <= num10; i++)
 						{
@@ -4624,12 +4624,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)115;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)230;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 115;
+				Comunicacao.Buffer_cmd[6] = 230;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_820_360_BD.End_estacao1.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_820_360_BD.End_estacao1.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_820_360_BD.End_estacao2.Valor / 256);
@@ -4652,8 +4652,8 @@ namespace iS800
 				Comunicacao.Buffer_cmd[26] = (byte)(RT_geral.RT_820_360_BD.AD_Tamanho_filtro.Valor % 256);
 				Comunicacao.Buffer_cmd[27] = (byte)(RT_geral.RT_820_360_BD.HabExpIO.Valor / 256);
 				Comunicacao.Buffer_cmd[28] = (byte)(RT_geral.RT_820_360_BD.HabExpIO.Valor % 256);
-				int num = (HorizontalAlignment)28;
-				int num2 = (HorizontalAlignment)0;
+				int num = 28;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -4663,7 +4663,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4673,7 +4673,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4683,7 +4683,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4693,7 +4693,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4703,7 +4703,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4713,7 +4713,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4723,7 +4723,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4733,7 +4733,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4743,7 +4743,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4759,7 +4759,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -4775,12 +4775,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)113;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)226;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 113;
+				Comunicacao.Buffer_cmd[6] = 226;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_820_BD.End_estacao.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_820_BD.End_estacao.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_820_BD.End_mestre.Valor / 256);
@@ -4799,8 +4799,8 @@ namespace iS800
 				Comunicacao.Buffer_cmd[22] = (byte)(RT_geral.RT_820_BD.AD_Tamanho_filtro.Valor % 256);
 				Comunicacao.Buffer_cmd[23] = (byte)(RT_geral.RT_820_BD.HabExpIO.Valor / 256);
 				Comunicacao.Buffer_cmd[24] = (byte)(RT_geral.RT_820_BD.HabExpIO.Valor % 256);
-				int num = (HorizontalAlignment)24;
-				int num2 = (HorizontalAlignment)0;
+				int num = 24;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -4810,7 +4810,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4820,7 +4820,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4830,7 +4830,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4840,7 +4840,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4850,7 +4850,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4860,7 +4860,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4870,7 +4870,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4880,7 +4880,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4890,7 +4890,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4906,7 +4906,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -4922,14 +4922,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)115;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)116;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)232;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 115;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 116;
+				Comunicacao.Buffer_cmd[6] = 232;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -4939,7 +4939,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4949,7 +4949,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4959,7 +4959,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4969,7 +4969,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4979,7 +4979,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4989,7 +4989,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -4999,7 +4999,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5009,7 +5009,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5019,7 +5019,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5029,7 +5029,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5039,7 +5039,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				int num3;
 				do
 				{
@@ -5051,7 +5051,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 4);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num3 = RT_geral.RT_820_360_BD.config_perifericos2_end[num2].Valor * 256 + RT_geral.RT_820_360_BD.config_perifericos2_mod[num2].Valor;
@@ -5158,7 +5158,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5174,13 +5174,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)231;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)12;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)24;
-				int num = (HorizontalAlignment)6;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 231;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 12;
+				Comunicacao.Buffer_cmd[6] = 24;
+				int num = 6;
 				int num2 = RT_geral.RT_820_360_BD.grupo_rotativo_motores[0].Valor;
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
@@ -5247,7 +5247,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5263,14 +5263,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)113;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)94;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)188;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 113;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 94;
+				Comunicacao.Buffer_cmd[6] = 188;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -5280,7 +5280,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5290,7 +5290,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5300,7 +5300,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5310,7 +5310,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5320,7 +5320,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5330,7 +5330,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5340,7 +5340,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5350,7 +5350,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5360,7 +5360,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5370,7 +5370,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 15);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -5380,7 +5380,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				int num3;
 				do
 				{
@@ -5402,7 +5402,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5418,14 +5418,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)88;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)120;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)240;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 88;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 120;
+				Comunicacao.Buffer_cmd[6] = 240;
+				int num = 7;
+				int num2 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num] = (byte)RT_geral.RT_820_360_BD.setpoint_horario[num2].Hora.Valor;
@@ -5448,7 +5448,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5464,14 +5464,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)88;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)120;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)120;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)240;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)40;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 88;
+				Comunicacao.Buffer_cmd[3] = 120;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 120;
+				Comunicacao.Buffer_cmd[6] = 240;
+				int num = 7;
+				int num2 = 40;
 				do
 				{
 					Comunicacao.Buffer_cmd[num] = (byte)RT_geral.RT_820_360_BD.setpoint_horario[num2].Hora.Valor;
@@ -5494,7 +5494,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5510,14 +5510,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)88;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)48;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)96;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 88;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 48;
+				Comunicacao.Buffer_cmd[6] = 96;
+				int num = 7;
+				int num2 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num] = (byte)RT_geral.RT_820_BD.setpoint_horario[num2].Hora.Valor;
@@ -5540,7 +5540,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5556,14 +5556,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)96;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)60;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)120;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 96;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 60;
+				Comunicacao.Buffer_cmd[6] = 120;
+				int num = 7;
+				int num2 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num] = (byte)(RT_geral.RT_820_360_BD.config_referencia_perif_periferico[num2].Valor / 256);
@@ -5598,7 +5598,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5614,16 +5614,16 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(pagina / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(pagina % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)4;
-				int num = (HorizontalAlignment)7;
-				Comunicacao.Buffer_cmd[num] = (HorizontalAlignment)85;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 2;
+				Comunicacao.Buffer_cmd[6] = 4;
+				int num = 7;
+				Comunicacao.Buffer_cmd[num] = 85;
 				num++;
-				Comunicacao.Buffer_cmd[num] = (HorizontalAlignment)85;
+				Comunicacao.Buffer_cmd[num] = 85;
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(contagens / 256);
 				num++;
@@ -5634,7 +5634,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5650,14 +5650,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)112;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)50;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)100;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 112;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 50;
+				Comunicacao.Buffer_cmd[6] = 100;
+				int num = 7;
+				int num2 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num] = (byte)(RT_geral.RT_820_360_BD.config_periferico_modbus_generico_endcom[num2].Valor / 256);
@@ -5708,7 +5708,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5724,14 +5724,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)96;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)60;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)120;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 96;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 60;
+				Comunicacao.Buffer_cmd[6] = 120;
+				int num = 7;
+				int num2 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num] = (byte)(RT_geral.RT_820_BD.config_referencia_perif_periferico[num2].Valor / 256);
@@ -5766,7 +5766,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5782,13 +5782,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)104;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 104;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador1_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador1_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador1_base10[0].Valor);
@@ -5885,7 +5885,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -5901,13 +5901,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)104;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 104;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador1_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador1_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador1_base10[0].Valor);
@@ -6004,7 +6004,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6020,13 +6020,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)104;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 104;
+				Comunicacao.Buffer_cmd[3] = 87;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador2_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador2_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador2_base10[0].Valor);
@@ -6123,7 +6123,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6139,13 +6139,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)104;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 104;
+				Comunicacao.Buffer_cmd[3] = 87;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador2_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador2_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador2_base10[0].Valor);
@@ -6242,7 +6242,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6258,13 +6258,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)104;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)174;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 104;
+				Comunicacao.Buffer_cmd[3] = 174;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador3_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador3_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador3_base10[0].Valor);
@@ -6361,7 +6361,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6377,13 +6377,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)104;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)174;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 104;
+				Comunicacao.Buffer_cmd[3] = 174;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador3_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador3_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador3_base10[0].Valor);
@@ -6480,7 +6480,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6496,13 +6496,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)105;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)5;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 105;
+				Comunicacao.Buffer_cmd[3] = 5;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador4_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador4_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_BD.config_atuador4_base10[0].Valor);
@@ -6599,7 +6599,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6615,13 +6615,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)105;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)5;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)87;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)174;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 105;
+				Comunicacao.Buffer_cmd[3] = 5;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 87;
+				Comunicacao.Buffer_cmd[6] = 174;
+				int num = 7;
 				Linha_RT.SetInteger(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador4_perif[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador4_formato[0].Valor);
 				Linha_RT.SetByte(ref Comunicacao.Buffer_cmd, ref num, RT_geral.RT_820_360_BD.config_atuador4_base10[0].Valor);
@@ -6718,7 +6718,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num2 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6734,18 +6734,18 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 16;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_820_360_BD.End_repetidora.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_820_360_BD.End_repetidora.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_820_360_BD.Num_repetidoras.Valor / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(RT_geral.RT_820_360_BD.Num_repetidoras.Valor % 256);
-				int num = (HorizontalAlignment)10;
-				int num2 = (HorizontalAlignment)0;
+				int num = 10;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -6761,7 +6761,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6777,18 +6777,18 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 16;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_820_BD.End_repetidora.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_820_BD.End_repetidora.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_820_BD.Num_repetidoras.Valor / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(RT_geral.RT_820_BD.Num_repetidoras.Valor % 256);
-				int num = (HorizontalAlignment)10;
-				int num2 = (HorizontalAlignment)0;
+				int num = 10;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -6804,7 +6804,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6820,14 +6820,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)32;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)32;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 32;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 16;
+				Comunicacao.Buffer_cmd[6] = 32;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -6847,7 +6847,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6863,14 +6863,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)32;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)32;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 32;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 16;
+				Comunicacao.Buffer_cmd[6] = 32;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -6890,7 +6890,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6906,14 +6906,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)40;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)32;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 40;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 16;
+				Comunicacao.Buffer_cmd[6] = 32;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -6933,7 +6933,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6949,14 +6949,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)40;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)32;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 40;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 16;
+				Comunicacao.Buffer_cmd[6] = 32;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -6976,7 +6976,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -6992,14 +6992,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)48;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)32;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 48;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 16;
+				Comunicacao.Buffer_cmd[6] = 32;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7019,7 +7019,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7035,14 +7035,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)48;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)32;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 48;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 16;
+				Comunicacao.Buffer_cmd[6] = 32;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7062,7 +7062,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7078,14 +7078,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)120;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)96;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)192;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 120;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 96;
+				Comunicacao.Buffer_cmd[6] = 192;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7145,7 +7145,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7161,14 +7161,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)120;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)96;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)192;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 120;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 96;
+				Comunicacao.Buffer_cmd[6] = 192;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7228,7 +7228,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7244,15 +7244,15 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)2;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 1;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 1;
+				Comunicacao.Buffer_cmd[6] = 2;
 				Comunicacao.Buffer_cmd[7] = (byte)(equipamento / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(equipamento % 256);
-				int num = (HorizontalAlignment)9;
+				int num = 9;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[9] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
@@ -7270,14 +7270,14 @@ namespace iS800
 			int[] array = new int[41];
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_821_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_821_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_821_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_821_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
 					RT_geral.RT_821_BD.End_estacao.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_821_BD.End_mestre.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -7286,7 +7286,7 @@ namespace iS800
 					RT_geral.RT_821_BD.Tempo_ptt.Valor = (int)Comunicacao.Buffer_resp[11] * 256 + (int)Comunicacao.Buffer_resp[12];
 					RT_geral.RT_821_BD.AD_Intervalo.Valor = (int)Comunicacao.Buffer_resp[13] * 256 + (int)Comunicacao.Buffer_resp[14];
 					RT_geral.RT_821_BD.AD_Tamanho_filtro.Valor = (int)Comunicacao.Buffer_resp[15] * 256 + (int)Comunicacao.Buffer_resp[16];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -7296,7 +7296,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 3);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -7310,7 +7310,7 @@ namespace iS800
 					while (num <= 2);
 					Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_821_BD.motores_simultaneos[0], RT_geral.RT_821_DataGrigMotoresSimultaneosColunas[0], (int)Comunicacao.Buffer_resp[71] * 256 + (int)Comunicacao.Buffer_resp[72]);
 					RT_geral.RT_821_BD.motores_tempo_entre_acionamentos[0].Valor = (int)Comunicacao.Buffer_resp[73] * 256 + (int)Comunicacao.Buffer_resp[74];
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -7319,7 +7319,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 2);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -7327,7 +7327,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 7);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -7338,11 +7338,11 @@ namespace iS800
 						num++;
 					}
 					while (num <= 7);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num4 = 135 + num * 6;
-						int num3 = (HorizontalAlignment)0;
+						int num3 = 0;
 						do
 						{
 							int num2 = num3 * 2;
@@ -7350,20 +7350,20 @@ namespace iS800
 							num3++;
 						}
 						while (num3 <= 2);
-						int num5 = (HorizontalAlignment)0;
+						int num5 = 0;
 						string valor = Linha_RT.ConverterIntegerArrayToString_II(ref array, ref num5, 3);
 						RT_geral.RT_821_BD.dsp_nome[num].Valor = valor;
 						Linha_RT.VerificaSeVariavelValida(RT_geral.RT_821_BD.dsp_nome[num].Valor);
-						bool flag = !(array[0] == (DialogResult)0 | array[0] == (DialogResult)32);
-						bool flag2 = !(array[1] == (DialogResult)0 | array[1] == (DialogResult)32);
-						bool flag3 = !(array[2] == (DialogResult)0 | array[2] == (DialogResult)32);
+						bool flag = !(array[0] == 0 | array[0] == 32);
+						bool flag2 = !(array[1] == 0 | array[1] == 32);
+						bool flag3 = !(array[2] == 0 | array[2] == 32);
 						if (flag || flag2 || flag3)
 						{
 							RT_geral.RT_821_BD.dsp_hab[num].Valor = -1;
 						}
 						else
 						{
-							RT_geral.RT_821_BD.dsp_hab[num].Valor = (HorizontalAlignment)0;
+							RT_geral.RT_821_BD.dsp_hab[num].Valor = 0;
 						}
 						num++;
 					}
@@ -7385,11 +7385,11 @@ namespace iS800
 					RT_geral.RT_821_BD.baudrate_com1.AtualizaIndicePeloValor();
 					RT_geral.RT_821_BD.baudrate_com2.AtualizaIndicePeloValor();
 				}
-				else if (pag == (DialogResult)4096)
+				else if (pag == 4096)
 				{
 					RT_geral.RT_821_BD.End_repetidora.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_821_BD.Num_repetidoras.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						RT_geral.RT_821_BD.Repetidoras[num].Valor = (int)Comunicacao.Buffer_resp[2 * num + 7] * 256 + (int)Comunicacao.Buffer_resp[2 * num + 8];
@@ -7397,9 +7397,9 @@ namespace iS800
 					}
 					while (num <= 49);
 				}
-				else if (pag == (DialogResult)8192)
+				else if (pag == 8192)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -7408,9 +7408,9 @@ namespace iS800
 					}
 					while (num <= 2);
 				}
-				else if (pag == (DialogResult)10240)
+				else if (pag == 10240)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 4;
@@ -7431,12 +7431,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)94;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)188;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 94;
+				Comunicacao.Buffer_cmd[6] = 188;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_821_BD.End_estacao.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_821_BD.End_estacao.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_821_BD.End_mestre.Valor / 256);
@@ -7451,8 +7451,8 @@ namespace iS800
 				Comunicacao.Buffer_cmd[18] = (byte)(RT_geral.RT_821_BD.AD_Intervalo.Valor % 256);
 				Comunicacao.Buffer_cmd[19] = (byte)(RT_geral.RT_821_BD.AD_Tamanho_filtro.Valor / 256);
 				Comunicacao.Buffer_cmd[20] = (byte)(RT_geral.RT_821_BD.AD_Tamanho_filtro.Valor % 256);
-				int num = (HorizontalAlignment)20;
-				int num2 = (HorizontalAlignment)0;
+				int num = 20;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7462,7 +7462,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7472,7 +7472,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7482,7 +7482,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 3);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7492,7 +7492,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 2);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7502,7 +7502,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 2);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7512,7 +7512,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 2);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7522,7 +7522,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 2);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7540,7 +7540,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[num] = (byte)(RT_geral.RT_821_BD.motores_tempo_entre_acionamentos[0].Valor / 256);
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(RT_geral.RT_821_BD.motores_tempo_entre_acionamentos[0].Valor % 256);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7550,7 +7550,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 2);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7560,7 +7560,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 2);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7570,7 +7570,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7580,7 +7580,7 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					num++;
@@ -7590,13 +7590,13 @@ namespace iS800
 					num2++;
 				}
 				while (num2 <= 7);
-				num2 = (HorizontalAlignment)0;
+				num2 = 0;
 				do
 				{
 					string valor = RT_geral.RT_821_BD.dsp_nome[num2].Valor;
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					Linha_RT.ConverterStringToIntegerArray_II(valor, ref array, ref num3, 3);
-					int num4 = (HorizontalAlignment)0;
+					int num4 = 0;
 					do
 					{
 						num++;
@@ -7631,7 +7631,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num5 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7647,18 +7647,18 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 16;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 52;
+				Comunicacao.Buffer_cmd[6] = 104;
 				Comunicacao.Buffer_cmd[7] = (byte)(RT_geral.RT_821_BD.End_repetidora.Valor / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(RT_geral.RT_821_BD.End_repetidora.Valor % 256);
 				Comunicacao.Buffer_cmd[9] = (byte)(RT_geral.RT_821_BD.Num_repetidoras.Valor / 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(RT_geral.RT_821_BD.Num_repetidoras.Valor % 256);
-				int num = (HorizontalAlignment)10;
-				int num2 = (HorizontalAlignment)0;
+				int num = 10;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7674,7 +7674,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7690,14 +7690,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)32;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)3;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)6;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 32;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 3;
+				Comunicacao.Buffer_cmd[6] = 6;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7713,7 +7713,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7729,14 +7729,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)40;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)6;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)12;
-				int num = (HorizontalAlignment)6;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 40;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 6;
+				Comunicacao.Buffer_cmd[6] = 12;
+				int num = 6;
+				int num2 = 0;
 				do
 				{
 					num++;
@@ -7756,7 +7756,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num3 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -7773,12 +7773,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)8;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)60;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)120;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 8;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 60;
+				Comunicacao.Buffer_cmd[6] = 120;
 				Comunicacao.Buffer_cmd[7] = (byte)RT_geral.RT_850_BD.End_mestre_canal_1.Valor;
 				Comunicacao.Buffer_cmd[8] = (byte)RT_geral.RT_850_BD.End_mestre_canal_2.Valor;
 				Comunicacao.Buffer_cmd[9] = (byte)RT_geral.RT_850_BD.Intervalo_leitura_canal_1.Valor;
@@ -7806,18 +7806,18 @@ namespace iS800
 				Comunicacao.Buffer_cmd[31] = (byte)(RT_geral.RT_850_BD.Sincronismo.Valor / 256);
 				Comunicacao.Buffer_cmd[32] = (byte)(RT_geral.RT_850_BD.Sincronismo.Valor % 256);
 				string valor = RT_geral.RT_850_BD.Msg_linha_1.Valor;
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num, 10);
 				string valor2 = RT_geral.RT_850_BD.Msg_linha_2.Valor;
-				num = (HorizontalAlignment)10;
+				num = 10;
 				Linha_RT.ConverterStringToIntegerArray(valor2, ref array, ref num, 10);
 				string valor3 = RT_geral.RT_850_BD.Msg_linha_3.Valor;
-				num = (HorizontalAlignment)20;
+				num = 20;
 				Linha_RT.ConverterStringToIntegerArray(valor3, ref array, ref num, 10);
 				string valor4 = RT_geral.RT_850_BD.Msg_linha_4.Valor;
-				num = (HorizontalAlignment)30;
+				num = 30;
 				Linha_RT.ConverterStringToIntegerArray(valor4, ref array, ref num, 10);
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				do
 				{
 					int num3 = num2 * 2;
@@ -7831,22 +7831,22 @@ namespace iS800
 				Comunicacao.Buffer_cmd[115] = (byte)RT_geral.RT_850_BD.Flag_Remota.Valor;
 				Comunicacao.Buffer_cmd[116] = (byte)RT_geral.RT_850_BD.Flag_Supervisorio.Valor;
 				Comunicacao.Buffer_cmd[117] = (byte)RT_geral.RT_850_BD.LiberaTeclado.Valor;
-				Comunicacao.Buffer_cmd[118] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[119] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[120] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[121] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[122] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[118] = 0;
+				Comunicacao.Buffer_cmd[119] = 0;
+				Comunicacao.Buffer_cmd[120] = 0;
+				Comunicacao.Buffer_cmd[121] = 0;
+				Comunicacao.Buffer_cmd[122] = 0;
 				Comunicacao.Buffer_cmd[123] = (byte)(RT_geral.RT_850_BD.Numero_cmd_estatistica_canal1.Valor / 256);
 				Comunicacao.Buffer_cmd[124] = (byte)(RT_geral.RT_850_BD.Numero_cmd_estatistica_canal1.Valor % 256);
 				Comunicacao.Buffer_cmd[125] = (byte)(RT_geral.RT_850_BD.Numero_cmd_estatistica_canal2.Valor / 256);
 				Comunicacao.Buffer_cmd[126] = (byte)(RT_geral.RT_850_BD.Numero_cmd_estatistica_canal2.Valor % 256);
-				int num4 = (HorizontalAlignment)127;
+				int num4 = 127;
 				int num5 = Comunicacao.Crc16_TX(ref num4);
 				Comunicacao.Buffer_cmd[num4] = (byte)(num5 % 256);
 				num4++;
 				Comunicacao.Buffer_cmd[num4] = (byte)(num5 / 256);
 				num4++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num4);
 				}
@@ -7864,21 +7864,21 @@ namespace iS800
 				int num = 4096 + bloco * 110;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)110;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)220;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 110;
+				Comunicacao.Buffer_cmd[6] = 220;
 				int num2 = bloco * 10;
-				int num3 = (HorizontalAlignment)7;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 7;
+				int num4 = 0;
 				do
 				{
 					string valor = RT_geral.Variaveis_RT_850[num2 + num4].Nome.Valor;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num5, 5);
-					int num6 = (HorizontalAlignment)0;
+					int num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(array[num6] / 256);
@@ -7906,7 +7906,7 @@ namespace iS800
 						num7 = RT_geral.Variaveis_RT_850[num2 + num4].Escala_fim.Valor + 10000;
 						break;
 					default:
-						num7 = (HorizontalAlignment)0;
+						num7 = 0;
 						break;
 					}
 					int num8 = (RT_geral.Variaveis_RT_850[num2 + num4].Pto_dec_fim.Indice * 64 & 192) + (num7 / 256 & 63);
@@ -7934,7 +7934,7 @@ namespace iS800
 				num3++;
 				Comunicacao.Buffer_cmd[num3] = (byte)(num9 / 256);
 				num3++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num3);
 				}
@@ -7952,21 +7952,21 @@ namespace iS800
 				int num = 6144 + bloco * 110;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)110;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)220;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 110;
+				Comunicacao.Buffer_cmd[6] = 220;
 				int num2 = 150 + bloco * 10;
-				int num3 = (HorizontalAlignment)7;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 7;
+				int num4 = 0;
 				do
 				{
 					string valor = RT_geral.Variaveis_RT_850[num2 + num4].Nome.Valor;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num5, 5);
-					int num6 = (HorizontalAlignment)0;
+					int num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(array[num6] / 256);
@@ -8009,7 +8009,7 @@ namespace iS800
 				num3++;
 				Comunicacao.Buffer_cmd[num3] = (byte)(num8 / 256);
 				num3++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num3);
 				}
@@ -8027,21 +8027,21 @@ namespace iS800
 				int num = 22528 + bloco * 120;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)120;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)240;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 120;
+				Comunicacao.Buffer_cmd[6] = 240;
 				int num2 = 0 + bloco * 8;
-				int num3 = (HorizontalAlignment)7;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 7;
+				int num4 = 0;
 				do
 				{
 					string valor = RT_geral.RT_850_Ctrl_1[num2 + num4].Nome.Valor;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num5, 5);
-					int num6 = (HorizontalAlignment)0;
+					int num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(array[num6] / 256);
@@ -8060,7 +8060,7 @@ namespace iS800
 					num7 += (RT_geral.RT_850_Ctrl_1[num2 + num4].Modelo.Indice & 63);
 					Comunicacao.Buffer_cmd[num3] = (byte)num7;
 					num3++;
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.RT_850_Ctrl_1[num2 + num4].Var[num6].Indice / 256);
@@ -8070,7 +8070,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 3);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.RT_850_Ctrl_1[num2 + num4].Ref[num6].Indice / 256);
@@ -8080,7 +8080,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 3);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)RT_geral.RT_850_Ctrl_1[num2 + num4].Crtl_nome[num6].Indice;
@@ -8098,7 +8098,7 @@ namespace iS800
 				num3++;
 				Comunicacao.Buffer_cmd[num3] = (byte)(num8 / 256);
 				num3++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num3);
 				}
@@ -8114,19 +8114,19 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)48;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)100;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)200;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 48;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 100;
+				Comunicacao.Buffer_cmd[6] = 200;
+				int num = 7;
+				int num2 = 0;
 				do
 				{
 					string text = RT_geral.RT_850_MSG_ALARME_CONFIG[num2];
 					int length = text.Length;
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					int num4 = length - 1;
 					for (int i = num3; i <= num4; i++)
 					{
@@ -8134,9 +8134,9 @@ namespace iS800
 						Comunicacao.Buffer_cmd[num] = (byte)Strings.Asc(text2);
 						num++;
 					}
-					for (int i = length; i <= (HorizontalAlignment)19; i++)
+					for (int i = length; i <= 19; i++)
 					{
-						Comunicacao.Buffer_cmd[num] = (HorizontalAlignment)32;
+						Comunicacao.Buffer_cmd[num] = 32;
 						num++;
 					}
 					num2++;
@@ -8147,7 +8147,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num5 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -8163,19 +8163,19 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)48;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)100;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)100;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)200;
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)10;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 48;
+				Comunicacao.Buffer_cmd[3] = 100;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 100;
+				Comunicacao.Buffer_cmd[6] = 200;
+				int num = 7;
+				int num2 = 10;
 				do
 				{
 					string text = RT_geral.RT_850_MSG_ALARME_CONFIG[num2];
 					int length = text.Length;
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					int num4 = length - 1;
 					for (int i = num3; i <= num4; i++)
 					{
@@ -8183,9 +8183,9 @@ namespace iS800
 						Comunicacao.Buffer_cmd[num] = (byte)Strings.Asc(text2);
 						num++;
 					}
-					for (int i = length; i <= (HorizontalAlignment)19; i++)
+					for (int i = length; i <= 19; i++)
 					{
-						Comunicacao.Buffer_cmd[num] = (HorizontalAlignment)32;
+						Comunicacao.Buffer_cmd[num] = 32;
 						num++;
 					}
 					num2++;
@@ -8196,7 +8196,7 @@ namespace iS800
 				num++;
 				Comunicacao.Buffer_cmd[num] = (byte)(num5 / 256);
 				num++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num);
 				}
@@ -8214,21 +8214,21 @@ namespace iS800
 				int num = 24576 + bloco * 115;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)115;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)230;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 115;
+				Comunicacao.Buffer_cmd[6] = 230;
 				int num2 = 0 + bloco * 5;
-				int num3 = (HorizontalAlignment)7;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 7;
+				int num4 = 0;
 				do
 				{
 					string valor = RT_geral.RT_850_Ctrl_4[num2 + num4].Nome.Valor;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num5, 5);
-					int num6 = (HorizontalAlignment)0;
+					int num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(array[num6] / 256);
@@ -8247,7 +8247,7 @@ namespace iS800
 					num7 += (RT_geral.RT_850_Ctrl_4[num2 + num4].Modelo.Indice & 63);
 					Comunicacao.Buffer_cmd[num3] = (byte)num7;
 					num3++;
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.RT_850_Ctrl_4[num2 + num4].Var[num6].Indice / 256);
@@ -8257,7 +8257,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 3);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.RT_850_Ctrl_4[num2 + num4].Ref[num6].Indice / 256);
@@ -8267,7 +8267,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 3);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)RT_geral.RT_850_Ctrl_4[num2 + num4].Periferico_Indice[num6].Indice;
@@ -8277,7 +8277,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 4);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)RT_geral.RT_850_Ctrl_4[num2 + num4].Crtl_nome[num6].Indice;
@@ -8295,7 +8295,7 @@ namespace iS800
 				num3++;
 				Comunicacao.Buffer_cmd[num3] = (byte)(num8 / 256);
 				num3++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num3);
 				}
@@ -8313,21 +8313,21 @@ namespace iS800
 				int num = 26624 + bloco * 78;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)78;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)156;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 78;
+				Comunicacao.Buffer_cmd[6] = 156;
 				int num2 = 0 + bloco * 2;
-				int num3 = (HorizontalAlignment)7;
-				int num4 = (HorizontalAlignment)0;
+				int num3 = 7;
+				int num4 = 0;
 				do
 				{
 					string valor = RT_geral.RT_850_Ctrl_8[num2 + num4].Nome.Valor;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num5, 5);
-					int num6 = (HorizontalAlignment)0;
+					int num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(array[num6] / 256);
@@ -8346,7 +8346,7 @@ namespace iS800
 					num7 += (RT_geral.RT_850_Ctrl_8[num2 + num4].Modelo.Indice & 63);
 					Comunicacao.Buffer_cmd[num3] = (byte)num7;
 					num3++;
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.RT_850_Ctrl_8[num2 + num4].Var[num6].Indice / 256);
@@ -8356,7 +8356,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 15);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.RT_850_Ctrl_8[num2 + num4].Ref[num6].Indice / 256);
@@ -8366,7 +8366,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 3);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)RT_geral.RT_850_Ctrl_8[num2 + num4].Periferico_Indice[num6].Indice;
@@ -8376,7 +8376,7 @@ namespace iS800
 						num6++;
 					}
 					while (num6 <= 4);
-					num6 = (HorizontalAlignment)0;
+					num6 = 0;
 					do
 					{
 						Comunicacao.Buffer_cmd[num3] = (byte)RT_geral.RT_850_Ctrl_8[num2 + num4].Crtl_nome[num6].Indice;
@@ -8394,7 +8394,7 @@ namespace iS800
 				num3++;
 				Comunicacao.Buffer_cmd[num3] = (byte)(num8 / 256);
 				num3++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num3);
 				}
@@ -8412,17 +8412,17 @@ namespace iS800
 				int num = 28672 + bloco * 57;
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)57;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)114;
-				int num2 = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 57;
+				Comunicacao.Buffer_cmd[6] = 114;
+				int num2 = 7;
 				string valor = RT_geral.RT_850_Vista[bloco + 1].Nome.Valor;
-				int num3 = (HorizontalAlignment)0;
+				int num3 = 0;
 				Linha_RT.ConverterStringToIntegerArray(valor, ref array, ref num3, 5);
-				int num4 = (HorizontalAlignment)0;
+				int num4 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num2] = (byte)(array[num4] / 256);
@@ -8443,7 +8443,7 @@ namespace iS800
 				num2++;
 				Comunicacao.Buffer_cmd[num2] = (byte)(RT_geral.RT_850_Vista[bloco + 1].Num_equip.Valor & 255);
 				num2++;
-				num4 = (HorizontalAlignment)0;
+				num4 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num2] = (byte)(RT_geral.RT_850_Vista[bloco + 1].Variaveis[num4].Indice / 256);
@@ -8453,7 +8453,7 @@ namespace iS800
 					num4++;
 				}
 				while (num4 <= 39);
-				num4 = (HorizontalAlignment)0;
+				num4 = 0;
 				do
 				{
 					Comunicacao.Buffer_cmd[num2] = (byte)(RT_geral.RT_850_Vista[bloco + 1].Equipamentos[num4].Indice & 255);
@@ -8466,7 +8466,7 @@ namespace iS800
 				num2++;
 				Comunicacao.Buffer_cmd[num2] = (byte)(num6 / 256);
 				num2++;
-				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
+				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num2);
 				}
@@ -8480,14 +8480,14 @@ namespace iS800
 		{
 			checked
 			{
-				if (pagina == (DialogResult)0)
+				if (pagina == 0)
 				{
 					RT_830_200_variaveis_X.RT_830_200_BD.firmware.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_830_200_variaveis_X.RT_830_200_BD.firmware.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_830_200_variaveis_X.RT_830_200_BD.firmware.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_830_200_variaveis_X.RT_830_200_BD.firmware.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pagina == (DialogResult)256)
+				else if (pagina == 256)
 				{
 					RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.retrys.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -8505,9 +8505,9 @@ namespace iS800
 					RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_recalque.Valor = (int)Comunicacao.Buffer_resp[27] * 256 + (int)Comunicacao.Buffer_resp[28];
 					RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_vista.Valor = (int)Comunicacao.Buffer_resp[29] * 256 + (int)Comunicacao.Buffer_resp[30];
 				}
-				else if (pagina == (DialogResult)512)
+				else if (pagina == 512)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 8;
@@ -8519,9 +8519,9 @@ namespace iS800
 					}
 					while (num <= 24);
 				}
-				else if (pagina == (DialogResult)612)
+				else if (pagina == 612)
 				{
-					int num = (HorizontalAlignment)25;
+					int num = 25;
 					do
 					{
 						int num2 = num * 8;
@@ -8534,21 +8534,21 @@ namespace iS800
 					}
 					while (num <= 49);
 				}
-				else if (pagina == (DialogResult)768 || pagina == (DialogResult)1024 || pagina == (DialogResult)1280 || pagina == (DialogResult)1536)
+				else if (pagina == 768 || pagina == 1024 || pagina == 1280 || pagina == 1536)
 				{
 					int num4 = pagina / 256 - 3;
 					int num5 = num4 * 7;
 					int num6;
-					if (num_bloco == (DialogResult)0)
+					if (num_bloco == 0)
 					{
-						num6 = (HorizontalAlignment)240;
+						num6 = 240;
 					}
-					else if (num_bloco == (DialogResult)1)
+					else if (num_bloco == 1)
 					{
-						num6 = (HorizontalAlignment)180;
-						num5 += (HorizontalAlignment)4;
+						num6 = 180;
+						num5 += 4;
 					}
-					int num7 = (HorizontalAlignment)0;
+					int num7 = 0;
 					int num8 = num6 - 1;
 					for (int i = num7; i <= num8; i += 60)
 					{
@@ -8585,26 +8585,26 @@ namespace iS800
 						num5++;
 					}
 				}
-				else if (pagina == (DialogResult)1792)
+				else if (pagina == 1792)
 				{
 					int num5;
 					int num6;
 					switch (num_bloco)
 					{
 					case 0:
-						num6 = (HorizontalAlignment)172;
-						num5 = (HorizontalAlignment)0;
+						num6 = 172;
+						num5 = 0;
 						break;
 					case 1:
-						num6 = (HorizontalAlignment)172;
-						num5 = (HorizontalAlignment)2;
+						num6 = 172;
+						num5 = 2;
 						break;
 					case 2:
-						num6 = (HorizontalAlignment)86;
-						num5 = (HorizontalAlignment)4;
+						num6 = 86;
+						num5 = 4;
 						break;
 					}
-					int num9 = (HorizontalAlignment)0;
+					int num9 = 0;
 					int num10 = num6 - 1;
 					for (int i = num9; i <= num10; i += 86)
 					{
@@ -8612,20 +8612,20 @@ namespace iS800
 						RT_830_200_variaveis_X.RT_830_200_BD.vista[num5].Numero_RemotasControles.Valor = (int)Comunicacao.Buffer_resp[i + 5] * 256 + (int)Comunicacao.Buffer_resp[i + 6];
 						RT_830_200_variaveis_X.RT_830_200_BD.vista[num5].Prioridade.Valor = (int)Comunicacao.Buffer_resp[i + 7] * 256 + (int)Comunicacao.Buffer_resp[i + 8];
 						int num11 = i + 9;
-						int num12 = (HorizontalAlignment)0;
+						int num12 = 0;
 						int num13 = RT_830_200_variaveis_X.RT_830_200_BD.vista[num5].Numero_Variaveis.Valor - 1;
 						for (int j = num12; j <= num13; j++)
 						{
 							int valor = (int)Comunicacao.Buffer_resp[num11] * 256 + (int)Comunicacao.Buffer_resp[num11 + 1];
-							num11 += (HorizontalAlignment)2;
+							num11 += 2;
 							RT_830_200_variaveis_X.RT_830_200_BD.vista[num5].Variaveis[j].Valor = valor;
 						}
-						int num14 = (HorizontalAlignment)0;
+						int num14 = 0;
 						int num15 = RT_830_200_variaveis_X.RT_830_200_BD.vista[num5].Numero_RemotasControles.Valor - 1;
 						for (int k = num14; k <= num15; k++)
 						{
 							int valor = (int)Comunicacao.Buffer_resp[num11] * 256 + (int)Comunicacao.Buffer_resp[num11 + 1];
-							num11 += (HorizontalAlignment)2;
+							num11 += 2;
 							RT_830_200_variaveis_X.RT_830_200_BD.vista[num5].RemotasControles[k].Valor = valor;
 						}
 						num5++;
@@ -8639,14 +8639,14 @@ namespace iS800
 		{
 			checked
 			{
-				if (pagina == (DialogResult)0)
+				if (pagina == 0)
 				{
 					RT_831_200_variaveis_X.RT_831_200_BD.firmware.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_831_200_variaveis_X.RT_831_200_BD.firmware.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_831_200_variaveis_X.RT_831_200_BD.firmware.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_831_200_variaveis_X.RT_831_200_BD.firmware.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pagina == (DialogResult)256)
+				else if (pagina == 256)
 				{
 					RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_mestre.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -8656,9 +8656,9 @@ namespace iS800
 					RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor = (int)Comunicacao.Buffer_resp[11] * 256 + (int)Comunicacao.Buffer_resp[12];
 					RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_recalques.Valor = (int)Comunicacao.Buffer_resp[13] * 256 + (int)Comunicacao.Buffer_resp[14];
 				}
-				else if (pagina == (DialogResult)512)
+				else if (pagina == 512)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					int num2 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor - 1;
 					for (int i = num; i <= num2; i++)
 					{
@@ -8666,23 +8666,23 @@ namespace iS800
 						RT_831_200_variaveis_X.RT_831_200_BD.reservatorio[i].Nome.Valor = (int)Comunicacao.Buffer_resp[3 + num3] * 256 + (int)Comunicacao.Buffer_resp[4 + num3];
 					}
 				}
-				else if (pagina == (DialogResult)768 || pagina == (DialogResult)844 || pagina == (DialogResult)1024 || pagina == (DialogResult)1100 || pagina == (DialogResult)1280 || pagina == (DialogResult)1356 || pagina == (DialogResult)1536 || pagina == (DialogResult)1612)
+				else if (pagina == 768 || pagina == 844 || pagina == 1024 || pagina == 1100 || pagina == 1280 || pagina == 1356 || pagina == 1536 || pagina == 1612)
 				{
 					int num4 = pagina / 256 - 3;
 					int num5 = num4 * 7;
 					int num6;
-					if (num_bloco == (DialogResult)0)
+					if (num_bloco == 0)
 					{
-						int j = (HorizontalAlignment)0;
-						num6 = (HorizontalAlignment)152;
+						int j = 0;
+						num6 = 152;
 					}
-					else if (num_bloco == (DialogResult)1)
+					else if (num_bloco == 1)
 					{
-						int j = (HorizontalAlignment)0;
-						num6 = (HorizontalAlignment)114;
-						num5 += (HorizontalAlignment)4;
+						int j = 0;
+						num6 = 114;
+						num5 += 4;
 					}
-					int num7 = (HorizontalAlignment)0;
+					int num7 = 0;
 					int num8 = num6 - 1;
 					for (int j = num7; j <= num8; j += 38)
 					{
@@ -8710,7 +8710,7 @@ namespace iS800
 						num5++;
 					}
 				}
-				else if (pagina == (DialogResult)2304)
+				else if (pagina == 2304)
 				{
 					int j;
 					RT_831_200_variaveis_X.RT_831_200_BD.senha.senha.Valor = (int)Comunicacao.Buffer_resp[j + 3] * 256 + (int)Comunicacao.Buffer_resp[j + 4];
@@ -8725,12 +8725,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)14;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)28;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 1;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 14;
+				Comunicacao.Buffer_cmd[6] = 28;
 				int valor = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor;
 				int num;
 				byte b = (byte)num;
@@ -8845,7 +8845,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[33] = (byte)num;
 				Comunicacao.Buffer_cmd[34] = (byte)num2;
-				int num3 = (HorizontalAlignment)34;
+				int num3 = 34;
 				int num4 = num3 + 1;
 				int num5 = Comunicacao.Crc16_TX(ref num4);
 				Comunicacao.Buffer_cmd[num3 + 1] = (byte)(num5 % 256);
@@ -8858,31 +8858,31 @@ namespace iS800
 		// Token: 0x06000F38 RID: 3896 RVA: 0x0024D4CC File Offset: 0x0024B8CC
 		public static void CMD_Esc_RT_830_200_RESERVATORIO(int pagina, int endereco)
 		{
-			int num = (HorizontalAlignment)25;
+			int num = 25;
 			checked
 			{
 				int num2 = 4 * num;
 				int num3;
 				int num4;
-				if (pagina == (DialogResult)512)
+				if (pagina == 512)
 				{
-					num3 = (HorizontalAlignment)0;
+					num3 = 0;
 					num4 = num - 1;
 				}
-				else if (pagina == (DialogResult)612)
+				else if (pagina == 612)
 				{
-					num3 = (HorizontalAlignment)25;
-					num4 = (HorizontalAlignment)49;
+					num3 = 25;
+					num4 = 49;
 				}
 				Comunicacao.Init_buffer_serial();
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(pagina / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(pagina % 256);
 				Comunicacao.Buffer_cmd[4] = (byte)(num2 / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
-				int num5 = (HorizontalAlignment)7;
+				int num5 = 7;
 				int num6 = num3;
 				int num7 = num4;
 				for (int i = num6; i <= num7; i++)
@@ -8944,49 +8944,49 @@ namespace iS800
 		{
 			Comunicacao.Init_buffer_serial();
 			int num;
-			if (pagina == (DialogResult)768)
+			if (pagina == 768)
 			{
-				num = (HorizontalAlignment)0;
+				num = 0;
 			}
-			else if (pagina == (DialogResult)888)
+			else if (pagina == 888)
 			{
-				num = (HorizontalAlignment)4;
+				num = 4;
 			}
-			else if (pagina == (DialogResult)1024)
+			else if (pagina == 1024)
 			{
-				num = (HorizontalAlignment)7;
+				num = 7;
 			}
-			else if (pagina == (DialogResult)1144)
+			else if (pagina == 1144)
 			{
-				num = (HorizontalAlignment)11;
+				num = 11;
 			}
-			else if (pagina == (DialogResult)1280)
+			else if (pagina == 1280)
 			{
-				num = (HorizontalAlignment)14;
+				num = 14;
 			}
-			else if (pagina == (DialogResult)1400)
+			else if (pagina == 1400)
 			{
-				num = (HorizontalAlignment)18;
+				num = 18;
 			}
-			else if (pagina == (DialogResult)1536)
+			else if (pagina == 1536)
 			{
-				num = (HorizontalAlignment)21;
+				num = 21;
 			}
-			else if (pagina == (DialogResult)1656)
+			else if (pagina == 1656)
 			{
-				num = (HorizontalAlignment)25;
+				num = 25;
 			}
 			checked
 			{
 				int num2 = num + quantos;
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(pagina / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(pagina % 256);
 				Comunicacao.Buffer_cmd[4] = (byte)(quantos * 30 / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(quantos * 30 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(quantos * 30 * 2);
-				int num3 = (HorizontalAlignment)7;
+				int num3 = 7;
 				int num4 = num;
 				int num5 = num2 - 1;
 				for (int i = num4; i <= num5; i++)
@@ -9310,34 +9310,34 @@ namespace iS800
 			int num;
 			int num2;
 			int num3;
-			if (pagina == (DialogResult)1792)
+			if (pagina == 1792)
 			{
-				num = (HorizontalAlignment)0;
-				num2 = (HorizontalAlignment)1;
-				num3 = (HorizontalAlignment)2;
+				num = 0;
+				num2 = 1;
+				num3 = 2;
 			}
-			else if (pagina == (DialogResult)1878)
+			else if (pagina == 1878)
 			{
-				num = (HorizontalAlignment)2;
-				num2 = (HorizontalAlignment)3;
-				num3 = (HorizontalAlignment)2;
+				num = 2;
+				num2 = 3;
+				num3 = 2;
 			}
-			else if (pagina == (DialogResult)1964)
+			else if (pagina == 1964)
 			{
-				num = (HorizontalAlignment)4;
-				num2 = (HorizontalAlignment)4;
-				num3 = (HorizontalAlignment)1;
+				num = 4;
+				num2 = 4;
+				num3 = 1;
 			}
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(pagina / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(pagina % 256);
 				Comunicacao.Buffer_cmd[4] = (byte)(num3 * 43 / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(num3 * 43 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(num3 * 43 * 2);
-				int num4 = (HorizontalAlignment)7;
+				int num4 = 7;
 				int num5 = num;
 				int num6 = num2;
 				for (int i = num5; i <= num6; i++)
@@ -9374,8 +9374,8 @@ namespace iS800
 					num4++;
 					Comunicacao.Buffer_cmd[num4] = (byte)num8;
 					num4++;
-					int num9 = (HorizontalAlignment)0;
-					int num10 = (HorizontalAlignment)0;
+					int num9 = 0;
+					int num10 = 0;
 					int num11 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor - 1;
 					num3 = num10;
 					while (num3 <= num11 && num9 != 40)
@@ -9393,7 +9393,7 @@ namespace iS800
 						num9++;
 						num3++;
 					}
-					int num12 = (HorizontalAlignment)0;
+					int num12 = 0;
 					int num13 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor - 1;
 					int num14 = num12;
 					while (num14 <= num13 && num9 != 40)
@@ -9411,14 +9411,14 @@ namespace iS800
 						num9++;
 						num14++;
 					}
-					int num15 = (HorizontalAlignment)0;
+					int num15 = 0;
 					int num16 = 40 - (RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor + RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor) - 1;
 					int num17 = num15;
 					while (num17 <= num16 && num9 != 40)
 					{
-						Comunicacao.Buffer_cmd[num4] = (HorizontalAlignment)0;
+						Comunicacao.Buffer_cmd[num4] = 0;
 						num4++;
-						Comunicacao.Buffer_cmd[num4] = (HorizontalAlignment)0;
+						Comunicacao.Buffer_cmd[num4] = 0;
 						num4++;
 						num9++;
 						num17++;
@@ -9440,12 +9440,12 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)6;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)12;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 1;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 6;
+				Comunicacao.Buffer_cmd[6] = 12;
 				int valor = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_mestre.Valor;
 				int num;
 				byte b = (byte)num;
@@ -9496,7 +9496,7 @@ namespace iS800
 				num = (int)b2;
 				Comunicacao.Buffer_cmd[17] = (byte)num;
 				Comunicacao.Buffer_cmd[18] = (byte)num2;
-				int num3 = (HorizontalAlignment)18;
+				int num3 = 18;
 				int num4 = num3 + 1;
 				int num5 = Comunicacao.Crc16_TX(ref num4);
 				Comunicacao.Buffer_cmd[num3 + 1] = (byte)(num5 % 256);
@@ -9513,14 +9513,14 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 2;
+				Comunicacao.Buffer_cmd[3] = 0;
 				Comunicacao.Buffer_cmd[4] = (byte)(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor * 1 / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor * 1 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor * 1 * 2);
-				int num = (HorizontalAlignment)7;
-				int num2 = (HorizontalAlignment)0;
+				int num = 7;
+				int num2 = 0;
 				int num3 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor - 1;
 				for (int i = num2; i <= num3; i++)
 				{
@@ -9551,49 +9551,49 @@ namespace iS800
 		{
 			Comunicacao.Init_buffer_serial();
 			int num;
-			if (pagina == (DialogResult)768)
+			if (pagina == 768)
 			{
-				num = (HorizontalAlignment)0;
+				num = 0;
 			}
-			else if (pagina == (DialogResult)844)
+			else if (pagina == 844)
 			{
-				num = (HorizontalAlignment)4;
+				num = 4;
 			}
-			else if (pagina == (DialogResult)1024)
+			else if (pagina == 1024)
 			{
-				num = (HorizontalAlignment)7;
+				num = 7;
 			}
-			else if (pagina == (DialogResult)1100)
+			else if (pagina == 1100)
 			{
-				num = (HorizontalAlignment)11;
+				num = 11;
 			}
-			else if (pagina == (DialogResult)1280)
+			else if (pagina == 1280)
 			{
-				num = (HorizontalAlignment)14;
+				num = 14;
 			}
-			else if (pagina == (DialogResult)1356)
+			else if (pagina == 1356)
 			{
-				num = (HorizontalAlignment)18;
+				num = 18;
 			}
-			else if (pagina == (DialogResult)1536)
+			else if (pagina == 1536)
 			{
-				num = (HorizontalAlignment)21;
+				num = 21;
 			}
-			else if (pagina == (DialogResult)1612)
+			else if (pagina == 1612)
 			{
-				num = (HorizontalAlignment)25;
+				num = 25;
 			}
 			checked
 			{
 				int num2 = num + quantos;
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[1] = 16;
 				Comunicacao.Buffer_cmd[2] = (byte)(pagina / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(pagina % 256);
 				Comunicacao.Buffer_cmd[4] = (byte)(quantos * 19 / 256);
 				Comunicacao.Buffer_cmd[5] = (byte)(quantos * 19 % 256);
 				Comunicacao.Buffer_cmd[6] = (byte)(quantos * 19 * 2);
-				int num3 = (HorizontalAlignment)7;
+				int num3 = 7;
 				int num4 = num;
 				int num5 = num2 - 1;
 				for (int i = num4; i <= num5; i++)
@@ -9807,13 +9807,13 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
-				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)9;
-				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
-				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)1;
-				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)2;
-				int num = (HorizontalAlignment)7;
+				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[2] = 9;
+				Comunicacao.Buffer_cmd[3] = 0;
+				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[5] = 1;
+				Comunicacao.Buffer_cmd[6] = 2;
+				int num = 7;
 				int valor = RT_831_200_variaveis_X.RT_831_200_BD.senha.senha.Valor;
 				int num2;
 				byte b = (byte)num2;
@@ -9843,14 +9843,14 @@ namespace iS800
 			{
 				if (num >= 10000 & num <= 11000)
 				{
-					num -= (HorizontalAlignment)10000;
-					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Indice = (HorizontalAlignment)1;
-					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Valor = (HorizontalAlignment)1;
+					num -= 10000;
+					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Indice = 1;
+					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Valor = 1;
 				}
 				else
 				{
-					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Indice = (HorizontalAlignment)0;
-					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Valor = (HorizontalAlignment)0;
+					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Indice = 0;
+					RT_geral.Variaveis_RT_850[indice].Escala_tratamento.Valor = 0;
 				}
 				RT_geral.Variaveis_RT_850[indice].Escala_fim.Valor = num;
 			}
@@ -9862,14 +9862,14 @@ namespace iS800
 			int[] array = new int[251];
 			checked
 			{
-				if (pag == (DialogResult)0)
+				if (pag == 0)
 				{
 					RT_geral.RT_850_BD.Equip.Valor = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					RT_geral.RT_850_BD.Versao.Valor = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
 					RT_geral.RT_850_BD.Build.Valor = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 					RT_geral.RT_850_BD.Release.Valor = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				}
-				else if (pag == (DialogResult)2048)
+				else if (pag == 2048)
 				{
 					RT_geral.RT_850_BD.End_mestre_canal_1.Valor = (int)Comunicacao.Buffer_resp[3];
 					RT_geral.RT_850_BD.End_mestre_canal_2.Valor = (int)Comunicacao.Buffer_resp[4];
@@ -9894,7 +9894,7 @@ namespace iS800
 					RT_geral.RT_850_BD.End_inicial_equip_tipo_3.Valor = (int)Comunicacao.Buffer_resp[25];
 					RT_geral.RT_850_BD.End_inicial_equip_tipo_vista.Valor = (int)Comunicacao.Buffer_resp[26];
 					RT_geral.RT_850_BD.Sincronismo.Valor = (int)Comunicacao.Buffer_resp[27] * 256 + (int)Comunicacao.Buffer_resp[28];
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -9902,15 +9902,15 @@ namespace iS800
 						num++;
 					}
 					while (num <= 39);
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					RT_geral.RT_850_BD.Msg_linha_1.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
-					num3 = (HorizontalAlignment)10;
+					num3 = 10;
 					RT_geral.RT_850_BD.Msg_linha_2.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
-					num3 = (HorizontalAlignment)20;
+					num3 = 20;
 					RT_geral.RT_850_BD.Msg_linha_3.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
-					num3 = (HorizontalAlignment)30;
+					num3 = 30;
 					RT_geral.RT_850_BD.Msg_linha_4.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
-					RT_geral.RT_850_BD.Variaveis_Numero.Valor = (HorizontalAlignment)0;
+					RT_geral.RT_850_BD.Variaveis_Numero.Valor = 0;
 					RT_geral.RT_850_BD.ConfereResposta.Valor = (int)Comunicacao.Buffer_resp[109];
 					RT_geral.RT_850_BD.Modo_Estatistica.Valor = (int)Comunicacao.Buffer_resp[110];
 					Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_850_BD.Flag_Remota, (int)Comunicacao.Buffer_resp[111]);
@@ -9919,14 +9919,14 @@ namespace iS800
 					RT_geral.RT_850_BD.Numero_cmd_estatistica_canal1.Valor = (int)Comunicacao.Buffer_resp[119] * 256 + (int)Comunicacao.Buffer_resp[120];
 					RT_geral.RT_850_BD.Numero_cmd_estatistica_canal2.Valor = (int)Comunicacao.Buffer_resp[121] * 256 + (int)Comunicacao.Buffer_resp[122];
 				}
-				else if (pag == (DialogResult)4096)
+				else if (pag == 4096)
 				{
 					int num4 = num_bloco * 10;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					do
 					{
 						int num6 = 3 + num5 * 22;
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -9936,7 +9936,7 @@ namespace iS800
 						while (num <= 4);
 						RT_geral.DADO_VARIAVEL[] variaveis_RT_ = RT_geral.Variaveis_RT_850;
 						int num7 = num4 + num5;
-						int num3 = (HorizontalAlignment)0;
+						int num3 = 0;
 						variaveis_RT_[num7].Nome.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 5);
 						Linha_RT.VerificaSeVariavelValida(RT_geral.Variaveis_RT_850[num4 + num5].Nome.Valor);
 						RT_geral.Variaveis_RT_850[num4 + num5].Dsp_tela.Valor = (int)Comunicacao.Buffer_resp[num6 + 10];
@@ -9954,14 +9954,14 @@ namespace iS800
 					}
 					while (num5 <= 9);
 				}
-				else if (pag == (DialogResult)6144)
+				else if (pag == 6144)
 				{
 					int num4 = 150 + num_bloco * 10;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					do
 					{
 						int num6 = 3 + num5 * 22;
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -9971,7 +9971,7 @@ namespace iS800
 						while (num <= 4);
 						RT_geral.DADO_VARIAVEL[] variaveis_RT_2 = RT_geral.Variaveis_RT_850;
 						int num8 = num4 + num5;
-						int num3 = (HorizontalAlignment)0;
+						int num3 = 0;
 						variaveis_RT_2[num8].Nome.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 5);
 						Linha_RT.VerificaSeVariavelValida(RT_geral.Variaveis_RT_850[num4 + num5].Nome.Valor);
 						RT_geral.Variaveis_RT_850[num4 + num5].Dsp_tela.Valor = (int)Comunicacao.Buffer_resp[num6 + 10];
@@ -9989,9 +9989,9 @@ namespace iS800
 					}
 					while (num5 <= 9);
 				}
-				else if (pag == (DialogResult)12288)
+				else if (pag == 12288)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -10000,49 +10000,49 @@ namespace iS800
 					}
 					while (num <= 199);
 					string[] rt_850_MSG_ALARME_CONFIG = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num9 = (HorizontalAlignment)0;
-					int num3 = (HorizontalAlignment)0;
+					int num9 = 0;
+					int num3 = 0;
 					rt_850_MSG_ALARME_CONFIG[num9] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG2 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num10 = (HorizontalAlignment)1;
-					num3 = (HorizontalAlignment)10;
+					int num10 = 1;
+					num3 = 10;
 					rt_850_MSG_ALARME_CONFIG2[num10] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG3 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num11 = (HorizontalAlignment)2;
-					num3 = (HorizontalAlignment)20;
+					int num11 = 2;
+					num3 = 20;
 					rt_850_MSG_ALARME_CONFIG3[num11] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG4 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num12 = (HorizontalAlignment)3;
-					num3 = (HorizontalAlignment)30;
+					int num12 = 3;
+					num3 = 30;
 					rt_850_MSG_ALARME_CONFIG4[num12] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG5 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num13 = (HorizontalAlignment)4;
-					num3 = (HorizontalAlignment)40;
+					int num13 = 4;
+					num3 = 40;
 					rt_850_MSG_ALARME_CONFIG5[num13] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG6 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num14 = (HorizontalAlignment)5;
-					num3 = (HorizontalAlignment)50;
+					int num14 = 5;
+					num3 = 50;
 					rt_850_MSG_ALARME_CONFIG6[num14] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG7 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num15 = (HorizontalAlignment)6;
-					num3 = (HorizontalAlignment)60;
+					int num15 = 6;
+					num3 = 60;
 					rt_850_MSG_ALARME_CONFIG7[num15] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG8 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num16 = (HorizontalAlignment)7;
-					num3 = (HorizontalAlignment)70;
+					int num16 = 7;
+					num3 = 70;
 					rt_850_MSG_ALARME_CONFIG8[num16] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG9 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num17 = (HorizontalAlignment)8;
-					num3 = (HorizontalAlignment)80;
+					int num17 = 8;
+					num3 = 80;
 					rt_850_MSG_ALARME_CONFIG9[num17] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG10 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num18 = (HorizontalAlignment)9;
-					num3 = (HorizontalAlignment)90;
+					int num18 = 9;
+					num3 = 90;
 					rt_850_MSG_ALARME_CONFIG10[num18] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 				}
-				else if (pag == (DialogResult)12388)
+				else if (pag == 12388)
 				{
-					int num = (HorizontalAlignment)0;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -10051,54 +10051,54 @@ namespace iS800
 					}
 					while (num <= 199);
 					string[] rt_850_MSG_ALARME_CONFIG11 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num19 = (HorizontalAlignment)10;
-					int num3 = (HorizontalAlignment)0;
+					int num19 = 10;
+					int num3 = 0;
 					rt_850_MSG_ALARME_CONFIG11[num19] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG12 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num20 = (HorizontalAlignment)11;
-					num3 = (HorizontalAlignment)10;
+					int num20 = 11;
+					num3 = 10;
 					rt_850_MSG_ALARME_CONFIG12[num20] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG13 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num21 = (HorizontalAlignment)12;
-					num3 = (HorizontalAlignment)20;
+					int num21 = 12;
+					num3 = 20;
 					rt_850_MSG_ALARME_CONFIG13[num21] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG14 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num22 = (HorizontalAlignment)13;
-					num3 = (HorizontalAlignment)30;
+					int num22 = 13;
+					num3 = 30;
 					rt_850_MSG_ALARME_CONFIG14[num22] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG15 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num23 = (HorizontalAlignment)14;
-					num3 = (HorizontalAlignment)40;
+					int num23 = 14;
+					num3 = 40;
 					rt_850_MSG_ALARME_CONFIG15[num23] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG16 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num24 = (HorizontalAlignment)15;
-					num3 = (HorizontalAlignment)50;
+					int num24 = 15;
+					num3 = 50;
 					rt_850_MSG_ALARME_CONFIG16[num24] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG17 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num25 = (HorizontalAlignment)16;
-					num3 = (HorizontalAlignment)60;
+					int num25 = 16;
+					num3 = 60;
 					rt_850_MSG_ALARME_CONFIG17[num25] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG18 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num26 = (HorizontalAlignment)17;
-					num3 = (HorizontalAlignment)70;
+					int num26 = 17;
+					num3 = 70;
 					rt_850_MSG_ALARME_CONFIG18[num26] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG19 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num27 = (HorizontalAlignment)18;
-					num3 = (HorizontalAlignment)80;
+					int num27 = 18;
+					num3 = 80;
 					rt_850_MSG_ALARME_CONFIG19[num27] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 					string[] rt_850_MSG_ALARME_CONFIG20 = RT_geral.RT_850_MSG_ALARME_CONFIG;
-					int num28 = (HorizontalAlignment)19;
-					num3 = (HorizontalAlignment)90;
+					int num28 = 19;
+					num3 = 90;
 					rt_850_MSG_ALARME_CONFIG20[num28] = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 10);
 				}
-				else if (pag == (DialogResult)22528)
+				else if (pag == 22528)
 				{
 					int num4 = 0 + num_bloco * 8;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					do
 					{
 						int num6 = 3 + num5 * 30;
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10108,14 +10108,14 @@ namespace iS800
 						while (num <= 4);
 						RT_geral.Dados_Ctrl[] rt_850_Ctrl_ = RT_geral.RT_850_Ctrl_1;
 						int num29 = num4 + num5;
-						int num3 = (HorizontalAlignment)0;
+						int num3 = 0;
 						rt_850_Ctrl_[num29].Nome.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 5);
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_1[num4 + num5].Canal, RT_geral.RT_850_DataGridView_ctrl_1[1], (int)(Comunicacao.Buffer_resp[num6 + 10] / 64));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_1[num4 + num5].Timeout, RT_geral.RT_850_DataGridView_ctrl_1[2], (int)((Comunicacao.Buffer_resp[num6 + 10] & 63) / 8));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_1[num4 + num5].Prioridade, RT_geral.RT_850_DataGridView_ctrl_1[4], (int)(Comunicacao.Buffer_resp[num6 + 10] & 7));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_1[num4 + num5].Comando, RT_geral.RT_850_DataGridView_ctrl_1[3], (int)(Comunicacao.Buffer_resp[num6 + 11] / 64));
 						RT_geral.RT_850_Ctrl_1[num4 + num5].Modelo.Indice = (int)(Comunicacao.Buffer_resp[num6 + 11] & 63);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10124,7 +10124,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 3);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10133,7 +10133,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 3);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10147,14 +10147,14 @@ namespace iS800
 					}
 					while (num5 <= 7);
 				}
-				else if (pag == (DialogResult)24576)
+				else if (pag == 24576)
 				{
 					int num4 = 0 + num_bloco * 5;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					do
 					{
 						int num6 = 3 + num5 * 46;
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10164,14 +10164,14 @@ namespace iS800
 						while (num <= 4);
 						RT_geral.Dados_Ctrl_3[] rt_850_Ctrl_2 = RT_geral.RT_850_Ctrl_4;
 						int num30 = num4 + num5;
-						int num3 = (HorizontalAlignment)0;
+						int num3 = 0;
 						rt_850_Ctrl_2[num30].Nome.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 5);
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_4[num4 + num5].Canal, RT_geral.RT_850_DataGridView_ctrl_4[1], (int)(Comunicacao.Buffer_resp[num6 + 10] / 64));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_4[num4 + num5].Timeout, RT_geral.RT_850_DataGridView_ctrl_4[2], (int)((Comunicacao.Buffer_resp[num6 + 10] & 63) / 8));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_4[num4 + num5].Prioridade, RT_geral.RT_850_DataGridView_ctrl_4[4], (int)(Comunicacao.Buffer_resp[num6 + 10] & 7));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_4[num4 + num5].Comando, RT_geral.RT_850_DataGridView_ctrl_4[3], (int)(Comunicacao.Buffer_resp[num6 + 11] / 64));
 						RT_geral.RT_850_Ctrl_4[num4 + num5].Modelo.Indice = (int)(Comunicacao.Buffer_resp[num6 + 11] & 63);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10180,7 +10180,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 3);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10189,7 +10189,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 3);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10198,7 +10198,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 4);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10212,14 +10212,14 @@ namespace iS800
 					}
 					while (num5 <= 4);
 				}
-				else if (pag == (DialogResult)26624)
+				else if (pag == 26624)
 				{
 					int num4 = 0 + num_bloco * 2;
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					do
 					{
 						int num6 = 3 + num5 * 78;
-						int num = (HorizontalAlignment)0;
+						int num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10229,14 +10229,14 @@ namespace iS800
 						while (num <= 4);
 						RT_geral.Dados_Ctrl_3[] rt_850_Ctrl_3 = RT_geral.RT_850_Ctrl_8;
 						int num31 = num4 + num5;
-						int num3 = (HorizontalAlignment)0;
+						int num3 = 0;
 						rt_850_Ctrl_3[num31].Nome.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 5);
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_8[num4 + num5].Canal, RT_geral.RT_850_DataGridView_ctrl_8[1], (int)(Comunicacao.Buffer_resp[num6 + 10] / 64));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_8[num4 + num5].Timeout, RT_geral.RT_850_DataGridView_ctrl_8[2], (int)((Comunicacao.Buffer_resp[num6 + 10] & 63) / 8));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_8[num4 + num5].Prioridade, RT_geral.RT_850_DataGridView_ctrl_8[4], (int)(Comunicacao.Buffer_resp[num6 + 10] & 7));
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.RT_850_Ctrl_8[num4 + num5].Comando, RT_geral.RT_850_DataGridView_ctrl_8[3], (int)(Comunicacao.Buffer_resp[num6 + 11] / 64));
 						RT_geral.RT_850_Ctrl_8[num4 + num5].Modelo.Indice = (int)(Comunicacao.Buffer_resp[num6 + 11] & 63);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10245,7 +10245,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 15);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10254,7 +10254,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 3);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10263,7 +10263,7 @@ namespace iS800
 							num++;
 						}
 						while (num <= 4);
-						num = (HorizontalAlignment)0;
+						num = 0;
 						do
 						{
 							int num2 = num * 2;
@@ -10277,10 +10277,10 @@ namespace iS800
 					}
 					while (num5 <= 1);
 				}
-				else if (pag == (DialogResult)28672)
+				else if (pag == 28672)
 				{
-					int num6 = (HorizontalAlignment)3;
-					int num = (HorizontalAlignment)0;
+					int num6 = 3;
+					int num = 0;
 					do
 					{
 						int num2 = num * 2;
@@ -10290,9 +10290,9 @@ namespace iS800
 					while (num <= 4);
 					RT_geral.Dados_Ctrl_Vista[] rt_850_Vista = RT_geral.RT_850_Vista;
 					int num32 = num_bloco + 1;
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					rt_850_Vista[num32].Nome.Valor = Linha_RT.ConverterIntegerArrayToString(ref array, ref num3, 5);
-					num6 += (HorizontalAlignment)10;
+					num6 += 10;
 					RT_geral.RT_850_Vista[num_bloco + 1].Canal.Indice = (int)((Comunicacao.Buffer_resp[num6] & 192) / 64);
 					RT_geral.RT_850_Vista[num_bloco + 1].Timeout.Indice = (int)((Comunicacao.Buffer_resp[num6] & 56) / 8);
 					RT_geral.RT_850_Vista[num_bloco + 1].Prioridade.Indice = (int)(Comunicacao.Buffer_resp[num6] & 7);
@@ -10303,7 +10303,7 @@ namespace iS800
 					num6++;
 					RT_geral.RT_850_Vista[num_bloco + 1].Num_equip.Valor = (int)Comunicacao.Buffer_resp[num6];
 					num6++;
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						int num2 = (int)Comunicacao.Buffer_resp[num6];
@@ -10314,7 +10314,7 @@ namespace iS800
 						num++;
 					}
 					while (num <= 39);
-					num = (HorizontalAlignment)0;
+					num = 0;
 					do
 					{
 						RT_geral.RT_850_Vista[num_bloco + 1].Equipamentos[num].Indice = (int)Comunicacao.Buffer_resp[num6];
@@ -10330,7 +10330,7 @@ namespace iS800
 		public static void CreateComboBoxColumn3(RT_geral.Combo_ictel combo, DataGridViewComboBoxColumn cell)
 		{
 			cell.Items.Clear();
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = combo.Numero_itens - 1;
@@ -10346,7 +10346,7 @@ namespace iS800
 		{
 			DataGridViewComboBoxColumn dataGridViewComboBoxColumn = new DataGridViewComboBoxColumn();
 			dataGridViewComboBoxColumn.Items.Clear();
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = combo.Numero_itens - 1;
@@ -10367,8 +10367,8 @@ namespace iS800
 			dataGridViewComboBoxColumn2.DataPropertyName = "Col_" + dados[num].NomeColuna;
 			dataGridViewComboBoxColumn2.HeaderText = dados[num].TagColuna;
 			dataGridViewComboBoxColumn2.Width = dados[num].LarguraColuna;
-			dataGridViewComboBoxColumn2.MaxDropDownItems = (HorizontalAlignment)6;
-			dataGridViewComboBoxColumn2.FlatStyle = (HorizontalAlignment)0;
+			dataGridViewComboBoxColumn2.MaxDropDownItems = 6;
+			dataGridViewComboBoxColumn2.FlatStyle = (System.Windows.Forms.FlatStyle)0;
 			dataGridViewComboBoxColumn2.DefaultCellStyle.Alignment = dados[num].AlingColuna;
 			dataGridViewComboBoxColumn2.ReadOnly = false;
 			dataGridViewComboBoxColumn2.Items.Clear();
@@ -10377,7 +10377,7 @@ namespace iS800
 			{
 				if (numeroLinhaMenu > 0)
 				{
-					int num2 = (HorizontalAlignment)0;
+					int num2 = 0;
 					int num3 = numeroLinhaMenu - 1;
 					for (int i = num2; i <= num3; i++)
 					{
@@ -10410,7 +10410,7 @@ namespace iS800
 			dataGridViewCheckBoxColumn2.DataPropertyName = "Col_" + dados[Conversions.ToInteger(Num)].NomeColuna;
 			dataGridViewCheckBoxColumn2.HeaderText = dados[Conversions.ToInteger(Num)].TagColuna;
 			dataGridViewCheckBoxColumn2.Width = dados[Conversions.ToInteger(Num)].LarguraColuna;
-			dataGridViewCheckBoxColumn2.FlatStyle = (HorizontalAlignment)0;
+			dataGridViewCheckBoxColumn2.FlatStyle = (System.Windows.Forms.FlatStyle)0;
 			dataGridViewCheckBoxColumn2.DefaultCellStyle.Alignment = dados[Conversions.ToInteger(Num)].AlingColuna;
 			return dataGridViewCheckBoxColumn;
 		}
@@ -10419,7 +10419,7 @@ namespace iS800
 		public static void CarregaCombo(ref ComboBox dado, RT_geral.Combo_ictel BD)
 		{
 			dado.Items.Clear();
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = BD.Numero_itens - 1;
@@ -10434,7 +10434,7 @@ namespace iS800
 		public static void CarregaComboBoxED(ref ComboBox destino, RT_geral.Combo_ictel dados)
 		{
 			destino.Items.Clear();
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = dados.Numero_itens - 1;
@@ -10453,8 +10453,8 @@ namespace iS800
 				int[] array = new int[tamanho - 1 + 1];
 				byte[] bytes = Encoding.UTF8.GetBytes(texto);
 				int num = bytes.Length;
-				int num2 = (HorizontalAlignment)0;
-				int num3 = (HorizontalAlignment)0;
+				int num2 = 0;
+				int num3 = 0;
 				int num4 = tamanho - 1;
 				for (int i = num3; i <= num4; i++)
 				{
@@ -10466,7 +10466,7 @@ namespace iS800
 					}
 					else
 					{
-						num5 = (HorizontalAlignment)32;
+						num5 = 32;
 					}
 					if (num2 < num)
 					{
@@ -10491,8 +10491,8 @@ namespace iS800
 				int[] array = new int[tamanho - 1 + 1];
 				byte[] bytes = Encoding.UTF8.GetBytes(texto);
 				int num = bytes.Length;
-				int num2 = (HorizontalAlignment)0;
-				int num3 = (HorizontalAlignment)0;
+				int num2 = 0;
+				int num3 = 0;
 				int num4 = tamanho - 1;
 				for (int i = num3; i <= num4; i++)
 				{
@@ -10504,7 +10504,7 @@ namespace iS800
 					}
 					else
 					{
-						num5 = (HorizontalAlignment)32;
+						num5 = 32;
 					}
 					dados[posicao] = num5;
 					posicao++;
@@ -10519,20 +10519,20 @@ namespace iS800
 			{
 				byte[] array = new byte[tamanho * 2 - 1 + 1];
 				UTF8Encoding utf8Encoding = new UTF8Encoding();
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				int num2 = tamanho - 1;
 				for (int i = num; i <= num2; i++)
 				{
 					array[i * 2] = (byte)(dado[posicao + i] / 256);
 					array[i * 2 + 1] = (byte)(dado[posicao + i] % 256);
 				}
-				int num3 = (HorizontalAlignment)0;
+				int num3 = 0;
 				int num4 = tamanho * 2 - 1;
 				for (int i = num3; i <= num4; i++)
 				{
 					if (array[i] < 48 | array[i] > 123 | (array[i] > 58 & array[i] < 65))
 					{
-						array[i] = (HorizontalAlignment)32;
+						array[i] = 32;
 					}
 				}
 				string @string = Encoding.UTF8.GetString(array);
@@ -10548,7 +10548,7 @@ namespace iS800
 			{
 				byte[] array = new byte[tamanho - 1 + 1];
 				UTF8Encoding utf8Encoding = new UTF8Encoding();
-				int num = (HorizontalAlignment)0;
+				int num = 0;
 				int num2 = tamanho - 1;
 				for (int i = num; i <= num2; i++)
 				{
@@ -10583,9 +10583,9 @@ namespace iS800
 		// Token: 0x06000F4E RID: 3918 RVA: 0x00250FF4 File Offset: 0x0024F3F4
 		public static int Atualiza_Numero_Variaveis_RT850()
 		{
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			bool flag = false;
-			int num2 = (HorizontalAlignment)0;
+			int num2 = 0;
 			checked
 			{
 				while (!flag)
@@ -10593,7 +10593,7 @@ namespace iS800
 					flag = true;
 					string valor = RT_geral.Variaveis_RT_850[num2].Nome.Valor;
 					byte[] bytes = Encoding.UTF8.GetBytes(valor);
-					int num3 = (HorizontalAlignment)0;
+					int num3 = 0;
 					int num4 = Strings.Len(valor) - 1;
 					for (int i = num3; i <= num4; i++)
 					{
@@ -10627,104 +10627,104 @@ namespace iS800
 		// Token: 0x06000F50 RID: 3920 RVA: 0x002510CC File Offset: 0x0024F4CC
 		public static void Atualiza_Tipo_equipamento(int tipo, int versao)
 		{
-			if (tipo == (DialogResult)9000)
+			if (tipo == 9000)
 			{
-				RT_geral.IEC_855_BD.Equip.Valor = (HorizontalAlignment)856;
-				if (versao == (DialogResult)30)
+				RT_geral.IEC_855_BD.Equip.Valor = 856;
+				if (versao == 30)
 				{
-					RT_geral.IEC_855_BD.Versao.Valor = (HorizontalAlignment)3;
-					RT_geral.IEC_855_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.IEC_855_BD.Versao.Valor = 3;
+					RT_geral.IEC_855_BD.Build.Valor = 0;
 				}
 			}
-			else if (tipo == (DialogResult)8000)
+			else if (tipo == 8000)
 			{
-				RT_geral.IEC_855_BD.Equip.Valor = (HorizontalAlignment)855;
-				if (versao == (DialogResult)30)
+				RT_geral.IEC_855_BD.Equip.Valor = 855;
+				if (versao == 30)
 				{
-					RT_geral.IEC_855_BD.Versao.Valor = (HorizontalAlignment)3;
-					RT_geral.IEC_855_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.IEC_855_BD.Versao.Valor = 3;
+					RT_geral.IEC_855_BD.Build.Valor = 0;
 				}
 			}
-			else if (tipo == (DialogResult)1000)
+			else if (tipo == 1000)
 			{
-				RT_geral.RT_810_BD.Equip.Valor = (HorizontalAlignment)810;
-				if (versao == (DialogResult)30)
+				RT_geral.RT_810_BD.Equip.Valor = 810;
+				if (versao == 30)
 				{
-					RT_geral.RT_810_BD.Versao.Valor = (HorizontalAlignment)3;
-					RT_geral.RT_810_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.RT_810_BD.Versao.Valor = 3;
+					RT_geral.RT_810_BD.Build.Valor = 0;
 				}
 				else
 				{
 					if (versao != 20)
 					{
-						RT_geral.RT_810_BD.Equip.Valor = (HorizontalAlignment)0;
-						RT_geral.RT_810_BD.Versao.Valor = (HorizontalAlignment)0;
-						RT_geral.RT_810_BD.Build.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_810_BD.Equip.Valor = 0;
+						RT_geral.RT_810_BD.Versao.Valor = 0;
+						RT_geral.RT_810_BD.Build.Valor = 0;
 						return;
 					}
-					RT_geral.RT_810_200_BD.Versao.Valor = (HorizontalAlignment)2;
-					RT_geral.RT_810_200_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.RT_810_200_BD.Versao.Valor = 2;
+					RT_geral.RT_810_200_BD.Build.Valor = 0;
 				}
 			}
 			else
 			{
-				if (tipo == (DialogResult)2000)
+				if (tipo == 2000)
 				{
-					RT_geral.RT_820_BD.Equip.Valor = (HorizontalAlignment)820;
+					RT_geral.RT_820_BD.Equip.Valor = 820;
 					switch (versao)
 					{
 					case 30:
-						RT_geral.RT_820_BD.Versao.Valor = (HorizontalAlignment)3;
-						RT_geral.RT_820_BD.Build.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_820_BD.Versao.Valor = 3;
+						RT_geral.RT_820_BD.Build.Valor = 0;
 						return;
 					case 36:
-						RT_geral.RT_820_360_BD.Equip.Valor = (HorizontalAlignment)820;
-						RT_geral.RT_820_360_BD.Versao.Valor = (HorizontalAlignment)3;
-						RT_geral.RT_820_360_BD.Build.Valor = (HorizontalAlignment)6;
+						RT_geral.RT_820_360_BD.Equip.Valor = 820;
+						RT_geral.RT_820_360_BD.Versao.Valor = 3;
+						RT_geral.RT_820_360_BD.Build.Valor = 6;
 						return;
 					case 40:
-						RT_geral.RT_820_360_BD.Equip.Valor = (HorizontalAlignment)820;
-						RT_geral.RT_820_360_BD.Versao.Valor = (HorizontalAlignment)4;
-						RT_geral.RT_820_360_BD.Build.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_820_360_BD.Equip.Valor = 820;
+						RT_geral.RT_820_360_BD.Versao.Valor = 4;
+						RT_geral.RT_820_360_BD.Build.Valor = 0;
 						return;
 					}
-					RT_geral.RT_820_BD.Equip.Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_BD.Versao.Valor = (HorizontalAlignment)0;
-					RT_geral.RT_820_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.RT_820_BD.Equip.Valor = 0;
+					RT_geral.RT_820_BD.Versao.Valor = 0;
+					RT_geral.RT_820_BD.Build.Valor = 0;
 					return;
 				}
-				if (tipo == (DialogResult)3000)
+				if (tipo == 3000)
 				{
-					RT_geral.RT_821_BD.Equip.Valor = (HorizontalAlignment)821;
+					RT_geral.RT_821_BD.Equip.Valor = 821;
 					if (versao != 30)
 					{
-						RT_geral.RT_821_BD.Equip.Valor = (HorizontalAlignment)0;
-						RT_geral.RT_821_BD.Versao.Valor = (HorizontalAlignment)0;
-						RT_geral.RT_821_BD.Build.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_821_BD.Equip.Valor = 0;
+						RT_geral.RT_821_BD.Versao.Valor = 0;
+						RT_geral.RT_821_BD.Build.Valor = 0;
 						return;
 					}
-					RT_geral.RT_821_BD.Versao.Valor = (HorizontalAlignment)3;
-					RT_geral.RT_821_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.RT_821_BD.Versao.Valor = 3;
+					RT_geral.RT_821_BD.Build.Valor = 0;
 				}
-				else if (tipo == (DialogResult)4000)
+				else if (tipo == 4000)
 				{
-					RT_geral.RT_850_BD.Equip.Valor = (HorizontalAlignment)850;
+					RT_geral.RT_850_BD.Equip.Valor = 850;
 					if (versao != 30)
 					{
-						RT_geral.RT_850_BD.Equip.Valor = (HorizontalAlignment)0;
-						RT_geral.RT_850_BD.Versao.Valor = (HorizontalAlignment)0;
-						RT_geral.RT_850_BD.Build.Valor = (HorizontalAlignment)0;
+						RT_geral.RT_850_BD.Equip.Valor = 0;
+						RT_geral.RT_850_BD.Versao.Valor = 0;
+						RT_geral.RT_850_BD.Build.Valor = 0;
 						return;
 					}
-					RT_geral.RT_850_BD.Versao.Valor = (HorizontalAlignment)3;
-					RT_geral.RT_850_BD.Build.Valor = (HorizontalAlignment)0;
+					RT_geral.RT_850_BD.Versao.Valor = 3;
+					RT_geral.RT_850_BD.Build.Valor = 0;
 				}
-				else if (tipo == (DialogResult)7000 && versao == (DialogResult)30)
+				else if (tipo == 7000 && versao == 30)
 				{
 					RT_geral.GC_82x_BD.Equip.Valor = Geral.Equipamento_selecionado;
 					RT_geral.GC_82x_BD.Versao.Valor = Geral.Equipamento_versao;
-					RT_geral.GC_82x_BD.Build.Valor = (HorizontalAlignment)0;
-					RT_geral.GC_82x_BD.Release.Valor = (HorizontalAlignment)0;
+					RT_geral.GC_82x_BD.Build.Valor = 0;
+					RT_geral.GC_82x_BD.Release.Valor = 0;
 				}
 			}
 		}

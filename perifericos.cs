@@ -195,7 +195,7 @@ namespace iS800
 		public static int Lista_GetIndicePadrao(List<perifericos.Valores_ComboBox> lista)
 		{
 			int result = -1;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = lista.Count - 1;
@@ -220,7 +220,7 @@ namespace iS800
 		public static bool Lista_ValorPermitido(int valor, List<perifericos.Valores_ComboBox> lista)
 		{
 			bool result = false;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = lista.Count - 1;
@@ -239,7 +239,7 @@ namespace iS800
 		public static int Get_Indice_Pelo_Valor(int valor, List<perifericos.Valores_ComboBox> lista)
 		{
 			bool flag = false;
-			int num = (HorizontalAlignment)0;
+			int num = 0;
 			checked
 			{
 				int num2 = lista.Count - 1;

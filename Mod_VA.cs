@@ -208,46 +208,46 @@ namespace iS800
 		{
 			checked
 			{
-				if (tipo == (DialogResult)0)
+				if (tipo == 0)
 				{
 					int num = valor;
 					if (num != 0)
 					{
 						if (num >= 17 && num <= 20)
 						{
-							valor -= (HorizontalAlignment)16;
+							valor -= 16;
 						}
 						else if (num >= 33 && num <= 36)
 						{
-							valor -= (HorizontalAlignment)28;
+							valor -= 28;
 						}
 						else if (num >= 49 && num <= 52)
 						{
-							valor -= (HorizontalAlignment)40;
+							valor -= 40;
 						}
 						else if (num >= 113 && num <= 116)
 						{
-							valor -= (HorizontalAlignment)92;
+							valor -= 92;
 						}
-						else if (num == (DialogResult)64)
+						else if (num == 64)
 						{
-							valor -= (HorizontalAlignment)39;
+							valor -= 39;
 						}
-						else if (num == (DialogResult)80)
+						else if (num == 80)
 						{
-							valor -= (HorizontalAlignment)54;
+							valor -= 54;
 						}
-						else if (num == (DialogResult)96)
+						else if (num == 96)
 						{
-							valor -= (HorizontalAlignment)69;
+							valor -= 69;
 						}
-						else if (num == (DialogResult)128)
+						else if (num == 128)
 						{
-							valor -= (HorizontalAlignment)100;
+							valor -= 100;
 						}
-						else if (num == (DialogResult)144)
+						else if (num == 144)
 						{
-							valor -= (HorizontalAlignment)115;
+							valor -= 115;
 						}
 					}
 				}
@@ -258,19 +258,19 @@ namespace iS800
 					{
 						if (num2 >= 17 && num2 <= 20)
 						{
-							valor -= (HorizontalAlignment)16;
+							valor -= 16;
 						}
 						else if (num2 >= 33 && num2 <= 36)
 						{
-							valor -= (HorizontalAlignment)28;
+							valor -= 28;
 						}
 						else if (num2 >= 49 && num2 <= 52)
 						{
-							valor -= (HorizontalAlignment)40;
+							valor -= 40;
 						}
 						else if (num2 >= 113 && num2 <= 116)
 						{
-							valor -= (HorizontalAlignment)92;
+							valor -= 92;
 						}
 					}
 				}
@@ -283,7 +283,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (tipo == (DialogResult)0)
+				if (tipo == 0)
 				{
 					switch (valor)
 					{
@@ -291,40 +291,40 @@ namespace iS800
 					case 2:
 					case 3:
 					case 4:
-						valor += (HorizontalAlignment)16;
+						valor += 16;
 						break;
 					case 5:
 					case 6:
 					case 7:
 					case 8:
-						valor += (HorizontalAlignment)28;
+						valor += 28;
 						break;
 					case 9:
 					case 10:
 					case 11:
 					case 12:
-						valor += (HorizontalAlignment)40;
+						valor += 40;
 						break;
 					case 13:
 					case 14:
 					case 15:
 					case 16:
-						valor += (HorizontalAlignment)92;
+						valor += 92;
 						break;
 					case 25:
-						valor += (HorizontalAlignment)39;
+						valor += 39;
 						break;
 					case 26:
-						valor += (HorizontalAlignment)54;
+						valor += 54;
 						break;
 					case 27:
-						valor += (HorizontalAlignment)69;
+						valor += 69;
 						break;
 					case 28:
-						valor += (HorizontalAlignment)100;
+						valor += 100;
 						break;
 					case 29:
-						valor += (HorizontalAlignment)115;
+						valor += 115;
 						break;
 					}
 				}
@@ -336,25 +336,25 @@ namespace iS800
 					case 2:
 					case 3:
 					case 4:
-						valor += (HorizontalAlignment)16;
+						valor += 16;
 						break;
 					case 5:
 					case 6:
 					case 7:
 					case 8:
-						valor += (HorizontalAlignment)28;
+						valor += 28;
 						break;
 					case 9:
 					case 10:
 					case 11:
 					case 12:
-						valor += (HorizontalAlignment)40;
+						valor += 40;
 						break;
 					case 13:
 					case 14:
 					case 15:
 					case 16:
-						valor += (HorizontalAlignment)92;
+						valor += 92;
 						break;
 					}
 				}
@@ -422,11 +422,11 @@ namespace iS800
 		{
 			if (Mod_VA.Operacao_VA220.hab_verificacao_alarmes)
 			{
-				dados[0] = (HorizontalAlignment)1;
+				dados[0] = 1;
 			}
 			else
 			{
-				dados[0] = (HorizontalAlignment)0;
+				dados[0] = 0;
 			}
 			checked
 			{
@@ -448,11 +448,11 @@ namespace iS800
 		{
 			if (Mod_VA.Operacao_VA220.hab_verificacao_ponta)
 			{
-				dados[0] = (HorizontalAlignment)1;
+				dados[0] = 1;
 			}
 			else
 			{
-				dados[0] = (HorizontalAlignment)0;
+				dados[0] = 0;
 			}
 			checked
 			{
@@ -468,11 +468,11 @@ namespace iS800
 		{
 			if (Mod_VA.Operacao_VA220.hab_verificacao_temp)
 			{
-				dados[0] = (HorizontalAlignment)1;
+				dados[0] = 1;
 			}
 			else
 			{
-				dados[0] = (HorizontalAlignment)0;
+				dados[0] = 0;
 			}
 			checked
 			{
@@ -517,176 +517,176 @@ namespace iS800
 			dados[3] = DateAndTime.Weekday(Mod_VA.Operacao_VA220.relogio, 1);
 			dados[4] = DateAndTime.Hour(Mod_VA.Operacao_VA220.relogio);
 			dados[5] = DateAndTime.Minute(Mod_VA.Operacao_VA220.relogio);
-			dados[6] = (HorizontalAlignment)0;
+			dados[6] = 0;
 		}
 
 		// Token: 0x04001B57 RID: 6999
-		public const int END_ESTACAO_VA_MAXIMO = (HorizontalAlignment)200;
+		public const int END_ESTACAO_VA_MAXIMO = 200;
 
 		// Token: 0x04001B58 RID: 7000
-		public const int END_ESTACAO_VA_MINIMO = (HorizontalAlignment)0;
+		public const int END_ESTACAO_VA_MINIMO = 0;
 
 		// Token: 0x04001B59 RID: 7001
-		public const int END_MESTRE_VA_MAXIMO = (HorizontalAlignment)200;
+		public const int END_MESTRE_VA_MAXIMO = 200;
 
 		// Token: 0x04001B5A RID: 7002
-		public const int END_MESTRE_VA_MINIMO = (HorizontalAlignment)0;
+		public const int END_MESTRE_VA_MINIMO = 0;
 
 		// Token: 0x04001B5B RID: 7003
-		public const int MAX_PTT_VA = (HorizontalAlignment)100;
+		public const int MAX_PTT_VA = 100;
 
 		// Token: 0x04001B5C RID: 7004
-		public const int MIN_PTT_VA = (HorizontalAlignment)0;
+		public const int MIN_PTT_VA = 0;
 
 		// Token: 0x04001B5D RID: 7005
-		public const int MIN_MAX_BOMBAS_VA = (HorizontalAlignment)0;
+		public const int MIN_MAX_BOMBAS_VA = 0;
 
 		// Token: 0x04001B5E RID: 7006
-		public const int MAX_MAX_BOMBAS_VA = (HorizontalAlignment)4;
+		public const int MAX_MAX_BOMBAS_VA = 4;
 
 		// Token: 0x04001B5F RID: 7007
-		public const int MIN_TEMPO_ACIONAMENTOS_VA = (HorizontalAlignment)0;
+		public const int MIN_TEMPO_ACIONAMENTOS_VA = 0;
 
 		// Token: 0x04001B60 RID: 7008
-		public const int MAX_TEMPO_ACIONAMENTOS_VA = (HorizontalAlignment)200;
+		public const int MAX_TEMPO_ACIONAMENTOS_VA = 200;
 
 		// Token: 0x04001B61 RID: 7009
-		public const int MIN_TEMPO_FALHA_DESLIGAR_VA = (HorizontalAlignment)0;
+		public const int MIN_TEMPO_FALHA_DESLIGAR_VA = 0;
 
 		// Token: 0x04001B62 RID: 7010
-		public const int MAX_TEMPO_FALHA_DESLIGAR_VA = (HorizontalAlignment)200;
+		public const int MAX_TEMPO_FALHA_DESLIGAR_VA = 200;
 
 		// Token: 0x04001B63 RID: 7011
-		public const int MIN_TEMPO_FALHA_LIGAR_VA = (HorizontalAlignment)0;
+		public const int MIN_TEMPO_FALHA_LIGAR_VA = 0;
 
 		// Token: 0x04001B64 RID: 7012
-		public const int MAX_TEMPO_FALHA_LIGAR_VA = (HorizontalAlignment)200;
+		public const int MAX_TEMPO_FALHA_LIGAR_VA = 200;
 
 		// Token: 0x04001B65 RID: 7013
-		public const int MIN_TEMPO_OPERANDO_VA = (HorizontalAlignment)0;
+		public const int MIN_TEMPO_OPERANDO_VA = 0;
 
 		// Token: 0x04001B66 RID: 7014
-		public const int MAX_TEMPO_OPERANDO_VA = (HorizontalAlignment)200;
+		public const int MAX_TEMPO_OPERANDO_VA = 200;
 
 		// Token: 0x04001B67 RID: 7015
-		public const int MIN_TEMPO_PARADO_VA = (HorizontalAlignment)0;
+		public const int MIN_TEMPO_PARADO_VA = 0;
 
 		// Token: 0x04001B68 RID: 7016
-		public const int MAX_TEMPO_PARADO_VA = (HorizontalAlignment)200;
+		public const int MAX_TEMPO_PARADO_VA = 200;
 
 		// Token: 0x04001B69 RID: 7017
-		public const int MIN_NIVEL = (HorizontalAlignment)0;
+		public const int MIN_NIVEL = 0;
 
 		// Token: 0x04001B6A RID: 7018
-		public const int MAX_NIVEL = (HorizontalAlignment)100;
+		public const int MAX_NIVEL = 100;
 
 		// Token: 0x04001B6B RID: 7019
-		public const int MIN_TEMPO_MAIS_BOMBA = (HorizontalAlignment)0;
+		public const int MIN_TEMPO_MAIS_BOMBA = 0;
 
 		// Token: 0x04001B6C RID: 7020
-		public const int MAX_TEMPO_MAIS_BOMBA = (HorizontalAlignment)180;
+		public const int MAX_TEMPO_MAIS_BOMBA = 180;
 
 		// Token: 0x04001B6D RID: 7021
-		public const int MIN_PRESSAO = (HorizontalAlignment)5;
+		public const int MIN_PRESSAO = 5;
 
 		// Token: 0x04001B6E RID: 7022
-		public const int MAX_PRESSAO = (HorizontalAlignment)30;
+		public const int MAX_PRESSAO = 30;
 
 		// Token: 0x04001B6F RID: 7023
-		public const int MIN_TEMP = (HorizontalAlignment)0;
+		public const int MIN_TEMP = 0;
 
 		// Token: 0x04001B70 RID: 7024
-		public const int MAX_TEMP = (HorizontalAlignment)100;
+		public const int MAX_TEMP = 100;
 
 		// Token: 0x04001B71 RID: 7025
-		public const int MIN_ALM = (HorizontalAlignment)0;
+		public const int MIN_ALM = 0;
 
 		// Token: 0x04001B72 RID: 7026
-		public const int MAX_ALM = (HorizontalAlignment)100;
+		public const int MAX_ALM = 100;
 
 		// Token: 0x04001B73 RID: 7027
-		public const int MASCARA_BIT_8 = (HorizontalAlignment)128;
+		public const int MASCARA_BIT_8 = 128;
 
 		// Token: 0x04001B74 RID: 7028
-		public const int MASCARA_BIT_7 = (HorizontalAlignment)64;
+		public const int MASCARA_BIT_7 = 64;
 
 		// Token: 0x04001B75 RID: 7029
-		public const int MASCARA_BIT_6 = (HorizontalAlignment)32;
+		public const int MASCARA_BIT_6 = 32;
 
 		// Token: 0x04001B76 RID: 7030
-		public const int MASCARA_BIT_5 = (HorizontalAlignment)16;
+		public const int MASCARA_BIT_5 = 16;
 
 		// Token: 0x04001B77 RID: 7031
-		public const int MASCARA_BIT_4 = (HorizontalAlignment)8;
+		public const int MASCARA_BIT_4 = 8;
 
 		// Token: 0x04001B78 RID: 7032
-		public const int MASCARA_BIT_3 = (HorizontalAlignment)4;
+		public const int MASCARA_BIT_3 = 4;
 
 		// Token: 0x04001B79 RID: 7033
-		public const int MASCARA_BIT_2 = (HorizontalAlignment)2;
+		public const int MASCARA_BIT_2 = 2;
 
 		// Token: 0x04001B7A RID: 7034
-		public const int MASCARA_BIT_1 = (HorizontalAlignment)1;
+		public const int MASCARA_BIT_1 = 1;
 
 		// Token: 0x04001B7B RID: 7035
-		public const int ENTRADA_DIGITAL = (HorizontalAlignment)0;
+		public const int ENTRADA_DIGITAL = 0;
 
 		// Token: 0x04001B7C RID: 7036
-		public const int SAIDA_DIGITAL = (HorizontalAlignment)1;
+		public const int SAIDA_DIGITAL = 1;
 
 		// Token: 0x04001B7D RID: 7037
-		public const int TAMANHO_ESC_CONF_GERAL = (HorizontalAlignment)11;
+		public const int TAMANHO_ESC_CONF_GERAL = 11;
 
 		// Token: 0x04001B7E RID: 7038
-		public const int TAMANHO_ESC_CONF_IO = (HorizontalAlignment)16;
+		public const int TAMANHO_ESC_CONF_IO = 16;
 
 		// Token: 0x04001B7F RID: 7039
-		public const int END_ORIGEM_VA_MAXIMO = (HorizontalAlignment)200;
+		public const int END_ORIGEM_VA_MAXIMO = 200;
 
 		// Token: 0x04001B80 RID: 7040
-		public const int END_ORIGEM_VA_MINIMO = (HorizontalAlignment)0;
+		public const int END_ORIGEM_VA_MINIMO = 0;
 
 		// Token: 0x04001B81 RID: 7041
-		public const int NUMERO_MAX_RECALQUE_VA_MAXIMO = (HorizontalAlignment)40;
+		public const int NUMERO_MAX_RECALQUE_VA_MAXIMO = 40;
 
 		// Token: 0x04001B82 RID: 7042
-		public const int NUMERO_MAX_RECALQUE_VA_MINIMO = (HorizontalAlignment)0;
+		public const int NUMERO_MAX_RECALQUE_VA_MINIMO = 0;
 
 		// Token: 0x04001B83 RID: 7043
-		public const int TEMPO_VARREDURA_VA_MAXIMO = (HorizontalAlignment)200;
+		public const int TEMPO_VARREDURA_VA_MAXIMO = 200;
 
 		// Token: 0x04001B84 RID: 7044
-		public const int TEMPO_VARREDURA_VA_MINIMO = (HorizontalAlignment)3;
+		public const int TEMPO_VARREDURA_VA_MINIMO = 3;
 
 		// Token: 0x04001B85 RID: 7045
-		public const int VALOR_ESCALA_VA_MAXIMO = (HorizontalAlignment)9999;
+		public const int VALOR_ESCALA_VA_MAXIMO = 9999;
 
 		// Token: 0x04001B86 RID: 7046
-		public const int VALOR_ESCALA_VA_MINIMO = (HorizontalAlignment)0;
+		public const int VALOR_ESCALA_VA_MINIMO = 0;
 
 		// Token: 0x04001B87 RID: 7047
-		public const int VALOR_INIT_ESCALA = (HorizontalAlignment)100;
+		public const int VALOR_INIT_ESCALA = 100;
 
 		// Token: 0x04001B88 RID: 7048
-		public const int VALOR_PRESSIOSTATO_VA_MAXIMO = (HorizontalAlignment)9999;
+		public const int VALOR_PRESSIOSTATO_VA_MAXIMO = 9999;
 
 		// Token: 0x04001B89 RID: 7049
-		public const int VALOR_PRESSIOSTATO_VA_MINIMO = (HorizontalAlignment)0;
+		public const int VALOR_PRESSIOSTATO_VA_MINIMO = 0;
 
 		// Token: 0x04001B8A RID: 7050
-		public const int VALOR_PRESSIOSTATO_VA_PADRAO = (HorizontalAlignment)1000;
+		public const int VALOR_PRESSIOSTATO_VA_PADRAO = 1000;
 
 		// Token: 0x04001B8B RID: 7051
-		public const int TEMPO_SEM_COMUNICACAO_VA_MAXIMO = (HorizontalAlignment)200;
+		public const int TEMPO_SEM_COMUNICACAO_VA_MAXIMO = 200;
 
 		// Token: 0x04001B8C RID: 7052
-		public const int TEMPO_SEM_COMUNICACAO_VA_MINIMO = (HorizontalAlignment)0;
+		public const int TEMPO_SEM_COMUNICACAO_VA_MINIMO = 0;
 
 		// Token: 0x04001B8D RID: 7053
-		public const int NUM_GRUPOS_VA_MAXIMO = (HorizontalAlignment)16;
+		public const int NUM_GRUPOS_VA_MAXIMO = 16;
 
 		// Token: 0x04001B8E RID: 7054
-		public const int NUM_GRUPOS_VA_MINIMO = (HorizontalAlignment)0;
+		public const int NUM_GRUPOS_VA_MINIMO = 0;
 
 		// Token: 0x04001B8F RID: 7055
 		public static Mod_VA.DADOS_EQUIP_VA_220_CONFIG Config_VA220;

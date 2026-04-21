@@ -97,7 +97,7 @@ namespace iS800
 		// Token: 0x060000D6 RID: 214 RVA: 0x0026571C File Offset: 0x00263B1C
 		private void Button_diretorio_dados_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == (DialogResult)1)
+			if (this.FolderBrowserDialog1.ShowDialog() == 1)
 			{
 				this.Nome_diretorio_dados.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Config_sistema.Dir_dados = this.Nome_diretorio_dados.Text;
@@ -117,7 +117,7 @@ namespace iS800
 			string text = FileSystem.CurDir();
 			try
 			{
-				FileSystem.FileOpen(1, text + "\\Sis_ictel_800.ini", 32, 3, -1, -1);
+				FileSystem.FileOpen(1, text + "\\Sis_ictel_800.ini", (Microsoft.VisualBasic.OpenMode)32, (Microsoft.VisualBasic.OpenAccess)3, (Microsoft.VisualBasic.OpenShare)(-1), -1);
 				FileSystem.Lock(1);
 				FileSystem.FilePut(1, Comunicacao.Config_sistema, -1L);
 				FileSystem.Unlock(1);

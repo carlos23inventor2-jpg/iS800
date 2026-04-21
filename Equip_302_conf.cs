@@ -1813,7 +1813,7 @@ namespace iS800
 		// Token: 0x06002260 RID: 8800 RVA: 0x003FB9D8 File Offset: 0x003F9DD8
 		public void Atualiza_dados_re(int numero)
 		{
-			if (numero == (DialogResult)0)
+			if (numero == 0)
 			{
 				this.DataGridView1.Rows.Clear();
 				return;
@@ -1822,7 +1822,7 @@ namespace iS800
 			this.DataGridView1.Rows.Clear();
 			checked
 			{
-				for (int i = (HorizontalAlignment)1; i <= numero; i++)
+				for (int i = 1; i <= numero; i++)
 				{
 					string text = Conversion.Str(end_ini_equip_res + i - 1);
 					string text2 = Conversion.Str(Mod_MD.Central_302_res[i].Altura);
@@ -1844,7 +1844,7 @@ namespace iS800
 		// Token: 0x06002261 RID: 8801 RVA: 0x003FBAE4 File Offset: 0x003F9EE4
 		public void Atualiza_dados_rq(int numero)
 		{
-			if (numero == (DialogResult)0)
+			if (numero == 0)
 			{
 				this.DataGridView_RQ.Rows.Clear();
 				return;
@@ -1852,7 +1852,7 @@ namespace iS800
 			string text = "";
 			int end_ini_equip_rq = Mod_MD.Central_302_geral.End_ini_equip_rq;
 			this.DataGridView_RQ.Rows.Clear();
-			int i = (HorizontalAlignment)1;
+			int i = 1;
 			checked
 			{
 				while (i <= numero)
@@ -1911,11 +1911,11 @@ namespace iS800
 					string text14 = Conversion.Str(Mod_MD.Central_302_rq[i].Prioridade);
 					string text15 = Conversion.Str(Mod_MD.Central_302_rq[i].Msg);
 					int hab_cmd = Mod_MD.Central_302_rq[i].Hab_cmd;
-					if (hab_cmd == (DialogResult)0)
+					if (hab_cmd == 0)
 					{
 						text = "Bloqueado";
 					}
-					else if (hab_cmd == (DialogResult)21882)
+					else if (hab_cmd == 21882)
 					{
 						text = "Habilitado";
 					}
@@ -2070,82 +2070,82 @@ namespace iS800
 		// Token: 0x06002270 RID: 8816 RVA: 0x003FC2C4 File Offset: 0x003FA6C4
 		public void Limpa_estrutura_MD302()
 		{
-			Mod_MD.Central_302_geral.Baud_rate_com2 = (HorizontalAlignment)21849;
-			Mod_MD.Central_302_geral.End_ini_equip_res = (HorizontalAlignment)1;
-			Mod_MD.Central_302_geral.End_ini_equip_rq = (HorizontalAlignment)11;
-			Mod_MD.Central_302_geral.End_ini_equip_vista = (HorizontalAlignment)21;
-			Mod_MD.Central_302_geral.Endereco = (HorizontalAlignment)200;
-			Mod_MD.Central_302_geral.Erros_falha = (HorizontalAlignment)3;
-			Mod_MD.Central_302_geral.Intervalo_polling = (HorizontalAlignment)3;
-			Mod_MD.Central_302_geral.Qdt_equip_rq = (HorizontalAlignment)0;
-			Mod_MD.Central_302_geral.Qtd_equip_res = (HorizontalAlignment)0;
-			Mod_MD.Central_302_geral.Qtd_equip_vista = (HorizontalAlignment)0;
-			Mod_MD.Central_302_geral.Qtd_res = (HorizontalAlignment)0;
-			Mod_MD.Central_302_geral.Retray = (HorizontalAlignment)3;
-			Mod_MD.Central_302_geral.Tempo_ptt = (HorizontalAlignment)200;
-			Mod_MD.Central_302_geral.Timeout = (HorizontalAlignment)5;
-			int num = (HorizontalAlignment)0;
+			Mod_MD.Central_302_geral.Baud_rate_com2 = 21849;
+			Mod_MD.Central_302_geral.End_ini_equip_res = 1;
+			Mod_MD.Central_302_geral.End_ini_equip_rq = 11;
+			Mod_MD.Central_302_geral.End_ini_equip_vista = 21;
+			Mod_MD.Central_302_geral.Endereco = 200;
+			Mod_MD.Central_302_geral.Erros_falha = 3;
+			Mod_MD.Central_302_geral.Intervalo_polling = 3;
+			Mod_MD.Central_302_geral.Qdt_equip_rq = 0;
+			Mod_MD.Central_302_geral.Qtd_equip_res = 0;
+			Mod_MD.Central_302_geral.Qtd_equip_vista = 0;
+			Mod_MD.Central_302_geral.Qtd_res = 0;
+			Mod_MD.Central_302_geral.Retray = 3;
+			Mod_MD.Central_302_geral.Tempo_ptt = 200;
+			Mod_MD.Central_302_geral.Timeout = 5;
+			int num = 0;
 			int num_MAX_RE = Mod_MD.NUM_MAX_RE;
 			checked
 			{
 				for (int i = num; i <= num_MAX_RE; i++)
 				{
-					Mod_MD.Central_302_res[i].Altura = (HorizontalAlignment)0;
-					Mod_MD.Central_302_res[i].Msg = (HorizontalAlignment)0;
-					Mod_MD.Central_302_res[i].Prioridade = (HorizontalAlignment)1;
-					Mod_MD.Central_302_res[i].Res_relativo = (HorizontalAlignment)0;
+					Mod_MD.Central_302_res[i].Altura = 0;
+					Mod_MD.Central_302_res[i].Msg = 0;
+					Mod_MD.Central_302_res[i].Prioridade = 1;
+					Mod_MD.Central_302_res[i].Res_relativo = 0;
 				}
-				int num2 = (HorizontalAlignment)0;
+				int num2 = 0;
 				int num_MAX_RQ = Mod_MD.NUM_MAX_RQ;
 				for (int i = num2; i <= num_MAX_RQ; i++)
 				{
-					Mod_MD.Central_302_rq[i].modelo = (HorizontalAlignment)1;
-					Mod_MD.Central_302_rq[i].Msg = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Hab_cmd = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Prioridade = (HorizontalAlignment)1;
-					Mod_MD.Central_302_rq[i].Res_destino = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Res_origem = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Res_relativo_R1 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Res_relativo_R2 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Res_relativo_R3 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Res_relativo_R4 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Msg_res_R1 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Msg_res_R2 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Msg_res_R3 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].Msg_res_R4 = (HorizontalAlignment)0;
-					Mod_MD.Central_302_rq[i].escala_1 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_2 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_3 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_4 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_5 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_6 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_7 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_8 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_9 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_10 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_11 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_12 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_13 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_14 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_15 = (HorizontalAlignment)100;
-					Mod_MD.Central_302_rq[i].escala_16 = (HorizontalAlignment)100;
+					Mod_MD.Central_302_rq[i].modelo = 1;
+					Mod_MD.Central_302_rq[i].Msg = 0;
+					Mod_MD.Central_302_rq[i].Hab_cmd = 0;
+					Mod_MD.Central_302_rq[i].Prioridade = 1;
+					Mod_MD.Central_302_rq[i].Res_destino = 0;
+					Mod_MD.Central_302_rq[i].Res_origem = 0;
+					Mod_MD.Central_302_rq[i].Res_relativo_R1 = 0;
+					Mod_MD.Central_302_rq[i].Res_relativo_R2 = 0;
+					Mod_MD.Central_302_rq[i].Res_relativo_R3 = 0;
+					Mod_MD.Central_302_rq[i].Res_relativo_R4 = 0;
+					Mod_MD.Central_302_rq[i].Msg_res_R1 = 0;
+					Mod_MD.Central_302_rq[i].Msg_res_R2 = 0;
+					Mod_MD.Central_302_rq[i].Msg_res_R3 = 0;
+					Mod_MD.Central_302_rq[i].Msg_res_R4 = 0;
+					Mod_MD.Central_302_rq[i].escala_1 = 100;
+					Mod_MD.Central_302_rq[i].escala_2 = 100;
+					Mod_MD.Central_302_rq[i].escala_3 = 100;
+					Mod_MD.Central_302_rq[i].escala_4 = 100;
+					Mod_MD.Central_302_rq[i].escala_5 = 100;
+					Mod_MD.Central_302_rq[i].escala_6 = 100;
+					Mod_MD.Central_302_rq[i].escala_7 = 100;
+					Mod_MD.Central_302_rq[i].escala_8 = 100;
+					Mod_MD.Central_302_rq[i].escala_9 = 100;
+					Mod_MD.Central_302_rq[i].escala_10 = 100;
+					Mod_MD.Central_302_rq[i].escala_11 = 100;
+					Mod_MD.Central_302_rq[i].escala_12 = 100;
+					Mod_MD.Central_302_rq[i].escala_13 = 100;
+					Mod_MD.Central_302_rq[i].escala_14 = 100;
+					Mod_MD.Central_302_rq[i].escala_15 = 100;
+					Mod_MD.Central_302_rq[i].escala_16 = 100;
 				}
-				int num3 = (HorizontalAlignment)0;
+				int num3 = 0;
 				int num_MAX_VISTA = Mod_MD.NUM_MAX_VISTA;
 				for (int i = num3; i <= num_MAX_VISTA; i++)
 				{
-					Mod_MD.Central_302_centrais[i].num_res = (HorizontalAlignment)0;
-					Mod_MD.Central_302_centrais[i].num_rq = (HorizontalAlignment)0;
-					Mod_MD.Central_302_centrais[i].prioridade = (HorizontalAlignment)0;
+					Mod_MD.Central_302_centrais[i].num_res = 0;
+					Mod_MD.Central_302_centrais[i].num_rq = 0;
+					Mod_MD.Central_302_centrais[i].prioridade = 0;
 				}
-				int num4 = (HorizontalAlignment)0;
+				int num4 = 0;
 				int num_MAX_VISTA2 = Mod_MD.NUM_MAX_VISTA;
 				for (int i = num4; i <= num_MAX_VISTA2; i++)
 				{
-					int num5 = (HorizontalAlignment)0;
+					int num5 = 0;
 					do
 					{
-						Mod_MD.Central_302_indices[i, num5] = (HorizontalAlignment)0;
+						Mod_MD.Central_302_indices[i, num5] = 0;
 						num5++;
 					}
 					while (num5 <= 150);
@@ -2162,7 +2162,7 @@ namespace iS800
 			string name = this.DataGridView1.Columns[e.ColumnIndex].Name;
 			checked
 			{
-				if (Operators.CompareString(name, "Col_nome", false) == (DialogResult)0)
+				if (Operators.CompareString(name, "Col_nome", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 9999, 0);
 					if (!ctrl_RESP_.Status)
@@ -2171,7 +2171,7 @@ namespace iS800
 					}
 					Mod_MD.Central_302_res[e.RowIndex + 1].Msg = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 				}
-				else if (Operators.CompareString(name, "Col_altura", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_altura", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 20000, 0);
 					if (!ctrl_RESP_.Status)
@@ -2180,7 +2180,7 @@ namespace iS800
 					}
 					Mod_MD.Central_302_res[e.RowIndex + 1].Altura = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 				}
-				else if (Operators.CompareString(name, "Col_pri", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_pri", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 13, 0);
 					if (!ctrl_RESP_.Status)
@@ -2189,7 +2189,7 @@ namespace iS800
 					}
 					Mod_MD.Central_302_res[e.RowIndex + 1].Prioridade = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 				}
-				else if (Operators.CompareString(name, "Col_posicao", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_posicao", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 60, 0);
 					if (!ctrl_RESP_.Status)
@@ -2267,7 +2267,7 @@ namespace iS800
 				return;
 			}
 			Mod_MD.Atualiza_dados_MD302(100);
-			int num = (HorizontalAlignment)1;
+			int num = 1;
 			checked
 			{
 				for (;;)
@@ -2340,7 +2340,7 @@ namespace iS800
 			string name = this.DataGridView_RQ.Columns[e.ColumnIndex].Name;
 			checked
 			{
-				if (Operators.CompareString(name, "Col_nome_rq", false) == (DialogResult)0)
+				if (Operators.CompareString(name, "Col_nome_rq", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 9999, 0);
 					if (!ctrl_RESP_.Status)
@@ -2349,7 +2349,7 @@ namespace iS800
 					}
 					Mod_MD.Central_302_rq[e.RowIndex + 1].Msg = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 				}
-				else if (Operators.CompareString(name, "Col_ROrg_rq", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_ROrg_rq", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 9999, 0);
 					if (!ctrl_RESP_.Status)
@@ -2358,7 +2358,7 @@ namespace iS800
 					}
 					Mod_MD.Central_302_rq[e.RowIndex + 1].Res_origem = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 				}
-				else if (Operators.CompareString(name, "Col_RDest_rq", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_RDest_rq", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 9999, 0);
 					if (!ctrl_RESP_.Status)
@@ -2367,44 +2367,44 @@ namespace iS800
 					}
 					Mod_MD.Central_302_rq[e.RowIndex + 1].Res_destino = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 				}
-				else if (Operators.CompareString(name, "Col_mod_rq", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_mod_rq", false) == 0)
 				{
 					object formattedValue = e.FormattedValue;
 					if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 201", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)1;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 1;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 202", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)2;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 2;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 101 - ELO548", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)11;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 11;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 101 - BERMAD", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)12;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 12;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 101 - KOYO", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)13;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 13;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 202 - KRON", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)14;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 14;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 202 - KRON - PEXTRON", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)15;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 15;
 					}
 					else if (Operators.ConditionalCompareObjectEqual(formattedValue, "MD 202 - SoftStarter ABB - 1", false))
 					{
-						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = (HorizontalAlignment)16;
+						Mod_MD.Central_302_rq[e.RowIndex + 1].modelo = 16;
 					}
 					flag = false;
 				}
-				else if (Operators.CompareString(name, "Col_pri_rq", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_pri_rq", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 13, 0);
 					if (!ctrl_RESP_.Status)
@@ -2431,16 +2431,16 @@ namespace iS800
 											{
 												if (Operators.CompareString(name, "Col_MsgR4_rq", false) != 0)
 												{
-													if (Operators.CompareString(name, "Col_hab", false) == (DialogResult)0)
+													if (Operators.CompareString(name, "Col_hab", false) == 0)
 													{
 														object formattedValue2 = e.FormattedValue;
 														if (Operators.ConditionalCompareObjectEqual(formattedValue2, "Habilitado", false))
 														{
-															Mod_MD.Central_302_rq[e.RowIndex + 1].Hab_cmd = (HorizontalAlignment)21882;
+															Mod_MD.Central_302_rq[e.RowIndex + 1].Hab_cmd = 21882;
 														}
 														else if (Operators.ConditionalCompareObjectEqual(formattedValue2, "Bloqueado", false))
 														{
-															Mod_MD.Central_302_rq[e.RowIndex + 1].Hab_cmd = (HorizontalAlignment)0;
+															Mod_MD.Central_302_rq[e.RowIndex + 1].Hab_cmd = 0;
 														}
 														flag = false;
 														goto IL_B98;
@@ -2501,82 +2501,82 @@ namespace iS800
 														e.Cancel = true;
 													}
 													string name2 = this.DataGridView_RQ.Columns[e.ColumnIndex].Name;
-													if (Operators.CompareString(name2, "Col_Esc_1", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_1", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_1 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_2", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_2", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_2 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_3", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_3", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_3 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_4", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_4", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_4 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_5", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_5", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_5 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_6", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_6", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_6 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_7", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_7", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_7 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_8", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_8", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_8 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_9", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_9", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_9 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_10", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_10", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_10 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_11", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_11", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_11 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_12", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_12", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_12 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_13", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_13", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_13 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_14", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_14", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_14 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_15", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_15", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_15 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
 													}
-													if (Operators.CompareString(name2, "Col_Esc_16", false) == (DialogResult)0)
+													if (Operators.CompareString(name2, "Col_Esc_16", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_16 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 														goto IL_B98;
@@ -2592,22 +2592,22 @@ namespace iS800
 										e.Cancel = true;
 									}
 									string name3 = this.DataGridView_RQ.Columns[e.ColumnIndex].Name;
-									if (Operators.CompareString(name3, "Col_MsgR1_rq", false) == (DialogResult)0)
+									if (Operators.CompareString(name3, "Col_MsgR1_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R1 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 										goto IL_B98;
 									}
-									if (Operators.CompareString(name3, "Col_MsgR2_rq", false) == (DialogResult)0)
+									if (Operators.CompareString(name3, "Col_MsgR2_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R2 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 										goto IL_B98;
 									}
-									if (Operators.CompareString(name3, "Col_MsgR3_rq", false) == (DialogResult)0)
+									if (Operators.CompareString(name3, "Col_MsgR3_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R3 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 										goto IL_B98;
 									}
-									if (Operators.CompareString(name3, "Col_MsgR4_rq", false) == (DialogResult)0)
+									if (Operators.CompareString(name3, "Col_MsgR4_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R4 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 										goto IL_B98;
@@ -2623,19 +2623,19 @@ namespace iS800
 						e.Cancel = true;
 					}
 					string name4 = this.DataGridView_RQ.Columns[e.ColumnIndex].Name;
-					if (Operators.CompareString(name4, "Col_Res1_rq", false) == (DialogResult)0)
+					if (Operators.CompareString(name4, "Col_Res1_rq", false) == 0)
 					{
 						Mod_MD.Central_302_rq[e.RowIndex + 1].Res_relativo_R1 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 					}
-					else if (Operators.CompareString(name4, "Col_Res2_rq", false) == (DialogResult)0)
+					else if (Operators.CompareString(name4, "Col_Res2_rq", false) == 0)
 					{
 						Mod_MD.Central_302_rq[e.RowIndex + 1].Res_relativo_R2 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 					}
-					else if (Operators.CompareString(name4, "Col_Res3_rq", false) == (DialogResult)0)
+					else if (Operators.CompareString(name4, "Col_Res3_rq", false) == 0)
 					{
 						Mod_MD.Central_302_rq[e.RowIndex + 1].Res_relativo_R3 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 					}
-					else if (Operators.CompareString(name4, "Col_Res4_rq", false) == (DialogResult)0)
+					else if (Operators.CompareString(name4, "Col_Res4_rq", false) == 0)
 					{
 						Mod_MD.Central_302_rq[e.RowIndex + 1].Res_relativo_R4 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
 					}
@@ -2674,7 +2674,7 @@ namespace iS800
 		// Token: 0x06002277 RID: 8823 RVA: 0x003FD870 File Offset: 0x003FBC70
 		public void Atualiza_dados_centrais(int numero)
 		{
-			if (numero == (DialogResult)0)
+			if (numero == 0)
 			{
 				this.DataGridView_central_geral.Rows.Clear();
 				this.DataGridView_central_res.Rows.Clear();
@@ -2685,7 +2685,7 @@ namespace iS800
 			this.DataGridView_central_geral.Rows.Clear();
 			checked
 			{
-				for (int i = (HorizontalAlignment)1; i <= numero; i++)
+				for (int i = 1; i <= numero; i++)
 				{
 					string text = Conversion.Str(end_ini_equip_vista + i - 1);
 					string text2 = Conversion.Str(Mod_MD.Central_302_centrais[i].num_res);
@@ -2713,7 +2713,7 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = (HorizontalAlignment)2;
+				num = 2;
 				int columnIndex = e.ColumnIndex;
 				int rowIndex = e.RowIndex;
 				if (this.Verifica_celula_ativa(columnIndex, rowIndex, 1, 0))
@@ -2726,7 +2726,7 @@ namespace iS800
 				num2 = -1;
 								IL_4A:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_35;
@@ -2748,7 +2748,7 @@ namespace iS800
 			string name = this.DataGridView_central_geral.Columns[e.ColumnIndex].Name;
 			checked
 			{
-				if (Operators.CompareString(name, "Col_vista_res", false) == (DialogResult)0)
+				if (Operators.CompareString(name, "Col_vista_res", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 40, 0);
 					if (!ctrl_RESP_.Status)
@@ -2760,7 +2760,7 @@ namespace iS800
 					this.Atualiza_vista_res(Mod_MD.Central_302_geral.Qtd_equip_vista);
 					this.Atualiza_vista_rq(Mod_MD.Central_302_geral.Qtd_equip_vista);
 				}
-				else if (Operators.CompareString(name, "Col_vista_rq", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_vista_rq", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 30, 0);
 					if (!ctrl_RESP_.Status)
@@ -2771,7 +2771,7 @@ namespace iS800
 					Mod_MD.Atualiza_tabela_equipamentos_vista();
 					this.Atualiza_vista_rq(Mod_MD.Central_302_geral.Qtd_equip_vista);
 				}
-				else if (Operators.CompareString(name, "Col_vista_pri", false) == (DialogResult)0)
+				else if (Operators.CompareString(name, "Col_vista_pri", false) == 0)
 				{
 					ctrl_RESP_ = Mod_MD.Valida_celula(e, 13, 0);
 					if (!ctrl_RESP_.Status)
@@ -2806,17 +2806,17 @@ namespace iS800
 					string text2 = "End ";
 					string[] array = new string[41];
 					ProjectData.ClearProjectError();
-					num2 = (HorizontalAlignment)2;
+					num2 = 2;
 					if (this.DataGridView_central_res.Columns.Count > 1)
 					{
-						for (int i = this.DataGridView_central_res.Columns.Count - 1; i >= (HorizontalAlignment)1; i += -1)
+						for (int i = this.DataGridView_central_res.Columns.Count - 1; i >= 1; i += -1)
 						{
 							string name = this.DataGridView_central_res.Columns[i].Name;
 							this.DataGridView_central_res.Columns.Remove(name);
 						}
 					}
-					int num3 = (HorizontalAlignment)0;
-					int num4 = (HorizontalAlignment)1;
+					int num3 = 0;
+					int num4 = 1;
 					int qtd_equip_vista = Mod_MD.Central_302_geral.Qtd_equip_vista;
 					for (int i = num4; i <= qtd_equip_vista; i++)
 					{
@@ -2827,28 +2827,28 @@ namespace iS800
 					}
 					if (num3 > 0)
 					{
-						int num5 = (HorizontalAlignment)1;
+						int num5 = 1;
 						int num6 = num3;
 						for (int i = num5; i <= num6; i++)
 						{
 							this.DataGridView_central_res.Columns.Add(text + Conversion.Str(i), text2 + Conversion.Str(i));
 							DataGridViewColumn dataGridViewColumn = this.DataGridView_central_res.Columns[text + Conversion.Str(i)];
-							dataGridViewColumn.Width = (HorizontalAlignment)55;
-							dataGridViewColumn.SortMode = (HorizontalAlignment)0;
+							dataGridViewColumn.Width = 55;
+							dataGridViewColumn.SortMode = 0;
 						}
 					}
 					int end_ini_equip_vista = Mod_MD.Central_302_geral.End_ini_equip_vista;
 					this.DataGridView_central_res.Rows.Clear();
-					for (int j = (HorizontalAlignment)1; j <= num; j++)
+					for (int j = 1; j <= num; j++)
 					{
 						string text3 = Conversion.Str(end_ini_equip_vista + j - 1);
-						int num7 = (HorizontalAlignment)1;
+						int num7 = 1;
 						int num_res = Mod_MD.Central_302_centrais[j].num_res;
 						for (int k = num7; k <= num_res; k++)
 						{
 							array[k] = Conversions.ToString(Mod_MD.Central_302_indices[j, k]);
 						}
-						for (int k = Mod_MD.Central_302_centrais[j].num_res + 1; k <= (HorizontalAlignment)40; k++)
+						for (int k = Mod_MD.Central_302_centrais[j].num_res + 1; k <= 40; k++)
 						{
 							array[k] = "";
 						}
@@ -2902,7 +2902,7 @@ namespace iS800
 					IL_393:
 					num8 = -1;IL_3A9:;
 				}
-				catch when (endfilter(obj is Exception & num2 != 0 & num8 == (DialogResult)0))
+				catch when (endfilter(obj is Exception & num2 != 0 & num8 == 0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_393;
@@ -2926,15 +2926,15 @@ namespace iS800
 			{
 				if (this.DataGridView_central_rq.Columns.Count > 1)
 				{
-					for (int i = this.DataGridView_central_rq.Columns.Count - 1; i >= (HorizontalAlignment)1; i += -1)
+					for (int i = this.DataGridView_central_rq.Columns.Count - 1; i >= 1; i += -1)
 					{
 						string name = this.DataGridView_central_rq.Columns[i].Name;
 						this.DataGridView_central_rq.Columns.Remove(name);
 					}
 				}
-				int num2 = (HorizontalAlignment)0;
-				int num3 = (HorizontalAlignment)255;
-				int num4 = (HorizontalAlignment)1;
+				int num2 = 0;
+				int num3 = 255;
+				int num4 = 1;
 				int qtd_equip_vista = Mod_MD.Central_302_geral.Qtd_equip_vista;
 				for (int i = num4; i <= qtd_equip_vista; i++)
 				{
@@ -2947,8 +2947,8 @@ namespace iS800
 						num3 = Mod_MD.Central_302_centrais[i].num_res;
 					}
 				}
-				int num5 = (HorizontalAlignment)0;
-				int num6 = (HorizontalAlignment)1;
+				int num5 = 0;
+				int num6 = 1;
 				int qtd_equip_vista2 = Mod_MD.Central_302_geral.Qtd_equip_vista;
 				for (int i = num6; i <= qtd_equip_vista2; i++)
 				{
@@ -2965,16 +2965,16 @@ namespace iS800
 					{
 						this.DataGridView_central_rq.Columns.Add(text + Conversion.Str(i), text2 + Conversion.Str(i));
 						DataGridViewColumn dataGridViewColumn = this.DataGridView_central_rq.Columns[text + Conversion.Str(i)];
-						dataGridViewColumn.Width = (HorizontalAlignment)55;
-						dataGridViewColumn.SortMode = (HorizontalAlignment)0;
+						dataGridViewColumn.Width = 55;
+						dataGridViewColumn.SortMode = 0;
 					}
 				}
 				int end_ini_equip_vista = Mod_MD.Central_302_geral.End_ini_equip_vista;
 				this.DataGridView_central_rq.Rows.Clear();
-				for (int j = (HorizontalAlignment)1; j <= num; j++)
+				for (int j = 1; j <= num; j++)
 				{
 					string text3 = Conversion.Str(end_ini_equip_vista + j - 1);
-					int num9 = (HorizontalAlignment)1;
+					int num9 = 1;
 					int num10 = num5 + num2;
 					for (int k = num9; k <= num10; k++)
 					{
@@ -3069,7 +3069,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = (HorizontalAlignment)2;
+					num = 2;
 					int columnIndex = e.ColumnIndex;
 					int rowIndex = e.RowIndex;
 					if (!(columnIndex < 1 | rowIndex < 0))
@@ -3087,7 +3087,7 @@ namespace iS800
 					num2 = -1;
 										IL_92:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
+				catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_7C;
@@ -3402,7 +3402,7 @@ namespace iS800
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.OpenFileDialog1.ShowDialog() == (DialogResult)1)
+				if (this.OpenFileDialog1.ShowDialog() == 1)
 				{
 					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", 1);
 					string text = Strings.Left(this.OpenFileDialog1.FileName, num);
@@ -3410,7 +3410,7 @@ namespace iS800
 					{
 						num = Strings.Len(Mod_MD.Central_302_geral);
 						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, num);
-						int num2 = (HorizontalAlignment)1;
+						int num2 = 1;
 						ValueType valueType = Mod_MD.Central_302_geral;
 						FileSystem.FileGet(num2, ref valueType, -1L);
 						ValueType valueType2 = valueType;
@@ -3422,7 +3422,7 @@ namespace iS800
 						});
 						num = Strings.Len(Mod_MD.Central_302_res[1]) * Mod_MD.NUM_MAX_RE + 50;
 						FileSystem.FileOpen(1, text + "V322", 4, -1, -1, num);
-						int num3 = (HorizontalAlignment)1;
+						int num3 = 1;
 						Array array = Mod_MD.Central_302_res;
 						FileSystem.FileGet(num3, ref array, -1L, false, false);
 						Mod_MD.Central_302_res = (Mod_MD.DADOS_EQUIP_MD_302_CONFIG_RES[])array;
@@ -3432,7 +3432,7 @@ namespace iS800
 						});
 						num = Strings.Len(Mod_MD.Central_302_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
 						FileSystem.FileOpen(1, text + "V323", 4, -1, -1, num);
-						int num4 = (HorizontalAlignment)1;
+						int num4 = 1;
 						array = Mod_MD.Central_302_rq;
 						FileSystem.FileGet(num4, ref array, -1L, false, false);
 						Mod_MD.Central_302_rq = (Mod_MD.DADOS_EQUIP_MD_302_CONFIG_RQ[])array;
@@ -3442,7 +3442,7 @@ namespace iS800
 						});
 						num = Strings.Len(Mod_MD.Central_302_centrais[1]) * Mod_MD.NUM_MAX_VISTA + 50;
 						FileSystem.FileOpen(1, text + "V324", 4, -1, -1, num);
-						int num5 = (HorizontalAlignment)1;
+						int num5 = 1;
 						array = Mod_MD.Central_302_centrais;
 						FileSystem.FileGet(num5, ref array, -1L, false, false);
 						Mod_MD.Central_302_centrais = (Mod_MD.DADOS_EQUIP_MD_302_CONFIG_CENTRAIS[])array;
@@ -3452,7 +3452,7 @@ namespace iS800
 						});
 						num = Strings.Len(Mod_MD.Central_302_indices[1, 1]) * 5 * 150 + 700;
 						FileSystem.FileOpen(1, text + "V325", 4, -1, -1, num);
-						int num6 = (HorizontalAlignment)1;
+						int num6 = 1;
 						array = Mod_MD.Central_302_indices;
 						FileSystem.FileGet(num6, ref array, -1L, false, false);
 						Mod_MD.Central_302_indices = (int[,])array;
@@ -3481,7 +3481,7 @@ namespace iS800
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.SaveFileDialog1.ShowDialog() == (DialogResult)1)
+				if (this.SaveFileDialog1.ShowDialog() == 1)
 				{
 					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", 1);
 					string text = Strings.Left(this.SaveFileDialog1.FileName, num);

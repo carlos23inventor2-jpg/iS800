@@ -1,7 +1,6 @@
 namespace iS800
 {
 	// Token: 0x0200009D RID: 157
-	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
 	public partial class Equip_VA220_mon : global::System.Windows.Forms.Form
 	{
 		// Token: 0x06002539 RID: 9529 RVA: 0x00413CC8 File Offset: 0x004120C8
@@ -65,7 +64,7 @@ namespace iS800
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(561, 269);
 			grupo_endereco2.Size = size;
-			this.Grupo_endereco.TabIndex = (HorizontalAlignment)2;
+			this.Grupo_endereco.TabIndex = 2;
 			this.Grupo_endereco.TabStop = false;
 			this.Grupo_endereco.Text = "Endereço da estação";
 			global::System.Windows.Forms.Control button_auto = this.Button_auto;
@@ -75,7 +74,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_auto2 = this.Button_auto;
 			size = new global::System.Drawing.Size(127, 28);
 			button_auto2.Size = size;
-			this.Button_auto.TabIndex = (HorizontalAlignment)18;
+			this.Button_auto.TabIndex = 18;
 			this.Button_auto.Text = "Automático";
 			this.Button_auto.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button_liga = this.Button_liga;
@@ -85,7 +84,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_liga2 = this.Button_liga;
 			size = new global::System.Drawing.Size(127, 28);
 			button_liga2.Size = size;
-			this.Button_liga.TabIndex = (HorizontalAlignment)17;
+			this.Button_liga.TabIndex = 17;
 			this.Button_liga.Text = "Liga";
 			this.Button_liga.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button_desliga = this.Button_desliga;
@@ -95,7 +94,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_desliga2 = this.Button_desliga;
 			size = new global::System.Drawing.Size(127, 28);
 			button_desliga2.Size = size;
-			this.Button_desliga.TabIndex = (HorizontalAlignment)16;
+			this.Button_desliga.TabIndex = 16;
 			this.Button_desliga.Text = "Desliga";
 			this.Button_desliga.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button_manual = this.Button_manual;
@@ -105,7 +104,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_manual2 = this.Button_manual;
 			size = new global::System.Drawing.Size(127, 28);
 			button_manual2.Size = size;
-			this.Button_manual.TabIndex = (HorizontalAlignment)15;
+			this.Button_manual.TabIndex = 15;
 			this.Button_manual.Text = "Manual";
 			this.Button_manual.UseVisualStyleBackColor = true;
 			this.Label_bomba.AutoSize = true;
@@ -116,20 +115,20 @@ namespace iS800
 			global::System.Windows.Forms.Control label_bomba2 = this.Label_bomba;
 			size = new global::System.Drawing.Size(61, 13);
 			label_bomba2.Size = size;
-			this.Label_bomba.TabIndex = (HorizontalAlignment)14;
+			this.Label_bomba.TabIndex = 14;
 			this.Label_bomba.Text = "N° Bomba :";
-			this.VScroll_bomba.LargeChange = (HorizontalAlignment)4;
+			this.VScroll_bomba.LargeChange = 4;
 			global::System.Windows.Forms.Control vscroll_bomba = this.VScroll_bomba;
 			location = new global::System.Drawing.Point(402, 29);
 			vscroll_bomba.Location = location;
-			this.VScroll_bomba.Maximum = (HorizontalAlignment)4;
-			this.VScroll_bomba.Minimum = (HorizontalAlignment)1;
+			this.VScroll_bomba.Maximum = 4;
+			this.VScroll_bomba.Minimum = 1;
 			this.VScroll_bomba.Name = "VScroll_bomba";
 			global::System.Windows.Forms.Control vscroll_bomba2 = this.VScroll_bomba;
 			size = new global::System.Drawing.Size(26, 21);
 			vscroll_bomba2.Size = size;
-			this.VScroll_bomba.TabIndex = (HorizontalAlignment)12;
-			this.VScroll_bomba.Value = (HorizontalAlignment)1;
+			this.VScroll_bomba.TabIndex = 12;
+			this.VScroll_bomba.Value = 1;
 			global::System.Windows.Forms.Control valor_bomba = this.Valor_bomba;
 			location = new global::System.Drawing.Point(352, 29);
 			valor_bomba.Location = location;
@@ -137,8 +136,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_bomba2 = this.Valor_bomba;
 			size = new global::System.Drawing.Size(41, 20);
 			valor_bomba2.Size = size;
-			this.Valor_bomba.TabIndex = (HorizontalAlignment)13;
-			this.Valor_bomba.TextAlign = (HorizontalAlignment)1;
+			this.Valor_bomba.TabIndex = 13;
+			this.Valor_bomba.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control box_Msg = this.Box_Msg;
 			location = new global::System.Drawing.Point(10, 229);
 			box_Msg.Location = location;
@@ -146,9 +145,9 @@ namespace iS800
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new global::System.Drawing.Size(545, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = (HorizontalAlignment)11;
+			this.Box_Msg.TabIndex = 11;
 			this.Box_Msg.TabStop = false;
-			this.Box_Msg.TextAlign = (HorizontalAlignment)2;
+			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
 			global::System.Windows.Forms.Control button_escrever = this.Button_escrever;
 			location = new global::System.Drawing.Point(34, 126);
 			button_escrever.Location = location;
@@ -156,7 +155,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_escrever2 = this.Button_escrever;
 			size = new global::System.Drawing.Size(127, 28);
 			button_escrever2.Size = size;
-			this.Button_escrever.TabIndex = (HorizontalAlignment)10;
+			this.Button_escrever.TabIndex = 10;
 			this.Button_escrever.Text = "Escrever";
 			this.Button_escrever.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button_ler = this.Button_ler;
@@ -166,7 +165,7 @@ namespace iS800
 			global::System.Windows.Forms.Control button_ler2 = this.Button_ler;
 			size = new global::System.Drawing.Size(127, 28);
 			button_ler2.Size = size;
-			this.Button_ler.TabIndex = (HorizontalAlignment)9;
+			this.Button_ler.TabIndex = 9;
 			this.Button_ler.Text = "Ler";
 			this.Button_ler.UseVisualStyleBackColor = true;
 			this.Label_end_mestre.AutoSize = true;
@@ -177,7 +176,7 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_mestre2 = this.Label_end_mestre;
 			size = new global::System.Drawing.Size(70, 13);
 			label_end_mestre2.Size = size;
-			this.Label_end_mestre.TabIndex = (HorizontalAlignment)2;
+			this.Label_end_mestre.TabIndex = 2;
 			this.Label_end_mestre.Text = "End. Mestre :";
 			this.Label_end_estacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_estacao = this.Label_end_estacao;
@@ -187,26 +186,26 @@ namespace iS800
 			global::System.Windows.Forms.Control label_end_estacao2 = this.Label_end_estacao;
 			size = new global::System.Drawing.Size(77, 13);
 			label_end_estacao2.Size = size;
-			this.Label_end_estacao.TabIndex = (HorizontalAlignment)2;
+			this.Label_end_estacao.TabIndex = 2;
 			this.Label_end_estacao.Text = "End. Estação :";
 			global::System.Windows.Forms.Control vscroll_end_mestre = this.VScroll_end_mestre;
 			location = new global::System.Drawing.Point(144, 53);
 			vscroll_end_mestre.Location = location;
-			this.VScroll_end_mestre.Maximum = (HorizontalAlignment)200;
+			this.VScroll_end_mestre.Maximum = 200;
 			this.VScroll_end_mestre.Name = "VScroll_end_mestre";
 			global::System.Windows.Forms.Control vscroll_end_mestre2 = this.VScroll_end_mestre;
 			size = new global::System.Drawing.Size(26, 21);
 			vscroll_end_mestre2.Size = size;
-			this.VScroll_end_mestre.TabIndex = (HorizontalAlignment)1;
+			this.VScroll_end_mestre.TabIndex = 1;
 			global::System.Windows.Forms.Control vscroll_end_estacao = this.VScroll_end_estacao;
 			location = new global::System.Drawing.Point(144, 25);
 			vscroll_end_estacao.Location = location;
-			this.VScroll_end_estacao.Maximum = (HorizontalAlignment)200;
+			this.VScroll_end_estacao.Maximum = 200;
 			this.VScroll_end_estacao.Name = "VScroll_end_estacao";
 			global::System.Windows.Forms.Control vscroll_end_estacao2 = this.VScroll_end_estacao;
 			size = new global::System.Drawing.Size(26, 21);
 			vscroll_end_estacao2.Size = size;
-			this.VScroll_end_estacao.TabIndex = (HorizontalAlignment)1;
+			this.VScroll_end_estacao.TabIndex = 1;
 			global::System.Windows.Forms.Control valor_end_mestre = this.Valor_end_mestre;
 			location = new global::System.Drawing.Point(94, 53);
 			valor_end_mestre.Location = location;
@@ -214,8 +213,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_mestre2 = this.Valor_end_mestre;
 			size = new global::System.Drawing.Size(41, 20);
 			valor_end_mestre2.Size = size;
-			this.Valor_end_mestre.TabIndex = (HorizontalAlignment)2;
-			this.Valor_end_mestre.TextAlign = (HorizontalAlignment)1;
+			this.Valor_end_mestre.TabIndex = 2;
+			this.Valor_end_mestre.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control valor_end_estacao = this.Valor_end_estacao;
 			location = new global::System.Drawing.Point(94, 25);
 			valor_end_estacao.Location = location;
@@ -223,8 +222,8 @@ namespace iS800
 			global::System.Windows.Forms.Control valor_end_estacao2 = this.Valor_end_estacao;
 			size = new global::System.Drawing.Size(41, 20);
 			valor_end_estacao2.Size = size;
-			this.Valor_end_estacao.TabIndex = (HorizontalAlignment)2;
-			this.Valor_end_estacao.TextAlign = (HorizontalAlignment)1;
+			this.Valor_end_estacao.TabIndex = 2;
+			this.Valor_end_estacao.TextAlign = (System.Drawing.ContentAlignment)1;
 			global::System.Windows.Forms.Control button_falha = this.Button_falha;
 			location = new global::System.Drawing.Point(217, 166);
 			button_falha.Location = location;
@@ -232,21 +231,21 @@ namespace iS800
 			global::System.Windows.Forms.Control button_falha2 = this.Button_falha;
 			size = new global::System.Drawing.Size(127, 28);
 			button_falha2.Size = size;
-			this.Button_falha.TabIndex = (HorizontalAlignment)19;
+			this.Button_falha.TabIndex = 19;
 			this.Button_falha.Text = "Falha";
 			this.Button_falha.UseVisualStyleBackColor = true;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = (HorizontalAlignment)1;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
 			size = new global::System.Drawing.Size(641, 481);
 			this.ClientSize = size;
 			this.Controls.Add(this.Grupo_endereco);
-			this.FormBorderStyle = (HorizontalAlignment)0;
+			this.FormBorderStyle = (System.Windows.Forms.FormBorderStyle)0;
 			location = new global::System.Drawing.Point(160, 2);
 			this.Location = location;
 			this.Name = "Equip_VA220_mon";
-			this.StartPosition = (HorizontalAlignment)0;
+			this.StartPosition = (System.Windows.Forms.FormStartPosition)0;
 			this.Text = "Equip_VA220_mon";
 			this.Grupo_endereco.ResumeLayout(false);
 			this.Grupo_endereco.PerformLayout();

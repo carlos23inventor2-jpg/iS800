@@ -844,11 +844,11 @@ namespace iS800
 		private void atualiza_bt_envia()
 		{
 			string text = "";
-			if (this.canal == (DialogResult)1)
+			if (this.canal == 1)
 			{
 				text = "Canal1";
 			}
-			if (this.canal == (DialogResult)2)
+			if (this.canal == 2)
 			{
 				text = "Canal2";
 			}
@@ -859,22 +859,22 @@ namespace iS800
 		private void GC_82x_calib_Load(object sender, EventArgs e)
 		{
 			this.Text = "GC" + this.QualModelo.ToString() + " Calibração";
-			this.corrente = (HorizontalAlignment)0;
-			this.corrente1 = (HorizontalAlignment)0;
-			this.corrente2 = (HorizontalAlignment)0;
-			this.canal = (HorizontalAlignment)1;
+			this.corrente = 0;
+			this.corrente1 = 0;
+			this.corrente2 = 0;
+			this.canal = 1;
 			this.rb_channel1.Checked = true;
 			this.atualiza_bt_envia();
-			this.tb_corrente1.Value = (HorizontalAlignment)4;
-			this.tb_corrente1.Value = (HorizontalAlignment)0;
-			this.tb_corrente2.Value = (HorizontalAlignment)4;
-			this.tb_corrente2.Value = (HorizontalAlignment)0;
+			this.tb_corrente1.Value = 4;
+			this.tb_corrente1.Value = 0;
+			this.tb_corrente2.Value = 4;
+			this.tb_corrente2.Value = 0;
 		}
 
 		// Token: 0x06000C4B RID: 3147 RVA: 0x002F406C File Offset: 0x002F246C
 		private void rb_channel1_CheckedChanged(object sender, EventArgs e)
 		{
-			this.canal = (HorizontalAlignment)1;
+			this.canal = 1;
 			RT_geral.GC_82x_BD.calib_canal = this.canal;
 			this.atualiza_bt_envia();
 		}
@@ -882,7 +882,7 @@ namespace iS800
 		// Token: 0x06000C4C RID: 3148 RVA: 0x002F408C File Offset: 0x002F248C
 		private void rb_channel2_CheckedChanged(object sender, EventArgs e)
 		{
-			this.canal = (HorizontalAlignment)2;
+			this.canal = 2;
 			RT_geral.GC_82x_BD.calib_canal = this.canal;
 			this.atualiza_bt_envia();
 		}
@@ -957,11 +957,11 @@ namespace iS800
 		public void AtualizaMsgTela_GC_82x(string texto, int cor)
 		{
 			this.mensagens.Text = texto;
-			if (cor == (DialogResult)0)
+			if (cor == 0)
 			{
 				this.mensagens.ForeColor = Color.Blue;
 			}
-			else if (cor == (DialogResult)1)
+			else if (cor == 1)
 			{
 				this.mensagens.ForeColor = Color.Red;
 			}
@@ -979,7 +979,7 @@ namespace iS800
 			if (!Mod_MD.Leitura_pagina(2048, 255, 1).Status)
 			{
 				this.AtualizaMsgTela_GC_82x("Equipamento não responde", 1);
-				result = (HorizontalAlignment)0;
+				result = 0;
 			}
 			else
 			{
@@ -1016,7 +1016,7 @@ namespace iS800
 		// Token: 0x06000C58 RID: 3160 RVA: 0x002F4320 File Offset: 0x002F2720
 		private void Bt_inic_4_Click(object sender, EventArgs e)
 		{
-			this.corrente = (HorizontalAlignment)4;
+			this.corrente = 4;
 			this.atualiza_bt_envia();
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
@@ -1039,7 +1039,7 @@ namespace iS800
 		// Token: 0x06000C59 RID: 3161 RVA: 0x002F43C4 File Offset: 0x002F27C4
 		private void Bt_inic_20_Click(object sender, EventArgs e)
 		{
-			this.corrente = (HorizontalAlignment)20;
+			this.corrente = 20;
 			this.atualiza_bt_envia();
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
@@ -1068,7 +1068,7 @@ namespace iS800
 		// Token: 0x06000C5B RID: 3163 RVA: 0x002F4494 File Offset: 0x002F2894
 		private void bt_confirma_4_Click(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.calib_funcao = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.calib_funcao = 0;
 			this.AtualizaMsgTela_GC_82x("Confirmando Calibração 4mA", 2);
 			if (!Mod_MD.Escrita_pagina(6144, 70).Status)
 			{
@@ -1082,7 +1082,7 @@ namespace iS800
 		// Token: 0x06000C5C RID: 3164 RVA: 0x002F44F4 File Offset: 0x002F28F4
 		private void bt_confirma_20_Click(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.calib_funcao = (HorizontalAlignment)1;
+			RT_geral.GC_82x_BD.calib_funcao = 1;
 			this.AtualizaMsgTela_GC_82x("Confirmando Calibração 20mA", 2);
 			if (!Mod_MD.Escrita_pagina(6144, 70).Status)
 			{
