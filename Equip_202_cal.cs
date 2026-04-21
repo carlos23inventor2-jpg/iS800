@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -2592,7 +2592,7 @@ namespace iS800
 		private void Equip_202_cal_Load(object sender, EventArgs e)
 		{
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
-			Mod_MD.Ctrl_cal.End_memoria = 768;
+			Mod_MD.Ctrl_cal.End_memoria = (HorizontalAlignment)768;
 		}
 
 		// Token: 0x06001ECB RID: 7883 RVA: 0x003DFE30 File Offset: 0x003DE230
@@ -2600,7 +2600,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Comando_ler_cal.Enabled = false;
@@ -2649,7 +2649,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (pagina == 768)
+				if (pagina == (DialogResult)768)
 				{
 					this.Valor_zero_1.Text = Conversions.ToString((int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4]);
 					this.Valor_zero_2.Text = Conversions.ToString((int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6]);
@@ -2684,7 +2684,7 @@ namespace iS800
 					this.Valor_ganho_15.Text = Conversions.ToString((int)Comunicacao.Buffer_resp[63] * 256 + (int)Comunicacao.Buffer_resp[64]);
 					this.Valor_ganho_16.Text = Conversions.ToString((int)Comunicacao.Buffer_resp[65] * 256 + (int)Comunicacao.Buffer_resp[66]);
 				}
-				else if (pagina == 1024)
+				else if (pagina == (DialogResult)1024)
 				{
 					this.Valor_cont_norm_1.Text = Conversions.ToString((int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4]);
 					this.Valor_cont_norm_2.Text = Conversions.ToString((int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6]);
@@ -2832,12 +2832,12 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Controle_tecla_202_cal(2);
 			Mod_MD.Ctrl_cal.End_memoria = checked(767 + Mod_MD.Ctrl_cal.Canal);
-			Mod_MD.Ctrl_cal.Dado = 21845;
+			Mod_MD.Ctrl_cal.Dado = (HorizontalAlignment)21845;
 			this.Mensagem_MD202_cal("Aguarde ...", 2);
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Escrita_pagina(768, 3);
 			this.Mensagem_MD202_cal(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
@@ -2855,12 +2855,12 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Controle_tecla_202_cal(2);
 			Mod_MD.Ctrl_cal.End_memoria = checked(783 + Mod_MD.Ctrl_cal.Canal);
-			Mod_MD.Ctrl_cal.Dado = 21845;
+			Mod_MD.Ctrl_cal.Dado = (HorizontalAlignment)21845;
 			this.Mensagem_MD202_cal("Aguarde ...", 2);
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Escrita_pagina(768, 3);
 			this.Mensagem_MD202_cal(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
@@ -2878,7 +2878,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21845);
@@ -2895,7 +2895,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Controle_escrita(21930);

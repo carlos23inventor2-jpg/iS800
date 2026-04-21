@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -1406,13 +1406,13 @@ namespace iS800
 			this.Combo_modo.Items.Add("Ponto à Ponto - COM1");
 			this.Combo_modo.Items.Add("Ponto à Ponto - COM2");
 			this.Combo_modo.Items.Add("Rede");
-			this.passo = 0;
+			this.passo = (HorizontalAlignment)0;
 			Mod_MD.Init_equipamento_MD101();
 			this.Limpa_estrutura_MD101(Mod_MD.Controle.Estacao);
 			Mod_MD.CarregaConfiguracaoDefault_MD101(Mod_MD.Controle.Estacao);
 			this.Atualiza_tela_MD101(Mod_MD.Controle.Estacao);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
-			int num = 48;
+			int num = (HorizontalAlignment)48;
 			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", num, " Atenção - verifique a configuração");
 		}
 
@@ -1420,30 +1420,30 @@ namespace iS800
 		public void Limpa_estrutura_MD101(int indice)
 		{
 			Mod_MD.Reservatorio[indice].Repetidoras = new int[51];
-			Mod_MD.Reservatorio[indice].Altura_sensor = 0;
-			Mod_MD.Reservatorio[indice].End_estacao = 0;
-			Mod_MD.Reservatorio[indice].End_mestre = 0;
-			Mod_MD.Reservatorio[indice].End_repetidora = 0;
-			Mod_MD.Reservatorio[indice].Hab_repetidora = 0;
-			Mod_MD.Reservatorio[indice].Intervalo_filtro = 1;
-			Mod_MD.Reservatorio[indice].Modo_operacao = 21846;
-			Mod_MD.Reservatorio[indice].Num_repetidoras = 0;
-			Mod_MD.Reservatorio[indice].Offset_sensor = 0;
-			Mod_MD.Reservatorio[indice].Range_sensor = 0;
-			Mod_MD.Reservatorio[indice].Tamanho_filtro = 1;
-			Mod_MD.Reservatorio[indice].Tempo_ptt = 1;
-			Mod_MD.Reservatorio[indice].Tempo_tx_ponto = 1;
-			Mod_MD.Reservatorio[indice].Tipo_medida = 21872;
-			int num = 0;
+			Mod_MD.Reservatorio[indice].Altura_sensor = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].End_estacao = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].End_mestre = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].End_repetidora = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Hab_repetidora = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Intervalo_filtro = (HorizontalAlignment)1;
+			Mod_MD.Reservatorio[indice].Modo_operacao = (HorizontalAlignment)21846;
+			Mod_MD.Reservatorio[indice].Num_repetidoras = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Offset_sensor = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Range_sensor = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Tamanho_filtro = (HorizontalAlignment)1;
+			Mod_MD.Reservatorio[indice].Tempo_ptt = (HorizontalAlignment)1;
+			Mod_MD.Reservatorio[indice].Tempo_tx_ponto = (HorizontalAlignment)1;
+			Mod_MD.Reservatorio[indice].Tipo_medida = (HorizontalAlignment)21872;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
 				{
-					Mod_MD.Reservatorio[indice].Repetidoras[num] = 0;
+					Mod_MD.Reservatorio[indice].Repetidoras[num] = (HorizontalAlignment)0;
 					num++;
 				}
 				while (num <= 50);
-				this.VScrollBar1.Value = 0;
+				this.VScrollBar1.Value = (HorizontalAlignment)0;
 			}
 		}
 
@@ -1457,173 +1457,173 @@ namespace iS800
 			{
 				IL_00:
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				IL_07:
-				int num2 = 2;
-				int num3 = 0;
+				int num2 = (HorizontalAlignment)2;
+				int num3 = (HorizontalAlignment)0;
 				IL_0C:
-				num2 = 3;
+				num2 = (HorizontalAlignment)3;
 				this.Reservatorio_altura.Value = new decimal(Mod_MD.Reservatorio[indice].Altura_sensor);
 				IL_2F:
-				num2 = 4;
-				num3 = 1;
+				num2 = (HorizontalAlignment)4;
+				num3 = (HorizontalAlignment)1;
 				IL_34:
-				num2 = 5;
+				num2 = (HorizontalAlignment)5;
 				this.Valor_end_est.Value = new decimal(Mod_MD.Reservatorio[indice].End_estacao);
 				IL_57:
-				num2 = 6;
-				num3 = 2;
+				num2 = (HorizontalAlignment)6;
+				num3 = (HorizontalAlignment)2;
 				IL_5C:
-				num2 = 7;
+				num2 = (HorizontalAlignment)7;
 				this.Valor_end_mestre.Value = new decimal(Mod_MD.Reservatorio[indice].End_mestre);
 				IL_7F:
-				num2 = 8;
-				num3 = 3;
+				num2 = (HorizontalAlignment)8;
+				num3 = (HorizontalAlignment)3;
 				IL_84:
-				num2 = 9;
+				num2 = (HorizontalAlignment)9;
 				this.Valor_end_est_rep.Value = new decimal(Mod_MD.Reservatorio[indice].End_repetidora);
 				IL_A8:
-				num2 = 10;
-				num3 = 4;
+				num2 = (HorizontalAlignment)10;
+				num3 = (HorizontalAlignment)4;
 				IL_AE:
-				num2 = 11;
+				num2 = (HorizontalAlignment)11;
 				int num5;
 				checked
 				{
 					this.Filtro_intervalo.Value = new decimal(Mod_MD.Reservatorio[indice].Intervalo_filtro * 10);
 					IL_D5:
-					num2 = 12;
-					num3 = 5;
+					num2 = (HorizontalAlignment)12;
+					num3 = (HorizontalAlignment)5;
 					IL_DB:
-					num2 = 13;
+					num2 = (HorizontalAlignment)13;
 					this.Filtro_tamanho.Value = new decimal(Mod_MD.Reservatorio[indice].Tamanho_filtro);
 					IL_FF:
-					num2 = 14;
-					num3 = 6;
+					num2 = (HorizontalAlignment)14;
+					num3 = (HorizontalAlignment)6;
 					IL_105:
-					num2 = 15;
+					num2 = (HorizontalAlignment)15;
 					this.Valor_num_est_rep.Value = new decimal(Mod_MD.Reservatorio[indice].Num_repetidoras);
 					IL_129:
-					num2 = 16;
-					num3 = 7;
+					num2 = (HorizontalAlignment)16;
+					num3 = (HorizontalAlignment)7;
 					IL_12F:
-					num2 = 17;
+					num2 = (HorizontalAlignment)17;
 					if (Mod_MD.Reservatorio[indice].Offset_sensor <= 1000)
 					{
 						goto IL_178;
 					}
 					IL_14A:
-					num2 = 18;
+					num2 = (HorizontalAlignment)18;
 					this.Sensor_offset.Value = new decimal(0 - (Mod_MD.Reservatorio[indice].Offset_sensor - 1000));
 					IL_176:
 					goto IL_1A0;
 					IL_178:
-					num2 = 20;
+					num2 = (HorizontalAlignment)20;
 					IL_17C:
-					num2 = 21;
+					num2 = (HorizontalAlignment)21;
 					this.Sensor_offset.Value = new decimal(Mod_MD.Reservatorio[indice].Offset_sensor);
 					IL_1A0:
-					num2 = 23;
-					num3 = 8;
+					num2 = (HorizontalAlignment)23;
+					num3 = (HorizontalAlignment)8;
 					IL_1A6:
-					num2 = 24;
+					num2 = (HorizontalAlignment)24;
 					this.Sensor_range.Value = new decimal(Mod_MD.Reservatorio[indice].Range_sensor);
 					IL_1CA:
-					num2 = 25;
-					num3 = 9;
+					num2 = (HorizontalAlignment)25;
+					num3 = (HorizontalAlignment)9;
 					IL_1D1:
-					num2 = 26;
+					num2 = (HorizontalAlignment)26;
 					this.Valor_temp_ptt.Value = new decimal(Mod_MD.Reservatorio[indice].Tempo_ptt * 10);
 					IL_1F8:
-					num2 = 27;
-					num3 = 10;
+					num2 = (HorizontalAlignment)27;
+					num3 = (HorizontalAlignment)10;
 					IL_1FF:
-					num2 = 28;
+					num2 = (HorizontalAlignment)28;
 					this.Valor_int_tx.Value = new decimal(Mod_MD.Reservatorio[indice].Tempo_tx_ponto);
 					IL_223:
-					num2 = 29;
+					num2 = (HorizontalAlignment)29;
 					this.Atualiza_tela_MD101_repetidora(indice);
 					IL_22E:
-					num2 = 30;
+					num2 = (HorizontalAlignment)30;
 					this.Atualiza_tela_MD101_operacao(indice);
 					IL_239:
-					num2 = 31;
+					num2 = (HorizontalAlignment)31;
 					this.Atualiza_tela_MD101_medida(indice);
 					IL_244:
 					goto IL_579;
 					IL_249:
-					num2 = 33;
-					MsgBoxResult msgBoxResult = Interaction.MsgBox("Existem valores não compatíveis com os parâmetro desta tela !\r\nCarregar configuração Default ?", 36, "Atenção");
+					num2 = (HorizontalAlignment)33;
+					MsgBoxResult msgBoxResult = Interaction.MsgBox("Existem valores não compatíveis com os parâmetro desta tela !\r\nCarregar configuração Default ?", (MsgBoxStyle)36, "Atenção");
 					IL_25F:
-					num2 = 34;
+					num2 = (HorizontalAlignment)34;
 					if (msgBoxResult != 6)
 					{
 						goto IL_276;
 					}
 					IL_267:
-					num2 = 35;
+					num2 = (HorizontalAlignment)35;
 					Mod_MD.CarregaConfiguracaoDefault_MD101(indice);
 					IL_271:
 					goto IL_3D2;
 					IL_276:
-					num2 = 37;
+					num2 = (HorizontalAlignment)37;
 					IL_27A:
-					num2 = 38;goto IL_3D2;
+					num2 = (HorizontalAlignment)38;goto IL_3D2;
 					IL_2B5:
-					num2 = 42;
-					Mod_MD.Reservatorio[indice].Altura_sensor = 1000;
+					num2 = (HorizontalAlignment)42;
+					Mod_MD.Reservatorio[indice].Altura_sensor = (HorizontalAlignment)1000;
 					IL_2CE:
 					goto IL_3D2;
 					IL_2D3:
-					num2 = 45;
-					Mod_MD.Reservatorio[indice].End_estacao = 1;
+					num2 = (HorizontalAlignment)45;
+					Mod_MD.Reservatorio[indice].End_estacao = (HorizontalAlignment)1;
 					IL_2E8:
 					goto IL_3D2;
 					IL_2ED:
-					num2 = 48;
-					Mod_MD.Reservatorio[indice].End_mestre = 200;
+					num2 = (HorizontalAlignment)48;
+					Mod_MD.Reservatorio[indice].End_mestre = (HorizontalAlignment)200;
 					IL_306:
 					goto IL_3D2;
 					IL_30B:
-					num2 = 51;
-					Mod_MD.Reservatorio[indice].End_repetidora = 100;
+					num2 = (HorizontalAlignment)51;
+					Mod_MD.Reservatorio[indice].End_repetidora = (HorizontalAlignment)100;
 					IL_321:
 					goto IL_3D2;
 					IL_326:
-					num2 = 54;
-					Mod_MD.Reservatorio[indice].Intervalo_filtro = 500;
+					num2 = (HorizontalAlignment)54;
+					Mod_MD.Reservatorio[indice].Intervalo_filtro = (HorizontalAlignment)500;
 					IL_33F:
 					goto IL_3D2;
 					IL_344:
-					num2 = 57;
-					Mod_MD.Reservatorio[indice].Tamanho_filtro = 5;
+					num2 = (HorizontalAlignment)57;
+					Mod_MD.Reservatorio[indice].Tamanho_filtro = (HorizontalAlignment)5;
 					IL_359:
 					goto IL_3D2;
 					IL_35B:
-					num2 = 60;
-					Mod_MD.Reservatorio[indice].Num_repetidoras = 0;
+					num2 = (HorizontalAlignment)60;
+					Mod_MD.Reservatorio[indice].Num_repetidoras = (HorizontalAlignment)0;
 					IL_370:
 					goto IL_3D2;
 					IL_372:
-					num2 = 63;
-					Mod_MD.Reservatorio[indice].Offset_sensor = 0;
+					num2 = (HorizontalAlignment)63;
+					Mod_MD.Reservatorio[indice].Offset_sensor = (HorizontalAlignment)0;
 					IL_387:
 					goto IL_3D2;
 					IL_389:
-					num2 = 66;
-					Mod_MD.Reservatorio[indice].Range_sensor = 1000;
+					num2 = (HorizontalAlignment)66;
+					Mod_MD.Reservatorio[indice].Range_sensor = (HorizontalAlignment)1000;
 					IL_3A2:
 					goto IL_3D2;
 					IL_3A4:
-					num2 = 69;
-					Mod_MD.Reservatorio[indice].Tempo_ptt = 20;
+					num2 = (HorizontalAlignment)69;
+					Mod_MD.Reservatorio[indice].Tempo_ptt = (HorizontalAlignment)20;
 					IL_3BA:
 					goto IL_3D2;
 					IL_3BC:
-					num2 = 72;
-					Mod_MD.Reservatorio[indice].Tempo_tx_ponto = 30;
+					num2 = (HorizontalAlignment)72;
+					Mod_MD.Reservatorio[indice].Tempo_tx_ponto = (HorizontalAlignment)30;
 					IL_3D2:
-					num2 = 75;
+					num2 = (HorizontalAlignment)75;
 					ProjectData.ClearProjectError();
 					if (num4 != 0)
 					{
@@ -1639,13 +1639,13 @@ namespace iS800
 				}
 				num5 = num4 + 1;
 				IL_3F7:
-				num4 = 0;IL_533:
+				num4 = (HorizontalAlignment)0;IL_533:
 				goto IL_56E;
 				IL_535:
 				num4 = num2;
 								IL_54B:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num4 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_535;
@@ -1662,7 +1662,7 @@ namespace iS800
 		// Token: 0x06001B86 RID: 7046 RVA: 0x003C8F00 File Offset: 0x003C7300
 		public void Atualiza_tela_MD101_repetidora(int indice)
 		{
-			if (Mod_MD.Reservatorio[indice].Hab_repetidora == 21856)
+			if (Mod_MD.Reservatorio[indice].Hab_repetidora == (DialogResult)21856)
 			{
 				this.CheckBox_hab_rep.Checked = true;
 				this.Grupo_end_rep.Enabled = true;
@@ -1686,7 +1686,7 @@ namespace iS800
 		// Token: 0x06001B87 RID: 7047 RVA: 0x003C8FC0 File Offset: 0x003C73C0
 		public void Atualiza_tela_MD101_operacao(int indice)
 		{
-			if (Mod_MD.Reservatorio[indice].Modo_operacao == 21848)
+			if (Mod_MD.Reservatorio[indice].Modo_operacao == (DialogResult)21848)
 			{
 				this.Valor_int_tx.Enabled = false;
 				this.Label_int_tx.Enabled = false;
@@ -1702,7 +1702,7 @@ namespace iS800
 		// Token: 0x06001B88 RID: 7048 RVA: 0x003C9038 File Offset: 0x003C7438
 		public void Atualiza_tela_MD101_medida(int indice)
 		{
-			if (Mod_MD.Reservatorio[indice].Tipo_medida == 21872)
+			if (Mod_MD.Reservatorio[indice].Tipo_medida == (DialogResult)21872)
 			{
 				this.Sensor_range.Enabled = false;
 				this.Label_sensor_range.Enabled = false;
@@ -1741,471 +1741,471 @@ namespace iS800
 			{
 				IL_00:
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				IL_08:
-				int num2 = 2;
+				int num2 = (HorizontalAlignment)2;
 				if (this.passo >= 4)
 				{
 					goto IL_232;
 				}
 				IL_17:
-				num2 = 3;
-				int num3 = 0;
+				num2 = (HorizontalAlignment)3;
+				int num3 = (HorizontalAlignment)0;
 				IL_1C:
-				num2 = 4;
+				num2 = (HorizontalAlignment)4;
 				int num5;
 				checked
 				{
 					this.Valor_end_rep_3.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[3 + this.passo * 12]);
 					IL_4B:
-					num2 = 5;
-					num3 = 1;
+					num2 = (HorizontalAlignment)5;
+					num3 = (HorizontalAlignment)1;
 					IL_50:
-					num2 = 6;
+					num2 = (HorizontalAlignment)6;
 					this.Valor_end_rep_4.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[4 + this.passo * 12]);
 					IL_7F:
-					num2 = 7;
-					num3 = 2;
+					num2 = (HorizontalAlignment)7;
+					num3 = (HorizontalAlignment)2;
 					IL_84:
-					num2 = 8;
+					num2 = (HorizontalAlignment)8;
 					this.Valor_end_rep_5.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[5 + this.passo * 12]);
 					IL_B3:
-					num2 = 9;
-					num3 = 3;
+					num2 = (HorizontalAlignment)9;
+					num3 = (HorizontalAlignment)3;
 					IL_B9:
-					num2 = 10;
+					num2 = (HorizontalAlignment)10;
 					this.Valor_end_rep_6.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[6 + this.passo * 12]);
 					IL_E9:
-					num2 = 11;
-					num3 = 4;
+					num2 = (HorizontalAlignment)11;
+					num3 = (HorizontalAlignment)4;
 					IL_EF:
-					num2 = 12;
+					num2 = (HorizontalAlignment)12;
 					this.Valor_end_rep_7.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[7 + this.passo * 12]);
 					IL_11F:
-					num2 = 13;
-					num3 = 5;
+					num2 = (HorizontalAlignment)13;
+					num3 = (HorizontalAlignment)5;
 					IL_125:
-					num2 = 14;
+					num2 = (HorizontalAlignment)14;
 					this.Valor_end_rep_8.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[8 + this.passo * 12]);
 					IL_155:
-					num2 = 15;
-					num3 = 6;
+					num2 = (HorizontalAlignment)15;
+					num3 = (HorizontalAlignment)6;
 					IL_15B:
-					num2 = 16;
+					num2 = (HorizontalAlignment)16;
 					this.Valor_end_rep_9.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[9 + this.passo * 12]);
 					IL_18C:
-					num2 = 17;
-					num3 = 7;
+					num2 = (HorizontalAlignment)17;
+					num3 = (HorizontalAlignment)7;
 					IL_192:
-					num2 = 18;
+					num2 = (HorizontalAlignment)18;
 					this.Valor_end_rep_10.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[10 + this.passo * 12]);
 					IL_1C3:
-					num2 = 19;
-					num3 = 8;
+					num2 = (HorizontalAlignment)19;
+					num3 = (HorizontalAlignment)8;
 					IL_1C9:
-					num2 = 20;
+					num2 = (HorizontalAlignment)20;
 					this.Valor_end_rep_11.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[11 + this.passo * 12]);
 					IL_1FA:
-					num2 = 21;
-					num3 = 9;
+					num2 = (HorizontalAlignment)21;
+					num3 = (HorizontalAlignment)9;
 					IL_201:
-					num2 = 22;
+					num2 = (HorizontalAlignment)22;
 					this.Valor_end_rep_12.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[12 + this.passo * 12]);
 					IL_232:
-					num2 = 24;
-					num3 = 10;
+					num2 = (HorizontalAlignment)24;
+					num3 = (HorizontalAlignment)10;
 					IL_239:
-					num2 = 25;
+					num2 = (HorizontalAlignment)25;
 					this.Valor_end_rep_1.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[1 + this.passo * 12]);
 					IL_269:
-					num2 = 26;
-					num3 = 11;
+					num2 = (HorizontalAlignment)26;
+					num3 = (HorizontalAlignment)11;
 					IL_270:
-					num2 = 27;
+					num2 = (HorizontalAlignment)27;
 					this.Valor_end_rep_2.Text = Conversions.ToString(Mod_MD.Reservatorio[indice].Repetidoras[2 + this.passo * 12]);
 					IL_2A0:
-					num2 = 28;
+					num2 = (HorizontalAlignment)28;
 					this.Label_end_rep_1.Text = Strings.Format(1 + this.passo * 12, "00:");
 					IL_2C9:
-					num2 = 29;
+					num2 = (HorizontalAlignment)29;
 					this.Label_end_rep_2.Text = Strings.Format(2 + this.passo * 12, "00:");
 					IL_2F2:
-					num2 = 30;
+					num2 = (HorizontalAlignment)30;
 					this.Label_end_rep_3.Text = Strings.Format(3 + this.passo * 12, "00:");
 					IL_31B:
-					num2 = 31;
+					num2 = (HorizontalAlignment)31;
 					this.Label_end_rep_4.Text = Strings.Format(4 + this.passo * 12, "00:");
 					IL_344:
-					num2 = 32;
+					num2 = (HorizontalAlignment)32;
 					this.Label_end_rep_5.Text = Strings.Format(5 + this.passo * 12, "00:");
 					IL_36D:
-					num2 = 33;
+					num2 = (HorizontalAlignment)33;
 					this.Label_end_rep_6.Text = Strings.Format(6 + this.passo * 12, "00:");
 					IL_396:
-					num2 = 34;
+					num2 = (HorizontalAlignment)34;
 					this.Label_end_rep_7.Text = Strings.Format(7 + this.passo * 12, "00:");
 					IL_3BF:
-					num2 = 35;
+					num2 = (HorizontalAlignment)35;
 					this.Label_end_rep_8.Text = Strings.Format(8 + this.passo * 12, "00:");
 					IL_3E8:
-					num2 = 36;
+					num2 = (HorizontalAlignment)36;
 					this.Label_end_rep_9.Text = Strings.Format(9 + this.passo * 12, "00:");
 					IL_412:
-					num2 = 37;
+					num2 = (HorizontalAlignment)37;
 					this.Label_end_rep_10.Text = Strings.Format(10 + this.passo * 12, "00:");
 					IL_43C:
-					num2 = 38;
+					num2 = (HorizontalAlignment)38;
 					this.Label_end_rep_11.Text = Strings.Format(11 + this.passo * 12, "00:");
 					IL_466:
-					num2 = 39;
+					num2 = (HorizontalAlignment)39;
 					this.Label_end_rep_12.Text = Strings.Format(12 + this.passo * 12, "00:");
 					IL_490:
-					num2 = 40;
+					num2 = (HorizontalAlignment)40;
 					int num_repetidoras = Mod_MD.Reservatorio[indice].Num_repetidoras;
 					IL_4A5:
-					num2 = 41;
+					num2 = (HorizontalAlignment)41;
 					if (num_repetidoras - this.passo * 12 - 0 <= 0)
 					{
 						goto IL_4DB;
 					}
 					IL_4B9:
-					num2 = 42;
+					num2 = (HorizontalAlignment)42;
 					this.Label_end_rep_1.Visible = true;
 					IL_4C9:
-					num2 = 43;
+					num2 = (HorizontalAlignment)43;
 					this.Valor_end_rep_1.Visible = true;
 					IL_4D9:
 					goto IL_4FF;
 					IL_4DB:
-					num2 = 45;
+					num2 = (HorizontalAlignment)45;
 					IL_4DF:
-					num2 = 46;
+					num2 = (HorizontalAlignment)46;
 					this.Label_end_rep_1.Visible = false;
 					IL_4EF:
-					num2 = 47;
+					num2 = (HorizontalAlignment)47;
 					this.Valor_end_rep_1.Visible = false;
 					IL_4FF:
-					num2 = 49;
+					num2 = (HorizontalAlignment)49;
 					if (num_repetidoras - this.passo * 12 - 1 <= 0)
 					{
 						goto IL_535;
 					}
 					IL_513:
-					num2 = 50;
+					num2 = (HorizontalAlignment)50;
 					this.Label_end_rep_2.Visible = true;
 					IL_523:
-					num2 = 51;
+					num2 = (HorizontalAlignment)51;
 					this.Valor_end_rep_2.Visible = true;
 					IL_533:
 					goto IL_559;
 					IL_535:
-					num2 = 53;
+					num2 = (HorizontalAlignment)53;
 					IL_539:
-					num2 = 54;
+					num2 = (HorizontalAlignment)54;
 					this.Label_end_rep_2.Visible = false;
 					IL_549:
-					num2 = 55;
+					num2 = (HorizontalAlignment)55;
 					this.Valor_end_rep_2.Visible = false;
 					IL_559:
-					num2 = 57;
+					num2 = (HorizontalAlignment)57;
 					if (num_repetidoras - this.passo * 12 - 2 <= 0)
 					{
 						goto IL_58F;
 					}
 					IL_56D:
-					num2 = 58;
+					num2 = (HorizontalAlignment)58;
 					this.Label_end_rep_3.Visible = true;
 					IL_57D:
-					num2 = 59;
+					num2 = (HorizontalAlignment)59;
 					this.Valor_end_rep_3.Visible = true;
 					IL_58D:
 					goto IL_5B3;
 					IL_58F:
-					num2 = 61;
+					num2 = (HorizontalAlignment)61;
 					IL_593:
-					num2 = 62;
+					num2 = (HorizontalAlignment)62;
 					this.Label_end_rep_3.Visible = false;
 					IL_5A3:
-					num2 = 63;
+					num2 = (HorizontalAlignment)63;
 					this.Valor_end_rep_3.Visible = false;
 					IL_5B3:
-					num2 = 65;
+					num2 = (HorizontalAlignment)65;
 					if (num_repetidoras - this.passo * 12 - 3 <= 0)
 					{
 						goto IL_5E9;
 					}
 					IL_5C7:
-					num2 = 66;
+					num2 = (HorizontalAlignment)66;
 					this.Label_end_rep_4.Visible = true;
 					IL_5D7:
-					num2 = 67;
+					num2 = (HorizontalAlignment)67;
 					this.Valor_end_rep_4.Visible = true;
 					IL_5E7:
 					goto IL_60D;
 					IL_5E9:
-					num2 = 69;
+					num2 = (HorizontalAlignment)69;
 					IL_5ED:
-					num2 = 70;
+					num2 = (HorizontalAlignment)70;
 					this.Label_end_rep_4.Visible = false;
 					IL_5FD:
-					num2 = 71;
+					num2 = (HorizontalAlignment)71;
 					this.Valor_end_rep_4.Visible = false;
 					IL_60D:
-					num2 = 73;
+					num2 = (HorizontalAlignment)73;
 					if (num_repetidoras - this.passo * 12 - 4 <= 0)
 					{
 						goto IL_643;
 					}
 					IL_621:
-					num2 = 74;
+					num2 = (HorizontalAlignment)74;
 					this.Label_end_rep_5.Visible = true;
 					IL_631:
-					num2 = 75;
+					num2 = (HorizontalAlignment)75;
 					this.Valor_end_rep_5.Visible = true;
 					IL_641:
 					goto IL_667;
 					IL_643:
-					num2 = 77;
+					num2 = (HorizontalAlignment)77;
 					IL_647:
-					num2 = 78;
+					num2 = (HorizontalAlignment)78;
 					this.Label_end_rep_5.Visible = false;
 					IL_657:
-					num2 = 79;
+					num2 = (HorizontalAlignment)79;
 					this.Valor_end_rep_5.Visible = false;
 					IL_667:
-					num2 = 81;
+					num2 = (HorizontalAlignment)81;
 					if (num_repetidoras - this.passo * 12 - 5 <= 0)
 					{
 						goto IL_69D;
 					}
 					IL_67B:
-					num2 = 82;
+					num2 = (HorizontalAlignment)82;
 					this.Label_end_rep_6.Visible = true;
 					IL_68B:
-					num2 = 83;
+					num2 = (HorizontalAlignment)83;
 					this.Valor_end_rep_6.Visible = true;
 					IL_69B:
 					goto IL_6C1;
 					IL_69D:
-					num2 = 85;
+					num2 = (HorizontalAlignment)85;
 					IL_6A1:
-					num2 = 86;
+					num2 = (HorizontalAlignment)86;
 					this.Label_end_rep_6.Visible = false;
 					IL_6B1:
-					num2 = 87;
+					num2 = (HorizontalAlignment)87;
 					this.Valor_end_rep_6.Visible = false;
 					IL_6C1:
-					num2 = 89;
+					num2 = (HorizontalAlignment)89;
 					if (num_repetidoras - this.passo * 12 - 6 <= 0)
 					{
 						goto IL_6F7;
 					}
 					IL_6D5:
-					num2 = 90;
+					num2 = (HorizontalAlignment)90;
 					this.Label_end_rep_7.Visible = true;
 					IL_6E5:
-					num2 = 91;
+					num2 = (HorizontalAlignment)91;
 					this.Valor_end_rep_7.Visible = true;
 					IL_6F5:
 					goto IL_71B;
 					IL_6F7:
-					num2 = 93;
+					num2 = (HorizontalAlignment)93;
 					IL_6FB:
-					num2 = 94;
+					num2 = (HorizontalAlignment)94;
 					this.Label_end_rep_7.Visible = false;
 					IL_70B:
-					num2 = 95;
+					num2 = (HorizontalAlignment)95;
 					this.Valor_end_rep_7.Visible = false;
 					IL_71B:
-					num2 = 97;
+					num2 = (HorizontalAlignment)97;
 					if (num_repetidoras - this.passo * 12 - 7 <= 0)
 					{
 						goto IL_751;
 					}
 					IL_72F:
-					num2 = 98;
+					num2 = (HorizontalAlignment)98;
 					this.Label_end_rep_8.Visible = true;
 					IL_73F:
-					num2 = 99;
+					num2 = (HorizontalAlignment)99;
 					this.Valor_end_rep_8.Visible = true;
 					IL_74F:
 					goto IL_775;
 					IL_751:
-					num2 = 101;
+					num2 = (HorizontalAlignment)101;
 					IL_755:
-					num2 = 102;
+					num2 = (HorizontalAlignment)102;
 					this.Label_end_rep_8.Visible = false;
 					IL_765:
-					num2 = 103;
+					num2 = (HorizontalAlignment)103;
 					this.Valor_end_rep_8.Visible = false;
 					IL_775:
-					num2 = 105;
+					num2 = (HorizontalAlignment)105;
 					if (num_repetidoras - this.passo * 12 - 8 <= 0)
 					{
 						goto IL_7AB;
 					}
 					IL_789:
-					num2 = 106;
+					num2 = (HorizontalAlignment)106;
 					this.Label_end_rep_9.Visible = true;
 					IL_799:
-					num2 = 107;
+					num2 = (HorizontalAlignment)107;
 					this.Valor_end_rep_9.Visible = true;
 					IL_7A9:
 					goto IL_7CF;
 					IL_7AB:
-					num2 = 109;
+					num2 = (HorizontalAlignment)109;
 					IL_7AF:
-					num2 = 110;
+					num2 = (HorizontalAlignment)110;
 					this.Label_end_rep_9.Visible = false;
 					IL_7BF:
-					num2 = 111;
+					num2 = (HorizontalAlignment)111;
 					this.Valor_end_rep_9.Visible = false;
 					IL_7CF:
-					num2 = 113;
+					num2 = (HorizontalAlignment)113;
 					if (num_repetidoras - this.passo * 12 - 9 <= 0)
 					{
 						goto IL_806;
 					}
 					IL_7E4:
-					num2 = 114;
+					num2 = (HorizontalAlignment)114;
 					this.Label_end_rep_10.Visible = true;
 					IL_7F4:
-					num2 = 115;
+					num2 = (HorizontalAlignment)115;
 					this.Valor_end_rep_10.Visible = true;
 					IL_804:
 					goto IL_82A;
 					IL_806:
-					num2 = 117;
+					num2 = (HorizontalAlignment)117;
 					IL_80A:
-					num2 = 118;
+					num2 = (HorizontalAlignment)118;
 					this.Label_end_rep_10.Visible = false;
 					IL_81A:
-					num2 = 119;
+					num2 = (HorizontalAlignment)119;
 					this.Valor_end_rep_10.Visible = false;
 					IL_82A:
-					num2 = 121;
+					num2 = (HorizontalAlignment)121;
 					if (num_repetidoras - this.passo * 12 - 10 <= 0)
 					{
 						goto IL_861;
 					}
 					IL_83F:
-					num2 = 122;
+					num2 = (HorizontalAlignment)122;
 					this.Label_end_rep_11.Visible = true;
 					IL_84F:
-					num2 = 123;
+					num2 = (HorizontalAlignment)123;
 					this.Valor_end_rep_11.Visible = true;
 					IL_85F:
 					goto IL_885;
 					IL_861:
-					num2 = 125;
+					num2 = (HorizontalAlignment)125;
 					IL_865:
-					num2 = 126;
+					num2 = (HorizontalAlignment)126;
 					this.Label_end_rep_11.Visible = false;
 					IL_875:
-					num2 = 127;
+					num2 = (HorizontalAlignment)127;
 					this.Valor_end_rep_11.Visible = false;
 					IL_885:
-					num2 = 129;
+					num2 = (HorizontalAlignment)129;
 					if (num_repetidoras - this.passo * 12 - 11 <= 0)
 					{
 						goto IL_8C8;
 					}
 					IL_89D:
-					num2 = 130;
+					num2 = (HorizontalAlignment)130;
 					this.Label_end_rep_12.Visible = true;
 					IL_8B0:
-					num2 = 131;
+					num2 = (HorizontalAlignment)131;
 					this.Valor_end_rep_12.Visible = true;
 					IL_8C3:
 					goto IL_EB7;
 					IL_8C8:
-					num2 = 133;
+					num2 = (HorizontalAlignment)133;
 					IL_8CF:
-					num2 = 134;
+					num2 = (HorizontalAlignment)134;
 					this.Label_end_rep_12.Visible = false;
 					IL_8E2:
-					num2 = 135;
+					num2 = (HorizontalAlignment)135;
 					this.Valor_end_rep_12.Visible = false;
 					IL_8F5:
 					goto IL_EB7;
 					IL_8FA:
-					num2 = 138;
-					MsgBoxResult msgBoxResult = Interaction.MsgBox("Existem valores não compatíveis com os parâmetro desta tela !\r\nCarregar configuração Default ?", 36, "Atenção");
+					num2 = (HorizontalAlignment)138;
+					MsgBoxResult msgBoxResult = Interaction.MsgBox("Existem valores não compatíveis com os parâmetro desta tela !\r\nCarregar configuração Default ?", (MsgBoxStyle)36, "Atenção");
 					IL_913:
-					num2 = 139;
+					num2 = (HorizontalAlignment)139;
 					if (msgBoxResult != 6)
 					{
 						goto IL_930;
 					}
 					IL_91E:
-					num2 = 140;
+					num2 = (HorizontalAlignment)140;
 					Mod_MD.CarregaConfiguracaoDefault_MD101(indice);
 					IL_92B:
 					goto IL_B5B;
 					IL_930:
-					num2 = 142;
+					num2 = (HorizontalAlignment)142;
 					IL_937:
-					num2 = 143;goto IL_B5B;
+					num2 = (HorizontalAlignment)143;goto IL_B5B;
 					IL_979:
-					num2 = 147;
-					Mod_MD.Reservatorio[indice].Repetidoras[3 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)147;
+					Mod_MD.Reservatorio[indice].Repetidoras[3 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_99D:
 					goto IL_B5B;
 					IL_9A2:
-					num2 = 150;
-					Mod_MD.Reservatorio[indice].Repetidoras[4 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)150;
+					Mod_MD.Reservatorio[indice].Repetidoras[4 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_9C6:
 					goto IL_B5B;
 					IL_9CB:
-					num2 = 153;
-					Mod_MD.Reservatorio[indice].Repetidoras[5 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)153;
+					Mod_MD.Reservatorio[indice].Repetidoras[5 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_9EF:
 					goto IL_B5B;
 					IL_9F4:
-					num2 = 156;
-					Mod_MD.Reservatorio[indice].Repetidoras[6 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)156;
+					Mod_MD.Reservatorio[indice].Repetidoras[6 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_A18:
 					goto IL_B5B;
 					IL_A1D:
-					num2 = 159;
-					Mod_MD.Reservatorio[indice].Repetidoras[7 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)159;
+					Mod_MD.Reservatorio[indice].Repetidoras[7 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_A41:
 					goto IL_B5B;
 					IL_A46:
-					num2 = 162;
-					Mod_MD.Reservatorio[indice].Repetidoras[8 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)162;
+					Mod_MD.Reservatorio[indice].Repetidoras[8 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_A6A:
 					goto IL_B5B;
 					IL_A6F:
-					num2 = 165;
-					Mod_MD.Reservatorio[indice].Repetidoras[9 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)165;
+					Mod_MD.Reservatorio[indice].Repetidoras[9 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_A94:
 					goto IL_B5B;
 					IL_A99:
-					num2 = 168;
-					Mod_MD.Reservatorio[indice].Repetidoras[10 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)168;
+					Mod_MD.Reservatorio[indice].Repetidoras[10 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_ABE:
 					goto IL_B5B;
 					IL_AC3:
-					num2 = 171;
-					Mod_MD.Reservatorio[indice].Repetidoras[11 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)171;
+					Mod_MD.Reservatorio[indice].Repetidoras[11 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_AE8:
 					goto IL_B5B;
 					IL_AEA:
-					num2 = 174;
-					Mod_MD.Reservatorio[indice].Repetidoras[12 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)174;
+					Mod_MD.Reservatorio[indice].Repetidoras[12 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_B0F:
 					goto IL_B5B;
 					IL_B11:
-					num2 = 177;
-					Mod_MD.Reservatorio[indice].Repetidoras[1 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)177;
+					Mod_MD.Reservatorio[indice].Repetidoras[1 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_B35:
 					goto IL_B5B;
 					IL_B37:
-					num2 = 180;
-					Mod_MD.Reservatorio[indice].Repetidoras[2 + this.passo * 12] = 0;
+					num2 = (HorizontalAlignment)180;
+					Mod_MD.Reservatorio[indice].Repetidoras[2 + this.passo * 12] = (HorizontalAlignment)0;
 					IL_B5B:
-					num2 = 183;
+					num2 = (HorizontalAlignment)183;
 					ProjectData.ClearProjectError();
 					if (num4 != 0)
 					{
@@ -2221,13 +2221,13 @@ namespace iS800
 				}
 				num5 = num4 + 1;
 				IL_B83:
-				num4 = 0;IL_E6F:
+				num4 = (HorizontalAlignment)0;IL_E6F:
 				goto IL_EAC;
 				IL_E71:
 				num4 = num2;
 								IL_E88:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num4 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_E71;
@@ -2246,9 +2246,9 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = Conversions.ToInteger(Operators.AddObject(end_inicial, 1)); i <= 50; i++)
+				for (int i = Conversions.ToInteger(Operators.AddObject(end_inicial, 1)); i <= (HorizontalAlignment)50; i++)
 				{
-					Mod_MD.Reservatorio[Conversions.ToInteger(indice)].Repetidoras[i] = 0;
+					Mod_MD.Reservatorio[Conversions.ToInteger(indice)].Repetidoras[i] = (HorizontalAlignment)0;
 				}
 			}
 		}
@@ -2258,11 +2258,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Hab_repetidora = 21856;
+				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Hab_repetidora = (HorizontalAlignment)21856;
 			}
 			else
 			{
-				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Hab_repetidora = 0;
+				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Hab_repetidora = (HorizontalAlignment)0;
 			}
 			this.Atualiza_tela_MD101_repetidora(Mod_MD.Controle.Estacao);
 		}
@@ -2294,15 +2294,15 @@ namespace iS800
 		{
 			this.OpenFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V1X";
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
-			if (this.OpenFileDialog1.ShowDialog() == 1)
+			if (this.OpenFileDialog1.ShowDialog() == (DialogResult)1)
 			{
 				if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 				{
 					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, 270);
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] reservatorio = Mod_MD.Reservatorio;
 					Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] array = reservatorio;
-					int num2 = 1;
+					int num2 = (HorizontalAlignment)1;
 					ValueType valueType = array[num2];
 					FileSystem.FileGet(num, ref valueType, -1L);
 					Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] array2 = reservatorio;
@@ -2326,7 +2326,7 @@ namespace iS800
 			Mod_MD.Reservatorio[1].Versao = Geral.Config_geral.Versao;
 			this.SaveFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V1X";
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
-			if (this.SaveFileDialog1.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
+			if (this.SaveFileDialog1.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 			{
 				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, 300);
 				FileSystem.FilePut(1, Mod_MD.Reservatorio[1], -1L);
@@ -2572,7 +2572,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Ler_conf_md_101.Enabled = false;
@@ -2603,7 +2603,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Esc_conf_md_101.Enabled = false;

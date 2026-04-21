@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x02000085 RID: 133
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -185,7 +185,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(333, 176);
 			grupo_ctrl_com2.Size = size;
-			this.Grupo_ctrl_com.TabIndex = 1;
+			this.Grupo_ctrl_com.TabIndex = (HorizontalAlignment)1;
 			this.Grupo_ctrl_com.TabStop = false;
 			this.Grupo_ctrl_com.Text = "Controle de Monitoração";
 			this.msg_modo_operacao.BackColor = global::System.Drawing.Color.Beige;
@@ -199,9 +199,9 @@
 			global::System.Windows.Forms.Control msg_modo_operacao2 = this.msg_modo_operacao;
 			size = new global::System.Drawing.Size(202, 19);
 			msg_modo_operacao2.Size = size;
-			this.msg_modo_operacao.TabIndex = 7;
+			this.msg_modo_operacao.TabIndex = (HorizontalAlignment)7;
 			this.msg_modo_operacao.TabStop = false;
-			this.msg_modo_operacao.TextAlign = 2;
+			this.msg_modo_operacao.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control tela_endereco_estacao = this.Tela_endereco_estacao;
 			location = new global::System.Drawing.Point(157, 55);
 			tela_endereco_estacao.Location = location;
@@ -219,8 +219,8 @@
 			global::System.Windows.Forms.Control tela_endereco_estacao3 = this.Tela_endereco_estacao;
 			size = new global::System.Drawing.Size(93, 20);
 			tela_endereco_estacao3.Size = size;
-			this.Tela_endereco_estacao.TabIndex = 6;
-			this.Tela_endereco_estacao.TextAlign = 2;
+			this.Tela_endereco_estacao.TabIndex = (HorizontalAlignment)6;
+			this.Tela_endereco_estacao.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control tela_endereco_mestre = this.Tela_endereco_mestre;
 			location = new global::System.Drawing.Point(157, 27);
 			tela_endereco_mestre.Location = location;
@@ -237,8 +237,8 @@
 			global::System.Windows.Forms.Control tela_endereco_mestre3 = this.Tela_endereco_mestre;
 			size = new global::System.Drawing.Size(93, 20);
 			tela_endereco_mestre3.Size = size;
-			this.Tela_endereco_mestre.TabIndex = 6;
-			this.Tela_endereco_mestre.TextAlign = 2;
+			this.Tela_endereco_mestre.TabIndex = (HorizontalAlignment)6;
+			this.Tela_endereco_mestre.TextAlign = (HorizontalAlignment)2;
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label = this.Label2;
 			location = new global::System.Drawing.Point(22, 29);
@@ -247,7 +247,7 @@
 			global::System.Windows.Forms.Control label2 = this.Label2;
 			size = new global::System.Drawing.Size(94, 13);
 			label2.Size = size;
-			this.Label2.TabIndex = 3;
+			this.Label2.TabIndex = (HorizontalAlignment)3;
 			this.Label2.Text = "Endereço Mestre :";
 			this.msg.BackColor = global::System.Drawing.Color.Beige;
 			this.msg.ForeColor = global::System.Drawing.SystemColors.WindowText;
@@ -260,9 +260,9 @@
 			global::System.Windows.Forms.Control msg2 = this.msg;
 			size = new global::System.Drawing.Size(290, 30);
 			msg2.Size = size;
-			this.msg.TabIndex = 1;
+			this.msg.TabIndex = (HorizontalAlignment)1;
 			this.msg.TabStop = false;
-			this.msg.TextAlign = 2;
+			this.msg.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control comando_hab_monitoracao = this.Comando_hab_monitoracao;
 			location = new global::System.Drawing.Point(231, 133);
 			comando_hab_monitoracao.Location = location;
@@ -270,7 +270,7 @@
 			global::System.Windows.Forms.Control comando_hab_monitoracao2 = this.Comando_hab_monitoracao;
 			size = new global::System.Drawing.Size(82, 26);
 			comando_hab_monitoracao2.Size = size;
-			this.Comando_hab_monitoracao.TabIndex = 2;
+			this.Comando_hab_monitoracao.TabIndex = (HorizontalAlignment)2;
 			this.Comando_hab_monitoracao.Text = "Iniciar";
 			this.Comando_hab_monitoracao.UseVisualStyleBackColor = true;
 			this.Label_end_estacao.AutoSize = true;
@@ -281,9 +281,9 @@
 			global::System.Windows.Forms.Control label_end_estacao2 = this.Label_end_estacao;
 			size = new global::System.Drawing.Size(101, 13);
 			label_end_estacao2.Size = size;
-			this.Label_end_estacao.TabIndex = 0;
+			this.Label_end_estacao.TabIndex = (HorizontalAlignment)0;
 			this.Label_end_estacao.Text = "Endereço Estação :";
-			this.Timer_monitoracao.Interval = 1000;
+			this.Timer_monitoracao.Interval = (HorizontalAlignment)1000;
 			this.Grupo_setpoints.Controls.Add(this.Valor_Niveldesliga);
 			this.Grupo_setpoints.Controls.Add(this.Label_NivelDesliga);
 			this.Grupo_setpoints.Controls.Add(this.Valor_NivelLiga);
@@ -314,7 +314,7 @@
 			global::System.Windows.Forms.Control grupo_setpoints2 = this.Grupo_setpoints;
 			size = new global::System.Drawing.Size(383, 207);
 			grupo_setpoints2.Size = size;
-			this.Grupo_setpoints.TabIndex = 4;
+			this.Grupo_setpoints.TabIndex = (HorizontalAlignment)4;
 			this.Grupo_setpoints.TabStop = false;
 			this.Grupo_setpoints.Text = "Setpoints";
 			this.Valor_Niveldesliga.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
@@ -325,8 +325,8 @@
 			global::System.Windows.Forms.Control valor_Niveldesliga2 = this.Valor_Niveldesliga;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_Niveldesliga2.Size = size;
-			this.Valor_Niveldesliga.TabIndex = 24;
-			this.Valor_Niveldesliga.TextAlign = 1;
+			this.Valor_Niveldesliga.TabIndex = (HorizontalAlignment)24;
+			this.Valor_Niveldesliga.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelDesliga.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelDesliga = this.Label_NivelDesliga;
 			location = new global::System.Drawing.Point(170, 82);
@@ -335,7 +335,7 @@
 			global::System.Windows.Forms.Control label_NivelDesliga2 = this.Label_NivelDesliga;
 			size = new global::System.Drawing.Size(152, 13);
 			label_NivelDesliga2.Size = size;
-			this.Label_NivelDesliga.TabIndex = 23;
+			this.Label_NivelDesliga.TabIndex = (HorizontalAlignment)23;
 			this.Label_NivelDesliga.Text = "Proteção - Nível Bloqueio (%) :";
 			this.Valor_NivelLiga.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_NivelLiga = this.Valor_NivelLiga;
@@ -345,8 +345,8 @@
 			global::System.Windows.Forms.Control valor_NivelLiga2 = this.Valor_NivelLiga;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_NivelLiga2.Size = size;
-			this.Valor_NivelLiga.TabIndex = 22;
-			this.Valor_NivelLiga.TextAlign = 1;
+			this.Valor_NivelLiga.TabIndex = (HorizontalAlignment)22;
+			this.Valor_NivelLiga.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelLiga.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelLiga = this.Label_NivelLiga;
 			location = new global::System.Drawing.Point(170, 110);
@@ -355,7 +355,7 @@
 			global::System.Windows.Forms.Control label_NivelLiga2 = this.Label_NivelLiga;
 			size = new global::System.Drawing.Size(158, 13);
 			label_NivelLiga2.Size = size;
-			this.Label_NivelLiga.TabIndex = 21;
+			this.Label_NivelLiga.TabIndex = (HorizontalAlignment)21;
 			this.Label_NivelLiga.Text = "Proteção - Nível Liberação (%) :";
 			this.Valor_PressaoSuc.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_PressaoSuc = this.Valor_PressaoSuc;
@@ -365,8 +365,8 @@
 			global::System.Windows.Forms.Control valor_PressaoSuc2 = this.Valor_PressaoSuc;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_PressaoSuc2.Size = size;
-			this.Valor_PressaoSuc.TabIndex = 20;
-			this.Valor_PressaoSuc.TextAlign = 1;
+			this.Valor_PressaoSuc.TabIndex = (HorizontalAlignment)20;
+			this.Valor_PressaoSuc.TextAlign = (HorizontalAlignment)1;
 			this.Label_PressaoSuc.AutoSize = true;
 			global::System.Windows.Forms.Control label_PressaoSuc = this.Label_PressaoSuc;
 			location = new global::System.Drawing.Point(170, 54);
@@ -375,7 +375,7 @@
 			global::System.Windows.Forms.Control label_PressaoSuc2 = this.Label_PressaoSuc;
 			size = new global::System.Drawing.Size(108, 13);
 			label_PressaoSuc2.Size = size;
-			this.Label_PressaoSuc.TabIndex = 19;
+			this.Label_PressaoSuc.TabIndex = (HorizontalAlignment)19;
 			this.Label_PressaoSuc.Text = "Pressao Sucção (%) :";
 			this.Valor_PressaoRec.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_PressaoRec = this.Valor_PressaoRec;
@@ -385,8 +385,8 @@
 			global::System.Windows.Forms.Control valor_PressaoRec2 = this.Valor_PressaoRec;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_PressaoRec2.Size = size;
-			this.Valor_PressaoRec.TabIndex = 18;
-			this.Valor_PressaoRec.TextAlign = 1;
+			this.Valor_PressaoRec.TabIndex = (HorizontalAlignment)18;
+			this.Valor_PressaoRec.TextAlign = (HorizontalAlignment)1;
 			this.Label_PressaoRec.AutoSize = true;
 			global::System.Windows.Forms.Control label_PressaoRec = this.Label_PressaoRec;
 			location = new global::System.Drawing.Point(170, 26);
@@ -395,7 +395,7 @@
 			global::System.Windows.Forms.Control label_PressaoRec2 = this.Label_PressaoRec;
 			size = new global::System.Drawing.Size(117, 13);
 			label_PressaoRec2.Size = size;
-			this.Label_PressaoRec.TabIndex = 17;
+			this.Label_PressaoRec.TabIndex = (HorizontalAlignment)17;
 			this.Label_PressaoRec.Text = "Pressao Recalque (%) :";
 			this.Valor_TempoMaisUmaBomba.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_TempoMaisUmaBomba = this.Valor_TempoMaisUmaBomba;
@@ -405,8 +405,8 @@
 			global::System.Windows.Forms.Control valor_TempoMaisUmaBomba2 = this.Valor_TempoMaisUmaBomba;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_TempoMaisUmaBomba2.Size = size;
-			this.Valor_TempoMaisUmaBomba.TabIndex = 16;
-			this.Valor_TempoMaisUmaBomba.TextAlign = 1;
+			this.Valor_TempoMaisUmaBomba.TabIndex = (HorizontalAlignment)16;
+			this.Valor_TempoMaisUmaBomba.TextAlign = (HorizontalAlignment)1;
 			this.Label_TempoMaisUmaBomba.AutoSize = true;
 			global::System.Windows.Forms.Control label_TempoMaisUmaBomba = this.Label_TempoMaisUmaBomba;
 			location = new global::System.Drawing.Point(10, 166);
@@ -415,7 +415,7 @@
 			global::System.Windows.Forms.Control label_TempoMaisUmaBomba2 = this.Label_TempoMaisUmaBomba;
 			size = new global::System.Drawing.Size(99, 13);
 			label_TempoMaisUmaBomba2.Size = size;
-			this.Label_TempoMaisUmaBomba.TabIndex = 15;
+			this.Label_TempoMaisUmaBomba.TabIndex = (HorizontalAlignment)15;
 			this.Label_TempoMaisUmaBomba.Text = "Tempo + 1 B (min) :";
 			this.Valor_NivelB4.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_NivelB = this.Valor_NivelB4;
@@ -425,8 +425,8 @@
 			global::System.Windows.Forms.Control valor_NivelB2 = this.Valor_NivelB4;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_NivelB2.Size = size;
-			this.Valor_NivelB4.TabIndex = 14;
-			this.Valor_NivelB4.TextAlign = 1;
+			this.Valor_NivelB4.TabIndex = (HorizontalAlignment)14;
+			this.Valor_NivelB4.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelB4.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelB = this.Label_NivelB4;
 			location = new global::System.Drawing.Point(10, 138);
@@ -435,7 +435,7 @@
 			global::System.Windows.Forms.Control label_NivelB2 = this.Label_NivelB4;
 			size = new global::System.Drawing.Size(72, 13);
 			label_NivelB2.Size = size;
-			this.Label_NivelB4.TabIndex = 13;
+			this.Label_NivelB4.TabIndex = (HorizontalAlignment)13;
 			this.Label_NivelB4.Text = "Nível B4 (%) :";
 			this.Valor_NivelB3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_NivelB3 = this.Valor_NivelB3;
@@ -445,8 +445,8 @@
 			global::System.Windows.Forms.Control valor_NivelB4 = this.Valor_NivelB3;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_NivelB4.Size = size;
-			this.Valor_NivelB3.TabIndex = 12;
-			this.Valor_NivelB3.TextAlign = 1;
+			this.Valor_NivelB3.TabIndex = (HorizontalAlignment)12;
+			this.Valor_NivelB3.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelB3.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelB3 = this.Label_NivelB3;
 			location = new global::System.Drawing.Point(10, 110);
@@ -455,7 +455,7 @@
 			global::System.Windows.Forms.Control label_NivelB4 = this.Label_NivelB3;
 			size = new global::System.Drawing.Size(72, 13);
 			label_NivelB4.Size = size;
-			this.Label_NivelB3.TabIndex = 11;
+			this.Label_NivelB3.TabIndex = (HorizontalAlignment)11;
 			this.Label_NivelB3.Text = "Nível B3 (%) :";
 			this.Valor_NivelB2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_NivelB5 = this.Valor_NivelB2;
@@ -465,8 +465,8 @@
 			global::System.Windows.Forms.Control valor_NivelB6 = this.Valor_NivelB2;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_NivelB6.Size = size;
-			this.Valor_NivelB2.TabIndex = 10;
-			this.Valor_NivelB2.TextAlign = 1;
+			this.Valor_NivelB2.TabIndex = (HorizontalAlignment)10;
+			this.Valor_NivelB2.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelB2.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelB5 = this.Label_NivelB2;
 			location = new global::System.Drawing.Point(10, 82);
@@ -475,7 +475,7 @@
 			global::System.Windows.Forms.Control label_NivelB6 = this.Label_NivelB2;
 			size = new global::System.Drawing.Size(72, 13);
 			label_NivelB6.Size = size;
-			this.Label_NivelB2.TabIndex = 9;
+			this.Label_NivelB2.TabIndex = (HorizontalAlignment)9;
 			this.Label_NivelB2.Text = "Nível B2 (%) :";
 			this.Valor_NivelB1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_NivelB7 = this.Valor_NivelB1;
@@ -485,8 +485,8 @@
 			global::System.Windows.Forms.Control valor_NivelB8 = this.Valor_NivelB1;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_NivelB8.Size = size;
-			this.Valor_NivelB1.TabIndex = 8;
-			this.Valor_NivelB1.TextAlign = 1;
+			this.Valor_NivelB1.TabIndex = (HorizontalAlignment)8;
+			this.Valor_NivelB1.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelB1.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelB7 = this.Label_NivelB1;
 			location = new global::System.Drawing.Point(10, 54);
@@ -495,7 +495,7 @@
 			global::System.Windows.Forms.Control label_NivelB8 = this.Label_NivelB1;
 			size = new global::System.Drawing.Size(72, 13);
 			label_NivelB8.Size = size;
-			this.Label_NivelB1.TabIndex = 7;
+			this.Label_NivelB1.TabIndex = (HorizontalAlignment)7;
 			this.Label_NivelB1.Text = "Nível B1 (%) :";
 			this.Valor_NivelDesejado.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_NivelDesejado = this.Valor_NivelDesejado;
@@ -505,8 +505,8 @@
 			global::System.Windows.Forms.Control valor_NivelDesejado2 = this.Valor_NivelDesejado;
 			size = new global::System.Drawing.Size(45, 20);
 			valor_NivelDesejado2.Size = size;
-			this.Valor_NivelDesejado.TabIndex = 6;
-			this.Valor_NivelDesejado.TextAlign = 1;
+			this.Valor_NivelDesejado.TabIndex = (HorizontalAlignment)6;
+			this.Valor_NivelDesejado.TextAlign = (HorizontalAlignment)1;
 			this.Label_NivelDesejado.AutoSize = true;
 			global::System.Windows.Forms.Control label_NivelDesejado = this.Label_NivelDesejado;
 			location = new global::System.Drawing.Point(10, 26);
@@ -515,7 +515,7 @@
 			global::System.Windows.Forms.Control label_NivelDesejado2 = this.Label_NivelDesejado;
 			size = new global::System.Drawing.Size(104, 13);
 			label_NivelDesejado2.Size = size;
-			this.Label_NivelDesejado.TabIndex = 5;
+			this.Label_NivelDesejado.TabIndex = (HorizontalAlignment)5;
 			this.Label_NivelDesejado.Text = "Nível Desejado (%) :";
 			global::System.Windows.Forms.Control comando_escreve_setpoint = this.Comando_escreve_setpoint;
 			location = new global::System.Drawing.Point(297, 151);
@@ -524,7 +524,7 @@
 			global::System.Windows.Forms.Control comando_escreve_setpoint2 = this.Comando_escreve_setpoint;
 			size = new global::System.Drawing.Size(69, 26);
 			comando_escreve_setpoint2.Size = size;
-			this.Comando_escreve_setpoint.TabIndex = 4;
+			this.Comando_escreve_setpoint.TabIndex = (HorizontalAlignment)4;
 			this.Comando_escreve_setpoint.Text = "Escrever";
 			this.Comando_escreve_setpoint.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control comando_le_setpoint = this.Comando_le_setpoint;
@@ -534,7 +534,7 @@
 			global::System.Windows.Forms.Control comando_le_setpoint2 = this.Comando_le_setpoint;
 			size = new global::System.Drawing.Size(105, 26);
 			comando_le_setpoint2.Size = size;
-			this.Comando_le_setpoint.TabIndex = 3;
+			this.Comando_le_setpoint.TabIndex = (HorizontalAlignment)3;
 			this.Comando_le_setpoint.Text = "Ler";
 			this.Comando_le_setpoint.UseVisualStyleBackColor = true;
 			this.Grupo_estatistica.Controls.Add(this.Label_Est_retry);
@@ -553,7 +553,7 @@
 			global::System.Windows.Forms.Control grupo_estatistica2 = this.Grupo_estatistica;
 			size = new global::System.Drawing.Size(188, 112);
 			grupo_estatistica2.Size = size;
-			this.Grupo_estatistica.TabIndex = 5;
+			this.Grupo_estatistica.TabIndex = (HorizontalAlignment)5;
 			this.Grupo_estatistica.TabStop = false;
 			this.Grupo_estatistica.Tag = "v";
 			this.Grupo_estatistica.Text = "Estatística";
@@ -565,7 +565,7 @@
 			global::System.Windows.Forms.Control label_Est_retry2 = this.Label_Est_retry;
 			size = new global::System.Drawing.Size(24, 13);
 			label_Est_retry2.Size = size;
-			this.Label_Est_retry.TabIndex = 10;
+			this.Label_Est_retry.TabIndex = (HorizontalAlignment)10;
 			this.Label_Est_retry.Text = "Rp:";
 			this.Est_retry.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control est_retry = this.Est_retry;
@@ -576,9 +576,9 @@
 			global::System.Windows.Forms.Control est_retry2 = this.Est_retry;
 			size = new global::System.Drawing.Size(38, 20);
 			est_retry2.Size = size;
-			this.Est_retry.TabIndex = 9;
+			this.Est_retry.TabIndex = (HorizontalAlignment)9;
 			this.Est_retry.Tag = "c";
-			this.Est_retry.TextAlign = 1;
+			this.Est_retry.TextAlign = (HorizontalAlignment)1;
 			this.Est_eficiencia.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control est_eficiencia = this.Est_eficiencia;
 			location = new global::System.Drawing.Point(125, 47);
@@ -588,9 +588,9 @@
 			global::System.Windows.Forms.Control est_eficiencia2 = this.Est_eficiencia;
 			size = new global::System.Drawing.Size(38, 20);
 			est_eficiencia2.Size = size;
-			this.Est_eficiencia.TabIndex = 5;
+			this.Est_eficiencia.TabIndex = (HorizontalAlignment)5;
 			this.Est_eficiencia.Tag = "c";
-			this.Est_eficiencia.TextAlign = 1;
+			this.Est_eficiencia.TextAlign = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control button_limpa_estatistica = this.Button_limpa_estatistica;
 			location = new global::System.Drawing.Point(19, 76);
 			button_limpa_estatistica.Location = location;
@@ -598,7 +598,7 @@
 			global::System.Windows.Forms.Control button_limpa_estatistica2 = this.Button_limpa_estatistica;
 			size = new global::System.Drawing.Size(144, 25);
 			button_limpa_estatistica2.Size = size;
-			this.Button_limpa_estatistica.TabIndex = 8;
+			this.Button_limpa_estatistica.TabIndex = (HorizontalAlignment)8;
 			this.Button_limpa_estatistica.Text = "Reiniciar";
 			this.Button_limpa_estatistica.UseVisualStyleBackColor = true;
 			this.Label_Est_RX.AutoSize = true;
@@ -609,7 +609,7 @@
 			global::System.Windows.Forms.Control label_Est_RX2 = this.Label_Est_RX;
 			size = new global::System.Drawing.Size(28, 13);
 			label_Est_RX2.Size = size;
-			this.Label_Est_RX.TabIndex = 7;
+			this.Label_Est_RX.TabIndex = (HorizontalAlignment)7;
 			this.Label_Est_RX.Text = "RX :";
 			this.Label_Est_Eficiencia.AutoSize = true;
 			global::System.Windows.Forms.Control label_Est_Eficiencia = this.Label_Est_Eficiencia;
@@ -619,7 +619,7 @@
 			global::System.Windows.Forms.Control label_Est_Eficiencia2 = this.Label_Est_Eficiencia;
 			size = new global::System.Drawing.Size(42, 13);
 			label_Est_Eficiencia2.Size = size;
-			this.Label_Est_Eficiencia.TabIndex = 7;
+			this.Label_Est_Eficiencia.TabIndex = (HorizontalAlignment)7;
 			this.Label_Est_Eficiencia.Text = "OK(%) :";
 			this.Label_Est_TX.AutoSize = true;
 			global::System.Windows.Forms.Control label_Est_TX = this.Label_Est_TX;
@@ -629,7 +629,7 @@
 			global::System.Windows.Forms.Control label_Est_TX2 = this.Label_Est_TX;
 			size = new global::System.Drawing.Size(27, 13);
 			label_Est_TX2.Size = size;
-			this.Label_Est_TX.TabIndex = 6;
+			this.Label_Est_TX.TabIndex = (HorizontalAlignment)6;
 			this.Label_Est_TX.Text = "TX :";
 			this.Est_Rx.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control est_Rx = this.Est_Rx;
@@ -640,9 +640,9 @@
 			global::System.Windows.Forms.Control est_Rx2 = this.Est_Rx;
 			size = new global::System.Drawing.Size(38, 20);
 			est_Rx2.Size = size;
-			this.Est_Rx.TabIndex = 5;
+			this.Est_Rx.TabIndex = (HorizontalAlignment)5;
 			this.Est_Rx.Tag = "c";
-			this.Est_Rx.TextAlign = 1;
+			this.Est_Rx.TextAlign = (HorizontalAlignment)1;
 			this.Est_TX.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control est_TX = this.Est_TX;
 			location = new global::System.Drawing.Point(39, 22);
@@ -652,9 +652,9 @@
 			global::System.Windows.Forms.Control est_TX2 = this.Est_TX;
 			size = new global::System.Drawing.Size(38, 20);
 			est_TX2.Size = size;
-			this.Est_TX.TabIndex = 4;
+			this.Est_TX.TabIndex = (HorizontalAlignment)4;
 			this.Est_TX.Tag = "c";
-			this.Est_TX.TextAlign = 1;
+			this.Est_TX.TextAlign = (HorizontalAlignment)1;
 			this.Grupo_status.Controls.Add(this.Grupo_bomba4);
 			this.Grupo_status.Controls.Add(this.Grupo_bomba3);
 			this.Grupo_status.Controls.Add(this.Grupo_bomba2);
@@ -666,7 +666,7 @@
 			global::System.Windows.Forms.Control grupo_status2 = this.Grupo_status;
 			size = new global::System.Drawing.Size(673, 280);
 			grupo_status2.Size = size;
-			this.Grupo_status.TabIndex = 6;
+			this.Grupo_status.TabIndex = (HorizontalAlignment)6;
 			this.Grupo_status.TabStop = false;
 			this.Grupo_status.Text = "Bombas - Comando e Status";
 			this.Grupo_bomba4.Controls.Add(this.Cmd_falha_b4);
@@ -686,7 +686,7 @@
 			global::System.Windows.Forms.Control grupo_bomba2 = this.Grupo_bomba4;
 			size = new global::System.Drawing.Size(315, 113);
 			grupo_bomba2.Size = size;
-			this.Grupo_bomba4.TabIndex = 8;
+			this.Grupo_bomba4.TabIndex = (HorizontalAlignment)8;
 			this.Grupo_bomba4.TabStop = false;
 			this.Grupo_bomba4.Text = "Bomba 4";
 			this.Cmd_falha_b4.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 128);
@@ -697,7 +697,7 @@
 			global::System.Windows.Forms.Control cmd_falha_b2 = this.Cmd_falha_b4;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_falha_b2.Size = size;
-			this.Cmd_falha_b4.TabIndex = 6;
+			this.Cmd_falha_b4.TabIndex = (HorizontalAlignment)6;
 			this.Cmd_falha_b4.Text = "Falha";
 			this.Cmd_falha_b4.UseVisualStyleBackColor = false;
 			this.Modo_b4.BackColor = global::System.Drawing.Color.Beige;
@@ -709,9 +709,9 @@
 			global::System.Windows.Forms.Control modo_b2 = this.Modo_b4;
 			size = new global::System.Drawing.Size(82, 20);
 			modo_b2.Size = size;
-			this.Modo_b4.TabIndex = 7;
+			this.Modo_b4.TabIndex = (HorizontalAlignment)7;
 			this.Modo_b4.TabStop = false;
-			this.Modo_b4.TextAlign = 2;
+			this.Modo_b4.TextAlign = (HorizontalAlignment)2;
 			this.Label_modo_b4.AutoSize = true;
 			global::System.Windows.Forms.Control label_modo_b = this.Label_modo_b4;
 			location = new global::System.Drawing.Point(11, 59);
@@ -720,7 +720,7 @@
 			global::System.Windows.Forms.Control label_modo_b2 = this.Label_modo_b4;
 			size = new global::System.Drawing.Size(63, 13);
 			label_modo_b2.Size = size;
-			this.Label_modo_b4.TabIndex = 6;
+			this.Label_modo_b4.TabIndex = (HorizontalAlignment)6;
 			this.Label_modo_b4.Text = "Modo Ope :";
 			global::System.Windows.Forms.Control cmd_manual_b = this.Cmd_manual_b4;
 			location = new global::System.Drawing.Point(161, 50);
@@ -729,7 +729,7 @@
 			global::System.Windows.Forms.Control cmd_manual_b2 = this.Cmd_manual_b4;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_manual_b2.Size = size;
-			this.Cmd_manual_b4.TabIndex = 3;
+			this.Cmd_manual_b4.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_manual_b4.Text = "Manual";
 			this.Cmd_manual_b4.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_desliga_b = this.Cmd_desliga_b4;
@@ -739,7 +739,7 @@
 			global::System.Windows.Forms.Control cmd_desliga_b2 = this.Cmd_desliga_b4;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_desliga_b2.Size = size;
-			this.Cmd_desliga_b4.TabIndex = 3;
+			this.Cmd_desliga_b4.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_desliga_b4.Text = "Desligar";
 			this.Cmd_desliga_b4.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_liga_b = this.Cmd_liga_b4;
@@ -749,7 +749,7 @@
 			global::System.Windows.Forms.Control cmd_liga_b2 = this.Cmd_liga_b4;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_liga_b2.Size = size;
-			this.Cmd_liga_b4.TabIndex = 2;
+			this.Cmd_liga_b4.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_liga_b4.Text = "Ligar";
 			this.Cmd_liga_b4.UseVisualStyleBackColor = true;
 			this.Label_status_b4.AutoSize = true;
@@ -760,7 +760,7 @@
 			global::System.Windows.Forms.Control label_status_b2 = this.Label_status_b4;
 			size = new global::System.Drawing.Size(43, 13);
 			label_status_b2.Size = size;
-			this.Label_status_b4.TabIndex = 0;
+			this.Label_status_b4.TabIndex = (HorizontalAlignment)0;
 			this.Label_status_b4.Text = "Status :";
 			global::System.Windows.Forms.Control cmd_automatico_b = this.Cmd_automatico_b4;
 			location = new global::System.Drawing.Point(161, 20);
@@ -769,7 +769,7 @@
 			global::System.Windows.Forms.Control cmd_automatico_b2 = this.Cmd_automatico_b4;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_automatico_b2.Size = size;
-			this.Cmd_automatico_b4.TabIndex = 2;
+			this.Cmd_automatico_b4.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_automatico_b4.Text = "Automático";
 			this.Cmd_automatico_b4.UseVisualStyleBackColor = true;
 			this.Status_b4.BackColor = global::System.Drawing.Color.Beige;
@@ -781,9 +781,9 @@
 			global::System.Windows.Forms.Control status_b2 = this.Status_b4;
 			size = new global::System.Drawing.Size(82, 20);
 			status_b2.Size = size;
-			this.Status_b4.TabIndex = 1;
+			this.Status_b4.TabIndex = (HorizontalAlignment)1;
 			this.Status_b4.TabStop = false;
-			this.Status_b4.TextAlign = 2;
+			this.Status_b4.TextAlign = (HorizontalAlignment)2;
 			this.Grupo_bomba3.Controls.Add(this.Cmd_falha_b3);
 			this.Grupo_bomba3.Controls.Add(this.Modo_b3);
 			this.Grupo_bomba3.Controls.Add(this.Label_modo_b3);
@@ -801,7 +801,7 @@
 			global::System.Windows.Forms.Control grupo_bomba4 = this.Grupo_bomba3;
 			size = new global::System.Drawing.Size(315, 113);
 			grupo_bomba4.Size = size;
-			this.Grupo_bomba3.TabIndex = 2;
+			this.Grupo_bomba3.TabIndex = (HorizontalAlignment)2;
 			this.Grupo_bomba3.TabStop = false;
 			this.Grupo_bomba3.Text = "Bomba 3";
 			this.Cmd_falha_b3.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 128);
@@ -812,7 +812,7 @@
 			global::System.Windows.Forms.Control cmd_falha_b4 = this.Cmd_falha_b3;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_falha_b4.Size = size;
-			this.Cmd_falha_b3.TabIndex = 9;
+			this.Cmd_falha_b3.TabIndex = (HorizontalAlignment)9;
 			this.Cmd_falha_b3.Text = "Falha";
 			this.Cmd_falha_b3.UseVisualStyleBackColor = false;
 			this.Modo_b3.BackColor = global::System.Drawing.Color.Beige;
@@ -824,9 +824,9 @@
 			global::System.Windows.Forms.Control modo_b4 = this.Modo_b3;
 			size = new global::System.Drawing.Size(82, 20);
 			modo_b4.Size = size;
-			this.Modo_b3.TabIndex = 7;
+			this.Modo_b3.TabIndex = (HorizontalAlignment)7;
 			this.Modo_b3.TabStop = false;
-			this.Modo_b3.TextAlign = 2;
+			this.Modo_b3.TextAlign = (HorizontalAlignment)2;
 			this.Label_modo_b3.AutoSize = true;
 			global::System.Windows.Forms.Control label_modo_b3 = this.Label_modo_b3;
 			location = new global::System.Drawing.Point(11, 59);
@@ -835,7 +835,7 @@
 			global::System.Windows.Forms.Control label_modo_b4 = this.Label_modo_b3;
 			size = new global::System.Drawing.Size(63, 13);
 			label_modo_b4.Size = size;
-			this.Label_modo_b3.TabIndex = 6;
+			this.Label_modo_b3.TabIndex = (HorizontalAlignment)6;
 			this.Label_modo_b3.Text = "Modo Ope :";
 			global::System.Windows.Forms.Control cmd_manual_b3 = this.Cmd_manual_b3;
 			location = new global::System.Drawing.Point(161, 50);
@@ -844,7 +844,7 @@
 			global::System.Windows.Forms.Control cmd_manual_b4 = this.Cmd_manual_b3;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_manual_b4.Size = size;
-			this.Cmd_manual_b3.TabIndex = 3;
+			this.Cmd_manual_b3.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_manual_b3.Text = "Manual";
 			this.Cmd_manual_b3.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_desliga_b3 = this.Cmd_desliga_b3;
@@ -854,7 +854,7 @@
 			global::System.Windows.Forms.Control cmd_desliga_b4 = this.Cmd_desliga_b3;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_desliga_b4.Size = size;
-			this.Cmd_desliga_b3.TabIndex = 3;
+			this.Cmd_desliga_b3.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_desliga_b3.Text = "Desligar";
 			this.Cmd_desliga_b3.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_liga_b3 = this.Cmd_liga_b3;
@@ -864,7 +864,7 @@
 			global::System.Windows.Forms.Control cmd_liga_b4 = this.Cmd_liga_b3;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_liga_b4.Size = size;
-			this.Cmd_liga_b3.TabIndex = 2;
+			this.Cmd_liga_b3.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_liga_b3.Text = "Ligar";
 			this.Cmd_liga_b3.UseVisualStyleBackColor = true;
 			this.Label_status_b3.AutoSize = true;
@@ -875,7 +875,7 @@
 			global::System.Windows.Forms.Control label_status_b4 = this.Label_status_b3;
 			size = new global::System.Drawing.Size(43, 13);
 			label_status_b4.Size = size;
-			this.Label_status_b3.TabIndex = 0;
+			this.Label_status_b3.TabIndex = (HorizontalAlignment)0;
 			this.Label_status_b3.Text = "Status :";
 			global::System.Windows.Forms.Control cmd_automatico_b3 = this.Cmd_automatico_b3;
 			location = new global::System.Drawing.Point(161, 20);
@@ -884,7 +884,7 @@
 			global::System.Windows.Forms.Control cmd_automatico_b4 = this.Cmd_automatico_b3;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_automatico_b4.Size = size;
-			this.Cmd_automatico_b3.TabIndex = 2;
+			this.Cmd_automatico_b3.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_automatico_b3.Text = "Automático";
 			this.Cmd_automatico_b3.UseVisualStyleBackColor = true;
 			this.Status_b3.BackColor = global::System.Drawing.Color.Beige;
@@ -896,9 +896,9 @@
 			global::System.Windows.Forms.Control status_b4 = this.Status_b3;
 			size = new global::System.Drawing.Size(82, 20);
 			status_b4.Size = size;
-			this.Status_b3.TabIndex = 1;
+			this.Status_b3.TabIndex = (HorizontalAlignment)1;
 			this.Status_b3.TabStop = false;
-			this.Status_b3.TextAlign = 2;
+			this.Status_b3.TextAlign = (HorizontalAlignment)2;
 			this.Grupo_bomba2.Controls.Add(this.Cmd_falha_b2);
 			this.Grupo_bomba2.Controls.Add(this.Modo_b2);
 			this.Grupo_bomba2.Controls.Add(this.Label_modo_b2);
@@ -916,7 +916,7 @@
 			global::System.Windows.Forms.Control grupo_bomba6 = this.Grupo_bomba2;
 			size = new global::System.Drawing.Size(315, 113);
 			grupo_bomba6.Size = size;
-			this.Grupo_bomba2.TabIndex = 1;
+			this.Grupo_bomba2.TabIndex = (HorizontalAlignment)1;
 			this.Grupo_bomba2.TabStop = false;
 			this.Grupo_bomba2.Text = "Bomba 2";
 			this.Cmd_falha_b2.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 128);
@@ -927,7 +927,7 @@
 			global::System.Windows.Forms.Control cmd_falha_b6 = this.Cmd_falha_b2;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_falha_b6.Size = size;
-			this.Cmd_falha_b2.TabIndex = 6;
+			this.Cmd_falha_b2.TabIndex = (HorizontalAlignment)6;
 			this.Cmd_falha_b2.Text = "Falha";
 			this.Cmd_falha_b2.UseVisualStyleBackColor = false;
 			this.Modo_b2.BackColor = global::System.Drawing.Color.Beige;
@@ -939,9 +939,9 @@
 			global::System.Windows.Forms.Control modo_b6 = this.Modo_b2;
 			size = new global::System.Drawing.Size(82, 20);
 			modo_b6.Size = size;
-			this.Modo_b2.TabIndex = 5;
+			this.Modo_b2.TabIndex = (HorizontalAlignment)5;
 			this.Modo_b2.TabStop = false;
-			this.Modo_b2.TextAlign = 2;
+			this.Modo_b2.TextAlign = (HorizontalAlignment)2;
 			this.Label_modo_b2.AutoSize = true;
 			global::System.Windows.Forms.Control label_modo_b5 = this.Label_modo_b2;
 			location = new global::System.Drawing.Point(11, 59);
@@ -950,7 +950,7 @@
 			global::System.Windows.Forms.Control label_modo_b6 = this.Label_modo_b2;
 			size = new global::System.Drawing.Size(63, 13);
 			label_modo_b6.Size = size;
-			this.Label_modo_b2.TabIndex = 4;
+			this.Label_modo_b2.TabIndex = (HorizontalAlignment)4;
 			this.Label_modo_b2.Text = "Modo Ope :";
 			global::System.Windows.Forms.Control cmd_manual_b5 = this.Cmd_manual_b2;
 			location = new global::System.Drawing.Point(161, 49);
@@ -959,7 +959,7 @@
 			global::System.Windows.Forms.Control cmd_manual_b6 = this.Cmd_manual_b2;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_manual_b6.Size = size;
-			this.Cmd_manual_b2.TabIndex = 3;
+			this.Cmd_manual_b2.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_manual_b2.Text = "Manual";
 			this.Cmd_manual_b2.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_desliga_b5 = this.Cmd_desliga_b2;
@@ -969,7 +969,7 @@
 			global::System.Windows.Forms.Control cmd_desliga_b6 = this.Cmd_desliga_b2;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_desliga_b6.Size = size;
-			this.Cmd_desliga_b2.TabIndex = 3;
+			this.Cmd_desliga_b2.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_desliga_b2.Text = "Desligar";
 			this.Cmd_desliga_b2.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_liga_b5 = this.Cmd_liga_b2;
@@ -979,7 +979,7 @@
 			global::System.Windows.Forms.Control cmd_liga_b6 = this.Cmd_liga_b2;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_liga_b6.Size = size;
-			this.Cmd_liga_b2.TabIndex = 2;
+			this.Cmd_liga_b2.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_liga_b2.Text = "Ligar";
 			this.Cmd_liga_b2.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_automatico_b5 = this.Cmd_automatico_b2;
@@ -989,7 +989,7 @@
 			global::System.Windows.Forms.Control cmd_automatico_b6 = this.Cmd_automatico_b2;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_automatico_b6.Size = size;
-			this.Cmd_automatico_b2.TabIndex = 2;
+			this.Cmd_automatico_b2.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_automatico_b2.Text = "Automático";
 			this.Cmd_automatico_b2.UseVisualStyleBackColor = true;
 			this.Label_status_b2.AutoSize = true;
@@ -1000,7 +1000,7 @@
 			global::System.Windows.Forms.Control label_status_b6 = this.Label_status_b2;
 			size = new global::System.Drawing.Size(43, 13);
 			label_status_b6.Size = size;
-			this.Label_status_b2.TabIndex = 0;
+			this.Label_status_b2.TabIndex = (HorizontalAlignment)0;
 			this.Label_status_b2.Text = "Status :";
 			this.Status_b2.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control status_b5 = this.Status_b2;
@@ -1011,9 +1011,9 @@
 			global::System.Windows.Forms.Control status_b6 = this.Status_b2;
 			size = new global::System.Drawing.Size(82, 20);
 			status_b6.Size = size;
-			this.Status_b2.TabIndex = 1;
+			this.Status_b2.TabIndex = (HorizontalAlignment)1;
 			this.Status_b2.TabStop = false;
-			this.Status_b2.TextAlign = 2;
+			this.Status_b2.TextAlign = (HorizontalAlignment)2;
 			this.Grupo_bomba1.Controls.Add(this.Cmd_falha_b1);
 			this.Grupo_bomba1.Controls.Add(this.Modo_b1);
 			this.Grupo_bomba1.Controls.Add(this.Cmd_manual_b1);
@@ -1031,7 +1031,7 @@
 			global::System.Windows.Forms.Control grupo_bomba8 = this.Grupo_bomba1;
 			size = new global::System.Drawing.Size(315, 113);
 			grupo_bomba8.Size = size;
-			this.Grupo_bomba1.TabIndex = 0;
+			this.Grupo_bomba1.TabIndex = (HorizontalAlignment)0;
 			this.Grupo_bomba1.TabStop = false;
 			this.Grupo_bomba1.Text = "Bomba 1";
 			this.Cmd_falha_b1.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 128);
@@ -1042,7 +1042,7 @@
 			global::System.Windows.Forms.Control cmd_falha_b8 = this.Cmd_falha_b1;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_falha_b8.Size = size;
-			this.Cmd_falha_b1.TabIndex = 4;
+			this.Cmd_falha_b1.TabIndex = (HorizontalAlignment)4;
 			this.Cmd_falha_b1.Text = "Falha";
 			this.Cmd_falha_b1.UseVisualStyleBackColor = false;
 			this.Modo_b1.BackColor = global::System.Drawing.Color.Beige;
@@ -1054,9 +1054,9 @@
 			global::System.Windows.Forms.Control modo_b8 = this.Modo_b1;
 			size = new global::System.Drawing.Size(82, 20);
 			modo_b8.Size = size;
-			this.Modo_b1.TabIndex = 1;
+			this.Modo_b1.TabIndex = (HorizontalAlignment)1;
 			this.Modo_b1.TabStop = false;
-			this.Modo_b1.TextAlign = 2;
+			this.Modo_b1.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control cmd_manual_b7 = this.Cmd_manual_b1;
 			location = new global::System.Drawing.Point(161, 49);
 			cmd_manual_b7.Location = location;
@@ -1064,7 +1064,7 @@
 			global::System.Windows.Forms.Control cmd_manual_b8 = this.Cmd_manual_b1;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_manual_b8.Size = size;
-			this.Cmd_manual_b1.TabIndex = 3;
+			this.Cmd_manual_b1.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_manual_b1.Text = "Manual";
 			this.Cmd_manual_b1.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_desliga_b7 = this.Cmd_desliga_b1;
@@ -1074,7 +1074,7 @@
 			global::System.Windows.Forms.Control cmd_desliga_b8 = this.Cmd_desliga_b1;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_desliga_b8.Size = size;
-			this.Cmd_desliga_b1.TabIndex = 3;
+			this.Cmd_desliga_b1.TabIndex = (HorizontalAlignment)3;
 			this.Cmd_desliga_b1.Text = "Desligar";
 			this.Cmd_desliga_b1.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_automatico_b7 = this.Cmd_automatico_b1;
@@ -1084,7 +1084,7 @@
 			global::System.Windows.Forms.Control cmd_automatico_b8 = this.Cmd_automatico_b1;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_automatico_b8.Size = size;
-			this.Cmd_automatico_b1.TabIndex = 2;
+			this.Cmd_automatico_b1.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_automatico_b1.Text = "Automático";
 			this.Cmd_automatico_b1.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control cmd_liga_b7 = this.Cmd_liga_b1;
@@ -1094,7 +1094,7 @@
 			global::System.Windows.Forms.Control cmd_liga_b8 = this.Cmd_liga_b1;
 			size = new global::System.Drawing.Size(71, 26);
 			cmd_liga_b8.Size = size;
-			this.Cmd_liga_b1.TabIndex = 2;
+			this.Cmd_liga_b1.TabIndex = (HorizontalAlignment)2;
 			this.Cmd_liga_b1.Text = "Ligar";
 			this.Cmd_liga_b1.UseVisualStyleBackColor = true;
 			this.Label_modo_b1.AutoSize = true;
@@ -1105,7 +1105,7 @@
 			global::System.Windows.Forms.Control label_modo_b8 = this.Label_modo_b1;
 			size = new global::System.Drawing.Size(63, 13);
 			label_modo_b8.Size = size;
-			this.Label_modo_b1.TabIndex = 0;
+			this.Label_modo_b1.TabIndex = (HorizontalAlignment)0;
 			this.Label_modo_b1.Text = "Modo Ope :";
 			this.Label_status_b1.AutoSize = true;
 			global::System.Windows.Forms.Control label_status_b7 = this.Label_status_b1;
@@ -1115,7 +1115,7 @@
 			global::System.Windows.Forms.Control label_status_b8 = this.Label_status_b1;
 			size = new global::System.Drawing.Size(43, 13);
 			label_status_b8.Size = size;
-			this.Label_status_b1.TabIndex = 0;
+			this.Label_status_b1.TabIndex = (HorizontalAlignment)0;
 			this.Label_status_b1.Text = "Status :";
 			this.Status_b1.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control status_b7 = this.Status_b1;
@@ -1126,9 +1126,9 @@
 			global::System.Windows.Forms.Control status_b8 = this.Status_b1;
 			size = new global::System.Drawing.Size(82, 20);
 			status_b8.Size = size;
-			this.Status_b1.TabIndex = 1;
+			this.Status_b1.TabIndex = (HorizontalAlignment)1;
 			this.Status_b1.TabStop = false;
-			this.Status_b1.TextAlign = 2;
+			this.Status_b1.TextAlign = (HorizontalAlignment)2;
 			this.Grupo_escrita_de_dados.Controls.Add(this.Tela_nivel_origem);
 			this.Grupo_escrita_de_dados.Controls.Add(this.Label_nivel_origem);
 			this.Grupo_escrita_de_dados.Controls.Add(this.Tela_nivel_destino);
@@ -1140,7 +1140,7 @@
 			global::System.Windows.Forms.Control grupo_escrita_de_dados2 = this.Grupo_escrita_de_dados;
 			size = new global::System.Drawing.Size(312, 58);
 			grupo_escrita_de_dados2.Size = size;
-			this.Grupo_escrita_de_dados.TabIndex = 7;
+			this.Grupo_escrita_de_dados.TabIndex = (HorizontalAlignment)7;
 			this.Grupo_escrita_de_dados.TabStop = false;
 			this.Grupo_escrita_de_dados.Text = "Medidas para simulçação de Nível";
 			global::System.Windows.Forms.Control tela_nivel_origem = this.Tela_nivel_origem;
@@ -1150,8 +1150,8 @@
 			global::System.Windows.Forms.Control tela_nivel_origem2 = this.Tela_nivel_origem;
 			size = new global::System.Drawing.Size(64, 20);
 			tela_nivel_origem2.Size = size;
-			this.Tela_nivel_origem.TabIndex = 9;
-			this.Tela_nivel_origem.TextAlign = 2;
+			this.Tela_nivel_origem.TabIndex = (HorizontalAlignment)9;
+			this.Tela_nivel_origem.TextAlign = (HorizontalAlignment)2;
 			this.Label_nivel_origem.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_origem = this.Label_nivel_origem;
 			location = new global::System.Drawing.Point(15, 26);
@@ -1160,7 +1160,7 @@
 			global::System.Windows.Forms.Control label_nivel_origem2 = this.Label_nivel_origem;
 			size = new global::System.Drawing.Size(60, 13);
 			label_nivel_origem2.Size = size;
-			this.Label_nivel_origem.TabIndex = 8;
+			this.Label_nivel_origem.TabIndex = (HorizontalAlignment)8;
 			this.Label_nivel_origem.Text = "Origem(%) :";
 			global::System.Windows.Forms.Control tela_nivel_destino = this.Tela_nivel_destino;
 			location = new global::System.Drawing.Point(236, 24);
@@ -1169,8 +1169,8 @@
 			global::System.Windows.Forms.Control tela_nivel_destino2 = this.Tela_nivel_destino;
 			size = new global::System.Drawing.Size(64, 20);
 			tela_nivel_destino2.Size = size;
-			this.Tela_nivel_destino.TabIndex = 7;
-			this.Tela_nivel_destino.TextAlign = 2;
+			this.Tela_nivel_destino.TabIndex = (HorizontalAlignment)7;
+			this.Tela_nivel_destino.TextAlign = (HorizontalAlignment)2;
 			this.Label_nivel_destino.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_destino = this.Label_nivel_destino;
 			location = new global::System.Drawing.Point(169, 26);
@@ -1179,7 +1179,7 @@
 			global::System.Windows.Forms.Control label_nivel_destino2 = this.Label_nivel_destino;
 			size = new global::System.Drawing.Size(63, 13);
 			label_nivel_destino2.Size = size;
-			this.Label_nivel_destino.TabIndex = 2;
+			this.Label_nivel_destino.TabIndex = (HorizontalAlignment)2;
 			this.Label_nivel_destino.Text = "Destino(%) :";
 			this.Grupo_alarmes.Controls.Add(this.CheckBox_Alm_ff_status);
 			this.Grupo_alarmes.Controls.Add(this.CheckBox_Alm_bat_bx_status);
@@ -1194,7 +1194,7 @@
 			global::System.Windows.Forms.Control grupo_alarmes2 = this.Grupo_alarmes;
 			size = new global::System.Drawing.Size(118, 112);
 			grupo_alarmes2.Size = size;
-			this.Grupo_alarmes.TabIndex = 8;
+			this.Grupo_alarmes.TabIndex = (HorizontalAlignment)8;
 			this.Grupo_alarmes.TabStop = false;
 			this.Grupo_alarmes.Text = "Alarmes";
 			this.CheckBox_Alm_ff_status.AutoCheck = false;
@@ -1205,7 +1205,7 @@
 			global::System.Windows.Forms.Control checkBox_Alm_ff_status2 = this.CheckBox_Alm_ff_status;
 			size = new global::System.Drawing.Size(94, 17);
 			checkBox_Alm_ff_status2.Size = size;
-			this.CheckBox_Alm_ff_status.TabIndex = 4;
+			this.CheckBox_Alm_ff_status.TabIndex = (HorizontalAlignment)4;
 			this.CheckBox_Alm_ff_status.TabStop = false;
 			this.CheckBox_Alm_ff_status.Text = "Falta de Fase";
 			this.CheckBox_Alm_ff_status.UseVisualStyleBackColor = true;
@@ -1217,7 +1217,7 @@
 			global::System.Windows.Forms.Control checkBox_Alm_bat_bx_status2 = this.CheckBox_Alm_bat_bx_status;
 			size = new global::System.Drawing.Size(96, 18);
 			checkBox_Alm_bat_bx_status2.Size = size;
-			this.CheckBox_Alm_bat_bx_status.TabIndex = 3;
+			this.CheckBox_Alm_bat_bx_status.TabIndex = (HorizontalAlignment)3;
 			this.CheckBox_Alm_bat_bx_status.TabStop = false;
 			this.CheckBox_Alm_bat_bx_status.Text = "Bateria Baixa";
 			this.CheckBox_Alm_bat_bx_status.UseVisualStyleBackColor = true;
@@ -1229,7 +1229,7 @@
 			global::System.Windows.Forms.Control checkBox_Alm_alagamento_status2 = this.CheckBox_Alm_alagamento_status;
 			size = new global::System.Drawing.Size(82, 17);
 			checkBox_Alm_alagamento_status2.Size = size;
-			this.CheckBox_Alm_alagamento_status.TabIndex = 2;
+			this.CheckBox_Alm_alagamento_status.TabIndex = (HorizontalAlignment)2;
 			this.CheckBox_Alm_alagamento_status.TabStop = false;
 			this.CheckBox_Alm_alagamento_status.Text = "Alagamento";
 			this.CheckBox_Alm_alagamento_status.UseVisualStyleBackColor = true;
@@ -1241,7 +1241,7 @@
 			global::System.Windows.Forms.Control checkBox_Alm_ope_bat_status2 = this.CheckBox_Alm_ope_bat_status;
 			size = new global::System.Drawing.Size(96, 18);
 			checkBox_Alm_ope_bat_status2.Size = size;
-			this.CheckBox_Alm_ope_bat_status.TabIndex = 0;
+			this.CheckBox_Alm_ope_bat_status.TabIndex = (HorizontalAlignment)0;
 			this.CheckBox_Alm_ope_bat_status.TabStop = false;
 			this.CheckBox_Alm_ope_bat_status.Text = "Operando Bat.";
 			this.CheckBox_Alm_ope_bat_status.UseVisualStyleBackColor = true;
@@ -1253,7 +1253,7 @@
 			global::System.Windows.Forms.Control checkBox_Alm_arrombamento_status2 = this.CheckBox_Alm_arrombamento_status;
 			size = new global::System.Drawing.Size(94, 17);
 			checkBox_Alm_arrombamento_status2.Size = size;
-			this.CheckBox_Alm_arrombamento_status.TabIndex = 1;
+			this.CheckBox_Alm_arrombamento_status.TabIndex = (HorizontalAlignment)1;
 			this.CheckBox_Alm_arrombamento_status.TabStop = false;
 			this.CheckBox_Alm_arrombamento_status.Text = "Arrombamento";
 			this.CheckBox_Alm_arrombamento_status.UseVisualStyleBackColor = true;
@@ -1265,7 +1265,7 @@
 			global::System.Windows.Forms.Control label_EA2 = this.Label_EA1;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA2.Size = size;
-			this.Label_EA1.TabIndex = 7;
+			this.Label_EA1.TabIndex = (HorizontalAlignment)7;
 			this.Label_EA1.Text = "EA01 (%) :";
 			this.Valor_EA1.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA = this.Valor_EA1;
@@ -1276,9 +1276,9 @@
 			global::System.Windows.Forms.Control valor_EA2 = this.Valor_EA1;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA2.Size = size;
-			this.Valor_EA1.TabIndex = 8;
+			this.Valor_EA1.TabIndex = (HorizontalAlignment)8;
 			this.Valor_EA1.TabStop = false;
-			this.Valor_EA1.TextAlign = 1;
+			this.Valor_EA1.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA2.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA3 = this.Label_EA2;
 			location = new global::System.Drawing.Point(15, 48);
@@ -1287,7 +1287,7 @@
 			global::System.Windows.Forms.Control label_EA4 = this.Label_EA2;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA4.Size = size;
-			this.Label_EA2.TabIndex = 9;
+			this.Label_EA2.TabIndex = (HorizontalAlignment)9;
 			this.Label_EA2.Text = "EA02 (%) :";
 			this.Valor_EA2.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA3 = this.Valor_EA2;
@@ -1298,9 +1298,9 @@
 			global::System.Windows.Forms.Control valor_EA4 = this.Valor_EA2;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA4.Size = size;
-			this.Valor_EA2.TabIndex = 10;
+			this.Valor_EA2.TabIndex = (HorizontalAlignment)10;
 			this.Valor_EA2.TabStop = false;
-			this.Valor_EA2.TextAlign = 1;
+			this.Valor_EA2.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA3.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA5 = this.Label_EA3;
 			location = new global::System.Drawing.Point(15, 70);
@@ -1309,7 +1309,7 @@
 			global::System.Windows.Forms.Control label_EA6 = this.Label_EA3;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA6.Size = size;
-			this.Label_EA3.TabIndex = 11;
+			this.Label_EA3.TabIndex = (HorizontalAlignment)11;
 			this.Label_EA3.Text = "EA03 (%) :";
 			this.Valor_EA3.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA5 = this.Valor_EA3;
@@ -1320,9 +1320,9 @@
 			global::System.Windows.Forms.Control valor_EA6 = this.Valor_EA3;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA6.Size = size;
-			this.Valor_EA3.TabIndex = 12;
+			this.Valor_EA3.TabIndex = (HorizontalAlignment)12;
 			this.Valor_EA3.TabStop = false;
-			this.Valor_EA3.TextAlign = 1;
+			this.Valor_EA3.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA4.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA7 = this.Label_EA4;
 			location = new global::System.Drawing.Point(15, 92);
@@ -1331,7 +1331,7 @@
 			global::System.Windows.Forms.Control label_EA8 = this.Label_EA4;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA8.Size = size;
-			this.Label_EA4.TabIndex = 13;
+			this.Label_EA4.TabIndex = (HorizontalAlignment)13;
 			this.Label_EA4.Text = "EA04 (%) :";
 			this.Valor_EA4.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA7 = this.Valor_EA4;
@@ -1342,9 +1342,9 @@
 			global::System.Windows.Forms.Control valor_EA8 = this.Valor_EA4;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA8.Size = size;
-			this.Valor_EA4.TabIndex = 14;
+			this.Valor_EA4.TabIndex = (HorizontalAlignment)14;
 			this.Valor_EA4.TabStop = false;
-			this.Valor_EA4.TextAlign = 1;
+			this.Valor_EA4.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA5.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA9 = this.Label_EA5;
 			location = new global::System.Drawing.Point(15, 114);
@@ -1353,7 +1353,7 @@
 			global::System.Windows.Forms.Control label_EA10 = this.Label_EA5;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA10.Size = size;
-			this.Label_EA5.TabIndex = 15;
+			this.Label_EA5.TabIndex = (HorizontalAlignment)15;
 			this.Label_EA5.Text = "EA05 (%) :";
 			this.Valor_EA5.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA9 = this.Valor_EA5;
@@ -1364,9 +1364,9 @@
 			global::System.Windows.Forms.Control valor_EA10 = this.Valor_EA5;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA10.Size = size;
-			this.Valor_EA5.TabIndex = 16;
+			this.Valor_EA5.TabIndex = (HorizontalAlignment)16;
 			this.Valor_EA5.TabStop = false;
-			this.Valor_EA5.TextAlign = 1;
+			this.Valor_EA5.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA6.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA11 = this.Label_EA6;
 			location = new global::System.Drawing.Point(15, 136);
@@ -1375,7 +1375,7 @@
 			global::System.Windows.Forms.Control label_EA12 = this.Label_EA6;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA12.Size = size;
-			this.Label_EA6.TabIndex = 17;
+			this.Label_EA6.TabIndex = (HorizontalAlignment)17;
 			this.Label_EA6.Text = "EA06 (%) :";
 			this.Valor_EA6.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA11 = this.Valor_EA6;
@@ -1386,9 +1386,9 @@
 			global::System.Windows.Forms.Control valor_EA12 = this.Valor_EA6;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA12.Size = size;
-			this.Valor_EA6.TabIndex = 18;
+			this.Valor_EA6.TabIndex = (HorizontalAlignment)18;
 			this.Valor_EA6.TabStop = false;
-			this.Valor_EA6.TextAlign = 1;
+			this.Valor_EA6.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA7.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA13 = this.Label_EA7;
 			location = new global::System.Drawing.Point(15, 158);
@@ -1397,7 +1397,7 @@
 			global::System.Windows.Forms.Control label_EA14 = this.Label_EA7;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA14.Size = size;
-			this.Label_EA7.TabIndex = 19;
+			this.Label_EA7.TabIndex = (HorizontalAlignment)19;
 			this.Label_EA7.Text = "EA07 (%) :";
 			this.Valor_EA7.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA13 = this.Valor_EA7;
@@ -1408,9 +1408,9 @@
 			global::System.Windows.Forms.Control valor_EA14 = this.Valor_EA7;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA14.Size = size;
-			this.Valor_EA7.TabIndex = 20;
+			this.Valor_EA7.TabIndex = (HorizontalAlignment)20;
 			this.Valor_EA7.TabStop = false;
-			this.Valor_EA7.TextAlign = 1;
+			this.Valor_EA7.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA8.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA15 = this.Label_EA8;
 			location = new global::System.Drawing.Point(15, 180);
@@ -1419,7 +1419,7 @@
 			global::System.Windows.Forms.Control label_EA16 = this.Label_EA8;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA16.Size = size;
-			this.Label_EA8.TabIndex = 21;
+			this.Label_EA8.TabIndex = (HorizontalAlignment)21;
 			this.Label_EA8.Text = "EA08 (%) :";
 			this.Valor_EA8.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA15 = this.Valor_EA8;
@@ -1430,9 +1430,9 @@
 			global::System.Windows.Forms.Control valor_EA16 = this.Valor_EA8;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA16.Size = size;
-			this.Valor_EA8.TabIndex = 22;
+			this.Valor_EA8.TabIndex = (HorizontalAlignment)22;
 			this.Valor_EA8.TabStop = false;
-			this.Valor_EA8.TextAlign = 1;
+			this.Valor_EA8.TextAlign = (HorizontalAlignment)1;
 			this.Grupo_medidas.Controls.Add(this.Valor_EA16);
 			this.Grupo_medidas.Controls.Add(this.Label_EA16);
 			this.Grupo_medidas.Controls.Add(this.Valor_EA15);
@@ -1473,7 +1473,7 @@
 			global::System.Windows.Forms.Control grupo_medidas2 = this.Grupo_medidas;
 			size = new global::System.Drawing.Size(284, 207);
 			grupo_medidas2.Size = size;
-			this.Grupo_medidas.TabIndex = 9;
+			this.Grupo_medidas.TabIndex = (HorizontalAlignment)9;
 			this.Grupo_medidas.TabStop = false;
 			this.Grupo_medidas.Text = "Medidas Analógicas";
 			this.Valor_EA16.BackColor = global::System.Drawing.Color.Beige;
@@ -1485,9 +1485,9 @@
 			global::System.Windows.Forms.Control valor_EA18 = this.Valor_EA16;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA18.Size = size;
-			this.Valor_EA16.TabIndex = 38;
+			this.Valor_EA16.TabIndex = (HorizontalAlignment)38;
 			this.Valor_EA16.TabStop = false;
-			this.Valor_EA16.TextAlign = 1;
+			this.Valor_EA16.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA16.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA17 = this.Label_EA16;
 			location = new global::System.Drawing.Point(153, 180);
@@ -1496,7 +1496,7 @@
 			global::System.Windows.Forms.Control label_EA18 = this.Label_EA16;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA18.Size = size;
-			this.Label_EA16.TabIndex = 37;
+			this.Label_EA16.TabIndex = (HorizontalAlignment)37;
 			this.Label_EA16.Text = "EA16 (%) :";
 			this.Valor_EA15.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA19 = this.Valor_EA15;
@@ -1507,9 +1507,9 @@
 			global::System.Windows.Forms.Control valor_EA20 = this.Valor_EA15;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA20.Size = size;
-			this.Valor_EA15.TabIndex = 36;
+			this.Valor_EA15.TabIndex = (HorizontalAlignment)36;
 			this.Valor_EA15.TabStop = false;
-			this.Valor_EA15.TextAlign = 1;
+			this.Valor_EA15.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA15.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA19 = this.Label_EA15;
 			location = new global::System.Drawing.Point(153, 158);
@@ -1518,7 +1518,7 @@
 			global::System.Windows.Forms.Control label_EA20 = this.Label_EA15;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA20.Size = size;
-			this.Label_EA15.TabIndex = 35;
+			this.Label_EA15.TabIndex = (HorizontalAlignment)35;
 			this.Label_EA15.Text = "EA15 (%) :";
 			this.Valor_EA14.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA21 = this.Valor_EA14;
@@ -1529,9 +1529,9 @@
 			global::System.Windows.Forms.Control valor_EA22 = this.Valor_EA14;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA22.Size = size;
-			this.Valor_EA14.TabIndex = 34;
+			this.Valor_EA14.TabIndex = (HorizontalAlignment)34;
 			this.Valor_EA14.TabStop = false;
-			this.Valor_EA14.TextAlign = 1;
+			this.Valor_EA14.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA14.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA21 = this.Label_EA14;
 			location = new global::System.Drawing.Point(153, 136);
@@ -1540,7 +1540,7 @@
 			global::System.Windows.Forms.Control label_EA22 = this.Label_EA14;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA22.Size = size;
-			this.Label_EA14.TabIndex = 33;
+			this.Label_EA14.TabIndex = (HorizontalAlignment)33;
 			this.Label_EA14.Text = "EA14 (%) :";
 			this.Valor_EA13.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA23 = this.Valor_EA13;
@@ -1551,9 +1551,9 @@
 			global::System.Windows.Forms.Control valor_EA24 = this.Valor_EA13;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA24.Size = size;
-			this.Valor_EA13.TabIndex = 32;
+			this.Valor_EA13.TabIndex = (HorizontalAlignment)32;
 			this.Valor_EA13.TabStop = false;
-			this.Valor_EA13.TextAlign = 1;
+			this.Valor_EA13.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA13.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA23 = this.Label_EA13;
 			location = new global::System.Drawing.Point(153, 114);
@@ -1562,7 +1562,7 @@
 			global::System.Windows.Forms.Control label_EA24 = this.Label_EA13;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA24.Size = size;
-			this.Label_EA13.TabIndex = 31;
+			this.Label_EA13.TabIndex = (HorizontalAlignment)31;
 			this.Label_EA13.Text = "EA13 (%) :";
 			this.Valor_EA12.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA25 = this.Valor_EA12;
@@ -1573,9 +1573,9 @@
 			global::System.Windows.Forms.Control valor_EA26 = this.Valor_EA12;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA26.Size = size;
-			this.Valor_EA12.TabIndex = 30;
+			this.Valor_EA12.TabIndex = (HorizontalAlignment)30;
 			this.Valor_EA12.TabStop = false;
-			this.Valor_EA12.TextAlign = 1;
+			this.Valor_EA12.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA12.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA25 = this.Label_EA12;
 			location = new global::System.Drawing.Point(153, 92);
@@ -1584,7 +1584,7 @@
 			global::System.Windows.Forms.Control label_EA26 = this.Label_EA12;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA26.Size = size;
-			this.Label_EA12.TabIndex = 29;
+			this.Label_EA12.TabIndex = (HorizontalAlignment)29;
 			this.Label_EA12.Text = "EA12 (%) :";
 			this.Valor_EA11.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA27 = this.Valor_EA11;
@@ -1595,9 +1595,9 @@
 			global::System.Windows.Forms.Control valor_EA28 = this.Valor_EA11;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA28.Size = size;
-			this.Valor_EA11.TabIndex = 28;
+			this.Valor_EA11.TabIndex = (HorizontalAlignment)28;
 			this.Valor_EA11.TabStop = false;
-			this.Valor_EA11.TextAlign = 1;
+			this.Valor_EA11.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA11.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA27 = this.Label_EA11;
 			location = new global::System.Drawing.Point(153, 70);
@@ -1606,7 +1606,7 @@
 			global::System.Windows.Forms.Control label_EA28 = this.Label_EA11;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA28.Size = size;
-			this.Label_EA11.TabIndex = 27;
+			this.Label_EA11.TabIndex = (HorizontalAlignment)27;
 			this.Label_EA11.Text = "EA11 (%) :";
 			this.Valor_EA10.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA29 = this.Valor_EA10;
@@ -1617,9 +1617,9 @@
 			global::System.Windows.Forms.Control valor_EA30 = this.Valor_EA10;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA30.Size = size;
-			this.Valor_EA10.TabIndex = 26;
+			this.Valor_EA10.TabIndex = (HorizontalAlignment)26;
 			this.Valor_EA10.TabStop = false;
-			this.Valor_EA10.TextAlign = 1;
+			this.Valor_EA10.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA10.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA29 = this.Label_EA10;
 			location = new global::System.Drawing.Point(153, 48);
@@ -1628,7 +1628,7 @@
 			global::System.Windows.Forms.Control label_EA30 = this.Label_EA10;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA30.Size = size;
-			this.Label_EA10.TabIndex = 25;
+			this.Label_EA10.TabIndex = (HorizontalAlignment)25;
 			this.Label_EA10.Text = "EA10 (%) :";
 			this.Valor_EA9.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_EA31 = this.Valor_EA9;
@@ -1639,9 +1639,9 @@
 			global::System.Windows.Forms.Control valor_EA32 = this.Valor_EA9;
 			size = new global::System.Drawing.Size(53, 20);
 			valor_EA32.Size = size;
-			this.Valor_EA9.TabIndex = 24;
+			this.Valor_EA9.TabIndex = (HorizontalAlignment)24;
 			this.Valor_EA9.TabStop = false;
-			this.Valor_EA9.TextAlign = 1;
+			this.Valor_EA9.TextAlign = (HorizontalAlignment)1;
 			this.Label_EA9.AutoSize = true;
 			global::System.Windows.Forms.Control label_EA31 = this.Label_EA9;
 			location = new global::System.Drawing.Point(153, 26);
@@ -1650,12 +1650,12 @@
 			global::System.Windows.Forms.Control label_EA32 = this.Label_EA9;
 			size = new global::System.Drawing.Size(56, 13);
 			label_EA32.Size = size;
-			this.Label_EA9.TabIndex = 23;
+			this.Label_EA9.TabIndex = (HorizontalAlignment)23;
 			this.Label_EA9.Text = "EA09 (%) :";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			size = new global::System.Drawing.Size(722, 717);
 			this.ClientSize = size;
 			this.Controls.Add(this.Grupo_medidas);
@@ -1665,11 +1665,11 @@
 			this.Controls.Add(this.Grupo_estatistica);
 			this.Controls.Add(this.Grupo_setpoints);
 			this.Controls.Add(this.Grupo_ctrl_com);
-			this.FormBorderStyle = 1;
+			this.FormBorderStyle = (HorizontalAlignment)1;
 			location = new global::System.Drawing.Point(160, 2);
 			this.Location = location;
 			this.Name = "Equip_202_mon";
-			this.StartPosition = 4;
+			this.StartPosition = (HorizontalAlignment)4;
 			this.Text = "Equipamento MD 202 - Monitoração";
 			this.Grupo_ctrl_com.ResumeLayout(false);
 			this.Grupo_ctrl_com.PerformLayout();

@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x0200009F RID: 159
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -85,7 +85,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(335, 125);
 			grupo_parametros_gerais2.Size = size;
-			this.grupo_parametros_gerais.TabIndex = 1;
+			this.grupo_parametros_gerais.TabIndex = (HorizontalAlignment)1;
 			this.grupo_parametros_gerais.TabStop = false;
 			this.grupo_parametros_gerais.Text = "Parâmetros gerais";
 			global::System.Windows.Forms.Control valor_intervalo_varredura = this.Valor_intervalo_varredura;
@@ -95,7 +95,7 @@
 			global::System.Windows.Forms.Control valor_intervalo_varredura2 = this.Valor_intervalo_varredura;
 			size = new size(74, 20);
 			valor_intervalo_varredura2.Size = size;
-			this.Valor_intervalo_varredura.TabIndex = 4;
+			this.Valor_intervalo_varredura.TabIndex = (HorizontalAlignment)4;
 			this.Valor_intervalo_varredura.TextAlign = HorizontalAlignment.Center;
 			this.Label_intervalo_varredura.AutoSize = true;
 			global::System.Windows.Forms.Control label_intervalo_varredura = this.Label_intervalo_varredura;
@@ -105,7 +105,7 @@
 			global::System.Windows.Forms.Control label_intervalo_varredura2 = this.Label_intervalo_varredura;
 			size = new size(128, 13);
 			label_intervalo_varredura2.Size = size;
-			this.Label_intervalo_varredura.TabIndex = 4;
+			this.Label_intervalo_varredura.TabIndex = (HorizontalAlignment)4;
 			this.Label_intervalo_varredura.Text = "Intervalo de varredura (s):";
 			global::System.Windows.Forms.Control valor_end_origem = this.Valor_end_origem;
 			location = new location(244, 26);
@@ -114,7 +114,7 @@
 			global::System.Windows.Forms.Control valor_end_origem2 = this.Valor_end_origem;
 			size = new size(73, 20);
 			valor_end_origem2.Size = size;
-			this.Valor_end_origem.TabIndex = 2;
+			this.Valor_end_origem.TabIndex = (HorizontalAlignment)2;
 			this.Valor_end_origem.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_numero_recalques = this.Valor_numero_recalques;
 			location = new location(243, 52);
@@ -123,7 +123,7 @@
 			global::System.Windows.Forms.Control valor_numero_recalques2 = this.Valor_numero_recalques;
 			size = new size(74, 20);
 			valor_numero_recalques2.Size = size;
-			this.Valor_numero_recalques.TabIndex = 3;
+			this.Valor_numero_recalques.TabIndex = (HorizontalAlignment)3;
 			this.Valor_numero_recalques.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_origem.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_origem = this.Label_end_origem;
@@ -133,7 +133,7 @@
 			global::System.Windows.Forms.Control label_end_origem2 = this.Label_end_origem;
 			size = new size(108, 13);
 			label_end_origem2.Size = size;
-			this.Label_end_origem.TabIndex = 1;
+			this.Label_end_origem.TabIndex = (HorizontalAlignment)1;
 			this.Label_end_origem.Text = "Endereço de origem :";
 			this.Label_numero_recalques.AutoSize = true;
 			global::System.Windows.Forms.Control label_numero_recalques = this.Label_numero_recalques;
@@ -143,7 +143,7 @@
 			global::System.Windows.Forms.Control label_numero_recalques2 = this.Label_numero_recalques;
 			size = new size(162, 13);
 			label_numero_recalques2.Size = size;
-			this.Label_numero_recalques.TabIndex = 0;
+			this.Label_numero_recalques.TabIndex = (HorizontalAlignment)0;
 			this.Label_numero_recalques.Text = "Número de estação de recalque:";
 			this.Grupo_ctrl.Controls.Add(this.Esc_conf_md_201);
 			this.Grupo_ctrl.Controls.Add(this.Box_Msg);
@@ -155,7 +155,7 @@
 			global::System.Windows.Forms.Control grupo_ctrl2 = this.Grupo_ctrl;
 			size = new size(335, 105);
 			grupo_ctrl2.Size = size;
-			this.Grupo_ctrl.TabIndex = 23;
+			this.Grupo_ctrl.TabIndex = (HorizontalAlignment)23;
 			this.Grupo_ctrl.TabStop = false;
 			this.Grupo_ctrl.Text = "Comandos e Status";
 			global::System.Windows.Forms.Control esc_conf_md_ = this.Esc_conf_md_201;
@@ -165,7 +165,7 @@
 			global::System.Windows.Forms.Control esc_conf_md_2 = this.Esc_conf_md_201;
 			size = new size(109, 28);
 			esc_conf_md_2.Size = size;
-			this.Esc_conf_md_201.TabIndex = 25;
+			this.Esc_conf_md_201.TabIndex = (HorizontalAlignment)25;
 			this.Esc_conf_md_201.Text = "Salvar config.";
 			this.Esc_conf_md_201.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control box_Msg = this.Box_Msg;
@@ -175,7 +175,7 @@
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new size(293, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = 5;
+			this.Box_Msg.TabIndex = (HorizontalAlignment)5;
 			this.Box_Msg.TabStop = false;
 			this.Box_Msg.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_201;
@@ -185,7 +185,7 @@
 			global::System.Windows.Forms.Control ler_conf_md_2 = this.Ler_conf_md_201;
 			size = new size(109, 28);
 			ler_conf_md_2.Size = size;
-			this.Ler_conf_md_201.TabIndex = 24;
+			this.Ler_conf_md_201.TabIndex = (HorizontalAlignment)24;
 			this.Ler_conf_md_201.Text = "Ler configuração";
 			this.Ler_conf_md_201.UseVisualStyleBackColor = true;
 			this.grupo_escalas.Controls.Add(this.Label_end_estacao);
@@ -230,7 +230,7 @@
 			global::System.Windows.Forms.Control grupo_escalas2 = this.grupo_escalas;
 			size = new size(335, 294);
 			grupo_escalas2.Size = size;
-			this.grupo_escalas.TabIndex = 5;
+			this.grupo_escalas.TabIndex = (HorizontalAlignment)5;
 			this.grupo_escalas.TabStop = false;
 			this.grupo_escalas.Text = "Configuração dos Fundos de Escala";
 			this.Label_end_estacao.AutoSize = true;
@@ -241,9 +241,9 @@
 			global::System.Windows.Forms.Control label_end_estacao2 = this.Label_end_estacao;
 			size = new size(135, 13);
 			label_end_estacao2.Size = size;
-			this.Label_end_estacao.TabIndex = 9;
+			this.Label_end_estacao.TabIndex = (HorizontalAlignment)9;
 			this.Label_end_estacao.Text = "End. estação de recalque :";
-			this.VScroll_end_estacao.LargeChange = 1;
+			this.VScroll_end_estacao.LargeChange = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control vscroll_end_estacao = this.VScroll_end_estacao;
 			location = new location(232, 32);
 			vscroll_end_estacao.Location = location;
@@ -251,7 +251,7 @@
 			global::System.Windows.Forms.Control vscroll_end_estacao2 = this.VScroll_end_estacao;
 			size = new size(26, 21);
 			vscroll_end_estacao2.Size = size;
-			this.VScroll_end_estacao.TabIndex = 8;
+			this.VScroll_end_estacao.TabIndex = (HorizontalAlignment)8;
 			global::System.Windows.Forms.Control valor_end_estacao = this.Valor_end_estacao;
 			location = new location(165, 32);
 			valor_end_estacao.Location = location;
@@ -259,7 +259,7 @@
 			global::System.Windows.Forms.Control valor_end_estacao2 = this.Valor_end_estacao;
 			size = new size(66, 20);
 			valor_end_estacao2.Size = size;
-			this.Valor_end_estacao.TabIndex = 6;
+			this.Valor_end_estacao.TabIndex = (HorizontalAlignment)6;
 			this.Valor_end_estacao.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_15.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_ = this.Valor_escala_canal_15;
@@ -269,7 +269,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_2 = this.Valor_escala_canal_15;
 			size = new size(73, 20);
 			valor_escala_canal_2.Size = size;
-			this.Valor_escala_canal_15.TabIndex = 22;
+			this.Valor_escala_canal_15.TabIndex = (HorizontalAlignment)22;
 			this.Valor_escala_canal_15.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_7.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_3 = this.Valor_escala_canal_7;
@@ -279,7 +279,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_4 = this.Valor_escala_canal_7;
 			size = new size(73, 20);
 			valor_escala_canal_4.Size = size;
-			this.Valor_escala_canal_7.TabIndex = 14;
+			this.Valor_escala_canal_7.TabIndex = (HorizontalAlignment)14;
 			this.Valor_escala_canal_7.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_14.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_5 = this.Valor_escala_canal_14;
@@ -289,7 +289,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_6 = this.Valor_escala_canal_14;
 			size = new size(73, 20);
 			valor_escala_canal_6.Size = size;
-			this.Valor_escala_canal_14.TabIndex = 21;
+			this.Valor_escala_canal_14.TabIndex = (HorizontalAlignment)21;
 			this.Valor_escala_canal_14.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_6.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_7 = this.Valor_escala_canal_6;
@@ -299,7 +299,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_8 = this.Valor_escala_canal_6;
 			size = new size(73, 20);
 			valor_escala_canal_8.Size = size;
-			this.Valor_escala_canal_6.TabIndex = 13;
+			this.Valor_escala_canal_6.TabIndex = (HorizontalAlignment)13;
 			this.Valor_escala_canal_6.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_13.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_9 = this.Valor_escala_canal_13;
@@ -309,7 +309,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_10 = this.Valor_escala_canal_13;
 			size = new size(73, 20);
 			valor_escala_canal_10.Size = size;
-			this.Valor_escala_canal_13.TabIndex = 20;
+			this.Valor_escala_canal_13.TabIndex = (HorizontalAlignment)20;
 			this.Valor_escala_canal_13.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_5.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_11 = this.Valor_escala_canal_5;
@@ -319,7 +319,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_12 = this.Valor_escala_canal_5;
 			size = new size(73, 20);
 			valor_escala_canal_12.Size = size;
-			this.Valor_escala_canal_5.TabIndex = 12;
+			this.Valor_escala_canal_5.TabIndex = (HorizontalAlignment)12;
 			this.Valor_escala_canal_5.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_12.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_13 = this.Valor_escala_canal_12;
@@ -329,7 +329,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_14 = this.Valor_escala_canal_12;
 			size = new size(73, 20);
 			valor_escala_canal_14.Size = size;
-			this.Valor_escala_canal_12.TabIndex = 19;
+			this.Valor_escala_canal_12.TabIndex = (HorizontalAlignment)19;
 			this.Valor_escala_canal_12.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_4.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_15 = this.Valor_escala_canal_4;
@@ -339,7 +339,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_16 = this.Valor_escala_canal_4;
 			size = new size(73, 20);
 			valor_escala_canal_16.Size = size;
-			this.Valor_escala_canal_4.TabIndex = 11;
+			this.Valor_escala_canal_4.TabIndex = (HorizontalAlignment)11;
 			this.Valor_escala_canal_4.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_11.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_17 = this.Valor_escala_canal_11;
@@ -349,7 +349,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_18 = this.Valor_escala_canal_11;
 			size = new size(73, 20);
 			valor_escala_canal_18.Size = size;
-			this.Valor_escala_canal_11.TabIndex = 18;
+			this.Valor_escala_canal_11.TabIndex = (HorizontalAlignment)18;
 			this.Valor_escala_canal_11.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_3.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_19 = this.Valor_escala_canal_3;
@@ -359,7 +359,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_20 = this.Valor_escala_canal_3;
 			size = new size(73, 20);
 			valor_escala_canal_20.Size = size;
-			this.Valor_escala_canal_3.TabIndex = 10;
+			this.Valor_escala_canal_3.TabIndex = (HorizontalAlignment)10;
 			this.Valor_escala_canal_3.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_10.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_21 = this.Valor_escala_canal_10;
@@ -369,7 +369,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_22 = this.Valor_escala_canal_10;
 			size = new size(73, 20);
 			valor_escala_canal_22.Size = size;
-			this.Valor_escala_canal_10.TabIndex = 17;
+			this.Valor_escala_canal_10.TabIndex = (HorizontalAlignment)17;
 			this.Valor_escala_canal_10.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_2.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_23 = this.Valor_escala_canal_2;
@@ -379,7 +379,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_24 = this.Valor_escala_canal_2;
 			size = new size(73, 20);
 			valor_escala_canal_24.Size = size;
-			this.Valor_escala_canal_2.TabIndex = 9;
+			this.Valor_escala_canal_2.TabIndex = (HorizontalAlignment)9;
 			this.Valor_escala_canal_2.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_9.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_25 = this.Valor_escala_canal_9;
@@ -389,7 +389,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_26 = this.Valor_escala_canal_9;
 			size = new size(73, 20);
 			valor_escala_canal_26.Size = size;
-			this.Valor_escala_canal_9.TabIndex = 16;
+			this.Valor_escala_canal_9.TabIndex = (HorizontalAlignment)16;
 			this.Valor_escala_canal_9.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_1.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_27 = this.Valor_escala_canal_1;
@@ -399,7 +399,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_28 = this.Valor_escala_canal_1;
 			size = new size(73, 20);
 			valor_escala_canal_28.Size = size;
-			this.Valor_escala_canal_1.TabIndex = 8;
+			this.Valor_escala_canal_1.TabIndex = (HorizontalAlignment)8;
 			this.Valor_escala_canal_1.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_8.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_29 = this.Valor_escala_canal_8;
@@ -409,7 +409,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_30 = this.Valor_escala_canal_8;
 			size = new size(73, 20);
 			valor_escala_canal_30.Size = size;
-			this.Valor_escala_canal_8.TabIndex = 15;
+			this.Valor_escala_canal_8.TabIndex = (HorizontalAlignment)15;
 			this.Valor_escala_canal_8.TextAlign = HorizontalAlignment.Center;
 			this.Valor_escala_canal_0.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_31 = this.Valor_escala_canal_0;
@@ -419,7 +419,7 @@
 			global::System.Windows.Forms.Control valor_escala_canal_32 = this.Valor_escala_canal_0;
 			size = new size(73, 20);
 			valor_escala_canal_32.Size = size;
-			this.Valor_escala_canal_0.TabIndex = 7;
+			this.Valor_escala_canal_0.TabIndex = (HorizontalAlignment)7;
 			this.Valor_escala_canal_0.TextAlign = HorizontalAlignment.Center;
 			this.Label_escala_canal_15.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_ = this.Label_escala_canal_15;
@@ -429,7 +429,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_2 = this.Label_escala_canal_15;
 			size = new size(55, 13);
 			label_escala_canal_2.Size = size;
-			this.Label_escala_canal_15.TabIndex = 1;
+			this.Label_escala_canal_15.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_15.Text = "Canal 15 :";
 			this.Label_escala_canal_7.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_3 = this.Label_escala_canal_7;
@@ -439,7 +439,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_4 = this.Label_escala_canal_7;
 			size = new size(55, 13);
 			label_escala_canal_4.Size = size;
-			this.Label_escala_canal_7.TabIndex = 1;
+			this.Label_escala_canal_7.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_7.Text = "Canal 07 :";
 			this.Label_escala_canal_14.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_5 = this.Label_escala_canal_14;
@@ -449,7 +449,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_6 = this.Label_escala_canal_14;
 			size = new size(55, 13);
 			label_escala_canal_6.Size = size;
-			this.Label_escala_canal_14.TabIndex = 1;
+			this.Label_escala_canal_14.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_14.Text = "Canal 14 :";
 			this.Label_escala_canal_6.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_7 = this.Label_escala_canal_6;
@@ -459,7 +459,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_8 = this.Label_escala_canal_6;
 			size = new size(55, 13);
 			label_escala_canal_8.Size = size;
-			this.Label_escala_canal_6.TabIndex = 1;
+			this.Label_escala_canal_6.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_6.Text = "Canal 06 :";
 			this.Label_escala_canal_13.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_9 = this.Label_escala_canal_13;
@@ -469,7 +469,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_10 = this.Label_escala_canal_13;
 			size = new size(55, 13);
 			label_escala_canal_10.Size = size;
-			this.Label_escala_canal_13.TabIndex = 1;
+			this.Label_escala_canal_13.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_13.Text = "Canal 13 :";
 			this.Label_escala_canal_5.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_11 = this.Label_escala_canal_5;
@@ -479,7 +479,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_12 = this.Label_escala_canal_5;
 			size = new size(55, 13);
 			label_escala_canal_12.Size = size;
-			this.Label_escala_canal_5.TabIndex = 1;
+			this.Label_escala_canal_5.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_5.Text = "Canal 05 :";
 			this.Label_escala_canal_12.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_13 = this.Label_escala_canal_12;
@@ -489,7 +489,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_14 = this.Label_escala_canal_12;
 			size = new size(55, 13);
 			label_escala_canal_14.Size = size;
-			this.Label_escala_canal_12.TabIndex = 1;
+			this.Label_escala_canal_12.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_12.Text = "Canal 12 :";
 			this.Label_escala_canal_4.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_15 = this.Label_escala_canal_4;
@@ -499,7 +499,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_16 = this.Label_escala_canal_4;
 			size = new size(55, 13);
 			label_escala_canal_16.Size = size;
-			this.Label_escala_canal_4.TabIndex = 1;
+			this.Label_escala_canal_4.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_4.Text = "Canal 04 :";
 			this.Label_escala_canal_11.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_17 = this.Label_escala_canal_11;
@@ -509,7 +509,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_18 = this.Label_escala_canal_11;
 			size = new size(55, 13);
 			label_escala_canal_18.Size = size;
-			this.Label_escala_canal_11.TabIndex = 1;
+			this.Label_escala_canal_11.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_11.Text = "Canal 11 :";
 			this.Label_escala_canal_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_19 = this.Label_escala_canal_3;
@@ -519,7 +519,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_20 = this.Label_escala_canal_3;
 			size = new size(55, 13);
 			label_escala_canal_20.Size = size;
-			this.Label_escala_canal_3.TabIndex = 1;
+			this.Label_escala_canal_3.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_3.Text = "Canal 03 :";
 			this.Label_escala_canal_10.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_21 = this.Label_escala_canal_10;
@@ -529,7 +529,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_22 = this.Label_escala_canal_10;
 			size = new size(55, 13);
 			label_escala_canal_22.Size = size;
-			this.Label_escala_canal_10.TabIndex = 1;
+			this.Label_escala_canal_10.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_10.Text = "Canal 10 :";
 			this.Label_escala_canal_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_23 = this.Label_escala_canal_2;
@@ -539,7 +539,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_24 = this.Label_escala_canal_2;
 			size = new size(55, 13);
 			label_escala_canal_24.Size = size;
-			this.Label_escala_canal_2.TabIndex = 1;
+			this.Label_escala_canal_2.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_2.Text = "Canal 02 :";
 			this.Label_escala_canal_9.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_25 = this.Label_escala_canal_9;
@@ -549,7 +549,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_26 = this.Label_escala_canal_9;
 			size = new size(55, 13);
 			label_escala_canal_26.Size = size;
-			this.Label_escala_canal_9.TabIndex = 1;
+			this.Label_escala_canal_9.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_9.Text = "Canal 09 :";
 			this.Label_escala_canal_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_27 = this.Label_escala_canal_1;
@@ -559,7 +559,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_28 = this.Label_escala_canal_1;
 			size = new size(55, 13);
 			label_escala_canal_28.Size = size;
-			this.Label_escala_canal_1.TabIndex = 1;
+			this.Label_escala_canal_1.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_1.Text = "Canal 01 :";
 			this.Label_escala_canal_8.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_29 = this.Label_escala_canal_8;
@@ -569,7 +569,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_30 = this.Label_escala_canal_8;
 			size = new size(55, 13);
 			label_escala_canal_30.Size = size;
-			this.Label_escala_canal_8.TabIndex = 1;
+			this.Label_escala_canal_8.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_8.Text = "Canal 08 :";
 			this.Label_escala_canal_0.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_31 = this.Label_escala_canal_0;
@@ -579,7 +579,7 @@
 			global::System.Windows.Forms.Control label_escala_canal_32 = this.Label_escala_canal_0;
 			size = new size(55, 13);
 			label_escala_canal_32.Size = size;
-			this.Label_escala_canal_0.TabIndex = 1;
+			this.Label_escala_canal_0.TabIndex = (HorizontalAlignment)1;
 			this.Label_escala_canal_0.Text = "Canal 00 :";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);

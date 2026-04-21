@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x02000009 RID: 9
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -40,7 +40,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(34, 34);
 			pictureBox2.Size = size;
-			this.PictureBox1.TabIndex = 0;
+			this.PictureBox1.TabIndex = (HorizontalAlignment)0;
 			this.PictureBox1.TabStop = false;
 			this.Label1.AutoSize = true;
 			global::System.Windows.Forms.Control label = this.Label1;
@@ -50,7 +50,7 @@
 			global::System.Windows.Forms.Control label2 = this.Label1;
 			size = new size(162, 13);
 			label2.Size = size;
-			this.Label1.TabIndex = 1;
+			this.Label1.TabIndex = (HorizontalAlignment)1;
 			this.Label1.Text = "Aguarde o término da operação !";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);

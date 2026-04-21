@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x0200003A RID: 58
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -92,7 +92,7 @@
 			this.TabControl_810.SuspendLayout();
 			this.SuspendLayout();
 			this.ToolStri_RT_810.BackColor = global::System.Drawing.Color.Transparent;
-			this.ToolStri_RT_810.GripStyle = 0;
+			this.ToolStri_RT_810.GripStyle = (HorizontalAlignment)0;
 			global::System.Windows.Forms.ToolStrip toolStri_RT_ = this.ToolStri_RT_810;
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(48, 48);
@@ -114,7 +114,7 @@
 				this.ToolStripProgressBar_RT_810,
 				this.ToolStripButton1
 			});
-			this.ToolStri_RT_810.LayoutStyle = 3;
+			this.ToolStri_RT_810.LayoutStyle = (HorizontalAlignment)3;
 			global::System.Windows.Forms.Control toolStri_RT_2 = this.ToolStri_RT_810;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(0, 0);
@@ -124,10 +124,10 @@
 			size = new global::System.Drawing.Size(1147, 55);
 			toolStri_RT_3.Size = size;
 			this.ToolStri_RT_810.Stretch = true;
-			this.ToolStri_RT_810.TabIndex = 0;
+			this.ToolStri_RT_810.TabIndex = (HorizontalAlignment)0;
 			this.ToolStri_RT_810.Text = "ToolStrip1";
 			this.ToolStripButton_RT_810_novo.AutoToolTip = false;
-			this.ToolStripButton_RT_810_novo.DisplayStyle = 2;
+			this.ToolStripButton_RT_810_novo.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_RT_810_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT_810_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT_810_novo = this.ToolStripButton_RT_810_novo;
@@ -141,7 +141,7 @@
 			this.ToolStripButton_RT_810_novo.Text = "Novo";
 			this.ToolStripButton_RT_810_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT_810_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT_810_Abrir.DisplayStyle = 2;
+			this.ToolStripButton_RT_810_Abrir.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_RT_810_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT_810_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Abrir.Name = "ToolStripButton_RT_810_Abrir";
@@ -151,7 +151,7 @@
 			this.ToolStripButton_RT_810_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT_810_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT_810_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT_810_Salvar.DisplayStyle = 2;
+			this.ToolStripButton_RT_810_Salvar.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_RT_810_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT_810_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Salvar.Name = "ToolStripButton_RT_810_Salvar";
@@ -168,7 +168,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT_810_Download.DisplayStyle = 2;
+			this.ToolStripButton_RT_810_Download.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_RT_810_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT_810_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT_810_Download = this.ToolStripButton_RT_810_Download;
@@ -179,7 +179,7 @@
 			size = new global::System.Drawing.Size(52, 52);
 			toolStripButton_RT_810_Download2.Size = size;
 			this.ToolStripButton_RT_810_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT_810_Upload.DisplayStyle = 2;
+			this.ToolStripButton_RT_810_Upload.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_RT_810_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT_810_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Upload.Name = "ToolStripButton_RT_810_Upload";
@@ -195,7 +195,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT_810_Imprimir.DisplayStyle = 2;
+			this.ToolStripButton_RT_810_Imprimir.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_RT_810_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT_810_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT_810_Imprimir.Name = "ToolStripButton_RT_810_Imprimir";
@@ -208,7 +208,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator5 = this.ToolStripSeparator3;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator5.Size = size;
-			this.ToolStripLabel_ID.Font = new global::System.Drawing.Font("Arial Narrow", 18f, 2, 3, 0);
+			this.ToolStripLabel_ID.Font = new global::System.Drawing.Font("Arial Narrow", 18f, 2, (FontStyle)3, 0);
 			this.ToolStripLabel_ID.ForeColor = global::System.Drawing.Color.FromArgb(192, 0, 0);
 			global::System.Windows.Forms.ToolStripItem toolStripLabel_ID = this.ToolStripLabel_ID;
 			padding = new global::System.Windows.Forms.Padding(5, 13, 0, 2);
@@ -224,7 +224,7 @@
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator6.Size = size;
 			this.ToolStripTextBox_RT_810_Msg.BackColor = global::System.Drawing.Color.LightCyan;
-			this.ToolStripTextBox_RT_810_Msg.BorderStyle = 1;
+			this.ToolStripTextBox_RT_810_Msg.BorderStyle = (HorizontalAlignment)1;
 			global::System.Windows.Forms.ToolStripItem toolStripTextBox_RT_810_Msg = this.ToolStripTextBox_RT_810_Msg;
 			padding = new global::System.Windows.Forms.Padding(10, 15, 1, 0);
 			toolStripTextBox_RT_810_Msg.Margin = padding;
@@ -233,7 +233,7 @@
 			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT_810_Msg2 = this.ToolStripTextBox_RT_810_Msg;
 			size = new global::System.Drawing.Size(250, 23);
 			toolStripTextBox_RT_810_Msg2.Size = size;
-			this.ToolStripTextBox_RT_810_Msg.TextBoxTextAlign = 2;
+			this.ToolStripTextBox_RT_810_Msg.TextBoxTextAlign = (HorizontalAlignment)2;
 			this.ToolStripProgressBar_RT_810.BackColor = global::System.Drawing.SystemColors.Control;
 			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT_ = this.ToolStripProgressBar_RT_810;
 			padding = new global::System.Windows.Forms.Padding(20, 15, 1, 1);
@@ -243,7 +243,7 @@
 			size = new global::System.Drawing.Size(180, 20);
 			toolStripProgressBar_RT_2.Size = size;
 			this.ToolStripProgressBar_RT_810.ToolTipText = "Progresso da operação";
-			this.ToolStripButton1.DisplayStyle = 2;
+			this.ToolStripButton1.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton1.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton1.Name = "ToolStripButton1";
 			global::System.Windows.Forms.ToolStripItem toolStripButton = this.ToolStripButton1;
@@ -251,7 +251,7 @@
 			toolStripButton.Size = size;
 			this.ToolStripButton1.Text = "ToolStripButton1";
 			this.OpenFileDialog_RT_810.FileName = "OpenFileDialog1";
-			this.Timer_limpa_MSG.Interval = 2000;
+			this.Timer_limpa_MSG.Interval = (HorizontalAlignment)2000;
 			global::System.Windows.Forms.PrintPreviewDialog printPreviewDialog = this.PrintPreviewDialog1;
 			size = new global::System.Drawing.Size(0, 0);
 			printPreviewDialog.AutoScrollMargin = size;
@@ -281,7 +281,7 @@
 			global::System.Windows.Forms.Control tabPage_geral3 = this.TabPage_geral;
 			size = new global::System.Drawing.Size(963, 505);
 			tabPage_geral3.Size = size;
-			this.TabPage_geral.TabIndex = 0;
+			this.TabPage_geral.TabIndex = (HorizontalAlignment)0;
 			this.TabPage_geral.Text = "Comunicação e Saídas Analógicas";
 			this.TabPage_geral.UseVisualStyleBackColor = true;
 			this.GroupBox3.Controls.Add(this.GroupBox4);
@@ -292,7 +292,7 @@
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox3;
 			size = new global::System.Drawing.Size(338, 96);
 			groupBox2.Size = size;
-			this.GroupBox3.TabIndex = 4;
+			this.GroupBox3.TabIndex = (HorizontalAlignment)4;
 			this.GroupBox3.TabStop = false;
 			this.GroupBox3.Text = "Saída Analógica 2:";
 			this.GroupBox4.Controls.Add(this.lmt_2_20mA);
@@ -306,7 +306,7 @@
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox4;
 			size = new global::System.Drawing.Size(319, 64);
 			groupBox4.Size = size;
-			this.GroupBox4.TabIndex = 2;
+			this.GroupBox4.TabIndex = (HorizontalAlignment)2;
 			this.GroupBox4.TabStop = false;
 			this.GroupBox4.Text = "Limites em contagens (0-4000)";
 			global::System.Windows.Forms.Control lmt_2_20mA = this.lmt_2_20mA;
@@ -316,7 +316,7 @@
 			global::System.Windows.Forms.Control lmt_2_20mA2 = this.lmt_2_20mA;
 			size = new global::System.Drawing.Size(57, 20);
 			lmt_2_20mA2.Size = size;
-			this.lmt_2_20mA.TabIndex = 3;
+			this.lmt_2_20mA.TabIndex = (HorizontalAlignment)3;
 			this.Label4.AutoSize = true;
 			global::System.Windows.Forms.Control label = this.Label4;
 			location = new global::System.Drawing.Point(169, 32);
@@ -325,7 +325,7 @@
 			global::System.Windows.Forms.Control label2 = this.Label4;
 			size = new global::System.Drawing.Size(88, 13);
 			label2.Size = size;
-			this.Label4.TabIndex = 2;
+			this.Label4.TabIndex = (HorizontalAlignment)2;
 			this.Label4.Text = "Valor para 20mA:";
 			global::System.Windows.Forms.Control lmt_2_4mA = this.lmt_2_4mA;
 			location = new global::System.Drawing.Point(94, 30);
@@ -334,7 +334,7 @@
 			global::System.Windows.Forms.Control lmt_2_4mA2 = this.lmt_2_4mA;
 			size = new global::System.Drawing.Size(57, 20);
 			lmt_2_4mA2.Size = size;
-			this.lmt_2_4mA.TabIndex = 1;
+			this.lmt_2_4mA.TabIndex = (HorizontalAlignment)1;
 			this.Label5.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label5;
 			location = new global::System.Drawing.Point(6, 32);
@@ -343,7 +343,7 @@
 			global::System.Windows.Forms.Control label4 = this.Label5;
 			size = new global::System.Drawing.Size(82, 13);
 			label4.Size = size;
-			this.Label5.TabIndex = 0;
+			this.Label5.TabIndex = (HorizontalAlignment)0;
 			this.Label5.Text = "Valor para 4mA:";
 			this.GroupBox1.Controls.Add(this.GroupBox2);
 			global::System.Windows.Forms.Control groupBox5 = this.GroupBox1;
@@ -353,7 +353,7 @@
 			global::System.Windows.Forms.Control groupBox6 = this.GroupBox1;
 			size = new global::System.Drawing.Size(338, 96);
 			groupBox6.Size = size;
-			this.GroupBox1.TabIndex = 3;
+			this.GroupBox1.TabIndex = (HorizontalAlignment)3;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "Saída Analógica 1:";
 			this.GroupBox2.Controls.Add(this.lmt_1_20mA);
@@ -367,7 +367,7 @@
 			global::System.Windows.Forms.Control groupBox8 = this.GroupBox2;
 			size = new global::System.Drawing.Size(319, 64);
 			groupBox8.Size = size;
-			this.GroupBox2.TabIndex = 2;
+			this.GroupBox2.TabIndex = (HorizontalAlignment)2;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Limites em contagens (0-4000)";
 			global::System.Windows.Forms.Control lmt_1_20mA = this.lmt_1_20mA;
@@ -377,7 +377,7 @@
 			global::System.Windows.Forms.Control lmt_1_20mA2 = this.lmt_1_20mA;
 			size = new global::System.Drawing.Size(57, 20);
 			lmt_1_20mA2.Size = size;
-			this.lmt_1_20mA.TabIndex = 3;
+			this.lmt_1_20mA.TabIndex = (HorizontalAlignment)3;
 			this.Label3.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label3;
 			location = new global::System.Drawing.Point(169, 32);
@@ -386,7 +386,7 @@
 			global::System.Windows.Forms.Control label6 = this.Label3;
 			size = new global::System.Drawing.Size(88, 13);
 			label6.Size = size;
-			this.Label3.TabIndex = 2;
+			this.Label3.TabIndex = (HorizontalAlignment)2;
 			this.Label3.Text = "Valor para 20mA:";
 			global::System.Windows.Forms.Control lmt_1_4mA = this.lmt_1_4mA;
 			location = new global::System.Drawing.Point(94, 30);
@@ -395,7 +395,7 @@
 			global::System.Windows.Forms.Control lmt_1_4mA2 = this.lmt_1_4mA;
 			size = new global::System.Drawing.Size(57, 20);
 			lmt_1_4mA2.Size = size;
-			this.lmt_1_4mA.TabIndex = 1;
+			this.lmt_1_4mA.TabIndex = (HorizontalAlignment)1;
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label2;
 			location = new global::System.Drawing.Point(6, 32);
@@ -404,7 +404,7 @@
 			global::System.Windows.Forms.Control label8 = this.Label2;
 			size = new global::System.Drawing.Size(82, 13);
 			label8.Size = size;
-			this.Label2.TabIndex = 0;
+			this.Label2.TabIndex = (HorizontalAlignment)0;
 			this.Label2.Text = "Valor para 4mA:";
 			this.GroupBox_informacoes.Controls.Add(this.Label26);
 			this.GroupBox_informacoes.Controls.Add(this.TextBox_equipamento);
@@ -422,11 +422,11 @@
 			global::System.Windows.Forms.Control groupBox_informacoes2 = this.GroupBox_informacoes;
 			size = new global::System.Drawing.Size(360, 96);
 			groupBox_informacoes2.Size = size;
-			this.GroupBox_informacoes.TabIndex = 2;
+			this.GroupBox_informacoes.TabIndex = (HorizontalAlignment)2;
 			this.GroupBox_informacoes.TabStop = false;
 			this.GroupBox_informacoes.Text = "Versão de Software";
 			this.Label26.AutoSize = true;
-			this.Label26.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, 3, 0);
+			this.Label26.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
 			global::System.Windows.Forms.Control label9 = this.Label26;
 			location = new global::System.Drawing.Point(51, 50);
 			label9.Location = location;
@@ -434,10 +434,10 @@
 			global::System.Windows.Forms.Control label10 = this.Label26;
 			size = new global::System.Drawing.Size(21, 15);
 			label10.Size = size;
-			this.Label26.TabIndex = 17;
+			this.Label26.TabIndex = (HorizontalAlignment)17;
 			this.Label26.Text = "GC";
 			this.TextBox_equipamento.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_equipamento.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, 3, 0);
+			this.TextBox_equipamento.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
 			global::System.Windows.Forms.Control textBox_equipamento = this.TextBox_equipamento;
 			location = new global::System.Drawing.Point(86, 47);
 			textBox_equipamento.Location = location;
@@ -446,9 +446,9 @@
 			global::System.Windows.Forms.Control textBox_equipamento2 = this.TextBox_equipamento;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_equipamento2.Size = size;
-			this.TextBox_equipamento.TabIndex = 16;
+			this.TextBox_equipamento.TabIndex = (HorizontalAlignment)16;
 			this.TextBox_equipamento.TabStop = false;
-			this.TextBox_equipamento.TextAlign = 2;
+			this.TextBox_equipamento.TextAlign = (HorizontalAlignment)2;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new global::System.Drawing.Point(51, 29);
@@ -457,10 +457,10 @@
 			global::System.Windows.Forms.Control label_equipamento2 = this.Label_equipamento;
 			size = new global::System.Drawing.Size(69, 13);
 			label_equipamento2.Size = size;
-			this.Label_equipamento.TabIndex = 15;
+			this.Label_equipamento.TabIndex = (HorizontalAlignment)15;
 			this.Label_equipamento.Text = "Equipamento";
 			this.TextBox_release.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_release.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, 3, 0);
+			this.TextBox_release.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
 			global::System.Windows.Forms.Control textBox_release = this.TextBox_release;
 			location = new global::System.Drawing.Point(242, 47);
 			textBox_release.Location = location;
@@ -469,9 +469,9 @@
 			global::System.Windows.Forms.Control textBox_release2 = this.TextBox_release;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_release2.Size = size;
-			this.TextBox_release.TabIndex = 14;
+			this.TextBox_release.TabIndex = (HorizontalAlignment)14;
 			this.TextBox_release.TabStop = false;
-			this.TextBox_release.TextAlign = 2;
+			this.TextBox_release.TextAlign = (HorizontalAlignment)2;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new global::System.Drawing.Point(245, 29);
@@ -480,10 +480,10 @@
 			global::System.Windows.Forms.Control label_release2 = this.Label_release;
 			size = new global::System.Drawing.Size(46, 13);
 			label_release2.Size = size;
-			this.Label_release.TabIndex = 13;
+			this.Label_release.TabIndex = (HorizontalAlignment)13;
 			this.Label_release.Text = "Release";
 			this.TextBox_build.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_build.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, 3, 0);
+			this.TextBox_build.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
 			global::System.Windows.Forms.Control textBox_build = this.TextBox_build;
 			location = new global::System.Drawing.Point(190, 47);
 			textBox_build.Location = location;
@@ -492,9 +492,9 @@
 			global::System.Windows.Forms.Control textBox_build2 = this.TextBox_build;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_build2.Size = size;
-			this.TextBox_build.TabIndex = 12;
+			this.TextBox_build.TabIndex = (HorizontalAlignment)12;
 			this.TextBox_build.TabStop = false;
-			this.TextBox_build.TextAlign = 2;
+			this.TextBox_build.TextAlign = (HorizontalAlignment)2;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new global::System.Drawing.Point(199, 29);
@@ -503,10 +503,10 @@
 			global::System.Windows.Forms.Control label_build2 = this.Label_build;
 			size = new global::System.Drawing.Size(30, 13);
 			label_build2.Size = size;
-			this.Label_build.TabIndex = 11;
+			this.Label_build.TabIndex = (HorizontalAlignment)11;
 			this.Label_build.Text = "Build";
 			this.TextBox_versao.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_versao.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, 3, 0);
+			this.TextBox_versao.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
 			global::System.Windows.Forms.Control textBox_versao = this.TextBox_versao;
 			location = new global::System.Drawing.Point(138, 47);
 			textBox_versao.Location = location;
@@ -515,9 +515,9 @@
 			global::System.Windows.Forms.Control textBox_versao2 = this.TextBox_versao;
 			size = new global::System.Drawing.Size(47, 20);
 			textBox_versao2.Size = size;
-			this.TextBox_versao.TabIndex = 10;
+			this.TextBox_versao.TabIndex = (HorizontalAlignment)10;
 			this.TextBox_versao.TabStop = false;
-			this.TextBox_versao.TextAlign = 2;
+			this.TextBox_versao.TextAlign = (HorizontalAlignment)2;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new global::System.Drawing.Point(141, 29);
@@ -526,7 +526,7 @@
 			global::System.Windows.Forms.Control label_versao2 = this.Label_versao;
 			size = new global::System.Drawing.Size(40, 13);
 			label_versao2.Size = size;
-			this.Label_versao.TabIndex = 9;
+			this.Label_versao.TabIndex = (HorizontalAlignment)9;
 			this.Label_versao.Text = "Versão";
 			this.GroupBox_comunicacao.Controls.Add(this.NumericUpDown_end_est);
 			this.GroupBox_comunicacao.Controls.Add(this.Label_end_est);
@@ -537,7 +537,7 @@
 			global::System.Windows.Forms.Control groupBox_comunicacao2 = this.GroupBox_comunicacao;
 			size = new global::System.Drawing.Size(291, 92);
 			groupBox_comunicacao2.Size = size;
-			this.GroupBox_comunicacao.TabIndex = 1;
+			this.GroupBox_comunicacao.TabIndex = (HorizontalAlignment)1;
 			this.GroupBox_comunicacao.TabStop = false;
 			this.GroupBox_comunicacao.Text = "Parâmetros de Comunicação";
 			global::System.Windows.Forms.Control numericUpDown_end_est = this.NumericUpDown_end_est;
@@ -557,8 +557,8 @@
 			global::System.Windows.Forms.Control numericUpDown_end_est3 = this.NumericUpDown_end_est;
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_est3.Size = size;
-			this.NumericUpDown_end_est.TabIndex = 1;
-			this.NumericUpDown_end_est.TextAlign = 2;
+			this.NumericUpDown_end_est.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_end_est.TextAlign = (HorizontalAlignment)2;
 			this.Label_end_est.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_est = this.Label_end_est;
 			location = new global::System.Drawing.Point(21, 42);
@@ -567,7 +567,7 @@
 			global::System.Windows.Forms.Control label_end_est2 = this.Label_end_est;
 			size = new global::System.Drawing.Size(116, 13);
 			label_end_est2.Size = size;
-			this.Label_end_est.TabIndex = 4;
+			this.Label_end_est.TabIndex = (HorizontalAlignment)4;
 			this.Label_end_est.Text = "Endereço da Estação :";
 			this.TabControl_810.Controls.Add(this.TabPage_geral);
 			this.TabControl_810.HotTrack = true;
@@ -575,25 +575,25 @@
 			location = new global::System.Drawing.Point(26, 73);
 			tabControl_.Location = location;
 			this.TabControl_810.Name = "TabControl_810";
-			this.TabControl_810.SelectedIndex = 0;
+			this.TabControl_810.SelectedIndex = (HorizontalAlignment)0;
 			global::System.Windows.Forms.Control tabControl_2 = this.TabControl_810;
 			size = new global::System.Drawing.Size(971, 531);
 			tabControl_2.Size = size;
-			this.TabControl_810.TabIndex = 1;
+			this.TabControl_810.TabIndex = (HorizontalAlignment)1;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			this.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			size = new global::System.Drawing.Size(1147, 636);
 			this.ClientSize = size;
 			this.Controls.Add(this.ToolStri_RT_810);
 			this.Controls.Add(this.TabControl_810);
-			this.FormBorderStyle = 1;
+			this.FormBorderStyle = (HorizontalAlignment)1;
 			this.Name = "GC_82x_conf";
 			this.RightToLeftLayout = true;
 			this.ShowIcon = false;
-			this.StartPosition = 0;
+			this.StartPosition = (HorizontalAlignment)0;
 			this.Text = "Configuração";
 			this.ToolStri_RT_810.ResumeLayout(false);
 			this.ToolStri_RT_810.PerformLayout();

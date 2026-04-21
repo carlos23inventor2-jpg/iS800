@@ -56,16 +56,16 @@ namespace iS800
         {
             if (Comunicacao.Config_sistema.tipo_interface != 1)
             {
-                Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+                Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
                 return;
             }
 
-            Geral.Ctrl_equipamento = 3000;
-            Geral.Ctrl_versao = 38;
-            Geral.Ctrl_operacao = 100000;
+            Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
+            Geral.Ctrl_versao = (HorizontalAlignment)38;
+            Geral.Ctrl_operacao = (HorizontalAlignment)100000;
             if (this.ToolStripComboBox_versao != null && this.ToolStripComboBox_versao.Items.Count > 2)
-                this.ToolStripComboBox_versao.SelectedIndex = 2;
-            this.ToolStripComboBox_equipamento.SelectedIndex = 3;
+                this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)2;
+            this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)3;
             RT_geral.Lmte_Init_ok = false;
             this.Seleciona_tela(true);
         }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -1028,8 +1028,8 @@ namespace iS800
 		private void RT_810_conf_Activated(object sender, EventArgs e)
 		{
 			Geral.Equipamento_selecionado = this.QualModelo;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000CCA RID: 3274 RVA: 0x002F6ED4 File Offset: 0x002F52D4
@@ -1040,7 +1040,7 @@ namespace iS800
 		// Token: 0x06000CCB RID: 3275 RVA: 0x002F6ED8 File Offset: 0x002F52D8
 		private void InicializaEstrutura_DataGridView_Processos_RT_810()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -1064,32 +1064,32 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewProcessosColunas[4].NomeColuna = "ModoCtrl";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[5].NomeColuna = "TpMaxPart";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[6].NomeColuna = "TpMaxParada";
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LarguraColuna = 100;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[1].LarguraColuna = 100;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[2].LarguraColuna = 110;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LarguraColuna = 100;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LarguraColuna = 100;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[5].LarguraColuna = 80;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[6].LarguraColuna = 80;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[1].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[2].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[5].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[6].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 2;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[1].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[2].LarguraColuna = (HorizontalAlignment)110;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[5].LarguraColuna = (HorizontalAlignment)80;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[6].LarguraColuna = (HorizontalAlignment)80;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[1].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[2].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[5].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[6].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = (HorizontalAlignment)2;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasMenu[0] = "Desativo";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasMenu[1] = "SD - 01";
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasValor[0] = 21856;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasValor[1] = 21857;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = 9;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[0].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)9;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[1].LinhasMenu[0] = "Não usado";
-				RT_geral.RT_810_DataGrigViewProcessosColunas[1].LinhasValor[0] = 21856;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = 9;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[1].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = (HorizontalAlignment)9;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[2].LinhasMenu[0] = "Sempre Remoto";
-				RT_geral.RT_810_DataGrigViewProcessosColunas[2].LinhasValor[0] = 21856;
-				num = 1;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[2].LinhasValor[0] = (HorizontalAlignment)21856;
+				num = (HorizontalAlignment)1;
 				do
 				{
 					RT_geral.RT_810_DataGrigViewProcessosColunas[1].LinhasMenu[num] = "ED - " + Strings.Format(num, "0#");
@@ -1099,18 +1099,18 @@ namespace iS800
 					num++;
 				}
 				while (num <= 8);
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = 2;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = (HorizontalAlignment)2;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LinhasMenu[1] = "Habilitado";
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LinhasValor[0] = 21856;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LinhasValor[1] = 21857;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = 2;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[3].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = (HorizontalAlignment)2;
 				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LinhasMenu[0] = "Telecomando";
 				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LinhasMenu[1] = "Automático";
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LinhasValor[0] = 21856;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LinhasValor[1] = 21857;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = 0;
-				RT_geral.RT_810_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = 0;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[4].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_810_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = (HorizontalAlignment)0;
 			}
 		}
 
@@ -1128,15 +1128,15 @@ namespace iS800
 			RT_geral.RT_810_DataGrigViewEAColunas[0].NomeColuna = "range";
 			RT_geral.RT_810_DataGrigViewEAColunas[1].NomeColuna = "ini";
 			RT_geral.RT_810_DataGrigViewEAColunas[2].NomeColuna = "fim";
-			RT_geral.RT_810_DataGrigViewEAColunas[0].LarguraColuna = 90;
-			RT_geral.RT_810_DataGrigViewEAColunas[1].LarguraColuna = 90;
-			RT_geral.RT_810_DataGrigViewEAColunas[2].LarguraColuna = 90;
-			RT_geral.RT_810_DataGrigViewEAColunas[0].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewEAColunas[1].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewEAColunas[2].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewEAColunas[0].NumeroLinhaMenu = 0;
-			RT_geral.RT_810_DataGrigViewEAColunas[1].NumeroLinhaMenu = 0;
-			RT_geral.RT_810_DataGrigViewEAColunas[2].NumeroLinhaMenu = 0;
+			RT_geral.RT_810_DataGrigViewEAColunas[0].LarguraColuna = (HorizontalAlignment)90;
+			RT_geral.RT_810_DataGrigViewEAColunas[1].LarguraColuna = (HorizontalAlignment)90;
+			RT_geral.RT_810_DataGrigViewEAColunas[2].LarguraColuna = (HorizontalAlignment)90;
+			RT_geral.RT_810_DataGrigViewEAColunas[0].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewEAColunas[1].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewEAColunas[2].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewEAColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
+			RT_geral.RT_810_DataGrigViewEAColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+			RT_geral.RT_810_DataGrigViewEAColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000CCE RID: 3278 RVA: 0x002F74F0 File Offset: 0x002F58F0
@@ -1167,26 +1167,26 @@ namespace iS800
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].NomeColuna = "End_31_40";
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].NomeColuna = "pos_5";
 			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].NomeColuna = "End_41_50";
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].LarguraColuna = 50;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].LarguraColuna = 50;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].LarguraColuna = 50;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].LarguraColuna = 50;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].LarguraColuna = 50;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].LarguraColuna = 65;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].AlingColuna = 64;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].AlingColuna = 32;
-			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].AlingColuna = 64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[0].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[1].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[2].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[3].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[4].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[5].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[6].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[7].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[8].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_810_DataGrigViewRepetidoraColunas[9].AlingColuna = (HorizontalAlignment)64;
 		}
 
 		// Token: 0x06000CD0 RID: 3280 RVA: 0x002F7814 File Offset: 0x002F5C14
@@ -1197,7 +1197,7 @@ namespace iS800
 		// Token: 0x06000CD1 RID: 3281 RVA: 0x002F7818 File Offset: 0x002F5C18
 		private void InicializaEstrutura_DataGridView_Setpoints_RT_810()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -1213,18 +1213,18 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].NomeColuna = "Set_NAlto";
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].NomeColuna = "Set_NBaixo";
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].NomeColuna = "Set_Controle";
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].LarguraColuna = 60;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].LarguraColuna = 60;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LarguraColuna = 160;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].AlingColuna = 64;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = 0;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = 0;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LarguraColuna = (HorizontalAlignment)160;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
 				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasMenu[0] = "Controle Desabilitado";
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasValor[0] = 21856;
-				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].NumeroLinhaMenu = 9;
-				num = 1;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_810_DataGrigViewSetpointsColunas[0].NumeroLinhaMenu = (HorizontalAlignment)9;
+				num = (HorizontalAlignment)1;
 				do
 				{
 					RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasMenu[num] = "EA - " + Strings.Format(num, "0#");
@@ -1232,7 +1232,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 4);
-				num = 5;
+				num = (HorizontalAlignment)5;
 				do
 				{
 					RT_geral.RT_810_DataGrigViewSetpointsColunas[0].LinhasMenu[num] = "Referência " + Strings.Format(num - 4, "#");
@@ -1251,7 +1251,7 @@ namespace iS800
 		// Token: 0x06000CD3 RID: 3283 RVA: 0x002F7A50 File Offset: 0x002F5E50
 		private void InicializaEstrutura_DataGridView_ED_RT_810()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -1263,15 +1263,15 @@ namespace iS800
 				while (num <= 0);
 				RT_geral.RT_810_DataGrigViewEDColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].NomeColuna = "Entrada";
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LarguraColuna = 200;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].AlingColuna = 32;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[0] = 21856;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[1] = 21969;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[2] = 21970;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[3] = 21971;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[4] = 21972;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[5] = 21973;
-				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[6] = 21974;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LarguraColuna = (HorizontalAlignment)200;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[1] = (HorizontalAlignment)21969;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[2] = (HorizontalAlignment)21970;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[3] = (HorizontalAlignment)21971;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[4] = (HorizontalAlignment)21972;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[5] = (HorizontalAlignment)21973;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasValor[6] = (HorizontalAlignment)21974;
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasMenu[0] = "Sem função";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasMenu[1] = "Arrombamento";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasMenu[2] = "Falta de fase";
@@ -1279,7 +1279,7 @@ namespace iS800
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasMenu[4] = "Horário de ponta";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasMenu[5] = "Transbordo";
 				RT_geral.RT_810_DataGrigViewEDColunas[0].LinhasMenu[6] = "Operação em bateira";
-				RT_geral.RT_810_DataGrigViewEDColunas[0].NumeroLinhaMenu = 7;
+				RT_geral.RT_810_DataGrigViewEDColunas[0].NumeroLinhaMenu = (HorizontalAlignment)7;
 			}
 		}
 
@@ -1290,57 +1290,57 @@ namespace iS800
 			RT_geral.GC_82x_BD.Equip.Padrao = Geral.Equipamento_selecionado;
 			RT_geral.GC_82x_BD.Equip.Valor = Geral.Equipamento_selecionado;
 			RT_geral.GC_82x_BD.Build.nome = "Build";
-			RT_geral.GC_82x_BD.Build.Padrao = 0;
+			RT_geral.GC_82x_BD.Build.Padrao = (HorizontalAlignment)0;
 			RT_geral.GC_82x_BD.Versao.nome = "Versão";
-			RT_geral.GC_82x_BD.Versao.Padrao = 0;
+			RT_geral.GC_82x_BD.Versao.Padrao = (HorizontalAlignment)0;
 			RT_geral.GC_82x_BD.Release.nome = "Release";
-			RT_geral.GC_82x_BD.Release.Padrao = 0;
-			RT_geral.GC_82x_BD.modo_SD1.Valor = 0;
-			RT_geral.GC_82x_BD.modo_SD2.Valor = 0;
-			RT_geral.GC_82x_BD.modo_SD3.Valor = 0;
-			RT_geral.GC_82x_BD.sentido_SD1.Valor = 0;
-			RT_geral.GC_82x_BD.sentido_SD2.Valor = 0;
-			RT_geral.GC_82x_BD.sentido_SD3.Valor = 0;
-			RT_geral.GC_82x_BD.liga_SD1.Valor = 0;
-			RT_geral.GC_82x_BD.liga_SD2.Valor = 0;
-			RT_geral.GC_82x_BD.liga_SD3.Valor = 0;
-			RT_geral.GC_82x_BD.desliga_SD1.Valor = 0;
-			RT_geral.GC_82x_BD.desliga_SD2.Valor = 0;
-			RT_geral.GC_82x_BD.desliga_SD3.Valor = 0;
-			RT_geral.GC_82x_BD.AD_Intervalo.Valor = 0;
-			RT_geral.GC_82x_BD.AD_Tamanho_filtro.Valor = 0;
+			RT_geral.GC_82x_BD.Release.Padrao = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.modo_SD1.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.modo_SD2.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.modo_SD3.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.sentido_SD1.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.sentido_SD2.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.sentido_SD3.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.liga_SD1.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.liga_SD2.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.liga_SD3.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.desliga_SD1.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.desliga_SD2.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.desliga_SD3.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.AD_Intervalo.Valor = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.AD_Tamanho_filtro.Valor = (HorizontalAlignment)0;
 			RT_geral.GC_82x_BD.End_estacao.nome = "Endereço Estação";
-			RT_geral.GC_82x_BD.End_estacao.Padrao = 1;
-			RT_geral.GC_82x_BD.End_estacao.Lmte_inf = 0;
-			RT_geral.GC_82x_BD.End_estacao.Lmte_sup = 200;
+			RT_geral.GC_82x_BD.End_estacao.Padrao = (HorizontalAlignment)1;
+			RT_geral.GC_82x_BD.End_estacao.Lmte_inf = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.End_estacao.Lmte_sup = (HorizontalAlignment)200;
 			RT_geral.GC_82x_BD.End_mestre.nome = "Endereço Mestre";
-			RT_geral.GC_82x_BD.End_mestre.Padrao = 100;
-			RT_geral.GC_82x_BD.End_mestre.Lmte_inf = 1;
-			RT_geral.GC_82x_BD.End_mestre.Lmte_sup = 200;
+			RT_geral.GC_82x_BD.End_mestre.Padrao = (HorizontalAlignment)100;
+			RT_geral.GC_82x_BD.End_mestre.Lmte_inf = (HorizontalAlignment)1;
+			RT_geral.GC_82x_BD.End_mestre.Lmte_sup = (HorizontalAlignment)200;
 			RT_geral.GC_82x_BD.modo_SA1.nome = "Modo SD1";
-			RT_geral.GC_82x_BD.modo_SA1.Padrao = 21937;
-			RT_geral.GC_82x_BD.modo_SA1.Lmte_inf = 21937;
-			RT_geral.GC_82x_BD.modo_SA1.Lmte_sup = 21937;
+			RT_geral.GC_82x_BD.modo_SA1.Padrao = (HorizontalAlignment)21937;
+			RT_geral.GC_82x_BD.modo_SA1.Lmte_inf = (HorizontalAlignment)21937;
+			RT_geral.GC_82x_BD.modo_SA1.Lmte_sup = (HorizontalAlignment)21937;
 			RT_geral.GC_82x_BD.limt_inferior1.nome = "4mA Ch1";
-			RT_geral.GC_82x_BD.limt_inferior1.Padrao = 0;
-			RT_geral.GC_82x_BD.limt_inferior1.Lmte_inf = 0;
-			RT_geral.GC_82x_BD.limt_inferior1.Lmte_sup = 4000;
+			RT_geral.GC_82x_BD.limt_inferior1.Padrao = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.limt_inferior1.Lmte_inf = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.limt_inferior1.Lmte_sup = (HorizontalAlignment)4000;
 			RT_geral.GC_82x_BD.limt_superior1.nome = "20mA Ch1";
-			RT_geral.GC_82x_BD.limt_superior1.Padrao = 4000;
-			RT_geral.GC_82x_BD.limt_superior1.Lmte_inf = 0;
-			RT_geral.GC_82x_BD.limt_superior1.Lmte_sup = 4000;
+			RT_geral.GC_82x_BD.limt_superior1.Padrao = (HorizontalAlignment)4000;
+			RT_geral.GC_82x_BD.limt_superior1.Lmte_inf = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.limt_superior1.Lmte_sup = (HorizontalAlignment)4000;
 			RT_geral.GC_82x_BD.modo_SA2.nome = "Modo SD2";
-			RT_geral.GC_82x_BD.modo_SA2.Padrao = 21937;
-			RT_geral.GC_82x_BD.modo_SA2.Lmte_inf = 21937;
-			RT_geral.GC_82x_BD.modo_SA2.Lmte_sup = 21937;
+			RT_geral.GC_82x_BD.modo_SA2.Padrao = (HorizontalAlignment)21937;
+			RT_geral.GC_82x_BD.modo_SA2.Lmte_inf = (HorizontalAlignment)21937;
+			RT_geral.GC_82x_BD.modo_SA2.Lmte_sup = (HorizontalAlignment)21937;
 			RT_geral.GC_82x_BD.limt_inferior2.nome = "4mA Ch2";
-			RT_geral.GC_82x_BD.limt_inferior2.Padrao = 0;
-			RT_geral.GC_82x_BD.limt_inferior2.Lmte_inf = 0;
-			RT_geral.GC_82x_BD.limt_inferior2.Lmte_sup = 4000;
+			RT_geral.GC_82x_BD.limt_inferior2.Padrao = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.limt_inferior2.Lmte_inf = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.limt_inferior2.Lmte_sup = (HorizontalAlignment)4000;
 			RT_geral.GC_82x_BD.limt_superior2.nome = "20mA Ch2";
-			RT_geral.GC_82x_BD.limt_superior2.Padrao = 4000;
-			RT_geral.GC_82x_BD.limt_superior2.Lmte_inf = 0;
-			RT_geral.GC_82x_BD.limt_superior2.Lmte_sup = 4000;
+			RT_geral.GC_82x_BD.limt_superior2.Padrao = (HorizontalAlignment)4000;
+			RT_geral.GC_82x_BD.limt_superior2.Lmte_inf = (HorizontalAlignment)0;
+			RT_geral.GC_82x_BD.limt_superior2.Lmte_sup = (HorizontalAlignment)4000;
 			RT_geral.GC_82x_BD.filename = "";
 		}
 
@@ -1372,7 +1372,7 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				this.Libera_acoes();
 				this.NumericUpDown_end_est.Minimum = new decimal(RT_geral.GC_82x_BD.End_estacao.Lmte_inf);
 				this.NumericUpDown_end_est.Maximum = new decimal(RT_geral.GC_82x_BD.End_estacao.Lmte_sup);
@@ -1387,13 +1387,13 @@ namespace iS800
 				this.lmt_2_20mA.Value = new decimal(RT_geral.GC_82x_BD.limt_superior2.Valor);
 				goto IL_1B9;
 				IL_164:
-				Interaction.MsgBox("Erro na atualização da tela!", 32, "Atenção - Erro de dados");
+				Interaction.MsgBox("Erro na atualização da tela!", (MsgBoxStyle)32, "Atenção - Erro de dados");
 				goto IL_1B9;
 				IL_178:
 				num2 = -1;
 								IL_18C:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_178;
@@ -1423,15 +1423,15 @@ namespace iS800
 		public void RT_810_Atualiza_Parametros_EA(int tipo)
 		{
 			int num;
-			if (tipo == 0)
+			if (tipo == (DialogResult)0)
 			{
-				num = 3;
+				num = (HorizontalAlignment)3;
 			}
 			else
 			{
-				num = 0;
+				num = (HorizontalAlignment)0;
 			}
-			int num2 = 0;
+			int num2 = (HorizontalAlignment)0;
 			int num3 = num;
 			checked
 			{
@@ -1450,13 +1450,13 @@ namespace iS800
 		public void AtualizaMsgTela_RT_810(string texto, int cor)
 		{
 			this.ToolStripTextBox_RT_810_Msg.Text = texto;
-			if (cor == 0)
+			if (cor == (DialogResult)0)
 			{
 				this.ToolStripTextBox_RT_810_Msg.ForeColor = Color.Blue;
 			}
-			else if (cor == 1)
+			else if (cor == (DialogResult)1)
 			{
-				this.ToolStripProgressBar_RT_810.Value = 0;
+				this.ToolStripProgressBar_RT_810.Value = (HorizontalAlignment)0;
 				this.ToolStripTextBox_RT_810_Msg.ForeColor = Color.Red;
 			}
 			else
@@ -1501,10 +1501,10 @@ namespace iS800
 		// Token: 0x06000CDE RID: 3294 RVA: 0x002F84D8 File Offset: 0x002F68D8
 		public void InicializaBarraProgressoTela_RT_810(int num_passos)
 		{
-			this.ToolStripProgressBar_RT_810.Minimum = 0;
+			this.ToolStripProgressBar_RT_810.Minimum = (HorizontalAlignment)0;
 			this.ToolStripProgressBar_RT_810.Maximum = checked(num_passos * 4);
 			this.ToolStripProgressBar_RT_810.Step = num_passos;
-			this.ToolStripProgressBar_RT_810.Value = 0;
+			this.ToolStripProgressBar_RT_810.Value = (HorizontalAlignment)0;
 			this.ToolStripProgressBar_RT_810.BackColor = Color.LightGray;
 		}
 
@@ -1513,7 +1513,7 @@ namespace iS800
 		{
 			this.Timer_limpa_MSG.Enabled = false;
 			this.AtualizaMsgTela_RT_810("", 0);
-			this.ToolStripProgressBar_RT_810.Value = 0;
+			this.ToolStripProgressBar_RT_810.Value = (HorizontalAlignment)0;
 			this.Libera_acoes();
 		}
 
@@ -1568,7 +1568,7 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
 				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
 				{
 					0
@@ -1627,12 +1627,12 @@ namespace iS800
 		// Token: 0x06000CEE RID: 3310 RVA: 0x002F870C File Offset: 0x002F6B0C
 		private bool Entrada_Digital_Ja_Utilizada(int entrada, int num_ED)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				if (entrada != RT_geral.RT_810_BD.config_ED[num_ED].Indice_padrao)
 				{
-					int num2 = 0;
+					int num2 = (HorizontalAlignment)0;
 					do
 					{
 						if (entrada == RT_geral.RT_810_BD.config_ED[num2].Indice)
@@ -1660,7 +1660,7 @@ namespace iS800
 			{
 				if (dado.Valor != 0)
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					while (posicao == num || RT_geral.RT_810_BD.Repetidoras[num].Valor != dado.Valor)
 					{
 						num++;
@@ -1670,7 +1670,7 @@ namespace iS800
 						}
 					}
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Red;
-					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), 32, "Erro na entrada de dados");
+					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), (MsgBoxStyle)32, "Erro na entrada de dados");
 					dado.erro = true;
 					return true;
 				}
@@ -1771,7 +1771,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 		}
 
@@ -1805,13 +1805,13 @@ namespace iS800
 				else
 				{
 					string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-					Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
+					Interaction.MsgBox(text, (MsgBoxStyle)16, "Atenção - Valor fora das especificações");
 					this.ToolStripButton_RT_810_Salvar.Enabled = true;
 				}
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 			this.Timer_limpa_MSG.Enabled = true;
 		}
@@ -1826,11 +1826,11 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				this.AtivaEfeitoOnChangeValue();
 				this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.CfgGC82x";
 				this.OpenFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-				if (this.OpenFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
+				if (this.OpenFileDialog_RT_810.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
 				{
 					Linha_RT.diretorio = Path.GetDirectoryName(this.OpenFileDialog_RT_810.FileName) + "\\";
 					RT_geral.arquivo_extensao = Path.GetExtension(this.OpenFileDialog_RT_810.FileName);
@@ -1867,7 +1867,7 @@ namespace iS800
 				this.Timer_limpa_MSG.Enabled = true;
 				goto IL_36B;
 				IL_2F2:
-				Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível carregar os dados", (MsgBoxStyle)32, "Atenção - Erro I/0");
 				FileSystem.FileClose(new int[]
 				{
 					1
@@ -1878,7 +1878,7 @@ namespace iS800
 				num2 = -1;
 								IL_33C:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_326;
@@ -1901,12 +1901,12 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				this.AtivaEfeitoOnChangeValue();
 				this.Bloqueia_acoes();
 				this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.CfgGC82x";
 				this.SaveFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
+				if (this.SaveFileDialog_RT_810.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
 				{
 					Linha_RT.diretorio = Path.GetDirectoryName(this.SaveFileDialog_RT_810.FileName) + "\\";
 					if (File.Exists(this.SaveFileDialog_RT_810.FileName))
@@ -1959,7 +1959,7 @@ namespace iS800
 				this.Timer_limpa_MSG.Enabled = true;
 				goto IL_3B0;
 				IL_337:
-				Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível gravar os dados", (MsgBoxStyle)32, "Atenção - Erro I/0");
 				FileSystem.FileClose(new int[]
 				{
 					1
@@ -1970,7 +1970,7 @@ namespace iS800
 				num2 = -1;
 								IL_381:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_36B;
@@ -2074,9 +2074,9 @@ namespace iS800
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -2089,7 +2089,7 @@ namespace iS800
 			cores.Tabela = Color.Black;
 			cores.TituloBG = Color.AliceBlue;
 			Cabecalho cabecalho = new Cabecalho(z.MarginBounds, z.Graphics, fonte, Brushes.Black, RT_geral.GC_82x_BD.Equip.Valor, RT_geral.GC_82x_BD.Versao.Valor);
-			int linhaInicial = 5;
+			int linhaInicial = (HorizontalAlignment)5;
 			TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, linhaInicial, 3, "Dados da Estação", true);
 			string valor = "iS800 (" + MyProject.Application.Info.Version.ToString() + ")";
 			tabelaLinhaInteria.EscreveTituloValorLinha(1, "Configurador", valor, 0, 160);
@@ -2156,7 +2156,7 @@ namespace iS800
 		// Token: 0x06000D0A RID: 3338 RVA: 0x002F98A0 File Offset: 0x002F7CA0
 		private void PrintDocument1_BeginPrint(object sender, PrintEventArgs e)
 		{
-			this.pagina_impressao = 1;
+			this.pagina_impressao = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x06000D0B RID: 3339 RVA: 0x002F98AC File Offset: 0x002F7CAC

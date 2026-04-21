@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -43,21 +43,21 @@ namespace iS800
 		// Token: 0x06002927 RID: 10535 RVA: 0x0042D1C0 File Offset: 0x0042B5C0
 		private void OK_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = 1;
+			this.DialogResult = (HorizontalAlignment)1;
 			this.Close();
 		}
 
 		// Token: 0x06002928 RID: 10536 RVA: 0x0042D1D0 File Offset: 0x0042B5D0
 		private void Cancel_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = 2;
+			this.DialogResult = (HorizontalAlignment)2;
 			this.Close();
 		}
 
 		// Token: 0x06002929 RID: 10537 RVA: 0x0042D1E0 File Offset: 0x0042B5E0
 		private void Sobre_MouseLeave(object sender, EventArgs e)
 		{
-			int num = 5;
+			int num = (HorizontalAlignment)5;
 			Point location = this.Location;
 			Point point = this.Location + this.Size;
 			Point mousePosition = Control.MousePosition;

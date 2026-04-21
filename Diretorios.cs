@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -97,7 +97,7 @@ namespace iS800
 		// Token: 0x060000D6 RID: 214 RVA: 0x0026571C File Offset: 0x00263B1C
 		private void Button_diretorio_dados_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == 1)
+			if (this.FolderBrowserDialog1.ShowDialog() == (DialogResult)1)
 			{
 				this.Nome_diretorio_dados.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Config_sistema.Dir_dados = this.Nome_diretorio_dados.Text;
@@ -128,7 +128,7 @@ namespace iS800
 			}
 			catch (Exception ex)
 			{
-				Interaction.MsgBox("Não foi possível salvar as configurações", 0, null);
+				Interaction.MsgBox("Não foi possível salvar as configurações", (MsgBoxStyle)0, null);
 			}
 		}
 

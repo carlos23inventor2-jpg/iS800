@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -256,157 +256,157 @@ namespace iS800
 		private void bt_Configuracao_Click(object sender, EventArgs e)
 		{
 			int num = this.equipamento;
-			if (num == 810)
+			if (num == (DialogResult)810)
 			{
 				switch (this.versao)
 				{
 				case 2:
-					Geral.Ctrl_equipamento = 1000;
-					Geral.Ctrl_versao = 20;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_selecionado = 810;
-					Geral.Equipamento_versao = 2;
-					Geral.Equipamento_build = 0;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)1000;
+					Geral.Ctrl_versao = (HorizontalAlignment)20;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)810;
+					Geral.Equipamento_versao = (HorizontalAlignment)2;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				case 3:
-					Geral.Ctrl_equipamento = 1000;
-					Geral.Ctrl_versao = 30;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_selecionado = 810;
-					Geral.Equipamento_versao = 3;
-					Geral.Equipamento_build = 0;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)1000;
+					Geral.Ctrl_versao = (HorizontalAlignment)30;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)810;
+					Geral.Equipamento_versao = (HorizontalAlignment)3;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				}
 			}
-			else if (num == 820)
+			else if (num == (DialogResult)820)
 			{
 				switch (this.versao)
 				{
 				case 2:
-					Geral.Ctrl_equipamento = 2000;
-					Geral.Ctrl_versao = 20;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_selecionado = 820;
-					Geral.Equipamento_versao = 2;
-					Geral.Equipamento_build = 0;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+					Geral.Ctrl_versao = (HorizontalAlignment)20;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+					Geral.Equipamento_versao = (HorizontalAlignment)2;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				case 3:
-					Geral.Ctrl_equipamento = 2000;
-					Geral.Ctrl_versao = 30;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_build = 0;
-					Geral.Equipamento_selecionado = 820;
-					Geral.Equipamento_versao = 3;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+					Geral.Ctrl_versao = (HorizontalAlignment)30;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+					Geral.Equipamento_versao = (HorizontalAlignment)3;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				case 4:
-					Geral.Ctrl_equipamento = 2000;
-					Geral.Ctrl_versao = 40;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_build = 0;
-					Geral.Equipamento_selecionado = 820;
-					Geral.Equipamento_versao = 4;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+					Geral.Ctrl_versao = (HorizontalAlignment)40;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+					Geral.Equipamento_versao = (HorizontalAlignment)4;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				}
 			}
-			else if (num == 821)
+			else if (num == (DialogResult)821)
 			{
 				switch (this.versao)
 				{
 				case 2:
-					Geral.Ctrl_equipamento = 3000;
-					Geral.Ctrl_versao = 20;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_selecionado = 821;
-					Geral.Equipamento_versao = 2;
-					Geral.Equipamento_build = 0;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
+					Geral.Ctrl_versao = (HorizontalAlignment)20;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)821;
+					Geral.Equipamento_versao = (HorizontalAlignment)2;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				case 3:
-					Geral.Ctrl_equipamento = 3000;
-					Geral.Ctrl_versao = 30;
-					Geral.Ctrl_operacao = 100000;
-					Geral.Equipamento_selecionado = 821;
-					Geral.Equipamento_versao = 3;
-					Geral.Equipamento_build = 0;
+					Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
+					Geral.Ctrl_versao = (HorizontalAlignment)30;
+					Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+					Geral.Equipamento_selecionado = (HorizontalAlignment)821;
+					Geral.Equipamento_versao = (HorizontalAlignment)3;
+					Geral.Equipamento_build = (HorizontalAlignment)0;
 					RT_geral.Lmte_Init_ok = false;
 					MyProject.Forms.Plataforma.Seleciona_tela(true);
 					break;
 				}
 			}
-			else if (num == 830)
+			else if (num == (DialogResult)830)
 			{
-				Geral.Ctrl_equipamento = 5000;
-				Geral.Ctrl_versao = 20;
-				Geral.Ctrl_operacao = 100000;
-				Geral.Equipamento_selecionado = 830;
-				Geral.Equipamento_versao = 2;
-				Geral.Equipamento_build = 0;
+				Geral.Ctrl_equipamento = (HorizontalAlignment)5000;
+				Geral.Ctrl_versao = (HorizontalAlignment)20;
+				Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+				Geral.Equipamento_selecionado = (HorizontalAlignment)830;
+				Geral.Equipamento_versao = (HorizontalAlignment)2;
+				Geral.Equipamento_build = (HorizontalAlignment)0;
 				RT_geral.Lmte_Init_ok = false;
 				MyProject.Forms.Plataforma.Seleciona_tela(true);
 			}
-			else if (num == 831)
+			else if (num == (DialogResult)831)
 			{
-				Geral.Ctrl_equipamento = 6000;
-				Geral.Ctrl_versao = 20;
-				Geral.Ctrl_operacao = 100000;
-				Geral.Equipamento_selecionado = 831;
-				Geral.Equipamento_versao = 2;
-				Geral.Equipamento_build = 0;
+				Geral.Ctrl_equipamento = (HorizontalAlignment)6000;
+				Geral.Ctrl_versao = (HorizontalAlignment)20;
+				Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+				Geral.Equipamento_selecionado = (HorizontalAlignment)831;
+				Geral.Equipamento_versao = (HorizontalAlignment)2;
+				Geral.Equipamento_build = (HorizontalAlignment)0;
 				RT_geral.Lmte_Init_ok = false;
 				MyProject.Forms.Plataforma.Seleciona_tela(true);
 			}
-			else if (num == 850)
+			else if (num == (DialogResult)850)
 			{
-				Geral.Ctrl_equipamento = 4000;
-				Geral.Ctrl_versao = 30;
-				Geral.Ctrl_operacao = 100000;
-				Geral.Equipamento_selecionado = 850;
-				Geral.Equipamento_versao = 3;
-				Geral.Equipamento_build = 0;
+				Geral.Ctrl_equipamento = (HorizontalAlignment)4000;
+				Geral.Ctrl_versao = (HorizontalAlignment)30;
+				Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+				Geral.Equipamento_selecionado = (HorizontalAlignment)850;
+				Geral.Equipamento_versao = (HorizontalAlignment)3;
+				Geral.Equipamento_build = (HorizontalAlignment)0;
 				RT_geral.Lmte_Init_ok = false;
 				MyProject.Forms.Plataforma.Seleciona_tela(true);
 			}
-			else if (num == 855)
+			else if (num == (DialogResult)855)
 			{
-				Geral.Ctrl_equipamento = 8000;
-				Geral.Ctrl_versao = 30;
-				Geral.Ctrl_operacao = 100000;
-				Geral.Equipamento_selecionado = 855;
-				Geral.Equipamento_versao = 3;
-				Geral.Equipamento_build = 0;
+				Geral.Ctrl_equipamento = (HorizontalAlignment)8000;
+				Geral.Ctrl_versao = (HorizontalAlignment)30;
+				Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+				Geral.Equipamento_selecionado = (HorizontalAlignment)855;
+				Geral.Equipamento_versao = (HorizontalAlignment)3;
+				Geral.Equipamento_build = (HorizontalAlignment)0;
 				RT_geral.Lmte_Init_ok = false;
 				MyProject.Forms.Plataforma.Seleciona_tela(true);
 			}
-			else if (num == 856)
+			else if (num == (DialogResult)856)
 			{
-				Geral.Ctrl_equipamento = 9000;
-				Geral.Ctrl_versao = 30;
-				Geral.Ctrl_operacao = 100000;
-				Geral.Equipamento_selecionado = 856;
-				Geral.Equipamento_versao = 3;
-				Geral.Equipamento_build = 0;
+				Geral.Ctrl_equipamento = (HorizontalAlignment)9000;
+				Geral.Ctrl_versao = (HorizontalAlignment)30;
+				Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+				Geral.Equipamento_selecionado = (HorizontalAlignment)856;
+				Geral.Equipamento_versao = (HorizontalAlignment)3;
+				Geral.Equipamento_build = (HorizontalAlignment)0;
 				RT_geral.Lmte_Init_ok = false;
 				MyProject.Forms.Plataforma.Seleciona_tela(true);
 			}
-			else if ((num == 824 || num == 828 || num == 920) && this.versao == 3)
+			else if ((num == (DialogResult)824 || num == (DialogResult)828 || num == (DialogResult)920) && this.versao == (DialogResult)3)
 			{
-				Geral.Ctrl_equipamento = 7000;
-				Geral.Ctrl_versao = 30;
-				Geral.Ctrl_operacao = 100000;
+				Geral.Ctrl_equipamento = (HorizontalAlignment)7000;
+				Geral.Ctrl_versao = (HorizontalAlignment)30;
+				Geral.Ctrl_operacao = (HorizontalAlignment)100000;
 				Geral.Equipamento_selecionado = this.equipamento;
-				Geral.Equipamento_versao = 3;
-				Geral.Equipamento_build = 0;
+				Geral.Equipamento_versao = (HorizontalAlignment)3;
+				Geral.Equipamento_build = (HorizontalAlignment)0;
 				RT_geral.Lmte_Init_ok = false;
 				MyProject.Forms.Plataforma.Seleciona_tela(true);
 			}

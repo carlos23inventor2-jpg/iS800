@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
@@ -59,7 +59,7 @@ namespace iS800
 		// Token: 0x0600041A RID: 1050 RVA: 0x0022ACBC File Offset: 0x002290BC
 		public static void RT_831_200_Salva_Variaveis(IniFileWriteFast ini)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor - 1;
@@ -76,7 +76,7 @@ namespace iS800
 		// Token: 0x0600041B RID: 1051 RVA: 0x0022AD34 File Offset: 0x00229134
 		public static void RT_831_200_Salva_RemotasControle(IniFileWriteFast ini)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_recalques.Valor - 1;

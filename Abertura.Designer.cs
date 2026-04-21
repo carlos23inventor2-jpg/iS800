@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x02000008 RID: 8
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -23,16 +23,16 @@
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			this.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Drawing.Size clientSize;
 			clientSize = new global::System.Drawing.Size(50, 32);
 			this.ClientSize = clientSize;
 			this.ControlBox = false;
-			this.FormBorderStyle = 0;
+			this.FormBorderStyle = (HorizontalAlignment)0;
 			this.Name = "Abertura";
-			this.SizeGripStyle = 2;
-			this.StartPosition = 0;
+			this.SizeGripStyle = (HorizontalAlignment)2;
+			this.StartPosition = (HorizontalAlignment)0;
 			this.Text = "Abertura";
 			this.ResumeLayout(false);
 		}

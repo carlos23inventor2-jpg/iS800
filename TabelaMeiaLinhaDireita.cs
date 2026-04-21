@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 
 namespace iS800
@@ -12,8 +12,8 @@ namespace iS800
 			Pen pen = new Pen(Cores.Tabela, 1f);
 			SolidBrush solidBrush = new SolidBrush(Cores.TituloBG);
 			StringFormat stringFormat = new StringFormat();
-			stringFormat.LineAlignment = 1;
-			stringFormat.Alignment = 1;
+			stringFormat.LineAlignment = (HorizontalAlignment)1;
+			stringFormat.Alignment = (HorizontalAlignment)1;
 			checked
 			{
 				this.AlturaFonte = (int)Math.Round((double)(unchecked(Fonte.Titulo.GetHeight() + 2f)));
@@ -39,7 +39,7 @@ namespace iS800
 			{
 				if (Grid)
 				{
-					for (int i = 1; i <= NumeroLinhas; i++)
+					for (int i = (HorizontalAlignment)1; i <= NumeroLinhas; i++)
 					{
 						this.G.DrawRectangle(pen, unchecked(this.CentroLinha + 20f), (float)(LinhaInicial * this.AlturaFonte + i * this.AlturaFonte), unchecked(this.MargemDireita - this.CentroLinha - 20f), (float)this.AlturaFonte);
 					}
@@ -91,7 +91,7 @@ namespace iS800
 		// Token: 0x06001212 RID: 4626 RVA: 0x00251B68 File Offset: 0x0024FF68
 		public void EscreveTodosTitulos(ref int linha, string[] titulos, int[] posicoes)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = posicoes.Length - 1;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -5352,9 +5352,9 @@ namespace iS800
 		// Token: 0x0600077C RID: 1916 RVA: 0x002A7FB0 File Offset: 0x002A63B0
 		private void RT_820_conf_Activated(object sender, EventArgs e)
 		{
-			Geral.Equipamento_selecionado = 820;
-			Geral.Equipamento_versao = 2;
-			Geral.Equipamento_build = 20;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+			Geral.Equipamento_versao = (HorizontalAlignment)2;
+			Geral.Equipamento_build = (HorizontalAlignment)20;
 		}
 
 		// Token: 0x0600077D RID: 1917 RVA: 0x002A7FCC File Offset: 0x002A63CC
@@ -5371,7 +5371,7 @@ namespace iS800
 		// Token: 0x0600077F RID: 1919 RVA: 0x002A7FE0 File Offset: 0x002A63E0
 		private void InicializaEstrutura_DataGridView_Processos()
 		{
-			int i = 0;
+			int i = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5409,55 +5409,55 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewProcessosColunas[11].NomeColuna = "TpMaxParada";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[12].NomeColuna = "TpMinParado";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[13].NomeColuna = "TpMinOperan";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LarguraColuna = 110;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LarguraColuna = 50;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].LarguraColuna = 50;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].LarguraColuna = 50;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].LarguraColuna = 55;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LarguraColuna = (HorizontalAlignment)110;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].LarguraColuna = (HorizontalAlignment)50;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].LarguraColuna = (HorizontalAlignment)50;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].LarguraColuna = (HorizontalAlignment)50;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].LarguraColuna = (HorizontalAlignment)55;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].AlingColuna = (HorizontalAlignment)64;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasMenu[0] = "Desativa";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasMenu[0] = "Desativa";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = (HorizontalAlignment)21856;
 				int num;
 				int num2;
-				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
+				if (RT_geral.RT_820_BD.HabExpIO.Valor == (DialogResult)21857)
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 18;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = 18;
-					num = 12;
-					num2 = 0;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = (HorizontalAlignment)18;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = (HorizontalAlignment)18;
+					num = (HorizontalAlignment)12;
+					num2 = (HorizontalAlignment)0;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 14;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = 14;
-					num = 8;
-					num2 = 4;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = (HorizontalAlignment)14;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[2].NumeroLinhaMenu = (HorizontalAlignment)14;
+					num = (HorizontalAlignment)8;
+					num2 = (HorizontalAlignment)4;
 				}
-				int num3 = 1;
+				int num3 = (HorizontalAlignment)1;
 				int num4 = num;
 				for (i = num3; i <= num4; i++)
 				{
@@ -5478,32 +5478,32 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[i] = 21860 + i + num2;
 				}
 				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasMenu[0] = "Não usada";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[1].LinhasValor[0] = (HorizontalAlignment)21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasMenu[0] = "Não usada";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasValor[0] = (HorizontalAlignment)21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LinhasMenu[0] = "Sempre Remoto";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[4].LinhasValor[0] = (HorizontalAlignment)21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasMenu[0] = "Sem Liberação";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasValor[0] = 21856;
-				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
+				RT_geral.RT_820_DataGrigViewProcessosColunas[6].LinhasValor[0] = (HorizontalAlignment)21856;
+				if (RT_geral.RT_820_BD.HabExpIO.Valor == (DialogResult)21857)
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = 22;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = 22;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = 17;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = 17;
-					num = 16;
-					num2 = 0;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)22;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = (HorizontalAlignment)22;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = (HorizontalAlignment)17;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = (HorizontalAlignment)17;
+					num = (HorizontalAlignment)16;
+					num2 = (HorizontalAlignment)0;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = 14;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = 14;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = 9;
-					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = 9;
-					num = 8;
-					num2 = 8;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)14;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[3].NumeroLinhaMenu = (HorizontalAlignment)14;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[4].NumeroLinhaMenu = (HorizontalAlignment)9;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[6].NumeroLinhaMenu = (HorizontalAlignment)9;
+					num = (HorizontalAlignment)8;
+					num2 = (HorizontalAlignment)8;
 				}
-				int num8 = 1;
+				int num8 = (HorizontalAlignment)1;
 				int num9 = num;
 				for (i = num8; i <= num9; i++)
 				{
@@ -5528,18 +5528,18 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[3].LinhasValor[i] = 21856 + i + num2;
 				}
 				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasMenu[0] = "Sem Bloqueio";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[0] = 21856;
-				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
+				RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[0] = (HorizontalAlignment)21856;
+				if (RT_geral.RT_820_BD.HabExpIO.Valor == (DialogResult)21857)
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = 33;
-					num = 16;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = (HorizontalAlignment)33;
+					num = (HorizontalAlignment)16;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = 17;
-					num = 8;
+					RT_geral.RT_820_DataGrigViewProcessosColunas[5].NumeroLinhaMenu = (HorizontalAlignment)17;
+					num = (HorizontalAlignment)8;
 				}
-				int num12 = 1;
+				int num12 = (HorizontalAlignment)1;
 				int num13 = num;
 				for (i = num12; i <= num13; i++)
 				{
@@ -5549,22 +5549,22 @@ namespace iS800
 					RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[num2 - 1] = 21856 + num2 - 1;
 					RT_geral.RT_820_DataGrigViewProcessosColunas[5].LinhasValor[num2] = 21856 + num2;
 				}
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].NumeroLinhaMenu = 2;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].NumeroLinhaMenu = (HorizontalAlignment)2;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasMenu[0] = "Desabilitado";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasMenu[1] = "Habilitado";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[0] = 21856;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[1] = 21857;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].NumeroLinhaMenu = 3;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[7].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].NumeroLinhaMenu = (HorizontalAlignment)3;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[0] = "Telecomando";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[1] = "Automático";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasMenu[2] = "Timer";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[0] = 21856;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[1] = 21857;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[2] = 21858;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].NumeroLinhaMenu = 5;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[1] = (HorizontalAlignment)21857;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[8].LinhasValor[2] = (HorizontalAlignment)21858;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].NumeroLinhaMenu = (HorizontalAlignment)5;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasMenu[0] = "Nenhum Grupo";
-				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasValor[0] = 21856;
-				i = 1;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasValor[0] = (HorizontalAlignment)21856;
+				i = (HorizontalAlignment)1;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[9].LinhasMenu[i] = "Grupo - " + Strings.Format(i, "0#");
@@ -5572,10 +5572,10 @@ namespace iS800
 					i++;
 				}
 				while (i <= 4);
-				RT_geral.RT_820_DataGrigViewProcessosColunas[10].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[11].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[12].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewProcessosColunas[13].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[10].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[11].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[12].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewProcessosColunas[13].NumeroLinhaMenu = (HorizontalAlignment)0;
 			}
 		}
 
@@ -5587,7 +5587,7 @@ namespace iS800
 		// Token: 0x06000781 RID: 1921 RVA: 0x002A8CE8 File Offset: 0x002A70E8
 		private void InicializaEstrutura_DataGridView_agrupamentos()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5601,14 +5601,14 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewGruposColunas[1].TagColuna = "Tempo Entre Acionamentos";
 				RT_geral.RT_820_DataGrigViewGruposColunas[0].NomeColuna = "ASimultaneos";
 				RT_geral.RT_820_DataGrigViewGruposColunas[1].NomeColuna = "TpAcionamentos";
-				RT_geral.RT_820_DataGrigViewGruposColunas[0].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewGruposColunas[1].LarguraColuna = 100;
-				RT_geral.RT_820_DataGrigViewGruposColunas[0].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewGruposColunas[1].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewGruposColunas[0].NumeroLinhaMenu = 9;
+				RT_geral.RT_820_DataGrigViewGruposColunas[0].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewGruposColunas[1].LarguraColuna = (HorizontalAlignment)100;
+				RT_geral.RT_820_DataGrigViewGruposColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewGruposColunas[1].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewGruposColunas[0].NumeroLinhaMenu = (HorizontalAlignment)9;
 				RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasMenu[0] = "Liberado";
-				RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasValor[0] = 21856;
-				num = 1;
+				RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				num = (HorizontalAlignment)1;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewGruposColunas[0].LinhasMenu[num] = Strings.Format(num, "0#");
@@ -5616,7 +5616,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 8);
-				RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
 			}
 		}
 
@@ -5634,24 +5634,24 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewEAColunas[0].NomeColuna = "range";
 			RT_geral.RT_820_DataGrigViewEAColunas[1].NomeColuna = "ini";
 			RT_geral.RT_820_DataGrigViewEAColunas[2].NomeColuna = "fim";
-			RT_geral.RT_820_DataGrigViewEAColunas[0].LarguraColuna = 90;
-			RT_geral.RT_820_DataGrigViewEAColunas[1].LarguraColuna = 90;
-			RT_geral.RT_820_DataGrigViewEAColunas[2].LarguraColuna = 90;
-			RT_geral.RT_820_DataGrigViewEAColunas[0].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewEAColunas[1].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewEAColunas[2].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewEAColunas[0].NumeroLinhaMenu = 0;
-			RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = 0;
-			RT_geral.RT_820_DataGrigViewGruposColunas[2].NumeroLinhaMenu = 0;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].LarguraColuna = (HorizontalAlignment)90;
+			RT_geral.RT_820_DataGrigViewEAColunas[1].LarguraColuna = (HorizontalAlignment)90;
+			RT_geral.RT_820_DataGrigViewEAColunas[2].LarguraColuna = (HorizontalAlignment)90;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewEAColunas[1].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewEAColunas[2].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewEAColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
+			RT_geral.RT_820_DataGrigViewGruposColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+			RT_geral.RT_820_DataGrigViewGruposColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000784 RID: 1924 RVA: 0x002A8F90 File Offset: 0x002A7390
 		private void GeraDataGridView_Perifericos()
 		{
 			this.DataGridView_periferico_RT820.Columns.Clear();
-			this.DataGridView_periferico_RT820.CellBorderStyle = 1;
-			this.DataGridView_periferico_RT820.DefaultCellStyle.Alignment = 64;
-			int num = 0;
+			this.DataGridView_periferico_RT820.CellBorderStyle = (HorizontalAlignment)1;
+			this.DataGridView_periferico_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5669,9 +5669,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 1);
-				this.DataGridView_periferico_RT820.RowCount = 4;
-				this.DataGridView_periferico_RT820.RowHeadersWidth = 100;
-				int num2 = 1;
+				this.DataGridView_periferico_RT820.RowCount = (HorizontalAlignment)4;
+				this.DataGridView_periferico_RT820.RowHeadersWidth = (HorizontalAlignment)100;
+				int num2 = (HorizontalAlignment)1;
 				try
 				{
 					foreach (object obj in this.DataGridView_periferico_RT820.Rows)
@@ -5698,7 +5698,7 @@ namespace iS800
 		// Token: 0x06000785 RID: 1925 RVA: 0x002A90CC File Offset: 0x002A74CC
 		private void InicializaEstrutura_DataGridView_Periferico()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5712,13 +5712,13 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].TagColuna = "Endereço";
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].NomeColuna = "modelo";
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].NomeColuna = "end";
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].LarguraColuna = 250;
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].LarguraColuna = 60;
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].AlingColuna = 16;
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].AlingColuna = 64;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].LarguraColuna = (HorizontalAlignment)250;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].AlingColuna = (HorizontalAlignment)16;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].AlingColuna = (HorizontalAlignment)64;
 				RT_geral.RT_820_DataGrigViewPerifericosColunas[0].NumeroLinhaMenu = perifericos.perif_RT820_200.Count;
-				int num2 = 48;
-				num = 0;
+				int num2 = (HorizontalAlignment)48;
+				num = (HorizontalAlignment)0;
 				try
 				{
 					foreach (perifericos.Periferico periferico in perifericos.perif_RT820_200)
@@ -5733,7 +5733,7 @@ namespace iS800
 					List<perifericos.Periferico>.Enumerator enumerator;
 					enumerator.Dispose();
 				}
-				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewPerifericosColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
 			}
 		}
 
@@ -5745,7 +5745,7 @@ namespace iS800
 		// Token: 0x06000787 RID: 1927 RVA: 0x002A9268 File Offset: 0x002A7668
 		private void InicializaEstrutura_DataGridView_Vazoes()
 		{
-			int i = 0;
+			int i = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5757,22 +5757,22 @@ namespace iS800
 				while (i <= 0);
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].NomeColuna = "Entrada";
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LarguraColuna = 200;
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[0] = 21856;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LarguraColuna = (HorizontalAlignment)200;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[0] = "Leitura desabilitada";
 				int num;
-				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
+				if (RT_geral.RT_820_BD.HabExpIO.Valor == (DialogResult)21857)
 				{
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = 49;
-					num = 16;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = (HorizontalAlignment)49;
+					num = (HorizontalAlignment)16;
 				}
 				else
 				{
-					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = 33;
-					num = 8;
+					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = (HorizontalAlignment)33;
+					num = (HorizontalAlignment)8;
 				}
-				i = 1;
+				i = (HorizontalAlignment)1;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[i] = 21856 + i;
@@ -5780,7 +5780,7 @@ namespace iS800
 					i++;
 				}
 				while (i <= 16);
-				int num2 = 1;
+				int num2 = (HorizontalAlignment)1;
 				int num3 = num;
 				for (i = num2; i <= num3; i++)
 				{
@@ -5797,9 +5797,9 @@ namespace iS800
 		private void GeraDataGridView_ED()
 		{
 			this.DataGridView_RT820_ED.Columns.Clear();
-			this.DataGridView_RT820_ED.CellBorderStyle = 1;
-			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = 64;
-			int num = 0;
+			this.DataGridView_RT820_ED.CellBorderStyle = (HorizontalAlignment)1;
+			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5817,9 +5817,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 0);
-				this.DataGridView_RT820_ED.RowCount = 8;
-				this.DataGridView_RT820_ED.RowHeadersWidth = 80;
-				int num2 = 1;
+				this.DataGridView_RT820_ED.RowCount = (HorizontalAlignment)8;
+				this.DataGridView_RT820_ED.RowHeadersWidth = (HorizontalAlignment)80;
+				int num2 = (HorizontalAlignment)1;
 				try
 				{
 					foreach (object obj in this.DataGridView_RT820_ED.Rows)
@@ -5846,7 +5846,7 @@ namespace iS800
 		// Token: 0x06000789 RID: 1929 RVA: 0x002A95B4 File Offset: 0x002A79B4
 		private void InicializaEstrutura_DataGridView_ED()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5858,39 +5858,39 @@ namespace iS800
 				while (num <= 0);
 				RT_geral.RT_820_DataGrigViewEDColunas[0].TagColuna = "Entrada";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].NomeColuna = "Entrada";
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LarguraColuna = 250;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0] = 21856;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[1] = 21904;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[2] = 21905;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[3] = 21906;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[4] = 21907;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[5] = 21908;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[6] = 21909;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[7] = 21910;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[8] = 21911;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[9] = 21912;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[10] = 21913;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[11] = 21914;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[12] = 21915;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[13] = 21916;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[14] = 21917;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[15] = 21918;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[16] = 21919;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[17] = 21920;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[18] = 21921;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[19] = 21922;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[20] = 21923;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[21] = 21924;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[22] = 21925;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[23] = 21926;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[24] = 21927;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[25] = 21928;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[26] = 21929;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[27] = 21931;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[28] = 21932;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[29] = 21933;
-				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[30] = 21935;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LarguraColuna = (HorizontalAlignment)250;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[1] = (HorizontalAlignment)21904;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[2] = (HorizontalAlignment)21905;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[3] = (HorizontalAlignment)21906;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[4] = (HorizontalAlignment)21907;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[5] = (HorizontalAlignment)21908;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[6] = (HorizontalAlignment)21909;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[7] = (HorizontalAlignment)21910;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[8] = (HorizontalAlignment)21911;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[9] = (HorizontalAlignment)21912;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[10] = (HorizontalAlignment)21913;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[11] = (HorizontalAlignment)21914;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[12] = (HorizontalAlignment)21915;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[13] = (HorizontalAlignment)21916;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[14] = (HorizontalAlignment)21917;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[15] = (HorizontalAlignment)21918;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[16] = (HorizontalAlignment)21919;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[17] = (HorizontalAlignment)21920;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[18] = (HorizontalAlignment)21921;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[19] = (HorizontalAlignment)21922;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[20] = (HorizontalAlignment)21923;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[21] = (HorizontalAlignment)21924;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[22] = (HorizontalAlignment)21925;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[23] = (HorizontalAlignment)21926;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[24] = (HorizontalAlignment)21927;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[25] = (HorizontalAlignment)21928;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[26] = (HorizontalAlignment)21929;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[27] = (HorizontalAlignment)21931;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[28] = (HorizontalAlignment)21932;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[29] = (HorizontalAlignment)21933;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[30] = (HorizontalAlignment)21935;
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[0] = "--------";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[1] = "Retorno Motor1";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[2] = "Retorno Motor2";
@@ -5922,7 +5922,7 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[28] = "Monitoramento Temperatura Motor2";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[29] = "Monitoramento Temperatura Motor3";
 				RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[30] = "Monitoramento Temperatura Motor4";
-				RT_geral.RT_820_DataGrigViewEDColunas[0].NumeroLinhaMenu = 31;
+				RT_geral.RT_820_DataGrigViewEDColunas[0].NumeroLinhaMenu = (HorizontalAlignment)31;
 			}
 		}
 
@@ -5930,9 +5930,9 @@ namespace iS800
 		private void GeraDataGridView_Repedidora()
 		{
 			this.DataGridView_end_rep_RT820.Columns.Clear();
-			this.DataGridView_end_rep_RT820.CellBorderStyle = 1;
-			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = 64;
-			int num = 0;
+			this.DataGridView_end_rep_RT820.CellBorderStyle = (HorizontalAlignment)1;
+			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = (HorizontalAlignment)64;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -5950,15 +5950,15 @@ namespace iS800
 					num++;
 				}
 				while (num <= 9);
-				this.DataGridView_end_rep_RT820.RowCount = 10;
-				num = 0;
+				this.DataGridView_end_rep_RT820.RowCount = (HorizontalAlignment)10;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					this.DataGridView_end_rep_RT820.Columns[num].ReadOnly = true;
 					num++;
 				}
 				while (num <= 9);
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					this.DataGridView_end_rep_RT820[0, num].Value = num + 1;
@@ -5995,26 +5995,26 @@ namespace iS800
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].NomeColuna = "end_4";
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].NomeColuna = "pos_5";
 			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].NomeColuna = "end_5";
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].LarguraColuna = 50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].LarguraColuna = 65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].LarguraColuna = 50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].LarguraColuna = 65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].LarguraColuna = 50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].LarguraColuna = 65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].LarguraColuna = 50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].LarguraColuna = 65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].LarguraColuna = 50;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].LarguraColuna = 65;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].AlingColuna = 32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].AlingColuna = 32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].AlingColuna = 32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].AlingColuna = 32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].AlingColuna = 64;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].AlingColuna = 32;
-			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].AlingColuna = 64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].LarguraColuna = (HorizontalAlignment)50;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].LarguraColuna = (HorizontalAlignment)65;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[0].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[1].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[2].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[3].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[4].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[5].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[6].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[7].AlingColuna = (HorizontalAlignment)64;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[8].AlingColuna = (HorizontalAlignment)32;
+			RT_geral.RT_820_DataGrigViewRepetidoraColunas[9].AlingColuna = (HorizontalAlignment)64;
 		}
 
 		// Token: 0x0600078C RID: 1932 RVA: 0x002AA0A0 File Offset: 0x002A84A0
@@ -6025,7 +6025,7 @@ namespace iS800
 		// Token: 0x0600078D RID: 1933 RVA: 0x002AA0A4 File Offset: 0x002A84A4
 		private void InicializaEstrutura_DataGridView_Setpoints()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -6047,29 +6047,29 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].NomeColuna = "Set_NLib";
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].NomeColuna = "Set_Controle";
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].NomeColuna = "Set_Bloqueio";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].LarguraColuna = 60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].LarguraColuna = 60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].LarguraColuna = 60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].LarguraColuna = 60;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LarguraColuna = 160;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LarguraColuna = 160;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].AlingColuna = 64;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].LarguraColuna = (HorizontalAlignment)60;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LarguraColuna = (HorizontalAlignment)160;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LarguraColuna = (HorizontalAlignment)160;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].AlingColuna = (HorizontalAlignment)64;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[4].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[5].NumeroLinhaMenu = (HorizontalAlignment)0;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[0] = "Controle Desabilitado";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[0] = 21856;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].NumeroLinhaMenu = 21;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[0].NumeroLinhaMenu = (HorizontalAlignment)21;
 				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LinhasMenu[0] = "Bloqueio Desabilitado";
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LinhasValor[0] = 21856;
-				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].NumeroLinhaMenu = 21;
-				num = 1;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].LinhasValor[0] = (HorizontalAlignment)21856;
+				RT_geral.RT_820_DataGrigViewSetpointsColunas[3].NumeroLinhaMenu = (HorizontalAlignment)21;
+				num = (HorizontalAlignment)1;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[num] = "EA - " + Strings.Format(num, "0#");
@@ -6079,7 +6079,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 16);
-				num = 17;
+				num = (HorizontalAlignment)17;
 				do
 				{
 					RT_geral.RT_820_DataGrigViewSetpointsColunas[0].LinhasMenu[num] = "Valor Referência " + Strings.Format(num - 16, "#");
@@ -6100,7 +6100,7 @@ namespace iS800
 		// Token: 0x0600078F RID: 1935 RVA: 0x002AA4C4 File Offset: 0x002A88C4
 		private void InicializaEstrutura_DataGridView_Timer()
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -6134,42 +6134,42 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewTimerColunas[9].NomeColuna = "Desliga_F5";
 				RT_geral.RT_820_DataGrigViewTimerColunas[10].NomeColuna = "Liga_F6";
 				RT_geral.RT_820_DataGrigViewTimerColunas[11].NomeColuna = "Desliga_F6";
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].LarguraColuna = 58;
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].AlingColuna = 32;
-				RT_geral.RT_820_DataGrigViewTimerColunas[0].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[1].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[2].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[3].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[4].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[5].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[6].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[7].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[8].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[9].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[10].NumeroLinhaMenu = 0;
-				RT_geral.RT_820_DataGrigViewTimerColunas[11].NumeroLinhaMenu = 0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].LarguraColuna = (HorizontalAlignment)58;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].AlingColuna = (HorizontalAlignment)32;
+				RT_geral.RT_820_DataGrigViewTimerColunas[0].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[1].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[2].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[3].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[4].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[5].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[6].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[7].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[8].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[9].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[10].NumeroLinhaMenu = (HorizontalAlignment)0;
+				RT_geral.RT_820_DataGrigViewTimerColunas[11].NumeroLinhaMenu = (HorizontalAlignment)0;
 			}
 		}
 
@@ -6177,47 +6177,47 @@ namespace iS800
 		public void Inicializa_DadosEStruturaRT820_Padrao()
 		{
 			RT_geral.RT_820_200_BD.firmware.Versao.nome = "Versão";
-			RT_geral.RT_820_200_BD.firmware.Versao.Padrao = 2;
+			RT_geral.RT_820_200_BD.firmware.Versao.Padrao = (HorizontalAlignment)2;
 			RT_geral.RT_820_200_BD.firmware.Build.nome = "Build";
-			RT_geral.RT_820_200_BD.firmware.Build.Padrao = 0;
+			RT_geral.RT_820_200_BD.firmware.Build.Padrao = (HorizontalAlignment)0;
 			RT_geral.RT_820_200_BD.firmware.Release.nome = "Release";
-			RT_geral.RT_820_200_BD.firmware.Release.Padrao = 0;
+			RT_geral.RT_820_200_BD.firmware.Release.Padrao = (HorizontalAlignment)0;
 			RT_geral.RT_820_200_BD.firmware.Equip.nome = "Tipo equipamento";
-			RT_geral.RT_820_200_BD.firmware.Equip.Padrao = 820;
+			RT_geral.RT_820_200_BD.firmware.Equip.Padrao = (HorizontalAlignment)820;
 			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.nome = "Endereço Estação";
-			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Padrao = 1;
-			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Lmte_inf = 0;
-			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Lmte_sup = 200;
+			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Padrao = (HorizontalAlignment)1;
+			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Lmte_inf = (HorizontalAlignment)0;
+			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Lmte_sup = (HorizontalAlignment)200;
 			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.nome = "Endereço Mestre";
-			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Padrao = 100;
-			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Lmte_inf = 1;
-			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Lmte_sup = 200;
+			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Padrao = (HorizontalAlignment)100;
+			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Lmte_inf = (HorizontalAlignment)1;
+			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Lmte_sup = (HorizontalAlignment)200;
 			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.nome = "Tempo PTT";
-			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Padrao = 200;
-			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Lmte_inf = 100;
-			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Lmte_sup = 2000;
+			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Padrao = (HorizontalAlignment)200;
+			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Lmte_inf = (HorizontalAlignment)100;
+			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Lmte_sup = (HorizontalAlignment)2000;
 			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.nome = "Baudrate COM2";
-			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Indice_padrao = 0;
-			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Numero_itens = 2;
-			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.valores[0] = 21849;
-			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.valores[1] = 21850;
+			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Indice_padrao = (HorizontalAlignment)0;
+			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Numero_itens = (HorizontalAlignment)2;
+			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.valores[0] = (HorizontalAlignment)21849;
+			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.valores[1] = (HorizontalAlignment)21850;
 			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.itens[0] = "1200 bauds";
 			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.itens[1] = "9600 bauds";
 			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.nome = "Intervalo AD";
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Padrao = 2000;
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Lmte_inf = 10;
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Lmte_sup = 20000;
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Padrao = (HorizontalAlignment)2000;
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Lmte_inf = (HorizontalAlignment)10;
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Lmte_sup = (HorizontalAlignment)20000;
 			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.nome = "Tamanho Filtro AD";
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Padrao = 3;
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Lmte_inf = 1;
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Lmte_sup = 10;
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Padrao = (HorizontalAlignment)3;
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Lmte_inf = (HorizontalAlignment)1;
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Lmte_sup = (HorizontalAlignment)10;
 			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.nome = "Nível Fonte";
-			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Padrao = 768;
-			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Lmte_sup = 853;
-			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Lmte_inf = 768;
+			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Padrao = (HorizontalAlignment)768;
+			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Lmte_sup = (HorizontalAlignment)853;
+			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Lmte_inf = (HorizontalAlignment)768;
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.nome = "Proteção";
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Numero_itens = 18;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Indice_padrao = 0;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Numero_itens = (HorizontalAlignment)18;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Indice_padrao = (HorizontalAlignment)0;
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.itens[0] = "EA 01";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.itens[1] = "EA 02";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.itens[2] = "EA 03";
@@ -6236,27 +6236,27 @@ namespace iS800
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.itens[15] = "EA 16";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.itens[16] = "Comunicação Destino";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.itens[17] = "Comunicação Origem";
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[0] = 21856;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[1] = 21857;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[2] = 21858;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[3] = 21859;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[4] = 21860;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[5] = 21861;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[6] = 21862;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[7] = 21863;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[8] = 21864;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[9] = 21865;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[10] = 21866;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[11] = 21867;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[12] = 21868;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[13] = 21869;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[14] = 21870;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[15] = 21871;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[16] = 21872;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[17] = 21873;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[0] = (HorizontalAlignment)21856;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[1] = (HorizontalAlignment)21857;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[2] = (HorizontalAlignment)21858;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[3] = (HorizontalAlignment)21859;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[4] = (HorizontalAlignment)21860;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[5] = (HorizontalAlignment)21861;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[6] = (HorizontalAlignment)21862;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[7] = (HorizontalAlignment)21863;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[8] = (HorizontalAlignment)21864;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[9] = (HorizontalAlignment)21865;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[10] = (HorizontalAlignment)21866;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[11] = (HorizontalAlignment)21867;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[12] = (HorizontalAlignment)21868;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[13] = (HorizontalAlignment)21869;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[14] = (HorizontalAlignment)21870;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[15] = (HorizontalAlignment)21871;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[16] = (HorizontalAlignment)21872;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.valores[17] = (HorizontalAlignment)21873;
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.nome = "Controle";
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Numero_itens = 18;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Indice_padrao = 0;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Numero_itens = (HorizontalAlignment)18;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Indice_padrao = (HorizontalAlignment)0;
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.itens[0] = "EA 01";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.itens[1] = "EA 02";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.itens[2] = "EA 03";
@@ -6275,32 +6275,32 @@ namespace iS800
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.itens[15] = "EA 16";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.itens[16] = "Comunicação Destino";
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.itens[17] = "Comunicação Origem";
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[0] = 21856;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[1] = 21857;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[2] = 21858;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[3] = 21859;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[4] = 21860;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[5] = 21861;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[6] = 21862;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[7] = 21863;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[8] = 21864;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[9] = 21865;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[10] = 21866;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[11] = 21867;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[12] = 21868;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[13] = 21869;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[14] = 21870;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[15] = 21871;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[16] = 21872;
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[17] = 21873;
-			int num = 0;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[0] = (HorizontalAlignment)21856;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[1] = (HorizontalAlignment)21857;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[2] = (HorizontalAlignment)21858;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[3] = (HorizontalAlignment)21859;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[4] = (HorizontalAlignment)21860;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[5] = (HorizontalAlignment)21861;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[6] = (HorizontalAlignment)21862;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[7] = (HorizontalAlignment)21863;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[8] = (HorizontalAlignment)21864;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[9] = (HorizontalAlignment)21865;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[10] = (HorizontalAlignment)21866;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[11] = (HorizontalAlignment)21867;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[12] = (HorizontalAlignment)21868;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[13] = (HorizontalAlignment)21869;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[14] = (HorizontalAlignment)21870;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[15] = (HorizontalAlignment)21871;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[16] = (HorizontalAlignment)21872;
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.valores[17] = (HorizontalAlignment)21873;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
 				{
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].nome = "ED " + Conversion.Str(num + 1);
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].Indice_padrao = 0;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].Numero_itens = 31;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].Indice_padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].Numero_itens = (HorizontalAlignment)31;
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].itens = new string[RT_geral.RT_820_200_BD.cfg_geral.entradas[num].Numero_itens + 1];
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores = new int[RT_geral.RT_820_200_BD.cfg_geral.entradas[num].Numero_itens + 1];
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].itens[0] = "--------";
@@ -6334,99 +6334,99 @@ namespace iS800
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].itens[28] = "Monitoramento Temperatura Motor2";
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].itens[29] = "Monitoramento Temperatura Motor3";
 					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].itens[30] = "Monitoramento Temperatura Motor4";
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[0] = 21856;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[1] = 21904;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[2] = 21905;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[3] = 21906;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[4] = 21907;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[5] = 21908;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[6] = 21909;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[7] = 21910;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[8] = 21911;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[9] = 21912;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[10] = 21913;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[11] = 21914;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[12] = 21915;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[13] = 21916;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[14] = 21917;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[15] = 21918;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[16] = 21919;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[17] = 21920;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[18] = 21921;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[19] = 21922;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[20] = 21923;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[21] = 21924;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[22] = 21929;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[23] = 21930;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[24] = 21931;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[25] = 21932;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[26] = 21933;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[27] = 21934;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[28] = 21935;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[29] = 21936;
-					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[30] = 21937;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[0] = (HorizontalAlignment)21856;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[1] = (HorizontalAlignment)21904;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[2] = (HorizontalAlignment)21905;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[3] = (HorizontalAlignment)21906;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[4] = (HorizontalAlignment)21907;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[5] = (HorizontalAlignment)21908;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[6] = (HorizontalAlignment)21909;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[7] = (HorizontalAlignment)21910;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[8] = (HorizontalAlignment)21911;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[9] = (HorizontalAlignment)21912;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[10] = (HorizontalAlignment)21913;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[11] = (HorizontalAlignment)21914;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[12] = (HorizontalAlignment)21915;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[13] = (HorizontalAlignment)21916;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[14] = (HorizontalAlignment)21917;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[15] = (HorizontalAlignment)21918;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[16] = (HorizontalAlignment)21919;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[17] = (HorizontalAlignment)21920;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[18] = (HorizontalAlignment)21921;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[19] = (HorizontalAlignment)21922;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[20] = (HorizontalAlignment)21923;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[21] = (HorizontalAlignment)21924;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[22] = (HorizontalAlignment)21929;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[23] = (HorizontalAlignment)21930;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[24] = (HorizontalAlignment)21931;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[25] = (HorizontalAlignment)21932;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[26] = (HorizontalAlignment)21933;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[27] = (HorizontalAlignment)21934;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[28] = (HorizontalAlignment)21935;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[29] = (HorizontalAlignment)21936;
+					RT_geral.RT_820_200_BD.cfg_geral.entradas[num].valores[30] = (HorizontalAlignment)21937;
 					num++;
 				}
 				while (num <= 7);
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.nome = "M1 Alto";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Padrao = 4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Padrao = (HorizontalAlignment)4000;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.nome = "M1 Baixo";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Padrao = 2400;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Padrao = (HorizontalAlignment)2400;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.nome = "M2 Alto";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Padrao = 4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Padrao = (HorizontalAlignment)4000;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.nome = "M2 Baixo";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Padrao = 2400;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Padrao = (HorizontalAlignment)2400;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.nome = "M3 Alto";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Padrao = 4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Padrao = (HorizontalAlignment)4000;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.nome = "M3 Baixo";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Padrao = 2400;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Padrao = (HorizontalAlignment)2400;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.nome = "M4 Alto";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Padrao = 4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Padrao = (HorizontalAlignment)4000;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.nome = "M4 Baixo";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Padrao = 2400;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Padrao = (HorizontalAlignment)2400;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.nome = "Proteção Desliga";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Padrao = 800;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Padrao = (HorizontalAlignment)800;
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.nome = "Proteção Liga";
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Lmte_sup = 4000;
-				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Padrao = 1600;
-				num = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Lmte_sup = (HorizontalAlignment)4000;
+				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Padrao = (HorizontalAlignment)1600;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.nome = "Hora";
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.Padrao = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.Lmte_inf = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.Lmte_sup = 23;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.Lmte_inf = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.Lmte_sup = (HorizontalAlignment)23;
 					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.nome = "Minuto";
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.Padrao = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.Lmte_inf = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.Lmte_sup = 59;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.Lmte_inf = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Minuto.Lmte_sup = (HorizontalAlignment)59;
 					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.nome = "Baixo";
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.Padrao = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.Lmte_inf = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.Lmte_sup = 4000;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.Lmte_inf = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Baixo.Lmte_sup = (HorizontalAlignment)4000;
 					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.nome = "Alto";
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.Padrao = 4000;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.Lmte_inf = 0;
-					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.Lmte_sup = 4000;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.Padrao = (HorizontalAlignment)4000;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.Lmte_inf = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.setpoint_horario[num].Alto.Lmte_sup = (HorizontalAlignment)4000;
 					num++;
 				}
 				while (num <= 7);
@@ -6439,72 +6439,72 @@ namespace iS800
 				this.sph_ativa40.Checked = false;
 				this.sph_ativa41.Checked = false;
 				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.nome = "Modo de Operação";
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.Numero_itens = 5;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.Indice_padrao = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.Numero_itens = (HorizontalAlignment)5;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.Indice_padrao = (HorizontalAlignment)0;
 				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.itens[0] = "Manual";
 				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.itens[1] = "Automático";
 				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.itens[2] = "Timer";
 				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.itens[3] = "Automático sem desligar por falha";
 				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.itens[4] = "Manual sem desligar por falha";
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[0] = 21888;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[1] = 21889;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[2] = 21890;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[3] = 21891;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[4] = 21892;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[0] = (HorizontalAlignment)21888;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[1] = (HorizontalAlignment)21889;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[2] = (HorizontalAlignment)21890;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[3] = (HorizontalAlignment)21891;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.valores[4] = (HorizontalAlignment)21892;
 				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.nome = "Número de Motores";
-				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Lmte_sup = 4;
-				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Padrao = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Lmte_sup = (HorizontalAlignment)4;
+				RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Padrao = (HorizontalAlignment)0;
 				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.nome = "Número de Válvulas";
-				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Lmte_sup = 4;
-				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Padrao = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Lmte_sup = (HorizontalAlignment)4;
+				RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Padrao = (HorizontalAlignment)0;
 				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.nome = "Bombas simultâneas";
-				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Lmte_sup = 4;
-				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Padrao = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Lmte_sup = (HorizontalAlignment)4;
+				RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Padrao = (HorizontalAlignment)0;
 				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.nome = "Tempo entre acionamentos";
-				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Padrao = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Padrao = (HorizontalAlignment)0;
 				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.nome = "Tempo abertura Válvula1";
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.nome = "Tempo abertura Válvula2";
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.nome = "Tempo abertura Válvula3";
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.nome = "Tempo abertura Válvula4";
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.nome = "Tempo fechamento Válvula1";
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.nome = "Tempo fechamento Válvula2";
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.nome = "Tempo fechamento Válvula3";
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.nome = "Tempo fechamento Válvula4";
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Padrao = 180;
-				num = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Padrao = (HorizontalAlignment)180;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].nome = "Modo de Partida Motor" + (num + 1).ToString();
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].Numero_itens = 25;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].Indice_padrao = 0;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].Numero_itens = (HorizontalAlignment)25;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].Indice_padrao = (HorizontalAlignment)0;
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].itens[0] = "Desativo";
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].itens[1] = "SD 1";
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].itens[2] = "SD 2";
@@ -6530,76 +6530,76 @@ namespace iS800
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].itens[22] = "Periférico 2 - Reverso";
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].itens[23] = "Periférico 3 - Reverso";
 					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].itens[24] = "Periférico 4 - Reverso";
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[0] = 21856;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[1] = 21857;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[2] = 21858;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[3] = 21859;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[4] = 21860;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[5] = 21861;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[6] = 21862;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[7] = 21863;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[8] = 21864;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[9] = 21865;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[10] = 21866;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[11] = 21867;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[12] = 21868;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[13] = 21869;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[14] = 21870;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[15] = 21871;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[16] = 21872;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[17] = 21873;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[18] = 21874;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[19] = 21875;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[20] = 21876;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[21] = 21877;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[22] = 21878;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[23] = 21879;
-					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[24] = 21880;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[0] = (HorizontalAlignment)21856;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[1] = (HorizontalAlignment)21857;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[2] = (HorizontalAlignment)21858;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[3] = (HorizontalAlignment)21859;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[4] = (HorizontalAlignment)21860;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[5] = (HorizontalAlignment)21861;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[6] = (HorizontalAlignment)21862;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[7] = (HorizontalAlignment)21863;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[8] = (HorizontalAlignment)21864;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[9] = (HorizontalAlignment)21865;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[10] = (HorizontalAlignment)21866;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[11] = (HorizontalAlignment)21867;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[12] = (HorizontalAlignment)21868;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[13] = (HorizontalAlignment)21869;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[14] = (HorizontalAlignment)21870;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[15] = (HorizontalAlignment)21871;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[16] = (HorizontalAlignment)21872;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[17] = (HorizontalAlignment)21873;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[18] = (HorizontalAlignment)21874;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[19] = (HorizontalAlignment)21875;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[20] = (HorizontalAlignment)21876;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[21] = (HorizontalAlignment)21877;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[22] = (HorizontalAlignment)21878;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[23] = (HorizontalAlignment)21879;
+					RT_geral.RT_820_200_BD.cfg_geral.modo_partida[num].valores[24] = (HorizontalAlignment)21880;
 					num++;
 				}
 				while (num <= 3);
 				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.nome = "Tempo partida Motor1";
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.nome = "Tempo partida Motor2";
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.nome = "Tempo partida Motor3";
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.nome = "Tempo partida Motor4";
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.nome = "Tempo parada Motor1";
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.nome = "Tempo parada Motor2";
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.nome = "Tempo parada Motor3";
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Padrao = 180;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Padrao = (HorizontalAlignment)180;
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.nome = "Tempo parada Motor4";
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Lmte_sup = 32000;
-				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Padrao = 180;
-				num = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Lmte_sup = (HorizontalAlignment)32000;
+				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Padrao = (HorizontalAlignment)180;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.nome = "End / Quantidade Periférico " + Conversion.Str(num + 1);
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.Lmte_inf = 0;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.Lmte_sup = 255;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.Valor = 0;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.Lmte_inf = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.Lmte_sup = (HorizontalAlignment)255;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.Valor = (HorizontalAlignment)0;
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.nome = "Periférico " + Conversion.Str(num + 1);
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.Numero_itens = 19;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.Indice_padrao = 0;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.Numero_itens = (HorizontalAlignment)19;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.Indice_padrao = (HorizontalAlignment)0;
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.itens[0] = "Periferico Desabilitado";
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.itens[1] = "Ictel GC420";
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.itens[2] = "Leitura de Vazão Interna";
@@ -6619,50 +6619,50 @@ namespace iS800
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.itens[16] = "Inversor SCHNEIDER - Altivar71";
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.itens[17] = "Multimedidor SCHNEIDER - PM1200";
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.itens[18] = "STEMAC - ST2160";
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[0] = 48;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[1] = 49;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[2] = 50;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[3] = 51;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[4] = 52;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[5] = 53;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[6] = 54;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[7] = 55;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[8] = 56;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[9] = 57;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[10] = 58;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[11] = 59;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[12] = 60;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[13] = 61;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[14] = 62;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[15] = 63;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[16] = 64;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[17] = 65;
-					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[18] = 66;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[0] = (HorizontalAlignment)48;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[1] = (HorizontalAlignment)49;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[2] = (HorizontalAlignment)50;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[3] = (HorizontalAlignment)51;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[4] = (HorizontalAlignment)52;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[5] = (HorizontalAlignment)53;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[6] = (HorizontalAlignment)54;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[7] = (HorizontalAlignment)55;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[8] = (HorizontalAlignment)56;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[9] = (HorizontalAlignment)57;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[10] = (HorizontalAlignment)58;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[11] = (HorizontalAlignment)59;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[12] = (HorizontalAlignment)60;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[13] = (HorizontalAlignment)61;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[14] = (HorizontalAlignment)62;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[15] = (HorizontalAlignment)63;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[16] = (HorizontalAlignment)64;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[17] = (HorizontalAlignment)65;
+					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].Equipamento.valores[18] = (HorizontalAlignment)66;
 					num++;
 				}
 				while (num <= 3);
 				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.nome = "Modo Repetição";
-				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Numero_itens = 2;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Indice_padrao = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.valores[0] = 0;
-				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.valores[1] = 21856;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Numero_itens = (HorizontalAlignment)2;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Indice_padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.valores[0] = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.valores[1] = (HorizontalAlignment)21856;
 				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.itens[0] = "Função Desabilitada";
 				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.itens[1] = "Repetidora Direta";
 				RT_geral.RT_820_200_BD.repetidora.End_repetidora.nome = "Endereço Repetidora";
-				RT_geral.RT_820_200_BD.repetidora.End_repetidora.Padrao = 1;
-				RT_geral.RT_820_200_BD.repetidora.End_repetidora.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.repetidora.End_repetidora.Lmte_sup = 200;
+				RT_geral.RT_820_200_BD.repetidora.End_repetidora.Padrao = (HorizontalAlignment)1;
+				RT_geral.RT_820_200_BD.repetidora.End_repetidora.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.repetidora.End_repetidora.Lmte_sup = (HorizontalAlignment)200;
 				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.nome = "Número de Repetidoras";
-				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Padrao = 0;
-				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Lmte_inf = 0;
-				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Lmte_sup = 50;
-				num = 0;
+				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Padrao = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Lmte_inf = (HorizontalAlignment)0;
+				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Lmte_sup = (HorizontalAlignment)50;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].nome = "Endereço da Repetidora " + Conversion.Str(num + 1);
-					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Padrao = 0;
-					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Lmte_inf = 0;
-					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Lmte_sup = 200;
+					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Padrao = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Lmte_inf = (HorizontalAlignment)0;
+					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].Lmte_sup = (HorizontalAlignment)200;
 					num++;
 				}
 				while (num <= 49);
@@ -6688,7 +6688,7 @@ namespace iS800
 			RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.ValorPadrao();
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.IndicePadrao();
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.IndicePadrao();
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -6707,7 +6707,7 @@ namespace iS800
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.ValorPadrao();
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.ValorPadrao();
 				RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.ValorPadrao();
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.setpoint_horario[num].Hora.ValorPadrao();
@@ -6741,7 +6741,7 @@ namespace iS800
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.ValorPadrao();
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.ValorPadrao();
 				RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.ValorPadrao();
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[num].End_Quant.ValorPadrao();
@@ -6752,7 +6752,7 @@ namespace iS800
 				RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.IndicePadrao();
 				RT_geral.RT_820_200_BD.repetidora.End_repetidora.ValorPadrao();
 				RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.ValorPadrao();
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[num].ValorPadrao();
@@ -6773,7 +6773,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = 2;
+					num = (HorizontalAlignment)2;
 					string text = "Geral";
 					this.TextBox_versao_820.Text = Conversions.ToString(RT_geral.RT_820_200_BD.firmware.Versao.Valor);
 					this.TextBox_build_820.Text = Conversions.ToString(RT_geral.RT_820_200_BD.firmware.Build.Valor);
@@ -6787,11 +6787,11 @@ namespace iS800
 					this.NumericUpDown_intervalo_filtro_820.Value = new decimal(RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Valor);
 					this.NumericUpDown_tamanho_filtro_820.Value = new decimal(RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Valor);
 					text = "Controle";
-					if (RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor == 0)
+					if (RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor == (DialogResult)0)
 					{
 						this.checkbox_habilita_controle.Checked = false;
 					}
-					else if (RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor == 21921)
+					else if (RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor == (DialogResult)21921)
 					{
 						this.checkbox_habilita_controle.Checked = true;
 					}
@@ -6799,7 +6799,7 @@ namespace iS800
 					this.cb_Protecao.SelectedIndex = RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Indice;
 					this.cb_Controle.SelectedIndex = RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Indice;
 					text = "ED";
-					int num2 = 0;
+					int num2 = (HorizontalAlignment)0;
 					do
 					{
 						string value = RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasMenu[RT_geral.RT_820_200_BD.cfg_geral.entradas[num2].Indice];
@@ -6826,19 +6826,19 @@ namespace iS800
 					int num6 = RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora10.Value = new decimal(num3);
 					this.sph_minuto10.Value = new decimal(num4);
@@ -6851,19 +6851,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora11.Value = new decimal(num3);
 					this.sph_minuto11.Value = new decimal(num4);
@@ -6876,19 +6876,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora20.Value = new decimal(num3);
 					this.sph_minuto20.Value = new decimal(num4);
@@ -6901,19 +6901,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora21.Value = new decimal(num3);
 					this.sph_minuto21.Value = new decimal(num4);
@@ -6926,19 +6926,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora30.Value = new decimal(num3);
 					this.sph_minuto30.Value = new decimal(num4);
@@ -6951,19 +6951,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora31.Value = new decimal(num3);
 					this.sph_minuto31.Value = new decimal(num4);
@@ -6976,19 +6976,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora40.Value = new decimal(num3);
 					this.sph_minuto40.Value = new decimal(num4);
@@ -7001,19 +7001,19 @@ namespace iS800
 					num6 = RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo.Valor;
 					if (num3 > 23)
 					{
-						num3 = 23;
+						num3 = (HorizontalAlignment)23;
 					}
 					if (num4 > 59)
 					{
-						num4 = 59;
+						num4 = (HorizontalAlignment)59;
 					}
 					if (num5 > 4000)
 					{
-						num5 = 4000;
+						num5 = (HorizontalAlignment)4000;
 					}
 					if (num6 > 4000)
 					{
-						num6 = 4000;
+						num6 = (HorizontalAlignment)4000;
 					}
 					this.sph_hora41.Value = new decimal(num3);
 					this.sph_minuto41.Value = new decimal(num4);
@@ -7046,7 +7046,7 @@ namespace iS800
 					this.nud_parada3.Value = new decimal(RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Valor);
 					this.nud_parada4.Value = new decimal(RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Valor);
 					text = "Periféricos";
-					num2 = 0;
+					num2 = (HorizontalAlignment)0;
 					do
 					{
 						string value = RT_geral.RT_820_DataGrigViewPerifericosColunas[0].LinhasMenu[RT_geral.RT_820_200_BD.cfg_geral.perifericos[num2].Equipamento.Indice];
@@ -7059,7 +7059,7 @@ namespace iS800
 					this.cb_ModoRepetidora.SelectedIndex = RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Indice;
 					this.NumericUpDown_end_rep_820.Value = new decimal(RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor);
 					this.NumericUpDown_num_est_rep_820.Value = new decimal(RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor);
-					num2 = 0;
+					num2 = (HorizontalAlignment)0;
 					do
 					{
 						this.DataGridView_end_rep_RT820.Rows[num2].Cells[1].Value = RT_geral.RT_820_200_BD.repetidora.Repetidoras[num2].Valor;
@@ -7078,7 +7078,7 @@ namespace iS800
 					num7 = -1;
 										IL_1353:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num7 == 0))
+				catch when (endfilter(obj is Exception & num != 0 & num7 == (DialogResult)0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_133D;
@@ -7146,13 +7146,13 @@ namespace iS800
 		public void AtualizaMsgTela_RT_820(string texto, int cor)
 		{
 			this.ToolStripTextBox_RT_820_Msg.Text = texto;
-			if (cor == 0)
+			if (cor == (DialogResult)0)
 			{
 				this.ToolStripTextBox_RT_820_Msg.ForeColor = Color.Blue;
 			}
-			else if (cor == 1)
+			else if (cor == (DialogResult)1)
 			{
-				this.ToolStripProgressBar_RT_820.Value = 0;
+				this.ToolStripProgressBar_RT_820.Value = (HorizontalAlignment)0;
 				this.ToolStripTextBox_RT_820_Msg.ForeColor = Color.Red;
 			}
 			else
@@ -7164,10 +7164,10 @@ namespace iS800
 		// Token: 0x06000796 RID: 1942 RVA: 0x002AFA54 File Offset: 0x002ADE54
 		public void InicializaBarraProgressoTela_RT_820(int num_passos)
 		{
-			this.ToolStripProgressBar_RT_820.Minimum = 0;
-			this.ToolStripProgressBar_RT_820.Maximum = 100;
+			this.ToolStripProgressBar_RT_820.Minimum = (HorizontalAlignment)0;
+			this.ToolStripProgressBar_RT_820.Maximum = (HorizontalAlignment)100;
 			this.ToolStripProgressBar_RT_820.Step = checked((int)Math.Round(unchecked(100.0 / (double)num_passos + 1.0)));
-			this.ToolStripProgressBar_RT_820.Value = 0;
+			this.ToolStripProgressBar_RT_820.Value = (HorizontalAlignment)0;
 			this.ToolStripProgressBar_RT_820.BackColor = Color.LightGray;
 		}
 
@@ -7176,7 +7176,7 @@ namespace iS800
 		{
 			this.Timer_limpa_MSG_820.Enabled = false;
 			this.AtualizaMsgTela_RT_820("", 0);
-			this.ToolStripProgressBar_RT_820.Value = 0;
+			this.ToolStripProgressBar_RT_820.Value = (HorizontalAlignment)0;
 			this.ToolStripButton_RT_820_Upload.Enabled = true;
 			this.ToolStripButton_RT_820_Download.Enabled = true;
 			this.ToolStripButton_RT_820_Abrir.Enabled = true;
@@ -7200,7 +7200,7 @@ namespace iS800
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.repetidora.Num_repetidoras, true);
 			sender = numericUpDown;
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
 			checked
 			{
@@ -7270,7 +7270,7 @@ namespace iS800
 						break;
 					}
 				}
-				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= 49; i++)
+				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= (HorizontalAlignment)49; i++)
 				{
 					switch (i)
 					{
@@ -7285,7 +7285,7 @@ namespace iS800
 					case 8:
 					case 9:
 						this.DataGridView_end_rep_RT820.Rows[i].Cells[1].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i].Cells[1].Value = 0;
+						this.DataGridView_end_rep_RT820.Rows[i].Cells[1].Value = (HorizontalAlignment)0;
 						break;
 					case 10:
 					case 11:
@@ -7298,7 +7298,7 @@ namespace iS800
 					case 18:
 					case 19:
 						this.DataGridView_end_rep_RT820.Rows[i - 10].Cells[3].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 10].Cells[3].Value = 0;
+						this.DataGridView_end_rep_RT820.Rows[i - 10].Cells[3].Value = (HorizontalAlignment)0;
 						break;
 					case 20:
 					case 21:
@@ -7311,7 +7311,7 @@ namespace iS800
 					case 28:
 					case 29:
 						this.DataGridView_end_rep_RT820.Rows[i - 20].Cells[5].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 20].Cells[5].Value = 0;
+						this.DataGridView_end_rep_RT820.Rows[i - 20].Cells[5].Value = (HorizontalAlignment)0;
 						break;
 					case 30:
 					case 31:
@@ -7324,7 +7324,7 @@ namespace iS800
 					case 38:
 					case 39:
 						this.DataGridView_end_rep_RT820.Rows[i - 30].Cells[7].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 30].Cells[7].Value = 0;
+						this.DataGridView_end_rep_RT820.Rows[i - 30].Cells[7].Value = (HorizontalAlignment)0;
 						break;
 					case 40:
 					case 41:
@@ -7337,7 +7337,7 @@ namespace iS800
 					case 48:
 					case 49:
 						this.DataGridView_end_rep_RT820.Rows[i - 40].Cells[9].ReadOnly = true;
-						this.DataGridView_end_rep_RT820.Rows[i - 40].Cells[9].Value = 0;
+						this.DataGridView_end_rep_RT820.Rows[i - 40].Cells[9].Value = (HorizontalAlignment)0;
 						break;
 					}
 				}
@@ -7373,7 +7373,7 @@ namespace iS800
 		private void CarregaComboBoxBaudRate(ref ComboBox cb, ref RT_geral.Combo_ictel dado)
 		{
 			cb.Items.Clear();
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = dado.Numero_itens - 1;
@@ -7389,7 +7389,7 @@ namespace iS800
 		{
 			dado.Items.Clear();
 			dado.Items.Add("Leitura Desabilitada");
-			int num = 1;
+			int num = (HorizontalAlignment)1;
 			checked
 			{
 				do
@@ -7398,7 +7398,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 16);
-				num = 1;
+				num = (HorizontalAlignment)1;
 				do
 				{
 					dado.Items.Add("Leitura Vazão ED " + Strings.Format(num, "0#"));
@@ -7406,9 +7406,9 @@ namespace iS800
 					num++;
 				}
 				while (num <= 8);
-				if (expIO == 21857)
+				if (expIO == (DialogResult)21857)
 				{
-					num = 9;
+					num = (HorizontalAlignment)9;
 					do
 					{
 						dado.Items.Add("Leitura Vazão ED " + Strings.Format(num, "0#"));
@@ -7470,27 +7470,27 @@ namespace iS800
 			{
 				if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
 				{
-					RT_geral.RT_820_BD.HabExpIO.Valor = 21857;
-					this.DataGridView_RT820_ED.Height = 376;
-					this.GroupBox_ED_820.Height = 417;
+					RT_geral.RT_820_BD.HabExpIO.Valor = (HorizontalAlignment)21857;
+					this.DataGridView_RT820_ED.Height = (HorizontalAlignment)376;
+					this.GroupBox_ED_820.Height = (HorizontalAlignment)417;
 				}
 				else
 				{
-					RT_geral.RT_820_BD.HabExpIO.Valor = 21856;
-					this.DataGridView_RT820_ED.Height = 200;
-					this.GroupBox_ED_820.Height = 241;
-					int num = 8;
+					RT_geral.RT_820_BD.HabExpIO.Valor = (HorizontalAlignment)21856;
+					this.DataGridView_RT820_ED.Height = (HorizontalAlignment)200;
+					this.GroupBox_ED_820.Height = (HorizontalAlignment)241;
+					int num = (HorizontalAlignment)8;
 					do
 					{
 						RT_geral.RT_820_BD.config_ED[num].Valor = RT_geral.RT_820_DataGrigViewEDColunas[0].LinhasValor[0];
-						RT_geral.RT_820_BD.config_ED[num].Indice = 0;
+						RT_geral.RT_820_BD.config_ED[num].Indice = (HorizontalAlignment)0;
 						num++;
 					}
 					while (num <= 15);
 				}
 				if (!this.bloqueio_IO)
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					do
 					{
 						RT_geral.AcertaIndexCombo_Ctrl(ref RT_geral.RT_820_BD.ctrl_acionamento[num], RT_geral.RT_820_DataGrigViewProcessosColunas[0], "SD", RT_geral.RT_820_BD.HabExpIO.Valor);
@@ -7585,14 +7585,14 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_periferico_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_modelo", false) == 0)
+				if (Operators.CompareString(dataPropertyName, "Col_modelo", false) == (DialogResult)0)
 				{
 					string text = Conversions.ToString(this.DataGridView_periferico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					int num2 = RT_geral.RT_820_DataGrigViewPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu - 1;
 					for (int i = num; i <= num2; i++)
 					{
-						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == 0)
+						if (Operators.CompareString(RT_geral.RT_820_DataGrigViewPerifericosColunas[e.ColumnIndex].LinhasMenu[i], text, false) == (DialogResult)0)
 						{
 							RT_geral.RT_820_200_BD.cfg_geral.perifericos[e.RowIndex].Equipamento.Valor = RT_geral.RT_820_DataGrigViewPerifericosColunas[e.ColumnIndex].LinhasValor[i];
 							RT_geral.RT_820_200_BD.cfg_geral.perifericos[e.RowIndex].Equipamento.Indice = i;
@@ -7600,7 +7600,7 @@ namespace iS800
 						}
 					}
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end", false) == (DialogResult)0)
 				{
 					this.DataGridView_periferico_RT820.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_periferico_RT820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_200_BD.cfg_geral.perifericos[e.RowIndex].End_Quant.Valor = Conversions.ToInteger(this.DataGridView_periferico_RT820.Rows[e.RowIndex].Cells[1].Value);
@@ -7612,7 +7612,7 @@ namespace iS800
 		private void DataGridView_periferico_RT820_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
 		{
 			string dataPropertyName = this.DataGridView_periferico_RT820.Columns[e.ColumnIndex].DataPropertyName;
-			if (Operators.CompareString(dataPropertyName, "Col_end", false) == 0)
+			if (Operators.CompareString(dataPropertyName, "Col_end", false) == (DialogResult)0)
 			{
 				RT_geral.RT_820_200_BD.cfg_geral.perifericos[e.RowIndex].End_Quant.Valor = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue))));
 				DataGridView dataGridView = (DataGridView)sender;
@@ -7655,24 +7655,24 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_RT820_ED.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == 0)
+				if (Operators.CompareString(dataPropertyName, "Col_Entrada", false) == (DialogResult)0)
 				{
 					string text = Conversions.ToString(this.DataGridView_RT820_ED.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
 					int num = RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].Numero_itens - 1;
-					int num2 = 0;
+					int num2 = (HorizontalAlignment)0;
 					int num3 = num;
 					int i;
 					for (i = num2; i <= num3; i++)
 					{
 						string text2 = RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].itens[i];
-						if (Operators.CompareString(text, text2, false) == 0)
+						if (Operators.CompareString(text, text2, false) == (DialogResult)0)
 						{
 							RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].Valor = RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].valores[i];
 							RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].Indice = i;
 							break;
 						}
 					}
-					i = 0;
+					i = (HorizontalAlignment)0;
 					do
 					{
 						if (e.RowIndex != i && RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].Valor != RT_geral.RT_820_200_BD.cfg_geral.entradas[i].valores[0] && RT_geral.RT_820_200_BD.cfg_geral.entradas[e.RowIndex].Valor == RT_geral.RT_820_200_BD.cfg_geral.entradas[i].Valor)
@@ -7701,35 +7701,35 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_end_rep_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == 0)
+				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == (DialogResult)0)
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[0 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_200_BD.repetidora.Repetidoras[0 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == (DialogResult)0)
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[10 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_200_BD.repetidora.Repetidoras[10 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == (DialogResult)0)
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[20 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_200_BD.repetidora.Repetidoras[20 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == (DialogResult)0)
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[30 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
 					RT_geral.Limite_ok_celula(ref dataGridView, ref RT_geral.RT_820_200_BD.repetidora.Repetidoras[30 + e.RowIndex], e, true);
 					sender = dataGridView;
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == (DialogResult)0)
 				{
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[40 + e.RowIndex].Valor = (int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(e.FormattedValue)));
 					DataGridView dataGridView = (DataGridView)sender;
@@ -7745,33 +7745,33 @@ namespace iS800
 			string dataPropertyName = this.DataGridView_end_rep_RT820.Columns[e.ColumnIndex].DataPropertyName;
 			checked
 			{
-				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == 0)
+				if (Operators.CompareString(dataPropertyName, "Col_end_1", false) == (DialogResult)0)
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[1].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[1].Value));
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[1].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_2", false) == (DialogResult)0)
 				{
-					int num = 10;
+					int num = (HorizontalAlignment)10;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[3].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[3].Value));
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[3].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_3", false) == (DialogResult)0)
 				{
-					int num = 20;
+					int num = (HorizontalAlignment)20;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[5].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[5].Value));
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[5].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_4", false) == (DialogResult)0)
 				{
-					int num = 30;
+					int num = (HorizontalAlignment)30;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[7].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[7].Value));
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[7].Value);
 				}
-				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == 0)
+				else if (Operators.CompareString(dataPropertyName, "Col_end_5", false) == (DialogResult)0)
 				{
-					int num = 40;
+					int num = (HorizontalAlignment)40;
 					this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[9].Value = Conversion.Val(RuntimeHelpers.GetObjectValue(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[9].Value));
 					RT_geral.RT_820_200_BD.repetidora.Repetidoras[e.RowIndex + num].Valor = Conversions.ToInteger(this.DataGridView_end_rep_RT820.Rows[e.RowIndex].Cells[9].Value);
 				}
@@ -7817,19 +7817,19 @@ namespace iS800
 								num3 = (int)Math.Round(Conversion.Val(text.Substring(num + 1)));
 								if (num3 > 59)
 								{
-									num3 = 0;
+									num3 = (HorizontalAlignment)0;
 								}
 							}
 							else
 							{
-								num3 = 0;
+								num3 = (HorizontalAlignment)0;
 							}
 							e.Value = Strings.Format(num2, "0#") + ":" + Strings.Format(num3, "0#");
 						}
 						else
 						{
 							e.Value = "00:00";
-							num3 = 0;
+							num3 = (HorizontalAlignment)0;
 						}
 						num3 = num2 * 60 + num3;
 					}
@@ -7853,7 +7853,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = 2;
+					num = (HorizontalAlignment)2;
 					int[] array = new int[651];
 					this.AtivaEfeitoOnChangeValue();
 					this.ToolStripButton_RT_820_Abrir.Enabled = false;
@@ -7863,7 +7863,7 @@ namespace iS800
 					this.ToolStripButton_RT_820_Upload.Enabled = false;
 					this.OpenFileDialog_RT_820.Filter = "Arquivo de configuração de equipamento|*.Cfg820_200";
 					this.OpenFileDialog_RT_820.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_820.ShowDialog() == 1)
+					if (this.OpenFileDialog_RT_820.ShowDialog() == (DialogResult)1)
 					{
 						if (Operators.CompareString(this.OpenFileDialog_RT_820.FileName, "", false) != 0)
 						{
@@ -7907,7 +7907,7 @@ namespace iS800
 								RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Valor = iniFile.ReadInteger("ENTRADA_ANALOGICA", "INTERVALO", 0);
 								RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Valor = iniFile.ReadInteger("ENTRADA_ANALOGICA", "TAMANHO_FILTRO", 0);
 								this.InicializaEStruturasVariaveis_RT820();
-								int num2 = 0;
+								int num2 = (HorizontalAlignment)0;
 								do
 								{
 									string text = string.Format("ED{0}", num2 + 1);
@@ -7916,7 +7916,7 @@ namespace iS800
 									num2++;
 								}
 								while (num2 <= 7);
-								num2 = 0;
+								num2 = (HorizontalAlignment)0;
 								do
 								{
 									string text = string.Format("PERIFERICO{0}", num2 + 1);
@@ -7930,7 +7930,7 @@ namespace iS800
 								Linha_RT.Atualiza_estrutura_combo(ref RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora, RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Valor);
 								RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor = iniFile.ReadInteger("REPETIDORA", "ENDERECO", 0);
 								RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor = iniFile.ReadInteger("REPETIDORA", "NUMERO_REPETIDORAS", 0);
-								num2 = 0;
+								num2 = (HorizontalAlignment)0;
 								do
 								{
 									string text = string.Format("RPT{0}", num2 + 1);
@@ -7948,7 +7948,7 @@ namespace iS800
 								RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Valor = iniFile.ReadInteger("SETPOINT", "M4_BAIXO", 0);
 								RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Valor = iniFile.ReadInteger("SETPOINT", "PROT_DESLIGA", 0);
 								RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Valor = iniFile.ReadInteger("SETPOINT", "PROT_LIGA", 0);
-								num2 = 0;
+								num2 = (HorizontalAlignment)0;
 								do
 								{
 									string text = string.Format("SETPOINT_HORARIO_{0}", num2 + 1);
@@ -8012,14 +8012,14 @@ namespace iS800
 					}
 					goto IL_F2F;
 					IL_ECA:
-					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", (MsgBoxStyle)32, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG_820.Enabled = true;
 					goto IL_F2F;
 					IL_EEA:
 					num3 = -1;
 										IL_F00:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
+				catch when (endfilter(obj is Exception & num != 0 & num3 == (DialogResult)0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_EEA;
@@ -8044,7 +8044,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = 2;
+					num = (HorizontalAlignment)2;
 					int[] array = new int[651];
 					this.AtivaEfeitoOnChangeValue();
 					this.ToolStripButton_RT_820_Abrir.Enabled = false;
@@ -8054,7 +8054,7 @@ namespace iS800
 					this.ToolStripButton_RT_820_Upload.Enabled = false;
 					this.SaveFileDialog_RT_820.Filter = "Arquivo de configuração de equipamento|*.Cfg820_200";
 					this.SaveFileDialog_RT_820.InitialDirectory = Linha_RT.diretorio;
-					if (this.SaveFileDialog_RT_820.ShowDialog() == 1)
+					if (this.SaveFileDialog_RT_820.ShowDialog() == (DialogResult)1)
 					{
 						if (Operators.CompareString(this.SaveFileDialog_RT_820.FileName, "", false) != 0)
 						{
@@ -8107,7 +8107,7 @@ namespace iS800
 							this.ToolStripProgressBar_RT_820.PerformStep();
 							Application.DoEvents();
 							iniFileWriteFast.WriteSection("ENTRADA_DIGITAL");
-							int i = 0;
+							int i = (HorizontalAlignment)0;
 							do
 							{
 								string text = string.Format("ED{0}", i + 1);
@@ -8118,7 +8118,7 @@ namespace iS800
 							iniFileWriteFast.LineSpace();
 							this.ToolStripProgressBar_RT_820.PerformStep();
 							Application.DoEvents();
-							i = 0;
+							i = (HorizontalAlignment)0;
 							do
 							{
 								string text = string.Format("PERIFERICO{0}", i + 1);
@@ -8194,7 +8194,7 @@ namespace iS800
 							iniFileWriteFast.LineSpace();
 							this.ToolStripProgressBar_RT_820.PerformStep();
 							Application.DoEvents();
-							i = 0;
+							i = (HorizontalAlignment)0;
 							do
 							{
 								string text = string.Format("SETPOINT_HORARIO_{0}", i + 1);
@@ -8213,7 +8213,7 @@ namespace iS800
 							iniFileWriteFast.WriteKey("MODO_REPETIDORA", RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Valor);
 							iniFileWriteFast.WriteKey("ENDERECO", RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor);
 							iniFileWriteFast.WriteKey("NUMERO_REPETIDORAS", RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor);
-							int num2 = 0;
+							int num2 = (HorizontalAlignment)0;
 							int num3 = RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor - 1;
 							for (i = num2; i <= num3; i++)
 							{
@@ -8250,14 +8250,14 @@ namespace iS800
 					}
 					goto IL_E5C;
 					IL_DF7:
-					Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível gravar os dados", (MsgBoxStyle)32, "Atenção - Erro I/0");
 					this.Timer_limpa_MSG_820.Enabled = true;
 					goto IL_E5C;
 					IL_E17:
 					num4 = -1;
 										IL_E2D:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
+				catch when (endfilter(obj is Exception & num != 0 & num4 == (DialogResult)0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_E17;
@@ -8297,7 +8297,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 			this.Libera_acoes_RT820();
 		}
@@ -8327,7 +8327,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 		}
 
@@ -8625,9 +8625,9 @@ namespace iS800
 			this.PrintDialog1.AllowSelection = true;
 			this.PrintDialog1.Document = this.PrintDocument1;
 			this.PrintPreviewDialog1.Document = this.PrintDocument1;
-			this.PrintDialog1.PrinterSettings.Copies = 1;
-			this.PrintDialog1.PrinterSettings.FromPage = 1;
-			this.PrintDialog1.PrinterSettings.ToPage = 1;
+			this.PrintDialog1.PrinterSettings.Copies = (HorizontalAlignment)1;
+			this.PrintDialog1.PrinterSettings.FromPage = (HorizontalAlignment)1;
+			this.PrintDialog1.PrinterSettings.ToPage = (HorizontalAlignment)1;
 			this.PrintDialog1.AllowCurrentPage = true;
 			this.PrintDialog1.ShowNetwork = true;
 			this.PrintDialog1.ShowDialog();
@@ -8638,9 +8638,9 @@ namespace iS800
 		private void DesenhaRelatorioRT820Pagina1(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -8705,7 +8705,7 @@ namespace iS800
 			TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda3 = new TabelaMeiaLinhaEsquerda(z.MarginBounds, z.Graphics, fonte2, cores, tabelaMeiaLinhaEsquerda2.GetNextLineAvailable(), 9, "Entrada Digital", true);
 			tabelaMeiaLinhaEsquerda3.EscreveTituloLinha(1, "ED", 0);
 			tabelaMeiaLinhaEsquerda3.EscreveTituloLinha(1, "Função", 90);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				string valor3;
@@ -8749,9 +8749,9 @@ namespace iS800
 		private void DesenhaRelatorioRT820Pagina2(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -8772,12 +8772,12 @@ namespace iS800
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Minuto", 240);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Alto", 350);
 			tabelaMeiaLinhaEsquerda.EscreveTituloLinha(1, "Baixo", 400);
-			int i = 0;
+			int i = (HorizontalAlignment)0;
 			checked
 			{
 				do
 				{
-					if (i % 2 == 0)
+					if (i % 2 == (DialogResult)0)
 					{
 						tabelaMeiaLinhaEsquerda.EscreveTituloLinha(2 + i, string.Format("Controle {0}", unchecked((double)i / 2.0 + 1.0)), 0);
 						tabelaMeiaLinhaEsquerda.EscreveValorLinha(2 + i, "1", 90);
@@ -8809,7 +8809,7 @@ namespace iS800
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Periférico", 0);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Modelo", 100);
 				tabelaMeiaLinhaDireita.EscreveTituloLinha(1, "Endereço", 300);
-				i = 0;
+				i = (HorizontalAlignment)0;
 				do
 				{
 					string text = string.Format("{0:D2}", i + 1);
@@ -8836,7 +8836,7 @@ namespace iS800
 				tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(1, "Modo Controle", 80);
 				tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(1, "Tempo Partida", 230);
 				tabelaMeiaLinhaEsquerda2.EscreveTituloLinha(1, "Tempo Parada", 350);
-				i = 0;
+				i = (HorizontalAlignment)0;
 				do
 				{
 					tabelaMeiaLinhaEsquerda2.EscreveValorLinha(i + 2, "Motor" + Conversion.Str(i + 1), 5);
@@ -8856,7 +8856,7 @@ namespace iS800
 				tabelaMeiaLinhaDireita3.EscreveTituloLinha(1, "Válvula", 0);
 				tabelaMeiaLinhaDireita3.EscreveTituloLinha(1, "Tempo Abertura", 80);
 				tabelaMeiaLinhaDireita3.EscreveTituloLinha(1, "Tempo Fechamento", 230);
-				i = 0;
+				i = (HorizontalAlignment)0;
 				do
 				{
 					tabelaMeiaLinhaDireita3.EscreveValorLinha(i + 2, "Válvula" + Conversion.Str(i + 1), 5);
@@ -8874,11 +8874,11 @@ namespace iS800
 				TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, tabelaMeiaLinhaDireita3.GetNextLineAvailable(), 1, "Repetidora", true);
 				string valor = "???";
 				int valor2 = RT_geral.RT_820_200_BD.cfg_geral.modo_repetidora.Valor;
-				if (valor2 == 0)
+				if (valor2 == (DialogResult)0)
 				{
 					valor = "Desabilitado";
 				}
-				else if (valor2 == 21856)
+				else if (valor2 == (DialogResult)21856)
 				{
 					valor = "Repetidora Direta";
 				}
@@ -8892,7 +8892,7 @@ namespace iS800
 					{
 						num2++;
 					}
-					int num3 = 1;
+					int num3 = (HorizontalAlignment)1;
 					int num4 = num2;
 					for (i = num3; i <= num4; i++)
 					{
@@ -8970,7 +8970,7 @@ namespace iS800
 		// Token: 0x060007D2 RID: 2002 RVA: 0x002B52D0 File Offset: 0x002B36D0
 		private void PrintDocument1_BeginPrint(object sender, PrintEventArgs e)
 		{
-			this.pagina_impressao = 1;
+			this.pagina_impressao = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x060007D3 RID: 2003 RVA: 0x002B52DC File Offset: 0x002B36DC
@@ -8999,12 +8999,12 @@ namespace iS800
 			if (!this.checkbox_habilita_controle.Checked)
 			{
 				this.cb_Protecao.Enabled = false;
-				RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor = 0;
+				RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor = (HorizontalAlignment)0;
 			}
 			else
 			{
 				this.cb_Protecao.Enabled = true;
-				RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor = 21921;
+				RT_geral.RT_820_200_BD.cfg_geral.nivel_fonte.Valor = (HorizontalAlignment)21921;
 			}
 		}
 
@@ -9552,15 +9552,15 @@ namespace iS800
 		// Token: 0x06000812 RID: 2066 RVA: 0x002B6B18 File Offset: 0x002B4F18
 		private void sph_ativa10_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 0;
+			object obj = (HorizontalAlignment)0;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9568,15 +9568,15 @@ namespace iS800
 		// Token: 0x06000813 RID: 2067 RVA: 0x002B6B98 File Offset: 0x002B4F98
 		private void sph_ativa11_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 1;
+			object obj = (HorizontalAlignment)1;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9584,15 +9584,15 @@ namespace iS800
 		// Token: 0x06000814 RID: 2068 RVA: 0x002B6C18 File Offset: 0x002B5018
 		private void sph_ativa20_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 2;
+			object obj = (HorizontalAlignment)2;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9600,15 +9600,15 @@ namespace iS800
 		// Token: 0x06000815 RID: 2069 RVA: 0x002B6C98 File Offset: 0x002B5098
 		private void sph_ativa21_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 3;
+			object obj = (HorizontalAlignment)3;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9616,15 +9616,15 @@ namespace iS800
 		// Token: 0x06000816 RID: 2070 RVA: 0x002B6D18 File Offset: 0x002B5118
 		private void sph_ativa30_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 4;
+			object obj = (HorizontalAlignment)4;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9632,15 +9632,15 @@ namespace iS800
 		// Token: 0x06000817 RID: 2071 RVA: 0x002B6D98 File Offset: 0x002B5198
 		private void sph_ativa31_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 5;
+			object obj = (HorizontalAlignment)5;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9648,15 +9648,15 @@ namespace iS800
 		// Token: 0x06000818 RID: 2072 RVA: 0x002B6E18 File Offset: 0x002B5218
 		private void sph_ativa40_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 6;
+			object obj = (HorizontalAlignment)6;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9664,15 +9664,15 @@ namespace iS800
 		// Token: 0x06000819 RID: 2073 RVA: 0x002B6E98 File Offset: 0x002B5298
 		private void sph_ativa41_CheckedChanged(object sender, EventArgs e)
 		{
-			object obj = 7;
+			object obj = (HorizontalAlignment)7;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
 			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
 			{
-				num |= 128;
+				num |= (HorizontalAlignment)128;
 			}
 			else
 			{
-				num &= 127;
+				num &= (HorizontalAlignment)127;
 			}
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = num;
 		}
@@ -9680,7 +9680,7 @@ namespace iS800
 		// Token: 0x0600081A RID: 2074 RVA: 0x002B6F18 File Offset: 0x002B5318
 		private void sph_hora10_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 0;
+			object obj = (HorizontalAlignment)0;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9688,7 +9688,7 @@ namespace iS800
 		// Token: 0x0600081B RID: 2075 RVA: 0x002B6F98 File Offset: 0x002B5398
 		private void sph_hora11_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 1;
+			object obj = (HorizontalAlignment)1;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9696,7 +9696,7 @@ namespace iS800
 		// Token: 0x0600081C RID: 2076 RVA: 0x002B7018 File Offset: 0x002B5418
 		private void sph_hora20_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 2;
+			object obj = (HorizontalAlignment)2;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9704,7 +9704,7 @@ namespace iS800
 		// Token: 0x0600081D RID: 2077 RVA: 0x002B7098 File Offset: 0x002B5498
 		private void sph_hora21_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 3;
+			object obj = (HorizontalAlignment)3;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9712,7 +9712,7 @@ namespace iS800
 		// Token: 0x0600081E RID: 2078 RVA: 0x002B7118 File Offset: 0x002B5518
 		private void sph_hora30_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 4;
+			object obj = (HorizontalAlignment)4;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9720,7 +9720,7 @@ namespace iS800
 		// Token: 0x0600081F RID: 2079 RVA: 0x002B7198 File Offset: 0x002B5598
 		private void sph_hora31_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 5;
+			object obj = (HorizontalAlignment)5;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9728,7 +9728,7 @@ namespace iS800
 		// Token: 0x06000820 RID: 2080 RVA: 0x002B7218 File Offset: 0x002B5618
 		private void sph_hora40_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 6;
+			object obj = (HorizontalAlignment)6;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}
@@ -9736,7 +9736,7 @@ namespace iS800
 		// Token: 0x06000821 RID: 2081 RVA: 0x002B7298 File Offset: 0x002B5698
 		private void sph_hora41_ValueChanged(object sender, EventArgs e)
 		{
-			object obj = 7;
+			object obj = (HorizontalAlignment)7;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
 			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
 		}

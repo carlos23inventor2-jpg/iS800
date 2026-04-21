@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x02000084 RID: 132
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -250,7 +250,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(335, 87);
 			grupo_ctrl2.Size = size;
-			this.Grupo_ctrl.TabIndex = 8;
+			this.Grupo_ctrl.TabIndex = (HorizontalAlignment)8;
 			this.Grupo_ctrl.TabStop = false;
 			this.Grupo_ctrl.Text = "Comandos e Status";
 			global::System.Windows.Forms.Control esc_conf_md_ = this.Esc_conf_md_202;
@@ -260,7 +260,7 @@
 			global::System.Windows.Forms.Control esc_conf_md_2 = this.Esc_conf_md_202;
 			size = new size(109, 28);
 			esc_conf_md_2.Size = size;
-			this.Esc_conf_md_202.TabIndex = 1;
+			this.Esc_conf_md_202.TabIndex = (HorizontalAlignment)1;
 			this.Esc_conf_md_202.Text = "Salvar config.";
 			this.Esc_conf_md_202.UseVisualStyleBackColor = true;
 			this.Box_Msg.BackColor = global::System.Drawing.Color.Beige;
@@ -272,7 +272,7 @@
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new size(293, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = 2;
+			this.Box_Msg.TabIndex = (HorizontalAlignment)2;
 			this.Box_Msg.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_202;
 			location = new location(39, 45);
@@ -281,7 +281,7 @@
 			global::System.Windows.Forms.Control ler_conf_md_2 = this.Ler_conf_md_202;
 			size = new size(109, 28);
 			ler_conf_md_2.Size = size;
-			this.Ler_conf_md_202.TabIndex = 0;
+			this.Ler_conf_md_202.TabIndex = (HorizontalAlignment)0;
 			this.Ler_conf_md_202.Text = "Ler configuração";
 			this.Ler_conf_md_202.UseVisualStyleBackColor = true;
 			this.Grupo_motores_valvulas.Controls.Add(this.GroupBox2);
@@ -304,7 +304,7 @@
 			global::System.Windows.Forms.Control grupo_motores_valvulas2 = this.Grupo_motores_valvulas;
 			size = new size(536, 314);
 			grupo_motores_valvulas2.Size = size;
-			this.Grupo_motores_valvulas.TabIndex = 7;
+			this.Grupo_motores_valvulas.TabIndex = (HorizontalAlignment)7;
 			this.Grupo_motores_valvulas.TabStop = false;
 			this.Grupo_motores_valvulas.Text = "Motores e Válvulas";
 			this.GroupBox2.Controls.Add(this.Label10);
@@ -328,7 +328,7 @@
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox2;
 			size = new size(250, 141);
 			groupBox2.Size = size;
-			this.GroupBox2.TabIndex = 32;
+			this.GroupBox2.TabIndex = (HorizontalAlignment)32;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Válvulas";
 			this.Label10.AutoSize = true;
@@ -339,7 +339,7 @@
 			global::System.Windows.Forms.Control label2 = this.Label10;
 			size = new size(90, 13);
 			label2.Size = size;
-			this.Label10.TabIndex = 27;
+			this.Label10.TabIndex = (HorizontalAlignment)27;
 			this.Label10.Text = "T. fechamento (s)";
 			this.Label9.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label9;
@@ -349,7 +349,7 @@
 			global::System.Windows.Forms.Control label4 = this.Label9;
 			size = new size(73, 13);
 			label4.Size = size;
-			this.Label9.TabIndex = 27;
+			this.Label9.TabIndex = (HorizontalAlignment)27;
 			this.Label9.Text = "T. abertura (s)";
 			this.Label5.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label5;
@@ -359,7 +359,7 @@
 			global::System.Windows.Forms.Control label6 = this.Label5;
 			size = new size(37, 13);
 			label6.Size = size;
-			this.Label5.TabIndex = 26;
+			this.Label5.TabIndex = (HorizontalAlignment)26;
 			this.Label5.Text = "Val 4 :";
 			this.Label6.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label6;
@@ -369,7 +369,7 @@
 			global::System.Windows.Forms.Control label8 = this.Label6;
 			size = new size(37, 13);
 			label8.Size = size;
-			this.Label6.TabIndex = 26;
+			this.Label6.TabIndex = (HorizontalAlignment)26;
 			this.Label6.Text = "Val 3 :";
 			this.Label7.AutoSize = true;
 			global::System.Windows.Forms.Control label9 = this.Label7;
@@ -379,7 +379,7 @@
 			global::System.Windows.Forms.Control label10 = this.Label7;
 			size = new size(37, 13);
 			label10.Size = size;
-			this.Label7.TabIndex = 26;
+			this.Label7.TabIndex = (HorizontalAlignment)26;
 			this.Label7.Text = "Val 2 :";
 			global::System.Windows.Forms.Control tempo_abertura_v = this.Tempo_abertura_v4;
 			location = new location(67, 110);
@@ -398,7 +398,7 @@
 			global::System.Windows.Forms.Control tempo_abertura_v3 = this.Tempo_abertura_v4;
 			size = new size(70, 20);
 			tempo_abertura_v3.Size = size;
-			this.Tempo_abertura_v4.TabIndex = 24;
+			this.Tempo_abertura_v4.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_abertura_v4.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_abertura_v4 = this.Tempo_abertura_v3;
 			location = new location(67, 85);
@@ -416,7 +416,7 @@
 			global::System.Windows.Forms.Control tempo_abertura_v6 = this.Tempo_abertura_v3;
 			size = new size(70, 20);
 			tempo_abertura_v6.Size = size;
-			this.Tempo_abertura_v3.TabIndex = 24;
+			this.Tempo_abertura_v3.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_abertura_v3.TextAlign = HorizontalAlignment.Center;
 			this.Label8.AutoSize = true;
 			global::System.Windows.Forms.Control label11 = this.Label8;
@@ -426,7 +426,7 @@
 			global::System.Windows.Forms.Control label12 = this.Label8;
 			size = new size(37, 13);
 			label12.Size = size;
-			this.Label8.TabIndex = 26;
+			this.Label8.TabIndex = (HorizontalAlignment)26;
 			this.Label8.Text = "Val 1 :";
 			global::System.Windows.Forms.Control tempo_fechamento_v = this.Tempo_fechamento_v4;
 			location = new location(161, 110);
@@ -444,7 +444,7 @@
 			global::System.Windows.Forms.Control tempo_fechamento_v3 = this.Tempo_fechamento_v4;
 			size = new size(70, 20);
 			tempo_fechamento_v3.Size = size;
-			this.Tempo_fechamento_v4.TabIndex = 25;
+			this.Tempo_fechamento_v4.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_fechamento_v4.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_abertura_v7 = this.Tempo_abertura_v2;
 			location = new location(67, 60);
@@ -462,7 +462,7 @@
 			global::System.Windows.Forms.Control tempo_abertura_v9 = this.Tempo_abertura_v2;
 			size = new size(70, 20);
 			tempo_abertura_v9.Size = size;
-			this.Tempo_abertura_v2.TabIndex = 24;
+			this.Tempo_abertura_v2.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_abertura_v2.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_fechamento_v4 = this.Tempo_fechamento_v3;
 			location = new location(160, 85);
@@ -480,7 +480,7 @@
 			global::System.Windows.Forms.Control tempo_fechamento_v6 = this.Tempo_fechamento_v3;
 			size = new size(70, 20);
 			tempo_fechamento_v6.Size = size;
-			this.Tempo_fechamento_v3.TabIndex = 25;
+			this.Tempo_fechamento_v3.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_fechamento_v3.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_fechamento_v7 = this.Tempo_fechamento_v2;
 			location = new location(161, 60);
@@ -498,7 +498,7 @@
 			global::System.Windows.Forms.Control tempo_fechamento_v9 = this.Tempo_fechamento_v2;
 			size = new size(70, 20);
 			tempo_fechamento_v9.Size = size;
-			this.Tempo_fechamento_v2.TabIndex = 25;
+			this.Tempo_fechamento_v2.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_fechamento_v2.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_abertura_v10 = this.Tempo_abertura_v1;
 			location = new location(67, 33);
@@ -516,7 +516,7 @@
 			global::System.Windows.Forms.Control tempo_abertura_v12 = this.Tempo_abertura_v1;
 			size = new size(70, 20);
 			tempo_abertura_v12.Size = size;
-			this.Tempo_abertura_v1.TabIndex = 24;
+			this.Tempo_abertura_v1.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_abertura_v1.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_fechamento_v10 = this.Tempo_fechamento_v1;
 			location = new location(160, 33);
@@ -534,7 +534,7 @@
 			global::System.Windows.Forms.Control tempo_fechamento_v12 = this.Tempo_fechamento_v1;
 			size = new size(70, 20);
 			tempo_fechamento_v12.Size = size;
-			this.Tempo_fechamento_v1.TabIndex = 25;
+			this.Tempo_fechamento_v1.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_fechamento_v1.TextAlign = HorizontalAlignment.Center;
 			this.GroupBox1.Controls.Add(this.Label_tempo_parada);
 			this.GroupBox1.Controls.Add(this.Label_tempo_partida);
@@ -562,7 +562,7 @@
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox1;
 			size = new size(498, 134);
 			groupBox4.Size = size;
-			this.GroupBox1.TabIndex = 32;
+			this.GroupBox1.TabIndex = (HorizontalAlignment)32;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "Motores";
 			this.Label_tempo_parada.AutoSize = true;
@@ -573,7 +573,7 @@
 			global::System.Windows.Forms.Control label_tempo_parada2 = this.Label_tempo_parada;
 			size = new size(105, 13);
 			label_tempo_parada2.Size = size;
-			this.Label_tempo_parada.TabIndex = 30;
+			this.Label_tempo_parada.TabIndex = (HorizontalAlignment)30;
 			this.Label_tempo_parada.Text = "Tempo parada (seg.)";
 			this.Label_tempo_partida.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_partida = this.Label_tempo_partida;
@@ -583,7 +583,7 @@
 			global::System.Windows.Forms.Control label_tempo_partida2 = this.Label_tempo_partida;
 			size = new size(104, 13);
 			label_tempo_partida2.Size = size;
-			this.Label_tempo_partida.TabIndex = 29;
+			this.Label_tempo_partida.TabIndex = (HorizontalAlignment)29;
 			this.Label_tempo_partida.Text = "Tempo partida (seg.)";
 			this.Label_modo_de_operacao_motor.AutoSize = true;
 			global::System.Windows.Forms.Control label_modo_de_operacao_motor = this.Label_modo_de_operacao_motor;
@@ -593,7 +593,7 @@
 			global::System.Windows.Forms.Control label_modo_de_operacao_motor2 = this.Label_modo_de_operacao_motor;
 			size = new size(97, 13);
 			label_modo_de_operacao_motor2.Size = size;
-			this.Label_modo_de_operacao_motor.TabIndex = 28;
+			this.Label_modo_de_operacao_motor.TabIndex = (HorizontalAlignment)28;
 			this.Label_modo_de_operacao_motor.Text = "Modo de operação";
 			this.Label_motor4.AutoSize = true;
 			global::System.Windows.Forms.Control label_motor = this.Label_motor4;
@@ -603,7 +603,7 @@
 			global::System.Windows.Forms.Control label_motor2 = this.Label_motor4;
 			size = new size(49, 13);
 			label_motor2.Size = size;
-			this.Label_motor4.TabIndex = 26;
+			this.Label_motor4.TabIndex = (HorizontalAlignment)26;
 			this.Label_motor4.Text = "Motor 4 :";
 			this.Label_motor3.AutoSize = true;
 			global::System.Windows.Forms.Control label_motor3 = this.Label_motor3;
@@ -613,7 +613,7 @@
 			global::System.Windows.Forms.Control label_motor4 = this.Label_motor3;
 			size = new size(49, 13);
 			label_motor4.Size = size;
-			this.Label_motor3.TabIndex = 26;
+			this.Label_motor3.TabIndex = (HorizontalAlignment)26;
 			this.Label_motor3.Text = "Motor 3 :";
 			this.Combo_modo_partida_m4.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_modo_partida_m = this.Combo_modo_partida_m4;
@@ -623,7 +623,7 @@
 			global::System.Windows.Forms.Control combo_modo_partida_m2 = this.Combo_modo_partida_m4;
 			size = new size(124, 21);
 			combo_modo_partida_m2.Size = size;
-			this.Combo_modo_partida_m4.TabIndex = 20;
+			this.Combo_modo_partida_m4.TabIndex = (HorizontalAlignment)20;
 			this.Combo_modo_partida_m3.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_modo_partida_m3 = this.Combo_modo_partida_m3;
 			location = new location(86, 78);
@@ -632,7 +632,7 @@
 			global::System.Windows.Forms.Control combo_modo_partida_m4 = this.Combo_modo_partida_m3;
 			size = new size(124, 21);
 			combo_modo_partida_m4.Size = size;
-			this.Combo_modo_partida_m3.TabIndex = 20;
+			this.Combo_modo_partida_m3.TabIndex = (HorizontalAlignment)20;
 			this.Label_motor2.AutoSize = true;
 			global::System.Windows.Forms.Control label_motor5 = this.Label_motor2;
 			location = new location(24, 58);
@@ -641,7 +641,7 @@
 			global::System.Windows.Forms.Control label_motor6 = this.Label_motor2;
 			size = new size(49, 13);
 			label_motor6.Size = size;
-			this.Label_motor2.TabIndex = 26;
+			this.Label_motor2.TabIndex = (HorizontalAlignment)26;
 			this.Label_motor2.Text = "Motor 2 :";
 			this.Combo_modo_partida_m2.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_modo_partida_m5 = this.Combo_modo_partida_m2;
@@ -651,7 +651,7 @@
 			global::System.Windows.Forms.Control combo_modo_partida_m6 = this.Combo_modo_partida_m2;
 			size = new size(124, 21);
 			combo_modo_partida_m6.Size = size;
-			this.Combo_modo_partida_m2.TabIndex = 20;
+			this.Combo_modo_partida_m2.TabIndex = (HorizontalAlignment)20;
 			global::System.Windows.Forms.Control tempo_partida_m = this.Tempo_partida_m4;
 			location = new location(231, 101);
 			tempo_partida_m.Location = location;
@@ -668,7 +668,7 @@
 			global::System.Windows.Forms.Control tempo_partida_m3 = this.Tempo_partida_m4;
 			size = new size(115, 20);
 			tempo_partida_m3.Size = size;
-			this.Tempo_partida_m4.TabIndex = 24;
+			this.Tempo_partida_m4.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_partida_m4.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_partida_m4 = this.Tempo_partida_m3;
 			location = new location(231, 78);
@@ -686,7 +686,7 @@
 			global::System.Windows.Forms.Control tempo_partida_m6 = this.Tempo_partida_m3;
 			size = new size(115, 20);
 			tempo_partida_m6.Size = size;
-			this.Tempo_partida_m3.TabIndex = 24;
+			this.Tempo_partida_m3.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_partida_m3.TextAlign = HorizontalAlignment.Center;
 			this.Label_motor1.AutoSize = true;
 			global::System.Windows.Forms.Control label_motor7 = this.Label_motor1;
@@ -696,7 +696,7 @@
 			global::System.Windows.Forms.Control label_motor8 = this.Label_motor1;
 			size = new size(49, 13);
 			label_motor8.Size = size;
-			this.Label_motor1.TabIndex = 26;
+			this.Label_motor1.TabIndex = (HorizontalAlignment)26;
 			this.Label_motor1.Text = "Motor 1 :";
 			global::System.Windows.Forms.Control tempo_parada_m = this.Tempo_parada_m4;
 			location = new location(363, 101);
@@ -714,7 +714,7 @@
 			global::System.Windows.Forms.Control tempo_parada_m3 = this.Tempo_parada_m4;
 			size = new size(115, 20);
 			tempo_parada_m3.Size = size;
-			this.Tempo_parada_m4.TabIndex = 25;
+			this.Tempo_parada_m4.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_parada_m4.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_partida_m7 = this.Tempo_partida_m2;
 			location = new location(231, 54);
@@ -732,7 +732,7 @@
 			global::System.Windows.Forms.Control tempo_partida_m9 = this.Tempo_partida_m2;
 			size = new size(115, 20);
 			tempo_partida_m9.Size = size;
-			this.Tempo_partida_m2.TabIndex = 24;
+			this.Tempo_partida_m2.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_partida_m2.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_parada_m4 = this.Tempo_parada_m3;
 			location = new location(363, 78);
@@ -750,7 +750,7 @@
 			global::System.Windows.Forms.Control tempo_parada_m6 = this.Tempo_parada_m3;
 			size = new size(115, 20);
 			tempo_parada_m6.Size = size;
-			this.Tempo_parada_m3.TabIndex = 25;
+			this.Tempo_parada_m3.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_parada_m3.TextAlign = HorizontalAlignment.Center;
 			this.Combo_modo_partida_m1.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_modo_partida_m7 = this.Combo_modo_partida_m1;
@@ -760,7 +760,7 @@
 			global::System.Windows.Forms.Control combo_modo_partida_m8 = this.Combo_modo_partida_m1;
 			size = new size(124, 21);
 			combo_modo_partida_m8.Size = size;
-			this.Combo_modo_partida_m1.TabIndex = 20;
+			this.Combo_modo_partida_m1.TabIndex = (HorizontalAlignment)20;
 			global::System.Windows.Forms.Control tempo_parada_m7 = this.Tempo_parada_m2;
 			location = new location(363, 54);
 			tempo_parada_m7.Location = location;
@@ -777,7 +777,7 @@
 			global::System.Windows.Forms.Control tempo_parada_m9 = this.Tempo_parada_m2;
 			size = new size(115, 20);
 			tempo_parada_m9.Size = size;
-			this.Tempo_parada_m2.TabIndex = 25;
+			this.Tempo_parada_m2.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_parada_m2.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_partida_m10 = this.Tempo_partida_m1;
 			location = new location(231, 30);
@@ -795,7 +795,7 @@
 			global::System.Windows.Forms.Control tempo_partida_m12 = this.Tempo_partida_m1;
 			size = new size(115, 20);
 			tempo_partida_m12.Size = size;
-			this.Tempo_partida_m1.TabIndex = 24;
+			this.Tempo_partida_m1.TabIndex = (HorizontalAlignment)24;
 			this.Tempo_partida_m1.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control tempo_parada_m10 = this.Tempo_parada_m1;
 			location = new location(363, 30);
@@ -813,7 +813,7 @@
 			global::System.Windows.Forms.Control tempo_parada_m12 = this.Tempo_parada_m1;
 			size = new size(115, 20);
 			tempo_parada_m12.Size = size;
-			this.Tempo_parada_m1.TabIndex = 25;
+			this.Tempo_parada_m1.TabIndex = (HorizontalAlignment)25;
 			this.Tempo_parada_m1.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_num_bomba_simultaneas = this.Valor_num_bomba_simultaneas;
 			location = new location(179, 102);
@@ -831,7 +831,7 @@
 			global::System.Windows.Forms.Control valor_num_bomba_simultaneas3 = this.Valor_num_bomba_simultaneas;
 			size = new size(74, 20);
 			valor_num_bomba_simultaneas3.Size = size;
-			this.Valor_num_bomba_simultaneas.TabIndex = 13;
+			this.Valor_num_bomba_simultaneas.TabIndex = (HorizontalAlignment)13;
 			this.Valor_num_bomba_simultaneas.TextAlign = HorizontalAlignment.Center;
 			this.Label_num_bombas_simultaneas.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_bombas_simultaneas = this.Label_num_bombas_simultaneas;
@@ -841,7 +841,7 @@
 			global::System.Windows.Forms.Control label_num_bombas_simultaneas2 = this.Label_num_bombas_simultaneas;
 			size = new size(148, 13);
 			label_num_bombas_simultaneas2.Size = size;
-			this.Label_num_bombas_simultaneas.TabIndex = 12;
+			this.Label_num_bombas_simultaneas.TabIndex = (HorizontalAlignment)12;
 			this.Label_num_bombas_simultaneas.Text = "Número bombas simultâneas :";
 			this.Combo_modo_operacao.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_modo_operacao = this.Combo_modo_operacao;
@@ -851,7 +851,7 @@
 			global::System.Windows.Forms.Control combo_modo_operacao2 = this.Combo_modo_operacao;
 			size = new size(133, 21);
 			combo_modo_operacao2.Size = size;
-			this.Combo_modo_operacao.TabIndex = 10;
+			this.Combo_modo_operacao.TabIndex = (HorizontalAlignment)10;
 			this.Label_modo_operacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_modo_operacao = this.Label_modo_operacao;
 			location = new location(14, 27);
@@ -860,7 +860,7 @@
 			global::System.Windows.Forms.Control label_modo_operacao2 = this.Label_modo_operacao;
 			size = new size(105, 13);
 			label_modo_operacao2.Size = size;
-			this.Label_modo_operacao.TabIndex = 11;
+			this.Label_modo_operacao.TabIndex = (HorizontalAlignment)11;
 			this.Label_modo_operacao.Text = "Modo de Operação :";
 			global::System.Windows.Forms.Control tempo_entre_acionamentos = this.Tempo_entre_acionamentos;
 			location = new location(179, 127);
@@ -878,7 +878,7 @@
 			global::System.Windows.Forms.Control tempo_entre_acionamentos3 = this.Tempo_entre_acionamentos;
 			size = new size(74, 20);
 			tempo_entre_acionamentos3.Size = size;
-			this.Tempo_entre_acionamentos.TabIndex = 9;
+			this.Tempo_entre_acionamentos.TabIndex = (HorizontalAlignment)9;
 			this.Tempo_entre_acionamentos.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control numero_motores = this.Numero_motores;
 			location = new location(179, 50);
@@ -896,7 +896,7 @@
 			global::System.Windows.Forms.Control numero_motores3 = this.Numero_motores;
 			size = new size(74, 20);
 			numero_motores3.Size = size;
-			this.Numero_motores.TabIndex = 8;
+			this.Numero_motores.TabIndex = (HorizontalAlignment)8;
 			this.Numero_motores.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control numero_valvulas = this.Numero_valvulas;
 			location = new location(179, 76);
@@ -914,7 +914,7 @@
 			global::System.Windows.Forms.Control numero_valvulas3 = this.Numero_valvulas;
 			size = new size(74, 20);
 			numero_valvulas3.Size = size;
-			this.Numero_valvulas.TabIndex = 8;
+			this.Numero_valvulas.TabIndex = (HorizontalAlignment)8;
 			this.Numero_valvulas.TextAlign = HorizontalAlignment.Center;
 			this.Label_tempo_entre_acionamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_entre_acionamentos = this.Label_tempo_entre_acionamentos;
@@ -924,7 +924,7 @@
 			global::System.Windows.Forms.Control label_tempo_entre_acionamentos2 = this.Label_tempo_entre_acionamentos;
 			size = new size(154, 13);
 			label_tempo_entre_acionamentos2.Size = size;
-			this.Label_tempo_entre_acionamentos.TabIndex = 5;
+			this.Label_tempo_entre_acionamentos.TabIndex = (HorizontalAlignment)5;
 			this.Label_tempo_entre_acionamentos.Text = "Tempo entre operações (min.) :";
 			this.Label_num_motores.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_motores = this.Label_num_motores;
@@ -934,7 +934,7 @@
 			global::System.Windows.Forms.Control label_num_motores2 = this.Label_num_motores;
 			size = new size(105, 13);
 			label_num_motores2.Size = size;
-			this.Label_num_motores.TabIndex = 5;
+			this.Label_num_motores.TabIndex = (HorizontalAlignment)5;
 			this.Label_num_motores.Text = "Número de motores :";
 			this.Label_num_valvulas.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_valvulas = this.Label_num_valvulas;
@@ -944,7 +944,7 @@
 			global::System.Windows.Forms.Control label_num_valvulas2 = this.Label_num_valvulas;
 			size = new size(107, 13);
 			label_num_valvulas2.Size = size;
-			this.Label_num_valvulas.TabIndex = 5;
+			this.Label_num_valvulas.TabIndex = (HorizontalAlignment)5;
 			this.Label_num_valvulas.Text = "Número de válvulas :";
 			global::System.Windows.Forms.Control valor_pressao_min_recalque = this.Valor_pressao_min_recalque;
 			location = new location(161, 184);
@@ -953,7 +953,7 @@
 			global::System.Windows.Forms.Control valor_pressao_min_recalque2 = this.Valor_pressao_min_recalque;
 			size = new size(74, 20);
 			valor_pressao_min_recalque2.Size = size;
-			this.Valor_pressao_min_recalque.TabIndex = 25;
+			this.Valor_pressao_min_recalque.TabIndex = (HorizontalAlignment)25;
 			this.Valor_pressao_min_recalque.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_pressao_min_succao = this.Valor_pressao_min_succao;
 			location = new location(161, 161);
@@ -962,7 +962,7 @@
 			global::System.Windows.Forms.Control valor_pressao_min_succao2 = this.Valor_pressao_min_succao;
 			size = new size(74, 20);
 			valor_pressao_min_succao2.Size = size;
-			this.Valor_pressao_min_succao.TabIndex = 24;
+			this.Valor_pressao_min_succao.TabIndex = (HorizontalAlignment)24;
 			this.Valor_pressao_min_succao.TextAlign = HorizontalAlignment.Center;
 			this.Label_pressao_min_succao.AutoSize = true;
 			global::System.Windows.Forms.Control label_pressao_min_succao = this.Label_pressao_min_succao;
@@ -972,7 +972,7 @@
 			global::System.Windows.Forms.Control label_pressao_min_succao2 = this.Label_pressao_min_succao;
 			size = new size(130, 13);
 			label_pressao_min_succao2.Size = size;
-			this.Label_pressao_min_succao.TabIndex = 12;
+			this.Label_pressao_min_succao.TabIndex = (HorizontalAlignment)12;
 			this.Label_pressao_min_succao.Text = "Pressão mín. sucção (%) :";
 			this.Label_pressao_min_recalque.AutoSize = true;
 			global::System.Windows.Forms.Control label_pressao_min_recalque = this.Label_pressao_min_recalque;
@@ -982,7 +982,7 @@
 			global::System.Windows.Forms.Control label_pressao_min_recalque2 = this.Label_pressao_min_recalque;
 			size = new size(136, 13);
 			label_pressao_min_recalque2.Size = size;
-			this.Label_pressao_min_recalque.TabIndex = 10;
+			this.Label_pressao_min_recalque.TabIndex = (HorizontalAlignment)10;
 			this.Label_pressao_min_recalque.Text = "Pressão mín. recalque (%) :";
 			global::System.Windows.Forms.Control valor_tempo_mais_bomba = this.Valor_tempo_mais_bomba;
 			location = new location(161, 138);
@@ -1000,7 +1000,7 @@
 			global::System.Windows.Forms.Control valor_tempo_mais_bomba3 = this.Valor_tempo_mais_bomba;
 			size = new size(74, 20);
 			valor_tempo_mais_bomba3.Size = size;
-			this.Valor_tempo_mais_bomba.TabIndex = 21;
+			this.Valor_tempo_mais_bomba.TabIndex = (HorizontalAlignment)21;
 			this.Valor_tempo_mais_bomba.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_nivel_liga_b = this.Valor_nivel_liga_b4;
 			location = new location(161, 115);
@@ -1018,7 +1018,7 @@
 			global::System.Windows.Forms.Control valor_nivel_liga_b3 = this.Valor_nivel_liga_b4;
 			size = new size(74, 20);
 			valor_nivel_liga_b3.Size = size;
-			this.Valor_nivel_liga_b4.TabIndex = 20;
+			this.Valor_nivel_liga_b4.TabIndex = (HorizontalAlignment)20;
 			this.Valor_nivel_liga_b4.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.NumericUpDown valor_nivel_liga_b4 = this.Valor_nivel_liga_b4;
 			num = new decimal(new int[]
@@ -1037,7 +1037,7 @@
 			global::System.Windows.Forms.Control label_nivel_liga_b2 = this.Label_nivel_liga_b4;
 			size = new size(137, 13);
 			label_nivel_liga_b2.Size = size;
-			this.Label_nivel_liga_b4.TabIndex = 12;
+			this.Label_nivel_liga_b4.TabIndex = (HorizontalAlignment)12;
 			this.Label_nivel_liga_b4.Text = "Nível p/ ligar Bomba 4 (%) :";
 			this.Label_tempo_mais_bomba.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_mais_bomba = this.Label_tempo_mais_bomba;
@@ -1047,7 +1047,7 @@
 			global::System.Windows.Forms.Control label_tempo_mais_bomba2 = this.Label_tempo_mais_bomba;
 			size = new size(121, 13);
 			label_tempo_mais_bomba2.Size = size;
-			this.Label_tempo_mais_bomba.TabIndex = 10;
+			this.Label_tempo_mais_bomba.TabIndex = (HorizontalAlignment)10;
 			this.Label_tempo_mais_bomba.Text = "Tempo +1 bomba (min) :";
 			global::System.Windows.Forms.Control valor_nivel_liga_b5 = this.Valor_nivel_liga_b1;
 			location = new location(161, 46);
@@ -1065,7 +1065,7 @@
 			global::System.Windows.Forms.Control valor_nivel_liga_b7 = this.Valor_nivel_liga_b1;
 			size = new size(74, 20);
 			valor_nivel_liga_b7.Size = size;
-			this.Valor_nivel_liga_b1.TabIndex = 17;
+			this.Valor_nivel_liga_b1.TabIndex = (HorizontalAlignment)17;
 			this.Valor_nivel_liga_b1.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.NumericUpDown valor_nivel_liga_b8 = this.Valor_nivel_liga_b1;
 			num = new decimal(new int[]
@@ -1083,7 +1083,7 @@
 			global::System.Windows.Forms.Control valor_nivel_desejado2 = this.Valor_nivel_desejado;
 			size = new size(74, 20);
 			valor_nivel_desejado2.Size = size;
-			this.Valor_nivel_desejado.TabIndex = 10;
+			this.Valor_nivel_desejado.TabIndex = (HorizontalAlignment)10;
 			this.Valor_nivel_desejado.TextAlign = HorizontalAlignment.Center;
 			this.Label_nivel_desejado.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_desejado = this.Label_nivel_desejado;
@@ -1093,7 +1093,7 @@
 			global::System.Windows.Forms.Control label_nivel_desejado2 = this.Label_nivel_desejado;
 			size = new size(102, 13);
 			label_nivel_desejado2.Size = size;
-			this.Label_nivel_desejado.TabIndex = 12;
+			this.Label_nivel_desejado.TabIndex = (HorizontalAlignment)12;
 			this.Label_nivel_desejado.Text = "Nível desejado (%) :";
 			this.Label_nivel_liga_b1.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_liga_b3 = this.Label_nivel_liga_b1;
@@ -1103,7 +1103,7 @@
 			global::System.Windows.Forms.Control label_nivel_liga_b4 = this.Label_nivel_liga_b1;
 			size = new size(137, 13);
 			label_nivel_liga_b4.Size = size;
-			this.Label_nivel_liga_b1.TabIndex = 10;
+			this.Label_nivel_liga_b1.TabIndex = (HorizontalAlignment)10;
 			this.Label_nivel_liga_b1.Text = "Nível p/ ligar Bomba 1 (%) :";
 			this.Grupo_repetidora.Controls.Add(this.Valor_num_est_rep);
 			this.Grupo_repetidora.Controls.Add(this.Valor_end_rep);
@@ -1118,7 +1118,7 @@
 			global::System.Windows.Forms.Control grupo_repetidora2 = this.Grupo_repetidora;
 			size = new size(336, 284);
 			grupo_repetidora2.Size = size;
-			this.Grupo_repetidora.TabIndex = 1;
+			this.Grupo_repetidora.TabIndex = (HorizontalAlignment)1;
 			this.Grupo_repetidora.TabStop = false;
 			this.Grupo_repetidora.Text = "Parâmetros da Repetidora";
 			global::System.Windows.Forms.Control valor_num_est_rep = this.Valor_num_est_rep;
@@ -1137,7 +1137,7 @@
 			global::System.Windows.Forms.Control valor_num_est_rep3 = this.Valor_num_est_rep;
 			size = new size(93, 20);
 			valor_num_est_rep3.Size = size;
-			this.Valor_num_est_rep.TabIndex = 9;
+			this.Valor_num_est_rep.TabIndex = (HorizontalAlignment)9;
 			this.Valor_num_est_rep.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control valor_end_rep = this.Valor_end_rep;
 			location = new location(210, 61);
@@ -1155,7 +1155,7 @@
 			global::System.Windows.Forms.Control valor_end_rep3 = this.Valor_end_rep;
 			size = new size(93, 20);
 			valor_end_rep3.Size = size;
-			this.Valor_end_rep.TabIndex = 8;
+			this.Valor_end_rep.TabIndex = (HorizontalAlignment)8;
 			this.Valor_end_rep.TextAlign = HorizontalAlignment.Right;
 			this.Grupo_end_rep.Controls.Add(this.VScrollBar1);
 			this.Grupo_end_rep.Controls.Add(this.Label_end_rep_12);
@@ -1189,19 +1189,19 @@
 			global::System.Windows.Forms.Control grupo_end_rep2 = this.Grupo_end_rep;
 			size = new size(296, 144);
 			grupo_end_rep2.Size = size;
-			this.Grupo_end_rep.TabIndex = 3;
+			this.Grupo_end_rep.TabIndex = (HorizontalAlignment)3;
 			this.Grupo_end_rep.TabStop = false;
 			this.Grupo_end_rep.Text = "Endereço para repetição";
-			this.VScrollBar1.LargeChange = 2;
+			this.VScrollBar1.LargeChange = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control vscrollBar = this.VScrollBar1;
 			location = new location(264, 28);
 			vscrollBar.Location = location;
-			this.VScrollBar1.Maximum = 5;
+			this.VScrollBar1.Maximum = (HorizontalAlignment)5;
 			this.VScrollBar1.Name = "VScrollBar1";
 			global::System.Windows.Forms.Control vscrollBar2 = this.VScrollBar1;
 			size = new size(25, 98);
 			vscrollBar2.Size = size;
-			this.VScrollBar1.TabIndex = 24;
+			this.VScrollBar1.TabIndex = (HorizontalAlignment)24;
 			this.Label_end_rep_12.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_ = this.Label_end_rep_12;
 			location = new location(176, 110);
@@ -1210,7 +1210,7 @@
 			global::System.Windows.Forms.Control label_end_rep_2 = this.Label_end_rep_12;
 			size = new size(25, 13);
 			label_end_rep_2.Size = size;
-			this.Label_end_rep_12.TabIndex = 11;
+			this.Label_end_rep_12.TabIndex = (HorizontalAlignment)11;
 			this.Label_end_rep_12.Text = "12 :";
 			this.Valor_end_rep_12.AcceptsReturn = true;
 			global::System.Windows.Forms.Control valor_end_rep_ = this.Valor_end_rep_12;
@@ -1220,7 +1220,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_2 = this.Valor_end_rep_12;
 			size = new size(43, 20);
 			valor_end_rep_2.Size = size;
-			this.Valor_end_rep_12.TabIndex = 11;
+			this.Valor_end_rep_12.TabIndex = (HorizontalAlignment)11;
 			this.Valor_end_rep_12.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_11.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_3 = this.Label_end_rep_11;
@@ -1230,7 +1230,7 @@
 			global::System.Windows.Forms.Control label_end_rep_4 = this.Label_end_rep_11;
 			size = new size(25, 13);
 			label_end_rep_4.Size = size;
-			this.Label_end_rep_11.TabIndex = 10;
+			this.Label_end_rep_11.TabIndex = (HorizontalAlignment)10;
 			this.Label_end_rep_11.Text = "11 :";
 			global::System.Windows.Forms.Control valor_end_rep_3 = this.Valor_end_rep_11;
 			location = new location(122, 106);
@@ -1239,7 +1239,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_4 = this.Valor_end_rep_11;
 			size = new size(43, 20);
 			valor_end_rep_4.Size = size;
-			this.Valor_end_rep_11.TabIndex = 7;
+			this.Valor_end_rep_11.TabIndex = (HorizontalAlignment)7;
 			this.Valor_end_rep_11.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_6.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_5 = this.Label_end_rep_6;
@@ -1249,7 +1249,7 @@
 			global::System.Windows.Forms.Control label_end_rep_6 = this.Label_end_rep_6;
 			size = new size(25, 13);
 			label_end_rep_6.Size = size;
-			this.Label_end_rep_6.TabIndex = 5;
+			this.Label_end_rep_6.TabIndex = (HorizontalAlignment)5;
 			this.Label_end_rep_6.Text = "06 :";
 			global::System.Windows.Forms.Control valor_end_rep_5 = this.Valor_end_rep_6;
 			location = new location(199, 54);
@@ -1258,7 +1258,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_6 = this.Valor_end_rep_6;
 			size = new size(43, 20);
 			valor_end_rep_6.Size = size;
-			this.Valor_end_rep_6.TabIndex = 9;
+			this.Valor_end_rep_6.TabIndex = (HorizontalAlignment)9;
 			this.Valor_end_rep_6.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_7 = this.Label_end_rep_3;
@@ -1268,7 +1268,7 @@
 			global::System.Windows.Forms.Control label_end_rep_8 = this.Label_end_rep_3;
 			size = new size(25, 13);
 			label_end_rep_8.Size = size;
-			this.Label_end_rep_3.TabIndex = 2;
+			this.Label_end_rep_3.TabIndex = (HorizontalAlignment)2;
 			this.Label_end_rep_3.Text = "03 :";
 			global::System.Windows.Forms.Control valor_end_rep_7 = this.Valor_end_rep_3;
 			location = new location(199, 28);
@@ -1277,7 +1277,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_8 = this.Valor_end_rep_3;
 			size = new size(43, 20);
 			valor_end_rep_8.Size = size;
-			this.Valor_end_rep_3.TabIndex = 8;
+			this.Valor_end_rep_3.TabIndex = (HorizontalAlignment)8;
 			this.Valor_end_rep_3.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_9.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_9 = this.Label_end_rep_9;
@@ -1287,7 +1287,7 @@
 			global::System.Windows.Forms.Control label_end_rep_10 = this.Label_end_rep_9;
 			size = new size(25, 13);
 			label_end_rep_10.Size = size;
-			this.Label_end_rep_9.TabIndex = 8;
+			this.Label_end_rep_9.TabIndex = (HorizontalAlignment)8;
 			this.Label_end_rep_9.Text = "09 :";
 			global::System.Windows.Forms.Control valor_end_rep_9 = this.Valor_end_rep_9;
 			location = new location(199, 80);
@@ -1296,7 +1296,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_10 = this.Valor_end_rep_9;
 			size = new size(43, 20);
 			valor_end_rep_10.Size = size;
-			this.Valor_end_rep_9.TabIndex = 10;
+			this.Valor_end_rep_9.TabIndex = (HorizontalAlignment)10;
 			this.Valor_end_rep_9.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_8.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_11 = this.Label_end_rep_8;
@@ -1306,7 +1306,7 @@
 			global::System.Windows.Forms.Control label_end_rep_12 = this.Label_end_rep_8;
 			size = new size(25, 13);
 			label_end_rep_12.Size = size;
-			this.Label_end_rep_8.TabIndex = 7;
+			this.Label_end_rep_8.TabIndex = (HorizontalAlignment)7;
 			this.Label_end_rep_8.Text = "08 :";
 			global::System.Windows.Forms.Control valor_end_rep_11 = this.Valor_end_rep_8;
 			location = new location(122, 80);
@@ -1315,7 +1315,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_12 = this.Valor_end_rep_8;
 			size = new size(43, 20);
 			valor_end_rep_12.Size = size;
-			this.Valor_end_rep_8.TabIndex = 6;
+			this.Valor_end_rep_8.TabIndex = (HorizontalAlignment)6;
 			this.Valor_end_rep_8.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_5.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_13 = this.Label_end_rep_5;
@@ -1325,7 +1325,7 @@
 			global::System.Windows.Forms.Control label_end_rep_14 = this.Label_end_rep_5;
 			size = new size(25, 13);
 			label_end_rep_14.Size = size;
-			this.Label_end_rep_5.TabIndex = 4;
+			this.Label_end_rep_5.TabIndex = (HorizontalAlignment)4;
 			this.Label_end_rep_5.Text = "05 :";
 			global::System.Windows.Forms.Control valor_end_rep_13 = this.Valor_end_rep_5;
 			location = new location(122, 54);
@@ -1334,7 +1334,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_14 = this.Valor_end_rep_5;
 			size = new size(43, 20);
 			valor_end_rep_14.Size = size;
-			this.Valor_end_rep_5.TabIndex = 5;
+			this.Valor_end_rep_5.TabIndex = (HorizontalAlignment)5;
 			this.Valor_end_rep_5.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_15 = this.Label_end_rep_2;
@@ -1344,7 +1344,7 @@
 			global::System.Windows.Forms.Control label_end_rep_16 = this.Label_end_rep_2;
 			size = new size(25, 13);
 			label_end_rep_16.Size = size;
-			this.Label_end_rep_2.TabIndex = 1;
+			this.Label_end_rep_2.TabIndex = (HorizontalAlignment)1;
 			this.Label_end_rep_2.Text = "02 :";
 			global::System.Windows.Forms.Control valor_end_rep_15 = this.Valor_end_rep_2;
 			location = new location(122, 28);
@@ -1353,7 +1353,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_16 = this.Valor_end_rep_2;
 			size = new size(43, 20);
 			valor_end_rep_16.Size = size;
-			this.Valor_end_rep_2.TabIndex = 4;
+			this.Valor_end_rep_2.TabIndex = (HorizontalAlignment)4;
 			this.Valor_end_rep_2.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_10.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_17 = this.Label_end_rep_10;
@@ -1363,7 +1363,7 @@
 			global::System.Windows.Forms.Control label_end_rep_18 = this.Label_end_rep_10;
 			size = new size(25, 13);
 			label_end_rep_18.Size = size;
-			this.Label_end_rep_10.TabIndex = 9;
+			this.Label_end_rep_10.TabIndex = (HorizontalAlignment)9;
 			this.Label_end_rep_10.Text = "10 :";
 			global::System.Windows.Forms.Control valor_end_rep_17 = this.Valor_end_rep_10;
 			location = new location(46, 106);
@@ -1372,7 +1372,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_18 = this.Valor_end_rep_10;
 			size = new size(43, 20);
 			valor_end_rep_18.Size = size;
-			this.Valor_end_rep_10.TabIndex = 3;
+			this.Valor_end_rep_10.TabIndex = (HorizontalAlignment)3;
 			this.Valor_end_rep_10.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_7.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_19 = this.Label_end_rep_7;
@@ -1382,7 +1382,7 @@
 			global::System.Windows.Forms.Control label_end_rep_20 = this.Label_end_rep_7;
 			size = new size(25, 13);
 			label_end_rep_20.Size = size;
-			this.Label_end_rep_7.TabIndex = 6;
+			this.Label_end_rep_7.TabIndex = (HorizontalAlignment)6;
 			this.Label_end_rep_7.Text = "07 :";
 			this.Label_end_rep_4.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_21 = this.Label_end_rep_4;
@@ -1392,7 +1392,7 @@
 			global::System.Windows.Forms.Control label_end_rep_22 = this.Label_end_rep_4;
 			size = new size(25, 13);
 			label_end_rep_22.Size = size;
-			this.Label_end_rep_4.TabIndex = 3;
+			this.Label_end_rep_4.TabIndex = (HorizontalAlignment)3;
 			this.Label_end_rep_4.Text = "04 :";
 			global::System.Windows.Forms.Control valor_end_rep_19 = this.Valor_end_rep_7;
 			location = new location(46, 80);
@@ -1401,7 +1401,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_20 = this.Valor_end_rep_7;
 			size = new size(43, 20);
 			valor_end_rep_20.Size = size;
-			this.Valor_end_rep_7.TabIndex = 2;
+			this.Valor_end_rep_7.TabIndex = (HorizontalAlignment)2;
 			this.Valor_end_rep_7.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control valor_end_rep_21 = this.Valor_end_rep_4;
 			location = new location(46, 54);
@@ -1410,7 +1410,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_22 = this.Valor_end_rep_4;
 			size = new size(43, 20);
 			valor_end_rep_22.Size = size;
-			this.Valor_end_rep_4.TabIndex = 1;
+			this.Valor_end_rep_4.TabIndex = (HorizontalAlignment)1;
 			this.Valor_end_rep_4.TextAlign = HorizontalAlignment.Center;
 			this.Label_end_rep_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep_23 = this.Label_end_rep_1;
@@ -1420,7 +1420,7 @@
 			global::System.Windows.Forms.Control label_end_rep_24 = this.Label_end_rep_1;
 			size = new size(25, 13);
 			label_end_rep_24.Size = size;
-			this.Label_end_rep_1.TabIndex = 0;
+			this.Label_end_rep_1.TabIndex = (HorizontalAlignment)0;
 			this.Label_end_rep_1.Text = "01 :";
 			global::System.Windows.Forms.Control valor_end_rep_23 = this.Valor_end_rep_1;
 			location = new location(46, 28);
@@ -1429,7 +1429,7 @@
 			global::System.Windows.Forms.Control valor_end_rep_24 = this.Valor_end_rep_1;
 			size = new size(43, 20);
 			valor_end_rep_24.Size = size;
-			this.Valor_end_rep_1.TabIndex = 0;
+			this.Valor_end_rep_1.TabIndex = (HorizontalAlignment)0;
 			this.Valor_end_rep_1.TextAlign = HorizontalAlignment.Center;
 			this.CheckBox_hab_rep.AutoSize = true;
 			global::System.Windows.Forms.Control checkBox_hab_rep = this.CheckBox_hab_rep;
@@ -1439,7 +1439,7 @@
 			global::System.Windows.Forms.Control checkBox_hab_rep2 = this.CheckBox_hab_rep;
 			size = new size(155, 17);
 			checkBox_hab_rep2.Size = size;
-			this.CheckBox_hab_rep.TabIndex = 0;
+			this.CheckBox_hab_rep.TabIndex = (HorizontalAlignment)0;
 			this.CheckBox_hab_rep.Text = "Habilita Função Repetidora";
 			this.CheckBox_hab_rep.UseVisualStyleBackColor = true;
 			this.Label_num_est_rep.AutoSize = true;
@@ -1450,7 +1450,7 @@
 			global::System.Windows.Forms.Control label_num_est_rep2 = this.Label_num_est_rep;
 			size = new size(112, 13);
 			label_num_est_rep2.Size = size;
-			this.Label_num_est_rep.TabIndex = 2;
+			this.Label_num_est_rep.TabIndex = (HorizontalAlignment)2;
 			this.Label_num_est_rep.Text = "Número de Estações :";
 			this.Label_end_rep.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_rep = this.Label_end_rep;
@@ -1460,7 +1460,7 @@
 			global::System.Windows.Forms.Control label_end_rep2 = this.Label_end_rep;
 			size = new size(129, 13);
 			label_end_rep2.Size = size;
-			this.Label_end_rep.TabIndex = 1;
+			this.Label_end_rep.TabIndex = (HorizontalAlignment)1;
 			this.Label_end_rep.Text = "Endereço da Repetidora :";
 			this.grupo_comunicacao.Controls.Add(this.Combo_baudrate);
 			this.grupo_comunicacao.Controls.Add(this.Label_baudrate);
@@ -1477,7 +1477,7 @@
 			global::System.Windows.Forms.Control grupo_comunicacao2 = this.grupo_comunicacao;
 			size = new size(335, 141);
 			grupo_comunicacao2.Size = size;
-			this.grupo_comunicacao.TabIndex = 2;
+			this.grupo_comunicacao.TabIndex = (HorizontalAlignment)2;
 			this.grupo_comunicacao.TabStop = false;
 			this.grupo_comunicacao.Text = "Parâmetros de Comunicação";
 			this.Combo_baudrate.FormattingEnabled = true;
@@ -1488,7 +1488,7 @@
 			global::System.Windows.Forms.Control combo_baudrate2 = this.Combo_baudrate;
 			size = new size(93, 21);
 			combo_baudrate2.Size = size;
-			this.Combo_baudrate.TabIndex = 10;
+			this.Combo_baudrate.TabIndex = (HorizontalAlignment)10;
 			this.Label_baudrate.AutoSize = true;
 			global::System.Windows.Forms.Control label_baudrate = this.Label_baudrate;
 			location = new location(24, 108);
@@ -1497,7 +1497,7 @@
 			global::System.Windows.Forms.Control label_baudrate2 = this.Label_baudrate;
 			size = new size(95, 13);
 			label_baudrate2.Size = size;
-			this.Label_baudrate.TabIndex = 11;
+			this.Label_baudrate.TabIndex = (HorizontalAlignment)11;
 			this.Label_baudrate.Text = "Baud rate COM 2 :";
 			global::System.Windows.Forms.NumericUpDown valor_temp_ptt = this.Valor_temp_ptt;
 			num = new decimal(new int[]
@@ -1524,7 +1524,7 @@
 			global::System.Windows.Forms.Control valor_temp_ptt4 = this.Valor_temp_ptt;
 			size = new size(93, 20);
 			valor_temp_ptt4.Size = size;
-			this.Valor_temp_ptt.TabIndex = 9;
+			this.Valor_temp_ptt.TabIndex = (HorizontalAlignment)9;
 			this.Valor_temp_ptt.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control valor_end_mestre = this.Valor_end_mestre;
 			location = new location(209, 24);
@@ -1542,7 +1542,7 @@
 			global::System.Windows.Forms.Control valor_end_mestre3 = this.Valor_end_mestre;
 			size = new size(93, 20);
 			valor_end_mestre3.Size = size;
-			this.Valor_end_mestre.TabIndex = 8;
+			this.Valor_end_mestre.TabIndex = (HorizontalAlignment)8;
 			this.Valor_end_mestre.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.Control valor_end_est = this.Valor_end_est;
 			location = new location(209, 51);
@@ -1560,7 +1560,7 @@
 			global::System.Windows.Forms.Control valor_end_est3 = this.Valor_end_est;
 			size = new size(93, 20);
 			valor_end_est3.Size = size;
-			this.Valor_end_est.TabIndex = 7;
+			this.Valor_end_est.TabIndex = (HorizontalAlignment)7;
 			this.Valor_end_est.TextAlign = HorizontalAlignment.Right;
 			this.Label_tempo_ptt.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt = this.Label_tempo_ptt;
@@ -1570,7 +1570,7 @@
 			global::System.Windows.Forms.Control label_tempo_ptt2 = this.Label_tempo_ptt;
 			size = new size(140, 13);
 			label_tempo_ptt2.Size = size;
-			this.Label_tempo_ptt.TabIndex = 4;
+			this.Label_tempo_ptt.TabIndex = (HorizontalAlignment)4;
 			this.Label_tempo_ptt.Text = "Tempo Espera de PTT (ms):";
 			this.Label_end_mestre.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre = this.Label_end_mestre;
@@ -1580,7 +1580,7 @@
 			global::System.Windows.Forms.Control label_end_mestre2 = this.Label_end_mestre;
 			size = new size(109, 13);
 			label_end_mestre2.Size = size;
-			this.Label_end_mestre.TabIndex = 1;
+			this.Label_end_mestre.TabIndex = (HorizontalAlignment)1;
 			this.Label_end_mestre.Text = "Endereço do Mestre :";
 			this.Label_end_est.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_est = this.Label_end_est;
@@ -1590,7 +1590,7 @@
 			global::System.Windows.Forms.Control label_end_est2 = this.Label_end_est;
 			size = new size(116, 13);
 			label_end_est2.Size = size;
-			this.Label_end_est.TabIndex = 0;
+			this.Label_end_est.TabIndex = (HorizontalAlignment)0;
 			this.Label_end_est.Text = "Endereço da Estação :";
 			this.MenuStrip1.Dock =(System.Windows.Forms.DockStyle)2;
 			this.MenuStrip1.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
@@ -1604,7 +1604,7 @@
 			global::System.Windows.Forms.Control menuStrip2 = this.MenuStrip1;
 			size = new size(916, 24);
 			menuStrip2.Size = size;
-			this.MenuStrip1.TabIndex = 9;
+			this.MenuStrip1.TabIndex = (HorizontalAlignment)9;
 			this.MenuStrip1.Text = "MenuStrip1";
 			this.ArquivoToolStripMenuItem.DropDownItems.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
@@ -1648,7 +1648,7 @@
 			global::System.Windows.Forms.Control valor_nivel_liga_b11 = this.Valor_nivel_liga_b3;
 			size = new size(74, 20);
 			valor_nivel_liga_b11.Size = size;
-			this.Valor_nivel_liga_b3.TabIndex = 25;
+			this.Valor_nivel_liga_b3.TabIndex = (HorizontalAlignment)25;
 			this.Valor_nivel_liga_b3.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.NumericUpDown valor_nivel_liga_b12 = this.Valor_nivel_liga_b3;
 			num = new decimal(new int[]
@@ -1675,7 +1675,7 @@
 			global::System.Windows.Forms.Control valor_nivel_liga_b15 = this.Valor_nivel_liga_b2;
 			size = new size(74, 20);
 			valor_nivel_liga_b15.Size = size;
-			this.Valor_nivel_liga_b2.TabIndex = 24;
+			this.Valor_nivel_liga_b2.TabIndex = (HorizontalAlignment)24;
 			this.Valor_nivel_liga_b2.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.NumericUpDown valor_nivel_liga_b16 = this.Valor_nivel_liga_b2;
 			num = new decimal(new int[]
@@ -1694,7 +1694,7 @@
 			global::System.Windows.Forms.Control label_nivel_liga_b6 = this.Label_nivel_liga_b2;
 			size = new size(137, 13);
 			label_nivel_liga_b6.Size = size;
-			this.Label_nivel_liga_b2.TabIndex = 12;
+			this.Label_nivel_liga_b2.TabIndex = (HorizontalAlignment)12;
 			this.Label_nivel_liga_b2.Text = "Nível p/ ligar Bomba 2 (%) :";
 			this.Label_nivel_liga_b3.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_liga_b7 = this.Label_nivel_liga_b3;
@@ -1704,7 +1704,7 @@
 			global::System.Windows.Forms.Control label_nivel_liga_b8 = this.Label_nivel_liga_b3;
 			size = new size(137, 13);
 			label_nivel_liga_b8.Size = size;
-			this.Label_nivel_liga_b3.TabIndex = 10;
+			this.Label_nivel_liga_b3.TabIndex = (HorizontalAlignment)10;
 			this.Label_nivel_liga_b3.Text = "Nível p/ ligar Bomba 3 (%) :";
 			this.Grupo_setpoints.Controls.Add(this.Label_nivel_desejado);
 			this.Grupo_setpoints.Controls.Add(this.Valor_nivel_desejado);
@@ -1733,7 +1733,7 @@
 			global::System.Windows.Forms.Control grupo_setpoints2 = this.Grupo_setpoints;
 			size = new size(254, 264);
 			grupo_setpoints2.Size = size;
-			this.Grupo_setpoints.TabIndex = 26;
+			this.Grupo_setpoints.TabIndex = (HorizontalAlignment)26;
 			this.Grupo_setpoints.TabStop = false;
 			this.Grupo_setpoints.Text = "Setpoints";
 			global::System.Windows.Forms.Control valor_nivel_liberacao = this.Valor_nivel_liberacao;
@@ -1743,7 +1743,7 @@
 			global::System.Windows.Forms.Control valor_nivel_liberacao2 = this.Valor_nivel_liberacao;
 			size = new size(74, 20);
 			valor_nivel_liberacao2.Size = size;
-			this.Valor_nivel_liberacao.TabIndex = 25;
+			this.Valor_nivel_liberacao.TabIndex = (HorizontalAlignment)25;
 			this.Valor_nivel_liberacao.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.NumericUpDown valor_nivel_liberacao3 = this.Valor_nivel_liberacao;
 			num = new decimal(new int[]
@@ -1761,7 +1761,7 @@
 			global::System.Windows.Forms.Control valor_nivel_bloqueio2 = this.Valor_nivel_bloqueio;
 			size = new size(74, 20);
 			valor_nivel_bloqueio2.Size = size;
-			this.Valor_nivel_bloqueio.TabIndex = 24;
+			this.Valor_nivel_bloqueio.TabIndex = (HorizontalAlignment)24;
 			this.Valor_nivel_bloqueio.TextAlign = HorizontalAlignment.Center;
 			this.Label_nivel_liberacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_liberacao = this.Label_nivel_liberacao;
@@ -1771,7 +1771,7 @@
 			global::System.Windows.Forms.Control label_nivel_liberacao2 = this.Label_nivel_liberacao;
 			size = new size(142, 13);
 			label_nivel_liberacao2.Size = size;
-			this.Label_nivel_liberacao.TabIndex = 10;
+			this.Label_nivel_liberacao.TabIndex = (HorizontalAlignment)10;
 			this.Label_nivel_liberacao.Text = "Nível liberação (origem) (%) :";
 			this.Label_nivel_bloqueio.AutoSize = true;
 			global::System.Windows.Forms.Control label_nivel_bloqueio = this.Label_nivel_bloqueio;
@@ -1781,7 +1781,7 @@
 			global::System.Windows.Forms.Control label_nivel_bloqueio2 = this.Label_nivel_bloqueio;
 			size = new size(139, 13);
 			label_nivel_bloqueio2.Size = size;
-			this.Label_nivel_bloqueio.TabIndex = 12;
+			this.Label_nivel_bloqueio.TabIndex = (HorizontalAlignment)12;
 			this.Label_nivel_bloqueio.Text = "Nível bloqueio (origem) (%) :";
 			this.Grupo_analogicas.Controls.Add(this.CheckBox_ctrl_nivel_fonte);
 			this.Grupo_analogicas.Controls.Add(this.Combo_num_totalizacoes);
@@ -1797,7 +1797,7 @@
 			global::System.Windows.Forms.Control grupo_analogicas2 = this.Grupo_analogicas;
 			size = new size(336, 145);
 			grupo_analogicas2.Size = size;
-			this.Grupo_analogicas.TabIndex = 27;
+			this.Grupo_analogicas.TabIndex = (HorizontalAlignment)27;
 			this.Grupo_analogicas.TabStop = false;
 			this.Grupo_analogicas.Text = "Configuração de medidas analógicas";
 			this.CheckBox_ctrl_nivel_fonte.AutoSize = true;
@@ -1808,7 +1808,7 @@
 			global::System.Windows.Forms.Control checkBox_ctrl_nivel_fonte2 = this.CheckBox_ctrl_nivel_fonte;
 			size = new size(156, 17);
 			checkBox_ctrl_nivel_fonte2.Size = size;
-			this.CheckBox_ctrl_nivel_fonte.TabIndex = 34;
+			this.CheckBox_ctrl_nivel_fonte.TabIndex = (HorizontalAlignment)34;
 			this.CheckBox_ctrl_nivel_fonte.Text = "Habilita controle nível fonte";
 			this.CheckBox_ctrl_nivel_fonte.UseVisualStyleBackColor = true;
 			this.Combo_num_totalizacoes.FormattingEnabled = true;
@@ -1819,7 +1819,7 @@
 			global::System.Windows.Forms.Control combo_num_totalizacoes2 = this.Combo_num_totalizacoes;
 			size = new size(93, 21);
 			combo_num_totalizacoes2.Size = size;
-			this.Combo_num_totalizacoes.TabIndex = 15;
+			this.Combo_num_totalizacoes.TabIndex = (HorizontalAlignment)15;
 			this.Label_num_totalizacoes.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_totalizacoes = this.Label_num_totalizacoes;
 			location = new location(29, 117);
@@ -1828,7 +1828,7 @@
 			global::System.Windows.Forms.Control label_num_totalizacoes2 = this.Label_num_totalizacoes;
 			size = new size(113, 13);
 			label_num_totalizacoes2.Size = size;
-			this.Label_num_totalizacoes.TabIndex = 14;
+			this.Label_num_totalizacoes.TabIndex = (HorizontalAlignment)14;
 			this.Label_num_totalizacoes.Text = "Número Totalizações :";
 			global::System.Windows.Forms.Control valor_tamanho_filtro_AD = this.Valor_tamanho_filtro_AD;
 			location = new location(211, 88);
@@ -1846,7 +1846,7 @@
 			global::System.Windows.Forms.Control valor_tamanho_filtro_AD3 = this.Valor_tamanho_filtro_AD;
 			size = new size(93, 20);
 			valor_tamanho_filtro_AD3.Size = size;
-			this.Valor_tamanho_filtro_AD.TabIndex = 13;
+			this.Valor_tamanho_filtro_AD.TabIndex = (HorizontalAlignment)13;
 			this.Valor_tamanho_filtro_AD.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_filtro_AD = this.Valor_intervalo_filtro_AD;
 			num = new decimal(new int[]
@@ -1882,7 +1882,7 @@
 			global::System.Windows.Forms.Control valor_intervalo_filtro_AD5 = this.Valor_intervalo_filtro_AD;
 			size = new size(93, 20);
 			valor_intervalo_filtro_AD5.Size = size;
-			this.Valor_intervalo_filtro_AD.TabIndex = 12;
+			this.Valor_intervalo_filtro_AD.TabIndex = (HorizontalAlignment)12;
 			this.Valor_intervalo_filtro_AD.TextAlign = HorizontalAlignment.Right;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_filtro_AD6 = this.Valor_intervalo_filtro_AD;
 			num = new decimal(new int[]
@@ -1901,7 +1901,7 @@
 			global::System.Windows.Forms.Control label_tamanho_filtro_AD2 = this.Label_tamanho_filtro_AD;
 			size = new size(80, 13);
 			label_tamanho_filtro_AD2.Size = size;
-			this.Label_tamanho_filtro_AD.TabIndex = 11;
+			this.Label_tamanho_filtro_AD.TabIndex = (HorizontalAlignment)11;
 			this.Label_tamanho_filtro_AD.Text = "Tamanho filtro :";
 			this.Label_intervalo_filtro_AD.AutoSize = true;
 			global::System.Windows.Forms.Control label_intervalo_filtro_AD = this.Label_intervalo_filtro_AD;
@@ -1911,7 +1911,7 @@
 			global::System.Windows.Forms.Control label_intervalo_filtro_AD2 = this.Label_intervalo_filtro_AD;
 			size = new size(98, 13);
 			label_intervalo_filtro_AD2.Size = size;
-			this.Label_intervalo_filtro_AD.TabIndex = 10;
+			this.Label_intervalo_filtro_AD.TabIndex = (HorizontalAlignment)10;
 			this.Label_intervalo_filtro_AD.Text = "Intervalo filtro (ms) :";
 			this.Grupo_entradas_digitais.Controls.Add(this.ComboBox_E08);
 			this.Grupo_entradas_digitais.Controls.Add(this.ComboBox_E07);
@@ -1936,7 +1936,7 @@
 			global::System.Windows.Forms.Control grupo_entradas_digitais2 = this.Grupo_entradas_digitais;
 			size = new size(263, 264);
 			grupo_entradas_digitais2.Size = size;
-			this.Grupo_entradas_digitais.TabIndex = 28;
+			this.Grupo_entradas_digitais.TabIndex = (HorizontalAlignment)28;
 			this.Grupo_entradas_digitais.TabStop = false;
 			this.Grupo_entradas_digitais.Text = "Entradas digitais";
 			this.ComboBox_E08.FormattingEnabled = true;
@@ -1947,7 +1947,7 @@
 			global::System.Windows.Forms.Control comboBox_E2 = this.ComboBox_E08;
 			size = new size(175, 21);
 			comboBox_E2.Size = size;
-			this.ComboBox_E08.TabIndex = 38;
+			this.ComboBox_E08.TabIndex = (HorizontalAlignment)38;
 			this.ComboBox_E07.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E3 = this.ComboBox_E07;
 			location = new location(71, 196);
@@ -1956,7 +1956,7 @@
 			global::System.Windows.Forms.Control comboBox_E4 = this.ComboBox_E07;
 			size = new size(175, 21);
 			comboBox_E4.Size = size;
-			this.ComboBox_E07.TabIndex = 37;
+			this.ComboBox_E07.TabIndex = (HorizontalAlignment)37;
 			this.ComboBox_E06.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E5 = this.ComboBox_E06;
 			location = new location(71, 167);
@@ -1965,7 +1965,7 @@
 			global::System.Windows.Forms.Control comboBox_E6 = this.ComboBox_E06;
 			size = new size(175, 21);
 			comboBox_E6.Size = size;
-			this.ComboBox_E06.TabIndex = 36;
+			this.ComboBox_E06.TabIndex = (HorizontalAlignment)36;
 			this.ComboBox_E05.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E7 = this.ComboBox_E05;
 			location = new location(71, 138);
@@ -1974,7 +1974,7 @@
 			global::System.Windows.Forms.Control comboBox_E8 = this.ComboBox_E05;
 			size = new size(175, 21);
 			comboBox_E8.Size = size;
-			this.ComboBox_E05.TabIndex = 35;
+			this.ComboBox_E05.TabIndex = (HorizontalAlignment)35;
 			this.ComboBox_E04.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E9 = this.ComboBox_E04;
 			location = new location(71, 109);
@@ -1983,7 +1983,7 @@
 			global::System.Windows.Forms.Control comboBox_E10 = this.ComboBox_E04;
 			size = new size(175, 21);
 			comboBox_E10.Size = size;
-			this.ComboBox_E04.TabIndex = 34;
+			this.ComboBox_E04.TabIndex = (HorizontalAlignment)34;
 			this.ComboBox_E03.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E11 = this.ComboBox_E03;
 			location = new location(71, 80);
@@ -1992,7 +1992,7 @@
 			global::System.Windows.Forms.Control comboBox_E12 = this.ComboBox_E03;
 			size = new size(175, 21);
 			comboBox_E12.Size = size;
-			this.ComboBox_E03.TabIndex = 33;
+			this.ComboBox_E03.TabIndex = (HorizontalAlignment)33;
 			this.ComboBox_E02.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E13 = this.ComboBox_E02;
 			location = new location(71, 51);
@@ -2001,7 +2001,7 @@
 			global::System.Windows.Forms.Control comboBox_E14 = this.ComboBox_E02;
 			size = new size(175, 21);
 			comboBox_E14.Size = size;
-			this.ComboBox_E02.TabIndex = 32;
+			this.ComboBox_E02.TabIndex = (HorizontalAlignment)32;
 			this.ComboBox_E01.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBox_E15 = this.ComboBox_E01;
 			location = new location(71, 22);
@@ -2010,7 +2010,7 @@
 			global::System.Windows.Forms.Control comboBox_E16 = this.ComboBox_E01;
 			size = new size(175, 21);
 			comboBox_E16.Size = size;
-			this.ComboBox_E01.TabIndex = 31;
+			this.ComboBox_E01.TabIndex = (HorizontalAlignment)31;
 			this.Label_E08.AutoSize = true;
 			global::System.Windows.Forms.Control label_E = this.Label_E08;
 			location = new location(15, 228);
@@ -2019,7 +2019,7 @@
 			global::System.Windows.Forms.Control label_E2 = this.Label_E08;
 			size = new size(50, 13);
 			label_E2.Size = size;
-			this.Label_E08.TabIndex = 25;
+			this.Label_E08.TabIndex = (HorizontalAlignment)25;
 			this.Label_E08.Text = "ENT 08 :";
 			this.Label_E07.AutoSize = true;
 			global::System.Windows.Forms.Control label_E3 = this.Label_E07;
@@ -2029,7 +2029,7 @@
 			global::System.Windows.Forms.Control label_E4 = this.Label_E07;
 			size = new size(50, 13);
 			label_E4.Size = size;
-			this.Label_E07.TabIndex = 26;
+			this.Label_E07.TabIndex = (HorizontalAlignment)26;
 			this.Label_E07.Text = "ENT 07 :";
 			this.Label_E06.AutoSize = true;
 			global::System.Windows.Forms.Control label_E5 = this.Label_E06;
@@ -2039,7 +2039,7 @@
 			global::System.Windows.Forms.Control label_E6 = this.Label_E06;
 			size = new size(50, 13);
 			label_E6.Size = size;
-			this.Label_E06.TabIndex = 23;
+			this.Label_E06.TabIndex = (HorizontalAlignment)23;
 			this.Label_E06.Text = "ENT 06 :";
 			this.Label_E05.AutoSize = true;
 			global::System.Windows.Forms.Control label_E7 = this.Label_E05;
@@ -2049,7 +2049,7 @@
 			global::System.Windows.Forms.Control label_E8 = this.Label_E05;
 			size = new size(50, 13);
 			label_E8.Size = size;
-			this.Label_E05.TabIndex = 24;
+			this.Label_E05.TabIndex = (HorizontalAlignment)24;
 			this.Label_E05.Text = "ENT 05 :";
 			this.Label_E04.AutoSize = true;
 			global::System.Windows.Forms.Control label_E9 = this.Label_E04;
@@ -2059,7 +2059,7 @@
 			global::System.Windows.Forms.Control label_E10 = this.Label_E04;
 			size = new size(50, 13);
 			label_E10.Size = size;
-			this.Label_E04.TabIndex = 29;
+			this.Label_E04.TabIndex = (HorizontalAlignment)29;
 			this.Label_E04.Text = "ENT 04 :";
 			this.Label_E03.AutoSize = true;
 			global::System.Windows.Forms.Control label_E11 = this.Label_E03;
@@ -2069,7 +2069,7 @@
 			global::System.Windows.Forms.Control label_E12 = this.Label_E03;
 			size = new size(50, 13);
 			label_E12.Size = size;
-			this.Label_E03.TabIndex = 30;
+			this.Label_E03.TabIndex = (HorizontalAlignment)30;
 			this.Label_E03.Text = "ENT 03 :";
 			this.Label_E02.AutoSize = true;
 			global::System.Windows.Forms.Control label_E13 = this.Label_E02;
@@ -2079,7 +2079,7 @@
 			global::System.Windows.Forms.Control label_E14 = this.Label_E02;
 			size = new size(50, 13);
 			label_E14.Size = size;
-			this.Label_E02.TabIndex = 27;
+			this.Label_E02.TabIndex = (HorizontalAlignment)27;
 			this.Label_E02.Text = "ENT 02 :";
 			this.Label_E01.AutoSize = true;
 			global::System.Windows.Forms.Control label_E15 = this.Label_E01;
@@ -2089,7 +2089,7 @@
 			global::System.Windows.Forms.Control label_E16 = this.Label_E01;
 			size = new size(50, 13);
 			label_E16.Size = size;
-			this.Label_E01.TabIndex = 28;
+			this.Label_E01.TabIndex = (HorizontalAlignment)28;
 			this.Label_E01.Text = "ENT 01 :";
 			this.OpenFileDialog1.FileName = "OpenFileDialog1";
 			this.Grupo_perifericos.Controls.Add(this.Label_periferico_4);
@@ -2114,7 +2114,7 @@
 			global::System.Windows.Forms.Control grupo_perifericos2 = this.Grupo_perifericos;
 			size = new size(536, 92);
 			grupo_perifericos2.Size = size;
-			this.Grupo_perifericos.TabIndex = 29;
+			this.Grupo_perifericos.TabIndex = (HorizontalAlignment)29;
 			this.Grupo_perifericos.TabStop = false;
 			this.Grupo_perifericos.Text = "Periféricos";
 			this.Label_periferico_4.AutoSize = true;
@@ -2125,7 +2125,7 @@
 			global::System.Windows.Forms.Control label_periferico_2 = this.Label_periferico_4;
 			size = new size(29, 13);
 			label_periferico_2.Size = size;
-			this.Label_periferico_4.TabIndex = 19;
+			this.Label_periferico_4.TabIndex = (HorizontalAlignment)19;
 			this.Label_periferico_4.Text = "P 4 :";
 			this.Label_periferico_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_periferico_3 = this.Label_periferico_3;
@@ -2135,7 +2135,7 @@
 			global::System.Windows.Forms.Control label_periferico_4 = this.Label_periferico_3;
 			size = new size(29, 13);
 			label_periferico_4.Size = size;
-			this.Label_periferico_3.TabIndex = 18;
+			this.Label_periferico_3.TabIndex = (HorizontalAlignment)18;
 			this.Label_periferico_3.Text = "P 3 :";
 			this.Label_nota_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_nota_ = this.Label_nota_2;
@@ -2145,7 +2145,7 @@
 			global::System.Windows.Forms.Control label_nota_2 = this.Label_nota_2;
 			size = new size(116, 13);
 			label_nota_2.Size = size;
-			this.Label_nota_2.TabIndex = 17;
+			this.Label_nota_2.TabIndex = (HorizontalAlignment)17;
 			this.Label_nota_2.Text = "Tipo                       End";
 			this.Label_periferico_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_periferico_5 = this.Label_periferico_2;
@@ -2155,7 +2155,7 @@
 			global::System.Windows.Forms.Control label_periferico_6 = this.Label_periferico_2;
 			size = new size(29, 13);
 			label_periferico_6.Size = size;
-			this.Label_periferico_2.TabIndex = 16;
+			this.Label_periferico_2.TabIndex = (HorizontalAlignment)16;
 			this.Label_periferico_2.Text = "P 2 :";
 			this.Label_nota_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_nota_3 = this.Label_nota_1;
@@ -2165,7 +2165,7 @@
 			global::System.Windows.Forms.Control label_nota_4 = this.Label_nota_1;
 			size = new size(129, 13);
 			label_nota_4.Size = size;
-			this.Label_nota_1.TabIndex = 15;
+			this.Label_nota_1.TabIndex = (HorizontalAlignment)15;
 			this.Label_nota_1.Text = "Tipo                End/Quant";
 			this.Label_periferico_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_periferico_7 = this.Label_periferico_1;
@@ -2175,7 +2175,7 @@
 			global::System.Windows.Forms.Control label_periferico_8 = this.Label_periferico_1;
 			size = new size(29, 13);
 			label_periferico_8.Size = size;
-			this.Label_periferico_1.TabIndex = 14;
+			this.Label_periferico_1.TabIndex = (HorizontalAlignment)14;
 			this.Label_periferico_1.Text = "P 1 :";
 			global::System.Windows.Forms.Control endereco_p = this.Endereco_p4;
 			location = new location(466, 60);
@@ -2193,7 +2193,7 @@
 			global::System.Windows.Forms.Control endereco_p3 = this.Endereco_p4;
 			size = new size(51, 20);
 			endereco_p3.Size = size;
-			this.Endereco_p4.TabIndex = 13;
+			this.Endereco_p4.TabIndex = (HorizontalAlignment)13;
 			this.Endereco_p4.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control endereco_p4 = this.Endereco_p2;
 			location = new location(208, 60);
@@ -2211,7 +2211,7 @@
 			global::System.Windows.Forms.Control endereco_p6 = this.Endereco_p2;
 			size = new size(51, 20);
 			endereco_p6.Size = size;
-			this.Endereco_p2.TabIndex = 12;
+			this.Endereco_p2.TabIndex = (HorizontalAlignment)12;
 			this.Endereco_p2.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control endereco_p7 = this.Endereco_p3;
 			location = new location(466, 35);
@@ -2229,7 +2229,7 @@
 			global::System.Windows.Forms.Control endereco_p9 = this.Endereco_p3;
 			size = new size(51, 20);
 			endereco_p9.Size = size;
-			this.Endereco_p3.TabIndex = 11;
+			this.Endereco_p3.TabIndex = (HorizontalAlignment)11;
 			this.Endereco_p3.TextAlign = HorizontalAlignment.Center;
 			global::System.Windows.Forms.Control endereco_p10 = this.Endereco_p1;
 			location = new location(208, 35);
@@ -2247,7 +2247,7 @@
 			global::System.Windows.Forms.Control endereco_p12 = this.Endereco_p1;
 			size = new size(51, 20);
 			endereco_p12.Size = size;
-			this.Endereco_p1.TabIndex = 10;
+			this.Endereco_p1.TabIndex = (HorizontalAlignment)10;
 			this.Endereco_p1.TextAlign = HorizontalAlignment.Center;
 			this.Combo_tipo_p4.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_tipo_p = this.Combo_tipo_p4;
@@ -2257,7 +2257,7 @@
 			global::System.Windows.Forms.Control combo_tipo_p2 = this.Combo_tipo_p4;
 			size = new size(154, 21);
 			combo_tipo_p2.Size = size;
-			this.Combo_tipo_p4.TabIndex = 3;
+			this.Combo_tipo_p4.TabIndex = (HorizontalAlignment)3;
 			this.Combo_tipo_p2.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_tipo_p3 = this.Combo_tipo_p2;
 			location = new location(48, 59);
@@ -2266,7 +2266,7 @@
 			global::System.Windows.Forms.Control combo_tipo_p4 = this.Combo_tipo_p2;
 			size = new size(154, 21);
 			combo_tipo_p4.Size = size;
-			this.Combo_tipo_p2.TabIndex = 2;
+			this.Combo_tipo_p2.TabIndex = (HorizontalAlignment)2;
 			this.Combo_tipo_p3.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_tipo_p5 = this.Combo_tipo_p3;
 			location = new location(306, 34);
@@ -2275,7 +2275,7 @@
 			global::System.Windows.Forms.Control combo_tipo_p6 = this.Combo_tipo_p3;
 			size = new size(154, 21);
 			combo_tipo_p6.Size = size;
-			this.Combo_tipo_p3.TabIndex = 1;
+			this.Combo_tipo_p3.TabIndex = (HorizontalAlignment)1;
 			this.Combo_tipo_p1.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_tipo_p7 = this.Combo_tipo_p1;
 			location = new location(48, 34);
@@ -2284,7 +2284,7 @@
 			global::System.Windows.Forms.Control combo_tipo_p8 = this.Combo_tipo_p1;
 			size = new size(154, 21);
 			combo_tipo_p8.Size = size;
-			this.Combo_tipo_p1.TabIndex = 0;
+			this.Combo_tipo_p1.TabIndex = (HorizontalAlignment)0;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;

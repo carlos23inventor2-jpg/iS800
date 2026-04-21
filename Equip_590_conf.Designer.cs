@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x02000089 RID: 137
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -132,7 +132,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(274, 105);
 			grupo_comandos2.Size = size;
-			this.Grupo_comandos.TabIndex = 19;
+			this.Grupo_comandos.TabIndex = (HorizontalAlignment)19;
 			this.Grupo_comandos.TabStop = false;
 			this.Grupo_comandos.Text = "Comandos  e status";
 			global::System.Windows.Forms.Control esc_conf_md_ = this.Esc_conf_md_590;
@@ -142,7 +142,7 @@
 			global::System.Windows.Forms.Control esc_conf_md_2 = this.Esc_conf_md_590;
 			size = new global::System.Drawing.Size(109, 28);
 			esc_conf_md_2.Size = size;
-			this.Esc_conf_md_590.TabIndex = 4;
+			this.Esc_conf_md_590.TabIndex = (HorizontalAlignment)4;
 			this.Esc_conf_md_590.Text = "Salvar config.";
 			this.Esc_conf_md_590.UseVisualStyleBackColor = true;
 			this.Box_Msg.BackColor = global::System.Drawing.Color.Beige;
@@ -154,8 +154,8 @@
 			global::System.Windows.Forms.Control box_Msg2 = this.Box_Msg;
 			size = new global::System.Drawing.Size(239, 20);
 			box_Msg2.Size = size;
-			this.Box_Msg.TabIndex = 5;
-			this.Box_Msg.TextAlign = 2;
+			this.Box_Msg.TabIndex = (HorizontalAlignment)5;
+			this.Box_Msg.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_590;
 			location = new global::System.Drawing.Point(17, 60);
 			ler_conf_md_.Location = location;
@@ -163,7 +163,7 @@
 			global::System.Windows.Forms.Control ler_conf_md_2 = this.Ler_conf_md_590;
 			size = new global::System.Drawing.Size(109, 28);
 			ler_conf_md_2.Size = size;
-			this.Ler_conf_md_590.TabIndex = 3;
+			this.Ler_conf_md_590.TabIndex = (HorizontalAlignment)3;
 			this.Ler_conf_md_590.Text = "Ler configuração";
 			this.Ler_conf_md_590.UseVisualStyleBackColor = true;
 			this.Grupo_parametros_radio.Controls.Add(this.Valor_Range_Refresh);
@@ -190,7 +190,7 @@
 			global::System.Windows.Forms.Control grupo_parametros_radio2 = this.Grupo_parametros_radio;
 			size = new global::System.Drawing.Size(327, 236);
 			grupo_parametros_radio2.Size = size;
-			this.Grupo_parametros_radio.TabIndex = 20;
+			this.Grupo_parametros_radio.TabIndex = (HorizontalAlignment)20;
 			this.Grupo_parametros_radio.TabStop = false;
 			this.Grupo_parametros_radio.Text = "Parâmetros do Rádio";
 			global::System.Windows.Forms.NumericUpDown valor_Range_Refresh = this.Valor_Range_Refresh;
@@ -219,8 +219,8 @@
 			global::System.Windows.Forms.Control valor_Range_Refresh4 = this.Valor_Range_Refresh;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Range_Refresh4.Size = size;
-			this.Valor_Range_Refresh.TabIndex = 20;
-			this.Valor_Range_Refresh.TextAlign = 2;
+			this.Valor_Range_Refresh.TabIndex = (HorizontalAlignment)20;
+			this.Valor_Range_Refresh.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_Stop_Bit_Delay = this.Valor_Stop_Bit_Delay;
 			num = new decimal(new int[]
 			{
@@ -246,8 +246,8 @@
 			global::System.Windows.Forms.Control valor_Stop_Bit_Delay4 = this.Valor_Stop_Bit_Delay;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Stop_Bit_Delay4.Size = size;
-			this.Valor_Stop_Bit_Delay.TabIndex = 20;
-			this.Valor_Stop_Bit_Delay.TextAlign = 2;
+			this.Valor_Stop_Bit_Delay.TabIndex = (HorizontalAlignment)20;
+			this.Valor_Stop_Bit_Delay.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_Broadcast_Attempts = this.Valor_Broadcast_Attempts;
 			num = new decimal(new int[]
 			{
@@ -273,8 +273,8 @@
 			global::System.Windows.Forms.Control valor_Broadcast_Attempts4 = this.Valor_Broadcast_Attempts;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Broadcast_Attempts4.Size = size;
-			this.Valor_Broadcast_Attempts.TabIndex = 20;
-			this.Valor_Broadcast_Attempts.TextAlign = 2;
+			this.Valor_Broadcast_Attempts.TabIndex = (HorizontalAlignment)20;
+			this.Valor_Broadcast_Attempts.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_transmit_retries = this.Valor_transmit_retries;
 			location = new global::System.Drawing.Point(187, 126);
 			valor_transmit_retries.Location = location;
@@ -291,8 +291,8 @@
 			global::System.Windows.Forms.Control valor_transmit_retries3 = this.Valor_transmit_retries;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_transmit_retries3.Size = size;
-			this.Valor_transmit_retries.TabIndex = 20;
-			this.Valor_transmit_retries.TextAlign = 2;
+			this.Valor_transmit_retries.TabIndex = (HorizontalAlignment)20;
+			this.Valor_transmit_retries.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_cts_on_hysteresis = this.Valor_cts_on_hysteresis;
 			location = new global::System.Drawing.Point(187, 102);
 			valor_cts_on_hysteresis.Location = location;
@@ -309,8 +309,8 @@
 			global::System.Windows.Forms.Control valor_cts_on_hysteresis3 = this.Valor_cts_on_hysteresis;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_cts_on_hysteresis3.Size = size;
-			this.Valor_cts_on_hysteresis.TabIndex = 20;
-			this.Valor_cts_on_hysteresis.TextAlign = 2;
+			this.Valor_cts_on_hysteresis.TabIndex = (HorizontalAlignment)20;
+			this.Valor_cts_on_hysteresis.TextAlign = (HorizontalAlignment)2;
 			this.Label_Range_Refresh.AutoSize = true;
 			global::System.Windows.Forms.Control label_Range_Refresh = this.Label_Range_Refresh;
 			location = new global::System.Drawing.Point(37, 200);
@@ -319,7 +319,7 @@
 			global::System.Windows.Forms.Control label_Range_Refresh2 = this.Label_Range_Refresh;
 			size = new global::System.Drawing.Size(85, 13);
 			label_Range_Refresh2.Size = size;
-			this.Label_Range_Refresh.TabIndex = 19;
+			this.Label_Range_Refresh.TabIndex = (HorizontalAlignment)19;
 			this.Label_Range_Refresh.Text = "Range Refresh :";
 			global::System.Windows.Forms.Control valor_cts_on = this.Valor_cts_on;
 			location = new global::System.Drawing.Point(187, 78);
@@ -337,8 +337,8 @@
 			global::System.Windows.Forms.Control valor_cts_on3 = this.Valor_cts_on;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_cts_on3.Size = size;
-			this.Valor_cts_on.TabIndex = 20;
-			this.Valor_cts_on.TextAlign = 2;
+			this.Valor_cts_on.TabIndex = (HorizontalAlignment)20;
+			this.Valor_cts_on.TextAlign = (HorizontalAlignment)2;
 			this.Label_Stop_Bit_Delay.AutoSize = true;
 			global::System.Windows.Forms.Control label_Stop_Bit_Delay = this.Label_Stop_Bit_Delay;
 			location = new global::System.Drawing.Point(37, 176);
@@ -347,7 +347,7 @@
 			global::System.Windows.Forms.Control label_Stop_Bit_Delay2 = this.Label_Stop_Bit_Delay;
 			size = new global::System.Drawing.Size(80, 13);
 			label_Stop_Bit_Delay2.Size = size;
-			this.Label_Stop_Bit_Delay.TabIndex = 19;
+			this.Label_Stop_Bit_Delay.TabIndex = (HorizontalAlignment)19;
 			this.Label_Stop_Bit_Delay.Text = "Stop Bit Delay :";
 			this.Label_Broadcast_Attempts.AutoSize = true;
 			global::System.Windows.Forms.Control label_Broadcast_Attempts = this.Label_Broadcast_Attempts;
@@ -357,7 +357,7 @@
 			global::System.Windows.Forms.Control label_Broadcast_Attempts2 = this.Label_Broadcast_Attempts;
 			size = new global::System.Drawing.Size(105, 13);
 			label_Broadcast_Attempts2.Size = size;
-			this.Label_Broadcast_Attempts.TabIndex = 19;
+			this.Label_Broadcast_Attempts.TabIndex = (HorizontalAlignment)19;
 			this.Label_Broadcast_Attempts.Text = "Broadcast Attempts :";
 			global::System.Windows.Forms.NumericUpDown valor_packed_size = this.Valor_packed_size;
 			num = new decimal(new int[]
@@ -384,8 +384,8 @@
 			global::System.Windows.Forms.Control valor_packed_size4 = this.Valor_packed_size;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_packed_size4.Size = size;
-			this.Valor_packed_size.TabIndex = 20;
-			this.Valor_packed_size.TextAlign = 2;
+			this.Valor_packed_size.TabIndex = (HorizontalAlignment)20;
+			this.Valor_packed_size.TextAlign = (HorizontalAlignment)2;
 			this.Label_transmit_retries.AutoSize = true;
 			global::System.Windows.Forms.Control label_transmit_retries = this.Label_transmit_retries;
 			location = new global::System.Drawing.Point(37, 128);
@@ -394,7 +394,7 @@
 			global::System.Windows.Forms.Control label_transmit_retries2 = this.Label_transmit_retries;
 			size = new global::System.Drawing.Size(89, 13);
 			label_transmit_retries2.Size = size;
-			this.Label_transmit_retries.TabIndex = 19;
+			this.Label_transmit_retries.TabIndex = (HorizontalAlignment)19;
 			this.Label_transmit_retries.Text = "Transmit Retries :";
 			this.Label_cts_on_hysteresis.AutoSize = true;
 			global::System.Windows.Forms.Control label_cts_on_hysteresis = this.Label_cts_on_hysteresis;
@@ -404,7 +404,7 @@
 			global::System.Windows.Forms.Control label_cts_on_hysteresis2 = this.Label_cts_on_hysteresis;
 			size = new global::System.Drawing.Size(102, 13);
 			label_cts_on_hysteresis2.Size = size;
-			this.Label_cts_on_hysteresis.TabIndex = 19;
+			this.Label_cts_on_hysteresis.TabIndex = (HorizontalAlignment)19;
 			this.Label_cts_on_hysteresis.Text = "CTS On Hysteresis :";
 			this.Label_cts_on.AutoSize = true;
 			global::System.Windows.Forms.Control label_cts_on = this.Label_cts_on;
@@ -414,7 +414,7 @@
 			global::System.Windows.Forms.Control label_cts_on2 = this.Label_cts_on;
 			size = new global::System.Drawing.Size(51, 13);
 			label_cts_on2.Size = size;
-			this.Label_cts_on.TabIndex = 19;
+			this.Label_cts_on.TabIndex = (HorizontalAlignment)19;
 			this.Label_cts_on.Text = "CTS On :";
 			this.Label_rf_packed_size.AutoSize = true;
 			global::System.Windows.Forms.Control label_rf_packed_size = this.Label_rf_packed_size;
@@ -424,7 +424,7 @@
 			global::System.Windows.Forms.Control label_rf_packed_size2 = this.Label_rf_packed_size;
 			size = new global::System.Drawing.Size(87, 13);
 			label_rf_packed_size2.Size = size;
-			this.Label_rf_packed_size.TabIndex = 19;
+			this.Label_rf_packed_size.TabIndex = (HorizontalAlignment)19;
 			this.Label_rf_packed_size.Text = "RF Packet Size :";
 			this.Label_interface_timeout.AutoSize = true;
 			global::System.Windows.Forms.Control label_interface_timeout = this.Label_interface_timeout;
@@ -434,7 +434,7 @@
 			global::System.Windows.Forms.Control label_interface_timeout2 = this.Label_interface_timeout;
 			size = new global::System.Drawing.Size(96, 13);
 			label_interface_timeout2.Size = size;
-			this.Label_interface_timeout.TabIndex = 18;
+			this.Label_interface_timeout.TabIndex = (HorizontalAlignment)18;
 			this.Label_interface_timeout.Text = "Interface Timeout :";
 			global::System.Windows.Forms.NumericUpDown valor_interface_timeout = this.Valor_interface_timeout;
 			num = new decimal(new int[]
@@ -461,8 +461,8 @@
 			global::System.Windows.Forms.Control valor_interface_timeout4 = this.Valor_interface_timeout;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_interface_timeout4.Size = size;
-			this.Valor_interface_timeout.TabIndex = 17;
-			this.Valor_interface_timeout.TextAlign = 2;
+			this.Valor_interface_timeout.TabIndex = (HorizontalAlignment)17;
+			this.Valor_interface_timeout.TextAlign = (HorizontalAlignment)2;
 			this.Grupo_parametros_rf.Controls.Add(this.Valor_Sync_to_Channel);
 			this.Grupo_parametros_rf.Controls.Add(this.Label_Sync_to_Channel);
 			this.Grupo_parametros_rf.Controls.Add(this.Valor_System_ID);
@@ -481,7 +481,7 @@
 			global::System.Windows.Forms.Control grupo_parametros_rf2 = this.Grupo_parametros_rf;
 			size = new global::System.Drawing.Size(327, 163);
 			grupo_parametros_rf2.Size = size;
-			this.Grupo_parametros_rf.TabIndex = 20;
+			this.Grupo_parametros_rf.TabIndex = (HorizontalAlignment)20;
 			this.Grupo_parametros_rf.TabStop = false;
 			this.Grupo_parametros_rf.Text = "Parâmetros de RF";
 			global::System.Windows.Forms.NumericUpDown valor_Sync_to_Channel = this.Valor_Sync_to_Channel;
@@ -509,8 +509,8 @@
 			global::System.Windows.Forms.Control valor_Sync_to_Channel4 = this.Valor_Sync_to_Channel;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Sync_to_Channel4.Size = size;
-			this.Valor_Sync_to_Channel.TabIndex = 23;
-			this.Valor_Sync_to_Channel.TextAlign = 2;
+			this.Valor_Sync_to_Channel.TabIndex = (HorizontalAlignment)23;
+			this.Valor_Sync_to_Channel.TextAlign = (HorizontalAlignment)2;
 			this.Label_Sync_to_Channel.AutoSize = true;
 			global::System.Windows.Forms.Control label_Sync_to_Channel = this.Label_Sync_to_Channel;
 			location = new global::System.Drawing.Point(37, 78);
@@ -519,7 +519,7 @@
 			global::System.Windows.Forms.Control label_Sync_to_Channel2 = this.Label_Sync_to_Channel;
 			size = new global::System.Drawing.Size(91, 13);
 			label_Sync_to_Channel2.Size = size;
-			this.Label_Sync_to_Channel.TabIndex = 22;
+			this.Label_Sync_to_Channel.TabIndex = (HorizontalAlignment)22;
 			this.Label_Sync_to_Channel.Text = "Sync to Channel :";
 			global::System.Windows.Forms.NumericUpDown valor_System_ID = this.Valor_System_ID;
 			num = new decimal(new int[]
@@ -546,8 +546,8 @@
 			global::System.Windows.Forms.Control valor_System_ID4 = this.Valor_System_ID;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_System_ID4.Size = size;
-			this.Valor_System_ID.TabIndex = 23;
-			this.Valor_System_ID.TextAlign = 2;
+			this.Valor_System_ID.TabIndex = (HorizontalAlignment)23;
+			this.Valor_System_ID.TextAlign = (HorizontalAlignment)2;
 			this.Label_System_ID.AutoSize = true;
 			global::System.Windows.Forms.Control label_System_ID = this.Label_System_ID;
 			location = new global::System.Drawing.Point(37, 127);
@@ -556,7 +556,7 @@
 			global::System.Windows.Forms.Control label_System_ID2 = this.Label_System_ID;
 			size = new global::System.Drawing.Size(61, 13);
 			label_System_ID2.Size = size;
-			this.Label_System_ID.TabIndex = 22;
+			this.Label_System_ID.TabIndex = (HorizontalAlignment)22;
 			this.Label_System_ID.Text = "System ID :";
 			global::System.Windows.Forms.NumericUpDown valor_RF_Channel_Number = this.Valor_RF_Channel_Number;
 			num = new decimal(new int[]
@@ -583,8 +583,8 @@
 			global::System.Windows.Forms.Control valor_RF_Channel_Number4 = this.Valor_RF_Channel_Number;
 			size = new global::System.Drawing.Size(93, 20);
 			valor_RF_Channel_Number4.Size = size;
-			this.Valor_RF_Channel_Number.TabIndex = 23;
-			this.Valor_RF_Channel_Number.TextAlign = 2;
+			this.Valor_RF_Channel_Number.TabIndex = (HorizontalAlignment)23;
+			this.Valor_RF_Channel_Number.TextAlign = (HorizontalAlignment)2;
 			this.Label_RF_Channel_Number.AutoSize = true;
 			global::System.Windows.Forms.Control label_RF_Channel_Number = this.Label_RF_Channel_Number;
 			location = new global::System.Drawing.Point(37, 55);
@@ -593,7 +593,7 @@
 			global::System.Windows.Forms.Control label_RF_Channel_Number2 = this.Label_RF_Channel_Number;
 			size = new global::System.Drawing.Size(109, 13);
 			label_RF_Channel_Number2.Size = size;
-			this.Label_RF_Channel_Number.TabIndex = 22;
+			this.Label_RF_Channel_Number.TabIndex = (HorizontalAlignment)22;
 			this.Label_RF_Channel_Number.Text = "RF Channel Number :";
 			this.Combo_max_power.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_max_power = this.Combo_max_power;
@@ -603,7 +603,7 @@
 			global::System.Windows.Forms.Control combo_max_power2 = this.Combo_max_power;
 			size = new global::System.Drawing.Size(93, 21);
 			combo_max_power2.Size = size;
-			this.Combo_max_power.TabIndex = 20;
+			this.Combo_max_power.TabIndex = (HorizontalAlignment)20;
 			this.Combo_mode.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_mode = this.Combo_mode;
 			location = new global::System.Drawing.Point(187, 27);
@@ -612,7 +612,7 @@
 			global::System.Windows.Forms.Control combo_mode2 = this.Combo_mode;
 			size = new global::System.Drawing.Size(93, 21);
 			combo_mode2.Size = size;
-			this.Combo_mode.TabIndex = 20;
+			this.Combo_mode.TabIndex = (HorizontalAlignment)20;
 			this.Label_max_power.AutoSize = true;
 			global::System.Windows.Forms.Control label_max_power = this.Label_max_power;
 			location = new global::System.Drawing.Point(37, 103);
@@ -621,7 +621,7 @@
 			global::System.Windows.Forms.Control label_max_power2 = this.Label_max_power;
 			size = new global::System.Drawing.Size(66, 13);
 			label_max_power2.Size = size;
-			this.Label_max_power.TabIndex = 21;
+			this.Label_max_power.TabIndex = (HorizontalAlignment)21;
 			this.Label_max_power.Text = "Max Power :";
 			this.Label_mode.AutoSize = true;
 			global::System.Windows.Forms.Control label_mode = this.Label_mode;
@@ -631,7 +631,7 @@
 			global::System.Windows.Forms.Control label_mode2 = this.Label_mode;
 			size = new global::System.Drawing.Size(40, 13);
 			label_mode2.Size = size;
-			this.Label_mode.TabIndex = 21;
+			this.Label_mode.TabIndex = (HorizontalAlignment)21;
 			this.Label_mode.Text = "Mode :";
 			this.Grupo_parametros_comunicacao.Controls.Add(this.Valor_firmware);
 			this.Grupo_parametros_comunicacao.Controls.Add(this.Label_firmware);
@@ -662,7 +662,7 @@
 			global::System.Windows.Forms.Control grupo_parametros_comunicacao2 = this.Grupo_parametros_comunicacao;
 			size = new global::System.Drawing.Size(327, 208);
 			grupo_parametros_comunicacao2.Size = size;
-			this.Grupo_parametros_comunicacao.TabIndex = 20;
+			this.Grupo_parametros_comunicacao.TabIndex = (HorizontalAlignment)20;
 			this.Grupo_parametros_comunicacao.TabStop = false;
 			this.Grupo_parametros_comunicacao.Text = "Parâmetros de Comunicação";
 			this.Valor_firmware.BackColor = global::System.Drawing.Color.Beige;
@@ -674,8 +674,8 @@
 			global::System.Windows.Forms.Control valor_firmware2 = this.Valor_firmware;
 			size = new global::System.Drawing.Size(171, 20);
 			valor_firmware2.Size = size;
-			this.Valor_firmware.TabIndex = 29;
-			this.Valor_firmware.TextAlign = 1;
+			this.Valor_firmware.TabIndex = (HorizontalAlignment)29;
+			this.Valor_firmware.TextAlign = (HorizontalAlignment)1;
 			this.Label_firmware.AutoSize = true;
 			global::System.Windows.Forms.Control label_firmware = this.Label_firmware;
 			location = new global::System.Drawing.Point(37, 164);
@@ -684,7 +684,7 @@
 			global::System.Windows.Forms.Control label_firmware2 = this.Label_firmware;
 			size = new global::System.Drawing.Size(93, 13);
 			label_firmware2.Size = size;
-			this.Label_firmware.TabIndex = 28;
+			this.Label_firmware.TabIndex = (HorizontalAlignment)28;
 			this.Label_firmware.Text = "Firmware Version :";
 			this.Valor_mac_adress.BackColor = global::System.Drawing.Color.Beige;
 			this.Valor_mac_adress.Enabled = false;
@@ -695,8 +695,8 @@
 			global::System.Windows.Forms.Control valor_mac_adress2 = this.Valor_mac_adress;
 			size = new global::System.Drawing.Size(171, 20);
 			valor_mac_adress2.Size = size;
-			this.Valor_mac_adress.TabIndex = 27;
-			this.Valor_mac_adress.TextAlign = 1;
+			this.Valor_mac_adress.TabIndex = (HorizontalAlignment)27;
+			this.Valor_mac_adress.TextAlign = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_desK_ = this.Valor_desK_7;
 			location = new global::System.Drawing.Point(278, 97);
 			valor_desK_.Location = location;
@@ -704,7 +704,7 @@
 			global::System.Windows.Forms.Control valor_desK_2 = this.Valor_desK_7;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_2.Size = size;
-			this.Valor_desK_7.TabIndex = 26;
+			this.Valor_desK_7.TabIndex = (HorizontalAlignment)26;
 			global::System.Windows.Forms.Control valor_dest_ = this.Valor_dest_6;
 			location = new global::System.Drawing.Point(278, 69);
 			valor_dest_.Location = location;
@@ -712,7 +712,7 @@
 			global::System.Windows.Forms.Control valor_dest_2 = this.Valor_dest_6;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_dest_2.Size = size;
-			this.Valor_dest_6.TabIndex = 25;
+			this.Valor_dest_6.TabIndex = (HorizontalAlignment)25;
 			this.Label_mac_adress.AutoSize = true;
 			global::System.Windows.Forms.Control label_mac_adress = this.Label_mac_adress;
 			location = new global::System.Drawing.Point(37, 138);
@@ -721,7 +721,7 @@
 			global::System.Windows.Forms.Control label_mac_adress2 = this.Label_mac_adress;
 			size = new global::System.Drawing.Size(69, 13);
 			label_mac_adress2.Size = size;
-			this.Label_mac_adress.TabIndex = 24;
+			this.Label_mac_adress.TabIndex = (HorizontalAlignment)24;
 			this.Label_mac_adress.Text = "Mac Adress :";
 			global::System.Windows.Forms.Control valor_desK_3 = this.Valor_desK_5;
 			location = new global::System.Drawing.Point(226, 95);
@@ -730,7 +730,7 @@
 			global::System.Windows.Forms.Control valor_desK_4 = this.Valor_desK_5;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_4.Size = size;
-			this.Valor_desK_5.TabIndex = 23;
+			this.Valor_desK_5.TabIndex = (HorizontalAlignment)23;
 			global::System.Windows.Forms.Control valor_desK_5 = this.Valor_desK_6;
 			location = new global::System.Drawing.Point(252, 95);
 			valor_desK_5.Location = location;
@@ -738,7 +738,7 @@
 			global::System.Windows.Forms.Control valor_desK_6 = this.Valor_desK_6;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_6.Size = size;
-			this.Valor_desK_6.TabIndex = 22;
+			this.Valor_desK_6.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_desK_7 = this.Valor_desK_4;
 			location = new global::System.Drawing.Point(200, 95);
 			valor_desK_7.Location = location;
@@ -746,7 +746,7 @@
 			global::System.Windows.Forms.Control valor_desK_8 = this.Valor_desK_4;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_8.Size = size;
-			this.Valor_desK_4.TabIndex = 22;
+			this.Valor_desK_4.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_dest_3 = this.Valor_dest_5;
 			location = new global::System.Drawing.Point(252, 69);
 			valor_dest_3.Location = location;
@@ -754,7 +754,7 @@
 			global::System.Windows.Forms.Control valor_dest_4 = this.Valor_dest_5;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_dest_4.Size = size;
-			this.Valor_dest_5.TabIndex = 22;
+			this.Valor_dest_5.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_desK_9 = this.Valor_desK_3;
 			location = new global::System.Drawing.Point(174, 95);
 			valor_desK_9.Location = location;
@@ -762,7 +762,7 @@
 			global::System.Windows.Forms.Control valor_desK_10 = this.Valor_desK_3;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_10.Size = size;
-			this.Valor_desK_3.TabIndex = 22;
+			this.Valor_desK_3.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_dest_5 = this.Valor_dest_4;
 			location = new global::System.Drawing.Point(226, 69);
 			valor_dest_5.Location = location;
@@ -770,7 +770,7 @@
 			global::System.Windows.Forms.Control valor_dest_6 = this.Valor_dest_4;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_dest_6.Size = size;
-			this.Valor_dest_4.TabIndex = 22;
+			this.Valor_dest_4.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_desK_11 = this.Valor_desK_2;
 			location = new global::System.Drawing.Point(148, 95);
 			valor_desK_11.Location = location;
@@ -778,7 +778,7 @@
 			global::System.Windows.Forms.Control valor_desK_12 = this.Valor_desK_2;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_12.Size = size;
-			this.Valor_desK_2.TabIndex = 22;
+			this.Valor_desK_2.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_dest_7 = this.Valor_dest_3;
 			location = new global::System.Drawing.Point(200, 69);
 			valor_dest_7.Location = location;
@@ -786,7 +786,7 @@
 			global::System.Windows.Forms.Control valor_dest_8 = this.Valor_dest_3;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_dest_8.Size = size;
-			this.Valor_dest_3.TabIndex = 22;
+			this.Valor_dest_3.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_desK_13 = this.Valor_desK_1;
 			location = new global::System.Drawing.Point(122, 95);
 			valor_desK_13.Location = location;
@@ -794,7 +794,7 @@
 			global::System.Windows.Forms.Control valor_desK_14 = this.Valor_desK_1;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_desK_14.Size = size;
-			this.Valor_desK_1.TabIndex = 22;
+			this.Valor_desK_1.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_dest_9 = this.Valor_dest_2;
 			location = new global::System.Drawing.Point(174, 69);
 			valor_dest_9.Location = location;
@@ -802,7 +802,7 @@
 			global::System.Windows.Forms.Control valor_dest_10 = this.Valor_dest_2;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_dest_10.Size = size;
-			this.Valor_dest_2.TabIndex = 22;
+			this.Valor_dest_2.TabIndex = (HorizontalAlignment)22;
 			global::System.Windows.Forms.Control valor_dest_11 = this.Valor_dest_1;
 			location = new global::System.Drawing.Point(148, 69);
 			valor_dest_11.Location = location;
@@ -810,7 +810,7 @@
 			global::System.Windows.Forms.Control valor_dest_12 = this.Valor_dest_1;
 			size = new global::System.Drawing.Size(25, 20);
 			valor_dest_12.Size = size;
-			this.Valor_dest_1.TabIndex = 22;
+			this.Valor_dest_1.TabIndex = (HorizontalAlignment)22;
 			this.Label_des_key.AutoSize = true;
 			global::System.Windows.Forms.Control label_des_key = this.Label_des_key;
 			location = new global::System.Drawing.Point(37, 102);
@@ -819,7 +819,7 @@
 			global::System.Windows.Forms.Control label_des_key2 = this.Label_des_key;
 			size = new global::System.Drawing.Size(53, 13);
 			label_des_key2.Size = size;
-			this.Label_des_key.TabIndex = 21;
+			this.Label_des_key.TabIndex = (HorizontalAlignment)21;
 			this.Label_des_key.Text = "Des Key :";
 			this.Combo_baudrate.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_baudrate = this.Combo_baudrate;
@@ -829,7 +829,7 @@
 			global::System.Windows.Forms.Control combo_baudrate2 = this.Combo_baudrate;
 			size = new global::System.Drawing.Size(93, 21);
 			combo_baudrate2.Size = size;
-			this.Combo_baudrate.TabIndex = 20;
+			this.Combo_baudrate.TabIndex = (HorizontalAlignment)20;
 			this.Label_destination.AutoSize = true;
 			global::System.Windows.Forms.Control label_destination = this.Label_destination;
 			location = new global::System.Drawing.Point(37, 72);
@@ -838,7 +838,7 @@
 			global::System.Windows.Forms.Control label_destination2 = this.Label_destination;
 			size = new global::System.Drawing.Size(66, 13);
 			label_destination2.Size = size;
-			this.Label_destination.TabIndex = 21;
+			this.Label_destination.TabIndex = (HorizontalAlignment)21;
 			this.Label_destination.Text = "Destination :";
 			this.Label_baudrate.AutoSize = true;
 			global::System.Windows.Forms.Control label_baudrate = this.Label_baudrate;
@@ -848,7 +848,7 @@
 			global::System.Windows.Forms.Control label_baudrate2 = this.Label_baudrate;
 			size = new global::System.Drawing.Size(83, 13);
 			label_baudrate2.Size = size;
-			this.Label_baudrate.TabIndex = 21;
+			this.Label_baudrate.TabIndex = (HorizontalAlignment)21;
 			this.Label_baudrate.Text = "Interface Baud :";
 			this.Grupo_modo_operacao.Controls.Add(this.Check_cmd_data_disable);
 			this.Grupo_modo_operacao.Controls.Add(this.Check_485_modem_mode);
@@ -880,7 +880,7 @@
 			global::System.Windows.Forms.Control grupo_modo_operacao2 = this.Grupo_modo_operacao;
 			size = new global::System.Drawing.Size(274, 543);
 			grupo_modo_operacao2.Size = size;
-			this.Grupo_modo_operacao.TabIndex = 20;
+			this.Grupo_modo_operacao.TabIndex = (HorizontalAlignment)20;
 			this.Grupo_modo_operacao.TabStop = false;
 			this.Grupo_modo_operacao.Text = "Modo de Operação";
 			this.Check_cmd_data_disable.AutoSize = true;
@@ -891,7 +891,7 @@
 			global::System.Windows.Forms.Control check_cmd_data_disable2 = this.Check_cmd_data_disable;
 			size = new global::System.Drawing.Size(129, 17);
 			check_cmd_data_disable2.Size = size;
-			this.Check_cmd_data_disable.TabIndex = 0;
+			this.Check_cmd_data_disable.TabIndex = (HorizontalAlignment)0;
 			this.Check_cmd_data_disable.Text = "Cmd/Data Rx Disable";
 			this.Check_cmd_data_disable.UseVisualStyleBackColor = true;
 			this.Check_485_modem_mode.AutoSize = true;
@@ -902,7 +902,7 @@
 			global::System.Windows.Forms.Control check_485_modem_mode2 = this.Check_485_modem_mode;
 			size = new global::System.Drawing.Size(130, 17);
 			check_485_modem_mode2.Size = size;
-			this.Check_485_modem_mode.TabIndex = 0;
+			this.Check_485_modem_mode.TabIndex = (HorizontalAlignment)0;
 			this.Check_485_modem_mode.Text = "RS 485 Modem Mode";
 			this.Check_485_modem_mode.UseVisualStyleBackColor = true;
 			this.Check_auto_calibrate.AutoSize = true;
@@ -913,7 +913,7 @@
 			global::System.Windows.Forms.Control check_auto_calibrate2 = this.Check_auto_calibrate;
 			size = new global::System.Drawing.Size(92, 17);
 			check_auto_calibrate2.Size = size;
-			this.Check_auto_calibrate.TabIndex = 0;
+			this.Check_auto_calibrate.TabIndex = (HorizontalAlignment)0;
 			this.Check_auto_calibrate.Text = "Auto Calibrate";
 			this.Check_auto_calibrate.UseVisualStyleBackColor = true;
 			this.Check_send_data_complete.AutoSize = true;
@@ -924,7 +924,7 @@
 			global::System.Windows.Forms.Control check_send_data_complete2 = this.Check_send_data_complete;
 			size = new global::System.Drawing.Size(124, 17);
 			check_send_data_complete2.Size = size;
-			this.Check_send_data_complete.TabIndex = 0;
+			this.Check_send_data_complete.TabIndex = (HorizontalAlignment)0;
 			this.Check_send_data_complete.Text = "Send Data Complete";
 			this.Check_send_data_complete.UseVisualStyleBackColor = true;
 			this.Check_enhanced_receive_api.AutoSize = true;
@@ -935,7 +935,7 @@
 			global::System.Windows.Forms.Control check_enhanced_receive_api2 = this.Check_enhanced_receive_api;
 			size = new global::System.Drawing.Size(138, 17);
 			check_enhanced_receive_api2.Size = size;
-			this.Check_enhanced_receive_api.TabIndex = 0;
+			this.Check_enhanced_receive_api.TabIndex = (HorizontalAlignment)0;
 			this.Check_enhanced_receive_api.Text = "Enhanced Receive API";
 			this.Check_enhanced_receive_api.UseVisualStyleBackColor = true;
 			this.Check_transmit_api.AutoSize = true;
@@ -946,7 +946,7 @@
 			global::System.Windows.Forms.Control check_transmit_api2 = this.Check_transmit_api;
 			size = new global::System.Drawing.Size(86, 17);
 			check_transmit_api2.Size = size;
-			this.Check_transmit_api.TabIndex = 0;
+			this.Check_transmit_api.TabIndex = (HorizontalAlignment)0;
 			this.Check_transmit_api.Text = "Transmit API";
 			this.Check_transmit_api.UseVisualStyleBackColor = true;
 			this.Check_enhanced_api_enabled.AutoSize = true;
@@ -957,7 +957,7 @@
 			global::System.Windows.Forms.Control check_enhanced_api_enabled2 = this.Check_enhanced_api_enabled;
 			size = new global::System.Drawing.Size(137, 17);
 			check_enhanced_api_enabled2.Size = size;
-			this.Check_enhanced_api_enabled.TabIndex = 0;
+			this.Check_enhanced_api_enabled.TabIndex = (HorizontalAlignment)0;
 			this.Check_enhanced_api_enabled.Text = "Enhanced API Enabled";
 			this.Check_enhanced_api_enabled.UseVisualStyleBackColor = true;
 			this.Check_receive_api.AutoSize = true;
@@ -968,7 +968,7 @@
 			global::System.Windows.Forms.Control check_receive_api2 = this.Check_receive_api;
 			size = new global::System.Drawing.Size(86, 17);
 			check_receive_api2.Size = size;
-			this.Check_receive_api.TabIndex = 0;
+			this.Check_receive_api.TabIndex = (HorizontalAlignment)0;
 			this.Check_receive_api.Text = "Receive API";
 			this.Check_receive_api.UseVisualStyleBackColor = true;
 			this.Check_parity_mode.AutoSize = true;
@@ -979,7 +979,7 @@
 			global::System.Windows.Forms.Control check_parity_mode2 = this.Check_parity_mode;
 			size = new global::System.Drawing.Size(82, 17);
 			check_parity_mode2.Size = size;
-			this.Check_parity_mode.TabIndex = 0;
+			this.Check_parity_mode.TabIndex = (HorizontalAlignment)0;
 			this.Check_parity_mode.Text = "Parity Mode";
 			this.Check_parity_mode.UseVisualStyleBackColor = true;
 			this.Check_protocol_status.AutoSize = true;
@@ -990,7 +990,7 @@
 			global::System.Windows.Forms.Control check_protocol_status2 = this.Check_protocol_status;
 			size = new global::System.Drawing.Size(98, 17);
 			check_protocol_status2.Size = size;
-			this.Check_protocol_status.TabIndex = 0;
+			this.Check_protocol_status.TabIndex = (HorizontalAlignment)0;
 			this.Check_protocol_status.Text = "Protocol Status";
 			this.Check_protocol_status.UseVisualStyleBackColor = true;
 			this.Check_485dere.AutoSize = true;
@@ -1001,7 +1001,7 @@
 			global::System.Windows.Forms.Control check_485dere2 = this.Check_485dere;
 			size = new global::System.Drawing.Size(82, 17);
 			check_485dere2.Size = size;
-			this.Check_485dere.TabIndex = 0;
+			this.Check_485dere.TabIndex = (HorizontalAlignment)0;
 			this.Check_485dere.Text = "485 DE/RE";
 			this.Check_485dere.UseVisualStyleBackColor = true;
 			this.Check_modem_mode.AutoSize = true;
@@ -1012,7 +1012,7 @@
 			global::System.Windows.Forms.Control check_modem_mode2 = this.Check_modem_mode;
 			size = new global::System.Drawing.Size(91, 17);
 			check_modem_mode2.Size = size;
-			this.Check_modem_mode.TabIndex = 0;
+			this.Check_modem_mode.TabIndex = (HorizontalAlignment)0;
 			this.Check_modem_mode.Text = "Modem Mode";
 			this.Check_modem_mode.UseVisualStyleBackColor = true;
 			this.Check_rts_enable.AutoSize = true;
@@ -1023,7 +1023,7 @@
 			global::System.Windows.Forms.Control check_rts_enable2 = this.Check_rts_enable;
 			size = new global::System.Drawing.Size(84, 17);
 			check_rts_enable2.Size = size;
-			this.Check_rts_enable.TabIndex = 0;
+			this.Check_rts_enable.TabIndex = (HorizontalAlignment)0;
 			this.Check_rts_enable.Text = "RTS Enable";
 			this.Check_rts_enable.UseVisualStyleBackColor = true;
 			this.Check_beacon_mode.AutoSize = true;
@@ -1034,7 +1034,7 @@
 			global::System.Windows.Forms.Control check_beacon_mode2 = this.Check_beacon_mode;
 			size = new global::System.Drawing.Size(118, 17);
 			check_beacon_mode2.Size = size;
-			this.Check_beacon_mode.TabIndex = 0;
+			this.Check_beacon_mode.TabIndex = (HorizontalAlignment)0;
 			this.Check_beacon_mode.Text = "One Beacom Mode";
 			this.Check_beacon_mode.UseVisualStyleBackColor = true;
 			this.Check_sync_channel.AutoSize = true;
@@ -1045,7 +1045,7 @@
 			global::System.Windows.Forms.Control check_sync_channel2 = this.Check_sync_channel;
 			size = new global::System.Drawing.Size(104, 17);
 			check_sync_channel2.Size = size;
-			this.Check_sync_channel.TabIndex = 0;
+			this.Check_sync_channel.TabIndex = (HorizontalAlignment)0;
 			this.Check_sync_channel.Text = "Sync to Channel";
 			this.Check_sync_channel.UseVisualStyleBackColor = true;
 			this.Check_auto_channel.AutoSize = true;
@@ -1056,7 +1056,7 @@
 			global::System.Windows.Forms.Control check_auto_channel2 = this.Check_auto_channel;
 			size = new global::System.Drawing.Size(90, 17);
 			check_auto_channel2.Size = size;
-			this.Check_auto_channel.TabIndex = 0;
+			this.Check_auto_channel.TabIndex = (HorizontalAlignment)0;
 			this.Check_auto_channel.Text = "Auto Channel";
 			this.Check_auto_channel.UseVisualStyleBackColor = true;
 			this.Check_unicast_only.AutoSize = true;
@@ -1067,7 +1067,7 @@
 			global::System.Windows.Forms.Control check_unicast_only2 = this.Check_unicast_only;
 			size = new global::System.Drawing.Size(86, 17);
 			check_unicast_only2.Size = size;
-			this.Check_unicast_only.TabIndex = 0;
+			this.Check_unicast_only.TabIndex = (HorizontalAlignment)0;
 			this.Check_unicast_only.Text = "Unicast Only";
 			this.Check_unicast_only.UseVisualStyleBackColor = true;
 			this.Check_broadcast_mode.AutoSize = true;
@@ -1078,7 +1078,7 @@
 			global::System.Windows.Forms.Control check_broadcast_mode2 = this.Check_broadcast_mode;
 			size = new global::System.Drawing.Size(104, 17);
 			check_broadcast_mode2.Size = size;
-			this.Check_broadcast_mode.TabIndex = 0;
+			this.Check_broadcast_mode.TabIndex = (HorizontalAlignment)0;
 			this.Check_broadcast_mode.Text = "Broadcast Mode";
 			this.Check_broadcast_mode.UseVisualStyleBackColor = true;
 			this.Check_auto_destination.AutoSize = true;
@@ -1089,7 +1089,7 @@
 			global::System.Windows.Forms.Control check_auto_destination2 = this.Check_auto_destination;
 			size = new global::System.Drawing.Size(102, 17);
 			check_auto_destination2.Size = size;
-			this.Check_auto_destination.TabIndex = 0;
+			this.Check_auto_destination.TabIndex = (HorizontalAlignment)0;
 			this.Check_auto_destination.Text = "Auto destination";
 			this.Check_auto_destination.UseVisualStyleBackColor = true;
 			this.Check_des_enabled.AutoSize = true;
@@ -1100,7 +1100,7 @@
 			global::System.Windows.Forms.Control check_des_enabled2 = this.Check_des_enabled;
 			size = new global::System.Drawing.Size(90, 17);
 			check_des_enabled2.Size = size;
-			this.Check_des_enabled.TabIndex = 0;
+			this.Check_des_enabled.TabIndex = (HorizontalAlignment)0;
 			this.Check_des_enabled.Text = "DES Enabled";
 			this.Check_des_enabled.UseVisualStyleBackColor = true;
 			this.Check_full_duplex.AutoSize = true;
@@ -1111,7 +1111,7 @@
 			global::System.Windows.Forms.Control check_full_duplex2 = this.Check_full_duplex;
 			size = new global::System.Drawing.Size(78, 17);
 			check_full_duplex2.Size = size;
-			this.Check_full_duplex.TabIndex = 0;
+			this.Check_full_duplex.TabIndex = (HorizontalAlignment)0;
 			this.Check_full_duplex.Text = "Full Duplex";
 			this.Check_full_duplex.UseVisualStyleBackColor = true;
 			this.Check_auto_config.AutoSize = true;
@@ -1122,7 +1122,7 @@
 			global::System.Windows.Forms.Control check_auto_config2 = this.Check_auto_config;
 			size = new global::System.Drawing.Size(81, 17);
 			check_auto_config2.Size = size;
-			this.Check_auto_config.TabIndex = 0;
+			this.Check_auto_config.TabIndex = (HorizontalAlignment)0;
 			this.Check_auto_config.Text = "Auto Config";
 			this.Check_auto_config.UseVisualStyleBackColor = true;
 			global::System.Windows.Forms.Control button = this.Button1;
@@ -1132,13 +1132,13 @@
 			global::System.Windows.Forms.Control button2 = this.Button1;
 			size = new global::System.Drawing.Size(121, 39);
 			button2.Size = size;
-			this.Button1.TabIndex = 21;
+			this.Button1.TabIndex = (HorizontalAlignment)21;
 			this.Button1.Text = "Button1";
 			this.Button1.UseVisualStyleBackColor = true;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			size = new global::System.Drawing.Size(694, 689);
 			this.ClientSize = size;
 			this.Controls.Add(this.Button1);
@@ -1147,11 +1147,11 @@
 			this.Controls.Add(this.Grupo_modo_operacao);
 			this.Controls.Add(this.Grupo_parametros_rf);
 			this.Controls.Add(this.Grupo_parametros_radio);
-			this.FormBorderStyle = 0;
+			this.FormBorderStyle = (HorizontalAlignment)0;
 			location = new global::System.Drawing.Point(160, 2);
 			this.Location = location;
 			this.Name = "Equip_590_conf";
-			this.StartPosition = 0;
+			this.StartPosition = (HorizontalAlignment)0;
 			this.Text = "Equip_590_conf";
 			this.Grupo_comandos.ResumeLayout(false);
 			this.Grupo_comandos.PerformLayout();

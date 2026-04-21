@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
@@ -16,13 +16,13 @@ namespace iS800
 		// Token: 0x060002A6 RID: 678 RVA: 0x00222204 File Offset: 0x00220604
 		public static void Impressao_BeginPrint_RT830()
 		{
-			RT_830_200_impressao_X.pagina_impressao = 1;
-			RT_830_200_impressao_X.grupo_impressao = 1;
-			RT_830_200_impressao_X.quantos_imprimiu = 0;
-			RT_830_200_impressao_X.quantos_imprimiu2 = 0;
-			RT_830_200_impressao_X.quantos_imprimiu3 = 0;
-			RT_830_200_impressao_X.quantos_imprimiu4 = 0;
-			RT_830_200_impressao_X.inicio = 5;
+			RT_830_200_impressao_X.pagina_impressao = (HorizontalAlignment)1;
+			RT_830_200_impressao_X.grupo_impressao = (HorizontalAlignment)1;
+			RT_830_200_impressao_X.quantos_imprimiu = (HorizontalAlignment)0;
+			RT_830_200_impressao_X.quantos_imprimiu2 = (HorizontalAlignment)0;
+			RT_830_200_impressao_X.quantos_imprimiu3 = (HorizontalAlignment)0;
+			RT_830_200_impressao_X.quantos_imprimiu4 = (HorizontalAlignment)0;
+			RT_830_200_impressao_X.inicio = (HorizontalAlignment)5;
 		}
 
 		// Token: 0x060002A7 RID: 679 RVA: 0x00222230 File Offset: 0x00220630
@@ -55,11 +55,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT830Grupo1(PrintPageEventArgs z, RT_830_200_configurador frm)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
-			Font font4 = new Font("Times New Roman", 14f, 0, 3);
-			Font font5 = new Font("Times New Roman", 14f, 0, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
+			Font font4 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
+			Font font5 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -139,7 +139,7 @@ namespace iS800
 				RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_recalque,
 				RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_vista
 			};
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -149,7 +149,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 3);
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					tabelaMeiaLinhaEsquerda2.EscreveValorLinha(num + 3, array3[num].Valor.ToString(), 305);
@@ -169,11 +169,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT830Grupo2(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
-			Font font4 = new Font("Times New Roman", 14f, 0, 3);
-			Font font5 = new Font("Times New Roman", 14f, 0, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
+			Font font4 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
+			Font font5 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -210,15 +210,15 @@ namespace iS800
 			int num = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_equip_reservatorios.Valor;
 			if (num > 30)
 			{
-				num = 30;
+				num = (HorizontalAlignment)30;
 			}
 			checked
 			{
 				TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda = new TabelaMeiaLinhaEsquerda(z.MarginBounds, z.Graphics, fonte2, cores, 5, num + 1, "Variáveis", true);
 				TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda2 = tabelaMeiaLinhaEsquerda;
-				int num2 = 1;
+				int num2 = (HorizontalAlignment)1;
 				tabelaMeiaLinhaEsquerda2.EscreveTodosTitulos(ref num2, titulos, array);
-				int num3 = 0;
+				int num3 = (HorizontalAlignment)0;
 				int num4 = num - 1;
 				for (int i = num3; i <= num4; i++)
 				{
@@ -234,9 +234,9 @@ namespace iS800
 				{
 					TabelaMeiaLinhaDireita tabelaMeiaLinhaDireita = new TabelaMeiaLinhaDireita(z.MarginBounds, z.Graphics, fonte2, cores, 5, num + 1, "Variáveis Continuação", true);
 					TabelaMeiaLinhaDireita tabelaMeiaLinhaDireita2 = tabelaMeiaLinhaDireita;
-					num2 = 1;
+					num2 = (HorizontalAlignment)1;
 					tabelaMeiaLinhaDireita2.EscreveTodosTitulos(ref num2, titulos, array);
-					int num5 = 0;
+					int num5 = (HorizontalAlignment)0;
 					int num6 = num - 1;
 					for (int i = num5; i <= num6; i++)
 					{
@@ -259,11 +259,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT830Grupo3(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
-			Font font4 = new Font("Times New Roman", 14f, 0, 3);
-			Font font5 = new Font("Times New Roman", 14f, 0, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
+			Font font4 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
+			Font font5 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -332,9 +332,9 @@ namespace iS800
 			{
 				TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, 5, valor + 1, "Remotas de Controle", true);
 				TabelaLinhaInteria tabelaLinhaInteria2 = tabelaLinhaInteria;
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				tabelaLinhaInteria2.EscreveTodosTitulos(ref num, titulos, array);
-				int num2 = 0;
+				int num2 = (HorizontalAlignment)0;
 				int num3 = valor - 1;
 				for (int i = num2; i <= num3; i++)
 				{
@@ -366,11 +366,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT830Grupo4(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
-			Font font4 = new Font("Times New Roman", 14f, 0, 3);
-			Font font5 = new Font("Times New Roman", 14f, 0, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
+			Font font4 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
+			Font font5 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -448,9 +448,9 @@ namespace iS800
 			{
 				TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, 5, valor + 1, "Remotas de Controle - Continuação", true);
 				TabelaLinhaInteria tabelaLinhaInteria2 = tabelaLinhaInteria;
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				tabelaLinhaInteria2.EscreveTodosTitulos(ref num, titulos, array);
-				int num2 = 0;
+				int num2 = (HorizontalAlignment)0;
 				int num3 = valor - 1;
 				for (int i = num2; i <= num3; i++)
 				{
@@ -485,11 +485,11 @@ namespace iS800
 		public static bool DesenhaRelatorioRT830Grupo5(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
-			Font font4 = new Font("Times New Roman", 14f, 0, 3);
-			Font font5 = new Font("Times New Roman", 14f, 0, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
+			Font font4 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
+			Font font5 = new Font("Times New Roman", 14f, 0, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -527,9 +527,9 @@ namespace iS800
 			{
 				TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda = new TabelaMeiaLinhaEsquerda(z.MarginBounds, z.Graphics, fonte2, cores, 5, valor + 1, "Equipamento Vista", true);
 				TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda2 = tabelaMeiaLinhaEsquerda;
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				tabelaMeiaLinhaEsquerda2.EscreveTodosTitulos(ref num, titulos, array);
-				int num2 = 0;
+				int num2 = (HorizontalAlignment)0;
 				int num3 = valor - 1;
 				for (int i = num2; i <= num3; i++)
 				{
@@ -553,16 +553,16 @@ namespace iS800
 				valor = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_vistas.Valor;
 				TabelaLinhaInteria tabelaLinhaInteria = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, nextLineAvailable, valor + 1, "Equipamentos de Reservatório", true);
 				TabelaLinhaInteria tabelaLinhaInteria2 = tabelaLinhaInteria;
-				num = 1;
+				num = (HorizontalAlignment)1;
 				tabelaLinhaInteria2.EscreveTodosTitulos(ref num, titulos2, posicoes);
-				int num4 = 0;
+				int num4 = (HorizontalAlignment)0;
 				int num5 = valor - 1;
 				for (int i = num4; i <= num5; i++)
 				{
 					string text7 = string.Format("{0:D2}", RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_vista.Valor + i);
 					tabelaLinhaInteria.EscreveValorLinha(i + 2, text7, array[0] + 5);
 					text7 = "";
-					int num6 = 0;
+					int num6 = (HorizontalAlignment)0;
 					int num7 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor - 1;
 					for (int j = num6; j <= num7; j++)
 					{
@@ -585,16 +585,16 @@ namespace iS800
 				valor = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_vistas.Valor;
 				TabelaLinhaInteria tabelaLinhaInteria3 = new TabelaLinhaInteria(z.MarginBounds, z.Graphics, fonte2, cores, nextLineAvailable, valor + 1, "Equipamentos de Recalque", true);
 				TabelaLinhaInteria tabelaLinhaInteria4 = tabelaLinhaInteria3;
-				num = 1;
+				num = (HorizontalAlignment)1;
 				tabelaLinhaInteria4.EscreveTodosTitulos(ref num, titulos3, posicoes2);
-				int num8 = 0;
+				int num8 = (HorizontalAlignment)0;
 				int num9 = valor - 1;
 				for (int i = num8; i <= num9; i++)
 				{
 					string text7 = string.Format("{0:D2}", RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_vista.Valor + i);
 					tabelaLinhaInteria3.EscreveValorLinha(i + 2, text7, array[0] + 5);
 					text7 = "";
-					int num10 = 0;
+					int num10 = (HorizontalAlignment)0;
 					int num11 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor - 1;
 					for (int j = num10; j <= num11; j++)
 					{

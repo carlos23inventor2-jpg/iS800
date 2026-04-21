@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
@@ -20,7 +20,7 @@ namespace iS800
 			RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.tipo_COM2.IndicePadrao();
 			RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.ValorPadrao();
 			RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_recalques.ValorPadrao();
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -29,7 +29,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 39);
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_831_200_variaveis_X.RT_831_200_BD.recalque[num].Nome.ValorPadrao();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
@@ -35,7 +35,7 @@ namespace iS800
 			RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_reservatorio.ValorPadrao();
 			RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_recalque.ValorPadrao();
 			RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.inicio_endereco_vista.ValorPadrao();
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -47,7 +47,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 49);
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_830_200_variaveis_X.RT_830_200_BD.recalque[num].Nome.ValorPadrao();
@@ -83,13 +83,13 @@ namespace iS800
 					num++;
 				}
 				while (num <= 27);
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					RT_830_200_variaveis_X.RT_830_200_BD.vista[num].Numero_Variaveis.ValorPadrao();
 					RT_830_200_variaveis_X.RT_830_200_BD.vista[num].Numero_RemotasControles.ValorPadrao();
 					RT_830_200_variaveis_X.RT_830_200_BD.vista[num].Prioridade.ValorPadrao();
-					int num2 = 0;
+					int num2 = (HorizontalAlignment)0;
 					do
 					{
 						RT_830_200_variaveis_X.RT_830_200_BD.vista[num].Variaveis[num2].ValorPadrao();

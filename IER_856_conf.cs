@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -1264,9 +1264,9 @@ namespace iS800
 		// Token: 0x06000E7C RID: 3708 RVA: 0x0030385C File Offset: 0x00301C5C
 		private void RT_810_conf_Activated(object sender, EventArgs e)
 		{
-			Geral.Equipamento_selecionado = 856;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)856;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000E7D RID: 3709 RVA: 0x00303874 File Offset: 0x00301C74
@@ -1278,26 +1278,26 @@ namespace iS800
 		public void Inicializa_DadosEStrutura855_Padrao()
 		{
 			RT_geral.IEC_855_BD.Versao.nome = "Versão";
-			RT_geral.IEC_855_BD.Versao.Padrao = 0;
+			RT_geral.IEC_855_BD.Versao.Padrao = (HorizontalAlignment)0;
 			RT_geral.IEC_855_BD.Build.nome = "Build";
-			RT_geral.IEC_855_BD.Build.Padrao = 0;
+			RT_geral.IEC_855_BD.Build.Padrao = (HorizontalAlignment)0;
 			RT_geral.IEC_855_BD.Release.nome = "Release";
-			RT_geral.IEC_855_BD.Release.Padrao = 0;
+			RT_geral.IEC_855_BD.Release.Padrao = (HorizontalAlignment)0;
 			RT_geral.IEC_855_BD.Equip.nome = "Tipo equipamento";
-			RT_geral.IEC_855_BD.Equip.Padrao = 0;
-			RT_geral.IEC_855_BD.MAC[0] = 0;
-			RT_geral.IEC_855_BD.MAC[1] = 0;
-			RT_geral.IEC_855_BD.MAC[2] = 0;
-			RT_geral.IEC_855_BD.MAC[3] = 0;
-			RT_geral.IEC_855_BD.MAC[4] = 0;
-			RT_geral.IEC_855_BD.MAC[5] = 0;
+			RT_geral.IEC_855_BD.Equip.Padrao = (HorizontalAlignment)0;
+			RT_geral.IEC_855_BD.MAC[0] = (HorizontalAlignment)0;
+			RT_geral.IEC_855_BD.MAC[1] = (HorizontalAlignment)0;
+			RT_geral.IEC_855_BD.MAC[2] = (HorizontalAlignment)0;
+			RT_geral.IEC_855_BD.MAC[3] = (HorizontalAlignment)0;
+			RT_geral.IEC_855_BD.MAC[4] = (HorizontalAlignment)0;
+			RT_geral.IEC_855_BD.MAC[5] = (HorizontalAlignment)0;
 			RT_geral.IEC_855_BD.DHCP_IP = "0.0.0.0";
 			RT_geral.IEC_855_BD.DHCP_GW = "0.0.0.0";
 			RT_geral.IEC_855_BD.DHCP_SM = "0.0.0.0";
 			RT_geral.IEC_855_BD.STATIC_IP = "0.0.0.0";
 			RT_geral.IEC_855_BD.STATIC_GW = "0.0.0.0";
 			RT_geral.IEC_855_BD.STATIC_SM = "0.0.0.0";
-			int i = 0;
+			int i = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -1307,16 +1307,16 @@ namespace iS800
 				}
 				while (i <= 199);
 				RT_geral.IEC_855_BD.AtribuicaoIP.nome = "Atribuicao IP";
-				RT_geral.IEC_855_BD.AtribuicaoIP.Indice_padrao = 1;
-				RT_geral.IEC_855_BD.AtribuicaoIP.Numero_itens = 2;
-				RT_geral.IEC_855_BD.AtribuicaoIP.valores[0] = 43690;
-				RT_geral.IEC_855_BD.AtribuicaoIP.valores[1] = 21845;
+				RT_geral.IEC_855_BD.AtribuicaoIP.Indice_padrao = (HorizontalAlignment)1;
+				RT_geral.IEC_855_BD.AtribuicaoIP.Numero_itens = (HorizontalAlignment)2;
+				RT_geral.IEC_855_BD.AtribuicaoIP.valores[0] = (HorizontalAlignment)43690;
+				RT_geral.IEC_855_BD.AtribuicaoIP.valores[1] = (HorizontalAlignment)21845;
 				RT_geral.IEC_855_BD.AtribuicaoIP.itens[0] = "Static - Fixo";
 				RT_geral.IEC_855_BD.AtribuicaoIP.itens[1] = "Dinamic - DHCP";
 				RT_geral.IEC_855_BD.BaudRateCOM1.nome = "BaudRate COM1";
 				RT_geral.IEC_855_BD.BaudRateCOM1.Indice_padrao = perifericos.Lista_GetIndicePadrao(perifericos.ListaBaudRate_IEC855);
 				RT_geral.IEC_855_BD.BaudRateCOM1.Numero_itens = perifericos.ListaBaudRate_IEC855.Count;
-				int num = 0;
+				int num = (HorizontalAlignment)0;
 				int num2 = RT_geral.IEC_855_BD.BaudRateCOM1.Numero_itens - 1;
 				for (i = num; i <= num2; i++)
 				{
@@ -1340,9 +1340,9 @@ namespace iS800
 			RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Valor = RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Padrao;
 			RT_geral.IEC_855_BD.AtribuicaoIP.Indice = RT_geral.IEC_855_BD.AtribuicaoIP.Indice_padrao;
 			RT_geral.IEC_855_BD.AtribuicaoIP.Valor = RT_geral.IEC_855_BD.AtribuicaoIP.valores[RT_geral.IEC_855_BD.AtribuicaoIP.Indice];
-			RT_geral.IEC_855_BD.BaudRateCOM1.Indice = 1;
+			RT_geral.IEC_855_BD.BaudRateCOM1.Indice = (HorizontalAlignment)1;
 			RT_geral.IEC_855_BD.BaudRateCOM1.Valor = RT_geral.IEC_855_BD.BaudRateCOM1.valores[RT_geral.IEC_855_BD.BaudRateCOM1.Indice];
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -1363,7 +1363,7 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				this.Libera_acoes();
 				this.TextBox_equipamento.Text = RT_geral.IEC_855_BD.Equip.Valor.ToString();
 				this.TextBox_versao.Text = RT_geral.IEC_855_BD.Versao.Valor.ToString();
@@ -1385,13 +1385,13 @@ namespace iS800
 				this.tb_static_sm.Text = RT_geral.IEC_855_BD.STATIC_SM;
 				goto IL_23A;
 				IL_1E5:
-				Interaction.MsgBox("Erro na atualização da tela!", 32, "Atenção - Erro de dados");
+				Interaction.MsgBox("Erro na atualização da tela!", (MsgBoxStyle)32, "Atenção - Erro de dados");
 				goto IL_23A;
 				IL_1F9:
 				num2 = -1;
 								IL_20D:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_1F9;
@@ -1432,13 +1432,13 @@ namespace iS800
 		public void AtualizaMsgTela_RT_810(string texto, int cor)
 		{
 			this.ToolStripTextBox_RT_810_Msg.Text = texto;
-			if (cor == 0)
+			if (cor == (DialogResult)0)
 			{
 				this.ToolStripTextBox_RT_810_Msg.ForeColor = Color.Blue;
 			}
-			else if (cor == 1)
+			else if (cor == (DialogResult)1)
 			{
-				this.ToolStripProgressBar_RT_810.Value = 0;
+				this.ToolStripProgressBar_RT_810.Value = (HorizontalAlignment)0;
 				this.ToolStripTextBox_RT_810_Msg.ForeColor = Color.Red;
 			}
 			else
@@ -1468,7 +1468,7 @@ namespace iS800
 			this.ToolStripButton_RT_810_Abrir.Enabled = true;
 			this.ToolStripButton_RT_810_novo.Enabled = true;
 			this.ToolStripButton_RT_810_Salvar.Enabled = true;
-			if (Comunicacao.Config_sistema.tipo_interface == 1)
+			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 			{
 				if (Geral.Config_geral.Porta_serial_Ok)
 				{
@@ -1481,7 +1481,7 @@ namespace iS800
 					this.ToolStripButton_RT_810_Upload.Enabled = false;
 				}
 			}
-			else if (Comunicacao.Config_sistema.tipo_interface == 2)
+			else if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 			{
 				this.ToolStripButton_RT_810_Download.Enabled = true;
 				this.ToolStripButton_RT_810_Upload.Enabled = true;
@@ -1491,10 +1491,10 @@ namespace iS800
 		// Token: 0x06000E88 RID: 3720 RVA: 0x003040DC File Offset: 0x003024DC
 		public void InicializaBarraProgressoTela_RT_810(int num_passos)
 		{
-			this.ToolStripProgressBar_RT_810.Minimum = 0;
+			this.ToolStripProgressBar_RT_810.Minimum = (HorizontalAlignment)0;
 			this.ToolStripProgressBar_RT_810.Maximum = checked(num_passos * 4);
 			this.ToolStripProgressBar_RT_810.Step = num_passos;
-			this.ToolStripProgressBar_RT_810.Value = 0;
+			this.ToolStripProgressBar_RT_810.Value = (HorizontalAlignment)0;
 			this.ToolStripProgressBar_RT_810.BackColor = Color.LightGray;
 		}
 
@@ -1503,7 +1503,7 @@ namespace iS800
 		{
 			this.Timer_limpa_MSG.Enabled = false;
 			this.AtualizaMsgTela_RT_810("", 0);
-			this.ToolStripProgressBar_RT_810.Value = 0;
+			this.ToolStripProgressBar_RT_810.Value = (HorizontalAlignment)0;
 			this.Libera_acoes();
 		}
 
@@ -1517,8 +1517,8 @@ namespace iS800
 		{
 			if (this.ComboBox_Modo_Operacao.FindStringExact(this.ComboBox_Modo_Operacao.Text) == -1)
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Método Operação");
-				this.ComboBox_Modo_Operacao.SelectedIndex = 0;
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Método Operação");
+				this.ComboBox_Modo_Operacao.SelectedIndex = (HorizontalAlignment)0;
 			}
 		}
 
@@ -1577,7 +1577,7 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", 32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
 				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
 				{
 					0
@@ -1680,8 +1680,8 @@ namespace iS800
 		// Token: 0x06000E9B RID: 3739 RVA: 0x00304630 File Offset: 0x00302A30
 		public void Leitura_IEC_856_conf()
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
-			Comunicacao.Ctrl_Com.Cont_rx = 0;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
+			Comunicacao.Ctrl_Com.Cont_rx = (HorizontalAlignment)0;
 			this.InicializaBarraProgressoTela_RT_810(3);
 			this.AtualizaMsgTela_RT_810("Identificando equipamento - Passo 1", 2);
 			if (!Mod_MD.Leitura_pagina_multi_interface(0, 255, 7).Status)
@@ -1726,8 +1726,8 @@ namespace iS800
 		// Token: 0x06000E9C RID: 3740 RVA: 0x003047A4 File Offset: 0x00302BA4
 		public void Gravar_IER_856_conf()
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
-			Comunicacao.Ctrl_Com.Cont_rx = 0;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
+			Comunicacao.Ctrl_Com.Cont_rx = (HorizontalAlignment)0;
 			this.InicializaBarraProgressoTela_RT_810(6);
 			this.AtualizaMsgTela_RT_810("Verificando equipamento - Passo 1", 2);
 			this.ToolStripProgressBar_RT_810.PerformStep();
@@ -1797,7 +1797,7 @@ namespace iS800
 		private void ToolStripButton_RT_810_Download_Click(object sender, EventArgs e)
 		{
 			this.AtivaEfeitoOnChangeValue();
-			if (Comunicacao.Config_sistema.tipo_interface == 1)
+			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 			{
 				if (Comunicacao.VerificaPortaSerialExiste())
 				{
@@ -1807,10 +1807,10 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 				}
 			}
-			else if (Comunicacao.Config_sistema.tipo_interface == 2)
+			else if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 			{
 				this.Bloqueia_acoes();
 				this.EncerraEdicaoDeCampos();
@@ -1818,10 +1818,10 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 			Comunicacao.Config_sistema.endereco_encontrado = false;
-			Comunicacao.Config_sistema.endereco_modbus = 0;
+			Comunicacao.Config_sistema.endereco_modbus = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000E9E RID: 3742 RVA: 0x00304A74 File Offset: 0x00302E74
@@ -1843,7 +1843,7 @@ namespace iS800
 		private void ToolStripButton_RT_810_Upload_Click(object sender, EventArgs e)
 		{
 			this.AtivaEfeitoOnChangeValue();
-			if (Comunicacao.Config_sistema.tipo_interface == 1)
+			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 			{
 				if (Comunicacao.VerificaPortaSerialExiste())
 				{
@@ -1856,17 +1856,17 @@ namespace iS800
 					else
 					{
 						string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-						Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
+						Interaction.MsgBox(text, (MsgBoxStyle)16, "Atenção - Valor fora das especificações");
 						this.ToolStripButton_RT_810_Salvar.Enabled = true;
 					}
 				}
 				else
 				{
-					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+					Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 				}
 				this.Timer_limpa_MSG.Enabled = true;
 			}
-			else if (Comunicacao.Config_sistema.tipo_interface == 2)
+			else if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 			{
 				this.Bloqueia_acoes();
 				this.EncerraEdicaoDeCampos();
@@ -1877,17 +1877,17 @@ namespace iS800
 				else
 				{
 					string text = "Existem parâmetros não compatíveis com o equipamento!\r\nGravação dos parâmetros foi cancelada.";
-					Interaction.MsgBox(text, 16, "Atenção - Valor fora das especificações");
+					Interaction.MsgBox(text, (MsgBoxStyle)16, "Atenção - Valor fora das especificações");
 					this.ToolStripButton_RT_810_Salvar.Enabled = true;
 				}
 				this.Timer_limpa_MSG.Enabled = true;
 			}
 			else
 			{
-				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Não existe definição de tipo de interface de comunicação!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 			Comunicacao.Config_sistema.endereco_encontrado = false;
-			Comunicacao.Config_sistema.endereco_modbus = 0;
+			Comunicacao.Config_sistema.endereco_modbus = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000EA0 RID: 3744 RVA: 0x00304BE0 File Offset: 0x00302FE0
@@ -1902,11 +1902,11 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = 2;
+					num = (HorizontalAlignment)2;
 					this.AtivaEfeitoOnChangeValue();
 					this.OpenFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg855";
 					this.OpenFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.OpenFileDialog_RT_810.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.OpenFileDialog_RT_810.FileName) + "\\";
 						RT_geral.arquivo_extensao = Path.GetExtension(this.OpenFileDialog_RT_810.FileName);
@@ -1934,14 +1934,14 @@ namespace iS800
 						RT_geral.IEC_855_BD.BaudRateCOM1.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "BAUDRATE_COM1", 0);
 						if (!perifericos.Lista_ValorPermitido(RT_geral.IEC_855_BD.BaudRateCOM1.Valor, perifericos.ListaBaudRate))
 						{
-							RT_geral.IEC_855_BD.BaudRateCOM1.Valor = 21857;
+							RT_geral.IEC_855_BD.BaudRateCOM1.Valor = (HorizontalAlignment)21857;
 						}
 						RT_geral.IEC_855_BD.BaudRateCOM1.Indice = perifericos.Get_Indice_Pelo_Valor(RT_geral.IEC_855_BD.BaudRateCOM1.Valor, perifericos.ListaBaudRate);
 						Linha_RT.Atualiza_estrutura_combo(ref RT_geral.IEC_855_BD.AtribuicaoIP, iniFile.ReadInteger("GERAL_MODO_OPERCAO", "MODO", 0));
 						RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Valor = iniFile.ReadInteger("GERAL_MODO_OPERCAO", "INTERVALO", 0);
 						RT_geral.IEC_855_BD.AD_Intervalo.Valor = iniFile.ReadInteger("ENTRADA_ANALOGICA", "INTERVALO", 0);
 						RT_geral.IEC_855_BD.AD_Tamanho_filtro.Valor = iniFile.ReadInteger("ENTRADA_ANALOGICA", "TAMANHO_FILTRO", 0);
-						int num2 = 0;
+						int num2 = (HorizontalAlignment)0;
 						do
 						{
 							string section = string.Format("ENTRADA_ANALOGICA_{0}", num2 + 1);
@@ -1958,7 +1958,7 @@ namespace iS800
 						Linha_RT.Atualiza_estrutura_combo_dataview(ref RT_geral.IEC_855_BD.ctrl_modo[0], RT_geral.RT_810_DataGrigViewProcessosColunas[4], iniFile.ReadInteger("CFG_CONTROLE", "MODO_CONTROLE", 0));
 						RT_geral.IEC_855_BD.ctrl_tempo_max_partida[0].Valor = iniFile.ReadInteger("CFG_CONTROLE", "TEMPO_MAX_PARTIDA", 0);
 						RT_geral.IEC_855_BD.ctrl_tempo_max_parada[0].Valor = iniFile.ReadInteger("CFG_CONTROLE", "TEMPO_MAX_PARADA", 0);
-						num2 = 0;
+						num2 = (HorizontalAlignment)0;
 						do
 						{
 							string section = string.Format("CFG{0}_ED", num2 + 1);
@@ -1974,7 +1974,7 @@ namespace iS800
 					this.Timer_limpa_MSG.Enabled = true;
 					goto IL_645;
 					IL_5CC:
-					Interaction.MsgBox("Não foi possível carregar os dados", 32, "Atenção - Erro I/0");
+					Interaction.MsgBox("Não foi possível carregar os dados", (MsgBoxStyle)32, "Atenção - Erro I/0");
 					FileSystem.FileClose(new int[]
 					{
 						1
@@ -1985,7 +1985,7 @@ namespace iS800
 					num3 = -1;
 										IL_616:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
+				catch when (endfilter(obj is Exception & num != 0 & num3 == (DialogResult)0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_600;
@@ -2009,12 +2009,12 @@ namespace iS800
 			try
 			{
 				ProjectData.ClearProjectError();
-				num = 2;
+				num = (HorizontalAlignment)2;
 				this.AtivaEfeitoOnChangeValue();
 				this.Bloqueia_acoes();
 				this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810";
 				this.SaveFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
+				if (this.SaveFileDialog_RT_810.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
 				{
 					Linha_RT.diretorio = Path.GetDirectoryName(this.SaveFileDialog_RT_810.FileName) + "\\";
 					if (File.Exists(this.SaveFileDialog_RT_810.FileName))
@@ -2061,7 +2061,7 @@ namespace iS800
 				this.Timer_limpa_MSG.Enabled = true;
 				goto IL_351;
 				IL_2DD:
-				Interaction.MsgBox("Não foi possível gravar os dados", 32, "Atenção - Erro I/0");
+				Interaction.MsgBox("Não foi possível gravar os dados", (MsgBoxStyle)32, "Atenção - Erro I/0");
 				FileSystem.FileClose(new int[]
 				{
 					1
@@ -2072,7 +2072,7 @@ namespace iS800
 				num2 = -1;
 								IL_323:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+			catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 			{
 				Exception ex = (Exception)obj2;
 				goto IL_30E;
@@ -2176,9 +2176,9 @@ namespace iS800
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
 			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, 3);
-			Font font3 = new Font("Calibri", 10f, 0, 3);
-			Font fonte = new Font("Calibri", 20f, 1, 3);
+			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
+			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
+			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -2336,7 +2336,7 @@ namespace iS800
 			nextLineAvailable = tabelaLinhaInteria3.GetNextLineAvailable();
 			TabelaMeiaLinhaEsquerda tabelaMeiaLinhaEsquerda3 = new TabelaMeiaLinhaEsquerda(z.MarginBounds, z.Graphics, fonte2, cores, nextLineAvailable, 2, "Filtro EA", true);
 			TabelaMeiaLinhaDireita tabelaMeiaLinhaDireita2 = new TabelaMeiaLinhaDireita(z.MarginBounds, z.Graphics, fonte2, cores, nextLineAvailable, 8, "Entrada Digital", true);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -2348,7 +2348,7 @@ namespace iS800
 				tabelaMeiaLinhaEsquerda4.EscreveTituloLinha(1, "Range", 70);
 				tabelaMeiaLinhaEsquerda4.EscreveTituloLinha(1, "Início", 140);
 				tabelaMeiaLinhaEsquerda4.EscreveTituloLinha(1, "Range", 240);
-				num = 0;
+				num = (HorizontalAlignment)0;
 				do
 				{
 					tabelaMeiaLinhaEsquerda4.EscreveTituloLinha(num + 2, string.Format("ED0{0}", num + 1), 0);
@@ -2439,7 +2439,7 @@ namespace iS800
 		// Token: 0x06000EB4 RID: 3764 RVA: 0x003061B0 File Offset: 0x003045B0
 		private void PrintDocument1_BeginPrint(object sender, PrintEventArgs e)
 		{
-			this.pagina_impressao = 1;
+			this.pagina_impressao = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x06000EB5 RID: 3765 RVA: 0x003061BC File Offset: 0x003045BC
@@ -2532,7 +2532,7 @@ namespace iS800
 		public bool IPKeyPress(KeyPressEventArgs e)
 		{
 			bool result;
-			if (char.IsDigit(e.KeyChar) | Operators.CompareString(Conversions.ToString(e.KeyChar), ".", false) == 0 | Strings.Asc(e.KeyChar) == 46 | Strings.Asc(e.KeyChar) == 8 | Strings.Asc(e.KeyChar) == 39 | Strings.Asc(e.KeyChar) == 37)
+			if (char.IsDigit(e.KeyChar) | Operators.CompareString(Conversions.ToString(e.KeyChar), ".", false) == (DialogResult)0 | Strings.Asc(e.KeyChar) == (DialogResult)46 | Strings.Asc(e.KeyChar) == (DialogResult)8 | Strings.Asc(e.KeyChar) == (DialogResult)39 | Strings.Asc(e.KeyChar) == (DialogResult)37)
 			{
 				result = true;
 			}

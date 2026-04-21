@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -990,25 +990,25 @@ namespace iS800
 		public void Limpa_estrutura_VA230()
 		{
 			Mod_VA.Config_VA230.Escalas = new int[41, 17];
-			Mod_VA.Config_VA230.End_origem = 0;
-			Mod_VA.Config_VA230.Numero_recalques = 0;
-			Mod_VA.Config_VA230.Tempo_varredura = 3;
-			Mod_VA.Config_VA230.Indice = 1;
-			int num = 1;
+			Mod_VA.Config_VA230.End_origem = (HorizontalAlignment)0;
+			Mod_VA.Config_VA230.Numero_recalques = (HorizontalAlignment)0;
+			Mod_VA.Config_VA230.Tempo_varredura = (HorizontalAlignment)3;
+			Mod_VA.Config_VA230.Indice = (HorizontalAlignment)1;
+			int num = (HorizontalAlignment)1;
 			checked
 			{
 				do
 				{
-					int num2 = 1;
+					int num2 = (HorizontalAlignment)1;
 					do
 					{
-						if (num2 == 5)
+						if (num2 == (DialogResult)5)
 						{
-							Mod_VA.Config_VA230.Escalas[num, num2] = 500;
+							Mod_VA.Config_VA230.Escalas[num, num2] = (HorizontalAlignment)500;
 						}
 						else
 						{
-							Mod_VA.Config_VA230.Escalas[num, num2] = 100;
+							Mod_VA.Config_VA230.Escalas[num, num2] = (HorizontalAlignment)100;
 						}
 						num2++;
 					}
@@ -1027,8 +1027,8 @@ namespace iS800
 			this.Valor_intervalo_varredura.Text = Conversions.ToString(Mod_VA.Config_VA230.Tempo_varredura);
 			this.Valor_end_estacao.Text = Conversions.ToString(Mod_VA.Config_VA230.Indice);
 			this.VScroll_end_estacao.Value = Mod_VA.Config_VA230.Indice;
-			this.VScroll_end_estacao.Maximum = 40;
-			this.VScroll_end_estacao.Minimum = 1;
+			this.VScroll_end_estacao.Maximum = (HorizontalAlignment)40;
+			this.VScroll_end_estacao.Minimum = (HorizontalAlignment)1;
 			this.Valor_escala_canal_0.Text = Conversions.ToString(Mod_VA.Config_VA230.Escalas[Mod_VA.Config_VA230.Indice, 1]);
 			this.Valor_escala_canal_1.Text = Conversions.ToString(Mod_VA.Config_VA230.Escalas[Mod_VA.Config_VA230.Indice, 2]);
 			this.Valor_escala_canal_2.Text = Conversions.ToString(Mod_VA.Config_VA230.Escalas[Mod_VA.Config_VA230.Indice, 3]);
@@ -1070,7 +1070,7 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -1078,21 +1078,21 @@ namespace iS800
 						this.Mensagem_MD201("Leitura página 1 - Ok", 0);
 						goto IL_C4;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro leitura página 1 - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro leitura página 1 - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						this.Mensagem_MD201("Erro leitura - não determinado", 1);
 						return;
@@ -1108,7 +1108,7 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
@@ -1116,21 +1116,21 @@ namespace iS800
 						this.Mensagem_MD201("Leitura página 2 - Ok", 0);
 						return;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro leitura página 2 - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro leitura página 2 - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						this.Mensagem_MD201("Erro leitura - não determinado", 1);
 						return;
@@ -1172,28 +1172,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_MD201("Programação habilitada", 0);
 						goto IL_B4;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao habilitar programação - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao habilitar programação - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						this.Mensagem_MD201("Erro ao habilitar programação - não determinado", 1);
 						return;
@@ -1209,28 +1209,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_MD201("Programação página 1 - Ok", 0);
 						goto IL_158;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao programar página 1 - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao programar página 1 - Ok - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						this.Mensagem_MD201("Erro ao programar página 1 - não determinado", 1);
 						return;
@@ -1246,28 +1246,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_MD201("Programação página 2 - Ok", 0);
 						goto IL_207;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao programar página 2 - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao programar página 2 - Ok - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						this.Mensagem_MD201("Erro ao programar página 2 - não determinado", 1);
 						return;
@@ -1283,28 +1283,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						this.Mensagem_MD201("Programação finalizada", 0);
 						return;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao finalizar a programação - conferência", 1);
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							this.Mensagem_MD201("Erro ao finalizar a programação - timeout", 1);
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						this.Mensagem_MD201("Erro ao finalizar a programação - não determinado", 1);
 						return;

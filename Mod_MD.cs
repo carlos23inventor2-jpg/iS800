@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Sockets;
 using System.Threading;
 using System.Windows.Forms;
@@ -35,13 +35,13 @@ namespace iS800
 		// Token: 0x060023E7 RID: 9191 RVA: 0x00254738 File Offset: 0x00252B38
 		public static void Init_equipamento_MD101()
 		{
-			Mod_MD.Controle.Estacao = 1;
+			Mod_MD.Controle.Estacao = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x060023E8 RID: 9192 RVA: 0x00254748 File Offset: 0x00252B48
 		public static void Init_equipamento_MD201()
 		{
-			Mod_MD.Controle.Estacao = 1;
+			Mod_MD.Controle.Estacao = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x060023E9 RID: 9193 RVA: 0x00254758 File Offset: 0x00252B58
@@ -51,15 +51,15 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 1;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 12;
-				Comunicacao.Buffer_cmd[6] = 24;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)12;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)24;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Reservatorio[indice].End_estacao;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Reservatorio[indice].End_mestre;
 				Comunicacao.Buffer_cmd[11] = (byte)(Mod_MD.Reservatorio[indice].Hab_repetidora / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(Mod_MD.Reservatorio[indice].Hab_repetidora % 256);
@@ -81,7 +81,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[28] = (byte)(Mod_MD.Reservatorio[indice].Intervalo_filtro % 256);
 				Comunicacao.Buffer_cmd[29] = (byte)(Mod_MD.Reservatorio[indice].Tamanho_filtro / 256);
 				Comunicacao.Buffer_cmd[30] = (byte)(Mod_MD.Reservatorio[indice].Tamanho_filtro % 256);
-				int num = 31;
+				int num = (HorizontalAlignment)31;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[31] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[32] = (byte)(num2 / 256);
@@ -98,17 +98,17 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 2;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 52;
-				Comunicacao.Buffer_cmd[6] = 104;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Reservatorio[indice].End_repetidora;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Reservatorio[indice].Num_repetidoras;
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				do
 				{
 					Comunicacao.Buffer_cmd[9 + num * 2] = (byte)(Mod_MD.Reservatorio[indice].Repetidoras[num] / 256);
@@ -116,7 +116,7 @@ namespace iS800
 					num++;
 				}
 				while (num <= 50);
-				int num2 = 111;
+				int num2 = (HorizontalAlignment)111;
 				int num3 = Comunicacao.Crc16_TX(ref num2);
 				Comunicacao.Buffer_cmd[111] = (byte)(num3 % 256);
 				Comunicacao.Buffer_cmd[112] = (byte)(num3 / 256);
@@ -131,7 +131,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == 100)
+				if (pag == (DialogResult)100)
 				{
 					Mod_MD.Reservatorio[indice].End_estacao = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Reservatorio[indice].End_mestre = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -146,11 +146,11 @@ namespace iS800
 					Mod_MD.Reservatorio[indice].Intervalo_filtro = (int)Comunicacao.Buffer_resp[23] * 256 + (int)Comunicacao.Buffer_resp[24];
 					Mod_MD.Reservatorio[indice].Tamanho_filtro = (int)Comunicacao.Buffer_resp[25] * 256 + (int)Comunicacao.Buffer_resp[26];
 				}
-				else if (pag == 512)
+				else if (pag == (DialogResult)512)
 				{
 					Mod_MD.Reservatorio[indice].End_repetidora = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Reservatorio[indice].Num_repetidoras = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					do
 					{
 						Mod_MD.Reservatorio[indice].Repetidoras[num] = (int)Comunicacao.Buffer_resp[5 + num * 2] * 256 + (int)Comunicacao.Buffer_resp[6 + num * 2];
@@ -166,10 +166,10 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == 100)
+				if (pag == (DialogResult)100)
 				{
 					string versao = Geral.Config_geral.Versao;
-					if (Operators.CompareString(versao, "21", false) == 0)
+					if (Operators.CompareString(versao, "21", false) == (DialogResult)0)
 					{
 						Mod_MD.Recalque_201[indice].End_estacao = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 						Mod_MD.Recalque_201[indice].End_mestre = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -193,7 +193,7 @@ namespace iS800
 						Mod_MD.Recalque_201[indice].Tempo_parada[3] = (int)Comunicacao.Buffer_resp[41] * 256 + (int)Comunicacao.Buffer_resp[42];
 						Mod_MD.Recalque_201[indice].Tempo_entre_acionamento = (int)Comunicacao.Buffer_resp[43] * 256 + (int)Comunicacao.Buffer_resp[44];
 					}
-					else if (Operators.CompareString(versao, "821_10", false) == 0)
+					else if (Operators.CompareString(versao, "821_10", false) == (DialogResult)0)
 					{
 						Mod_MD.Recalque_201[indice].End_estacao = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 						Mod_MD.Recalque_201[indice].End_mestre = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -218,11 +218,11 @@ namespace iS800
 						Mod_MD.Recalque_201[indice].Tempo_entre_acionamento = (int)Comunicacao.Buffer_resp[43] * 256 + (int)Comunicacao.Buffer_resp[44];
 					}
 				}
-				else if (pag == 512)
+				else if (pag == (DialogResult)512)
 				{
 					Mod_MD.Recalque_201[indice].End_repetidora = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Recalque_201[indice].Num_repetidoras = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					do
 					{
 						Mod_MD.Recalque_201[indice].Repetidoras[num] = (int)Comunicacao.Buffer_resp[5 + num * 2] * 256 + (int)Comunicacao.Buffer_resp[6 + num * 2];
@@ -238,17 +238,17 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == 100)
+				if (pag == (DialogResult)100)
 				{
 					string versao = Geral.Config_geral.Versao;
 					int num;
-					if (Operators.CompareString(versao, "820_10", false) == 0)
+					if (Operators.CompareString(versao, "820_10", false) == (DialogResult)0)
 					{
-						num = 1;
+						num = (HorizontalAlignment)1;
 						Mod_MD.Recalque_202[indice].Periferico_End_1 = (int)Comunicacao.Buffer_resp[107];
 						if (Comunicacao.Buffer_resp[108] < 51)
 						{
-							Mod_MD.Recalque_202[indice].Periferico_Tipo_1 = 0;
+							Mod_MD.Recalque_202[indice].Periferico_Tipo_1 = (HorizontalAlignment)0;
 						}
 						else
 						{
@@ -257,7 +257,7 @@ namespace iS800
 						Mod_MD.Recalque_202[indice].Periferico_End_2 = (int)Comunicacao.Buffer_resp[109];
 						if (Comunicacao.Buffer_resp[110] < 52)
 						{
-							Mod_MD.Recalque_202[indice].Periferico_Tipo_2 = 0;
+							Mod_MD.Recalque_202[indice].Periferico_Tipo_2 = (HorizontalAlignment)0;
 						}
 						else
 						{
@@ -266,7 +266,7 @@ namespace iS800
 						Mod_MD.Recalque_202[indice].Periferico_End_3 = (int)Comunicacao.Buffer_resp[111];
 						if (Comunicacao.Buffer_resp[112] < 51)
 						{
-							Mod_MD.Recalque_202[indice].Periferico_Tipo_3 = 0;
+							Mod_MD.Recalque_202[indice].Periferico_Tipo_3 = (HorizontalAlignment)0;
 						}
 						else
 						{
@@ -275,7 +275,7 @@ namespace iS800
 						Mod_MD.Recalque_202[indice].Periferico_End_4 = (int)Comunicacao.Buffer_resp[113];
 						if (Comunicacao.Buffer_resp[114] < 52)
 						{
-							Mod_MD.Recalque_202[indice].Periferico_Tipo_4 = 0;
+							Mod_MD.Recalque_202[indice].Periferico_Tipo_4 = (HorizontalAlignment)0;
 						}
 						else
 						{
@@ -284,7 +284,7 @@ namespace iS800
 					}
 					else
 					{
-						num = 2;
+						num = (HorizontalAlignment)2;
 					}
 					Mod_MD.Recalque_202[indice].End_estacao = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Recalque_202[indice].End_mestre = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -339,11 +339,11 @@ namespace iS800
 					Mod_MD.Recalque_202[indice].Controle_nivel_fonte = (int)Comunicacao.Buffer_resp[103] * 256 + (int)Comunicacao.Buffer_resp[104];
 					Mod_MD.Recalque_202[indice].Num_totalizacoes = (int)Comunicacao.Buffer_resp[105] * 256 + (int)Comunicacao.Buffer_resp[106];
 				}
-				else if (pag == 512)
+				else if (pag == (DialogResult)512)
 				{
 					Mod_MD.Recalque_202[indice].End_repetidora = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Recalque_202[indice].Num_repetidoras = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
-					int num2 = 1;
+					int num2 = (HorizontalAlignment)1;
 					do
 					{
 						Mod_MD.Recalque_202[indice].Repetidoras[num2] = (int)Comunicacao.Buffer_resp[5 + num2 * 2] * 256 + (int)Comunicacao.Buffer_resp[6 + num2 * 2];
@@ -359,7 +359,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == 100)
+				if (pag == (DialogResult)100)
 				{
 					Mod_MD.Central_302_geral.Endereco = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Central_302_geral.Retray = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -376,9 +376,9 @@ namespace iS800
 					Mod_MD.Central_302_geral.End_ini_equip_rq = (int)Comunicacao.Buffer_resp[27] * 256 + (int)Comunicacao.Buffer_resp[28];
 					Mod_MD.Central_302_geral.End_ini_equip_vista = (int)Comunicacao.Buffer_resp[29] * 256 + (int)Comunicacao.Buffer_resp[30];
 				}
-				else if (pag == 512)
+				else if (pag == (DialogResult)512)
 				{
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					do
 					{
 						Mod_MD.Salva_dados_MD302_RE(num, 0);
@@ -386,9 +386,9 @@ namespace iS800
 					}
 					while (num <= 20);
 				}
-				else if (pag == 592)
+				else if (pag == (DialogResult)592)
 				{
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					do
 					{
 						Mod_MD.Salva_dados_MD302_RE(num, 20);
@@ -396,69 +396,69 @@ namespace iS800
 					}
 					while (num <= 20);
 				}
-				else if (pag == 768)
+				else if (pag == (DialogResult)768)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 0);
 					Mod_MD.Salva_dados_MD302_RQ(2, 0);
 					Mod_MD.Salva_dados_MD302_RQ(3, 0);
 					Mod_MD.Salva_dados_MD302_RQ(4, 0);
 				}
-				else if (pag == 888)
+				else if (pag == (DialogResult)888)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 4);
 					Mod_MD.Salva_dados_MD302_RQ(2, 4);
 					Mod_MD.Salva_dados_MD302_RQ(3, 4);
 				}
-				else if (pag == 1024)
+				else if (pag == (DialogResult)1024)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 7);
 					Mod_MD.Salva_dados_MD302_RQ(2, 7);
 					Mod_MD.Salva_dados_MD302_RQ(3, 7);
 					Mod_MD.Salva_dados_MD302_RQ(4, 7);
 				}
-				else if (pag == 1144)
+				else if (pag == (DialogResult)1144)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 11);
 					Mod_MD.Salva_dados_MD302_RQ(2, 11);
 					Mod_MD.Salva_dados_MD302_RQ(3, 11);
 				}
-				else if (pag == 1280)
+				else if (pag == (DialogResult)1280)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 14);
 					Mod_MD.Salva_dados_MD302_RQ(2, 14);
 					Mod_MD.Salva_dados_MD302_RQ(3, 14);
 					Mod_MD.Salva_dados_MD302_RQ(4, 14);
 				}
-				else if (pag == 1400)
+				else if (pag == (DialogResult)1400)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 18);
 					Mod_MD.Salva_dados_MD302_RQ(2, 18);
 					Mod_MD.Salva_dados_MD302_RQ(3, 18);
 				}
-				else if (pag == 1536)
+				else if (pag == (DialogResult)1536)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 21);
 					Mod_MD.Salva_dados_MD302_RQ(2, 21);
 					Mod_MD.Salva_dados_MD302_RQ(3, 21);
 					Mod_MD.Salva_dados_MD302_RQ(4, 21);
 				}
-				else if (pag == 1656)
+				else if (pag == (DialogResult)1656)
 				{
 					Mod_MD.Salva_dados_MD302_RQ(1, 25);
 					Mod_MD.Salva_dados_MD302_RQ(2, 25);
 					Mod_MD.Salva_dados_MD302_RQ(3, 25);
 				}
-				else if (pag == 1792)
+				else if (pag == (DialogResult)1792)
 				{
 					Mod_MD.Salva_dados_MD302_VISTA(1, 0);
 					Mod_MD.Salva_dados_MD302_VISTA(2, 0);
 				}
-				else if (pag == 1878)
+				else if (pag == (DialogResult)1878)
 				{
 					Mod_MD.Salva_dados_MD302_VISTA(1, 2);
 					Mod_MD.Salva_dados_MD302_VISTA(2, 2);
 				}
-				else if (pag == 1964)
+				else if (pag == (DialogResult)1964)
 				{
 					Mod_MD.Salva_dados_MD302_VISTA(1, 4);
 				}
@@ -526,7 +526,7 @@ namespace iS800
 				Mod_MD.Central_302_centrais[indice + offset_equip].num_res = (int)Comunicacao.Buffer_resp[3 + num] * 256 + (int)Comunicacao.Buffer_resp[4 + num];
 				Mod_MD.Central_302_centrais[indice + offset_equip].num_rq = (int)Comunicacao.Buffer_resp[5 + num] * 256 + (int)Comunicacao.Buffer_resp[6 + num];
 				Mod_MD.Central_302_centrais[indice + offset_equip].prioridade = (int)Comunicacao.Buffer_resp[7 + num] * 256 + (int)Comunicacao.Buffer_resp[8 + num];
-				int num2 = 0;
+				int num2 = (HorizontalAlignment)0;
 				do
 				{
 					int num3 = num + num2 * 2;
@@ -544,21 +544,21 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 1;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 21;
-				Comunicacao.Buffer_cmd[6] = 42;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)21;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)42;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Recalque_201[indice].End_estacao;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Recalque_201[indice].End_mestre;
 				Comunicacao.Buffer_cmd[11] = (byte)(Mod_MD.Recalque_201[indice].Hab_repetidora / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(Mod_MD.Recalque_201[indice].Hab_repetidora % 256);
 				Comunicacao.Buffer_cmd[13] = (byte)(Mod_MD.Recalque_201[indice].Tempo_ptt / 256);
 				Comunicacao.Buffer_cmd[14] = (byte)(Mod_MD.Recalque_201[indice].Tempo_ptt % 256);
-				Comunicacao.Buffer_cmd[15] = 0;
+				Comunicacao.Buffer_cmd[15] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[16] = (byte)Mod_MD.Recalque_201[indice].Quantidade_motores;
 				Comunicacao.Buffer_cmd[17] = (byte)(Mod_MD.Recalque_201[indice].Modo_partida[1] / 256);
 				Comunicacao.Buffer_cmd[18] = (byte)(Mod_MD.Recalque_201[indice].Modo_partida[1] % 256);
@@ -567,7 +567,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[21] = (byte)(Mod_MD.Recalque_201[indice].Modo_partida[3] / 256);
 				Comunicacao.Buffer_cmd[22] = (byte)(Mod_MD.Recalque_201[indice].Modo_partida[3] % 256);
 				string versao = Geral.Config_geral.Versao;
-				if (Operators.CompareString(versao, "21", false) == 0)
+				if (Operators.CompareString(versao, "21", false) == (DialogResult)0)
 				{
 					Comunicacao.Buffer_cmd[23] = (byte)(Mod_MD.Recalque_201[indice].Nivel_acionamento[1] * 2 / 256);
 					Comunicacao.Buffer_cmd[24] = (byte)(Mod_MD.Recalque_201[indice].Nivel_acionamento[1] * 2 % 256);
@@ -582,7 +582,7 @@ namespace iS800
 					Comunicacao.Buffer_cmd[33] = (byte)(Mod_MD.Recalque_201[indice].Nivel_parada[3] * 2 / 256);
 					Comunicacao.Buffer_cmd[34] = (byte)(Mod_MD.Recalque_201[indice].Nivel_parada[3] * 2 % 256);
 				}
-				else if (Operators.CompareString(versao, "821_10", false) == 0)
+				else if (Operators.CompareString(versao, "821_10", false) == (DialogResult)0)
 				{
 					Comunicacao.Buffer_cmd[23] = (byte)(Mod_MD.Recalque_201[indice].Nivel_acionamento[1] / 256);
 					Comunicacao.Buffer_cmd[24] = (byte)(Mod_MD.Recalque_201[indice].Nivel_acionamento[1] % 256);
@@ -611,11 +611,11 @@ namespace iS800
 				Comunicacao.Buffer_cmd[46] = (byte)(Mod_MD.Recalque_201[indice].Tempo_parada[3] % 256);
 				Comunicacao.Buffer_cmd[47] = (byte)(Mod_MD.Recalque_201[indice].Tempo_entre_acionamento / 256);
 				Comunicacao.Buffer_cmd[48] = (byte)(Mod_MD.Recalque_201[indice].Tempo_entre_acionamento % 256);
-				int num = 49;
+				int num = (HorizontalAlignment)49;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[49] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[50] = (byte)(num2 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 51;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)51;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 1 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -630,17 +630,17 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 2;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 52;
-				Comunicacao.Buffer_cmd[6] = 104;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Recalque_201[indice].End_repetidora;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Recalque_201[indice].Num_repetidoras;
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				do
 				{
 					Comunicacao.Buffer_cmd[9 + num * 2] = (byte)(Mod_MD.Recalque_201[indice].Repetidoras[num] / 256);
@@ -648,11 +648,11 @@ namespace iS800
 					num++;
 				}
 				while (num <= 50);
-				int num2 = 111;
+				int num2 = (HorizontalAlignment)111;
 				int num3 = Comunicacao.Crc16_TX(ref num2);
 				Comunicacao.Buffer_cmd[111] = (byte)(num3 % 256);
 				Comunicacao.Buffer_cmd[112] = (byte)(num3 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 113;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)113;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 2 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -666,29 +666,29 @@ namespace iS800
 			string versao = Geral.Config_geral.Versao;
 			int num;
 			int num2;
-			if (Operators.CompareString(versao, "820_10", false) == 0)
+			if (Operators.CompareString(versao, "820_10", false) == (DialogResult)0)
 			{
-				num = 1;
-				num2 = 56;
+				num = (HorizontalAlignment)1;
+				num2 = (HorizontalAlignment)56;
 			}
 			else
 			{
-				num = 2;
-				num2 = 52;
+				num = (HorizontalAlignment)2;
+				num2 = (HorizontalAlignment)52;
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 1;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[5] = (byte)num2;
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Recalque_202[indice].End_estacao;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Recalque_202[indice].End_mestre;
 				Comunicacao.Buffer_cmd[11] = (byte)(Mod_MD.Recalque_202[indice].Hab_repetidora / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(Mod_MD.Recalque_202[indice].Hab_repetidora % 256);
@@ -698,13 +698,13 @@ namespace iS800
 				Comunicacao.Buffer_cmd[16] = (byte)(Mod_MD.Recalque_202[indice].BaudRate % 256);
 				Comunicacao.Buffer_cmd[17] = (byte)(Mod_MD.Recalque_202[indice].Intervalo_filtroAD / 256);
 				Comunicacao.Buffer_cmd[18] = (byte)(Mod_MD.Recalque_202[indice].Intervalo_filtroAD % 256);
-				Comunicacao.Buffer_cmd[19] = 0;
+				Comunicacao.Buffer_cmd[19] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[20] = (byte)Mod_MD.Recalque_202[indice].Tamanho_filtroAD;
 				Comunicacao.Buffer_cmd[21] = Conversions.ToByte(Operators.IntDivideObject(Mod_MD.Recalque_202[indice].Modo_operacao, 256));
 				Comunicacao.Buffer_cmd[22] = Conversions.ToByte(Operators.ModObject(Mod_MD.Recalque_202[indice].Modo_operacao, 256));
-				Comunicacao.Buffer_cmd[23] = 0;
+				Comunicacao.Buffer_cmd[23] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[24] = (byte)Mod_MD.Recalque_202[indice].Numero_motores;
-				Comunicacao.Buffer_cmd[25] = 0;
+				Comunicacao.Buffer_cmd[25] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[26] = (byte)Mod_MD.Recalque_202[indice].Numero_valvulas;
 				Comunicacao.Buffer_cmd[27] = (byte)(Mod_MD.Recalque_202[indice].Modo_partida[1] / 256);
 				Comunicacao.Buffer_cmd[28] = (byte)(Mod_MD.Recalque_202[indice].Modo_partida[1] % 256);
@@ -791,7 +791,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[109] = (byte)(Mod_MD.Recalque_202[indice].Num_totalizacoes / 256);
 				Comunicacao.Buffer_cmd[110] = (byte)(Mod_MD.Recalque_202[indice].Num_totalizacoes % 256);
 				string versao2 = Geral.Config_geral.Versao;
-				if (Operators.CompareString(versao2, "820_10", false) == 0)
+				if (Operators.CompareString(versao2, "820_10", false) == (DialogResult)0)
 				{
 					Comunicacao.Buffer_cmd[111] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_1;
 					Comunicacao.Buffer_cmd[112] = (byte)Mod_MD.Recalque_202[indice].Periferico_Tipo_1;
@@ -800,7 +800,7 @@ namespace iS800
 					{
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array = buffer_cmd;
-						num3 = 112;
+						num3 = (HorizontalAlignment)112;
 						array[num3] = buffer_cmd[num3] + 50;
 					}
 					Comunicacao.Buffer_cmd[113] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_2;
@@ -809,7 +809,7 @@ namespace iS800
 					{
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array2 = buffer_cmd;
-						num3 = 114;
+						num3 = (HorizontalAlignment)114;
 						array2[num3] = buffer_cmd[num3] + 51;
 					}
 					Comunicacao.Buffer_cmd[115] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_3;
@@ -818,7 +818,7 @@ namespace iS800
 					{
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array3 = buffer_cmd;
-						num3 = 116;
+						num3 = (HorizontalAlignment)116;
 						array3[num3] = buffer_cmd[num3] + 51;
 					}
 					Comunicacao.Buffer_cmd[117] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_4;
@@ -827,22 +827,22 @@ namespace iS800
 					{
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
 						byte[] array4 = buffer_cmd;
-						num3 = 118;
+						num3 = (HorizontalAlignment)118;
 						array4[num3] = buffer_cmd[num3] + 51;
 					}
-					num3 = 119;
+					num3 = (HorizontalAlignment)119;
 					int num4 = Comunicacao.Crc16_TX(ref num3);
 					Comunicacao.Buffer_cmd[119] = (byte)(num4 % 256);
 					Comunicacao.Buffer_cmd[120] = (byte)(num4 / 256);
-					Comunicacao.Ctrl_Com.Cont_tx = 121;
+					Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)121;
 				}
 				else
 				{
-					int num3 = 111;
+					int num3 = (HorizontalAlignment)111;
 					int num4 = Comunicacao.Crc16_TX(ref num3);
 					Comunicacao.Buffer_cmd[111] = (byte)(num4 % 256);
 					Comunicacao.Buffer_cmd[112] = (byte)(num4 / 256);
-					Comunicacao.Ctrl_Com.Cont_tx = 113;
+					Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)113;
 				}
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 1 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
@@ -858,17 +858,17 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 2;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 52;
-				Comunicacao.Buffer_cmd[6] = 104;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)52;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)104;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Recalque_202[indice].End_repetidora;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Recalque_202[indice].Num_repetidoras;
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				do
 				{
 					Comunicacao.Buffer_cmd[9 + num * 2] = (byte)(Mod_MD.Recalque_202[indice].Repetidoras[num] / 256);
@@ -876,11 +876,11 @@ namespace iS800
 					num++;
 				}
 				while (num <= 50);
-				int num2 = 111;
+				int num2 = (HorizontalAlignment)111;
 				int num3 = Comunicacao.Crc16_TX(ref num2);
 				Comunicacao.Buffer_cmd[111] = (byte)(num3 % 256);
 				Comunicacao.Buffer_cmd[112] = (byte)(num3 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 113;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)113;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 2 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -895,19 +895,19 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco_equip;
-				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
 				Comunicacao.Buffer_cmd[2] = (byte)(endereco_memoria / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(endereco_memoria % 256);
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 1;
-				Comunicacao.Buffer_cmd[6] = 2;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)1;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)2;
 				Comunicacao.Buffer_cmd[7] = (byte)(dado / 256);
 				Comunicacao.Buffer_cmd[8] = (byte)(dado % 256);
-				int num = 9;
+				int num = (HorizontalAlignment)9;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[9] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 11;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)11;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 3 - calibração ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -922,15 +922,15 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 1;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 14;
-				Comunicacao.Buffer_cmd[6] = 28;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)14;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)28;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Central_302_geral.Endereco;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Central_302_geral.Retray;
 				Comunicacao.Buffer_cmd[11] = (byte)(Mod_MD.Central_302_geral.Timeout / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(Mod_MD.Central_302_geral.Timeout % 256);
@@ -938,29 +938,29 @@ namespace iS800
 				Comunicacao.Buffer_cmd[14] = (byte)(Mod_MD.Central_302_geral.Tempo_ptt % 256);
 				Comunicacao.Buffer_cmd[15] = (byte)(Mod_MD.Central_302_geral.Baud_rate_com2 / 256);
 				Comunicacao.Buffer_cmd[16] = (byte)(Mod_MD.Central_302_geral.Baud_rate_com2 % 256);
-				Comunicacao.Buffer_cmd[17] = 0;
+				Comunicacao.Buffer_cmd[17] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[18] = (byte)Mod_MD.Central_302_geral.Erros_falha;
-				Comunicacao.Buffer_cmd[19] = 0;
+				Comunicacao.Buffer_cmd[19] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[20] = (byte)Mod_MD.Central_302_geral.Intervalo_polling;
-				Comunicacao.Buffer_cmd[21] = 0;
+				Comunicacao.Buffer_cmd[21] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[22] = (byte)Mod_MD.Central_302_geral.Qtd_res;
-				Comunicacao.Buffer_cmd[23] = 0;
+				Comunicacao.Buffer_cmd[23] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[24] = (byte)Mod_MD.Central_302_geral.Qtd_equip_res;
-				Comunicacao.Buffer_cmd[25] = 0;
+				Comunicacao.Buffer_cmd[25] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[26] = (byte)Mod_MD.Central_302_geral.Qdt_equip_rq;
-				Comunicacao.Buffer_cmd[27] = 0;
+				Comunicacao.Buffer_cmd[27] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[28] = (byte)Mod_MD.Central_302_geral.Qtd_equip_vista;
-				Comunicacao.Buffer_cmd[29] = 0;
+				Comunicacao.Buffer_cmd[29] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[30] = (byte)Mod_MD.Central_302_geral.End_ini_equip_res;
-				Comunicacao.Buffer_cmd[31] = 0;
+				Comunicacao.Buffer_cmd[31] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[32] = (byte)Mod_MD.Central_302_geral.End_ini_equip_rq;
-				Comunicacao.Buffer_cmd[33] = 0;
+				Comunicacao.Buffer_cmd[33] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[34] = (byte)Mod_MD.Central_302_geral.End_ini_equip_vista;
-				int num = 35;
+				int num = (HorizontalAlignment)35;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[35] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[36] = (byte)(num2 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 37;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)37;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 1 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -974,35 +974,35 @@ namespace iS800
 			int num;
 			int num2;
 			int num3;
-			if (Operators.CompareString(indice, "2A", false) == 0)
+			if (Operators.CompareString(indice, "2A", false) == (DialogResult)0)
 			{
-				num = 512;
-				num2 = 80;
-				num3 = 0;
+				num = (HorizontalAlignment)512;
+				num2 = (HorizontalAlignment)80;
+				num3 = (HorizontalAlignment)0;
 			}
-			else if (Operators.CompareString(indice, "2B", false) == 0)
+			else if (Operators.CompareString(indice, "2B", false) == (DialogResult)0)
 			{
-				num = 592;
-				num2 = 80;
-				num3 = 20;
+				num = (HorizontalAlignment)592;
+				num2 = (HorizontalAlignment)80;
+				num3 = (HorizontalAlignment)20;
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[5] = (byte)num2;
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
-				int num4 = 1;
+				int num4 = (HorizontalAlignment)1;
 				do
 				{
 					int num5 = (num4 - 1) * 8;
-					Comunicacao.Buffer_cmd[7 + num5] = 0;
+					Comunicacao.Buffer_cmd[7 + num5] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[8 + num5] = (byte)Mod_MD.Central_302_res[num4 + num3].Res_relativo;
-					Comunicacao.Buffer_cmd[9 + num5] = 0;
+					Comunicacao.Buffer_cmd[9 + num5] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[10 + num5] = (byte)Mod_MD.Central_302_res[num4 + num3].Prioridade;
 					Comunicacao.Buffer_cmd[11 + num5] = (byte)(Mod_MD.Central_302_res[num4 + num3].Altura / 256);
 					Comunicacao.Buffer_cmd[12 + num5] = (byte)(Mod_MD.Central_302_res[num4 + num3].Altura % 256);
@@ -1011,11 +1011,11 @@ namespace iS800
 					num4++;
 				}
 				while (num4 <= 20);
-				int num6 = 167;
+				int num6 = (HorizontalAlignment)167;
 				int num7 = Comunicacao.Crc16_TX(ref num6);
 				Comunicacao.Buffer_cmd[167] = (byte)(num7 % 256);
 				Comunicacao.Buffer_cmd[168] = (byte)(num7 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 169;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)169;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 2 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -1031,97 +1031,97 @@ namespace iS800
 			int num2;
 			int num3;
 			int num4;
-			if (Operators.CompareString(indice, "3A", false) == 0)
+			if (Operators.CompareString(indice, "3A", false) == (DialogResult)0)
 			{
-				num = 768;
-				num2 = 120;
-				num3 = 0;
-				num4 = 4;
+				num = (HorizontalAlignment)768;
+				num2 = (HorizontalAlignment)120;
+				num3 = (HorizontalAlignment)0;
+				num4 = (HorizontalAlignment)4;
 				text = "3A";
 			}
-			else if (Operators.CompareString(indice, "3B", false) == 0)
+			else if (Operators.CompareString(indice, "3B", false) == (DialogResult)0)
 			{
-				num = 888;
-				num2 = 90;
-				num3 = 4;
-				num4 = 3;
+				num = (HorizontalAlignment)888;
+				num2 = (HorizontalAlignment)90;
+				num3 = (HorizontalAlignment)4;
+				num4 = (HorizontalAlignment)3;
 				text = "3B";
 			}
-			else if (Operators.CompareString(indice, "4A", false) == 0)
+			else if (Operators.CompareString(indice, "4A", false) == (DialogResult)0)
 			{
-				num = 1024;
-				num2 = 120;
-				num3 = 7;
-				num4 = 4;
+				num = (HorizontalAlignment)1024;
+				num2 = (HorizontalAlignment)120;
+				num3 = (HorizontalAlignment)7;
+				num4 = (HorizontalAlignment)4;
 				text = "4A";
 			}
-			else if (Operators.CompareString(indice, "4B", false) == 0)
+			else if (Operators.CompareString(indice, "4B", false) == (DialogResult)0)
 			{
-				num = 1144;
-				num2 = 90;
-				num3 = 11;
-				num4 = 3;
+				num = (HorizontalAlignment)1144;
+				num2 = (HorizontalAlignment)90;
+				num3 = (HorizontalAlignment)11;
+				num4 = (HorizontalAlignment)3;
 				text = "4B";
 			}
-			else if (Operators.CompareString(indice, "5A", false) == 0)
+			else if (Operators.CompareString(indice, "5A", false) == (DialogResult)0)
 			{
-				num = 1280;
-				num2 = 120;
-				num3 = 14;
-				num4 = 4;
+				num = (HorizontalAlignment)1280;
+				num2 = (HorizontalAlignment)120;
+				num3 = (HorizontalAlignment)14;
+				num4 = (HorizontalAlignment)4;
 				text = "5A";
 			}
-			else if (Operators.CompareString(indice, "5B", false) == 0)
+			else if (Operators.CompareString(indice, "5B", false) == (DialogResult)0)
 			{
-				num = 1400;
-				num2 = 90;
-				num3 = 18;
-				num4 = 3;
+				num = (HorizontalAlignment)1400;
+				num2 = (HorizontalAlignment)90;
+				num3 = (HorizontalAlignment)18;
+				num4 = (HorizontalAlignment)3;
 				text = "5B";
 			}
-			else if (Operators.CompareString(indice, "6A", false) == 0)
+			else if (Operators.CompareString(indice, "6A", false) == (DialogResult)0)
 			{
-				num = 1536;
-				num2 = 120;
-				num3 = 21;
-				num4 = 4;
+				num = (HorizontalAlignment)1536;
+				num2 = (HorizontalAlignment)120;
+				num3 = (HorizontalAlignment)21;
+				num4 = (HorizontalAlignment)4;
 				text = "6A";
 			}
-			else if (Operators.CompareString(indice, "6B", false) == 0)
+			else if (Operators.CompareString(indice, "6B", false) == (DialogResult)0)
 			{
-				num = 1656;
-				num2 = 90;
-				num3 = 25;
-				num4 = 3;
+				num = (HorizontalAlignment)1656;
+				num2 = (HorizontalAlignment)90;
+				num3 = (HorizontalAlignment)25;
+				num4 = (HorizontalAlignment)3;
 				text = "6B";
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[5] = (byte)num2;
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
-				int num5 = 1;
+				int num5 = (HorizontalAlignment)1;
 				int num6 = num4;
 				int num7;
 				for (int i = num5; i <= num6; i++)
 				{
 					num7 = (i - 1) * 60;
-					Comunicacao.Buffer_cmd[7 + num7] = 0;
+					Comunicacao.Buffer_cmd[7 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[8 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Res_origem;
-					Comunicacao.Buffer_cmd[9 + num7] = 0;
+					Comunicacao.Buffer_cmd[9 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[10 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Res_destino;
-					Comunicacao.Buffer_cmd[11 + num7] = 0;
+					Comunicacao.Buffer_cmd[11 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[12 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Res_relativo_R1;
-					Comunicacao.Buffer_cmd[13 + num7] = 0;
+					Comunicacao.Buffer_cmd[13 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[14 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Res_relativo_R2;
-					Comunicacao.Buffer_cmd[15 + num7] = 0;
+					Comunicacao.Buffer_cmd[15 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[16 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Res_relativo_R3;
-					Comunicacao.Buffer_cmd[17 + num7] = 0;
+					Comunicacao.Buffer_cmd[17 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[18 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Res_relativo_R4;
 					Comunicacao.Buffer_cmd[19 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg_res_R1 / 256);
 					Comunicacao.Buffer_cmd[20 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg_res_R1 % 256);
@@ -1131,9 +1131,9 @@ namespace iS800
 					Comunicacao.Buffer_cmd[24 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg_res_R3 % 256);
 					Comunicacao.Buffer_cmd[25 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg_res_R4 / 256);
 					Comunicacao.Buffer_cmd[26 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg_res_R4 % 256);
-					Comunicacao.Buffer_cmd[27 + num7] = 0;
+					Comunicacao.Buffer_cmd[27 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[28 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].modelo;
-					Comunicacao.Buffer_cmd[29 + num7] = 0;
+					Comunicacao.Buffer_cmd[29 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[30 + num7] = (byte)Mod_MD.Central_302_rq[i + num3].Prioridade;
 					Comunicacao.Buffer_cmd[31 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg / 256);
 					Comunicacao.Buffer_cmd[32 + num7] = (byte)(Mod_MD.Central_302_rq[i + num3].Msg % 256);
@@ -1192,57 +1192,57 @@ namespace iS800
 			int num2;
 			int num3;
 			int num4;
-			if (Operators.CompareString(indice, "7A", false) == 0)
+			if (Operators.CompareString(indice, "7A", false) == (DialogResult)0)
 			{
-				num = 1792;
-				num2 = 86;
-				num3 = 0;
-				num4 = 2;
+				num = (HorizontalAlignment)1792;
+				num2 = (HorizontalAlignment)86;
+				num3 = (HorizontalAlignment)0;
+				num4 = (HorizontalAlignment)2;
 				text = "7A";
 			}
-			else if (Operators.CompareString(indice, "7B", false) == 0)
+			else if (Operators.CompareString(indice, "7B", false) == (DialogResult)0)
 			{
-				num = 1878;
-				num2 = 86;
-				num3 = 2;
-				num4 = 2;
+				num = (HorizontalAlignment)1878;
+				num2 = (HorizontalAlignment)86;
+				num3 = (HorizontalAlignment)2;
+				num4 = (HorizontalAlignment)2;
 				text = "7B";
 			}
-			else if (Operators.CompareString(indice, "7C", false) == 0)
+			else if (Operators.CompareString(indice, "7C", false) == (DialogResult)0)
 			{
-				num = 1964;
-				num2 = 43;
-				num3 = 4;
-				num4 = 1;
+				num = (HorizontalAlignment)1964;
+				num2 = (HorizontalAlignment)43;
+				num3 = (HorizontalAlignment)4;
+				num4 = (HorizontalAlignment)1;
 				text = "7C";
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[5] = (byte)num2;
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
-				int num5 = 1;
+				int num5 = (HorizontalAlignment)1;
 				int num6 = num4;
 				int num7;
 				for (int i = num5; i <= num6; i++)
 				{
 					num7 = (i - 1) * 86;
-					Comunicacao.Buffer_cmd[7 + num7] = 0;
+					Comunicacao.Buffer_cmd[7 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[8 + num7] = (byte)Mod_MD.Central_302_centrais[i + num3].num_res;
-					Comunicacao.Buffer_cmd[9 + num7] = 0;
+					Comunicacao.Buffer_cmd[9 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[10 + num7] = (byte)Mod_MD.Central_302_centrais[i + num3].num_rq;
-					Comunicacao.Buffer_cmd[11 + num7] = 0;
+					Comunicacao.Buffer_cmd[11 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[12 + num7] = (byte)Mod_MD.Central_302_centrais[i + num3].prioridade;
-					int num8 = 0;
+					int num8 = (HorizontalAlignment)0;
 					do
 					{
 						endereco = num7 + num8 * 2;
-						Comunicacao.Buffer_cmd[13 + endereco] = 0;
+						Comunicacao.Buffer_cmd[13 + endereco] = (HorizontalAlignment)0;
 						Comunicacao.Buffer_cmd[14 + endereco] = (byte)Mod_MD.Central_302_indices[i + num3, num8 + 1];
 						num8++;
 					}
@@ -1267,29 +1267,29 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 1;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 6;
-				Comunicacao.Buffer_cmd[6] = 12;
-				Comunicacao.Buffer_cmd[7] = 0;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)1;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)6;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)12;
+				Comunicacao.Buffer_cmd[7] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[8] = (byte)Mod_MD.Central_303_geral.Endereco_mestre;
-				Comunicacao.Buffer_cmd[9] = 0;
+				Comunicacao.Buffer_cmd[9] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[10] = (byte)Mod_MD.Central_303_geral.Endereco_estacao;
 				Comunicacao.Buffer_cmd[11] = (byte)(Mod_MD.Central_303_geral.Tempo_ptt / 256);
 				Comunicacao.Buffer_cmd[12] = (byte)(Mod_MD.Central_303_geral.Tempo_ptt % 256);
 				Comunicacao.Buffer_cmd[13] = (byte)(Mod_MD.Central_303_geral.Baud_rate_com2 / 256);
 				Comunicacao.Buffer_cmd[14] = (byte)(Mod_MD.Central_303_geral.Baud_rate_com2 % 256);
-				Comunicacao.Buffer_cmd[15] = 0;
+				Comunicacao.Buffer_cmd[15] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[16] = (byte)Mod_MD.Central_303_geral.Qtd_equip_res;
-				Comunicacao.Buffer_cmd[17] = 0;
+				Comunicacao.Buffer_cmd[17] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[18] = (byte)Mod_MD.Central_303_geral.Qdt_equip_rq;
-				int num = 19;
+				int num = (HorizontalAlignment)19;
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[19] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[20] = (byte)(num2 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 21;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)21;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 1 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -1304,26 +1304,26 @@ namespace iS800
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
-				Comunicacao.Buffer_cmd[2] = 2;
-				Comunicacao.Buffer_cmd[3] = 0;
-				Comunicacao.Buffer_cmd[4] = 0;
-				Comunicacao.Buffer_cmd[5] = 40;
-				Comunicacao.Buffer_cmd[6] = 80;
-				int num = 1;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
+				Comunicacao.Buffer_cmd[2] = (HorizontalAlignment)2;
+				Comunicacao.Buffer_cmd[3] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
+				Comunicacao.Buffer_cmd[5] = (HorizontalAlignment)40;
+				Comunicacao.Buffer_cmd[6] = (HorizontalAlignment)80;
+				int num = (HorizontalAlignment)1;
 				do
 				{
 					int num2 = (num - 1) * 2;
-					Comunicacao.Buffer_cmd[7 + num2] = 0;
+					Comunicacao.Buffer_cmd[7 + num2] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[8 + num2] = (byte)Mod_MD.Central_303_res[num].Msg;
 					num++;
 				}
 				while (num <= 40);
-				int num3 = 87;
+				int num3 = (HorizontalAlignment)87;
 				int num4 = Comunicacao.Crc16_TX(ref num3);
 				Comunicacao.Buffer_cmd[87] = (byte)(num4 % 256);
 				Comunicacao.Buffer_cmd[88] = (byte)(num4 / 256);
-				Comunicacao.Ctrl_Com.Cont_tx = 89;
+				Comunicacao.Ctrl_Com.Cont_tx = (HorizontalAlignment)89;
 				Comunicacao.Escreve_dados_buffer_ouvidor(2, " Comando de escrita da página 2 ");
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, Comunicacao.Ctrl_Com.Cont_tx);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -1339,89 +1339,89 @@ namespace iS800
 			int num2;
 			int num3;
 			int num4;
-			if (Operators.CompareString(indice, "3A", false) == 0)
+			if (Operators.CompareString(indice, "3A", false) == (DialogResult)0)
 			{
-				num = 768;
-				num2 = 76;
-				num3 = 0;
-				num4 = 4;
+				num = (HorizontalAlignment)768;
+				num2 = (HorizontalAlignment)76;
+				num3 = (HorizontalAlignment)0;
+				num4 = (HorizontalAlignment)4;
 				text = "3A";
 			}
-			else if (Operators.CompareString(indice, "3B", false) == 0)
+			else if (Operators.CompareString(indice, "3B", false) == (DialogResult)0)
 			{
-				num = 844;
-				num2 = 57;
-				num3 = 4;
-				num4 = 3;
+				num = (HorizontalAlignment)844;
+				num2 = (HorizontalAlignment)57;
+				num3 = (HorizontalAlignment)4;
+				num4 = (HorizontalAlignment)3;
 				text = "3B";
 			}
-			else if (Operators.CompareString(indice, "4A", false) == 0)
+			else if (Operators.CompareString(indice, "4A", false) == (DialogResult)0)
 			{
-				num = 1024;
-				num2 = 76;
-				num3 = 0;
-				num4 = 4;
+				num = (HorizontalAlignment)1024;
+				num2 = (HorizontalAlignment)76;
+				num3 = (HorizontalAlignment)0;
+				num4 = (HorizontalAlignment)4;
 				text = "4A";
 			}
-			else if (Operators.CompareString(indice, "4B", false) == 0)
+			else if (Operators.CompareString(indice, "4B", false) == (DialogResult)0)
 			{
-				num = 1100;
-				num2 = 57;
-				num3 = 4;
-				num4 = 3;
+				num = (HorizontalAlignment)1100;
+				num2 = (HorizontalAlignment)57;
+				num3 = (HorizontalAlignment)4;
+				num4 = (HorizontalAlignment)3;
 				text = "4B";
 			}
-			else if (Operators.CompareString(indice, "5A", false) == 0)
+			else if (Operators.CompareString(indice, "5A", false) == (DialogResult)0)
 			{
-				num = 1280;
-				num2 = 76;
-				num3 = 0;
-				num4 = 4;
+				num = (HorizontalAlignment)1280;
+				num2 = (HorizontalAlignment)76;
+				num3 = (HorizontalAlignment)0;
+				num4 = (HorizontalAlignment)4;
 				text = "5A";
 			}
-			else if (Operators.CompareString(indice, "5B", false) == 0)
+			else if (Operators.CompareString(indice, "5B", false) == (DialogResult)0)
 			{
-				num = 1356;
-				num2 = 57;
-				num3 = 4;
-				num4 = 3;
+				num = (HorizontalAlignment)1356;
+				num2 = (HorizontalAlignment)57;
+				num3 = (HorizontalAlignment)4;
+				num4 = (HorizontalAlignment)3;
 				text = "5B";
 			}
-			else if (Operators.CompareString(indice, "6A", false) == 0)
+			else if (Operators.CompareString(indice, "6A", false) == (DialogResult)0)
 			{
-				num = 1536;
-				num2 = 76;
-				num3 = 0;
-				num4 = 4;
+				num = (HorizontalAlignment)1536;
+				num2 = (HorizontalAlignment)76;
+				num3 = (HorizontalAlignment)0;
+				num4 = (HorizontalAlignment)4;
 				text = "6A";
 			}
-			else if (Operators.CompareString(indice, "6B", false) == 0)
+			else if (Operators.CompareString(indice, "6B", false) == (DialogResult)0)
 			{
-				num = 1612;
-				num2 = 57;
-				num3 = 4;
-				num4 = 3;
+				num = (HorizontalAlignment)1612;
+				num2 = (HorizontalAlignment)57;
+				num3 = (HorizontalAlignment)4;
+				num4 = (HorizontalAlignment)3;
 				text = "6B";
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[5] = (byte)num2;
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
-				int num5 = 1;
+				int num5 = (HorizontalAlignment)1;
 				int num6 = num4;
 				int num7;
 				for (int i = num5; i <= num6; i++)
 				{
 					num7 = (i - 1) * 38;
-					Comunicacao.Buffer_cmd[7 + num7] = 0;
+					Comunicacao.Buffer_cmd[7 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[8 + num7] = (byte)Mod_MD.Central_303_rq[i + num3].modelo;
-					Comunicacao.Buffer_cmd[9 + num7] = 0;
+					Comunicacao.Buffer_cmd[9 + num7] = (HorizontalAlignment)0;
 					Comunicacao.Buffer_cmd[10 + num7] = (byte)Mod_MD.Central_303_rq[i + num3].Msg;
 					Comunicacao.Buffer_cmd[11 + num7] = (byte)(Mod_MD.Central_303_rq[i + num3].Hab_cmd / 256);
 					Comunicacao.Buffer_cmd[12 + num7] = (byte)(Mod_MD.Central_303_rq[i + num3].Hab_cmd % 256);
@@ -1476,20 +1476,20 @@ namespace iS800
 			string text = "";
 			int num;
 			int num2;
-			if (Operators.CompareString(indice, "9", false) == 0)
+			if (Operators.CompareString(indice, "9", false) == (DialogResult)0)
 			{
-				num = 1424;
-				num2 = 1;
+				num = (HorizontalAlignment)1424;
+				num2 = (HorizontalAlignment)1;
 				text = "9";
 			}
 			Comunicacao.Init_buffer_serial();
 			checked
 			{
 				Comunicacao.Buffer_cmd[0] = (byte)endereco;
-				Comunicacao.Buffer_cmd[1] = 16;
+				Comunicacao.Buffer_cmd[1] = (HorizontalAlignment)16;
 				Comunicacao.Buffer_cmd[2] = (byte)(num / 256);
 				Comunicacao.Buffer_cmd[3] = (byte)(num % 256);
-				Comunicacao.Buffer_cmd[4] = 0;
+				Comunicacao.Buffer_cmd[4] = (HorizontalAlignment)0;
 				Comunicacao.Buffer_cmd[5] = (byte)num2;
 				Comunicacao.Buffer_cmd[6] = (byte)(num2 * 2);
 				Comunicacao.Buffer_cmd[7] = (byte)(Mod_MD.Central_303_geral.Senha / 256);
@@ -1510,11 +1510,11 @@ namespace iS800
 		public static Mod_MD.CTRL_RESP_1 Controle_escrita(int tipo)
 		{
 			string text = "???";
-			if (tipo == 21845 || tipo == 21840)
+			if (tipo == (DialogResult)21845 || tipo == (DialogResult)21840)
 			{
 				text = "Habilitação";
 			}
-			else if (tipo == 21930 || tipo == 21920)
+			else if (tipo == (DialogResult)21930 || tipo == (DialogResult)21920)
 			{
 				text = "Gravação";
 			}
@@ -1522,7 +1522,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -1533,29 +1533,29 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = text + " concluída";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_15F;
 					case 1:
 						goto IL_12A;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Chksum na " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 						break;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Timeout na " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 						break;
@@ -1566,10 +1566,10 @@ namespace iS800
 					Comunicacao.Rotina_Delay(50L);
 					continue;
 					IL_12A:
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro - não determinado na " + text;
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						goto IL_150;
 					}
@@ -1585,11 +1585,11 @@ namespace iS800
 		public static Mod_MD.CTRL_RESP_1 Controle_escrita_multi_interface(int tipo)
 		{
 			string text = "???";
-			if (tipo == 21845 || tipo == 21840)
+			if (tipo == (DialogResult)21845 || tipo == (DialogResult)21840)
 			{
 				text = "Habilitação";
 			}
-			else if (tipo == 21930 || tipo == 21920)
+			else if (tipo == (DialogResult)21930 || tipo == (DialogResult)21920)
 			{
 				text = "Gravação";
 			}
@@ -1597,7 +1597,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -1607,13 +1607,13 @@ namespace iS800
 					NetworkStream stream;
 					if (Comunicacao.Config_sistema.tipo_interface != 1)
 					{
-						if (Comunicacao.Config_sistema.tipo_interface == 2)
+						if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 						{
 							try
 							{
 								tcpClient.Connect(Comunicacao.Config_sistema.Tcpip.IP, Comunicacao.Config_sistema.Tcpip.Porta);
-								tcpClient.SendTimeout = 1000;
-								tcpClient.ReceiveTimeout = 1000;
+								tcpClient.SendTimeout = (HorizontalAlignment)1000;
+								tcpClient.ReceiveTimeout = (HorizontalAlignment)1000;
 								stream = tcpClient.GetStream();
 							}
 							catch (Exception ex)
@@ -1626,7 +1626,7 @@ namespace iS800
 									Comunicacao.Config_sistema.Tcpip.Porta.ToString(),
 									"   Erro Timeout - ao ler página "
 								});
-								result.Cor = 1;
+								result.Cor = (HorizontalAlignment)1;
 								result.Status = false;
 								return result;
 							}
@@ -1634,25 +1634,25 @@ namespace iS800
 							goto IL_1A3;
 						}
 						result.Msg = "Não existe definição de tipo de interface de comunicação!";
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						return result;
 					}
 					Comunicacao.CMD_Esc_habilitacao(tipo, 255);
 					IL_1A3:
-					if (Comunicacao.Config_sistema.tipo_interface == 1)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 					{
 						do
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == 255);
+						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					}
 					else
 					{
 						Thread.Sleep(500);
 					}
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
@@ -1664,29 +1664,29 @@ namespace iS800
 								tcpClient.Close();
 								if (num > 0)
 								{
-									Comunicacao.Ctrl_Com.Frame = 0;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									int num2 = (int)array[5];
-									int num3 = 0;
+									int num3 = (HorizontalAlignment)0;
 									int num4 = num2 - 1;
 									for (int j = num3; j <= num4; j++)
 									{
 										int num5 = 6 + j;
 										Comunicacao.Buffer_resp[j] = array[num5];
 									}
-									if (num2 == 3 & (int)Comunicacao.Buffer_resp[0] == Comunicacao.Config_sistema.endereco_modbus & Comunicacao.Buffer_resp[1] > 128)
+									if (num2 == (DialogResult)3 & (int)Comunicacao.Buffer_resp[0] == Comunicacao.Config_sistema.endereco_modbus & Comunicacao.Buffer_resp[1] > 128)
 									{
-										Comunicacao.Ctrl_Com.Frame = 30;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)30;
 									}
 									else
 									{
-										Comunicacao.Ctrl_Com.Frame = 0;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									}
 								}
 								else
 								{
-									Comunicacao.Config_sistema.endereco_modbus = 0;
+									Comunicacao.Config_sistema.endereco_modbus = (HorizontalAlignment)0;
 									Comunicacao.Config_sistema.endereco_encontrado = false;
-									Comunicacao.Ctrl_Com.Frame = 3;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 								}
 							}
 						}
@@ -1694,31 +1694,31 @@ namespace iS800
 						{
 							stream.Close();
 							tcpClient.Close();
-							Comunicacao.Ctrl_Com.Frame = 3;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 						}
 					}
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = text + " concluída";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_3B9;
 					case 1:
 						goto IL_384;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Chksum na " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 						break;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Timeout na " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 						break;
@@ -1729,10 +1729,10 @@ namespace iS800
 					Comunicacao.Rotina_Delay(50L);
 					continue;
 					IL_384:
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro - não determinado na " + text;
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						goto IL_3AA;
 					}
@@ -1752,13 +1752,13 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
 				{
 					i--;
-					if (numero_pagina == 100)
+					if (numero_pagina == (DialogResult)100)
 					{
 						text = "1";
 						switch (equipamento)
@@ -1780,7 +1780,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 512)
+					else if (numero_pagina == (DialogResult)512)
 					{
 						text = "2";
 						switch (equipamento)
@@ -1803,15 +1803,15 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 592)
+					else if (numero_pagina == (DialogResult)592)
 					{
 						text = "2-B";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							Mod_MD.CMD_Esc_MD302_pagina_2X(Mod_MD.Central_302_geral.Endereco, "2B");
 						}
 					}
-					else if (numero_pagina == 768)
+					else if (numero_pagina == (DialogResult)768)
 					{
 						text = "3";
 						switch (equipamento)
@@ -1831,7 +1831,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 888)
+					else if (numero_pagina == (DialogResult)888)
 					{
 						text = "3-B";
 						switch (equipamento)
@@ -1844,7 +1844,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1024)
+					else if (numero_pagina == (DialogResult)1024)
 					{
 						text = "4-A";
 						switch (equipamento)
@@ -1857,7 +1857,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1144)
+					else if (numero_pagina == (DialogResult)1144)
 					{
 						text = "4-B";
 						switch (equipamento)
@@ -1870,7 +1870,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1280)
+					else if (numero_pagina == (DialogResult)1280)
 					{
 						text = "5-A";
 						switch (equipamento)
@@ -1883,7 +1883,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1400)
+					else if (numero_pagina == (DialogResult)1400)
 					{
 						text = "5-B";
 						switch (equipamento)
@@ -1896,7 +1896,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1536)
+					else if (numero_pagina == (DialogResult)1536)
 					{
 						text = "6-A";
 						switch (equipamento)
@@ -1909,7 +1909,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1656)
+					else if (numero_pagina == (DialogResult)1656)
 					{
 						text = "6-B";
 						switch (equipamento)
@@ -1922,151 +1922,151 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1792)
+					else if (numero_pagina == (DialogResult)1792)
 					{
 						text = "7";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							text = "7-A";
 							Mod_MD.CMD_Esc_MD302_pagina_7X(Mod_MD.Central_302_geral.Endereco, "7A");
 						}
 					}
-					else if (numero_pagina == 1878)
+					else if (numero_pagina == (DialogResult)1878)
 					{
 						text = "7";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							text = "7-B";
 							Mod_MD.CMD_Esc_MD302_pagina_7X(Mod_MD.Central_302_geral.Endereco, "7B");
 						}
 					}
-					else if (numero_pagina == 1964)
+					else if (numero_pagina == (DialogResult)1964)
 					{
 						text = "7";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							text = "7-C";
 							Mod_MD.CMD_Esc_MD302_pagina_7X(Mod_MD.Central_302_geral.Endereco, "7C");
 						}
 					}
-					else if (numero_pagina == 1424)
+					else if (numero_pagina == (DialogResult)1424)
 					{
 						text = "9";
-						if (equipamento == 5)
+						if (equipamento == (DialogResult)5)
 						{
 							text = "9";
 							Mod_MD.CMD_Esc_MD303_pagina_9(Mod_MD.Central_303_geral.Endereco_estacao, "9");
 						}
 					}
-					else if (numero_pagina == 2048)
+					else if (numero_pagina == (DialogResult)2048)
 					{
-						if (equipamento == 0)
+						if (equipamento == (DialogResult)0)
 						{
 							Linha_RT.CMD_Esc_RT_810_H800(255);
 						}
 					}
-					else if (numero_pagina == 4096)
+					else if (numero_pagina == (DialogResult)4096)
 					{
-						if (equipamento == 0)
+						if (equipamento == (DialogResult)0)
 						{
 							Linha_RT.CMD_Esc_RT_810_H1000(RT_geral.RT_810_BD.End_estacao.Valor);
 						}
 					}
-					else if (numero_pagina == 8192)
+					else if (numero_pagina == (DialogResult)8192)
 					{
-						if (equipamento == 0)
+						if (equipamento == (DialogResult)0)
 						{
 							Linha_RT.CMD_Esc_RT_810_H2000(RT_geral.RT_810_BD.End_estacao.Valor);
 						}
 					}
-					else if (numero_pagina == 10240 && equipamento == 0)
+					else if (numero_pagina == (DialogResult)10240 && equipamento == (DialogResult)0)
 					{
 						Linha_RT.CMD_Esc_RT_810_H2800(RT_geral.RT_810_BD.End_estacao.Valor);
 					}
-					if (equipamento == 70)
+					if (equipamento == (DialogResult)70)
 					{
-						if (numero_pagina == 2048)
+						if (numero_pagina == (DialogResult)2048)
 						{
 							Linha_RT.CMD_Esc_GC_825x_DadosGerais(255);
 						}
-						else if (numero_pagina == 6144)
+						else if (numero_pagina == (DialogResult)6144)
 						{
 							Linha_RT.CMD_Esc_GC_825x_Calibracao_SA(RT_geral.GC_82x_BD.End_estacao.Valor, RT_geral.GC_82x_BD.calib_canal, RT_geral.GC_82x_BD.calib_funcao);
 						}
-						else if (numero_pagina == 20480)
+						else if (numero_pagina == (DialogResult)20480)
 						{
-							if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "CONTAGEM", false) == 0)
+							if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "CONTAGEM", false) == (DialogResult)0)
 							{
 								Linha_RT.CMD_Esc_GC_825x_DADOS_DE_RX_CONTAGENS(RT_geral.GC_82x_BD.End_estacao.Valor);
 							}
-							else if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "mA", false) == 0)
+							else if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "mA", false) == (DialogResult)0)
 							{
 								Linha_RT.CMD_Esc_GC_825x_DADOS_DE_RX_mA(RT_geral.GC_82x_BD.End_estacao.Valor, RT_geral.GC_82x_BD.corrente_canal1, RT_geral.GC_82x_BD.corrente_canal2);
 							}
 						}
 					}
-					if (equipamento == 20)
+					if (equipamento == (DialogResult)20)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_810_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_810_200_CFG_REPETIDORA(RT_geral.RT_810_200_BD.End_estacao.Valor);
 						}
 					}
-					else if (equipamento == 30)
+					else if (equipamento == (DialogResult)30)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_820_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_820_200_CFG_REPETIDORA(RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor);
 						}
-						else if (numero_pagina == 2816)
+						else if (numero_pagina == (DialogResult)2816)
 						{
 							Linha_RT.CMD_Esc_RT_820_200_CFG_SETPOINT_HORARIO(RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor);
 						}
 					}
-					else if (equipamento == 40)
+					else if (equipamento == (DialogResult)40)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_821_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_821_200_CFG_REPETIDORA(RT_geral.RT_821_200_BD.cfg_geral.End_estacao.Valor);
 						}
 					}
-					else if (equipamento == 50)
+					else if (equipamento == (DialogResult)50)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512 || numero_pagina == 612)
+						else if (numero_pagina == (DialogResult)512 || numero_pagina == (DialogResult)612)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RESERVATORIO(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor);
 						}
-						else if (numero_pagina != 768 && numero_pagina != 1024 && numero_pagina != 1280 && numero_pagina != 1536 && numero_pagina == 1792)
+						else if (numero_pagina != 768 && numero_pagina != 1024 && numero_pagina != 1280 && numero_pagina != 1536 && numero_pagina == (DialogResult)1792)
 						{
 						}
 					}
-					else if (equipamento == 60)
+					else if (equipamento == (DialogResult)60)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_RESERVATORIO(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor);
 						}
-						else if (numero_pagina == 2304)
+						else if (numero_pagina == (DialogResult)2304)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_SENHA(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor);
 						}
@@ -2075,29 +2075,29 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = "Programação página " + text;
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_A00;
 					case 1:
 						goto IL_9CB;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 						break;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 						break;
@@ -2108,10 +2108,10 @@ namespace iS800
 					Comunicacao.Rotina_Delay(50L);
 					continue;
 					IL_9CB:
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao programar página " + text;
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						goto IL_9F1;
 					}
@@ -2131,7 +2131,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -2139,13 +2139,13 @@ namespace iS800
 					i--;
 					TcpClient tcpClient = new TcpClient();
 					NetworkStream stream;
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
 							tcpClient.Connect(Comunicacao.Config_sistema.Tcpip.IP, Comunicacao.Config_sistema.Tcpip.Porta);
-							tcpClient.SendTimeout = 1000;
-							tcpClient.ReceiveTimeout = 1000;
+							tcpClient.SendTimeout = (HorizontalAlignment)1000;
+							tcpClient.ReceiveTimeout = (HorizontalAlignment)1000;
 							stream = tcpClient.GetStream();
 						}
 						catch (Exception ex)
@@ -2159,12 +2159,12 @@ namespace iS800
 								"   Erro Timeout - ao ler página ",
 								Conversion.Str(numero_pagina / 256)
 							});
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							return result;
 						}
 					}
-					if (numero_pagina == 100)
+					if (numero_pagina == (DialogResult)100)
 					{
 						text = "1";
 						switch (equipamento)
@@ -2186,7 +2186,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 512)
+					else if (numero_pagina == (DialogResult)512)
 					{
 						text = "2";
 						switch (equipamento)
@@ -2209,15 +2209,15 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 592)
+					else if (numero_pagina == (DialogResult)592)
 					{
 						text = "2-B";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							Mod_MD.CMD_Esc_MD302_pagina_2X(Mod_MD.Central_302_geral.Endereco, "2B");
 						}
 					}
-					else if (numero_pagina == 768)
+					else if (numero_pagina == (DialogResult)768)
 					{
 						text = "3";
 						switch (equipamento)
@@ -2237,7 +2237,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 888)
+					else if (numero_pagina == (DialogResult)888)
 					{
 						text = "3-B";
 						switch (equipamento)
@@ -2250,7 +2250,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1024)
+					else if (numero_pagina == (DialogResult)1024)
 					{
 						text = "4-A";
 						switch (equipamento)
@@ -2263,7 +2263,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1144)
+					else if (numero_pagina == (DialogResult)1144)
 					{
 						text = "4-B";
 						switch (equipamento)
@@ -2276,7 +2276,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1280)
+					else if (numero_pagina == (DialogResult)1280)
 					{
 						text = "5-A";
 						switch (equipamento)
@@ -2289,7 +2289,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1400)
+					else if (numero_pagina == (DialogResult)1400)
 					{
 						text = "5-B";
 						switch (equipamento)
@@ -2302,7 +2302,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1536)
+					else if (numero_pagina == (DialogResult)1536)
 					{
 						text = "6-A";
 						switch (equipamento)
@@ -2315,7 +2315,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1656)
+					else if (numero_pagina == (DialogResult)1656)
 					{
 						text = "6-B";
 						switch (equipamento)
@@ -2328,210 +2328,210 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 1792)
+					else if (numero_pagina == (DialogResult)1792)
 					{
 						text = "7";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							text = "7-A";
 							Mod_MD.CMD_Esc_MD302_pagina_7X(Mod_MD.Central_302_geral.Endereco, "7A");
 						}
 					}
-					else if (numero_pagina == 1878)
+					else if (numero_pagina == (DialogResult)1878)
 					{
 						text = "7";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							text = "7-B";
 							Mod_MD.CMD_Esc_MD302_pagina_7X(Mod_MD.Central_302_geral.Endereco, "7B");
 						}
 					}
-					else if (numero_pagina == 1964)
+					else if (numero_pagina == (DialogResult)1964)
 					{
 						text = "7";
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							text = "7-C";
 							Mod_MD.CMD_Esc_MD302_pagina_7X(Mod_MD.Central_302_geral.Endereco, "7C");
 						}
 					}
-					else if (numero_pagina == 1424)
+					else if (numero_pagina == (DialogResult)1424)
 					{
 						text = "9";
-						if (equipamento == 5)
+						if (equipamento == (DialogResult)5)
 						{
 							text = "9";
 							Mod_MD.CMD_Esc_MD303_pagina_9(Mod_MD.Central_303_geral.Endereco_estacao, "9");
 						}
 					}
-					else if (numero_pagina == 2048)
+					else if (numero_pagina == (DialogResult)2048)
 					{
-						if (equipamento == 0)
+						if (equipamento == (DialogResult)0)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT_810_H800(255);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 4096)
+					else if (numero_pagina == (DialogResult)4096)
 					{
-						if (equipamento == 0)
+						if (equipamento == (DialogResult)0)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT_810_H1000(RT_geral.RT_810_BD.End_estacao.Valor);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 8192)
+					else if (numero_pagina == (DialogResult)8192)
 					{
-						if (equipamento == 0)
+						if (equipamento == (DialogResult)0)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT_810_H2000(RT_geral.RT_810_BD.End_estacao.Valor);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 10240 && equipamento == 0)
+					else if (numero_pagina == (DialogResult)10240 && equipamento == (DialogResult)0)
 					{
 						int quantos_tx = Linha_RT.CMD_Esc_RT_810_H2800(RT_geral.RT_810_BD.End_estacao.Valor);
 						Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 					}
-					if (equipamento == 70)
+					if (equipamento == (DialogResult)70)
 					{
-						if (numero_pagina == 2048)
+						if (numero_pagina == (DialogResult)2048)
 						{
 							Linha_RT.CMD_Esc_GC_825x_DadosGerais(255);
 						}
-						else if (numero_pagina == 6144)
+						else if (numero_pagina == (DialogResult)6144)
 						{
 							Linha_RT.CMD_Esc_GC_825x_Calibracao_SA(RT_geral.GC_82x_BD.End_estacao.Valor, RT_geral.GC_82x_BD.calib_canal, RT_geral.GC_82x_BD.calib_funcao);
 						}
-						else if (numero_pagina == 20480)
+						else if (numero_pagina == (DialogResult)20480)
 						{
-							if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "CONTAGEM", false) == 0)
+							if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "CONTAGEM", false) == (DialogResult)0)
 							{
 								Linha_RT.CMD_Esc_GC_825x_DADOS_DE_RX_CONTAGENS(RT_geral.GC_82x_BD.End_estacao.Valor);
 							}
-							else if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "mA", false) == 0)
+							else if (Operators.CompareString(RT_geral.GC_82x_BD.tipo_tipo_envio, "mA", false) == (DialogResult)0)
 							{
 								Linha_RT.CMD_Esc_GC_825x_DADOS_DE_RX_mA(RT_geral.GC_82x_BD.End_estacao.Valor, RT_geral.GC_82x_BD.corrente_canal1, RT_geral.GC_82x_BD.corrente_canal2);
 							}
 						}
 					}
-					if (equipamento == 90)
+					if (equipamento == (DialogResult)90)
 					{
-						if (numero_pagina == 512)
+						if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_IEC_855_CFG_GERAL(255);
 						}
-						else if (numero_pagina == 1024)
+						else if (numero_pagina == (DialogResult)1024)
 						{
 							Linha_RT.CMD_Esc_IEC_855_CFG_ETHERNET(255);
 						}
 					}
-					else if (equipamento == 80)
+					else if (equipamento == (DialogResult)80)
 					{
-						if (numero_pagina == 512)
+						if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_IEC_855_CFG_GERAL(255);
 						}
-						else if (numero_pagina == 1024)
+						else if (numero_pagina == (DialogResult)1024)
 						{
 							Linha_RT.CMD_Esc_IEC_855_CFG_ETHERNET(255);
 						}
-						else if (numero_pagina == 1536)
+						else if (numero_pagina == (DialogResult)1536)
 						{
 							Linha_RT.CMD_Esc_IEC_855_TABELA_IP(255, 1536, 0);
 						}
-						else if (numero_pagina == 2048)
+						else if (numero_pagina == (DialogResult)2048)
 						{
 							Linha_RT.CMD_Esc_IEC_855_TABELA_IP(255, 2048, 50);
 						}
-						else if (numero_pagina == 2560)
+						else if (numero_pagina == (DialogResult)2560)
 						{
 							Linha_RT.CMD_Esc_IEC_855_TABELA_IP(255, 2560, 100);
 						}
-						else if (numero_pagina == 3072)
+						else if (numero_pagina == (DialogResult)3072)
 						{
 							Linha_RT.CMD_Esc_IEC_855_TABELA_IP(255, 3072, 150);
 						}
 					}
-					if (equipamento == 20)
+					if (equipamento == (DialogResult)20)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_810_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_810_200_CFG_REPETIDORA(RT_geral.RT_810_200_BD.End_estacao.Valor);
 						}
 					}
-					else if (equipamento == 30)
+					else if (equipamento == (DialogResult)30)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_820_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_820_200_CFG_REPETIDORA(RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor);
 						}
-						else if (numero_pagina == 2816)
+						else if (numero_pagina == (DialogResult)2816)
 						{
 							Linha_RT.CMD_Esc_RT_820_200_CFG_SETPOINT_HORARIO(RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor);
 						}
 					}
-					else if (equipamento == 40)
+					else if (equipamento == (DialogResult)40)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_821_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_821_200_CFG_REPETIDORA(RT_geral.RT_821_200_BD.cfg_geral.End_estacao.Valor);
 						}
 					}
-					else if (equipamento == 50)
+					else if (equipamento == (DialogResult)50)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512 || numero_pagina == 612)
+						else if (numero_pagina == (DialogResult)512 || numero_pagina == (DialogResult)612)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RESERVATORIO(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor);
 						}
-						else if (numero_pagina != 768 && numero_pagina != 1024 && numero_pagina != 1280 && numero_pagina != 1536 && numero_pagina == 1792)
+						else if (numero_pagina != 768 && numero_pagina != 1024 && numero_pagina != 1280 && numero_pagina != 1536 && numero_pagina == (DialogResult)1792)
 						{
 						}
 					}
-					else if (equipamento == 60)
+					else if (equipamento == (DialogResult)60)
 					{
-						if (numero_pagina == 256)
+						if (numero_pagina == (DialogResult)256)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_CFG_GERAIS(255);
 						}
-						else if (numero_pagina == 512)
+						else if (numero_pagina == (DialogResult)512)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_RESERVATORIO(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor);
 						}
-						else if (numero_pagina == 2304)
+						else if (numero_pagina == (DialogResult)2304)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_SENHA(RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor);
 						}
 					}
-					if (Comunicacao.Config_sistema.tipo_interface == 1)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 					{
 						do
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == 255);
+						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					}
 					else
 					{
 						Thread.Sleep(500);
 					}
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
@@ -2543,29 +2543,29 @@ namespace iS800
 								tcpClient.Close();
 								if (num > 0)
 								{
-									Comunicacao.Ctrl_Com.Frame = 0;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									int num2 = (int)array[5];
-									int num3 = 0;
+									int num3 = (HorizontalAlignment)0;
 									int num4 = num2 - 1;
 									for (int j = num3; j <= num4; j++)
 									{
 										int num5 = 6 + j;
 										Comunicacao.Buffer_resp[j] = array[num5];
 									}
-									if (num2 == 3 & (int)Comunicacao.Buffer_resp[0] == Comunicacao.Config_sistema.endereco_modbus & Comunicacao.Buffer_resp[1] > 128)
+									if (num2 == (DialogResult)3 & (int)Comunicacao.Buffer_resp[0] == Comunicacao.Config_sistema.endereco_modbus & Comunicacao.Buffer_resp[1] > 128)
 									{
-										Comunicacao.Ctrl_Com.Frame = 30;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)30;
 									}
 									else
 									{
-										Comunicacao.Ctrl_Com.Frame = 0;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									}
 								}
 								else
 								{
-									Comunicacao.Config_sistema.endereco_modbus = 0;
+									Comunicacao.Config_sistema.endereco_modbus = (HorizontalAlignment)0;
 									Comunicacao.Config_sistema.endereco_encontrado = false;
-									Comunicacao.Ctrl_Com.Frame = 3;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 								}
 							}
 						}
@@ -2573,49 +2573,49 @@ namespace iS800
 						{
 							stream.Close();
 							tcpClient.Close();
-							Comunicacao.Ctrl_Com.Frame = 3;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 						}
 					}
 					int frame = Comunicacao.Ctrl_Com.Frame;
-					if (frame == 0)
+					if (frame == (DialogResult)0)
 					{
 						result.Msg = "Programação página " + text;
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						break;
 					}
-					if (frame == 30)
+					if (frame == (DialogResult)30)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Equipamento ligado ao GateWai não responde ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							break;
 						}
 					}
-					else if (frame == 3)
+					else if (frame == (DialogResult)3)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 					}
-					else if (frame == 2)
+					else if (frame == (DialogResult)2)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 					}
-					else if (i == 0)
+					else if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao programar página " + text;
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 					}
 					Comunicacao.Rotina_Delay(50L);
@@ -2633,20 +2633,20 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
 				{
 					i--;
-					if (numero_pagina == 256)
+					if (numero_pagina == (DialogResult)256)
 					{
-						if (equipamento == 2010)
+						if (equipamento == (DialogResult)2010)
 						{
 							Linha_RT.CMD_Esc_GT2010(1, bloco);
 						}
 					}
-					else if (numero_pagina == 2048 || numero_pagina == 2048 || numero_pagina == 2048 || numero_pagina == 2048)
+					else if (numero_pagina == (DialogResult)2048 || numero_pagina == (DialogResult)2048 || numero_pagina == (DialogResult)2048 || numero_pagina == (DialogResult)2048)
 					{
 						switch (equipamento)
 						{
@@ -2668,7 +2668,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 2161 || numero_pagina == 2163)
+					else if (numero_pagina == (DialogResult)2161 || numero_pagina == (DialogResult)2163)
 					{
 						text = "1 - Parte 2";
 						switch (equipamento)
@@ -2681,7 +2681,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 4096 || numero_pagina == 4096 || numero_pagina == 4096)
+					else if (numero_pagina == (DialogResult)4096 || numero_pagina == (DialogResult)4096 || numero_pagina == (DialogResult)4096)
 					{
 						text = "2";
 						switch (equipamento)
@@ -2700,15 +2700,15 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 6144)
+					else if (numero_pagina == (DialogResult)6144)
 					{
 						text = "3";
-						if (equipamento == 3)
+						if (equipamento == (DialogResult)3)
 						{
 							Linha_RT.CMD_Esc_RT850_H1800_BLOCOS(RT_geral.RT_850_BD.End_mestre_canal_1.Valor, bloco);
 						}
 					}
-					else if (numero_pagina == 8192 || numero_pagina == 8192)
+					else if (numero_pagina == (DialogResult)8192 || numero_pagina == (DialogResult)8192)
 					{
 						text = "4";
 						switch (equipamento)
@@ -2724,7 +2724,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 10240 || numero_pagina == 10240)
+					else if (numero_pagina == (DialogResult)10240 || numero_pagina == (DialogResult)10240)
 					{
 						text = "5";
 						switch (equipamento)
@@ -2740,7 +2740,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 12288)
+					else if (numero_pagina == (DialogResult)12288)
 					{
 						text = "6";
 						switch (equipamento)
@@ -2756,15 +2756,15 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 12388)
+					else if (numero_pagina == (DialogResult)12388)
 					{
 						text = "3";
-						if (equipamento == 3)
+						if (equipamento == (DialogResult)3)
 						{
 							Linha_RT.CMD_Esc_RT850_H3000_Parte_2(RT_geral.RT_850_BD.End_mestre_canal_1.Valor, equipamento);
 						}
 					}
-					else if (numero_pagina == 22528 || numero_pagina == 22528)
+					else if (numero_pagina == (DialogResult)22528 || numero_pagina == (DialogResult)22528)
 					{
 						text = "11";
 						switch (equipamento)
@@ -2781,14 +2781,14 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 22648)
+					else if (numero_pagina == (DialogResult)22648)
 					{
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							Linha_RT.CMD_Esc_RT820_360_PART2_SETPOINT_HORARIO(RT_geral.RT_820_360_BD.End_estacao1.Valor, equipamento);
 						}
 					}
-					else if (numero_pagina == 24576 || numero_pagina == 24576)
+					else if (numero_pagina == (DialogResult)24576 || numero_pagina == (DialogResult)24576)
 					{
 						text = "12";
 						switch (equipamento)
@@ -2804,7 +2804,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 26624 || numero_pagina == 26624)
+					else if (numero_pagina == (DialogResult)26624 || numero_pagina == (DialogResult)26624)
 					{
 						text = "13";
 						switch (equipamento)
@@ -2820,7 +2820,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 26711)
+					else if (numero_pagina == (DialogResult)26711)
 					{
 						text = Conversions.ToString(13);
 						switch (equipamento)
@@ -2833,7 +2833,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 26798)
+					else if (numero_pagina == (DialogResult)26798)
 					{
 						text = Conversions.ToString(13);
 						switch (equipamento)
@@ -2846,7 +2846,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 26885)
+					else if (numero_pagina == (DialogResult)26885)
 					{
 						text = Conversions.ToString(13);
 						switch (equipamento)
@@ -2859,7 +2859,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 28672 || numero_pagina == 28672)
+					else if (numero_pagina == (DialogResult)28672 || numero_pagina == (DialogResult)28672)
 					{
 						text = "14";
 						switch (equipamento)
@@ -2872,7 +2872,7 @@ namespace iS800
 							break;
 						}
 					}
-					else if (numero_pagina == 30720)
+					else if (numero_pagina == (DialogResult)30720)
 					{
 						text = "15";
 						switch (equipamento)
@@ -2885,53 +2885,53 @@ namespace iS800
 							break;
 						}
 					}
-					if (equipamento == 50)
+					if (equipamento == (DialogResult)50)
 					{
-						if (numero_pagina == 768)
+						if (numero_pagina == (DialogResult)768)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 888)
+						else if (numero_pagina == (DialogResult)888)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1024)
+						else if (numero_pagina == (DialogResult)1024)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 1144)
+						else if (numero_pagina == (DialogResult)1144)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1280)
+						else if (numero_pagina == (DialogResult)1280)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 1400)
+						else if (numero_pagina == (DialogResult)1400)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1536)
+						else if (numero_pagina == (DialogResult)1536)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 1656)
+						else if (numero_pagina == (DialogResult)1656)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1792 || numero_pagina == 1878 || numero_pagina == 1964)
+						else if (numero_pagina == (DialogResult)1792 || numero_pagina == (DialogResult)1878 || numero_pagina == (DialogResult)1964)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_VISTA(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, bloco);
 						}
 					}
-					else if (equipamento == 60)
+					else if (equipamento == (DialogResult)60)
 					{
-						if (numero_pagina == 768 || numero_pagina == 844 || numero_pagina == 1024 || numero_pagina == 1100 || numero_pagina == 1280 || numero_pagina == 1356 || numero_pagina == 1536 || numero_pagina == 1612)
+						if (numero_pagina == (DialogResult)768 || numero_pagina == (DialogResult)844 || numero_pagina == (DialogResult)1024 || numero_pagina == (DialogResult)1100 || numero_pagina == (DialogResult)1280 || numero_pagina == (DialogResult)1356 || numero_pagina == (DialogResult)1536 || numero_pagina == (DialogResult)1612)
 						{
 							Linha_RT.CMD_Esc_RT_831_200_RECALQUE(numero_pagina, RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor, bloco);
 						}
 					}
-					else if (equipamento == 4)
+					else if (equipamento == (DialogResult)4)
 					{
 						switch (numero_pagina)
 						{
@@ -2949,37 +2949,37 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = "Programação página " + text;
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_AC3;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							continue;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							continue;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao programar página " + text;
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 					}
 				}
@@ -2997,7 +2997,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -3005,13 +3005,13 @@ namespace iS800
 					i--;
 					TcpClient tcpClient = new TcpClient();
 					NetworkStream stream;
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
 							tcpClient.Connect(Comunicacao.Config_sistema.Tcpip.IP, Comunicacao.Config_sistema.Tcpip.Porta);
-							tcpClient.SendTimeout = 1000;
-							tcpClient.ReceiveTimeout = 1000;
+							tcpClient.SendTimeout = (HorizontalAlignment)1000;
+							tcpClient.ReceiveTimeout = (HorizontalAlignment)1000;
 							stream = tcpClient.GetStream();
 						}
 						catch (Exception ex)
@@ -3025,19 +3025,19 @@ namespace iS800
 								"   Erro Timeout - ao ler página ",
 								Conversion.Str(numero_pagina / 256)
 							});
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							return result;
 						}
 					}
-					if (numero_pagina == 256)
+					if (numero_pagina == (DialogResult)256)
 					{
-						if (equipamento == 2010)
+						if (equipamento == (DialogResult)2010)
 						{
 							Linha_RT.CMD_Esc_GT2010(1, bloco);
 						}
 					}
-					else if (numero_pagina == 2048 || numero_pagina == 2048 || numero_pagina == 2048 || numero_pagina == 2048)
+					else if (numero_pagina == (DialogResult)2048 || numero_pagina == (DialogResult)2048 || numero_pagina == (DialogResult)2048 || numero_pagina == (DialogResult)2048)
 					{
 						switch (equipamento)
 						{
@@ -3071,7 +3071,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 2161 || numero_pagina == 2163)
+					else if (numero_pagina == (DialogResult)2161 || numero_pagina == (DialogResult)2163)
 					{
 						text = "1 - Parte 2";
 						switch (equipamento)
@@ -3090,15 +3090,15 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 2279)
+					else if (numero_pagina == (DialogResult)2279)
 					{
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT820_360_H800_Parte_3(255, equipamento);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 4096 || numero_pagina == 4096 || numero_pagina == 4096)
+					else if (numero_pagina == (DialogResult)4096 || numero_pagina == (DialogResult)4096 || numero_pagina == (DialogResult)4096)
 					{
 						text = "2";
 						switch (equipamento)
@@ -3129,16 +3129,16 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 6144)
+					else if (numero_pagina == (DialogResult)6144)
 					{
 						text = "3";
-						if (equipamento == 3)
+						if (equipamento == (DialogResult)3)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT850_H1800_BLOCOS(RT_geral.RT_850_BD.End_mestre_canal_1.Valor, bloco);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 8192 || numero_pagina == 8192)
+					else if (numero_pagina == (DialogResult)8192 || numero_pagina == (DialogResult)8192)
 					{
 						text = "4";
 						switch (equipamento)
@@ -3163,7 +3163,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 10240 || numero_pagina == 10240)
+					else if (numero_pagina == (DialogResult)10240 || numero_pagina == (DialogResult)10240)
 					{
 						text = "5";
 						switch (equipamento)
@@ -3188,7 +3188,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 12288)
+					else if (numero_pagina == (DialogResult)12288)
 					{
 						text = "6";
 						switch (equipamento)
@@ -3213,16 +3213,16 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 12388)
+					else if (numero_pagina == (DialogResult)12388)
 					{
 						text = "3";
-						if (equipamento == 3)
+						if (equipamento == (DialogResult)3)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT850_H3000_Parte_2(RT_geral.RT_850_BD.End_mestre_canal_1.Valor, equipamento);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 22528 || numero_pagina == 22528)
+					else if (numero_pagina == (DialogResult)22528 || numero_pagina == (DialogResult)22528)
 					{
 						text = "11";
 						switch (equipamento)
@@ -3248,15 +3248,15 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 22648)
+					else if (numero_pagina == (DialogResult)22648)
 					{
-						if (equipamento == 4)
+						if (equipamento == (DialogResult)4)
 						{
 							int quantos_tx = Linha_RT.CMD_Esc_RT820_360_PART2_SETPOINT_HORARIO(RT_geral.RT_820_360_BD.End_estacao1.Valor, equipamento);
 							Linha_RT.CMD_Esc_TCP(quantos_tx, stream);
 						}
 					}
-					else if (numero_pagina == 24576 || numero_pagina == 24576)
+					else if (numero_pagina == (DialogResult)24576 || numero_pagina == (DialogResult)24576)
 					{
 						text = "12";
 						switch (equipamento)
@@ -3281,7 +3281,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 26624 || numero_pagina == 26624)
+					else if (numero_pagina == (DialogResult)26624 || numero_pagina == (DialogResult)26624)
 					{
 						text = "13";
 						switch (equipamento)
@@ -3306,7 +3306,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 26711)
+					else if (numero_pagina == (DialogResult)26711)
 					{
 						text = Conversions.ToString(13);
 						switch (equipamento)
@@ -3325,7 +3325,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 26798)
+					else if (numero_pagina == (DialogResult)26798)
 					{
 						text = Conversions.ToString(13);
 						switch (equipamento)
@@ -3344,7 +3344,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 26885)
+					else if (numero_pagina == (DialogResult)26885)
 					{
 						text = Conversions.ToString(13);
 						switch (equipamento)
@@ -3363,7 +3363,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 28672 || numero_pagina == 28672)
+					else if (numero_pagina == (DialogResult)28672 || numero_pagina == (DialogResult)28672)
 					{
 						text = "14";
 						switch (equipamento)
@@ -3382,7 +3382,7 @@ namespace iS800
 						}
 						}
 					}
-					else if (numero_pagina == 30720)
+					else if (numero_pagina == (DialogResult)30720)
 					{
 						text = "15";
 						switch (equipamento)
@@ -3401,62 +3401,62 @@ namespace iS800
 						}
 						}
 					}
-					if (equipamento == 50)
+					if (equipamento == (DialogResult)50)
 					{
-						if (numero_pagina == 768)
+						if (numero_pagina == (DialogResult)768)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 888)
+						else if (numero_pagina == (DialogResult)888)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1024)
+						else if (numero_pagina == (DialogResult)1024)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 1144)
+						else if (numero_pagina == (DialogResult)1144)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1280)
+						else if (numero_pagina == (DialogResult)1280)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 1400)
+						else if (numero_pagina == (DialogResult)1400)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1536)
+						else if (numero_pagina == (DialogResult)1536)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 4);
 						}
-						else if (numero_pagina == 1656)
+						else if (numero_pagina == (DialogResult)1656)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_RECALQUE(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, 3);
 						}
-						else if (numero_pagina == 1792 || numero_pagina == 1878 || numero_pagina == 1964)
+						else if (numero_pagina == (DialogResult)1792 || numero_pagina == (DialogResult)1878 || numero_pagina == (DialogResult)1964)
 						{
 							Linha_RT.CMD_Esc_RT_830_200_VISTA(numero_pagina, RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor, bloco);
 						}
 					}
-					else if (equipamento == 60 && (numero_pagina == 768 || numero_pagina == 844 || numero_pagina == 1024 || numero_pagina == 1100 || numero_pagina == 1280 || numero_pagina == 1356 || numero_pagina == 1536 || numero_pagina == 1612))
+					else if (equipamento == (DialogResult)60 && (numero_pagina == (DialogResult)768 || numero_pagina == (DialogResult)844 || numero_pagina == (DialogResult)1024 || numero_pagina == (DialogResult)1100 || numero_pagina == (DialogResult)1280 || numero_pagina == (DialogResult)1356 || numero_pagina == (DialogResult)1536 || numero_pagina == (DialogResult)1612))
 					{
 						Linha_RT.CMD_Esc_RT_831_200_RECALQUE(numero_pagina, RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_estacao.Valor, bloco);
 					}
-					if (Comunicacao.Config_sistema.tipo_interface == 1)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 					{
 						do
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == 255);
+						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					}
 					else
 					{
 						Thread.Sleep(500);
 					}
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
@@ -3468,29 +3468,29 @@ namespace iS800
 								tcpClient.Close();
 								if (num > 0)
 								{
-									Comunicacao.Ctrl_Com.Frame = 0;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									int num2 = (int)array[5];
-									int num3 = 0;
+									int num3 = (HorizontalAlignment)0;
 									int num4 = num2 - 1;
 									for (int j = num3; j <= num4; j++)
 									{
 										int num5 = 6 + j;
 										Comunicacao.Buffer_resp[j] = array[num5];
 									}
-									if (num2 == 3 & (int)Comunicacao.Buffer_resp[0] == Comunicacao.Config_sistema.endereco_modbus & Comunicacao.Buffer_resp[1] > 128)
+									if (num2 == (DialogResult)3 & (int)Comunicacao.Buffer_resp[0] == Comunicacao.Config_sistema.endereco_modbus & Comunicacao.Buffer_resp[1] > 128)
 									{
-										Comunicacao.Ctrl_Com.Frame = 30;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)30;
 									}
 									else
 									{
-										Comunicacao.Ctrl_Com.Frame = 0;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									}
 								}
 								else
 								{
-									Comunicacao.Config_sistema.endereco_modbus = 0;
+									Comunicacao.Config_sistema.endereco_modbus = (HorizontalAlignment)0;
 									Comunicacao.Config_sistema.endereco_encontrado = false;
-									Comunicacao.Ctrl_Com.Frame = 3;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 								}
 							}
 						}
@@ -3498,49 +3498,49 @@ namespace iS800
 						{
 							stream.Close();
 							tcpClient.Close();
-							Comunicacao.Ctrl_Com.Frame = 3;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 						}
 					}
 					int frame = Comunicacao.Ctrl_Com.Frame;
-					if (frame == 0)
+					if (frame == (DialogResult)0)
 					{
 						result.Msg = "Programação página " + text;
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						break;
 					}
-					if (frame == 30)
+					if (frame == (DialogResult)30)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Equipamento ligado ao GateWai não responde ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							break;
 						}
 					}
-					else if (frame == 3)
+					else if (frame == (DialogResult)3)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 					}
-					else if (frame == 2)
+					else if (frame == (DialogResult)2)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao programar página " + text;
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 						}
 					}
-					else if (i == 0)
+					else if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao programar página " + text;
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 					}
 				}
@@ -3564,9 +3564,9 @@ namespace iS800
 			Comunicacao.Config_sistema.endereco_encontrado = false;
 			checked
 			{
-				if (Comunicacao.Config_sistema.tipo_interface == 2)
+				if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					while (!Mod_MD.Leitura_pagina_TCPIP(0, num, 1).Status)
 					{
 						num++;
@@ -3591,22 +3591,22 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
 				{
-					if (Comunicacao.Config_sistema.tipo_interface == 1)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 					{
 						Comunicacao.Init_buffer_serial();
 					}
 					i--;
 					NetworkStream stream;
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						tcpClient.Connect(Comunicacao.Config_sistema.Tcpip.IP, Comunicacao.Config_sistema.Tcpip.Porta);
-						tcpClient.SendTimeout = 100;
-						tcpClient.ReceiveTimeout = 100;
+						tcpClient.SendTimeout = (HorizontalAlignment)100;
+						tcpClient.ReceiveTimeout = (HorizontalAlignment)100;
 						stream = tcpClient.GetStream();
 						Comunicacao.CMD_Le_Pagina_TCPIP(numero_pagina, endereco, tamanho, ref stream);
 					}
@@ -3618,8 +3618,8 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
@@ -3631,9 +3631,9 @@ namespace iS800
 								tcpClient.Close();
 								if (num > 0)
 								{
-									Comunicacao.Ctrl_Com.Frame = 0;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									int num2 = (int)array[5];
-									int num3 = 0;
+									int num3 = (HorizontalAlignment)0;
 									int num4 = num2 - 1;
 									for (int j = num3; j <= num4; j++)
 									{
@@ -3647,39 +3647,39 @@ namespace iS800
 						{
 							stream.Close();
 							tcpClient.Close();
-							Comunicacao.Ctrl_Com.Frame = 3;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 						}
 					}
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = "Leitura página " + Conversion.Str(numero_pagina / 256) + " - OK";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_283;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							goto IL_283;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							goto IL_283;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao ler página " + Conversion.Str(numero_pagina / 256);
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						break;
 					}
@@ -3698,7 +3698,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -3709,13 +3709,13 @@ namespace iS800
 					NetworkStream stream;
 					if (Comunicacao.Config_sistema.tipo_interface != 1)
 					{
-						if (Comunicacao.Config_sistema.tipo_interface == 2)
+						if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 						{
 							try
 							{
 								tcpClient.Connect(Comunicacao.Config_sistema.Tcpip.IP, Comunicacao.Config_sistema.Tcpip.Porta);
-								tcpClient.SendTimeout = 1000;
-								tcpClient.ReceiveTimeout = 1000;
+								tcpClient.SendTimeout = (HorizontalAlignment)1000;
+								tcpClient.ReceiveTimeout = (HorizontalAlignment)1000;
 								stream = tcpClient.GetStream();
 							}
 							catch (Exception ex)
@@ -3729,7 +3729,7 @@ namespace iS800
 									"   Erro Timeout - ao ler página ",
 									Conversion.Str(numero_pagina / 256)
 								});
-								result.Cor = 1;
+								result.Cor = (HorizontalAlignment)1;
 								result.Status = false;
 								return result;
 							}
@@ -3737,25 +3737,25 @@ namespace iS800
 							goto IL_17D;
 						}
 						result.Msg = "Não existe definição de tipo de interface de comunicação!";
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						return result;
 					}
 					Comunicacao.CMD_Le_Pagina(numero_pagina, endereco, tamanho);
 					IL_17D:
-					if (Comunicacao.Config_sistema.tipo_interface == 1)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)1)
 					{
 						do
 						{
 							Application.DoEvents();
 						}
-						while (Comunicacao.Ctrl_Com.Frame == 255);
+						while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					}
 					else
 					{
 						Thread.Sleep(500);
 					}
-					if (Comunicacao.Config_sistema.tipo_interface == 2)
+					if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 					{
 						try
 						{
@@ -3767,29 +3767,29 @@ namespace iS800
 								tcpClient.Close();
 								if (num > 0)
 								{
-									Comunicacao.Ctrl_Com.Frame = 0;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									int num2 = (int)array[5];
-									int num3 = 0;
+									int num3 = (HorizontalAlignment)0;
 									int num4 = num2 - 1;
 									for (int j = num3; j <= num4; j++)
 									{
 										int num5 = 6 + j;
 										Comunicacao.Buffer_resp[j] = array[num5];
 									}
-									if (num2 == 3 & (int)Comunicacao.Buffer_resp[0] == endereco & Comunicacao.Buffer_resp[1] > 128)
+									if (num2 == (DialogResult)3 & (int)Comunicacao.Buffer_resp[0] == endereco & Comunicacao.Buffer_resp[1] > 128)
 									{
-										Comunicacao.Ctrl_Com.Frame = 30;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)30;
 									}
 									else
 									{
-										Comunicacao.Ctrl_Com.Frame = 0;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 									}
 								}
 								else
 								{
-									Comunicacao.Config_sistema.endereco_modbus = 0;
+									Comunicacao.Config_sistema.endereco_modbus = (HorizontalAlignment)0;
 									Comunicacao.Config_sistema.endereco_encontrado = false;
-									Comunicacao.Ctrl_Com.Frame = 3;
+									Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 								}
 							}
 						}
@@ -3797,51 +3797,51 @@ namespace iS800
 						{
 							stream.Close();
 							tcpClient.Close();
-							Comunicacao.Ctrl_Com.Frame = 3;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 						}
 					}
 					int frame = Comunicacao.Ctrl_Com.Frame;
-					if (frame == 0)
+					if (frame == (DialogResult)0)
 					{
 						result.Msg = "Leitura página " + Conversion.Str(numero_pagina / 256) + " - OK";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						break;
 					}
-					if (frame == 30)
+					if (frame == (DialogResult)30)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro - Equipamento ligado ao GateWai não responde ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							break;
 						}
 					}
-					else if (frame == 3)
+					else if (frame == (DialogResult)3)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							break;
 						}
 					}
-					else if (frame == 2)
+					else if (frame == (DialogResult)2)
 					{
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							break;
 						}
 					}
-					else if (i == 0)
+					else if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao ler página " + Conversion.Str(numero_pagina / 256);
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						break;
 					}
@@ -3859,7 +3859,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -3871,37 +3871,37 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = "Leitura página " + Conversion.Str(numero_pagina / 256) + " - OK";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_16C;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro chksum - ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							goto IL_16C;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout - ao ler página " + Conversion.Str(numero_pagina / 256);
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							goto IL_16C;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado - ao ler página " + Conversion.Str(numero_pagina / 256);
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						break;
 					}
@@ -4006,14 +4006,14 @@ namespace iS800
 			};
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
-			result.Cor = 0;
-			if (Comunicacao.Buffer_resp[3] == 6)
+			result.Cor = (HorizontalAlignment)0;
+			if (Comunicacao.Buffer_resp[3] == (DialogResult)6)
 			{
 				result.Msg = array[0];
 			}
 			else
 			{
-				result.Cor = 1;
+				result.Cor = (HorizontalAlignment)1;
 				int num = (int)(checked(Comunicacao.Buffer_resp[4] - 48));
 				if (num <= 24)
 				{
@@ -4032,14 +4032,14 @@ namespace iS800
 		{
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
-			result.Cor = 0;
-			if (Comunicacao.Buffer_resp[3] == 6)
+			result.Cor = (HorizontalAlignment)0;
+			if (Comunicacao.Buffer_resp[3] == (DialogResult)6)
 			{
 				result.Msg = "Comando executado com sucesso";
 			}
 			else
 			{
-				result.Cor = 1;
+				result.Cor = (HorizontalAlignment)1;
 				switch (Comunicacao.Buffer_resp[4])
 				{
 				case 49:
@@ -4132,39 +4132,39 @@ namespace iS800
 		public static void Atualiza_tabela_equipamentos_vista()
 		{
 			int qtd_equip_vista = Mod_MD.Central_302_geral.Qtd_equip_vista;
-			int i = 1;
+			int i = (HorizontalAlignment)1;
 			checked
 			{
 				do
 				{
-					int j = 1;
+					int j = (HorizontalAlignment)1;
 					do
 					{
-						Mod_MD.Tabela_302[i, j] = 0;
+						Mod_MD.Tabela_302[i, j] = (HorizontalAlignment)0;
 						j++;
 					}
 					while (j <= 40);
 					i++;
 				}
 				while (i <= 5);
-				int num = 1;
+				int num = (HorizontalAlignment)1;
 				int num2 = qtd_equip_vista;
 				for (i = num; i <= num2; i++)
 				{
 					int num_res = Mod_MD.Central_302_centrais[i].num_res;
 					int num_rq = Mod_MD.Central_302_centrais[i].num_rq;
-					int num3 = 1;
+					int num3 = (HorizontalAlignment)1;
 					int num4 = num_res;
 					int j;
 					for (j = num3; j <= num4; j++)
 					{
-						Mod_MD.Tabela_302[i, j] = 1;
+						Mod_MD.Tabela_302[i, j] = (HorizontalAlignment)1;
 					}
 					int num5 = j;
 					int num6 = num_rq + num_res;
 					for (int k = num5; k <= num6; k++)
 					{
-						Mod_MD.Tabela_302[i, k] = 2;
+						Mod_MD.Tabela_302[i, k] = (HorizontalAlignment)2;
 					}
 				}
 			}
@@ -4175,7 +4175,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (pag == 256)
+				if (pag == (DialogResult)256)
 				{
 					Mod_MD.Central_303_geral.Endereco_mestre = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 					Mod_MD.Central_303_geral.Endereco_estacao = (int)Comunicacao.Buffer_resp[5] * 256 + (int)Comunicacao.Buffer_resp[6];
@@ -4184,9 +4184,9 @@ namespace iS800
 					Mod_MD.Central_303_geral.Qtd_equip_res = (int)Comunicacao.Buffer_resp[11] * 256 + (int)Comunicacao.Buffer_resp[12];
 					Mod_MD.Central_303_geral.Qdt_equip_rq = (int)Comunicacao.Buffer_resp[13] * 256 + (int)Comunicacao.Buffer_resp[14];
 				}
-				else if (pag == 512)
+				else if (pag == (DialogResult)512)
 				{
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					do
 					{
 						int num2 = (num - 1) * 2;
@@ -4195,59 +4195,59 @@ namespace iS800
 					}
 					while (num <= 40);
 				}
-				else if (pag == 768)
+				else if (pag == (DialogResult)768)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 0);
 					Mod_MD.Salva_dados_MD303_RQ(2, 0);
 					Mod_MD.Salva_dados_MD303_RQ(3, 0);
 					Mod_MD.Salva_dados_MD303_RQ(4, 0);
 				}
-				else if (pag == 844)
+				else if (pag == (DialogResult)844)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 4);
 					Mod_MD.Salva_dados_MD303_RQ(2, 4);
 					Mod_MD.Salva_dados_MD303_RQ(3, 4);
 				}
-				else if (pag == 1024)
+				else if (pag == (DialogResult)1024)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 7);
 					Mod_MD.Salva_dados_MD303_RQ(2, 7);
 					Mod_MD.Salva_dados_MD303_RQ(3, 7);
 					Mod_MD.Salva_dados_MD303_RQ(4, 7);
 				}
-				else if (pag == 1100)
+				else if (pag == (DialogResult)1100)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 11);
 					Mod_MD.Salva_dados_MD303_RQ(2, 11);
 					Mod_MD.Salva_dados_MD303_RQ(3, 11);
 				}
-				else if (pag == 1280)
+				else if (pag == (DialogResult)1280)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 14);
 					Mod_MD.Salva_dados_MD303_RQ(2, 14);
 					Mod_MD.Salva_dados_MD303_RQ(3, 14);
 					Mod_MD.Salva_dados_MD303_RQ(4, 14);
 				}
-				else if (pag == 1356)
+				else if (pag == (DialogResult)1356)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 18);
 					Mod_MD.Salva_dados_MD303_RQ(2, 18);
 					Mod_MD.Salva_dados_MD303_RQ(3, 18);
 				}
-				else if (pag == 1536)
+				else if (pag == (DialogResult)1536)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 21);
 					Mod_MD.Salva_dados_MD303_RQ(2, 21);
 					Mod_MD.Salva_dados_MD303_RQ(3, 21);
 					Mod_MD.Salva_dados_MD303_RQ(4, 21);
 				}
-				else if (pag == 1612)
+				else if (pag == (DialogResult)1612)
 				{
 					Mod_MD.Salva_dados_MD303_RQ(1, 25);
 					Mod_MD.Salva_dados_MD303_RQ(2, 25);
 					Mod_MD.Salva_dados_MD303_RQ(3, 25);
 				}
-				else if (pag == 2304)
+				else if (pag == (DialogResult)2304)
 				{
 					Mod_MD.Central_303_geral.Senha = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 				}
@@ -4289,7 +4289,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -4300,28 +4300,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = "Leitura de bloco OK";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_E1;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout ao ler bloco";
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							goto IL_E1;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado";
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						break;
 					}
@@ -4340,7 +4340,7 @@ namespace iS800
 			Mod_MD.CTRL_RESP_1 result;
 			result.Msg = "";
 			result.Status = false;
-			result.Cor = 1;
+			result.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -4351,28 +4351,28 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						result.Msg = "Leitura de bloco OK";
-						result.Cor = 0;
+						result.Cor = (HorizontalAlignment)0;
 						result.Status = true;
 						goto IL_DD;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							result.Msg = "Erro Timeout ao ler bloco";
-							result.Cor = 1;
+							result.Cor = (HorizontalAlignment)1;
 							result.Status = false;
 							goto IL_DD;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						result.Msg = "Erro indeterminado";
-						result.Cor = 1;
+						result.Cor = (HorizontalAlignment)1;
 						result.Status = false;
 						break;
 					}
@@ -4417,23 +4417,23 @@ namespace iS800
 		// Token: 0x06002417 RID: 9239 RVA: 0x0025F1C8 File Offset: 0x0025D5C8
 		public static void CarregaConfiguracaoDefault_MD101(int indice)
 		{
-			Mod_MD.Reservatorio[indice].Altura_sensor = 1000;
-			Mod_MD.Reservatorio[indice].End_estacao = 1;
-			Mod_MD.Reservatorio[indice].End_mestre = 200;
-			Mod_MD.Reservatorio[indice].End_repetidora = 100;
-			Mod_MD.Reservatorio[indice].Intervalo_filtro = 500;
-			Mod_MD.Reservatorio[indice].Tamanho_filtro = 5;
-			Mod_MD.Reservatorio[indice].Num_repetidoras = 0;
-			Mod_MD.Reservatorio[indice].Offset_sensor = 0;
-			Mod_MD.Reservatorio[indice].Range_sensor = 1000;
-			Mod_MD.Reservatorio[indice].Tempo_ptt = 20;
-			Mod_MD.Reservatorio[indice].Tempo_tx_ponto = 30;
-			int num = 0;
+			Mod_MD.Reservatorio[indice].Altura_sensor = (HorizontalAlignment)1000;
+			Mod_MD.Reservatorio[indice].End_estacao = (HorizontalAlignment)1;
+			Mod_MD.Reservatorio[indice].End_mestre = (HorizontalAlignment)200;
+			Mod_MD.Reservatorio[indice].End_repetidora = (HorizontalAlignment)100;
+			Mod_MD.Reservatorio[indice].Intervalo_filtro = (HorizontalAlignment)500;
+			Mod_MD.Reservatorio[indice].Tamanho_filtro = (HorizontalAlignment)5;
+			Mod_MD.Reservatorio[indice].Num_repetidoras = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Offset_sensor = (HorizontalAlignment)0;
+			Mod_MD.Reservatorio[indice].Range_sensor = (HorizontalAlignment)1000;
+			Mod_MD.Reservatorio[indice].Tempo_ptt = (HorizontalAlignment)20;
+			Mod_MD.Reservatorio[indice].Tempo_tx_ponto = (HorizontalAlignment)30;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
 				{
-					Mod_MD.Reservatorio[indice].Repetidoras[num] = 0;
+					Mod_MD.Reservatorio[indice].Repetidoras[num] = (HorizontalAlignment)0;
 					num++;
 				}
 				while (num <= 50);
@@ -4441,466 +4441,466 @@ namespace iS800
 		}
 
 		// Token: 0x0400188E RID: 6286
-		public const int CONST_201_NINST = 0;
+		public const int CONST_201_NINST = (HorizontalAlignment)0;
 
 		// Token: 0x0400188F RID: 6287
-		public const int CONST_201_PARADO = 1;
+		public const int CONST_201_PARADO = (HorizontalAlignment)1;
 
 		// Token: 0x04001890 RID: 6288
-		public const int CONST_201_PARTINDO = 2;
+		public const int CONST_201_PARTINDO = (HorizontalAlignment)2;
 
 		// Token: 0x04001891 RID: 6289
-		public const int CONST_201_OPERANDO = 3;
+		public const int CONST_201_OPERANDO = (HorizontalAlignment)3;
 
 		// Token: 0x04001892 RID: 6290
-		public const int CONST_201_PARANDO = 4;
+		public const int CONST_201_PARANDO = (HorizontalAlignment)4;
 
 		// Token: 0x04001893 RID: 6291
-		public const int CONST_201_PARADO_ANORMAL = 5;
+		public const int CONST_201_PARADO_ANORMAL = (HorizontalAlignment)5;
 
 		// Token: 0x04001894 RID: 6292
-		public const int CONST_201_LIGADO_ANORMAL = 6;
+		public const int CONST_201_LIGADO_ANORMAL = (HorizontalAlignment)6;
 
 		// Token: 0x04001895 RID: 6293
-		public const int CONST_BAUDRATE_1200 = 21849;
+		public const int CONST_BAUDRATE_1200 = (HorizontalAlignment)21849;
 
 		// Token: 0x04001896 RID: 6294
-		public const int CONST_BAUDRATE_9600 = 21850;
+		public const int CONST_BAUDRATE_9600 = (HorizontalAlignment)21850;
 
 		// Token: 0x04001897 RID: 6295
-		public const int CONST_RETORNO_MOTOR1 = 21904;
+		public const int CONST_RETORNO_MOTOR1 = (HorizontalAlignment)21904;
 
 		// Token: 0x04001898 RID: 6296
-		public const int CONST_RETORNO_MOTOR2 = 21905;
+		public const int CONST_RETORNO_MOTOR2 = (HorizontalAlignment)21905;
 
 		// Token: 0x04001899 RID: 6297
-		public const int CONST_RETORNO_MOTOR3 = 21906;
+		public const int CONST_RETORNO_MOTOR3 = (HorizontalAlignment)21906;
 
 		// Token: 0x0400189A RID: 6298
-		public const int CONST_RETORNO_MOTOR4 = 21907;
+		public const int CONST_RETORNO_MOTOR4 = (HorizontalAlignment)21907;
 
 		// Token: 0x0400189B RID: 6299
-		public const int CONST_MONITORAMENTO_ARROMBAMENTO = 21908;
+		public const int CONST_MONITORAMENTO_ARROMBAMENTO = (HorizontalAlignment)21908;
 
 		// Token: 0x0400189C RID: 6300
-		public const int CONST_MONITORAMENTO_FALTA_FASE = 21909;
+		public const int CONST_MONITORAMENTO_FALTA_FASE = (HorizontalAlignment)21909;
 
 		// Token: 0x0400189D RID: 6301
-		public const int CONST_MONITORAMENTO_ALAGAMENTO = 21910;
+		public const int CONST_MONITORAMENTO_ALAGAMENTO = (HorizontalAlignment)21910;
 
 		// Token: 0x0400189E RID: 6302
-		public const int CONST_RETORNO_FECHAMENTO_VALVULA1 = 21911;
+		public const int CONST_RETORNO_FECHAMENTO_VALVULA1 = (HorizontalAlignment)21911;
 
 		// Token: 0x0400189F RID: 6303
-		public const int CONST_RETORNO_FECHAMENTO_VALVULA2 = 21912;
+		public const int CONST_RETORNO_FECHAMENTO_VALVULA2 = (HorizontalAlignment)21912;
 
 		// Token: 0x040018A0 RID: 6304
-		public const int CONST_RETORNO_FECHAMENTO_VALVULA3 = 21913;
+		public const int CONST_RETORNO_FECHAMENTO_VALVULA3 = (HorizontalAlignment)21913;
 
 		// Token: 0x040018A1 RID: 6305
-		public const int CONST_RETORNO_FECHAMENTO_VALVULA4 = 21914;
+		public const int CONST_RETORNO_FECHAMENTO_VALVULA4 = (HorizontalAlignment)21914;
 
 		// Token: 0x040018A2 RID: 6306
-		public const int CONST_RETORNO_ABERTURA_VALVULA1 = 21915;
+		public const int CONST_RETORNO_ABERTURA_VALVULA1 = (HorizontalAlignment)21915;
 
 		// Token: 0x040018A3 RID: 6307
-		public const int CONST_RETORNO_ABERTURA_VALVULA2 = 21916;
+		public const int CONST_RETORNO_ABERTURA_VALVULA2 = (HorizontalAlignment)21916;
 
 		// Token: 0x040018A4 RID: 6308
-		public const int CONST_RETORNO_ABERTURA_VALVULA3 = 21917;
+		public const int CONST_RETORNO_ABERTURA_VALVULA3 = (HorizontalAlignment)21917;
 
 		// Token: 0x040018A5 RID: 6309
-		public const int CONST_RETORNO_ABERTURA_VALVULA4 = 21918;
+		public const int CONST_RETORNO_ABERTURA_VALVULA4 = (HorizontalAlignment)21918;
 
 		// Token: 0x040018A6 RID: 6310
-		public const int CONST_OPERACAO_MANUAL = 21888;
+		public const int CONST_OPERACAO_MANUAL = (HorizontalAlignment)21888;
 
 		// Token: 0x040018A7 RID: 6311
-		public const int CONST_OPERACAO_AUTOMATICA = 21889;
+		public const int CONST_OPERACAO_AUTOMATICA = (HorizontalAlignment)21889;
 
 		// Token: 0x040018A8 RID: 6312
-		public const int CONST_OPERACAO_TIMER = 21890;
+		public const int CONST_OPERACAO_TIMER = (HorizontalAlignment)21890;
 
 		// Token: 0x040018A9 RID: 6313
-		public const int CONST_HABILITA_CMD = 21882;
+		public const int CONST_HABILITA_CMD = (HorizontalAlignment)21882;
 
 		// Token: 0x040018AA RID: 6314
-		public const int CONST_BLOQUEIO_CMD = 0;
+		public const int CONST_BLOQUEIO_CMD = (HorizontalAlignment)0;
 
 		// Token: 0x040018AB RID: 6315
-		public const int CONST_VALOR_INI_TEMPO_PARTIDA = 180;
+		public const int CONST_VALOR_INI_TEMPO_PARTIDA = (HorizontalAlignment)180;
 
 		// Token: 0x040018AC RID: 6316
-		public const int CONST_VALOR_INI_TEMPO_PARADA = 180;
+		public const int CONST_VALOR_INI_TEMPO_PARADA = (HorizontalAlignment)180;
 
 		// Token: 0x040018AD RID: 6317
-		public const int CONST_VALOR_INI_TEMPO_ABERTURA_VAL = 180;
+		public const int CONST_VALOR_INI_TEMPO_ABERTURA_VAL = (HorizontalAlignment)180;
 
 		// Token: 0x040018AE RID: 6318
-		public const int CONST_VALOR_INI_TEMPO_FECHAMENTO_VAL = 180;
+		public const int CONST_VALOR_INI_TEMPO_FECHAMENTO_VAL = (HorizontalAlignment)180;
 
 		// Token: 0x040018AF RID: 6319
-		public const int CONST_VALOR_INI_NIVEL_DESEJADO = 100;
+		public const int CONST_VALOR_INI_NIVEL_DESEJADO = (HorizontalAlignment)100;
 
 		// Token: 0x040018B0 RID: 6320
-		public const int CONST_VALOR_INI_LIGA_B1 = 1;
+		public const int CONST_VALOR_INI_LIGA_B1 = (HorizontalAlignment)1;
 
 		// Token: 0x040018B1 RID: 6321
-		public const int CONST_VALOR_INI_LIGA_B2 = 1;
+		public const int CONST_VALOR_INI_LIGA_B2 = (HorizontalAlignment)1;
 
 		// Token: 0x040018B2 RID: 6322
-		public const int CONST_VALOR_INI_LIGA_B3 = 1;
+		public const int CONST_VALOR_INI_LIGA_B3 = (HorizontalAlignment)1;
 
 		// Token: 0x040018B3 RID: 6323
-		public const int CONST_VALOR_INI_LIGA_B4 = 1;
+		public const int CONST_VALOR_INI_LIGA_B4 = (HorizontalAlignment)1;
 
 		// Token: 0x040018B4 RID: 6324
-		public const int CONST_VALOR_INI_TEMPO_MAIS_BOMBA = 0;
+		public const int CONST_VALOR_INI_TEMPO_MAIS_BOMBA = (HorizontalAlignment)0;
 
 		// Token: 0x040018B5 RID: 6325
-		public const int CONST_VALOR_INI_PRESSAO_SUCCAO = 5;
+		public const int CONST_VALOR_INI_PRESSAO_SUCCAO = (HorizontalAlignment)5;
 
 		// Token: 0x040018B6 RID: 6326
-		public const int CONST_VALOR_INI_PRESSAO_RECALQUE = 5;
+		public const int CONST_VALOR_INI_PRESSAO_RECALQUE = (HorizontalAlignment)5;
 
 		// Token: 0x040018B7 RID: 6327
-		public const int CONST_VALOR_INI_PROTECAO_LIGA = 40;
+		public const int CONST_VALOR_INI_PROTECAO_LIGA = (HorizontalAlignment)40;
 
 		// Token: 0x040018B8 RID: 6328
-		public const int CONST_VALOR_INI_PROTECAO_DESLIGA = 20;
+		public const int CONST_VALOR_INI_PROTECAO_DESLIGA = (HorizontalAlignment)20;
 
 		// Token: 0x040018B9 RID: 6329
-		public const int CONST_VALOR_INI_BOMBAS_SIMULTANEAS = 0;
+		public const int CONST_VALOR_INI_BOMBAS_SIMULTANEAS = (HorizontalAlignment)0;
 
 		// Token: 0x040018BA RID: 6330
-		public const int CONST_VALOR_INI_TEMPO_ENTRE_ACIONAMENTOS = 0;
+		public const int CONST_VALOR_INI_TEMPO_ENTRE_ACIONAMENTOS = (HorizontalAlignment)0;
 
 		// Token: 0x040018BB RID: 6331
-		public const int CONST_VALOR_INI_NUM_TOTALIZACOES = 1;
+		public const int CONST_VALOR_INI_NUM_TOTALIZACOES = (HorizontalAlignment)1;
 
 		// Token: 0x040018BC RID: 6332
-		public const int CONST_VALOR_INI_CONTROLE_NIVEL_FONTE = 21921;
+		public const int CONST_VALOR_INI_CONTROLE_NIVEL_FONTE = (HorizontalAlignment)21921;
 
 		// Token: 0x040018BD RID: 6333
-		public const int CONST_LIBERAR_TECLAS = 1;
+		public const int CONST_LIBERAR_TECLAS = (HorizontalAlignment)1;
 
 		// Token: 0x040018BE RID: 6334
-		public const int CONST_BLOQUEAR_TECLAS = 2;
+		public const int CONST_BLOQUEAR_TECLAS = (HorizontalAlignment)2;
 
 		// Token: 0x040018BF RID: 6335
-		public const int CONST_LIBERAR_3_5 = 3;
+		public const int CONST_LIBERAR_3_5 = (HorizontalAlignment)3;
 
 		// Token: 0x040018C0 RID: 6336
-		public const int CONST_LIBERAR_20_5 = 4;
+		public const int CONST_LIBERAR_20_5 = (HorizontalAlignment)4;
 
 		// Token: 0x040018C1 RID: 6337
-		public const int MASCARA_ALM_ARROMBAMENTO_201 = 8;
+		public const int MASCARA_ALM_ARROMBAMENTO_201 = (HorizontalAlignment)8;
 
 		// Token: 0x040018C2 RID: 6338
-		public const int MASCARA_ALM_ENERGIA_201 = 1;
+		public const int MASCARA_ALM_ENERGIA_201 = (HorizontalAlignment)1;
 
 		// Token: 0x040018C3 RID: 6339
-		public const int MASCARA_ALM_ALAGAMENTO_201 = 16;
+		public const int MASCARA_ALM_ALAGAMENTO_201 = (HorizontalAlignment)16;
 
 		// Token: 0x040018C4 RID: 6340
-		public const int LIMPA_STATUS = 1;
+		public const int LIMPA_STATUS = (HorizontalAlignment)1;
 
 		// Token: 0x040018C5 RID: 6341
-		public const int LIMPA_SETPOINTS = 2;
+		public const int LIMPA_SETPOINTS = (HorizontalAlignment)2;
 
 		// Token: 0x040018C6 RID: 6342
-		public const int CONST_END_INI_RES = 1;
+		public const int CONST_END_INI_RES = (HorizontalAlignment)1;
 
 		// Token: 0x040018C7 RID: 6343
-		public const int CONST_END_INI_RQ = 11;
+		public const int CONST_END_INI_RQ = (HorizontalAlignment)11;
 
 		// Token: 0x040018C8 RID: 6344
-		public const int CONST_END_INI_VISTA = 21;
+		public const int CONST_END_INI_VISTA = (HorizontalAlignment)21;
 
 		// Token: 0x040018C9 RID: 6345
-		public const int CONST_END_CENTRAL = 200;
+		public const int CONST_END_CENTRAL = (HorizontalAlignment)200;
 
 		// Token: 0x040018CA RID: 6346
-		public const int CONST_ERROS_FALHA = 3;
+		public const int CONST_ERROS_FALHA = (HorizontalAlignment)3;
 
 		// Token: 0x040018CB RID: 6347
-		public const int CONST_INTERVALO_POLLING = 3;
+		public const int CONST_INTERVALO_POLLING = (HorizontalAlignment)3;
 
 		// Token: 0x040018CC RID: 6348
-		public const int CONST_QTD_EQUIP_RQ = 0;
+		public const int CONST_QTD_EQUIP_RQ = (HorizontalAlignment)0;
 
 		// Token: 0x040018CD RID: 6349
-		public const int CONST_QTD_EQUIP_RES = 0;
+		public const int CONST_QTD_EQUIP_RES = (HorizontalAlignment)0;
 
 		// Token: 0x040018CE RID: 6350
-		public const int CONST_QTD_EQUIP_VISTA = 0;
+		public const int CONST_QTD_EQUIP_VISTA = (HorizontalAlignment)0;
 
 		// Token: 0x040018CF RID: 6351
-		public const int CONST_QTD_RES = 0;
+		public const int CONST_QTD_RES = (HorizontalAlignment)0;
 
 		// Token: 0x040018D0 RID: 6352
-		public const int CONST_RETRAY = 3;
+		public const int CONST_RETRAY = (HorizontalAlignment)3;
 
 		// Token: 0x040018D1 RID: 6353
-		public const int CONST_TEMPO_PTT = 200;
+		public const int CONST_TEMPO_PTT = (HorizontalAlignment)200;
 
 		// Token: 0x040018D2 RID: 6354
-		public const int CONST_TIMEOUT = 5;
+		public const int CONST_TIMEOUT = (HorizontalAlignment)5;
 
 		// Token: 0x040018D3 RID: 6355
-		public const int CONST_RES_INI_ALTURA = 0;
+		public const int CONST_RES_INI_ALTURA = (HorizontalAlignment)0;
 
 		// Token: 0x040018D4 RID: 6356
-		public const int CONST_RES_INI_MSG = 0;
+		public const int CONST_RES_INI_MSG = (HorizontalAlignment)0;
 
 		// Token: 0x040018D5 RID: 6357
-		public const int CONST_RES_INI_PRIORIDADE = 1;
+		public const int CONST_RES_INI_PRIORIDADE = (HorizontalAlignment)1;
 
 		// Token: 0x040018D6 RID: 6358
-		public const int CONST_RES_INI_ENDREL = 0;
+		public const int CONST_RES_INI_ENDREL = (HorizontalAlignment)0;
 
 		// Token: 0x040018D7 RID: 6359
-		public const int CONST_ESC_INI = 100;
+		public const int CONST_ESC_INI = (HorizontalAlignment)100;
 
 		// Token: 0x040018D8 RID: 6360
-		public const int CONST_MSG_RES_INI = 0;
+		public const int CONST_MSG_RES_INI = (HorizontalAlignment)0;
 
 		// Token: 0x040018D9 RID: 6361
-		public const int CONST_RQ_RES_REL_INI = 0;
+		public const int CONST_RQ_RES_REL_INI = (HorizontalAlignment)0;
 
 		// Token: 0x040018DA RID: 6362
-		public const int CONST_RQ_MODELO_202 = 2;
+		public const int CONST_RQ_MODELO_202 = (HorizontalAlignment)2;
 
 		// Token: 0x040018DB RID: 6363
-		public const int CONST_RQ_MODELO_201 = 1;
+		public const int CONST_RQ_MODELO_201 = (HorizontalAlignment)1;
 
 		// Token: 0x040018DC RID: 6364
-		public const int CONST_RQ_MSG_INI = 0;
+		public const int CONST_RQ_MSG_INI = (HorizontalAlignment)0;
 
 		// Token: 0x040018DD RID: 6365
-		public const int CONST_RQ_INI_PRIORIDADE = 1;
+		public const int CONST_RQ_INI_PRIORIDADE = (HorizontalAlignment)1;
 
 		// Token: 0x040018DE RID: 6366
-		public const int CONST_RQ_RES_DESTINO = 0;
+		public const int CONST_RQ_RES_DESTINO = (HorizontalAlignment)0;
 
 		// Token: 0x040018DF RID: 6367
-		public const int CONST_RQ_RES_ORIGEM = 0;
+		public const int CONST_RQ_RES_ORIGEM = (HorizontalAlignment)0;
 
 		// Token: 0x040018E0 RID: 6368
-		public const int CONST_HAB_CMD_MAXIMO = 1;
+		public const int CONST_HAB_CMD_MAXIMO = (HorizontalAlignment)1;
 
 		// Token: 0x040018E1 RID: 6369
-		public const int CONST_HAB_CMD_MINIMO = 0;
+		public const int CONST_HAB_CMD_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018E2 RID: 6370
-		public const int CONST_NOME_RES_MINIMO = 0;
+		public const int CONST_NOME_RES_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018E3 RID: 6371
-		public const int CONST_NOME_RES_MAXIMO = 9999;
+		public const int CONST_NOME_RES_MAXIMO = (HorizontalAlignment)9999;
 
 		// Token: 0x040018E4 RID: 6372
-		public const int CONST_ALTURA_RES_MINIMO = 0;
+		public const int CONST_ALTURA_RES_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018E5 RID: 6373
-		public const int CONST_ALTURA_RES_MAXIMO = 20000;
+		public const int CONST_ALTURA_RES_MAXIMO = (HorizontalAlignment)20000;
 
 		// Token: 0x040018E6 RID: 6374
-		public const int CONST_PRIORIDADE_RES_MINIMO = 0;
+		public const int CONST_PRIORIDADE_RES_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018E7 RID: 6375
-		public const int CONST_PRIORIDADE_RES_MAXIMO = 13;
+		public const int CONST_PRIORIDADE_RES_MAXIMO = (HorizontalAlignment)13;
 
 		// Token: 0x040018E8 RID: 6376
-		public const int CONST_POSICAO_RES_MINIMO = 0;
+		public const int CONST_POSICAO_RES_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018E9 RID: 6377
-		public const int CONST_POSICAO_RES_MAXIMO = 60;
+		public const int CONST_POSICAO_RES_MAXIMO = (HorizontalAlignment)60;
 
 		// Token: 0x040018EA RID: 6378
-		public const int CONST_RQ_RES_MSG_INI = 0;
+		public const int CONST_RQ_RES_MSG_INI = (HorizontalAlignment)0;
 
 		// Token: 0x040018EB RID: 6379
-		public const int CONST_RQ_ESCALA_INI = 100;
+		public const int CONST_RQ_ESCALA_INI = (HorizontalAlignment)100;
 
 		// Token: 0x040018EC RID: 6380
-		public const int CONST_NOME_RQ_MINIMO = 0;
+		public const int CONST_NOME_RQ_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018ED RID: 6381
-		public const int CONST_NOME_RQ_MAXIMO = 9999;
+		public const int CONST_NOME_RQ_MAXIMO = (HorizontalAlignment)9999;
 
 		// Token: 0x040018EE RID: 6382
-		public const int CONST_MOD_MAXIMO = 1;
+		public const int CONST_MOD_MAXIMO = (HorizontalAlignment)1;
 
 		// Token: 0x040018EF RID: 6383
-		public const int CONST_MOD_MINIMO = 0;
+		public const int CONST_MOD_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018F0 RID: 6384
-		public const int CONST_ESC_RQ_MAXIMO = 32000;
+		public const int CONST_ESC_RQ_MAXIMO = (HorizontalAlignment)32000;
 
 		// Token: 0x040018F1 RID: 6385
-		public const int CONST_ESC_RQ_MINIMO = 1;
+		public const int CONST_ESC_RQ_MINIMO = (HorizontalAlignment)1;
 
 		// Token: 0x040018F2 RID: 6386
-		public const int CONST_VISTA_RES_MINIMO = 0;
+		public const int CONST_VISTA_RES_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018F3 RID: 6387
-		public const int CONST_VISTA_RES_MAXIMO = 40;
+		public const int CONST_VISTA_RES_MAXIMO = (HorizontalAlignment)40;
 
 		// Token: 0x040018F4 RID: 6388
-		public const int CONST_VISTA_RQ_MINIMO = 0;
+		public const int CONST_VISTA_RQ_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x040018F5 RID: 6389
-		public const int CONST_VISTA_RQ_MAXIMO = 30;
+		public const int CONST_VISTA_RQ_MAXIMO = (HorizontalAlignment)30;
 
 		// Token: 0x040018F6 RID: 6390
-		public const int CONST_TIPO_SEM = 0;
+		public const int CONST_TIPO_SEM = (HorizontalAlignment)0;
 
 		// Token: 0x040018F7 RID: 6391
-		public const int CONST_TIPO_RES = 1;
+		public const int CONST_TIPO_RES = (HorizontalAlignment)1;
 
 		// Token: 0x040018F8 RID: 6392
-		public const int CONST_TIPO_RQ = 2;
+		public const int CONST_TIPO_RQ = (HorizontalAlignment)2;
 
 		// Token: 0x040018F9 RID: 6393
-		public const int CONST_BLOCO_590_1 = 1;
+		public const int CONST_BLOCO_590_1 = (HorizontalAlignment)1;
 
 		// Token: 0x040018FA RID: 6394
-		public const int CONST_BLOCO_590_2 = 2;
+		public const int CONST_BLOCO_590_2 = (HorizontalAlignment)2;
 
 		// Token: 0x040018FB RID: 6395
-		public const int CONST_BLOCO_590_3 = 3;
+		public const int CONST_BLOCO_590_3 = (HorizontalAlignment)3;
 
 		// Token: 0x040018FC RID: 6396
-		public const int CONST_BLOCO_590_4 = 4;
+		public const int CONST_BLOCO_590_4 = (HorizontalAlignment)4;
 
 		// Token: 0x040018FD RID: 6397
-		public const int CONST_END_PRODUCT_ID = 0;
+		public const int CONST_END_PRODUCT_ID = (HorizontalAlignment)0;
 
 		// Token: 0x040018FE RID: 6398
-		public const int CONST_END_RANGE_REFRESH = 61;
+		public const int CONST_END_RANGE_REFRESH = (HorizontalAlignment)61;
 
 		// Token: 0x040018FF RID: 6399
-		public const int CONST_END_STOP_BIT_DELAY = 63;
+		public const int CONST_END_STOP_BIT_DELAY = (HorizontalAlignment)63;
 
 		// Token: 0x04001900 RID: 6400
-		public const int CONST_END_CHANNEL_NUMBER = 64;
+		public const int CONST_END_CHANNEL_NUMBER = (HorizontalAlignment)64;
 
 		// Token: 0x04001901 RID: 6401
-		public const int CONST_END_SERVER_MODE = 65;
+		public const int CONST_END_SERVER_MODE = (HorizontalAlignment)65;
 
 		// Token: 0x04001902 RID: 6402
-		public const int CONST_END_BAUDRATE = 66;
+		public const int CONST_END_BAUDRATE = (HorizontalAlignment)66;
 
 		// Token: 0x04001903 RID: 6403
-		public const int CONST_END_CONTROL_0 = 69;
+		public const int CONST_END_CONTROL_0 = (HorizontalAlignment)69;
 
 		// Token: 0x04001904 RID: 6404
-		public const int CONST_END_TRANSMIT_RETRIES = 76;
+		public const int CONST_END_TRANSMIT_RETRIES = (HorizontalAlignment)76;
 
 		// Token: 0x04001905 RID: 6405
-		public const int CONST_END_BROADCAST_ATTEMPTS = 77;
+		public const int CONST_END_BROADCAST_ATTEMPTS = (HorizontalAlignment)77;
 
 		// Token: 0x04001906 RID: 6406
-		public const int CONST_END_API_CONTROL = 86;
+		public const int CONST_END_API_CONTROL = (HorizontalAlignment)86;
 
 		// Token: 0x04001907 RID: 6407
-		public const int CONST_END_INTERFACE_TIMEOUT = 88;
+		public const int CONST_END_INTERFACE_TIMEOUT = (HorizontalAlignment)88;
 
 		// Token: 0x04001908 RID: 6408
-		public const int CONST_END_SYNC_CHANNEL = 90;
+		public const int CONST_END_SYNC_CHANNEL = (HorizontalAlignment)90;
 
 		// Token: 0x04001909 RID: 6409
-		public const int CONST_END_PACKET_SIZE = 91;
+		public const int CONST_END_PACKET_SIZE = (HorizontalAlignment)91;
 
 		// Token: 0x0400190A RID: 6410
-		public const int CONST_END_CTS_ON = 92;
+		public const int CONST_END_CTS_ON = (HorizontalAlignment)92;
 
 		// Token: 0x0400190B RID: 6411
-		public const int CONST_END_CTS_ON_HYSTERESIS = 93;
+		public const int CONST_END_CTS_ON_HYSTERESIS = (HorizontalAlignment)93;
 
 		// Token: 0x0400190C RID: 6412
-		public const int CONST_END_MAX_POWER = 99;
+		public const int CONST_END_MAX_POWER = (HorizontalAlignment)99;
 
 		// Token: 0x0400190D RID: 6413
-		public const int CONST_END_MODEM_MODE = 110;
+		public const int CONST_END_MODEM_MODE = (HorizontalAlignment)110;
 
 		// Token: 0x0400190E RID: 6414
-		public const int CONST_END_PARITY_MODE = 111;
+		public const int CONST_END_PARITY_MODE = (HorizontalAlignment)111;
 
 		// Token: 0x0400190F RID: 6415
-		public const int CONST_END_485_DE = 127;
+		public const int CONST_END_485_DE = (HorizontalAlignment)127;
 
 		// Token: 0x04001910 RID: 6416
-		public const int CONST_END_DESTINATION_ID = 112;
+		public const int CONST_END_DESTINATION_ID = (HorizontalAlignment)112;
 
 		// Token: 0x04001911 RID: 6417
-		public const int CONST_END_SYSTEM_ID = 118;
+		public const int CONST_END_SYSTEM_ID = (HorizontalAlignment)118;
 
 		// Token: 0x04001912 RID: 6418
-		public const int CONST_END_PROTOCOL_STATUS = 192;
+		public const int CONST_END_PROTOCOL_STATUS = (HorizontalAlignment)192;
 
 		// Token: 0x04001913 RID: 6419
-		public const int CONST_END_RECEIVE_API = 193;
+		public const int CONST_END_RECEIVE_API = (HorizontalAlignment)193;
 
 		// Token: 0x04001914 RID: 6420
-		public const int CONST_END_ENHANCED_API_CONTROL = 198;
+		public const int CONST_END_ENHANCED_API_CONTROL = (HorizontalAlignment)198;
 
 		// Token: 0x04001915 RID: 6421
-		public const int CONST_END_MAC_ID = 128;
+		public const int CONST_END_MAC_ID = (HorizontalAlignment)128;
 
 		// Token: 0x04001916 RID: 6422
-		public const int CONST_END_DES_KEY = 208;
+		public const int CONST_END_DES_KEY = (HorizontalAlignment)208;
 
 		// Token: 0x04001917 RID: 6423
-		public const int CONST_DEFAULT_ALTURA_SENSOR = 1000;
+		public const int CONST_DEFAULT_ALTURA_SENSOR = (HorizontalAlignment)1000;
 
 		// Token: 0x04001918 RID: 6424
-		public const int CONST_DEFAULT_END_ESTACAO = 1;
+		public const int CONST_DEFAULT_END_ESTACAO = (HorizontalAlignment)1;
 
 		// Token: 0x04001919 RID: 6425
-		public const int CONST_DEFAULT_END_MESTRE = 200;
+		public const int CONST_DEFAULT_END_MESTRE = (HorizontalAlignment)200;
 
 		// Token: 0x0400191A RID: 6426
-		public const int CONST_DEFAULT_END_REPETIDORA = 100;
+		public const int CONST_DEFAULT_END_REPETIDORA = (HorizontalAlignment)100;
 
 		// Token: 0x0400191B RID: 6427
-		public const int CONST_DEFAULT_INTERVALO_FILTRO = 500;
+		public const int CONST_DEFAULT_INTERVALO_FILTRO = (HorizontalAlignment)500;
 
 		// Token: 0x0400191C RID: 6428
-		public const int CONST_DEFAULT_TAMANHO_FILTRO = 5;
+		public const int CONST_DEFAULT_TAMANHO_FILTRO = (HorizontalAlignment)5;
 
 		// Token: 0x0400191D RID: 6429
-		public const int CONST_DEFAULT_NUM_REPETIDORAS = 0;
+		public const int CONST_DEFAULT_NUM_REPETIDORAS = (HorizontalAlignment)0;
 
 		// Token: 0x0400191E RID: 6430
-		public const int CONST_DEFAULT_OFFSET_SENSOR = 0;
+		public const int CONST_DEFAULT_OFFSET_SENSOR = (HorizontalAlignment)0;
 
 		// Token: 0x0400191F RID: 6431
-		public const int CONST_DEFAULT_RANGE_SENSOR = 1000;
+		public const int CONST_DEFAULT_RANGE_SENSOR = (HorizontalAlignment)1000;
 
 		// Token: 0x04001920 RID: 6432
-		public const int CONST_DEFAULT_TEMPO_PTT = 20;
+		public const int CONST_DEFAULT_TEMPO_PTT = (HorizontalAlignment)20;
 
 		// Token: 0x04001921 RID: 6433
-		public const int CONST_DEFAULT_TEMPO_TX_PONTO = 30;
+		public const int CONST_DEFAULT_TEMPO_TX_PONTO = (HorizontalAlignment)30;
 
 		// Token: 0x04001922 RID: 6434
-		public const int CONST_DEFAULT_END_ESTACAO_PARA_REPETIR = 0;
+		public const int CONST_DEFAULT_END_ESTACAO_PARA_REPETIR = (HorizontalAlignment)0;
 
 		// Token: 0x04001923 RID: 6435
-		public static int NUM_MAX_RE = 40;
+		public static int NUM_MAX_RE = (HorizontalAlignment)40;
 
 		// Token: 0x04001924 RID: 6436
-		public static int NUM_MAX_RQ = 28;
+		public static int NUM_MAX_RQ = (HorizontalAlignment)28;
 
 		// Token: 0x04001925 RID: 6437
-		public static int NUM_MAX_VISTA = 5;
+		public static int NUM_MAX_VISTA = (HorizontalAlignment)5;
 
 		// Token: 0x04001926 RID: 6438
-		public static int END_ESTACAO_MAXIMO = 200;
+		public static int END_ESTACAO_MAXIMO = (HorizontalAlignment)200;
 
 		// Token: 0x04001927 RID: 6439
-		public static int END_ESTACAO_MINIMO = 0;
+		public static int END_ESTACAO_MINIMO = (HorizontalAlignment)0;
 
 		// Token: 0x04001928 RID: 6440
 		public static Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] Reservatorio;

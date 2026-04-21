@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x020000A7 RID: 167
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -29,12 +29,12 @@
 			this.Timer1 = new global::System.Windows.Forms.Timer(this.components);
 			this.Label5 = new global::System.Windows.Forms.Label();
 			this.SuspendLayout();
-			this.Timer1.Interval = 3000;
-			this.Label5.AccessibleRole = 0;
+			this.Timer1.Interval = (HorizontalAlignment)3000;
+			this.Label5.AccessibleRole = (HorizontalAlignment)0;
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
-			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, 3, 0);
+			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, (FontStyle)3, 0);
 			global::System.Windows.Forms.Control label = this.Label5;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(35, 95);
@@ -44,7 +44,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(58, 21);
 			label2.Size = size;
-			this.Label5.TabIndex = 2;
+			this.Label5.TabIndex = (HorizontalAlignment)2;
 			this.Label5.Text = "Versão";
 			this.Label5.Visible = false;
 			global::System.Drawing.SizeF autoScaleDimensions;

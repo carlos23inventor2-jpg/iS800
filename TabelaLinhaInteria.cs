@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using Microsoft.VisualBasic.CompilerServices;
 
@@ -25,18 +25,18 @@ namespace iS800
 			StringFormat stringFormat = new StringFormat();
 			Pen pen = new Pen(Cores.Tabela, 1f);
 			SolidBrush solidBrush = new SolidBrush(Cores.TituloBG);
-			stringFormat.LineAlignment = 1;
-			if (Operators.CompareString(TitlePos, "L", false) == 0)
+			stringFormat.LineAlignment = (HorizontalAlignment)1;
+			if (Operators.CompareString(TitlePos, "L", false) == (DialogResult)0)
 			{
-				stringFormat.Alignment = 0;
+				stringFormat.Alignment = (HorizontalAlignment)0;
 			}
-			else if (Operators.CompareString(TitlePos, "R", false) == 0)
+			else if (Operators.CompareString(TitlePos, "R", false) == (DialogResult)0)
 			{
-				stringFormat.Alignment = 2;
+				stringFormat.Alignment = (HorizontalAlignment)2;
 			}
-			else if (Operators.CompareString(TitlePos, "C", false) == 0)
+			else if (Operators.CompareString(TitlePos, "C", false) == (DialogResult)0)
 			{
-				stringFormat.Alignment = 1;
+				stringFormat.Alignment = (HorizontalAlignment)1;
 			}
 			checked
 			{
@@ -59,17 +59,17 @@ namespace iS800
 			this.G = Graph;
 			this.G.FillRectangle(solidBrush, this.MargemEsquerda, (float)(checked(LinhaInicial * this.AlturaFonte)), this.MargemDireita - this.MargemEsquerda, (float)this.AlturaFonte);
 			this.G.DrawRectangle(pen, this.MargemEsquerda, (float)(checked(LinhaInicial * this.AlturaFonte)), this.MargemDireita - this.MargemEsquerda, (float)this.AlturaFonte);
-			if (Operators.CompareString(TitlePos, "L", false) == 0)
+			if (Operators.CompareString(TitlePos, "L", false) == (DialogResult)0)
 			{
 				this.G.DrawString(Titulo, this.FT, this.CT, this.MargemEsquerda + 5f, (float)((double)(checked(LinhaInicial * this.AlturaFonte)) + 0.5 * (double)this.AlturaFonte), stringFormat);
 			}
-			else if (Operators.CompareString(TitlePos, "R", false) == 0)
+			else if (Operators.CompareString(TitlePos, "R", false) == (DialogResult)0)
 			{
 				SizeF sizeF = default(SizeF);
 				sizeF = this.G.MeasureString(Titulo, this.FVAR);
 				this.G.DrawString(Titulo, this.FT, this.CT, this.MargemDireita - 5f - sizeF.Width, (float)((double)(checked(LinhaInicial * this.AlturaFonte)) + 0.5 * (double)this.AlturaFonte), stringFormat);
 			}
-			else if (Operators.CompareString(TitlePos, "C", false) == 0)
+			else if (Operators.CompareString(TitlePos, "C", false) == (DialogResult)0)
 			{
 				this.G.DrawString(Titulo, this.FT, this.CT, this.CentroLinha, (float)((double)(checked(LinhaInicial * this.AlturaFonte)) + 0.5 * (double)this.AlturaFonte), stringFormat);
 			}
@@ -77,7 +77,7 @@ namespace iS800
 			{
 				if (Grid)
 				{
-					for (int i = 1; i <= NumeroLinhas; i++)
+					for (int i = (HorizontalAlignment)1; i <= NumeroLinhas; i++)
 					{
 						this.G.DrawRectangle(pen, this.MargemEsquerda, (float)(LinhaInicial * this.AlturaFonte + i * this.AlturaFonte), unchecked(this.MargemDireita - this.MargemEsquerda), (float)this.AlturaFonte);
 					}
@@ -93,7 +93,7 @@ namespace iS800
 		public void EscreveTodosTitulos(ref int linha, string[] titulos, int[] posicoes)
 		{
 			this.Pos = posicoes;
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = this.Pos.Length - 1;

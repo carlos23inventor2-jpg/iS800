@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
@@ -14,7 +14,7 @@ namespace iS800
 			RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.tipo_COM2.itens = new string[3];
 			RT_831_200_variaveis_X.RT_831_200_BD.reservatorio = new RT_831_200_variaveis_X.Equipamento_Reservatorio[101];
 			RT_831_200_variaveis_X.RT_831_200_BD.recalque = new RT_831_200_variaveis_X.Equipamento_Recalque[101];
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do

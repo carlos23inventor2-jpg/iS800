@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x0200009B RID: 155
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -92,7 +92,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(335, 186);
 			grupo_parametros_gerais2.Size = size;
-			this.grupo_parametros_gerais.TabIndex = 1;
+			this.grupo_parametros_gerais.TabIndex = (HorizontalAlignment)1;
 			this.grupo_parametros_gerais.TabStop = false;
 			this.grupo_parametros_gerais.Text = "Parâmetros gerais";
 			this.ComboBox_tipo_leitura.FormattingEnabled = true;
@@ -103,7 +103,7 @@
 			global::System.Windows.Forms.Control comboBox_tipo_leitura2 = this.ComboBox_tipo_leitura;
 			size = new global::System.Drawing.Size(78, 21);
 			comboBox_tipo_leitura2.Size = size;
-			this.ComboBox_tipo_leitura.TabIndex = 3;
+			this.ComboBox_tipo_leitura.TabIndex = (HorizontalAlignment)3;
 			global::System.Windows.Forms.Control valor_altura_pressiostato = this.Valor_altura_pressiostato;
 			location = new global::System.Drawing.Point(239, 76);
 			valor_altura_pressiostato.Location = location;
@@ -111,8 +111,8 @@
 			global::System.Windows.Forms.Control valor_altura_pressiostato2 = this.Valor_altura_pressiostato;
 			size = new global::System.Drawing.Size(78, 20);
 			valor_altura_pressiostato2.Size = size;
-			this.Valor_altura_pressiostato.TabIndex = 4;
-			this.Valor_altura_pressiostato.TextAlign = 1;
+			this.Valor_altura_pressiostato.TabIndex = (HorizontalAlignment)4;
+			this.Valor_altura_pressiostato.TextAlign = (HorizontalAlignment)1;
 			this.Label_tempo_sem_comunicacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_sem_comunicacao = this.Label_tempo_sem_comunicacao;
 			location = new global::System.Drawing.Point(24, 155);
@@ -121,7 +121,7 @@
 			global::System.Windows.Forms.Control label_tempo_sem_comunicacao2 = this.Label_tempo_sem_comunicacao;
 			size = new global::System.Drawing.Size(209, 13);
 			label_tempo_sem_comunicacao2.Size = size;
-			this.Label_tempo_sem_comunicacao.TabIndex = 4;
+			this.Label_tempo_sem_comunicacao.TabIndex = (HorizontalAlignment)4;
 			this.Label_tempo_sem_comunicacao.Text = "Tempo máx. sem comunicação (1-20 min) :";
 			this.Label_altura_nivel_alto.AutoSize = true;
 			global::System.Windows.Forms.Control label_altura_nivel_alto = this.Label_altura_nivel_alto;
@@ -131,7 +131,7 @@
 			global::System.Windows.Forms.Control label_altura_nivel_alto2 = this.Label_altura_nivel_alto;
 			size = new global::System.Drawing.Size(159, 13);
 			label_altura_nivel_alto2.Size = size;
-			this.Label_altura_nivel_alto.TabIndex = 4;
+			this.Label_altura_nivel_alto.TabIndex = (HorizontalAlignment)4;
 			this.Label_altura_nivel_alto.Text = "Altura para nível alto ( * 10 cm) :";
 			this.Label_altura_nivel_baixo.AutoSize = true;
 			global::System.Windows.Forms.Control label_altura_nivel_baixo = this.Label_altura_nivel_baixo;
@@ -141,7 +141,7 @@
 			global::System.Windows.Forms.Control label_altura_nivel_baixo2 = this.Label_altura_nivel_baixo;
 			size = new global::System.Drawing.Size(167, 13);
 			label_altura_nivel_baixo2.Size = size;
-			this.Label_altura_nivel_baixo.TabIndex = 4;
+			this.Label_altura_nivel_baixo.TabIndex = (HorizontalAlignment)4;
 			this.Label_altura_nivel_baixo.Text = "Altura para nível baixo ( * 10 cm) :";
 			this.Label_altura_pressiostato.AutoSize = true;
 			global::System.Windows.Forms.Control label_altura_pressiostato = this.Label_altura_pressiostato;
@@ -151,7 +151,7 @@
 			global::System.Windows.Forms.Control label_altura_pressiostato2 = this.Label_altura_pressiostato;
 			size = new global::System.Drawing.Size(147, 13);
 			label_altura_pressiostato2.Size = size;
-			this.Label_altura_pressiostato.TabIndex = 4;
+			this.Label_altura_pressiostato.TabIndex = (HorizontalAlignment)4;
 			this.Label_altura_pressiostato.Text = "Altura pressiostato ( * 10 cm) :";
 			global::System.Windows.Forms.Control valor_end_mestre = this.Valor_end_mestre;
 			location = new global::System.Drawing.Point(239, 26);
@@ -160,8 +160,8 @@
 			global::System.Windows.Forms.Control valor_end_mestre2 = this.Valor_end_mestre;
 			size = new global::System.Drawing.Size(78, 20);
 			valor_end_mestre2.Size = size;
-			this.Valor_end_mestre.TabIndex = 2;
-			this.Valor_end_mestre.TextAlign = 1;
+			this.Valor_end_mestre.TabIndex = (HorizontalAlignment)2;
+			this.Valor_end_mestre.TextAlign = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_max_sem_comunicacao = this.Valor_tempo_max_sem_comunicacao;
 			location = new global::System.Drawing.Point(239, 151);
 			valor_tempo_max_sem_comunicacao.Location = location;
@@ -169,8 +169,8 @@
 			global::System.Windows.Forms.Control valor_tempo_max_sem_comunicacao2 = this.Valor_tempo_max_sem_comunicacao;
 			size = new global::System.Drawing.Size(78, 20);
 			valor_tempo_max_sem_comunicacao2.Size = size;
-			this.Valor_tempo_max_sem_comunicacao.TabIndex = 7;
-			this.Valor_tempo_max_sem_comunicacao.TextAlign = 1;
+			this.Valor_tempo_max_sem_comunicacao.TabIndex = (HorizontalAlignment)7;
+			this.Valor_tempo_max_sem_comunicacao.TextAlign = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_alto = this.Valor_nivel_alto;
 			location = new global::System.Drawing.Point(239, 126);
 			valor_nivel_alto.Location = location;
@@ -178,8 +178,8 @@
 			global::System.Windows.Forms.Control valor_nivel_alto2 = this.Valor_nivel_alto;
 			size = new global::System.Drawing.Size(78, 20);
 			valor_nivel_alto2.Size = size;
-			this.Valor_nivel_alto.TabIndex = 6;
-			this.Valor_nivel_alto.TextAlign = 1;
+			this.Valor_nivel_alto.TabIndex = (HorizontalAlignment)6;
+			this.Valor_nivel_alto.TextAlign = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_baixo = this.Valor_nivel_baixo;
 			location = new global::System.Drawing.Point(239, 101);
 			valor_nivel_baixo.Location = location;
@@ -187,8 +187,8 @@
 			global::System.Windows.Forms.Control valor_nivel_baixo2 = this.Valor_nivel_baixo;
 			size = new global::System.Drawing.Size(78, 20);
 			valor_nivel_baixo2.Size = size;
-			this.Valor_nivel_baixo.TabIndex = 5;
-			this.Valor_nivel_baixo.TextAlign = 1;
+			this.Valor_nivel_baixo.TabIndex = (HorizontalAlignment)5;
+			this.Valor_nivel_baixo.TextAlign = (HorizontalAlignment)1;
 			this.Label_end_mestre.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre = this.Label_end_mestre;
 			location = new global::System.Drawing.Point(24, 30);
@@ -197,7 +197,7 @@
 			global::System.Windows.Forms.Control label_end_mestre2 = this.Label_end_mestre;
 			size = new global::System.Drawing.Size(108, 13);
 			label_end_mestre2.Size = size;
-			this.Label_end_mestre.TabIndex = 1;
+			this.Label_end_mestre.TabIndex = (HorizontalAlignment)1;
 			this.Label_end_mestre.Text = "Endereço do mestre :";
 			this.Label_numero_recalques.AutoSize = true;
 			global::System.Windows.Forms.Control label_numero_recalques = this.Label_numero_recalques;
@@ -207,7 +207,7 @@
 			global::System.Windows.Forms.Control label_numero_recalques2 = this.Label_numero_recalques;
 			size = new global::System.Drawing.Size(65, 13);
 			label_numero_recalques2.Size = size;
-			this.Label_numero_recalques.TabIndex = 0;
+			this.Label_numero_recalques.TabIndex = (HorizontalAlignment)0;
 			this.Label_numero_recalques.Text = "Tipo leitura :";
 			this.grupo_grupos.Controls.Add(this.Label_numero_grupos);
 			this.grupo_grupos.Controls.Add(this.VScroll_num_grupo);
@@ -251,7 +251,7 @@
 			global::System.Windows.Forms.Control grupo_grupos2 = this.grupo_grupos;
 			size = new global::System.Drawing.Size(335, 294);
 			grupo_grupos2.Size = size;
-			this.grupo_grupos.TabIndex = 8;
+			this.grupo_grupos.TabIndex = (HorizontalAlignment)8;
 			this.grupo_grupos.TabStop = false;
 			this.grupo_grupos.Text = "Configuração dos Grupos";
 			this.Label_numero_grupos.AutoSize = true;
@@ -262,9 +262,9 @@
 			global::System.Windows.Forms.Control label_numero_grupos2 = this.Label_numero_grupos;
 			size = new global::System.Drawing.Size(103, 13);
 			label_numero_grupos2.Size = size;
-			this.Label_numero_grupos.TabIndex = 9;
+			this.Label_numero_grupos.TabIndex = (HorizontalAlignment)9;
 			this.Label_numero_grupos.Text = "Número de grupos : ";
-			this.VScroll_num_grupo.LargeChange = 1;
+			this.VScroll_num_grupo.LargeChange = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control vscroll_num_grupo = this.VScroll_num_grupo;
 			location = new global::System.Drawing.Point(232, 32);
 			vscroll_num_grupo.Location = location;
@@ -272,7 +272,7 @@
 			global::System.Windows.Forms.Control vscroll_num_grupo2 = this.VScroll_num_grupo;
 			size = new global::System.Drawing.Size(26, 21);
 			vscroll_num_grupo2.Size = size;
-			this.VScroll_num_grupo.TabIndex = 8;
+			this.VScroll_num_grupo.TabIndex = (HorizontalAlignment)8;
 			global::System.Windows.Forms.Control valor_num_grupo = this.Valor_num_grupo;
 			location = new global::System.Drawing.Point(165, 32);
 			valor_num_grupo.Location = location;
@@ -280,8 +280,8 @@
 			global::System.Windows.Forms.Control valor_num_grupo2 = this.Valor_num_grupo;
 			size = new global::System.Drawing.Size(66, 20);
 			valor_num_grupo2.Size = size;
-			this.Valor_num_grupo.TabIndex = 9;
-			this.Valor_num_grupo.TextAlign = 1;
+			this.Valor_num_grupo.TabIndex = (HorizontalAlignment)9;
+			this.Valor_num_grupo.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_16.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_ = this.Valor_grupo_16;
 			location = new global::System.Drawing.Point(234, 259);
@@ -290,8 +290,8 @@
 			global::System.Windows.Forms.Control valor_grupo_2 = this.Valor_grupo_16;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_2.Size = size;
-			this.Valor_grupo_16.TabIndex = 22;
-			this.Valor_grupo_16.TextAlign = 1;
+			this.Valor_grupo_16.TabIndex = (HorizontalAlignment)22;
+			this.Valor_grupo_16.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_8.AcceptsReturn = true;
 			this.Valor_grupo_8.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_3 = this.Valor_grupo_8;
@@ -301,8 +301,8 @@
 			global::System.Windows.Forms.Control valor_grupo_4 = this.Valor_grupo_8;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_4.Size = size;
-			this.Valor_grupo_8.TabIndex = 17;
-			this.Valor_grupo_8.TextAlign = 1;
+			this.Valor_grupo_8.TabIndex = (HorizontalAlignment)17;
+			this.Valor_grupo_8.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_15.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_5 = this.Valor_grupo_15;
 			location = new global::System.Drawing.Point(234, 232);
@@ -311,8 +311,8 @@
 			global::System.Windows.Forms.Control valor_grupo_6 = this.Valor_grupo_15;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_6.Size = size;
-			this.Valor_grupo_15.TabIndex = 21;
-			this.Valor_grupo_15.TextAlign = 1;
+			this.Valor_grupo_15.TabIndex = (HorizontalAlignment)21;
+			this.Valor_grupo_15.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_7.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_7 = this.Valor_grupo_7;
 			location = new global::System.Drawing.Point(79, 232);
@@ -321,8 +321,8 @@
 			global::System.Windows.Forms.Control valor_grupo_8 = this.Valor_grupo_7;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_8.Size = size;
-			this.Valor_grupo_7.TabIndex = 16;
-			this.Valor_grupo_7.TextAlign = 1;
+			this.Valor_grupo_7.TabIndex = (HorizontalAlignment)16;
+			this.Valor_grupo_7.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_14.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_9 = this.Valor_grupo_14;
 			location = new global::System.Drawing.Point(234, 205);
@@ -331,8 +331,8 @@
 			global::System.Windows.Forms.Control valor_grupo_10 = this.Valor_grupo_14;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_10.Size = size;
-			this.Valor_grupo_14.TabIndex = 20;
-			this.Valor_grupo_14.TextAlign = 1;
+			this.Valor_grupo_14.TabIndex = (HorizontalAlignment)20;
+			this.Valor_grupo_14.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_6.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_11 = this.Valor_grupo_6;
 			location = new global::System.Drawing.Point(79, 205);
@@ -341,8 +341,8 @@
 			global::System.Windows.Forms.Control valor_grupo_12 = this.Valor_grupo_6;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_12.Size = size;
-			this.Valor_grupo_6.TabIndex = 15;
-			this.Valor_grupo_6.TextAlign = 1;
+			this.Valor_grupo_6.TabIndex = (HorizontalAlignment)15;
+			this.Valor_grupo_6.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_13.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_13 = this.Valor_grupo_13;
 			location = new global::System.Drawing.Point(234, 178);
@@ -351,8 +351,8 @@
 			global::System.Windows.Forms.Control valor_grupo_14 = this.Valor_grupo_13;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_14.Size = size;
-			this.Valor_grupo_13.TabIndex = 19;
-			this.Valor_grupo_13.TextAlign = 1;
+			this.Valor_grupo_13.TabIndex = (HorizontalAlignment)19;
+			this.Valor_grupo_13.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_5.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_15 = this.Valor_grupo_5;
 			location = new global::System.Drawing.Point(79, 178);
@@ -361,8 +361,8 @@
 			global::System.Windows.Forms.Control valor_grupo_16 = this.Valor_grupo_5;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_16.Size = size;
-			this.Valor_grupo_5.TabIndex = 14;
-			this.Valor_grupo_5.TextAlign = 1;
+			this.Valor_grupo_5.TabIndex = (HorizontalAlignment)14;
+			this.Valor_grupo_5.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_12.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_17 = this.Valor_grupo_12;
 			location = new global::System.Drawing.Point(234, 150);
@@ -371,8 +371,8 @@
 			global::System.Windows.Forms.Control valor_grupo_18 = this.Valor_grupo_12;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_18.Size = size;
-			this.Valor_grupo_12.TabIndex = 18;
-			this.Valor_grupo_12.TextAlign = 1;
+			this.Valor_grupo_12.TabIndex = (HorizontalAlignment)18;
+			this.Valor_grupo_12.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_4.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_19 = this.Valor_grupo_4;
 			location = new global::System.Drawing.Point(79, 150);
@@ -381,8 +381,8 @@
 			global::System.Windows.Forms.Control valor_grupo_20 = this.Valor_grupo_4;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_20.Size = size;
-			this.Valor_grupo_4.TabIndex = 13;
-			this.Valor_grupo_4.TextAlign = 1;
+			this.Valor_grupo_4.TabIndex = (HorizontalAlignment)13;
+			this.Valor_grupo_4.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_11.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_21 = this.Valor_grupo_11;
 			location = new global::System.Drawing.Point(234, 124);
@@ -391,8 +391,8 @@
 			global::System.Windows.Forms.Control valor_grupo_22 = this.Valor_grupo_11;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_22.Size = size;
-			this.Valor_grupo_11.TabIndex = 17;
-			this.Valor_grupo_11.TextAlign = 1;
+			this.Valor_grupo_11.TabIndex = (HorizontalAlignment)17;
+			this.Valor_grupo_11.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_3.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_23 = this.Valor_grupo_3;
 			location = new global::System.Drawing.Point(79, 124);
@@ -401,8 +401,8 @@
 			global::System.Windows.Forms.Control valor_grupo_24 = this.Valor_grupo_3;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_24.Size = size;
-			this.Valor_grupo_3.TabIndex = 12;
-			this.Valor_grupo_3.TextAlign = 1;
+			this.Valor_grupo_3.TabIndex = (HorizontalAlignment)12;
+			this.Valor_grupo_3.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_10.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_25 = this.Valor_grupo_10;
 			location = new global::System.Drawing.Point(234, 100);
@@ -411,8 +411,8 @@
 			global::System.Windows.Forms.Control valor_grupo_26 = this.Valor_grupo_10;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_26.Size = size;
-			this.Valor_grupo_10.TabIndex = 16;
-			this.Valor_grupo_10.TextAlign = 1;
+			this.Valor_grupo_10.TabIndex = (HorizontalAlignment)16;
+			this.Valor_grupo_10.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_2.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_27 = this.Valor_grupo_2;
 			location = new global::System.Drawing.Point(79, 100);
@@ -421,8 +421,8 @@
 			global::System.Windows.Forms.Control valor_grupo_28 = this.Valor_grupo_2;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_28.Size = size;
-			this.Valor_grupo_2.TabIndex = 11;
-			this.Valor_grupo_2.TextAlign = 1;
+			this.Valor_grupo_2.TabIndex = (HorizontalAlignment)11;
+			this.Valor_grupo_2.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_9.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_29 = this.Valor_grupo_9;
 			location = new global::System.Drawing.Point(234, 73);
@@ -431,8 +431,8 @@
 			global::System.Windows.Forms.Control valor_grupo_30 = this.Valor_grupo_9;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_30.Size = size;
-			this.Valor_grupo_9.TabIndex = 18;
-			this.Valor_grupo_9.TextAlign = 1;
+			this.Valor_grupo_9.TabIndex = (HorizontalAlignment)18;
+			this.Valor_grupo_9.TextAlign = (HorizontalAlignment)1;
 			this.Valor_grupo_1.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_31 = this.Valor_grupo_1;
 			location = new global::System.Drawing.Point(79, 73);
@@ -441,8 +441,8 @@
 			global::System.Windows.Forms.Control valor_grupo_32 = this.Valor_grupo_1;
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_32.Size = size;
-			this.Valor_grupo_1.TabIndex = 10;
-			this.Valor_grupo_1.TextAlign = 1;
+			this.Valor_grupo_1.TabIndex = (HorizontalAlignment)10;
+			this.Valor_grupo_1.TextAlign = (HorizontalAlignment)1;
 			this.Label_grupo_16.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_ = this.Label_grupo_16;
 			location = new global::System.Drawing.Point(179, 262);
@@ -451,7 +451,7 @@
 			global::System.Windows.Forms.Control label_grupo_2 = this.Label_grupo_16;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_2.Size = size;
-			this.Label_grupo_16.TabIndex = 1;
+			this.Label_grupo_16.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_16.Text = "Grupo 16 :";
 			this.Label_grupo_8.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_3 = this.Label_grupo_8;
@@ -461,7 +461,7 @@
 			global::System.Windows.Forms.Control label_grupo_4 = this.Label_grupo_8;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_4.Size = size;
-			this.Label_grupo_8.TabIndex = 1;
+			this.Label_grupo_8.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_8.Text = "Grupo 08 :";
 			this.Label_grupo_15.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_5 = this.Label_grupo_15;
@@ -471,7 +471,7 @@
 			global::System.Windows.Forms.Control label_grupo_6 = this.Label_grupo_15;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_6.Size = size;
-			this.Label_grupo_15.TabIndex = 1;
+			this.Label_grupo_15.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_15.Text = "Grupo 15 :";
 			this.Label_grupo_7.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_7 = this.Label_grupo_7;
@@ -481,7 +481,7 @@
 			global::System.Windows.Forms.Control label_grupo_8 = this.Label_grupo_7;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_8.Size = size;
-			this.Label_grupo_7.TabIndex = 1;
+			this.Label_grupo_7.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_7.Text = "Grupo 07 :";
 			this.Label_grupo_14.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_9 = this.Label_grupo_14;
@@ -491,7 +491,7 @@
 			global::System.Windows.Forms.Control label_grupo_10 = this.Label_grupo_14;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_10.Size = size;
-			this.Label_grupo_14.TabIndex = 1;
+			this.Label_grupo_14.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_14.Text = "Grupo 14 :";
 			this.Label_grupo_6.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_11 = this.Label_grupo_6;
@@ -501,7 +501,7 @@
 			global::System.Windows.Forms.Control label_grupo_12 = this.Label_grupo_6;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_12.Size = size;
-			this.Label_grupo_6.TabIndex = 1;
+			this.Label_grupo_6.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_6.Text = "Grupo 06 :";
 			this.Label_grupo_13.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_13 = this.Label_grupo_13;
@@ -511,7 +511,7 @@
 			global::System.Windows.Forms.Control label_grupo_14 = this.Label_grupo_13;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_14.Size = size;
-			this.Label_grupo_13.TabIndex = 1;
+			this.Label_grupo_13.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_13.Text = "Grupo 13 :";
 			this.Label_grupo_5.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_15 = this.Label_grupo_5;
@@ -521,7 +521,7 @@
 			global::System.Windows.Forms.Control label_grupo_16 = this.Label_grupo_5;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_16.Size = size;
-			this.Label_grupo_5.TabIndex = 1;
+			this.Label_grupo_5.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_5.Text = "Grupo 05 :";
 			this.Label_grupo_12.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_17 = this.Label_grupo_12;
@@ -531,7 +531,7 @@
 			global::System.Windows.Forms.Control label_grupo_18 = this.Label_grupo_12;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_18.Size = size;
-			this.Label_grupo_12.TabIndex = 1;
+			this.Label_grupo_12.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_12.Text = "Grupo 12 :";
 			this.Label_grupo_4.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_19 = this.Label_grupo_4;
@@ -541,7 +541,7 @@
 			global::System.Windows.Forms.Control label_grupo_20 = this.Label_grupo_4;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_20.Size = size;
-			this.Label_grupo_4.TabIndex = 1;
+			this.Label_grupo_4.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_4.Text = "Grupo 04 :";
 			this.Label_grupo_11.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_21 = this.Label_grupo_11;
@@ -551,7 +551,7 @@
 			global::System.Windows.Forms.Control label_grupo_22 = this.Label_grupo_11;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_22.Size = size;
-			this.Label_grupo_11.TabIndex = 1;
+			this.Label_grupo_11.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_11.Text = "Grupo 11 :";
 			this.Label_grupo_3.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_23 = this.Label_grupo_3;
@@ -561,7 +561,7 @@
 			global::System.Windows.Forms.Control label_grupo_24 = this.Label_grupo_3;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_24.Size = size;
-			this.Label_grupo_3.TabIndex = 1;
+			this.Label_grupo_3.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_3.Text = "Grupo 03 :";
 			this.Label_grupo_10.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_25 = this.Label_grupo_10;
@@ -571,7 +571,7 @@
 			global::System.Windows.Forms.Control label_grupo_26 = this.Label_grupo_10;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_26.Size = size;
-			this.Label_grupo_10.TabIndex = 1;
+			this.Label_grupo_10.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_10.Text = "Grupo 10 :";
 			this.Label_grupo_2.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_27 = this.Label_grupo_2;
@@ -581,7 +581,7 @@
 			global::System.Windows.Forms.Control label_grupo_28 = this.Label_grupo_2;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_28.Size = size;
-			this.Label_grupo_2.TabIndex = 1;
+			this.Label_grupo_2.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_2.Text = "Grupo 02 :";
 			this.Label_grupo_9.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_29 = this.Label_grupo_9;
@@ -591,7 +591,7 @@
 			global::System.Windows.Forms.Control label_grupo_30 = this.Label_grupo_9;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_30.Size = size;
-			this.Label_grupo_9.TabIndex = 1;
+			this.Label_grupo_9.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_9.Text = "Grupo 09 :";
 			this.Label_grupo_1.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_31 = this.Label_grupo_1;
@@ -601,21 +601,21 @@
 			global::System.Windows.Forms.Control label_grupo_32 = this.Label_grupo_1;
 			size = new global::System.Drawing.Size(57, 13);
 			label_grupo_32.Size = size;
-			this.Label_grupo_1.TabIndex = 1;
+			this.Label_grupo_1.TabIndex = (HorizontalAlignment)1;
 			this.Label_grupo_1.Text = "Grupo 01 :";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			size = new global::System.Drawing.Size(361, 524);
 			this.ClientSize = size;
 			this.Controls.Add(this.grupo_grupos);
 			this.Controls.Add(this.grupo_parametros_gerais);
-			this.FormBorderStyle = 0;
+			this.FormBorderStyle = (HorizontalAlignment)0;
 			location = new global::System.Drawing.Point(160, 2);
 			this.Location = location;
 			this.Name = "Equip_VA210_conf";
-			this.StartPosition = 0;
+			this.StartPosition = (HorizontalAlignment)0;
 			this.Text = "Equipamento VA 210 - Configuração";
 			this.grupo_parametros_gerais.ResumeLayout(false);
 			this.grupo_parametros_gerais.PerformLayout();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -1769,7 +1769,7 @@ namespace iS800
 				}
 				else
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					for (;;)
 					{
 						int num2 = num * 64;
@@ -1833,7 +1833,7 @@ namespace iS800
 		// Token: 0x060023AD RID: 9133 RVA: 0x004080A0 File Offset: 0x004064A0
 		public void Atualiza_dados_MD590(int end_inicial, int tamanho)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = tamanho - 1;
@@ -1852,49 +1852,49 @@ namespace iS800
 			this.Valor_RF_Channel_Number.Value = new decimal(Mod_MD.Parametros_590.RFChannelNumber);
 			this.Combo_mode.SelectedIndex = checked(Mod_MD.Parametros_590.Mode - 1);
 			int interfaceBaud = Mod_MD.Parametros_590.InterfaceBaud;
-			if (interfaceBaud == 64)
+			if (interfaceBaud == (DialogResult)64)
 			{
-				this.Combo_baudrate.SelectedIndex = 0;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)0;
 			}
-			else if (interfaceBaud == 160)
+			else if (interfaceBaud == (DialogResult)160)
 			{
-				this.Combo_baudrate.SelectedIndex = 1;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)1;
 			}
-			else if (interfaceBaud == 208)
+			else if (interfaceBaud == (DialogResult)208)
 			{
-				this.Combo_baudrate.SelectedIndex = 2;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)2;
 			}
-			else if (interfaceBaud == 232)
+			else if (interfaceBaud == (DialogResult)232)
 			{
-				this.Combo_baudrate.SelectedIndex = 3;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)3;
 			}
-			else if (interfaceBaud == 240)
+			else if (interfaceBaud == (DialogResult)240)
 			{
-				this.Combo_baudrate.SelectedIndex = 4;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)4;
 			}
-			else if (interfaceBaud == 244)
+			else if (interfaceBaud == (DialogResult)244)
 			{
-				this.Combo_baudrate.SelectedIndex = 5;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)5;
 			}
-			else if (interfaceBaud == 248)
+			else if (interfaceBaud == (DialogResult)248)
 			{
-				this.Combo_baudrate.SelectedIndex = 6;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)6;
 			}
-			else if (interfaceBaud == 250)
+			else if (interfaceBaud == (DialogResult)250)
 			{
-				this.Combo_baudrate.SelectedIndex = 7;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)7;
 			}
-			else if (interfaceBaud == 252)
+			else if (interfaceBaud == (DialogResult)252)
 			{
-				this.Combo_baudrate.SelectedIndex = 8;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)8;
 			}
-			else if (interfaceBaud == 255)
+			else if (interfaceBaud == (DialogResult)255)
 			{
-				this.Combo_baudrate.SelectedIndex = 9;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)9;
 			}
 			else
 			{
-				this.Combo_baudrate.SelectedIndex = 10;
+				this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)10;
 			}
 			this.Check_beacon_mode.Checked = Mod_MD.Bit_on(Mod_MD.Parametros_590.Control_0, 128);
 			this.Check_des_enabled.Checked = Mod_MD.Bit_on(Mod_MD.Parametros_590.Control_0, 64);
@@ -1916,44 +1916,44 @@ namespace iS800
 			switch (Mod_MD.Parametros_590.MaxPower)
 			{
 			case 3:
-				this.Combo_max_power.SelectedIndex = 0;
+				this.Combo_max_power.SelectedIndex = (HorizontalAlignment)0;
 				goto IL_3BA;
 			case 10:
-				this.Combo_max_power.SelectedIndex = 1;
+				this.Combo_max_power.SelectedIndex = (HorizontalAlignment)1;
 				goto IL_3BA;
 			case 13:
-				this.Combo_max_power.SelectedIndex = 2;
+				this.Combo_max_power.SelectedIndex = (HorizontalAlignment)2;
 				goto IL_3BA;
 			case 15:
-				this.Combo_max_power.SelectedIndex = 3;
+				this.Combo_max_power.SelectedIndex = (HorizontalAlignment)3;
 				goto IL_3BA;
 			}
-			this.Combo_max_power.SelectedIndex = 4;
+			this.Combo_max_power.SelectedIndex = (HorizontalAlignment)4;
 			IL_3BA:
 			int modemMode = Mod_MD.Parametros_590.ModemMode;
-			if (modemMode == 227)
+			if (modemMode == (DialogResult)227)
 			{
 				this.Check_modem_mode.Checked = true;
 			}
-			else if (modemMode == 255)
+			else if (modemMode == (DialogResult)255)
 			{
 				this.Check_modem_mode.Checked = false;
 			}
 			int parityMode = Mod_MD.Parametros_590.ParityMode;
-			if (parityMode == 227)
+			if (parityMode == (DialogResult)227)
 			{
 				this.Check_parity_mode.Checked = true;
 			}
-			else if (parityMode == 255)
+			else if (parityMode == (DialogResult)255)
 			{
 				this.Check_parity_mode.Checked = false;
 			}
 			int rs485DERE = Mod_MD.Parametros_590.RS485DERE;
-			if (rs485DERE == 227)
+			if (rs485DERE == (DialogResult)227)
 			{
 				this.Check_485dere.Checked = true;
 			}
-			else if (rs485DERE == 255)
+			else if (rs485DERE == (DialogResult)255)
 			{
 				this.Check_485dere.Checked = false;
 			}
@@ -1965,20 +1965,20 @@ namespace iS800
 			this.Valor_dest_6.Text = Conversions.ToString(Mod_MD.Parametros_590.Destination_6);
 			this.Valor_System_ID.Value = new decimal(Mod_MD.Parametros_590.SystemID);
 			int protocolStatus = Mod_MD.Parametros_590.ProtocolStatus;
-			if (protocolStatus == 227)
+			if (protocolStatus == (DialogResult)227)
 			{
 				this.Check_protocol_status.Checked = true;
 			}
-			else if (protocolStatus == 255)
+			else if (protocolStatus == (DialogResult)255)
 			{
 				this.Check_protocol_status.Checked = false;
 			}
 			int receiveAPI = Mod_MD.Parametros_590.ReceiveAPI;
-			if (receiveAPI == 227)
+			if (receiveAPI == (DialogResult)227)
 			{
 				this.Check_receive_api.Checked = true;
 			}
-			else if (receiveAPI == 255)
+			else if (receiveAPI == (DialogResult)255)
 			{
 				this.Check_receive_api.Checked = false;
 			}
@@ -2007,49 +2007,49 @@ namespace iS800
 			{
 				this.Combo_mode.SelectedIndex = Mod_MD.Tabela_590[65] - 1;
 				int num = Mod_MD.Tabela_590[66];
-				if (num == 64)
+				if (num == (DialogResult)64)
 				{
-					this.Combo_baudrate.SelectedIndex = 0;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)0;
 				}
-				else if (num == 160)
+				else if (num == (DialogResult)160)
 				{
-					this.Combo_baudrate.SelectedIndex = 1;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)1;
 				}
-				else if (num == 208)
+				else if (num == (DialogResult)208)
 				{
-					this.Combo_baudrate.SelectedIndex = 2;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)2;
 				}
-				else if (num == 232)
+				else if (num == (DialogResult)232)
 				{
-					this.Combo_baudrate.SelectedIndex = 3;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)3;
 				}
-				else if (num == 240)
+				else if (num == (DialogResult)240)
 				{
-					this.Combo_baudrate.SelectedIndex = 4;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)4;
 				}
-				else if (num == 244)
+				else if (num == (DialogResult)244)
 				{
-					this.Combo_baudrate.SelectedIndex = 5;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)5;
 				}
-				else if (num == 248)
+				else if (num == (DialogResult)248)
 				{
-					this.Combo_baudrate.SelectedIndex = 6;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)6;
 				}
-				else if (num == 250)
+				else if (num == (DialogResult)250)
 				{
-					this.Combo_baudrate.SelectedIndex = 7;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)7;
 				}
-				else if (num == 252)
+				else if (num == (DialogResult)252)
 				{
-					this.Combo_baudrate.SelectedIndex = 8;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)8;
 				}
-				else if (num == 255)
+				else if (num == (DialogResult)255)
 				{
-					this.Combo_baudrate.SelectedIndex = 9;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)9;
 				}
 				else
 				{
-					this.Combo_baudrate.SelectedIndex = 10;
+					this.Combo_baudrate.SelectedIndex = (HorizontalAlignment)10;
 				}
 				this.Check_beacon_mode.Checked = Mod_MD.Bit_on(Mod_MD.Tabela_590[69], 128);
 				this.Check_des_enabled.Checked = Mod_MD.Bit_on(Mod_MD.Tabela_590[69], 64);
@@ -2071,44 +2071,44 @@ namespace iS800
 				switch (Mod_MD.Tabela_590[99])
 				{
 				case 3:
-					this.Combo_max_power.SelectedIndex = 0;
+					this.Combo_max_power.SelectedIndex = (HorizontalAlignment)0;
 					goto IL_38C;
 				case 10:
-					this.Combo_max_power.SelectedIndex = 1;
+					this.Combo_max_power.SelectedIndex = (HorizontalAlignment)1;
 					goto IL_38C;
 				case 13:
-					this.Combo_max_power.SelectedIndex = 2;
+					this.Combo_max_power.SelectedIndex = (HorizontalAlignment)2;
 					goto IL_38C;
 				case 15:
-					this.Combo_max_power.SelectedIndex = 3;
+					this.Combo_max_power.SelectedIndex = (HorizontalAlignment)3;
 					goto IL_38C;
 				}
-				this.Combo_max_power.SelectedIndex = 4;
+				this.Combo_max_power.SelectedIndex = (HorizontalAlignment)4;
 				IL_38C:
 				int num2 = Mod_MD.Tabela_590[110];
-				if (num2 == 227)
+				if (num2 == (DialogResult)227)
 				{
 					this.Check_modem_mode.Checked = true;
 				}
-				else if (num2 == 255)
+				else if (num2 == (DialogResult)255)
 				{
 					this.Check_modem_mode.Checked = false;
 				}
 				int num3 = Mod_MD.Tabela_590[111];
-				if (num3 == 227)
+				if (num3 == (DialogResult)227)
 				{
 					this.Check_parity_mode.Checked = true;
 				}
-				else if (num3 == 255)
+				else if (num3 == (DialogResult)255)
 				{
 					this.Check_parity_mode.Checked = false;
 				}
 				int num4 = Mod_MD.Tabela_590[127];
-				if (num4 == 227)
+				if (num4 == (DialogResult)227)
 				{
 					this.Check_485dere.Checked = true;
 				}
-				else if (num4 == 255)
+				else if (num4 == (DialogResult)255)
 				{
 					this.Check_485dere.Checked = false;
 				}
@@ -2120,7 +2120,7 @@ namespace iS800
 				this.Valor_dest_6.Text = Conversions.ToString(Mod_MD.Tabela_590[117]);
 				this.Valor_System_ID.Value = new decimal(Mod_MD.Tabela_590[118]);
 				string text = "";
-				int num5 = 0;
+				int num5 = (HorizontalAlignment)0;
 				do
 				{
 					text = text + Conversion.Str(Mod_MD.Tabela_590[128 + num5]) + " ";
@@ -2129,20 +2129,20 @@ namespace iS800
 				while (num5 <= 5);
 				this.Valor_mac_adress.Text = text;
 				int num6 = Mod_MD.Tabela_590[192];
-				if (num6 == 227)
+				if (num6 == (DialogResult)227)
 				{
 					this.Check_protocol_status.Checked = true;
 				}
-				else if (num6 == 255)
+				else if (num6 == (DialogResult)255)
 				{
 					this.Check_protocol_status.Checked = false;
 				}
 				int num7 = Mod_MD.Tabela_590[193];
-				if (num7 == 227)
+				if (num7 == (DialogResult)227)
 				{
 					this.Check_receive_api.Checked = true;
 				}
-				else if (num7 == 255)
+				else if (num7 == (DialogResult)255)
 				{
 					this.Check_receive_api.Checked = false;
 				}
@@ -2191,7 +2191,7 @@ namespace iS800
 			Mod_MD.Parametros_590.Destination_6 = Mod_MD.Tabela_590[117];
 			Mod_MD.Parametros_590.SystemID = Mod_MD.Tabela_590[118];
 			string text = "";
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				do
@@ -2313,23 +2313,23 @@ namespace iS800
 			object obj = NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null);
 			if (Operators.ConditionalCompareObjectEqual(obj, 3, false))
 			{
-				Mod_MD.Parametros_590.MaxPower = 15;
+				Mod_MD.Parametros_590.MaxPower = (HorizontalAlignment)15;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 2, false))
 			{
-				Mod_MD.Parametros_590.MaxPower = 13;
+				Mod_MD.Parametros_590.MaxPower = (HorizontalAlignment)13;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 1, false))
 			{
-				Mod_MD.Parametros_590.MaxPower = 10;
+				Mod_MD.Parametros_590.MaxPower = (HorizontalAlignment)10;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 0, false))
 			{
-				Mod_MD.Parametros_590.MaxPower = 3;
+				Mod_MD.Parametros_590.MaxPower = (HorizontalAlignment)3;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.MaxPower = 96;
+				Mod_MD.Parametros_590.MaxPower = (HorizontalAlignment)96;
 			}
 		}
 
@@ -2345,43 +2345,43 @@ namespace iS800
 			object obj = NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null);
 			if (Operators.ConditionalCompareObjectEqual(obj, 0, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 64;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)64;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 1, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 160;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)160;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 2, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 208;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)208;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 3, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 232;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)232;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 4, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 240;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)240;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 5, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 244;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)244;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 6, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 248;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)248;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 7, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 250;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)250;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 8, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 252;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)252;
 			}
 			else if (Operators.ConditionalCompareObjectEqual(obj, 9, false))
 			{
-				Mod_MD.Parametros_590.InterfaceBaud = 255;
+				Mod_MD.Parametros_590.InterfaceBaud = (HorizontalAlignment)255;
 			}
 		}
 
@@ -2528,7 +2528,7 @@ namespace iS800
 			}
 			else
 			{
-				Mod_MD.Parametros_590.SyncToChannel = 0;
+				Mod_MD.Parametros_590.SyncToChannel = (HorizontalAlignment)0;
 			}
 		}
 
@@ -2553,11 +2553,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.ModemMode = 227;
+				Mod_MD.Parametros_590.ModemMode = (HorizontalAlignment)227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.ModemMode = 255;
+				Mod_MD.Parametros_590.ModemMode = (HorizontalAlignment)255;
 			}
 		}
 
@@ -2566,11 +2566,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.RS485DERE = 227;
+				Mod_MD.Parametros_590.RS485DERE = (HorizontalAlignment)227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.RS485DERE = 255;
+				Mod_MD.Parametros_590.RS485DERE = (HorizontalAlignment)255;
 			}
 		}
 
@@ -2579,11 +2579,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.ProtocolStatus = 227;
+				Mod_MD.Parametros_590.ProtocolStatus = (HorizontalAlignment)227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.ProtocolStatus = 255;
+				Mod_MD.Parametros_590.ProtocolStatus = (HorizontalAlignment)255;
 			}
 		}
 
@@ -2592,11 +2592,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.ParityMode = 227;
+				Mod_MD.Parametros_590.ParityMode = (HorizontalAlignment)227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.ParityMode = 255;
+				Mod_MD.Parametros_590.ParityMode = (HorizontalAlignment)255;
 			}
 		}
 
@@ -2605,11 +2605,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Parametros_590.ReceiveAPI = 227;
+				Mod_MD.Parametros_590.ReceiveAPI = (HorizontalAlignment)227;
 			}
 			else
 			{
-				Mod_MD.Parametros_590.ReceiveAPI = 255;
+				Mod_MD.Parametros_590.ReceiveAPI = (HorizontalAlignment)255;
 			}
 		}
 
@@ -2693,14 +2693,14 @@ namespace iS800
 		// Token: 0x060023E5 RID: 9189 RVA: 0x00409DBC File Offset: 0x004081BC
 		private void Button1_Click(object sender, EventArgs e)
 		{
-			int num = 0;
-			int endereco = 255;
-			int tamanho = 10;
+			int num = (HorizontalAlignment)0;
+			int endereco = (HorizontalAlignment)255;
+			int tamanho = (HorizontalAlignment)10;
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_;
 			ctrl_RESP_.Msg = "";
 			ctrl_RESP_.Status = false;
-			ctrl_RESP_.Cor = 1;
+			ctrl_RESP_.Cor = (HorizontalAlignment)1;
 			checked
 			{
 				while (i > 0)
@@ -2711,37 +2711,37 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						ctrl_RESP_.Msg = "Leitura página " + Conversion.Str(num / 256) + " - OK";
-						ctrl_RESP_.Cor = 0;
+						ctrl_RESP_.Cor = (HorizontalAlignment)0;
 						ctrl_RESP_.Status = true;
 						goto IL_178;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							ctrl_RESP_.Msg = "Erro chksum - ao ler página " + Conversion.Str(num / 256);
-							ctrl_RESP_.Cor = 1;
+							ctrl_RESP_.Cor = (HorizontalAlignment)1;
 							ctrl_RESP_.Status = false;
 							goto IL_178;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							ctrl_RESP_.Msg = "Erro Timeout - ao ler página " + Conversion.Str(num / 256);
-							ctrl_RESP_.Cor = 1;
+							ctrl_RESP_.Cor = (HorizontalAlignment)1;
 							ctrl_RESP_.Status = false;
 							goto IL_178;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						ctrl_RESP_.Msg = "Erro indeterminado - ao ler página " + Conversion.Str(num / 256);
-						ctrl_RESP_.Cor = 1;
+						ctrl_RESP_.Cor = (HorizontalAlignment)1;
 						ctrl_RESP_.Status = false;
 						break;
 					}

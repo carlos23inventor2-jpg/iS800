@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -416,9 +416,9 @@ namespace iS800
 		private void Button_ler_Click(object sender, EventArgs e)
 		{
 			int[] dados = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0)
 			{
-				Interaction.MsgBox(" Existe um endereço não válido ", 0, null);
+				Interaction.MsgBox(" Existe um endereço não válido ", (MsgBoxStyle)0, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -432,25 +432,25 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						goto IL_CF;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						return;
 					}
@@ -475,9 +475,9 @@ namespace iS800
 		private void Button_manual_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_bomba.Text) == (DialogResult)0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", (MsgBoxStyle)0, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -492,25 +492,25 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						goto IL_F8;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						return;
 					}
@@ -524,9 +524,9 @@ namespace iS800
 		private void Button_auto_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_bomba.Text) == (DialogResult)0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", (MsgBoxStyle)0, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -541,25 +541,25 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						goto IL_F8;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						return;
 					}
@@ -573,9 +573,9 @@ namespace iS800
 		private void Button_liga_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_bomba.Text) == (DialogResult)0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", (MsgBoxStyle)0, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -590,25 +590,25 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						goto IL_F8;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						return;
 					}
@@ -622,9 +622,9 @@ namespace iS800
 		private void Button_desliga_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_bomba.Text) == (DialogResult)0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", (MsgBoxStyle)0, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -639,25 +639,25 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						goto IL_F8;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						return;
 					}
@@ -671,9 +671,9 @@ namespace iS800
 		private void Button_falha_Click(object sender, EventArgs e)
 		{
 			int[] array = new int[41];
-			if (Conversion.Val(this.Valor_end_mestre.Text) == 0.0 | Conversion.Val(this.Valor_end_estacao.Text) == 0.0 | Conversion.Val(this.Valor_bomba.Text) == 0.0)
+			if (Conversion.Val(this.Valor_end_mestre.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_end_estacao.Text) == (DialogResult)0.0 | Conversion.Val(this.Valor_bomba.Text) == (DialogResult)0.0)
 			{
-				Interaction.MsgBox(" Existe um dado não válido ", 0, null);
+				Interaction.MsgBox(" Existe um dado não válido ", (MsgBoxStyle)0, null);
 				return;
 			}
 			int i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -688,25 +688,25 @@ namespace iS800
 					{
 						Application.DoEvents();
 					}
-					while (Comunicacao.Ctrl_Com.Frame == 255);
+					while (Comunicacao.Ctrl_Com.Frame == (DialogResult)255);
 					switch (Comunicacao.Ctrl_Com.Frame)
 					{
 					case 0:
 						goto IL_F8;
 					case 2:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					case 3:
-						if (i == 0)
+						if (i == (DialogResult)0)
 						{
 							return;
 						}
 						continue;
 					}
-					if (i == 0)
+					if (i == (DialogResult)0)
 					{
 						return;
 					}

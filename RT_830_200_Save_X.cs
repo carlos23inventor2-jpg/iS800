@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
@@ -59,7 +59,7 @@ namespace iS800
 		// Token: 0x060002BC RID: 700 RVA: 0x0022703C File Offset: 0x0022543C
 		public static void RT_830_200_Salva_Variaveis(IniFileWriteFast ini)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_equip_reservatorios.Valor - 1;
@@ -79,7 +79,7 @@ namespace iS800
 		// Token: 0x060002BD RID: 701 RVA: 0x00227128 File Offset: 0x00225528
 		public static void RT_830_200_Salva_RemotasControle(IniFileWriteFast ini)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_recalques.Valor - 1;
@@ -125,7 +125,7 @@ namespace iS800
 		// Token: 0x060002BE RID: 702 RVA: 0x002275D4 File Offset: 0x002259D4
 		public static void RT_830_200_Salva_Vista(IniFileWriteFast ini)
 		{
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_vistas.Valor - 1;
@@ -136,14 +136,14 @@ namespace iS800
 					ini.WriteKey("NUMERO_VARIAVEIS", RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor);
 					ini.WriteKey("NUMERO_REMOTASCONTROLE", RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor);
 					ini.WriteKey("PRIORIDADE", RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Prioridade.Valor);
-					int num3 = 0;
+					int num3 = (HorizontalAlignment)0;
 					int num4 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor - 1;
 					for (int j = num3; j <= num4; j++)
 					{
 						string key = string.Format("VARIAVEIS{0}", j + 1);
 						ini.WriteKey(key, RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Variaveis[j].Valor);
 					}
-					int num5 = 0;
+					int num5 = (HorizontalAlignment)0;
 					int num6 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor - 1;
 					for (int j = num5; j <= num6; j++)
 					{

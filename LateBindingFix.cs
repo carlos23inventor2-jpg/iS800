@@ -23,7 +23,7 @@ namespace iS800
 				if (targetType != null)
 				{
 					var prop = targetType.GetProperty(memberName, Flags);
-					if (prop != null && prop.GetIndexParameters().Length == 0)
+					if (prop != null && prop.GetIndexParameters().Length == (DialogResult)0)
 					{
 						return prop.GetValue(target, null);
 					}
@@ -37,7 +37,7 @@ namespace iS800
 				{
 					var t = target.GetType();
 					var prop = t.GetProperty(memberName, Flags);
-					if (prop != null && prop.GetIndexParameters().Length == 0)
+					if (prop != null && prop.GetIndexParameters().Length == (DialogResult)0)
 					{
 						return prop.GetValue(target, null);
 					}
@@ -63,7 +63,7 @@ namespace iS800
 				if (targetType != null)
 				{
 					var prop = targetType.GetProperty(memberName, Flags);
-					if (prop != null && prop.CanWrite && prop.GetIndexParameters().Length == 0)
+					if (prop != null && prop.CanWrite && prop.GetIndexParameters().Length == (DialogResult)0)
 					{
 						prop.SetValue(target, ConvertIfNeeded(value, prop.PropertyType), null);
 						return;
@@ -76,7 +76,7 @@ namespace iS800
 				{
 					var t = target.GetType();
 					var prop = t.GetProperty(memberName, Flags);
-					if (prop != null && prop.CanWrite && prop.GetIndexParameters().Length == 0)
+					if (prop != null && prop.CanWrite && prop.GetIndexParameters().Length == (DialogResult)0)
 					{
 						prop.SetValue(target, ConvertIfNeeded(value, prop.PropertyType), null);
 						return;

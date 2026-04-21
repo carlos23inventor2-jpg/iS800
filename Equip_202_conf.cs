@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -3471,11 +3471,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Hab_repetidora = 21856;
+				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Hab_repetidora = (HorizontalAlignment)21856;
 			}
 			else
 			{
-				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Hab_repetidora = 0;
+				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Hab_repetidora = (HorizontalAlignment)0;
 			}
 			this.Atualiza_tela_MD202_repetidora(Mod_MD.Controle.Estacao);
 		}
@@ -3992,27 +3992,27 @@ namespace iS800
 			this.Combo_tipo_p4.Items.Add("Med.Grand.Elét.-Smart Trans");
 			this.Combo_tipo_p4.Items.Add("Med.Grand.Elét.-Mult K05");
 			this.Combo_tipo_p4.Items.Add("Inversor Danfoss Agua Drive");
-			this.passo_202 = 0;
+			this.passo_202 = (HorizontalAlignment)0;
 			string versao = Geral.Config_geral.Versao;
-			if (Operators.CompareString(versao, "21", false) == 0)
+			if (Operators.CompareString(versao, "21", false) == (DialogResult)0)
 			{
 				this.Grupo_setpoints.Text = this.Grupo_setpoints.Text + " (0 - 100%)";
 			}
-			else if (Operators.CompareString(versao, "22", false) == 0)
+			else if (Operators.CompareString(versao, "22", false) == (DialogResult)0)
 			{
 				this.Combo_modo_operacao.Items.Add("Automático s/desl.falha");
 			}
-			else if (Operators.CompareString(versao, "23", false) == 0)
-			{
-				this.Combo_modo_operacao.Items.Add("Automático s/desl.falha");
-				this.Combo_modo_operacao.Items.Add("Manual s/desl.falha");
-			}
-			else if (Operators.CompareString(versao, "50", false) == 0)
+			else if (Operators.CompareString(versao, "23", false) == (DialogResult)0)
 			{
 				this.Combo_modo_operacao.Items.Add("Automático s/desl.falha");
 				this.Combo_modo_operacao.Items.Add("Manual s/desl.falha");
 			}
-			else if (Operators.CompareString(versao, "820_10", false) == 0)
+			else if (Operators.CompareString(versao, "50", false) == (DialogResult)0)
+			{
+				this.Combo_modo_operacao.Items.Add("Automático s/desl.falha");
+				this.Combo_modo_operacao.Items.Add("Manual s/desl.falha");
+			}
+			else if (Operators.CompareString(versao, "820_10", false) == (DialogResult)0)
 			{
 				this.Combo_modo_operacao.Items.Add("Automático s/desl.falha");
 				this.Combo_modo_operacao.Items.Add("Manual s/desl.falha");
@@ -4032,7 +4032,7 @@ namespace iS800
 			this.Limpa_estrutura_MD202(Mod_MD.Controle.Estacao);
 			this.Atualiza_tela_MD202(Mod_MD.Controle.Estacao);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
-			int num = 48;
+			int num = (HorizontalAlignment)48;
 			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", num, " Atenção - verifique a configuração");
 		}
 
@@ -4046,56 +4046,56 @@ namespace iS800
 			Mod_MD.Recalque_202[indice].Tempo_abertura_val = new int[5];
 			Mod_MD.Recalque_202[indice].Tempo_fechamento_val = new int[5];
 			Mod_MD.Recalque_202[indice].Entrada_digital = new int[9];
-			Mod_MD.Recalque_202[indice].End_estacao = 0;
-			Mod_MD.Recalque_202[indice].End_mestre = 0;
-			Mod_MD.Recalque_202[indice].Hab_repetidora = 0;
-			Mod_MD.Recalque_202[indice].Tempo_ptt = 1;
-			Mod_MD.Recalque_202[indice].BaudRate = 21849;
-			Mod_MD.Recalque_202[indice].Intervalo_filtroAD = 1;
-			Mod_MD.Recalque_202[indice].Tamanho_filtroAD = 1;
-			Mod_MD.Recalque_202[indice].Modo_operacao = 21888;
-			Mod_MD.Recalque_202[indice].Numero_motores = 0;
-			Mod_MD.Recalque_202[indice].Numero_valvulas = 0;
-			int num = 1;
+			Mod_MD.Recalque_202[indice].End_estacao = (HorizontalAlignment)0;
+			Mod_MD.Recalque_202[indice].End_mestre = (HorizontalAlignment)0;
+			Mod_MD.Recalque_202[indice].Hab_repetidora = (HorizontalAlignment)0;
+			Mod_MD.Recalque_202[indice].Tempo_ptt = (HorizontalAlignment)1;
+			Mod_MD.Recalque_202[indice].BaudRate = (HorizontalAlignment)21849;
+			Mod_MD.Recalque_202[indice].Intervalo_filtroAD = (HorizontalAlignment)1;
+			Mod_MD.Recalque_202[indice].Tamanho_filtroAD = (HorizontalAlignment)1;
+			Mod_MD.Recalque_202[indice].Modo_operacao = (HorizontalAlignment)21888;
+			Mod_MD.Recalque_202[indice].Numero_motores = (HorizontalAlignment)0;
+			Mod_MD.Recalque_202[indice].Numero_valvulas = (HorizontalAlignment)0;
+			int num = (HorizontalAlignment)1;
 			checked
 			{
 				do
 				{
-					Mod_MD.Recalque_202[indice].Modo_partida[num] = 21877;
-					Mod_MD.Recalque_202[indice].Tempo_partida[num] = 180;
-					Mod_MD.Recalque_202[indice].Tempo_parada[num] = 180;
-					Mod_MD.Recalque_202[indice].Tempo_abertura_val[num] = 180;
-					Mod_MD.Recalque_202[indice].Tempo_fechamento_val[num] = 180;
+					Mod_MD.Recalque_202[indice].Modo_partida[num] = (HorizontalAlignment)21877;
+					Mod_MD.Recalque_202[indice].Tempo_partida[num] = (HorizontalAlignment)180;
+					Mod_MD.Recalque_202[indice].Tempo_parada[num] = (HorizontalAlignment)180;
+					Mod_MD.Recalque_202[indice].Tempo_abertura_val[num] = (HorizontalAlignment)180;
+					Mod_MD.Recalque_202[indice].Tempo_fechamento_val[num] = (HorizontalAlignment)180;
 					num++;
 				}
 				while (num <= 4);
-				num = 1;
+				num = (HorizontalAlignment)1;
 				do
 				{
-					Mod_MD.Recalque_202[indice].Entrada_digital[num] = 0;
+					Mod_MD.Recalque_202[indice].Entrada_digital[num] = (HorizontalAlignment)0;
 					num++;
 				}
 				while (num <= 8);
-				Mod_MD.Recalque_202[indice].Set_nivel_desejado = 100;
-				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba1 = 1;
-				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba2 = 1;
-				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba3 = 1;
-				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba4 = 1;
-				Mod_MD.Recalque_202[indice].Tempo_mais_bomba = 0;
-				Mod_MD.Recalque_202[indice].Pressao_min_succao = 5;
-				Mod_MD.Recalque_202[indice].Pressao_min_recalque = 5;
-				Mod_MD.Recalque_202[indice].Nivel_protecao_liga = 40;
-				Mod_MD.Recalque_202[indice].Nivel_protecao_desliga = 20;
-				Mod_MD.Recalque_202[indice].Num_bombas_simultaneas = 0;
-				Mod_MD.Recalque_202[indice].Tempo_entre_acionamento = 0;
-				Mod_MD.Recalque_202[indice].Num_totalizacoes = 1;
-				Mod_MD.Recalque_202[indice].Controle_nivel_fonte = 21921;
-				Mod_MD.Recalque_202[indice].End_repetidora = 0;
-				Mod_MD.Recalque_202[indice].Num_repetidoras = 0;
-				num = 0;
+				Mod_MD.Recalque_202[indice].Set_nivel_desejado = (HorizontalAlignment)100;
+				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba1 = (HorizontalAlignment)1;
+				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba2 = (HorizontalAlignment)1;
+				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba3 = (HorizontalAlignment)1;
+				Mod_MD.Recalque_202[indice].Set_nivel_liga_bomba4 = (HorizontalAlignment)1;
+				Mod_MD.Recalque_202[indice].Tempo_mais_bomba = (HorizontalAlignment)0;
+				Mod_MD.Recalque_202[indice].Pressao_min_succao = (HorizontalAlignment)5;
+				Mod_MD.Recalque_202[indice].Pressao_min_recalque = (HorizontalAlignment)5;
+				Mod_MD.Recalque_202[indice].Nivel_protecao_liga = (HorizontalAlignment)40;
+				Mod_MD.Recalque_202[indice].Nivel_protecao_desliga = (HorizontalAlignment)20;
+				Mod_MD.Recalque_202[indice].Num_bombas_simultaneas = (HorizontalAlignment)0;
+				Mod_MD.Recalque_202[indice].Tempo_entre_acionamento = (HorizontalAlignment)0;
+				Mod_MD.Recalque_202[indice].Num_totalizacoes = (HorizontalAlignment)1;
+				Mod_MD.Recalque_202[indice].Controle_nivel_fonte = (HorizontalAlignment)21921;
+				Mod_MD.Recalque_202[indice].End_repetidora = (HorizontalAlignment)0;
+				Mod_MD.Recalque_202[indice].Num_repetidoras = (HorizontalAlignment)0;
+				num = (HorizontalAlignment)0;
 				do
 				{
-					Mod_MD.Recalque_202[indice].Repetidoras[num] = 0;
+					Mod_MD.Recalque_202[indice].Repetidoras[num] = (HorizontalAlignment)0;
 					num++;
 				}
 				while (num <= 50);
@@ -4105,7 +4105,7 @@ namespace iS800
 		// Token: 0x0600204E RID: 8270 RVA: 0x003EBD18 File Offset: 0x003EA118
 		public void Init_equipamento_MD202()
 		{
-			Mod_MD.Controle.Estacao = 1;
+			Mod_MD.Controle.Estacao = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x0600204F RID: 8271 RVA: 0x003EBD28 File Offset: 0x003EA128
@@ -4119,7 +4119,7 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = 2;
+					num = (HorizontalAlignment)2;
 					this.Atualiza_tela_MD202_repetidora(indice);
 					this.Atualiza_tela_MD202_motores(indice);
 					this.Atualiza_tela_MD202_valvulas(indice);
@@ -4173,7 +4173,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E01.SelectedIndex = 0;
+						this.ComboBox_E01.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[2] >= 21904)
 					{
@@ -4181,7 +4181,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E02.SelectedIndex = 0;
+						this.ComboBox_E02.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[3] >= 21904)
 					{
@@ -4189,7 +4189,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E03.SelectedIndex = 0;
+						this.ComboBox_E03.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[4] >= 21904)
 					{
@@ -4197,7 +4197,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E04.SelectedIndex = 0;
+						this.ComboBox_E04.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[5] >= 21904)
 					{
@@ -4205,7 +4205,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E05.SelectedIndex = 0;
+						this.ComboBox_E05.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[6] >= 21904)
 					{
@@ -4213,7 +4213,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E06.SelectedIndex = 0;
+						this.ComboBox_E06.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[7] >= 21904)
 					{
@@ -4221,7 +4221,7 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E07.SelectedIndex = 0;
+						this.ComboBox_E07.SelectedIndex = (HorizontalAlignment)0;
 					}
 					if (Mod_MD.Recalque_202[indice].Entrada_digital[8] >= 21904)
 					{
@@ -4229,17 +4229,17 @@ namespace iS800
 					}
 					else
 					{
-						this.ComboBox_E08.SelectedIndex = 0;
+						this.ComboBox_E08.SelectedIndex = (HorizontalAlignment)0;
 					}
-					if (Mod_MD.Recalque_202[indice].Num_totalizacoes == 1)
+					if (Mod_MD.Recalque_202[indice].Num_totalizacoes == (DialogResult)1)
 					{
-						this.Combo_num_totalizacoes.SelectedIndex = 0;
+						this.Combo_num_totalizacoes.SelectedIndex = (HorizontalAlignment)0;
 					}
 					else
 					{
-						this.Combo_num_totalizacoes.SelectedIndex = 1;
+						this.Combo_num_totalizacoes.SelectedIndex = (HorizontalAlignment)1;
 					}
-					if (Mod_MD.Recalque_202[indice].Controle_nivel_fonte == 21921)
+					if (Mod_MD.Recalque_202[indice].Controle_nivel_fonte == (DialogResult)21921)
 					{
 						this.CheckBox_ctrl_nivel_fonte.Checked = true;
 					}
@@ -4259,13 +4259,13 @@ namespace iS800
 					IL_98B:
 					this.Init_equipamento_MD202();
 					this.Limpa_estrutura_MD202(Mod_MD.Controle.Estacao);
-					Interaction.MsgBox("Dados de configuração não compatíveis com a tela", 1, null);
+					Interaction.MsgBox("Dados de configuração não compatíveis com a tela", (MsgBoxStyle)1, null);
 					goto IL_9F1;
 					IL_9B0:
 					num2 = -1;
 										IL_9C4:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+				catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_9B0;
@@ -4282,7 +4282,7 @@ namespace iS800
 		// Token: 0x06002050 RID: 8272 RVA: 0x003EC74C File Offset: 0x003EAB4C
 		public void Atualiza_tela_MD202_repetidora(int indice)
 		{
-			if (Mod_MD.Recalque_202[indice].Hab_repetidora == 21856)
+			if (Mod_MD.Recalque_202[indice].Hab_repetidora == (DialogResult)21856)
 			{
 				this.CheckBox_hab_rep.Checked = true;
 				this.Grupo_end_rep.Enabled = true;
@@ -4308,9 +4308,9 @@ namespace iS800
 		{
 			checked
 			{
-				for (int i = Conversions.ToInteger(Operators.AddObject(end_inicial, 1)); i <= 50; i++)
+				for (int i = Conversions.ToInteger(Operators.AddObject(end_inicial, 1)); i <= (HorizontalAlignment)50; i++)
 				{
-					Mod_MD.Recalque_202[Conversions.ToInteger(indice)].Repetidoras[i] = 0;
+					Mod_MD.Recalque_202[Conversions.ToInteger(indice)].Repetidoras[i] = (HorizontalAlignment)0;
 				}
 			}
 		}
@@ -4514,7 +4514,7 @@ namespace iS800
 				this.Tempo_parada_m3.Enabled = true;
 				this.Tempo_partida_m3.Enabled = true;
 			}
-			if (Mod_MD.Recalque_202[indice].Numero_motores == 4)
+			if (Mod_MD.Recalque_202[indice].Numero_motores == (DialogResult)4)
 			{
 				if (Operators.ConditionalCompareObjectNotEqual(Mod_MD.Recalque_202[indice].Modo_operacao, 21888, false))
 				{
@@ -4551,7 +4551,7 @@ namespace iS800
 				this.Tempo_abertura_v3.Enabled = true;
 				this.Tempo_fechamento_v3.Enabled = true;
 			}
-			if (Mod_MD.Recalque_202[indice].Numero_valvulas == 4)
+			if (Mod_MD.Recalque_202[indice].Numero_valvulas == (DialogResult)4)
 			{
 				this.Tempo_abertura_v4.Enabled = true;
 				this.Tempo_fechamento_v4.Enabled = true;
@@ -4563,20 +4563,20 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Controle_tecla_conf_202(2);
 			this.Mensagem_MD202("Aguarde ...", 2);
 			string versao = Geral.Config_geral.Versao;
 			int tamanho;
-			if (Operators.CompareString(versao, "820_10", false) == 0)
+			if (Operators.CompareString(versao, "820_10", false) == (DialogResult)0)
 			{
-				tamanho = 56;
+				tamanho = (HorizontalAlignment)56;
 			}
 			else
 			{
-				tamanho = 52;
+				tamanho = (HorizontalAlignment)52;
 			}
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Leitura_pagina(100, 255, tamanho);
 			this.Mensagem_MD202(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
@@ -4638,7 +4638,7 @@ namespace iS800
 		{
 			if (!Geral.Config_geral.Porta_serial_Ok)
 			{
-				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", 0, null);
+				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.Controle_tecla_conf_202(2);
@@ -4700,10 +4700,10 @@ namespace iS800
 			Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Modo_operacao = Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21888);
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null), 0, false))
 			{
-				this.Combo_modo_partida_m1.SelectedIndex = 0;
-				this.Combo_modo_partida_m2.SelectedIndex = 0;
-				this.Combo_modo_partida_m3.SelectedIndex = 0;
-				this.Combo_modo_partida_m4.SelectedIndex = 0;
+				this.Combo_modo_partida_m1.SelectedIndex = (HorizontalAlignment)0;
+				this.Combo_modo_partida_m2.SelectedIndex = (HorizontalAlignment)0;
+				this.Combo_modo_partida_m3.SelectedIndex = (HorizontalAlignment)0;
+				this.Combo_modo_partida_m4.SelectedIndex = (HorizontalAlignment)0;
 				this.Combo_modo_partida_m1.Enabled = false;
 				this.Combo_modo_partida_m2.Enabled = false;
 				this.Combo_modo_partida_m3.Enabled = false;
@@ -4778,11 +4778,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 0, false))
 			{
-				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Num_totalizacoes = 1;
+				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Num_totalizacoes = (HorizontalAlignment)1;
 			}
 			else
 			{
-				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Num_totalizacoes = 5;
+				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Num_totalizacoes = (HorizontalAlignment)5;
 			}
 		}
 
@@ -4791,11 +4791,11 @@ namespace iS800
 		{
 			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
 			{
-				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Controle_nivel_fonte = 21921;
+				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Controle_nivel_fonte = (HorizontalAlignment)21921;
 			}
 			else
 			{
-				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Controle_nivel_fonte = 0;
+				Mod_MD.Recalque_202[Mod_MD.Controle.Estacao].Controle_nivel_fonte = (HorizontalAlignment)0;
 			}
 		}
 
@@ -4812,15 +4812,15 @@ namespace iS800
 		{
 			this.OpenFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V202";
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
-			if (this.OpenFileDialog1.ShowDialog() == 1)
+			if (this.OpenFileDialog1.ShowDialog() == (DialogResult)1)
 			{
 				if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 				{
 					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, 600);
-					int num = 1;
+					int num = (HorizontalAlignment)1;
 					Mod_MD.DADOS_EQUIP_MD_202_CONFIG[] recalque_ = Mod_MD.Recalque_202;
 					Mod_MD.DADOS_EQUIP_MD_202_CONFIG[] array = recalque_;
-					int num2 = 1;
+					int num2 = (HorizontalAlignment)1;
 					ValueType valueType = array[num2];
 					FileSystem.FileGet(num, ref valueType, -1L);
 					Mod_MD.DADOS_EQUIP_MD_202_CONFIG[] array2 = recalque_;
@@ -4833,7 +4833,7 @@ namespace iS800
 						1
 					});
 				}
-				if (Operators.CompareString(Mod_MD.Recalque_202[1].Versao, Geral.Config_geral.Versao, false) == 0)
+				if (Operators.CompareString(Mod_MD.Recalque_202[1].Versao, Geral.Config_geral.Versao, false) == (DialogResult)0)
 				{
 					this.Atualiza_tela_MD202(Mod_MD.Controle.Estacao);
 				}
@@ -4841,7 +4841,7 @@ namespace iS800
 				{
 					this.Init_equipamento_MD202();
 					this.Limpa_estrutura_MD202(Mod_MD.Controle.Estacao);
-					Interaction.MsgBox("Versão do equipamento não é compatível\r\ncom os dados do arquivo", 1, null);
+					Interaction.MsgBox("Versão do equipamento não é compatível\r\ncom os dados do arquivo", (MsgBoxStyle)1, null);
 				}
 			}
 		}
@@ -4853,7 +4853,7 @@ namespace iS800
 			Mod_MD.Recalque_202[1].Versao = Geral.Config_geral.Versao;
 			this.SaveFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V202";
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
-			if (this.SaveFileDialog1.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
+			if (this.SaveFileDialog1.ShowDialog() == (DialogResult)1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 			{
 				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, 600);
 				FileSystem.FilePut(1, Mod_MD.Recalque_202[1], -1L);

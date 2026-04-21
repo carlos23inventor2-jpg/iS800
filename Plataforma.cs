@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -2182,25 +2182,25 @@ namespace iS800
 			string text = Conversions.ToString(NewLateBinding.LateGet(NewLateBinding.LateGet(sender, null, "SelectedNode", new object[0], null, null, null), null, "Name", new object[0], null, null, null));
 			string text2 = Conversions.ToString(NewLateBinding.LateGet(NewLateBinding.LateGet(sender, null, "TopNode", new object[0], null, null, null), null, "Text", new object[0], null, null, null));
 			string text3 = text2;
-			if (Operators.CompareString(text3, "Equipamentos - Linha VA", false) == 0)
+			if (Operators.CompareString(text3, "Equipamentos - Linha VA", false) == (DialogResult)0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 				string text4 = text;
-				if (Operators.CompareString(text4, "Equip_VA210", false) == 0)
+				if (Operators.CompareString(text4, "Equip_VA210", false) == (DialogResult)0)
 				{
 					new Equip_VA210_conf
 					{
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text4, "Equip_VA220", false) == 0)
+				else if (Operators.CompareString(text4, "Equip_VA220", false) == (DialogResult)0)
 				{
 					new Equip_VA220_conf
 					{
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text4, "Equip_VA230", false) == 0)
+				else if (Operators.CompareString(text4, "Equip_VA230", false) == (DialogResult)0)
 				{
 					new Equip_VA230_conf
 					{
@@ -2208,11 +2208,11 @@ namespace iS800
 					}.Show();
 				}
 			}
-			else if (Operators.CompareString(text3, "Operação - Linha VA", false) == 0)
+			else if (Operators.CompareString(text3, "Operação - Linha VA", false) == (DialogResult)0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 				string text5 = text;
-				if (Operators.CompareString(text5, "Equip_VA220", false) == 0)
+				if (Operators.CompareString(text5, "Equip_VA220", false) == (DialogResult)0)
 				{
 					new Equip_VA220_ope
 					{
@@ -2220,11 +2220,11 @@ namespace iS800
 					}.Show();
 				}
 			}
-			else if (Operators.CompareString(text3, "Monitoração - Linha VA", false) == 0)
+			else if (Operators.CompareString(text3, "Monitoração - Linha VA", false) == (DialogResult)0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 				string text6 = text;
-				if (Operators.CompareString(text6, "Equip_VA220", false) == 0)
+				if (Operators.CompareString(text6, "Equip_VA220", false) == (DialogResult)0)
 				{
 					new Equip_VA220_mon
 					{
@@ -2232,11 +2232,11 @@ namespace iS800
 					}.Show();
 				}
 			}
-			else if (Operators.CompareString(text3, "Configuração - Linha MD", false) == 0)
+			else if (Operators.CompareString(text3, "Configuração - Linha MD", false) == (DialogResult)0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				string text7 = text;
-				if (Operators.CompareString(text7, "Equip_MD101_V43", false) == 0)
+				if (Operators.CompareString(text7, "Equip_MD101_V43", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "43";
 					new Equip_101_conf
@@ -2244,7 +2244,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD101_V70", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD101_V70", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "70";
 					new Equip_101_conf
@@ -2252,7 +2252,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD201_V21", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD201_V21", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "21";
 					new Equip_201_conf
@@ -2260,7 +2260,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD202_V21", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD202_V21", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "21";
 					new Equip_202_conf
@@ -2268,7 +2268,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD202_V22", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD202_V22", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "22";
 					new Equip_202_conf
@@ -2276,7 +2276,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD202_V23", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD202_V23", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "23";
 					new Equip_202_conf
@@ -2284,7 +2284,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD202_V50", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD202_V50", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "50";
 					new Equip_202_conf
@@ -2292,7 +2292,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD820_V10", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD820_V10", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "820_10";
 					new Equip_202_conf
@@ -2300,7 +2300,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD821_V10", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD821_V10", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "821_10";
 					new Equip_201_conf
@@ -2308,7 +2308,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD302", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD302", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "20";
 					new Equip_302_conf
@@ -2316,7 +2316,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD303", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD303", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "20";
 					new Equip_303_conf
@@ -2324,9 +2324,9 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text7, "Equip_MD590", false) == 0)
+				else if (Operators.CompareString(text7, "Equip_MD590", false) == (DialogResult)0)
 				{
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 3;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)3;
 					new Equip_590_conf
 					{
 						MdiParent = this
@@ -2340,11 +2340,11 @@ namespace iS800
 					}.Show();
 				}
 			}
-			else if (Operators.CompareString(text3, "Monitoração - Linha MD", false) == 0)
+			else if (Operators.CompareString(text3, "Monitoração - Linha MD", false) == (DialogResult)0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 				string text8 = text;
-				if (Operators.CompareString(text8, "Equip_MD101_V43", false) == 0)
+				if (Operators.CompareString(text8, "Equip_MD101_V43", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "43";
 					new Equip_101_mon
@@ -2352,7 +2352,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD101_V70", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD101_V70", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "70";
 					new Equip_101_mon
@@ -2360,32 +2360,32 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD201_V21", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD201_V21", false) == (DialogResult)0)
 				{
 					new Equip_201_mon
 					{
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD202_V21_MODBUS", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD202_V21_MODBUS", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "21";
-					Geral.Config_geral.Protocolo = 1;
+					Geral.Config_geral.Protocolo = (HorizontalAlignment)1;
 					new Equip_202_mon
 					{
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD202_V21_RADIO", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD202_V21_RADIO", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "21";
-					Geral.Config_geral.Protocolo = 2;
+					Geral.Config_geral.Protocolo = (HorizontalAlignment)2;
 					new Equip_202_mon
 					{
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD202_V22", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD202_V22", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "22";
 					new Equip_202_mon
@@ -2393,7 +2393,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD202_V50", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD202_V50", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "50";
 					new Equip_202_mon
@@ -2401,7 +2401,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD810_V10", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD810_V10", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "810_10";
 					new Equip_101_mon
@@ -2409,7 +2409,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text8, "Equip_MD820_V10", false) == 0)
+				else if (Operators.CompareString(text8, "Equip_MD820_V10", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "820_10";
 					new Equip_202_mon
@@ -2425,11 +2425,11 @@ namespace iS800
 					}.Show();
 				}
 			}
-			else if (Operators.CompareString(text3, "Calibração - Linha MD", false) == 0)
+			else if (Operators.CompareString(text3, "Calibração - Linha MD", false) == (DialogResult)0)
 			{
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				string text9 = text;
-				if (Operators.CompareString(text9, "Equip_MD101_V43", false) == 0)
+				if (Operators.CompareString(text9, "Equip_MD101_V43", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "43";
 					new Equip_101_cal
@@ -2437,7 +2437,7 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text9, "Equip_MD101_V70", false) == 0)
+				else if (Operators.CompareString(text9, "Equip_MD101_V70", false) == (DialogResult)0)
 				{
 					Geral.Config_geral.Versao = "70";
 					new Equip_101_cal
@@ -2445,14 +2445,14 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text9, "Equip_MD202", false) == 0)
+				else if (Operators.CompareString(text9, "Equip_MD202", false) == (DialogResult)0)
 				{
 					new Equip_202_cal
 					{
 						MdiParent = this
 					}.Show();
 				}
-				else if (Operators.CompareString(text9, "Equip_MD820", false) == 0)
+				else if (Operators.CompareString(text9, "Equip_MD820", false) == (DialogResult)0)
 				{
 					new Equip_202_cal
 					{
@@ -2475,7 +2475,7 @@ namespace iS800
 			InstalledFontCollection installedFontCollection = new InstalledFontCollection();
 			foreach (FontFamily fontFamily in installedFontCollection.Families)
 			{
-				if (Operators.CompareString(fontFamily.Name.ToLower(), FontName.ToLower(), false) == 0)
+				if (Operators.CompareString(fontFamily.Name.ToLower(), FontName.ToLower(), false) == (DialogResult)0)
 				{
 					return true;
 				}
@@ -2495,24 +2495,24 @@ namespace iS800
 			string fileName = text + "\\config.ini";
 			IniFile iniFile = new IniFile(fileName);
 			Comunicacao.Config_sistema.tipo_interface = iniFile.ReadInteger("Interfaces", "tipo_interface", 100);
-			if (Comunicacao.Config_sistema.tipo_interface == 100)
+			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)100)
 			{
-				Comunicacao.Config_sistema.tipo_interface = 1;
-				Comunicacao.Config_sistema.Serial.Baudrate = 3;
-				Comunicacao.Config_sistema.Serial.DataBits = 4;
-				Comunicacao.Config_sistema.Serial.StopBits = 1;
-				Comunicacao.Config_sistema.Serial.Parity = 0;
+				Comunicacao.Config_sistema.tipo_interface = (HorizontalAlignment)1;
+				Comunicacao.Config_sistema.Serial.Baudrate = (HorizontalAlignment)3;
+				Comunicacao.Config_sistema.Serial.DataBits = (HorizontalAlignment)4;
+				Comunicacao.Config_sistema.Serial.StopBits = (HorizontalAlignment)1;
+				Comunicacao.Config_sistema.Serial.Parity = (HorizontalAlignment)0;
 				Comunicacao.Config_sistema.Serial.Porta_serial = "COM1";
 				Comunicacao.Config_sistema.Serial.PortaSerialAtiva = false;
 				Comunicacao.Config_sistema.Tcpip.IP = "169.254.75.100";
-				Comunicacao.Config_sistema.Tcpip.Porta = 502;
+				Comunicacao.Config_sistema.Tcpip.Porta = (HorizontalAlignment)502;
 				Comunicacao.Config_sistema.Wifi.IP = "192.168.1.100";
-				Comunicacao.Config_sistema.Wifi.Porta = 502;
+				Comunicacao.Config_sistema.Wifi.Porta = (HorizontalAlignment)502;
 				Comunicacao.Config_sistema.Wifi.SSID = "ICTEL WIFI RS232";
 				Comunicacao.Config_sistema.Wifi.PassWord = "12345678";
 				Comunicacao.Config_sistema.Retry = Conversions.ToString(5);
 				Comunicacao.Config_sistema.Dir_dados = ".\\";
-				Interaction.MsgBox("Não foi possível carregar as configurações! Foram utilizadas configurações Padrão!", 16, null);
+				Interaction.MsgBox("Não foi possível carregar as configurações! Foram utilizadas configurações Padrão!", (MsgBoxStyle)16, null);
 			}
 			else
 			{
@@ -2525,9 +2525,9 @@ namespace iS800
 				Comunicacao.Config_sistema.Tcpip.Porta = iniFile.ReadInteger("EThernet TCP/IP RS232", "porta", 0);
 				Comunicacao.Config_sistema.Retry = Conversions.ToString(iniFile.ReadInteger("Geral", "retry", 5));
 			}
-			Geral.Ctrl_equipamento = 0;
-			Geral.Ctrl_operacao = 0;
-			Geral.Ctrl_versao = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)0;
+			Geral.Ctrl_operacao = (HorizontalAlignment)0;
+			Geral.Ctrl_versao = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.ToolStripComboBox_equipamento.Items.Clear();
 			this.ToolStripComboBox_equipamento.Items.Add("------");
@@ -2535,12 +2535,12 @@ namespace iS800
 			this.ToolStripComboBox_equipamento.Items.Add("RT 820");
 			this.ToolStripComboBox_equipamento.Items.Add("RT 821");
 			this.ToolStripComboBox_equipamento.Items.Add("CT 850");
-			this.ToolStripComboBox_equipamento.SelectedIndex = 0;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)0;
 			this.ToolStripComboBox_versao.Items.Clear();
 			this.ToolStripComboBox_versao.Items.Add("----------");
 			this.ToolStripComboBox_versao.Items.Add("Versão 3.0");
 			this.ToolStripComboBox_versao.Items.Add("Versão 3.8");
-			this.ToolStripComboBox_versao.SelectedIndex = 0;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)0;
 			this.AdicionaMenuRT821_380();
 			RT_geral.Tela_limpa_Ctrl(RT_geral.Telas_RT_810);
 			RT_geral.Tela_limpa_Ctrl(RT_geral.Telas_RT_820);
@@ -2564,7 +2564,7 @@ namespace iS800
 			this.RT810ToolStripMenuItem2.Text = "MD 101";
 			this.RT820ToolStripMenuItem2.Text = "MD 202";
 			this.RT821ToolStripMenuItem2.Text = "MD 201";
-			if (Comunicacao.Config_sistema.tipo_interface == 2)
+			if (Comunicacao.Config_sistema.tipo_interface == (DialogResult)2)
 			{
 				this.ToolStripButton_serial.Image = Resources.rj45_128x128;
 			}
@@ -2602,40 +2602,40 @@ namespace iS800
 			{
 				if (bytesToRead != 0)
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					int num2 = bytesToRead - 1;
 					for (int i = num; i <= num2; i++)
 					{
 						Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] = (byte)this.SerialPort1.ReadChar();
-						if (Comunicacao.Ctrl_Com.Cont_rx == 0)
+						if (Comunicacao.Ctrl_Com.Cont_rx == (DialogResult)0)
 						{
 							Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 						}
-						else if (Comunicacao.Ctrl_Com.Cont_rx == 1)
+						else if (Comunicacao.Ctrl_Com.Cont_rx == (DialogResult)1)
 						{
 							byte b = Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx];
-							if (b == 3)
+							if (b == (DialogResult)3)
 							{
-								Comunicacao.Ctrl_Com.Tipo_funcao = 3;
+								Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)3;
 								Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 							}
-							else if (b == 16)
+							else if (b == (DialogResult)16)
 							{
-								Comunicacao.Ctrl_Com.Tipo_funcao = 16;
+								Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)16;
 								Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 							}
 							else
 							{
-								Comunicacao.Ctrl_Com.Tipo_funcao = 0;
-								Comunicacao.Ctrl_Com.Cont_rx = 0;
+								Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)0;
+								Comunicacao.Ctrl_Com.Cont_rx = (HorizontalAlignment)0;
 							}
 						}
 						else if (Comunicacao.Ctrl_Com.Tipo_funcao != 0)
 						{
 							int tipo_funcao = Comunicacao.Ctrl_Com.Tipo_funcao;
-							if (tipo_funcao == 3)
+							if (tipo_funcao == (DialogResult)3)
 							{
-								if (Comunicacao.Ctrl_Com.Cont_rx == 2)
+								if (Comunicacao.Ctrl_Com.Cont_rx == (DialogResult)2)
 								{
 									Comunicacao.Ctrl_Com.Num_bytes = (int)(Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] + 2);
 									Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
@@ -2644,34 +2644,34 @@ namespace iS800
 								{
 									Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 									Comunicacao.Ctrl_Com.Num_bytes = Comunicacao.Ctrl_Com.Num_bytes - 1;
-									if (Comunicacao.Ctrl_Com.Num_bytes == 0)
+									if (Comunicacao.Ctrl_Com.Num_bytes == (DialogResult)0)
 									{
 										this.Timer_timeout.Enabled = false;
 										int num3 = (int)(Comunicacao.Buffer_resp[2] + 3);
 										if (Comunicacao.Crc16_RX(ref num3))
 										{
-											Comunicacao.Ctrl_Com.Frame = 0;
+											Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 											return;
 										}
-										Comunicacao.Ctrl_Com.Frame = 2;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)2;
 										return;
 									}
 								}
 							}
-							else if (tipo_funcao == 16)
+							else if (tipo_funcao == (DialogResult)16)
 							{
-								if (Comunicacao.Ctrl_Com.Cont_rx == 7)
+								if (Comunicacao.Ctrl_Com.Cont_rx == (DialogResult)7)
 								{
-									if (Comunicacao.Ctrl_Com.Num_bytes == 0)
+									if (Comunicacao.Ctrl_Com.Num_bytes == (DialogResult)0)
 									{
 										this.Timer_timeout.Enabled = false;
-										int num3 = 6;
+										int num3 = (HorizontalAlignment)6;
 										if (Comunicacao.Crc16_RX(ref num3))
 										{
-											Comunicacao.Ctrl_Com.Frame = 0;
+											Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 											return;
 										}
-										Comunicacao.Ctrl_Com.Frame = 2;
+										Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)2;
 										return;
 									}
 								}
@@ -2694,21 +2694,21 @@ namespace iS800
 			{
 				if (bytesToRead != 0)
 				{
-					int num = 0;
+					int num = (HorizontalAlignment)0;
 					int num2 = bytesToRead - 1;
 					int i = num;
 					while (i <= num2)
 					{
 						Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] = (byte)this.SerialPort1.ReadChar();
-						if (Comunicacao.Ctrl_Com.Tipo_funcao == 100)
+						if (Comunicacao.Ctrl_Com.Tipo_funcao == (DialogResult)100)
 						{
 							Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 							if (Comunicacao.Calcula_rx_chksum(Comunicacao.Ctrl_Com.Cont_rx - 1))
 							{
-								Comunicacao.Ctrl_Com.Frame = 0;
+								Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 								return;
 							}
-							Comunicacao.Ctrl_Com.Frame = 2;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)2;
 							return;
 						}
 						else
@@ -2716,15 +2716,15 @@ namespace iS800
 							switch (Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx])
 							{
 							case 1:
-								if (Comunicacao.Ctrl_Com.Cont_rx == 0)
+								if (Comunicacao.Ctrl_Com.Cont_rx == (DialogResult)0)
 								{
-									Comunicacao.Ctrl_Com.Tipo_funcao = 1;
+									Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)1;
 									Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 								}
 								else
 								{
-									Comunicacao.Ctrl_Com.Cont_rx = 0;
-									Comunicacao.Ctrl_Com.Tipo_funcao = 0;
+									Comunicacao.Ctrl_Com.Cont_rx = (HorizontalAlignment)0;
+									Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)0;
 								}
 								break;
 							case 2:
@@ -2732,7 +2732,7 @@ namespace iS800
 							case 3:
 								if (Comunicacao.Ctrl_Com.Cont_rx != 0)
 								{
-									Comunicacao.Ctrl_Com.Tipo_funcao = 100;
+									Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)100;
 									Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
 								}
 								break;
@@ -2777,19 +2777,19 @@ namespace iS800
 				try
 				{
 					ProjectData.ClearProjectError();
-					num = 2;
+					num = (HorizontalAlignment)2;
 					Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] = (byte)this.SerialPort1.ReadChar();
-					if (Comunicacao.Ctrl_Com.Cont_rx == 0)
+					if (Comunicacao.Ctrl_Com.Cont_rx == (DialogResult)0)
 					{
-						Comunicacao.Ctrl_Com.Tipo_funcao = 1;
+						Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)1;
 					}
 					switch (Comunicacao.Ctrl_Com.Tipo_funcao)
 					{
 					case 1:
-						if (Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] == 204)
+						if (Comunicacao.Buffer_resp[Comunicacao.Ctrl_Com.Cont_rx] == (DialogResult)204)
 						{
-							Comunicacao.Ctrl_Com.Tipo_funcao = 2;
-							Comunicacao.Ctrl_Com.Cont_rx = 1;
+							Comunicacao.Ctrl_Com.Tipo_funcao = (HorizontalAlignment)2;
+							Comunicacao.Ctrl_Com.Cont_rx = (HorizontalAlignment)1;
 						}
 						break;
 					case 2:
@@ -2797,7 +2797,7 @@ namespace iS800
 						if (Comunicacao.Ctrl_Com.Cont_rx >= Comunicacao.Ctrl_Com.Numero_bytes_rx)
 						{
 							this.Timer_timeout.Enabled = false;
-							Comunicacao.Ctrl_Com.Frame = 0;
+							Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)0;
 						}
 						break;
 					}
@@ -2807,7 +2807,7 @@ namespace iS800
 					num2 = -1;
 										IL_E6:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
+				catch when (endfilter(obj is Exception & num != 0 & num2 == (DialogResult)0))
 				{
 					Exception ex = (Exception)obj2;
 					goto IL_D2;
@@ -2824,9 +2824,9 @@ namespace iS800
 		// Token: 0x060028D2 RID: 10450 RVA: 0x00429E8C File Offset: 0x0042828C
 		private void Timer_timeout_Tick(object sender, EventArgs e)
 		{
-			Comunicacao.Ctrl_Com.Frame = 3;
+			Comunicacao.Ctrl_Com.Frame = (HorizontalAlignment)3;
 			this.Timer_timeout.Enabled = false;
-			this.Timer_timeout.Interval = 2000;
+			this.Timer_timeout.Interval = (HorizontalAlignment)2000;
 		}
 
 		// Token: 0x060028D3 RID: 10451 RVA: 0x00429EB8 File Offset: 0x004282B8
@@ -2886,15 +2886,15 @@ namespace iS800
 			{
 			case 0:
 				msg = " Comando executado com sucesso ";
-				tipo = 1;
+				tipo = (HorizontalAlignment)1;
 				break;
 			case 2:
 				msg = " Erro na recepção do bloco de dados (ChkSum) ";
-				tipo = 6;
+				tipo = (HorizontalAlignment)6;
 				break;
 			case 3:
 				msg = " Erro na recepção do bloco de dados (TimeOut) ";
-				tipo = 5;
+				tipo = (HorizontalAlignment)5;
 				break;
 			}
 			Comunicacao.Escreve_dados_buffer_ouvidor(tipo, msg);
@@ -2958,7 +2958,7 @@ namespace iS800
 		public void Seleciona_tela(bool Troca)
 		{
 			int num = checked(Geral.Ctrl_equipamento + Geral.Ctrl_operacao + Geral.Ctrl_versao);
-			if (num == 109030)
+			if (num == (DialogResult)109030)
 			{
 				if (!RT_geral.Telas_RT_810.Configuracao)
 				{
@@ -2975,14 +2975,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 108030)
+			else if (num == (DialogResult)108030)
 			{
 				if (!RT_geral.Telas_RT_810.Configuracao)
 				{
@@ -2999,14 +2999,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 101030)
+			else if (num == (DialogResult)101030)
 			{
 				if (!RT_geral.Telas_RT_810.Configuracao)
 				{
@@ -3023,14 +3023,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 101020)
+			else if (num == (DialogResult)101020)
 			{
 				if (!RT_geral.Telas_RT_810_200.Configuracao)
 				{
@@ -3047,14 +3047,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 102030)
+			else if (num == (DialogResult)102030)
 			{
 				if (!RT_geral.Telas_GC_82x.Configuracao)
 				{
@@ -3071,14 +3071,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = true;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 107030)
+			else if (num == (DialogResult)107030)
 			{
 				if (!RT_geral.Telas_GC_82x.Configuracao)
 				{
@@ -3096,14 +3096,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = true;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 207030)
+			else if (num == (DialogResult)207030)
 			{
 				if (!RT_geral.Telas_GC_82x.Calibracao)
 				{
@@ -3117,14 +3117,14 @@ namespace iS800
 					this.ToolStripButton_Configuracao.Enabled = true;
 					this.ToolStripButton_Calibracao.Enabled = true;
 					this.ToolStripButton_Monitoracao.Enabled = true;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 102036)
+			else if (num == (DialogResult)102036)
 			{
 				if (!RT_geral.Telas_RT_820_360.Configuracao)
 				{
@@ -3141,14 +3141,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = true;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 102040)
+			else if (num == (DialogResult)102040)
 			{
 				if (!RT_geral.Telas_RT_820_360.Configuracao)
 				{
@@ -3165,14 +3165,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = true;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 102020)
+			else if (num == (DialogResult)102020)
 			{
 				if (!RT_geral.Telas_RT_820_200.Configuracao)
 				{
@@ -3189,14 +3189,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = true;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 103030)
+			else if (num == (DialogResult)103030)
 			{
 				if (!RT_geral.Telas_RT_821.Configuracao)
 				{
@@ -3213,14 +3213,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = true;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 103038)
+			else if (num == (DialogResult)103038)
 			{
 				if (!RT_geral.Telas_RT_821.Configuracao)
 				{
@@ -3237,14 +3237,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = true;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 103020)
+			else if (num == (DialogResult)103020)
 			{
 				if (!RT_geral.Telas_RT_821_200.Configuracao)
 				{
@@ -3261,14 +3261,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = true;
 					this.RT850ToolStripMenuItem.Checked = false;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 105020)
+			else if (num == (DialogResult)105020)
 			{
 				if (!RT_geral.Telas_RT_830_200.Configuracao)
 				{
@@ -3285,14 +3285,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = true;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 106020)
+			else if (num == (DialogResult)106020)
 			{
 				if (!RT_geral.Telas_RT_831_200.Configuracao)
 				{
@@ -3309,14 +3309,14 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = true;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 104030)
+			else if (num == (DialogResult)104030)
 			{
 				if (!RT_geral.Telas_RT_850.Configuracao)
 				{
@@ -3333,18 +3333,18 @@ namespace iS800
 					this.RT820ToolStripMenuItem.Checked = false;
 					this.RT821ToolStripMenuItem.Checked = false;
 					this.RT850ToolStripMenuItem.Checked = true;
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 302030 || num == 302040)
+			else if (num == (DialogResult)302030 || num == (DialogResult)302040)
 			{
 				if (!RT_geral.Telas_RT_820.Monitoracao)
 				{
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 					RT_geral.Telas_RT_820.Monitoracao = true;
 					new Equip_820_mon
 					{
@@ -3361,14 +3361,14 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 303030)
+			else if (num == (DialogResult)303030)
 			{
 				if (!RT_geral.Telas_RT_821.Monitoracao)
 				{
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 					RT_geral.Telas_RT_821.Monitoracao = true;
 					new Equip_821_mon
 					{
@@ -3385,14 +3385,14 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
-			else if (num == 301030)
+			else if (num == (DialogResult)301030)
 			{
 				if (!RT_geral.Telas_RT_810.Monitoracao)
 				{
-					Comunicacao.Ctrl_Com.Tipo_protocolo = 2;
+					Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)2;
 					RT_geral.Telas_RT_810.Monitoracao = true;
 					new Equip_810_mon
 					{
@@ -3409,7 +3409,7 @@ namespace iS800
 				}
 				else
 				{
-					Interaction.MsgBox("Tela de configuração já carregada !", 0, null);
+					Interaction.MsgBox("Tela de configuração já carregada !", (MsgBoxStyle)0, null);
 				}
 			}
 			else
@@ -3427,7 +3427,7 @@ namespace iS800
 		// Token: 0x060028E2 RID: 10466 RVA: 0x0042ADE4 File Offset: 0x004291E4
 		private void Configuracao_ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_operacao = 100000;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
 			this.Seleciona_tela(true);
 		}
 
@@ -3443,14 +3443,14 @@ namespace iS800
 		// Token: 0x060028E4 RID: 10468 RVA: 0x0042AE18 File Offset: 0x00429218
 		private void Calibração_ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_operacao = 200000;
+			Geral.Ctrl_operacao = (HorizontalAlignment)200000;
 			this.Seleciona_tela(true);
 		}
 
 		// Token: 0x060028E5 RID: 10469 RVA: 0x0042AE2C File Offset: 0x0042922C
 		private void ToolStripButton_serial_Click(object sender, EventArgs e)
 		{
-			MyProject.Forms.Configuracao.StartPosition = 1;
+			MyProject.Forms.Configuracao.StartPosition = (HorizontalAlignment)1;
 			MyProject.Forms.Configuracao.ShowDialog();
 		}
 
@@ -3462,14 +3462,14 @@ namespace iS800
 		// Token: 0x060028E7 RID: 10471 RVA: 0x0042AE54 File Offset: 0x00429254
 		private void RT810_Versão30ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 1000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 810;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)1000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)810;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3477,11 +3477,11 @@ namespace iS800
 		// Token: 0x060028E8 RID: 10472 RVA: 0x0042AEB8 File Offset: 0x004292B8
 		private void RT821_Versão30ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 3000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 3;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)3;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3489,11 +3489,11 @@ namespace iS800
 		// Token: 0x060028E9 RID: 10473 RVA: 0x0042AF08 File Offset: 0x00429308
 		private void RT820_Versão30ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 2000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 2;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)2;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3501,11 +3501,11 @@ namespace iS800
 		// Token: 0x060028EA RID: 10474 RVA: 0x0042AF58 File Offset: 0x00429358
 		private void RT850_Versão30ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 4000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 4;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)4000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)4;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3526,17 +3526,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 1000;
-			Geral.Ctrl_versao = 20;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 810;
-			Geral.Equipamento_versao = 2;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)1000;
+			Geral.Ctrl_versao = (HorizontalAlignment)20;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)810;
+			Geral.Equipamento_versao = (HorizontalAlignment)2;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3546,14 +3546,14 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 2000;
-			Geral.Ctrl_versao = 20;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 2;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+			Geral.Ctrl_versao = (HorizontalAlignment)20;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)2;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3563,14 +3563,14 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 3000;
-			Geral.Ctrl_versao = 20;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 3;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
+			Geral.Ctrl_versao = (HorizontalAlignment)20;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)3;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3578,7 +3578,7 @@ namespace iS800
 		// Token: 0x060028F0 RID: 10480 RVA: 0x0042B110 File Offset: 0x00429510
 		private void ToolStripButton_FindEquip_Click(object sender, EventArgs e)
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 			Comunicacao.Config_sistema.endereco_encontrado = false;
 			Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Leitura_pagina_multi_interface(0, 255, 4);
 			if (!ctrl_RESP_.Status)
@@ -3594,7 +3594,7 @@ namespace iS800
 				int build = (int)Comunicacao.Buffer_resp[7] * 256 + (int)Comunicacao.Buffer_resp[8];
 				int release = (int)Comunicacao.Buffer_resp[9] * 256 + (int)Comunicacao.Buffer_resp[10];
 				int num3 = num;
-				if (num3 == 810 || num3 == 820 || num3 == 821 || num3 == 830 || num3 == 831 || num3 == 850 || num3 == 855 || num3 == 856)
+				if (num3 == (DialogResult)810 || num3 == (DialogResult)820 || num3 == (DialogResult)821 || num3 == (DialogResult)830 || num3 == (DialogResult)831 || num3 == (DialogResult)850 || num3 == (DialogResult)855 || num3 == (DialogResult)856)
 				{
 					new Discover
 					{
@@ -3605,12 +3605,12 @@ namespace iS800
 						MdiParent = this
 					}.Show();
 				}
-				else if (num3 == 824 || num3 == 828 || num3 == 920)
+				else if (num3 == (DialogResult)824 || num3 == (DialogResult)828 || num3 == (DialogResult)920)
 				{
 					Discover discover = new Discover();
-					if (num == 920 & num2 == 300)
+					if (num == (DialogResult)920 & num2 == (DialogResult)300)
 					{
-						num2 = 3;
+						num2 = (HorizontalAlignment)3;
 					}
 					discover.equipamento = num;
 					discover.versao = num2;
@@ -3632,14 +3632,14 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 5000;
-			Geral.Ctrl_versao = 20;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 3;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)5000;
+			Geral.Ctrl_versao = (HorizontalAlignment)20;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)3;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3649,14 +3649,14 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 6000;
-			Geral.Ctrl_versao = 20;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 3;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)6000;
+			Geral.Ctrl_versao = (HorizontalAlignment)20;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)3;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -3665,14 +3665,14 @@ namespace iS800
 		private string Trata_Cal_SA(int Def4ma, int Def20mA, int qtd_SA, int buf4mA, int buf20mA)
 		{
 			string text = "Calibração SA para 4mA:" + Environment.NewLine;
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = qtd_SA - 1;
 				for (int i = num; i <= num2; i++)
 				{
 					int num3 = (int)Comunicacao.Buffer_resp[buf4mA + i * 2] * 256 + (int)Comunicacao.Buffer_resp[buf4mA + 1 + i * 2];
-					if (num3 == 0)
+					if (num3 == (DialogResult)0)
 					{
 						text = string.Concat(new string[]
 						{
@@ -3729,12 +3729,12 @@ namespace iS800
 					}
 				}
 				text = text + Environment.NewLine + "Calibração SA para 20mA:" + Environment.NewLine;
-				int num5 = 0;
+				int num5 = (HorizontalAlignment)0;
 				int num6 = qtd_SA - 1;
 				for (int i = num5; i <= num6; i++)
 				{
 					int num7 = (int)Comunicacao.Buffer_resp[buf20mA + i * 2] * 256 + (int)Comunicacao.Buffer_resp[buf20mA + 1 + i * 2];
-					if (num7 == 0)
+					if (num7 == (DialogResult)0)
 					{
 						text = string.Concat(new string[]
 						{
@@ -3798,14 +3798,14 @@ namespace iS800
 		private string Trata_Cal(int Def4ma, int Def20mA, int qtd_EA, int buf4mA, int buf20mA)
 		{
 			string text = "Calibração para 4mA:" + Environment.NewLine;
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = qtd_EA - 1;
 				for (int i = num; i <= num2; i++)
 				{
 					int num3 = (int)Comunicacao.Buffer_resp[buf4mA + i * 2] * 256 + (int)Comunicacao.Buffer_resp[buf4mA + 1 + i * 2];
-					if (num3 == 0)
+					if (num3 == (DialogResult)0)
 					{
 						text = string.Concat(new string[]
 						{
@@ -3862,12 +3862,12 @@ namespace iS800
 					}
 				}
 				text = text + Environment.NewLine + "Calibração para 20mA:" + Environment.NewLine;
-				int num5 = 0;
+				int num5 = (HorizontalAlignment)0;
 				int num6 = qtd_EA - 1;
 				for (int i = num5; i <= num6; i++)
 				{
 					int num7 = (int)Comunicacao.Buffer_resp[buf20mA + i * 2] * 256 + (int)Comunicacao.Buffer_resp[buf20mA + 1 + i * 2];
-					if (num7 == 0)
+					if (num7 == (DialogResult)0)
 					{
 						text = string.Concat(new string[]
 						{
@@ -3936,69 +3936,69 @@ namespace iS800
 		// Token: 0x060028F6 RID: 10486 RVA: 0x0042BBC4 File Offset: 0x00429FC4
 		private void ExecutaCalibracaoRT(int equipamento, int versao)
 		{
-			int num = 0;
-			int num2 = 0;
-			int num3 = 0;
+			int num = (HorizontalAlignment)0;
+			int num2 = (HorizontalAlignment)0;
+			int num3 = (HorizontalAlignment)0;
 			int bloco;
 			switch (equipamento)
 			{
 			case 810:
-				if (versao == 200)
+				if (versao == (DialogResult)200)
 				{
-					bloco = 1;
-					num = 1;
-					num2 = 8;
-					num3 = 0;
+					bloco = (HorizontalAlignment)1;
+					num = (HorizontalAlignment)1;
+					num2 = (HorizontalAlignment)8;
+					num3 = (HorizontalAlignment)0;
 				}
-				else if (versao == 300)
+				else if (versao == (DialogResult)300)
 				{
-					bloco = 4;
-					num = 4;
-					num2 = 8;
-					num3 = 1;
+					bloco = (HorizontalAlignment)4;
+					num = (HorizontalAlignment)4;
+					num2 = (HorizontalAlignment)8;
+					num3 = (HorizontalAlignment)1;
 				}
 				break;
 			case 820:
-				if (versao == 200)
+				if (versao == (DialogResult)200)
 				{
-					bloco = 2;
-					num = 16;
-					num2 = 8;
-					num3 = 8;
+					bloco = (HorizontalAlignment)2;
+					num = (HorizontalAlignment)16;
+					num2 = (HorizontalAlignment)8;
+					num3 = (HorizontalAlignment)8;
 				}
-				else if (versao == 300)
+				else if (versao == (DialogResult)300)
 				{
-					bloco = 5;
-					num = 16;
-					num2 = 8;
-					num3 = 8;
+					bloco = (HorizontalAlignment)5;
+					num = (HorizontalAlignment)16;
+					num2 = (HorizontalAlignment)8;
+					num3 = (HorizontalAlignment)8;
 				}
-				else if (versao == 400)
+				else if (versao == (DialogResult)400)
 				{
-					bloco = 5;
-					num = 0;
-					num2 = 0;
-					num3 = 0;
+					bloco = (HorizontalAlignment)5;
+					num = (HorizontalAlignment)0;
+					num2 = (HorizontalAlignment)0;
+					num3 = (HorizontalAlignment)0;
 				}
 				break;
 			case 821:
-				if (versao == 200)
+				if (versao == (DialogResult)200)
 				{
-					bloco = 3;
-					num = 0;
-					num2 = 8;
-					num3 = 3;
+					bloco = (HorizontalAlignment)3;
+					num = (HorizontalAlignment)0;
+					num2 = (HorizontalAlignment)8;
+					num3 = (HorizontalAlignment)3;
 				}
-				else if (versao == 300)
+				else if (versao == (DialogResult)300)
 				{
-					bloco = 6;
-					num = 4;
-					num2 = 8;
-					num3 = 3;
+					bloco = (HorizontalAlignment)6;
+					num = (HorizontalAlignment)4;
+					num2 = (HorizontalAlignment)8;
+					num3 = (HorizontalAlignment)3;
 				}
 				break;
 			}
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 			if (!Mod_MD.Escrita_pagina_RT(256, 2010, bloco).Status)
 			{
 				MessageBox.Show("Calibração não respondeu ao comando de início!");
@@ -4014,7 +4014,7 @@ namespace iS800
 				}
 				int num4 = Linha_RT.Atualiza_GT2010(768);
 				Comunicacao.Rotina_Delay(5000L);
-				if (num4 == 1)
+				if (num4 == (DialogResult)1)
 				{
 					goto Block_11;
 				}
@@ -4043,7 +4043,7 @@ namespace iS800
 				{
 					text = text + "Calibração Analógica" + Environment.NewLine;
 					text = text + "Canal:  4mA:    20mA:  Resultado: (%)" + Environment.NewLine;
-					int num5 = 0;
+					int num5 = (HorizontalAlignment)0;
 					int num6 = num - 1;
 					for (int i = num5; i <= num6; i++)
 					{
@@ -4088,8 +4088,8 @@ namespace iS800
 					text += Environment.NewLine;
 					text = text + "Calibração Entradas Digitais" + Environment.NewLine;
 					text = text + "Canal:  Valor:  Resultado:" + Environment.NewLine;
-					int num9 = 1;
-					int num12 = 0;
+					int num9 = (HorizontalAlignment)1;
+					int num12 = (HorizontalAlignment)0;
 					int num13 = num2 - 1;
 					for (int i = num12; i <= num13; i++)
 					{
@@ -4115,7 +4115,7 @@ namespace iS800
 							text2,
 							Environment.NewLine
 						});
-						num9 *= 2;
+						num9 *= (HorizontalAlignment)2;
 					}
 				}
 				if (num3 > 0)
@@ -4123,8 +4123,8 @@ namespace iS800
 					text += Environment.NewLine;
 					text = text + "Calibração Saídas Digitais" + Environment.NewLine;
 					text = text + "Canal:  Valor:  Resultado:" + Environment.NewLine;
-					int num9 = 1;
-					int num14 = 0;
+					int num9 = (HorizontalAlignment)1;
+					int num14 = (HorizontalAlignment)0;
 					int num15 = num3 - 1;
 					for (int i = num14; i <= num15; i++)
 					{
@@ -4142,7 +4142,7 @@ namespace iS800
 						{
 							text2 = "???";
 						}
-						num9 *= 2;
+						num9 *= (HorizontalAlignment)2;
 						text = string.Concat(new string[]
 						{
 							text,
@@ -4160,7 +4160,7 @@ namespace iS800
 		// Token: 0x060028F7 RID: 10487 RVA: 0x0042C1A8 File Offset: 0x0042A5A8
 		private void MostaCalibracao420PlacaSA(int equipamento, int versao)
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 			if (!Mod_MD.Leitura_pagina(0, 255, 4).Status)
 			{
 				MessageBox.Show("Não houve resposta do equipamento!");
@@ -4177,7 +4177,7 @@ namespace iS800
 					MessageBox.Show("Equipamento não corresponde ao solicitado!");
 					return;
 				}
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				Mod_MD.CTRL_RESP_1 ctrl_RESP_;
 				switch (num2)
 				{
@@ -4214,10 +4214,10 @@ namespace iS800
 				endereco = (int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4];
 				string text = "Equipamento: " + string.Format("RT{0}_{1}_{2}", num, num2 * 100 + num3, num4) + Environment.NewLine + Environment.NewLine;
 				int num6 = num;
-				if (num6 == 820)
+				if (num6 == (DialogResult)820)
 				{
 					int num7 = num2;
-					if (num7 == 4)
+					if (num7 == (DialogResult)4)
 					{
 						text += this.Trata_Cal_SA(750, 3800, 2, 3, 7);
 						MessageBox.Show(text, "Resultado da Calibração:");
@@ -4229,7 +4229,7 @@ namespace iS800
 		// Token: 0x060028F8 RID: 10488 RVA: 0x0042C3CC File Offset: 0x0042A7CC
 		private void MostaCalibracao420Placa(int equipamento, int versao)
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 			if (!Mod_MD.Leitura_pagina(0, 255, 4).Status)
 			{
 				MessageBox.Show("Não houve resposta do equipamento!");
@@ -4246,7 +4246,7 @@ namespace iS800
 					MessageBox.Show("Equipamento não corresponde ao solicitado!");
 					return;
 				}
-				Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+				Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 				Mod_MD.CTRL_RESP_1 ctrl_RESP_;
 				switch (num2)
 				{
@@ -4318,7 +4318,7 @@ namespace iS800
 				case 821:
 				{
 					int num5 = num2;
-					if (num5 == 3)
+					if (num5 == (DialogResult)3)
 					{
 						text += this.Trata_Cal(112, 4018, 4, 3, 35);
 						MessageBox.Show(text, "Resultado da Calibração:");
@@ -4334,7 +4334,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(810, 300);
@@ -4345,7 +4345,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(810, 200);
@@ -4356,7 +4356,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(820, 200);
@@ -4367,7 +4367,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(820, 300);
@@ -4378,7 +4378,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(821, 300);
@@ -4389,7 +4389,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(810, 300);
@@ -4400,7 +4400,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(810, 200);
@@ -4411,7 +4411,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(820, 200);
@@ -4422,7 +4422,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(820, 300);
@@ -4433,7 +4433,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(821, 300);
@@ -4444,7 +4444,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(821, 200);
@@ -4465,17 +4465,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 2000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 300000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 820;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)300000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4485,17 +4485,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 3000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 300000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 821;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)3000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)300000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)821;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4505,17 +4505,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 1000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 300000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 810;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)1000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)300000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)810;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4543,14 +4543,14 @@ namespace iS800
 		// Token: 0x0600290C RID: 10508 RVA: 0x0042CAB4 File Offset: 0x0042AEB4
 		private void Versão36ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 2000;
-			Geral.Ctrl_versao = 40;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 2;
-			Geral.Equipamento_selecionado = 820;
-			Geral.Equipamento_versao = 4;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+			Geral.Ctrl_versao = (HorizontalAlignment)40;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)2;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+			Geral.Equipamento_versao = (HorizontalAlignment)4;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4565,7 +4565,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420Placa(820, 400);
@@ -4576,7 +4576,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.ExecutaCalibracaoRT(820, 300);
@@ -4592,17 +4592,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 7000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 824;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)7000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)824;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4612,17 +4612,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 7000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 824;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)7000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)824;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4632,18 +4632,18 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 7000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 200000;
-			Geral.Ctrl_adicional = 824;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 824;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)7000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)200000;
+			Geral.Ctrl_adicional = (HorizontalAlignment)824;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)824;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4653,18 +4653,18 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 7000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 200000;
-			Geral.Ctrl_adicional = 828;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 824;
-			Geral.Equipamento_versao = 3;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)7000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)200000;
+			Geral.Ctrl_adicional = (HorizontalAlignment)828;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)824;
+			Geral.Equipamento_versao = (HorizontalAlignment)3;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4683,7 +4683,7 @@ namespace iS800
 		private void ToolStripButton1_Click(object sender, EventArgs e)
 		{
 			PrintDialog printDialog = new PrintDialog();
-			if (printDialog.ShowDialog() == 1)
+			if (printDialog.ShowDialog() == (DialogResult)1)
 			{
 				MessageBox.Show(printDialog.ToString());
 			}
@@ -4694,7 +4694,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			this.MostaCalibracao420PlacaSA(820, 400);
@@ -4705,7 +4705,7 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
 			new RT_820_400_SA_CALIB
@@ -4720,17 +4720,17 @@ namespace iS800
 		{
 			if (Comunicacao.Config_sistema.tipo_interface != 1)
 			{
-				Interaction.MsgBox("Equipamento não suporta a interface selecionada", 0, null);
+				Interaction.MsgBox("Equipamento não suporta a interface selecionada", (MsgBoxStyle)0, null);
 				return;
 			}
-			Geral.Ctrl_equipamento = 2000;
-			Geral.Ctrl_versao = 40;
-			Geral.Ctrl_operacao = 300000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 1;
-			Geral.Equipamento_selecionado = 820;
-			Geral.Equipamento_versao = 4;
-			Geral.Equipamento_build = 0;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)2000;
+			Geral.Ctrl_versao = (HorizontalAlignment)40;
+			Geral.Ctrl_operacao = (HorizontalAlignment)300000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)1;
+			Geral.Equipamento_selecionado = (HorizontalAlignment)820;
+			Geral.Equipamento_versao = (HorizontalAlignment)4;
+			Geral.Equipamento_build = (HorizontalAlignment)0;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4738,11 +4738,11 @@ namespace iS800
 		// Token: 0x0600291B RID: 10523 RVA: 0x0042CEB4 File Offset: 0x0042B2B4
 		private void ToolStripMenuItem3_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 8000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 4;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)8000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)4;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}
@@ -4755,11 +4755,11 @@ namespace iS800
 		// Token: 0x0600291D RID: 10525 RVA: 0x0042CF08 File Offset: 0x0042B308
 		private void Versão300ToolStripMenuItem10_Click(object sender, EventArgs e)
 		{
-			Geral.Ctrl_equipamento = 9000;
-			Geral.Ctrl_versao = 30;
-			Geral.Ctrl_operacao = 100000;
-			this.ToolStripComboBox_versao.SelectedIndex = 1;
-			this.ToolStripComboBox_equipamento.SelectedIndex = 4;
+			Geral.Ctrl_equipamento = (HorizontalAlignment)9000;
+			Geral.Ctrl_versao = (HorizontalAlignment)30;
+			Geral.Ctrl_operacao = (HorizontalAlignment)100000;
+			this.ToolStripComboBox_versao.SelectedIndex = (HorizontalAlignment)1;
+			this.ToolStripComboBox_equipamento.SelectedIndex = (HorizontalAlignment)4;
 			RT_geral.Lmte_Init_ok = false;
 			this.Seleciona_tela(true);
 		}

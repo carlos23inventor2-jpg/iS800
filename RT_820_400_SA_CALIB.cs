@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -457,7 +457,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 		}
 
@@ -465,11 +465,11 @@ namespace iS800
 		public void AtualizaMsgTela_SA_820(string texto, int cor)
 		{
 			this.mensagens.Text = texto;
-			if (cor == 0)
+			if (cor == (DialogResult)0)
 			{
 				this.mensagens.ForeColor = Color.Blue;
 			}
-			else if (cor == 1)
+			else if (cor == (DialogResult)1)
 			{
 				this.mensagens.ForeColor = Color.Red;
 			}
@@ -482,7 +482,7 @@ namespace iS800
 		// Token: 0x060016AF RID: 5807 RVA: 0x003747A0 File Offset: 0x00372BA0
 		private void bt_busca_Click(object sender, EventArgs e)
 		{
-			Comunicacao.Ctrl_Com.Tipo_protocolo = 1;
+			Comunicacao.Ctrl_Com.Tipo_protocolo = (HorizontalAlignment)1;
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				if (!Mod_MD.Leitura_pagina(0, 255, 4).Status)
@@ -497,7 +497,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 			this.nud_estacao.Value = new decimal(this.Leitura_EnderecoEstacao());
 		}
@@ -510,7 +510,7 @@ namespace iS800
 			if (!Mod_MD.Leitura_pagina(pagina, endereco, tamanho).Status)
 			{
 				this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
-				result = 0;
+				result = (HorizontalAlignment)0;
 			}
 			else
 			{
@@ -529,7 +529,7 @@ namespace iS800
 			if (!Mod_MD.Leitura_pagina(2048, 255, 1).Status)
 			{
 				this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
-				result = 0;
+				result = (HorizontalAlignment)0;
 			}
 			else
 			{
@@ -556,7 +556,7 @@ namespace iS800
 			}
 			else
 			{
-				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", 16, "Atenção");
+				Interaction.MsgBox("Porta serial não encontrada!\r\nComando não executado!", (MsgBoxStyle)16, "Atenção");
 			}
 		}
 
@@ -567,26 +567,26 @@ namespace iS800
 			{
 				this.AtualizaMsgTela_SA_820("Finalizando Calibração", 2);
 				int pagina;
-				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
+				if (RT_geral.RT_820_360_BD.calibracao_canal == (DialogResult)1)
 				{
-					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
+					if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)4)
 					{
-						pagina = 6176;
+						pagina = (HorizontalAlignment)6176;
 					}
-					else if (RT_geral.RT_820_360_BD.calibracao_range == 20)
+					else if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)20)
 					{
-						pagina = 6178;
+						pagina = (HorizontalAlignment)6178;
 					}
 				}
-				else if (RT_geral.RT_820_360_BD.calibracao_canal == 2)
+				else if (RT_geral.RT_820_360_BD.calibracao_canal == (DialogResult)2)
 				{
-					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
+					if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)4)
 					{
-						pagina = 6177;
+						pagina = (HorizontalAlignment)6177;
 					}
-					else if (RT_geral.RT_820_360_BD.calibracao_range == 20)
+					else if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)20)
 					{
-						pagina = 6179;
+						pagina = (HorizontalAlignment)6179;
 					}
 				}
 				int num = this.Leitura_ContanteCalibracao(pagina, Convert.ToInt32(this.nud_estacao.Value), 1);
@@ -601,15 +601,15 @@ namespace iS800
 			{
 				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", 2);
 				int numero_pagina;
-				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
+				if (RT_geral.RT_820_360_BD.calibracao_canal == (DialogResult)1)
 				{
-					numero_pagina = 6180;
+					numero_pagina = (HorizontalAlignment)6180;
 				}
-				else if (RT_geral.RT_820_360_BD.calibracao_canal == 2)
+				else if (RT_geral.RT_820_360_BD.calibracao_canal == (DialogResult)2)
 				{
-					numero_pagina = 6181;
+					numero_pagina = (HorizontalAlignment)6181;
 				}
-				RT_geral.RT_820_360_BD.calibracao_tipo = 0;
+				RT_geral.RT_820_360_BD.calibracao_tipo = (HorizontalAlignment)0;
 				RT_geral.RT_820_360_BD.calibracao_const = Convert.ToInt32(this.nud_contagens.Value);
 				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, 4, 0).Status)
 				{
@@ -653,25 +653,25 @@ namespace iS800
 		// Token: 0x060016B8 RID: 5816 RVA: 0x00374B5C File Offset: 0x00372F5C
 		private void rb_channel1_CheckedChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_360_BD.calibracao_canal = 1;
+			RT_geral.RT_820_360_BD.calibracao_canal = (HorizontalAlignment)1;
 		}
 
 		// Token: 0x060016B9 RID: 5817 RVA: 0x00374B6C File Offset: 0x00372F6C
 		private void rb_channel2_CheckedChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_360_BD.calibracao_canal = 2;
+			RT_geral.RT_820_360_BD.calibracao_canal = (HorizontalAlignment)2;
 		}
 
 		// Token: 0x060016BA RID: 5818 RVA: 0x00374B7C File Offset: 0x00372F7C
 		private void rb_4mA_CheckedChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_360_BD.calibracao_range = 4;
+			RT_geral.RT_820_360_BD.calibracao_range = (HorizontalAlignment)4;
 		}
 
 		// Token: 0x060016BB RID: 5819 RVA: 0x00374B8C File Offset: 0x00372F8C
 		private void rb_20mA_CheckedChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_360_BD.calibracao_range = 20;
+			RT_geral.RT_820_360_BD.calibracao_range = (HorizontalAlignment)20;
 		}
 
 		// Token: 0x060016BC RID: 5820 RVA: 0x00374B9C File Offset: 0x00372F9C
@@ -681,29 +681,29 @@ namespace iS800
 			{
 				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", 2);
 				int numero_pagina;
-				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
+				if (RT_geral.RT_820_360_BD.calibracao_canal == (DialogResult)1)
 				{
-					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
+					if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)4)
 					{
-						numero_pagina = 6176;
+						numero_pagina = (HorizontalAlignment)6176;
 					}
-					else if (RT_geral.RT_820_360_BD.calibracao_range == 20)
+					else if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)20)
 					{
-						numero_pagina = 6178;
+						numero_pagina = (HorizontalAlignment)6178;
 					}
 				}
-				else if (RT_geral.RT_820_360_BD.calibracao_canal == 2)
+				else if (RT_geral.RT_820_360_BD.calibracao_canal == (DialogResult)2)
 				{
-					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
+					if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)4)
 					{
-						numero_pagina = 6177;
+						numero_pagina = (HorizontalAlignment)6177;
 					}
-					else if (RT_geral.RT_820_360_BD.calibracao_range == 20)
+					else if (RT_geral.RT_820_360_BD.calibracao_range == (DialogResult)20)
 					{
-						numero_pagina = 6179;
+						numero_pagina = (HorizontalAlignment)6179;
 					}
 				}
-				RT_geral.RT_820_360_BD.calibracao_tipo = 0;
+				RT_geral.RT_820_360_BD.calibracao_tipo = (HorizontalAlignment)0;
 				RT_geral.RT_820_360_BD.calibracao_const = Convert.ToInt32(this.nud_contagens.Value);
 				if (!Mod_MD.Escrita_pagina_RT(numero_pagina, 4, 0).Status)
 				{

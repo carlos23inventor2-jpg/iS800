@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.CompilerServices;
 
@@ -47,7 +47,7 @@ namespace iS800
 		public static void RT_830_200_Carrega_Variaveis(string filename, RT_830_200_configurador frm)
 		{
 			IniFile iniFile = new IniFile(filename);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_equip_reservatorios.Valor - 1;
@@ -67,7 +67,7 @@ namespace iS800
 		public static void RT_830_200_Carrega_RemotasControle(string filename, RT_830_200_configurador frm)
 		{
 			IniFile iniFile = new IniFile(filename);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_recalques.Valor - 1;
@@ -121,7 +121,7 @@ namespace iS800
 		public static void RT_830_200_Carrega_Vista(string filename, RT_830_200_configurador frm)
 		{
 			IniFile iniFile = new IniFile(filename);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.qtd_vistas.Valor - 1;
@@ -132,7 +132,7 @@ namespace iS800
 					RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor = iniFile.ReadInteger(section, "NUMERO_REMOTASCONTROLE", 0);
 					RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Prioridade.Valor = iniFile.ReadInteger(section, "PRIORIDADE", 0);
 					Application.DoEvents();
-					int num3 = 0;
+					int num3 = (HorizontalAlignment)0;
 					int num4 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor - 1;
 					for (int j = num3; j <= num4; j++)
 					{
@@ -140,7 +140,7 @@ namespace iS800
 						RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Variaveis[j].Valor = iniFile.ReadInteger(section, key, 0);
 						Application.DoEvents();
 					}
-					int num5 = 0;
+					int num5 = (HorizontalAlignment)0;
 					int num6 = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_RemotasControles.Valor - 1;
 					for (int j = num5; j <= num6; j++)
 					{

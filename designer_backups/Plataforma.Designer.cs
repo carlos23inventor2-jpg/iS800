@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x020000AE RID: 174
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -147,7 +147,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(783, 24);
 			menuStrip2.Size = size;
-			this.MenuStrip1.TabIndex = 1;
+			this.MenuStrip1.TabIndex = (HorizontalAlignment)1;
 			this.MenuStrip1.Text = "MenuStrip1";
 			this.MenuEquipamentosToolStripMenuItem.DropDownItems.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
@@ -700,16 +700,16 @@
 			size = new size(49, 20);
 			sobreToolStripMenuItem.Size = size;
 			this.SobreToolStripMenuItem.Text = "Sobre";
-			this.Timer_timeout.Interval = 2000;
-			this.Timer_espera.Interval = 150;
-			this.Timer_ouvidor.Interval = 1000;
+			this.Timer_timeout.Interval = (HorizontalAlignment)2000;
+			this.Timer_espera.Interval = (HorizontalAlignment)150;
+			this.Timer_ouvidor.Interval = (HorizontalAlignment)1000;
 			this.Menu_ouvidor.Anchor = (System.Windows.Forms.AnchorStyles)10;
 			this.Menu_ouvidor.BackColor = global::System.Drawing.Color.LightCyan;
 			this.Menu_ouvidor.Dock =(System.Windows.Forms.DockStyle)0;
 			global::System.Windows.Forms.ToolStrip menu_ouvidor = this.Menu_ouvidor;
 			size = new size(32, 32);
 			menu_ouvidor.ImageScalingSize = size;
-			this.Menu_ouvidor.ImeMode = 0;
+			this.Menu_ouvidor.ImeMode = (HorizontalAlignment)0;
 			this.Menu_ouvidor.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.Menu_ouvidor_On,
@@ -724,7 +724,7 @@
 			global::System.Windows.Forms.Control menu_ouvidor3 = this.Menu_ouvidor;
 			size = new size(120, 39);
 			menu_ouvidor3.Size = size;
-			this.Menu_ouvidor.TabIndex = 7;
+			this.Menu_ouvidor.TabIndex = (HorizontalAlignment)7;
 			this.Menu_ouvidor.Text = "ToolStrip1";
 			this.Menu_ouvidor.Visible = false;
 			this.Menu_ouvidor_On.BackgroundImageLayout = (System.Windows.Forms.ImageLayout)2;
@@ -781,7 +781,7 @@
 			global::System.Windows.Forms.Control toolStrip3 = this.ToolStrip1;
 			size = new size(783, 59);
 			toolStrip3.Size = size;
-			this.ToolStrip1.TabIndex = 9;
+			this.ToolStrip1.TabIndex = (HorizontalAlignment)9;
 			this.ToolStrip1.Text = "ToolStrip1";
 			this.ToolStripSeparator1.Name = "ToolStripSeparator1";
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator6 = this.ToolStripSeparator1;
@@ -888,7 +888,7 @@
 			this.Name = "Plataforma";
 			this.Text = "iS800";
 			this.TransparencyKey = global::System.Drawing.Color.Transparent;
-			this.WindowState = 2;
+			this.WindowState = (HorizontalAlignment)2;
 			this.MenuStrip1.ResumeLayout(false);
 			this.MenuStrip1.PerformLayout();
 			this.Menu_ouvidor.ResumeLayout(false);

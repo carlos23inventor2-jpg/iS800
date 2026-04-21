@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -37,7 +37,7 @@ namespace iS800.My
 			this.IsSingleInstance = true;
 			this.EnableVisualStyles = true;
 			this.SaveMySettingsOnExit = true;
-			this.ShutdownStyle = 0;
+			this.ShutdownStyle = (HorizontalAlignment)0;
 		}
 
 		// Token: 0x06000003 RID: 3 RVA: 0x00262524 File Offset: 0x00260924

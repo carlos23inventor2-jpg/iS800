@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.CompilerServices;
 
@@ -46,7 +46,7 @@ namespace iS800
 		public static void RT_831_200_Carrega_Variaveis(string filename, RT_831_200_configurador frm)
 		{
 			IniFile iniFile = new IniFile(filename);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_reservatorios.Valor - 1;
@@ -64,7 +64,7 @@ namespace iS800
 		public static void RT_831_200_Carrega_RemotasControle(string filename, RT_831_200_configurador frm)
 		{
 			IniFile iniFile = new IniFile(filename);
-			int num = 0;
+			int num = (HorizontalAlignment)0;
 			checked
 			{
 				int num2 = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.qtd_recalques.Valor - 1;

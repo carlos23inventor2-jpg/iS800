@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x020000AE RID: 174
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -147,7 +147,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(783, 24);
 			menuStrip2.Size = size;
-			this.MenuStrip1.TabIndex = 1;
+			this.MenuStrip1.TabIndex = (HorizontalAlignment)1;
 			this.MenuStrip1.Text = "MenuStrip1";
 			this.MenuEquipamentosToolStripMenuItem.DropDownItems.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
@@ -700,23 +700,23 @@
 			size = new global::System.Drawing.Size(49, 20);
 			sobreToolStripMenuItem.Size = size;
 			this.SobreToolStripMenuItem.Text = "Sobre";
-			this.Timer_timeout.Interval = 2000;
-			this.Timer_espera.Interval = 150;
-			this.Timer_ouvidor.Interval = 1000;
-			this.Menu_ouvidor.Anchor = 10;
+			this.Timer_timeout.Interval = (HorizontalAlignment)2000;
+			this.Timer_espera.Interval = (HorizontalAlignment)150;
+			this.Timer_ouvidor.Interval = (HorizontalAlignment)1000;
+			this.Menu_ouvidor.Anchor = (HorizontalAlignment)10;
 			this.Menu_ouvidor.BackColor = global::System.Drawing.Color.LightCyan;
-			this.Menu_ouvidor.Dock = 0;
+			this.Menu_ouvidor.Dock = (HorizontalAlignment)0;
 			global::System.Windows.Forms.ToolStrip menu_ouvidor = this.Menu_ouvidor;
 			size = new global::System.Drawing.Size(32, 32);
 			menu_ouvidor.ImageScalingSize = size;
-			this.Menu_ouvidor.ImeMode = 0;
+			this.Menu_ouvidor.ImeMode = (HorizontalAlignment)0;
 			this.Menu_ouvidor.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
 			{
 				this.Menu_ouvidor_On,
 				this.Menu_ouvidor_limpa,
 				this.Menu_ouvidor_Off
 			});
-			this.Menu_ouvidor.LayoutStyle = 1;
+			this.Menu_ouvidor.LayoutStyle = (HorizontalAlignment)1;
 			global::System.Windows.Forms.Control menu_ouvidor2 = this.Menu_ouvidor;
 			location = new global::System.Drawing.Point(638, 398);
 			menu_ouvidor2.Location = location;
@@ -724,11 +724,11 @@
 			global::System.Windows.Forms.Control menu_ouvidor3 = this.Menu_ouvidor;
 			size = new global::System.Drawing.Size(120, 39);
 			menu_ouvidor3.Size = size;
-			this.Menu_ouvidor.TabIndex = 7;
+			this.Menu_ouvidor.TabIndex = (HorizontalAlignment)7;
 			this.Menu_ouvidor.Text = "ToolStrip1";
 			this.Menu_ouvidor.Visible = false;
-			this.Menu_ouvidor_On.BackgroundImageLayout = 2;
-			this.Menu_ouvidor_On.DisplayStyle = 2;
+			this.Menu_ouvidor_On.BackgroundImageLayout = (HorizontalAlignment)2;
+			this.Menu_ouvidor_On.DisplayStyle = (HorizontalAlignment)2;
 			this.Menu_ouvidor_On.Enabled = false;
 			this.Menu_ouvidor_On.Image = global::iS800.My.Resources.Resources.stock_connect;
 			this.Menu_ouvidor_On.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -738,7 +738,7 @@
 			menu_ouvidor_On.Size = size;
 			this.Menu_ouvidor_On.Text = "ToolStripButton1";
 			this.Menu_ouvidor_On.ToolTipText = "Iniciar";
-			this.Menu_ouvidor_limpa.DisplayStyle = 2;
+			this.Menu_ouvidor_limpa.DisplayStyle = (HorizontalAlignment)2;
 			this.Menu_ouvidor_limpa.Image = global::iS800.My.Resources.Resources.gnome_fs_trash_empty;
 			this.Menu_ouvidor_limpa.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.Menu_ouvidor_limpa.Name = "Menu_ouvidor_limpa";
@@ -747,7 +747,7 @@
 			menu_ouvidor_limpa.Size = size;
 			this.Menu_ouvidor_limpa.Text = "ToolStripButton2";
 			this.Menu_ouvidor_limpa.ToolTipText = "Limpar";
-			this.Menu_ouvidor_Off.DisplayStyle = 2;
+			this.Menu_ouvidor_Off.DisplayStyle = (HorizontalAlignment)2;
 			this.Menu_ouvidor_Off.Image = global::iS800.My.Resources.Resources.stock_disconnect;
 			this.Menu_ouvidor_Off.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.Menu_ouvidor_Off.Name = "Menu_ouvidor_Off";
@@ -781,13 +781,13 @@
 			global::System.Windows.Forms.Control toolStrip3 = this.ToolStrip1;
 			size = new global::System.Drawing.Size(783, 59);
 			toolStrip3.Size = size;
-			this.ToolStrip1.TabIndex = 9;
+			this.ToolStrip1.TabIndex = (HorizontalAlignment)9;
 			this.ToolStrip1.Text = "ToolStrip1";
 			this.ToolStripSeparator1.Name = "ToolStripSeparator1";
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator6 = this.ToolStripSeparator1;
 			size = new global::System.Drawing.Size(6, 59);
 			toolStripSeparator6.Size = size;
-			this.ToolStripButton_FindEquip.DisplayStyle = 2;
+			this.ToolStripButton_FindEquip.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_FindEquip.Image = (global::System.Drawing.Image)componentResourceManager.GetObject("ToolStripButton_FindEquip.Image");
 			this.ToolStripButton_FindEquip.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.ToolStripButton_FindEquip.Name = "ToolStripButton_FindEquip";
@@ -795,7 +795,7 @@
 			size = new global::System.Drawing.Size(56, 56);
 			toolStripButton_FindEquip.Size = size;
 			this.ToolStripButton_FindEquip.Text = "Identificação do Equipamento";
-			this.ToolStripButton_serial.DisplayStyle = 2;
+			this.ToolStripButton_serial.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_serial.Image = global::iS800.My.Resources.Resources.DB9_128;
 			this.ToolStripButton_serial.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.ToolStripButton_serial.Name = "ToolStripButton_serial";
@@ -816,7 +816,7 @@
 			toolStripComboBox_versao.Size = size;
 			this.ToolStripComboBox_versao.ToolTipText = "Versão";
 			this.ToolStripComboBox_versao.Visible = false;
-			this.ToolStripButton_Configuracao.DisplayStyle = 2;
+			this.ToolStripButton_Configuracao.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_Configuracao.Enabled = false;
 			this.ToolStripButton_Configuracao.Image = global::iS800.My.Resources.Resources.configuracao_2_128;
 			this.ToolStripButton_Configuracao.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -827,7 +827,7 @@
 			this.ToolStripButton_Configuracao.Text = "ToolStripButton1";
 			this.ToolStripButton_Configuracao.ToolTipText = "Configuração";
 			this.ToolStripButton_Configuracao.Visible = false;
-			this.ToolStripButton_Calibracao.DisplayStyle = 2;
+			this.ToolStripButton_Calibracao.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_Calibracao.Enabled = false;
 			this.ToolStripButton_Calibracao.Image = global::iS800.My.Resources.Resources.calibracao_128;
 			this.ToolStripButton_Calibracao.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -838,7 +838,7 @@
 			this.ToolStripButton_Calibracao.Text = "ToolStripButton1";
 			this.ToolStripButton_Calibracao.ToolTipText = "Calibração";
 			this.ToolStripButton_Calibracao.Visible = false;
-			this.ToolStripButton_Monitoracao.DisplayStyle = 2;
+			this.ToolStripButton_Monitoracao.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_Monitoracao.Enabled = false;
 			this.ToolStripButton_Monitoracao.Image = global::iS800.My.Resources.Resources.monitor_128;
 			this.ToolStripButton_Monitoracao.ImageTransparentColor = global::System.Drawing.Color.Magenta;
@@ -862,7 +862,7 @@
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator9 = this.ToolStripSeparator4;
 			size = new global::System.Drawing.Size(6, 59);
 			toolStripSeparator9.Size = size;
-			this.ToolStripButton_sobre.DisplayStyle = 2;
+			this.ToolStripButton_sobre.DisplayStyle = (HorizontalAlignment)2;
 			this.ToolStripButton_sobre.Image = global::iS800.My.Resources.Resources.ictel;
 			this.ToolStripButton_sobre.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_sobre.Name = "ToolStripButton_sobre";
@@ -875,7 +875,7 @@
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			this.BackColor = global::System.Drawing.Color.White;
 			size = new global::System.Drawing.Size(783, 472);
 			this.ClientSize = size;
@@ -888,7 +888,7 @@
 			this.Name = "Plataforma";
 			this.Text = "iS800";
 			this.TransparencyKey = global::System.Drawing.Color.Transparent;
-			this.WindowState = 2;
+			this.WindowState = (HorizontalAlignment)2;
 			this.MenuStrip1.ResumeLayout(false);
 			this.MenuStrip1.PerformLayout();
 			this.Menu_ouvidor.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -58,14 +58,14 @@ namespace iS800
 		public object DecodeUTF8(object s)
 		{
 			s = Operators.ConcatenateObject(s, " ");
-			object obj = 1;
+			object obj = (HorizontalAlignment)1;
 			while (Operators.ConditionalCompareObjectLessEqual(obj, Strings.Len(RuntimeHelpers.GetObjectValue(s)), false))
 			{
 				object obj2 = Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(obj), 1));
 				if (Conversions.ToBoolean(Operators.AndObject(obj2, 128)))
 				{
-					object obj3 = 1;
-					while (Operators.ConditionalCompareObjectLess(Operators.AddObject(obj, obj3), Strings.Len(RuntimeHelpers.GetObjectValue(s)), false) && (Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)), 1)) & 192) == 128)
+					object obj3 = (HorizontalAlignment)1;
+					while (Operators.ConditionalCompareObjectLess(Operators.AddObject(obj, obj3), Strings.Len(RuntimeHelpers.GetObjectValue(s)), false) && (Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)), 1)) & 192) == (DialogResult)128)
 					{
 						obj3 = Operators.AddObject(obj3, 1);
 					}
@@ -75,7 +75,7 @@ namespace iS800
 					}
 					else
 					{
-						obj2 = 191;
+						obj2 = (HorizontalAlignment)191;
 					}
 					s = Strings.Left(Conversions.ToString(s), Conversions.ToInteger(Operators.SubtractObject(obj, 1))) + Conversions.ToString(Strings.Chr(Conversions.ToInteger(obj2))) + Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)));
 				}

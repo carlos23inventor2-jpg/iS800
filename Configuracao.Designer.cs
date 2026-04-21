@@ -1,4 +1,4 @@
-﻿namespace iS800
+namespace iS800
 {
 	// Token: 0x02000011 RID: 17
 	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated]
@@ -68,7 +68,7 @@
 			global::System.Drawing.Size size;
 			size = new global::System.Drawing.Size(223, 190);
 			grupo_com2.Size = size;
-			this.Grupo_com.TabIndex = 4;
+			this.Grupo_com.TabIndex = (HorizontalAlignment)4;
 			this.Grupo_com.TabStop = false;
 			this.Grupo_com.Text = "Interface Serial - RS232:";
 			this.Combo_paridade.FormattingEnabled = true;
@@ -79,7 +79,7 @@
 			global::System.Windows.Forms.Control combo_paridade2 = this.Combo_paridade;
 			size = new global::System.Drawing.Size(112, 21);
 			combo_paridade2.Size = size;
-			this.Combo_paridade.TabIndex = 10;
+			this.Combo_paridade.TabIndex = (HorizontalAlignment)10;
 			this.Label_paridade.AutoSize = true;
 			global::System.Windows.Forms.Control label_paridade = this.Label_paridade;
 			location = new global::System.Drawing.Point(18, 150);
@@ -88,7 +88,7 @@
 			global::System.Windows.Forms.Control label_paridade2 = this.Label_paridade;
 			size = new global::System.Drawing.Size(55, 13);
 			label_paridade2.Size = size;
-			this.Label_paridade.TabIndex = 9;
+			this.Label_paridade.TabIndex = (HorizontalAlignment)9;
 			this.Label_paridade.Text = "Paridade :";
 			this.Combo_stop_bits.FormattingEnabled = true;
 			global::System.Windows.Forms.Control combo_stop_bits = this.Combo_stop_bits;
@@ -98,7 +98,7 @@
 			global::System.Windows.Forms.Control combo_stop_bits2 = this.Combo_stop_bits;
 			size = new global::System.Drawing.Size(64, 21);
 			combo_stop_bits2.Size = size;
-			this.Combo_stop_bits.TabIndex = 8;
+			this.Combo_stop_bits.TabIndex = (HorizontalAlignment)8;
 			this.Label_stop_bits.AutoSize = true;
 			global::System.Windows.Forms.Control label_stop_bits = this.Label_stop_bits;
 			location = new global::System.Drawing.Point(18, 118);
@@ -107,7 +107,7 @@
 			global::System.Windows.Forms.Control label_stop_bits2 = this.Label_stop_bits;
 			size = new global::System.Drawing.Size(54, 13);
 			label_stop_bits2.Size = size;
-			this.Label_stop_bits.TabIndex = 7;
+			this.Label_stop_bits.TabIndex = (HorizontalAlignment)7;
 			this.Label_stop_bits.Text = "Stop bits :";
 			this.ComboNumeroBits.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboNumeroBits = this.ComboNumeroBits;
@@ -117,7 +117,7 @@
 			global::System.Windows.Forms.Control comboNumeroBits2 = this.ComboNumeroBits;
 			size = new global::System.Drawing.Size(64, 21);
 			comboNumeroBits2.Size = size;
-			this.ComboNumeroBits.TabIndex = 6;
+			this.ComboNumeroBits.TabIndex = (HorizontalAlignment)6;
 			this.Label_bits.AutoSize = true;
 			global::System.Windows.Forms.Control label_bits = this.Label_bits;
 			location = new global::System.Drawing.Point(18, 86);
@@ -126,7 +126,7 @@
 			global::System.Windows.Forms.Control label_bits2 = this.Label_bits;
 			size = new global::System.Drawing.Size(69, 13);
 			label_bits2.Size = size;
-			this.Label_bits.TabIndex = 5;
+			this.Label_bits.TabIndex = (HorizontalAlignment)5;
 			this.Label_bits.Text = "Número bits :";
 			this.ComboBaudrate.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboBaudrate = this.ComboBaudrate;
@@ -136,7 +136,7 @@
 			global::System.Windows.Forms.Control comboBaudrate2 = this.ComboBaudrate;
 			size = new global::System.Drawing.Size(112, 21);
 			comboBaudrate2.Size = size;
-			this.ComboBaudrate.TabIndex = 4;
+			this.ComboBaudrate.TabIndex = (HorizontalAlignment)4;
 			this.Label_baudrate.AutoSize = true;
 			global::System.Windows.Forms.Control label_baudrate = this.Label_baudrate;
 			location = new global::System.Drawing.Point(18, 54);
@@ -145,7 +145,7 @@
 			global::System.Windows.Forms.Control label_baudrate2 = this.Label_baudrate;
 			size = new global::System.Drawing.Size(56, 13);
 			label_baudrate2.Size = size;
-			this.Label_baudrate.TabIndex = 3;
+			this.Label_baudrate.TabIndex = (HorizontalAlignment)3;
 			this.Label_baudrate.Text = "Baudrate :";
 			this.Label_porta.AutoSize = true;
 			global::System.Windows.Forms.Control label_porta = this.Label_porta;
@@ -155,7 +155,7 @@
 			global::System.Windows.Forms.Control label_porta2 = this.Label_porta;
 			size = new global::System.Drawing.Size(38, 13);
 			label_porta2.Size = size;
-			this.Label_porta.TabIndex = 2;
+			this.Label_porta.TabIndex = (HorizontalAlignment)2;
 			this.Label_porta.Text = "Porta :";
 			this.ComboPortaSerial.FormattingEnabled = true;
 			global::System.Windows.Forms.Control comboPortaSerial = this.ComboPortaSerial;
@@ -165,8 +165,8 @@
 			global::System.Windows.Forms.Control comboPortaSerial2 = this.ComboPortaSerial;
 			size = new global::System.Drawing.Size(112, 21);
 			comboPortaSerial2.Size = size;
-			this.ComboPortaSerial.TabIndex = 1;
-			this.OK_Button.Anchor = 0;
+			this.ComboPortaSerial.TabIndex = (HorizontalAlignment)1;
+			this.OK_Button.Anchor = (HorizontalAlignment)0;
 			global::System.Windows.Forms.Control ok_Button = this.OK_Button;
 			location = new global::System.Drawing.Point(417, 304);
 			ok_Button.Location = location;
@@ -174,7 +174,7 @@
 			global::System.Windows.Forms.Control ok_Button2 = this.OK_Button;
 			size = new global::System.Drawing.Size(67, 23);
 			ok_Button2.Size = size;
-			this.OK_Button.TabIndex = 0;
+			this.OK_Button.TabIndex = (HorizontalAlignment)0;
 			this.OK_Button.Text = "OK";
 			this.GroupBox_gerais.Controls.Add(this.NumericUpDown_retry);
 			this.GroupBox_gerais.Controls.Add(this.Label1);
@@ -185,7 +185,7 @@
 			global::System.Windows.Forms.Control groupBox_gerais2 = this.GroupBox_gerais;
 			size = new global::System.Drawing.Size(221, 73);
 			groupBox_gerais2.Size = size;
-			this.GroupBox_gerais.TabIndex = 6;
+			this.GroupBox_gerais.TabIndex = (HorizontalAlignment)6;
 			this.GroupBox_gerais.TabStop = false;
 			this.GroupBox_gerais.Text = "Parâmetros Gerais";
 			global::System.Windows.Forms.Control numericUpDown_retry = this.NumericUpDown_retry;
@@ -214,8 +214,8 @@
 			global::System.Windows.Forms.Control numericUpDown_retry4 = this.NumericUpDown_retry;
 			size = new global::System.Drawing.Size(54, 20);
 			numericUpDown_retry4.Size = size;
-			this.NumericUpDown_retry.TabIndex = 1;
-			this.NumericUpDown_retry.TextAlign = 2;
+			this.NumericUpDown_retry.TabIndex = (HorizontalAlignment)1;
+			this.NumericUpDown_retry.TextAlign = (HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_retry5 = this.NumericUpDown_retry;
 			num = new decimal(new int[]
 			{
@@ -233,7 +233,7 @@
 			global::System.Windows.Forms.Control label2 = this.Label1;
 			size = new global::System.Drawing.Size(78, 13);
 			label2.Size = size;
-			this.Label1.TabIndex = 0;
+			this.Label1.TabIndex = (HorizontalAlignment)0;
 			this.Label1.Text = "N° Tentativas :";
 			this.GroupBox1.Controls.Add(this.tb_tcpip_Porta);
 			this.GroupBox1.Controls.Add(this.tb_tcpip_IP);
@@ -246,7 +246,7 @@
 			global::System.Windows.Forms.Control groupBox2 = this.GroupBox1;
 			size = new global::System.Drawing.Size(234, 186);
 			groupBox2.Size = size;
-			this.GroupBox1.TabIndex = 7;
+			this.GroupBox1.TabIndex = (HorizontalAlignment)7;
 			this.GroupBox1.TabStop = false;
 			this.GroupBox1.Text = "Interface Ethernet  - TCP/IP:";
 			global::System.Windows.Forms.Control tb_tcpip_Porta = this.tb_tcpip_Porta;
@@ -256,7 +256,7 @@
 			global::System.Windows.Forms.Control tb_tcpip_Porta2 = this.tb_tcpip_Porta;
 			size = new global::System.Drawing.Size(50, 20);
 			tb_tcpip_Porta2.Size = size;
-			this.tb_tcpip_Porta.TabIndex = 13;
+			this.tb_tcpip_Porta.TabIndex = (HorizontalAlignment)13;
 			global::System.Windows.Forms.Control tb_tcpip_IP = this.tb_tcpip_IP;
 			location = new global::System.Drawing.Point(64, 75);
 			tb_tcpip_IP.Location = location;
@@ -264,7 +264,7 @@
 			global::System.Windows.Forms.Control tb_tcpip_IP2 = this.tb_tcpip_IP;
 			size = new global::System.Drawing.Size(148, 20);
 			tb_tcpip_IP2.Size = size;
-			this.tb_tcpip_IP.TabIndex = 12;
+			this.tb_tcpip_IP.TabIndex = (HorizontalAlignment)12;
 			this.Label3.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label3;
 			location = new global::System.Drawing.Point(15, 104);
@@ -273,7 +273,7 @@
 			global::System.Windows.Forms.Control label4 = this.Label3;
 			size = new global::System.Drawing.Size(38, 13);
 			label4.Size = size;
-			this.Label3.TabIndex = 11;
+			this.Label3.TabIndex = (HorizontalAlignment)11;
 			this.Label3.Text = "Porta :";
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label2;
@@ -283,7 +283,7 @@
 			global::System.Windows.Forms.Control label6 = this.Label2;
 			size = new global::System.Drawing.Size(20, 13);
 			label6.Size = size;
-			this.Label2.TabIndex = 0;
+			this.Label2.TabIndex = (HorizontalAlignment)0;
 			this.Label2.Text = "IP:";
 			this.GroupBox2.Controls.Add(this.cb_tipo_interface);
 			this.GroupBox2.Controls.Add(this.Label4);
@@ -294,7 +294,7 @@
 			global::System.Windows.Forms.Control groupBox4 = this.GroupBox2;
 			size = new global::System.Drawing.Size(470, 56);
 			groupBox4.Size = size;
-			this.GroupBox2.TabIndex = 8;
+			this.GroupBox2.TabIndex = (HorizontalAlignment)8;
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Seleção de Interface:";
 			this.cb_tipo_interface.FormattingEnabled = true;
@@ -305,7 +305,7 @@
 			global::System.Windows.Forms.Control cb_tipo_interface2 = this.cb_tipo_interface;
 			size = new global::System.Drawing.Size(342, 21);
 			cb_tipo_interface2.Size = size;
-			this.cb_tipo_interface.TabIndex = 12;
+			this.cb_tipo_interface.TabIndex = (HorizontalAlignment)12;
 			this.Label4.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label4;
 			location = new global::System.Drawing.Point(15, 27);
@@ -314,12 +314,12 @@
 			global::System.Windows.Forms.Control label8 = this.Label4;
 			size = new global::System.Drawing.Size(79, 13);
 			label8.Size = size;
-			this.Label4.TabIndex = 11;
+			this.Label4.TabIndex = (HorizontalAlignment)11;
 			this.Label4.Text = "Tipo Interface :";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
-			this.AutoScaleMode = 1;
+			this.AutoScaleMode = (HorizontalAlignment)1;
 			size = new global::System.Drawing.Size(497, 368);
 			this.ClientSize = size;
 			this.ControlBox = false;
@@ -328,12 +328,12 @@
 			this.Controls.Add(this.OK_Button);
 			this.Controls.Add(this.GroupBox_gerais);
 			this.Controls.Add(this.Grupo_com);
-			this.FormBorderStyle = 3;
+			this.FormBorderStyle = (HorizontalAlignment)3;
 			this.Icon = (global::System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			location = new global::System.Drawing.Point(800, 200);
 			this.Location = location;
 			this.Name = "Configuracao";
-			this.StartPosition = 1;
+			this.StartPosition = (HorizontalAlignment)1;
 			this.Text = "Configuração de Interfaces de Comunicação";
 			this.Grupo_com.ResumeLayout(false);
 			this.Grupo_com.PerformLayout();
