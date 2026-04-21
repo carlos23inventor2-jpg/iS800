@@ -14,7 +14,7 @@ namespace iS800
 		// Token: 0x06001A42 RID: 6722 RVA: 0x00252914 File Offset: 0x00250D14
 		public static RT_geral.Ctrl_erro Limite_ok_text_box(ref TextBox obj, ref RT_geral.Integer_ictel dado, bool mostra)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -58,7 +58,7 @@ namespace iS800
 		// Token: 0x06001A43 RID: 6723 RVA: 0x00252A38 File Offset: 0x00250E38
 		public static RT_geral.Ctrl_erro Limite_ok_NumericUpDown(ref NumericUpDown obj, ref RT_geral.Integer_ictel dado, bool mostra)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -102,7 +102,7 @@ namespace iS800
 		// Token: 0x06001A44 RID: 6724 RVA: 0x00252B68 File Offset: 0x00250F68
 		public static RT_geral.Ctrl_erro Limite_ok_Combo_valor(ref ComboBox obj, ref RT_geral.Combo_ictel dado, bool mostra, int novo)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			result.msg = "";
 			int num = 0;
 			checked
@@ -140,7 +140,7 @@ namespace iS800
 		// Token: 0x06001A45 RID: 6725 RVA: 0x00252C64 File Offset: 0x00251064
 		public static RT_geral.Ctrl_erro Limite_ok_celula(ref DataGridView obj, ref RT_geral.Integer_ictel dado, DataGridViewCellValidatingEventArgs e, bool mostra)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -184,7 +184,7 @@ namespace iS800
 		// Token: 0x06001A46 RID: 6726 RVA: 0x00252DE0 File Offset: 0x002511E0
 		public static RT_geral.Ctrl_erro Limite_ok_Combo_text(ref ComboBox obj, ref RT_geral.Combo_ictel dado, bool mostra, int novo)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			result.msg = "";
 			int num = 0;
 			checked
@@ -222,7 +222,7 @@ namespace iS800
 		// Token: 0x06001A47 RID: 6727 RVA: 0x00252EDC File Offset: 0x002512DC
 		public static RT_geral.Ctrl_erro Testa_nome_dsp_3DIG(ref DataGridView obj, ref RT_geral.String_ictel dado, DataGridViewCellValidatingEventArgs e, bool mostra)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -258,7 +258,7 @@ namespace iS800
 		// Token: 0x06001A48 RID: 6728 RVA: 0x00253008 File Offset: 0x00251408
 		public static RT_geral.Ctrl_erro Limite_comprimento_string(ref DataGridView obj, ref RT_geral.String_ictel dado, DataGridViewCellValidatingEventArgs e, bool mostra)
 		{
-			RT_geral.Ctrl_erro result;
+			RT_geral.Ctrl_erro result = new RT_geral.Ctrl_erro();
 			if (!RT_geral.Lmte_Init_ok)
 			{
 				result.resultado = false;
@@ -294,7 +294,7 @@ namespace iS800
 		// Token: 0x06001A49 RID: 6729 RVA: 0x00253138 File Offset: 0x00251538
 		public static MsgBoxResult VerificaDadoInt(ref RT_geral.Integer_ictel dado)
 		{
-			MsgBoxResult result = 1;
+			MsgBoxResult result = (MsgBoxResult)1;
 			if (dado.Valor < dado.Lmte_inf | dado.Valor > dado.Lmte_sup)
 			{
 				dado.erro = true;
@@ -316,10 +316,10 @@ namespace iS800
 			{
 				switch (result)
 				{
-				case 6:
+				case (MsgBoxResult)6:
 					cont++;
 					break;
-				case 7:
+				case (MsgBoxResult)7:
 					cont++;
 					break;
 				}
@@ -334,18 +334,18 @@ namespace iS800
 			bool result = true;
 			checked
 			{
-				if (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_estacao, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_mestre, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Tempo_ptt, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Intervalo_tx_pto_pto, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AD_Tamanho_filtro, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AD_Intervalo, ref Linha_RT.Contador_Erros) != 7)
+				if (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_estacao, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_mestre, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Tempo_ptt, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Intervalo_tx_pto_pto, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AD_Tamanho_filtro, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AD_Intervalo, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 				{
 					int num = 0;
-					while (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Range[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Inicio[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Fim[num], ref Linha_RT.Contador_Erros) != 7)
+					while (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Range[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Inicio[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.EA_Fim[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 					{
 						num++;
 						if (num > 0)
 						{
-							if (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_repetidora, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Num_repetidoras, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AlturaReservatorio, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.ErroOffSet, ref Linha_RT.Contador_Erros) != 7)
+							if (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.End_repetidora, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Num_repetidoras, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.AlturaReservatorio, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.ErroOffSet, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 							{
 								num = 0;
-								while (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Repetidoras[num], ref Linha_RT.Contador_Erros) != 7)
+								while (RT_geral.ContadorErro(ref RT_geral.RT_810_200_BD.Repetidoras[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 								{
 									num++;
 									if (num > 49)
@@ -383,23 +383,23 @@ namespace iS800
 			bool result = true;
 			checked
 			{
-				if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_estacao, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_mestre, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Tempo_ptt, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Intervalo_tx_pto_pto, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.AD_Tamanho_filtro, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.AD_Intervalo, ref Linha_RT.Contador_Erros) != 7)
+				if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_estacao, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_mestre, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Tempo_ptt, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Intervalo_tx_pto_pto, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.AD_Tamanho_filtro, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.AD_Intervalo, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 				{
 					int num = 0;
-					while (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Range[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Inicio[num], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Fim[num], ref Linha_RT.Contador_Erros) != 7)
+					while (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Range[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Inicio[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.EA_Fim[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 					{
 						num++;
 						if (num > 3)
 						{
-							if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.ctrl_tempo_max_parada[0], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.ctrl_tempo_max_partida[0], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Hab_eletrodos, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_repetidora, ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Num_repetidoras, ref Linha_RT.Contador_Erros) != 7)
+							if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.ctrl_tempo_max_parada[0], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.ctrl_tempo_max_partida[0], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Hab_eletrodos, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.End_repetidora, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Num_repetidoras, ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 							{
 								num = 0;
-								while (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Repetidoras[num], ref Linha_RT.Contador_Erros) != 7)
+								while (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Repetidoras[num], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 								{
 									num++;
 									if (num > 49)
 									{
-										if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Setpoints_ctrl_nivel_alto[0], ref Linha_RT.Contador_Erros) != 7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Setpoints_ctrl_nivel_baixo[0], ref Linha_RT.Contador_Erros) != 7)
+										if (RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Setpoints_ctrl_nivel_alto[0], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7 && RT_geral.ContadorErro(ref RT_geral.RT_810_BD.Setpoints_ctrl_nivel_baixo[0], ref Linha_RT.Contador_Erros) != (MsgBoxResult)7)
 										{
 											result = (Linha_RT.Contador_Erros != 0);
 											break;
@@ -572,8 +572,8 @@ namespace iS800
 							{
 								text = txt + " já utilizado em " + BD_ConfigColuna.TagColuna + "! ";
 							}
-							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, 4);
-							result = (dialogResult != 6);
+							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, (System.Windows.Forms.MessageBoxButtons)4);
+							result = (dialogResult != (DialogResult)6);
 							break;
 						}
 					}
@@ -613,8 +613,8 @@ namespace iS800
 									col2
 								});
 							}
-							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, 4);
-							result = (dialogResult != 6);
+							DialogResult dialogResult = MessageBox.Show("Confirma a utilização ?", text, (System.Windows.Forms.MessageBoxButtons)4);
+							result = (dialogResult != (DialogResult)6);
 							break;
 						}
 					}
@@ -663,7 +663,7 @@ namespace iS800
 		{
 			checked
 			{
-				bool result;
+				bool result = false;
 				if (indice == dado[numero_ED].Indice_padrao)
 				{
 					result = false;

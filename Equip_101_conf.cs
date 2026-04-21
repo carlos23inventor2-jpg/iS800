@@ -1413,7 +1413,7 @@ namespace iS800
 			this.Atualiza_tela_MD101(Mod_MD.Controle.Estacao);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
 		}
 
 		// Token: 0x06001B84 RID: 7044 RVA: 0x003C8810 File Offset: 0x003C6C10
@@ -1451,7 +1451,7 @@ namespace iS800
 		public void Atualiza_tela_MD101(int indice)
 		{
 			int num = 0;
-			int num4;
+			int num4 = 0;
 			object obj = null;
 			try
 			{
@@ -1555,7 +1555,7 @@ namespace iS800
 					MsgBoxResult msgBoxResult = Interaction.MsgBox("Existem valores não compatíveis com os parâmetro desta tela !\r\nCarregar configuração Default ?", (MsgBoxStyle)36, "Atenção");
 					IL_25F:
 					num2 = 34;
-					if (msgBoxResult != 6)
+					if (msgBoxResult != (MsgBoxResult)6)
 					{
 											}
 					IL_267:
@@ -1728,7 +1728,7 @@ namespace iS800
 		public void Atualiza_tela_MD101_repetidora_enderecos(int indice)
 		{
 			int num = 0;
-			int num4;
+			int num4 = 0;
 			object obj = null;
 			try
 			{
@@ -2113,7 +2113,7 @@ namespace iS800
 					MsgBoxResult msgBoxResult = Interaction.MsgBox("Existem valores não compatíveis com os parâmetro desta tela !\r\nCarregar configuração Default ?", (MsgBoxStyle)36, "Atenção");
 					IL_913:
 					num2 = 139;
-					if (msgBoxResult != 6)
+					if (msgBoxResult != (MsgBoxResult)6)
 					{
 											}
 					IL_91E:
@@ -2268,11 +2268,11 @@ namespace iS800
 		{
 			this.OpenFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V1X";
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
-			if (this.OpenFileDialog1.ShowDialog() == 1)
+			if (this.OpenFileDialog1.ShowDialog() == DialogResult.OK)
 			{
 				if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 				{
-					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, 270);
+					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), 270);
 					int num = 1;
 					Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] reservatorio = Mod_MD.Reservatorio;
 					Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] array = reservatorio;
@@ -2282,7 +2282,7 @@ namespace iS800
 					Mod_MD.DADOS_EQUIP_MD_101_CONFIG[] array2 = reservatorio;
 					int num3 = num2;
 					ValueType valueType2 = valueType;
-					Mod_MD.DADOS_EQUIP_MD_101_CONFIG dados_EQUIP_MD_101_CONFIG;
+					Mod_MD.DADOS_EQUIP_MD_101_CONFIG dados_EQUIP_MD_101_CONFIG = default(Mod_MD.DADOS_EQUIP_MD_101_CONFIG);
 					array2[num3] = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_101_CONFIG)valueType2) : dados_EQUIP_MD_101_CONFIG);
 					FileSystem.FileClose(new int[]
 					{
@@ -2300,9 +2300,9 @@ namespace iS800
 			Mod_MD.Reservatorio[1].Versao = Geral.Config_geral.Versao;
 			this.SaveFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V1X";
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
-			if (this.SaveFileDialog1.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
+			if (this.SaveFileDialog1.ShowDialog() == DialogResult.OK && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 			{
-				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, 300);
+				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), 300);
 				FileSystem.FilePut(1, Mod_MD.Reservatorio[1], -1L);
 				FileSystem.FileClose(new int[]
 				{

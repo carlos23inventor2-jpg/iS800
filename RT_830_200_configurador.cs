@@ -2940,27 +2940,27 @@ namespace iS800
 			this.Carrega_Msg_Alarme_RT_850();
 			this.Inicializa_Estrutura_Lista_Equipamentos_Recalque();
 			Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-			this.TabPage_geral.BackColor = Color.FromKnownColor(8);
-			this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
-			this.TabPage1.BackColor = Color.FromKnownColor(8);
-			this.TabPage1.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Equipamentos.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Equipamentos.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Reservatorio.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Reservatorio.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Recalque.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Recalque.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_Vista.BackColor = Color.FromKnownColor(8);
-			this.TabPage_Vista.ForeColor = Color.FromKnownColor(10);
-			this.TabPage_controles.BackColor = Color.FromKnownColor(8);
-			this.TabPage_controles.ForeColor = Color.FromKnownColor(10);
+			this.TabPage_geral.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage_geral.ForeColor = Color.FromKnownColor((KnownColor)10);
+			this.TabPage1.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage1.ForeColor = Color.FromKnownColor((KnownColor)10);
+			this.TabPage_Equipamentos.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage_Equipamentos.ForeColor = Color.FromKnownColor((KnownColor)10);
+			this.TabPage_Reservatorio.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage_Reservatorio.ForeColor = Color.FromKnownColor((KnownColor)10);
+			this.TabPage_Recalque.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage_Recalque.ForeColor = Color.FromKnownColor((KnownColor)10);
+			this.TabPage_Vista.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage_Vista.ForeColor = Color.FromKnownColor((KnownColor)10);
+			this.TabPage_controles.BackColor = Color.FromKnownColor((KnownColor)8);
+			this.TabPage_controles.ForeColor = Color.FromKnownColor((KnownColor)10);
 			string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 			if (MyProject.Computer.FileSystem.FileExists(text))
 			{
 				PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 				privateFontCollection.AddFontFile(text);
-				Font font = new Font(privateFontCollection.Families[0], 8f, 2);
-				Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
+				Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
+				Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
 				this.Label11.Font = font;
 				this.TextBox_equipamento_RT850.Font = font;
 				this.TextBox_versao_RT850.Font = font;
@@ -3019,8 +3019,8 @@ namespace iS800
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].NomeColuna = "Endereco";
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].LarguraColuna = Conversions.ToInteger("60");
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].LarguraColuna = Conversions.ToInteger("90");
-			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].AlingColuna = 32;
-			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].AlingColuna = 32;
+			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
+			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)32;
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[0].NumeroLinhaMenu = 0;
 			RT_geral.RT_850_DataGrigViewEquipCanal_1Colunas[1].NumeroLinhaMenu = 0;
 		}
@@ -3551,18 +3551,18 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_variaveis[10].LarguraColuna = Conversions.ToInteger("120");
 				RT_geral.RT_850_DataGridView_variaveis[11].LarguraColuna = Conversions.ToInteger("60");
 				RT_geral.RT_850_DataGridView_variaveis[12].LarguraColuna = Conversions.ToInteger("98");
-				RT_geral.RT_850_DataGridView_variaveis[0].AlingColuna = 256;
-				RT_geral.RT_850_DataGridView_variaveis[1].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[2].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[4].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[5].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[6].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[7].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[8].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[9].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[10].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[11].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_variaveis[12].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_variaveis[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)256;
+				RT_geral.RT_850_DataGridView_variaveis[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[10].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[11].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_variaveis[12].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 				RT_geral.RT_850_DataGridView_variaveis[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_variaveis[1].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_variaveis[2].NumeroLinhaMenu = 0;
@@ -3915,38 +3915,38 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_ctrl_4[29].LarguraColuna = Conversions.ToInteger("85");
 				RT_geral.RT_850_DataGridView_ctrl_4[30].LarguraColuna = Conversions.ToInteger("170");
 				RT_geral.RT_850_DataGridView_ctrl_4[31].LarguraColuna = Conversions.ToInteger("85");
-				RT_geral.RT_850_DataGridView_ctrl_4[0].AlingColuna = 16;
-				RT_geral.RT_850_DataGridView_ctrl_4[1].AlingColuna = 256;
-				RT_geral.RT_850_DataGridView_ctrl_4[2].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[3].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[4].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[5].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[6].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[7].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[8].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[9].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[10].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[11].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[12].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[13].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[14].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[15].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[16].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[17].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[18].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[19].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[20].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[21].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[22].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[23].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[24].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[25].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[26].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[27].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[28].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[29].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[30].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_4[31].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_4[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)16;
+				RT_geral.RT_850_DataGridView_ctrl_4[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)256;
+				RT_geral.RT_850_DataGridView_ctrl_4[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[10].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[11].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[12].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[13].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[14].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[15].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[16].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[17].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[18].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[19].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[20].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[21].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[22].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[23].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[24].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[25].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[26].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[27].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[28].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[29].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[30].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_4[31].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 				RT_geral.RT_850_DataGridView_ctrl_4[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_ctrl_4[1].NumeroLinhaMenu = 2;
 				RT_geral.RT_850_DataGridView_ctrl_4[2].NumeroLinhaMenu = 8;
@@ -4461,58 +4461,58 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_ctrl_8[49].LarguraColuna = Conversions.ToInteger("85");
 				RT_geral.RT_850_DataGridView_ctrl_8[50].LarguraColuna = Conversions.ToInteger("170");
 				RT_geral.RT_850_DataGridView_ctrl_8[51].LarguraColuna = Conversions.ToInteger("85");
-				RT_geral.RT_850_DataGridView_ctrl_8[0].AlingColuna = 16;
-				RT_geral.RT_850_DataGridView_ctrl_8[1].AlingColuna = 256;
-				RT_geral.RT_850_DataGridView_ctrl_8[2].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[3].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[4].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[5].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[6].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[7].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[8].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[9].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[10].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[11].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[12].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[13].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[14].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[15].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[16].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[17].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[18].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[19].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[20].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[21].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[22].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[23].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[24].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[25].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[26].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[27].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[28].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[29].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[30].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[31].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[32].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[33].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[34].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[35].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[36].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[37].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[38].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[39].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[40].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[41].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[42].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[43].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[44].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[45].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[46].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[47].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[48].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[49].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[50].AlingColuna = 64;
-				RT_geral.RT_850_DataGridView_ctrl_8[51].AlingColuna = 64;
+				RT_geral.RT_850_DataGridView_ctrl_8[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)16;
+				RT_geral.RT_850_DataGridView_ctrl_8[1].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)256;
+				RT_geral.RT_850_DataGridView_ctrl_8[2].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[3].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[4].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[5].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[6].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[7].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[8].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[9].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[10].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[11].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[12].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[13].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[14].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[15].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[16].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[17].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[18].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[19].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[20].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[21].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[22].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[23].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[24].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[25].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[26].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[27].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[28].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[29].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[30].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[31].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[32].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[33].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[34].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[35].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[36].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[37].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[38].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[39].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[40].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[41].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[42].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[43].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[44].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[45].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[46].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[47].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[48].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[49].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[50].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
+				RT_geral.RT_850_DataGridView_ctrl_8[51].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 				RT_geral.RT_850_DataGridView_ctrl_8[0].NumeroLinhaMenu = 0;
 				RT_geral.RT_850_DataGridView_ctrl_8[1].NumeroLinhaMenu = 2;
 				RT_geral.RT_850_DataGridView_ctrl_8[2].NumeroLinhaMenu = 8;
@@ -4619,7 +4619,7 @@ namespace iS800
 				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].TagColuna = "    Equipamento";
 				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].NomeColuna = "Equip";
 				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].LarguraColuna = Conversions.ToInteger("120");
-				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].AlingColuna = 16;
+				RT_geral.RT_850_DataGridView_Equipamentos_Vista[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)16;
 			}
 		}
 
@@ -5508,7 +5508,7 @@ namespace iS800
 				this.OpenFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg830";
 				this.OpenFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
 				string text;
-				if (this.OpenFileDialog_RT850.ShowDialog() == 1)
+				if (this.OpenFileDialog_RT850.ShowDialog() == DialogResult.OK)
 				{
 					if (Operators.CompareString(this.OpenFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -5623,7 +5623,7 @@ namespace iS800
 				this.ControleAtivacaoTeclas(2);
 				this.SaveFileDialog_RT850.Filter = "Arquivo de configuração de equipamento|*.Cfg830";
 				this.SaveFileDialog_RT850.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT850.ShowDialog() == 1)
+				if (this.SaveFileDialog_RT850.ShowDialog() == DialogResult.OK)
 				{
 					if (Operators.CompareString(this.SaveFileDialog_RT850.FileName, "", false) != 0)
 					{
@@ -6684,7 +6684,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Reservatorios.IsCurrentCellDirty)
 			{
-				this.DataGridView_Reservatorios.CommitEdit(512);
+				this.DataGridView_Reservatorios.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -6779,7 +6779,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Qtd_Vista.IsCurrentCellDirty)
 			{
-				this.DataGridView_Qtd_Vista.CommitEdit(512);
+				this.DataGridView_Qtd_Vista.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -6801,7 +6801,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Vista_Variaveis.IsCurrentCellDirty)
 			{
-				this.DataGridView_Vista_Variaveis.CommitEdit(512);
+				this.DataGridView_Vista_Variaveis.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 
@@ -6814,7 +6814,7 @@ namespace iS800
 			}
 			if (this.DataGridView_Vista_Remotas.IsCurrentCellDirty)
 			{
-				this.DataGridView_Vista_Remotas.CommitEdit(512);
+				this.DataGridView_Vista_Remotas.CommitEdit((System.Windows.Forms.DataGridViewDataErrorContexts)512);
 			}
 		}
 

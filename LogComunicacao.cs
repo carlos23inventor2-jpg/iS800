@@ -277,7 +277,7 @@ namespace iS800
 		// Token: 0x06002796 RID: 10134 RVA: 0x00423D18 File Offset: 0x00422118
 		private void bt_diretorio_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == 1)
+			if (this.FolderBrowserDialog1.ShowDialog() == DialogResult.OK)
 			{
 				this.tb_diretorio.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Ctrl_Log.diretorio = this.FolderBrowserDialog1.SelectedPath;
@@ -343,6 +343,7 @@ namespace iS800
 			int num2 = 0;
 			checked
 			{
+				int ini = 0;
 				int num3 = Comunicacao.Ctrl_Log.bytes_recv - 1;
 				for (int i = num2; i <= num3; i++)
 				{
@@ -356,7 +357,7 @@ namespace iS800
 							text += "SOH ";
 							int num4 = (int)Comunicacao.Buffer_Log[i];
 							num = 1;
-							int ini = i;
+							ini = i;
 							break;
 						}
 						case 2:
@@ -364,7 +365,7 @@ namespace iS800
 							text += "STX ";
 							int num4 = (int)Comunicacao.Buffer_Log[i];
 							num = 1;
-							int ini = i;
+							ini = i;
 							break;
 						}
 						default:
@@ -399,7 +400,7 @@ namespace iS800
 						break;
 					case 3:
 					{
-						int num4;
+						int num4 = 0;
 						if (num4 == 1)
 						{
 							byte b = Comunicacao.Buffer_Log[i];
@@ -456,7 +457,6 @@ namespace iS800
 					{
 						int num6 = (int)Comunicacao.Buffer_Log[i];
 						text = text + "CRC F=" + Conversion.Hex(num6) + " ";
-						int ini;
 						byte b2 = this.Calcula_Chksum(ini, i);
 						text = string.Concat(new string[]
 						{

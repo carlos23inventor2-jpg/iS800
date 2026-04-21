@@ -194,7 +194,7 @@ namespace iS800
 			this.SuspendLayout();
 			this.CheckBox_setpoints.AutoSize = true;
 			this.CheckBox_setpoints.Checked = true;
-			this.CheckBox_setpoints.CheckState = 1;
+			this.CheckBox_setpoints.CheckState = (System.Windows.Forms.CheckState)1;
 			global::System.Windows.Forms.Control checkBox_setpoints = this.CheckBox_setpoints;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(9, 19);

@@ -1762,7 +1762,7 @@ namespace iS800
 			this.Mensagem_MD590(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 			checked
 			{
-				bool result;
+				bool result = false;
 				if (!ctrl_RESP_.Status)
 				{
 					result = false;
@@ -1926,6 +1926,7 @@ namespace iS800
 				goto IL_3BA;
 			case 15:
 				this.Combo_max_power.SelectedIndex = 3;
+				goto IL_3BA;
 							}
 			this.Combo_max_power.SelectedIndex = 4;
 			IL_3BA:
@@ -2080,6 +2081,7 @@ namespace iS800
 					goto IL_38C;
 				case 15:
 					this.Combo_max_power.SelectedIndex = 3;
+					goto IL_38C;
 									}
 				this.Combo_max_power.SelectedIndex = 4;
 				IL_38C:

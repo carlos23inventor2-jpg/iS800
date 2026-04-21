@@ -1758,7 +1758,7 @@ namespace iS800
 			this.Mon_820_DGVReferenciaColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVReferenciaColunas[0].NomeColuna = "range";
 			this.Mon_820_DGVReferenciaColunas[0].LarguraColuna = 100;
-			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVReferenciaColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 			this.Mon_820_DGVReferenciaColunas[0].NumeroLinhaMenu = 0;
 		}
 
@@ -1768,7 +1768,7 @@ namespace iS800
 			this.Mon_820_DGVSAColunas[0].TagColuna = "Ref 0-4000";
 			this.Mon_820_DGVSAColunas[0].NomeColuna = "range";
 			this.Mon_820_DGVSAColunas[0].LarguraColuna = 100;
-			this.Mon_820_DGVSAColunas[0].AlingColuna = 64;
+			this.Mon_820_DGVSAColunas[0].AlingColuna = (System.Windows.Forms.DataGridViewContentAlignment)64;
 			this.Mon_820_DGVSAColunas[0].NumeroLinhaMenu = 0;
 		}
 
@@ -1800,7 +1800,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj = null in this.dgv_Referencias.Rows)
+					foreach (object obj in this.dgv_Referencias.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -1812,7 +1812,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -1849,7 +1849,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj = null in this.dgv_SA.Rows)
+					foreach (object obj in this.dgv_SA.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -1861,7 +1861,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator enumerator;
+					IEnumerator enumerator = null;
 					if (enumerator is IDisposable)
 					{
 						(enumerator as IDisposable).Dispose();
@@ -1886,7 +1886,7 @@ namespace iS800
 				text += " Utilize canal COM2.\r\n";
 				break;
 			}
-			Interaction.MsgBox(text, num, " Atenção");
+			Interaction.MsgBox(text, (MsgBoxStyle)num, " Atenção");
 			int num2 = 0;
 			checked
 			{
@@ -2012,6 +2012,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_16D:
 						Comunicacao.Rotina_Delay(400L);
@@ -2101,6 +2102,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_3F1:
 						Comunicacao.Rotina_Delay(400L);
@@ -2196,6 +2198,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_946:
 						Comunicacao.Rotina_Delay(400L);
@@ -2233,6 +2236,7 @@ namespace iS800
 							Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Verifica_resposta_Linha300();
 							this.Mensagem_MD202_mon(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 							this.Calcula_Estatistica_820_300(1);
+							goto IL_AB5;
 													}
 						case 1:
 							goto IL_A83;
@@ -2259,6 +2263,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_AA3:
 						Comunicacao.Rotina_Delay(400L);
@@ -2330,6 +2335,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_C3A:
 						Comunicacao.Rotina_Delay(400L);
@@ -2392,6 +2398,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_D93:
 						Comunicacao.Rotina_Delay(400L);
@@ -2706,7 +2713,7 @@ namespace iS800
 			{
 				do
 				{
-					byte b = dados[43 + num] - 48;
+					byte b = (byte)(dados[43 + num] - 48);
 					bool flag = (b & 64) > 0;
 					bool flag2 = (b & 32) > 0;
 					int num2 = (int)(b & 15);
@@ -3383,6 +3390,7 @@ namespace iS800
 						}
 						break;
 					default:
+											break;
 											}
 					IL_100:
 					Comunicacao.Rotina_Delay(400L);
@@ -3453,6 +3461,7 @@ namespace iS800
 						}
 						break;
 					default:
+											break;
 											}
 					IL_164:
 					Comunicacao.Rotina_Delay(400L);

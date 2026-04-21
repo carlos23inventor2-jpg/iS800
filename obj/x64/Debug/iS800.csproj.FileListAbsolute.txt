@@ -1,3 +1,6 @@
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.exe
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.csproj.AssemblyReference.cache
 /home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.csproj.CoreCompileInputs.cache
+/home/carlos/Desktop/tet/dec/iS800/bin/Debug/iS800.exe
+/home/carlos/Desktop/tet/dec/iS800/bin/Debug/iS800.pdb
+/home/carlos/Desktop/tet/dec/iS800/obj/x64/Debug/iS800.pdb

@@ -33,7 +33,7 @@ namespace iS800
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
-			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, (FontStyle)3, 0);
+			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control label = this.Label5;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(35, 95);

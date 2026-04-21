@@ -188,7 +188,7 @@ namespace iS800
 			label_defeito_sensor2.Size = size;
 			this.Label_defeito_sensor.TabIndex = 8;
 			this.Label_defeito_sensor.Text = " Falha sensor ";
-			this.Label_defeito_sensor.TextAlign = (System.Windows.Forms.HorizontalAlignment)32;
+			this.Label_defeito_sensor.TextAlign = (System.Drawing.ContentAlignment)32;
 			this.Label_arrombamento.AutoSize = true;
 			this.Label_arrombamento.BackColor = global::System.Drawing.SystemColors.Control;
 			this.Label_arrombamento.BorderStyle = (System.Windows.Forms.BorderStyle)2;
@@ -213,7 +213,7 @@ namespace iS800
 			label_vazio2.Size = size;
 			this.Label_vazio.TabIndex = 6;
 			this.Label_vazio.Text = "       Vazio       ";
-			this.Label_vazio.TextAlign = (System.Windows.Forms.HorizontalAlignment)32;
+			this.Label_vazio.TextAlign = (System.Drawing.ContentAlignment)32;
 			this.Label_transbordo.AutoSize = true;
 			this.Label_transbordo.BackColor = global::System.Drawing.SystemColors.Control;
 			this.Label_transbordo.BorderStyle = (System.Windows.Forms.BorderStyle)2;

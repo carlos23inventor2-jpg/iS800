@@ -2737,6 +2737,7 @@ namespace iS800
 								}
 								break;
 							default:
+															break;
 															}
 							IL_14A:
 							i++;
@@ -2874,7 +2875,7 @@ namespace iS800
 				Application.DoEvents();
 			}
 			while (Geral.Config_geral.Tarefa_em_andamento);
-			int tipo;
+			int tipo = 0;
 			switch (aviso)
 			{
 			case 0:
@@ -3932,7 +3933,7 @@ namespace iS800
 			int num = 0;
 			int num2 = 0;
 			int num3 = 0;
-			int bloco;
+			int bloco = 0;
 			switch (equipamento)
 			{
 			case 810:
@@ -4676,7 +4677,7 @@ namespace iS800
 		private void ToolStripButton1_Click(object sender, EventArgs e)
 		{
 			PrintDialog printDialog = new PrintDialog();
-			if (printDialog.ShowDialog() == 1)
+			if (printDialog.ShowDialog() == DialogResult.OK)
 			{
 				MessageBox.Show(printDialog.ToString());
 			}

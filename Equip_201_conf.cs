@@ -1815,7 +1815,7 @@ namespace iS800
 			this.Atualiza_tela_MD201(Mod_MD.Controle.Estacao);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de programação !\r\nFechar o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
 		}
 
 		// Token: 0x06001CA4 RID: 7332 RVA: 0x003D15B4 File Offset: 0x003CF9B4
@@ -2582,11 +2582,11 @@ namespace iS800
 		{
 			this.OpenFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V201";
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
-			if (this.OpenFileDialog1.ShowDialog() == 1)
+			if (this.OpenFileDialog1.ShowDialog() == DialogResult.OK)
 			{
 				if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 				{
-					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, 500);
+					FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), 500);
 					int num = 1;
 					Mod_MD.DADOS_EQUIP_MD_201_CONFIG[] recalque_ = Mod_MD.Recalque_201;
 					Mod_MD.DADOS_EQUIP_MD_201_CONFIG[] array = recalque_;
@@ -2596,7 +2596,7 @@ namespace iS800
 					Mod_MD.DADOS_EQUIP_MD_201_CONFIG[] array2 = recalque_;
 					int num3 = num2;
 					ValueType valueType2 = valueType;
-					Mod_MD.DADOS_EQUIP_MD_201_CONFIG dados_EQUIP_MD_201_CONFIG;
+					Mod_MD.DADOS_EQUIP_MD_201_CONFIG dados_EQUIP_MD_201_CONFIG = default(Mod_MD.DADOS_EQUIP_MD_201_CONFIG);
 					array2[num3] = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_201_CONFIG)valueType2) : dados_EQUIP_MD_201_CONFIG);
 					FileSystem.FileClose(new int[]
 					{
@@ -2621,9 +2621,9 @@ namespace iS800
 			Mod_MD.Recalque_201[1].Versao = Geral.Config_geral.Versao;
 			this.SaveFileDialog1.Filter = "Arquivo de configuração de equipamento|*.V201";
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
-			if (this.SaveFileDialog1.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
+			if (this.SaveFileDialog1.ShowDialog() == DialogResult.OK && Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 			{
-				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, 500);
+				FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), 500);
 				FileSystem.FilePut(1, Mod_MD.Recalque_201[1], -1L);
 				FileSystem.FileClose(new int[]
 				{

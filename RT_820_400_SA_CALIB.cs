@@ -506,7 +506,7 @@ namespace iS800
 		private int Leitura_ContanteCalibracao(int pagina, int endereco, int tamanho)
 		{
 			this.AtualizaMsgTela_SA_820("Buscando Constante", 2);
-			int result;
+			int result = 0;
 			if (!Mod_MD.Leitura_pagina(pagina, endereco, tamanho).Status)
 			{
 				this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
@@ -525,7 +525,7 @@ namespace iS800
 		private int Leitura_EnderecoEstacao()
 		{
 			this.AtualizaMsgTela_SA_820("Buscando Endereço", 2);
-			int result;
+			int result = 0;
 			if (!Mod_MD.Leitura_pagina(2048, 255, 1).Status)
 			{
 				this.AtualizaMsgTela_SA_820("Equipamento não responde", 1);
@@ -566,7 +566,7 @@ namespace iS800
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Finalizando Calibração", 2);
-				int pagina;
+				int pagina = 0;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					if (RT_geral.RT_820_360_BD.calibracao_range == 4)
@@ -600,7 +600,7 @@ namespace iS800
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", 2);
-				int numero_pagina;
+				int numero_pagina = 0;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					numero_pagina = 6180;
@@ -680,7 +680,7 @@ namespace iS800
 			if (Comunicacao.VerificaPortaSerialExiste())
 			{
 				this.AtualizaMsgTela_SA_820("Escrevendo Contagens", 2);
-				int numero_pagina;
+				int numero_pagina = 0;
 				if (RT_geral.RT_820_360_BD.calibracao_canal == 1)
 				{
 					if (RT_geral.RT_820_360_BD.calibracao_range == 4)

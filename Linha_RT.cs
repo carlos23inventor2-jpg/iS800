@@ -815,7 +815,7 @@ namespace iS800
 					if (!flag)
 					{
 						string text = "Tipo do arquivo selecionado não é compatível com o Equipamento!";
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", (System.Windows.Forms.MessageBoxButtons)0, (System.Windows.Forms.MessageBoxIcon)16);
 						return result;
 					}
 					break;
@@ -838,7 +838,7 @@ namespace iS800
 							"\r\nRelease : ",
 							Conversion.Str(release)
 						});
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", (System.Windows.Forms.MessageBoxButtons)0, (System.Windows.Forms.MessageBoxIcon)16);
 						return result;
 					}
 					if (equip == 920 & versao == 300)
@@ -858,7 +858,7 @@ namespace iS800
 							"\r\nRelease : ",
 							Conversion.Str(release)
 						});
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", (System.Windows.Forms.MessageBoxButtons)0, (System.Windows.Forms.MessageBoxIcon)16);
 						return result;
 					}
 					break;
@@ -889,7 +889,7 @@ namespace iS800
 							Conversion.Str(release),
 							"\r\n\r\n   A utilização destes dados poderá implicar em interpretações erradas.\r\n   Todos os parâmetros deverão ser conferidos, caso sejam utilizados.\r\n\r\n   Deseja continuar?"
 						});
-						if (MessageBox.Show(text, " Atenção ", 4, 16) != 7)
+						if (MessageBox.Show(text, " Atenção ", (System.Windows.Forms.MessageBoxButtons)4, (System.Windows.Forms.MessageBoxIcon)16) != (DialogResult)7)
 						{
 						}
 						break;
@@ -907,7 +907,7 @@ namespace iS800
 							"\r\nRelease : ",
 							Conversion.Str(release)
 						});
-						MessageBox.Show(text, " Atenção ", 0, 16);
+						MessageBox.Show(text, " Atenção ", (System.Windows.Forms.MessageBoxButtons)0, (System.Windows.Forms.MessageBoxIcon)16);
 						break;
 					}
 					}
@@ -2659,7 +2659,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[num2 + 1] = (byte)(num3 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, num2 + 2);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2696,7 +2696,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[20] = (byte)(num3 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 21);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2724,7 +2724,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[12] = (byte)(num2 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 13);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2794,7 +2794,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[52] = (byte)(num2 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 53);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -2830,7 +2830,7 @@ namespace iS800
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 11);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
-				int result;
+				int result = 0;
 				return result;
 			}
 		}
@@ -3126,7 +3126,7 @@ namespace iS800
 		// Token: 0x06000EFF RID: 3839 RVA: 0x00234EE4 File Offset: 0x002332E4
 		public static int Atualiza_GT2010(int pag)
 		{
-			int result;
+			int result = 0;
 			if (pag == 768)
 			{
 				int num = checked((int)Comunicacao.Buffer_resp[3] * 256 + (int)Comunicacao.Buffer_resp[4]);
@@ -7896,7 +7896,7 @@ namespace iS800
 					num3++;
 					Comunicacao.Buffer_cmd[num3] = (byte)(RT_geral.Variaveis_RT_850[num2 + num4].Escala_ini.Valor % 256);
 					num3++;
-					int num7;
+					int num7 = 0;
 					switch (RT_geral.Variaveis_RT_850[num2 + num4].Escala_tratamento.Valor)
 					{
 					case 0:
@@ -8538,7 +8538,7 @@ namespace iS800
 				{
 					int num4 = pagina / 256 - 3;
 					int num5 = num4 * 7;
-					int num6;
+					int num6 = 0;
 					if (num_bloco == 0)
 					{
 						num6 = 240;
@@ -8587,8 +8587,8 @@ namespace iS800
 				}
 				else if (pagina == 1792)
 				{
-					int num5;
-					int num6;
+					int num5 = 0;
+					int num6 = 0;
 					switch (num_bloco)
 					{
 					case 0:
@@ -8670,7 +8670,7 @@ namespace iS800
 				{
 					int num4 = pagina / 256 - 3;
 					int num5 = num4 * 7;
-					int num6;
+					int num6 = 0;
 					if (num_bloco == 0)
 					{
 						int j = 0;
@@ -8712,7 +8712,7 @@ namespace iS800
 				}
 				else if (pagina == 2304)
 				{
-					int j;
+					int j = 0;
 					RT_831_200_variaveis_X.RT_831_200_BD.senha.senha.Valor = (int)Comunicacao.Buffer_resp[j + 3] * 256 + (int)Comunicacao.Buffer_resp[j + 4];
 				}
 			}
@@ -8863,7 +8863,7 @@ namespace iS800
 			{
 				int num2 = 4 * num;
 				int num3 = 0;
-				int num4;
+				int num4 = 0;
 				if (pagina == 512)
 				{
 					num3 = 0;
@@ -8888,9 +8888,9 @@ namespace iS800
 				for (int i = num6; i <= num7; i++)
 				{
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.reservatorio[i].NumeroVariavel.Valor;
-					int num8;
+					int num8 = 0;
 					byte b = (byte)num8;
-					int num9;
+					int num9 = 0;
 					byte b2 = (byte)num9;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num9 = (int)b2;
@@ -8992,9 +8992,9 @@ namespace iS800
 				for (int i = num4; i <= num5; i++)
 				{
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.recalque[i].origem.Valor;
-					int num6;
+					int num6 = 0;
 					byte b = (byte)num6;
-					int num7;
+					int num7 = 0;
 					byte b2 = (byte)num7;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num7 = (int)b2;
@@ -9343,9 +9343,9 @@ namespace iS800
 				for (int i = num5; i <= num6; i++)
 				{
 					int valor = RT_830_200_variaveis_X.RT_830_200_BD.vista[i].Numero_Variaveis.Valor;
-					int num7;
+					int num7 = 0;
 					byte b = (byte)num7;
-					int num8;
+					int num8 = 0;
 					byte b2 = (byte)num8;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num8 = (int)b2;
@@ -9525,9 +9525,9 @@ namespace iS800
 				for (int i = num2; i <= num3; i++)
 				{
 					int valor = RT_831_200_variaveis_X.RT_831_200_BD.reservatorio[i].Nome.Valor;
-					int num4;
+					int num4 = 0;
 					byte b = (byte)num4;
-					int num5;
+					int num5 = 0;
 					byte b2 = (byte)num5;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num5 = (int)b2;
@@ -9599,9 +9599,9 @@ namespace iS800
 				for (int i = num4; i <= num5; i++)
 				{
 					int valor = RT_831_200_variaveis_X.RT_831_200_BD.recalque[i].Modelo.Valor;
-					int num6;
+					int num6 = 0;
 					byte b = (byte)num6;
-					int num7;
+					int num7 = 0;
 					byte b2 = (byte)num7;
 					Linha_RT.Split16(valor, ref b, ref b2);
 					num7 = (int)b2;
@@ -10458,7 +10458,7 @@ namespace iS800
 				int num4 = tamanho - 1;
 				for (int i = num3; i <= num4; i++)
 				{
-					int num5;
+					int num5 = 0;
 					if (num2 < num)
 					{
 						num5 = (int)bytes[num2];
@@ -10496,7 +10496,7 @@ namespace iS800
 				int num4 = tamanho - 1;
 				for (int i = num3; i <= num4; i++)
 				{
-					int num5;
+					int num5 = 0;
 					if (num2 < num)
 					{
 						num5 = (int)bytes[num2];

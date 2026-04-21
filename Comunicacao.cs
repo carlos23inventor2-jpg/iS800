@@ -85,7 +85,7 @@ namespace iS800
 				string text = "Erro na escolha da porta de comunicação serial";
 				MsgBoxStyle msgBoxStyle = (Microsoft.VisualBasic.MsgBoxStyle)272;
 				string text2 = "Atenção - verifique configuração";
-				Interaction.MsgBox(text, msgBoxStyle, text2);
+				Interaction.MsgBox(text, (MsgBoxStyle)msgBoxStyle, text2);
 				Geral.Config_geral.Porta_serial_Ok = false;
 				flag = false;
 				goto IL_2E4;
@@ -223,7 +223,7 @@ namespace iS800
 				}
 				while (num5 <= 8);
 			}
-			return (((-((((int)Comunicacao.Buffer_resp[Num_dados] == (num & 255)) > false) ? 1 : 0)) ? 1 : 0) & (((-((((int)Comunicacao.Buffer_resp[checked(Num_dados + 1)] == num / 256) > false) ? 1 : 0)) ? 1 : 0) & 255)) != 0;
+			return (int)Comunicacao.Buffer_resp[Num_dados] == (num & 255) && (int)Comunicacao.Buffer_resp[checked(Num_dados + 1)] == num / 256;
 		}
 
 		// Token: 0x06000081 RID: 129 RVA: 0x002219D0 File Offset: 0x0021FDD0

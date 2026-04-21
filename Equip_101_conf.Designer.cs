@@ -875,7 +875,7 @@ namespace iS800
 			{
 				this.ArquivoToolStripMenuItem
 			});
-			this.MenuStrip1.LayoutStyle = 1;
+			this.MenuStrip1.LayoutStyle = (System.Windows.Forms.ToolStripLayoutStyle)1;
 			global::System.Windows.Forms.Control menuStrip = this.MenuStrip1;
 			location = new global::System.Drawing.Point(0, 477);
 			menuStrip.Location = location;

@@ -1464,7 +1464,7 @@ namespace iS800
 			this.Grupo_status.Enabled = false;
 			this.Grupo_estatistica.Enabled = false;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
 			this.Comando_le_setpoint.Enabled = false;
 			this.Comando_escreve_setpoint.Enabled = false;
 		}
@@ -1598,6 +1598,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_14A:
 						Comunicacao.Rotina_Delay(400L);
@@ -1664,6 +1665,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_2BE:
 						Comunicacao.Rotina_Delay(400L);
@@ -1733,6 +1735,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_4C4:
 						Comunicacao.Rotina_Delay(400L);
@@ -1770,6 +1773,7 @@ namespace iS800
 							Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Verifica_resposta();
 							this.Mensagem_MD201_mon(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 							this.Calcula_Estatistica(1);
+							goto IL_633;
 													}
 						case 1:
 							goto IL_601;
@@ -1796,6 +1800,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_621:
 						Comunicacao.Rotina_Delay(400L);
@@ -2092,7 +2097,7 @@ namespace iS800
 				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
-			if ((checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B1.Text) > Conversion.Val(this.Set_valor_Liga_B1.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B1.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L && (checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B2.Text) > Conversion.Val(this.Set_valor_Liga_B2.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B2.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L && (checked((long)Math.Round(Conversion.Val(Conversions.ToDouble(this.Set_valor_Desiga_B3.Text) > Conversion.Val(this.Set_valor_Liga_B3.Text)))) & ((-(((Conversions.ToDouble(this.Set_valor_Liga_B3.Text) != 0.0) > false) ? 1L : 0L)) ? 1L : 0L)) != 0L)
+			if (Conversion.Val(this.Set_valor_Desiga_B1.Text) > Conversion.Val(this.Set_valor_Liga_B1.Text) && Conversions.ToDouble(this.Set_valor_Liga_B1.Text) != 0.0 && Conversion.Val(this.Set_valor_Desiga_B2.Text) > Conversion.Val(this.Set_valor_Liga_B2.Text) && Conversions.ToDouble(this.Set_valor_Liga_B2.Text) != 0.0 && Conversion.Val(this.Set_valor_Desiga_B3.Text) > Conversion.Val(this.Set_valor_Liga_B3.Text) && Conversions.ToDouble(this.Set_valor_Liga_B3.Text) != 0.0)
 			{
 				obj = false;
 			}

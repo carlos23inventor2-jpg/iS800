@@ -188,7 +188,7 @@ namespace iS800
 				this.ToolStripTextBox_RT850_Msg,
 				this.ToolStripProgressBar_RT850
 			});
-			this.ToolStri_RT850.LayoutStyle = 3;
+			this.ToolStri_RT850.LayoutStyle = (System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT2 = this.ToolStri_RT850;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(0, 0);
@@ -201,7 +201,7 @@ namespace iS800
 			this.ToolStri_RT850.TabIndex = 10;
 			this.ToolStri_RT850.Text = "ToolStrip1";
 			this.ToolStripButton_RT850_novo.AutoToolTip = false;
-			this.ToolStripButton_RT850_novo.DisplayStyle = 2;
+			this.ToolStripButton_RT850_novo.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT850_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_novo = this.ToolStripButton_RT850_novo;
@@ -215,7 +215,7 @@ namespace iS800
 			this.ToolStripButton_RT850_novo.Text = "Novo";
 			this.ToolStripButton_RT850_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT850_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT850_Abrir.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Abrir.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT850_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Abrir.Name = "ToolStripButton_RT850_Abrir";
@@ -225,7 +225,7 @@ namespace iS800
 			this.ToolStripButton_RT850_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT850_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT850_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT850_Salvar.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Salvar.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT850_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Salvar.Name = "ToolStripButton_RT850_Salvar";
@@ -242,7 +242,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT850_Download.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Download.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT850_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_Download = this.ToolStripButton_RT850_Download;
@@ -253,7 +253,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(52, 52);
 			toolStripButton_RT850_Download2.Size = size;
 			this.ToolStripButton_RT850_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT850_Upload.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Upload.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT850_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Upload.Name = "ToolStripButton_RT850_Upload";
@@ -269,7 +269,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT850_Imprimir.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Imprimir.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT850_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Imprimir.Name = "ToolStripButton_RT850_Imprimir";
@@ -282,7 +282,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator5 = this.ToolStripSeparator3;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator5.Size = size;
-			this.ToolStripLabel1.Font = new global::System.Drawing.Font("Arial Narrow", 18f, 2, (FontStyle)3, 0);
+			this.ToolStripLabel1.Font = new global::System.Drawing.Font("Arial Narrow", 18f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			this.ToolStripLabel1.ForeColor = global::System.Drawing.Color.FromArgb(192, 0, 0);
 			global::System.Windows.Forms.ToolStripItem toolStripLabel = this.ToolStripLabel1;
 			padding = new global::System.Windows.Forms.Padding(5, 13, 0, 2);
@@ -307,7 +307,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT850_Msg2 = this.ToolStripTextBox_RT850_Msg;
 			size = new global::System.Drawing.Size(250, 23);
 			toolStripTextBox_RT850_Msg2.Size = size;
-			this.ToolStripTextBox_RT850_Msg.TextBoxTextAlign = (System.Drawing.ContentAlignment)2;
+			this.ToolStripTextBox_RT850_Msg.TextBoxTextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.ToolStripProgressBar_RT850.BackColor = global::System.Drawing.SystemColors.Control;
 			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT = this.ToolStripProgressBar_RT850;
 			padding = new global::System.Windows.Forms.Padding(20, 15, 1, 1);
@@ -455,7 +455,7 @@ namespace iS800
 			this.GroupBox_informacoes_RT850.TabStop = false;
 			this.GroupBox_informacoes_RT850.Text = "Informações";
 			this.Label11.AutoSize = true;
-			this.Label11.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 2, (FontStyle)3, 0);
+			this.Label11.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control label = this.Label11;
 			location = new global::System.Drawing.Point(164, 61);
 			label.Location = location;
@@ -466,7 +466,7 @@ namespace iS800
 			this.Label11.TabIndex = 35;
 			this.Label11.Text = "CT";
 			this.TextBox_equipamento_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_equipamento_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_equipamento_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_equipamento_RT = this.TextBox_equipamento_RT850;
 			location = new global::System.Drawing.Point(199, 58);
 			textBox_equipamento_RT.Location = location;
@@ -489,7 +489,7 @@ namespace iS800
 			this.Label19.TabIndex = 33;
 			this.Label19.Text = "Equipamento";
 			this.TextBox_release_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_release_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_release_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_release_RT = this.TextBox_release_RT850;
 			location = new global::System.Drawing.Point(355, 58);
 			textBox_release_RT.Location = location;
@@ -512,7 +512,7 @@ namespace iS800
 			this.Label29.TabIndex = 31;
 			this.Label29.Text = "Release";
 			this.TextBox_build_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_build_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_build_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_build_RT = this.TextBox_build_RT850;
 			location = new global::System.Drawing.Point(303, 58);
 			textBox_build_RT.Location = location;
@@ -535,7 +535,7 @@ namespace iS800
 			this.Label30.TabIndex = 29;
 			this.Label30.Text = "Build";
 			this.TextBox_versao_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_versao_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_versao_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_versao_RT = this.TextBox_versao_RT850;
 			location = new global::System.Drawing.Point(251, 58);
 			textBox_versao_RT.Location = location;
@@ -914,7 +914,7 @@ namespace iS800
 			this.DataGridView_Reservatorios.AllowUserToResizeRows = false;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Reservatorios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
-			this.DataGridView_Reservatorios.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Reservatorios.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Reservatorios.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.RES_Posicao,
@@ -978,7 +978,7 @@ namespace iS800
 			this.DataGridView_Recalques.AllowUserToResizeRows = false;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Recalques.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-			this.DataGridView_Recalques.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Recalques.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Recalques.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.REC_Posicao,
@@ -1129,7 +1129,7 @@ namespace iS800
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Antena 1";
 			this.Label16.AutoSize = true;
-			this.Label16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 9.75f, 0, (FontStyle)3, 0);
+			this.Label16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 9.75f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control label17 = this.Label16;
 			location = new global::System.Drawing.Point(736, 25);
 			label17.Location = location;

@@ -1868,7 +1868,7 @@ namespace iS800
 					string text10 = Conversion.Str(Mod_MD.Central_302_rq[i].Msg_res_R2);
 					string text11 = Conversion.Str(Mod_MD.Central_302_rq[i].Msg_res_R3);
 					string text12 = Conversion.Str(Mod_MD.Central_302_rq[i].Msg_res_R4);
-					string text13;
+					string text13 = null;
 					switch (Mod_MD.Central_302_rq[i].modelo)
 					{
 					case 1:
@@ -1905,6 +1905,7 @@ namespace iS800
 						text13 = "MD 202 - SoftStarter ABB - 1";
 						break;
 					default:
+											break;
 											}
 					IL_218:
 					string text14 = Conversion.Str(Mod_MD.Central_302_rq[i].Prioridade);
@@ -2768,7 +2769,7 @@ namespace iS800
 			checked
 			{
 				int num2 = 0;
-				int num8;
+				int num8 = 0;
 				object obj = null;
 				try
 				{
@@ -2996,7 +2997,7 @@ namespace iS800
 			bool flag = false;
 			checked
 			{
-				bool result;
+				bool result = false;
 				if (coluna < 1 | linha < 0)
 				{
 					result = false;
@@ -3364,26 +3365,26 @@ namespace iS800
 			this.OpenFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.OpenFileDialog1.ShowDialog() == 1)
+				if (this.OpenFileDialog1.ShowDialog() == DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", 1);
+					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", (CompareMethod)1);
 					string text = Strings.Left(this.OpenFileDialog1.FileName, num);
 					if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_302_geral);
-						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, 4, -1, -1, num);
+						FileSystem.FileOpen(1, this.OpenFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num2 = 1;
 						ValueType valueType = Mod_MD.Central_302_geral;
 						FileSystem.FileGet(num2, ref valueType, -1L);
 						ValueType valueType2 = valueType;
-						Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL dados_EQUIP_MD_302_CONFIG_GERAL;
+						Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL dados_EQUIP_MD_302_CONFIG_GERAL = default(Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL);
 						Mod_MD.Central_302_geral = ((valueType2 != null) ? ((Mod_MD.DADOS_EQUIP_MD_302_CONFIG_GERAL)valueType2) : dados_EQUIP_MD_302_CONFIG_GERAL);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V322", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V322", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num3 = 1;
 						Array array = Mod_MD.Central_302_res;
 						FileSystem.FileGet(num3, ref array, -1L, false, false);
@@ -3393,7 +3394,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V323", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V323", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num4 = 1;
 						array = Mod_MD.Central_302_rq;
 						FileSystem.FileGet(num4, ref array, -1L, false, false);
@@ -3403,7 +3404,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_centrais[1]) * Mod_MD.NUM_MAX_VISTA + 50;
-						FileSystem.FileOpen(1, text + "V324", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V324", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num5 = 1;
 						array = Mod_MD.Central_302_centrais;
 						FileSystem.FileGet(num5, ref array, -1L, false, false);
@@ -3413,7 +3414,7 @@ namespace iS800
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_indices[1, 1]) * 5 * 150 + 700;
-						FileSystem.FileOpen(1, text + "V325", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V325", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						int num6 = 1;
 						array = Mod_MD.Central_302_indices;
 						FileSystem.FileGet(num6, ref array, -1L, false, false);
@@ -3443,42 +3444,42 @@ namespace iS800
 			this.SaveFileDialog1.InitialDirectory = "c:\\";
 			checked
 			{
-				if (this.SaveFileDialog1.ShowDialog() == 1)
+				if (this.SaveFileDialog1.ShowDialog() == DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", 1);
+					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", (CompareMethod)1);
 					string text = Strings.Left(this.SaveFileDialog1.FileName, num);
 					if (Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 					{
 						num = Strings.Len(Mod_MD.Central_302_geral);
-						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, 4, -1, -1, num);
+						FileSystem.FileOpen(1, this.SaveFileDialog1.FileName, (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_geral, -1L);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_res[1]) * Mod_MD.NUM_MAX_RE + 50;
-						FileSystem.FileOpen(1, text + "V322", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V322", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_res, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_rq[1]) * Mod_MD.NUM_MAX_RQ + 200;
-						FileSystem.FileOpen(1, text + "V323", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V323", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_rq, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_centrais[1]) * Mod_MD.NUM_MAX_VISTA + 50;
-						FileSystem.FileOpen(1, text + "V324", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V324", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_centrais, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{
 							1
 						});
 						num = Strings.Len(Mod_MD.Central_302_indices[1, 1]) * 5 * 150 + 700;
-						FileSystem.FileOpen(1, text + "V325", 4, -1, -1, num);
+						FileSystem.FileOpen(1, text + "V325", (OpenMode)4, (OpenAccess)(-1), (OpenShare)(-1), num);
 						FileSystem.FilePut(1, Mod_MD.Central_302_indices, -1L, false, false);
 						FileSystem.FileClose(new int[]
 						{

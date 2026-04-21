@@ -31,7 +31,7 @@ namespace iS800
 			this.Label5.AutoSize = true;
 			this.Label5.BackColor = global::System.Drawing.Color.Transparent;
 			this.Label5.CausesValidation = false;
-			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, 3, (FontStyle)3, 0);
+			this.Label5.Font = new global::System.Drawing.Font("Calibri", 12.75f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control label = this.Label5;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(34, 92);
@@ -48,7 +48,7 @@ namespace iS800
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;
 			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
-			this.AutoValidate = 1;
+			this.AutoValidate = (System.Windows.Forms.AutoValidate)1;
 			this.BackColor = global::System.Drawing.Color.White;
 			this.BackgroundImage = (global::System.Drawing.Image)componentResourceManager.GetObject("$this.BackgroundImage");
 			size = new global::System.Drawing.Size(729, 350);

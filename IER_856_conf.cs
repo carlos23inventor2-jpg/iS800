@@ -1198,7 +1198,7 @@ namespace iS800
 			}
 			finally
 			{
-				List<perifericos.Valores_ComboBox>.Enumerator enumerator;
+				List<perifericos.Valores_ComboBox>.Enumerator enumerator = default(List<perifericos.Valores_ComboBox>.Enumerator);
 				enumerator.Dispose();
 			}
 		}
@@ -1227,15 +1227,15 @@ namespace iS800
 				this.ComboBox_baudrate = comboBox;
 				this.Inicializa_DadosEStrutura855_Default();
 				Linha_RT.Atualiza_Tipo_equipamento(Geral.Ctrl_equipamento, Geral.Ctrl_versao);
-				this.TabPage_geral.BackColor = Color.FromKnownColor(8);
-				this.TabPage_geral.ForeColor = Color.FromKnownColor(10);
+				this.TabPage_geral.BackColor = Color.FromKnownColor((KnownColor)8);
+				this.TabPage_geral.ForeColor = Color.FromKnownColor((KnownColor)10);
 				string text = ".\\\\Fontes\\\\Ictel Extendida Italic.ttf";
 				if (MyProject.Computer.FileSystem.FileExists(text))
 				{
 					PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 					privateFontCollection.AddFontFile(text);
-					Font font = new Font(privateFontCollection.Families[0], 8f, 2);
-					Font font2 = new Font(privateFontCollection.Families[0], 18f, 2);
+					Font font = new Font(privateFontCollection.Families[0], 8f, (System.Drawing.FontStyle)2);
+					Font font2 = new Font(privateFontCollection.Families[0], 18f, (System.Drawing.FontStyle)2);
 					this.Label26.Font = font;
 					this.Label17.Font = font;
 					this.TextBox_equipamento.Font = font;
@@ -1656,7 +1656,7 @@ namespace iS800
 		// Token: 0x06000E98 RID: 3736 RVA: 0x00304600 File Offset: 0x00302A00
 		private bool Entrada_Digital_Ja_Utilizada(int entrada, int num_ED)
 		{
-			bool result;
+			bool result = false;
 			return result;
 		}
 
@@ -1669,7 +1669,7 @@ namespace iS800
 		// Token: 0x06000E9A RID: 3738 RVA: 0x00304620 File Offset: 0x00302A20
 		private bool Endereco_Repetidora_Ja_Existente(ref DataGridView obj, ref RT_geral.Integer_ictel dado, DataGridViewCellValidatingEventArgs e, int posicao)
 		{
-			bool result;
+			bool result = false;
 			return result;
 		}
 
@@ -1902,7 +1902,7 @@ namespace iS800
 					this.AtivaEfeitoOnChangeValue();
 					this.OpenFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg855";
 					this.OpenFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-					if (this.OpenFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
+					if (this.OpenFileDialog_RT_810.ShowDialog() == DialogResult.OK && Operators.CompareString(this.OpenFileDialog_RT_810.FileName, "", false) != 0)
 					{
 						Linha_RT.diretorio = Path.GetDirectoryName(this.OpenFileDialog_RT_810.FileName) + "\\";
 						RT_geral.arquivo_extensao = Path.GetExtension(this.OpenFileDialog_RT_810.FileName);
@@ -2005,7 +2005,7 @@ namespace iS800
 				this.Bloqueia_acoes();
 				this.SaveFileDialog_RT_810.Filter = "Arquivo de configuração de equipamento|*.Cfg810";
 				this.SaveFileDialog_RT_810.InitialDirectory = Linha_RT.diretorio;
-				if (this.SaveFileDialog_RT_810.ShowDialog() == 1 && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
+				if (this.SaveFileDialog_RT_810.ShowDialog() == DialogResult.OK && Operators.CompareString(this.SaveFileDialog_RT_810.FileName, "", false) != 0)
 				{
 					Linha_RT.diretorio = Path.GetDirectoryName(this.SaveFileDialog_RT_810.FileName) + "\\";
 					if (File.Exists(this.SaveFileDialog_RT_810.FileName))
@@ -2162,10 +2162,10 @@ namespace iS800
 		[MethodImpl(72)]
 		private void DesenhaRelatorioRT810(PrintPageEventArgs z)
 		{
-			Font font = new Font("Calibri", 10f, 3);
-			Font font2 = new Font("Calibri", 10f, 3, (FontStyle)3);
-			Font font3 = new Font("Calibri", 10f, 0, (FontStyle)3);
-			Font fonte = new Font("Calibri", 20f, 1, (FontStyle)3);
+			Font font = new Font("Calibri", 10f, (System.Drawing.FontStyle)3);
+			Font font2 = new Font("Calibri", 10f, (System.Drawing.FontStyle)3, (System.Drawing.GraphicsUnit)3);
+			Font font3 = new Font("Calibri", 10f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3);
+			Font fonte = new Font("Calibri", 20f, (System.Drawing.FontStyle)1, (System.Drawing.GraphicsUnit)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			FontesTabela fonte2;
 			fonte2.Titulo = font2;
@@ -2400,7 +2400,7 @@ namespace iS800
 		// Token: 0x06000EB3 RID: 3763 RVA: 0x003060EC File Offset: 0x003044EC
 		private bool DesenhaRelatorio(PrintPageEventArgs z)
 		{
-			Font font = new Font("Arial", 12f, 3);
+			Font font = new Font("Arial", 12f, (System.Drawing.FontStyle)3);
 			Pen pen = new Pen(Color.Black, 2f);
 			checked
 			{
@@ -2518,7 +2518,7 @@ namespace iS800
 		// Token: 0x06000EC3 RID: 3779 RVA: 0x0030628C File Offset: 0x0030468C
 		public bool IPKeyPress(KeyPressEventArgs e)
 		{
-			bool result;
+			bool result = false;
 			if (char.IsDigit(e.KeyChar) | Operators.CompareString(Conversions.ToString(e.KeyChar), ".", false) == 0 | Strings.Asc(e.KeyChar) == 46 | Strings.Asc(e.KeyChar) == 8 | Strings.Asc(e.KeyChar) == 39 | Strings.Asc(e.KeyChar) == 37)
 			{
 				result = true;
@@ -2537,7 +2537,7 @@ namespace iS800
 			{
 				'.'
 			});
-			bool result;
+			bool result = false;
 			if (array.Length != 4)
 			{
 				result = false;

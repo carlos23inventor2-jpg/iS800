@@ -3390,7 +3390,7 @@ namespace iS800
 			{
 				ProjectData.ClearProjectError();
 				num = 2;
-				text = Strings.FormatDateTime(Conversions.ToDate(hora), 4);
+				text = Strings.FormatDateTime(Conversions.ToDate(hora), (Microsoft.VisualBasic.DateFormat)4);
 				goto IL_6F;
 				IL_16:
 				if (!ativa_msg)

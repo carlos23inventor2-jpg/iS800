@@ -43,14 +43,14 @@ namespace iS800
 		// Token: 0x06002927 RID: 10535 RVA: 0x0042D1C0 File Offset: 0x0042B5C0
 		private void OK_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = 1;
+			this.DialogResult = (DialogResult)1;
 			this.Close();
 		}
 
 		// Token: 0x06002928 RID: 10536 RVA: 0x0042D1D0 File Offset: 0x0042B5D0
 		private void Cancel_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = 2;
+			this.DialogResult = (DialogResult)2;
 			this.Close();
 		}
 

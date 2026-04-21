@@ -247,7 +247,7 @@ namespace iS800
 				this.ToolStripTextBox_RT850_Msg,
 				this.ToolStripProgressBar_RT850
 			});
-			this.ToolStri_RT850.LayoutStyle = 3;
+			this.ToolStri_RT850.LayoutStyle = (System.Windows.Forms.ToolStripLayoutStyle)3;
 			global::System.Windows.Forms.Control toolStri_RT2 = this.ToolStri_RT850;
 			global::System.Drawing.Point location;
 			location = new global::System.Drawing.Point(0, 0);
@@ -260,7 +260,7 @@ namespace iS800
 			this.ToolStri_RT850.TabIndex = 10;
 			this.ToolStri_RT850.Text = "ToolStrip1";
 			this.ToolStripButton_RT850_novo.AutoToolTip = false;
-			this.ToolStripButton_RT850_novo.DisplayStyle = 2;
+			this.ToolStripButton_RT850_novo.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
 			this.ToolStripButton_RT850_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_novo = this.ToolStripButton_RT850_novo;
@@ -274,7 +274,7 @@ namespace iS800
 			this.ToolStripButton_RT850_novo.Text = "Novo";
 			this.ToolStripButton_RT850_novo.ToolTipText = "Novo arquivo";
 			this.ToolStripButton_RT850_Abrir.AutoToolTip = false;
-			this.ToolStripButton_RT850_Abrir.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Abrir.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
 			this.ToolStripButton_RT850_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Abrir.Name = "ToolStripButton_RT850_Abrir";
@@ -284,7 +284,7 @@ namespace iS800
 			this.ToolStripButton_RT850_Abrir.Text = "Abrir Arquivo";
 			this.ToolStripButton_RT850_Abrir.ToolTipText = "Abrir arquivo";
 			this.ToolStripButton_RT850_Salvar.AutoToolTip = false;
-			this.ToolStripButton_RT850_Salvar.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Salvar.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
 			this.ToolStripButton_RT850_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Salvar.Name = "ToolStripButton_RT850_Salvar";
@@ -301,7 +301,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator2.Size = size;
-			this.ToolStripButton_RT850_Download.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Download.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
 			this.ToolStripButton_RT850_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			global::System.Windows.Forms.ToolStripItem toolStripButton_RT850_Download = this.ToolStripButton_RT850_Download;
@@ -312,7 +312,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(52, 52);
 			toolStripButton_RT850_Download2.Size = size;
 			this.ToolStripButton_RT850_Download.Text = "Ler Equipamento";
-			this.ToolStripButton_RT850_Upload.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Upload.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
 			this.ToolStripButton_RT850_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Upload.Name = "ToolStripButton_RT850_Upload";
@@ -328,7 +328,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator4.Size = size;
-			this.ToolStripButton_RT850_Imprimir.DisplayStyle = 2;
+			this.ToolStripButton_RT850_Imprimir.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
 			this.ToolStripButton_RT850_Imprimir.Image = global::iS800.My.Resources.Resources.Hardware_Printer_Text_Icon_128;
 			this.ToolStripButton_RT850_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
 			this.ToolStripButton_RT850_Imprimir.Name = "ToolStripButton_RT850_Imprimir";
@@ -341,7 +341,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripItem toolStripSeparator5 = this.ToolStripSeparator3;
 			size = new global::System.Drawing.Size(6, 52);
 			toolStripSeparator5.Size = size;
-			this.ToolStripLabel1.Font = new global::System.Drawing.Font("Arial Narrow", 18f, 2, (FontStyle)3, 0);
+			this.ToolStripLabel1.Font = new global::System.Drawing.Font("Arial Narrow", 18f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			this.ToolStripLabel1.ForeColor = global::System.Drawing.Color.FromArgb(192, 0, 0);
 			global::System.Windows.Forms.ToolStripItem toolStripLabel = this.ToolStripLabel1;
 			padding = new global::System.Windows.Forms.Padding(5, 13, 0, 2);
@@ -366,7 +366,7 @@ namespace iS800
 			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT850_Msg2 = this.ToolStripTextBox_RT850_Msg;
 			size = new global::System.Drawing.Size(250, 23);
 			toolStripTextBox_RT850_Msg2.Size = size;
-			this.ToolStripTextBox_RT850_Msg.TextBoxTextAlign = (System.Drawing.ContentAlignment)2;
+			this.ToolStripTextBox_RT850_Msg.TextBoxTextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.ToolStripProgressBar_RT850.BackColor = global::System.Drawing.SystemColors.Control;
 			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT = this.ToolStripProgressBar_RT850;
 			padding = new global::System.Windows.Forms.Padding(20, 15, 1, 1);
@@ -514,7 +514,7 @@ namespace iS800
 			this.GroupBox_informacoes_RT850.TabStop = false;
 			this.GroupBox_informacoes_RT850.Text = "Informações";
 			this.Label11.AutoSize = true;
-			this.Label11.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 2, (FontStyle)3, 0);
+			this.Label11.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control label = this.Label11;
 			location = new global::System.Drawing.Point(164, 61);
 			label.Location = location;
@@ -525,7 +525,7 @@ namespace iS800
 			this.Label11.TabIndex = 35;
 			this.Label11.Text = "CT";
 			this.TextBox_equipamento_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_equipamento_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_equipamento_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_equipamento_RT = this.TextBox_equipamento_RT850;
 			location = new global::System.Drawing.Point(199, 58);
 			textBox_equipamento_RT.Location = location;
@@ -548,7 +548,7 @@ namespace iS800
 			this.Label19.TabIndex = 33;
 			this.Label19.Text = "Equipamento";
 			this.TextBox_release_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_release_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_release_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_release_RT = this.TextBox_release_RT850;
 			location = new global::System.Drawing.Point(355, 58);
 			textBox_release_RT.Location = location;
@@ -571,7 +571,7 @@ namespace iS800
 			this.Label29.TabIndex = 31;
 			this.Label29.Text = "Release";
 			this.TextBox_build_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_build_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_build_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_build_RT = this.TextBox_build_RT850;
 			location = new global::System.Drawing.Point(303, 58);
 			textBox_build_RT.Location = location;
@@ -594,7 +594,7 @@ namespace iS800
 			this.Label30.TabIndex = 29;
 			this.Label30.Text = "Build";
 			this.TextBox_versao_RT850.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_versao_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, 2, (FontStyle)3, 0);
+			this.TextBox_versao_RT850.Font = new global::System.Drawing.Font("Arial", 8.25f, (System.Drawing.FontStyle)2, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control textBox_versao_RT = this.TextBox_versao_RT850;
 			location = new global::System.Drawing.Point(251, 58);
 			textBox_versao_RT.Location = location;
@@ -1174,7 +1174,7 @@ namespace iS800
 			this.DataGridView_Reservatorios.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Reservatorios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
-			this.DataGridView_Reservatorios.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Reservatorios.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Reservatorios.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.RES_End_Comunicacao,
@@ -1254,15 +1254,15 @@ namespace iS800
 			this.DataGridView_Recalques.AllowUserToResizeRows = false;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Recalques.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-			dataGridViewCellStyle3.Alignment = (System.Windows.Forms.HorizontalAlignment)16;
+			dataGridViewCellStyle3.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
 			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
-			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
+			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
 			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.WindowText;
 			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = 1;
+			dataGridViewCellStyle3.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
 			this.DataGridView_Recalques.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-			this.DataGridView_Recalques.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Recalques.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Recalques.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.REC_End_Comunicacao,
@@ -1326,43 +1326,43 @@ namespace iS800
 			this.REC_Modelo.Name = "REC_Modelo";
 			this.REC_Prioridade.HeaderText = "Prioridade:";
 			this.REC_Prioridade.Name = "REC_Prioridade";
-			this.REC_Prioridade.Resizable = 1;
-			this.REC_Prioridade.SortMode = 0;
+			this.REC_Prioridade.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_Prioridade.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_Prioridade.Width = 80;
 			this.REC_Reservatorio1.HeaderText = "Reservatório 1: (EA 13)";
 			this.REC_Reservatorio1.Name = "REC_Reservatorio1";
-			this.REC_Reservatorio1.Resizable = 1;
-			this.REC_Reservatorio1.SortMode = 0;
+			this.REC_Reservatorio1.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_Reservatorio1.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_Reservatorio1.Width = 70;
 			this.REC_Reservatorio2.HeaderText = "Reservatório 2: (EA 14)";
 			this.REC_Reservatorio2.Name = "REC_Reservatorio2";
-			this.REC_Reservatorio2.Resizable = 1;
-			this.REC_Reservatorio2.SortMode = 0;
+			this.REC_Reservatorio2.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_Reservatorio2.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_Reservatorio2.Width = 70;
 			this.REC_Reservatorio3.HeaderText = "Reservatório 3: (EA 15)";
 			this.REC_Reservatorio3.Name = "REC_Reservatorio3";
-			this.REC_Reservatorio3.Resizable = 1;
-			this.REC_Reservatorio3.SortMode = 0;
+			this.REC_Reservatorio3.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_Reservatorio3.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_Reservatorio3.Width = 70;
 			this.REC_Reservatorio4.HeaderText = "Reservatório 4: (EA 16)";
 			this.REC_Reservatorio4.Name = "REC_Reservatorio4";
-			this.REC_Reservatorio4.Resizable = 1;
-			this.REC_Reservatorio4.SortMode = 0;
+			this.REC_Reservatorio4.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_Reservatorio4.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_Reservatorio4.Width = 70;
 			this.REC_NomeRes1.HeaderText = "Nome Reservatório 1:";
 			this.REC_NomeRes1.Name = "REC_NomeRes1";
-			this.REC_NomeRes1.Resizable = 1;
-			this.REC_NomeRes1.SortMode = 0;
+			this.REC_NomeRes1.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_NomeRes1.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_NomeRes1.Width = 80;
 			this.REC_NomeRes2.HeaderText = "Nome Reservatório 2:";
 			this.REC_NomeRes2.Name = "REC_NomeRes2";
-			this.REC_NomeRes2.Resizable = 1;
-			this.REC_NomeRes2.SortMode = 0;
+			this.REC_NomeRes2.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_NomeRes2.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_NomeRes2.Width = 80;
 			this.REC_NomeRes3.HeaderText = "Nome Reservatório 3:";
 			this.REC_NomeRes3.Name = "REC_NomeRes3";
-			this.REC_NomeRes3.Resizable = 1;
-			this.REC_NomeRes3.SortMode = 0;
+			this.REC_NomeRes3.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
+			this.REC_NomeRes3.SortMode = (System.Windows.Forms.DataGridViewColumnSortMode)0;
 			this.REC_NomeRes3.Width = 80;
 			this.REC_NomeRes4.HeaderText = "Nome Reservatório 4:";
 			this.REC_NomeRes4.Name = "REC_NomeRes4";
@@ -1489,7 +1489,7 @@ namespace iS800
 			this.DataGridView_Vista_Remotas.AllowUserToAddRows = false;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Vista_Remotas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-			this.DataGridView_Vista_Remotas.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Vista_Remotas.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Vista_Remotas.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.VC_Vista,
@@ -1515,7 +1515,7 @@ namespace iS800
 			this.DataGridView_Vista_Variaveis.AllowUserToAddRows = false;
 			dataGridViewCellStyle5.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Vista_Variaveis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-			this.DataGridView_Vista_Variaveis.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Vista_Variaveis.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Vista_Variaveis.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.VR_Vista,
@@ -1544,7 +1544,7 @@ namespace iS800
 			this.DataGridView_Qtd_Vista.AllowUserToResizeRows = false;
 			dataGridViewCellStyle6.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_Qtd_Vista.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-			this.DataGridView_Qtd_Vista.ColumnHeadersHeightSizeMode = 2;
+			this.DataGridView_Qtd_Vista.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
 			this.DataGridView_Qtd_Vista.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
 				this.Vista,
@@ -1580,7 +1580,7 @@ namespace iS800
 			this.Qtd_Vista_Recalque.Width = 80;
 			this.Qtd_Vista_Prioridade.HeaderText = "Prioridade:";
 			this.Qtd_Vista_Prioridade.Name = "Qtd_Vista_Prioridade";
-			this.Qtd_Vista_Prioridade.Resizable = 1;
+			this.Qtd_Vista_Prioridade.Resizable = (System.Windows.Forms.DataGridViewTriState)1;
 			this.Qtd_Vista_Prioridade.Width = 70;
 			global::System.Windows.Forms.Control tb_lixo11 = this.tb_lixo6;
 			location = new global::System.Drawing.Point(9, 52);
@@ -1638,7 +1638,7 @@ namespace iS800
 			this.GroupBox2.TabStop = false;
 			this.GroupBox2.Text = "Antena 1";
 			this.Label16.AutoSize = true;
-			this.Label16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 9.75f, 0, (FontStyle)3, 0);
+			this.Label16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 9.75f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
 			global::System.Windows.Forms.Control label31 = this.Label16;
 			location = new global::System.Drawing.Point(736, 25);
 			label31.Location = location;

@@ -516,7 +516,7 @@ namespace iS800
 			this.Mensagem_MD101_mon("Monitoração desativada", 2);
 			Geral.Config_geral.Largura_tela_trabalho = this.Width;
 			int num = 48;
-			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", num, " Atenção - verifique a configuração");
+			Interaction.MsgBox("Colocar o equipamento em modo de monitoração !\r\nAbrir o jumper de configuração.", (MsgBoxStyle)num, " Atenção - verifique a configuração");
 		}
 
 		// Token: 0x06001BE7 RID: 7143 RVA: 0x003CC53C File Offset: 0x003CA93C

@@ -2368,7 +2368,7 @@ namespace iS800
 				text += "Utilize canal COM2.";
 				break;
 			}
-			Interaction.MsgBox(text, num, " Atenção - verifique a configuração");
+			Interaction.MsgBox(text, (MsgBoxStyle)num, " Atenção - verifique a configuração");
 			string versao = Geral.Config_geral.Versao;
 			if (Operators.CompareString(versao, "21", false) == 0)
 			{
@@ -2476,6 +2476,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_165:
 						Comunicacao.Rotina_Delay(400L);
@@ -2555,6 +2556,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_367:
 						Comunicacao.Rotina_Delay(400L);
@@ -2652,6 +2654,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_8D5:
 						Comunicacao.Rotina_Delay(400L);
@@ -2689,6 +2692,7 @@ namespace iS800
 							Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Verifica_resposta();
 							this.Mensagem_MD202_mon(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 							this.Calcula_Estatistica_202(1);
+							goto IL_A44;
 													}
 						case 1:
 							goto IL_A12;
@@ -2715,6 +2719,7 @@ namespace iS800
 							}
 							break;
 						default:
+													break;
 													}
 						IL_A32:
 						Comunicacao.Rotina_Delay(400L);
