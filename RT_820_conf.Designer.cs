@@ -406,7 +406,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_intervalo_tx3.Size = size;
 			this.NumericUpDown_intervalo_tx.TabIndex = 1;
-			this.NumericUpDown_intervalo_tx.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_intervalo_tx.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_metodo_operacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_metodo_operacao = this.Label_metodo_operacao;
 			location = new global::System.Drawing.Point(21, 31);
@@ -591,7 +591,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_temp_ptt4.Size = size;
 			this.NumericUpDown_temp_ptt.TabIndex = 2;
-			this.NumericUpDown_temp_ptt.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_temp_ptt.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt5 = this.NumericUpDown_temp_ptt;
 			num = new decimal(new int[]
 			{
@@ -618,7 +618,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_mestre3.Size = size;
 			this.NumericUpDown_end_mestre.TabIndex = 0;
-			this.NumericUpDown_end_mestre.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control numericUpDown_end_est = this.NumericUpDown_end_est;
 			location = new global::System.Drawing.Point(204, 57);
 			numericUpDown_end_est.Location = location;
@@ -636,7 +636,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_est3.Size = size;
 			this.NumericUpDown_end_est.TabIndex = 1;
-			this.NumericUpDown_end_est.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_est.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_tempo_ptt.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt = this.Label_tempo_ptt;
 			location = new global::System.Drawing.Point(21, 85);
@@ -898,7 +898,7 @@ namespace iS800
 			textBox_equipamento_2.Size = size;
 			this.TextBox_equipamento_820.TabIndex = 25;
 			this.TextBox_equipamento_820.TabStop = false;
-			this.TextBox_equipamento_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_equipamento_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label18.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label18;
 			location = new global::System.Drawing.Point(133, 55);
@@ -921,7 +921,7 @@ namespace iS800
 			textBox_release_2.Size = size;
 			this.TextBox_release_820.TabIndex = 23;
 			this.TextBox_release_820.TabStop = false;
-			this.TextBox_release_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_release_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label19.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label19;
 			location = new global::System.Drawing.Point(327, 55);
@@ -944,7 +944,7 @@ namespace iS800
 			textBox_build_2.Size = size;
 			this.TextBox_build_820.TabIndex = 21;
 			this.TextBox_build_820.TabStop = false;
-			this.TextBox_build_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_build_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label20.AutoSize = true;
 			global::System.Windows.Forms.Control label9 = this.Label20;
 			location = new global::System.Drawing.Point(281, 55);
@@ -967,7 +967,7 @@ namespace iS800
 			textBox_versao_2.Size = size;
 			this.TextBox_versao_820.TabIndex = 19;
 			this.TextBox_versao_820.TabStop = false;
-			this.TextBox_versao_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_versao_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label21.AutoSize = true;
 			global::System.Windows.Forms.Control label11 = this.Label21;
 			location = new global::System.Drawing.Point(223, 55);
@@ -1004,7 +1004,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(55, 20);
 			nud_tempoforaar2.Size = size;
 			this.nud_tempoforaar.TabIndex = 7;
-			this.nud_tempoforaar.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.nud_tempoforaar.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label30.AutoSize = true;
 			global::System.Windows.Forms.Control label13 = this.Label30;
 			location = new global::System.Drawing.Point(21, 98);
@@ -1050,7 +1050,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(55, 20);
 			numericUpDown_temp_ptt_5.Size = size;
 			this.NumericUpDown_temp_ptt_820.TabIndex = 2;
-			this.NumericUpDown_temp_ptt_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_temp_ptt_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_6 = this.NumericUpDown_temp_ptt_820;
 			num = new decimal(new int[]
 			{
@@ -1077,7 +1077,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(55, 20);
 			numericUpDown_end_mestre_3.Size = size;
 			this.NumericUpDown_end_mestre_820.TabIndex = 0;
-			this.NumericUpDown_end_mestre_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_mestre_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control numericUpDown_end_est_ = this.NumericUpDown_end_est_820;
 			location = new global::System.Drawing.Point(221, 47);
 			numericUpDown_end_est_.Location = location;
@@ -1095,7 +1095,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(55, 20);
 			numericUpDown_end_est_3.Size = size;
 			this.NumericUpDown_end_est_820.TabIndex = 1;
-			this.NumericUpDown_end_est_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_est_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_tempo_ptt_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt_ = this.Label_tempo_ptt_820;
 			location = new global::System.Drawing.Point(21, 75);
@@ -1157,7 +1157,7 @@ namespace iS800
 			this.DataGridView_grupos_820.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_grupos_820.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
-			this.DataGridView_grupos_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)4;
+			this.DataGridView_grupos_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)4;
 			dataGridViewCellStyle2.Alignment = (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1179,7 +1179,7 @@ namespace iS800
 			location = new global::System.Drawing.Point(6, 19);
 			dataGridView_grupos_.Location = location;
 			this.DataGridView_grupos_820.Name = "DataGridView_grupos_820";
-			this.DataGridView_grupos_820.RowHeadersBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_grupos_820.RowHeadersBorderStyle = (System.Windows.Forms.DataGridViewHeaderBorderStyle)1;
 			dataGridViewCellStyle4.Alignment = (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1209,7 +1209,7 @@ namespace iS800
 			this.DataGridView_processo_820.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle5.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_processo_820.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-			this.DataGridView_processo_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)4;
+			this.DataGridView_processo_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)4;
 			dataGridViewCellStyle6.Alignment = (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle6.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle6.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1231,7 +1231,7 @@ namespace iS800
 			location = new global::System.Drawing.Point(6, 19);
 			dataGridView_processo_.Location = location;
 			this.DataGridView_processo_820.Name = "DataGridView_processo_820";
-			this.DataGridView_processo_820.RowHeadersBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_processo_820.RowHeadersBorderStyle = (System.Windows.Forms.DataGridViewHeaderBorderStyle)1;
 			dataGridViewCellStyle8.Alignment = (System.Windows.Forms.HorizontalAlignment)1;
 			dataGridViewCellStyle8.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle8.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1282,7 +1282,7 @@ namespace iS800
 			this.DataGridView_parametros_EA_820.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle9.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
 			this.DataGridView_parametros_EA_820.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-			this.DataGridView_parametros_EA_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)4;
+			this.DataGridView_parametros_EA_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)4;
 			dataGridViewCellStyle10.Alignment = (System.Windows.Forms.HorizontalAlignment)16;
 			dataGridViewCellStyle10.BackColor = global::System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle10.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, 0, (FontStyle)3, 0);
@@ -1365,7 +1365,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			numericUpDown_intervalo_filtro_4.Size = size;
 			this.NumericUpDown_intervalo_filtro_820.TabIndex = 18;
-			this.NumericUpDown_intervalo_filtro_820.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.NumericUpDown_intervalo_filtro_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control numericUpDown_tamanho_filtro_ = this.NumericUpDown_tamanho_filtro_820;
 			location = new global::System.Drawing.Point(115, 53);
 			numericUpDown_tamanho_filtro_.Location = location;
@@ -1383,7 +1383,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			numericUpDown_tamanho_filtro_3.Size = size;
 			this.NumericUpDown_tamanho_filtro_820.TabIndex = 1;
-			this.NumericUpDown_tamanho_filtro_820.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.NumericUpDown_tamanho_filtro_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_intervalo_filtro_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_intervalo_filtro_ = this.Label_intervalo_filtro_820;
 			location = new global::System.Drawing.Point(16, 29);
@@ -2316,7 +2316,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_num_est_rep_3.Size = size;
 			this.NumericUpDown_num_est_rep_820.TabIndex = 2;
-			this.NumericUpDown_num_est_rep_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_num_est_rep_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_num_est_rep_820.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_est_rep_ = this.Label_num_est_rep_820;
 			location = new global::System.Drawing.Point(27, 69);
@@ -2354,7 +2354,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_rep_3.Size = size;
 			this.NumericUpDown_end_rep_820.TabIndex = 1;
-			this.NumericUpDown_end_rep_820.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_rep_820.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control tb_lixo13 = this.tb_lixo7;
 			location = new global::System.Drawing.Point(174, 42);
 			tb_lixo13.Location = location;

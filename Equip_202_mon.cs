@@ -2476,8 +2476,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_13E;
-						}
+													}
 						IL_165:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2487,11 +2486,9 @@ namespace iS800
 							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_202(3);
 							this.Limpa_monitoracao_202(2);
-							goto IL_165;
-						}
+													}
 						this.Calcula_Estatistica_202(2);
-						goto IL_165;
-					}
+											}
 					IL_177:
 					this.Comando_le_setpoint.Enabled = true;
 					this.Comando_escreve_setpoint.Enabled = true;
@@ -2558,8 +2555,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_340;
-						}
+													}
 						IL_367:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2569,11 +2565,9 @@ namespace iS800
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_202(3);
 							this.Limpa_monitoracao_202(1);
-							goto IL_367;
-						}
+													}
 						this.Calcula_Estatistica_202(2);
-						goto IL_367;
-					}
+											}
 					IL_379:
 					MyProject.Forms.Plataforma.Mostra_no_ouvidor(Comunicacao.Ctrl_Com.Frame);
 					break;
@@ -2658,8 +2652,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_8B5;
-						}
+													}
 						IL_8D5:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2668,11 +2661,9 @@ namespace iS800
 						{
 							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_202(3);
-							goto IL_8D5;
-						}
+													}
 						this.Calcula_Estatistica_202(2);
-						goto IL_8D5;
-					}
+											}
 					IL_8E7:
 					this.Comando_le_setpoint.Enabled = true;
 					this.Comando_escreve_setpoint.Enabled = true;
@@ -2698,8 +2689,7 @@ namespace iS800
 							Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Verifica_resposta();
 							this.Mensagem_MD202_mon(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 							this.Calcula_Estatistica_202(1);
-							goto IL_A44;
-						}
+													}
 						case 1:
 							goto IL_A12;
 						case 2:
@@ -2725,8 +2715,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_A12;
-						}
+													}
 						IL_A32:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2735,11 +2724,9 @@ namespace iS800
 						{
 							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", 1);
 							this.Calcula_Estatistica_202(3);
-							goto IL_A32;
-						}
+													}
 						this.Calcula_Estatistica_202(2);
-						goto IL_A32;
-					}
+											}
 					IL_A44:
 					MyProject.Forms.Plataforma.Mostra_no_ouvidor(Comunicacao.Ctrl_Com.Frame);
 					break;
@@ -2886,8 +2873,8 @@ namespace iS800
 		{
 			string versao = Geral.Config_geral.Versao;
 			int tipo;
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (Operators.CompareString(versao, "50", false) == 0)
 			{
 				tipo = 2;

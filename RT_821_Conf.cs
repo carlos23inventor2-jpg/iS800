@@ -2795,7 +2795,7 @@ namespace iS800
 		private void GeraDataGridView_Processos_RT_821()
 		{
 			this.DataGridView_processo_RT821.Columns.Clear();
-			this.DataGridView_processo_RT821.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_processo_RT821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -2819,7 +2819,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_processo_RT821.Rows)
+					foreach (object obj = null in this.DataGridView_processo_RT821.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -2928,7 +2928,7 @@ namespace iS800
 		private void GeraDataGridView_MotoresSimultaneos_RT_821()
 		{
 			this.DataGridView_MotoresSimultaneos_RT_821.Columns.Clear();
-			this.DataGridView_MotoresSimultaneos_RT_821.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_MotoresSimultaneos_RT_821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -2988,7 +2988,7 @@ namespace iS800
 		private void GeraDataGridView_EA_RT_821()
 		{
 			this.DataGridView_parametros_EA_RT821.Columns.Clear();
-			this.DataGridView_parametros_EA_RT821.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_parametros_EA_RT821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -3012,7 +3012,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_parametros_EA_RT821.Rows)
+					foreach (object obj = null in this.DataGridView_parametros_EA_RT821.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -3057,7 +3057,7 @@ namespace iS800
 		private void GeraDataGridView_Repedidora_RT_821()
 		{
 			this.DataGridView_end_rep_RT821.Columns.Clear();
-			this.DataGridView_end_rep_RT821.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_end_rep_RT821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_end_rep_RT821.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -3146,7 +3146,7 @@ namespace iS800
 		private void GeraDataGridView_Setpoints_RT_821()
 		{
 			this.DataGridView_setpoints_RT821.Columns.Clear();
-			this.DataGridView_setpoints_RT821.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_setpoints_RT821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_setpoints_RT821.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -3171,7 +3171,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_setpoints_RT821.Rows)
+					foreach (object obj = null in this.DataGridView_setpoints_RT821.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -3239,7 +3239,7 @@ namespace iS800
 		private void GeraDataGridView_ED_RT_821()
 		{
 			this.DataGridView_RT821_ED.Columns.Clear();
-			this.DataGridView_RT821_ED.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_RT821_ED.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_RT821_ED.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -3264,7 +3264,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_RT821_ED.Rows)
+					foreach (object obj = null in this.DataGridView_RT821_ED.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -3324,7 +3324,7 @@ namespace iS800
 		private void GeraDataGridView_Visor_RT_821()
 		{
 			this.DataGridView_visor_RT_821.Columns.Clear();
-			this.DataGridView_visor_RT_821.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_visor_RT_821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_visor_RT_821.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -3354,7 +3354,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_visor_RT_821.Rows)
+					foreach (object obj = null in this.DataGridView_visor_RT_821.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -3420,9 +3420,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -3540,11 +3540,7 @@ namespace iS800
 					num3 = -1;
 										IL_9CD:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_9B7;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_9FC:
 				if (num3 != 0)
@@ -4297,12 +4293,12 @@ namespace iS800
 					{
 						true
 					};
-					object obj2 = NewLateBinding.LateGet(obj, typeFromHandle, text, array4, array5, array6, array7);
+					object ex = NewLateBinding.LateGet(obj, typeFromHandle, text, array4, array5, array6, array7);
 					if (array7[0])
 					{
 						dataGridViewCell2.Value = RuntimeHelpers.GetObjectValue(array3[0]);
 					}
-					dataGridViewCell.Value = RuntimeHelpers.GetObjectValue(obj2);
+					dataGridViewCell.Value = RuntimeHelpers.GetObjectValue(ex);
 					RT_geral.RT_821_BD.dsp_nome[e.RowIndex].Valor = Conversions.ToString(this.DataGridView_visor_RT_821.Rows[e.RowIndex].Cells[1].Value);
 				}
 				else if (Operators.CompareString(dataPropertyName, "Col_Escala", false) == 0)
@@ -4359,9 +4355,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -4540,11 +4536,7 @@ namespace iS800
 					num3 = -1;
 										IL_BA8:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_B92;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_BD7:
 				if (num3 != 0)
@@ -4559,9 +4551,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num12;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -4881,11 +4873,7 @@ namespace iS800
 					num12 = -1;
 										IL_F58:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num12 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_F42;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_F87:
 				if (num12 != 0)

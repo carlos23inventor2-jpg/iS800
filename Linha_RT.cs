@@ -73,7 +73,7 @@ namespace iS800
 		public static object AtualizaContagens_GC_82x(int canal, int corrente)
 		{
 			int num = 0;
-			int num2;
+			int num2 = 0;
 			if (corrente == 4)
 			{
 				num2 = 8;
@@ -1129,9 +1129,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 12;
 				Comunicacao.Buffer_cmd[6] = 24;
 				int valor = RT_geral.RT_810_200_BD.End_estacao.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1256,9 +1256,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 52;
 				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1316,9 +1316,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[7] = (byte)RT_geral.RT_820_200_BD.setpoint_horario[0].Hora.Valor;
 				Comunicacao.Buffer_cmd[8] = (byte)RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor;
 				int valor = RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1484,9 +1484,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 52;
 				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_821_200_BD.repetidora.End_repetidora.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -1542,9 +1542,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 58;
 				Comunicacao.Buffer_cmd[6] = 116;
 				int valor = RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -2007,9 +2007,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 30;
 				Comunicacao.Buffer_cmd[6] = 60;
 				int valor = RT_geral.RT_821_200_BD.cfg_geral.End_estacao.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -2271,9 +2271,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 52;
 				Comunicacao.Buffer_cmd[6] = 104;
 				int valor = RT_geral.RT_810_200_BD.End_repetidora.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -2802,7 +2802,7 @@ namespace iS800
 		// Token: 0x06000EF9 RID: 3833 RVA: 0x00233140 File Offset: 0x00231540
 		public static int CMD_Esc_GC_825x_Calibracao_SA(int endereco_estacao, int canal, int funcao_sa)
 		{
-			int num;
+			int num = 0;
 			if (funcao_sa == 0)
 			{
 				num = 6175;
@@ -2866,8 +2866,8 @@ namespace iS800
 		// Token: 0x06000EFB RID: 3835 RVA: 0x00233320 File Offset: 0x00231720
 		public static void CMD_Esc_GC_825x_DADOS_DE_RX_CONTAGENS(int endereco)
 		{
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (RT_geral.GC_82x_BD.calib_canal == 1)
 			{
 				num = RT_geral.GC_82x_BD.calib_contagens;
@@ -5040,7 +5040,7 @@ namespace iS800
 				}
 				while (num2 <= 7);
 				num2 = 0;
-				int num3;
+				int num3 = 0;
 				do
 				{
 					num3 = RT_geral.RT_820_360_BD.config_perifericos1_end[num2].Valor * 256 + RT_geral.RT_820_360_BD.config_perifericos1_mod[num2].Valor;
@@ -5381,7 +5381,7 @@ namespace iS800
 				}
 				while (num2 <= 7);
 				num2 = 0;
-				int num3;
+				int num3 = 0;
 				do
 				{
 					num3 = RT_geral.RT_820_BD.config_perifericos_end[num2].Valor * 256 + RT_geral.RT_820_BD.config_perifericos_mod[num2].Valor;
@@ -7256,7 +7256,7 @@ namespace iS800
 				int num2 = Comunicacao.Crc16_TX(ref num);
 				Comunicacao.Buffer_cmd[9] = (byte)(num2 % 256);
 				Comunicacao.Buffer_cmd[10] = (byte)(num2 / 256);
-				int num3;
+				int num3 = 0;
 				num3++;
 				MyProject.Forms.Plataforma.SerialPort1.Write(Comunicacao.Buffer_cmd, 0, 11);
 				MyProject.Forms.Plataforma.Timer_timeout.Enabled = true;
@@ -8732,9 +8732,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 14;
 				Comunicacao.Buffer_cmd[6] = 28;
 				int valor = RT_830_200_variaveis_X.RT_830_200_BD.cfg_geral.endereco.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -8862,7 +8862,7 @@ namespace iS800
 			checked
 			{
 				int num2 = 4 * num;
-				int num3;
+				int num3 = 0;
 				int num4;
 				if (pagina == 512)
 				{
@@ -8943,7 +8943,7 @@ namespace iS800
 		public static void CMD_Esc_RT_830_200_RECALQUE(int pagina, int endereco, int quantos)
 		{
 			Comunicacao.Init_buffer_serial();
-			int num;
+			int num = 0;
 			if (pagina == 768)
 			{
 				num = 0;
@@ -9307,9 +9307,9 @@ namespace iS800
 		public static void CMD_Esc_RT_830_200_VISTA(int pagina, int endereco, int quantos)
 		{
 			Comunicacao.Init_buffer_serial();
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			if (pagina == 1792)
 			{
 				num = 0;
@@ -9447,9 +9447,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[5] = 6;
 				Comunicacao.Buffer_cmd[6] = 12;
 				int valor = RT_831_200_variaveis_X.RT_831_200_BD.cfg_geral.endereco_mestre.Valor;
-				int num;
+				int num = 0;
 				byte b = (byte)num;
-				int num2;
+				int num2 = 0;
 				byte b2 = (byte)num2;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num2 = (int)b2;
@@ -9550,7 +9550,7 @@ namespace iS800
 		public static void CMD_Esc_RT_831_200_RECALQUE(int pagina, int endereco, int quantos)
 		{
 			Comunicacao.Init_buffer_serial();
-			int num;
+			int num = 0;
 			if (pagina == 768)
 			{
 				num = 0;
@@ -9815,9 +9815,9 @@ namespace iS800
 				Comunicacao.Buffer_cmd[6] = 2;
 				int num = 7;
 				int valor = RT_831_200_variaveis_X.RT_831_200_BD.senha.senha.Valor;
-				int num2;
+				int num2 = 0;
 				byte b = (byte)num2;
-				int num3;
+				int num3 = 0;
 				byte b2 = (byte)num3;
 				Linha_RT.Split16(valor, ref b, ref b2);
 				num3 = (int)b2;

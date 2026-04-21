@@ -137,7 +137,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(41, 20);
 			valor_bomba2.Size = size;
 			this.Valor_bomba.TabIndex = 13;
-			this.Valor_bomba.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_bomba.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control box_Msg = this.Box_Msg;
 			location = new global::System.Drawing.Point(10, 229);
 			box_Msg.Location = location;
@@ -147,7 +147,7 @@ namespace iS800
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 11;
 			this.Box_Msg.TabStop = false;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control button_escrever = this.Button_escrever;
 			location = new global::System.Drawing.Point(34, 126);
 			button_escrever.Location = location;
@@ -214,7 +214,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(41, 20);
 			valor_end_mestre2.Size = size;
 			this.Valor_end_mestre.TabIndex = 2;
-			this.Valor_end_mestre.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_end_estacao = this.Valor_end_estacao;
 			location = new global::System.Drawing.Point(94, 25);
 			valor_end_estacao.Location = location;
@@ -223,7 +223,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(41, 20);
 			valor_end_estacao2.Size = size;
 			this.Valor_end_estacao.TabIndex = 2;
-			this.Valor_end_estacao.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_estacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control button_falha = this.Button_falha;
 			location = new global::System.Drawing.Point(217, 166);
 			button_falha.Location = location;

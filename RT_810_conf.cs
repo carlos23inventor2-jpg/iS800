@@ -2674,7 +2674,7 @@ namespace iS800
 		private void GeraDataGridView_Processos_RT_810()
 		{
 			this.DataGridView_processo_810_P1.Columns.Clear();
-			this.DataGridView_processo_810_P1.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_processo_810_P1.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -2698,7 +2698,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_processo_810_P1.Rows)
+					foreach (object obj = null in this.DataGridView_processo_810_P1.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -2800,7 +2800,7 @@ namespace iS800
 		private void GeraDataGridView_EA_RT_810()
 		{
 			this.DataGridView_parametros_EA_810.Columns.Clear();
-			this.DataGridView_parametros_EA_810.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_parametros_EA_810.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -2824,7 +2824,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_parametros_EA_810.Rows)
+					foreach (object obj = null in this.DataGridView_parametros_EA_810.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -2869,7 +2869,7 @@ namespace iS800
 		private void GeraDataGridView_Repedidora_RT_810()
 		{
 			this.DataGridView_end_rep_RT_810.Columns.Clear();
-			this.DataGridView_end_rep_RT_810.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_end_rep_RT_810.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_end_rep_RT_810.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -2960,7 +2960,7 @@ namespace iS800
 		private void GeraDataGridView_Setpoints_RT_810()
 		{
 			this.DataGridView_setpoints_810.Columns.Clear();
-			this.DataGridView_setpoints_810.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_setpoints_810.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_setpoints_810.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -2985,7 +2985,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_setpoints_810.Rows)
+					foreach (object obj = null in this.DataGridView_setpoints_810.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -3059,7 +3059,7 @@ namespace iS800
 		private void GeraDataGridView_ED_RT_810()
 		{
 			this.DataGridView_RT810_ED.Columns.Clear();
-			this.DataGridView_RT810_ED.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_RT810_ED.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_RT810_ED.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -3084,7 +3084,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_RT810_ED.Rows)
+					foreach (object obj = null in this.DataGridView_RT810_ED.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -3425,9 +3425,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -3522,11 +3522,7 @@ namespace iS800
 					num3 = -1;
 										IL_76D:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_758;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_79B:
 				if (num3 != 0)
@@ -3578,7 +3574,7 @@ namespace iS800
 		// Token: 0x06001344 RID: 4932 RVA: 0x00326CD0 File Offset: 0x003250D0
 		public void RT_810_Atualiza_Parametros_EA(int tipo)
 		{
-			int num;
+			int num = 0;
 			int rowCount;
 			if (tipo == 0)
 			{
@@ -4064,8 +4060,7 @@ namespace iS800
 						num++;
 						if (num > 49)
 						{
-							goto IL_A2;
-						}
+													}
 					}
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Red;
 					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), (MsgBoxStyle)32, "Erro na entrada de dados");
@@ -4356,9 +4351,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num10;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -4386,8 +4381,7 @@ namespace iS800
 							RT_geral.Lmte_Init_ok = true;
 							this.AtualizaMsgTela_RT_810("Valores Default carregados", 0);
 							this.Timer_limpa_MSG.Enabled = true;
-							goto IL_A51;
-						}
+													}
 						RT_geral.RT_810_BD.filename = this.OpenFileDialog_RT_810.FileName;
 						RT_geral.RT_810_BD.End_estacao.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "ESTACAO", 0);
 						RT_geral.RT_810_BD.End_mestre.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "MESTRE", 0);
@@ -4509,11 +4503,7 @@ namespace iS800
 					num10 = -1;
 										IL_A22:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num10 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_A0C;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_A51:
 				if (num10 != 0)
@@ -4529,9 +4519,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num11;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -4776,11 +4766,7 @@ namespace iS800
 					num11 = -1;
 										IL_CCD:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num11 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_CB7;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_CFC:
 				if (num11 != 0)

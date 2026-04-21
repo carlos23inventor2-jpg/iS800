@@ -97,7 +97,7 @@ namespace iS800
 		// Token: 0x060000D6 RID: 214 RVA: 0x0026571C File Offset: 0x00263B1C
 		private void Button_diretorio_dados_Click(object sender, EventArgs e)
 		{
-			if (this.FolderBrowserDialog1.ShowDialog() == 1)
+			if (this.FolderBrowserDialog1.ShowDialog() == (System.Windows.Forms.DialogResult)1)
 			{
 				this.Nome_diretorio_dados.Text = this.FolderBrowserDialog1.SelectedPath;
 				Comunicacao.Config_sistema.Dir_dados = this.Nome_diretorio_dados.Text;

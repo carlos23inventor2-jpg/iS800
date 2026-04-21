@@ -5279,7 +5279,7 @@ namespace iS800
 					}
 					else
 					{
-						int num2;
+						int num2 = 0;
 						this.dgv_sph.Rows[num].Cells[0].Value = num2.ToString();
 						num2++;
 					}
@@ -5693,7 +5693,7 @@ namespace iS800
 		private void GeraDataGridView_Processos()
 		{
 			this.DataGridView_processo_820.Columns.Clear();
-			this.DataGridView_processo_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_processo_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -5717,7 +5717,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_processo_820.Rows)
+					foreach (object obj = null in this.DataGridView_processo_820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -5815,8 +5815,8 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasMenu[0] = "Desativo";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = 21856;
-				int num;
-				int num2;
+				int num = 0;
+				int num2 = 0;
 				if (RT_geral.RT_820_360_BD.HabExpIO.Valor == 21857)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 18;
@@ -6019,7 +6019,7 @@ namespace iS800
 		private void GeraDataGridView_Grupos()
 		{
 			this.DataGridView_grupos_820.Columns.Clear();
-			this.DataGridView_grupos_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_grupos_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -6043,7 +6043,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_grupos_820.Rows)
+					foreach (object obj = null in this.DataGridView_grupos_820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -6111,7 +6111,7 @@ namespace iS800
 		private void GeraDataGridView_EA()
 		{
 			this.DataGridView_parametros_EA_820.Columns.Clear();
-			this.DataGridView_parametros_EA_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_parametros_EA_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -6135,7 +6135,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_parametros_EA_820.Rows)
+					foreach (object obj = null in this.DataGridView_parametros_EA_820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -6180,7 +6180,7 @@ namespace iS800
 		private void GeraDataGridView_Perifericos1()
 		{
 			this.DataGridView_periferico1_RT820.Columns.Clear();
-			this.DataGridView_periferico1_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_periferico1_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_periferico1_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -6205,7 +6205,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_periferico1_RT820.Rows)
+					foreach (object obj = null in this.DataGridView_periferico1_RT820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -6230,7 +6230,7 @@ namespace iS800
 		private void GeraDataGridView_Perifericos2()
 		{
 			this.DataGridView_periferico2_RT820.Columns.Clear();
-			this.DataGridView_periferico2_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_periferico2_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_periferico2_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -6255,7 +6255,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_periferico2_RT820.Rows)
+					foreach (object obj = null in this.DataGridView_periferico2_RT820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -6283,7 +6283,7 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_360_DatagridViewPerifericoModbusGenericoColunas = RT_geral.RT_820_360_DatagridViewPerifericoModbusGenericoColunas;
 			bool flag = true;
 			dataGridView_perifericomodbusgenerico_RT.Columns.Clear();
-			dataGridView_perifericomodbusgenerico_RT.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			dataGridView_perifericomodbusgenerico_RT.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			dataGridView_perifericomodbusgenerico_RT.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToAddRows = false;
 			dataGridView_perifericomodbusgenerico_RT.AllowUserToDeleteRows = false;
@@ -6328,7 +6328,7 @@ namespace iS800
 					int num2 = 1;
 					try
 					{
-						foreach (object obj in dataGridView_perifericomodbusgenerico_RT.Rows)
+						foreach (object obj = null in dataGridView_perifericomodbusgenerico_RT.Rows)
 						{
 							DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 							if (!dataGridViewRow.IsNewRow)
@@ -6365,7 +6365,7 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_DataGrigViewReferenciaPerifericosColunas = RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas;
 			bool flag = true;
 			datagridview_referenciaperifico.Columns.Clear();
-			datagridview_referenciaperifico.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			datagridview_referenciaperifico.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			datagridview_referenciaperifico.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			datagridview_referenciaperifico.AllowUserToAddRows = false;
 			datagridview_referenciaperifico.AllowUserToDeleteRows = false;
@@ -6410,7 +6410,7 @@ namespace iS800
 					int num2 = 1;
 					try
 					{
-						foreach (object obj in datagridview_referenciaperifico.Rows)
+						foreach (object obj = null in datagridview_referenciaperifico.Rows)
 						{
 							DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 							if (!dataGridViewRow.IsNewRow)
@@ -7836,7 +7836,7 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] array = colunas;
 			bool flag = false;
 			datagridview.Columns.Clear();
-			datagridview.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			datagridview.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			datagridview.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			datagridview.AllowUserToAddRows = false;
 			datagridview.AllowUserToDeleteRows = false;
@@ -7881,7 +7881,7 @@ namespace iS800
 					int num4 = 1;
 					try
 					{
-						foreach (object obj in datagridview.Rows)
+						foreach (object obj = null in datagridview.Rows)
 						{
 							DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 							if (!dataGridViewRow.IsNewRow)
@@ -7918,7 +7918,7 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] array = colunas;
 			bool flag = true;
 			datagridview.Columns.Clear();
-			datagridview.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			datagridview.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			datagridview.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			datagridview.AllowUserToAddRows = false;
 			datagridview.AllowUserToDeleteRows = false;
@@ -7963,7 +7963,7 @@ namespace iS800
 					int num4 = 1;
 					try
 					{
-						foreach (object obj in datagridview.Rows)
+						foreach (object obj = null in datagridview.Rows)
 						{
 							DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 							if (!dataGridViewRow.IsNewRow)
@@ -8001,7 +8001,7 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_DataGrigViewAtuador1SetPoint1Colunas = RT_geral.RT_820_DataGrigViewAtuador1SetPoint1Colunas;
 			bool flag = true;
 			dgv_atuador_setpoint.Columns.Clear();
-			dgv_atuador_setpoint.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			dgv_atuador_setpoint.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			dgv_atuador_setpoint.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dgv_atuador_setpoint.AllowUserToAddRows = false;
 			dgv_atuador_setpoint.AllowUserToDeleteRows = false;
@@ -8047,7 +8047,7 @@ namespace iS800
 					int num2 = 1;
 					try
 					{
-						foreach (object obj in dgv_atuador_setpoint.Rows)
+						foreach (object obj = null in dgv_atuador_setpoint.Rows)
 						{
 							DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 							if (!dataGridViewRow.IsNewRow)
@@ -8085,7 +8085,7 @@ namespace iS800
 			RT_geral.DADOS_DATAGRIDVIEW_RT_820[] rt_820_DataGrigViewAtuador1SetPoint2Colunas = RT_geral.RT_820_DataGrigViewAtuador1SetPoint2Colunas;
 			bool flag = true;
 			dgv_atuador_setpoint.Columns.Clear();
-			dgv_atuador_setpoint.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			dgv_atuador_setpoint.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			dgv_atuador_setpoint.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			dgv_atuador_setpoint.AllowUserToAddRows = false;
 			dgv_atuador_setpoint.AllowUserToDeleteRows = false;
@@ -8131,7 +8131,7 @@ namespace iS800
 					int num2 = 1;
 					try
 					{
-						foreach (object obj in dgv_atuador_setpoint.Rows)
+						foreach (object obj = null in dgv_atuador_setpoint.Rows)
 						{
 							DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 							if (!dataGridViewRow.IsNewRow)
@@ -8166,7 +8166,7 @@ namespace iS800
 		private void GeraDataGridView_Vazoes()
 		{
 			this.DataGridView_vazoes_RT820.Columns.Clear();
-			this.DataGridView_vazoes_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_vazoes_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_vazoes_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -8191,7 +8191,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_vazoes_RT820.Rows)
+					foreach (object obj = null in this.DataGridView_vazoes_RT820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -8445,7 +8445,7 @@ namespace iS800
 		private void GeraDataGridView_ED()
 		{
 			this.DataGridView_RT820_ED.Columns.Clear();
-			this.DataGridView_RT820_ED.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_RT820_ED.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -8477,7 +8477,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_RT820_ED.Rows)
+					foreach (object obj = null in this.DataGridView_RT820_ED.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -8533,7 +8533,7 @@ namespace iS800
 		private void GeraDataGridView_Repedidora()
 		{
 			this.DataGridView_end_rep_RT820.Columns.Clear();
-			this.DataGridView_end_rep_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_end_rep_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -8624,7 +8624,7 @@ namespace iS800
 		private void GeraDataGridView_Setpoints()
 		{
 			this.DataGridView_setpoints_820.Columns.Clear();
-			this.DataGridView_setpoints_820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_setpoints_820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_setpoints_820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -8649,7 +8649,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_setpoints_820.Rows)
+					foreach (object obj = null in this.DataGridView_setpoints_820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -8750,7 +8750,7 @@ namespace iS800
 		private void GeraDataGridView_Timer()
 		{
 			this.DataGridView_timer_RT820.Columns.Clear();
-			this.DataGridView_timer_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_timer_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_timer_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -8775,7 +8775,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_timer_RT820.Rows)
+					foreach (object obj = null in this.DataGridView_timer_RT820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -10350,9 +10350,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num59;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -11194,11 +11194,7 @@ namespace iS800
 					num59 = -1;
 										IL_4DB2:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num59 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_4D9C;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_4DE1:
 				if (num59 != 0)
@@ -12493,7 +12489,7 @@ namespace iS800
 					else
 					{
 						int num2 = (int)Math.Round(Conversion.Val(text.Substring(0, num)));
-						int num3;
+						int num3 = 0;
 						if (num2 < 24)
 						{
 							if (length - num > 1)
@@ -12599,9 +12595,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num8;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -13191,11 +13187,7 @@ namespace iS800
 					num8 = -1;
 										IL_2D80:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num8 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_2D6A;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_2DAF:
 				if (num8 != 0)
@@ -16052,9 +16044,9 @@ namespace iS800
 					860
 				};
 				object obj = 12;
-				object obj2;
+				object ex;
 				object obj3;
-				if (ObjectFlowControl.ForLoopControl.ForLoopInitObj(obj2, 0, 7, 1, ref obj3, ref obj2))
+				if (ObjectFlowControl.ForLoopControl.ForLoopInitObj(ex, 0, 7, 1, ref obj3, ref ex))
 				{
 					do
 					{
@@ -16063,14 +16055,14 @@ namespace iS800
 						{
 							do
 							{
-								object obj5 = RT_geral.RT_820_360_BD.Timer_Horario[Conversions.ToInteger(obj2)][Conversions.ToInteger(obj)].Valor;
+								object obj5 = RT_geral.RT_820_360_BD.Timer_Horario[Conversions.ToInteger(ex)][Conversions.ToInteger(obj)].Valor;
 								string text = string.Format("{0:D2}:{1:D2}", Operators.IntDivideObject(obj5, 60), Operators.ModObject(obj5, 60));
-								tabelaLinhaInteria2.EscreveValorLinha(Conversions.ToInteger(Operators.AddObject(obj2, 3)), text, array2[Conversions.ToInteger(obj)]);
+								tabelaLinhaInteria2.EscreveValorLinha(Conversions.ToInteger(Operators.AddObject(ex, 3)), text, array2[Conversions.ToInteger(obj)]);
 							}
 							while (ObjectFlowControl.ForLoopControl.ForNextCheckObj(obj, obj4, ref obj));
 						}
 					}
-					while (ObjectFlowControl.ForLoopControl.ForNextCheckObj(obj2, obj3, ref obj2));
+					while (ObjectFlowControl.ForLoopControl.ForNextCheckObj(ex, obj3, ref ex));
 				}
 				RodapeICTEL rodapeICTEL = new RodapeICTEL(z.MarginBounds, z.Graphics, font2, Brushes.Black, this.pagina_impressao);
 			}
@@ -17325,7 +17317,7 @@ namespace iS800
 			}
 			checked
 			{
-				int num;
+				int num = 0;
 				int valor;
 				if (RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[e.ColumnIndex].NumeroLinhaMenu > 0)
 				{
@@ -17401,7 +17393,7 @@ namespace iS800
 			}
 			checked
 			{
-				int num;
+				int num = 0;
 				int valor;
 				if (RT_geral.RT_820_DataGrigViewAtuador1Colunas[e.ColumnIndex].NumeroLinhaMenu > 0)
 				{
@@ -18051,7 +18043,7 @@ namespace iS800
 			}
 			checked
 			{
-				int num;
+				int num = 0;
 				int valor;
 				if (RT_geral.RT_820_DataGrigViewAtuador2Colunas[e.ColumnIndex].NumeroLinhaMenu > 0)
 				{
@@ -19155,7 +19147,7 @@ namespace iS800
 			}
 			checked
 			{
-				int num;
+				int num = 0;
 				int valor;
 				if (RT_geral.RT_820_DataGrigViewAtuador3Colunas[e.ColumnIndex].NumeroLinhaMenu > 0)
 				{
@@ -19255,7 +19247,7 @@ namespace iS800
 			}
 			checked
 			{
-				int num;
+				int num = 0;
 				int valor;
 				if (RT_geral.RT_820_DataGrigViewAtuador4Colunas[e.ColumnIndex].NumeroLinhaMenu > 0)
 				{

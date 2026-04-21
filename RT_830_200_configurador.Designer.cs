@@ -536,7 +536,7 @@ namespace iS800
 			textBox_equipamento_RT2.Size = size;
 			this.TextBox_equipamento_RT850.TabIndex = 34;
 			this.TextBox_equipamento_RT850.TabStop = false;
-			this.TextBox_equipamento_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_equipamento_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label19.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label19;
 			location = new global::System.Drawing.Point(164, 40);
@@ -559,7 +559,7 @@ namespace iS800
 			textBox_release_RT2.Size = size;
 			this.TextBox_release_RT850.TabIndex = 32;
 			this.TextBox_release_RT850.TabStop = false;
-			this.TextBox_release_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_release_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label29.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label29;
 			location = new global::System.Drawing.Point(358, 40);
@@ -582,7 +582,7 @@ namespace iS800
 			textBox_build_RT2.Size = size;
 			this.TextBox_build_RT850.TabIndex = 30;
 			this.TextBox_build_RT850.TabStop = false;
-			this.TextBox_build_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_build_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label30.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label30;
 			location = new global::System.Drawing.Point(312, 40);
@@ -605,7 +605,7 @@ namespace iS800
 			textBox_versao_RT2.Size = size;
 			this.TextBox_versao_RT850.TabIndex = 28;
 			this.TextBox_versao_RT850.TabStop = false;
-			this.TextBox_versao_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_versao_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label31.AutoSize = true;
 			global::System.Windows.Forms.Control label9 = this.Label31;
 			location = new global::System.Drawing.Point(254, 40);
@@ -683,7 +683,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_intervalo_leitura_1_RT4.Size = size;
 			this.NumericUpDown_intervalo_leitura_1_RT850.TabIndex = 18;
-			this.NumericUpDown_intervalo_leitura_1_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_intervalo_leitura_1_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_leitura_1_RT5 = this.NumericUpDown_intervalo_leitura_1_RT850;
 			num = new decimal(new int[]
 			{
@@ -719,7 +719,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_1_RT4.Size = size;
 			this.NumericUpDown_end_1_RT850.TabIndex = 17;
-			this.NumericUpDown_end_1_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_1_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_end_1_RT5 = this.NumericUpDown_end_1_RT850;
 			num = new decimal(new int[]
 			{
@@ -755,7 +755,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_num_erro_falha_1_RT4.Size = size;
 			this.NumericUpDown_num_erro_falha_1_RT850.TabIndex = 15;
-			this.NumericUpDown_num_erro_falha_1_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_num_erro_falha_1_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_erro_falha_1_RT5 = this.NumericUpDown_num_erro_falha_1_RT850;
 			num = new decimal(new int[]
 			{
@@ -792,7 +792,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_num_tentativas_1_RT3.Size = size;
 			this.NumericUpDown_num_tentativas_1_RT850.TabIndex = 13;
-			this.NumericUpDown_num_tentativas_1_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_num_tentativas_1_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_num_tentativas_1_RT4 = this.NumericUpDown_num_tentativas_1_RT850;
 			num = new decimal(new int[]
 			{
@@ -847,7 +847,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_temp_ptt_1_RT5.Size = size;
 			this.NumericUpDown_temp_ptt_1_RT850.TabIndex = 11;
-			this.NumericUpDown_temp_ptt_1_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_temp_ptt_1_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_1_RT6 = this.NumericUpDown_temp_ptt_1_RT850;
 			num = new decimal(new int[]
 			{
@@ -893,7 +893,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_timeout_1_RT4.Size = size;
 			this.NumericUpDown_timeout_1_RT850.TabIndex = 9;
-			this.NumericUpDown_timeout_1_RT850.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_timeout_1_RT850.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_timeout_1_RT5 = this.NumericUpDown_timeout_1_RT850;
 			num = new decimal(new int[]
 			{
@@ -1187,7 +1187,7 @@ namespace iS800
 			location = new global::System.Drawing.Point(16, 19);
 			dataGridView_Reservatorios.Location = location;
 			this.DataGridView_Reservatorios.Name = "DataGridView_Reservatorios";
-			this.DataGridView_Reservatorios.RowHeadersBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_Reservatorios.RowHeadersBorderStyle = (System.Windows.Forms.DataGridViewHeaderBorderStyle)1;
 			this.DataGridView_Reservatorios.RowHeadersVisible = false;
 			global::System.Windows.Forms.Control dataGridView_Reservatorios2 = this.DataGridView_Reservatorios;
 			size = new global::System.Drawing.Size(713, 502);

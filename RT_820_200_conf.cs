@@ -5441,8 +5441,8 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewProcessosColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasMenu[0] = "Desativa";
 				RT_geral.RT_820_DataGrigViewProcessosColunas[2].LinhasValor[0] = 21856;
-				int num;
-				int num2;
+				int num = 0;
+				int num2 = 0;
 				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
 				{
 					RT_geral.RT_820_DataGrigViewProcessosColunas[0].NumeroLinhaMenu = 18;
@@ -5649,7 +5649,7 @@ namespace iS800
 		private void GeraDataGridView_Perifericos()
 		{
 			this.DataGridView_periferico_RT820.Columns.Clear();
-			this.DataGridView_periferico_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_periferico_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_periferico_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -5674,7 +5674,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_periferico_RT820.Rows)
+					foreach (object obj = null in this.DataGridView_periferico_RT820.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -5761,7 +5761,7 @@ namespace iS800
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].AlingColuna = 32;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasValor[0] = 21856;
 				RT_geral.RT_820_DataGrigViewVazoesColunas[0].LinhasMenu[0] = "Leitura desabilitada";
-				int num;
+				int num = 0;
 				if (RT_geral.RT_820_BD.HabExpIO.Valor == 21857)
 				{
 					RT_geral.RT_820_DataGrigViewVazoesColunas[0].NumeroLinhaMenu = 49;
@@ -5797,7 +5797,7 @@ namespace iS800
 		private void GeraDataGridView_ED()
 		{
 			this.DataGridView_RT820_ED.Columns.Clear();
-			this.DataGridView_RT820_ED.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_RT820_ED.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_RT820_ED.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -5822,7 +5822,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_RT820_ED.Rows)
+					foreach (object obj = null in this.DataGridView_RT820_ED.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -5930,7 +5930,7 @@ namespace iS800
 		private void GeraDataGridView_Repedidora()
 		{
 			this.DataGridView_end_rep_RT820.Columns.Clear();
-			this.DataGridView_end_rep_RT820.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_end_rep_RT820.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_end_rep_RT820.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -6767,9 +6767,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num7;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -7078,11 +7078,7 @@ namespace iS800
 					num7 = -1;
 										IL_1353:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num7 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_133D;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_1382:
 				if (num7 != 0)
@@ -7809,7 +7805,7 @@ namespace iS800
 					else
 					{
 						int num2 = (int)Math.Round(Conversion.Val(text.Substring(0, num)));
-						int num3;
+						int num3 = 0;
 						if (num2 < 24)
 						{
 							if (length - num > 1)
@@ -7847,9 +7843,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -8019,11 +8015,7 @@ namespace iS800
 					num3 = -1;
 										IL_F00:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_EEA;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_F2F:
 				if (num3 != 0)
@@ -8038,9 +8030,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num4;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -8257,11 +8249,7 @@ namespace iS800
 					num4 = -1;
 										IL_E2D:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_E17;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_E5C:
 				if (num4 != 0)

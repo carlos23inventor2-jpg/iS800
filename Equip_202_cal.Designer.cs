@@ -216,7 +216,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(322, 20);
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 10;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control comando_ler_cal = this.Comando_ler_cal;
 			location = new global::System.Drawing.Point(242, 23);
 			comando_ler_cal.Location = location;
@@ -246,7 +246,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			tela_end_estacao3.Size = size;
 			this.Tela_end_estacao.TabIndex = 12;
-			this.Tela_end_estacao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Tela_end_estacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_end_estacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_estacao = this.Label_end_estacao;
 			location = new global::System.Drawing.Point(29, 30);
@@ -446,7 +446,7 @@ namespace iS800
 			valor_ganho_2.Size = size;
 			this.Valor_ganho_8.TabIndex = 18;
 			this.Valor_ganho_8.TabStop = false;
-			this.Valor_ganho_8.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_8.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_14.AcceptsReturn = true;
 			this.Valor_ganho_14.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_3 = this.Valor_ganho_14;
@@ -459,7 +459,7 @@ namespace iS800
 			valor_ganho_4.Size = size;
 			this.Valor_ganho_14.TabIndex = 18;
 			this.Valor_ganho_14.TabStop = false;
-			this.Valor_ganho_14.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_14.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_4.AcceptsReturn = true;
 			this.Valor_ganho_4.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_5 = this.Valor_ganho_4;
@@ -472,7 +472,7 @@ namespace iS800
 			valor_ganho_6.Size = size;
 			this.Valor_ganho_4.TabIndex = 18;
 			this.Valor_ganho_4.TabStop = false;
-			this.Valor_ganho_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_7.AcceptsReturn = true;
 			this.Valor_ganho_7.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_7 = this.Valor_ganho_7;
@@ -485,7 +485,7 @@ namespace iS800
 			valor_ganho_8.Size = size;
 			this.Valor_ganho_7.TabIndex = 17;
 			this.Valor_ganho_7.TabStop = false;
-			this.Valor_ganho_7.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_7.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_13.AcceptsReturn = true;
 			this.Valor_ganho_13.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_9 = this.Valor_ganho_13;
@@ -498,7 +498,7 @@ namespace iS800
 			valor_ganho_10.Size = size;
 			this.Valor_ganho_13.TabIndex = 17;
 			this.Valor_ganho_13.TabStop = false;
-			this.Valor_ganho_13.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_13.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_3.AcceptsReturn = true;
 			this.Valor_ganho_3.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_11 = this.Valor_ganho_3;
@@ -511,7 +511,7 @@ namespace iS800
 			valor_ganho_12.Size = size;
 			this.Valor_ganho_3.TabIndex = 17;
 			this.Valor_ganho_3.TabStop = false;
-			this.Valor_ganho_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_16.AcceptsReturn = true;
 			this.Valor_ganho_16.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_13 = this.Valor_ganho_16;
@@ -524,7 +524,7 @@ namespace iS800
 			valor_ganho_14.Size = size;
 			this.Valor_ganho_16.TabIndex = 16;
 			this.Valor_ganho_16.TabStop = false;
-			this.Valor_ganho_16.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_16.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_6.AcceptsReturn = true;
 			this.Valor_ganho_6.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_15 = this.Valor_ganho_6;
@@ -537,7 +537,7 @@ namespace iS800
 			valor_ganho_16.Size = size;
 			this.Valor_ganho_6.TabIndex = 16;
 			this.Valor_ganho_6.TabStop = false;
-			this.Valor_ganho_6.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_6.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_10.AcceptsReturn = true;
 			this.Valor_ganho_10.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_17 = this.Valor_ganho_10;
@@ -550,7 +550,7 @@ namespace iS800
 			valor_ganho_18.Size = size;
 			this.Valor_ganho_10.TabIndex = 16;
 			this.Valor_ganho_10.TabStop = false;
-			this.Valor_ganho_10.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_10.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_12.AcceptsReturn = true;
 			this.Valor_ganho_12.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_19 = this.Valor_ganho_12;
@@ -563,7 +563,7 @@ namespace iS800
 			valor_ganho_20.Size = size;
 			this.Valor_ganho_12.TabIndex = 16;
 			this.Valor_ganho_12.TabStop = false;
-			this.Valor_ganho_12.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_12.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_2.AcceptsReturn = true;
 			this.Valor_ganho_2.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_21 = this.Valor_ganho_2;
@@ -576,7 +576,7 @@ namespace iS800
 			valor_ganho_22.Size = size;
 			this.Valor_ganho_2.TabIndex = 16;
 			this.Valor_ganho_2.TabStop = false;
-			this.Valor_ganho_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_15.AcceptsReturn = true;
 			this.Valor_ganho_15.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_23 = this.Valor_ganho_15;
@@ -589,7 +589,7 @@ namespace iS800
 			valor_ganho_24.Size = size;
 			this.Valor_ganho_15.TabIndex = 15;
 			this.Valor_ganho_15.TabStop = false;
-			this.Valor_ganho_15.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_15.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_5.AcceptsReturn = true;
 			this.Valor_ganho_5.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_25 = this.Valor_ganho_5;
@@ -602,7 +602,7 @@ namespace iS800
 			valor_ganho_26.Size = size;
 			this.Valor_ganho_5.TabIndex = 15;
 			this.Valor_ganho_5.TabStop = false;
-			this.Valor_ganho_5.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_5.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_9.AcceptsReturn = true;
 			this.Valor_ganho_9.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_27 = this.Valor_ganho_9;
@@ -615,7 +615,7 @@ namespace iS800
 			valor_ganho_28.Size = size;
 			this.Valor_ganho_9.TabIndex = 15;
 			this.Valor_ganho_9.TabStop = false;
-			this.Valor_ganho_9.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_9.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_11.AcceptsReturn = true;
 			this.Valor_ganho_11.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_29 = this.Valor_ganho_11;
@@ -628,7 +628,7 @@ namespace iS800
 			valor_ganho_30.Size = size;
 			this.Valor_ganho_11.TabIndex = 15;
 			this.Valor_ganho_11.TabStop = false;
-			this.Valor_ganho_11.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_11.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_1.AcceptsReturn = true;
 			this.Valor_ganho_1.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_ganho_31 = this.Valor_ganho_1;
@@ -641,7 +641,7 @@ namespace iS800
 			valor_ganho_32.Size = size;
 			this.Valor_ganho_1.TabIndex = 15;
 			this.Valor_ganho_1.TabStop = false;
-			this.Valor_ganho_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_ganho_8.AutoSize = true;
 			global::System.Windows.Forms.Control label_ganho_ = this.Label_ganho_8;
 			location = new global::System.Drawing.Point(11, 184);
@@ -856,7 +856,7 @@ namespace iS800
 			valor_zero_2.Size = size;
 			this.Valor_zero_10.TabIndex = 14;
 			this.Valor_zero_10.TabStop = false;
-			this.Valor_zero_10.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_10.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_9.AcceptsReturn = true;
 			this.Valor_zero_9.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_3 = this.Valor_zero_9;
@@ -869,7 +869,7 @@ namespace iS800
 			valor_zero_4.Size = size;
 			this.Valor_zero_9.TabIndex = 14;
 			this.Valor_zero_9.TabStop = false;
-			this.Valor_zero_9.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_9.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_8.AcceptsReturn = true;
 			this.Valor_zero_8.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_5 = this.Valor_zero_8;
@@ -882,7 +882,7 @@ namespace iS800
 			valor_zero_6.Size = size;
 			this.Valor_zero_8.TabIndex = 14;
 			this.Valor_zero_8.TabStop = false;
-			this.Valor_zero_8.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_8.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_7.AcceptsReturn = true;
 			this.Valor_zero_7.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_7 = this.Valor_zero_7;
@@ -895,7 +895,7 @@ namespace iS800
 			valor_zero_8.Size = size;
 			this.Valor_zero_7.TabIndex = 14;
 			this.Valor_zero_7.TabStop = false;
-			this.Valor_zero_7.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_7.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_16.AcceptsReturn = true;
 			this.Valor_zero_16.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_9 = this.Valor_zero_16;
@@ -908,7 +908,7 @@ namespace iS800
 			valor_zero_10.Size = size;
 			this.Valor_zero_16.TabIndex = 14;
 			this.Valor_zero_16.TabStop = false;
-			this.Valor_zero_16.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_16.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_6.AcceptsReturn = true;
 			this.Valor_zero_6.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_11 = this.Valor_zero_6;
@@ -921,7 +921,7 @@ namespace iS800
 			valor_zero_12.Size = size;
 			this.Valor_zero_6.TabIndex = 14;
 			this.Valor_zero_6.TabStop = false;
-			this.Valor_zero_6.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_6.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_15.AcceptsReturn = true;
 			this.Valor_zero_15.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_13 = this.Valor_zero_15;
@@ -934,7 +934,7 @@ namespace iS800
 			valor_zero_14.Size = size;
 			this.Valor_zero_15.TabIndex = 14;
 			this.Valor_zero_15.TabStop = false;
-			this.Valor_zero_15.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_15.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_5.AcceptsReturn = true;
 			this.Valor_zero_5.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_15 = this.Valor_zero_5;
@@ -947,7 +947,7 @@ namespace iS800
 			valor_zero_16.Size = size;
 			this.Valor_zero_5.TabIndex = 14;
 			this.Valor_zero_5.TabStop = false;
-			this.Valor_zero_5.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_5.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_14.AcceptsReturn = true;
 			this.Valor_zero_14.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_17 = this.Valor_zero_14;
@@ -960,7 +960,7 @@ namespace iS800
 			valor_zero_18.Size = size;
 			this.Valor_zero_14.TabIndex = 14;
 			this.Valor_zero_14.TabStop = false;
-			this.Valor_zero_14.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_14.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_4.AcceptsReturn = true;
 			this.Valor_zero_4.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_19 = this.Valor_zero_4;
@@ -973,7 +973,7 @@ namespace iS800
 			valor_zero_20.Size = size;
 			this.Valor_zero_4.TabIndex = 14;
 			this.Valor_zero_4.TabStop = false;
-			this.Valor_zero_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_13.AcceptsReturn = true;
 			this.Valor_zero_13.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_21 = this.Valor_zero_13;
@@ -986,7 +986,7 @@ namespace iS800
 			valor_zero_22.Size = size;
 			this.Valor_zero_13.TabIndex = 13;
 			this.Valor_zero_13.TabStop = false;
-			this.Valor_zero_13.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_13.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_3.AcceptsReturn = true;
 			this.Valor_zero_3.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_23 = this.Valor_zero_3;
@@ -999,7 +999,7 @@ namespace iS800
 			valor_zero_24.Size = size;
 			this.Valor_zero_3.TabIndex = 13;
 			this.Valor_zero_3.TabStop = false;
-			this.Valor_zero_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_12.AcceptsReturn = true;
 			this.Valor_zero_12.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_25 = this.Valor_zero_12;
@@ -1012,7 +1012,7 @@ namespace iS800
 			valor_zero_26.Size = size;
 			this.Valor_zero_12.TabIndex = 12;
 			this.Valor_zero_12.TabStop = false;
-			this.Valor_zero_12.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_12.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_2.AcceptsReturn = true;
 			this.Valor_zero_2.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_27 = this.Valor_zero_2;
@@ -1025,7 +1025,7 @@ namespace iS800
 			valor_zero_28.Size = size;
 			this.Valor_zero_2.TabIndex = 12;
 			this.Valor_zero_2.TabStop = false;
-			this.Valor_zero_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_11.AcceptsReturn = true;
 			this.Valor_zero_11.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_29 = this.Valor_zero_11;
@@ -1038,7 +1038,7 @@ namespace iS800
 			valor_zero_30.Size = size;
 			this.Valor_zero_11.TabIndex = 11;
 			this.Valor_zero_11.TabStop = false;
-			this.Valor_zero_11.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_11.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_1.AcceptsReturn = true;
 			this.Valor_zero_1.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_zero_31 = this.Valor_zero_1;
@@ -1051,7 +1051,7 @@ namespace iS800
 			valor_zero_32.Size = size;
 			this.Valor_zero_1.TabIndex = 11;
 			this.Valor_zero_1.TabStop = false;
-			this.Valor_zero_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_zero_10.AutoSize = true;
 			global::System.Windows.Forms.Control label_zero_ = this.Label_zero_10;
 			location = new global::System.Drawing.Point(14, 230);
@@ -1266,7 +1266,7 @@ namespace iS800
 			valor_cont_s_norm_2.Size = size;
 			this.Valor_cont_s_norm_10.TabIndex = 14;
 			this.Valor_cont_s_norm_10.TabStop = false;
-			this.Valor_cont_s_norm_10.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_10.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_9.AcceptsReturn = true;
 			this.Valor_cont_s_norm_9.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_3 = this.Valor_cont_s_norm_9;
@@ -1279,7 +1279,7 @@ namespace iS800
 			valor_cont_s_norm_4.Size = size;
 			this.Valor_cont_s_norm_9.TabIndex = 14;
 			this.Valor_cont_s_norm_9.TabStop = false;
-			this.Valor_cont_s_norm_9.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_9.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_8.AcceptsReturn = true;
 			this.Valor_cont_s_norm_8.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_5 = this.Valor_cont_s_norm_8;
@@ -1292,7 +1292,7 @@ namespace iS800
 			valor_cont_s_norm_6.Size = size;
 			this.Valor_cont_s_norm_8.TabIndex = 14;
 			this.Valor_cont_s_norm_8.TabStop = false;
-			this.Valor_cont_s_norm_8.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_8.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_7.AcceptsReturn = true;
 			this.Valor_cont_s_norm_7.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_7 = this.Valor_cont_s_norm_7;
@@ -1305,7 +1305,7 @@ namespace iS800
 			valor_cont_s_norm_8.Size = size;
 			this.Valor_cont_s_norm_7.TabIndex = 14;
 			this.Valor_cont_s_norm_7.TabStop = false;
-			this.Valor_cont_s_norm_7.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_7.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_16.AcceptsReturn = true;
 			this.Valor_cont_s_norm_16.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_9 = this.Valor_cont_s_norm_16;
@@ -1318,7 +1318,7 @@ namespace iS800
 			valor_cont_s_norm_10.Size = size;
 			this.Valor_cont_s_norm_16.TabIndex = 14;
 			this.Valor_cont_s_norm_16.TabStop = false;
-			this.Valor_cont_s_norm_16.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_16.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_6.AcceptsReturn = true;
 			this.Valor_cont_s_norm_6.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_11 = this.Valor_cont_s_norm_6;
@@ -1331,7 +1331,7 @@ namespace iS800
 			valor_cont_s_norm_12.Size = size;
 			this.Valor_cont_s_norm_6.TabIndex = 14;
 			this.Valor_cont_s_norm_6.TabStop = false;
-			this.Valor_cont_s_norm_6.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_6.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_15.AcceptsReturn = true;
 			this.Valor_cont_s_norm_15.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_13 = this.Valor_cont_s_norm_15;
@@ -1344,7 +1344,7 @@ namespace iS800
 			valor_cont_s_norm_14.Size = size;
 			this.Valor_cont_s_norm_15.TabIndex = 14;
 			this.Valor_cont_s_norm_15.TabStop = false;
-			this.Valor_cont_s_norm_15.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_15.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_5.AcceptsReturn = true;
 			this.Valor_cont_s_norm_5.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_15 = this.Valor_cont_s_norm_5;
@@ -1357,7 +1357,7 @@ namespace iS800
 			valor_cont_s_norm_16.Size = size;
 			this.Valor_cont_s_norm_5.TabIndex = 14;
 			this.Valor_cont_s_norm_5.TabStop = false;
-			this.Valor_cont_s_norm_5.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_5.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_14.AcceptsReturn = true;
 			this.Valor_cont_s_norm_14.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_17 = this.Valor_cont_s_norm_14;
@@ -1370,7 +1370,7 @@ namespace iS800
 			valor_cont_s_norm_18.Size = size;
 			this.Valor_cont_s_norm_14.TabIndex = 14;
 			this.Valor_cont_s_norm_14.TabStop = false;
-			this.Valor_cont_s_norm_14.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_14.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_4.AcceptsReturn = true;
 			this.Valor_cont_s_norm_4.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_19 = this.Valor_cont_s_norm_4;
@@ -1383,7 +1383,7 @@ namespace iS800
 			valor_cont_s_norm_20.Size = size;
 			this.Valor_cont_s_norm_4.TabIndex = 14;
 			this.Valor_cont_s_norm_4.TabStop = false;
-			this.Valor_cont_s_norm_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_13.AcceptsReturn = true;
 			this.Valor_cont_s_norm_13.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_21 = this.Valor_cont_s_norm_13;
@@ -1396,7 +1396,7 @@ namespace iS800
 			valor_cont_s_norm_22.Size = size;
 			this.Valor_cont_s_norm_13.TabIndex = 13;
 			this.Valor_cont_s_norm_13.TabStop = false;
-			this.Valor_cont_s_norm_13.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_13.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_3.AcceptsReturn = true;
 			this.Valor_cont_s_norm_3.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_23 = this.Valor_cont_s_norm_3;
@@ -1409,7 +1409,7 @@ namespace iS800
 			valor_cont_s_norm_24.Size = size;
 			this.Valor_cont_s_norm_3.TabIndex = 13;
 			this.Valor_cont_s_norm_3.TabStop = false;
-			this.Valor_cont_s_norm_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_12.AcceptsReturn = true;
 			this.Valor_cont_s_norm_12.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_25 = this.Valor_cont_s_norm_12;
@@ -1422,7 +1422,7 @@ namespace iS800
 			valor_cont_s_norm_26.Size = size;
 			this.Valor_cont_s_norm_12.TabIndex = 12;
 			this.Valor_cont_s_norm_12.TabStop = false;
-			this.Valor_cont_s_norm_12.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_12.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_2.AcceptsReturn = true;
 			this.Valor_cont_s_norm_2.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_27 = this.Valor_cont_s_norm_2;
@@ -1435,7 +1435,7 @@ namespace iS800
 			valor_cont_s_norm_28.Size = size;
 			this.Valor_cont_s_norm_2.TabIndex = 12;
 			this.Valor_cont_s_norm_2.TabStop = false;
-			this.Valor_cont_s_norm_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_11.AcceptsReturn = true;
 			this.Valor_cont_s_norm_11.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_29 = this.Valor_cont_s_norm_11;
@@ -1448,7 +1448,7 @@ namespace iS800
 			valor_cont_s_norm_30.Size = size;
 			this.Valor_cont_s_norm_11.TabIndex = 11;
 			this.Valor_cont_s_norm_11.TabStop = false;
-			this.Valor_cont_s_norm_11.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_11.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_s_norm_1.AcceptsReturn = true;
 			this.Valor_cont_s_norm_1.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_s_norm_31 = this.Valor_cont_s_norm_1;
@@ -1461,7 +1461,7 @@ namespace iS800
 			valor_cont_s_norm_32.Size = size;
 			this.Valor_cont_s_norm_1.TabIndex = 11;
 			this.Valor_cont_s_norm_1.TabStop = false;
-			this.Valor_cont_s_norm_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_s_norm_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_cont_s_norm_10.AutoSize = true;
 			global::System.Windows.Forms.Control label_cont_s_norm_ = this.Label_cont_s_norm_10;
 			location = new global::System.Drawing.Point(36, 230);
@@ -1676,7 +1676,7 @@ namespace iS800
 			valor_cont_norm_2.Size = size;
 			this.Valor_cont_norm_10.TabIndex = 14;
 			this.Valor_cont_norm_10.TabStop = false;
-			this.Valor_cont_norm_10.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_10.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_9.AcceptsReturn = true;
 			this.Valor_cont_norm_9.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_3 = this.Valor_cont_norm_9;
@@ -1689,7 +1689,7 @@ namespace iS800
 			valor_cont_norm_4.Size = size;
 			this.Valor_cont_norm_9.TabIndex = 14;
 			this.Valor_cont_norm_9.TabStop = false;
-			this.Valor_cont_norm_9.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_9.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_8.AcceptsReturn = true;
 			this.Valor_cont_norm_8.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_5 = this.Valor_cont_norm_8;
@@ -1702,7 +1702,7 @@ namespace iS800
 			valor_cont_norm_6.Size = size;
 			this.Valor_cont_norm_8.TabIndex = 14;
 			this.Valor_cont_norm_8.TabStop = false;
-			this.Valor_cont_norm_8.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_8.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_7.AcceptsReturn = true;
 			this.Valor_cont_norm_7.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_7 = this.Valor_cont_norm_7;
@@ -1715,7 +1715,7 @@ namespace iS800
 			valor_cont_norm_8.Size = size;
 			this.Valor_cont_norm_7.TabIndex = 14;
 			this.Valor_cont_norm_7.TabStop = false;
-			this.Valor_cont_norm_7.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_7.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_16.AcceptsReturn = true;
 			this.Valor_cont_norm_16.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_9 = this.Valor_cont_norm_16;
@@ -1728,7 +1728,7 @@ namespace iS800
 			valor_cont_norm_10.Size = size;
 			this.Valor_cont_norm_16.TabIndex = 14;
 			this.Valor_cont_norm_16.TabStop = false;
-			this.Valor_cont_norm_16.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_16.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_6.AcceptsReturn = true;
 			this.Valor_cont_norm_6.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_11 = this.Valor_cont_norm_6;
@@ -1741,7 +1741,7 @@ namespace iS800
 			valor_cont_norm_12.Size = size;
 			this.Valor_cont_norm_6.TabIndex = 14;
 			this.Valor_cont_norm_6.TabStop = false;
-			this.Valor_cont_norm_6.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_6.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_15.AcceptsReturn = true;
 			this.Valor_cont_norm_15.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_13 = this.Valor_cont_norm_15;
@@ -1754,7 +1754,7 @@ namespace iS800
 			valor_cont_norm_14.Size = size;
 			this.Valor_cont_norm_15.TabIndex = 14;
 			this.Valor_cont_norm_15.TabStop = false;
-			this.Valor_cont_norm_15.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_15.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_5.AcceptsReturn = true;
 			this.Valor_cont_norm_5.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_15 = this.Valor_cont_norm_5;
@@ -1767,7 +1767,7 @@ namespace iS800
 			valor_cont_norm_16.Size = size;
 			this.Valor_cont_norm_5.TabIndex = 14;
 			this.Valor_cont_norm_5.TabStop = false;
-			this.Valor_cont_norm_5.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_5.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_14.AcceptsReturn = true;
 			this.Valor_cont_norm_14.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_17 = this.Valor_cont_norm_14;
@@ -1780,7 +1780,7 @@ namespace iS800
 			valor_cont_norm_18.Size = size;
 			this.Valor_cont_norm_14.TabIndex = 14;
 			this.Valor_cont_norm_14.TabStop = false;
-			this.Valor_cont_norm_14.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_14.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_4.AcceptsReturn = true;
 			this.Valor_cont_norm_4.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_19 = this.Valor_cont_norm_4;
@@ -1793,7 +1793,7 @@ namespace iS800
 			valor_cont_norm_20.Size = size;
 			this.Valor_cont_norm_4.TabIndex = 14;
 			this.Valor_cont_norm_4.TabStop = false;
-			this.Valor_cont_norm_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_13.AcceptsReturn = true;
 			this.Valor_cont_norm_13.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_21 = this.Valor_cont_norm_13;
@@ -1806,7 +1806,7 @@ namespace iS800
 			valor_cont_norm_22.Size = size;
 			this.Valor_cont_norm_13.TabIndex = 13;
 			this.Valor_cont_norm_13.TabStop = false;
-			this.Valor_cont_norm_13.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_13.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_3.AcceptsReturn = true;
 			this.Valor_cont_norm_3.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_23 = this.Valor_cont_norm_3;
@@ -1819,7 +1819,7 @@ namespace iS800
 			valor_cont_norm_24.Size = size;
 			this.Valor_cont_norm_3.TabIndex = 13;
 			this.Valor_cont_norm_3.TabStop = false;
-			this.Valor_cont_norm_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_12.AcceptsReturn = true;
 			this.Valor_cont_norm_12.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_25 = this.Valor_cont_norm_12;
@@ -1832,7 +1832,7 @@ namespace iS800
 			valor_cont_norm_26.Size = size;
 			this.Valor_cont_norm_12.TabIndex = 12;
 			this.Valor_cont_norm_12.TabStop = false;
-			this.Valor_cont_norm_12.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_12.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_2.AcceptsReturn = true;
 			this.Valor_cont_norm_2.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_27 = this.Valor_cont_norm_2;
@@ -1845,7 +1845,7 @@ namespace iS800
 			valor_cont_norm_28.Size = size;
 			this.Valor_cont_norm_2.TabIndex = 12;
 			this.Valor_cont_norm_2.TabStop = false;
-			this.Valor_cont_norm_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_11.AcceptsReturn = true;
 			this.Valor_cont_norm_11.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_29 = this.Valor_cont_norm_11;
@@ -1858,7 +1858,7 @@ namespace iS800
 			valor_cont_norm_30.Size = size;
 			this.Valor_cont_norm_11.TabIndex = 11;
 			this.Valor_cont_norm_11.TabStop = false;
-			this.Valor_cont_norm_11.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_11.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_cont_norm_1.AcceptsReturn = true;
 			this.Valor_cont_norm_1.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control valor_cont_norm_31 = this.Valor_cont_norm_1;
@@ -1871,7 +1871,7 @@ namespace iS800
 			valor_cont_norm_32.Size = size;
 			this.Valor_cont_norm_1.TabIndex = 11;
 			this.Valor_cont_norm_1.TabStop = false;
-			this.Valor_cont_norm_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_cont_norm_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_cont_norm_10.AutoSize = true;
 			global::System.Windows.Forms.Control label_cont_norm_ = this.Label_cont_norm_10;
 			location = new global::System.Drawing.Point(35, 230);
@@ -2111,7 +2111,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(61, 20);
 			valor_cal_end3.Size = size;
 			this.Valor_cal_end.TabIndex = 12;
-			this.Valor_cal_end.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_cal_end.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_canal_calibracao = this.Valor_canal_calibracao;
 			location = new global::System.Drawing.Point(270, 34);
 			valor_canal_calibracao.Location = location;
@@ -2138,7 +2138,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(63, 20);
 			valor_canal_calibracao4.Size = size;
 			this.Valor_canal_calibracao.TabIndex = 14;
-			this.Valor_canal_calibracao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_canal_calibracao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_canal_calibracao5 = this.Valor_canal_calibracao;
 			num = new decimal(new int[]
 			{

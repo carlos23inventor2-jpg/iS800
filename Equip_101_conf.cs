@@ -1450,9 +1450,9 @@ namespace iS800
 		// Token: 0x06001B85 RID: 7045 RVA: 0x003C8954 File Offset: 0x003C6D54
 		public void Atualiza_tela_MD101(int indice)
 		{
-			int num;
+			int num = 0;
 			int num4;
-			object obj;
+			object obj = null;
 			try
 			{
 				IL_00:
@@ -1510,8 +1510,7 @@ namespace iS800
 					num2 = 17;
 					if (Mod_MD.Reservatorio[indice].Offset_sensor <= 1000)
 					{
-						goto IL_178;
-					}
+											}
 					IL_14A:
 					num2 = 18;
 					this.Sensor_offset.Value = new decimal(0 - (Mod_MD.Reservatorio[indice].Offset_sensor - 1000));
@@ -1558,8 +1557,7 @@ namespace iS800
 					num2 = 34;
 					if (msgBoxResult != 6)
 					{
-						goto IL_276;
-					}
+											}
 					IL_267:
 					num2 = 35;
 					Mod_MD.CarregaConfiguracaoDefault_MD101(indice);
@@ -1627,8 +1625,7 @@ namespace iS800
 					ProjectData.ClearProjectError();
 					if (num4 != 0)
 					{
-						goto IL_3EF;
-					}
+											}
 					throw ProjectData.CreateProjectError(-2146828268);
 					IL_3EA:
 					goto IL_579;
@@ -1645,11 +1642,7 @@ namespace iS800
 				num4 = num2;
 								IL_54B:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_535;
-			}
+			catch (Exception) { }
 			IL_56E:
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_579:
@@ -1734,9 +1727,9 @@ namespace iS800
 		// Token: 0x06001B89 RID: 7049 RVA: 0x003C9170 File Offset: 0x003C7570
 		public void Atualiza_tela_MD101_repetidora_enderecos(int indice)
 		{
-			int num;
+			int num = 0;
 			int num4;
-			object obj;
+			object obj = null;
 			try
 			{
 				IL_00:
@@ -1746,8 +1739,7 @@ namespace iS800
 				int num2 = 2;
 				if (this.passo >= 4)
 				{
-					goto IL_232;
-				}
+									}
 				IL_17:
 				num2 = 3;
 				int num3 = 0;
@@ -1866,8 +1858,7 @@ namespace iS800
 					num2 = 41;
 					if (num_repetidoras - this.passo * 12 - 0 <= 0)
 					{
-						goto IL_4DB;
-					}
+											}
 					IL_4B9:
 					num2 = 42;
 					this.Label_end_rep_1.Visible = true;
@@ -1888,8 +1879,7 @@ namespace iS800
 					num2 = 49;
 					if (num_repetidoras - this.passo * 12 - 1 <= 0)
 					{
-						goto IL_535;
-					}
+											}
 					IL_513:
 					num2 = 50;
 					this.Label_end_rep_2.Visible = true;
@@ -1910,8 +1900,7 @@ namespace iS800
 					num2 = 57;
 					if (num_repetidoras - this.passo * 12 - 2 <= 0)
 					{
-						goto IL_58F;
-					}
+											}
 					IL_56D:
 					num2 = 58;
 					this.Label_end_rep_3.Visible = true;
@@ -1932,8 +1921,7 @@ namespace iS800
 					num2 = 65;
 					if (num_repetidoras - this.passo * 12 - 3 <= 0)
 					{
-						goto IL_5E9;
-					}
+											}
 					IL_5C7:
 					num2 = 66;
 					this.Label_end_rep_4.Visible = true;
@@ -1954,8 +1942,7 @@ namespace iS800
 					num2 = 73;
 					if (num_repetidoras - this.passo * 12 - 4 <= 0)
 					{
-						goto IL_643;
-					}
+											}
 					IL_621:
 					num2 = 74;
 					this.Label_end_rep_5.Visible = true;
@@ -1976,8 +1963,7 @@ namespace iS800
 					num2 = 81;
 					if (num_repetidoras - this.passo * 12 - 5 <= 0)
 					{
-						goto IL_69D;
-					}
+											}
 					IL_67B:
 					num2 = 82;
 					this.Label_end_rep_6.Visible = true;
@@ -1998,8 +1984,7 @@ namespace iS800
 					num2 = 89;
 					if (num_repetidoras - this.passo * 12 - 6 <= 0)
 					{
-						goto IL_6F7;
-					}
+											}
 					IL_6D5:
 					num2 = 90;
 					this.Label_end_rep_7.Visible = true;
@@ -2020,8 +2005,7 @@ namespace iS800
 					num2 = 97;
 					if (num_repetidoras - this.passo * 12 - 7 <= 0)
 					{
-						goto IL_751;
-					}
+											}
 					IL_72F:
 					num2 = 98;
 					this.Label_end_rep_8.Visible = true;
@@ -2042,8 +2026,7 @@ namespace iS800
 					num2 = 105;
 					if (num_repetidoras - this.passo * 12 - 8 <= 0)
 					{
-						goto IL_7AB;
-					}
+											}
 					IL_789:
 					num2 = 106;
 					this.Label_end_rep_9.Visible = true;
@@ -2064,8 +2047,7 @@ namespace iS800
 					num2 = 113;
 					if (num_repetidoras - this.passo * 12 - 9 <= 0)
 					{
-						goto IL_806;
-					}
+											}
 					IL_7E4:
 					num2 = 114;
 					this.Label_end_rep_10.Visible = true;
@@ -2086,8 +2068,7 @@ namespace iS800
 					num2 = 121;
 					if (num_repetidoras - this.passo * 12 - 10 <= 0)
 					{
-						goto IL_861;
-					}
+											}
 					IL_83F:
 					num2 = 122;
 					this.Label_end_rep_11.Visible = true;
@@ -2108,8 +2089,7 @@ namespace iS800
 					num2 = 129;
 					if (num_repetidoras - this.passo * 12 - 11 <= 0)
 					{
-						goto IL_8C8;
-					}
+											}
 					IL_89D:
 					num2 = 130;
 					this.Label_end_rep_12.Visible = true;
@@ -2135,8 +2115,7 @@ namespace iS800
 					num2 = 139;
 					if (msgBoxResult != 6)
 					{
-						goto IL_930;
-					}
+											}
 					IL_91E:
 					num2 = 140;
 					Mod_MD.CarregaConfiguracaoDefault_MD101(indice);
@@ -2209,8 +2188,7 @@ namespace iS800
 					ProjectData.ClearProjectError();
 					if (num4 != 0)
 					{
-						goto IL_B7B;
-					}
+											}
 					throw ProjectData.CreateProjectError(-2146828268);
 					IL_B76:
 					goto IL_EB7;
@@ -2227,11 +2205,7 @@ namespace iS800
 				num4 = num2;
 								IL_E88:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_E71;
-			}
+			catch (Exception) { }
 			IL_EAC:
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_EB7:

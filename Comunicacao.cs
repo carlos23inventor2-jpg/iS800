@@ -15,10 +15,10 @@ namespace iS800
 		// Token: 0x0600007C RID: 124 RVA: 0x00221478 File Offset: 0x0021F878
 		public static bool Init_porta_serial()
 		{
-			int num;
+			int num = 0;
 			bool flag = false;
 			int num2 = 0;
-			object obj;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -76,12 +76,10 @@ namespace iS800
 					Comunicacao.Init_buffer_serial();
 					Geral.Config_geral.Porta_serial_Ok = true;
 					flag = true;
-					goto IL_2E4;
-				}
+									}
 				if (Comunicacao.Config_sistema.tipo_interface == 2)
 				{
-					goto IL_2E4;
-				}
+									}
 				goto IL_2E4;
 				IL_275:
 				string text = "Erro na escolha da porta de comunicação serial";
@@ -95,7 +93,7 @@ namespace iS800
 				num2 = -1;
 								IL_2B5:;
 			}
-			catch (Exception ex) { num2 = -1; Geral.Config_geral.Porta_serial_Ok = false; flag = false; }
+			catch (Exception ex) { Geral.Config_geral.Porta_serial_Ok = false; flag = false; }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_2E4:
 			bool result = flag;
@@ -111,10 +109,10 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				bool flag = false;
 				int num3 = 0;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -145,7 +143,7 @@ namespace iS800
 					num3 = -1;
 										IL_AD:;
 				}
-				catch (Exception ex) { num2 = -1; Geral.Config_geral.Porta_serial_Ok = false; flag = false; }
+				catch (Exception ex) { Geral.Config_geral.Porta_serial_Ok = false; flag = false; }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_DA:
 				bool result = flag;
@@ -1660,7 +1658,7 @@ namespace iS800
 		public struct CTRL_LOGCOMUNICACAO
 		{
 			// Token: 0x040001AF RID: 431
-			public bool flag = false;
+			public bool flag;
 
 			// Token: 0x040001B0 RID: 432
 			public string diretorio;

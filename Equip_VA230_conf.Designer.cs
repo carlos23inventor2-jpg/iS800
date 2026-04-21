@@ -95,7 +95,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_intervalo_varredura2.Size = size;
 			this.Valor_intervalo_varredura.TabIndex = 4;
-			this.Valor_intervalo_varredura.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_intervalo_varredura.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_intervalo_varredura.AutoSize = true;
 			global::System.Windows.Forms.Control label_intervalo_varredura = this.Label_intervalo_varredura;
 			location = new global::System.Drawing.Point(24, 82);
@@ -114,7 +114,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_end_origem2.Size = size;
 			this.Valor_end_origem.TabIndex = 2;
-			this.Valor_end_origem.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_origem.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_numero_recalques = this.Valor_numero_recalques;
 			location = new global::System.Drawing.Point(243, 52);
 			valor_numero_recalques.Location = location;
@@ -123,7 +123,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_numero_recalques2.Size = size;
 			this.Valor_numero_recalques.TabIndex = 3;
-			this.Valor_numero_recalques.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_numero_recalques.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_end_origem.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_origem = this.Label_end_origem;
 			location = new global::System.Drawing.Point(24, 30);
@@ -176,7 +176,7 @@ namespace iS800
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 5;
 			this.Box_Msg.TabStop = false;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_201;
 			location = new global::System.Drawing.Point(41, 61);
 			ler_conf_md_.Location = location;
@@ -259,7 +259,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(66, 20);
 			valor_end_estacao2.Size = size;
 			this.Valor_end_estacao.TabIndex = 6;
-			this.Valor_end_estacao.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_estacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_15.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_ = this.Valor_escala_canal_15;
 			location = new global::System.Drawing.Point(234, 259);
@@ -269,7 +269,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_2.Size = size;
 			this.Valor_escala_canal_15.TabIndex = 22;
-			this.Valor_escala_canal_15.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_15.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_7.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_3 = this.Valor_escala_canal_7;
 			location = new global::System.Drawing.Point(79, 259);
@@ -279,7 +279,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_4.Size = size;
 			this.Valor_escala_canal_7.TabIndex = 14;
-			this.Valor_escala_canal_7.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_7.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_14.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_5 = this.Valor_escala_canal_14;
 			location = new global::System.Drawing.Point(234, 232);
@@ -289,7 +289,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_6.Size = size;
 			this.Valor_escala_canal_14.TabIndex = 21;
-			this.Valor_escala_canal_14.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_14.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_6.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_7 = this.Valor_escala_canal_6;
 			location = new global::System.Drawing.Point(79, 232);
@@ -299,7 +299,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_8.Size = size;
 			this.Valor_escala_canal_6.TabIndex = 13;
-			this.Valor_escala_canal_6.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_6.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_13.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_9 = this.Valor_escala_canal_13;
 			location = new global::System.Drawing.Point(234, 205);
@@ -309,7 +309,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_10.Size = size;
 			this.Valor_escala_canal_13.TabIndex = 20;
-			this.Valor_escala_canal_13.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_13.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_5.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_11 = this.Valor_escala_canal_5;
 			location = new global::System.Drawing.Point(79, 205);
@@ -319,7 +319,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_12.Size = size;
 			this.Valor_escala_canal_5.TabIndex = 12;
-			this.Valor_escala_canal_5.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_5.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_12.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_13 = this.Valor_escala_canal_12;
 			location = new global::System.Drawing.Point(234, 178);
@@ -329,7 +329,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_14.Size = size;
 			this.Valor_escala_canal_12.TabIndex = 19;
-			this.Valor_escala_canal_12.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_12.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_4.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_15 = this.Valor_escala_canal_4;
 			location = new global::System.Drawing.Point(79, 178);
@@ -339,7 +339,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_16.Size = size;
 			this.Valor_escala_canal_4.TabIndex = 11;
-			this.Valor_escala_canal_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_11.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_17 = this.Valor_escala_canal_11;
 			location = new global::System.Drawing.Point(234, 150);
@@ -349,7 +349,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_18.Size = size;
 			this.Valor_escala_canal_11.TabIndex = 18;
-			this.Valor_escala_canal_11.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_11.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_3.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_19 = this.Valor_escala_canal_3;
 			location = new global::System.Drawing.Point(79, 150);
@@ -359,7 +359,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_20.Size = size;
 			this.Valor_escala_canal_3.TabIndex = 10;
-			this.Valor_escala_canal_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_10.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_21 = this.Valor_escala_canal_10;
 			location = new global::System.Drawing.Point(234, 124);
@@ -369,7 +369,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_22.Size = size;
 			this.Valor_escala_canal_10.TabIndex = 17;
-			this.Valor_escala_canal_10.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_10.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_2.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_23 = this.Valor_escala_canal_2;
 			location = new global::System.Drawing.Point(79, 124);
@@ -379,7 +379,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_24.Size = size;
 			this.Valor_escala_canal_2.TabIndex = 9;
-			this.Valor_escala_canal_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_9.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_25 = this.Valor_escala_canal_9;
 			location = new global::System.Drawing.Point(234, 100);
@@ -389,7 +389,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_26.Size = size;
 			this.Valor_escala_canal_9.TabIndex = 16;
-			this.Valor_escala_canal_9.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_9.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_1.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_27 = this.Valor_escala_canal_1;
 			location = new global::System.Drawing.Point(79, 100);
@@ -399,7 +399,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_28.Size = size;
 			this.Valor_escala_canal_1.TabIndex = 8;
-			this.Valor_escala_canal_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_8.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_29 = this.Valor_escala_canal_8;
 			location = new global::System.Drawing.Point(234, 73);
@@ -409,7 +409,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_30.Size = size;
 			this.Valor_escala_canal_8.TabIndex = 15;
-			this.Valor_escala_canal_8.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_8.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_escala_canal_0.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_escala_canal_31 = this.Valor_escala_canal_0;
 			location = new global::System.Drawing.Point(79, 73);
@@ -419,7 +419,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_escala_canal_32.Size = size;
 			this.Valor_escala_canal_0.TabIndex = 7;
-			this.Valor_escala_canal_0.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_escala_canal_0.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_escala_canal_15.AutoSize = true;
 			global::System.Windows.Forms.Control label_escala_canal_ = this.Label_escala_canal_15;
 			location = new global::System.Drawing.Point(179, 262);

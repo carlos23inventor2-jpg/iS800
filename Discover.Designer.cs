@@ -1,3 +1,4 @@
+using System.Drawing;
 namespace iS800
 {
 	// Token: 0x02000013 RID: 19
@@ -61,7 +62,7 @@ namespace iS800
 			this.GroupBox_informacoes.TabStop = false;
 			this.GroupBox_informacoes.Text = "Informações";
 			this.Label26.AutoSize = true;
-			this.Label26.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
+			this.Label26.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)3);
 			global::System.Windows.Forms.Control label = this.Label26;
 			location = new global::System.Drawing.Point(12, 49);
 			label.Location = location;
@@ -72,7 +73,7 @@ namespace iS800
 			this.Label26.TabIndex = 8;
 			this.Label26.Text = "RT";
 			this.TextBox_equipamento.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_equipamento.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
+			this.TextBox_equipamento.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)3);
 			global::System.Windows.Forms.Control textBox_equipamento = this.TextBox_equipamento;
 			location = new global::System.Drawing.Point(47, 46);
 			textBox_equipamento.Location = location;
@@ -83,7 +84,7 @@ namespace iS800
 			textBox_equipamento2.Size = size;
 			this.TextBox_equipamento.TabIndex = 7;
 			this.TextBox_equipamento.TabStop = false;
-			this.TextBox_equipamento.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_equipamento.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new global::System.Drawing.Point(12, 28);
@@ -95,7 +96,7 @@ namespace iS800
 			this.Label_equipamento.TabIndex = 6;
 			this.Label_equipamento.Text = "Equipamento";
 			this.TextBox_release.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_release.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
+			this.TextBox_release.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)3);
 			global::System.Windows.Forms.Control textBox_release = this.TextBox_release;
 			location = new global::System.Drawing.Point(203, 46);
 			textBox_release.Location = location;
@@ -106,7 +107,7 @@ namespace iS800
 			textBox_release2.Size = size;
 			this.TextBox_release.TabIndex = 5;
 			this.TextBox_release.TabStop = false;
-			this.TextBox_release.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_release.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new global::System.Drawing.Point(206, 28);
@@ -118,7 +119,7 @@ namespace iS800
 			this.Label_release.TabIndex = 4;
 			this.Label_release.Text = "Release";
 			this.TextBox_build.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_build.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
+			this.TextBox_build.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)3);
 			global::System.Windows.Forms.Control textBox_build = this.TextBox_build;
 			location = new global::System.Drawing.Point(151, 46);
 			textBox_build.Location = location;
@@ -129,7 +130,7 @@ namespace iS800
 			textBox_build2.Size = size;
 			this.TextBox_build.TabIndex = 3;
 			this.TextBox_build.TabStop = false;
-			this.TextBox_build.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_build.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new global::System.Drawing.Point(160, 28);
@@ -141,7 +142,7 @@ namespace iS800
 			this.Label_build.TabIndex = 2;
 			this.Label_build.Text = "Build";
 			this.TextBox_versao.BackColor = global::System.Drawing.Color.LightCyan;
-			this.TextBox_versao.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, 0, (FontStyle)3, 0);
+			this.TextBox_versao.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)3);
 			global::System.Windows.Forms.Control textBox_versao = this.TextBox_versao;
 			location = new global::System.Drawing.Point(99, 46);
 			textBox_versao.Location = location;
@@ -152,7 +153,7 @@ namespace iS800
 			textBox_versao2.Size = size;
 			this.TextBox_versao.TabIndex = 1;
 			this.TextBox_versao.TabStop = false;
-			this.TextBox_versao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_versao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new global::System.Drawing.Point(102, 28);

@@ -1926,8 +1926,7 @@ namespace iS800
 				goto IL_3BA;
 			case 15:
 				this.Combo_max_power.SelectedIndex = 3;
-				goto IL_3BA;
-			}
+							}
 			this.Combo_max_power.SelectedIndex = 4;
 			IL_3BA:
 			int modemMode = Mod_MD.Parametros_590.ModemMode;
@@ -2081,8 +2080,7 @@ namespace iS800
 					goto IL_38C;
 				case 15:
 					this.Combo_max_power.SelectedIndex = 3;
-					goto IL_38C;
-				}
+									}
 				this.Combo_max_power.SelectedIndex = 4;
 				IL_38C:
 				int num2 = Mod_MD.Tabela_590[110];
@@ -2725,8 +2723,7 @@ namespace iS800
 							ctrl_RESP_.Msg = "Erro chksum - ao ler página " + Conversion.Str(num / 256);
 							ctrl_RESP_.Cor = 1;
 							ctrl_RESP_.Status = false;
-							goto IL_178;
-						}
+													}
 						continue;
 					case 3:
 						if (i == 0)
@@ -2734,8 +2731,7 @@ namespace iS800
 							ctrl_RESP_.Msg = "Erro Timeout - ao ler página " + Conversion.Str(num / 256);
 							ctrl_RESP_.Cor = 1;
 							ctrl_RESP_.Status = false;
-							goto IL_178;
-						}
+													}
 						continue;
 					}
 					if (i == 0)

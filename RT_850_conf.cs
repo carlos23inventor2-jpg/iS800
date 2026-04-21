@@ -3887,7 +3887,7 @@ namespace iS800
 		private void GeraDataGridView_Equip_Canal_1()
 		{
 			this.DataGridView_equip_1_RT850.Columns.Clear();
-			this.DataGridView_equip_1_RT850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_equip_1_RT850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_equip_1_RT850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -3913,7 +3913,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_equip_1_RT850.Rows)
+					foreach (object obj = null in this.DataGridView_equip_1_RT850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -4055,7 +4055,7 @@ namespace iS800
 				this.DataGridView_variaveis_RT850.RowCount = 1;
 				this.DataGridView_variaveis_RT850.Columns.Clear();
 			}
-			this.DataGridView_variaveis_RT850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_variaveis_RT850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_variaveis_RT850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			int num = 0;
 			checked
@@ -4082,7 +4082,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.DataGridView_variaveis_RT850.Rows)
+					foreach (object obj = null in this.DataGridView_variaveis_RT850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -4334,7 +4334,7 @@ namespace iS800
 				this.DataGridView_Ctrl_1_RT850.RowCount = 1;
 				this.DataGridView_Ctrl_1_RT850.Columns.Clear();
 			}
-			this.DataGridView_Ctrl_1_RT850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_Ctrl_1_RT850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_Ctrl_1_RT850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			int num = 0;
 			checked
@@ -4364,7 +4364,7 @@ namespace iS800
 				int num2 = 0;
 				try
 				{
-					foreach (object obj in this.DataGridView_Ctrl_1_RT850.Rows)
+					foreach (object obj = null in this.DataGridView_Ctrl_1_RT850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -4704,7 +4704,7 @@ namespace iS800
 				this.DataGridView_Ctrl_4_RT850.RowCount = 1;
 				this.DataGridView_Ctrl_4_RT850.Columns.Clear();
 			}
-			this.DataGridView_Ctrl_4_RT850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_Ctrl_4_RT850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_Ctrl_4_RT850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			int num = 0;
 			checked
@@ -4734,7 +4734,7 @@ namespace iS800
 				int num2 = 0;
 				try
 				{
-					foreach (object obj in this.DataGridView_Ctrl_4_RT850.Rows)
+					foreach (object obj = null in this.DataGridView_Ctrl_4_RT850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -5148,9 +5148,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num5;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -5229,11 +5229,7 @@ namespace iS800
 					num5 = -1;
 										IL_A0D:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num5 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_9F7;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_A3C:
 				if (num5 != 0)
@@ -5252,7 +5248,7 @@ namespace iS800
 				this.DataGridView_Ctrl_8_RT850.RowCount = 1;
 				this.DataGridView_Ctrl_8_RT850.Columns.Clear();
 			}
-			this.DataGridView_Ctrl_8_RT850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_Ctrl_8_RT850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_Ctrl_8_RT850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			int num = 0;
 			checked
@@ -5286,7 +5282,7 @@ namespace iS800
 				int num2 = 0;
 				try
 				{
-					foreach (object obj in this.DataGridView_Ctrl_8_RT850.Rows)
+					foreach (object obj = null in this.DataGridView_Ctrl_8_RT850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -5995,7 +5991,7 @@ namespace iS800
 				this.DataGridView_vista_variaveis_RT_850.RowCount = 1;
 				this.DataGridView_vista_variaveis_RT_850.Columns.Clear();
 			}
-			this.DataGridView_vista_variaveis_RT_850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_vista_variaveis_RT_850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_vista_variaveis_RT_850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			int num = 0;
 			checked
@@ -6032,7 +6028,7 @@ namespace iS800
 				int num2 = 0;
 				try
 				{
-					foreach (object obj in this.DataGridView_vista_variaveis_RT_850.Rows)
+					foreach (object obj = null in this.DataGridView_vista_variaveis_RT_850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -6109,7 +6105,7 @@ namespace iS800
 				this.DataGridView_vista_equipamentos_RT_850.RowCount = 1;
 				this.DataGridView_vista_equipamentos_RT_850.Columns.Clear();
 			}
-			this.DataGridView_vista_equipamentos_RT_850.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_vista_equipamentos_RT_850.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_vista_equipamentos_RT_850.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)32;
 			int num = 0;
 			checked
@@ -6146,7 +6142,7 @@ namespace iS800
 				int num2 = 0;
 				try
 				{
-					foreach (object obj in this.DataGridView_vista_equipamentos_RT_850.Rows)
+					foreach (object obj = null in this.DataGridView_vista_equipamentos_RT_850.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -6967,9 +6963,9 @@ namespace iS800
 		// Token: 0x06000B61 RID: 2913 RVA: 0x002E100C File Offset: 0x002DF40C
 		public void Atualiza_TelaRT850()
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -7034,11 +7030,7 @@ namespace iS800
 				num2 = -1;
 								IL_265:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_24F;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_294:
 			if (num2 != 0)
@@ -7348,9 +7340,9 @@ namespace iS800
 		// Token: 0x06000B70 RID: 2928 RVA: 0x002E1FE4 File Offset: 0x002E03E4
 		private void RT_850_conf_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -7383,11 +7375,7 @@ namespace iS800
 				num2 = -1;
 								IL_C9:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_B5;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_F6:
 			if (num2 != 0)
@@ -7914,7 +7902,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_1[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_1[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3;
+						int num3 = 0;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -8187,7 +8175,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_4[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_4[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3;
+						int num3 = 0;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -8621,7 +8609,7 @@ namespace iS800
 							RT_geral.RT_850_Ctrl_8[e.RowIndex].Modelo.Indice = RT_geral.RT_850_DataGridView_ctrl_8[e.ColumnIndex].LinhasValor[i];
 							break;
 						}
-						int num3;
+						int num3 = 0;
 						if (Operators.CompareString(dataPropertyName2, "Col_Var_1", false) != 0)
 						{
 							if (Operators.CompareString(dataPropertyName2, "Col_Var_2", false) != 0)
@@ -9586,9 +9574,9 @@ namespace iS800
 		// Token: 0x06000B97 RID: 2967 RVA: 0x002E8690 File Offset: 0x002E6A90
 		private void ToolStripButton_RT850_Abrir_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -9699,11 +9687,7 @@ namespace iS800
 				num2 = -1;
 								IL_488:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_472;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_4B7:
 			if (num2 != 0)
@@ -10508,9 +10492,9 @@ namespace iS800
 		// Token: 0x06000BBC RID: 3004 RVA: 0x002EB3BC File Offset: 0x002E97BC
 		private void ToolStripButton_RT850_Salvar_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -10639,11 +10623,7 @@ namespace iS800
 				num2 = -1;
 								IL_4A4:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_48E;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_4D3:
 			if (num2 != 0)
@@ -11240,9 +11220,9 @@ namespace iS800
 		// Token: 0x06000BC3 RID: 3011 RVA: 0x002EC7E4 File Offset: 0x002EABE4
 		private void TextBox_msg_inicial_RT850_TextChanged(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -11269,11 +11249,7 @@ namespace iS800
 				num2 = -1;
 								IL_101:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_ED;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_12E:
 			if (num2 != 0)
@@ -13362,7 +13338,7 @@ namespace iS800
 				};
 				if (this.grupo_impressao == 11)
 				{
-					int num2;
+					int num2 = 0;
 					if (RT_geral.RT_850_BD.Numero_equip_tipo_vista.Valor == 0)
 					{
 						num2 = 0;

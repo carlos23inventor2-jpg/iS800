@@ -111,7 +111,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			valor_altura_pressiostato2.Size = size;
 			this.Valor_altura_pressiostato.TabIndex = 4;
-			this.Valor_altura_pressiostato.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_altura_pressiostato.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_tempo_sem_comunicacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_sem_comunicacao = this.Label_tempo_sem_comunicacao;
 			location = new global::System.Drawing.Point(24, 155);
@@ -160,7 +160,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			valor_end_mestre2.Size = size;
 			this.Valor_end_mestre.TabIndex = 2;
-			this.Valor_end_mestre.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_max_sem_comunicacao = this.Valor_tempo_max_sem_comunicacao;
 			location = new global::System.Drawing.Point(239, 151);
 			valor_tempo_max_sem_comunicacao.Location = location;
@@ -169,7 +169,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			valor_tempo_max_sem_comunicacao2.Size = size;
 			this.Valor_tempo_max_sem_comunicacao.TabIndex = 7;
-			this.Valor_tempo_max_sem_comunicacao.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_tempo_max_sem_comunicacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_alto = this.Valor_nivel_alto;
 			location = new global::System.Drawing.Point(239, 126);
 			valor_nivel_alto.Location = location;
@@ -178,7 +178,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			valor_nivel_alto2.Size = size;
 			this.Valor_nivel_alto.TabIndex = 6;
-			this.Valor_nivel_alto.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_nivel_alto.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_nivel_baixo = this.Valor_nivel_baixo;
 			location = new global::System.Drawing.Point(239, 101);
 			valor_nivel_baixo.Location = location;
@@ -187,7 +187,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			valor_nivel_baixo2.Size = size;
 			this.Valor_nivel_baixo.TabIndex = 5;
-			this.Valor_nivel_baixo.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_nivel_baixo.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_end_mestre.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre = this.Label_end_mestre;
 			location = new global::System.Drawing.Point(24, 30);
@@ -280,7 +280,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(66, 20);
 			valor_num_grupo2.Size = size;
 			this.Valor_num_grupo.TabIndex = 9;
-			this.Valor_num_grupo.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_num_grupo.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_16.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_ = this.Valor_grupo_16;
 			location = new global::System.Drawing.Point(234, 259);
@@ -290,7 +290,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_2.Size = size;
 			this.Valor_grupo_16.TabIndex = 22;
-			this.Valor_grupo_16.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_16.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_8.AcceptsReturn = true;
 			this.Valor_grupo_8.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_3 = this.Valor_grupo_8;
@@ -301,7 +301,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_4.Size = size;
 			this.Valor_grupo_8.TabIndex = 17;
-			this.Valor_grupo_8.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_8.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_15.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_5 = this.Valor_grupo_15;
 			location = new global::System.Drawing.Point(234, 232);
@@ -311,7 +311,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_6.Size = size;
 			this.Valor_grupo_15.TabIndex = 21;
-			this.Valor_grupo_15.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_15.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_7.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_7 = this.Valor_grupo_7;
 			location = new global::System.Drawing.Point(79, 232);
@@ -321,7 +321,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_8.Size = size;
 			this.Valor_grupo_7.TabIndex = 16;
-			this.Valor_grupo_7.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_7.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_14.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_9 = this.Valor_grupo_14;
 			location = new global::System.Drawing.Point(234, 205);
@@ -331,7 +331,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_10.Size = size;
 			this.Valor_grupo_14.TabIndex = 20;
-			this.Valor_grupo_14.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_14.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_6.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_11 = this.Valor_grupo_6;
 			location = new global::System.Drawing.Point(79, 205);
@@ -341,7 +341,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_12.Size = size;
 			this.Valor_grupo_6.TabIndex = 15;
-			this.Valor_grupo_6.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_6.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_13.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_13 = this.Valor_grupo_13;
 			location = new global::System.Drawing.Point(234, 178);
@@ -351,7 +351,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_14.Size = size;
 			this.Valor_grupo_13.TabIndex = 19;
-			this.Valor_grupo_13.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_13.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_5.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_15 = this.Valor_grupo_5;
 			location = new global::System.Drawing.Point(79, 178);
@@ -361,7 +361,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_16.Size = size;
 			this.Valor_grupo_5.TabIndex = 14;
-			this.Valor_grupo_5.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_5.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_12.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_17 = this.Valor_grupo_12;
 			location = new global::System.Drawing.Point(234, 150);
@@ -371,7 +371,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_18.Size = size;
 			this.Valor_grupo_12.TabIndex = 18;
-			this.Valor_grupo_12.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_12.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_4.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_19 = this.Valor_grupo_4;
 			location = new global::System.Drawing.Point(79, 150);
@@ -381,7 +381,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_20.Size = size;
 			this.Valor_grupo_4.TabIndex = 13;
-			this.Valor_grupo_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_11.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_21 = this.Valor_grupo_11;
 			location = new global::System.Drawing.Point(234, 124);
@@ -391,7 +391,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_22.Size = size;
 			this.Valor_grupo_11.TabIndex = 17;
-			this.Valor_grupo_11.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_11.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_3.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_23 = this.Valor_grupo_3;
 			location = new global::System.Drawing.Point(79, 124);
@@ -401,7 +401,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_24.Size = size;
 			this.Valor_grupo_3.TabIndex = 12;
-			this.Valor_grupo_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_10.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_25 = this.Valor_grupo_10;
 			location = new global::System.Drawing.Point(234, 100);
@@ -411,7 +411,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_26.Size = size;
 			this.Valor_grupo_10.TabIndex = 16;
-			this.Valor_grupo_10.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_10.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_2.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_27 = this.Valor_grupo_2;
 			location = new global::System.Drawing.Point(79, 100);
@@ -421,7 +421,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_28.Size = size;
 			this.Valor_grupo_2.TabIndex = 11;
-			this.Valor_grupo_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_9.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_29 = this.Valor_grupo_9;
 			location = new global::System.Drawing.Point(234, 73);
@@ -431,7 +431,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_30.Size = size;
 			this.Valor_grupo_9.TabIndex = 18;
-			this.Valor_grupo_9.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_9.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_grupo_1.AcceptsTab = true;
 			global::System.Windows.Forms.Control valor_grupo_31 = this.Valor_grupo_1;
 			location = new global::System.Drawing.Point(79, 73);
@@ -441,7 +441,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_grupo_32.Size = size;
 			this.Valor_grupo_1.TabIndex = 10;
-			this.Valor_grupo_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_grupo_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_grupo_16.AutoSize = true;
 			global::System.Windows.Forms.Control label_grupo_ = this.Label_grupo_16;
 			location = new global::System.Drawing.Point(179, 262);

@@ -262,7 +262,7 @@ namespace iS800
 			valor_ganho_2.Size = size;
 			this.Valor_ganho_4.TabIndex = 10;
 			this.Valor_ganho_4.TabStop = false;
-			this.Valor_ganho_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_3.AcceptsReturn = true;
 			this.Valor_ganho_3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_ganho_3 = this.Valor_ganho_3;
@@ -275,7 +275,7 @@ namespace iS800
 			valor_ganho_4.Size = size;
 			this.Valor_ganho_3.TabIndex = 9;
 			this.Valor_ganho_3.TabStop = false;
-			this.Valor_ganho_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_2.AcceptsReturn = true;
 			this.Valor_ganho_2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_ganho_5 = this.Valor_ganho_2;
@@ -288,7 +288,7 @@ namespace iS800
 			valor_ganho_6.Size = size;
 			this.Valor_ganho_2.TabIndex = 8;
 			this.Valor_ganho_2.TabStop = false;
-			this.Valor_ganho_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_ganho_1.AcceptsReturn = true;
 			this.Valor_ganho_1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_ganho_7 = this.Valor_ganho_1;
@@ -301,7 +301,7 @@ namespace iS800
 			valor_ganho_8.Size = size;
 			this.Valor_ganho_1.TabIndex = 7;
 			this.Valor_ganho_1.TabStop = false;
-			this.Valor_ganho_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_ganho_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_4.AcceptsReturn = true;
 			this.Valor_zero_4.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_zero_ = this.Valor_zero_4;
@@ -314,7 +314,7 @@ namespace iS800
 			valor_zero_2.Size = size;
 			this.Valor_zero_4.TabIndex = 6;
 			this.Valor_zero_4.TabStop = false;
-			this.Valor_zero_4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_3.AcceptsReturn = true;
 			this.Valor_zero_3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_zero_3 = this.Valor_zero_3;
@@ -327,7 +327,7 @@ namespace iS800
 			valor_zero_4.Size = size;
 			this.Valor_zero_3.TabIndex = 5;
 			this.Valor_zero_3.TabStop = false;
-			this.Valor_zero_3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_2.AcceptsReturn = true;
 			this.Valor_zero_2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_zero_5 = this.Valor_zero_2;
@@ -340,7 +340,7 @@ namespace iS800
 			valor_zero_6.Size = size;
 			this.Valor_zero_2.TabIndex = 4;
 			this.Valor_zero_2.TabStop = false;
-			this.Valor_zero_2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_zero_1.AcceptsReturn = true;
 			this.Valor_zero_1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_zero_7 = this.Valor_zero_1;
@@ -353,7 +353,7 @@ namespace iS800
 			valor_zero_8.Size = size;
 			this.Valor_zero_1.TabIndex = 3;
 			this.Valor_zero_1.TabStop = false;
-			this.Valor_zero_1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_zero_1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_ganho_4.AutoSize = true;
 			global::System.Windows.Forms.Control label_ganho_ = this.Label_ganho_4;
 			location = new global::System.Drawing.Point(305, 98);
@@ -464,7 +464,7 @@ namespace iS800
 			valor_sem_nor_EA2.Size = size;
 			this.Valor_sem_nor_EA4.TabIndex = 2;
 			this.Valor_sem_nor_EA4.TabStop = false;
-			this.Valor_sem_nor_EA4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_sem_nor_EA4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_sem_nor_EA3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_sem_nor_EA3 = this.Valor_sem_nor_EA3;
 			location = new global::System.Drawing.Point(99, 75);
@@ -476,7 +476,7 @@ namespace iS800
 			valor_sem_nor_EA4.Size = size;
 			this.Valor_sem_nor_EA3.TabIndex = 2;
 			this.Valor_sem_nor_EA3.TabStop = false;
-			this.Valor_sem_nor_EA3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_sem_nor_EA3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_sem_nor_EA2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_sem_nor_EA5 = this.Valor_sem_nor_EA2;
 			location = new global::System.Drawing.Point(99, 49);
@@ -488,7 +488,7 @@ namespace iS800
 			valor_sem_nor_EA6.Size = size;
 			this.Valor_sem_nor_EA2.TabIndex = 2;
 			this.Valor_sem_nor_EA2.TabStop = false;
-			this.Valor_sem_nor_EA2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_sem_nor_EA2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_sem_nor_EA1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_sem_nor_EA7 = this.Valor_sem_nor_EA1;
 			location = new global::System.Drawing.Point(99, 23);
@@ -500,7 +500,7 @@ namespace iS800
 			valor_sem_nor_EA8.Size = size;
 			this.Valor_sem_nor_EA1.TabIndex = 1;
 			this.Valor_sem_nor_EA1.TabStop = false;
-			this.Valor_sem_nor_EA1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_sem_nor_EA1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_sem_nor_EA4.AutoSize = true;
 			global::System.Windows.Forms.Control label_sem_nor_EA = this.Label_sem_nor_EA4;
 			location = new global::System.Drawing.Point(13, 105);
@@ -570,7 +570,7 @@ namespace iS800
 			valor_nor_EA2.Size = size;
 			this.Valor_nor_EA4.TabIndex = 2;
 			this.Valor_nor_EA4.TabStop = false;
-			this.Valor_nor_EA4.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_nor_EA4.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_nor_EA3.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_nor_EA3 = this.Valor_nor_EA3;
 			location = new global::System.Drawing.Point(100, 75);
@@ -582,7 +582,7 @@ namespace iS800
 			valor_nor_EA4.Size = size;
 			this.Valor_nor_EA3.TabIndex = 2;
 			this.Valor_nor_EA3.TabStop = false;
-			this.Valor_nor_EA3.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_nor_EA3.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_nor_EA2.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_nor_EA5 = this.Valor_nor_EA2;
 			location = new global::System.Drawing.Point(100, 49);
@@ -594,7 +594,7 @@ namespace iS800
 			valor_nor_EA6.Size = size;
 			this.Valor_nor_EA2.TabIndex = 2;
 			this.Valor_nor_EA2.TabStop = false;
-			this.Valor_nor_EA2.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_nor_EA2.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Valor_nor_EA1.BackColor = global::System.Drawing.SystemColors.ButtonHighlight;
 			global::System.Windows.Forms.Control valor_nor_EA7 = this.Valor_nor_EA1;
 			location = new global::System.Drawing.Point(100, 23);
@@ -606,7 +606,7 @@ namespace iS800
 			valor_nor_EA8.Size = size;
 			this.Valor_nor_EA1.TabIndex = 1;
 			this.Valor_nor_EA1.TabStop = false;
-			this.Valor_nor_EA1.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_nor_EA1.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_nor_EA4.AutoSize = true;
 			global::System.Windows.Forms.Control label_nor_EA = this.Label_nor_EA4;
 			location = new global::System.Drawing.Point(14, 105);
@@ -655,7 +655,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(181, 20);
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 10;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control tela_end_estacao = this.Tela_end_estacao;
 			location = new global::System.Drawing.Point(129, 33);
 			tela_end_estacao.Location = location;
@@ -674,7 +674,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			tela_end_estacao3.Size = size;
 			this.Tela_end_estacao.TabIndex = 12;
-			this.Tela_end_estacao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Tela_end_estacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_end_estacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_estacao = this.Label_end_estacao;
 			location = new global::System.Drawing.Point(22, 35);
@@ -725,7 +725,7 @@ namespace iS800
 			label_defeito_sensor2.Size = size;
 			this.Label_defeito_sensor.TabIndex = 8;
 			this.Label_defeito_sensor.Text = " Falha sensor ";
-			this.Label_defeito_sensor.TextAlign = (System.Drawing.ContentAlignment)32;
+			this.Label_defeito_sensor.TextAlign = (System.Windows.Forms.HorizontalAlignment)32;
 			this.Label_arrombamento.AutoSize = true;
 			this.Label_arrombamento.BackColor = global::System.Drawing.SystemColors.Control;
 			this.Label_arrombamento.BorderStyle = (System.Windows.Forms.BorderStyle)2;
@@ -750,7 +750,7 @@ namespace iS800
 			label_vazio2.Size = size;
 			this.Label_vazio.TabIndex = 6;
 			this.Label_vazio.Text = "       Vazio       ";
-			this.Label_vazio.TextAlign = (System.Drawing.ContentAlignment)32;
+			this.Label_vazio.TextAlign = (System.Windows.Forms.HorizontalAlignment)32;
 			this.Label_transbordo.AutoSize = true;
 			this.Label_transbordo.BackColor = global::System.Drawing.SystemColors.Control;
 			this.Label_transbordo.BorderStyle = (System.Windows.Forms.BorderStyle)2;
@@ -796,7 +796,7 @@ namespace iS800
 			tela_nivel2.Size = size;
 			this.Tela_nivel.TabIndex = 1;
 			this.Tela_nivel.TabStop = false;
-			this.Tela_nivel.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Tela_nivel.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Grupo_ctrl_com.Controls.Add(this.Box_Msg);
 			this.Grupo_ctrl_com.Controls.Add(this.Comando_hab_cal);
 			this.Grupo_ctrl_com.Controls.Add(this.Tela_end_estacao);
@@ -877,7 +877,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(61, 20);
 			valor_cal_end3.Size = size;
 			this.Valor_cal_end.TabIndex = 12;
-			this.Valor_cal_end.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_cal_end.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_canal_calibracao = this.Valor_canal_calibracao;
 			location = new global::System.Drawing.Point(371, 25);
 			valor_canal_calibracao.Location = location;
@@ -904,7 +904,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(63, 20);
 			valor_canal_calibracao4.Size = size;
 			this.Valor_canal_calibracao.TabIndex = 14;
-			this.Valor_canal_calibracao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_canal_calibracao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_canal_calibracao5 = this.Valor_canal_calibracao;
 			num = new decimal(new int[]
 			{

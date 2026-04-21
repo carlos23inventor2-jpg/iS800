@@ -241,7 +241,7 @@ namespace iS800
 				if (pag == 100)
 				{
 					string versao = Geral.Config_geral.Versao;
-					int num;
+					int num = 0;
 					if (Operators.CompareString(versao, "820_10", false) == 0)
 					{
 						num = 1;
@@ -664,8 +664,8 @@ namespace iS800
 		public static bool CMD_Esc_MD202_pagina_1(int endereco, int indice)
 		{
 			string versao = Geral.Config_geral.Versao;
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (Operators.CompareString(versao, "820_10", false) == 0)
 			{
 				num = 1;
@@ -795,7 +795,7 @@ namespace iS800
 				{
 					Comunicacao.Buffer_cmd[111] = (byte)Mod_MD.Recalque_202[indice].Periferico_End_1;
 					Comunicacao.Buffer_cmd[112] = (byte)Mod_MD.Recalque_202[indice].Periferico_Tipo_1;
-					int num3;
+					int num3 = 0;
 					if (Comunicacao.Buffer_cmd[112] != 0)
 					{
 						byte[] buffer_cmd = Comunicacao.Buffer_cmd;
@@ -971,9 +971,9 @@ namespace iS800
 		// Token: 0x060023F8 RID: 9208 RVA: 0x002588D0 File Offset: 0x00256CD0
 		public static bool CMD_Esc_MD302_pagina_2X(int endereco, string indice)
 		{
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			if (Operators.CompareString(indice, "2A", false) == 0)
 			{
 				num = 512;
@@ -1027,9 +1027,9 @@ namespace iS800
 		public static bool CMD_Esc_MD302_pagina_3_4_5_6X(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			int num4;
 			if (Operators.CompareString(indice, "3A", false) == 0)
 			{
@@ -1188,9 +1188,9 @@ namespace iS800
 		public static bool CMD_Esc_MD302_pagina_7X(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			int num4;
 			if (Operators.CompareString(indice, "7A", false) == 0)
 			{
@@ -1335,9 +1335,9 @@ namespace iS800
 		public static bool CMD_Esc_MD303_pagina_3_4_5_6X(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
-			int num3;
+			int num = 0;
+			int num2 = 0;
+			int num3 = 0;
 			int num4;
 			if (Operators.CompareString(indice, "3A", false) == 0)
 			{
@@ -1474,8 +1474,8 @@ namespace iS800
 		public static bool CMD_Esc_MD303_pagina_9(int endereco, string indice)
 		{
 			string text = "";
-			int num;
-			int num2;
+			int num = 0;
+			int num2 = 0;
 			if (Operators.CompareString(indice, "9", false) == 0)
 			{
 				num = 1424;
@@ -1560,8 +1560,7 @@ namespace iS800
 						}
 						break;
 					default:
-						goto IL_12A;
-					}
+											}
 					IL_150:
 					Comunicacao.Rotina_Delay(50L);
 					continue;
@@ -1571,10 +1570,8 @@ namespace iS800
 						result.Msg = "Erro - não determinado na " + text;
 						result.Cor = 1;
 						result.Status = false;
-						goto IL_150;
-					}
-					goto IL_150;
-				}
+											}
+									}
 				IL_15F:
 				MyProject.Forms.Plataforma.Mostra_no_ouvidor(Comunicacao.Ctrl_Com.Frame);
 				return result;
@@ -1631,8 +1628,7 @@ namespace iS800
 								return result;
 							}
 							Comunicacao.CMD_Esc_habilitacao_TCP(tipo, 255, stream);
-							goto IL_1A3;
-						}
+													}
 						result.Msg = "Não existe definição de tipo de interface de comunicação!";
 						result.Cor = 1;
 						result.Status = false;
@@ -1723,8 +1719,7 @@ namespace iS800
 						}
 						break;
 					default:
-						goto IL_384;
-					}
+											}
 					IL_3AA:
 					Comunicacao.Rotina_Delay(50L);
 					continue;
@@ -1734,10 +1729,8 @@ namespace iS800
 						result.Msg = "Erro - não determinado na " + text;
 						result.Cor = 1;
 						result.Status = false;
-						goto IL_3AA;
-					}
-					goto IL_3AA;
-				}
+											}
+									}
 				IL_3B9:
 				MyProject.Forms.Plataforma.Mostra_no_ouvidor(Comunicacao.Ctrl_Com.Frame);
 				return result;
@@ -2102,8 +2095,7 @@ namespace iS800
 						}
 						break;
 					default:
-						goto IL_9CB;
-					}
+											}
 					IL_9F1:
 					Comunicacao.Rotina_Delay(50L);
 					continue;
@@ -2113,10 +2105,8 @@ namespace iS800
 						result.Msg = "Erro indeterminado - ao programar página " + text;
 						result.Cor = 1;
 						result.Status = false;
-						goto IL_9F1;
-					}
-					goto IL_9F1;
-				}
+											}
+									}
 				IL_A00:
 				MyProject.Forms.Plataforma.Mostra_no_ouvidor(Comunicacao.Ctrl_Com.Frame);
 				return result;
@@ -3572,8 +3562,7 @@ namespace iS800
 						num++;
 						if (num > 254)
 						{
-							goto IL_50;
-						}
+													}
 					}
 					Comunicacao.Config_sistema.endereco_modbus = num;
 					Comunicacao.Config_sistema.endereco_encontrado = true;
@@ -3663,8 +3652,7 @@ namespace iS800
 							result.Msg = "Erro chksum - ao ler página " + Conversion.Str(numero_pagina / 256);
 							result.Cor = 1;
 							result.Status = false;
-							goto IL_283;
-						}
+													}
 						continue;
 					case 3:
 						if (i == 0)
@@ -3672,8 +3660,7 @@ namespace iS800
 							result.Msg = "Erro Timeout - ao ler página " + Conversion.Str(numero_pagina / 256);
 							result.Cor = 1;
 							result.Status = false;
-							goto IL_283;
-						}
+													}
 						continue;
 					}
 					if (i == 0)
@@ -3734,8 +3721,7 @@ namespace iS800
 								return result;
 							}
 							Comunicacao.CMD_Le_Pagina_TCPIP(numero_pagina, endereco, tamanho, ref stream);
-							goto IL_17D;
-						}
+													}
 						result.Msg = "Não existe definição de tipo de interface de comunicação!";
 						result.Cor = 1;
 						result.Status = false;
@@ -3885,8 +3871,7 @@ namespace iS800
 							result.Msg = "Erro chksum - ao ler página " + Conversion.Str(numero_pagina / 256);
 							result.Cor = 1;
 							result.Status = false;
-							goto IL_16C;
-						}
+													}
 						continue;
 					case 3:
 						if (i == 0)
@@ -3894,8 +3879,7 @@ namespace iS800
 							result.Msg = "Erro Timeout - ao ler página " + Conversion.Str(numero_pagina / 256);
 							result.Cor = 1;
 							result.Status = false;
-							goto IL_16C;
-						}
+													}
 						continue;
 					}
 					if (i == 0)
@@ -4314,8 +4298,7 @@ namespace iS800
 							result.Msg = "Erro Timeout ao ler bloco";
 							result.Cor = 1;
 							result.Status = false;
-							goto IL_E1;
-						}
+													}
 						continue;
 					}
 					if (i == 0)
@@ -4365,8 +4348,7 @@ namespace iS800
 							result.Msg = "Erro Timeout ao ler bloco";
 							result.Cor = 1;
 							result.Status = false;
-							goto IL_DD;
-						}
+													}
 						continue;
 					}
 					if (i == 0)

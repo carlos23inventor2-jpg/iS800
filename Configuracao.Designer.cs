@@ -213,7 +213,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(54, 20);
 			numericUpDown_retry4.Size = size;
 			this.NumericUpDown_retry.TabIndex = 1;
-			this.NumericUpDown_retry.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_retry.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_retry5 = this.NumericUpDown_retry;
 			num = new decimal(new int[]
 			{

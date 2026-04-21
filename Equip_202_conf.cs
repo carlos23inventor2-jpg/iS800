@@ -4113,9 +4113,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
-				object obj;
+				int num = 0;
+				int num2 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -4265,11 +4265,7 @@ namespace iS800
 					num2 = -1;
 										IL_9C4:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_9B0;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_9F1:
 				if (num2 != 0)

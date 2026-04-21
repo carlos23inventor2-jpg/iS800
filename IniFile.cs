@@ -46,8 +46,8 @@ namespace iS800
 				{
 					streamWriter = File.CreateText(this.ArquivoLogLeitura);
 				}
-				object obj2 = string.Format("[{0}] {1} = {2}", Section, Key, text);
-				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(obj2));
+				object ex = string.Format("[{0}] {1} = {2}", Section, Key, text);
+				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(ex));
 				streamWriter.Flush();
 				streamWriter.Close();
 			}
@@ -61,23 +61,23 @@ namespace iS800
 			object obj = 1;
 			while (Operators.ConditionalCompareObjectLessEqual(obj, Strings.Len(RuntimeHelpers.GetObjectValue(s)), false))
 			{
-				object obj2 = Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(obj), 1));
-				if (Conversions.ToBoolean(Operators.AndObject(obj2, 128)))
+				object ex = Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(obj), 1));
+				if (Conversions.ToBoolean(Operators.AndObject(ex, 128)))
 				{
 					object obj3 = 1;
 					while (Operators.ConditionalCompareObjectLess(Operators.AddObject(obj, obj3), Strings.Len(RuntimeHelpers.GetObjectValue(s)), false) && (Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)), 1)) & 192) == 128)
 					{
 						obj3 = Operators.AddObject(obj3, 1);
 					}
-					if (Conversions.ToBoolean(Operators.AndObject(Operators.CompareObjectEqual(obj3, 2, false), Operators.CompareObjectEqual(Operators.AndObject(obj2, 224), 192, false))))
+					if (Conversions.ToBoolean(Operators.AndObject(Operators.CompareObjectEqual(obj3, 2, false), Operators.CompareObjectEqual(Operators.AndObject(ex, 224), 192, false))))
 					{
-						obj2 = Operators.AddObject(Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, 1)), 1)), Operators.MultiplyObject(64, Operators.AndObject(obj2, 1)));
+						ex = Operators.AddObject(Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, 1)), 1)), Operators.MultiplyObject(64, Operators.AndObject(ex, 1)));
 					}
 					else
 					{
-						obj2 = 191;
+						ex = 191;
 					}
-					s = Strings.Left(Conversions.ToString(s), Conversions.ToInteger(Operators.SubtractObject(obj, 1))) + Conversions.ToString(Strings.Chr(Conversions.ToInteger(obj2))) + Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)));
+					s = Strings.Left(Conversions.ToString(s), Conversions.ToInteger(Operators.SubtractObject(obj, 1))) + Conversions.ToString(Strings.Chr(Conversions.ToInteger(ex))) + Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)));
 				}
 				obj = Operators.AddObject(obj, 1);
 			}
@@ -101,8 +101,8 @@ namespace iS800
 				{
 					streamWriter = File.CreateText(this.ArquivoLogLeitura);
 				}
-				object obj2 = string.Format("[{0}] {1} = {2}", Section, Key, stringBuilder.ToString());
-				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(obj2));
+				object ex = string.Format("[{0}] {1} = {2}", Section, Key, stringBuilder.ToString());
+				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(ex));
 				streamWriter.Flush();
 				streamWriter.Close();
 			}

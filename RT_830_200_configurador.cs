@@ -4701,9 +4701,9 @@ namespace iS800
 		// Token: 0x06000253 RID: 595 RVA: 0x00275F88 File Offset: 0x00274388
 		public void Atualiza_TelaRT830_200()
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -4732,11 +4732,7 @@ namespace iS800
 				num2 = -1;
 								IL_111:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_FD;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_13E:
 			if (num2 != 0)
@@ -4866,9 +4862,9 @@ namespace iS800
 		// Token: 0x0600025C RID: 604 RVA: 0x002763B0 File Offset: 0x002747B0
 		private void RT_850_conf_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -4886,11 +4882,7 @@ namespace iS800
 				num2 = -1;
 								IL_59:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_45;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_86:
 			if (num2 != 0)
@@ -5503,9 +5495,9 @@ namespace iS800
 		// Token: 0x06000276 RID: 630 RVA: 0x00277F58 File Offset: 0x00276358
 		private void ToolStripButton_RT850_Abrir_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -5597,11 +5589,7 @@ namespace iS800
 				num2 = -1;
 								IL_3B1:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_39B;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_3E0:
 			if (num2 != 0)
@@ -5623,9 +5611,9 @@ namespace iS800
 		// Token: 0x06000278 RID: 632 RVA: 0x00278414 File Offset: 0x00276814
 		private void ToolStripButton_RT850_Salvar_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -5721,11 +5709,7 @@ namespace iS800
 				num2 = -1;
 								IL_376:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_360;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_3A5:
 			if (num2 != 0)
@@ -6083,9 +6067,9 @@ namespace iS800
 		// Token: 0x0600027F RID: 639 RVA: 0x002791FC File Offset: 0x002775FC
 		private void TextBox_msg_inicial_RT850_TextChanged(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -6112,11 +6096,7 @@ namespace iS800
 				num2 = -1;
 								IL_ED:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_D9;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_11A:
 			if (num2 != 0)

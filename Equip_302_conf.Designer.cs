@@ -210,7 +210,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_intervalo_polling4.Size = size;
 			this.Valor_intervalo_polling.TabIndex = 25;
-			this.Valor_intervalo_polling.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_intervalo_polling.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_intervalo_polling5 = this.Valor_intervalo_polling;
 			num = new decimal(new int[]
 			{
@@ -256,7 +256,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_erro_falha4.Size = size;
 			this.Valor_erro_falha.TabIndex = 23;
-			this.Valor_erro_falha.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_erro_falha.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_erro_falha5 = this.Valor_erro_falha;
 			num = new decimal(new int[]
 			{
@@ -293,7 +293,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_timeout3.Size = size;
 			this.Valor_timeout.TabIndex = 21;
-			this.Valor_timeout.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_timeout.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_timeout.AutoSize = true;
 			global::System.Windows.Forms.Control label_timeout = this.Label_timeout;
 			location = new global::System.Drawing.Point(15, 125);
@@ -349,7 +349,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_temp_ptt4.Size = size;
 			this.Valor_temp_ptt.TabIndex = 17;
-			this.Valor_temp_ptt.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_temp_ptt.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_endereco = this.Valor_endereco;
 			location = new global::System.Drawing.Point(200, 30);
 			valor_endereco.Location = location;
@@ -367,7 +367,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_endereco3.Size = size;
 			this.Valor_endereco.TabIndex = 16;
-			this.Valor_endereco.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_endereco.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_num_tentativas = this.Valor_num_tentativas;
 			location = new global::System.Drawing.Point(200, 154);
 			valor_num_tentativas.Location = location;
@@ -394,7 +394,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_num_tentativas4.Size = size;
 			this.Valor_num_tentativas.TabIndex = 15;
-			this.Valor_num_tentativas.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_num_tentativas.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_num_tentativas5 = this.Valor_num_tentativas;
 			num = new decimal(new int[]
 			{
@@ -479,7 +479,7 @@ namespace iS800
 			this.DataGridView1.AllowUserToAddRows = false;
 			this.DataGridView1.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView1.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView1.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView1.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView1.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView1.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -530,7 +530,7 @@ namespace iS800
 			this.DataGridView_RQ.AllowUserToAddRows = false;
 			this.DataGridView_RQ.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView_RQ.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView_RQ.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_RQ.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView_RQ.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_RQ.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -608,7 +608,7 @@ namespace iS800
 			this.DataGridView_central_rq.AllowUserToAddRows = false;
 			this.DataGridView_central_rq.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView_central_rq.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView_central_rq.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_central_rq.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView_central_rq.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_central_rq.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -634,7 +634,7 @@ namespace iS800
 			this.DataGridView_central_res.AllowUserToAddRows = false;
 			this.DataGridView_central_res.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView_central_res.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView_central_res.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_central_res.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView_central_res.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_central_res.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -680,7 +680,7 @@ namespace iS800
 			this.DataGridView_central_geral.AllowUserToAddRows = false;
 			this.DataGridView_central_geral.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView_central_geral.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView_central_geral.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_central_geral.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView_central_geral.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_central_geral.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -759,7 +759,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_vista_equipamentos3.Size = size;
 			this.Valor_vista_equipamentos.TabIndex = 29;
-			this.Valor_vista_equipamentos.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_vista_equipamentos.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_vista_equipamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_vista_equipamentos = this.Label_vista_equipamentos;
 			location = new global::System.Drawing.Point(11, 127);
@@ -796,7 +796,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_end_ini_vista4.Size = size;
 			this.Valor_end_ini_vista.TabIndex = 27;
-			this.Valor_end_ini_vista.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_end_ini_vista.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_vista5 = this.Valor_end_ini_vista;
 			num = new decimal(new int[]
 			{
@@ -842,7 +842,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_end_ini_rq4.Size = size;
 			this.Valor_end_ini_rq.TabIndex = 25;
-			this.Valor_end_ini_rq.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_end_ini_rq.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_rq5 = this.Valor_end_ini_rq;
 			num = new decimal(new int[]
 			{
@@ -888,7 +888,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_end_ini_res4.Size = size;
 			this.Valor_end_ini_res.TabIndex = 23;
-			this.Valor_end_ini_res.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_end_ini_res.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_end_ini_res5 = this.Valor_end_ini_res;
 			num = new decimal(new int[]
 			{
@@ -925,7 +925,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_rq_equipamentos3.Size = size;
 			this.Valor_rq_equipamentos.TabIndex = 21;
-			this.Valor_rq_equipamentos.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_rq_equipamentos.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_rq_equipamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_rq_equipamentos = this.Label_rq_equipamentos;
 			location = new global::System.Drawing.Point(11, 97);
@@ -953,7 +953,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_res_equipamentos3.Size = size;
 			this.Valor_res_equipamentos.TabIndex = 19;
-			this.Valor_res_equipamentos.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_res_equipamentos.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_res_equipamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_res_equipamentos = this.Label_res_equipamentos;
 			location = new global::System.Drawing.Point(11, 67);
@@ -981,7 +981,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_res_sistema3.Size = size;
 			this.Valor_res_sistema.TabIndex = 17;
-			this.Valor_res_sistema.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_res_sistema.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_res_sistema.AutoSize = true;
 			global::System.Windows.Forms.Control label_res_sistema = this.Label_res_sistema;
 			location = new global::System.Drawing.Point(11, 37);
@@ -1025,7 +1025,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(262, 20);
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 5;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_302;
 			location = new global::System.Drawing.Point(17, 60);
 			ler_conf_md_.Location = location;

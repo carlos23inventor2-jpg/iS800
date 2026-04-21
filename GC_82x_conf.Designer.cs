@@ -443,7 +443,7 @@ namespace iS800
 			textBox_equipamento2.Size = size;
 			this.TextBox_equipamento.TabIndex = 16;
 			this.TextBox_equipamento.TabStop = false;
-			this.TextBox_equipamento.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_equipamento.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new global::System.Drawing.Point(51, 29);
@@ -466,7 +466,7 @@ namespace iS800
 			textBox_release2.Size = size;
 			this.TextBox_release.TabIndex = 14;
 			this.TextBox_release.TabStop = false;
-			this.TextBox_release.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_release.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new global::System.Drawing.Point(245, 29);
@@ -489,7 +489,7 @@ namespace iS800
 			textBox_build2.Size = size;
 			this.TextBox_build.TabIndex = 12;
 			this.TextBox_build.TabStop = false;
-			this.TextBox_build.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_build.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new global::System.Drawing.Point(199, 29);
@@ -512,7 +512,7 @@ namespace iS800
 			textBox_versao2.Size = size;
 			this.TextBox_versao.TabIndex = 10;
 			this.TextBox_versao.TabStop = false;
-			this.TextBox_versao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_versao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new global::System.Drawing.Point(141, 29);
@@ -553,7 +553,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_est3.Size = size;
 			this.NumericUpDown_end_est.TabIndex = 1;
-			this.NumericUpDown_end_est.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_est.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_end_est.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_est = this.Label_end_est;
 			location = new global::System.Drawing.Point(21, 42);

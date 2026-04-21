@@ -2737,8 +2737,7 @@ namespace iS800
 								}
 								break;
 							default:
-								goto IL_127;
-							}
+															}
 							IL_14A:
 							i++;
 							continue;
@@ -2746,10 +2745,8 @@ namespace iS800
 							if (Comunicacao.Ctrl_Com.Tipo_funcao != 0)
 							{
 								Comunicacao.Ctrl_Com.Cont_rx = Comunicacao.Ctrl_Com.Cont_rx + 1;
-								goto IL_14A;
-							}
-							goto IL_14A;
-						}
+															}
+													}
 					}
 				}
 			}
@@ -2771,9 +2768,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
-				object obj;
+				int num = 0;
+				int num2 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -2807,11 +2804,7 @@ namespace iS800
 					num2 = -1;
 										IL_E6:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_D2;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_113:
 				if (num2 != 0)

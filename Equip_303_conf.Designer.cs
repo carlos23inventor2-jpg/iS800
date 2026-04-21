@@ -138,7 +138,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_endereco_estacao3.Size = size;
 			this.Valor_endereco_estacao.TabIndex = 21;
-			this.Valor_endereco_estacao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_endereco_estacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_endereco_estacao.AutoSize = true;
 			global::System.Windows.Forms.Control label_endereco_estacao = this.Label_endereco_estacao;
 			location = new global::System.Drawing.Point(15, 62);
@@ -194,7 +194,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_temp_ptt4.Size = size;
 			this.Valor_temp_ptt.TabIndex = 17;
-			this.Valor_temp_ptt.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_temp_ptt.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_endereco_mestre = this.Valor_endereco_mestre;
 			location = new global::System.Drawing.Point(195, 30);
 			valor_endereco_mestre.Location = location;
@@ -212,7 +212,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_endereco_mestre3.Size = size;
 			this.Valor_endereco_mestre.TabIndex = 16;
-			this.Valor_endereco_mestre.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_endereco_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_tempo_ptt.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_ptt = this.Label_tempo_ptt;
 			location = new global::System.Drawing.Point(15, 92);
@@ -264,7 +264,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_num_rq3.Size = size;
 			this.Valor_num_rq.TabIndex = 27;
-			this.Valor_num_rq.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_num_rq.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_num_rq.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_rq = this.Label_num_rq;
 			location = new global::System.Drawing.Point(10, 64);
@@ -292,7 +292,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_num_res3.Size = size;
 			this.Valor_num_res.TabIndex = 25;
-			this.Valor_num_res.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_num_res.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_num_res.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_res = this.Label_num_res;
 			location = new global::System.Drawing.Point(10, 33);
@@ -347,7 +347,7 @@ namespace iS800
 			this.DataGridView_RE_303.AllowUserToAddRows = false;
 			this.DataGridView_RE_303.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView_RE_303.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView_RE_303.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_RE_303.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView_RE_303.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_RE_303.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -411,7 +411,7 @@ namespace iS800
 			this.DataGridView_RQ_303.AllowUserToAddRows = false;
 			this.DataGridView_RQ_303.BackgroundColor = global::System.Drawing.SystemColors.Control;
 			this.DataGridView_RQ_303.BorderStyle = (System.Windows.Forms.BorderStyle)0;
-			this.DataGridView_RQ_303.CellBorderStyle = (System.Windows.Forms.BorderStyle)3;
+			this.DataGridView_RQ_303.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)3;
 			this.DataGridView_RQ_303.ColumnHeadersHeightSizeMode = 2;
 			this.DataGridView_RQ_303.Columns.AddRange(new global::System.Windows.Forms.DataGridViewColumn[]
 			{
@@ -631,7 +631,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(262, 20);
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 5;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_303;
 			location = new global::System.Drawing.Point(17, 60);
 			ler_conf_md_.Location = location;
@@ -710,7 +710,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_NumericUpDown_senha3.Size = size;
 			this.Valor_NumericUpDown_senha.TabIndex = 18;
-			this.Valor_NumericUpDown_senha.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_NumericUpDown_senha.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.OpenFileDialog1.FileName = "OpenFileDialog1";
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);

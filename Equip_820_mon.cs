@@ -1776,7 +1776,7 @@ namespace iS800
 		private void GeraDataGridView_Referencia()
 		{
 			this.dgv_Referencias.Columns.Clear();
-			this.dgv_Referencias.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.dgv_Referencias.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -1800,7 +1800,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.dgv_Referencias.Rows)
+					foreach (object obj = null in this.dgv_Referencias.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -1825,7 +1825,7 @@ namespace iS800
 		private void GeraDataGridView_SA()
 		{
 			this.dgv_SA.Columns.Clear();
-			this.dgv_SA.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.dgv_SA.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			int num = 0;
 			checked
 			{
@@ -1849,7 +1849,7 @@ namespace iS800
 				int num2 = 1;
 				try
 				{
-					foreach (object obj in this.dgv_SA.Rows)
+					foreach (object obj = null in this.dgv_SA.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -2012,8 +2012,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_146;
-						}
+													}
 						IL_16D:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2023,11 +2022,9 @@ namespace iS800
 							this.Mensagem_MD202_mon("Erro Leitura Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							this.Limpa_monitoracao_820_300(2);
-							goto IL_16D;
-						}
+													}
 						this.Calcula_Estatistica_820_300(2);
-						goto IL_16D;
-					}
+											}
 					IL_17F:
 					this.Comando_le_setpoint.Enabled = true;
 					this.Comando_escreve_setpoint.Enabled = true;
@@ -2104,8 +2101,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_3CA;
-						}
+													}
 						IL_3F1:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2115,11 +2111,9 @@ namespace iS800
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							this.Limpa_monitoracao_820_300(1);
-							goto IL_3F1;
-						}
+													}
 						this.Calcula_Estatistica_820_300(2);
-						goto IL_3F1;
-					}
+											}
 					break;
 				case 3:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -2202,8 +2196,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_926;
-						}
+													}
 						IL_946:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2212,11 +2205,9 @@ namespace iS800
 						{
 							this.Mensagem_MD202_mon("Erro Escrita Setpoints - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
-							goto IL_946;
-						}
+													}
 						this.Calcula_Estatistica_820_300(2);
-						goto IL_946;
-					}
+											}
 					IL_958:
 					this.Comando_le_setpoint.Enabled = true;
 					this.Comando_escreve_setpoint.Enabled = true;
@@ -2242,8 +2233,7 @@ namespace iS800
 							Mod_MD.CTRL_RESP_1 ctrl_RESP_ = Mod_MD.Verifica_resposta_Linha300();
 							this.Mensagem_MD202_mon(ctrl_RESP_.Msg, ctrl_RESP_.Cor);
 							this.Calcula_Estatistica_820_300(1);
-							goto IL_AB5;
-						}
+													}
 						case 1:
 							goto IL_A83;
 						case 2:
@@ -2269,8 +2259,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_A83;
-						}
+													}
 						IL_AA3:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2279,11 +2268,9 @@ namespace iS800
 						{
 							this.Mensagem_MD202_mon("Erro ao executar o camando - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
-							goto IL_AA3;
-						}
+													}
 						this.Calcula_Estatistica_820_300(2);
-						goto IL_AA3;
-					}
+											}
 					IL_AB5:
 					MyProject.Forms.Plataforma.Mostra_no_ouvidor(Comunicacao.Ctrl_Com.Frame);
 					break;
@@ -2343,8 +2330,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_C13;
-						}
+													}
 						IL_C3A:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2354,11 +2340,9 @@ namespace iS800
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							this.Limpa_monitoracao_820_300(1);
-							goto IL_C3A;
-						}
+													}
 						this.Calcula_Estatistica_820_300(2);
-						goto IL_C3A;
-					}
+											}
 					break;
 				case 6:
 					i = Conversions.ToInteger(Comunicacao.Config_sistema.Retry);
@@ -2408,8 +2392,7 @@ namespace iS800
 							}
 							break;
 						default:
-							goto IL_D6C;
-						}
+													}
 						IL_D93:
 						Comunicacao.Rotina_Delay(400L);
 						continue;
@@ -2419,11 +2402,9 @@ namespace iS800
 							this.Mensagem_MD202_mon("Erro Leitura Equipamento - não determinado", 1);
 							this.Calcula_Estatistica_820_300(3);
 							this.Limpa_monitoracao_820_300(1);
-							goto IL_D93;
-						}
+													}
 						this.Calcula_Estatistica_820_300(2);
-						goto IL_D93;
-					}
+											}
 					break;
 				}
 				IL_DA5:
@@ -3402,8 +3383,7 @@ namespace iS800
 						}
 						break;
 					default:
-						goto IL_E0;
-					}
+											}
 					IL_100:
 					Comunicacao.Rotina_Delay(400L);
 					continue;
@@ -3412,11 +3392,9 @@ namespace iS800
 					{
 						this.Mensagem_MD202_mon("Erro Leitura Relógio - não determinado", 1);
 						this.Calcula_Estatistica_820_300(3);
-						goto IL_100;
-					}
+											}
 					this.Calcula_Estatistica_820_300(2);
-					goto IL_100;
-				}
+									}
 			}
 		}
 
@@ -3475,8 +3453,7 @@ namespace iS800
 						}
 						break;
 					default:
-						goto IL_144;
-					}
+											}
 					IL_164:
 					Comunicacao.Rotina_Delay(400L);
 					continue;
@@ -3485,11 +3462,9 @@ namespace iS800
 					{
 						this.Mensagem_MD202_mon("Erro Escrita Relógio - não determinado", 1);
 						this.Calcula_Estatistica_820_300(3);
-						goto IL_164;
-					}
+											}
 					this.Calcula_Estatistica_820_300(2);
-					goto IL_164;
-				}
+									}
 			}
 		}
 

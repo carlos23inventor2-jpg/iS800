@@ -243,7 +243,7 @@ namespace iS800
 			checked
 			{
 				int num2 = lista.Count - 1;
-				int num3;
+				int num3 = 0;
 				for (int i = num; i <= num2; i++)
 				{
 					if (lista[i].valor == valor)

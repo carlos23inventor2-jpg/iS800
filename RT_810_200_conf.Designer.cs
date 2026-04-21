@@ -370,7 +370,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_intervalo_tx3.Size = size;
 			this.NumericUpDown_intervalo_tx.TabIndex = 1;
-			this.NumericUpDown_intervalo_tx.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_intervalo_tx.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.lb_ModoOperacao.AutoSize = true;
 			global::System.Windows.Forms.Control lb_ModoOperacao = this.lb_ModoOperacao;
 			location = new global::System.Drawing.Point(21, 31);
@@ -436,7 +436,7 @@ namespace iS800
 			textBox_equipamento2.Size = size;
 			this.TextBox_equipamento.TabIndex = 7;
 			this.TextBox_equipamento.TabStop = false;
-			this.TextBox_equipamento.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_equipamento.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new global::System.Drawing.Point(92, 25);
@@ -459,7 +459,7 @@ namespace iS800
 			textBox_release2.Size = size;
 			this.TextBox_release.TabIndex = 5;
 			this.TextBox_release.TabStop = false;
-			this.TextBox_release.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_release.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new global::System.Drawing.Point(286, 25);
@@ -482,7 +482,7 @@ namespace iS800
 			textBox_build2.Size = size;
 			this.TextBox_build.TabIndex = 3;
 			this.TextBox_build.TabStop = false;
-			this.TextBox_build.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_build.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new global::System.Drawing.Point(240, 25);
@@ -505,7 +505,7 @@ namespace iS800
 			textBox_versao2.Size = size;
 			this.TextBox_versao.TabIndex = 1;
 			this.TextBox_versao.TabStop = false;
-			this.TextBox_versao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_versao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new global::System.Drawing.Point(182, 25);
@@ -597,7 +597,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_temp_ptt4.Size = size;
 			this.NumericUpDown_temp_ptt.TabIndex = 2;
-			this.NumericUpDown_temp_ptt.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_temp_ptt.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt5 = this.NumericUpDown_temp_ptt;
 			num = new decimal(new int[]
 			{
@@ -624,7 +624,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_mestre3.Size = size;
 			this.NumericUpDown_end_mestre.TabIndex = 1;
-			this.NumericUpDown_end_mestre.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control numericUpDown_end_est = this.NumericUpDown_end_est;
 			location = new global::System.Drawing.Point(204, 57);
 			numericUpDown_end_est.Location = location;
@@ -642,7 +642,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_est3.Size = size;
 			this.NumericUpDown_end_est.TabIndex = 1;
-			this.NumericUpDown_end_est.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_est.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.TabPage_EA.BackColor = global::System.Drawing.SystemColors.ControlLight;
 			this.TabPage_EA.Controls.Add(this.GroupBox2);
 			this.TabPage_EA.Controls.Add(this.GroupBox_EA);
@@ -805,7 +805,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(59, 20);
 			numericUpDown_intervalo_filtro4.Size = size;
 			this.NumericUpDown_intervalo_filtro.TabIndex = 18;
-			this.NumericUpDown_intervalo_filtro.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.NumericUpDown_intervalo_filtro.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control numericUpDown_tamanho_filtro = this.NumericUpDown_tamanho_filtro;
 			location = new global::System.Drawing.Point(178, 55);
 			numericUpDown_tamanho_filtro.Location = location;
@@ -823,7 +823,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(59, 20);
 			numericUpDown_tamanho_filtro3.Size = size;
 			this.NumericUpDown_tamanho_filtro.TabIndex = 1;
-			this.NumericUpDown_tamanho_filtro.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.NumericUpDown_tamanho_filtro.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.lb_Intervalo.AutoSize = true;
 			global::System.Windows.Forms.Control lb_Intervalo = this.lb_Intervalo;
 			location = new global::System.Drawing.Point(11, 27);
@@ -1184,7 +1184,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_num_est_rep3.Size = size;
 			this.NumericUpDown_num_est_rep.TabIndex = 2;
-			this.NumericUpDown_num_est_rep.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_num_est_rep.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control numericUpDown_end_rep = this.NumericUpDown_end_rep;
 			location = new global::System.Drawing.Point(222, 50);
 			numericUpDown_end_rep.Location = location;
@@ -1202,7 +1202,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(72, 20);
 			numericUpDown_end_rep3.Size = size;
 			this.NumericUpDown_end_rep.TabIndex = 1;
-			this.NumericUpDown_end_rep.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.NumericUpDown_end_rep.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_num_est_rep.AutoSize = true;
 			global::System.Windows.Forms.Control label_num_est_rep = this.Label_num_est_rep;
 			location = new global::System.Drawing.Point(26, 76);

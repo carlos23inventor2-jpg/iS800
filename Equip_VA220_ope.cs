@@ -3382,10 +3382,10 @@ namespace iS800
 		// Token: 0x060026AF RID: 9903 RVA: 0x0041D674 File Offset: 0x0041BA74
 		public string Verifica_horario(string hora, bool ativa_msg)
 		{
-			int num;
+			int num = 0;
 			string text;
-			int num2;
-			object obj;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -3395,8 +3395,7 @@ namespace iS800
 				IL_16:
 				if (!ativa_msg)
 				{
-					goto IL_26;
-				}
+									}
 				Interaction.MsgBox("Digite um hórario válido", (MsgBoxStyle)0, null);
 				IL_26:
 				text = "00:00";
@@ -3405,11 +3404,7 @@ namespace iS800
 				num2 = -1;
 								IL_42:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_2E;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_6F:
 			string result = text;
@@ -4286,8 +4281,7 @@ namespace iS800
 						num++;
 						if (num > 4)
 						{
-							goto IL_4E8;
-						}
+													}
 					}
 					Block_29:
 					this.Mensagem_ope_VA220("Erro Timer Bomba " + Conversion.Str(num) + " - timeout", 1);
@@ -4400,7 +4394,7 @@ namespace iS800
 			int num = 1;
 			checked
 			{
-				int num2;
+				int num2 = 0;
 				do
 				{
 					num2 = 1;
@@ -4748,8 +4742,7 @@ namespace iS800
 						num++;
 						if (num > 4)
 						{
-							goto IL_452;
-						}
+													}
 					}
 					Block_25:
 					this.Mensagem_ope_VA220("Erro Escrita Timer Bomba " + Conversion.Str(num) + " - timeout", 1);

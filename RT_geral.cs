@@ -458,9 +458,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
-				int num3;
+				int num = 0;
+				int num2 = 0;
+				int num3 = 0;
 				if (Operators.CompareString(opcao, "ED", false) == 0)
 				{
 					num = 21864;
@@ -506,9 +506,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
-				int num3;
+				int num = 0;
+				int num2 = 0;
+				int num3 = 0;
 				if (Operators.CompareString(opcao, "ED", false) == 0)
 				{
 					num = 21864;
@@ -670,7 +670,7 @@ namespace iS800
 				}
 				else
 				{
-					int num;
+					int num = 0;
 					switch (habexpansao)
 					{
 					case 21856:

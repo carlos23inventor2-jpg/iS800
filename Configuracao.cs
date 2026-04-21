@@ -527,14 +527,14 @@ namespace iS800
 			{
 				MyProject.Forms.Plataforma.ToolStripButton_serial.Image = Resources.DB9_128;
 			}
-			this.DialogResult = 1;
+			this.DialogResult = (System.Windows.Forms.DialogResult)1;
 			this.Close();
 		}
 
 		// Token: 0x060000BF RID: 191 RVA: 0x00264CC4 File Offset: 0x002630C4
 		private void Cancel_Button_Click(object sender, EventArgs e)
 		{
-			this.DialogResult = 2;
+			this.DialogResult = (System.Windows.Forms.DialogResult)2;
 			this.Close();
 		}
 
@@ -543,7 +543,7 @@ namespace iS800
 		{
 			checked
 			{
-				Point point;
+				Point point = new Point();
 				point.X = MyProject.Forms.Plataforma.Location.X + 200;
 				point.Y = MyProject.Forms.Plataforma.Location.Y + 50;
 				this.cb_tipo_interface.Items.Clear();
@@ -560,7 +560,7 @@ namespace iS800
 				}
 				finally
 				{
-					IEnumerator<string> enumerator;
+					IEnumerator<string> enumerator = null;
 					if (enumerator != null)
 					{
 						enumerator.Dispose();

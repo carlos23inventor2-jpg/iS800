@@ -152,7 +152,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(239, 20);
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 5;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_md_ = this.Ler_conf_md_590;
 			location = new global::System.Drawing.Point(17, 60);
 			ler_conf_md_.Location = location;
@@ -217,7 +217,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Range_Refresh4.Size = size;
 			this.Valor_Range_Refresh.TabIndex = 20;
-			this.Valor_Range_Refresh.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_Range_Refresh.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_Stop_Bit_Delay = this.Valor_Stop_Bit_Delay;
 			num = new decimal(new int[]
 			{
@@ -244,7 +244,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Stop_Bit_Delay4.Size = size;
 			this.Valor_Stop_Bit_Delay.TabIndex = 20;
-			this.Valor_Stop_Bit_Delay.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_Stop_Bit_Delay.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.NumericUpDown valor_Broadcast_Attempts = this.Valor_Broadcast_Attempts;
 			num = new decimal(new int[]
 			{
@@ -271,7 +271,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Broadcast_Attempts4.Size = size;
 			this.Valor_Broadcast_Attempts.TabIndex = 20;
-			this.Valor_Broadcast_Attempts.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_Broadcast_Attempts.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_transmit_retries = this.Valor_transmit_retries;
 			location = new global::System.Drawing.Point(187, 126);
 			valor_transmit_retries.Location = location;
@@ -289,7 +289,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_transmit_retries3.Size = size;
 			this.Valor_transmit_retries.TabIndex = 20;
-			this.Valor_transmit_retries.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_transmit_retries.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control valor_cts_on_hysteresis = this.Valor_cts_on_hysteresis;
 			location = new global::System.Drawing.Point(187, 102);
 			valor_cts_on_hysteresis.Location = location;
@@ -307,7 +307,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_cts_on_hysteresis3.Size = size;
 			this.Valor_cts_on_hysteresis.TabIndex = 20;
-			this.Valor_cts_on_hysteresis.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_cts_on_hysteresis.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_Range_Refresh.AutoSize = true;
 			global::System.Windows.Forms.Control label_Range_Refresh = this.Label_Range_Refresh;
 			location = new global::System.Drawing.Point(37, 200);
@@ -335,7 +335,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_cts_on3.Size = size;
 			this.Valor_cts_on.TabIndex = 20;
-			this.Valor_cts_on.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_cts_on.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_Stop_Bit_Delay.AutoSize = true;
 			global::System.Windows.Forms.Control label_Stop_Bit_Delay = this.Label_Stop_Bit_Delay;
 			location = new global::System.Drawing.Point(37, 176);
@@ -382,7 +382,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_packed_size4.Size = size;
 			this.Valor_packed_size.TabIndex = 20;
-			this.Valor_packed_size.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_packed_size.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_transmit_retries.AutoSize = true;
 			global::System.Windows.Forms.Control label_transmit_retries = this.Label_transmit_retries;
 			location = new global::System.Drawing.Point(37, 128);
@@ -459,7 +459,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_interface_timeout4.Size = size;
 			this.Valor_interface_timeout.TabIndex = 17;
-			this.Valor_interface_timeout.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_interface_timeout.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Grupo_parametros_rf.Controls.Add(this.Valor_Sync_to_Channel);
 			this.Grupo_parametros_rf.Controls.Add(this.Label_Sync_to_Channel);
 			this.Grupo_parametros_rf.Controls.Add(this.Valor_System_ID);
@@ -507,7 +507,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_Sync_to_Channel4.Size = size;
 			this.Valor_Sync_to_Channel.TabIndex = 23;
-			this.Valor_Sync_to_Channel.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_Sync_to_Channel.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_Sync_to_Channel.AutoSize = true;
 			global::System.Windows.Forms.Control label_Sync_to_Channel = this.Label_Sync_to_Channel;
 			location = new global::System.Drawing.Point(37, 78);
@@ -544,7 +544,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_System_ID4.Size = size;
 			this.Valor_System_ID.TabIndex = 23;
-			this.Valor_System_ID.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_System_ID.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_System_ID.AutoSize = true;
 			global::System.Windows.Forms.Control label_System_ID = this.Label_System_ID;
 			location = new global::System.Drawing.Point(37, 127);
@@ -581,7 +581,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(93, 20);
 			valor_RF_Channel_Number4.Size = size;
 			this.Valor_RF_Channel_Number.TabIndex = 23;
-			this.Valor_RF_Channel_Number.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Valor_RF_Channel_Number.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_RF_Channel_Number.AutoSize = true;
 			global::System.Windows.Forms.Control label_RF_Channel_Number = this.Label_RF_Channel_Number;
 			location = new global::System.Drawing.Point(37, 55);
@@ -672,7 +672,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(171, 20);
 			valor_firmware2.Size = size;
 			this.Valor_firmware.TabIndex = 29;
-			this.Valor_firmware.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_firmware.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_firmware.AutoSize = true;
 			global::System.Windows.Forms.Control label_firmware = this.Label_firmware;
 			location = new global::System.Drawing.Point(37, 164);
@@ -693,7 +693,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(171, 20);
 			valor_mac_adress2.Size = size;
 			this.Valor_mac_adress.TabIndex = 27;
-			this.Valor_mac_adress.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_mac_adress.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_desK_ = this.Valor_desK_7;
 			location = new global::System.Drawing.Point(278, 97);
 			valor_desK_.Location = location;

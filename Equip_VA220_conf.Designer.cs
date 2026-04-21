@@ -139,7 +139,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_tempo_entre_acionamentos2.Size = size;
 			this.Valor_tempo_entre_acionamentos.TabIndex = 10;
-			this.Valor_tempo_entre_acionamentos.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_tempo_entre_acionamentos.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_motor_parado = this.Valor_tempo_motor_parado;
 			location = new global::System.Drawing.Point(243, 208);
 			valor_tempo_motor_parado.Location = location;
@@ -148,7 +148,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_tempo_motor_parado2.Size = size;
 			this.Valor_tempo_motor_parado.TabIndex = 9;
-			this.Valor_tempo_motor_parado.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_tempo_motor_parado.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_motor_operando = this.Valor_tempo_motor_operando;
 			location = new global::System.Drawing.Point(243, 182);
 			valor_tempo_motor_operando.Location = location;
@@ -157,7 +157,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_tempo_motor_operando2.Size = size;
 			this.Valor_tempo_motor_operando.TabIndex = 8;
-			this.Valor_tempo_motor_operando.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_tempo_motor_operando.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_falha_desligar_motor = this.Valor_tempo_falha_desligar_motor;
 			location = new global::System.Drawing.Point(243, 156);
 			valor_tempo_falha_desligar_motor.Location = location;
@@ -166,7 +166,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_tempo_falha_desligar_motor2.Size = size;
 			this.Valor_tempo_falha_desligar_motor.TabIndex = 7;
-			this.Valor_tempo_falha_desligar_motor.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_tempo_falha_desligar_motor.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_tempo_falha_ligar_motor = this.Valor_tempo_falha_ligar_motor;
 			location = new global::System.Drawing.Point(243, 130);
 			valor_tempo_falha_ligar_motor.Location = location;
@@ -175,7 +175,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_tempo_falha_ligar_motor2.Size = size;
 			this.Valor_tempo_falha_ligar_motor.TabIndex = 6;
-			this.Valor_tempo_falha_ligar_motor.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_tempo_falha_ligar_motor.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_max_bombas = this.Valor_max_bombas;
 			location = new global::System.Drawing.Point(243, 104);
 			valor_max_bombas.Location = location;
@@ -184,7 +184,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_max_bombas2.Size = size;
 			this.Valor_max_bombas.TabIndex = 5;
-			this.Valor_max_bombas.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_max_bombas.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_temp_ptt = this.Valor_temp_ptt;
 			location = new global::System.Drawing.Point(243, 78);
 			valor_temp_ptt.Location = location;
@@ -193,7 +193,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_temp_ptt2.Size = size;
 			this.Valor_temp_ptt.TabIndex = 4;
-			this.Valor_temp_ptt.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_temp_ptt.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_tempo_entre_acionamentos.AutoSize = true;
 			global::System.Windows.Forms.Control label_tempo_entre_acionamentos = this.Label_tempo_entre_acionamentos;
 			location = new global::System.Drawing.Point(24, 238);
@@ -310,7 +310,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(73, 20);
 			valor_end_mestre2.Size = size;
 			this.Valor_end_mestre.TabIndex = 2;
-			this.Valor_end_mestre.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control valor_end_est = this.Valor_end_est;
 			location = new global::System.Drawing.Point(243, 52);
 			valor_end_est.Location = location;
@@ -319,7 +319,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(74, 20);
 			valor_end_est2.Size = size;
 			this.Valor_end_est.TabIndex = 3;
-			this.Valor_end_est.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Valor_end_est.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label_end_mestre.AutoSize = true;
 			global::System.Windows.Forms.Control label_end_mestre = this.Label_end_mestre;
 			location = new global::System.Drawing.Point(24, 30);
@@ -362,7 +362,7 @@ namespace iS800
 			box_Msg2.Size = size;
 			this.Box_Msg.TabIndex = 5;
 			this.Box_Msg.TabStop = false;
-			this.Box_Msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Box_Msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control ler_conf_VA = this.Ler_conf_VA220;
 			location = new global::System.Drawing.Point(41, 61);
 			ler_conf_VA.Location = location;

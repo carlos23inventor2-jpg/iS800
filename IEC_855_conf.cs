@@ -1378,7 +1378,7 @@ namespace iS800
 			{
 				try
 				{
-					foreach (object obj in this.DataGridView_RT810_ED.Rows)
+					foreach (object obj = null in this.DataGridView_RT810_ED.Rows)
 					{
 						DataGridViewRow dataGridViewRow = (DataGridViewRow)obj;
 						if (!dataGridViewRow.IsNewRow)
@@ -1484,9 +1484,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -1525,11 +1525,7 @@ namespace iS800
 					num3 = -1;
 										IL_248:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_234;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_275:
 				if (num3 != 0)
@@ -2148,9 +2144,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -2177,8 +2173,7 @@ namespace iS800
 							RT_geral.Lmte_Init_ok = true;
 							this.AtualizaMsgTela_RT_810("Valores Default carregados", 0);
 							this.Timer_limpa_MSG.Enabled = true;
-							goto IL_645;
-						}
+													}
 						RT_geral.IEC_855_BD.filename = this.OpenFileDialog_RT_810.FileName;
 						RT_geral.IEC_855_BD.End_estacao.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "ESTACAO", 0);
 						RT_geral.IEC_855_BD.End_mestre.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "MESTRE", 0);
@@ -2237,11 +2232,7 @@ namespace iS800
 					num3 = -1;
 										IL_616:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_600;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_645:
 				if (num3 != 0)
@@ -2255,9 +2246,9 @@ namespace iS800
 		[MethodImpl(72)]
 		private void ToolStripButton_RT_810_Salvar_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -2324,11 +2315,7 @@ namespace iS800
 				num2 = -1;
 								IL_323:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_30E;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_351:
 			if (num2 != 0)

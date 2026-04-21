@@ -643,7 +643,7 @@ namespace iS800
 			string versao = Geral.Config_geral.Versao;
 			checked
 			{
-				int num;
+				int num = 0;
 				if (Operators.CompareString(versao, "43", false) == 0)
 				{
 					this.Tela_nivel.Text = Strings.Format((double)(Comunicacao.Buffer_resp[4] - 48) / 2.0, "0.0");

@@ -196,7 +196,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(116, 20);
 			tb_static_sm2.Size = size;
 			this.tb_static_sm.TabIndex = 5;
-			this.tb_static_sm.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.tb_static_sm.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label4.AutoSize = true;
 			global::System.Windows.Forms.Control label3 = this.Label4;
 			location = new global::System.Drawing.Point(6, 75);
@@ -216,7 +216,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(116, 20);
 			tb_static_gw2.Size = size;
 			this.tb_static_gw.TabIndex = 3;
-			this.tb_static_gw.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.tb_static_gw.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label5.AutoSize = true;
 			global::System.Windows.Forms.Control label5 = this.Label5;
 			location = new global::System.Drawing.Point(6, 49);
@@ -236,7 +236,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(116, 20);
 			tb_static_ip2.Size = size;
 			this.tb_static_ip.TabIndex = 1;
-			this.tb_static_ip.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.tb_static_ip.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label6.AutoSize = true;
 			global::System.Windows.Forms.Control label7 = this.Label6;
 			location = new global::System.Drawing.Point(6, 22);
@@ -272,7 +272,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(116, 20);
 			tb_dhcp_sm2.Size = size;
 			this.tb_dhcp_sm.TabIndex = 5;
-			this.tb_dhcp_sm.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.tb_dhcp_sm.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label3.AutoSize = true;
 			global::System.Windows.Forms.Control label9 = this.Label3;
 			location = new global::System.Drawing.Point(6, 75);
@@ -292,7 +292,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(116, 20);
 			tb_dhcp_gw2.Size = size;
 			this.tb_dhcp_gw.TabIndex = 3;
-			this.tb_dhcp_gw.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.tb_dhcp_gw.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label11 = this.Label2;
 			location = new global::System.Drawing.Point(6, 49);
@@ -312,7 +312,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(116, 20);
 			tb_dhcp_ip2.Size = size;
 			this.tb_dhcp_ip.TabIndex = 1;
-			this.tb_dhcp_ip.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.tb_dhcp_ip.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Label1.AutoSize = true;
 			global::System.Windows.Forms.Control label13 = this.Label1;
 			location = new global::System.Drawing.Point(6, 22);
@@ -469,7 +469,7 @@ namespace iS800
 			textBox_equipamento2.Size = size;
 			this.TextBox_equipamento.TabIndex = 16;
 			this.TextBox_equipamento.TabStop = false;
-			this.TextBox_equipamento.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_equipamento.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_equipamento.AutoSize = true;
 			global::System.Windows.Forms.Control label_equipamento = this.Label_equipamento;
 			location = new global::System.Drawing.Point(106, 29);
@@ -492,7 +492,7 @@ namespace iS800
 			textBox_release2.Size = size;
 			this.TextBox_release.TabIndex = 14;
 			this.TextBox_release.TabStop = false;
-			this.TextBox_release.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_release.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_release.AutoSize = true;
 			global::System.Windows.Forms.Control label_release = this.Label_release;
 			location = new global::System.Drawing.Point(300, 29);
@@ -515,7 +515,7 @@ namespace iS800
 			textBox_build2.Size = size;
 			this.TextBox_build.TabIndex = 12;
 			this.TextBox_build.TabStop = false;
-			this.TextBox_build.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_build.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_build.AutoSize = true;
 			global::System.Windows.Forms.Control label_build = this.Label_build;
 			location = new global::System.Drawing.Point(254, 29);
@@ -538,7 +538,7 @@ namespace iS800
 			textBox_versao2.Size = size;
 			this.TextBox_versao.TabIndex = 10;
 			this.TextBox_versao.TabStop = false;
-			this.TextBox_versao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.TextBox_versao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label_versao.AutoSize = true;
 			global::System.Windows.Forms.Control label_versao = this.Label_versao;
 			location = new global::System.Drawing.Point(196, 29);

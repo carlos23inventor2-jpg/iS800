@@ -12,8 +12,8 @@ namespace iS800
 			Pen pen = new Pen(Cores.Tabela, 1f);
 			SolidBrush solidBrush = new SolidBrush(Cores.TituloBG);
 			StringFormat stringFormat = new StringFormat();
-			stringFormat.LineAlignment = (System.Windows.Forms.HorizontalAlignment)1;
-			stringFormat.Alignment = (System.Windows.Forms.HorizontalAlignment)1;
+			stringFormat.LineAlignment = (System.Drawing.StringAlignment)1;
+			stringFormat.Alignment = (System.Drawing.StringAlignment)1;
 			checked
 			{
 				this.AlturaFonte = (int)Math.Round((double)(unchecked(Fonte.Titulo.GetHeight() + 2f)));

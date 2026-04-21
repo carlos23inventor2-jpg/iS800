@@ -494,8 +494,7 @@ namespace iS800
 							streamWriter.WriteLine(text);
 							streamWriter.Flush();
 							streamWriter.Close();
-							goto IL_586;
-						}
+													}
 					}
 					using (StreamWriter streamWriter2 = File.AppendText(Comunicacao.Ctrl_Log.diretorio + "\\" + Comunicacao.Ctrl_Log.arquivo))
 					{

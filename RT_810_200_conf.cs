@@ -2540,7 +2540,7 @@ namespace iS800
 		private void GeraDataGridView_Repedidora_RT_810()
 		{
 			this.DataGridView_end_rep_RT_810.Columns.Clear();
-			this.DataGridView_end_rep_RT_810.CellBorderStyle = (System.Windows.Forms.BorderStyle)1;
+			this.DataGridView_end_rep_RT_810.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)1;
 			this.DataGridView_end_rep_RT_810.DefaultCellStyle.Alignment = (System.Windows.Forms.HorizontalAlignment)64;
 			int num = 0;
 			checked
@@ -2887,9 +2887,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num3;
-				object obj;
+				int num = 0;
+				int num3 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -2933,11 +2933,7 @@ namespace iS800
 					num3 = -1;
 										IL_3A0:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num3 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_38B;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_3CE:
 				if (num3 != 0)
@@ -3414,8 +3410,7 @@ namespace iS800
 						num++;
 						if (num > 49)
 						{
-							goto IL_A2;
-						}
+													}
 					}
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Red;
 					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), (MsgBoxStyle)32, "Erro na entrada de dados");
@@ -3669,9 +3664,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num4;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -3703,8 +3698,7 @@ namespace iS800
 							RT_geral.Lmte_Init_ok = true;
 							this.AtualizaMsgTela_RT_810("Valores Default carregados", 0);
 							this.Timer_limpa_MSG.Enabled = true;
-							goto IL_6F7;
-						}
+													}
 						RT_geral.RT_810_200_BD.End_estacao.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "ESTACAO", 0);
 						RT_geral.RT_810_200_BD.End_mestre.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "MESTRE", 0);
 						RT_geral.RT_810_200_BD.Tempo_ptt.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "TEMPO_PTT", 0);
@@ -3761,11 +3755,7 @@ namespace iS800
 					num4 = -1;
 										IL_6C8:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num4 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_6B2;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_6F7:
 				if (num4 != 0)
@@ -3781,9 +3771,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
+				int num = 0;
 				int num5;
-				object obj;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -3902,11 +3892,7 @@ namespace iS800
 					num5 = -1;
 										IL_64B:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num5 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_635;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_67A:
 				if (num5 != 0)

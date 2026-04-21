@@ -1905,8 +1905,7 @@ namespace iS800
 						text13 = "MD 202 - SoftStarter ABB - 1";
 						break;
 					default:
-						goto IL_211;
-					}
+											}
 					IL_218:
 					string text14 = Conversion.Str(Mod_MD.Central_302_rq[i].Prioridade);
 					string text15 = Conversion.Str(Mod_MD.Central_302_rq[i].Msg);
@@ -1973,8 +1972,7 @@ namespace iS800
 					continue;
 					IL_211:
 					text13 = "--------";
-					goto IL_218;
-				}
+									}
 			}
 		}
 
@@ -2443,8 +2441,7 @@ namespace iS800
 															Mod_MD.Central_302_rq[e.RowIndex + 1].Hab_cmd = 0;
 														}
 														flag = false;
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name, "Col_Esc_1", false) != 0)
 													{
 														if (Operators.CompareString(name, "Col_Esc_2", false) != 0)
@@ -2478,8 +2475,7 @@ namespace iS800
 																												if (Operators.CompareString(name, "Col_Esc_16", false) != 0)
 																												{
 																													flag = false;
-																													goto IL_B98;
-																												}
+																																																									}
 																											}
 																										}
 																									}
@@ -2504,85 +2500,68 @@ namespace iS800
 													if (Operators.CompareString(name2, "Col_Esc_1", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_1 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_2", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_2 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_3", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_3 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_4", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_4 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_5", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_5 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_6", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_6 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_7", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_7 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_8", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_8 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_9", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_9 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_10", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_10 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_11", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_11 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_12", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_12 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_13", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_13 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_14", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_14 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_15", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_15 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
+																											}
 													if (Operators.CompareString(name2, "Col_Esc_16", false) == 0)
 													{
 														Mod_MD.Central_302_rq[e.RowIndex + 1].escala_16 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-														goto IL_B98;
-													}
-													goto IL_B98;
-												}
+																											}
+																									}
 											}
 										}
 									}
@@ -2595,25 +2574,20 @@ namespace iS800
 									if (Operators.CompareString(name3, "Col_MsgR1_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R1 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-										goto IL_B98;
-									}
+																			}
 									if (Operators.CompareString(name3, "Col_MsgR2_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R2 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-										goto IL_B98;
-									}
+																			}
 									if (Operators.CompareString(name3, "Col_MsgR3_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R3 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-										goto IL_B98;
-									}
+																			}
 									if (Operators.CompareString(name3, "Col_MsgR4_rq", false) == 0)
 									{
 										Mod_MD.Central_302_rq[e.RowIndex + 1].Msg_res_R4 = (int)Math.Round(Conversion.Val(ctrl_RESP_.Msg));
-										goto IL_B98;
-									}
-									goto IL_B98;
-								}
+																			}
+																	}
 							}
 						}
 					}
@@ -2707,9 +2681,9 @@ namespace iS800
 		// Token: 0x06002278 RID: 8824 RVA: 0x003FD988 File Offset: 0x003FBD88
 		private void DataGridView_central_res_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -2726,11 +2700,7 @@ namespace iS800
 				num2 = -1;
 								IL_4A:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_35;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_78:
 			if (num2 != 0)
@@ -2793,13 +2763,13 @@ namespace iS800
 		}
 
 		// Token: 0x0600227A RID: 8826 RVA: 0x003FDBC0 File Offset: 0x003FBFC0
-		public void Atualiza_vista_res(int num)
+		public void Atualiza_vista_res(int num = 0)
 		{
 			checked
 			{
-				int num2;
+				int num2 = 0;
 				int num8;
-				object obj;
+				object obj = null;
 				try
 				{
 					string text = "CRI";
@@ -2902,11 +2872,7 @@ namespace iS800
 					IL_393:
 					num8 = -1;IL_3A9:;
 				}
-				catch when (endfilter(obj is Exception & num2 != 0 & num8 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_393;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_3D8:
 				if (num8 != 0)
@@ -2917,7 +2883,7 @@ namespace iS800
 		}
 
 		// Token: 0x0600227B RID: 8827 RVA: 0x003FDFCC File Offset: 0x003FC3CC
-		public void Atualiza_vista_rq(int num)
+		public void Atualiza_vista_rq(int num = 0)
 		{
 			string text = "CRQI";
 			string text2 = "End ";
@@ -3063,9 +3029,9 @@ namespace iS800
 		{
 			checked
 			{
-				int num;
-				int num2;
-				object obj;
+				int num = 0;
+				int num2 = 0;
+				object obj = null;
 				try
 				{
 					ProjectData.ClearProjectError();
@@ -3087,11 +3053,7 @@ namespace iS800
 					num2 = -1;
 										IL_92:;
 				}
-				catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-				{
-					Exception ex = (Exception)obj2;
-					goto IL_7C;
-				}
+				catch (Exception) { }
 				throw ProjectData.CreateProjectError(-2146828237);
 				IL_C1:
 				if (num2 != 0)

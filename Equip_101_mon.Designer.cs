@@ -88,7 +88,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			tela_end_estacao3.Size = size;
 			this.Tela_end_estacao.TabIndex = 9;
-			this.Tela_end_estacao.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Tela_end_estacao.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control tela_endereco_mestre = this.Tela_endereco_mestre;
 			location = new global::System.Drawing.Point(129, 40);
 			tela_endereco_mestre.Location = location;
@@ -106,7 +106,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(78, 20);
 			tela_endereco_mestre3.Size = size;
 			this.Tela_endereco_mestre.TabIndex = 10;
-			this.Tela_endereco_mestre.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.Tela_endereco_mestre.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			this.Label2.AutoSize = true;
 			global::System.Windows.Forms.Control label = this.Label2;
 			location = new global::System.Drawing.Point(22, 42);
@@ -137,7 +137,7 @@ namespace iS800
 			size = new global::System.Drawing.Size(182, 20);
 			msg2.Size = size;
 			this.msg.TabIndex = 3;
-			this.msg.TextAlign = (System.Drawing.ContentAlignment)2;
+			this.msg.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
 			global::System.Windows.Forms.Control comando_hab_monitoracao = this.Comando_hab_monitoracao;
 			location = new global::System.Drawing.Point(25, 162);
 			comando_hab_monitoracao.Location = location;
@@ -188,7 +188,7 @@ namespace iS800
 			label_defeito_sensor2.Size = size;
 			this.Label_defeito_sensor.TabIndex = 8;
 			this.Label_defeito_sensor.Text = " Falha sensor ";
-			this.Label_defeito_sensor.TextAlign = (System.Drawing.ContentAlignment)32;
+			this.Label_defeito_sensor.TextAlign = (System.Windows.Forms.HorizontalAlignment)32;
 			this.Label_arrombamento.AutoSize = true;
 			this.Label_arrombamento.BackColor = global::System.Drawing.SystemColors.Control;
 			this.Label_arrombamento.BorderStyle = (System.Windows.Forms.BorderStyle)2;
@@ -213,7 +213,7 @@ namespace iS800
 			label_vazio2.Size = size;
 			this.Label_vazio.TabIndex = 6;
 			this.Label_vazio.Text = "       Vazio       ";
-			this.Label_vazio.TextAlign = (System.Drawing.ContentAlignment)32;
+			this.Label_vazio.TextAlign = (System.Windows.Forms.HorizontalAlignment)32;
 			this.Label_transbordo.AutoSize = true;
 			this.Label_transbordo.BackColor = global::System.Drawing.SystemColors.Control;
 			this.Label_transbordo.BorderStyle = (System.Windows.Forms.BorderStyle)2;
@@ -259,7 +259,7 @@ namespace iS800
 			tela_nivel2.Size = size;
 			this.Tela_nivel.TabIndex = 1;
 			this.Tela_nivel.TabStop = false;
-			this.Tela_nivel.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Tela_nivel.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Timer_monitoracao.Interval = 3000;
 			this.Grupo_estatistica.Controls.Add(this.Label_Est_retry);
 			this.Grupo_estatistica.Controls.Add(this.Est_retry);
@@ -302,7 +302,7 @@ namespace iS800
 			est_retry2.Size = size;
 			this.Est_retry.TabIndex = 9;
 			this.Est_retry.Tag = "c";
-			this.Est_retry.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Est_retry.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Est_eficiencia.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control est_eficiencia = this.Est_eficiencia;
 			location = new global::System.Drawing.Point(432, 23);
@@ -314,7 +314,7 @@ namespace iS800
 			est_eficiencia2.Size = size;
 			this.Est_eficiencia.TabIndex = 5;
 			this.Est_eficiencia.Tag = "c";
-			this.Est_eficiencia.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Est_eficiencia.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Windows.Forms.Control button_limpa_estatistica = this.Button_limpa_estatistica;
 			location = new global::System.Drawing.Point(498, 19);
 			button_limpa_estatistica.Location = location;
@@ -366,7 +366,7 @@ namespace iS800
 			est_Rx2.Size = size;
 			this.Est_Rx.TabIndex = 5;
 			this.Est_Rx.Tag = "c";
-			this.Est_Rx.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Est_Rx.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			this.Est_TX.BackColor = global::System.Drawing.Color.Beige;
 			global::System.Windows.Forms.Control est_TX = this.Est_TX;
 			location = new global::System.Drawing.Point(50, 23);
@@ -378,7 +378,7 @@ namespace iS800
 			est_TX2.Size = size;
 			this.Est_TX.TabIndex = 4;
 			this.Est_TX.Tag = "c";
-			this.Est_TX.TextAlign = (System.Drawing.ContentAlignment)1;
+			this.Est_TX.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
 			global::System.Drawing.SizeF autoScaleDimensions;
 			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
 			this.AutoScaleDimensions = autoScaleDimensions;

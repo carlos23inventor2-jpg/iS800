@@ -1366,9 +1366,9 @@ namespace iS800
 		// Token: 0x06000CD6 RID: 3286 RVA: 0x002F8158 File Offset: 0x002F6558
 		public void Atualiza_TelaGC82x()
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -1393,11 +1393,7 @@ namespace iS800
 				num2 = -1;
 								IL_18C:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_178;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_1B9:
 			if (num2 != 0)
@@ -1422,7 +1418,7 @@ namespace iS800
 		// Token: 0x06000CD8 RID: 3288 RVA: 0x002F838C File Offset: 0x002F678C
 		public void RT_810_Atualiza_Parametros_EA(int tipo)
 		{
-			int num;
+			int num = 0;
 			if (tipo == 0)
 			{
 				num = 3;
@@ -1666,8 +1662,7 @@ namespace iS800
 						num++;
 						if (num > 49)
 						{
-							goto IL_A2;
-						}
+													}
 					}
 					obj.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.ForeColor = Color.Red;
 					Interaction.MsgBox(Operators.AddObject(Operators.AddObject("Endereço : ", e.FormattedValue), " já existe"), (MsgBoxStyle)32, "Erro na entrada de dados");
@@ -1820,9 +1815,9 @@ namespace iS800
 		[MethodImpl(72)]
 		private void ToolStripButton_RT_810_Abrir_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -1849,8 +1844,7 @@ namespace iS800
 						RT_geral.Lmte_Init_ok = true;
 						this.AtualizaMsgTela_RT_810("Valores Default carregados", 0);
 						this.Timer_limpa_MSG.Enabled = true;
-						goto IL_36B;
-					}
+											}
 					RT_geral.GC_82x_BD.filename = this.OpenFileDialog_RT_810.FileName;
 					RT_geral.GC_82x_BD.End_estacao.Valor = iniFile.ReadInteger("GERAL_PARAM_COMINICACAO", "ESTACAO", 0);
 					RT_geral.GC_82x_BD.modo_SA1.Valor = iniFile.ReadInteger("MODO_OPERCAO_SA1", "MODO", 0);
@@ -1878,11 +1872,7 @@ namespace iS800
 				num2 = -1;
 								IL_33C:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_326;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_36B:
 			if (num2 != 0)
@@ -1895,9 +1885,9 @@ namespace iS800
 		[MethodImpl(72)]
 		private void ToolStripButton_RT_810_Salvar_Click(object sender, EventArgs e)
 		{
-			int num;
-			int num2;
-			object obj;
+			int num = 0;
+			int num2 = 0;
+			object obj = null;
 			try
 			{
 				ProjectData.ClearProjectError();
@@ -1970,11 +1960,7 @@ namespace iS800
 				num2 = -1;
 								IL_381:;
 			}
-			catch when (endfilter(obj is Exception & num != 0 & num2 == 0))
-			{
-				Exception ex = (Exception)obj2;
-				goto IL_36B;
-			}
+			catch (Exception) { }
 			throw ProjectData.CreateProjectError(-2146828237);
 			IL_3B0:
 			if (num2 != 0)

@@ -25,18 +25,18 @@ namespace iS800
 			StringFormat stringFormat = new StringFormat();
 			Pen pen = new Pen(Cores.Tabela, 1f);
 			SolidBrush solidBrush = new SolidBrush(Cores.TituloBG);
-			stringFormat.LineAlignment = (System.Windows.Forms.HorizontalAlignment)1;
+			stringFormat.LineAlignment = (System.Drawing.StringAlignment)1;
 			if (Operators.CompareString(TitlePos, "L", false) == 0)
 			{
-				stringFormat.Alignment = (System.Windows.Forms.HorizontalAlignment)0;
+				stringFormat.Alignment = (System.Drawing.StringAlignment)0;
 			}
 			else if (Operators.CompareString(TitlePos, "R", false) == 0)
 			{
-				stringFormat.Alignment = (System.Windows.Forms.HorizontalAlignment)2;
+				stringFormat.Alignment = (System.Drawing.StringAlignment)2;
 			}
 			else if (Operators.CompareString(TitlePos, "C", false) == 0)
 			{
-				stringFormat.Alignment = (System.Windows.Forms.HorizontalAlignment)1;
+				stringFormat.Alignment = (System.Drawing.StringAlignment)1;
 			}
 			checked
 			{
