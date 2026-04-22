@@ -21,8 +21,7 @@ namespace iS800
 			object obj = null;
 			try
 			{
-				ProjectData.ClearProjectError();
-				num = 2;
+                num = 2;
 				if (Comunicacao.Config_sistema.tipo_interface == 1)
 				{
 					if (MyProject.Forms.Plataforma.SerialPort1.IsOpen)
@@ -94,13 +93,8 @@ namespace iS800
 								IL_2B5:;
 			}
 			catch (Exception ex) { Geral.Config_geral.Porta_serial_Ok = false; flag = false; }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_2E4:
 			bool result = flag;
-			if (num2 != 0)
-			{
-				ProjectData.ClearProjectError();
-			}
 			return result;
 		}
 
@@ -115,8 +109,7 @@ namespace iS800
 				object obj = null;
 				try
 				{
-					ProjectData.ClearProjectError();
-					num = 2;
+                num = 2;
 					if (Comunicacao.Config_sistema.tipo_interface == 1)
 					{
 						MyProject.Forms.Plataforma.SerialPort1.DiscardOutBuffer();
@@ -144,7 +137,6 @@ namespace iS800
 										IL_AD:;
 				}
 				catch (Exception ex) { Geral.Config_geral.Porta_serial_Ok = false; flag = false; }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_DA:
 				bool result = flag;
 				if (num3 != 0)

@@ -3541,7 +3541,6 @@ namespace iS800
 										IL_9CD:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_9FC:
 				if (num3 != 0)
 				{
@@ -3616,7 +3615,7 @@ namespace iS800
 		// Token: 0x06001A0D RID: 6669 RVA: 0x003BACC8 File Offset: 0x003B90C8
 		private void NumericUpDown_end_rep_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.End_repetidora.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.End_repetidora.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.End_repetidora, true);
 			sender = numericUpDown;
@@ -3625,7 +3624,7 @@ namespace iS800
 		// Token: 0x06001A0E RID: 6670 RVA: 0x003BAD1C File Offset: 0x003B911C
 		private void NumericUpDown_num_est_rep_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.Num_repetidoras.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.Num_repetidoras.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.Num_repetidoras, true);
 			sender = numericUpDown;
@@ -3634,15 +3633,15 @@ namespace iS800
 		// Token: 0x06001A0F RID: 6671 RVA: 0x003BAD70 File Offset: 0x003B9170
 		private void ComboBox_modo_simulado_RT_821_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.Modelo.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_821_BD.Modelo.Indice = 0;
 			RT_geral.RT_821_BD.Modelo.Valor = RT_geral.RT_821_BD.Modelo.valores[RT_geral.RT_821_BD.Modelo.Indice];
-			this.Habilita_Funcoes_de_Tela_RT_821(Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null)));
+			this.Habilita_Funcoes_de_Tela_RT_821(Conversions.ToInteger(null));
 		}
 
 		// Token: 0x06001A10 RID: 6672 RVA: 0x003BADF4 File Offset: 0x003B91F4
 		private void NumericUpDown_end_mestre_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.End_mestre.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.End_mestre, true);
 			sender = numericUpDown;
@@ -3651,7 +3650,7 @@ namespace iS800
 		// Token: 0x06001A11 RID: 6673 RVA: 0x003BAE48 File Offset: 0x003B9248
 		private void NumericUpDown_end_est_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.End_estacao.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.End_estacao, true);
 			sender = numericUpDown;
@@ -3660,12 +3659,8 @@ namespace iS800
 		// Token: 0x06001A12 RID: 6674 RVA: 0x003BAE9C File Offset: 0x003B929C
 		private void NumericUpDown_temp_ptt_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
-			NewLateBinding.LateSet(sender, null, "value", new object[]
-			{
-				RT_geral.RT_821_BD.Tempo_ptt.Valor
-			}, null, null);
-			NumericUpDown numericUpDown = (NumericUpDown)sender;
+			RT_geral.RT_821_BD.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(((NumericUpDown)sender).Value, 10), 10));
+						NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
@@ -3673,7 +3668,7 @@ namespace iS800
 		// Token: 0x06001A13 RID: 6675 RVA: 0x003BAF34 File Offset: 0x003B9334
 		private void NumericUpDown_intervalo_filtro_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.AD_Intervalo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.AD_Intervalo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.AD_Intervalo, true);
 			sender = numericUpDown;
@@ -3682,7 +3677,7 @@ namespace iS800
 		// Token: 0x06001A14 RID: 6676 RVA: 0x003BAF88 File Offset: 0x003B9388
 		private void NumericUpDown_tamanho_filtro_RT821_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.AD_Tamanho_filtro.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.AD_Tamanho_filtro, true);
 			sender = numericUpDown;
@@ -4229,10 +4224,7 @@ namespace iS800
 			}
 			else if (Operators.CompareString(dataPropertyName, "Col_Nome", false) == 0)
 			{
-				RT_geral.RT_821_BD.dsp_nome[e.RowIndex].Valor = Conversions.ToString(NewLateBinding.LateGet(null, typeof(Strings), "UCase", new object[]
-				{
-					RuntimeHelpers.GetObjectValue(e.FormattedValue)
-				}, null, null, null));
+				RT_geral.RT_821_BD.dsp_nome[e.RowIndex].Valor = Conversions.ToString(RuntimeHelpers.GetObjectValue(e.FormattedValue)).ToUpper();
 				DataGridView dataGridView = (DataGridView)sender;
 				RT_geral.Testa_nome_dsp_3DIG(ref dataGridView, ref RT_geral.RT_821_BD.dsp_nome[e.RowIndex], e, true);
 				sender = dataGridView;
@@ -4293,7 +4285,7 @@ namespace iS800
 					{
 						true
 					};
-					object ex = NewLateBinding.LateGet(obj, typeFromHandle, text, array4, array5, array6, array7);
+					object ex = null;
 					if (array7[0])
 					{
 						dataGridViewCell2.Value = RuntimeHelpers.GetObjectValue(array3[0]);
@@ -4537,7 +4529,6 @@ namespace iS800
 										IL_BA8:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_BD7:
 				if (num3 != 0)
 				{
@@ -4874,7 +4865,6 @@ namespace iS800
 										IL_F58:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_F87:
 				if (num12 != 0)
 				{
@@ -5796,27 +5786,27 @@ namespace iS800
 		// Token: 0x06001A3C RID: 6716 RVA: 0x003C0E6C File Offset: 0x003BF26C
 		private void cb_modorepetidora_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			object obj = NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null);
+			object obj = null;
 			bool flag = false;
 			if (Operators.ConditionalCompareObjectEqual(obj, 0, false))
 			{
 				flag = false;
 			}
-			else if (Conversions.ToBoolean((Conversions.ToBoolean(Operators.CompareObjectEqual(obj, 1, false)) || Conversions.ToBoolean(Operators.CompareObjectEqual(obj, 2, false))) ? true : false))
+			else if (Conversions.ToBoolean((Conversions.ToBoolean(Conversions.ToBoolean(Operators.CompareObjectEqual(obj, 1, false)) || Conversions.ToBoolean(Operators.CompareObjectEqual(obj, 2, false)) ? true : false))))
 			{
 				flag = true;
 			}
 			this.NumericUpDown_end_rep_RT821.Enabled = flag;
 			this.NumericUpDown_num_est_rep_RT821.Enabled = flag;
 			this.GroupBox_end_rep_RT821.Visible = flag;
-			RT_geral.RT_821_BD.modo_repetidora.Valor = RT_geral.RT_821_BD.modo_repetidora.valores[Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null))];
-			RT_geral.RT_821_BD.modo_repetidora.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null));
+			RT_geral.RT_821_BD.modo_repetidora.Valor = RT_geral.RT_821_BD.modo_repetidora.valores[Conversions.ToInteger(null)];
+			RT_geral.RT_821_BD.modo_repetidora.Indice = 0;
 		}
 
 		// Token: 0x06001A3D RID: 6717 RVA: 0x003C0F68 File Offset: 0x003BF368
 		private void ComboBox_Modo_Operacao_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.modo_operacao.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_821_BD.modo_operacao.Indice = 0;
 			RT_geral.RT_821_BD.modo_operacao.Valor = RT_geral.RT_821_BD.modo_operacao.valores[RT_geral.RT_821_BD.modo_operacao.Indice];
 			switch (RT_geral.RT_821_BD.modo_operacao.Indice)
 			{
@@ -5833,7 +5823,7 @@ namespace iS800
 		// Token: 0x06001A3E RID: 6718 RVA: 0x003C1008 File Offset: 0x003BF408
 		private void NumericUpDown_IntervaloTX_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.intervalo_tx.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_821_BD.intervalo_tx.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_821_BD.intervalo_tx, true);
 			sender = numericUpDown;
@@ -5842,14 +5832,14 @@ namespace iS800
 		// Token: 0x06001A3F RID: 6719 RVA: 0x003C105C File Offset: 0x003BF45C
 		private void cb_baudrate_com1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.baudrate_com1.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_821_BD.baudrate_com1.Indice = 0;
 			RT_geral.RT_821_BD.baudrate_com1.AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x06001A40 RID: 6720 RVA: 0x003C1098 File Offset: 0x003BF498
 		private void cb_baudrate_com2_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_821_BD.baudrate_com2.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_821_BD.baudrate_com2.Indice = 0;
 			RT_geral.RT_821_BD.baudrate_com2.AtualizaValorPeloIndice();
 		}
 

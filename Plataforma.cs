@@ -2179,8 +2179,8 @@ namespace iS800
 			{
 				activeMdiChild.Close();
 			}
-			string text = Conversions.ToString(NewLateBinding.LateGet(NewLateBinding.LateGet(sender, null, "SelectedNode", new object[0], null, null, null), null, "Name", new object[0], null, null, null));
-			string text2 = Conversions.ToString(NewLateBinding.LateGet(NewLateBinding.LateGet(sender, null, "TopNode", new object[0], null, null, null), null, "Text", new object[0], null, null, null));
+			string text = (activeMdiChild != null ? activeMdiChild.Name : "");
+			string text2 = (activeMdiChild != null ? activeMdiChild.Text : "");
 			string text3 = text2;
 			if (Operators.CompareString(text3, "Equipamentos - Linha VA", false) == 0)
 			{
@@ -2806,7 +2806,6 @@ namespace iS800
 										IL_E6:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_113:
 				if (num2 != 0)
 				{
@@ -2826,11 +2825,7 @@ namespace iS800
 		// Token: 0x060028D3 RID: 10451 RVA: 0x00429EB8 File Offset: 0x004282B8
 		private void ProtocoloMODBUSToolStripMenuItem1_Click(object sender, EventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Checked", new object[]
-			{
-				true
-			}, null, null);
-		}
+					}
 
 		// Token: 0x060028D4 RID: 10452 RVA: 0x00429EE4 File Offset: 0x004282E4
 		private void Timer_espera_Tick(object sender, EventArgs e)
@@ -2852,11 +2847,7 @@ namespace iS800
 		// Token: 0x060028D7 RID: 10455 RVA: 0x00429F08 File Offset: 0x00428308
 		private void DesabilitaToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Checked", new object[]
-			{
-				true
-			}, null, null);
-			this.Timer_ouvidor.Enabled = false;
+						this.Timer_ouvidor.Enabled = false;
 			this.Menu_ouvidor.Visible = false;
 		}
 
@@ -2903,20 +2894,12 @@ namespace iS800
 		// Token: 0x060028DB RID: 10459 RVA: 0x00429FD0 File Offset: 0x004283D0
 		private void DecimalToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Checked", new object[]
-			{
-				true
-			}, null, null);
-		}
+					}
 
 		// Token: 0x060028DC RID: 10460 RVA: 0x00429FFC File Offset: 0x004283FC
 		private void HexadecimalToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Checked", new object[]
-			{
-				true
-			}, null, null);
-		}
+					}
 
 		// Token: 0x060028DD RID: 10461 RVA: 0x0042A028 File Offset: 0x00428428
 		private void ComunicaçãoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2939,7 +2922,7 @@ namespace iS800
 		// Token: 0x060028DF RID: 10463 RVA: 0x0042A068 File Offset: 0x00428468
 		private void Plataforma_Shown(object sender, EventArgs e)
 		{
-			Comunicacao.Init_porta_serial();
+			try { Comunicacao.Init_porta_serial(); } catch (Exception) { }
 		}
 
 		// Token: 0x060028E0 RID: 10464 RVA: 0x0042A070 File Offset: 0x00428470

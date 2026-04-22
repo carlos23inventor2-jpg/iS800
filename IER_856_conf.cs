@@ -1392,7 +1392,6 @@ namespace iS800
 								IL_20D:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_23A:
 			if (num2 != 0)
 			{
@@ -1521,15 +1520,15 @@ namespace iS800
 		// Token: 0x06000E8C RID: 3724 RVA: 0x00304198 File Offset: 0x00302598
 		private void ComboBox_metodo_operacao_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.AtribuicaoIP.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.AtribuicaoIP.Indice = 0;
 			RT_geral.IEC_855_BD.AtribuicaoIP.Valor = RT_geral.IEC_855_BD.AtribuicaoIP.valores[RT_geral.IEC_855_BD.AtribuicaoIP.Indice];
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 1, false))
+			if (Operators.ConditionalCompareObjectEqual(null, 1, false))
 			{
 				this.tb_static_ip.ReadOnly = true;
 				this.tb_static_gw.ReadOnly = true;
 				this.tb_static_sm.ReadOnly = true;
 			}
-			else if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 0, false))
+			else if (Operators.ConditionalCompareObjectEqual(null, 0, false))
 			{
 				this.tb_static_ip.ReadOnly = false;
 				this.tb_static_gw.ReadOnly = false;
@@ -1554,7 +1553,7 @@ namespace iS800
 			string text = "FindStringExact";
 			object[] array = new object[]
 			{
-				RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null))
+				RuntimeHelpers.GetObjectValue(null)
 			};
 			object[] array2 = array;
 			string[] array3 = null;
@@ -1563,7 +1562,7 @@ namespace iS800
 			{
 				true
 			};
-			object obj = NewLateBinding.LateGet(sender, type, text, array2, array3, array4, array5);
+			object obj = null;
 			if (array5[0])
 			{
 				NewLateBinding.LateSetComplex(sender, null, "Text", new object[]
@@ -1573,18 +1572,14 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
-				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
-				{
-					0
-				}, null, null);
-			}
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(null)));
+							}
 		}
 
 		// Token: 0x06000E90 RID: 3728 RVA: 0x00304378 File Offset: 0x00302778
 		private void NumericUpDown_intervalo_tx_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.Intervalo_tx_pto_pto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.Intervalo_tx_pto_pto, true);
 			sender = numericUpDown;
@@ -1593,12 +1588,8 @@ namespace iS800
 		// Token: 0x06000E91 RID: 3729 RVA: 0x003043CC File Offset: 0x003027CC
 		private void NumericUpDown_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
-			NewLateBinding.LateSet(sender, null, "value", new object[]
-			{
-				RT_geral.IEC_855_BD.Tempo_ptt.Valor
-			}, null, null);
-			NumericUpDown numericUpDown = (NumericUpDown)sender;
+			RT_geral.IEC_855_BD.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(((NumericUpDown)sender).Value, 10), 10));
+						NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
@@ -1606,7 +1597,7 @@ namespace iS800
 		// Token: 0x06000E92 RID: 3730 RVA: 0x00304464 File Offset: 0x00302864
 		private void NumericUpDown_end_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.End_mestre.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.End_mestre, true);
 			sender = numericUpDown;
@@ -1615,7 +1606,7 @@ namespace iS800
 		// Token: 0x06000E93 RID: 3731 RVA: 0x003044B8 File Offset: 0x003028B8
 		private void NumericUpDown_end_est_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.End_estacao.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.End_estacao, true);
 			sender = numericUpDown;
@@ -1624,12 +1615,8 @@ namespace iS800
 		// Token: 0x06000E94 RID: 3732 RVA: 0x0030450C File Offset: 0x0030290C
 		private void NumericUpDown_intervalo_filtro_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.AD_Intervalo.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
-			NewLateBinding.LateSet(sender, null, "value", new object[]
-			{
-				RT_geral.IEC_855_BD.AD_Intervalo.Valor
-			}, null, null);
-			NumericUpDown numericUpDown = (NumericUpDown)sender;
+			RT_geral.IEC_855_BD.AD_Intervalo.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(((NumericUpDown)sender).Value, 10), 10));
+						NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.AD_Intervalo, true);
 			sender = numericUpDown;
 		}
@@ -1637,7 +1624,7 @@ namespace iS800
 		// Token: 0x06000E95 RID: 3733 RVA: 0x003045A4 File Offset: 0x003029A4
 		private void NumericUpDown_tamanho_filtro_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.AD_Tamanho_filtro.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.IEC_855_BD.AD_Tamanho_filtro, true);
 			sender = numericUpDown;
@@ -1981,7 +1968,6 @@ namespace iS800
 										IL_616:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_645:
 				if (num3 != 0)
 				{
@@ -2064,7 +2050,6 @@ namespace iS800
 								IL_323:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_351:
 			if (num2 != 0)
 			{
@@ -2501,7 +2486,7 @@ namespace iS800
 		// Token: 0x06000EC0 RID: 3776 RVA: 0x00306248 File Offset: 0x00304648
 		private void ComboBox_baudrate_COM1_810_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.IEC_855_BD.BaudRateCOM1.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.IEC_855_BD.BaudRateCOM1.Indice = 0;
 			RT_geral.IEC_855_BD.BaudRateCOM1.AtualizaValorPeloIndice();
 		}
 
@@ -2581,11 +2566,11 @@ namespace iS800
 		// Token: 0x06000EC5 RID: 3781 RVA: 0x00306448 File Offset: 0x00304848
 		private void tb_static_ip_TextChanged(object sender, EventArgs e)
 		{
-			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
+			bool flag = this.QuebraIPString(Conversions.ToString(null));
 			if (flag)
 			{
 				this.tb_static_ip.ForeColor = Color.Black;
-				RT_geral.IEC_855_BD.STATIC_IP = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+				RT_geral.IEC_855_BD.STATIC_IP = "";
 			}
 			else
 			{
@@ -2607,11 +2592,11 @@ namespace iS800
 		// Token: 0x06000EC7 RID: 3783 RVA: 0x003064E0 File Offset: 0x003048E0
 		private void tb_static_gw_TextChanged(object sender, EventArgs e)
 		{
-			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
+			bool flag = this.QuebraIPString(Conversions.ToString(null));
 			if (flag)
 			{
 				this.tb_static_ip.ForeColor = Color.Black;
-				RT_geral.IEC_855_BD.STATIC_GW = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+				RT_geral.IEC_855_BD.STATIC_GW = "";
 			}
 			else
 			{
@@ -2622,11 +2607,11 @@ namespace iS800
 		// Token: 0x06000EC8 RID: 3784 RVA: 0x00306558 File Offset: 0x00304958
 		private void tb_static_sm_TextChanged(object sender, EventArgs e)
 		{
-			bool flag = this.QuebraIPString(Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)));
+			bool flag = this.QuebraIPString(Conversions.ToString(null));
 			if (flag)
 			{
 				this.tb_static_ip.ForeColor = Color.Black;
-				RT_geral.IEC_855_BD.STATIC_SM = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+				RT_geral.IEC_855_BD.STATIC_SM = "";
 			}
 			else
 			{

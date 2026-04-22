@@ -2163,7 +2163,7 @@ namespace iS800
 		// Token: 0x06001CAC RID: 7340 RVA: 0x003D2588 File Offset: 0x003D0988
 		private void CheckBox_hab_rep_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Hab_repetidora = 21856;
 			}
@@ -2381,7 +2381,7 @@ namespace iS800
 		// Token: 0x06001CB9 RID: 7353 RVA: 0x003D2AB4 File Offset: 0x003D0EB4
 		private void VScrollBar1_Scroll(object sender, ScrollEventArgs e)
 		{
-			this.passo_201 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			this.passo_201 = 0;
 			this.Atualiza_tela_MD201_repetidora_enderecos(Mod_MD.Controle.Estacao);
 		}
 
@@ -2444,136 +2444,136 @@ namespace iS800
 		// Token: 0x06001CBB RID: 7355 RVA: 0x003D2C7C File Offset: 0x003D107C
 		private void Combo_modo_partida_m1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Modo_partida[1] = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21877));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Modo_partida[1] = Conversions.ToInteger(Operators.AddObject(null, 21877));
 		}
 
 		// Token: 0x06001CBC RID: 7356 RVA: 0x003D2CD0 File Offset: 0x003D10D0
 		private void Combo_modo_partida_m2_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Modo_partida[2] = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21877));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Modo_partida[2] = Conversions.ToInteger(Operators.AddObject(null, 21877));
 		}
 
 		// Token: 0x06001CBD RID: 7357 RVA: 0x003D2D24 File Offset: 0x003D1124
 		private void Combo_modo_partida_m3_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Modo_partida[3] = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21877));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Modo_partida[3] = Conversions.ToInteger(Operators.AddObject(null, 21877));
 		}
 
 		// Token: 0x06001CBE RID: 7358 RVA: 0x003D2D78 File Offset: 0x003D1178
 		private void Valor_end_est_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].End_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].End_estacao = 0;
 		}
 
 		// Token: 0x06001CBF RID: 7359 RVA: 0x003D2DB0 File Offset: 0x003D11B0
 		private void Valor_end_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].End_mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].End_mestre = 0;
 		}
 
 		// Token: 0x06001CC0 RID: 7360 RVA: 0x003D2DE8 File Offset: 0x003D11E8
 		private void Valor_end_est_rep_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].End_repetidora = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].End_repetidora = 0;
 		}
 
 		// Token: 0x06001CC1 RID: 7361 RVA: 0x003D2E20 File Offset: 0x003D1220
 		private void Valor_num_est_rep_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Num_repetidoras = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
-			this.Limpa_dados_repetidora_MD201(Mod_MD.Controle.Estacao, RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Num_repetidoras = 0;
+			this.Limpa_dados_repetidora_MD201(Mod_MD.Controle.Estacao, RuntimeHelpers.GetObjectValue(null));
 			this.Atualiza_tela_MD201_repetidora(Mod_MD.Controle.Estacao);
 		}
 
 		// Token: 0x06001CC2 RID: 7362 RVA: 0x003D2EA0 File Offset: 0x003D12A0
 		private void Numero_motores_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Quantidade_motores = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Quantidade_motores = 0;
 			this.Atualiza_tela_MD201_motores(Mod_MD.Controle.Estacao);
 		}
 
 		// Token: 0x06001CC3 RID: 7363 RVA: 0x003D2EF0 File Offset: 0x003D12F0
 		private void Tempo_entre_acionamentos_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_entre_acionamento = Conversions.ToInteger(Operators.MultiplyObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 60));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_entre_acionamento = Conversions.ToInteger(Operators.MultiplyObject(null, 60));
 		}
 
 		// Token: 0x06001CC4 RID: 7364 RVA: 0x003D2F3C File Offset: 0x003D133C
 		private void Nivel_parada_m1_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_parada[1] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_parada[1] = 0;
 		}
 
 		// Token: 0x06001CC5 RID: 7365 RVA: 0x003D2F80 File Offset: 0x003D1380
 		private void Nivel_partida_m1_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_acionamento[1] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_acionamento[1] = 0;
 		}
 
 		// Token: 0x06001CC6 RID: 7366 RVA: 0x003D2FC4 File Offset: 0x003D13C4
 		private void Tempo_partida_m1_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_partida[1] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_partida[1] = 0;
 		}
 
 		// Token: 0x06001CC7 RID: 7367 RVA: 0x003D3008 File Offset: 0x003D1408
 		private void Tempo_parada_m1_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_parada[1] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_parada[1] = 0;
 		}
 
 		// Token: 0x06001CC8 RID: 7368 RVA: 0x003D304C File Offset: 0x003D144C
 		private void Nivel_parada_m2_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_parada[2] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_parada[2] = 0;
 		}
 
 		// Token: 0x06001CC9 RID: 7369 RVA: 0x003D3090 File Offset: 0x003D1490
 		private void Nivel_partida_m2_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_acionamento[2] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_acionamento[2] = 0;
 		}
 
 		// Token: 0x06001CCA RID: 7370 RVA: 0x003D30D4 File Offset: 0x003D14D4
 		private void Tempo_partida_m2_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_partida[2] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_partida[2] = 0;
 		}
 
 		// Token: 0x06001CCB RID: 7371 RVA: 0x003D3118 File Offset: 0x003D1518
 		private void Tempo_parada_m2_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_parada[2] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_parada[2] = 0;
 		}
 
 		// Token: 0x06001CCC RID: 7372 RVA: 0x003D315C File Offset: 0x003D155C
 		private void Nivel_parada_m3_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_parada[3] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_parada[3] = 0;
 		}
 
 		// Token: 0x06001CCD RID: 7373 RVA: 0x003D31A0 File Offset: 0x003D15A0
 		private void Nivel_partida_m3_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_acionamento[3] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Nivel_acionamento[3] = 0;
 		}
 
 		// Token: 0x06001CCE RID: 7374 RVA: 0x003D31E4 File Offset: 0x003D15E4
 		private void Tempo_partida_m3_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_partida[3] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_partida[3] = 0;
 		}
 
 		// Token: 0x06001CCF RID: 7375 RVA: 0x003D3228 File Offset: 0x003D1628
 		private void Tempo_parada_m3_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_parada[3] = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_parada[3] = 0;
 		}
 
 		// Token: 0x06001CD0 RID: 7376 RVA: 0x003D326C File Offset: 0x003D166C
 		private void Valor_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10));
+			Mod_MD.Recalque_201[Mod_MD.Controle.Estacao].Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(null, 10));
 		}
 
 		// Token: 0x06001CD1 RID: 7377 RVA: 0x003D32B8 File Offset: 0x003D16B8

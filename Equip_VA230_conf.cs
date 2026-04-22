@@ -1583,7 +1583,7 @@ namespace iS800
 		// Token: 0x06002760 RID: 10080 RVA: 0x0042335C File Offset: 0x0042175C
 		private void VScroll_end_estacao_Scroll(object sender, ScrollEventArgs e)
 		{
-			this.Valor_end_estacao.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			this.Valor_end_estacao.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(null));
 		}
 
 		// Token: 0x06002761 RID: 10081 RVA: 0x00423388 File Offset: 0x00421788

@@ -259,9 +259,9 @@ namespace iS800
 		// Token: 0x06002793 RID: 10131 RVA: 0x00423C94 File Offset: 0x00422094
 		private void cb_disco_CheckStateChanged(object sender, EventArgs e)
 		{
-			this.Label2.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null));
-			this.tb_diretorio.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null));
-			this.bt_diretorio.Enabled = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null));
+			this.Label2.Enabled = Conversions.ToBoolean(null);
+			this.tb_diretorio.Enabled = Conversions.ToBoolean(null);
+			this.bt_diretorio.Enabled = Conversions.ToBoolean(null);
 		}
 
 		// Token: 0x06002794 RID: 10132 RVA: 0x00423D10 File Offset: 0x00422110

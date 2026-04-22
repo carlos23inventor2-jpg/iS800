@@ -393,7 +393,7 @@ namespace iS800
 		// Token: 0x0600255F RID: 9567 RVA: 0x00414B90 File Offset: 0x00412F90
 		private void Valor_end_estacao_TextChanged(object sender, EventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num >= 0 & num <= 200)
 			{
 				Mod_VA.Operacao_VA220.End_estacao = num;
@@ -404,7 +404,7 @@ namespace iS800
 		// Token: 0x06002560 RID: 9568 RVA: 0x00414BF0 File Offset: 0x00412FF0
 		private void Valor_end_mestre_TextChanged(object sender, EventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num >= 0 & num <= 200)
 			{
 				Mod_VA.Operacao_VA220.End_mestre = num;
@@ -463,7 +463,7 @@ namespace iS800
 		// Token: 0x06002562 RID: 9570 RVA: 0x00414D48 File Offset: 0x00413148
 		private void Valor_bomba_TextChanged(object sender, EventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num >= 1 & num <= 4)
 			{
 				Mod_VA.Operacao_VA220.bomba = num;

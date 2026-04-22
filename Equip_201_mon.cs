@@ -1477,15 +1477,11 @@ namespace iS800
 				Interaction.MsgBox("Porta Serial não configurada!\r\nComando cancelado.", (MsgBoxStyle)0, null);
 				return;
 			}
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null), "Iniciar", false))
+			if (Operators.ConditionalCompareObjectEqual(null, "Iniciar", false))
 			{
 				if (Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
 				{
-					NewLateBinding.LateSet(sender, null, "text", new object[]
-					{
-						"Parar"
-					}, null, null);
-					this.Mensagem_MD201_mon("Monitoração Ativada", 2);
+										this.Mensagem_MD201_mon("Monitoração Ativada", 2);
 					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 1;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
 					this.Timer_monitoracao.Enabled = true;
@@ -1501,11 +1497,7 @@ namespace iS800
 			}
 			else
 			{
-				NewLateBinding.LateSet(sender, null, "text", new object[]
-				{
-					"Iniciar"
-				}, null, null);
-				this.Mensagem_MD201_mon("Monitoração desativada", 2);
+								this.Mensagem_MD201_mon("Monitoração desativada", 2);
 				Mod_MD.Monitoracao_MD_RQ.Partir_mon = false;
 				this.Timer_monitoracao.Enabled = false;
 				this.Grupo_setpoints.Enabled = false;
@@ -1899,14 +1891,14 @@ namespace iS800
 		// Token: 0x06001D78 RID: 7544 RVA: 0x003D7C24 File Offset: 0x003D6024
 		private void Tela_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Mestre = 0;
 			this.Inicializa_tela_equipamento_MD201_mon();
 		}
 
 		// Token: 0x06001D79 RID: 7545 RVA: 0x003D7C50 File Offset: 0x003D6050
 		private void Tela_endereco_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Estacao = 0;
 			this.Inicializa_tela_equipamento_MD201_mon();
 		}
 
@@ -2116,7 +2108,7 @@ namespace iS800
 		// Token: 0x06001D81 RID: 7553 RVA: 0x003D84F8 File Offset: 0x003D68F8
 		private void Tela_nivel_destino_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = 0;
 		}
 
 		// Token: 0x06001D82 RID: 7554 RVA: 0x003D8520 File Offset: 0x003D6920

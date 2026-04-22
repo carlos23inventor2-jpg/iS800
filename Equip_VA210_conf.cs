@@ -1370,8 +1370,8 @@ namespace iS800
 		// Token: 0x06002495 RID: 9365 RVA: 0x0040D080 File Offset: 0x0040B480
 		private void VScroll_num_grupo_Scroll(object sender, ScrollEventArgs e)
 		{
-			this.Valor_num_grupo.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
-			this.Habilita_grupos(Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			this.Valor_num_grupo.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(null));
+			this.Habilita_grupos(Conversions.ToInteger(null));
 		}
 
 		// Token: 0x06002496 RID: 9366 RVA: 0x0040D0D8 File Offset: 0x0040B4D8

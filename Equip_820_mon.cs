@@ -2864,7 +2864,7 @@ namespace iS800
 		// Token: 0x060010FD RID: 4349 RVA: 0x00314430 File Offset: 0x00312830
 		private void Tela_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Mestre = 0;
 			this.Inicializa_tela_equipamento_MD202_mon();
 		}
 
@@ -2881,7 +2881,7 @@ namespace iS800
 		// Token: 0x060010FF RID: 4351 RVA: 0x00314490 File Offset: 0x00312890
 		private void Tela_endereco_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Estacao = 0;
 			this.Inicializa_tela_equipamento_MD202_mon();
 		}
 
@@ -3069,13 +3069,13 @@ namespace iS800
 		// Token: 0x06001117 RID: 4375 RVA: 0x003147E0 File Offset: 0x00312BE0
 		private void Tela_nivel_origem_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Nivel_origem = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Nivel_origem = 0;
 		}
 
 		// Token: 0x06001118 RID: 4376 RVA: 0x00314808 File Offset: 0x00312C08
 		private void Tela_nivel_destino_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Nivel_dest = 0;
 		}
 
 		// Token: 0x06001119 RID: 4377 RVA: 0x00314830 File Offset: 0x00312C30
@@ -3239,7 +3239,7 @@ namespace iS800
 		private void Comando_hab_monitoracao_Click(object sender, EventArgs e)
 		{
 			this.Grupo_medidas.Enabled = true;
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null), "Iniciar", false))
+			if (Operators.ConditionalCompareObjectEqual(null, "Iniciar", false))
 			{
 				if (!Geral.Config_geral.Porta_serial_Ok)
 				{
@@ -3248,11 +3248,7 @@ namespace iS800
 				}
 				if (Mod_MD.Monitoracao_MD_RQ.Estacao > 0 & Mod_MD.Monitoracao_MD_RQ.Estacao <= 200)
 				{
-					NewLateBinding.LateSet(sender, null, "text", new object[]
-					{
-						"Parar"
-					}, null, null);
-					this.Mensagem_MD202_mon("Monitoração Ativada", 2);
+										this.Mensagem_MD202_mon("Monitoração Ativada", 2);
 					Mod_MD.Monitoracao_MD_RQ.Controle_mon = 2;
 					Mod_MD.Monitoracao_MD_RQ.Partir_mon = true;
 					this.Timer_monitoracao.Interval = 1;
@@ -3273,11 +3269,7 @@ namespace iS800
 			}
 			else
 			{
-				NewLateBinding.LateSet(sender, null, "text", new object[]
-				{
-					"Iniciar"
-				}, null, null);
-				this.Mensagem_MD202_mon("Monitoração desativada", 2);
+								this.Mensagem_MD202_mon("Monitoração desativada", 2);
 				Mod_MD.Monitoracao_MD_RQ.Partir_mon = false;
 				this.Timer_monitoracao.Enabled = false;
 				this.Grupo_setpoints.Enabled = false;

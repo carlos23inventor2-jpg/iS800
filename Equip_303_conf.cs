@@ -1029,38 +1029,38 @@ namespace iS800
 		// Token: 0x060022F5 RID: 8949 RVA: 0x00401CF8 File Offset: 0x004000F8
 		private void Valor_endereco_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Endereco_mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Endereco_mestre = 0;
 		}
 
 		// Token: 0x060022F6 RID: 8950 RVA: 0x00401D20 File Offset: 0x00400120
 		private void Valor_endereco_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Endereco_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Endereco_estacao = 0;
 		}
 
 		// Token: 0x060022F7 RID: 8951 RVA: 0x00401D48 File Offset: 0x00400148
 		private void Valor_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10));
+			Mod_MD.Central_303_geral.Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(null, 10));
 		}
 
 		// Token: 0x060022F8 RID: 8952 RVA: 0x00401D7C File Offset: 0x0040017C
 		private void Combo_baudrate_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Baud_rate_com2 = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21849));
+			Mod_MD.Central_303_geral.Baud_rate_com2 = Conversions.ToInteger(Operators.AddObject(null, 21849));
 		}
 
 		// Token: 0x060022F9 RID: 8953 RVA: 0x00401DB4 File Offset: 0x004001B4
 		private void Valor_num_res_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Qtd_equip_res = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Qtd_equip_res = 0;
 			this.Atualiza_dados_re_303(Mod_MD.Central_303_geral.Qtd_equip_res);
 		}
 
 		// Token: 0x060022FA RID: 8954 RVA: 0x00401DEC File Offset: 0x004001EC
 		private void Valor_num_rq_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Qdt_equip_rq = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Qdt_equip_rq = 0;
 			this.Atualiza_dados_rq_303(Mod_MD.Central_303_geral.Qdt_equip_rq);
 		}
 
@@ -1792,7 +1792,7 @@ namespace iS800
 		// Token: 0x06002307 RID: 8967 RVA: 0x004034BC File Offset: 0x004018BC
 		private void Valor_NumericUpDown_senha_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_303_geral.Senha = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_303_geral.Senha = 0;
 		}
 
 		// Token: 0x06002308 RID: 8968 RVA: 0x004034E4 File Offset: 0x004018E4

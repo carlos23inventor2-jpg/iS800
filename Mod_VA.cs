@@ -112,16 +112,14 @@ namespace iS800
 		{
 			checked
 			{
-				Mod_VA.Operacao_VA220.relogio = Conversions.ToDate(string.Concat(new string[]
-				{
+				Mod_VA.Operacao_VA220.relogio = Conversions.ToDate(string.Concat(new string[] 				{
 					Strings.Format((int)(Comunicacao.Buffer_resp[6] - 48), "00"),
 					"/",
 					Strings.Format((int)(Comunicacao.Buffer_resp[5] - 48), "00"),
 					"/",
 					Strings.Format((int)(Comunicacao.Buffer_resp[4] - 48), "00")
 				}));
-				Mod_VA.Operacao_VA220.relogio = Conversions.ToDate(string.Concat(new string[]
-				{
+				Mod_VA.Operacao_VA220.relogio = Conversions.ToDate(string.Concat(new string[] 				{
 					Conversions.ToString(Mod_VA.Operacao_VA220.relogio),
 					" ",
 					Strings.Format((int)(Comunicacao.Buffer_resp[8] - 48), "00"),
@@ -456,10 +454,10 @@ namespace iS800
 			}
 			checked
 			{
-				dados[1] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_liga)) * 2;
-				dados[2] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_liga)) * 2;
-				dados[3] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_Desliga)) * 2;
-				dados[4] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_Desliga)) * 2;
+				dados[1] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_liga));
+				dados[2] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_liga));
+				dados[3] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_Desliga));
+				dados[4] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Ponta_Desliga));
 			}
 		}
 
@@ -489,22 +487,22 @@ namespace iS800
 			dados[0] = bomba;
 			checked
 			{
-				dados[1] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 1])) * 2;
-				dados[2] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 1])) * 2;
-				dados[3] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 1])) * 2;
-				dados[4] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 1])) * 2;
-				dados[5] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 2])) * 2;
-				dados[6] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 2])) * 2;
-				dados[7] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 2])) * 2;
-				dados[8] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 2])) * 2;
-				dados[9] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 3])) * 2;
-				dados[10] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 3])) * 2;
-				dados[11] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 3])) * 2;
-				dados[12] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 3])) * 2;
-				dados[13] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 4])) * 2;
-				dados[14] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 4])) * 2;
-				dados[15] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 4])) * 2;
-				dados[16] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 4])) * 2;
+				dados[1] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 1]));
+				dados[2] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 1]));
+				dados[3] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 1]));
+				dados[4] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 1]));
+				dados[5] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 2]));
+				dados[6] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 2]));
+				dados[7] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 2]));
+				dados[8] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 2]));
+				dados[9] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 3]));
+				dados[10] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 3]));
+				dados[11] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 3]));
+				dados[12] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 3]));
+				dados[13] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 4]));
+				dados[14] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_liga[bomba, 4]));
+				dados[15] = DateAndTime.Hour(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 4]));
+				dados[16] = DateAndTime.Minute(Conversions.ToDate(Mod_VA.Operacao_VA220.Timer_desliga[bomba, 4]));
 			}
 		}
 

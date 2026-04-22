@@ -2244,73 +2244,73 @@ namespace iS800
 		// Token: 0x060023B2 RID: 9138 RVA: 0x004093C4 File Offset: 0x004077C4
 		private void Valor_interface_timeout_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.InterfaceTimeout = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.InterfaceTimeout = 0;
 		}
 
 		// Token: 0x060023B3 RID: 9139 RVA: 0x004093EC File Offset: 0x004077EC
 		private void Valor_packed_size_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.RFPacketSize = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.RFPacketSize = 0;
 		}
 
 		// Token: 0x060023B4 RID: 9140 RVA: 0x00409414 File Offset: 0x00407814
 		private void Valor_cts_on_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.CTSOn = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.CTSOn = 0;
 		}
 
 		// Token: 0x060023B5 RID: 9141 RVA: 0x0040943C File Offset: 0x0040783C
 		private void Valor_cts_on_hysteresis_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.CTSOnHysteresis = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.CTSOnHysteresis = 0;
 		}
 
 		// Token: 0x060023B6 RID: 9142 RVA: 0x00409464 File Offset: 0x00407864
 		private void Valor_transmit_retries_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.TransmitRetries = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.TransmitRetries = 0;
 		}
 
 		// Token: 0x060023B7 RID: 9143 RVA: 0x0040948C File Offset: 0x0040788C
 		private void Valor_Broadcast_Attempts_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.BroadcastAttempts = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.BroadcastAttempts = 0;
 		}
 
 		// Token: 0x060023B8 RID: 9144 RVA: 0x004094B4 File Offset: 0x004078B4
 		private void Valor_Stop_Bit_Delay_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.StopBitDelay = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.StopBitDelay = 0;
 		}
 
 		// Token: 0x060023B9 RID: 9145 RVA: 0x004094DC File Offset: 0x004078DC
 		private void Valor_Range_Refresh_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.RangeRefresh = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.RangeRefresh = 0;
 		}
 
 		// Token: 0x060023BA RID: 9146 RVA: 0x00409504 File Offset: 0x00407904
 		private void Combo_mode_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.ModemMode = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 1));
+			Mod_MD.Parametros_590.ModemMode = Conversions.ToInteger(Operators.AddObject(null, 1));
 		}
 
 		// Token: 0x060023BB RID: 9147 RVA: 0x00409538 File Offset: 0x00407938
 		private void Valor_RF_Channel_Number_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.RFChannelNumber = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.RFChannelNumber = 0;
 		}
 
 		// Token: 0x060023BC RID: 9148 RVA: 0x00409560 File Offset: 0x00407960
 		private void Valor_Sync_to_Channel_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.SyncToChannel = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.SyncToChannel = 0;
 		}
 
 		// Token: 0x060023BD RID: 9149 RVA: 0x00409588 File Offset: 0x00407988
 		private void Combo_max_power_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			object obj = NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null);
+			object obj = null;
 			if (Operators.ConditionalCompareObjectEqual(obj, 3, false))
 			{
 				Mod_MD.Parametros_590.MaxPower = 15;
@@ -2336,13 +2336,13 @@ namespace iS800
 		// Token: 0x060023BE RID: 9150 RVA: 0x0040962C File Offset: 0x00407A2C
 		private void Valor_System_ID_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Parametros_590.SystemID = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Parametros_590.SystemID = 0;
 		}
 
 		// Token: 0x060023BF RID: 9151 RVA: 0x00409654 File Offset: 0x00407A54
 		private void Combo_baudrate_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			object obj = NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null);
+			object obj = null;
 			if (Operators.ConditionalCompareObjectEqual(obj, 0, false))
 			{
 				Mod_MD.Parametros_590.InterfaceBaud = 64;
@@ -2466,7 +2466,7 @@ namespace iS800
 		// Token: 0x060023CD RID: 9165 RVA: 0x00409930 File Offset: 0x00407D30
 		private void Check_auto_config_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2474,7 +2474,7 @@ namespace iS800
 		// Token: 0x060023CE RID: 9166 RVA: 0x00409958 File Offset: 0x00407D58
 		private void Check_full_duplex_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2482,7 +2482,7 @@ namespace iS800
 		// Token: 0x060023CF RID: 9167 RVA: 0x00409980 File Offset: 0x00407D80
 		private void Check_des_enabled_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2490,7 +2490,7 @@ namespace iS800
 		// Token: 0x060023D0 RID: 9168 RVA: 0x004099A8 File Offset: 0x00407DA8
 		private void Check_auto_destination_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2498,7 +2498,7 @@ namespace iS800
 		// Token: 0x060023D1 RID: 9169 RVA: 0x004099D0 File Offset: 0x00407DD0
 		private void Check_broadcast_mode_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2506,7 +2506,7 @@ namespace iS800
 		// Token: 0x060023D2 RID: 9170 RVA: 0x004099F8 File Offset: 0x00407DF8
 		private void Check_unicast_only_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2514,7 +2514,7 @@ namespace iS800
 		// Token: 0x060023D3 RID: 9171 RVA: 0x00409A20 File Offset: 0x00407E20
 		private void Check_auto_channel_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2522,7 +2522,7 @@ namespace iS800
 		// Token: 0x060023D4 RID: 9172 RVA: 0x00409A48 File Offset: 0x00407E48
 		private void Check_sync_channel_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Parametros_590.SyncToChannel = -1;
 			}
@@ -2535,7 +2535,7 @@ namespace iS800
 		// Token: 0x060023D5 RID: 9173 RVA: 0x00409A88 File Offset: 0x00407E88
 		private void Check_beacon_mode_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2543,7 +2543,7 @@ namespace iS800
 		// Token: 0x060023D6 RID: 9174 RVA: 0x00409AB0 File Offset: 0x00407EB0
 		private void Check_rts_enable_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2551,7 +2551,7 @@ namespace iS800
 		// Token: 0x060023D7 RID: 9175 RVA: 0x00409AD8 File Offset: 0x00407ED8
 		private void Check_modem_mode_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Parametros_590.ModemMode = 227;
 			}
@@ -2564,7 +2564,7 @@ namespace iS800
 		// Token: 0x060023D8 RID: 9176 RVA: 0x00409B28 File Offset: 0x00407F28
 		private void Check_485dere_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Parametros_590.RS485DERE = 227;
 			}
@@ -2577,7 +2577,7 @@ namespace iS800
 		// Token: 0x060023D9 RID: 9177 RVA: 0x00409B78 File Offset: 0x00407F78
 		private void Check_protocol_status_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Parametros_590.ProtocolStatus = 227;
 			}
@@ -2590,7 +2590,7 @@ namespace iS800
 		// Token: 0x060023DA RID: 9178 RVA: 0x00409BC8 File Offset: 0x00407FC8
 		private void Check_parity_mode_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Parametros_590.ParityMode = 227;
 			}
@@ -2603,7 +2603,7 @@ namespace iS800
 		// Token: 0x060023DB RID: 9179 RVA: 0x00409C18 File Offset: 0x00408018
 		private void Check_receive_api_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Parametros_590.ReceiveAPI = 227;
 			}
@@ -2616,7 +2616,7 @@ namespace iS800
 		// Token: 0x060023DC RID: 9180 RVA: 0x00409C68 File Offset: 0x00408068
 		private void Check_enhanced_api_enabled_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2624,7 +2624,7 @@ namespace iS800
 		// Token: 0x060023DD RID: 9181 RVA: 0x00409C90 File Offset: 0x00408090
 		private void Check_transmit_api_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2632,7 +2632,7 @@ namespace iS800
 		// Token: 0x060023DE RID: 9182 RVA: 0x00409CB8 File Offset: 0x004080B8
 		private void Check_enhanced_receive_api_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2640,7 +2640,7 @@ namespace iS800
 		// Token: 0x060023DF RID: 9183 RVA: 0x00409CE0 File Offset: 0x004080E0
 		private void Check_send_data_complete_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2648,7 +2648,7 @@ namespace iS800
 		// Token: 0x060023E0 RID: 9184 RVA: 0x00409D08 File Offset: 0x00408108
 		private void Check_auto_calibrate_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2656,7 +2656,7 @@ namespace iS800
 		// Token: 0x060023E1 RID: 9185 RVA: 0x00409D30 File Offset: 0x00408130
 		private void Check_485_modem_mode_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}
@@ -2664,7 +2664,7 @@ namespace iS800
 		// Token: 0x060023E2 RID: 9186 RVA: 0x00409D58 File Offset: 0x00408158
 		private void Check_cmd_data_disable_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 			}
 		}

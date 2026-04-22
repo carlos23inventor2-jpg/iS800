@@ -1,187 +1,94 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using System.Text;
-using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace iS800
 {
-	// Token: 0x0200003D RID: 61
-	public class IniFile
-	{
-		// Token: 0x06000ECB RID: 3787
-		[DllImport("kernel32.dll", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "GetPrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
-		private static extern int GetPrivateProfileString([MarshalAs(34)] ref string AppName, [MarshalAs(34)] ref string KeyName, [MarshalAs(34)] ref string DefVal, StringBuilder RetVal, int Size, [MarshalAs(34)] ref string FileName);
+    public class IniFile
+    {
+        private string _path;
+        private Dictionary<string, Dictionary<string, string>> _data =
+            new Dictionary<string, Dictionary<string, string>>(StringComparer.OrdinalIgnoreCase);
 
-		// Token: 0x06000ECC RID: 3788
-		[DllImport("kernel32.dll", CharSet = (System.Runtime.InteropServices.CharSet)2, EntryPoint = "WritePrivateProfileStringA", ExactSpelling = true, SetLastError = true)]
-		private static extern int WritePrivateProfileString([MarshalAs(34)] ref string AppName, [MarshalAs(34)] ref string KeyName, [MarshalAs(34)] ref string Value, [MarshalAs(34)] ref string FileName);
+        public IniFile(string path)
+        {
+            _path = path;
+            if (File.Exists(path)) Load();
+        }
 
-		// Token: 0x06000ECD RID: 3789 RVA: 0x0022B444 File Offset: 0x00229844
-		public IniFile(string FileName)
-		{
-			this.ArquivoLogEscrita = ".\\LogW";
-			this.ArquivoLogLeitura = ".\\LogR";
-			this.AtivaLogEscrita = false;
-			this.AtivaLogLeitura = false;
-			this.IniFileName = FileName;
-		}
+        private void Load()
+        {
+            string section = "";
+            foreach (var line in File.ReadAllLines(_path, Encoding.UTF8))
+            {
+                var l = line.Trim();
+                if (l.StartsWith("[") && l.EndsWith("]"))
+                {
+                    section = l.Substring(1, l.Length - 2);
+                    if (!_data.ContainsKey(section))
+                        _data[section] = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                }
+                else if (l.Contains("=") && !l.StartsWith(";"))
+                {
+                    int idx = l.IndexOf('=');
+                    string key = l.Substring(0, idx).Trim();
+                    string val = l.Substring(idx + 1).Trim();
+                    if (!string.IsNullOrEmpty(section))
+                        _data[section][key] = val;
+                }
+            }
+        }
 
-		// Token: 0x06000ECE RID: 3790 RVA: 0x0022B478 File Offset: 0x00229878
-		public string ReadText(string Section, string Key, string DefValue)
-		{
-			StringBuilder stringBuilder = new StringBuilder(255);
-			object obj = IniFile.GetPrivateProfileString(ref Section, ref Key, ref DefValue, stringBuilder, 255, ref this.IniFileName);
-			string text = stringBuilder.ToString();
-			if (this.AtivaLogLeitura)
-			{
-				StreamWriter streamWriter;
-				if (File.Exists(this.ArquivoLogLeitura))
-				{
-					streamWriter = File.AppendText(this.ArquivoLogLeitura);
-				}
-				else
-				{
-					streamWriter = File.CreateText(this.ArquivoLogLeitura);
-				}
-				object ex = string.Format("[{0}] {1} = {2}", Section, Key, text);
-				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(ex));
-				streamWriter.Flush();
-				streamWriter.Close();
-			}
-			return Strings.Trim(Conversions.ToString(this.DecodeUTF8(text)));
-		}
+        private void Save()
+        {
+            var sb = new StringBuilder();
+            foreach (var sec in _data)
+            {
+                sb.AppendLine("[" + sec.Key + "]");
+                foreach (var kv in sec.Value)
+                    sb.AppendLine(kv.Key + "=" + kv.Value);
+                sb.AppendLine();
+            }
+            File.WriteAllText(_path, sb.ToString(), Encoding.UTF8);
+        }
 
-		// Token: 0x06000ECF RID: 3791 RVA: 0x0022B524 File Offset: 0x00229924
-		public object DecodeUTF8(object s)
-		{
-			s = Operators.ConcatenateObject(s, " ");
-			object obj = 1;
-			while (Operators.ConditionalCompareObjectLessEqual(obj, Strings.Len(RuntimeHelpers.GetObjectValue(s)), false))
-			{
-				object ex = Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(obj), 1));
-				if (Conversions.ToBoolean(Operators.AndObject(ex, 128)))
-				{
-					object obj3 = 1;
-					while (Operators.ConditionalCompareObjectLess(Operators.AddObject(obj, obj3), Strings.Len(RuntimeHelpers.GetObjectValue(s)), false) && (Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)), 1)) & 192) == 128)
-					{
-						obj3 = Operators.AddObject(obj3, 1);
-					}
-					if (Conversions.ToBoolean(Operators.AndObject(Operators.CompareObjectEqual(obj3, 2, false), Operators.CompareObjectEqual(Operators.AndObject(ex, 224), 192, false))))
-					{
-						ex = Operators.AddObject(Strings.Asc(Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, 1)), 1)), Operators.MultiplyObject(64, Operators.AndObject(ex, 1)));
-					}
-					else
-					{
-						ex = 191;
-					}
-					s = Strings.Left(Conversions.ToString(s), Conversions.ToInteger(Operators.SubtractObject(obj, 1))) + Conversions.ToString(Strings.Chr(Conversions.ToInteger(ex))) + Strings.Mid(Conversions.ToString(s), Conversions.ToInteger(Operators.AddObject(obj, obj3)));
-				}
-				obj = Operators.AddObject(obj, 1);
-			}
-			return RuntimeHelpers.GetObjectValue(s);
-		}
+        public string ReadString(string section, string key, string def)
+        {
+            if (_data.TryGetValue(section, out var s) && s.TryGetValue(key, out var v))
+                return v;
+            return def;
+        }
 
-		// Token: 0x06000ED0 RID: 3792 RVA: 0x0022B6E8 File Offset: 0x00229AE8
-		public int ReadInteger(string Section, string Key, int DefValue)
-		{
-			StringBuilder stringBuilder = new StringBuilder(255);
-			string text = Conversions.ToString(DefValue);
-			object obj = IniFile.GetPrivateProfileString(ref Section, ref Key, ref text, stringBuilder, 255, ref this.IniFileName);
-			if (this.AtivaLogLeitura)
-			{
-				StreamWriter streamWriter;
-				if (File.Exists(this.ArquivoLogLeitura))
-				{
-					streamWriter = File.AppendText(this.ArquivoLogLeitura);
-				}
-				else
-				{
-					streamWriter = File.CreateText(this.ArquivoLogLeitura);
-				}
-				object ex = string.Format("[{0}] {1} = {2}", Section, Key, stringBuilder.ToString());
-				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(ex));
-				streamWriter.Flush();
-				streamWriter.Close();
-			}
-			return Convert.ToInt32(stringBuilder.ToString());
-		}
 
-		// Token: 0x06000ED1 RID: 3793 RVA: 0x0022B78C File Offset: 0x00229B8C
-		public void WriteText(string Section, string Key, string Value)
-		{
-			IniFile.WritePrivateProfileString(ref Section, ref Key, ref Value, ref this.IniFileName);
-			if (this.AtivaLogEscrita)
-			{
-				StreamWriter streamWriter;
-				if (File.Exists(this.ArquivoLogEscrita))
-				{
-					streamWriter = File.AppendText(this.ArquivoLogEscrita);
-				}
-				else
-				{
-					streamWriter = File.CreateText(this.ArquivoLogEscrita);
-				}
-				object obj = string.Format("[{0}] {1} = {2}", Section, Key, Value);
-				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(obj));
-				streamWriter.Flush();
-				streamWriter.Close();
-			}
-		}
+        public string ReadText(string section, string key, string def)
+            => ReadString(section, key, def);
+        public int ReadInteger(string section, string key, int def)
+        {
+            string v = ReadString(section, key, null);
+            if (v != null && int.TryParse(v, out int r)) return r;
+            return def;
+        }
 
-		// Token: 0x06000ED2 RID: 3794 RVA: 0x0022B800 File Offset: 0x00229C00
-		public void WriteInteger(string Section, string Key, int Value)
-		{
-			string text = Value.ToString();
-			IniFile.WritePrivateProfileString(ref Section, ref Key, ref text, ref this.IniFileName);
-			if (this.AtivaLogEscrita)
-			{
-				StreamWriter streamWriter;
-				if (File.Exists(this.ArquivoLogEscrita))
-				{
-					streamWriter = File.AppendText(this.ArquivoLogEscrita);
-				}
-				else
-				{
-					streamWriter = File.CreateText(this.ArquivoLogEscrita);
-				}
-				object obj = string.Format("[{0}] {1} = {2}", Section, Key, Value);
-				streamWriter.WriteLine(RuntimeHelpers.GetObjectValue(obj));
-				streamWriter.Flush();
-				streamWriter.Close();
-			}
-		}
+        public bool ReadBool(string section, string key, bool def)
+        {
+            string v = ReadString(section, key, null);
+            if (v == null) return def;
+            return v == "1" || v.Equals("true", StringComparison.OrdinalIgnoreCase);
+        }
 
-		// Token: 0x06000ED3 RID: 3795 RVA: 0x0022B884 File Offset: 0x00229C84
-		public void RemoveSection(string Section)
-		{
-			string text = null;
-			string text2 = null;
-			IniFile.WritePrivateProfileString(ref Section, ref text, ref text2, ref this.IniFileName);
-		}
+        public void WriteString(string section, string key, string value)
+        {
+            if (!_data.ContainsKey(section))
+                _data[section] = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            _data[section][key] = value;
+            Save();
+        }
 
-		// Token: 0x06000ED4 RID: 3796 RVA: 0x0022B8A8 File Offset: 0x00229CA8
-		public void RemoveKey(string Section, string Key)
-		{
-			string text = null;
-			IniFile.WritePrivateProfileString(ref Section, ref Key, ref text, ref this.IniFileName);
-		}
+        public void WriteInteger(string section, string key, int value)
+            => WriteString(section, key, value.ToString());
 
-		// Token: 0x04000858 RID: 2136
-		private string IniFileName;
-
-		// Token: 0x04000859 RID: 2137
-		private string ArquivoLogEscrita;
-
-		// Token: 0x0400085A RID: 2138
-		private string ArquivoLogLeitura;
-
-		// Token: 0x0400085B RID: 2139
-		private bool AtivaLogEscrita;
-
-		// Token: 0x0400085C RID: 2140
-		private bool AtivaLogLeitura;
-	}
+        public void WriteBool(string section, string key, bool value)
+            => WriteString(section, key, value ? "1" : "0");
+    }
 }

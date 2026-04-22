@@ -7079,7 +7079,6 @@ namespace iS800
 										IL_1353:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_1382:
 				if (num7 != 0)
 				{
@@ -7183,7 +7182,7 @@ namespace iS800
 		// Token: 0x06000798 RID: 1944 RVA: 0x002AFB30 File Offset: 0x002ADF30
 		private void NumericUpDown_end_rep_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.repetidora.End_repetidora.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.repetidora.End_repetidora, true);
 			sender = numericUpDown;
@@ -7192,12 +7191,12 @@ namespace iS800
 		// Token: 0x06000799 RID: 1945 RVA: 0x002AFB90 File Offset: 0x002ADF90
 		private void NumericUpDown_num_est_rep_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.repetidora.Num_repetidoras.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.repetidora.Num_repetidoras, true);
 			sender = numericUpDown;
 			int num = 0;
-			int num2 = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			int num2 = 0;
 			checked
 			{
 				for (int i = num; i <= num2; i++)
@@ -7266,7 +7265,7 @@ namespace iS800
 						break;
 					}
 				}
-				for (int i = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)); i <= 49; i++)
+				for (int i = 0; i <= 49; i++)
 				{
 					switch (i)
 					{
@@ -7343,7 +7342,7 @@ namespace iS800
 		// Token: 0x0600079A RID: 1946 RVA: 0x002B0048 File Offset: 0x002AE448
 		private void NumericUpDown_intervalo_filtro_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.AD_Intervalo, true);
 			sender = numericUpDown;
@@ -7352,7 +7351,7 @@ namespace iS800
 		// Token: 0x0600079B RID: 1947 RVA: 0x002B00A8 File Offset: 0x002AE4A8
 		private void NumericUpDown_tamanho_filtro_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.AD_Tamanho_filtro, true);
 			sender = numericUpDown;
@@ -7424,7 +7423,7 @@ namespace iS800
 		// Token: 0x060007A0 RID: 1952 RVA: 0x002B029C File Offset: 0x002AE69C
 		private void NumericUpDown_end_mestre_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.End_mestre.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.End_mestre, true);
 			sender = numericUpDown;
@@ -7433,7 +7432,7 @@ namespace iS800
 		// Token: 0x060007A1 RID: 1953 RVA: 0x002B02FC File Offset: 0x002AE6FC
 		private void NumericUpDown_end_est_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.End_estacao.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.End_estacao, true);
 			sender = numericUpDown;
@@ -7442,12 +7441,8 @@ namespace iS800
 		// Token: 0x060007A2 RID: 1954 RVA: 0x002B035C File Offset: 0x002AE75C
 		private void NumericUpDown_temp_ptt_820_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10), 10));
-			NewLateBinding.LateSet(sender, null, "value", new object[]
-			{
-				RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor
-			}, null, null);
-			NumericUpDown numericUpDown = (NumericUpDown)sender;
+			RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt.Valor = Conversions.ToInteger(Operators.MultiplyObject(Operators.IntDivideObject(((NumericUpDown)sender).Value, 10), 10));
+						NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.cfg_geral.Tempo_ptt, true);
 			sender = numericUpDown;
 		}
@@ -7455,7 +7450,7 @@ namespace iS800
 		// Token: 0x060007A3 RID: 1955 RVA: 0x002B0404 File Offset: 0x002AE804
 		private void ComboBox_baudrate_COM2_820_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Valor = RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.valores[RT_geral.RT_820_200_BD.cfg_geral.BaudRateCOM2.Indice];
 		}
 
@@ -7464,7 +7459,7 @@ namespace iS800
 		{
 			checked
 			{
-				if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null), true, false))
+				if (Operators.ConditionalCompareObjectEqual(null, true, false))
 				{
 					RT_geral.RT_820_BD.HabExpIO.Valor = 21857;
 					this.DataGridView_RT820_ED.Height = 376;
@@ -8016,7 +8011,6 @@ namespace iS800
 										IL_F00:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_F2F:
 				if (num3 != 0)
 				{
@@ -8250,7 +8244,6 @@ namespace iS800
 										IL_E2D:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_E5C:
 				if (num4 != 0)
 				{
@@ -8999,94 +8992,94 @@ namespace iS800
 		// Token: 0x060007D5 RID: 2005 RVA: 0x002B5404 File Offset: 0x002B3804
 		private void NumericUpDown22_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor2.Valor = 0;
 		}
 
 		// Token: 0x060007D6 RID: 2006 RVA: 0x002B543C File Offset: 0x002B383C
 		private void cb_modo_operacao_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.modo_operacao.AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007D7 RID: 2007 RVA: 0x002B548C File Offset: 0x002B388C
 		private void cb_Protecao_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.origem_protecao.AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007D8 RID: 2008 RVA: 0x002B54DC File Offset: 0x002B38DC
 		private void cb_Controle_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.origem_controle.AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007D9 RID: 2009 RVA: 0x002B552C File Offset: 0x002B392C
 		private void nud_motor1_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Alto.Valor = 0;
 		}
 
 		// Token: 0x060007DA RID: 2010 RVA: 0x002B5564 File Offset: 0x002B3964
 		private void nud_motor1_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M1_Baixo.Valor = 0;
 		}
 
 		// Token: 0x060007DB RID: 2011 RVA: 0x002B559C File Offset: 0x002B399C
 		private void nud_motor2_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Alto.Valor = 0;
 		}
 
 		// Token: 0x060007DC RID: 2012 RVA: 0x002B55D4 File Offset: 0x002B39D4
 		private void nud_motor2_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M2_Baixo.Valor = 0;
 		}
 
 		// Token: 0x060007DD RID: 2013 RVA: 0x002B560C File Offset: 0x002B3A0C
 		private void nud_motor3_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Alto.Valor = 0;
 		}
 
 		// Token: 0x060007DE RID: 2014 RVA: 0x002B5644 File Offset: 0x002B3A44
 		private void nud_motor3_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M3_Baixo.Valor = 0;
 		}
 
 		// Token: 0x060007DF RID: 2015 RVA: 0x002B567C File Offset: 0x002B3A7C
 		private void nud_motor4_alto_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Alto.Valor = 0;
 		}
 
 		// Token: 0x060007E0 RID: 2016 RVA: 0x002B56B4 File Offset: 0x002B3AB4
 		private void nud_motor4_baixo_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.M4_Baixo.Valor = 0;
 		}
 
 		// Token: 0x060007E1 RID: 2017 RVA: 0x002B56EC File Offset: 0x002B3AEC
 		private void nud_protecao_desliga_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Desliga.Valor = 0;
 		}
 
 		// Token: 0x060007E2 RID: 2018 RVA: 0x002B5724 File Offset: 0x002B3B24
 		private void nud_protecao_liga_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.setpoints.Protecao_Liga.Valor = 0;
 		}
 
 		// Token: 0x060007E3 RID: 2019 RVA: 0x002B575C File Offset: 0x002B3B5C
 		private void nud_numero_motores_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.quantidade_motores.Valor = 0;
 			this.cb_modo_partida1.Enabled = false;
 			this.nud_partida1.Enabled = false;
 			this.nud_parada1.Enabled = false;
@@ -9099,7 +9092,7 @@ namespace iS800
 			this.cb_modo_partida4.Enabled = false;
 			this.nud_partida4.Enabled = false;
 			this.nud_parada4.Enabled = false;
-			object obj = NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null);
+			object obj = null;
 			if (Operators.ConditionalCompareObjectEqual(obj, 1, false))
 			{
 				this.cb_modo_partida1.Enabled = true;
@@ -9147,7 +9140,7 @@ namespace iS800
 		// Token: 0x060007E4 RID: 2020 RVA: 0x002B59F4 File Offset: 0x002B3DF4
 		private void nud_numero_valvulas_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.quantidade_valvulas.Valor = 0;
 			this.nud_valvula1_abertura.Enabled = false;
 			this.nud_valvula1_fechamento.Enabled = false;
 			this.nud_valvula2_abertura.Enabled = false;
@@ -9156,7 +9149,7 @@ namespace iS800
 			this.nud_valvula3_fechamento.Enabled = false;
 			this.nud_valvula4_abertura.Enabled = false;
 			this.nud_valvula4_fechamento.Enabled = false;
-			object obj = NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null);
+			object obj = null;
 			if (Operators.ConditionalCompareObjectEqual(obj, 1, false))
 			{
 				this.nud_valvula1_abertura.Enabled = true;
@@ -9194,137 +9187,137 @@ namespace iS800
 		// Token: 0x060007E5 RID: 2021 RVA: 0x002B5BE0 File Offset: 0x002B3FE0
 		private void nud_bombas_simultaneas_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.bombas_simultaneas.Valor = 0;
 		}
 
 		// Token: 0x060007E6 RID: 2022 RVA: 0x002B5C10 File Offset: 0x002B4010
 		private void nud_tempo_operacoes_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.tempo_acionamentos.Valor = 0;
 		}
 
 		// Token: 0x060007E7 RID: 2023 RVA: 0x002B5C40 File Offset: 0x002B4040
 		private void cb_modo_partida1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[0].Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[0].Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[0].AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007E8 RID: 2024 RVA: 0x002B5C9C File Offset: 0x002B409C
 		private void cb_modo_partida2_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[1].Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[1].Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[1].AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007E9 RID: 2025 RVA: 0x002B5CF8 File Offset: 0x002B40F8
 		private void cb_modo_partida3_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[2].Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[2].Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[2].AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007EA RID: 2026 RVA: 0x002B5D54 File Offset: 0x002B4154
 		private void cb_modo_partida4_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[3].Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "selectedindex", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[3].Indice = 0;
 			RT_geral.RT_820_200_BD.cfg_geral.modo_partida[3].AtualizaValorPeloIndice();
 		}
 
 		// Token: 0x060007EB RID: 2027 RVA: 0x002B5DB0 File Offset: 0x002B41B0
 		private void nud_partida1_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor1.Valor = 0;
 		}
 
 		// Token: 0x060007EC RID: 2028 RVA: 0x002B5DE8 File Offset: 0x002B41E8
 		private void nud_partida2_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor2.Valor = 0;
 		}
 
 		// Token: 0x060007ED RID: 2029 RVA: 0x002B5E20 File Offset: 0x002B4220
 		private void nud_partida3_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor3.Valor = 0;
 		}
 
 		// Token: 0x060007EE RID: 2030 RVA: 0x002B5E58 File Offset: 0x002B4258
 		private void nud_partida4_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.partida.Motor4.Valor = 0;
 		}
 
 		// Token: 0x060007EF RID: 2031 RVA: 0x002B5E90 File Offset: 0x002B4290
 		private void nud_parada1_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor1.Valor = 0;
 		}
 
 		// Token: 0x060007F0 RID: 2032 RVA: 0x002B5EC8 File Offset: 0x002B42C8
 		private void nud_parada3_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor3.Valor = 0;
 		}
 
 		// Token: 0x060007F1 RID: 2033 RVA: 0x002B5F00 File Offset: 0x002B4300
 		private void nud_parada4_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.parada.Motor4.Valor = 0;
 		}
 
 		// Token: 0x060007F2 RID: 2034 RVA: 0x002B5F38 File Offset: 0x002B4338
 		private void nud_valvula1_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula1.Valor = 0;
 		}
 
 		// Token: 0x060007F3 RID: 2035 RVA: 0x002B5F70 File Offset: 0x002B4370
 		private void nud_valvula2_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula2.Valor = 0;
 		}
 
 		// Token: 0x060007F4 RID: 2036 RVA: 0x002B5FA8 File Offset: 0x002B43A8
 		private void nud_valvula3_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula3.Valor = 0;
 		}
 
 		// Token: 0x060007F5 RID: 2037 RVA: 0x002B5FE0 File Offset: 0x002B43E0
 		private void nud_valvula4_abertura_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.abertura.Valvula4.Valor = 0;
 		}
 
 		// Token: 0x060007F6 RID: 2038 RVA: 0x002B6018 File Offset: 0x002B4418
 		private void nud_valvula1_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula1.Valor = 0;
 		}
 
 		// Token: 0x060007F7 RID: 2039 RVA: 0x002B6050 File Offset: 0x002B4450
 		private void nud_valvula2_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula2.Valor = 0;
 		}
 
 		// Token: 0x060007F8 RID: 2040 RVA: 0x002B6088 File Offset: 0x002B4488
 		private void nud_valvula3_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula3.Valor = 0;
 		}
 
 		// Token: 0x060007F9 RID: 2041 RVA: 0x002B60C0 File Offset: 0x002B44C0
 		private void nud_valvula4_fechamento_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.cfg_geral.fechamento.Valvula4.Valor = 0;
 		}
 
 		// Token: 0x060007FA RID: 2042 RVA: 0x002B60F8 File Offset: 0x002B44F8
 		private void sph_baixo10_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[0].Baixo, true);
 			sender = numericUpDown;
@@ -9333,7 +9326,7 @@ namespace iS800
 		// Token: 0x060007FB RID: 2043 RVA: 0x002B6164 File Offset: 0x002B4564
 		private void sph_baixo11_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[1].Baixo, true);
 			sender = numericUpDown;
@@ -9342,7 +9335,7 @@ namespace iS800
 		// Token: 0x060007FC RID: 2044 RVA: 0x002B61D0 File Offset: 0x002B45D0
 		private void sph_baixo20_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[2].Baixo, true);
 			sender = numericUpDown;
@@ -9351,7 +9344,7 @@ namespace iS800
 		// Token: 0x060007FD RID: 2045 RVA: 0x002B623C File Offset: 0x002B463C
 		private void sph_baixo21_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[3].Baixo, true);
 			sender = numericUpDown;
@@ -9360,7 +9353,7 @@ namespace iS800
 		// Token: 0x060007FE RID: 2046 RVA: 0x002B62A8 File Offset: 0x002B46A8
 		private void sph_baixo30_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[4].Baixo, true);
 			sender = numericUpDown;
@@ -9369,7 +9362,7 @@ namespace iS800
 		// Token: 0x060007FF RID: 2047 RVA: 0x002B6314 File Offset: 0x002B4714
 		private void sph_baixo31_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[5].Baixo, true);
 			sender = numericUpDown;
@@ -9378,7 +9371,7 @@ namespace iS800
 		// Token: 0x06000800 RID: 2048 RVA: 0x002B6380 File Offset: 0x002B4780
 		private void sph_baixo40_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[6].Baixo, true);
 			sender = numericUpDown;
@@ -9387,7 +9380,7 @@ namespace iS800
 		// Token: 0x06000801 RID: 2049 RVA: 0x002B63EC File Offset: 0x002B47EC
 		private void sph_baixo41_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[7].Baixo, true);
 			sender = numericUpDown;
@@ -9396,7 +9389,7 @@ namespace iS800
 		// Token: 0x06000802 RID: 2050 RVA: 0x002B6458 File Offset: 0x002B4858
 		private void sph_alto10_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[0].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[0].Alto, true);
 			sender = numericUpDown;
@@ -9405,7 +9398,7 @@ namespace iS800
 		// Token: 0x06000803 RID: 2051 RVA: 0x002B64C4 File Offset: 0x002B48C4
 		private void sph_alto11_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[1].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[1].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[1].Alto, true);
 			sender = numericUpDown;
@@ -9414,7 +9407,7 @@ namespace iS800
 		// Token: 0x06000804 RID: 2052 RVA: 0x002B6530 File Offset: 0x002B4930
 		private void sph_alto20_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[2].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[2].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[2].Alto, true);
 			sender = numericUpDown;
@@ -9423,7 +9416,7 @@ namespace iS800
 		// Token: 0x06000805 RID: 2053 RVA: 0x002B659C File Offset: 0x002B499C
 		private void sph_alto21_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[3].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[3].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[3].Alto, true);
 			sender = numericUpDown;
@@ -9432,7 +9425,7 @@ namespace iS800
 		// Token: 0x06000806 RID: 2054 RVA: 0x002B6608 File Offset: 0x002B4A08
 		private void sph_alto30_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[4].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[4].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[4].Alto, true);
 			sender = numericUpDown;
@@ -9441,7 +9434,7 @@ namespace iS800
 		// Token: 0x06000807 RID: 2055 RVA: 0x002B6674 File Offset: 0x002B4A74
 		private void sph_alto31_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[5].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[5].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[5].Alto, true);
 			sender = numericUpDown;
@@ -9450,7 +9443,7 @@ namespace iS800
 		// Token: 0x06000808 RID: 2056 RVA: 0x002B66E0 File Offset: 0x002B4AE0
 		private void sph_alto40_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[6].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[6].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[6].Alto, true);
 			sender = numericUpDown;
@@ -9459,7 +9452,7 @@ namespace iS800
 		// Token: 0x06000809 RID: 2057 RVA: 0x002B674C File Offset: 0x002B4B4C
 		private void sph_alto41_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[7].Alto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[7].Alto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[7].Alto, true);
 			sender = numericUpDown;
@@ -9468,7 +9461,7 @@ namespace iS800
 		// Token: 0x0600080A RID: 2058 RVA: 0x002B67B8 File Offset: 0x002B4BB8
 		private void sph_minuto10_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[0].Minuto, true);
 			sender = numericUpDown;
@@ -9477,7 +9470,7 @@ namespace iS800
 		// Token: 0x0600080B RID: 2059 RVA: 0x002B6824 File Offset: 0x002B4C24
 		private void sph_minuto11_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[1].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[1].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[1].Minuto, true);
 			sender = numericUpDown;
@@ -9486,7 +9479,7 @@ namespace iS800
 		// Token: 0x0600080C RID: 2060 RVA: 0x002B6890 File Offset: 0x002B4C90
 		private void sph_minuto20_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[2].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[2].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[2].Minuto, true);
 			sender = numericUpDown;
@@ -9495,7 +9488,7 @@ namespace iS800
 		// Token: 0x0600080D RID: 2061 RVA: 0x002B68FC File Offset: 0x002B4CFC
 		private void sph_minuto21_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[3].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[3].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[3].Minuto, true);
 			sender = numericUpDown;
@@ -9504,7 +9497,7 @@ namespace iS800
 		// Token: 0x0600080E RID: 2062 RVA: 0x002B6968 File Offset: 0x002B4D68
 		private void sph_minuto30_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[4].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[4].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[4].Minuto, true);
 			sender = numericUpDown;
@@ -9513,7 +9506,7 @@ namespace iS800
 		// Token: 0x0600080F RID: 2063 RVA: 0x002B69D4 File Offset: 0x002B4DD4
 		private void sph_minuto31_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[5].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[5].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[5].Minuto, true);
 			sender = numericUpDown;
@@ -9522,7 +9515,7 @@ namespace iS800
 		// Token: 0x06000810 RID: 2064 RVA: 0x002B6A40 File Offset: 0x002B4E40
 		private void sph_minuto40_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[6].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[6].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[6].Minuto, true);
 			sender = numericUpDown;
@@ -9531,7 +9524,7 @@ namespace iS800
 		// Token: 0x06000811 RID: 2065 RVA: 0x002B6AAC File Offset: 0x002B4EAC
 		private void sph_minuto41_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_820_200_BD.setpoint_horario[7].Minuto.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.RT_820_200_BD.setpoint_horario[7].Minuto.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.RT_820_200_BD.setpoint_horario[7].Minuto, true);
 			sender = numericUpDown;
@@ -9542,7 +9535,7 @@ namespace iS800
 		{
 			object obj = 0;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9558,7 +9551,7 @@ namespace iS800
 		{
 			object obj = 1;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9574,7 +9567,7 @@ namespace iS800
 		{
 			object obj = 2;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9590,7 +9583,7 @@ namespace iS800
 		{
 			object obj = 3;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9606,7 +9599,7 @@ namespace iS800
 		{
 			object obj = 4;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9622,7 +9615,7 @@ namespace iS800
 		{
 			object obj = 5;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9638,7 +9631,7 @@ namespace iS800
 		{
 			object obj = 6;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9654,7 +9647,7 @@ namespace iS800
 		{
 			object obj = 7;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor;
-			if (Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "checked", new object[0], null, null, null)))
+			if (Conversions.ToBoolean(null))
 			{
 				num |= 128;
 			}
@@ -9670,7 +9663,7 @@ namespace iS800
 		{
 			object obj = 0;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x0600081B RID: 2075 RVA: 0x002B6F98 File Offset: 0x002B5398
@@ -9678,7 +9671,7 @@ namespace iS800
 		{
 			object obj = 1;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x0600081C RID: 2076 RVA: 0x002B7018 File Offset: 0x002B5418
@@ -9686,7 +9679,7 @@ namespace iS800
 		{
 			object obj = 2;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x0600081D RID: 2077 RVA: 0x002B7098 File Offset: 0x002B5498
@@ -9694,7 +9687,7 @@ namespace iS800
 		{
 			object obj = 3;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x0600081E RID: 2078 RVA: 0x002B7118 File Offset: 0x002B5518
@@ -9702,7 +9695,7 @@ namespace iS800
 		{
 			object obj = 4;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x0600081F RID: 2079 RVA: 0x002B7198 File Offset: 0x002B5598
@@ -9710,7 +9703,7 @@ namespace iS800
 		{
 			object obj = 5;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x06000820 RID: 2080 RVA: 0x002B7218 File Offset: 0x002B5618
@@ -9718,7 +9711,7 @@ namespace iS800
 		{
 			object obj = 6;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x06000821 RID: 2081 RVA: 0x002B7298 File Offset: 0x002B5698
@@ -9726,7 +9719,7 @@ namespace iS800
 		{
 			object obj = 7;
 			int num = RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor & 128;
-			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			RT_geral.RT_820_200_BD.setpoint_horario[Conversions.ToInteger(obj)].Hora.Valor = Conversions.ToInteger(Operators.AddObject(num, null));
 		}
 
 		// Token: 0x0400050E RID: 1294

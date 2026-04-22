@@ -1626,7 +1626,6 @@ namespace iS800
 					if (num4 != 0)
 					{
 											}
-					throw ProjectData.CreateProjectError(-2146828268);
 					IL_3EA:
 					goto IL_579;
 					IL_3EF:
@@ -1644,7 +1643,6 @@ namespace iS800
 			}
 			catch (Exception) { }
 			IL_56E:
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_579:
 			if (num4 != 0)
 			{
@@ -2189,7 +2187,6 @@ namespace iS800
 					if (num4 != 0)
 					{
 											}
-					throw ProjectData.CreateProjectError(-2146828268);
 					IL_B76:
 					goto IL_EB7;
 					IL_B7B:
@@ -2207,7 +2204,6 @@ namespace iS800
 			}
 			catch (Exception) { }
 			IL_EAC:
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_EB7:
 			if (num4 != 0)
 			{
@@ -2230,7 +2226,7 @@ namespace iS800
 		// Token: 0x06001B8B RID: 7051 RVA: 0x003CA0A0 File Offset: 0x003C84A0
 		private void CheckBox_hab_rep_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), true, false))
+			if (Operators.ConditionalCompareObjectEqual(null, true, false))
 			{
 				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Hab_repetidora = 21856;
 			}
@@ -2244,21 +2240,21 @@ namespace iS800
 		// Token: 0x06001B8C RID: 7052 RVA: 0x003CA11C File Offset: 0x003C851C
 		private void Combo_modo_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Modo_operacao = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21846));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Modo_operacao = Conversions.ToInteger(Operators.AddObject(null, 21846));
 			this.Atualiza_tela_MD101_operacao(Mod_MD.Controle.Estacao);
 		}
 
 		// Token: 0x06001B8D RID: 7053 RVA: 0x003CA17C File Offset: 0x003C857C
 		private void Combo_nivel_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tipo_medida = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21872));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tipo_medida = Conversions.ToInteger(Operators.AddObject(null, 21872));
 			this.Atualiza_tela_MD101_medida(Mod_MD.Controle.Estacao);
 		}
 
 		// Token: 0x06001B8E RID: 7054 RVA: 0x003CA1DC File Offset: 0x003C85DC
 		private void VScrollBar1_Scroll(object sender, ScrollEventArgs e)
 		{
-			this.passo = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null));
+			this.passo = 0;
 			this.Atualiza_tela_MD101_repetidora_enderecos(Mod_MD.Controle.Estacao);
 		}
 
@@ -2631,75 +2627,75 @@ namespace iS800
 		// Token: 0x06001BA1 RID: 7073 RVA: 0x003CAB94 File Offset: 0x003C8F94
 		private void Valor_end_est_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].End_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].End_estacao = 0;
 		}
 
 		// Token: 0x06001BA2 RID: 7074 RVA: 0x003CABCC File Offset: 0x003C8FCC
 		private void Valor_end_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].End_mestre = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].End_mestre = 0;
 		}
 
 		// Token: 0x06001BA3 RID: 7075 RVA: 0x003CAC04 File Offset: 0x003C9004
 		private void Valor_int_tx_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tempo_tx_ponto = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tempo_tx_ponto = 0;
 		}
 
 		// Token: 0x06001BA4 RID: 7076 RVA: 0x003CAC3C File Offset: 0x003C903C
 		private void Valor_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(null, 10));
 		}
 
 		// Token: 0x06001BA5 RID: 7077 RVA: 0x003CAC88 File Offset: 0x003C9088
 		private void Sensor_range_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Range_sensor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Range_sensor = 0;
 		}
 
 		// Token: 0x06001BA6 RID: 7078 RVA: 0x003CACC0 File Offset: 0x003C90C0
 		private void Reservatorio_altura_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Altura_sensor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Altura_sensor = 0;
 		}
 
 		// Token: 0x06001BA7 RID: 7079 RVA: 0x003CACF8 File Offset: 0x003C90F8
 		private void Sensor_offset_ValueChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectLess(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 0, false))
+			if (Operators.ConditionalCompareObjectLess(null, 0, false))
 			{
-				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Offset_sensor = Conversions.ToInteger(Operators.SubtractObject(1000, NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Offset_sensor = Conversions.ToInteger(Operators.SubtractObject(1000, null));
 			}
 			else
 			{
-				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Offset_sensor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+				Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Offset_sensor = 0;
 			}
 		}
 
 		// Token: 0x06001BA8 RID: 7080 RVA: 0x003CADA0 File Offset: 0x003C91A0
 		private void Filtro_intervalo_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Intervalo_filtro = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Intervalo_filtro = Conversions.ToInteger(Operators.DivideObject(null, 10));
 		}
 
 		// Token: 0x06001BA9 RID: 7081 RVA: 0x003CADEC File Offset: 0x003C91EC
 		private void Filtro_tamanho_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tamanho_filtro = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Tamanho_filtro = 0;
 		}
 
 		// Token: 0x06001BAA RID: 7082 RVA: 0x003CAE24 File Offset: 0x003C9224
 		private void Valor_end_est_rep_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].End_repetidora = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].End_repetidora = 0;
 		}
 
 		// Token: 0x06001BAB RID: 7083 RVA: 0x003CAE5C File Offset: 0x003C925C
 		private void Valor_num_est_rep_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Num_repetidoras = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
-			this.Limpa_dados_repetidora_MD101(Mod_MD.Controle.Estacao, RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)));
+			Mod_MD.Reservatorio[Mod_MD.Controle.Estacao].Num_repetidoras = 0;
+			this.Limpa_dados_repetidora_MD101(Mod_MD.Controle.Estacao, RuntimeHelpers.GetObjectValue(null));
 			this.Atualiza_tela_MD101_repetidora_enderecos(Mod_MD.Controle.Estacao);
 		}
 

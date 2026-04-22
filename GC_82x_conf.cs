@@ -1394,7 +1394,6 @@ namespace iS800
 								IL_18C:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_1B9:
 			if (num2 != 0)
 			{
@@ -1545,7 +1544,7 @@ namespace iS800
 			string text = "FindStringExact";
 			object[] array = new object[]
 			{
-				RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null))
+				RuntimeHelpers.GetObjectValue(null)
 			};
 			object[] array2 = array;
 			string[] array3 = null;
@@ -1554,7 +1553,7 @@ namespace iS800
 			{
 				true
 			};
-			object obj = NewLateBinding.LateGet(sender, type, text, array2, array3, array4, array5);
+			object obj = null;
 			if (array5[0])
 			{
 				NewLateBinding.LateSetComplex(sender, null, "Text", new object[]
@@ -1564,12 +1563,8 @@ namespace iS800
 			}
 			if (Operators.ConditionalCompareObjectEqual(obj, -1, false))
 			{
-				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "ValueMember", new object[0], null, null, null))));
-				NewLateBinding.LateSet(sender, null, "SelectedIndex", new object[]
-				{
-					0
-				}, null, null);
-			}
+				Interaction.MsgBox("Opção digitada não existe!\r\nAssumindo Default!", (MsgBoxStyle)32, "Atenção - Entrada digital " + Conversion.Str(RuntimeHelpers.GetObjectValue(null)));
+							}
 		}
 
 		// Token: 0x06000CE6 RID: 3302 RVA: 0x002F864C File Offset: 0x002F6A4C
@@ -1585,7 +1580,7 @@ namespace iS800
 		// Token: 0x06000CE8 RID: 3304 RVA: 0x002F8654 File Offset: 0x002F6A54
 		private void NumericUpDown_end_mestre_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.End_mestre.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.End_mestre.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.End_mestre, true);
 			sender = numericUpDown;
@@ -1594,7 +1589,7 @@ namespace iS800
 		// Token: 0x06000CE9 RID: 3305 RVA: 0x002F86A8 File Offset: 0x002F6AA8
 		private void NumericUpDown_end_est_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.End_estacao.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.End_estacao.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.End_estacao, true);
 			sender = numericUpDown;
@@ -1873,7 +1868,6 @@ namespace iS800
 								IL_33C:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_36B:
 			if (num2 != 0)
 			{
@@ -1961,7 +1955,6 @@ namespace iS800
 								IL_381:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_3B0:
 			if (num2 != 0)
 			{
@@ -2222,7 +2215,7 @@ namespace iS800
 		// Token: 0x06000D17 RID: 3351 RVA: 0x002F993C File Offset: 0x002F7D3C
 		private void ComboBox_baudrate_COM1_810_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			RT_geral.RT_810_BD.BaudRateCOM1.Indice = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			RT_geral.RT_810_BD.BaudRateCOM1.Indice = 0;
 			RT_geral.RT_810_BD.BaudRateCOM1.AtualizaValorPeloIndice();
 		}
 
@@ -2239,7 +2232,7 @@ namespace iS800
 		// Token: 0x06000D1A RID: 3354 RVA: 0x002F9980 File Offset: 0x002F7D80
 		private void lmt_1_4mA_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_inferior1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_inferior1.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_inferior1, true);
 			sender = numericUpDown;
@@ -2248,7 +2241,7 @@ namespace iS800
 		// Token: 0x06000D1B RID: 3355 RVA: 0x002F99D4 File Offset: 0x002F7DD4
 		private void lmt_1_20mA_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_superior1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_superior1.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_superior1, true);
 			sender = numericUpDown;
@@ -2257,7 +2250,7 @@ namespace iS800
 		// Token: 0x06000D1C RID: 3356 RVA: 0x002F9A28 File Offset: 0x002F7E28
 		private void lmt_2_4mA_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_inferior2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_inferior2.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_inferior2, true);
 			sender = numericUpDown;
@@ -2266,7 +2259,7 @@ namespace iS800
 		// Token: 0x06000D1D RID: 3357 RVA: 0x002F9A7C File Offset: 0x002F7E7C
 		private void lmt_2_20mA_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_superior2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_superior2.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_superior2, true);
 			sender = numericUpDown;
@@ -2290,7 +2283,7 @@ namespace iS800
 		// Token: 0x06000D21 RID: 3361 RVA: 0x002F9ADC File Offset: 0x002F7EDC
 		private void lmt_1_4mA_ValueChanged_1(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_inferior1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_inferior1.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_inferior1, true);
 			sender = numericUpDown;
@@ -2299,7 +2292,7 @@ namespace iS800
 		// Token: 0x06000D22 RID: 3362 RVA: 0x002F9B30 File Offset: 0x002F7F30
 		private void lmt_2_4mA_ValueChanged_1(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_inferior2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_inferior2.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_inferior2, true);
 			sender = numericUpDown;
@@ -2308,7 +2301,7 @@ namespace iS800
 		// Token: 0x06000D23 RID: 3363 RVA: 0x002F9B84 File Offset: 0x002F7F84
 		private void lmt_1_20mA_ValueChanged_1(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_superior1.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_superior1.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_superior1, true);
 			sender = numericUpDown;
@@ -2317,7 +2310,7 @@ namespace iS800
 		// Token: 0x06000D24 RID: 3364 RVA: 0x002F9BD8 File Offset: 0x002F7FD8
 		private void lmt_2_20mA_ValueChanged_1(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.limt_superior2.Valor = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.limt_superior2.Valor = 0;
 			NumericUpDown numericUpDown = (NumericUpDown)sender;
 			RT_geral.Limite_ok_NumericUpDown(ref numericUpDown, ref RT_geral.GC_82x_BD.limt_superior2, true);
 			sender = numericUpDown;

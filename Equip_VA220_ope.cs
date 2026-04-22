@@ -3062,328 +3062,200 @@ namespace iS800
 		// Token: 0x0600268F RID: 9871 RVA: 0x0041C7F4 File Offset: 0x0041ABF4
 		private void Valor_liga_faixa1_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[1, 1] = "";
 		}
 
 		// Token: 0x06002690 RID: 9872 RVA: 0x0041C868 File Offset: 0x0041AC68
 		private void Valor_liga_faixa2_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[1, 2] = "";
 		}
 
 		// Token: 0x06002691 RID: 9873 RVA: 0x0041C8DC File Offset: 0x0041ACDC
 		private void Valor_liga_faixa3_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[1, 3] = "";
 		}
 
 		// Token: 0x06002692 RID: 9874 RVA: 0x0041C950 File Offset: 0x0041AD50
 		private void Valor_liga_faixa4_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[1, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[1, 4] = "";
 		}
 
 		// Token: 0x06002693 RID: 9875 RVA: 0x0041C9C4 File Offset: 0x0041ADC4
 		private void Valor_liga_faixa1_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[2, 1] = "";
 		}
 
 		// Token: 0x06002694 RID: 9876 RVA: 0x0041CA38 File Offset: 0x0041AE38
 		private void Valor_liga_faixa2_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[2, 2] = "";
 		}
 
 		// Token: 0x06002695 RID: 9877 RVA: 0x0041CAAC File Offset: 0x0041AEAC
 		private void Valor_liga_faixa3_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[2, 3] = "";
 		}
 
 		// Token: 0x06002696 RID: 9878 RVA: 0x0041CB20 File Offset: 0x0041AF20
 		private void Valor_liga_faixa4_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[2, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[2, 4] = "";
 		}
 
 		// Token: 0x06002697 RID: 9879 RVA: 0x0041CB94 File Offset: 0x0041AF94
 		private void Valor_liga_faixa1_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[3, 1] = "";
 		}
 
 		// Token: 0x06002698 RID: 9880 RVA: 0x0041CC08 File Offset: 0x0041B008
 		private void Valor_liga_faixa2_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[3, 2] = "";
 		}
 
 		// Token: 0x06002699 RID: 9881 RVA: 0x0041CC7C File Offset: 0x0041B07C
 		private void Valor_liga_faixa3_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[3, 3] = "";
 		}
 
 		// Token: 0x0600269A RID: 9882 RVA: 0x0041CCF0 File Offset: 0x0041B0F0
 		private void Valor_liga_faixa4_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[3, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[3, 4] = "";
 		}
 
 		// Token: 0x0600269B RID: 9883 RVA: 0x0041CD64 File Offset: 0x0041B164
 		private void Valor_liga_faixa1_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[4, 1] = "";
 		}
 
 		// Token: 0x0600269C RID: 9884 RVA: 0x0041CDD8 File Offset: 0x0041B1D8
 		private void Valor_liga_faixa2_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[4, 2] = "";
 		}
 
 		// Token: 0x0600269D RID: 9885 RVA: 0x0041CE4C File Offset: 0x0041B24C
 		private void Valor_liga_faixa3_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[4, 3] = "";
 		}
 
 		// Token: 0x0600269E RID: 9886 RVA: 0x0041CEC0 File Offset: 0x0041B2C0
 		private void Valor_liga_faixa4_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_liga[4, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_liga[4, 4] = "";
 		}
 
 		// Token: 0x0600269F RID: 9887 RVA: 0x0041CF34 File Offset: 0x0041B334
 		private void Valor_desliga_faixa1_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[1, 1] = "";
 		}
 
 		// Token: 0x060026A0 RID: 9888 RVA: 0x0041CFA8 File Offset: 0x0041B3A8
 		private void Valor_desliga_faixa2_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[1, 2] = "";
 		}
 
 		// Token: 0x060026A1 RID: 9889 RVA: 0x0041D01C File Offset: 0x0041B41C
 		private void Valor_desliga_faixa3_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[1, 3] = "";
 		}
 
 		// Token: 0x060026A2 RID: 9890 RVA: 0x0041D090 File Offset: 0x0041B490
 		private void Valor_desliga_faixa4_b1_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[1, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[1, 4] = "";
 		}
 
 		// Token: 0x060026A3 RID: 9891 RVA: 0x0041D104 File Offset: 0x0041B504
 		private void Valor_desliga_faixa1_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[2, 1] = "";
 		}
 
 		// Token: 0x060026A4 RID: 9892 RVA: 0x0041D178 File Offset: 0x0041B578
 		private void Valor_desliga_faixa2_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[2, 2] = "";
 		}
 
 		// Token: 0x060026A5 RID: 9893 RVA: 0x0041D1EC File Offset: 0x0041B5EC
 		private void Valor_desliga_faixa3_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[2, 3] = "";
 		}
 
 		// Token: 0x060026A6 RID: 9894 RVA: 0x0041D260 File Offset: 0x0041B660
 		private void Valor_desliga_faixa4_b2_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[2, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[2, 4] = "";
 		}
 
 		// Token: 0x060026A7 RID: 9895 RVA: 0x0041D2D4 File Offset: 0x0041B6D4
 		private void Valor_desliga_faixa1_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[3, 1] = "";
 		}
 
 		// Token: 0x060026A8 RID: 9896 RVA: 0x0041D348 File Offset: 0x0041B748
 		private void Valor_desliga_faixa2_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[3, 2] = "";
 		}
 
 		// Token: 0x060026A9 RID: 9897 RVA: 0x0041D3BC File Offset: 0x0041B7BC
 		private void Valor_desliga_faixa3_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[3, 3] = "";
 		}
 
 		// Token: 0x060026AA RID: 9898 RVA: 0x0041D430 File Offset: 0x0041B830
 		private void Valor_desliga_faixa4_b3_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[3, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[3, 4] = "";
 		}
 
 		// Token: 0x060026AB RID: 9899 RVA: 0x0041D4A4 File Offset: 0x0041B8A4
 		private void Valor_desliga_faixa1_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 1] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[4, 1] = "";
 		}
 
 		// Token: 0x060026AC RID: 9900 RVA: 0x0041D518 File Offset: 0x0041B918
 		private void Valor_desliga_faixa2_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 2] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[4, 2] = "";
 		}
 
 		// Token: 0x060026AD RID: 9901 RVA: 0x0041D58C File Offset: 0x0041B98C
 		private void Valor_desliga_faixa3_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 3] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[4, 3] = "";
 		}
 
 		// Token: 0x060026AE RID: 9902 RVA: 0x0041D600 File Offset: 0x0041BA00
 		private void Valor_desliga_faixa4_b4_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Timer_desliga[4, 4] = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Timer_desliga[4, 4] = "";
 		}
 
 		// Token: 0x060026AF RID: 9903 RVA: 0x0041D674 File Offset: 0x0041BA74
 		public string Verifica_horario(string hora, bool ativa_msg)
 		{
 			int num = 0;
-			string text;
+			string text = "";
 			int num2 = 0;
 			object obj = null;
 			try
@@ -3405,7 +3277,6 @@ namespace iS800
 								IL_42:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_6F:
 			string result = text;
 			if (num2 != 0)
@@ -3418,7 +3289,7 @@ namespace iS800
 		// Token: 0x060026B0 RID: 9904 RVA: 0x0041D70C File Offset: 0x0041BB0C
 		private void ChifeckBox_setpoints_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Grupo_setpoint.Enabled = false;
 			}
@@ -3431,7 +3302,7 @@ namespace iS800
 		// Token: 0x060026B1 RID: 9905 RVA: 0x0041D74C File Offset: 0x0041BB4C
 		private void CheckBox_timer_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.GroupBox_timer_1.Enabled = false;
 				this.GroupBox_timer_2.Enabled = false;
@@ -3450,7 +3321,7 @@ namespace iS800
 		// Token: 0x060026B2 RID: 9906 RVA: 0x0041D7E0 File Offset: 0x0041BBE0
 		private void CheckBox_ponta_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.GroupBox_ponta.Enabled = false;
 			}
@@ -3463,7 +3334,7 @@ namespace iS800
 		// Token: 0x060026B3 RID: 9907 RVA: 0x0041D820 File Offset: 0x0041BC20
 		private void CheckBox_alarmes_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Grupo_alarmes.Enabled = false;
 			}
@@ -3476,7 +3347,7 @@ namespace iS800
 		// Token: 0x060026B4 RID: 9908 RVA: 0x0041D860 File Offset: 0x0041BC60
 		private void CheckBox_temperatura_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Grupo_temperaturas.Enabled = false;
 			}
@@ -3489,12 +3360,8 @@ namespace iS800
 		// Token: 0x060026B5 RID: 9909 RVA: 0x0041D8A0 File Offset: 0x0041BCA0
 		private void Valor_nivel_desejado_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3507,12 +3374,8 @@ namespace iS800
 		// Token: 0x060026B6 RID: 9910 RVA: 0x0041D914 File Offset: 0x0041BD14
 		private void Valor_nivel_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3525,12 +3388,8 @@ namespace iS800
 		// Token: 0x060026B7 RID: 9911 RVA: 0x0041D988 File Offset: 0x0041BD88
 		private void Valor_nivel_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3543,12 +3402,8 @@ namespace iS800
 		// Token: 0x060026B8 RID: 9912 RVA: 0x0041D9FC File Offset: 0x0041BDFC
 		private void Valor_nivel_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3561,12 +3416,8 @@ namespace iS800
 		// Token: 0x060026B9 RID: 9913 RVA: 0x0041DA70 File Offset: 0x0041BE70
 		private void Valor_nivel_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3579,12 +3430,8 @@ namespace iS800
 		// Token: 0x060026BA RID: 9914 RVA: 0x0041DAE4 File Offset: 0x0041BEE4
 		private void Valor_nivel_desligamento_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3597,12 +3444,8 @@ namespace iS800
 		// Token: 0x060026BB RID: 9915 RVA: 0x0041DB58 File Offset: 0x0041BF58
 		private void Valor_nivel_ligamento_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3615,12 +3458,8 @@ namespace iS800
 		// Token: 0x060026BC RID: 9916 RVA: 0x0041DBCC File Offset: 0x0041BFCC
 		private void Valor_pressao_succao_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 5 | num > 30)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 5 | num > 30)
 			{
 				e.Cancel = true;
 			}
@@ -3633,12 +3472,8 @@ namespace iS800
 		// Token: 0x060026BD RID: 9917 RVA: 0x0041DC40 File Offset: 0x0041C040
 		private void Valor_pressao_controle_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 5 | num > 30)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 5 | num > 30)
 			{
 				e.Cancel = true;
 			}
@@ -3651,12 +3486,8 @@ namespace iS800
 		// Token: 0x060026BE RID: 9918 RVA: 0x0041DCB4 File Offset: 0x0041C0B4
 		private void Valor_tempo_mais_bomba_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 180)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 180)
 			{
 				e.Cancel = true;
 			}
@@ -3669,8 +3500,8 @@ namespace iS800
 		// Token: 0x060026BF RID: 9919 RVA: 0x0041DD2C File Offset: 0x0041C12C
 		private void CheckBox_horario_ponta_CheckedChanged(object sender, EventArgs e)
 		{
-			Mod_VA.Operacao_VA220.hab_verificacao_ponta = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null));
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			Mod_VA.Operacao_VA220.hab_verificacao_ponta = Conversions.ToBoolean(null);
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Liga_ponta.Enabled = false;
 				this.Desliga_ponta.Enabled = false;
@@ -3685,28 +3516,20 @@ namespace iS800
 		// Token: 0x060026C0 RID: 9920 RVA: 0x0041DDB4 File Offset: 0x0041C1B4
 		private void Valor_desliga_ponta_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Ponta_Desliga = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Ponta_Desliga = "";
 		}
 
 		// Token: 0x060026C1 RID: 9921 RVA: 0x0041DE20 File Offset: 0x0041C220
 		private void Valor_liga_ponta_Validating(object sender, CancelEventArgs e)
 		{
-			NewLateBinding.LateSet(sender, null, "Text", new object[]
-			{
-				this.Verifica_horario(Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)), true)
-			}, null, null);
-			Mod_VA.Operacao_VA220.Ponta_liga = Conversions.ToString(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null));
+						Mod_VA.Operacao_VA220.Ponta_liga = "";
 		}
 
 		// Token: 0x060026C2 RID: 9922 RVA: 0x0041DE8C File Offset: 0x0041C28C
 		private void CheckBox_habilita_temperatura_CheckedChanged(object sender, EventArgs e)
 		{
-			Mod_VA.Operacao_VA220.hab_verificacao_temp = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null));
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			Mod_VA.Operacao_VA220.hab_verificacao_temp = Conversions.ToBoolean(null);
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Valor_Temp_B1.Enabled = false;
 				this.Valor_Temp_B2.Enabled = false;
@@ -3725,12 +3548,8 @@ namespace iS800
 		// Token: 0x060026C3 RID: 9923 RVA: 0x0041DF44 File Offset: 0x0041C344
 		private void Valor_Temp_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3743,12 +3562,8 @@ namespace iS800
 		// Token: 0x060026C4 RID: 9924 RVA: 0x0041DFB8 File Offset: 0x0041C3B8
 		private void Valor_Temp_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3761,12 +3576,8 @@ namespace iS800
 		// Token: 0x060026C5 RID: 9925 RVA: 0x0041E02C File Offset: 0x0041C42C
 		private void Valor_Temp_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3779,12 +3590,8 @@ namespace iS800
 		// Token: 0x060026C6 RID: 9926 RVA: 0x0041E0A0 File Offset: 0x0041C4A0
 		private void Valor_Temp_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3797,8 +3604,8 @@ namespace iS800
 		// Token: 0x060026C7 RID: 9927 RVA: 0x0041E114 File Offset: 0x0041C514
 		private void CheckBox_alm_rq_CheckedChanged(object sender, EventArgs e)
 		{
-			Mod_VA.Operacao_VA220.hab_verificacao_alarmes = Conversions.ToBoolean(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null));
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			Mod_VA.Operacao_VA220.hab_verificacao_alarmes = Conversions.ToBoolean(null);
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.GroupBox_nivel_alto.Enabled = false;
 				this.GroupBox_nivel_baixo.Enabled = false;
@@ -3813,12 +3620,8 @@ namespace iS800
 		// Token: 0x060026C8 RID: 9928 RVA: 0x0041E19C File Offset: 0x0041C59C
 		private void Valor_NA_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3831,12 +3634,8 @@ namespace iS800
 		// Token: 0x060026C9 RID: 9929 RVA: 0x0041E218 File Offset: 0x0041C618
 		private void Valor_NA_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3849,12 +3648,8 @@ namespace iS800
 		// Token: 0x060026CA RID: 9930 RVA: 0x0041E294 File Offset: 0x0041C694
 		private void Valor_NA_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3867,12 +3662,8 @@ namespace iS800
 		// Token: 0x060026CB RID: 9931 RVA: 0x0041E310 File Offset: 0x0041C710
 		private void Valor_NA_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3885,12 +3676,8 @@ namespace iS800
 		// Token: 0x060026CC RID: 9932 RVA: 0x0041E38C File Offset: 0x0041C78C
 		private void Valor_NA_T_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3903,12 +3690,8 @@ namespace iS800
 		// Token: 0x060026CD RID: 9933 RVA: 0x0041E408 File Offset: 0x0041C808
 		private void Valor_NB_B1_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3921,12 +3704,8 @@ namespace iS800
 		// Token: 0x060026CE RID: 9934 RVA: 0x0041E484 File Offset: 0x0041C884
 		private void Valor_NB_B2_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3939,12 +3718,8 @@ namespace iS800
 		// Token: 0x060026CF RID: 9935 RVA: 0x0041E500 File Offset: 0x0041C900
 		private void Valor_NB_B3_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3957,12 +3732,8 @@ namespace iS800
 		// Token: 0x060026D0 RID: 9936 RVA: 0x0041E57C File Offset: 0x0041C97C
 		private void Valor_NB_B4_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3975,12 +3746,8 @@ namespace iS800
 		// Token: 0x060026D1 RID: 9937 RVA: 0x0041E5F8 File Offset: 0x0041C9F8
 		private void Valor_NB_T_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "text", new object[0], null, null, null)))));
-			NewLateBinding.LateSet(sender, null, "text", new object[]
-			{
-				num
-			}, null, null);
-			if (num < 0 | num > 100)
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
+						if (num < 0 | num > 100)
 			{
 				e.Cancel = true;
 			}
@@ -3993,7 +3760,7 @@ namespace iS800
 		// Token: 0x060026D2 RID: 9938 RVA: 0x0041E674 File Offset: 0x0041CA74
 		private void Valor_end_estacao_TextChanged(object sender, EventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num >= 0 & num <= 200)
 			{
 				Mod_VA.Operacao_VA220.End_estacao = num;
@@ -4004,7 +3771,7 @@ namespace iS800
 		// Token: 0x060026D3 RID: 9939 RVA: 0x0041E6D4 File Offset: 0x0041CAD4
 		private void Valor_end_estacao_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num < 0 | num > 200)
 			{
 				e.Cancel = true;
@@ -4019,7 +3786,7 @@ namespace iS800
 		// Token: 0x060026D4 RID: 9940 RVA: 0x0041E738 File Offset: 0x0041CB38
 		private void Valor_end_mestre_TextChanged(object sender, EventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num >= 0 & num <= 200)
 			{
 				Mod_VA.Operacao_VA220.End_mestre = num;
@@ -4030,7 +3797,7 @@ namespace iS800
 		// Token: 0x060026D5 RID: 9941 RVA: 0x0041E798 File Offset: 0x0041CB98
 		private void Valor_end_mestre_Validating(object sender, CancelEventArgs e)
 		{
-			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null)))));
+			int num = checked((int)Math.Round(Conversion.Val(RuntimeHelpers.GetObjectValue(null))));
 			if (num < 0 | num > 200)
 			{
 				e.Cancel = true;
@@ -4045,13 +3812,13 @@ namespace iS800
 		// Token: 0x060026D6 RID: 9942 RVA: 0x0041E7FC File Offset: 0x0041CBFC
 		private void VScroll_end_estacao_Scroll(object sender, ScrollEventArgs e)
 		{
-			this.Valor_end_estacao.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			this.Valor_end_estacao.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(null));
 		}
 
 		// Token: 0x060026D7 RID: 9943 RVA: 0x0041E828 File Offset: 0x0041CC28
 		private void VScroll_end_mestre_Scroll(object sender, ScrollEventArgs e)
 		{
-			this.Valor_end_mestre.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(NewLateBinding.LateGet(sender, null, "Value", new object[0], null, null, null)));
+			this.Valor_end_mestre.Text = Conversion.Str(RuntimeHelpers.GetObjectValue(null));
 		}
 
 		// Token: 0x060026D8 RID: 9944 RVA: 0x0041E854 File Offset: 0x0041CC54
@@ -4499,7 +4266,7 @@ namespace iS800
 		// Token: 0x060026DF RID: 9951 RVA: 0x0041F7EC File Offset: 0x0041DBEC
 		private void CheckBox_relogio_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Grupo_relogio.Enabled = false;
 			}
@@ -4512,7 +4279,7 @@ namespace iS800
 		// Token: 0x060026E0 RID: 9952 RVA: 0x0041F82C File Offset: 0x0041DC2C
 		private void CheckBox_setpoints_CheckedChanged(object sender, EventArgs e)
 		{
-			if (Operators.ConditionalCompareObjectEqual(NewLateBinding.LateGet(sender, null, "Checked", new object[0], null, null, null), false, false))
+			if (Operators.ConditionalCompareObjectEqual(null, false, false))
 			{
 				this.Grupo_setpoint.Enabled = false;
 			}

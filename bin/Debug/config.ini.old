@@ -1,0 +1,21 @@
+[Interfaces]
+quantas = 3
+interface1 = Serial RS232
+interface2 = Ethernet TCP/IP RS232
+interface3 = ICTEL WIFI RS232
+tipo_interface = 0
+ 
+[Serial RS232]
+porta = COM1
+baudrate = -1
+data_bits = -1
+stop_bits = -1
+parity = -1
+ 
+[Ethernet TCP/IP RS232]
+ip = 169.254.75.100
+porta = 502
+ 
+[Geral]
+retry = 5
+ 

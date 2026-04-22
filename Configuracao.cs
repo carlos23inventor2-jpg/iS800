@@ -673,31 +673,31 @@ namespace iS800
 		// Token: 0x060000C1 RID: 193 RVA: 0x00265254 File Offset: 0x00263654
 		private void ComboPortaSerial_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.Serial.Porta_serial = Conversions.ToString(NewLateBinding.LateGet(sender, null, "SelectedItem", new object[0], null, null, null));
+			Comunicacao.Config_sistema.Serial.Porta_serial = "";
 		}
 
 		// Token: 0x060000C2 RID: 194 RVA: 0x00265280 File Offset: 0x00263680
 		private void ComboBaudrate_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.Serial.Baudrate = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			Comunicacao.Config_sistema.Serial.Baudrate = 0;
 		}
 
 		// Token: 0x060000C3 RID: 195 RVA: 0x002652AC File Offset: 0x002636AC
 		private void ComboNumeroBits_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.Serial.DataBits = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			Comunicacao.Config_sistema.Serial.DataBits = 0;
 		}
 
 		// Token: 0x060000C4 RID: 196 RVA: 0x002652D8 File Offset: 0x002636D8
 		private void Combo_stop_bits_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.Serial.StopBits = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			Comunicacao.Config_sistema.Serial.StopBits = 0;
 		}
 
 		// Token: 0x060000C5 RID: 197 RVA: 0x00265304 File Offset: 0x00263704
 		private void Combo_paridade_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.Serial.Parity = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null));
+			Comunicacao.Config_sistema.Serial.Parity = 0;
 		}
 
 		// Token: 0x060000C6 RID: 198 RVA: 0x00265330 File Offset: 0x00263730
@@ -705,7 +705,7 @@ namespace iS800
 		{
 			if (this.aguarda)
 			{
-				Comunicacao.Config_sistema.Retry = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null)).ToString();
+				Comunicacao.Config_sistema.Retry = 0.ToString();
 			}
 		}
 
@@ -722,13 +722,13 @@ namespace iS800
 		// Token: 0x060000C9 RID: 201 RVA: 0x0026537C File Offset: 0x0026377C
 		private void cb_tipo_interface_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.tipo_interface = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 1));
+			Comunicacao.Config_sistema.tipo_interface = Conversions.ToInteger(Operators.AddObject(null, 1));
 		}
 
 		// Token: 0x060000CA RID: 202 RVA: 0x002653B0 File Offset: 0x002637B0
 		private void tb_tcpip_IP_TextChanged(object sender, EventArgs e)
 		{
-			Comunicacao.Config_sistema.Tcpip.IP = Conversions.ToString(NewLateBinding.LateGet(sender, null, "Text", new object[0], null, null, null));
+			Comunicacao.Config_sistema.Tcpip.IP = "";
 		}
 
 		// Token: 0x040001B6 RID: 438

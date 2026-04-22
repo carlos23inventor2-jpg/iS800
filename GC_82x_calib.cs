@@ -947,7 +947,7 @@ namespace iS800
 		// Token: 0x06000C54 RID: 3156 RVA: 0x002F4194 File Offset: 0x002F2594
 		private void nud_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			this.end_estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			this.end_estacao = 0;
 			RT_geral.GC_82x_BD.End_estacao.Valor = this.end_estacao;
 			this.Bt_inic_4.Enabled = true;
 			this.Bt_inic_20.Enabled = true;
@@ -1062,7 +1062,7 @@ namespace iS800
 		// Token: 0x06000C5A RID: 3162 RVA: 0x002F446C File Offset: 0x002F286C
 		private void nud_contagens_ValueChanged(object sender, EventArgs e)
 		{
-			RT_geral.GC_82x_BD.calib_contagens = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			RT_geral.GC_82x_BD.calib_contagens = 0;
 		}
 
 		// Token: 0x06000C5B RID: 3163 RVA: 0x002F4494 File Offset: 0x002F2894

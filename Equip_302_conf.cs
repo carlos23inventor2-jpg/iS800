@@ -1980,90 +1980,90 @@ namespace iS800
 		// Token: 0x06002262 RID: 8802 RVA: 0x003FC028 File Offset: 0x003FA428
 		private void Valor_res_equipamentos_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Qtd_equip_res = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Qtd_equip_res = 0;
 			this.Atualiza_dados_re(Mod_MD.Central_302_geral.Qtd_equip_res);
 		}
 
 		// Token: 0x06002263 RID: 8803 RVA: 0x003FC060 File Offset: 0x003FA460
 		private void Valor_res_sistema_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Qtd_res = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Qtd_res = 0;
 		}
 
 		// Token: 0x06002264 RID: 8804 RVA: 0x003FC088 File Offset: 0x003FA488
 		private void Valor_rq_equipamentos_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Qdt_equip_rq = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Qdt_equip_rq = 0;
 			this.Atualiza_dados_rq(Mod_MD.Central_302_geral.Qdt_equip_rq);
 		}
 
 		// Token: 0x06002265 RID: 8805 RVA: 0x003FC0C0 File Offset: 0x003FA4C0
 		private void Valor_vista_equipamentos_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Qtd_equip_vista = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Qtd_equip_vista = 0;
 			this.Atualiza_dados_centrais(Mod_MD.Central_302_geral.Qtd_equip_vista);
 		}
 
 		// Token: 0x06002266 RID: 8806 RVA: 0x003FC0F8 File Offset: 0x003FA4F8
 		private void Valor_end_ini_res_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.End_ini_equip_res = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.End_ini_equip_res = 0;
 			this.Atualiza_dados_re(Mod_MD.Central_302_geral.Qtd_equip_res);
 		}
 
 		// Token: 0x06002267 RID: 8807 RVA: 0x003FC130 File Offset: 0x003FA530
 		private void Valor_end_ini_rq_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.End_ini_equip_rq = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.End_ini_equip_rq = 0;
 			this.Atualiza_dados_rq(Mod_MD.Central_302_geral.Qdt_equip_rq);
 		}
 
 		// Token: 0x06002268 RID: 8808 RVA: 0x003FC168 File Offset: 0x003FA568
 		private void Valor_end_ini_vista_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.End_ini_equip_vista = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.End_ini_equip_vista = 0;
 		}
 
 		// Token: 0x06002269 RID: 8809 RVA: 0x003FC190 File Offset: 0x003FA590
 		private void Valor_endereco_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Endereco = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Endereco = 0;
 		}
 
 		// Token: 0x0600226A RID: 8810 RVA: 0x003FC1B8 File Offset: 0x003FA5B8
 		private void Valor_temp_ptt_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null), 10));
+			Mod_MD.Central_302_geral.Tempo_ptt = Conversions.ToInteger(Operators.DivideObject(null, 10));
 		}
 
 		// Token: 0x0600226B RID: 8811 RVA: 0x003FC1EC File Offset: 0x003FA5EC
 		private void Valor_intervalo_polling_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Intervalo_polling = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Intervalo_polling = 0;
 		}
 
 		// Token: 0x0600226C RID: 8812 RVA: 0x003FC214 File Offset: 0x003FA614
 		private void Valor_timeout_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Timeout = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Timeout = 0;
 		}
 
 		// Token: 0x0600226D RID: 8813 RVA: 0x003FC23C File Offset: 0x003FA63C
 		private void Valor_num_tentativas_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Retray = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Retray = 0;
 		}
 
 		// Token: 0x0600226E RID: 8814 RVA: 0x003FC264 File Offset: 0x003FA664
 		private void Valor_erro_falha_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Erros_falha = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Central_302_geral.Erros_falha = 0;
 		}
 
 		// Token: 0x0600226F RID: 8815 RVA: 0x003FC28C File Offset: 0x003FA68C
 		private void Combo_baudrate_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Central_302_geral.Baud_rate_com2 = Conversions.ToInteger(Operators.AddObject(NewLateBinding.LateGet(sender, null, "SelectedIndex", new object[0], null, null, null), 21849));
+			Mod_MD.Central_302_geral.Baud_rate_com2 = Conversions.ToInteger(Operators.AddObject(null, 21849));
 		}
 
 		// Token: 0x06002270 RID: 8816 RVA: 0x003FC2C4 File Offset: 0x003FA6C4
@@ -2702,7 +2702,6 @@ namespace iS800
 								IL_4A:;
 			}
 			catch (Exception) { }
-			throw ProjectData.CreateProjectError(-2146828237);
 			IL_78:
 			if (num2 != 0)
 			{
@@ -2874,7 +2873,6 @@ namespace iS800
 					num8 = -1;IL_3A9:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_3D8:
 				if (num8 != 0)
 				{
@@ -3055,7 +3053,6 @@ namespace iS800
 										IL_92:;
 				}
 				catch (Exception) { }
-				throw ProjectData.CreateProjectError(-2146828237);
 				IL_C1:
 				if (num2 != 0)
 				{

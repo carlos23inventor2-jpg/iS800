@@ -2790,7 +2790,7 @@ namespace iS800
 		// Token: 0x06001ECE RID: 7886 RVA: 0x003E0AA0 File Offset: 0x003DEEA0
 		private void Tela_end_estacao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Monitoracao_MD_RQ.Estacao = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Monitoracao_MD_RQ.Estacao = 0;
 		}
 
 		// Token: 0x06001ECF RID: 7887 RVA: 0x003E0AC8 File Offset: 0x003DEEC8
@@ -2818,13 +2818,13 @@ namespace iS800
 		// Token: 0x06001ED0 RID: 7888 RVA: 0x003E0B40 File Offset: 0x003DEF40
 		private void Valor_canal_calibracao_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Ctrl_cal.Canal = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Ctrl_cal.Canal = 0;
 		}
 
 		// Token: 0x06001ED1 RID: 7889 RVA: 0x003E0B68 File Offset: 0x003DEF68
 		private void Valor_cal_end_ValueChanged(object sender, EventArgs e)
 		{
-			Mod_MD.Ctrl_cal.End_equip = Conversions.ToInteger(NewLateBinding.LateGet(sender, null, "value", new object[0], null, null, null));
+			Mod_MD.Ctrl_cal.End_equip = 0;
 		}
 
 		// Token: 0x06001ED2 RID: 7890 RVA: 0x003E0B90 File Offset: 0x003DEF90
