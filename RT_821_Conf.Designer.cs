@@ -221,10 +221,6 @@ namespace iS800
 			this.TabControl_821.Controls.Add(this.TabPage_repetidora);
 			this.TabControl_821.Controls.Add(this.TabPage_Display);
 			this.TabControl_821.Controls.Add(this.TabPage_DadosInstalacao);
-                    this.TabControl_821.Controls.Add(this.TabPage_VasosCalhas);
-                    this.TabControl_821.Controls.Add(this.TabPage_Perifericos);
-                    this.TabControl_821.Controls.Add(this.TabPage_VasosCalhas);
-                    this.TabControl_821.Controls.Add(this.TabPage_Perifericos);
 			this.TabControl_821.HotTrack = true;
 			global::System.Windows.Forms.Control tabControl_ = this.TabControl_821;
 			global::System.Drawing.Point location;

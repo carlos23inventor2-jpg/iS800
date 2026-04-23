@@ -137,6 +137,8 @@ namespace iS800
 			this.Label_num_est_rep_820 = new global::System.Windows.Forms.Label();
 			this.Label_end_rep_820 = new global::System.Windows.Forms.Label();
 			this.TabPage1 = new global::System.Windows.Forms.TabPage();
+                    this.TabPage_VasosCalhas = new global::System.Windows.Forms.TabPage();
+                    this.TabPage_Perifericos = new global::System.Windows.Forms.TabPage();
 			this.GroupBox1 = new global::System.Windows.Forms.GroupBox();
 			this.Label16 = new global::System.Windows.Forms.Label();
 			this.Label15 = new global::System.Windows.Forms.Label();
@@ -220,6 +222,8 @@ namespace iS800
 			this.GroupBox_parametros_repetidora_820.SuspendLayout();
 
 			this.TabPage1.SuspendLayout();
+                    this.TabPage_VasosCalhas.SuspendLayout();
+                    this.TabPage_Perifericos.SuspendLayout();
 			this.GroupBox1.SuspendLayout();
 			this.ToolStri_RT_820.SuspendLayout();
 			this.SuspendLayout();
@@ -557,6 +561,8 @@ namespace iS800
 			this.TabControl_820.Controls.Add(this.TabPage_ED);
 			this.TabControl_820.Controls.Add(this.TabPage_MotoresValvulas);
 			this.TabControl_820.Controls.Add(this.TabPage_repetidora);
+			this.TabControl_820.Controls.Add(this.TabPage_VasosCalhas);
+			this.TabControl_820.Controls.Add(this.TabPage_Perifericos);
 			this.TabControl_820.Controls.Add(this.TabPage1);
 			this.TabControl_820.HotTrack = true;
 			global::System.Windows.Forms.Control tabControl_ = this.TabControl_820;

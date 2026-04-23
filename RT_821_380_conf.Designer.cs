@@ -9,7 +9,7 @@ namespace iS800
 	{
 		private System.ComponentModel.IContainer components = null;
 
-		private global::System.Windows.Forms.TabPage TabPage_vazao;
+		internal global::System.Windows.Forms.TabPage TabPage_vazao;
 		private global::System.Windows.Forms.GroupBox GroupBox12;
 		private global::System.Windows.Forms.TabControl TabControl_Calhas;
 		private global::System.Windows.Forms.TabPage TabPage2;
@@ -20,7 +20,7 @@ namespace iS800
 		private global::System.Windows.Forms.GroupBox GroupBox_vazoes_820;
 		private global::System.Windows.Forms.DataGridView DataGridView_vazoes_RT820;
 		private global::System.Windows.Forms.TextBox tb_lixo6;
-		private global::System.Windows.Forms.TabPage TabPage_vazao_perifericos;
+		internal global::System.Windows.Forms.TabPage TabPage_vazao_perifericos;
 		private global::System.Windows.Forms.GroupBox GroupBox11;
 		private global::System.Windows.Forms.DataGridView DataGridView_perifericomodbusgenerico_RT820;
 		private global::System.Windows.Forms.GroupBox GroupBox10;

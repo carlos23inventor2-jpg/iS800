@@ -2756,6 +2756,8 @@ namespace iS800
 		// Token: 0x06000951 RID: 2385 RVA: 0x002BEA30 File Offset: 0x002BCE30
 		private void RT_821_conf_Load(object sender, EventArgs e)
 		{
+            InicializaAbaVasosCalhas_200();
+            InicializaAbaPerifericos_200();
 			RT_geral.Lmte_Init_ok = false;
 			this.bloqueio_IO = false;
 			RT_geral.RT_821_200_BD.cfg_geral.entradas = new RT_geral.Combo_ictel[9];
@@ -5877,6 +5879,20 @@ namespace iS800
 		[AccessedThroughProperty("TabPage1")]
 		private TabPage _TabPage1;
 
+            internal virtual TabPage TabPage_VasosCalhas
+            {
+                get { return this._TabPage_VasosCalhas; }
+                set { this._TabPage_VasosCalhas = value; }
+            }
+            private TabPage _TabPage_VasosCalhas;
+
+            internal virtual TabPage TabPage_Perifericos
+            {
+                get { return this._TabPage_Perifericos; }
+                set { this._TabPage_Perifericos = value; }
+            }
+            private TabPage _TabPage_Perifericos;
+
 		// Token: 0x04000655 RID: 1621
 		[AccessedThroughProperty("GroupBox1")]
 		private GroupBox _GroupBox1;
@@ -6202,5 +6218,49 @@ namespace iS800
 
 		// Token: 0x040006A6 RID: 1702
 		private int pagina_impressao;
+        private void InicializaAbaVasosCalhas_200()
+        {
+            if (this.TabPage_VasosCalhas.Controls.Count > 0) return;
+            var grp = new System.Windows.Forms.GroupBox();
+            grp.Text = "Vasos e Calhas";
+            grp.Size = new System.Drawing.Size(700, 400);
+            grp.Location = new System.Drawing.Point(5, 5);
+            int y = 25;
+            string[] labels = {"Nível Bloqueio:", "Nível Liberação:", "Nível Liga B1:", "Nível Liga B2:", "Nível Liga B3:", "Nível Desejado:"};
+            foreach (var lbl in labels)
+            {
+                var l = new System.Windows.Forms.Label();
+                l.Text = lbl; l.Location = new System.Drawing.Point(10, y); l.Size = new System.Drawing.Size(150, 20);
+                var n = new System.Windows.Forms.NumericUpDown();
+                n.Location = new System.Drawing.Point(165, y); n.Size = new System.Drawing.Size(80, 20);
+                n.Maximum = 9999;
+                grp.Controls.Add(l); grp.Controls.Add(n);
+                y += 30;
+            }
+            this.TabPage_VasosCalhas.Controls.Add(grp);
+        }
+
+        private void InicializaAbaPerifericos_200()
+        {
+            if (this.TabPage_Perifericos.Controls.Count > 0) return;
+            var grp = new System.Windows.Forms.GroupBox();
+            grp.Text = "Periféricos";
+            grp.Size = new System.Drawing.Size(700, 200);
+            grp.Location = new System.Drawing.Point(5, 5);
+            var lM = new System.Windows.Forms.Label(); lM.Text = "Modelo"; lM.Location = new System.Drawing.Point(70, 20);
+            var lE = new System.Windows.Forms.Label(); lE.Text = "Endereço"; lE.Location = new System.Drawing.Point(300, 20);
+            grp.Controls.Add(lM); grp.Controls.Add(lE);
+            int y = 45;
+            foreach (var p in new[]{"P 1 :","P 2 :","P 3 :","P 4 :"})
+            {
+                var l = new System.Windows.Forms.Label(); l.Text = p; l.Location = new System.Drawing.Point(10, y); l.Size = new System.Drawing.Size(50, 20);
+                var cb = new System.Windows.Forms.ComboBox(); cb.Location = new System.Drawing.Point(65, y); cb.Size = new System.Drawing.Size(200, 20); cb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+                var nud = new System.Windows.Forms.NumericUpDown(); nud.Location = new System.Drawing.Point(290, y); nud.Size = new System.Drawing.Size(80, 20); nud.Maximum = 247; nud.Minimum = 1;
+                grp.Controls.Add(l); grp.Controls.Add(cb); grp.Controls.Add(nud);
+                y += 30;
+            }
+            this.TabPage_Perifericos.Controls.Add(grp);
+        }
+
 	}
 }
