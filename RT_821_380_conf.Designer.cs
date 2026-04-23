@@ -42,8 +42,13 @@ namespace iS800
 			base.Dispose(disposing);
 		}
 
-		private void InitializeComponent()
-		{
+		internal void CreateChildTabs()
+        {
+            // Não reconfigurar o form - usar AddTabsOnly()
+        }
+
+        internal void AddTabsOnly()
+        {
 			this.TabPage_vazao = new global::System.Windows.Forms.TabPage();
 			this.GroupBox12 = new global::System.Windows.Forms.GroupBox();
 			this.TabControl_Calhas = new global::System.Windows.Forms.TabControl();
@@ -389,6 +394,6 @@ namespace iS800
 				this.TabControl_821.SelectedIndex = 0;
 			}
 			this.ResumeLayout(false);
-		}
+        }
 	}
 }

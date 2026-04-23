@@ -22,7 +22,7 @@ namespace iS800
 
 		// Token: 0x060018FB RID: 6395 RVA: 0x003AFC90 File Offset: 0x003AE090
 		[global::System.Diagnostics.DebuggerStepThrough]
-		private void InitializeComponent()
+		protected void InitializeComponent()
 		{
 			this.components = new global::System.ComponentModel.Container();
 			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle = new global::System.Windows.Forms.DataGridViewCellStyle();
