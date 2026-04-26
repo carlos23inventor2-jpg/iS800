@@ -93,9 +93,9 @@ namespace iS800
 			this.TabPage_vazao.Location = new global::System.Drawing.Point(4, 22);
 			this.TabPage_vazao.Name = "TabPage_vazao";
 			this.TabPage_vazao.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage_vazao.Size = new global::System.Drawing.Size(1396, 652);
+			this.TabPage_vazao.Size = new global::System.Drawing.Size(1396, 540);
 			this.TabPage_vazao.TabIndex = 9;
-			this.TabPage_vazao.Text = "   Vazão & Calhas    ";
+			this.TabPage_vazao.Text = "Vazão & Calhas";
 			this.TabPage_vazao.UseVisualStyleBackColor = true;
 			// 
 			// GroupBox12
@@ -105,7 +105,7 @@ namespace iS800
 			this.GroupBox12.Controls.Add(this.DataGridView_calhas_RT820);
 			this.GroupBox12.Location = new global::System.Drawing.Point(371, 17);
 			this.GroupBox12.Name = "GroupBox12";
-			this.GroupBox12.Size = new global::System.Drawing.Size(850, 630);
+			this.GroupBox12.Size = new global::System.Drawing.Size(850, 530);
 			this.GroupBox12.TabIndex = 3;
 			this.GroupBox12.TabStop = false;
 			this.GroupBox12.Text = "Calhas";
@@ -118,7 +118,7 @@ namespace iS800
 			this.TabControl_Calhas.Location = new global::System.Drawing.Point(19, 160);
 			this.TabControl_Calhas.Name = "TabControl_Calhas";
 			this.TabControl_Calhas.SelectedIndex = 0;
-			this.TabControl_Calhas.Size = new global::System.Drawing.Size(780, 457);
+			this.TabControl_Calhas.Size = new global::System.Drawing.Size(780, 530);
 			this.TabControl_Calhas.TabIndex = 20;
 			// 
 			// TabPage2

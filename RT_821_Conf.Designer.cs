@@ -230,7 +230,7 @@ namespace iS800
 			this.TabControl_821.SelectedIndex = 0;
 			global::System.Windows.Forms.Control tabControl_2 = this.TabControl_821;
 			global::System.Drawing.Size size;
-			size = new global::System.Drawing.Size(1040, 491);
+			size = new global::System.Drawing.Size(1040, 530);
 			tabControl_2.Size = size;
 			this.TabControl_821.TabIndex = 8;
 			this.TabPage_geral.BackColor = global::System.Drawing.SystemColors.ControlLight;
