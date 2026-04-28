@@ -561,8 +561,6 @@ namespace iS800
 			this.TabControl_820.Controls.Add(this.TabPage_ED);
 			this.TabControl_820.Controls.Add(this.TabPage_MotoresValvulas);
 			this.TabControl_820.Controls.Add(this.TabPage_repetidora);
-			this.TabControl_820.Controls.Add(this.TabPage_VasosCalhas);
-			this.TabControl_820.Controls.Add(this.TabPage_Perifericos);
 			this.TabControl_820.Controls.Add(this.TabPage1);
 			this.TabControl_820.HotTrack = true;
 			global::System.Windows.Forms.Control tabControl_ = this.TabControl_820;
