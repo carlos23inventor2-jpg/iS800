@@ -203,13 +203,13 @@ namespace iS800
             RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].NumeroLinhaMenu = 5;
             RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].NumeroLinhaMenu = 4;
 
-            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LarguraColuna = 100;
-            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].LarguraColuna = 80;
-            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].LarguraColuna = 100;
-            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].LarguraColuna = 100;
-            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].LarguraColuna = 80;
+            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].LarguraColuna = 90;
+            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].LarguraColuna = 60;
+            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[2].LarguraColuna = 90;
+            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[3].LarguraColuna = 65;
+            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[4].LarguraColuna = 50;
             RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[5].LarguraColuna = 100;
-            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LarguraColuna = 100;
+            RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[6].LarguraColuna = 50;
 
             RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[0].AlingColuna = DataGridViewContentAlignment.MiddleLeft;
             RT_geral.RT_820_DataGrigViewReferenciaPerifericosColunas[1].AlingColuna = DataGridViewContentAlignment.MiddleCenter;
@@ -405,7 +405,7 @@ namespace iS800
             }
 
             dgv.RowCount = 10;
-            dgv.RowHeadersWidth = 50;
+            dgv.RowHeadersWidth =20;
             dgv.RowHeadersVisible = true;
 
             int n = 1;
@@ -670,6 +670,16 @@ namespace iS800
 
             return tab;
         }
+
+        private static void PreencheHeadersReferencias(DataGridView dgv, int inicio)
+       {
+         dgv.RowCount = 5;
+         for (int i = 0; i < dgv.Rows.Count; i++)
+         {
+          if (!dgv.Rows[i].IsNewRow)
+            dgv.Rows[i].HeaderCell.Value = (inicio + i).ToString();
+         }
+        }
         private TabPage CriaTabPerifericos()
         {
             var tab = new TabPage
@@ -685,7 +695,7 @@ namespace iS800
             {
                 Text = "Periféricos do 1° Endereço da Estação",
                 Location = new Point(18, 16),
-                Size = new Size(465, 182)
+                Size = new Size(430, 162)
             };
 
             var dgv1 = new DataGridView
@@ -703,15 +713,15 @@ namespace iS800
             var grp3 = new GroupBox
             {
                 Text = "Configuração Periférico Modbus Genérico",
-                Location = new Point(18, 212),
-                Size = new Size(900, 145)
+                Location = new Point(18, 182),
+                Size = new Size(840, 160)
             };
 
             var dgv3 = new DataGridView
             {
                 Name = "dgv_modbus_generico",
                 Location = new Point(12, 22),
-                Size = new Size(790, 100),
+                Size = new Size(820, 145),
                 AllowUserToAddRows    = false,
                 AllowUserToDeleteRows = false,
                 AllowUserToResizeColumns = false,
@@ -749,19 +759,30 @@ namespace iS800
             var grp4 = new GroupBox
             {
                 Text = "Referências para Periférico:",
-                Location = new Point(18, 366),
-                Size = new Size(900, 314)
+                Location = new Point(18, 346),
+                Size = new Size(1100, 154)
             };
 
-            var dgv4 = new DataGridView
+            var dgv4a = new DataGridView
             {
-                Name = "datagridview_referenciaperifico",
-                Location = new Point(19, 16),
-                Size = new Size(693, 276)
-            };
-            // Usa estrutura RT_820 via Linha_RT
-            GeraDataGridView_Referencia_Periferico(dgv4);
-            grp4.Controls.Add(dgv4);
+             Name = "datagridview_referenciaperifico_1",
+             Location = new Point(19, 16),
+             Size = new Size(330, 70)
+           };
+             GeraDataGridView_Referencia_Periferico(dgv4a);
+             PreencheHeadersReferencias(dgv4a, 1);
+
+            var dgv4b = new DataGridView
+            {
+             Name = "datagridview_referenciaperifico_2",
+             Location = new Point(550, 16),
+             Size = new Size(330, 70)
+           };
+             GeraDataGridView_Referencia_Periferico(dgv4b);
+             PreencheHeadersReferencias(dgv4b, 6);
+
+             grp4.Controls.Add(dgv4a);
+             grp4.Controls.Add(dgv4b);
 
             grp4.Controls.Add(new Label
             {
