@@ -1806,7 +1806,7 @@ namespace iS800
 			{
 				if (this.OpenFileDialog1.ShowDialog() == DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", (CompareMethod)1);
+					int num = Strings.InStr(1, this.OpenFileDialog1.FileName, ".", Microsoft.VisualBasic.CompareMethod.Text);
 					string text = Strings.Left(this.OpenFileDialog1.FileName, num);
 					if (Operators.CompareString(this.OpenFileDialog1.FileName, "", false) != 0)
 					{
@@ -1861,7 +1861,7 @@ namespace iS800
 			{
 				if (this.SaveFileDialog1.ShowDialog() == DialogResult.OK)
 				{
-					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", (CompareMethod)1);
+					int num = Strings.InStr(1, this.SaveFileDialog1.FileName, ".", Microsoft.VisualBasic.CompareMethod.Text);
 					string text = Strings.Left(this.SaveFileDialog1.FileName, num);
 					if (Operators.CompareString(this.SaveFileDialog1.FileName, "", false) != 0)
 					{
