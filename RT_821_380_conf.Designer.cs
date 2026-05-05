@@ -9,7 +9,7 @@ namespace iS800
 	{
 		private System.ComponentModel.IContainer components = null;
 
-		internal global::System.Windows.Forms.TabPage TabPage_vazao;
+		internal global::System.Windows.Forms.TabPage TabPage_VasosCalhas;
 		private global::System.Windows.Forms.GroupBox GroupBox12;
 		private global::System.Windows.Forms.TabControl TabControl_Calhas;
 		private global::System.Windows.Forms.TabPage TabPage2;
@@ -20,7 +20,7 @@ namespace iS800
 		private global::System.Windows.Forms.GroupBox GroupBox_vazoes_820;
 		private global::System.Windows.Forms.DataGridView DataGridView_vazoes_RT820;
 		private global::System.Windows.Forms.TextBox tb_lixo6;
-		internal global::System.Windows.Forms.TabPage TabPage_vazao_perifericos;
+		internal global::System.Windows.Forms.TabPage TabPage_Perifericos;
 		private global::System.Windows.Forms.GroupBox GroupBox11;
 		private global::System.Windows.Forms.DataGridView DataGridView_perifericomodbusgenerico_RT820;
 		private global::System.Windows.Forms.GroupBox GroupBox10;
@@ -49,7 +49,7 @@ namespace iS800
 
         internal void AddTabsOnly()
         {
-			this.TabPage_vazao = new global::System.Windows.Forms.TabPage();
+			this.TabPage_VasosCalhas = new global::System.Windows.Forms.TabPage();
 			this.GroupBox12 = new global::System.Windows.Forms.GroupBox();
 			this.TabControl_Calhas = new global::System.Windows.Forms.TabControl();
 			this.TabPage2 = new global::System.Windows.Forms.TabPage();
@@ -60,7 +60,7 @@ namespace iS800
 			this.GroupBox_vazoes_820 = new global::System.Windows.Forms.GroupBox();
 			this.DataGridView_vazoes_RT820 = new global::System.Windows.Forms.DataGridView();
 			this.tb_lixo6 = new global::System.Windows.Forms.TextBox();
-			this.TabPage_vazao_perifericos = new global::System.Windows.Forms.TabPage();
+			this.TabPage_Perifericos = new global::System.Windows.Forms.TabPage();
 			this.GroupBox11 = new global::System.Windows.Forms.GroupBox();
 			this.DataGridView_perifericomodbusgenerico_RT820 = new global::System.Windows.Forms.DataGridView();
 			this.GroupBox10 = new global::System.Windows.Forms.GroupBox();
@@ -80,23 +80,23 @@ namespace iS800
 			this.GroupBox3.SuspendLayout();
 			this.GroupBox_perifericos_820.SuspendLayout();
 			this.GroupBox9.SuspendLayout();
-			this.TabPage_vazao.SuspendLayout();
-			this.TabPage_vazao_perifericos.SuspendLayout();
-			this.TabControl_821.Controls.Add(this.TabPage_vazao);
-			this.TabControl_821.Controls.Add(this.TabPage_vazao_perifericos);
+			this.TabPage_VasosCalhas.SuspendLayout();
+			this.TabPage_Perifericos.SuspendLayout();
+			this.TabControl_821.Controls.Add(this.TabPage_VasosCalhas);
+			this.TabControl_821.Controls.Add(this.TabPage_Perifericos);
 			// 
-			// TabPage_vazao
+			// TabPage_VasosCalhas
 			// 
-			this.TabPage_vazao.BackColor = global::System.Drawing.SystemColors.ControlLight;
-			this.TabPage_vazao.Controls.Add(this.GroupBox12);
-			this.TabPage_vazao.Controls.Add(this.GroupBox_vazoes_820);
-			this.TabPage_vazao.Location = new global::System.Drawing.Point(4, 22);
-			this.TabPage_vazao.Name = "TabPage_vazao";
-			this.TabPage_vazao.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage_vazao.Size = new global::System.Drawing.Size(1396, 540);
-			this.TabPage_vazao.TabIndex = 9;
-			this.TabPage_vazao.Text = "Vazão & Calhas";
-			this.TabPage_vazao.UseVisualStyleBackColor = true;
+			this.TabPage_VasosCalhas.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_VasosCalhas.Controls.Add(this.GroupBox12);
+			this.TabPage_VasosCalhas.Controls.Add(this.GroupBox_vazoes_820);
+			this.TabPage_VasosCalhas.Location = new global::System.Drawing.Point(4, 22);
+			this.TabPage_VasosCalhas.Name = "TabPage_VasosCalhas";
+			this.TabPage_VasosCalhas.Padding = new global::System.Windows.Forms.Padding(3);
+			this.TabPage_VasosCalhas.Size = new global::System.Drawing.Size(1396, 540);
+			this.TabPage_VasosCalhas.TabIndex = 9;
+			this.TabPage_VasosCalhas.Text = "Vazão & Calhas";
+			this.TabPage_VasosCalhas.UseVisualStyleBackColor = true;
 			// 
 			// GroupBox12
 			// 
@@ -120,6 +120,7 @@ namespace iS800
 			this.TabControl_Calhas.SelectedIndex = 0;
 			this.TabControl_Calhas.Size = new global::System.Drawing.Size(780, 530);
 			this.TabControl_Calhas.TabIndex = 20;
+			this.PopulateCalhaTabsDesigner();
 			// 
 			// TabPage2
 			// 
@@ -204,20 +205,20 @@ namespace iS800
 			this.tb_lixo6.Size = new global::System.Drawing.Size(100, 20);
 			this.tb_lixo6.TabIndex = 4;
 			// 
-			// TabPage_vazao_perifericos
+			// TabPage_Perifericos
 			// 
-			this.TabPage_vazao_perifericos.BackColor = global::System.Drawing.SystemColors.ControlLight;
-			this.TabPage_vazao_perifericos.Controls.Add(this.GroupBox11);
-			this.TabPage_vazao_perifericos.Controls.Add(this.GroupBox10);
-			this.TabPage_vazao_perifericos.Controls.Add(this.GroupBox3);
-			this.TabPage_vazao_perifericos.Controls.Add(this.GroupBox_perifericos_820);
-			this.TabPage_vazao_perifericos.Location = new global::System.Drawing.Point(4, 22);
-			this.TabPage_vazao_perifericos.Name = "TabPage_vazao_perifericos";
-			this.TabPage_vazao_perifericos.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage_vazao_perifericos.Size = new global::System.Drawing.Size(1396, 652);
-			this.TabPage_vazao_perifericos.TabIndex = 10;
-			this.TabPage_vazao_perifericos.Text = "   Periféricos   ";
-			this.TabPage_vazao_perifericos.UseVisualStyleBackColor = true;
+			this.TabPage_Perifericos.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_Perifericos.Controls.Add(this.GroupBox11);
+			this.TabPage_Perifericos.Controls.Add(this.GroupBox10);
+			this.TabPage_Perifericos.Controls.Add(this.GroupBox3);
+			this.TabPage_Perifericos.Controls.Add(this.GroupBox_perifericos_820);
+			this.TabPage_Perifericos.Location = new global::System.Drawing.Point(4, 22);
+			this.TabPage_Perifericos.Name = "TabPage_Perifericos";
+			this.TabPage_Perifericos.Padding = new global::System.Windows.Forms.Padding(3);
+			this.TabPage_Perifericos.Size = new global::System.Drawing.Size(1396, 540);
+			this.TabPage_Perifericos.TabIndex = 10;
+			this.TabPage_Perifericos.Text = "Periféricos";
+			this.TabPage_Perifericos.UseVisualStyleBackColor = true;
 			// 
 			// GroupBox11
 			// 
@@ -356,11 +357,11 @@ namespace iS800
 			this.GroupBox3.PerformLayout();
 			this.GroupBox_perifericos_820.ResumeLayout(false);
 			this.GroupBox9.ResumeLayout(false);
-			this.TabPage_vazao.ResumeLayout(false);
-			this.TabPage_vazao_perifericos.ResumeLayout(false);
+			this.TabPage_VasosCalhas.ResumeLayout(false);
+			this.TabPage_Perifericos.ResumeLayout(false);
 			// Reorder TabPages robustly: ensure Vazão, Periféricos, Dados after Display
-			var tabPageVazao = this.TabControl_821.TabPages["TabPage_vazao"];
-			var tabPageVazaoPerifericos = this.TabControl_821.TabPages["TabPage_vazao_perifericos"];
+			var tabPageVazao = this.TabControl_821.TabPages["TabPage_VasosCalhas"];
+			var tabPageVazaoPerifericos = this.TabControl_821.TabPages["TabPage_Perifericos"];
 			var tabPageDisplay = this.TabControl_821.TabPages["TabPage_Display"];
 			var tabPageDadosInstalacao = this.TabControl_821.TabPages["TabPage_DadosInstalacao"];
 			var pagesToMove = new System.Collections.Generic.List<System.Windows.Forms.TabPage>();
@@ -395,5 +396,141 @@ namespace iS800
 			}
 			this.ResumeLayout(false);
         }
+
+
+		        // Struct auxiliar — evita ValueTuple (nao disponivel no .NET 4.5)
+        private struct InfoLabel
+        {
+            public string Texto;
+            public Point  Pos;
+            public Color  Cor;   // Color.Empty = sem cor especial
+            public InfoLabel(string texto, Point pos, Color cor)
+            { Texto = texto; Pos = pos; Cor = cor; }
+        }
+
+        /// <summary>
+        /// Monta uma TabPage de calha com PictureBox (Resource) + Labels sobrepostos,
+        /// identico ao que o Designer do RT_820_360_conf gera para TabPage2/3/4.
+        /// </summary>
+        private static TabPage CriaTabCalha(
+            string titulo,
+            System.Drawing.Image imagem,
+            InfoLabel[] labels)
+        {
+            var page = new TabPage
+            {
+                Text = titulo,
+                UseVisualStyleBackColor = true,
+                Padding = new Padding(3)
+            };
+
+            var pic = new PictureBox
+            {
+                Image        = imagem,
+                ErrorImage   = null,
+                InitialImage = null,
+                Location     = new Point(0, 0),
+                Size         = new Size(769, 428),
+                TabStop      = false,
+                SizeMode     = PictureBoxSizeMode.Normal
+            };
+            page.Controls.Add(pic);
+
+            foreach (var info in labels)
+            {
+                var lbl = new Label
+                {
+                    Text      = info.Texto,
+                    AutoSize  = true,
+                    Location  = info.Pos,
+                    BackColor = Color.Transparent
+                };
+                if (info.Cor != Color.Empty) lbl.ForeColor = info.Cor;
+                page.Controls.Add(lbl);
+                lbl.BringToFront();
+            }
+
+            return page;
+        }
+
+
+        private static void PreencheHeadersReferencias(DataGridView dgv, int inicio)
+        {
+            dgv.RowCount = 5;
+            for (int i = 0; i < dgv.Rows.Count; i++)
+            {
+                if (!dgv.Rows[i].IsNewRow)
+                    dgv.Rows[i].HeaderCell.Value = (inicio + i).ToString();
+            }
+        }
+
+        private void ConfiguraAbasDesigner()
+        {
+            if (DataGridView_vazoes_RT820 != null)
+                GeraDataGridView_Vazoes(DataGridView_vazoes_RT820);
+
+            if (DataGridView_periferico1_RT820 != null)
+                GeraDataGridView_Perifericos(DataGridView_periferico1_RT820);
+            if (DataGridView_periferico2_RT820 != null)
+                GeraDataGridView_Perifericos(DataGridView_periferico2_RT820);
+
+            if (datagridview_referenciaperifico != null)
+            {
+                GeraDataGridView_Referencia_Periferico(datagridview_referenciaperifico);
+                PreencheHeadersReferencias(datagridview_referenciaperifico, 1);
+            }
+
+            if (DataGridView_calhas_RT820 != null)
+            {
+                var cols = RT_geral.RT_820_DatagridViewCalhasColunas;
+                int[] larguras = { 80, 150, 150, 80, 80, 80 };
+                DataGridView_calhas_RT820.Columns.Clear();
+                for (int ci = 0; ci <= 5; ci++)
+                {
+                    DataGridViewColumn col = cols[ci].NumeroLinhaMenu > 0
+                        ? Linha_RT.CreateComboBoxColumn(ci.ToString(), ref cols)
+                        : Linha_RT.CreateTextColumn(ci.ToString(), ref cols);
+                    col.Width = larguras[ci];
+                    DataGridView_calhas_RT820.Columns.Insert(ci, col);
+                }
+                DataGridView_calhas_RT820.RowCount = 2;
+                DataGridView_calhas_RT820.RowHeadersWidth = 80;
+                int rn = 1;
+                foreach (DataGridViewRow row in DataGridView_calhas_RT820.Rows)
+                    if (!row.IsNewRow) row.HeaderCell.Value = "Calha " + rn++;
+                DataGridView_calhas_RT820.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                DataGridView_calhas_RT820.ScrollBars = ScrollBars.None;
+            }
+        }
+
+
+		private void PopulateCalhaTabsDesigner()
+		{
+			this.TabPage2.Controls.Clear();
+			this.TabPage3.Controls.Clear();
+			this.TabPage4.Controls.Clear();
+
+			this.TabPage2.Controls.Add(new PictureBox
+			{
+				Image = iS800.My.Resources.Resources.calha_01,
+				Location = new Point(3, 3),
+				Size = new Size(745, 422),
+				SizeMode = PictureBoxSizeMode.StretchImage
+			});
+			this.TabPage3.Controls.Add(new PictureBox
+			{
+				Image = iS800.My.Resources.Resources.calha_02,
+				Location = new Point(3, 3),
+				Size = new Size(745, 422),
+				SizeMode = PictureBoxSizeMode.StretchImage
+			});
+			this.TabPage4.Controls.Add(new PictureBox
+			{
+				Image = iS800.My.Resources.Resources.calha_03,
+				Location = new Point(3, 3),
+				Size = new Size(745, 422),
+				SizeMode = PictureBoxSizeMode.StretchImage
+			});
+		}
 	}
 }
