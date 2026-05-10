@@ -3856,6 +3856,10 @@ namespace iS800
 		// Token: 0x040010FF RID: 4351
 		public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_820_DatagridViewCalhasColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[8];
 
+        // ── RT_821/380 — Novas abas de Vazão & Calhas + Periféricos ────────
+        public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_821_380_DatagridViewVazoesColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[6];
+        public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_821_380_DatagridViewPerifericosColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[5];
+
 		// Token: 0x04001100 RID: 4352
 		public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_820_DataGrigViewEDColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[2];
 

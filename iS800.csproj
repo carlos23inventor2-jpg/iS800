@@ -350,7 +350,10 @@
     <Compile Include="TabelaLinhaInteria.cs" />
     <Compile Include="TabelaMeiaLinhaDireita.cs" />
     <Compile Include="TabelaMeiaLinhaEsquerda.cs" />
-  <Compile Include="VR_PrintPreview_Stub.cs" /><Compile Include="Plataforma_Custom_38.cs" /><Compile Include="RT_821_380_conf.cs" /></ItemGroup>
+    <Compile Include="VR_PrintPreview_Stub.cs" />
+    <Compile Include="Plataforma_Custom_38.cs" />
+    <Compile Include="RT_821_380_conf.cs" />
+    </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Abertura.resources" />
     <EmbeddedResource Include="Aguarde.resources" />
