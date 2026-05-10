@@ -831,7 +831,7 @@ namespace iS800
 			this.DataGridView_processo_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
 			this.DataGridView_processo_RT821.ScrollBars = (System.Windows.Forms.ScrollBars)1;
 			global::System.Windows.Forms.Control dataGridView_processo_RT2 = this.DataGridView_processo_RT821;
-			size = new global::System.Drawing.Size(752, 102);
+			size = new global::System.Drawing.Size(752, 112);
 			dataGridView_processo_RT2.Size = size;
 			this.DataGridView_processo_RT821.TabIndex = 0;
 			global::System.Windows.Forms.Control tb_lixo3 = this.tb_lixo2;
@@ -1012,7 +1012,7 @@ namespace iS800
 			groupBox_ED_RT.Location = location;
 			this.GroupBox_ED_RT821.Name = "GroupBox_ED_RT821";
 			global::System.Windows.Forms.Control groupBox_ED_RT2 = this.GroupBox_ED_RT821;
-			size = new global::System.Drawing.Size(320, 241);
+			size = new global::System.Drawing.Size(320, 252);
 			groupBox_ED_RT2.Size = size;
 			this.GroupBox_ED_RT821.TabIndex = 1;
 			this.GroupBox_ED_RT821.TabStop = false;
@@ -1054,7 +1054,7 @@ namespace iS800
 			dataGridViewCellStyle16.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
 			this.DataGridView_RT821_ED.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
 			global::System.Windows.Forms.Control dataGridView_RT821_ED2 = this.DataGridView_RT821_ED;
-			size = new global::System.Drawing.Size(282, 200);
+			size = new global::System.Drawing.Size(282, 205);
 			dataGridView_RT821_ED2.Size = size;
 			this.DataGridView_RT821_ED.TabIndex = 16;
 			global::System.Windows.Forms.Control tb_lixo7 = this.tb_lixo4;
@@ -1359,7 +1359,7 @@ namespace iS800
 			dataGridViewCellStyle28.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
 			this.DataGridView_visor_RT_821.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
 			global::System.Windows.Forms.Control dataGridView_visor_RT_2 = this.DataGridView_visor_RT_821;
-			size = new global::System.Drawing.Size(392, 200);
+			size = new global::System.Drawing.Size(392, 205);
 			dataGridView_visor_RT_2.Size = size;
 			this.DataGridView_visor_RT_821.TabIndex = 16;
 			global::System.Windows.Forms.Control tb_lixo13 = this.tb_lixo7;
@@ -1541,6 +1541,12 @@ namespace iS800
 			this.CB_ModeloRadio.Items.AddRange(new object[]
 			{
 				"Não informado",
+				"shinider",
+				"FC302",
+				"FC302 - HF",
+				"FC302 - LF",
+				"FC302 sem Modem",
+				"FC302 com Modem",
 				"SD164 sem Modem",
 				"SD164 com Modem",
 				"SD174 sem Modem",

@@ -1,536 +1,1960 @@
-using System;
-using System.ComponentModel;
-using System.Drawing;
-using System.Windows.Forms;
-
 namespace iS800
 {
-	public partial class RT_821_380_conf : RT_821_Conf
+	// Token: 0x02000055 RID: 85
+	public partial class RT_821_380_conf : global::System.Windows.Forms.Form
 	{
-		private System.ComponentModel.IContainer components = null;
-
-		internal global::System.Windows.Forms.TabPage TabPage_VasosCalhas;
-		private global::System.Windows.Forms.GroupBox GroupBox12;
-		private global::System.Windows.Forms.TabControl TabControl_Calhas;
-		private global::System.Windows.Forms.TabPage TabPage2;
-		private global::System.Windows.Forms.TabPage TabPage3;
-		private global::System.Windows.Forms.TabPage TabPage4;
-		private global::System.Windows.Forms.Label Label41;
-		private global::System.Windows.Forms.DataGridView DataGridView_calhas_RT820;
-		private global::System.Windows.Forms.GroupBox GroupBox_vazoes_820;
-		private global::System.Windows.Forms.DataGridView DataGridView_vazoes_RT820;
-		private global::System.Windows.Forms.TextBox tb_lixo6;
-		internal global::System.Windows.Forms.TabPage TabPage_Perifericos;
-		private global::System.Windows.Forms.GroupBox GroupBox11;
-		private global::System.Windows.Forms.DataGridView DataGridView_perifericomodbusgenerico_RT820;
-		private global::System.Windows.Forms.GroupBox GroupBox10;
-		private global::System.Windows.Forms.DataGridView DataGridView_periferico2_RT820;
-		private global::System.Windows.Forms.GroupBox GroupBox3;
-		private global::System.Windows.Forms.Label Label22;
-		private global::System.Windows.Forms.DataGridView datagridview_referenciaperifico;
-		private global::System.Windows.Forms.GroupBox GroupBox_perifericos_820;
-		private global::System.Windows.Forms.GroupBox GroupBox9;
-		private global::System.Windows.Forms.DataGridView DataGridView2;
-		private global::System.Windows.Forms.DataGridView DataGridView_periferico1_RT820;
-
+		// Token: 0x060018FA RID: 6394 RVA: 0x003AFC50 File Offset: 0x003AE050
+		[global::System.Diagnostics.DebuggerNonUserCode]
 		protected override void Dispose(bool disposing)
 		{
-			if (disposing && (components != null))
+			try
 			{
-				components.Dispose();
+				if (disposing && this.components != null)
+				{
+					this.components.Dispose();
+				}
 			}
-			base.Dispose(disposing);
+			finally
+			{
+				base.Dispose(disposing);
+			}
 		}
 
-		internal void CreateChildTabs()
-        {
-            // Não reconfigurar o form - usar AddTabsOnly()
-        }
-
-        internal void AddTabsOnly()
-        {
-			this.TabPage_VasosCalhas = new global::System.Windows.Forms.TabPage();
-			this.GroupBox12 = new global::System.Windows.Forms.GroupBox();
-			this.TabControl_Calhas = new global::System.Windows.Forms.TabControl();
-			this.TabPage2 = new global::System.Windows.Forms.TabPage();
-			this.TabPage3 = new global::System.Windows.Forms.TabPage();
-			this.TabPage4 = new global::System.Windows.Forms.TabPage();
-			this.Label41 = new global::System.Windows.Forms.Label();
-			this.DataGridView_calhas_RT820 = new global::System.Windows.Forms.DataGridView();
-			this.GroupBox_vazoes_820 = new global::System.Windows.Forms.GroupBox();
-			this.DataGridView_vazoes_RT820 = new global::System.Windows.Forms.DataGridView();
-			this.tb_lixo6 = new global::System.Windows.Forms.TextBox();
-			this.TabPage_Perifericos = new global::System.Windows.Forms.TabPage();
-			this.GroupBox11 = new global::System.Windows.Forms.GroupBox();
-			this.DataGridView_perifericomodbusgenerico_RT820 = new global::System.Windows.Forms.DataGridView();
-			this.GroupBox10 = new global::System.Windows.Forms.GroupBox();
-			this.DataGridView_periferico2_RT820 = new global::System.Windows.Forms.DataGridView();
-			this.GroupBox3 = new global::System.Windows.Forms.GroupBox();
+		// Token: 0x060018FB RID: 6395 RVA: 0x003AFC90 File Offset: 0x003AE090
+		[global::System.Diagnostics.DebuggerStepThrough]
+		protected void InitializeComponent()
+		{
+			this.components = new global::System.ComponentModel.Container();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::iS800.RT_821_380_conf));
+			this.TabControl_821 = new global::System.Windows.Forms.TabControl();
+			this.TabPage_geral = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_ModoOperacao = new global::System.Windows.Forms.GroupBox();
+			this.ComboBox_Modo_Operacao = new global::System.Windows.Forms.ComboBox();
+			this.NumericUpDown_IntervaloTX = new global::System.Windows.Forms.NumericUpDown();
+			this.lb_ModoOperacao = new global::System.Windows.Forms.Label();
+			this.lb_IntervaloTX = new global::System.Windows.Forms.Label();
+			this.GroupBox_descricao_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.TextBox_comentarios_RT821 = new global::System.Windows.Forms.TextBox();
+			this.TextBox_endereco_RT821 = new global::System.Windows.Forms.TextBox();
+			this.TextBox_nome_RT821 = new global::System.Windows.Forms.TextBox();
+			this.Label_comentarios_RT821 = new global::System.Windows.Forms.Label();
+			this.Label_endereco_RT821 = new global::System.Windows.Forms.Label();
+			this.Label_nome_RT821 = new global::System.Windows.Forms.Label();
+			this.tb_lixo1 = new global::System.Windows.Forms.TextBox();
+			this.GroupBox_informacoes_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.Label26 = new global::System.Windows.Forms.Label();
+			this.TextBox_equipamento_RT821 = new global::System.Windows.Forms.TextBox();
+			this.Label19 = new global::System.Windows.Forms.Label();
+			this.TextBox_release_RT821 = new global::System.Windows.Forms.TextBox();
+			this.Label20 = new global::System.Windows.Forms.Label();
+			this.TextBox_build_RT821 = new global::System.Windows.Forms.TextBox();
+			this.Label21 = new global::System.Windows.Forms.Label();
+			this.TextBox_versao_RT821 = new global::System.Windows.Forms.TextBox();
 			this.Label22 = new global::System.Windows.Forms.Label();
-			this.datagridview_referenciaperifico = new global::System.Windows.Forms.DataGridView();
-			this.GroupBox_perifericos_820 = new global::System.Windows.Forms.GroupBox();
-			this.GroupBox9 = new global::System.Windows.Forms.GroupBox();
-			this.DataGridView2 = new global::System.Windows.Forms.DataGridView();
-			this.DataGridView_periferico1_RT820 = new global::System.Windows.Forms.DataGridView();
-			this.GroupBox12.SuspendLayout();
-			this.TabControl_Calhas.SuspendLayout();
-			this.GroupBox_vazoes_820.SuspendLayout();
-			this.GroupBox11.SuspendLayout();
-			this.GroupBox10.SuspendLayout();
-			this.GroupBox3.SuspendLayout();
-			this.GroupBox_perifericos_820.SuspendLayout();
-			this.GroupBox9.SuspendLayout();
-			this.TabPage_VasosCalhas.SuspendLayout();
-			this.TabPage_Perifericos.SuspendLayout();
-			this.TabControl_821.Controls.Add(this.TabPage_VasosCalhas);
-			this.TabControl_821.Controls.Add(this.TabPage_Perifericos);
-			// 
-			// TabPage_VasosCalhas
-			// 
-			this.TabPage_VasosCalhas.BackColor = global::System.Drawing.SystemColors.ControlLight;
-			this.TabPage_VasosCalhas.Controls.Add(this.GroupBox12);
-			this.TabPage_VasosCalhas.Controls.Add(this.GroupBox_vazoes_820);
-			this.TabPage_VasosCalhas.Location = new global::System.Drawing.Point(4, 22);
-			this.TabPage_VasosCalhas.Name = "TabPage_VasosCalhas";
-			this.TabPage_VasosCalhas.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage_VasosCalhas.Size = new global::System.Drawing.Size(1396, 540);
-			this.TabPage_VasosCalhas.TabIndex = 9;
-			this.TabPage_VasosCalhas.Text = "Vazão & Calhas";
-			this.TabPage_VasosCalhas.UseVisualStyleBackColor = true;
-			// 
-			// GroupBox12
-			// 
-			this.GroupBox12.Controls.Add(this.TabControl_Calhas);
-			this.GroupBox12.Controls.Add(this.Label41);
-			this.GroupBox12.Controls.Add(this.DataGridView_calhas_RT820);
-			this.GroupBox12.Location = new global::System.Drawing.Point(371, 17);
-			this.GroupBox12.Name = "GroupBox12";
-			this.GroupBox12.Size = new global::System.Drawing.Size(850, 530);
-			this.GroupBox12.TabIndex = 3;
-			this.GroupBox12.TabStop = false;
-			this.GroupBox12.Text = "Calhas";
-			// 
-			// TabControl_Calhas
-			// 
-			this.TabControl_Calhas.Controls.Add(this.TabPage2);
-			this.TabControl_Calhas.Controls.Add(this.TabPage3);
-			this.TabControl_Calhas.Controls.Add(this.TabPage4);
-			this.TabControl_Calhas.Location = new global::System.Drawing.Point(19, 160);
-			this.TabControl_Calhas.Name = "TabControl_Calhas";
-			this.TabControl_Calhas.SelectedIndex = 0;
-			this.TabControl_Calhas.Size = new global::System.Drawing.Size(780, 530);
-			this.TabControl_Calhas.TabIndex = 20;
-			this.PopulateCalhaTabsDesigner();
-			// 
-			// TabPage2
-			// 
-			this.TabPage2.Location = new global::System.Drawing.Point(4, 22);
-			this.TabPage2.Name = "TabPage2";
-			this.TabPage2.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage2.Size = new global::System.Drawing.Size(772, 431);
-			this.TabPage2.TabIndex = 0;
-			this.TabPage2.Text = "General Parshall Flume";
-			this.TabPage2.UseVisualStyleBackColor = true;
-			// 
-			// TabPage3
-			// 
-			this.TabPage3.Location = new global::System.Drawing.Point(4, 22);
-			this.TabPage3.Name = "TabPage3";
-			this.TabPage3.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage3.Size = new global::System.Drawing.Size(772, 431);
-			this.TabPage3.TabIndex = 1;
-			this.TabPage3.Text = "Botton Step Weir";
-			this.TabPage3.UseVisualStyleBackColor = true;
-			// 
-			// TabPage4
-			// 
-			this.TabPage4.Location = new global::System.Drawing.Point(4, 22);
-			this.TabPage4.Name = "TabPage4";
-			this.TabPage4.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage4.Size = new global::System.Drawing.Size(772, 431);
-			this.TabPage4.TabIndex = 2;
-			this.TabPage4.Text = "Rectangular Weir";
-			this.TabPage4.UseVisualStyleBackColor = true;
-			// 
-			// Label41
-			// 
-			this.Label41.AutoSize = true;
-			this.Label41.Location = new global::System.Drawing.Point(488, 381);
-			this.Label41.Name = "Label41";
-			this.Label41.Size = new global::System.Drawing.Size(68, 13);
-			this.Label41.TabIndex = 6;
-			this.Label41.Text = "Visão Lateral";
-			// 
-			// DataGridView_calhas_RT820
-			// 
-			this.DataGridView_calhas_RT820.AllowUserToAddRows = false;
-			this.DataGridView_calhas_RT820.AllowUserToDeleteRows = false;
-			this.DataGridView_calhas_RT820.AllowUserToResizeColumns = false;
-			this.DataGridView_calhas_RT820.AllowUserToResizeRows = false;
-			this.DataGridView_calhas_RT820.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.DataGridView_calhas_RT820.Location = new global::System.Drawing.Point(19, 19);
-			this.DataGridView_calhas_RT820.Name = "DataGridView_calhas_RT820";
-			this.DataGridView_calhas_RT820.RowHeadersWidth = 75;
-			this.DataGridView_calhas_RT820.Size = new global::System.Drawing.Size(342, 135);
-			this.DataGridView_calhas_RT820.TabIndex = 0;
-			// 
-			// GroupBox_vazoes_820
-			// 
-			this.GroupBox_vazoes_820.Controls.Add(this.DataGridView_vazoes_RT820);
-			this.GroupBox_vazoes_820.Controls.Add(this.tb_lixo6);
-			this.GroupBox_vazoes_820.Location = new global::System.Drawing.Point(17, 17);
-			this.GroupBox_vazoes_820.Name = "GroupBox_vazoes_820";
-			this.GroupBox_vazoes_820.Size = new global::System.Drawing.Size(348, 630);
-			this.GroupBox_vazoes_820.TabIndex = 2;
-			this.GroupBox_vazoes_820.TabStop = false;
-			this.GroupBox_vazoes_820.Text = "Vazões";
-			// 
-			// DataGridView_vazoes_RT820
-			// 
-			this.DataGridView_vazoes_RT820.AllowUserToAddRows = false;
-			this.DataGridView_vazoes_RT820.AllowUserToDeleteRows = false;
-			this.DataGridView_vazoes_RT820.AllowUserToResizeColumns = false;
-			this.DataGridView_vazoes_RT820.AllowUserToResizeRows = false;
-			this.DataGridView_vazoes_RT820.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.DataGridView_vazoes_RT820.Location = new global::System.Drawing.Point(14, 19);
-			this.DataGridView_vazoes_RT820.Name = "DataGridView_vazoes_RT820";
-			this.DataGridView_vazoes_RT820.RowHeadersWidth = 75;
-			this.DataGridView_vazoes_RT820.Size = new global::System.Drawing.Size(320, 575);
-			this.DataGridView_vazoes_RT820.TabIndex = 0;
-			// 
-			// tb_lixo6
-			// 
-			this.tb_lixo6.Location = new global::System.Drawing.Point(197, 151);
+			this.GroupBox_modelo_simulado_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.ComboBox_modo_simulado_RT_821 = new global::System.Windows.Forms.ComboBox();
+			this.GroupBox_comunicacao_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.cb_baudrate_com2 = new global::System.Windows.Forms.ComboBox();
+			this.cb_baudrate_com1 = new global::System.Windows.Forms.ComboBox();
+			this.Label23 = new global::System.Windows.Forms.Label();
+			this.Label18 = new global::System.Windows.Forms.Label();
+			this.NumericUpDown_temp_ptt_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.NumericUpDown_end_mestre_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.NumericUpDown_end_est_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.Label_tempo_ptt_RT821 = new global::System.Windows.Forms.Label();
+			this.Label_end_mestre_RT821 = new global::System.Windows.Forms.Label();
+			this.Label_end_est_RT821 = new global::System.Windows.Forms.Label();
+			this.TabPage_controles = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_MotoresSimultaneos_RT_821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_MotoresSimultaneos_RT_821 = new global::System.Windows.Forms.DataGridView();
+			this.GroupBox_controle_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_processo_RT821 = new global::System.Windows.Forms.DataGridView();
+			this.tb_lixo2 = new global::System.Windows.Forms.TextBox();
+			this.TabPage_EA = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_parametros_EA_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_parametros_EA_RT821 = new global::System.Windows.Forms.DataGridView();
+			this.tb_lixo3 = new global::System.Windows.Forms.TextBox();
+			this.GroupBox_EA_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.NumericUpDown_intervalo_filtro_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.NumericUpDown_tamanho_filtro_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.Label_intervalo_filtro_RT821 = new global::System.Windows.Forms.Label();
+			this.Label_tamanho_filtro_RT821 = new global::System.Windows.Forms.Label();
+			this.TabPage_ED = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_ED_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_RT821_ED = new global::System.Windows.Forms.DataGridView();
+			this.tb_lixo4 = new global::System.Windows.Forms.TextBox();
+			this.TabPage_setpoints = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_setpoints_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_setpoints_RT821 = new global::System.Windows.Forms.DataGridView();
+			this.tb_lixo5 = new global::System.Windows.Forms.TextBox();
+			this.TabPage_repetidora = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_end_rep_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_end_rep_RT821 = new global::System.Windows.Forms.DataGridView();
+			this.GroupBox_parametros_repetidora_RT821 = new global::System.Windows.Forms.GroupBox();
+			this.cb_modorepetidora = new global::System.Windows.Forms.ComboBox();
+			this.Label1 = new global::System.Windows.Forms.Label();
+			this.NumericUpDown_num_est_rep_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.NumericUpDown_end_rep_RT821 = new global::System.Windows.Forms.NumericUpDown();
+			this.Label_num_est_rep_RT821 = new global::System.Windows.Forms.Label();
+			this.Label_end_rep_RT821 = new global::System.Windows.Forms.Label();
+			this.tb_lixo6 = new global::System.Windows.Forms.TextBox();
+			this.TabPage_Display = new global::System.Windows.Forms.TabPage();
+			this.GroupBox_visor_RT_821 = new global::System.Windows.Forms.GroupBox();
+			this.DataGridView_visor_RT_821 = new global::System.Windows.Forms.DataGridView();
+			this.tb_lixo7 = new global::System.Windows.Forms.TextBox();
+			this.TabPage_DadosInstalacao = new global::System.Windows.Forms.TabPage();
+            this.TabPage_VasosCalhas = new global::System.Windows.Forms.TabPage();
+            this.TabPage_Perifericos = new global::System.Windows.Forms.TabPage();
+			this.GroupBox1 = new global::System.Windows.Forms.GroupBox();
+			this.Label16 = new global::System.Windows.Forms.Label();
+			this.Label15 = new global::System.Windows.Forms.Label();
+			this.T_ModeloFonte = new global::System.Windows.Forms.TextBox();
+			this.T_AlturaAntena = new global::System.Windows.Forms.TextBox();
+			this.T_Latitude = new global::System.Windows.Forms.TextBox();
+			this.T_Longitude = new global::System.Windows.Forms.TextBox();
+			this.T_Azimute = new global::System.Windows.Forms.TextBox();
+			this.Label14 = new global::System.Windows.Forms.Label();
+			this.Label13 = new global::System.Windows.Forms.Label();
+			this.Label12 = new global::System.Windows.Forms.Label();
+			this.T_FreqRadio = new global::System.Windows.Forms.TextBox();
+			this.T_DistCentral = new global::System.Windows.Forms.TextBox();
+			this.T_PotRadio = new global::System.Windows.Forms.TextBox();
+			this.CB_ModeloRadio = new global::System.Windows.Forms.ComboBox();
+			this.CB_PolarizacaoAntena = new global::System.Windows.Forms.ComboBox();
+			this.CB_TipoAntena = new global::System.Windows.Forms.ComboBox();
+			this.Label11 = new global::System.Windows.Forms.Label();
+			this.Label10 = new global::System.Windows.Forms.Label();
+			this.Label9 = new global::System.Windows.Forms.Label();
+			this.Label8 = new global::System.Windows.Forms.Label();
+			this.Label7 = new global::System.Windows.Forms.Label();
+			this.Label6 = new global::System.Windows.Forms.Label();
+			this.Label5 = new global::System.Windows.Forms.Label();
+			this.Label4 = new global::System.Windows.Forms.Label();
+			this.Label3 = new global::System.Windows.Forms.Label();
+			this.Label2 = new global::System.Windows.Forms.Label();
+			this.Label17 = new global::System.Windows.Forms.Label();
+			this.tb_lixo8 = new global::System.Windows.Forms.TextBox();
+			this.OpenFileDialog_RT821 = new global::System.Windows.Forms.OpenFileDialog();
+			this.SaveFileDialog_RT821 = new global::System.Windows.Forms.SaveFileDialog();
+			this.Timer_limpa_MSG_RT821 = new global::System.Windows.Forms.Timer(this.components);
+			this.ToolStri_RT821 = new global::System.Windows.Forms.ToolStrip();
+			this.ToolStripButton_RT821_novo = new global::System.Windows.Forms.ToolStripButton();
+			this.ToolStripButton_RT821_Abrir = new global::System.Windows.Forms.ToolStripButton();
+			this.ToolStripButton_RT821_Salvar = new global::System.Windows.Forms.ToolStripButton();
+			this.ToolStripSeparator1 = new global::System.Windows.Forms.ToolStripSeparator();
+			this.ToolStripButton_RT821_Download = new global::System.Windows.Forms.ToolStripButton();
+			this.ToolStripButton_RT821_Upload = new global::System.Windows.Forms.ToolStripButton();
+			this.ToolStripSeparator2 = new global::System.Windows.Forms.ToolStripSeparator();
+			this.ToolStripButton_RT821_Imprimir = new global::System.Windows.Forms.ToolStripButton();
+			this.ToolStripSeparator3 = new global::System.Windows.Forms.ToolStripSeparator();
+			this.ToolStripLabel1 = new global::System.Windows.Forms.ToolStripLabel();
+			this.ToolStripSeparator4 = new global::System.Windows.Forms.ToolStripSeparator();
+			this.ToolStripTextBox_RT821_Msg = new global::System.Windows.Forms.ToolStripTextBox();
+			this.ToolStripProgressBar_RT821 = new global::System.Windows.Forms.ToolStripProgressBar();
+			this.PrintDocument1 = new global::System.Drawing.Printing.PrintDocument();
+			this.PrintPreviewDialog1 = new global::System.Windows.Forms.PrintPreviewDialog();
+			this.TabControl_821.SuspendLayout();
+			this.TabPage_geral.SuspendLayout();
+			this.GroupBox_ModoOperacao.SuspendLayout();
+			this.GroupBox_descricao_RT821.SuspendLayout();
+			this.GroupBox_informacoes_RT821.SuspendLayout();
+			this.GroupBox_modelo_simulado_RT821.SuspendLayout();
+			this.GroupBox_comunicacao_RT821.SuspendLayout();
+
+
+			this.TabPage_controles.SuspendLayout();
+			this.GroupBox_MotoresSimultaneos_RT_821.SuspendLayout();
+			this.GroupBox_controle_RT821.SuspendLayout();
+			this.TabPage_EA.SuspendLayout();
+			this.GroupBox_parametros_EA_RT821.SuspendLayout();
+			this.GroupBox_EA_RT821.SuspendLayout();
+
+			this.TabPage_ED.SuspendLayout();
+			this.GroupBox_ED_RT821.SuspendLayout();
+			this.TabPage_setpoints.SuspendLayout();
+			this.GroupBox_setpoints_RT821.SuspendLayout();
+			this.TabPage_repetidora.SuspendLayout();
+			this.GroupBox_end_rep_RT821.SuspendLayout();
+			this.GroupBox_parametros_repetidora_RT821.SuspendLayout();
+
+			this.TabPage_Display.SuspendLayout();
+			this.GroupBox_visor_RT_821.SuspendLayout();
+			this.TabPage_DadosInstalacao.SuspendLayout();
+                    this.TabPage_VasosCalhas.SuspendLayout();
+                    this.TabPage_Perifericos.SuspendLayout();
+			this.GroupBox1.SuspendLayout();
+			this.ToolStri_RT821.SuspendLayout();
+			this.SuspendLayout();
+			this.TabControl_821.Controls.Add(this.TabPage_geral);
+			this.TabControl_821.Controls.Add(this.TabPage_controles);
+			this.TabControl_821.Controls.Add(this.TabPage_EA);
+			this.TabControl_821.Controls.Add(this.TabPage_ED);
+			this.TabControl_821.Controls.Add(this.TabPage_setpoints);
+			this.TabControl_821.Controls.Add(this.TabPage_repetidora);
+			this.TabControl_821.Controls.Add(this.TabPage_Display);
+			this.TabControl_821.Controls.Add(this.TabPage_DadosInstalacao);
+			this.TabControl_821.HotTrack = true;
+			global::System.Windows.Forms.Control tabControl_ = this.TabControl_821;
+			global::System.Drawing.Point location;
+			location = new global::System.Drawing.Point(12, 58);
+			tabControl_.Location = location;
+			this.TabControl_821.Name = "TabControl_821";
+			this.TabControl_821.SelectedIndex = 0;
+			global::System.Windows.Forms.Control tabControl_2 = this.TabControl_821;
+			global::System.Drawing.Size size;
+			size = new global::System.Drawing.Size(1140, 550);
+			tabControl_2.Size = size;
+			this.TabControl_821.TabIndex = 8;
+			this.TabPage_geral.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_geral.Controls.Add(this.GroupBox_ModoOperacao);
+			this.TabPage_geral.Controls.Add(this.GroupBox_descricao_RT821);
+			this.TabPage_geral.Controls.Add(this.GroupBox_informacoes_RT821);
+			this.TabPage_geral.Controls.Add(this.GroupBox_modelo_simulado_RT821);
+			this.TabPage_geral.Controls.Add(this.GroupBox_comunicacao_RT821);
+			global::System.Windows.Forms.TabPage tabPage_geral = this.TabPage_geral;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_geral.Location = location;
+			this.TabPage_geral.Name = "TabPage_geral";
+			global::System.Windows.Forms.Control tabPage_geral2 = this.TabPage_geral;
+			global::System.Windows.Forms.Padding padding;
+			padding = new global::System.Windows.Forms.Padding(3);
+			tabPage_geral2.Padding = padding;
+			global::System.Windows.Forms.Control tabPage_geral3 = this.TabPage_geral;
+			size = new global::System.Drawing.Size(1130, 525);
+			tabPage_geral3.Size = size;
+			this.TabPage_geral.TabIndex = 0;
+			this.TabPage_geral.Text = "Geral";
+			this.TabPage_geral.UseVisualStyleBackColor = true;
+			this.GroupBox_ModoOperacao.Controls.Add(this.ComboBox_Modo_Operacao);
+			this.GroupBox_ModoOperacao.Controls.Add(this.NumericUpDown_IntervaloTX);
+			this.GroupBox_ModoOperacao.Controls.Add(this.lb_ModoOperacao);
+			this.GroupBox_ModoOperacao.Controls.Add(this.lb_IntervaloTX);
+			global::System.Windows.Forms.Control groupBox_ModoOperacao = this.GroupBox_ModoOperacao;
+			location = new global::System.Drawing.Point(17, 276);
+			groupBox_ModoOperacao.Location = location;
+			this.GroupBox_ModoOperacao.Name = "GroupBox_ModoOperacao";
+			global::System.Windows.Forms.Control groupBox_ModoOperacao2 = this.GroupBox_ModoOperacao;
+			size = new global::System.Drawing.Size(291, 94);
+			groupBox_ModoOperacao2.Size = size;
+			this.GroupBox_ModoOperacao.TabIndex = 17;
+			this.GroupBox_ModoOperacao.TabStop = false;
+			this.GroupBox_ModoOperacao.Text = "Modo de Operação";
+			this.ComboBox_Modo_Operacao.FormattingEnabled = true;
+			global::System.Windows.Forms.Control comboBox_Modo_Operacao = this.ComboBox_Modo_Operacao;
+			location = new global::System.Drawing.Point(132, 28);
+			comboBox_Modo_Operacao.Location = location;
+			this.ComboBox_Modo_Operacao.Name = "ComboBox_Modo_Operacao";
+			global::System.Windows.Forms.Control comboBox_Modo_Operacao2 = this.ComboBox_Modo_Operacao;
+			size = new global::System.Drawing.Size(144, 21);
+			comboBox_Modo_Operacao2.Size = size;
+			this.ComboBox_Modo_Operacao.TabIndex = 0;
+			this.NumericUpDown_IntervaloTX.Enabled = false;
+			global::System.Windows.Forms.Control numericUpDown_IntervaloTX = this.NumericUpDown_IntervaloTX;
+			location = new global::System.Drawing.Point(204, 56);
+			numericUpDown_IntervaloTX.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_IntervaloTX2 = this.NumericUpDown_IntervaloTX;
+			decimal num;
+			num = new decimal(new int[]
+			{
+				200000,
+				0,
+				0,
+				0
+			});
+			numericUpDown_IntervaloTX2.Maximum = num;
+			this.NumericUpDown_IntervaloTX.Name = "NumericUpDown_IntervaloTX";
+			global::System.Windows.Forms.Control numericUpDown_IntervaloTX3 = this.NumericUpDown_IntervaloTX;
+			size = new global::System.Drawing.Size(72, 20);
+			numericUpDown_IntervaloTX3.Size = size;
+			this.NumericUpDown_IntervaloTX.TabIndex = 1;
+			this.NumericUpDown_IntervaloTX.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.lb_ModoOperacao.AutoSize = true;
+			global::System.Windows.Forms.Control lb_ModoOperacao = this.lb_ModoOperacao;
+			location = new global::System.Drawing.Point(21, 31);
+			lb_ModoOperacao.Location = location;
+			this.lb_ModoOperacao.Name = "lb_ModoOperacao";
+			global::System.Windows.Forms.Control lb_ModoOperacao2 = this.lb_ModoOperacao;
+			size = new global::System.Drawing.Size(102, 13);
+			lb_ModoOperacao2.Size = size;
+			this.lb_ModoOperacao.TabIndex = 3;
+			this.lb_ModoOperacao.Text = "Modo de Operação:";
+			this.lb_IntervaloTX.AutoSize = true;
+			this.lb_IntervaloTX.Enabled = false;
+			global::System.Windows.Forms.Control lb_IntervaloTX = this.lb_IntervaloTX;
+			location = new global::System.Drawing.Point(21, 58);
+			lb_IntervaloTX.Location = location;
+			this.lb_IntervaloTX.Name = "lb_IntervaloTX";
+			global::System.Windows.Forms.Control lb_IntervaloTX2 = this.lb_IntervaloTX;
+			size = new global::System.Drawing.Size(142, 13);
+			lb_IntervaloTX2.Size = size;
+			this.lb_IntervaloTX.TabIndex = 4;
+			this.lb_IntervaloTX.Text = "Intrevalo de Transmissão (s):";
+			this.GroupBox_descricao_RT821.Controls.Add(this.TextBox_comentarios_RT821);
+			this.GroupBox_descricao_RT821.Controls.Add(this.TextBox_endereco_RT821);
+			this.GroupBox_descricao_RT821.Controls.Add(this.TextBox_nome_RT821);
+			this.GroupBox_descricao_RT821.Controls.Add(this.Label_comentarios_RT821);
+			this.GroupBox_descricao_RT821.Controls.Add(this.Label_endereco_RT821);
+			this.GroupBox_descricao_RT821.Controls.Add(this.Label_nome_RT821);
+			this.GroupBox_descricao_RT821.Controls.Add(this.tb_lixo1);
+			global::System.Windows.Forms.Control groupBox_descricao_RT = this.GroupBox_descricao_RT821;
+			location = new global::System.Drawing.Point(327, 153);
+			groupBox_descricao_RT.Location = location;
+			this.GroupBox_descricao_RT821.Name = "GroupBox_descricao_RT821";
+			global::System.Windows.Forms.Control groupBox_descricao_RT2 = this.GroupBox_descricao_RT821;
+			size = new global::System.Drawing.Size(507, 217);
+			groupBox_descricao_RT2.Size = size;
+			this.GroupBox_descricao_RT821.TabIndex = 16;
+			this.GroupBox_descricao_RT821.TabStop = false;
+			this.GroupBox_descricao_RT821.Text = "Descrição";
+			global::System.Windows.Forms.Control textBox_comentarios_RT = this.TextBox_comentarios_RT821;
+			location = new global::System.Drawing.Point(26, 98);
+			textBox_comentarios_RT.Location = location;
+			this.TextBox_comentarios_RT821.MaxLength = 400;
+			this.TextBox_comentarios_RT821.Multiline = true;
+			this.TextBox_comentarios_RT821.Name = "TextBox_comentarios_RT821";
+			this.TextBox_comentarios_RT821.ScrollBars = (System.Windows.Forms.ScrollBars)2;
+			global::System.Windows.Forms.Control textBox_comentarios_RT2 = this.TextBox_comentarios_RT821;
+			size = new global::System.Drawing.Size(454, 101);
+			textBox_comentarios_RT2.Size = size;
+			this.TextBox_comentarios_RT821.TabIndex = 3;
+			global::System.Windows.Forms.Control textBox_endereco_RT = this.TextBox_endereco_RT821;
+			location = new global::System.Drawing.Point(88, 53);
+			textBox_endereco_RT.Location = location;
+			this.TextBox_endereco_RT821.MaxLength = 60;
+			this.TextBox_endereco_RT821.Name = "TextBox_endereco_RT821";
+			global::System.Windows.Forms.Control textBox_endereco_RT2 = this.TextBox_endereco_RT821;
+			size = new global::System.Drawing.Size(392, 20);
+			textBox_endereco_RT2.Size = size;
+			this.TextBox_endereco_RT821.TabIndex = 2;
+			global::System.Windows.Forms.Control textBox_nome_RT = this.TextBox_nome_RT821;
+			location = new global::System.Drawing.Point(88, 27);
+			textBox_nome_RT.Location = location;
+			this.TextBox_nome_RT821.MaxLength = 60;
+			this.TextBox_nome_RT821.Name = "TextBox_nome_RT821";
+			global::System.Windows.Forms.Control textBox_nome_RT2 = this.TextBox_nome_RT821;
+			size = new global::System.Drawing.Size(392, 20);
+			textBox_nome_RT2.Size = size;
+			this.TextBox_nome_RT821.TabIndex = 1;
+			this.Label_comentarios_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_comentarios_RT = this.Label_comentarios_RT821;
+			location = new global::System.Drawing.Point(23, 82);
+			label_comentarios_RT.Location = location;
+			this.Label_comentarios_RT821.Name = "Label_comentarios_RT821";
+			global::System.Windows.Forms.Control label_comentarios_RT2 = this.Label_comentarios_RT821;
+			size = new global::System.Drawing.Size(71, 13);
+			label_comentarios_RT2.Size = size;
+			this.Label_comentarios_RT821.TabIndex = 0;
+			this.Label_comentarios_RT821.Text = "Comentários :";
+			this.Label_endereco_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_endereco_RT = this.Label_endereco_RT821;
+			location = new global::System.Drawing.Point(23, 58);
+			label_endereco_RT.Location = location;
+			this.Label_endereco_RT821.Name = "Label_endereco_RT821";
+			global::System.Windows.Forms.Control label_endereco_RT2 = this.Label_endereco_RT821;
+			size = new global::System.Drawing.Size(56, 13);
+			label_endereco_RT2.Size = size;
+			this.Label_endereco_RT821.TabIndex = 0;
+			this.Label_endereco_RT821.Text = "Endereço:";
+			this.Label_nome_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_nome_RT = this.Label_nome_RT821;
+			location = new global::System.Drawing.Point(23, 33);
+			label_nome_RT.Location = location;
+			this.Label_nome_RT821.Name = "Label_nome_RT821";
+			global::System.Windows.Forms.Control label_nome_RT2 = this.Label_nome_RT821;
+			size = new global::System.Drawing.Size(41, 13);
+			label_nome_RT2.Size = size;
+			this.Label_nome_RT821.TabIndex = 0;
+			this.Label_nome_RT821.Text = "Nome :";
+			global::System.Windows.Forms.Control tb_lixo = this.tb_lixo1;
+			location = new global::System.Drawing.Point(231, 132);
+			tb_lixo.Location = location;
+			this.tb_lixo1.Name = "tb_lixo1";
+			global::System.Windows.Forms.Control tb_lixo2 = this.tb_lixo1;
+			size = new global::System.Drawing.Size(100, 20);
+			tb_lixo2.Size = size;
+			this.tb_lixo1.TabIndex = 4;
+			this.GroupBox_informacoes_RT821.Controls.Add(this.Label26);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.TextBox_equipamento_RT821);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.Label19);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.TextBox_release_RT821);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.Label20);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.TextBox_build_RT821);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.Label21);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.TextBox_versao_RT821);
+			this.GroupBox_informacoes_RT821.Controls.Add(this.Label22);
+			this.GroupBox_informacoes_RT821.Enabled = false;
+			global::System.Windows.Forms.Control groupBox_informacoes_RT = this.GroupBox_informacoes_RT821;
+			location = new global::System.Drawing.Point(327, 21);
+			groupBox_informacoes_RT.Location = location;
+			this.GroupBox_informacoes_RT821.Name = "GroupBox_informacoes_RT821";
+			global::System.Windows.Forms.Control groupBox_informacoes_RT2 = this.GroupBox_informacoes_RT821;
+			size = new global::System.Drawing.Size(507, 106);
+			groupBox_informacoes_RT2.Size = size;
+			this.GroupBox_informacoes_RT821.TabIndex = 14;
+			this.GroupBox_informacoes_RT821.TabStop = false;
+			this.GroupBox_informacoes_RT821.Text = "Versão de Software";
+			this.Label26.AutoSize = true;
+			this.Label26.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			global::System.Windows.Forms.Control label = this.Label26;
+			location = new global::System.Drawing.Point(135, 56);
+			label.Location = location;
+			this.Label26.Name = "Label26";
+			global::System.Windows.Forms.Control label2 = this.Label26;
+			size = new global::System.Drawing.Size(20, 15);
+			label2.Size = size;
+			this.Label26.TabIndex = 26;
+			this.Label26.Text = "RT";
+			this.TextBox_equipamento_RT821.BackColor = global::System.Drawing.Color.LightCyan;
+			this.TextBox_equipamento_RT821.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			global::System.Windows.Forms.Control textBox_equipamento_RT = this.TextBox_equipamento_RT821;
+			location = new global::System.Drawing.Point(170, 53);
+			textBox_equipamento_RT.Location = location;
+			this.TextBox_equipamento_RT821.Name = "TextBox_equipamento_RT821";
+			this.TextBox_equipamento_RT821.ReadOnly = true;
+			global::System.Windows.Forms.Control textBox_equipamento_RT2 = this.TextBox_equipamento_RT821;
+			size = new global::System.Drawing.Size(47, 20);
+			textBox_equipamento_RT2.Size = size;
+			this.TextBox_equipamento_RT821.TabIndex = 25;
+			this.TextBox_equipamento_RT821.TabStop = false;
+			this.TextBox_equipamento_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.Label19.AutoSize = true;
+			global::System.Windows.Forms.Control label3 = this.Label19;
+			location = new global::System.Drawing.Point(135, 35);
+			label3.Location = location;
+			this.Label19.Name = "Label19";
+			global::System.Windows.Forms.Control label4 = this.Label19;
+			size = new global::System.Drawing.Size(69, 13);
+			label4.Size = size;
+			this.Label19.TabIndex = 24;
+			this.Label19.Text = "Equipamento";
+			this.TextBox_release_RT821.BackColor = global::System.Drawing.Color.LightCyan;
+			this.TextBox_release_RT821.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			global::System.Windows.Forms.Control textBox_release_RT = this.TextBox_release_RT821;
+			location = new global::System.Drawing.Point(326, 53);
+			textBox_release_RT.Location = location;
+			this.TextBox_release_RT821.Name = "TextBox_release_RT821";
+			this.TextBox_release_RT821.ReadOnly = true;
+			global::System.Windows.Forms.Control textBox_release_RT2 = this.TextBox_release_RT821;
+			size = new global::System.Drawing.Size(47, 20);
+			textBox_release_RT2.Size = size;
+			this.TextBox_release_RT821.TabIndex = 23;
+			this.TextBox_release_RT821.TabStop = false;
+			this.TextBox_release_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.Label20.AutoSize = true;
+			global::System.Windows.Forms.Control label5 = this.Label20;
+			location = new global::System.Drawing.Point(329, 35);
+			label5.Location = location;
+			this.Label20.Name = "Label20";
+			global::System.Windows.Forms.Control label6 = this.Label20;
+			size = new global::System.Drawing.Size(46, 13);
+			label6.Size = size;
+			this.Label20.TabIndex = 22;
+			this.Label20.Text = "Release";
+			this.TextBox_build_RT821.BackColor = global::System.Drawing.Color.LightCyan;
+			this.TextBox_build_RT821.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			global::System.Windows.Forms.Control textBox_build_RT = this.TextBox_build_RT821;
+			location = new global::System.Drawing.Point(274, 53);
+			textBox_build_RT.Location = location;
+			this.TextBox_build_RT821.Name = "TextBox_build_RT821";
+			this.TextBox_build_RT821.ReadOnly = true;
+			global::System.Windows.Forms.Control textBox_build_RT2 = this.TextBox_build_RT821;
+			size = new global::System.Drawing.Size(47, 20);
+			textBox_build_RT2.Size = size;
+			this.TextBox_build_RT821.TabIndex = 21;
+			this.TextBox_build_RT821.TabStop = false;
+			this.TextBox_build_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.Label21.AutoSize = true;
+			global::System.Windows.Forms.Control label7 = this.Label21;
+			location = new global::System.Drawing.Point(283, 35);
+			label7.Location = location;
+			this.Label21.Name = "Label21";
+			global::System.Windows.Forms.Control label8 = this.Label21;
+			size = new global::System.Drawing.Size(30, 13);
+			label8.Size = size;
+			this.Label21.TabIndex = 20;
+			this.Label21.Text = "Build";
+			this.TextBox_versao_RT821.BackColor = global::System.Drawing.Color.LightCyan;
+			this.TextBox_versao_RT821.Font = new global::System.Drawing.Font("Arial Narrow", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			global::System.Windows.Forms.Control textBox_versao_RT = this.TextBox_versao_RT821;
+			location = new global::System.Drawing.Point(222, 53);
+			textBox_versao_RT.Location = location;
+			this.TextBox_versao_RT821.Name = "TextBox_versao_RT821";
+			this.TextBox_versao_RT821.ReadOnly = true;
+			global::System.Windows.Forms.Control textBox_versao_RT2 = this.TextBox_versao_RT821;
+			size = new global::System.Drawing.Size(47, 20);
+			textBox_versao_RT2.Size = size;
+			this.TextBox_versao_RT821.TabIndex = 19;
+			this.TextBox_versao_RT821.TabStop = false;
+			this.TextBox_versao_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.Label22.AutoSize = true;
+			global::System.Windows.Forms.Control label9 = this.Label22;
+			location = new global::System.Drawing.Point(225, 35);
+			label9.Location = location;
+			this.Label22.Name = "Label22";
+			global::System.Windows.Forms.Control label10 = this.Label22;
+			size = new global::System.Drawing.Size(40, 13);
+			label10.Size = size;
+			this.Label22.TabIndex = 18;
+			this.Label22.Text = "Versão";
+			this.GroupBox_modelo_simulado_RT821.Controls.Add(this.ComboBox_modo_simulado_RT_821);
+			global::System.Windows.Forms.Control groupBox_modelo_simulado_RT = this.GroupBox_modelo_simulado_RT821;
+			location = new global::System.Drawing.Point(17, 21);
+			groupBox_modelo_simulado_RT.Location = location;
+			this.GroupBox_modelo_simulado_RT821.Name = "GroupBox_modelo_simulado_RT821";
+			global::System.Windows.Forms.Control groupBox_modelo_simulado_RT2 = this.GroupBox_modelo_simulado_RT821;
+			size = new global::System.Drawing.Size(291, 84);
+			groupBox_modelo_simulado_RT2.Size = size;
+			this.GroupBox_modelo_simulado_RT821.TabIndex = 12;
+			this.GroupBox_modelo_simulado_RT821.TabStop = false;
+			this.GroupBox_modelo_simulado_RT821.Text = "Modelo Simulado";
+			this.ComboBox_modo_simulado_RT_821.Anchor = (System.Windows.Forms.AnchorStyles)0;
+			this.ComboBox_modo_simulado_RT_821.FormattingEnabled = true;
+			global::System.Windows.Forms.Control comboBox_modo_simulado_RT_ = this.ComboBox_modo_simulado_RT_821;
+			location = new global::System.Drawing.Point(24, 34);
+			comboBox_modo_simulado_RT_.Location = location;
+			this.ComboBox_modo_simulado_RT_821.Name = "ComboBox_modo_simulado_RT_821";
+			global::System.Windows.Forms.Control comboBox_modo_simulado_RT_2 = this.ComboBox_modo_simulado_RT_821;
+			size = new global::System.Drawing.Size(252, 21);
+			comboBox_modo_simulado_RT_2.Size = size;
+			this.ComboBox_modo_simulado_RT_821.TabIndex = 0;
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.cb_baudrate_com2);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.cb_baudrate_com1);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.Label23);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.Label18);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.NumericUpDown_temp_ptt_RT821);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.NumericUpDown_end_mestre_RT821);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.NumericUpDown_end_est_RT821);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.Label_tempo_ptt_RT821);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.Label_end_mestre_RT821);
+			this.GroupBox_comunicacao_RT821.Controls.Add(this.Label_end_est_RT821);
+			global::System.Windows.Forms.Control groupBox_comunicacao_RT = this.GroupBox_comunicacao_RT821;
+			location = new global::System.Drawing.Point(17, 113);
+			groupBox_comunicacao_RT.Location = location;
+			this.GroupBox_comunicacao_RT821.Name = "GroupBox_comunicacao_RT821";
+			global::System.Windows.Forms.Control groupBox_comunicacao_RT2 = this.GroupBox_comunicacao_RT821;
+			size = new global::System.Drawing.Size(291, 156);
+			groupBox_comunicacao_RT2.Size = size;
+			this.GroupBox_comunicacao_RT821.TabIndex = 13;
+			this.GroupBox_comunicacao_RT821.TabStop = false;
+			this.GroupBox_comunicacao_RT821.Text = "Parâmetros de Comunicação";
+			this.cb_baudrate_com2.FormattingEnabled = true;
+			global::System.Windows.Forms.Control cb_baudrate_com = this.cb_baudrate_com2;
+			location = new global::System.Drawing.Point(204, 132);
+			cb_baudrate_com.Location = location;
+			this.cb_baudrate_com2.Name = "cb_baudrate_com2";
+			global::System.Windows.Forms.Control cb_baudrate_com2 = this.cb_baudrate_com2;
+			size = new global::System.Drawing.Size(72, 21);
+			cb_baudrate_com2.Size = size;
+			this.cb_baudrate_com2.TabIndex = 9;
+			this.cb_baudrate_com1.FormattingEnabled = true;
+			global::System.Windows.Forms.Control cb_baudrate_com3 = this.cb_baudrate_com1;
+			location = new global::System.Drawing.Point(204, 108);
+			cb_baudrate_com3.Location = location;
+			this.cb_baudrate_com1.Name = "cb_baudrate_com1";
+			this.cb_baudrate_com1.RightToLeft = 0;
+			global::System.Windows.Forms.Control cb_baudrate_com4 = this.cb_baudrate_com1;
+			size = new global::System.Drawing.Size(72, 21);
+			cb_baudrate_com4.Size = size;
+			this.cb_baudrate_com1.TabIndex = 8;
+			this.Label23.AutoSize = true;
+			global::System.Windows.Forms.Control label11 = this.Label23;
+			location = new global::System.Drawing.Point(21, 136);
+			label11.Location = location;
+			this.Label23.Name = "Label23";
+			global::System.Windows.Forms.Control label12 = this.Label23;
+			size = new global::System.Drawing.Size(94, 13);
+			label12.Size = size;
+			this.Label23.TabIndex = 7;
+			this.Label23.Text = "Baud Rate COM2:";
+			this.Label18.AutoSize = true;
+			global::System.Windows.Forms.Control label13 = this.Label18;
+			location = new global::System.Drawing.Point(21, 112);
+			label13.Location = location;
+			this.Label18.Name = "Label18";
+			global::System.Windows.Forms.Control label14 = this.Label18;
+			size = new global::System.Drawing.Size(94, 13);
+			label14.Size = size;
+			this.Label18.TabIndex = 6;
+			this.Label18.Text = "Baud Rate COM1:";
+			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT = this.NumericUpDown_temp_ptt_RT821;
+			num = new decimal(new int[]
+			{
+				10,
+				0,
+				0,
+				0
+			});
+			numericUpDown_temp_ptt_RT.Increment = num;
+			global::System.Windows.Forms.Control numericUpDown_temp_ptt_RT2 = this.NumericUpDown_temp_ptt_RT821;
+			location = new global::System.Drawing.Point(204, 83);
+			numericUpDown_temp_ptt_RT2.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT3 = this.NumericUpDown_temp_ptt_RT821;
+			num = new decimal(new int[]
+			{
+				70000,
+				0,
+				0,
+				0
+			});
+			numericUpDown_temp_ptt_RT3.Maximum = num;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT4 = this.NumericUpDown_temp_ptt_RT821;
+			num = new decimal(new int[]
+			{
+				100,
+				0,
+				0,
+				0
+			});
+			numericUpDown_temp_ptt_RT4.Minimum = num;
+			this.NumericUpDown_temp_ptt_RT821.Name = "NumericUpDown_temp_ptt_RT821";
+			global::System.Windows.Forms.Control numericUpDown_temp_ptt_RT5 = this.NumericUpDown_temp_ptt_RT821;
+			size = new global::System.Drawing.Size(72, 20);
+			numericUpDown_temp_ptt_RT5.Size = size;
+			this.NumericUpDown_temp_ptt_RT821.TabIndex = 2;
+			this.NumericUpDown_temp_ptt_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_temp_ptt_RT6 = this.NumericUpDown_temp_ptt_RT821;
+			num = new decimal(new int[]
+			{
+				100,
+				0,
+				0,
+				0
+			});
+			numericUpDown_temp_ptt_RT6.Value = num;
+			global::System.Windows.Forms.Control numericUpDown_end_mestre_RT = this.NumericUpDown_end_mestre_RT821;
+			location = new global::System.Drawing.Point(204, 29);
+			numericUpDown_end_mestre_RT.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_end_mestre_RT2 = this.NumericUpDown_end_mestre_RT821;
+			num = new decimal(new int[]
+			{
+				70000,
+				0,
+				0,
+				0
+			});
+			numericUpDown_end_mestre_RT2.Maximum = num;
+			this.NumericUpDown_end_mestre_RT821.Name = "NumericUpDown_end_mestre_RT821";
+			global::System.Windows.Forms.Control numericUpDown_end_mestre_RT3 = this.NumericUpDown_end_mestre_RT821;
+			size = new global::System.Drawing.Size(72, 20);
+			numericUpDown_end_mestre_RT3.Size = size;
+			this.NumericUpDown_end_mestre_RT821.TabIndex = 0;
+			this.NumericUpDown_end_mestre_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			global::System.Windows.Forms.Control numericUpDown_end_est_RT = this.NumericUpDown_end_est_RT821;
+			location = new global::System.Drawing.Point(204, 57);
+			numericUpDown_end_est_RT.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_end_est_RT2 = this.NumericUpDown_end_est_RT821;
+			num = new decimal(new int[]
+			{
+				70000,
+				0,
+				0,
+				0
+			});
+			numericUpDown_end_est_RT2.Maximum = num;
+			this.NumericUpDown_end_est_RT821.Name = "NumericUpDown_end_est_RT821";
+			global::System.Windows.Forms.Control numericUpDown_end_est_RT3 = this.NumericUpDown_end_est_RT821;
+			size = new global::System.Drawing.Size(72, 20);
+			numericUpDown_end_est_RT3.Size = size;
+			this.NumericUpDown_end_est_RT821.TabIndex = 1;
+			this.NumericUpDown_end_est_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.Label_tempo_ptt_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_tempo_ptt_RT = this.Label_tempo_ptt_RT821;
+			location = new global::System.Drawing.Point(21, 85);
+			label_tempo_ptt_RT.Location = location;
+			this.Label_tempo_ptt_RT821.Name = "Label_tempo_ptt_RT821";
+			global::System.Windows.Forms.Control label_tempo_ptt_RT2 = this.Label_tempo_ptt_RT821;
+			size = new global::System.Drawing.Size(154, 13);
+			label_tempo_ptt_RT2.Size = size;
+			this.Label_tempo_ptt_RT821.TabIndex = 5;
+			this.Label_tempo_ptt_RT821.Text = "Tempo de espera de PTT (ms):";
+			this.Label_end_mestre_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_end_mestre_RT = this.Label_end_mestre_RT821;
+			location = new global::System.Drawing.Point(21, 31);
+			label_end_mestre_RT.Location = location;
+			this.Label_end_mestre_RT821.Name = "Label_end_mestre_RT821";
+			global::System.Windows.Forms.Control label_end_mestre_RT2 = this.Label_end_mestre_RT821;
+			size = new global::System.Drawing.Size(109, 13);
+			label_end_mestre_RT2.Size = size;
+			this.Label_end_mestre_RT821.TabIndex = 3;
+			this.Label_end_mestre_RT821.Text = "Endereço do Mestre :";
+			this.Label_end_est_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_end_est_RT = this.Label_end_est_RT821;
+			location = new global::System.Drawing.Point(21, 58);
+			label_end_est_RT.Location = location;
+			this.Label_end_est_RT821.Name = "Label_end_est_RT821";
+			global::System.Windows.Forms.Control label_end_est_RT2 = this.Label_end_est_RT821;
+			size = new global::System.Drawing.Size(116, 13);
+			label_end_est_RT2.Size = size;
+			this.Label_end_est_RT821.TabIndex = 4;
+			this.Label_end_est_RT821.Text = "Endereço da Estação :";
+			this.TabPage_controles.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_controles.Controls.Add(this.GroupBox_MotoresSimultaneos_RT_821);
+			this.TabPage_controles.Controls.Add(this.GroupBox_controle_RT821);
+			global::System.Windows.Forms.TabPage tabPage_controles = this.TabPage_controles;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_controles.Location = location;
+			this.TabPage_controles.Name = "TabPage_controles";
+			global::System.Windows.Forms.Control tabPage_controles2 = this.TabPage_controles;
+			padding = new global::System.Windows.Forms.Padding(3);
+			tabPage_controles2.Padding = padding;
+			global::System.Windows.Forms.Control tabPage_controles3 = this.TabPage_controles;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_controles3.Size = size;
+			this.TabPage_controles.TabIndex = 1;
+			this.TabPage_controles.Text = "Controles";
+			this.TabPage_controles.UseVisualStyleBackColor = true;
+			this.GroupBox_MotoresSimultaneos_RT_821.Controls.Add(this.DataGridView_MotoresSimultaneos_RT_821);
+			global::System.Windows.Forms.Control groupBox_MotoresSimultaneos_RT_ = this.GroupBox_MotoresSimultaneos_RT_821;
+			location = new global::System.Drawing.Point(17, 168);
+			groupBox_MotoresSimultaneos_RT_.Location = location;
+			this.GroupBox_MotoresSimultaneos_RT_821.Name = "GroupBox_MotoresSimultaneos_RT_821";
+			global::System.Windows.Forms.Control groupBox_MotoresSimultaneos_RT_2 = this.GroupBox_MotoresSimultaneos_RT_821;
+			size = new global::System.Drawing.Size(265, 100);
+			groupBox_MotoresSimultaneos_RT_2.Size = size;
+			this.GroupBox_MotoresSimultaneos_RT_821.TabIndex = 10;
+			this.GroupBox_MotoresSimultaneos_RT_821.TabStop = false;
+			this.GroupBox_MotoresSimultaneos_RT_821.Text = "Acionamentos";
+			this.DataGridView_MotoresSimultaneos_RT_821.AllowUserToAddRows = false;
+			dataGridViewCellStyle.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_MotoresSimultaneos_RT_821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle;
+			this.DataGridView_MotoresSimultaneos_RT_821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)4;
+			dataGridViewCellStyle2.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle2.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle2.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle2.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_MotoresSimultaneos_RT_821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			this.DataGridView_MotoresSimultaneos_RT_821.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle3.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle3.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle3.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_MotoresSimultaneos_RT_821.DefaultCellStyle = dataGridViewCellStyle3;
+			global::System.Windows.Forms.Control dataGridView_MotoresSimultaneos_RT_ = this.DataGridView_MotoresSimultaneos_RT_821;
+			location = new global::System.Drawing.Point(13, 18);
+			dataGridView_MotoresSimultaneos_RT_.Location = location;
+			this.DataGridView_MotoresSimultaneos_RT_821.Name = "DataGridView_MotoresSimultaneos_RT_821";
+			this.DataGridView_MotoresSimultaneos_RT_821.RowHeadersBorderStyle = (System.Windows.Forms.DataGridViewHeaderBorderStyle)1;
+			dataGridViewCellStyle4.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle4.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle4.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle4.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle4.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_MotoresSimultaneos_RT_821.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			this.DataGridView_MotoresSimultaneos_RT_821.RowHeadersVisible = false;
+			this.DataGridView_MotoresSimultaneos_RT_821.ScrollBars = (System.Windows.Forms.ScrollBars)1;
+			global::System.Windows.Forms.Control dataGridView_MotoresSimultaneos_RT_2 = this.DataGridView_MotoresSimultaneos_RT_821;
+			size = new global::System.Drawing.Size(224, 58);
+			dataGridView_MotoresSimultaneos_RT_2.Size = size;
+			this.DataGridView_MotoresSimultaneos_RT_821.TabIndex = 0;
+			this.GroupBox_controle_RT821.Controls.Add(this.DataGridView_processo_RT821);
+			this.GroupBox_controle_RT821.Controls.Add(this.tb_lixo2);
+			global::System.Windows.Forms.Control groupBox_controle_RT = this.GroupBox_controle_RT821;
+			location = new global::System.Drawing.Point(17, 21);
+			groupBox_controle_RT.Location = location;
+			this.GroupBox_controle_RT821.Name = "GroupBox_controle_RT821";
+			global::System.Windows.Forms.Control groupBox_controle_RT2 = this.GroupBox_controle_RT821;
+			size = new global::System.Drawing.Size(791, 140);
+			groupBox_controle_RT2.Size = size;
+			this.GroupBox_controle_RT821.TabIndex = 9;
+			this.GroupBox_controle_RT821.TabStop = false;
+			this.GroupBox_controle_RT821.Text = "Configuração de Controles";
+			this.DataGridView_processo_RT821.AllowUserToAddRows = false;
+			this.DataGridView_processo_RT821.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle5.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_processo_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+			this.DataGridView_processo_RT821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)4;
+			dataGridViewCellStyle6.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle6.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle6.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle6.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle6.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_processo_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			this.DataGridView_processo_RT821.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle7.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle7.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle7.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle7.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle7.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle7.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle7.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_processo_RT821.DefaultCellStyle = dataGridViewCellStyle7;
+			global::System.Windows.Forms.Control dataGridView_processo_RT = this.DataGridView_processo_RT821;
+			location = new global::System.Drawing.Point(13, 16);
+			dataGridView_processo_RT.Location = location;
+			this.DataGridView_processo_RT821.Name = "DataGridView_processo_RT821";
+			this.DataGridView_processo_RT821.RowHeadersBorderStyle = (System.Windows.Forms.DataGridViewHeaderBorderStyle)1;
+			dataGridViewCellStyle8.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle8.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle8.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle8.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle8.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle8.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle8.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_processo_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+			this.DataGridView_processo_RT821.ScrollBars = (System.Windows.Forms.ScrollBars)1;
+			global::System.Windows.Forms.Control dataGridView_processo_RT2 = this.DataGridView_processo_RT821;
+			size = new global::System.Drawing.Size(752, 115);
+			dataGridView_processo_RT2.Size = size;
+			this.DataGridView_processo_RT821.TabIndex = 0;
+			global::System.Windows.Forms.Control tb_lixo3 = this.tb_lixo2;
+			location = new global::System.Drawing.Point(321, 71);
+			tb_lixo3.Location = location;
+			this.tb_lixo2.Name = "tb_lixo2";
+			global::System.Windows.Forms.Control tb_lixo4 = this.tb_lixo2;
+			size = new global::System.Drawing.Size(100, 20);
+			tb_lixo4.Size = size;
+			this.tb_lixo2.TabIndex = 1;
+			this.TabPage_EA.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_EA.Controls.Add(this.GroupBox_parametros_EA_RT821);
+			this.TabPage_EA.Controls.Add(this.GroupBox_EA_RT821);
+			global::System.Windows.Forms.TabPage tabPage_EA = this.TabPage_EA;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_EA.Location = location;
+			this.TabPage_EA.Name = "TabPage_EA";
+			global::System.Windows.Forms.Control tabPage_EA2 = this.TabPage_EA;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_EA2.Size = size;
+			this.TabPage_EA.TabIndex = 6;
+			this.TabPage_EA.Text = "Entradas Analógicas";
+			this.TabPage_EA.UseVisualStyleBackColor = true;
+			this.GroupBox_parametros_EA_RT821.Controls.Add(this.DataGridView_parametros_EA_RT821);
+			this.GroupBox_parametros_EA_RT821.Controls.Add(this.tb_lixo3);
+			global::System.Windows.Forms.Control groupBox_parametros_EA_RT = this.GroupBox_parametros_EA_RT821;
+			location = new global::System.Drawing.Point(19, 18);
+			groupBox_parametros_EA_RT.Location = location;
+			this.GroupBox_parametros_EA_RT821.Name = "GroupBox_parametros_EA_RT821";
+			global::System.Windows.Forms.Control groupBox_parametros_EA_RT2 = this.GroupBox_parametros_EA_RT821;
+			size = new global::System.Drawing.Size(380, 152);
+			groupBox_parametros_EA_RT2.Size = size;
+			this.GroupBox_parametros_EA_RT821.TabIndex = 9;
+			this.GroupBox_parametros_EA_RT821.TabStop = false;
+			this.GroupBox_parametros_EA_RT821.Text = "Escalas";
+			this.DataGridView_parametros_EA_RT821.AllowUserToAddRows = false;
+			this.DataGridView_parametros_EA_RT821.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle9.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_parametros_EA_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+			this.DataGridView_parametros_EA_RT821.CellBorderStyle = (System.Windows.Forms.DataGridViewCellBorderStyle)4;
+			dataGridViewCellStyle10.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle10.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle10.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle10.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle10.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle10.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle10.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_parametros_EA_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+			this.DataGridView_parametros_EA_RT821.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle11.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle11.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle11.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle11.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle11.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle11.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle11.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_parametros_EA_RT821.DefaultCellStyle = dataGridViewCellStyle11;
+			global::System.Windows.Forms.Control dataGridView_parametros_EA_RT = this.DataGridView_parametros_EA_RT821;
+			location = new global::System.Drawing.Point(18, 24);
+			dataGridView_parametros_EA_RT.Location = location;
+			this.DataGridView_parametros_EA_RT821.Name = "DataGridView_parametros_EA_RT821";
+			dataGridViewCellStyle12.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle12.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle12.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle12.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle12.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle12.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle12.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_parametros_EA_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+			this.DataGridView_parametros_EA_RT821.ScrollBars = (System.Windows.Forms.ScrollBars)0;
+			global::System.Windows.Forms.Control dataGridView_parametros_EA_RT2 = this.DataGridView_parametros_EA_RT821;
+			size = new global::System.Drawing.Size(342, 111);
+			dataGridView_parametros_EA_RT2.Size = size;
+			this.DataGridView_parametros_EA_RT821.TabIndex = 0;
+			global::System.Windows.Forms.Control tb_lixo5 = this.tb_lixo3;
+			location = new global::System.Drawing.Point(158, 76);
+			tb_lixo5.Location = location;
+			this.tb_lixo3.Name = "tb_lixo3";
+			global::System.Windows.Forms.Control tb_lixo6 = this.tb_lixo3;
+			size = new global::System.Drawing.Size(100, 20);
+			tb_lixo6.Size = size;
+			this.tb_lixo3.TabIndex = 1;
+			this.GroupBox_EA_RT821.Controls.Add(this.NumericUpDown_intervalo_filtro_RT821);
+			this.GroupBox_EA_RT821.Controls.Add(this.NumericUpDown_tamanho_filtro_RT821);
+			this.GroupBox_EA_RT821.Controls.Add(this.Label_intervalo_filtro_RT821);
+			this.GroupBox_EA_RT821.Controls.Add(this.Label_tamanho_filtro_RT821);
+			global::System.Windows.Forms.Control groupBox_EA_RT = this.GroupBox_EA_RT821;
+			location = new global::System.Drawing.Point(424, 18);
+			groupBox_EA_RT.Location = location;
+			this.GroupBox_EA_RT821.Name = "GroupBox_EA_RT821";
+			global::System.Windows.Forms.Control groupBox_EA_RT2 = this.GroupBox_EA_RT821;
+			size = new global::System.Drawing.Size(216, 93);
+			groupBox_EA_RT2.Size = size;
+			this.GroupBox_EA_RT821.TabIndex = 8;
+			this.GroupBox_EA_RT821.TabStop = false;
+			this.GroupBox_EA_RT821.Text = "Filtro";
+			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_filtro_RT = this.NumericUpDown_intervalo_filtro_RT821;
+			num = new decimal(new int[]
+			{
+				10,
+				0,
+				0,
+				0
+			});
+			numericUpDown_intervalo_filtro_RT.Increment = num;
+			global::System.Windows.Forms.Control numericUpDown_intervalo_filtro_RT2 = this.NumericUpDown_intervalo_filtro_RT821;
+			location = new global::System.Drawing.Point(115, 29);
+			numericUpDown_intervalo_filtro_RT2.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_intervalo_filtro_RT3 = this.NumericUpDown_intervalo_filtro_RT821;
+			num = new decimal(new int[]
+			{
+				100000,
+				0,
+				0,
+				0
+			});
+			numericUpDown_intervalo_filtro_RT3.Maximum = num;
+			this.NumericUpDown_intervalo_filtro_RT821.Name = "NumericUpDown_intervalo_filtro_RT821";
+			global::System.Windows.Forms.Control numericUpDown_intervalo_filtro_RT4 = this.NumericUpDown_intervalo_filtro_RT821;
+			size = new global::System.Drawing.Size(74, 20);
+			numericUpDown_intervalo_filtro_RT4.Size = size;
+			this.NumericUpDown_intervalo_filtro_RT821.TabIndex = 18;
+			this.NumericUpDown_intervalo_filtro_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
+			global::System.Windows.Forms.Control numericUpDown_tamanho_filtro_RT = this.NumericUpDown_tamanho_filtro_RT821;
+			location = new global::System.Drawing.Point(115, 53);
+			numericUpDown_tamanho_filtro_RT.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_tamanho_filtro_RT2 = this.NumericUpDown_tamanho_filtro_RT821;
+			num = new decimal(new int[]
+			{
+				70000,
+				0,
+				0,
+				0
+			});
+			numericUpDown_tamanho_filtro_RT2.Maximum = num;
+			this.NumericUpDown_tamanho_filtro_RT821.Name = "NumericUpDown_tamanho_filtro_RT821";
+			global::System.Windows.Forms.Control numericUpDown_tamanho_filtro_RT3 = this.NumericUpDown_tamanho_filtro_RT821;
+			size = new global::System.Drawing.Size(74, 20);
+			numericUpDown_tamanho_filtro_RT3.Size = size;
+			this.NumericUpDown_tamanho_filtro_RT821.TabIndex = 1;
+			this.NumericUpDown_tamanho_filtro_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)1;
+			this.Label_intervalo_filtro_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_intervalo_filtro_RT = this.Label_intervalo_filtro_RT821;
+			location = new global::System.Drawing.Point(16, 29);
+			label_intervalo_filtro_RT.Location = location;
+			this.Label_intervalo_filtro_RT821.Name = "Label_intervalo_filtro_RT821";
+			global::System.Windows.Forms.Control label_intervalo_filtro_RT2 = this.Label_intervalo_filtro_RT821;
+			size = new global::System.Drawing.Size(76, 13);
+			label_intervalo_filtro_RT2.Size = size;
+			this.Label_intervalo_filtro_RT821.TabIndex = 14;
+			this.Label_intervalo_filtro_RT821.Text = "Intervalo (ms) :";
+			this.Label_tamanho_filtro_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_tamanho_filtro_RT = this.Label_tamanho_filtro_RT821;
+			location = new global::System.Drawing.Point(16, 55);
+			label_tamanho_filtro_RT.Location = location;
+			this.Label_tamanho_filtro_RT821.Name = "Label_tamanho_filtro_RT821";
+			global::System.Windows.Forms.Control label_tamanho_filtro_RT2 = this.Label_tamanho_filtro_RT821;
+			size = new global::System.Drawing.Size(56, 13);
+			label_tamanho_filtro_RT2.Size = size;
+			this.Label_tamanho_filtro_RT821.TabIndex = 16;
+			this.Label_tamanho_filtro_RT821.Text = "Amostras :";
+			this.TabPage_ED.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_ED.Controls.Add(this.GroupBox_ED_RT821);
+			global::System.Windows.Forms.TabPage tabPage_ED = this.TabPage_ED;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_ED.Location = location;
+			this.TabPage_ED.Name = "TabPage_ED";
+			global::System.Windows.Forms.Control tabPage_ED2 = this.TabPage_ED;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_ED2.Size = size;
+			this.TabPage_ED.TabIndex = 4;
+			this.TabPage_ED.Text = "Entradas Digitais";
+			this.TabPage_ED.UseVisualStyleBackColor = true;
+			this.GroupBox_ED_RT821.Controls.Add(this.DataGridView_RT821_ED);
+			this.GroupBox_ED_RT821.Controls.Add(this.tb_lixo4);
+			global::System.Windows.Forms.Control groupBox_ED_RT = this.GroupBox_ED_RT821;
+			location = new global::System.Drawing.Point(18, 18);
+			groupBox_ED_RT.Location = location;
+			this.GroupBox_ED_RT821.Name = "GroupBox_ED_RT821";
+			global::System.Windows.Forms.Control groupBox_ED_RT2 = this.GroupBox_ED_RT821;
+			size = new global::System.Drawing.Size(320, 245);
+			groupBox_ED_RT2.Size = size;
+			this.GroupBox_ED_RT821.TabIndex = 1;
+			this.GroupBox_ED_RT821.TabStop = false;
+			this.GroupBox_ED_RT821.Text = "Entradas Digitais";
+			this.DataGridView_RT821_ED.AllowUserToAddRows = false;
+			this.DataGridView_RT821_ED.AllowUserToDeleteRows = false;
+			this.DataGridView_RT821_ED.AllowUserToOrderColumns = true;
+			this.DataGridView_RT821_ED.AllowUserToResizeColumns = false;
+			this.DataGridView_RT821_ED.AllowUserToResizeRows = false;
+			dataGridViewCellStyle13.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_RT821_ED.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle14.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle14.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle14.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle14.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle14.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle14.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle14.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_RT821_ED.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+			this.DataGridView_RT821_ED.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle15.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle15.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle15.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle15.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle15.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle15.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle15.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_RT821_ED.DefaultCellStyle = dataGridViewCellStyle15;
+			global::System.Windows.Forms.Control dataGridView_RT821_ED = this.DataGridView_RT821_ED;
+			location = new global::System.Drawing.Point(19, 25);
+			dataGridView_RT821_ED.Location = location;
+			this.DataGridView_RT821_ED.Name = "DataGridView_RT821_ED";
+			dataGridViewCellStyle16.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle16.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle16.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle16.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle16.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle16.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_RT821_ED.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+			global::System.Windows.Forms.Control dataGridView_RT821_ED2 = this.DataGridView_RT821_ED;
+			size = new global::System.Drawing.Size(282, 205);
+			dataGridView_RT821_ED2.Size = size;
+			this.DataGridView_RT821_ED.TabIndex = 16;
+			global::System.Windows.Forms.Control tb_lixo7 = this.tb_lixo4;
+			location = new global::System.Drawing.Point(110, 119);
+			tb_lixo7.Location = location;
+			this.tb_lixo4.Name = "tb_lixo4";
+			global::System.Windows.Forms.Control tb_lixo8 = this.tb_lixo4;
+			size = new global::System.Drawing.Size(100, 20);
+			tb_lixo8.Size = size;
+			this.tb_lixo4.TabIndex = 17;
+			this.TabPage_setpoints.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_setpoints.Controls.Add(this.GroupBox_setpoints_RT821);
+			global::System.Windows.Forms.TabPage tabPage_setpoints = this.TabPage_setpoints;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_setpoints.Location = location;
+			this.TabPage_setpoints.Name = "TabPage_setpoints";
+			global::System.Windows.Forms.Control tabPage_setpoints2 = this.TabPage_setpoints;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_setpoints2.Size = size;
+			this.TabPage_setpoints.TabIndex = 2;
+			this.TabPage_setpoints.Text = "Setpoints";
+			this.TabPage_setpoints.UseVisualStyleBackColor = true;
+			this.GroupBox_setpoints_RT821.Controls.Add(this.DataGridView_setpoints_RT821);
+			this.GroupBox_setpoints_RT821.Controls.Add(this.tb_lixo5);
+			global::System.Windows.Forms.Control groupBox_setpoints_RT = this.GroupBox_setpoints_RT821;
+			location = new global::System.Drawing.Point(14, 14);
+			groupBox_setpoints_RT.Location = location;
+			this.GroupBox_setpoints_RT821.Name = "GroupBox_setpoints_RT821";
+			global::System.Windows.Forms.Control groupBox_setpoints_RT2 = this.GroupBox_setpoints_RT821;
+			size = new global::System.Drawing.Size(394, 124);
+			groupBox_setpoints_RT2.Size = size;
+			this.GroupBox_setpoints_RT821.TabIndex = 2;
+			this.GroupBox_setpoints_RT821.TabStop = false;
+			this.GroupBox_setpoints_RT821.Text = "Setpoints";
+			this.DataGridView_setpoints_RT821.AllowUserToAddRows = false;
+			this.DataGridView_setpoints_RT821.AllowUserToDeleteRows = false;
+			this.DataGridView_setpoints_RT821.AllowUserToResizeColumns = false;
+			this.DataGridView_setpoints_RT821.AllowUserToResizeRows = false;
+			dataGridViewCellStyle17.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_setpoints_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+			dataGridViewCellStyle18.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle18.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle18.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle18.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle18.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle18.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle18.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_setpoints_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+			this.DataGridView_setpoints_RT821.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle19.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle19.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle19.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle19.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle19.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle19.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle19.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_setpoints_RT821.DefaultCellStyle = dataGridViewCellStyle19;
+			global::System.Windows.Forms.Control dataGridView_setpoints_RT = this.DataGridView_setpoints_RT821;
+			location = new global::System.Drawing.Point(15, 19);
+			dataGridView_setpoints_RT.Location = location;
+			this.DataGridView_setpoints_RT821.Name = "DataGridView_setpoints_RT821";
+			dataGridViewCellStyle20.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle20.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle20.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle20.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle20.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle20.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle20.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_setpoints_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+			global::System.Windows.Forms.Control dataGridView_setpoints_RT2 = this.DataGridView_setpoints_RT821;
+			size = new global::System.Drawing.Size(362, 89);
+			dataGridView_setpoints_RT2.Size = size;
+			this.DataGridView_setpoints_RT821.TabIndex = 0;
+			global::System.Windows.Forms.Control tb_lixo9 = this.tb_lixo5;
+			location = new global::System.Drawing.Point(166, 55);
+			tb_lixo9.Location = location;
+			this.tb_lixo5.Name = "tb_lixo5";
+			global::System.Windows.Forms.Control tb_lixo10 = this.tb_lixo5;
+			size = new global::System.Drawing.Size(100, 20);
+			tb_lixo10.Size = size;
+			this.tb_lixo5.TabIndex = 1;
+			this.TabPage_repetidora.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_repetidora.Controls.Add(this.GroupBox_end_rep_RT821);
+			this.TabPage_repetidora.Controls.Add(this.GroupBox_parametros_repetidora_RT821);
+			global::System.Windows.Forms.TabPage tabPage_repetidora = this.TabPage_repetidora;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_repetidora.Location = location;
+			this.TabPage_repetidora.Name = "TabPage_repetidora";
+			global::System.Windows.Forms.Control tabPage_repetidora2 = this.TabPage_repetidora;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_repetidora2.Size = size;
+			this.TabPage_repetidora.TabIndex = 3;
+			this.TabPage_repetidora.Text = "Repetidora";
+			this.TabPage_repetidora.UseVisualStyleBackColor = true;
+			this.GroupBox_end_rep_RT821.Controls.Add(this.DataGridView_end_rep_RT821);
+			global::System.Windows.Forms.Control groupBox_end_rep_RT = this.GroupBox_end_rep_RT821;
+			location = new global::System.Drawing.Point(28, 142);
+			groupBox_end_rep_RT.Location = location;
+			this.GroupBox_end_rep_RT821.Name = "GroupBox_end_rep_RT821";
+			global::System.Windows.Forms.Control groupBox_end_rep_RT2 = this.GroupBox_end_rep_RT821;
+			size = new global::System.Drawing.Size(613, 282);
+			groupBox_end_rep_RT2.Size = size;
+			this.GroupBox_end_rep_RT821.TabIndex = 6;
+			this.GroupBox_end_rep_RT821.TabStop = false;
+			this.GroupBox_end_rep_RT821.Text = "Endereço das estações a serem retransmitidas";
+			this.DataGridView_end_rep_RT821.AllowUserToAddRows = false;
+			dataGridViewCellStyle21.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_end_rep_RT821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle22.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle22.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle22.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle22.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle22.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle22.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle22.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_end_rep_RT821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+			this.DataGridView_end_rep_RT821.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle23.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle23.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle23.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle23.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle23.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle23.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle23.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_end_rep_RT821.DefaultCellStyle = dataGridViewCellStyle23;
+			global::System.Windows.Forms.Control dataGridView_end_rep_RT = this.DataGridView_end_rep_RT821;
+			location = new global::System.Drawing.Point(17, 19);
+			dataGridView_end_rep_RT.Location = location;
+			this.DataGridView_end_rep_RT821.Name = "DataGridView_end_rep_RT821";
+			dataGridViewCellStyle24.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle24.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle24.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle24.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle24.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle24.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle24.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_end_rep_RT821.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+			this.DataGridView_end_rep_RT821.RowHeadersVisible = false;
+			this.DataGridView_end_rep_RT821.ScrollBars = (System.Windows.Forms.ScrollBars)0;
+			global::System.Windows.Forms.Control dataGridView_end_rep_RT2 = this.DataGridView_end_rep_RT821;
+			size = new global::System.Drawing.Size(577, 243);
+			dataGridView_end_rep_RT2.Size = size;
+			this.DataGridView_end_rep_RT821.TabIndex = 0;
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.cb_modorepetidora);
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.Label1);
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.NumericUpDown_num_est_rep_RT821);
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.NumericUpDown_end_rep_RT821);
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.Label_num_est_rep_RT821);
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.Label_end_rep_RT821);
+			this.GroupBox_parametros_repetidora_RT821.Controls.Add(this.tb_lixo6);
+			global::System.Windows.Forms.Control groupBox_parametros_repetidora_RT = this.GroupBox_parametros_repetidora_RT821;
+			location = new global::System.Drawing.Point(28, 25);
+			groupBox_parametros_repetidora_RT.Location = location;
+			this.GroupBox_parametros_repetidora_RT821.Name = "GroupBox_parametros_repetidora_RT821";
+			global::System.Windows.Forms.Control groupBox_parametros_repetidora_RT2 = this.GroupBox_parametros_repetidora_RT821;
+			size = new global::System.Drawing.Size(263, 102);
+			groupBox_parametros_repetidora_RT2.Size = size;
+			this.GroupBox_parametros_repetidora_RT821.TabIndex = 5;
+			this.GroupBox_parametros_repetidora_RT821.TabStop = false;
+			this.GroupBox_parametros_repetidora_RT821.Text = "Parâmetros da Repetidora";
+			this.cb_modorepetidora.FormattingEnabled = true;
+			global::System.Windows.Forms.Control cb_modorepetidora = this.cb_modorepetidora;
+			location = new global::System.Drawing.Point(125, 23);
+			cb_modorepetidora.Location = location;
+			this.cb_modorepetidora.Name = "cb_modorepetidora";
+			global::System.Windows.Forms.Control cb_modorepetidora2 = this.cb_modorepetidora;
+			size = new global::System.Drawing.Size(121, 21);
+			cb_modorepetidora2.Size = size;
+			this.cb_modorepetidora.TabIndex = 4;
+			this.Label1.AutoSize = true;
+			global::System.Windows.Forms.Control label15 = this.Label1;
+			location = new global::System.Drawing.Point(27, 26);
+			label15.Location = location;
+			this.Label1.Name = "Label1";
+			global::System.Windows.Forms.Control label16 = this.Label1;
+			size = new global::System.Drawing.Size(92, 13);
+			label16.Size = size;
+			this.Label1.TabIndex = 3;
+			this.Label1.Text = "Modo Repetidora:";
+			global::System.Windows.Forms.Control numericUpDown_num_est_rep_RT = this.NumericUpDown_num_est_rep_RT821;
+			location = new global::System.Drawing.Point(175, 75);
+			numericUpDown_num_est_rep_RT.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_num_est_rep_RT2 = this.NumericUpDown_num_est_rep_RT821;
+			num = new decimal(new int[]
+			{
+				50,
+				0,
+				0,
+				0
+			});
+			numericUpDown_num_est_rep_RT2.Maximum = num;
+			this.NumericUpDown_num_est_rep_RT821.Name = "NumericUpDown_num_est_rep_RT821";
+			global::System.Windows.Forms.Control numericUpDown_num_est_rep_RT3 = this.NumericUpDown_num_est_rep_RT821;
+			size = new global::System.Drawing.Size(72, 20);
+			numericUpDown_num_est_rep_RT3.Size = size;
+			this.NumericUpDown_num_est_rep_RT821.TabIndex = 2;
+			this.NumericUpDown_num_est_rep_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			global::System.Windows.Forms.Control numericUpDown_end_rep_RT = this.NumericUpDown_end_rep_RT821;
+			location = new global::System.Drawing.Point(175, 50);
+			numericUpDown_end_rep_RT.Location = location;
+			global::System.Windows.Forms.NumericUpDown numericUpDown_end_rep_RT2 = this.NumericUpDown_end_rep_RT821;
+			num = new decimal(new int[]
+			{
+				200,
+				0,
+				0,
+				0
+			});
+			numericUpDown_end_rep_RT2.Maximum = num;
+			this.NumericUpDown_end_rep_RT821.Name = "NumericUpDown_end_rep_RT821";
+			global::System.Windows.Forms.Control numericUpDown_end_rep_RT3 = this.NumericUpDown_end_rep_RT821;
+			size = new global::System.Drawing.Size(72, 20);
+			numericUpDown_end_rep_RT3.Size = size;
+			this.NumericUpDown_end_rep_RT821.TabIndex = 1;
+			this.NumericUpDown_end_rep_RT821.TextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.Label_num_est_rep_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_num_est_rep_RT = this.Label_num_est_rep_RT821;
+			location = new global::System.Drawing.Point(27, 77);
+			label_num_est_rep_RT.Location = location;
+			this.Label_num_est_rep_RT821.Name = "Label_num_est_rep_RT821";
+			global::System.Windows.Forms.Control label_num_est_rep_RT2 = this.Label_num_est_rep_RT821;
+			size = new global::System.Drawing.Size(112, 13);
+			label_num_est_rep_RT2.Size = size;
+			this.Label_num_est_rep_RT821.TabIndex = 2;
+			this.Label_num_est_rep_RT821.Text = "Número de Estações :";
+			this.Label_end_rep_RT821.AutoSize = true;
+			global::System.Windows.Forms.Control label_end_rep_RT = this.Label_end_rep_RT821;
+			location = new global::System.Drawing.Point(26, 52);
+			label_end_rep_RT.Location = location;
+			this.Label_end_rep_RT821.Name = "Label_end_rep_RT821";
+			global::System.Windows.Forms.Control label_end_rep_RT2 = this.Label_end_rep_RT821;
+			size = new global::System.Drawing.Size(129, 13);
+			label_end_rep_RT2.Size = size;
+			this.Label_end_rep_RT821.TabIndex = 1;
+			this.Label_end_rep_RT821.Text = "Endereço da Repetidora :";
+			global::System.Windows.Forms.Control tb_lixo11 = this.tb_lixo6;
+			location = new global::System.Drawing.Point(175, 50);
+			tb_lixo11.Location = location;
 			this.tb_lixo6.Name = "tb_lixo6";
-			this.tb_lixo6.Size = new global::System.Drawing.Size(100, 20);
-			this.tb_lixo6.TabIndex = 4;
-			// 
-			// TabPage_Perifericos
-			// 
+			global::System.Windows.Forms.Control tb_lixo12 = this.tb_lixo6;
+			size = new global::System.Drawing.Size(38, 20);
+			tb_lixo12.Size = size;
+			this.tb_lixo6.TabIndex = 1;
+			this.TabPage_Display.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_Display.Controls.Add(this.GroupBox_visor_RT_821);
+			global::System.Windows.Forms.TabPage tabPage_Display = this.TabPage_Display;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_Display.Location = location;
+			this.TabPage_Display.Name = "TabPage_Display";
+			global::System.Windows.Forms.Control tabPage_Display2 = this.TabPage_Display;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_Display2.Size = size;
+			this.TabPage_Display.TabIndex = 7;
+			this.TabPage_Display.Text = "Visor";
+			this.TabPage_Display.UseVisualStyleBackColor = true;
+			this.GroupBox_visor_RT_821.Controls.Add(this.DataGridView_visor_RT_821);
+			this.GroupBox_visor_RT_821.Controls.Add(this.tb_lixo7);
+			global::System.Windows.Forms.Control groupBox_visor_RT_ = this.GroupBox_visor_RT_821;
+			location = new global::System.Drawing.Point(19, 18);
+			groupBox_visor_RT_.Location = location;
+			this.GroupBox_visor_RT_821.Name = "GroupBox_visor_RT_821";
+			global::System.Windows.Forms.Control groupBox_visor_RT_2 = this.GroupBox_visor_RT_821;
+			size = new global::System.Drawing.Size(420, 245);
+			groupBox_visor_RT_2.Size = size;
+			this.GroupBox_visor_RT_821.TabIndex = 2;
+			this.GroupBox_visor_RT_821.TabStop = false;
+			this.GroupBox_visor_RT_821.Text = "Display";
+			this.DataGridView_visor_RT_821.AllowUserToAddRows = false;
+			this.DataGridView_visor_RT_821.AllowUserToDeleteRows = false;
+			this.DataGridView_visor_RT_821.AllowUserToOrderColumns = true;
+			this.DataGridView_visor_RT_821.AllowUserToResizeColumns = false;
+			this.DataGridView_visor_RT_821.AllowUserToResizeRows = false;
+			dataGridViewCellStyle25.BackColor = global::System.Drawing.SystemColors.GradientInactiveCaption;
+			this.DataGridView_visor_RT_821.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+			dataGridViewCellStyle26.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle26.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle26.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle26.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle26.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle26.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle26.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_visor_RT_821.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+			this.DataGridView_visor_RT_821.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
+			dataGridViewCellStyle27.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle27.BackColor = global::System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle27.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle27.ForeColor = global::System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle27.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle27.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle27.WrapMode = (System.Windows.Forms.DataGridViewTriState)2;
+			this.DataGridView_visor_RT_821.DefaultCellStyle = dataGridViewCellStyle27;
+			global::System.Windows.Forms.Control dataGridView_visor_RT_ = this.DataGridView_visor_RT_821;
+			location = new global::System.Drawing.Point(15, 19);
+			dataGridView_visor_RT_.Location = location;
+			this.DataGridView_visor_RT_821.Name = "DataGridView_visor_RT_821";
+			dataGridViewCellStyle28.Alignment = (System.Windows.Forms.DataGridViewContentAlignment)16;
+			dataGridViewCellStyle28.BackColor = global::System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle28.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 8.25f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			dataGridViewCellStyle28.ForeColor = global::System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle28.SelectionBackColor = global::System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle28.SelectionForeColor = global::System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle28.WrapMode = (System.Windows.Forms.DataGridViewTriState)1;
+			this.DataGridView_visor_RT_821.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+			global::System.Windows.Forms.Control dataGridView_visor_RT_2 = this.DataGridView_visor_RT_821;
+			size = new global::System.Drawing.Size(392, 205);
+			dataGridView_visor_RT_2.Size = size;
+			this.DataGridView_visor_RT_821.TabIndex = 16;
+			global::System.Windows.Forms.Control tb_lixo13 = this.tb_lixo7;
+			location = new global::System.Drawing.Point(134, 148);
+			tb_lixo13.Location = location;
+			this.tb_lixo7.Name = "tb_lixo7";
+			global::System.Windows.Forms.Control tb_lixo14 = this.tb_lixo7;
+			size = new global::System.Drawing.Size(100, 20);
+			tb_lixo14.Size = size;
+			this.tb_lixo7.TabIndex = 17;
+			this.TabPage_DadosInstalacao.Controls.Add(this.GroupBox1);
+			global::System.Windows.Forms.TabPage tabPage_DadosInstalacao = this.TabPage_DadosInstalacao;
+			location = new global::System.Drawing.Point(4, 22);
+			tabPage_DadosInstalacao.Location = location;
+			this.TabPage_DadosInstalacao.Name = "TabPage_DadosInstalacao";
+			global::System.Windows.Forms.Control tabPage_DadosInstalacao2 = this.TabPage_DadosInstalacao;
+			padding = new global::System.Windows.Forms.Padding(3);
+			tabPage_DadosInstalacao2.Padding = padding;
+			global::System.Windows.Forms.Control tabPage_DadosInstalacao3 = this.TabPage_DadosInstalacao;
+			size = new global::System.Drawing.Size(1032, 465);
+			tabPage_DadosInstalacao3.Size = size;
+			this.TabPage_DadosInstalacao.TabIndex = 8;
+			this.TabPage_DadosInstalacao.Text = "Dados de Instalação";
+			this.TabPage_DadosInstalacao.UseVisualStyleBackColor = true;
+			this.TabPage_VasosCalhas.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_VasosCalhas.Name = "TabPage_VasosCalhas";
+			this.TabPage_VasosCalhas.TabIndex = 20;
+			this.TabPage_VasosCalhas.Text = " Vazão & Calhas ";
+			this.TabPage_VasosCalhas.UseVisualStyleBackColor = true;
 			this.TabPage_Perifericos.BackColor = global::System.Drawing.SystemColors.ControlLight;
-			this.TabPage_Perifericos.Controls.Add(this.GroupBox11);
-			this.TabPage_Perifericos.Controls.Add(this.GroupBox10);
-			this.TabPage_Perifericos.Controls.Add(this.GroupBox3);
-			this.TabPage_Perifericos.Controls.Add(this.GroupBox_perifericos_820);
-			this.TabPage_Perifericos.Location = new global::System.Drawing.Point(4, 22);
 			this.TabPage_Perifericos.Name = "TabPage_Perifericos";
-			this.TabPage_Perifericos.Padding = new global::System.Windows.Forms.Padding(3);
-			this.TabPage_Perifericos.Size = new global::System.Drawing.Size(1396, 540);
-			this.TabPage_Perifericos.TabIndex = 10;
+			this.TabPage_Perifericos.TabIndex = 21;
 			this.TabPage_Perifericos.Text = "Periféricos";
 			this.TabPage_Perifericos.UseVisualStyleBackColor = true;
-			// 
-			// GroupBox11
-			// 
-			this.GroupBox11.Controls.Add(this.DataGridView_perifericomodbusgenerico_RT820);
-			this.GroupBox11.Location = new global::System.Drawing.Point(18, 187);
-			this.GroupBox11.Name = "GroupBox11";
-			this.GroupBox11.Size = new global::System.Drawing.Size(847, 159);
-			this.GroupBox11.TabIndex = 21;
-			this.GroupBox11.TabStop = false;
-			this.GroupBox11.Text = "Configuração Periférico Modbus Genérico";
-			// 
-			// DataGridView_perifericomodbusgenerico_RT820
-			// 
-			this.DataGridView_perifericomodbusgenerico_RT820.AllowUserToAddRows = false;
-			this.DataGridView_perifericomodbusgenerico_RT820.AllowUserToDeleteRows = false;
-			this.DataGridView_perifericomodbusgenerico_RT820.AllowUserToResizeColumns = false;
-			this.DataGridView_perifericomodbusgenerico_RT820.AllowUserToResizeRows = false;
-			this.DataGridView_perifericomodbusgenerico_RT820.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.DataGridView_perifericomodbusgenerico_RT820.Location = new global::System.Drawing.Point(12, 18);
-			this.DataGridView_perifericomodbusgenerico_RT820.Name = "DataGridView_perifericomodbusgenerico_RT820";
-			this.DataGridView_perifericomodbusgenerico_RT820.RowHeadersWidth = 75;
-			this.DataGridView_perifericomodbusgenerico_RT820.ScrollBars = (System.Windows.Forms.ScrollBars)1;
-			this.DataGridView_perifericomodbusgenerico_RT820.Size = new global::System.Drawing.Size(818, 125);
-			this.DataGridView_perifericomodbusgenerico_RT820.TabIndex = 2;
-			// 
-			// GroupBox10
-			// 
-			this.GroupBox10.Controls.Add(this.DataGridView_periferico2_RT820);
-			this.GroupBox10.Location = new global::System.Drawing.Point(463, 16);
-			this.GroupBox10.Name = "GroupBox10";
-			this.GroupBox10.Size = new global::System.Drawing.Size(430, 157);
-			this.GroupBox10.TabIndex = 20;
-			this.GroupBox10.TabStop = false;
-			this.GroupBox10.Text = "Periféricos do  2° Endereço da  Estação";
-			// 
-			// DataGridView_periferico2_RT820
-			// 
-			this.DataGridView_periferico2_RT820.AllowUserToAddRows = false;
-			this.DataGridView_periferico2_RT820.AllowUserToDeleteRows = false;
-			this.DataGridView_periferico2_RT820.AllowUserToResizeColumns = false;
-			this.DataGridView_periferico2_RT820.AllowUserToResizeRows = false;
-			this.DataGridView_periferico2_RT820.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.DataGridView_periferico2_RT820.Location = new global::System.Drawing.Point(12, 18);
-			this.DataGridView_periferico2_RT820.Name = "DataGridView_periferico2_RT820";
-			this.DataGridView_periferico2_RT820.RowHeadersWidth = 75;
-			this.DataGridView_periferico2_RT820.Size = new global::System.Drawing.Size(406, 125);
-			this.DataGridView_periferico2_RT820.TabIndex = 0;
-			// 
-			// GroupBox3
-			// 
-			this.GroupBox3.Controls.Add(this.Label22);
-			this.GroupBox3.Controls.Add(this.datagridview_referenciaperifico);
-			this.GroupBox3.Location = new global::System.Drawing.Point(18, 352);
-			this.GroupBox3.Name = "GroupBox3";
-			this.GroupBox3.Size = new global::System.Drawing.Size(430, 157);
-			this.GroupBox3.TabIndex = 19;
-			this.GroupBox3.TabStop = false;
-			this.GroupBox3.Text = "Referência Periférico";
-			// 
-			// Label22
-			// 
-			this.Label22.AutoSize = true;
-			this.Label22.Location = new global::System.Drawing.Point(15, 21);
-			this.Label22.Name = "Label22";
-			this.Label22.Size = new global::System.Drawing.Size(68, 13);
-			this.Label22.TabIndex = 1;
-			this.Label22.Text = "Referência :";
-			// 
-			// datagridview_referenciaperifico
-			// 
-			this.datagridview_referenciaperifico.AllowUserToAddRows = false;
-			this.datagridview_referenciaperifico.AllowUserToDeleteRows = false;
-			this.datagridview_referenciaperifico.AllowUserToResizeColumns = false;
-			this.datagridview_referenciaperifico.AllowUserToResizeRows = false;
-			this.datagridview_referenciaperifico.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.datagridview_referenciaperifico.Location = new global::System.Drawing.Point(12, 37);
-			this.datagridview_referenciaperifico.Name = "datagridview_referenciaperifico";
-			this.datagridview_referenciaperifico.RowHeadersWidth = 75;
-			this.datagridview_referenciaperifico.Size = new global::System.Drawing.Size(406, 108);
-			this.datagridview_referenciaperifico.TabIndex = 0;
-			// 
-			// GroupBox_perifericos_820
-			// 
-			this.GroupBox_perifericos_820.Controls.Add(this.GroupBox9);
-			this.GroupBox_perifericos_820.Controls.Add(this.DataGridView_periferico1_RT820);
-			this.GroupBox_perifericos_820.Location = new global::System.Drawing.Point(463, 352);
-			this.GroupBox_perifericos_820.Name = "GroupBox_perifericos_820";
-			this.GroupBox_perifericos_820.Size = new global::System.Drawing.Size(430, 157);
-			this.GroupBox_perifericos_820.TabIndex = 18;
-			this.GroupBox_perifericos_820.TabStop = false;
-			this.GroupBox_perifericos_820.Text = "Periféricos";
-			// 
-			// GroupBox9
-			// 
-			this.GroupBox9.Controls.Add(this.DataGridView2);
-			this.GroupBox9.Location = new global::System.Drawing.Point(6, 19);
-			this.GroupBox9.Name = "GroupBox9";
-			this.GroupBox9.Size = new global::System.Drawing.Size(418, 65);
-			this.GroupBox9.TabIndex = 1;
-			this.GroupBox9.TabStop = false;
-			this.GroupBox9.Text = "Periférico 1";
-			// 
-			// DataGridView2
-			// 
-			this.DataGridView2.AllowUserToAddRows = false;
-			this.DataGridView2.AllowUserToDeleteRows = false;
-			this.DataGridView2.AllowUserToResizeColumns = false;
-			this.DataGridView2.AllowUserToResizeRows = false;
-			this.DataGridView2.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.DataGridView2.Location = new global::System.Drawing.Point(6, 19);
-			this.DataGridView2.Name = "DataGridView2";
-			this.DataGridView2.RowHeadersWidth = 75;
-			this.DataGridView2.Size = new global::System.Drawing.Size(406, 33);
-			this.DataGridView2.TabIndex = 0;
-			// 
-			// DataGridView_periferico1_RT820
-			// 
-			this.DataGridView_periferico1_RT820.AllowUserToAddRows = false;
-			this.DataGridView_periferico1_RT820.AllowUserToDeleteRows = false;
-			this.DataGridView_periferico1_RT820.AllowUserToResizeColumns = false;
-			this.DataGridView_periferico1_RT820.AllowUserToResizeRows = false;
-			this.DataGridView_periferico1_RT820.ColumnHeadersHeightSizeMode = (System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode)2;
-			this.DataGridView_periferico1_RT820.Location = new global::System.Drawing.Point(6, 90);
-			this.DataGridView_periferico1_RT820.Name = "DataGridView_periferico1_RT820";
-			this.DataGridView_periferico1_RT820.RowHeadersWidth = 75;
-			this.DataGridView_periferico1_RT820.Size = new global::System.Drawing.Size(418, 54);
-			this.DataGridView_periferico1_RT820.TabIndex = 0;
-			this.GroupBox12.ResumeLayout(false);
-			this.GroupBox12.PerformLayout();
-			this.TabControl_Calhas.ResumeLayout(false);
-			this.GroupBox_vazoes_820.ResumeLayout(false);
-			this.GroupBox_vazoes_820.PerformLayout();
-			this.GroupBox11.ResumeLayout(false);
-			this.GroupBox10.ResumeLayout(false);
-			this.GroupBox3.ResumeLayout(false);
-			this.GroupBox3.PerformLayout();
-			this.GroupBox_perifericos_820.ResumeLayout(false);
-			this.GroupBox9.ResumeLayout(false);
+			this.GroupBox1.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.GroupBox1.Controls.Add(this.Label16);
+			this.GroupBox1.Controls.Add(this.Label15);
+			this.GroupBox1.Controls.Add(this.T_ModeloFonte);
+			this.GroupBox1.Controls.Add(this.T_AlturaAntena);
+			this.GroupBox1.Controls.Add(this.T_Latitude);
+			this.GroupBox1.Controls.Add(this.T_Longitude);
+			this.GroupBox1.Controls.Add(this.T_Azimute);
+			this.GroupBox1.Controls.Add(this.Label14);
+			this.GroupBox1.Controls.Add(this.Label13);
+			this.GroupBox1.Controls.Add(this.Label12);
+			this.GroupBox1.Controls.Add(this.T_FreqRadio);
+			this.GroupBox1.Controls.Add(this.T_DistCentral);
+			this.GroupBox1.Controls.Add(this.T_PotRadio);
+			this.GroupBox1.Controls.Add(this.CB_ModeloRadio);
+			this.GroupBox1.Controls.Add(this.CB_PolarizacaoAntena);
+			this.GroupBox1.Controls.Add(this.CB_TipoAntena);
+			this.GroupBox1.Controls.Add(this.Label11);
+			this.GroupBox1.Controls.Add(this.Label10);
+			this.GroupBox1.Controls.Add(this.Label9);
+			this.GroupBox1.Controls.Add(this.Label8);
+			this.GroupBox1.Controls.Add(this.Label7);
+			this.GroupBox1.Controls.Add(this.Label6);
+			this.GroupBox1.Controls.Add(this.Label5);
+			this.GroupBox1.Controls.Add(this.Label4);
+			this.GroupBox1.Controls.Add(this.Label3);
+			this.GroupBox1.Controls.Add(this.Label2);
+			this.GroupBox1.Controls.Add(this.Label17);
+			this.GroupBox1.Controls.Add(this.tb_lixo8);
+			global::System.Windows.Forms.Control groupBox = this.GroupBox1;
+			location = new global::System.Drawing.Point(6, 6);
+			groupBox.Location = location;
+			this.GroupBox1.Name = "GroupBox1";
+			global::System.Windows.Forms.Control groupBox2 = this.GroupBox1;
+			size = new global::System.Drawing.Size(638, 236);
+			groupBox2.Size = size;
+			this.GroupBox1.TabIndex = 2;
+			this.GroupBox1.TabStop = false;
+			this.Label16.AutoSize = true;
+			this.Label16.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 9.75f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			global::System.Windows.Forms.Control label17 = this.Label16;
+			location = new global::System.Drawing.Point(601, 23);
+			label17.Location = location;
+			this.Label16.Name = "Label16";
+			global::System.Windows.Forms.Control label18 = this.Label16;
+			size = new global::System.Drawing.Size(12, 16);
+			label18.Size = size;
+			this.Label16.TabIndex = 26;
+			this.Label16.Text = "°";
+			this.Label15.AutoSize = true;
+			global::System.Windows.Forms.Control label19 = this.Label15;
+			location = new global::System.Drawing.Point(601, 132);
+			label19.Location = location;
+			this.Label15.Name = "Label15";
+			global::System.Windows.Forms.Control label20 = this.Label15;
+			size = new global::System.Drawing.Size(15, 13);
+			label20.Size = size;
+			this.Label15.TabIndex = 25;
+			this.Label15.Text = "m";
+			global::System.Windows.Forms.Control t_ModeloFonte = this.T_ModeloFonte;
+			location = new global::System.Drawing.Point(474, 157);
+			t_ModeloFonte.Location = location;
+			this.T_ModeloFonte.Name = "T_ModeloFonte";
+			global::System.Windows.Forms.Control t_ModeloFonte2 = this.T_ModeloFonte;
+			size = new global::System.Drawing.Size(121, 20);
+			t_ModeloFonte2.Size = size;
+			this.T_ModeloFonte.TabIndex = 24;
+			global::System.Windows.Forms.Control t_AlturaAntena = this.T_AlturaAntena;
+			location = new global::System.Drawing.Point(474, 124);
+			t_AlturaAntena.Location = location;
+			this.T_AlturaAntena.Name = "T_AlturaAntena";
+			global::System.Windows.Forms.Control t_AlturaAntena2 = this.T_AlturaAntena;
+			size = new global::System.Drawing.Size(121, 20);
+			t_AlturaAntena2.Size = size;
+			this.T_AlturaAntena.TabIndex = 23;
+			global::System.Windows.Forms.Control t_Latitude = this.T_Latitude;
+			location = new global::System.Drawing.Point(474, 89);
+			t_Latitude.Location = location;
+			this.T_Latitude.Name = "T_Latitude";
+			global::System.Windows.Forms.Control t_Latitude2 = this.T_Latitude;
+			size = new global::System.Drawing.Size(121, 20);
+			t_Latitude2.Size = size;
+			this.T_Latitude.TabIndex = 22;
+			global::System.Windows.Forms.Control t_Longitude = this.T_Longitude;
+			location = new global::System.Drawing.Point(474, 54);
+			t_Longitude.Location = location;
+			this.T_Longitude.Name = "T_Longitude";
+			global::System.Windows.Forms.Control t_Longitude2 = this.T_Longitude;
+			size = new global::System.Drawing.Size(121, 20);
+			t_Longitude2.Size = size;
+			this.T_Longitude.TabIndex = 21;
+			global::System.Windows.Forms.Control t_Azimute = this.T_Azimute;
+			location = new global::System.Drawing.Point(474, 23);
+			t_Azimute.Location = location;
+			this.T_Azimute.Name = "T_Azimute";
+			global::System.Windows.Forms.Control t_Azimute2 = this.T_Azimute;
+			size = new global::System.Drawing.Size(121, 20);
+			t_Azimute2.Size = size;
+			this.T_Azimute.TabIndex = 20;
+			this.Label14.AutoSize = true;
+			global::System.Windows.Forms.Control label21 = this.Label14;
+			location = new global::System.Drawing.Point(278, 96);
+			label21.Location = location;
+			this.Label14.Name = "Label14";
+			global::System.Windows.Forms.Control label22 = this.Label14;
+			size = new global::System.Drawing.Size(18, 13);
+			label22.Size = size;
+			this.Label14.TabIndex = 19;
+			this.Label14.Text = "W";
+			this.Label13.AutoSize = true;
+			global::System.Windows.Forms.Control label23 = this.Label13;
+			location = new global::System.Drawing.Point(278, 199);
+			label23.Location = location;
+			this.Label13.Name = "Label13";
+			global::System.Windows.Forms.Control label24 = this.Label13;
+			size = new global::System.Drawing.Size(29, 13);
+			label24.Size = size;
+			this.Label13.TabIndex = 18;
+			this.Label13.Text = "MHz";
+			this.Label12.AutoSize = true;
+			global::System.Windows.Forms.Control label25 = this.Label12;
+			location = new global::System.Drawing.Point(278, 167);
+			label25.Location = location;
+			this.Label12.Name = "Label12";
+			global::System.Windows.Forms.Control label26 = this.Label12;
+			size = new global::System.Drawing.Size(21, 13);
+			label26.Size = size;
+			this.Label12.TabIndex = 17;
+			this.Label12.Text = "km";
+			global::System.Windows.Forms.Control t_FreqRadio = this.T_FreqRadio;
+			location = new global::System.Drawing.Point(151, 192);
+			t_FreqRadio.Location = location;
+			this.T_FreqRadio.Name = "T_FreqRadio";
+			global::System.Windows.Forms.Control t_FreqRadio2 = this.T_FreqRadio;
+			size = new global::System.Drawing.Size(121, 20);
+			t_FreqRadio2.Size = size;
+			this.T_FreqRadio.TabIndex = 16;
+			global::System.Windows.Forms.Control t_DistCentral = this.T_DistCentral;
+			location = new global::System.Drawing.Point(151, 160);
+			t_DistCentral.Location = location;
+			this.T_DistCentral.Name = "T_DistCentral";
+			global::System.Windows.Forms.Control t_DistCentral2 = this.T_DistCentral;
+			size = new global::System.Drawing.Size(121, 20);
+			t_DistCentral2.Size = size;
+			this.T_DistCentral.TabIndex = 15;
+			global::System.Windows.Forms.Control t_PotRadio = this.T_PotRadio;
+			location = new global::System.Drawing.Point(151, 89);
+			t_PotRadio.Location = location;
+			this.T_PotRadio.Name = "T_PotRadio";
+			global::System.Windows.Forms.Control t_PotRadio2 = this.T_PotRadio;
+			size = new global::System.Drawing.Size(121, 20);
+			t_PotRadio2.Size = size;
+			this.T_PotRadio.TabIndex = 14;
+			this.CB_ModeloRadio.FormattingEnabled = true;
+			this.CB_ModeloRadio.Items.AddRange(new object[]
+			{
+				"Não informado",
+				"shinider",
+				"FC302",
+				"FC302 - HF",
+				"FC302 - LF",
+				"FC302 sem Modem",
+				"FC302 com Modem",
+				"SD164 sem Modem",
+				"SD164 com Modem",
+				"SD174 sem Modem",
+				"SD174 com Modem",
+				"SD174E sem Modem",
+				"SD174E com Modem",
+				"SD125U1 - UHF ",
+				"SD125",
+				"SD125E1",
+				"RNET450 - UHF",
+				"DM0515 - VHF",
+				"DM0530 - UHF"
+			});
+			global::System.Windows.Forms.Control cb_ModeloRadio = this.CB_ModeloRadio;
+			location = new global::System.Drawing.Point(151, 124);
+			cb_ModeloRadio.Location = location;
+			this.CB_ModeloRadio.Name = "CB_ModeloRadio";
+			global::System.Windows.Forms.Control cb_ModeloRadio2 = this.CB_ModeloRadio;
+			size = new global::System.Drawing.Size(121, 21);
+			cb_ModeloRadio2.Size = size;
+			this.CB_ModeloRadio.TabIndex = 13;
+			this.CB_PolarizacaoAntena.FormattingEnabled = true;
+			this.CB_PolarizacaoAntena.Items.AddRange(new object[]
+			{
+				"Horizontal",
+				"Vertical"
+			});
+			global::System.Windows.Forms.Control cb_PolarizacaoAntena = this.CB_PolarizacaoAntena;
+			location = new global::System.Drawing.Point(151, 54);
+			cb_PolarizacaoAntena.Location = location;
+			this.CB_PolarizacaoAntena.Name = "CB_PolarizacaoAntena";
+			global::System.Windows.Forms.Control cb_PolarizacaoAntena2 = this.CB_PolarizacaoAntena;
+			size = new global::System.Drawing.Size(121, 21);
+			cb_PolarizacaoAntena2.Size = size;
+			this.CB_PolarizacaoAntena.TabIndex = 12;
+			this.CB_TipoAntena.FormattingEnabled = true;
+			this.CB_TipoAntena.Items.AddRange(new object[]
+			{
+				"Não Informado",
+				"Omni",
+				"Yagi",
+				"Plano Terra"
+			});
+			global::System.Windows.Forms.Control cb_TipoAntena = this.CB_TipoAntena;
+			location = new global::System.Drawing.Point(151, 27);
+			cb_TipoAntena.Location = location;
+			this.CB_TipoAntena.Name = "CB_TipoAntena";
+			global::System.Windows.Forms.Control cb_TipoAntena2 = this.CB_TipoAntena;
+			size = new global::System.Drawing.Size(121, 21);
+			cb_TipoAntena2.Size = size;
+			this.CB_TipoAntena.TabIndex = 11;
+			this.Label11.AutoSize = true;
+			global::System.Windows.Forms.Control label27 = this.Label11;
+			location = new global::System.Drawing.Point(376, 160);
+			label27.Location = location;
+			this.Label11.Name = "Label11";
+			global::System.Windows.Forms.Control label28 = this.Label11;
+			size = new global::System.Drawing.Size(87, 13);
+			label28.Size = size;
+			this.Label11.TabIndex = 10;
+			this.Label11.Text = "Modelo da fonte:";
+			this.Label10.AutoSize = true;
+			global::System.Windows.Forms.Control label29 = this.Label10;
+			location = new global::System.Drawing.Point(376, 127);
+			label29.Location = location;
+			this.Label10.Name = "Label10";
+			global::System.Windows.Forms.Control label30 = this.Label10;
+			size = new global::System.Drawing.Size(37, 13);
+			label30.Size = size;
+			this.Label10.TabIndex = 9;
+			this.Label10.Text = "Altura:";
+			this.Label9.AutoSize = true;
+			global::System.Windows.Forms.Control label31 = this.Label9;
+			location = new global::System.Drawing.Point(376, 92);
+			label31.Location = location;
+			this.Label9.Name = "Label9";
+			global::System.Windows.Forms.Control label32 = this.Label9;
+			size = new global::System.Drawing.Size(48, 13);
+			label32.Size = size;
+			this.Label9.TabIndex = 8;
+			this.Label9.Text = "Latitude:";
+			this.Label8.AutoSize = true;
+			global::System.Windows.Forms.Control label33 = this.Label8;
+			location = new global::System.Drawing.Point(376, 63);
+			label33.Location = location;
+			this.Label8.Name = "Label8";
+			global::System.Windows.Forms.Control label34 = this.Label8;
+			size = new global::System.Drawing.Size(57, 13);
+			label34.Size = size;
+			this.Label8.TabIndex = 7;
+			this.Label8.Text = "Longitude:";
+			this.Label7.AutoSize = true;
+			global::System.Windows.Forms.Control label35 = this.Label7;
+			location = new global::System.Drawing.Point(376, 30);
+			label35.Location = location;
+			this.Label7.Name = "Label7";
+			global::System.Windows.Forms.Control label36 = this.Label7;
+			size = new global::System.Drawing.Size(47, 13);
+			label36.Size = size;
+			this.Label7.TabIndex = 6;
+			this.Label7.Text = "Azimute:";
+			this.Label6.AutoSize = true;
+			global::System.Windows.Forms.Control label37 = this.Label6;
+			location = new global::System.Drawing.Point(16, 195);
+			label37.Location = location;
+			this.Label6.Name = "Label6";
+			global::System.Windows.Forms.Control label38 = this.Label6;
+			size = new global::System.Drawing.Size(104, 13);
+			label38.Size = size;
+			this.Label6.TabIndex = 5;
+			this.Label6.Text = "Frequência do rádio:";
+			this.Label5.AutoSize = true;
+			global::System.Windows.Forms.Control label39 = this.Label5;
+			location = new global::System.Drawing.Point(16, 160);
+			label39.Location = location;
+			this.Label5.Name = "Label5";
+			global::System.Windows.Forms.Control label40 = this.Label5;
+			size = new global::System.Drawing.Size(122, 13);
+			label40.Size = size;
+			this.Label5.TabIndex = 4;
+			this.Label5.Text = "Distância para a central:";
+			this.Label4.AutoSize = true;
+			global::System.Windows.Forms.Control label41 = this.Label4;
+			location = new global::System.Drawing.Point(16, 127);
+			label41.Location = location;
+			this.Label4.Name = "Label4";
+			global::System.Windows.Forms.Control label42 = this.Label4;
+			size = new global::System.Drawing.Size(86, 13);
+			label42.Size = size;
+			this.Label4.TabIndex = 3;
+			this.Label4.Text = "Modelo do rádio:";
+			this.Label3.AutoSize = true;
+			global::System.Windows.Forms.Control label43 = this.Label3;
+			location = new global::System.Drawing.Point(16, 96);
+			label43.Location = location;
+			this.Label3.Name = "Label3";
+			global::System.Windows.Forms.Control label44 = this.Label3;
+			size = new global::System.Drawing.Size(93, 13);
+			label44.Size = size;
+			this.Label3.TabIndex = 2;
+			this.Label3.Text = "Potência do rádio:";
+			this.Label2.AutoSize = true;
+			global::System.Windows.Forms.Control label45 = this.Label2;
+			location = new global::System.Drawing.Point(16, 63);
+			label45.Location = location;
+			this.Label2.Name = "Label2";
+			global::System.Windows.Forms.Control label46 = this.Label2;
+			size = new global::System.Drawing.Size(65, 13);
+			label46.Size = size;
+			this.Label2.TabIndex = 1;
+			this.Label2.Text = "Polarização:";
+			this.Label17.AutoSize = true;
+			global::System.Windows.Forms.Control label47 = this.Label17;
+			location = new global::System.Drawing.Point(16, 30);
+			label47.Location = location;
+			this.Label17.Name = "Label17";
+			global::System.Windows.Forms.Control label48 = this.Label17;
+			size = new global::System.Drawing.Size(83, 13);
+			label48.Size = size;
+			this.Label17.TabIndex = 0;
+			this.Label17.Text = "Tipo de Antena:";
+			global::System.Windows.Forms.Control tb_lixo15 = this.tb_lixo8;
+			location = new global::System.Drawing.Point(172, 124);
+			tb_lixo15.Location = location;
+			this.tb_lixo8.Name = "tb_lixo8";
+			global::System.Windows.Forms.Control tb_lixo16 = this.tb_lixo8;
+			size = new global::System.Drawing.Size(76, 20);
+			tb_lixo16.Size = size;
+			this.tb_lixo8.TabIndex = 27;
+			this.OpenFileDialog_RT821.FileName = "OpenFileDialog1";
+			this.Timer_limpa_MSG_RT821.Interval = 2000;
+			this.ToolStri_RT821.BackColor = global::System.Drawing.Color.Transparent;
+			this.ToolStri_RT821.GripStyle = 0;
+			global::System.Windows.Forms.ToolStrip toolStri_RT = this.ToolStri_RT821;
+			size = new global::System.Drawing.Size(48, 48);
+			toolStri_RT.ImageScalingSize = size;
+			this.ToolStri_RT821.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
+			{
+				this.ToolStripButton_RT821_novo,
+				this.ToolStripButton_RT821_Abrir,
+				this.ToolStripButton_RT821_Salvar,
+				this.ToolStripSeparator1,
+				this.ToolStripButton_RT821_Download,
+				this.ToolStripButton_RT821_Upload,
+				this.ToolStripSeparator2,
+				this.ToolStripButton_RT821_Imprimir,
+				this.ToolStripSeparator3,
+				this.ToolStripLabel1,
+				this.ToolStripSeparator4,
+				this.ToolStripTextBox_RT821_Msg,
+				this.ToolStripProgressBar_RT821
+			});
+			this.ToolStri_RT821.LayoutStyle = (System.Windows.Forms.ToolStripLayoutStyle)3;
+			global::System.Windows.Forms.Control toolStri_RT2 = this.ToolStri_RT821;
+			location = new global::System.Drawing.Point(0, 0);
+			toolStri_RT2.Location = location;
+			this.ToolStri_RT821.Name = "ToolStri_RT821";
+			global::System.Windows.Forms.Control toolStri_RT3 = this.ToolStri_RT821;
+			size = new global::System.Drawing.Size(1064, 55);
+			toolStri_RT3.Size = size;
+			this.ToolStri_RT821.Stretch = true;
+			this.ToolStri_RT821.TabIndex = 9;
+			this.ToolStri_RT821.Text = "ToolStrip1";
+			this.ToolStripButton_RT821_novo.AutoToolTip = false;
+			this.ToolStripButton_RT821_novo.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT821_novo.Image = global::iS800.My.Resources.Resources.folder_add_icon1;
+			this.ToolStripButton_RT821_novo.ImageTransparentColor = global::System.Drawing.Color.Magenta;
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_novo = this.ToolStripButton_RT821_novo;
+			padding = new global::System.Windows.Forms.Padding(10, 1, 0, 2);
+			toolStripButton_RT821_novo.Margin = padding;
+			this.ToolStripButton_RT821_novo.Name = "ToolStripButton_RT821_novo";
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_novo2 = this.ToolStripButton_RT821_novo;
+			size = new global::System.Drawing.Size(52, 52);
+			toolStripButton_RT821_novo2.Size = size;
+			this.ToolStripButton_RT821_novo.Text = "Novo";
+			this.ToolStripButton_RT821_novo.ToolTipText = "Novo arquivo";
+			this.ToolStripButton_RT821_Abrir.AutoToolTip = false;
+			this.ToolStripButton_RT821_Abrir.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT821_Abrir.Image = global::iS800.My.Resources.Resources.folder_up_icon;
+			this.ToolStripButton_RT821_Abrir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
+			this.ToolStripButton_RT821_Abrir.Name = "ToolStripButton_RT821_Abrir";
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Abrir = this.ToolStripButton_RT821_Abrir;
+			size = new global::System.Drawing.Size(52, 52);
+			toolStripButton_RT821_Abrir.Size = size;
+			this.ToolStripButton_RT821_Abrir.Text = "Abrir Arquivo";
+			this.ToolStripButton_RT821_Abrir.ToolTipText = "Abrir arquivo";
+			this.ToolStripButton_RT821_Salvar.AutoToolTip = false;
+			this.ToolStripButton_RT821_Salvar.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT821_Salvar.Image = global::iS800.My.Resources.Resources.folder_down_icon;
+			this.ToolStripButton_RT821_Salvar.ImageTransparentColor = global::System.Drawing.Color.Magenta;
+			this.ToolStripButton_RT821_Salvar.Name = "ToolStripButton_RT821_Salvar";
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Salvar = this.ToolStripButton_RT821_Salvar;
+			size = new global::System.Drawing.Size(52, 52);
+			toolStripButton_RT821_Salvar.Size = size;
+			this.ToolStripButton_RT821_Salvar.Text = "Salvar Arquivo";
+			this.ToolStripButton_RT821_Salvar.ToolTipText = "Salvar arquivo";
+			this.ToolStripSeparator1.AutoSize = false;
+			global::System.Windows.Forms.ToolStripItem toolStripSeparator = this.ToolStripSeparator1;
+			padding = new global::System.Windows.Forms.Padding(10, 0, 0, 0);
+			toolStripSeparator.Margin = padding;
+			this.ToolStripSeparator1.Name = "ToolStripSeparator1";
+			global::System.Windows.Forms.ToolStripItem toolStripSeparator2 = this.ToolStripSeparator1;
+			size = new global::System.Drawing.Size(6, 52);
+			toolStripSeparator2.Size = size;
+			this.ToolStripButton_RT821_Download.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT821_Download.Image = global::iS800.My.Resources.Resources.Upload_icon;
+			this.ToolStripButton_RT821_Download.ImageTransparentColor = global::System.Drawing.Color.Magenta;
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Download = this.ToolStripButton_RT821_Download;
+			padding = new global::System.Windows.Forms.Padding(10, 1, 0, 2);
+			toolStripButton_RT821_Download.Margin = padding;
+			this.ToolStripButton_RT821_Download.Name = "ToolStripButton_RT821_Download";
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Download2 = this.ToolStripButton_RT821_Download;
+			size = new global::System.Drawing.Size(52, 52);
+			toolStripButton_RT821_Download2.Size = size;
+			this.ToolStripButton_RT821_Download.Text = "Ler Equipamento";
+			this.ToolStripButton_RT821_Upload.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT821_Upload.Image = global::iS800.My.Resources.Resources.Download_icon;
+			this.ToolStripButton_RT821_Upload.ImageTransparentColor = global::System.Drawing.Color.Magenta;
+			this.ToolStripButton_RT821_Upload.Name = "ToolStripButton_RT821_Upload";
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Upload = this.ToolStripButton_RT821_Upload;
+			size = new global::System.Drawing.Size(52, 52);
+			toolStripButton_RT821_Upload.Size = size;
+			this.ToolStripButton_RT821_Upload.Text = "Gravar no equipamento";
+			this.ToolStripSeparator2.AutoSize = false;
+			global::System.Windows.Forms.ToolStripItem toolStripSeparator3 = this.ToolStripSeparator2;
+			padding = new global::System.Windows.Forms.Padding(10, 0, 0, 0);
+			toolStripSeparator3.Margin = padding;
+			this.ToolStripSeparator2.Name = "ToolStripSeparator2";
+			global::System.Windows.Forms.ToolStripItem toolStripSeparator4 = this.ToolStripSeparator2;
+			size = new global::System.Drawing.Size(6, 52);
+			toolStripSeparator4.Size = size;
+			this.ToolStripButton_RT821_Imprimir.DisplayStyle = (System.Windows.Forms.ToolStripItemDisplayStyle)2;
+			this.ToolStripButton_RT821_Imprimir.Image = (global::System.Drawing.Image)componentResourceManager.GetObject("ToolStripButton_RT821_Imprimir.Image");
+			this.ToolStripButton_RT821_Imprimir.ImageTransparentColor = global::System.Drawing.Color.Magenta;
+			this.ToolStripButton_RT821_Imprimir.Name = "ToolStripButton_RT821_Imprimir";
+			global::System.Windows.Forms.ToolStripItem toolStripButton_RT821_Imprimir = this.ToolStripButton_RT821_Imprimir;
+			size = new global::System.Drawing.Size(52, 52);
+			toolStripButton_RT821_Imprimir.Size = size;
+			this.ToolStripButton_RT821_Imprimir.Text = "Impressão da ficha de configuração";
+			this.ToolStripSeparator3.AutoSize = false;
+			this.ToolStripSeparator3.Name = "ToolStripSeparator3";
+			global::System.Windows.Forms.ToolStripItem toolStripSeparator5 = this.ToolStripSeparator3;
+			size = new global::System.Drawing.Size(6, 52);
+			toolStripSeparator5.Size = size;
+			this.ToolStripLabel1.Font = new global::System.Drawing.Font("Arial Narrow", 18f, (System.Drawing.FontStyle)0, (System.Drawing.GraphicsUnit)3, 0);
+			this.ToolStripLabel1.ForeColor = global::System.Drawing.Color.FromArgb(192, 0, 0);
+			global::System.Windows.Forms.ToolStripItem toolStripLabel = this.ToolStripLabel1;
+			padding = new global::System.Windows.Forms.Padding(5, 13, 0, 2);
+			toolStripLabel.Margin = padding;
+			this.ToolStripLabel1.Name = "ToolStripLabel1";
+			global::System.Windows.Forms.ToolStripItem toolStripLabel2 = this.ToolStripLabel1;
+			size = new global::System.Drawing.Size(110, 29);
+			toolStripLabel2.Size = size;
+			this.ToolStripLabel1.Text = "RT821/300";
+			this.ToolStripSeparator4.AutoSize = false;
+			this.ToolStripSeparator4.Name = "ToolStripSeparator4";
+			global::System.Windows.Forms.ToolStripItem toolStripSeparator6 = this.ToolStripSeparator4;
+			size = new global::System.Drawing.Size(6, 52);
+			toolStripSeparator6.Size = size;
+			this.ToolStripTextBox_RT821_Msg.BackColor = global::System.Drawing.Color.LightCyan;
+			this.ToolStripTextBox_RT821_Msg.BorderStyle = (System.Windows.Forms.BorderStyle)1;
+			global::System.Windows.Forms.ToolStripItem toolStripTextBox_RT821_Msg = this.ToolStripTextBox_RT821_Msg;
+			padding = new global::System.Windows.Forms.Padding(10, 15, 1, 0);
+			toolStripTextBox_RT821_Msg.Margin = padding;
+			this.ToolStripTextBox_RT821_Msg.Name = "ToolStripTextBox_RT821_Msg";
+			this.ToolStripTextBox_RT821_Msg.ReadOnly = true;
+			global::System.Windows.Forms.ToolStripControlHost toolStripTextBox_RT821_Msg2 = this.ToolStripTextBox_RT821_Msg;
+			size = new global::System.Drawing.Size(250, 23);
+			toolStripTextBox_RT821_Msg2.Size = size;
+			this.ToolStripTextBox_RT821_Msg.TextBoxTextAlign = (System.Windows.Forms.HorizontalAlignment)2;
+			this.ToolStripProgressBar_RT821.BackColor = global::System.Drawing.SystemColors.Control;
+			global::System.Windows.Forms.ToolStripItem toolStripProgressBar_RT = this.ToolStripProgressBar_RT821;
+			padding = new global::System.Windows.Forms.Padding(20, 15, 1, 1);
+			toolStripProgressBar_RT.Margin = padding;
+			this.ToolStripProgressBar_RT821.Name = "ToolStripProgressBar_RT821";
+			global::System.Windows.Forms.ToolStripControlHost toolStripProgressBar_RT2 = this.ToolStripProgressBar_RT821;
+			size = new global::System.Drawing.Size(180, 20);
+			toolStripProgressBar_RT2.Size = size;
+			this.ToolStripProgressBar_RT821.ToolTipText = "Progresso da operação";
+			global::System.Windows.Forms.PrintPreviewDialog printPreviewDialog = this.PrintPreviewDialog1;
+			size = new global::System.Drawing.Size(0, 0);
+			printPreviewDialog.AutoScrollMargin = size;
+			global::System.Windows.Forms.PrintPreviewDialog printPreviewDialog2 = this.PrintPreviewDialog1;
+			size = new global::System.Drawing.Size(0, 0);
+			printPreviewDialog2.AutoScrollMinSize = size;
+			global::System.Windows.Forms.Form printPreviewDialog3 = this.PrintPreviewDialog1;
+			size = new global::System.Drawing.Size(400, 300);
+			printPreviewDialog3.ClientSize = size;
+			this.PrintPreviewDialog1.Document = this.PrintDocument1;
+			this.PrintPreviewDialog1.Enabled = true;
+			this.PrintPreviewDialog1.Icon = (global::System.Drawing.Icon)componentResourceManager.GetObject("PrintPreviewDialog1.Icon");
+			this.PrintPreviewDialog1.Name = "PrintPreviewDialog1";
+			this.PrintPreviewDialog1.Visible = false;
+			global::System.Drawing.SizeF autoScaleDimensions;
+			autoScaleDimensions = new global::System.Drawing.SizeF(6f, 13f);
+			this.AutoScaleDimensions = autoScaleDimensions;
+			this.AutoScaleMode = (System.Windows.Forms.AutoScaleMode)1;
+			this.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			size = new global::System.Drawing.Size(1064, 594);
+			this.ClientSize = size;
+			this.Controls.Add(this.ToolStri_RT821);
+			this.Controls.Add(this.TabControl_821);
+			this.FormBorderStyle = (System.Windows.Forms.FormBorderStyle)1;
+			this.Name = "RT_821_380_conf";
+			this.ShowIcon = false;
+			this.ShowInTaskbar = false;
+			this.StartPosition = (System.Windows.Forms.FormStartPosition)0;
+			this.Text = "Configuração";
+			this.TransparencyKey = global::System.Drawing.Color.Transparent;
+			this.TabPage_Display.BackColor = global::System.Drawing.SystemColors.ControlLight;
+			this.TabPage_geral.ResumeLayout(false);
+			this.GroupBox_ModoOperacao.ResumeLayout(false);
+			this.GroupBox_ModoOperacao.PerformLayout();
+			this.GroupBox_descricao_RT821.ResumeLayout(false);
+			this.GroupBox_descricao_RT821.PerformLayout();
+			this.GroupBox_informacoes_RT821.ResumeLayout(false);
+			this.GroupBox_informacoes_RT821.PerformLayout();
+			this.GroupBox_modelo_simulado_RT821.ResumeLayout(false);
+			this.GroupBox_comunicacao_RT821.ResumeLayout(false);
+			this.GroupBox_comunicacao_RT821.PerformLayout();
+
+
+			this.TabPage_controles.ResumeLayout(false);
+			this.GroupBox_MotoresSimultaneos_RT_821.ResumeLayout(false);
+			this.GroupBox_controle_RT821.ResumeLayout(false);
+			this.GroupBox_controle_RT821.PerformLayout();
+			this.TabPage_EA.ResumeLayout(false);
+			this.GroupBox_parametros_EA_RT821.ResumeLayout(false);
+			this.GroupBox_parametros_EA_RT821.PerformLayout();
+			this.GroupBox_EA_RT821.ResumeLayout(false);
+			this.GroupBox_EA_RT821.PerformLayout();
+
+			this.TabPage_ED.ResumeLayout(false);
+			this.GroupBox_ED_RT821.ResumeLayout(false);
+			this.GroupBox_ED_RT821.PerformLayout();
+			this.TabPage_setpoints.ResumeLayout(false);
+			this.GroupBox_setpoints_RT821.ResumeLayout(false);
+			this.GroupBox_setpoints_RT821.PerformLayout();
+			this.TabPage_repetidora.ResumeLayout(false);
+			this.GroupBox_end_rep_RT821.ResumeLayout(false);
+			this.GroupBox_parametros_repetidora_RT821.ResumeLayout(false);
+			this.GroupBox_parametros_repetidora_RT821.PerformLayout();
+
+			this.TabPage_Display.ResumeLayout(false);
+			this.GroupBox_visor_RT_821.ResumeLayout(false);
+			this.GroupBox_visor_RT_821.PerformLayout();
 			this.TabPage_VasosCalhas.ResumeLayout(false);
 			this.TabPage_Perifericos.ResumeLayout(false);
-			// Reorder TabPages robustly: ensure Vazão, Periféricos, Dados after Display
-			var tabPageVazao = this.TabControl_821.TabPages["TabPage_VasosCalhas"];
-			var tabPageVazaoPerifericos = this.TabControl_821.TabPages["TabPage_Perifericos"];
-			var tabPageDisplay = this.TabControl_821.TabPages["TabPage_Display"];
-			var tabPageDadosInstalacao = this.TabControl_821.TabPages["TabPage_DadosInstalacao"];
-			var pagesToMove = new System.Collections.Generic.List<System.Windows.Forms.TabPage>();
-			if (tabPageVazao != null)
-				pagesToMove.Add(tabPageVazao);
-			if (tabPageVazaoPerifericos != null)
-				pagesToMove.Add(tabPageVazaoPerifericos);
-			if (tabPageDadosInstalacao != null)
-				pagesToMove.Add(tabPageDadosInstalacao);
-			foreach (var p in pagesToMove.ToArray())
-			{
-				if (this.TabControl_821.TabPages.Contains(p))
-					this.TabControl_821.TabPages.Remove(p);
-			}
-			int insertIndex = (tabPageDisplay != null && this.TabControl_821.TabPages.Contains(tabPageDisplay)) ? this.TabControl_821.TabPages.IndexOf(tabPageDisplay) + 1 : this.TabControl_821.TabPages.Count;
-			foreach (var p in pagesToMove)
-			{
-				int clampedIndex = Math.Max(0, Math.Min(insertIndex, this.TabControl_821.TabPages.Count));
-				this.TabControl_821.TabPages.Insert(clampedIndex, p);
-				insertIndex = clampedIndex + 1;
-			}
-			// Ensure TabPage.TabIndex values reflect the actual order to avoid code
-			// that incorrectly uses TabIndex as a SelectedIndex source.
-			for (int i = 0; i < this.TabControl_821.TabPages.Count; i++)
-			{
-				this.TabControl_821.TabPages[i].TabIndex = i;
-			}
-			// Clamp SelectedIndex to a valid value
-			if (this.TabControl_821.SelectedIndex < 0 || this.TabControl_821.SelectedIndex >= this.TabControl_821.TabPages.Count)
-			{
-				this.TabControl_821.SelectedIndex = 0;
-			}
+			this.TabPage_DadosInstalacao.ResumeLayout(false);
+			this.GroupBox1.ResumeLayout(false);
+			this.GroupBox1.PerformLayout();
+			this.ToolStri_RT821.ResumeLayout(false);
+			this.ToolStri_RT821.PerformLayout();
 			this.ResumeLayout(false);
-        }
-
-
-		        // Struct auxiliar — evita ValueTuple (nao disponivel no .NET 4.5)
-        private struct InfoLabel
-        {
-            public string Texto;
-            public Point  Pos;
-            public Color  Cor;   // Color.Empty = sem cor especial
-            public InfoLabel(string texto, Point pos, Color cor)
-            { Texto = texto; Pos = pos; Cor = cor; }
-        }
-
-        /// <summary>
-        /// Monta uma TabPage de calha com PictureBox (Resource) + Labels sobrepostos,
-        /// identico ao que o Designer do RT_820_360_conf gera para TabPage2/3/4.
-        /// </summary>
-        private static TabPage CriaTabCalha(
-            string titulo,
-            System.Drawing.Image imagem,
-            InfoLabel[] labels)
-        {
-            var page = new TabPage
-            {
-                Text = titulo,
-                UseVisualStyleBackColor = true,
-                Padding = new Padding(3)
-            };
-
-            var pic = new PictureBox
-            {
-                Image        = imagem,
-                ErrorImage   = null,
-                InitialImage = null,
-                Location     = new Point(0, 0),
-                Size         = new Size(769, 428),
-                TabStop      = false,
-                SizeMode     = PictureBoxSizeMode.Normal
-            };
-            page.Controls.Add(pic);
-
-            foreach (var info in labels)
-            {
-                var lbl = new Label
-                {
-                    Text      = info.Texto,
-                    AutoSize  = true,
-                    Location  = info.Pos,
-                    BackColor = Color.Transparent
-                };
-                if (info.Cor != Color.Empty) lbl.ForeColor = info.Cor;
-                page.Controls.Add(lbl);
-                lbl.BringToFront();
-            }
-
-            return page;
-        }
-
-
-        private static void PreencheHeadersReferencias(DataGridView dgv, int inicio)
-        {
-            dgv.RowCount = 5;
-            for (int i = 0; i < dgv.Rows.Count; i++)
-            {
-                if (!dgv.Rows[i].IsNewRow)
-                    dgv.Rows[i].HeaderCell.Value = (inicio + i).ToString();
-            }
-        }
-
-        private void ConfiguraAbasDesigner()
-        {
-            if (DataGridView_vazoes_RT820 != null)
-                GeraDataGridView_Vazoes(DataGridView_vazoes_RT820);
-
-            if (DataGridView_periferico1_RT820 != null)
-                GeraDataGridView_Perifericos(DataGridView_periferico1_RT820);
-            if (DataGridView_periferico2_RT820 != null)
-                GeraDataGridView_Perifericos(DataGridView_periferico2_RT820);
-
-            if (datagridview_referenciaperifico != null)
-            {
-                GeraDataGridView_Referencia_Periferico(datagridview_referenciaperifico);
-                PreencheHeadersReferencias(datagridview_referenciaperifico, 1);
-            }
-
-            if (DataGridView_calhas_RT820 != null)
-            {
-                var cols = RT_geral.RT_820_DatagridViewCalhasColunas;
-                int[] larguras = { 80, 150, 150, 80, 80, 80 };
-                DataGridView_calhas_RT820.Columns.Clear();
-                for (int ci = 0; ci <= 5; ci++)
-                {
-                    DataGridViewColumn col = cols[ci].NumeroLinhaMenu > 0
-                        ? Linha_RT.CreateComboBoxColumn(ci.ToString(), ref cols)
-                        : Linha_RT.CreateTextColumn(ci.ToString(), ref cols);
-                    col.Width = larguras[ci];
-                    DataGridView_calhas_RT820.Columns.Insert(ci, col);
-                }
-                DataGridView_calhas_RT820.RowCount = 2;
-                DataGridView_calhas_RT820.RowHeadersWidth = 80;
-                int rn = 1;
-                foreach (DataGridViewRow row in DataGridView_calhas_RT820.Rows)
-                    if (!row.IsNewRow) row.HeaderCell.Value = "Calha " + rn++;
-                DataGridView_calhas_RT820.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-                DataGridView_calhas_RT820.ScrollBars = ScrollBars.None;
-            }
-        }
-
-
-		private void PopulateCalhaTabsDesigner()
-		{
-			this.TabPage2.Controls.Clear();
-			this.TabPage3.Controls.Clear();
-			this.TabPage4.Controls.Clear();
-
-			this.TabPage2.Controls.Add(new PictureBox
-			{
-				Image = iS800.My.Resources.Resources.calha_01,
-				Location = new Point(3, 3),
-				Size = new Size(745, 422),
-				SizeMode = PictureBoxSizeMode.StretchImage
-			});
-			this.TabPage3.Controls.Add(new PictureBox
-			{
-				Image = iS800.My.Resources.Resources.calha_02,
-				Location = new Point(3, 3),
-				Size = new Size(745, 422),
-				SizeMode = PictureBoxSizeMode.StretchImage
-			});
-			this.TabPage4.Controls.Add(new PictureBox
-			{
-				Image = iS800.My.Resources.Resources.calha_03,
-				Location = new Point(3, 3),
-				Size = new Size(745, 422),
-				SizeMode = PictureBoxSizeMode.StretchImage
-			});
+			this.PerformLayout();
 		}
+
+		// Token: 0x04000CCD RID: 3277
+		private global::System.ComponentModel.IContainer components;
 	}
 }
