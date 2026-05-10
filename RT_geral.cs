@@ -3859,6 +3859,7 @@ namespace iS800
         // ── RT_821/380 — Novas abas de Vazão & Calhas + Periféricos ────────
         public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_821_380_DatagridViewVazoesColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[6];
         public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_821_380_DatagridViewPerifericosColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[5];
+        public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_821_380_DataGridViewReferenciaPerifericosColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[3];
 
 		// Token: 0x04001100 RID: 4352
 		public static RT_geral.DADOS_DATAGRIDVIEW_RT_820[] RT_820_DataGrigViewEDColunas = new RT_geral.DADOS_DATAGRIDVIEW_RT_820[2];
@@ -6806,6 +6807,122 @@ namespace iS800
 
 			// Token: 0x04001487 RID: 5255
 			public RT_geral.Combo_ictel_ctrl Dsp_pos;
+		}
+
+		// ── RT_821/380 — DataGridView generation methods ─────────────────────
+		public static void GeraDataGridView_Vazoes(DataGridView dgv)
+		{
+			dgv.AllowUserToAddRows = false;
+			dgv.AllowUserToDeleteRows = false;
+			dgv.AllowUserToResizeColumns = false;
+			dgv.AllowUserToResizeRows = false;
+			dgv.AllowUserToOrderColumns = false;
+			dgv.RowHeadersVisible = true;
+			dgv.RowHeadersWidth = 100;
+			dgv.ScrollBars = ScrollBars.None;
+			dgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+			dgv.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+			dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+			dgv.Columns.Clear();
+
+			var cols = RT_geral.RT_821_380_DatagridViewVazoesColunas;
+			int[] larguras = new int[] { 50, 130, 80, 65, 65, 70 };
+
+			for (int ci = 0; ci < 6; ci++)
+			{
+				DataGridViewColumn col;
+				if (cols[ci].NumeroLinhaMenu > 0)
+					col = Linha_RT.CreateComboBoxColumn(ci.ToString(), ref cols);
+				else
+					col = Linha_RT.CreateTextColumn(ci.ToString(), ref cols);
+				col.Width = larguras[ci];
+				dgv.Columns.Add(col);
+			}
+
+			dgv.RowCount = 8;
+			int idx = 1;
+			foreach (DataGridViewRow row in dgv.Rows)
+				if (!row.IsNewRow) row.HeaderCell.Value = "Vazão " + idx++;
+		}
+
+		public static void GeraDataGridView_Perifericos(DataGridView dgv)
+		{
+			dgv.AllowUserToAddRows = false;
+			dgv.AllowUserToDeleteRows = false;
+			dgv.AllowUserToResizeColumns = false;
+			dgv.AllowUserToResizeRows = false;
+			dgv.AllowUserToOrderColumns = false;
+			dgv.RowHeadersVisible = true;
+			dgv.RowHeadersWidth = 110;
+			dgv.ScrollBars = ScrollBars.None;
+			dgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+			dgv.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+			dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+			dgv.Columns.Clear();
+
+			var cols = RT_geral.RT_821_380_DatagridViewPerifericosColunas;
+			int[] larguras = new int[] { 75, 120, 80, 90, 75 };
+
+			for (int ci = 0; ci < 5; ci++)
+			{
+				DataGridViewColumn col;
+				if (cols[ci].NumeroLinhaMenu > 0)
+					col = Linha_RT.CreateComboBoxColumn(ci.ToString(), ref cols);
+				else
+					col = Linha_RT.CreateTextColumn(ci.ToString(), ref cols);
+				col.Width = larguras[ci];
+				dgv.Columns.Add(col);
+			}
+
+			dgv.RowCount = 5;
+			int idx = 1;
+			foreach (DataGridViewRow row in dgv.Rows)
+				if (!row.IsNewRow) row.HeaderCell.Value = "Periférico " + idx++;
+		}
+
+		public static void GeraDataGridView_Referencia_Periferico(DataGridView dgv)
+		{
+			dgv.AllowUserToAddRows = false;
+			dgv.AllowUserToDeleteRows = false;
+			dgv.AllowUserToResizeColumns = false;
+			dgv.AllowUserToResizeRows = false;
+			dgv.AllowUserToOrderColumns = false;
+			dgv.RowHeadersVisible = true;
+			dgv.RowHeadersWidth = 80;
+			dgv.ScrollBars = ScrollBars.None;
+			dgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+			dgv.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+			dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+			dgv.Columns.Clear();
+
+			var cols = RT_geral.RT_821_380_DataGridViewReferenciaPerifericosColunas;
+			int[] larguras = new int[] { 100, 100, 80 };
+
+			for (int ci = 0; ci < 3; ci++)
+			{
+				DataGridViewColumn col;
+				if (cols[ci].NumeroLinhaMenu > 0)
+					col = Linha_RT.CreateComboBoxColumn(ci.ToString(), ref cols);
+				else
+					col = Linha_RT.CreateTextColumn(ci.ToString(), ref cols);
+				col.Width = larguras[ci];
+				dgv.Columns.Add(col);
+			}
+
+			dgv.RowCount = 5;
+		}
+
+		public static void PreencheHeadersReferencias(DataGridView dgv, int inicio)
+		{
+			dgv.RowCount = 5;
+			for (int i = 0; i < dgv.Rows.Count; i++)
+			{
+				if (!dgv.Rows[i].IsNewRow)
+					dgv.Rows[i].HeaderCell.Value = (inicio + i).ToString();
+			}
 		}
 	}
 }

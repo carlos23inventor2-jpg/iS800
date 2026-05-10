@@ -8300,14 +8300,10 @@ namespace iS800
 		[AccessedThroughProperty("Label18")]
 		private Label _Label18;
 
-		// Token: 0x04000D4B RID: 3403
+// Token: 0x04000D4B RID: 3403
 		private int pagina_impressao;
 
-		// ═══════════════════════════════════════════════════════════════════
-		// NOVAS ABAS: Vazão & Calhas + Periféricos
-		// ═══════════════════════════════════════════════════════════════════
-
-		/// <summary>Struct auxiliar — evita ValueTuple (não disponível no .NET 4.5)</summary>
+		// ── Estrutura para labels técnicos das calhas (evita ValueTuple) ─────────
 		private struct InfoLabel
 		{
 			public string Texto;
@@ -8319,276 +8315,222 @@ namespace iS800
 			}
 		}
 
-		/// <summary>
-		/// Monta uma TabPage de calha com PictureBox (Resource) + Labels sobrepostos.
-		/// </summary>
-		private static TabPage CriaTabCalha(string titulo, System.Drawing.Image imagem, InfoLabel[] labels)
-		{
-			var page = new TabPage { Text = titulo, UseVisualStyleBackColor = true, Padding = new Padding(3) };
-			var pic = new PictureBox
-			{
-				Image = imagem, ErrorImage = null, InitialImage = null,
-				Location = new Point(0, 0), Size = new Size(769, 428),
-				TabStop = false, SizeMode = PictureBoxSizeMode.Normal
-			};
-			page.Controls.Add(pic);
-			foreach (var info in labels)
-			{
-				var lbl = new Label
-				{
-					Text = info.Texto, AutoSize = true,
-					Location = info.Pos, BackColor = Color.Transparent
-				};
-				if (info.Cor != Color.Empty) lbl.ForeColor = info.Cor;
-				page.Controls.Add(lbl);
-				lbl.BringToFront();
-			}
-			return page;
-		}
-
-		private void GeraDataGridView_Vazoes(DataGridView dgv)
-		{
-			dgv.AllowUserToAddRows    = false;
-			dgv.AllowUserToDeleteRows = false;
-			dgv.AllowUserToResizeColumns = false;
-			dgv.AllowUserToResizeRows    = false;
-			dgv.RowHeadersVisible  = true;
-			dgv.RowHeadersWidth    = 100;
-			dgv.ScrollBars         = ScrollBars.None;
-			dgv.CellBorderStyle    = DataGridViewCellBorderStyle.Single;
-			dgv.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-			dgv.Columns.Clear();
-			// Colunas: EA, Tipo Calha, Endereço Memória, Fator, Offset, Unidade
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "EA",       Width = 50  });
-			//var colTipo = new DataGridViewComboBoxColumn { HeaderText = "Tipo",      Width = 130, FlatStyle = FlatStyle.Flat, DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox };
-			//colTipo.Items.AddRange(new object[] { "Parshall", "Botton Step", "Retangular" });
-			//dgv.Columns.Add(colTipo);
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "End. Mem.",Width = 80  });
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Fator",    Width = 65  });
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Offset",   Width = 65  });
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Unidade",  Width = 70  });
-			//dgv.RowCount = 6;
-			//int idx = 1;
-			//foreach (DataGridViewRow row in dgv.Rows)
-			//	if (!row.IsNewRow) row.HeaderCell.Value = "Vazão " + idx++;
-		}
-
-		private void GeraDataGridView_Perifericos(DataGridView dgv)
-		{
-			dgv.AllowUserToAddRows    = false;
-			dgv.AllowUserToDeleteRows = false;
-			dgv.AllowUserToResizeColumns = false;
-			dgv.AllowUserToResizeRows    = false;
-			dgv.RowHeadersVisible  = true;
-			dgv.RowHeadersWidth    = 110;
-			dgv.ScrollBars         = ScrollBars.None;
-			dgv.CellBorderStyle    = DataGridViewCellBorderStyle.Single;
-			dgv.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-			dgv.Columns.Clear();
-			// Colunas: Endereço, Tipo, BaudRate, Protocolo, Paridade
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Endereço",  Width = 75 });
-			//var colTipo = new DataGridViewComboBoxColumn { HeaderText = "Tipo",       Width = 120, FlatStyle = FlatStyle.Flat, DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox };
-			//colTipo.Items.AddRange(new object[] { "Nenhum", "SDI-12", "ModBUS RTU", "ModBUS Genérico" });
-			//dgv.Columns.Add(colTipo);
-			//var colBaud = new DataGridViewComboBoxColumn { HeaderText = "BaudRate",   Width = 80,  FlatStyle = FlatStyle.Flat, DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox };
-			//colBaud.Items.AddRange(new object[] { "1200", "2400", "4800", "9600", "19200", "38400" });
-			//dgv.Columns.Add(colBaud);
-			//var colProt = new DataGridViewComboBoxColumn { HeaderText = "Protocolo",  Width = 90,  FlatStyle = FlatStyle.Flat, DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox };
-			//colProt.Items.AddRange(new object[] { "8N1", "8E1", "8O1" });
-			//dgv.Columns.Add(colProt);
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "ID Remoto", Width = 75 });
-			//dgv.RowCount = 5;
-			//int idx = 1;
-			//foreach (DataGridViewRow row in dgv.Rows)
-			//	if (!row.IsNewRow) row.HeaderCell.Value = "Periférico " + idx++;
-		}
-
-		private void GeraDataGridView_Referencia_Periferico(DataGridView dgv)
-		{
-			dgv.AllowUserToAddRows = false;
-			dgv.AllowUserToDeleteRows = false;
-			dgv.AllowUserToResizeColumns = false;
-			dgv.AllowUserToResizeRows = false;
-			dgv.RowHeadersVisible = true;
-			dgv.ScrollBars = ScrollBars.None;
-			dgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-			dgv.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Variável", Width = 100 });
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Memória",  Width = 100 });
-			//dgv.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Fator",    Width = 80  });
-			//dgv.RowCount = 5;
-			//dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-		}
-
-		private static void PreencheHeadersReferencias(DataGridView dgv, int inicio)
-		{
-			//dgv.RowCount = 5;
-			//for (int i = 0; i < dgv.Rows.Count; i++)
-			//	if (!dgv.Rows[i].IsNewRow)
-			//		dgv.Rows[i].HeaderCell.Value = (inicio + i).ToString();
-		}
-
+		// ── Criação da aba Vazão & Calhas (layout do "cria origi") ─────────────
 		private TabPage CriaTabVasosCalhas()
 		{
 			var tab = new TabPage
 			{
 				Name = "TabPage_vazao_perifericos",
-				Text = " Vazão & Calhas ",
+				Text = "Vazão & Calhas",
 				UseVisualStyleBackColor = true,
 				BackColor = SystemColors.ControlLight
 			};
 
-			// ── Grupo Vazões ─────────────────────────────────────────────────
+			// Grupo Vazões (esquerda) - 8 linhas
 			var grpVazoes = new GroupBox
 			{
 				Name = "GroupBox_vazoes_820",
 				Text = "Vazões",
 				Location = new Point(9, 8),
-				Size = new Size(355, 268)
+				Size = new Size(325, 230)
 			};
+
 			var dgvVazoes = new DataGridView
 			{
 				Name = "DataGridView_vazoes_RT820",
 				Location = new Point(6, 19),
-				Size = new Size(340, 240)
+				Size = new Size(300, 215),
+				AllowUserToAddRows = false,
+				AllowUserToDeleteRows = false,
+				AllowUserToResizeColumns = false,
+				AllowUserToResizeRows = false,
+				AllowUserToOrderColumns = false,
+				RowHeadersVisible = true,
+				RowHeadersWidth = 100,
+				ScrollBars = ScrollBars.None,
+				CellBorderStyle = DataGridViewCellBorderStyle.Single,
+				AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
+				AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None
 			};
-			GeraDataGridView_Vazoes(dgvVazoes);
+			dgvVazoes.DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter };
+
+			// Coluna Tipo usando Linha_RT.CreateComboBoxColumn
+			var colsVazoes = RT_geral.RT_821_380_DatagridViewVazoesColunas;
+			var colTipo = Linha_RT.CreateComboBoxColumn("0", ref colsVazoes);
+			colTipo.HeaderText = "Tipo";
+			colTipo.Width = 200;
+			colTipo.FlatStyle = FlatStyle.Flat;
+			colTipo.DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox;
+			colTipo.Items.Clear();
+			colTipo.Items.AddRange(new object[] {
+				"Leitura desabilitada",
+				"Leitura vazão - EA1",
+				"Leitura vazão - EA2",
+				"Leitura vazão - EA3",
+				"Leitura vazão - EA4",
+				"Leitura vazão - ED1",
+				"Leitura vazão - ED1 reverso",
+				"Leitura vazão - ED2",
+				"Leitura vazão - ED2 reverso",
+				"Leitura vazão - ED3",
+				"Leitura vazão - ED3 reverso",
+				"Leitura vazão - ED4",
+				"Leitura vazão - ED4 reverso",
+				"Leitura vazão - ED5",
+				"Leitura vazão - ED5 reverso",
+				"Leitura vazão - ED6",
+				"Leitura vazão - ED6 reverso",
+				"Leitura vazão - ED7",
+				"Leitura vazão - ED7 reverso",
+				"Leitura vazão - ED8",
+				"Leitura vazão - ED8 reverso",
+				"Leitura - Calha 1",
+				"Leitura - Calha 2"
+			});
+			dgvVazoes.Columns.Add(colTipo);
+
+			dgvVazoes.RowCount = 8;
+			for (int i = 0; i < 8; i++)
+				dgvVazoes.Rows[i].HeaderCell.Value = "Vazão " + (i + 1);
+
 			grpVazoes.Controls.Add(dgvVazoes);
 			tab.Controls.Add(grpVazoes);
 
-			// ── Grupo Calhas ─────────────────────────────────────────────────
+			// Grupo Calhas (direita)
 			var grpCalhas = new GroupBox
 			{
 				Name = "GroupBox12",
 				Text = "Calhas",
-				Location = new Point(371, 8),
+				Location = new Point(371, 2),
 				Size = new Size(800, 535)
 			};
 
-			// DataGridView calhas
+			// DataGridView Calhas - 2 linhas
 			var dgvCalhas = new DataGridView
 			{
 				Name = "DataGridView_calhas_RT820",
-				Location = new Point(6, 15),
+				Location = new Point(6, 12),
 				AllowUserToAddRows = false,
 				AllowUserToDeleteRows = false,
 				AllowUserToResizeColumns = false,
-				AllowUserToResizeRows = false
+				AllowUserToResizeRows = false,
+				AllowUserToOrderColumns = false,
+				RowHeadersVisible = true,
+				RowHeadersWidth = 80,
+				ScrollBars = ScrollBars.None,
+				CellBorderStyle = DataGridViewCellBorderStyle.Single,
+				AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
+				AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None
 			};
+			dgvCalhas.DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter };
+
+			int[] largurasCalhas = new int[] { 80, 150, 150, 80, 80, 80 };
+			dgvCalhas.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "EA", Width = largurasCalhas[0] });
+			
+			var colTipoCalha = new DataGridViewComboBoxColumn
 			{
-				var cols = RT_geral.RT_820_DatagridViewCalhasColunas;
-				int[] larguras = { 80, 150, 150, 80, 80, 80 };
-				dgvCalhas.SuspendLayout();
-				dgvCalhas.Columns.Clear();
-				dgvCalhas.AllowUserToAddRows = false;
-				dgvCalhas.AllowUserToDeleteRows = false;
-				dgvCalhas.AllowUserToOrderColumns = false;
-				dgvCalhas.AllowUserToResizeColumns = false;
-				dgvCalhas.AllowUserToResizeRows = false;
-				dgvCalhas.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-				dgvCalhas.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-				//dgvCalhas.RowHeadersVisible = true;
-				//for (int ci = 0; ci <= 5; ci++)
-				//{
-				//	DataGridViewColumn col;
-				//	if (cols[ci].NumeroLinhaMenu > 0)
-				//		col = Linha_RT.CreateComboBoxColumn(ci.ToString(), ref cols);
-				//	else
-				//		col = Linha_RT.CreateTextColumn(ci.ToString(), ref cols);
-				//	col.Width = larguras[ci];
-				//	dgvCalhas.Columns.Insert(ci, col);
-				//}
-				//dgvCalhas.RowCount = 2;
-				dgvCalhas.RowHeadersWidth = 80;
-				int rn = 1;
-				foreach (DataGridViewRow row in dgvCalhas.Rows)
-					if (!row.IsNewRow) row.HeaderCell.Value = "Calha " + rn++;
-				dgvCalhas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-				dgvCalhas.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
-				int totalColWidth = 0; foreach (var l in larguras) totalColWidth += l;
-				dgvCalhas.Width  = totalColWidth + dgvCalhas.RowHeadersWidth + 20;
-				dgvCalhas.Height = 70;
-				dgvCalhas.ScrollBars = ScrollBars.None;
-				dgvCalhas.ResumeLayout();
-			}
+				HeaderText = "Tipo Calha",
+				Width = largurasCalhas[1],
+				FlatStyle = FlatStyle.Flat,
+				DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox
+			};
+			colTipoCalha.Items.AddRange(new object[] { "General Parshall Flume", "Botton Step Weir", "Supressed Rectangular" });
+			dgvCalhas.Columns.Add(colTipoCalha);
+			
+			dgvCalhas.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Altura Max(20mA) cm", Width = largurasCalhas[2] });
+			dgvCalhas.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "P1 cm", Width = largurasCalhas[3] });
+			dgvCalhas.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "P2 cm", Width = largurasCalhas[4] });
+			dgvCalhas.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "P3 cm", Width = largurasCalhas[5] });
+
+			dgvCalhas.RowCount = 2;
+			dgvCalhas.Rows[0].HeaderCell.Value = "Calha 1";
+			dgvCalhas.Rows[1].HeaderCell.Value = "Calha 2";
+
+			int totalColWidthCalhas = 0;
+			foreach (var l in largurasCalhas) totalColWidthCalhas += l;
+			dgvCalhas.Width = totalColWidthCalhas + dgvCalhas.RowHeadersWidth + 20;
+			dgvCalhas.Height = 70;
+
 			grpCalhas.Controls.Add(dgvCalhas);
 
-			// ── TabControl das calhas ─────────────────────────────────────────
+			// Texto "Descritivo de parâmetros das calhas:"
+			var lblDescritivo = new Label
+			{
+				Text = "Descritivo de parâmetros das calhas:",
+				Location = new Point(6, 82),
+				AutoSize = true
+			};
+			grpCalhas.Controls.Add(lblDescritivo);
+
+			// TabControl das calhas com imagens técnicas
 			var tabCtrlCalhas = new TabControl
 			{
 				Name = "TabControl_Calhas",
-				Location = new Point(6, 85),
-				Size = new Size(760, 525),
+				Location = new Point(6, 95),
+				Size = new Size(760, 515),
 				SelectedIndex = 0
 			};
 
-			var tabParshall = CriaTabCalha(
-				"General Parshall Flume",
-				iS800.My.Resources.Resources.calha_01,
-				new InfoLabel[] {
-					new InfoLabel("P2 > 244 Vazao em 0,1 m3/s", new Point(16,395), Color.Empty),
-					new InfoLabel("P2 <= 244 Vazao em l/s",     new Point(16,371), Color.Empty),
-					new InfoLabel("P = (2/3) * A",              new Point(354,127), Color.Blue),
-					new InfoLabel("P",                           new Point(368,98),  Color.Blue),
-					new InfoLabel("A",                           new Point(345,19),  Color.Blue),
-					new InfoLabel("h",                           new Point(364,321), Color.Red),
-					new InfoLabel("Largura (cm)",                new Point(442,111), Color.Empty),
-					new InfoLabel("P1 (cm)",                     new Point(256,287), Color.Empty),
-					new InfoLabel("Visao Lateral",               new Point(488,381), Color.Empty),
-					new InfoLabel("Visao Superior",              new Point(488,25),  Color.Empty),
-					new InfoLabel("P2 (cm)",                     new Point(442,98),  Color.Empty),
-					new InfoLabel("Medidor Ultrasonico",         new Point(364,214), Color.Empty),
-					new InfoLabel("Sentido Fluxo",               new Point(160,140), Color.Empty),
-				});
+			var tabParshall = CriaTabCalha("General Parshall Flume", iS800.My.Resources.Resources.calha_01, new InfoLabel[] {
+				new InfoLabel("P2 > 244 Vazao em 0,1 m3/s", new Point(16, 395), Color.Empty),
+				new InfoLabel("P2 <= 244 Vazao em l/s",      new Point(16, 371), Color.Empty),
+				new InfoLabel("P = (2/3) * A",               new Point(354, 127), Color.Blue),
+				new InfoLabel("P",                           new Point(368, 98),  Color.Blue),
+				new InfoLabel("A",                           new Point(345, 19),  Color.Blue),
+				new InfoLabel("h",                           new Point(364, 321), Color.Red),
+				new InfoLabel("Largura (cm)",                new Point(442, 111), Color.Empty),
+				new InfoLabel("P1 (cm)",                     new Point(256, 287), Color.Empty),
+				new InfoLabel("Visao Lateral",               new Point(488, 381), Color.Empty),
+				new InfoLabel("Visao Superior",              new Point(488, 25),  Color.Empty),
+				new InfoLabel("P2 (cm)",                     new Point(442, 98),  Color.Empty),
+				new InfoLabel("Medidor Ultrasonico",        new Point(364, 214), Color.Empty),
+				new InfoLabel("Sentido Fluxo",              new Point(160, 140), Color.Empty),
+			});
 
-			var tabBotton = CriaTabCalha(
-				"Botton Step Weir",
-				iS800.My.Resources.Resources.calha_02,
-				new InfoLabel[] {
-					new InfoLabel("h",                           new Point(212,225), Color.Red),
-					new InfoLabel("10 < h [m3/h] < 1000",       new Point(15,395),  Color.Empty),
-					new InfoLabel("30 < P2 [m3/h] < 1500",      new Point(15,370),  Color.Empty),
-					new InfoLabel("0,0005 < G [m3/h] < 1",      new Point(15,347),  Color.Empty),
-					new InfoLabel("P1 (cm)",                     new Point(137,176), Color.Empty),
-					new InfoLabel("Largura (cm)",                new Point(516,156), Color.Empty),
-					new InfoLabel("P2 (cm)",                     new Point(528,143), Color.Empty),
-					new InfoLabel("Visao Frontal",               new Point(661,241), Color.Empty),
-					new InfoLabel("Visao Lateral",               new Point(360,241), Color.Empty),
-					new InfoLabel("Medidor Ultrasonico",         new Point(498,54),  Color.Empty),
-					new InfoLabel("Medidor Ultrasonico",         new Point(124,54),  Color.Empty),
-					new InfoLabel("Sentido Fluxo",               new Point(15,154),  Color.Empty),
-				});
+			var tabBotton = CriaTabCalha("Botton Step Weir", iS800.My.Resources.Resources.calha_02, new InfoLabel[] {
+				new InfoLabel("h",                      new Point(212, 225), Color.Red),
+				new InfoLabel("10 < h [m3/h] < 1000",  new Point(15, 395),  Color.Empty),
+				new InfoLabel("30 < P2 [m3/h] < 1500", new Point(15, 370),  Color.Empty),
+				new InfoLabel("0,0005 < G [m3/h] < 1", new Point(15, 347),  Color.Empty),
+				new InfoLabel("P1 (cm)",                new Point(137, 176), Color.Empty),
+				new InfoLabel("Largura (cm)",           new Point(516, 156), Color.Empty),
+				new InfoLabel("P2 (cm)",                new Point(528, 143), Color.Empty),
+				new InfoLabel("Visao Frontal",          new Point(661, 241), Color.Empty),
+				new InfoLabel("Visao Lateral",          new Point(360, 241), Color.Empty),
+				new InfoLabel("Medidor Ultrasonico",    new Point(498, 54),  Color.Empty),
+				new InfoLabel("Medidor Ultrasonico",    new Point(124, 54),  Color.Empty),
+				new InfoLabel("Sentido Fluxo",          new Point(15, 154),  Color.Empty),
+			});
 
-			var tabSupressed = CriaTabCalha(
-				"Supressed Rectangular",
-				iS800.My.Resources.Resources.calha_03,
-				new InfoLabel[] {
-					new InfoLabel("1,5< h [cm] < 80",           new Point(16,392),  Color.Empty),
-					new InfoLabel("15< P2 [cm] < 300",          new Point(16,379),  Color.Empty),
-					new InfoLabel("0,15 < P3 [cm] < 80",        new Point(16,366),  Color.Empty),
-					new InfoLabel("0,01 < Q [m3/h] < 5",        new Point(16,353),  Color.Empty),
-					new InfoLabel("Altura (cm)",                 new Point(155,273), Color.Empty),
-					new InfoLabel("P3 (cm)",                     new Point(155,260), Color.Empty),
-					new InfoLabel("h",                           new Point(173,223), Color.Red),
-					new InfoLabel("Visao Frontal",               new Point(651,232), Color.Empty),
-					new InfoLabel("Visao Lateral",               new Point(336,232), Color.Empty),
-					new InfoLabel("Altura (cm)",                 new Point(96,205),  Color.Empty),
-					new InfoLabel("P1 (cm)",                     new Point(96,192),  Color.Empty),
-					new InfoLabel("Largura (cm)",                new Point(518,157), Color.Empty),
-					new InfoLabel("P2 (cm)",                     new Point(518,140), Color.Empty),
-					new InfoLabel("Medidor Ultrasonico",         new Point(497,55),  Color.Empty),
-					new InfoLabel("Medidor Ultrasonico",         new Point(120,55),  Color.Empty),
-					new InfoLabel("Sentido Fluxo",               new Point(3,213),   Color.Empty),
-				});
+			var tabSupressed = CriaTabCalha("Supressed Rectangular", iS800.My.Resources.Resources.calha_03, new InfoLabel[] {
+				new InfoLabel("1,5< h [cm] < 80",    new Point(16, 392),  Color.Empty),
+				new InfoLabel("15< P2 [cm] < 300",   new Point(16, 379),  Color.Empty),
+				new InfoLabel("0,15 < P3 [cm] < 80", new Point(16, 366),  Color.Empty),
+				new InfoLabel("0,01 < Q [m3/h] < 5", new Point(16, 353),  Color.Empty),
+				new InfoLabel("Altura (cm)",          new Point(155, 273), Color.Empty),
+				new InfoLabel("P3 (cm)",              new Point(155, 260), Color.Empty),
+				new InfoLabel("h",                    new Point(173, 223), Color.Red),
+				new InfoLabel("Visao Frontal",        new Point(651, 232), Color.Empty),
+				new InfoLabel("Visao Lateral",        new Point(336, 232), Color.Empty),
+				new InfoLabel("Altura (cm)",          new Point(96, 205),  Color.Empty),
+				new InfoLabel("P1 (cm)",              new Point(96, 192),  Color.Empty),
+				new InfoLabel("Largura (cm)",         new Point(518, 157), Color.Empty),
+				new InfoLabel("P2 (cm)",              new Point(518, 140), Color.Empty),
+				new InfoLabel("Medidor Ultrasonico",  new Point(497, 55),  Color.Empty),
+				new InfoLabel("Medidor Ultrasonico",  new Point(120, 55),  Color.Empty),
+				new InfoLabel("Sentido Fluxo",        new Point(3, 213),   Color.Empty),
+			});
 
-			tabCtrlCalhas.TabPages.AddRange(new[] { tabParshall, tabBotton, tabSupressed });
+			tabCtrlCalhas.TabPages.Add(tabParshall);
+			tabCtrlCalhas.TabPages.Add(tabBotton);
+			tabCtrlCalhas.TabPages.Add(tabSupressed);
 			grpCalhas.Controls.Add(tabCtrlCalhas);
 			tab.Controls.Add(grpCalhas);
+
 			return tab;
 		}
 
+		// ── Criação da aba Periféricos (layout do "cria origi") ─────────────────
 		private TabPage CriaTabPerifericos()
 		{
 			var tab = new TabPage
@@ -8599,97 +8541,218 @@ namespace iS800
 				BackColor = SystemColors.ControlLight
 			};
 
-			// ── Periféricos do 1° Endereço ───────────────────────────────────
+			// ── Dois grupos lado a lado ────────────────────────────────────────
+			// Grupo Periféricos do 1° Endereço (esquerda)
 			var grp1 = new GroupBox
 			{
 				Text = "Periféricos do 1° Endereço da Estação",
 				Location = new Point(18, 16),
 				Size = new Size(430, 162)
 			};
+
 			var dgv1 = new DataGridView
 			{
-				Name = "DataGridView_periferico_RT820",
+				Name = "DataGridView_periferico1_RT820",
 				Location = new Point(12, 22),
-				Size = new Size(412, 133)
-			};
-			GeraDataGridView_Perifericos(dgv1);
-			grp1.Controls.Add(dgv1);
-			tab.Controls.Add(grp1);
-
-			// ── Modbus Genérico ───────────────────────────────────────────────
-			var grp3 = new GroupBox
-			{
-				Text = "Configuração Periférico Modbus Genérico",
-				Location = new Point(18, 182),
-				Size = new Size(840, 160)
-			};
-			var dgv3 = new DataGridView
-			{
-				Name = "dgv_modbus_generico",
-				Location = new Point(12, 22),
-				Size = new Size(820, 145),
+				Size = new Size(412, 133),
 				AllowUserToAddRows = false,
 				AllowUserToDeleteRows = false,
 				AllowUserToResizeColumns = false,
 				AllowUserToResizeRows = false,
+				AllowUserToOrderColumns = false,
 				RowHeadersVisible = true,
-				ScrollBars = ScrollBars.None
+				RowHeadersWidth = 110,
+				ScrollBars = ScrollBars.None,
+				CellBorderStyle = DataGridViewCellBorderStyle.Single,
+				AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
+				AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None
 			};
+			dgv1.DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter };
+
+			var colModelo1 = new DataGridViewComboBoxColumn
+			{
+				HeaderText = "Modelo",
+				Width = 250,
+				FlatStyle = FlatStyle.Flat,
+				DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox
+			};
+			colModelo1.Items.AddRange(new object[] {
+				"Periférico Desabilitado",
+				"ICTEL - GC420",
+				"Leitura de Vazão Interna",
+				"Equipamento Leitura de Vazão",
+				"Multimedidor IMS mod. Smart Trans",
+				"Multimedidor KRON mod: Mult K-05",
+				"Inversor Danfoss VLT",
+				"Multimedidor SIEMENS PAC 3200",
+				"Inversor WEG CFW09",
+				"Softstarter WEG SSW07",
+				"Interface ELO 2148",
+				"Analisador Cloro Thermo AquaChlor",
+				"Inversor WEG CFW11",
+				"Inversor WEG CFW11 - B",
+				"Controlador PEXTRON",
+				"Multimedidor SCHNEIDER - PM710",
+				"Inversor SCHNEIDER - Altivar71",
+				"Multimedidor SCHNEIDER - PM1200",
+				"STEMAC - ST2160",
+				"Multimedidor SIEMENS PAC 3100",
+				"SANTERNO Sinus Penta",
+				"Chemitec 50XX",
+				"Analisador Thermo Aqua Pro",
+				"Inversor Fronius ECO",
+				"ModBus Genérico",
+				"ECOMAG",
+				"WEG MMW02",
+				"COESTER ATUADOR CSR",
+				"WEG MMW03"
+			});
+			dgv1.Columns.Add(colModelo1);
+			dgv1.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Endereço", Width = 120 });
+
+			dgv1.RowCount = 5;
+			for (int i = 0; i < 5; i++)
+				dgv1.Rows[i].HeaderCell.Value = "Periférico " + (i + 1);
+
+			grp1.Controls.Add(dgv1);
+			tab.Controls.Add(grp1);
+
+			// Grupo Modbus Genérico
+			var grp3 = new GroupBox
+			{
+				Text = "Configuração Periférico Modbus Genérico",
+				Location = new Point(18, 182),
+				Size = new Size(872, 160)
+			};
+
+			var dgv3 = new DataGridView
+			{
+				Name = "dgv_modbus_generico",
+				Location = new Point(12, 22),
+				Size = new Size(852, 130),
+				AllowUserToAddRows = false,
+				AllowUserToDeleteRows = false,
+				AllowUserToResizeColumns = false,
+				AllowUserToResizeRows = false,
+				AllowUserToOrderColumns = false,
+				RowHeadersVisible = true,
+				RowHeadersWidth = 130,
+				ScrollBars = ScrollBars.None,
+				CellBorderStyle = DataGridViewCellBorderStyle.Single,
+				AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
+				AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None
+			};
+			dgv3.DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter };
+
 			dgv3.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Endereço", Width = 80 });
 			var colFun = new DataGridViewComboBoxColumn
 			{
-				HeaderText = "Função", Width = 90,
+				HeaderText = "Função",
+				Width = 70,
 				FlatStyle = FlatStyle.Flat,
 				DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox
 			};
 			colFun.Items.AddRange(new object[] { "1", "3", "4" });
 			dgv3.Columns.Add(colFun);
+
 			for (int m = 1; m <= 4; m++)
 			{
-				dgv3.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Memória" + m,  Width = 70 });
+				dgv3.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Memória" + m, Width = 70 });
 				dgv3.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Variável" + m, Width = 75 });
 			}
+
 			dgv3.RowCount = 5;
-			dgv3.RowHeadersWidth = 80;
-			int idx3 = 1;
-			foreach (DataGridViewRow row in dgv3.Rows)
-				if (!row.IsNewRow) row.HeaderCell.Value = "ModBUS Genérico " + idx3++;
+			for (int i = 0; i < 5; i++)
+				dgv3.Rows[i].HeaderCell.Value = "ModBUS Genérico " + (i + 1);
+
 			grp3.Controls.Add(dgv3);
 			tab.Controls.Add(grp3);
 
-			// ── Referências para Periférico ───────────────────────────────────
+			// Grupo Referências para Periférico
 			var grp4 = new GroupBox
 			{
 				Text = "Referências para Periférico:",
 				Location = new Point(18, 346),
-				Size = new Size(1100, 154)
+				Size = new Size(872, 180)
 			};
-			var dgv4a = new DataGridView
+
+			var dgvRef = new DataGridView
 			{
-				Name = "datagridview_referenciaperifico_1",
-				Location = new Point(19, 16),
-				Size = new Size(330, 70)
+				Name = "datagridview_referenciaperifico",
+				Location = new Point(12, 22),
+				Size = new Size(848, 120),
+				AllowUserToAddRows = false,
+				AllowUserToDeleteRows = false,
+				AllowUserToResizeColumns = false,
+				AllowUserToResizeRows = false,
+				AllowUserToOrderColumns = false,
+				RowHeadersVisible = true,
+				RowHeadersWidth = 50,
+				ScrollBars = ScrollBars.None,
+				CellBorderStyle = DataGridViewCellBorderStyle.Single,
+				AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
+				AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None
 			};
-			GeraDataGridView_Referencia_Periferico(dgv4a);
-			PreencheHeadersReferencias(dgv4a, 1);
-			var dgv4b = new DataGridView
-			{
-				Name = "datagridview_referenciaperifico_2",
-				Location = new Point(550, 16),
-				Size = new Size(330, 70)
-			};
-			GeraDataGridView_Referencia_Periferico(dgv4b);
-			PreencheHeadersReferencias(dgv4b, 6);
-			grp4.Controls.Add(dgv4a);
-			grp4.Controls.Add(dgv4b);
+			dgvRef.DefaultCellStyle = new DataGridViewCellStyle { Alignment = DataGridViewContentAlignment.MiddleCenter };
+
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Periférico", Width = 80 });
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Memória", Width = 80 });
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Variável1", Width = 100 });
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Variável2", Width = 100 });
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Escala", Width = 80 });
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Formato", Width = 80 });
+			dgvRef.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Base 10", Width = 80 });
+
+			dgvRef.RowCount = 10;
+			for (int i = 0; i < 10; i++)
+				dgvRef.Rows[i].HeaderCell.Value = (i + 1).ToString();
+
+			grp4.Controls.Add(dgvRef);
 			grp4.Controls.Add(new Label
 			{
-				Text = "Observação: Opção disponível a partir da versão 3.80",
+				Text = "Observação: Opção disponível a partir da versão 3.50",
 				AutoSize = true,
-				Location = new Point(16, 120)
+				Location = new Point(12, 150)
 			});
 			tab.Controls.Add(grp4);
+
 			return tab;
+		}
+
+		// ── Método auxiliar para criar tabs de calha com imagens técnicas ───────
+		private TabPage CriaTabCalha(string titulo, System.Drawing.Image imagem, InfoLabel[] labels)
+		{
+			var page = new TabPage
+			{
+				Text = titulo,
+				UseVisualStyleBackColor = true,
+				Padding = new Padding(3)
+			};
+			var pic = new PictureBox
+			{
+				Image = imagem,
+				ErrorImage = null,
+				InitialImage = null,
+				Location = new Point(0, 0),
+				Size = new Size(769, 428),
+				TabStop = false,
+				SizeMode = PictureBoxSizeMode.Normal
+			};
+			page.Controls.Add(pic);
+			foreach (var info in labels)
+			{
+				var lbl = new Label
+				{
+					Text = info.Texto,
+					AutoSize = true,
+					Location = info.Pos,
+					BackColor = Color.Transparent
+				};
+				if (info.Cor != Color.Empty) lbl.ForeColor = info.Cor;
+				page.Controls.Add(lbl);
+				lbl.BringToFront();
+			}
+			return page;
 		}
 	}
 }
